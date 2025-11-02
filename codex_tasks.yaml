@@ -1,0 +1,1353 @@
+version: 3.1.1
+owner: ISTW
+purpose: "Czyste v3 + selektywna migracja modułów + szybko uruchamialny szkielet (scaffolds)."
+principles:
+  - "SSOT: parametry (season, week, paths) wyłącznie z config/settings.yaml + CLI."
+  - "Jedna odpowiedzialność na moduł: I/O ≠ clean ≠ aggregate ≠ metrics."
+  - "Artefakty warstwowe: L1(raw)->L2(clean)->L3(team_week)->L4(metrics)."
+  - "Małe funkcje, typy, logging zamiast print, testy smoke + jednostkowe."
+  - "Guardrails: kontrakty schematu, audyt L2 (JSONL), manifest SHA-256, blokady NaN/INF."
+  - "Deterministyczne ścieżki: data/<layer>/{season}/{week}/*.parquet + manifest.json."
+
+milestones:
+  - { id: M1,   name: "Foundation" }
+  - { id: M2,   name: "Core ETL" }
+  - { id: M2_5, name: "Data→Clean→Metrics Kickoff" }
+  - { id: M3,   name: "Core Metrics" }
+  - { id: M4,   name: "Stabilizacja + Migracje" }
+
+config_extensions:
+  data_sources:
+    provider: "nfl_data_py"    # albo "filesystem"
+    options:
+      nfl_data_py:
+        endpoints: ["pbp", "schedules"]
+        season_range: [2010, 2025]
+      filesystem:
+        raw_glob: "data/raw/{season}/week_{week}/*.{parquet,csv}"
+  ingestion_mode: "replace"
+  weights:
+    powerscore:
+      epa_off: 0.27
+      epa_def: 0.18
+      sr_off: 0.13
+      sr_def: 0.12
+      tempo: 0.10
+      redzone_td: 0.10
+      explosive: 0.10
+
+contracts:
+  L1:
+    required_columns:
+      - season:int
+      - week:int
+      - game_id:str
+      - play_id:int
+      - posteam:str?
+      - defteam:str?
+      - epa:float?
+      - success:int?
+    keys: ["season","week","game_id","play_id"]
+  L2:
+    required_columns:
+      - season:int
+      - week:int
+      - game_id:str
+      - play_id:int
+      - TEAM:str
+      - OPP:str
+      - epa:float?
+      - success:int?
+      - game_date:date
+    keys: ["season","week","game_id","TEAM","OPP","play_id"]
+  L3:
+    required_columns:
+      - season:int
+      - week:int
+      - TEAM:str
+      - drives:int?
+      - plays:int?
+      - epa_off_mean:float?
+      - success_rate_off:float?
+    keys: ["season","week","TEAM"]
+
+tasks:
+
+  # === M1: FOUNDATION ===
+  - id: T01_init_repo
+    milestone: M1
+    title: "Szkielet v3 + dependency hygiene"
+    steps:
+      - "Utwórz katalogi: etl/, metrics/, app/, config/, tests/, utils/, data/, templates/, scripts/."
+      - "Dodaj pyproject.toml/requirements.txt (ruff, black, pytest, pydantic, polars, duckdb, fastapi, typer, pyyaml, jinja2)."
+      - "Utwórz .env.example i .gitignore (/.venv, /data/*, __pycache__)."
+    acceptance:
+      - "Instalacja zależności działa; importy bazowych pakietów przechodzą."
+      - "ruff/black/pytest dostępne jako 'python -m ...'."
+    commands:
+      - "python -m pip install -U pip"
+      - "python -m pip install -r requirements.txt"
+
+  - id: T02_config
+    milestone: M1
+    title: "Konfiguracja i ścieżki (SSOT)"
+    files: ["config/settings.yaml","utils/paths.py","utils/config.py"]
+    steps:
+      - "settings.yaml: DATA_ROOT, INPUTS/OUTPUTS, default_season/week, data_sources, weights."
+      - "config.py: loader YAML (pydantic) + walidacja."
+      - "paths.py: path_for(layer, season, week) + helpers do raportów i manifestów."
+    acceptance:
+      - "Brak hardcodów sezon/tydzień w innych modułach."
+      - "from utils.paths import path_for działa w REPL."
+
+  - id: T03_cli
+    milestone: M1
+    title: "CLI orkiestracji"
+    files: ["app/cli.py"]
+    steps:
+      - "Typer: 'build-week --season INT --week INT'."
+      - "Wywołuje: l1_ingest -> l2_clean -> l3_aggregate -> reports.generate."
+    acceptance:
+      - "'python -m app.cli --help' działa."
+      - "Parametry sezon/tydzień trafiają do każdego etapu."
+    commands:
+      - "python -m app.cli --help"
+
+  - id: T04_logging
+    milestone: M1
+    title: "Spójny logging"
+    files: ["utils/logging.py"]
+    steps:
+      - "basicConfig(level=INFO), format, logger per moduł; warnings→logs."
+    acceptance:
+      - "Żadnego 'print' w libach; tylko logger."
+
+  - id: T05_tests_boot
+    milestone: M1
+    title: "Testy smoke + linter"
+    files: ["tests/test_config.py","tests/test_pipeline_smoke.py",".ruff.toml","pyproject.toml"]
+    steps:
+      - "Smoke: import modułów, wywołanie CLI bez crasha (stub)."
+      - "Ruff/Black skonfigurowane."
+    acceptance:
+      - "python -m pytest -q → PASS"
+      - "python -m ruff check . → 0 errors"
+      - "python -m black --check . → PASS"
+
+  - id: T06_schema_contracts
+    milestone: M1
+    title: "Kontrakty schematów (I/O)"
+    files: ["utils/contracts.py","config/contracts.yaml","tests/test_contracts.py"]
+    steps:
+      - "contracts.yaml: definicje kolumn/typów i keys dla L1/L2/L3."
+      - "validate_df(df, contract) rzuca wyjątek przy niespełnieniu."
+    acceptance:
+      - "Złamany kontrakt → etap nie zapisuje artefaktu; testy czerwone."
+
+  - id: T07_guardrails_nan_inf
+    milestone: M1
+    title: "Blokady NaN/INF + helpery"
+    files: ["utils/guards.py","tests/test_guards.py"]
+    steps:
+      - "check_no_nan_in_keys(df, keys) + check_no_inf(df)."
+      - "Używane przed zapisem każdej warstwy."
+    acceptance:
+      - "Testy jednostkowe przechodzą; funkcje importowalne."
+
+  - id: T08_manifest_hash
+    milestone: M1
+    title: "Manifest artefaktów (SHA-256)"
+    files: ["utils/manifest.py","tests/test_manifest.py"]
+    steps:
+      - "compute_sha256(path) + write_manifest(dir, payload)."
+      - "manifest.json: layer, season, week, sha256, rows, cols, created_at."
+    acceptance:
+      - "Po zapisie L1/L2/L3 tworzy się manifest.json."
+
+  - id: T09_report_md
+    milestone: M1
+    title: "Generator raportu tygodniowego (.md)"
+    files: ["app/reports.py","templates/report_week.md.j2"]
+    steps:
+      - "Sekcje: shapes L1–L3, audyt L2, sanity L3, snapshot metryk (jeśli istnieją)."
+    acceptance:
+      - "CLI po build-week generuje raport."
+
+  # === M2: CORE ETL ===
+  - id: T10_l1_ingest
+    milestone: M2
+    title: "ETL L1 – Ingest (IO + schemat)"
+    files: ["etl/l1_ingest.py","etl/sources/nfl_data_py.py","etl/sources/filesystem.py","etl/mappers.py"]
+    depends_on: [T06_schema_contracts, T07_guardrails_nan_inf, T08_manifest_hash]
+    steps:
+      - "Źródło wg settings.data_sources.provider."
+      - "Mapowanie surowych kolumn → minimalny schemat L1 (posteam→TEAM_RAW, defteam→OPP_RAW)."
+      - "validate_df(...,'L1'); check_no_nan_in_keys(['season','week','game_id','play_id'])."
+      - "Zapis: /data/l1/{season}/{week}.parquet + manifest.json."
+    acceptance:
+      - "Kontrakt L1 spełniony; manifest istnieje."
+
+  - id: T11_l2_clean
+    milestone: M2
+    title: "ETL L2 – Clean (typy, nazwy, filtry) + audyt"
+    files: ["etl/l2_clean.py","etl/l2_audit.py","etl/mappers.py"]
+    depends_on: [T10_l1_ingest]
+    steps:
+      - "RENAME: TEAM_RAW→TEAM, OPP_RAW→OPP; normalizacja aliasów (np. WAS→WSH)."
+      - "TYPE CASTS; FILTERS {season,week}; drop_duplicates [game_id, play_id]."
+      - "FILLNA: success→0; AUDYT: JSONL (step, details, counts)."
+      - "validate_df(...,'L2'); check_no_nan_in_keys([...]); check_no_inf(df)."
+      - "Zapis: /data/l2/{season}/{week}.parquet + manifest.json."
+    acceptance:
+      - "Zero NaN w kluczach; audit.jsonl istnieje (≥3 typy kroków)."
+
+  - id: T12_l3_aggregate
+    milestone: M2
+    title: "ETL L3 – TeamWeek agregaty"
+    files: ["etl/l3_aggregate.py","tests/test_l3_counts.py"]
+    depends_on: [T11_l2_clean]
+    steps:
+      - "Groupby [season, week, TEAM] widok ofensywny."
+      - "Wylicz: drives, plays, epa_off_mean, success_rate_off."
+      - "Join lustrzany (TEAM↔OPP) → epa_def_mean, success_rate_def."
+      - "validate_df(...,'L3'); zapis parquet + manifest."
+    acceptance:
+      - "Komplet drużyn aktywnych w tygodniu; test zliczeń PASS."
+
+  - id: T13_e2e_smoke
+    milestone: M2
+    title: "Smoke end-to-end + raport"
+    files: ["tests/test_e2e_build_week.py"]
+    depends_on: [T12_l3_aggregate, T09_report_md]
+    steps:
+      - "CLI E2E i asercje istnienia: L1/L2/L2_AUDIT/L3/REPORT."
+    acceptance:
+      - "Test E2E zielony w <60s (na data sample)."
+
+  # === M2.5: DATA → CLEAN → METRICS KICKOFF ===
+  - id: T14_data_clean_metrics_kickoff
+    milestone: M2_5
+    title: "Pobierz dane → wyczyść → zacznij metryki + wygeneruj RAPORT"
+    depends_on: [T12_l3_aggregate, T09_report_md]
+    steps:
+      - "Uruchom: python -m app.cli build-week --season {SEASON} --week {WEEK}."
+      - "Zweryfikuj artefakty: L1, L2 (+audit), L3 + manifesty."
+      - "Jeśli PASS → snapshot metryk (jeśli istnieją) + sekcja 'Next metrics' w raporcie."
+      - "Zapis raportu: data/reports/{season}_w{week}_summary.md."
+    acceptance:
+      - "Istnieją: L1/L2/L2_AUDIT/L3; raport zawiera shapes, audyt, sanity i snapshot metryk."
+
+  # === M3: CORE METRICS ===
+  - id: T20_metrics_core12
+    milestone: M3
+    title: "Core12 – implementacja v1"
+    files: ["metrics/core12.py","tests/test_metrics_core12.py"]
+    depends_on: [T12_l3_aggregate]
+    steps:
+      - "Po jednej funkcji na metrykę (wejście: L3 team_week)."
+      - "Paczka 6: epa_off, epa_def, sr_off, sr_def, ed_sr_off, third_down_conv."
+      - "Łączenie; blokada INF/NaN; zapis /data/l4_core12/{s}/{w}.parquet + manifest."
+      - "Docstring: definicja, jednostka, wzór."
+    acceptance:
+      - "Brak INF/NaN; sanity-check rozkładów PASS."
+
+  - id: T21_powerscore
+    milestone: M3
+    title: "PowerScore – wagi z configu"
+    files: ["metrics/power_score.py","config/settings.yaml","tests/test_powerscore.py"]
+    depends_on: [T20_metrics_core12]
+    steps:
+      - "Czytaj wagi z settings.yaml; licz PowerScore + PR_diff HOME–AWAY."
+      - "Zapis: /data/l4_powerscore/{s}/{w}.parquet + manifest."
+    acceptance:
+      - "Zmiana wag → inny wynik; test monotoniczności PASS."
+
+  - id: T22_hidden_trends_stub
+    milestone: M3
+    title: "HiddenTrends – szkielet API"
+    files: ["metrics/hidden_trends.py","tests/test_hidden_trends_smoke.py"]
+    steps:
+      - "Interfejs (in: L3/L4; out: dataframe)."
+      - "Na razie zwróć pustą ramkę + TODO."
+    acceptance:
+      - "Import działa; test_smoke PASS."
+
+  - id: T23_api_min
+    milestone: M3
+    title: "FastAPI minimal"
+    files: ["app/api.py","tests/test_api_health.py"]
+    steps:
+      - "Endpointy: /health, /metrics/core12/preview (20 wierszy)."
+    acceptance:
+      - "uvicorn app.api:app startuje; GET /health → {'status':'ok'}."
+
+  - id: T24_report_metrics_snapshot
+    milestone: M3
+    title: "Raport: snapshot metryk"
+    files: ["app/reports.py","templates/report_week.md.j2"]
+    depends_on: [T20_metrics_core12, T21_powerscore]
+    steps:
+      - "Dodaj do raportu TOP N PowerScore i dostępne kolumny Core12 (warunkowo)."
+    acceptance:
+      - "Raport pokazuje PowerScore + wdrożone metryki Core12."
+
+  # === M4: STABILIZACJA + MIGRACJE ===
+  - id: T30_keep_rewrite_scan
+    milestone: M4
+    title: "Skan legacy: KEEP / REWRITE / PORT"
+    steps:
+      - "Szukaj: 'season=', 'week=', 'print(', 'from X import *', 'TODO|FIXME'."
+      - "Pliki >400 linii lub bez podziału na funkcje → REWRITE."
+      - "Duplikaty etl/ vs analysis/ → jedno źródło w etl/."
+    acceptance:
+      - "Lista KEEP/REWRITE/PORT (md) + brak hardcodów."
+
+  - id: T31_migrate_best
+    milestone: M4
+    title: "Migracja wybranych utili"
+    depends_on: [T30_keep_rewrite_scan]
+    steps:
+      - "Przenieś tylko małe, czyste funkcje do utils/."
+      - "Dodaj typy, docstringi, testy jednostkowe."
+    acceptance:
+      - "Coverage utili ≥80% lokalnie."
+
+  - id: T32_ci_local
+    milestone: M4
+    title: "Lokalne quality gate"
+    files: ["Makefile","scripts/precommit_check.ps1"]
+    steps:
+      - "make check: ruff, black --check, pytest -q (lub PS1 na Windows)."
+    acceptance:
+      - "'python -m pytest -q' PASS, 'python -m ruff check .' 0 errors."
+
+  - id: T33_docs_readme
+    milestone: M4
+    title: "README + quickstart"
+    files: ["README.md"]
+    steps:
+      - "Instrukcje: setup, build-week, gdzie artefakty, jak zmienić wagi PR."
+      - "Diagram L1→L4 (ASCII)."
+    acceptance:
+      - "Nowy dev odpala pipeline w <10 min."
+
+# === L5 Reports – continuation ===
+
+  - id: T34_renderers_and_assets
+    type: code
+    agent: Agent_L5_ReportBuilder
+    depends_on: [T30_reports_scaffold, T31_report_data_api, T33_templates]
+    steps:
+      - "Implement render_markdown(template_name, ctx) using Jinja2"
+      - "Add make_charts(ctx) with matplotlib (1 chart min: PowerScore trend or Core12 bars)"
+      - "Add save_report(path_md, content, assets=[]) and ensure relative links to assets"
+      - "Harden null-safety: if metric/column missing -> skip section gracefully"
+    acceptance:
+      - "Rendering returns non-empty MD"
+      - "At least 1 PNG chart saved under data/reports/{season}_w{week}/assets/"
+      - "No NaN/Inf visible in rendered tables (post-format)"
+      - "Relative links to assets resolve from the .md file location"
+
+  - id: T35_cli_commands
+    type: code
+    agent: Agent_L5_ReportBuilder
+    depends_on: [T34_renderers_and_assets]
+    steps:
+      - "Add CLI subcommands: team-report, compare-report, build-weekly-reports"
+      - "Validate args (season:int, week:int, team codes), create output dirs if missing"
+      - "Batch mode: build-weekly-reports generates all team reports; optional flag --pairs-only uses schedule (if available)"
+    acceptance:
+      - "Command 'python -m app.cli team-report --season 2025 --week 8 --team KC' creates teams/KC.md and at least 1 chart"
+      - "Command 'python -m app.cli compare-report --season 2025 --week 8 --team-a KC --team-b BUF' creates comparisons/KC_vs_BUF.md"
+      - "Command 'python -m app.cli build-weekly-reports --season 2025 --week 8' builds all teams without error"
+
+  - id: T36_reports_manifest
+    type: code
+    agent: Agent_L5_ReportBuilder
+    depends_on: [T35_cli_commands]
+    steps:
+      - "Extend utils/manifest.py with write_manifest(layer='reports', path=..., files=[...])"
+      - "After batch build, write data/reports/{season}_w{week}/manifest.json with file list, sizes, sha256"
+    acceptance:
+      - "Manifest exists and lists all generated .md and .png"
+      - "sha256 present for every file; JSON validates"
+
+  - id: T37_weekly_summary_rollup
+    type: code
+    agent: Agent_L5_ReportBuilder
+    depends_on: [T36_reports_manifest]
+    steps:
+      - "Generate weekly_summary.md linking to teams/*.md and comparisons/*.md"
+      - "Include Top-5 ↑/↓ by PowerScore vs W-1 (if W>1) and largest edges (if edges available)"
+    acceptance:
+      - "weekly_summary.md created and contains at least: header, links section, Top-5 block"
+      - "No broken links (relative) to child reports"
+
+  - id: T38_pairs_from_schedule
+    type: code
+    agent: Agent_L5_ReportBuilder
+    optional: true
+    depends_on: [T35_cli_commands]
+    steps:
+      - "Add loader for schedule for given season/week (source: existing L2/L3 fixture if present)"
+      - "Update build-weekly-reports to support --pairs-only to produce only matchup comparisons"
+    acceptance:
+      - "'--pairs-only' generates comparisons only for scheduled matchups"
+      - "Skips gracefully if schedule source missing (prints info, exits 0)"
+
+  - id: T39_reports_qagates_in_ci
+    type: qa
+    agent: Agent_QA
+    depends_on: [T36_reports_manifest]
+    steps:
+      - "Extend scripts/verify_repo.ps1 with '== Reports QA ==' block"
+      - "Checks: (a) ≥1 team report exists; (b) manifest.json present; (c) no empty MD; (d) charts exist; (e) JSON schema for manifest ok"
+    acceptance:
+      - "verify_repo.ps1 prints '== Reports QA == OK' and returns 0 on green build"
+
+  - id: T40_edge_tables_in_compare
+    type: code
+    agent: Agent_L5_ReportBuilder
+    optional: true
+    depends_on: [T35_cli_commands]
+    steps:
+      - "If edge frames exist (edge.off_vs_def.*, edge.def_vs_off.*, edge.team_vs_team.*), enrich compare context with A−B diffs"
+      - "Render Edge table in team_compare.md.j2 (hide if data absent)"
+    acceptance:
+      - "When edges available, comparisons include Edge table with signed diffs and simple directional badges"
+      - "Renders cleanly when edges absent (section omitted)"
+
+  - id: T41_docs_and_examples
+    type: docs
+    agent: Agent_Docs
+    depends_on: [T37_weekly_summary_rollup]
+    steps:
+      - "Create docs/reports_README.md with: CLI usage, output structure, troubleshooting, and examples with screenshots"
+      - "Add two canned example commands in README and reference to verify_repo.ps1 QA"
+    acceptance:
+      - "docs/reports_README.md exists, concise and accurate"
+      - "All example commands produce expected outputs on a fresh environment"
+
+  - id: T42_update_finished_week:
+    title: "Automated weekly update for finished NFL week (L1→L4 + reports)"
+    area: maintenance
+    layer: orchestration
+    agent: Agent_L4_AutoUpdater
+    depends_on: [T37_weekly_summary_rollup, T41_reports_pairs]
+    description: |
+      Automates the process of building all metric layers (L1–L4) and generating weekly reports
+      for the most recently finished NFL week. Intended to be run every Tuesday after games complete.
+    inputs_contract: [L1_clean_plays, L2_drives, L3_team_week]
+    outputs_contract: [L4_core12, L4_powerscore, weekly_reports, pair_reports]
+    steps:
+      - "Detect the most recently finished week using schedule loader fallback (L2-based)."
+      - "Run CLI command: python -m app.cli build-week --season {season} --week {week}"
+      - "Run CLI command: python -m app.cli build-weekly-reports --season {season} --week {week}"
+      - "Optionally run with --pairs-only flag to limit to matchup reports."
+      - "Write automation script: scripts/Update-FinishedWeek.ps1"
+    acceptance:
+      - "All parquet and manifest files present for L1–L4 layers"
+      - "Weekly summary and pair reports generated under data/reports/weekly/"
+      - "Script can auto-detect current week if not provided"
+    docs:
+      howto_ref: scripts/Update-FinishedWeek.ps1
+      usage:
+        - "powershell -File scripts/Update-FinishedWeek.ps1 -Season 2025 -Week 9"
+        - "python -m app.cli update-finished-week --season 2025 --week 9"
+    tags: [weekly, automation, devops, reports, codex]
+
+  - id: T43_add_schedules_support
+    area: reports
+    title: "Add schedules layer and enable team pair generation (Week reports)"
+    description: |
+      Current weekly comparison reports show placeholder 'AAA vs BBB' because
+      the system cannot find valid schedule data under data/schedules/.
+      This task adds schedule support so that build-weekly-reports --pairs-only
+      can automatically derive real team matchups (e.g., MIA vs BAL).
+    steps:
+      - Create directory data/schedules/ if missing.
+      - Add CSV or Parquet file with columns [season, week, home, away].
+      - Update app/reports.py schedule loader to read from data/schedules/<season>.parquet
+        and fallback to L2 data if missing (already supported in T37).
+      - Re-run:
+        ```powershell
+        python -m app.cli build-weekly-reports --season 2025 --week 8 --pairs-only
+        ```
+      - Verify that reports in data/reports/comparisons/2025_w8/ are named using real team aliases (e.g. MIA_vs_BAL.md).
+    acceptance:
+      - Folder data/schedules/ exists.
+      - build-weekly-reports correctly outputs real matchups (no AAA/BBB placeholders).
+      - QA gates pass (scripts/verify_repo.ps1 returns “All checks passed!”).
+    refs:
+      - app/reports.py:90-180
+      - utils/paths.py:55-167
+      - tests/test_cli_reports.py
+
+  - id: T44_integrate_l4_in_build_week
+    description: "Integrate Core12 + PowerScore into app/cli.py build-week; add --skip-l4."
+    steps:
+      - patch: app/cli.py  # (wg patcha z promptu; importy + wywołania compute_* po L3)
+      - run: python -m ruff check . --fix
+      - run: python -m black .
+
+  - id: T45_backfill_l4_w8_w9
+    description: "Recompute L4 artifacts for 2025 weeks 8 and 9."
+    steps:
+      - run: . .\.venv\Scripts\Activate.ps1
+      - run: python -c "import polars as pl; from metrics.core12 import compute as c12; from metrics.power_score import compute as ps; df=pl.read_parquet('data/l3_team_week/2025/8.parquet'); core=c12(df,2025,8); ps(core,2025,8)"
+      - run: python -c "import polars as pl; from metrics.core12 import compute as c12; from metrics.power_score import compute as ps; df=pl.read_parquet('data/l3_team_week/2025/9.parquet'); core=c12(df,2025,9); ps(core,2025,9)"
+      - run: python - << 'PY'\nimport polars as pl\nfor w in (8,9):\n    p=f"data/l4_powerscore/2025/{w}.parquet"\n    df=pl.read_parquet(p)\n    print(w, 'rows=', len(df), 'teams unique=', df.select(pl.col('team').n_unique()).item())\nPY
+
+  - id: T46_wire_comparison_metrics
+    description: "Use _build_comparison_metrics; add fallback tables from L4/L3 in app/reports.py."
+    steps:
+      - patch: app/reports.py
+      - run: python -m ruff check . --fix
+      - run: python -m black .
+      - run: python -m app.cli compare-report --season 2025 --week 9 --team-a MIA --team-b BAL
+
+  - id: T47_update_verify_script
+    description: "Add ExecutionPolicy hint and -SkipL4 to verify_metrics_v3.ps1."
+    steps:
+      - patch: verify_metrics_v3.ps1
+      - run: PowerShell -ExecutionPolicy Bypass -File .\verify_metrics_v3.ps1 -SkipL4
+
+
+
+
+golden_path:
+  after_build_week_expect:
+    - "data/l1/{season}/{week}.parquet"
+    - "data/l2/{season}/{week}.parquet"
+    - "data/l2/{season}/{week}_audit.jsonl"
+    - "data/l3_team_week/{season}/{week}.parquet"
+    - "data/reports/{season}_w{week}_summary.md"
+  each_layer_writes:
+    - "parquet + manifest.json (sha256, rows, cols, created_at)"
+  blocked_if:
+    - "Kontrakt I/O niespełniony"
+    - "NaN w kluczach lub INF w danych"
+    - "Brak audytu L2"
+    - "Metryki modyfikują ETL (naruszenie warstw)"
+
+checklists:
+  definition_of_done:
+    - "Brak hardcodów season/week."
+    - "Jedno źródło ścieżek (utils/paths.py) + loader (utils/config.py)."
+    - "Artefakt .parquet + manifest w każdej warstwie; audyt L2 obecny."
+    - "Testy smoke/E2E PASS; core utils z testami."
+    - "Ruff/Black czysto; brak printów w libach."
+  risks:
+    - "Rozjazd schematów → trzymać kontrakty w T06."
+    - "Windows PATH → zawsze 'python -m ...' zamiast gołych binarek."
+  commands_quick:
+    - "python -m pip install -r requirements.txt"
+    - "python -m app.cli build-week --season 2025 --week 8"
+    - "python -m pytest -q"
+    - "python -m ruff check ."
+    - "python -m black --check ."
+
+# =========================
+#         SCAFFOLDS
+# =========================
+scaffolds:
+
+  # ===== core config & contracts =====
+  - path: config/settings.yaml
+    purpose: "SSOT — ustawienia projektu"
+    template: |
+      DATA_ROOT: "data"
+      default_season: 2025
+      default_week: 8
+      inputs: {}
+      outputs: {}
+      data_sources:
+        provider: "filesystem"    # zmień na "nfl_data_py" gdy będziesz pobierał z API
+        options:
+          nfl_data_py:
+            endpoints: ["pbp", "schedules"]
+            season_range: [2010, 2025]
+          filesystem:
+            raw_glob: "data/raw/{season}/week_{week}/*.{parquet,csv}"
+      weights:
+        powerscore:
+          epa_off: 0.27
+          epa_def: 0.18
+          sr_off: 0.13
+          sr_def: 0.12
+          tempo: 0.10
+          redzone_td: 0.10
+          explosive: 0.10
+
+  - path: config/contracts.yaml
+    purpose: "Kontrakty I/O dla L1/L2/L3"
+    template: |
+      L1:
+        required_columns:
+          - season:int
+          - week:int
+          - game_id:str
+          - play_id:int
+          - posteam:str?
+          - defteam:str?
+          - epa:float?
+          - success:int?
+        keys: ["season","week","game_id","play_id"]
+      L2:
+        required_columns:
+          - season:int
+          - week:int
+          - game_id:str
+          - play_id:int
+          - TEAM:str
+          - OPP:str
+          - epa:float?
+          - success:int?
+          - game_date:date
+        keys: ["season","week","game_id","TEAM","OPP","play_id"]
+      L3:
+        required_columns:
+          - season:int
+          - week:int
+          - TEAM:str
+          - drives:int?
+          - plays:int?
+          - epa_off_mean:float?
+          - success_rate_off:float?
+        keys: ["season","week","TEAM"]
+
+  # ===== utils =====
+  - path: utils/config.py
+    purpose: "Loader settings.yaml (pydantic) + cache"
+    template: |
+      from __future__ import annotations
+      from functools import lru_cache
+      from pydantic import BaseModel, Field
+      import yaml
+
+      class DataSources(BaseModel):
+          provider: str
+          options: dict = Field(default_factory=dict)
+
+      class Weights(BaseModel):
+          powerscore: dict = Field(default_factory=dict)
+
+      class Settings(BaseModel):
+          DATA_ROOT: str
+          default_season: int
+          default_week: int
+          inputs: dict = Field(default_factory=dict)
+          outputs: dict = Field(default_factory=dict)
+          data_sources: DataSources
+          weights: Weights
+
+      @lru_cache(maxsize=1)
+      def load_settings(path: str = "config/settings.yaml") -> Settings:
+          with open(path, "r", encoding="utf-8") as f:
+              raw = yaml.safe_load(f)
+          return Settings(**raw)
+
+  - path: utils/paths.py
+    purpose: "Jedno źródło ścieżek artefaktów"
+    template: |
+      from __future__ import annotations
+      from pathlib import Path
+      from utils.config import load_settings
+
+      def data_root() -> Path:
+          return Path(load_settings().DATA_ROOT)
+
+      def path_for(layer: str, season: int, week: int) -> Path:
+          base = data_root() / layer / str(season)
+          if layer in {"l1", "l2", "l3_team_week", "l4_core12", "l4_powerscore"}:
+              base = base / str(week)
+          base.mkdir(parents=True, exist_ok=True)
+          filename = {
+              "l1": f"{week}.parquet",
+              "l2": f"{week}.parquet",
+              "l3_team_week": f"{week}.parquet",
+              "l4_core12": f"{week}.parquet",
+              "l4_powerscore": f"{week}.parquet",
+          }.get(layer, "")
+          return base / filename if filename else base
+
+      def manifest_path(layer: str, season: int, week: int) -> Path:
+          p = path_for(layer, season, week)
+          return p.parent / "manifest.json"
+
+      def report_path(season: int, week: int) -> Path:
+          rdir = data_root() / "reports"
+          rdir.mkdir(parents=True, exist_ok=True)
+          return rdir / f"{season}_w{week}_summary.md"
+
+      def l2_audit_path(season: int, week: int) -> Path:
+          p = data_root() / "l2" / str(season) / str(week)
+          p.mkdir(parents=True, exist_ok=True)
+          return p / f"{week}_audit.jsonl"
+
+  - path: utils/logging.py
+    purpose: "Spójny logger"
+    template: |
+      import logging, warnings
+
+      def setup_logging():
+          logging.basicConfig(
+              level=logging.INFO,
+              format="%(asctime)s | %(levelname)s | %(name)s | %(message)s"
+          )
+          logging.captureWarnings(True)
+          warnings.simplefilter("default")
+
+      setup_logging()
+
+      def get_logger(name: str) -> logging.Logger:
+          return logging.getLogger(name)
+
+  - path: utils/contracts.py
+    purpose: "Walidacja kontraktów I/O"
+    template: |
+      from __future__ import annotations
+      import yaml, polars as pl
+
+      def _parse_colspec(spec: str):
+          name, dtype = spec.split(":")
+          optional = dtype.endswith("?")
+          dtype = dtype.rstrip("?")
+          return name, dtype, optional
+
+      def validate_df(df: pl.DataFrame, contract_name: str, path="config/contracts.yaml") -> None:
+          with open(path, "r", encoding="utf-8") as f:
+              cfg = yaml.safe_load(f)
+          spec = cfg[contract_name]
+          req_cols = spec["required_columns"]
+          keys = spec["keys"]
+          # kolumny
+          for colspec in req_cols:
+              name, _dtype, optional = _parse_colspec(colspec)
+              if not optional and name not in df.columns:
+                  raise ValueError(f"[{contract_name}] missing column: {name}")
+          # klucze
+          for k in keys:
+              if k not in df.columns:
+                  raise ValueError(f"[{contract_name}] missing key column: {k}")
+
+  - path: utils/guards.py
+    purpose: "Blokady NaN/INF"
+    template: |
+      import polars as pl
+      import math
+
+      def check_no_nan_in_keys(df: pl.DataFrame, keys: list[str]) -> None:
+          for k in keys:
+              if df.select(pl.col(k).is_null().any()).item():
+                  raise ValueError(f"NaN/null in key column: {k}")
+
+      def check_no_inf(df: pl.DataFrame) -> None:
+          for c in df.columns:
+              if pl.datatypes.is_float(df.schema[c]):
+                  if df.select(pl.col(c).map_elements(lambda x: math.isinf(x) if x is not None else False).any()).item():
+                      raise ValueError(f"INF detected in column: {c}")
+
+  - path: utils/manifest.py
+    purpose: "Manifest (SHA-256, rows, cols)"
+    template: |
+      from __future__ import annotations
+      import hashlib, json
+      from datetime import datetime
+      from pathlib import Path
+
+      def compute_sha256(path: Path) -> str:
+          h = hashlib.sha256()
+          with open(path, "rb") as f:
+              for chunk in iter(lambda: f.read(65536), b""):
+                  h.update(chunk)
+          return h.hexdigest()
+
+      def write_manifest(target_file: Path, payload: dict) -> None:
+          out = target_file.parent / "manifest.json"
+          payload = {**payload, "created_at": datetime.utcnow().isoformat()}
+          with open(out, "w", encoding="utf-8") as f:
+              json.dump(payload, f, ensure_ascii=False, indent=2)
+
+  # ===== sources & etl =====
+  - path: etl/sources/filesystem.py
+    purpose: "Wczytywanie plików z dysku (CSV/Parquet)"
+    template: |
+      from __future__ import annotations
+      from glob import glob
+      import polars as pl
+
+      def load_glob(pattern: str) -> pl.DataFrame:
+          files = glob(pattern)
+          if not files:
+              return pl.DataFrame()
+          dfs = []
+          for fp in files:
+              if fp.endswith(".parquet"):
+                  dfs.append(pl.read_parquet(fp))
+              else:
+                  dfs.append(pl.read_csv(fp))
+          return pl.concat(dfs, how="vertical_relaxed")
+
+  - path: etl/sources/nfl_data_py.py
+    purpose: "Stub pobierania z nfl_data_py (do podmiany na realne API)"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+
+      def load_pbp(season: int, week: int) -> pl.DataFrame:
+          # TODO: podłącz nfl_data_py; na razie zwracamy pustą ramkę
+          return pl.DataFrame()
+
+      def load_schedules(season: int) -> pl.DataFrame:
+          return pl.DataFrame()
+
+  - path: etl/mappers.py
+    purpose: "Mapowanie kolumn surowych → standard"
+    template: |
+      import polars as pl
+
+      TEAM_ALIAS = {"WAS": "WSH"}
+
+      def normalize_alias(team: str) -> str:
+          return TEAM_ALIAS.get(team, team)
+
+      def map_raw_to_l1(df: pl.DataFrame) -> pl.DataFrame:
+          if df.is_empty():
+              return df
+          cols = {c: c for c in df.columns}
+          if "posteam" in df.columns:
+              cols["posteam"] = "TEAM_RAW"
+          if "defteam" in df.columns:
+              cols["defteam"] = "OPP_RAW"
+          return df.rename(cols)
+
+  - path: etl/l1_ingest.py
+    purpose: "ETL L1 — ingest + minimalny schemat"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+      from utils.config import load_settings
+      from utils.paths import path_for
+      from utils.manifest import write_manifest
+      from utils.contracts import validate_df
+      from etl.sources.filesystem import load_glob
+      from etl.sources.nfl_data_py import load_pbp
+      from etl.mappers import map_raw_to_l1
+
+      def run(season: int, week: int) -> pl.DataFrame:
+          cfg = load_settings()
+          provider = cfg.data_sources.provider
+          if provider == "filesystem":
+              pattern = cfg.data_sources.options["filesystem"]["raw_glob"].format(season=season, week=week)
+              df = load_glob(pattern)
+          else:
+              df = load_pbp(season, week)
+          df = map_raw_to_l1(df)
+          validate_df(df, "L1")
+          out = path_for("l1", season, week)
+          if not df.is_empty():
+              df.write_parquet(out)
+              write_manifest(out, {"layer": "l1", "season": season, "week": week, "rows": df.height, "cols": df.width})
+          return df
+
+  - path: etl/l2_audit.py
+    purpose: "Logger kroków czyszczenia do JSONL"
+    template: |
+      from __future__ import annotations
+      import json, time
+      from utils.paths import l2_audit_path
+
+      def log_event(season: int, week: int, step: str, details: dict):
+          rec = {"ts": time.time(), "step": step, "details": details}
+          ap = l2_audit_path(season, week)
+          with open(ap, "a", encoding="utf-8") as f:
+              f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+  - path: etl/l2_clean.py
+    purpose: "ETL L2 — rename/cast/filter/fillna + audyt"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+      from utils.contracts import validate_df
+      from utils.paths import path_for
+      from utils.manifest import write_manifest
+      from utils.guards import check_no_inf, check_no_nan_in_keys
+      from etl.l2_audit import log_event
+      from etl.mappers import normalize_alias
+
+      def run(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
+          df = df_l1
+          if df.is_empty():
+              return df
+          if "TEAM_RAW" in df.columns:
+              df = df.rename({"TEAM_RAW": "TEAM"})
+              log_event(season, week, "rename", {"from": "TEAM_RAW", "to": "TEAM"})
+          if "OPP_RAW" in df.columns:
+              df = df.rename({"OPP_RAW": "OPP"})
+              log_event(season, week, "rename", {"from": "OPP_RAW", "to": "OPP"})
+          if "TEAM" in df.columns:
+              df = df.with_columns(pl.col("TEAM").map_elements(normalize_alias).alias("TEAM"))
+          if "OPP" in df.columns:
+              df = df.with_columns(pl.col("OPP").map_elements(normalize_alias).alias("OPP"))
+          for c in ("season", "week"):
+              if c in df.columns:
+                  df = df.with_columns(pl.col(c).cast(pl.Int64))
+                  log_event(season, week, "cast", {"column": c, "to": "int"})
+          if "success" in df.columns:
+              df = df.with_columns(pl.col("success").fill_null(0))
+              log_event(season, week, "fillna", {"column": "success", "value": 0})
+          if "season" in df.columns and "week" in df.columns:
+              before = df.height
+              df = df.filter((pl.col("season") == season) & (pl.col("week") == week))
+              log_event(season, week, "filter", {"expr": f"season=={season} & week=={week}", "dropped": before - df.height})
+          if all(c in df.columns for c in ("game_id", "play_id")):
+              before = df.height
+              df = df.unique(subset=["game_id", "play_id"], keep="first")
+              log_event(season, week, "drop_duplicates", {"subset": ["game_id", "play_id"], "removed": before - df.height})
+          validate_df(df, "L2")
+          check_no_nan_in_keys(df, ["season", "week", "game_id", "TEAM", "OPP", "play_id"])
+          check_no_inf(df)
+          out = path_for("l2", season, week)
+          df.write_parquet(out)
+          write_manifest(out, {"layer": "l2", "season": season, "week": week, "rows": df.height, "cols": df.width})
+          return df
+
+  - path: etl/l3_aggregate.py
+    purpose: "ETL L3 — team_week"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+      from utils.contracts import validate_df
+      from utils.paths import path_for
+      from utils.manifest import write_manifest
+
+      def run(df_l2: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
+          if df_l2.is_empty():
+              return df_l2
+          off = (
+              df_l2.group_by(["season", "week", "TEAM"])
+              .agg([
+                  pl.len().alias("plays"),
+                  pl.col("epa").mean().alias("epa_off_mean"),
+                  (pl.col("success").mean()).alias("success_rate_off"),
+              ])
+          )
+          off = off.with_columns((pl.col("plays") // 6).alias("drives"))
+          if "OPP" in df_l2.columns and "epa" in df_l2.columns:
+              def_df = (
+                  df_l2.group_by(["season", "week", "OPP"])
+                  .agg([
+                      pl.col("epa").mean().alias("epa_def_mean"),
+                      pl.col("success").mean().alias("success_rate_def"),
+                  ])
+                  .rename({"OPP": "TEAM"})
+              )
+              out_df = off.join(def_df, on=["season", "week", "TEAM"], how="left")
+          else:
+              out_df = off
+          validate_df(out_df, "L3")
+          outp = path_for("l3_team_week", season, week)
+          out_df.write_parquet(outp)
+          write_manifest(outp, {"layer": "l3_team_week", "season": season, "week": week, "rows": out_df.height, "cols": out_df.width})
+          return out_df
+
+  # ===== app =====
+  - path: app/reports.py
+    purpose: "Raport tygodniowy (.md) — shapes, audit, L3 snapshot"
+    template: |
+      from __future__ import annotations
+      from pathlib import Path
+      import polars as pl, json
+      from jinja2 import Template
+      from utils.paths import path_for, report_path, l2_audit_path
+
+      TEMPLATE = """# ISTW Weekly Summary — {{ season }} W{{ week }}
+      ## Inputs
+      - L1: {{ l1_shape }}
+      - L2: {{ l2_shape }}
+      - L3: {{ l3_shape }}
+
+      ## L2 Audit (last 10)
+      {% for e in audit_tail %}- {{ e["step"] }} — {{ e["details"] }}
+      {% endfor %}
+
+      ## L3 Sanity
+      - Teams rows: {{ teams_rows }}
+      - Sample columns: {{ sample_cols }}
+
+      {% if powerscore_preview %}
+      ## PowerScore (preview)
+      {{ powerscore_preview }}
+      {% endif %}
+      """
+
+      def _shape(path: Path) -> str:
+          if not path.exists():
+              return "missing"
+          df = pl.read_parquet(path)
+          return f"{df.height}x{df.width}"
+
+      def generate(season: int, week: int) -> Path:
+          l1p = path_for("l1", season, week)
+          l2p = path_for("l2", season, week)
+          l3p = path_for("l3_team_week", season, week)
+          rpt = report_path(season, week)
+
+          audit = []
+          ap = l2_audit_path(season, week)
+          if ap.exists():
+              with open(ap, "r", encoding="utf-8") as f:
+                  for line in f:
+                      audit.append(json.loads(line))
+          audit_tail = audit[-10:]
+
+          teams_rows = 0
+          sample_cols = []
+          if l3p.exists():
+              d3 = pl.read_parquet(l3p)
+              teams_rows = d3.height
+              sample_cols = d3.columns[:8]
+
+          ps_prev = ""
+          ps_path = Path(f"data/l4_powerscore/{season}/{week}.parquet")
+          if ps_path.exists():
+              dfps = pl.read_parquet(ps_path)
+              ps_prev = dfps.head(10).to_pandas().to_markdown(index=False)
+
+          rendered = Template(TEMPLATE).render(
+              season=season, week=week,
+              l1_shape=_shape(l1p), l2_shape=_shape(l2p), l3_shape=_shape(l3p),
+              audit_tail=audit_tail, teams_rows=teams_rows, sample_cols=sample_cols,
+              powerscore_preview=ps_prev
+          )
+          rpt.write_text(rendered, encoding="utf-8")
+          return rpt
+
+  - path: app/cli.py
+    purpose: "CLI — build-week"
+    template: |
+      from __future__ import annotations
+      import typer
+      from utils.config import load_settings
+      from etl.l1_ingest import run as l1_run
+      from etl.l2_clean import run as l2_run
+      from etl.l3_aggregate import run as l3_run
+      from app.reports import generate as report_gen
+
+      app = typer.Typer(add_completion=False)
+
+      @app.command("build-week")
+      def build_week(season: int, week: int):
+          _ = load_settings()  # ensures settings are readable
+          df1 = l1_run(season, week)
+          df2 = l2_run(df1, season, week)
+          df3 = l3_run(df2, season, week)
+          report = report_gen(season, week)
+          typer.echo(f"Report: {report}")
+
+      if __name__ == "__main__":
+          app()
+
+  - path: app/api.py
+    purpose: "FastAPI minimal — /health"
+    template: |
+      from __future__ import annotations
+      from fastapi import FastAPI
+
+      app = FastAPI()
+
+      @app.get("/health")
+      def health():
+          return {"status": "ok"}
+
+  # ===== metrics =====
+  - path: metrics/core12.py
+    purpose: "Core12 — paczka 6 prostych metryk (stub)"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+      from utils.paths import path_for
+      from utils.manifest import write_manifest
+
+      def compute(df_l3: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
+          if df_l3.is_empty():
+              return df_l3
+          out = df_l3.select([
+              "season","week","TEAM",
+              pl.col("epa_off_mean").alias("core_epa_off"),
+              pl.col("success_rate_off").alias("core_sr_off"),
+              pl.col("epa_def_mean").alias("core_epa_def"),
+              pl.col("success_rate_def").alias("core_sr_def"),
+          ])
+          p = path_for("l4_core12", season, week)
+          out.write_parquet(p)
+          write_manifest(p, {"layer": "l4_core12", "season": season, "week": week, "rows": out.height, "cols": out.width})
+          return out
+
+  - path: metrics/power_score.py
+    purpose: "PowerScore — wagi z configu"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+      from utils.config import load_settings
+      from utils.paths import path_for
+      from utils.manifest import write_manifest
+
+      def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
+          cfg = load_settings()
+          w = cfg.weights.powerscore
+          df = df_core12.with_columns([
+              (pl.col("core_epa_off") * w.get("epa_off", 0.27)).alias("w_epa_off"),
+              (pl.col("core_epa_def") * w.get("epa_def", 0.18)).alias("w_epa_def"),
+              (pl.col("core_sr_off")  * w.get("sr_off", 0.13)).alias("w_sr_off"),
+              (pl.col("core_sr_def")  * w.get("sr_def", 0.12)).alias("w_sr_def"),
+          ])
+          df = df.with_columns((pl.col("w_epa_off")+pl.col("w_epa_def")+pl.col("w_sr_off")+pl.col("w_sr_def")).alias("PowerScore"))
+          p = path_for("l4_powerscore", season, week)
+          df.write_parquet(p)
+          write_manifest(p, {"layer": "l4_powerscore", "season": season, "week": week, "rows": df.height, "cols": df.width})
+          return df
+
+  - path: metrics/hidden_trends.py
+    purpose: "HiddenTrends — stub API"
+    template: |
+      from __future__ import annotations
+      import polars as pl
+
+      def compute(df_l3: pl.DataFrame, df_l4_core: pl.DataFrame) -> pl.DataFrame:
+          return pl.DataFrame()  # TODO
+
+  # ===== templates =====
+  - path: templates/report_week.md.j2
+    purpose: "Szablon Jinja raportu"
+    template: |
+      # ISTW Weekly Summary — {{ season }} W{{ week }}
+      ## Inputs
+      - L1: {{ l1_shape }}
+      - L2: {{ l2_shape }}
+      - L3: {{ l3_shape }}
+
+      ## L2 Audit (last 10)
+      {% for e in audit_tail %}- {{ e["step"] }} — {{ e["details"] }}
+      {% endfor %}
+
+      ## L3 Sanity
+      - Teams rows: {{ teams_rows }}
+      - Sample columns: {{ sample_cols }}
+
+      {% if powerscore_preview %}
+      ## PowerScore (preview)
+      {{ powerscore_preview }}
+      {% endif %}
+
+  # ===== scripts =====
+  - path: scripts/init_scaffolds.py
+    purpose: "Jednorazowe wypisanie plików scaffoldów (szybki start)"
+    template: |
+      import yaml, pathlib
+
+      def main():
+          with open("codex_tasks.yaml", "r", encoding="utf-8") as f:
+              y = yaml.safe_load(f)
+          for s in y.get("scaffolds", []):
+              path = pathlib.Path(s["path"])
+              path.parent.mkdir(parents=True, exist_ok=True)
+              if not path.exists():
+                  path.write_text(s["template"], encoding="utf-8")
+                  print(f"[WRITE] {path}")
+              else:
+                  print(f"[SKIP ] {path} (exists)")
+
+      if __name__ == "__main__":
+          main()
+
+  # ===== tooling & tests =====
+  - path: requirements.txt
+    purpose: "Zależności projektu"
+    template: |
+      polars>=1.6
+      duckdb>=1.0
+      pydantic>=2.8
+      pyyaml>=6.0
+      jinja2>=3.1
+      typer>=0.12
+      fastapi>=0.115
+      uvicorn>=0.30
+      pytest>=8.2
+      black>=24.8
+      ruff>=0.6
+
+  - path: .ruff.toml
+    purpose: "Konfiguracja lintera Ruff"
+    template: |
+      line-length = 100
+      target-version = "py311"
+      [lint]
+      select = ["E","F","I","B","UP","PL"]
+      ignore = ["E501"]
+
+  - path: pyproject.toml
+    purpose: "Ustawienia Black/Pytest"
+    template: |
+      [tool.black]
+      line-length = 100
+      target-version = ["py311"]
+
+      [tool.pytest.ini_options]
+      addopts = "-q"
+      testpaths = ["tests"]
+      python_files = "test_*.py"
+
+  - path: .gitignore
+    purpose: "Ignorowane pliki"
+    template: |
+      .venv/
+      __pycache__/
+      .pytest_cache/
+      .ruff_cache/
+      data/
+      *.pyc
+
+  - path: .env.example
+    purpose: "Przykładowe zmienne środowiskowe"
+    template: |
+      # Skopiuj do .env i uzupełnij w razie potrzeby
+      DATA_ROOT=data
+
+  - path: Makefile
+    purpose: "Szybkie komendy jakościowe"
+    template: |
+      .PHONY: check fmt lint test
+      check: lint test
+      fmt:
+      	python -m black .
+      lint:
+      	python -m ruff check .
+      test:
+      	python -m pytest -q
+
+  - path: scripts/precommit_check.ps1
+    purpose: "Sprawdzenia przed commitem (Windows PowerShell)"
+    template: |
+      Write-Host "Running lint..."
+      python -m ruff check .
+      if ($LASTEXITCODE -ne 0) { exit 1 }
+      Write-Host "Running black --check..."
+      python -m black --check .
+      if ($LASTEXITCODE -ne 0) { exit 1 }
+      Write-Host "Running tests..."
+      python -m pytest -q
+      if ($LASTEXITCODE -ne 0) { exit 1 }
+      Write-Host "OK"
+
+  - path: tests/test_config.py
+    purpose: "Ładowanie settings.yaml"
+    template: |
+      from utils.config import load_settings
+      def test_load_settings():
+          s = load_settings()
+          assert s.DATA_ROOT
+          assert isinstance(s.default_season, int)
+          assert isinstance(s.default_week, int)
+
+  - path: tests/test_pipeline_smoke.py
+    purpose: "Smoke: importy + CLI help"
+    template: |
+      import subprocess, sys
+      def test_cli_help():
+          cp = subprocess.run([sys.executable, "-m", "app.cli", "--help"], capture_output=True, text=True)
+          assert cp.returncode == 0
+          assert "build-week" in cp.stdout
+
+  - path: tests/test_contracts.py
+    purpose: "Walidacja kontraktów I/O — plik istnieje i zawiera sekcje"
+    template: |
+      import yaml, pathlib
+      def test_contracts_file():
+          p = pathlib.Path("config/contracts.yaml")
+          assert p.exists()
+          cfg = yaml.safe_load(p.read_text(encoding="utf-8"))
+          assert "L1" in cfg and "L2" in cfg and "L3" in cfg
+
+  - path: tests/test_guards.py
+    purpose: "Blokady NaN/INF — podstawowe sprawdzenie"
+    template: |
+      import polars as pl
+      from utils.guards import check_no_inf, check_no_nan_in_keys
+      def test_guards_basic():
+          df = pl.DataFrame({"season":[2025], "week":[8], "game_id":["G1"], "TEAM":["AAA"], "OPP":["BBB"], "play_id":[1], "x":[1.0]})
+          check_no_nan_in_keys(df, ["season","week","game_id","TEAM","OPP","play_id"])
+          check_no_inf(df)
+
+  - path: tests/test_manifest.py
+    purpose: "Manifest — zapis metadanych"
+    template: |
+      from pathlib import Path
+      from utils.manifest import write_manifest
+      def test_manifest_write(tmp_path: Path):
+          f = tmp_path / "x" / "f.parquet"
+          f.parent.mkdir(parents=True, exist_ok=True)
+          f.write_bytes(b"test")
+          write_manifest(f, {"layer":"x","season":2025,"week":8,"rows":0,"cols":0})
+          m = f.parent / "manifest.json"
+          assert m.exists()
+          assert '"season": 2025' in m.read_text(encoding="utf-8")
+
+  - path: tests/test_l3_counts.py
+    purpose: "L3 — sanity liczby (nie wywala się na pustych wejściach)"
+    template: |
+      import polars as pl
+      from etl.l3_aggregate import run as l3_run
+      def test_l3_handles_empty():
+          out = l3_run(pl.DataFrame(), 2025, 8)
+          assert out is not None
+
+  - path: tests/test_e2e_build_week.py
+    purpose: "E2E — uruchamia się na pustych danych (filesystem glob pusty) i generuje raport"
+    template: |
+      import subprocess, sys
+      def test_e2e_report_created():
+          cp = subprocess.run([sys.executable, "-m", "app.cli", "build-week", "--season", "2025", "--week", "8"], text=True)
+          assert cp.returncode == 0
+
+  - path: tests/test_metrics_core12.py
+    purpose: "Core12 — podstawowe kolumny na wejściu/wyjściu"
+    template: |
+      import polars as pl
+      from metrics.core12 import compute as core12_compute
+      def test_core12_minimal():
+          df_l3 = pl.DataFrame({
+              "season":[2025], "week":[8], "TEAM":["AAA"],
+              "epa_off_mean":[0.1], "success_rate_off":[0.5],
+              "epa_def_mean":[-0.1], "success_rate_def":[0.45],
+          })
+          out = core12_compute(df_l3, 2025, 8)
+          assert set(["core_epa_off","core_sr_off","core_epa_def","core_sr_def"]).issubset(out.columns)
+
+  - path: tests/test_powerscore.py
+    purpose: "PowerScore — monotoniczny wpływ wzrostu core_epa_off"
+    template: |
+      import polars as pl
+      from metrics.power_score import compute as ps_compute
+      def test_powerscore_monotonic():
+          df_core = pl.DataFrame({
+              "season":[2025,2025], "week":[8,8], "TEAM":["A","B"],
+              "core_epa_off":[0.1, 0.5],
+              "core_epa_def":[0.0, 0.0],
+              "core_sr_off":[0.0, 0.0],
+              "core_sr_def":[0.0, 0.0],
+          })
+          out = ps_compute(df_core, 2025, 8).sort("PowerScore")
+          assert out["PowerScore"][0] <= out["PowerScore"][-1]
+
+  - path: tests/test_api_health.py
+    purpose: "FastAPI — endpoint /health"
+    template: |
+      from fastapi.testclient import TestClient
+      from app.api import app
+      def test_health():
+          c = TestClient(app)
+          r = c.get("/health")
+          assert r.status_code == 200
+          assert r.json() == {"status":"ok"}

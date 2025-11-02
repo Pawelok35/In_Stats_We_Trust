@@ -1,0 +1,41 @@
+# Matchup Report - {{ team_a }} vs {{ team_b }}
+
+Season {{ season }}, Week {{ week }}
+
+{% if generated_at %}_Generated at {{ generated_at.isoformat() }} (UTC)_{% endif %}
+
+## Snapshot
+
+- {{ team_a }} PowerScore: {{ "%.3f"|format(comparison.team_a.powerscore) if comparison.team_a.powerscore is not none else "N/A" }}
+- {{ team_b }} PowerScore: {{ "%.3f"|format(comparison.team_b.powerscore) if comparison.team_b.powerscore is not none else "N/A" }}
+
+## Metric Comparison
+
+{% if comparison.metrics %}
+| Metric | {{ team_a }} | {{ team_b }} |
+| --- | --- | --- |
+{% for metric in comparison.metrics %}
+| {{ metric.label }} | {{ "%.3f"|format(metric.team_a) }} | {{ "%.3f"|format(metric.team_b) }} |
+{% endfor %}
+{% else %}
+No overlapping metrics available for comparison.
+{% endif %}
+
+{% if comparison.edges %}
+## Edge Summary
+
+| Edge | {{ team_a }} | {{ team_b }} | Δ |
+| --- | --- | --- | --- |
+{% for edge in comparison.edges %}
+| {{ edge.label }} | {{ "%.3f"|format(edge.team_a_value) if edge.team_a_value is not none else "N/A" }} | {{ "%.3f"|format(edge.team_b_value) if edge.team_b_value is not none else "N/A" }} | {{ edge.delta_display }} |
+{% endfor %}
+{% endif %}
+
+{% if charts %}
+## Visualizations
+
+{% for chart in charts %}
+![{{ chart.title }}]({{ chart.relative_path }})
+
+{% endfor %}
+{% endif %}

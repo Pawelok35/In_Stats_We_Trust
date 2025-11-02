@@ -1,0 +1,12 @@
+DATA_ROOT: data
+default_season: 2025
+default_week: 8
+data_sources:
+  provider: nfl_data_py
+  filesystem:
+    l1_raw_dir: data/sources/nfl
+weights:
+  offense_epa: 0.35
+  offense_success_rate: 0.25
+  defense_epa: 0.2
+  tempo: 0.2

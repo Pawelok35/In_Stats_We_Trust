@@ -1,0 +1,1 @@
+# T32 – Local CI Gate\n\n| Command | Result |\n| --- | --- |\n| python -m ruff check . | PASS |\n| python -m black --check . | PASS |\n| python -m pytest -q | PASS |\n| scripts/precommit_check.ps1 | PASS |\n\nNotes:\n- PowerShell script orchestrates ruff/black/pytest with stop-on-error semantics.\n

@@ -1,0 +1,71 @@
+# Weekly Report - Season {{ season }}, Week {{ week }}
+
+_Generated at {{ generated_at.isoformat() }} (UTC)_
+
+Data root: `{{ data_root }}`
+
+## Layer Shapes
+
+| Layer | Artifact | Manifest | Rows | Columns | Status |
+|-------|----------|----------|------|---------|--------|
+{% for layer in layers -%}
+| {{ layer.name }} | `{{ layer.artifact_path }}` | `{{ layer.manifest_path }}` | {{ layer.rows if layer.rows is not none else "N/A" }} | {{ layer.cols if layer.cols is not none else "N/A" }} | {{ "ready" if layer.manifest_exists else "pending" }} |
+{% endfor %}
+
+## L2 Audit Snapshot
+
+{% if audit.exists %}
+Last {{ audit.lines|length }} entries from `{{ audit.path }}`:
+
+{% for line in audit.lines %}
+- {{ line }}
+{% endfor %}
+{% else %}
+No audit log found at `{{ audit.path }}`. Ensure L2 clean emits an audit JSONL.
+{% endif %}
+
+## L3 Sanity
+
+{% set l3 = layers|selectattr("layer", "equalto", "l3_team_week")|list|first %}
+{% if l3 and l3.manifest_exists %}
+- Rows processed: {{ l3.rows }}
+- Columns available: {{ l3.cols }}
+- Artifact path: `{{ l3.artifact_path }}`
+{% else %}
+L3 manifest missing; run aggregation to populate team-week metrics.
+{% endif %}
+
+## Metrics Snapshot
+
+{% if metrics %}
+{% for metric in metrics %}
+### {{ metric.name }}
+
+- Artifact: `{{ metric.artifact_path }}`
+- Manifest: `{{ metric.manifest_path }}`
+- Rows: {{ metric.rows if metric.rows is not none else "N/A" }}
+- Columns: {{ metric.cols if metric.cols is not none else "N/A" }}
+
+{% if metric.preview %}
+| {% for col in metric.preview_columns %}{{ col }}{% if not loop.last %} | {% endif %}{% endfor %} |
+|{% for col in metric.preview_columns %} --- {% if not loop.last %}|{% endif %}{% endfor %}|
+{% for row in metric.preview %}
+| {% for col in metric.preview_columns %}{{ row.get(col, "-") }}{% if not loop.last %} | {% endif %}{% endfor %} |
+{% endfor %}
+{% else %}
+Preview unavailable.
+{% endif %}
+
+{% endfor %}
+{% else %}
+No downstream metric artifacts detected; Core12/PowerScore snapshots will appear when available.
+{% endif %}
+
+{% if charts %}
+## Visualizations
+
+{% for chart in charts %}
+![{{ chart.title }}]({{ chart.relative_path }})
+
+{% endfor %}
+{% endif %}

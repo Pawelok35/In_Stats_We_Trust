@@ -1,0 +1,86 @@
+L1:
+  description: >
+    Canonical raw play-level schema produced by L1 ingestion. Captures the
+    minimal set of columns needed for downstream normalization.
+  keys:
+    - season
+    - week
+    - game_id
+    - play_id
+  required_columns:
+    - season:Int64
+    - week:Int64
+    - game_id:Utf8
+    - play_id:Int64
+    - posteam:Utf8
+    - defteam:Utf8
+    - drive:Int64
+    - play_type:Utf8?
+    - epa:Float64
+    - success:Float64
+    - yardline_100:Float64?
+    - down:Int64?
+    - distance:Int64?
+L2:
+  description: >
+    Normalized play schema used by downstream aggregations. Team aliases are
+    standardized and success metrics cast to numeric types.
+  keys:
+    - season
+    - week
+    - game_id
+    - play_id
+  required_columns:
+    - season:Int64
+    - week:Int64
+    - game_id:Utf8
+    - play_id:Int64
+    - TEAM:Utf8
+    - OPP:Utf8
+    - drive:Int64
+    - play_type:Utf8?
+    - epa:Float64
+    - success:Float64
+    - yards_gained:Float64?
+    - success_bin:Int64?
+L3:
+  description: >
+    Team-week aggregation of offensive and defensive performance metrics.
+  keys:
+    - season
+    - week
+    - TEAM
+  required_columns:
+    - season:Int64
+    - week:Int64
+    - TEAM:Utf8
+    - drives:Int64
+    - plays:Int64
+    - epa_off_mean:Float64
+    - success_rate_off:Float64
+    - epa_def_mean:Float64
+    - success_rate_def:Float64
+    - tempo:Float64?
+L4_CORE12:
+  description: >
+    Core12 derived metrics produced from L3 team-week aggregates.
+  keys:
+    - season
+    - week
+    - TEAM
+  required_columns:
+    - season:Int64
+    - week:Int64
+    - TEAM:Utf8
+    - core_epa_off:Float64
+    - core_epa_def:Float64
+    - core_sr_off:Float64
+    - core_sr_def:Float64
+    - core_ed_sr_off:Float64
+    - core_third_down_conv:Float64
+    - core_ypp_diff:Float64
+    - core_turnover_margin:Float64
+    - core_points_per_drive_diff:Float64
+    - core_redzone_td_rate:Float64
+    - core_pressure_rate_def:Float64
+    - core_explosive_play_rate_off:Float64

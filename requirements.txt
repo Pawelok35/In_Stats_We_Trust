@@ -1,0 +1,12 @@
+black
+duckdb
+fastapi
+httpx
+matplotlib
+jinja2
+polars
+pydantic
+pyyaml
+pytest
+ruff
+typer

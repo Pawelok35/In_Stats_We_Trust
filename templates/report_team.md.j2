@@ -1,0 +1,31 @@
+# Team Report - {{ team }}
+
+Season {{ season }}, Week {{ week }}
+
+{% if generated_at %}_Generated at {{ generated_at.isoformat() }} (UTC)_{% endif %}
+
+## Snapshot
+
+- PowerScore: {{ "%.3f"|format(summary.powerscore) if summary.powerscore is not none else "N/A" }}
+- Tempo: {{ "%.3f"|format(summary.tempo) if summary.tempo is not none else "N/A" }}
+
+## Core12 Metrics
+
+{% if summary.core12 %}
+| Metric | Value |
+| --- | --- |
+{% for metric in summary.core_metrics %}
+| {{ metric.label }} | {{ "%.3f"|format(metric.value) if metric.value is not none else "N/A" }} |
+{% endfor %}
+{% else %}
+Core12 metrics are not available for this team in the selected week.
+{% endif %}
+
+{% if charts %}
+## Visualizations
+
+{% for chart in charts %}
+![{{ chart.title }}]({{ chart.relative_path }})
+
+{% endfor %}
+{% endif %}
