@@ -1,8 +1,9 @@
 import logging
 from pathlib import Path
+from typing import Optional
 import polars as pl
 
-from utils.paths import path_for
+from utils.paths import path_for, manifest_path
 from utils.manifest import write_manifest
 
 logger = logging.getLogger(__name__)
@@ -98,6 +99,16 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
     else:
         safety_exprs.append(pl.col("epa").cast(pl.Float64).alias("epa"))
 
+    if "play_type" not in df.columns:
+        safety_exprs.append(pl.lit("").cast(pl.Utf8).alias("play_type"))
+    else:
+        safety_exprs.append(pl.col("play_type").cast(pl.Utf8).alias("play_type"))
+
+    if "play_description" not in df.columns:
+        safety_exprs.append(pl.lit("").cast(pl.Utf8).alias("play_description"))
+    else:
+        safety_exprs.append(pl.col("play_description").cast(pl.Utf8).alias("play_description"))
+
     # run one with_columns to enforce presence/types
     df = df.with_columns(safety_exprs)
 
@@ -111,6 +122,8 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             pl.col("epa").cast(pl.Float64).fill_null(0.0),
             pl.col("success").cast(pl.Float64).fill_null(0.0),
             pl.col("yards_gained").cast(pl.Float64),
+            pl.col("play_type").cast(pl.Utf8).alias("play_type"),
+            pl.col("play_description").cast(pl.Utf8).fill_null("").alias("play_description"),
             pl.col("is_dropback").cast(pl.Int64).fill_null(0),
             pl.col("is_pressure").cast(pl.Int64).fill_null(0),
             pl.col("is_explosive").cast(pl.Int64).fill_null(0),
@@ -118,6 +131,30 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             pl.col("in_redzone").cast(pl.Int64).fill_null(0),
             pl.col("is_third_down").cast(pl.Int64).fill_null(0),
             pl.col("third_down_converted").cast(pl.Int64).fill_null(0),
+        ]
+    )
+
+    desc = pl.col("play_description")
+    offensive_td = (pl.col("is_offensive_td") == 1) & (pl.col("is_turnover") == 0)
+    defensive_td = (pl.col("is_offensive_td") == 1) & (pl.col("is_turnover") == 1)
+    field_goal_good = (pl.col("play_type") == "field_goal") & desc.str.contains("is GOOD")
+    extra_point_good = (pl.col("play_type") == "extra_point") & desc.str.contains("is GOOD")
+    two_point_success = (
+        desc.str.contains("TWO-POINT")
+        & desc.str.contains("ATTEMPT SUCCEEDS")
+        & ~desc.str.contains("No Play")
+    )
+
+    base = base.with_columns(
+        [
+            (
+                pl.when(offensive_td).then(6.0).otherwise(0.0)
+                + pl.when(field_goal_good).then(3.0).otherwise(0.0)
+                + pl.when(extra_point_good).then(1.0).otherwise(0.0)
+                + pl.when(two_point_success).then(2.0).otherwise(0.0)
+            )
+            .cast(pl.Float64)
+            .alias("points_for_play"),
         ]
     )
 
@@ -157,32 +194,33 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
                 .cast(pl.Float64)
                 .alias("third_down_conv_off"),
 
-                # red zone TD rate (proxy: explosive play in red zone / red zone plays)
-                _safe_div(
-                    (
-                        (
-                            ((pl.col("in_redzone") == 1) & (pl.col("is_explosive") == 1))
-                            .cast(pl.Int64)
-                        ).sum()
-                    ).cast(pl.Float64),
-                    pl.col("in_redzone").sum().cast(pl.Float64),
-                )
-                .cast(pl.Float64)
-                .alias("redzone_td_rate_off"),
+                # punkty zdobyte podczas ofensywnych drive'�w
+                pl.col("points_for_play").sum().cast(pl.Float64).alias("points_scored"),
 
-                # total EPA to later compute points per drive on offense
-                pl.col("epa").sum().cast(pl.Float64).alias("_epa_total_off"),
+                # red zone helpers
+                pl.col("in_redzone").sum().cast(pl.Float64).alias("_redzone_plays"),
+                (
+                    (pl.col("in_redzone") * pl.col("is_offensive_td"))
+                    .cast(pl.Float64)
+                    .sum()
+                ).alias("_redzone_tds"),
             ]
         )
-        .with_columns(
+        .with_columns([
             _safe_div(
-                pl.col("_epa_total_off"),
+                pl.col("points_scored"),
                 pl.col("drives").cast(pl.Float64),
             )
             .cast(pl.Float64)
-            .alias("points_per_drive_off")
-        )
-        .drop("_epa_total_off")
+            .alias("points_per_drive_off"),
+            _safe_div(
+                pl.col("_redzone_tds"),
+                pl.col("_redzone_plays"),
+            )
+            .cast(pl.Float64)
+            .alias("redzone_td_rate_off"),
+        ])
+        .drop(["_redzone_plays", "_redzone_tds"])
     )
 
     # DEFENSE (per TEAM)
@@ -210,18 +248,18 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
                 # pomocnicze do points_per_drive_def
                 pl.col("drive").n_unique().cast(pl.Int64).alias("_drives_faced"),
-                pl.col("epa").sum().cast(pl.Float64).alias("_epa_allowed_total"),
+                pl.col("points_for_play").sum().cast(pl.Float64).alias("points_allowed"),
             ]
         )
         .with_columns(
             _safe_div(
-                pl.col("_epa_allowed_total"),
+                pl.col("points_allowed"),
                 pl.col("_drives_faced").cast(pl.Float64),
             )
             .cast(pl.Float64)
             .alias("points_per_drive_def")
         )
-        .drop(["_drives_faced", "_epa_allowed_total"])
+        .drop(["_drives_faced"])
         .rename({"OPP": "TEAM"})
     )
 
@@ -344,13 +382,16 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
     )
 
 
-def run(season: int, week: int, l2_result: Path) -> Path:
+def run(season: int, week: int, l2_result: Optional[Path] = None) -> Path:
     """
     Ładuje L2 (play-level z flagami), robi agregację do L3 (team-week),
     zapisuje do data/l3_team_week/{season}/{week}.parquet,
     i zapisuje manifest.
     """
-    l2_path = Path(l2_result)
+    if l2_result is not None:
+        l2_path = Path(l2_result)
+    else:
+        l2_path = path_for("l2", season, week)
     logger.info("Loading L2 artifact from %s", l2_path)
     df_l2 = pl.read_parquet(l2_path)
 
@@ -368,7 +409,7 @@ def run(season: int, week: int, l2_result: Path) -> Path:
 
     write_manifest(
         path=out_path,
-        manifest_path=path_for("l3_team_week_manifest", season, week),
+        manifest_path=manifest_path("l3_team_week", season, week),
         layer="l3_team_week",
         season=season,
         week=week,

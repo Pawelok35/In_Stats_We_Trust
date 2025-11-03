@@ -1935,7 +1935,37 @@ def generate_comparison_report(
         md_lines.append(ln)
     md_lines.append("")
 
-   
+    # Metric comparison table (Core12 + tempo + PowerScore snapshot)
+    md_lines.append("## Metric Comparison")
+    md_lines.append("")
+    md_lines.append(
+        build_metric_comparison_table(
+            season=season,
+            week=week,
+            team_a=team_a,
+            team_b=team_b,
+        )
+    )
+    md_lines.append("")
+
+    # Optional Edge Summary if comparison edges dataset provides entries
+    edges = _comparison_edges(season, week, team_a, team_b)
+    if edges:
+        md_lines.append("## Edge Summary")
+        md_lines.append("")
+        md_lines.append(f"| Edge | {team_a} | {team_b} | Δ |")
+        md_lines.append("| --- | ---: | ---: | ---: |")
+        for edge in edges:
+            delta_fmt = _fmt_delta_arrow(float(edge.get("delta", 0.0)))
+            md_lines.append(
+                "| {label} | {a:.3f} | {b:.3f} | {delta} |".format(
+                    label=edge.get("metric", "Edge"),
+                    a=float(edge.get("team_a_value", 0.0)),
+                    b=float(edge.get("team_b_value", 0.0)),
+                    delta=delta_fmt,
+                )
+            )
+        md_lines.append("")
 
     for (metric_label, column_name, is_percent) in METRIC_FORM_CONFIG:
         md_lines.append(f"## {metric_label} Form (up to Week {week - 1})")

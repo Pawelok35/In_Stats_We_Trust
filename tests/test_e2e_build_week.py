@@ -36,8 +36,8 @@ def test_build_week_end_to_end(tmp_path, monkeypatch):
         {
             "game_id": ["G1", "G1", "G1", "G1"],
             "play_id": [1, 2, 3, 4],
-            "posteam": ["AAA", "AAA", "BBB", "BBB"],
-            "defteam": ["BBB", "BBB", "AAA", "AAA"],
+            "posteam": ["BAL", "BAL", "MIA", "MIA"],
+            "defteam": ["MIA", "MIA", "BAL", "BAL"],
             "drive": [1, 1, 2, 3],
             "play_type": ["run", "pass", "run", "pass"],
             "epa": [0.3, -0.1, 0.05, -0.2],
@@ -45,6 +45,16 @@ def test_build_week_end_to_end(tmp_path, monkeypatch):
             "yardline_100": [75.0, 68.0, 50.0, 43.0],
             "down": [1, 2, 1, 3],
             "distance": [10, 8, 7, 5],
+            "yards_gained": [4.0, 7.0, 5.0, 12.0],
+            "touchdown": [0, 0, 0, 0],
+            "interception": [0, 0, 0, 0],
+            "fumble_lost": [0, 0, 0, 0],
+            "play_description": [
+                "Run for four yards.",
+                "Short pass incomplete.",
+                "Run for five yards.",
+                "Deep pass incomplete.",
+            ],
         }
     ).write_parquet(season_dir / "1.parquet")
 
@@ -64,6 +74,10 @@ def test_build_week_end_to_end(tmp_path, monkeypatch):
     monkeypatch.setattr("etl.l1_ingest.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr("app.reports.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
+    monkeypatch.setattr(
+        "app.reports._load_team_state_before_week",
+        lambda *args, **kwargs: pl.DataFrame(),
+    )
 
     with pytest.raises(SystemExit) as exc:
         cli.main(["build-week", "--season", "2025", "--week", "1"])

@@ -265,7 +265,16 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
                 "yards_gained": pl.Series([], dtype=pl.Float64),
                 "is_turnover": pl.Series([], dtype=pl.Int64),
                 "is_offensive_td": pl.Series([], dtype=pl.Int64),
+                "is_dropback": pl.Series([], dtype=pl.Int64),
+                "is_explosive": pl.Series([], dtype=pl.Int64),
+                "is_pressure": pl.Series([], dtype=pl.Int64),
+                "is_third_down": pl.Series([], dtype=pl.Int64),
+                "third_down_converted": pl.Series([], dtype=pl.Int64),
+                "in_redzone": pl.Series([], dtype=pl.Int64),
                 "success_bin": pl.Series([], dtype=pl.Int64),
+                "play_description": pl.Series([], dtype=pl.Utf8),
+                "down": pl.Series([], dtype=pl.Int64),
+                "distance": pl.Series([], dtype=pl.Float64),
             }
         )
 
@@ -287,12 +296,50 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         ])
 
     # --- core derived columns we need downstream
+    yards_expr = pl.col("yards_gained").cast(pl.Float64).fill_null(0.0)
+    play_type_lower = pl.col("play_type").cast(pl.Utf8).fill_null("").str.to_lowercase()
+    desc_lower = pl.col("play_description").cast(pl.Utf8).fill_null("").str.to_lowercase()
+    down_expr = pl.col("down").cast(pl.Int64).fill_null(0)
+    distance_expr = pl.col("distance").cast(pl.Float64).fill_null(0.0)
+    yardline_expr = pl.col("yardline_100").cast(pl.Float64)
+
+    dropback_expr = (
+        pl.when(
+            play_type_lower.str.contains("pass")
+            | play_type_lower.str.contains("sack")
+            | play_type_lower.str.contains("scramble")
+            | play_type_lower.str.contains("spike")
+            | play_type_lower.str.contains("kneel")
+        )
+        .then(1)
+        .otherwise(0)
+        .cast(pl.Int64)
+    )
+
+    pressure_expr = (
+        pl.when(
+            (
+                play_type_lower.str.contains("sack")
+                | desc_lower.str.contains("sack")
+                | desc_lower.str.contains("qb hit")
+                | desc_lower.str.contains("hit by")
+                | desc_lower.str.contains("pressur")
+                | desc_lower.str.contains("hurried")
+            )
+            & (dropback_expr == 1)
+        )
+        .then(1)
+        .otherwise(0)
+        .cast(pl.Int64)
+    )
+
     working = working.with_columns([
         # yards_gained (REAL from L1, fallback 0.0 if null)
-        pl.col("yards_gained")
-        .cast(pl.Float64)
-        .fill_null(0.0)
-        .alias("yards_gained"),
+        yards_expr.alias("yards_gained"),
+
+        # normalized down / distance columns
+        down_expr.alias("down"),
+        distance_expr.alias("distance"),
 
         # turnover if INT or fumble_lost
         (
@@ -306,6 +353,51 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         (pl.col("touchdown").fill_null(0) > 0)
         .cast(pl.Int64)
         .alias("is_offensive_td"),
+
+        # dropback proxy (passes, sacks, scrambles, spikes, kneels)
+        dropback_expr.alias("is_dropback"),
+
+        # explosive play proxy (15+ yard pass, 10+ yard rush/scramble)
+        pl.when(
+            (
+                play_type_lower.str.contains("pass")
+                & (yards_expr >= 15.0)
+            )
+            | (
+                play_type_lower.str.contains("run|rush|scramble")
+                & (yards_expr >= 10.0)
+            )
+        )
+        .then(1)
+        .otherwise(0)
+        .cast(pl.Int64)
+        .alias("is_explosive"),
+
+        # pressure proxy (sacks / QB hits in description on dropbacks)
+        pressure_expr.alias("is_pressure"),
+
+        # third-down attempt indicator
+        (down_expr == 3).cast(pl.Int64).alias("is_third_down"),
+
+        # third-down conversion (attained needed yards)
+        (
+            (down_expr == 3)
+            & (distance_expr > 0)
+            & (yards_expr >= distance_expr)
+        )
+        .cast(pl.Int64)
+        .alias("third_down_converted"),
+
+        # red zone indicator (yardline_100 <= 20)
+        pl.when(
+            yardline_expr.is_not_null()
+            & (yardline_expr <= 20.0)
+            & (yardline_expr >= 0.0)
+        )
+        .then(1)
+        .otherwise(0)
+        .cast(pl.Int64)
+        .alias("in_redzone"),
     ])
 
     # success_bin (1/0) based on success > 0
@@ -332,6 +424,15 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         "is_turnover",
         "is_offensive_td",
         "success_bin",
+        "is_explosive",
+        "is_dropback",
+        "is_pressure",
+        "is_third_down",
+        "third_down_converted",
+        "in_redzone",
+        "play_description",
+        "down",
+        "distance",
     ]
 
     existing_cols = [c for c in base_cols if c in working.columns]

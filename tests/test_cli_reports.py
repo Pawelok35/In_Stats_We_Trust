@@ -42,8 +42,8 @@ def _prepare_pipeline(tmp_path, monkeypatch):
         {
             "game_id": ["G1", "G1", "G1", "G1", "G2", "G2"],
             "play_id": [1, 2, 3, 4, 1, 2],
-            "posteam": ["AAA", "AAA", "BBB", "BBB", "AAA", "BBB"],
-            "defteam": ["BBB", "BBB", "AAA", "AAA", "BBB", "AAA"],
+            "posteam": [TEAM_A, TEAM_A, TEAM_B, TEAM_B, TEAM_A, TEAM_B],
+            "defteam": [TEAM_B, TEAM_B, TEAM_A, TEAM_A, TEAM_B, TEAM_A],
             "drive": [1, 1, 2, 3, 1, 1],
             "play_type": ["run", "pass", "run", "pass", "run", "pass"],
             "epa": [0.3, -0.1, 0.05, -0.2, 0.4, 0.1],
@@ -51,6 +51,18 @@ def _prepare_pipeline(tmp_path, monkeypatch):
             "yardline_100": [75.0, 68.0, 50.0, 43.0, 40.0, 30.0],
             "down": [1, 2, 1, 3, 1, 2],
             "distance": [10, 8, 7, 5, 10, 8],
+            "yards_gained": [4.0, 7.0, 5.0, 12.0, 6.0, 9.0],
+            "touchdown": [0, 0, 0, 0, 0, 0],
+            "interception": [0, 0, 0, 0, 0, 0],
+            "fumble_lost": [0, 0, 0, 0, 0, 0],
+            "play_description": [
+                "Run for four yards.",
+                "Short pass incomplete.",
+                "Run for five yards.",
+                "Deep pass incomplete.",
+                "Run for six yards.",
+                "Quick pass for nine yards.",
+            ],
         }
     ).write_parquet(season_dir / "1.parquet")
 
@@ -71,6 +83,10 @@ def _prepare_pipeline(tmp_path, monkeypatch):
     monkeypatch.setattr("etl.l1_ingest.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr("app.reports.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
+    monkeypatch.setattr(
+        "app.reports._load_team_state_before_week",
+        lambda *args, **kwargs: pl.DataFrame(),
+    )
 
     with pytest.raises(SystemExit) as exc:
         cli.main(["build-week", "--season", "2025", "--week", "1"])
@@ -88,8 +104,8 @@ def test_build_week_schedule_validation(tmp_path, monkeypatch):
         {
             "game_id": ["G1", "G1", "G1", "G1"],
             "play_id": [1, 2, 3, 4],
-            "posteam": ["AAA", "AAA", "BBB", "BBB"],
-            "defteam": ["BBB", "BBB", "AAA", "AAA"],
+            "posteam": [TEAM_A, TEAM_A, TEAM_B, TEAM_B],
+            "defteam": [TEAM_B, TEAM_B, TEAM_A, TEAM_A],
             "drive": [1, 1, 2, 3],
             "play_type": ["run", "pass", "run", "pass"],
             "epa": [0.3, -0.1, 0.05, -0.2],
@@ -97,6 +113,16 @@ def test_build_week_schedule_validation(tmp_path, monkeypatch):
             "yardline_100": [75.0, 68.0, 50.0, 43.0],
             "down": [1, 2, 1, 3],
             "distance": [10, 8, 7, 5],
+            "yards_gained": [4.0, 7.0, 5.0, 12.0],
+            "touchdown": [0, 0, 0, 0],
+            "interception": [0, 0, 0, 0],
+            "fumble_lost": [0, 0, 0, 0],
+            "play_description": [
+                "Run for four yards.",
+                "Short pass incomplete.",
+                "Run for five yards.",
+                "Deep pass incomplete.",
+            ],
         }
     ).write_parquet(season_dir / "1.parquet")
 

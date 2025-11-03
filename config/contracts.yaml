@@ -43,6 +43,16 @@ L2:
     - success:Float64
     - yards_gained:Float64?
     - success_bin:Int64?
+    - is_turnover:Int64?
+    - is_offensive_td:Int64?
+    - is_dropback:Int64?
+    - is_explosive:Int64?
+    - is_pressure:Int64?
+    - is_third_down:Int64?
+    - third_down_converted:Int64?
+    - in_redzone:Int64?
+    - down:Int64?
+    - distance:Float64?
 L3:
   description: >
     Team-week aggregation of offensive and defensive performance metrics.

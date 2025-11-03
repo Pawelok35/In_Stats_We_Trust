@@ -1,5 +1,24 @@
-﻿import polars as pl
+import polars as pl
 from pathlib import Path
+
+
+def _empty_team_weeks_frame() -> pl.DataFrame:
+    """
+    Return an empty frame matching the subset of L3 columns used for form calculations.
+    """
+    return pl.DataFrame(
+        {
+            "season": pl.Series([], dtype=pl.Int64),
+            "week": pl.Series([], dtype=pl.Int64),
+            "TEAM": pl.Series([], dtype=pl.Utf8),
+            "epa_off_mean": pl.Series([], dtype=pl.Float64),
+            "success_rate_off": pl.Series([], dtype=pl.Float64),
+            "epa_def_mean": pl.Series([], dtype=pl.Float64),
+            "success_rate_def": pl.Series([], dtype=pl.Float64),
+            "tempo": pl.Series([], dtype=pl.Float64),
+        }
+    )
+
 
 def _load_team_weeks(season: int, current_week: int) -> pl.DataFrame:
     """
@@ -14,29 +33,35 @@ def _load_team_weeks(season: int, current_week: int) -> pl.DataFrame:
         if not p.exists():
             # skip weeks we don't have yet
             continue
-        df_w = pl.read_parquet(p).with_columns([
-            pl.lit(season).alias("season"),
-            pl.lit(wk).alias("week"),
-        ])
+        df_w = pl.read_parquet(p).with_columns(
+            [
+                pl.lit(season).alias("season"),
+                pl.lit(wk).alias("week"),
+            ]
+        )
         dfs.append(df_w)
 
     if not dfs:
-        raise RuntimeError(f"No l3_team_week data found for season={season} < week={current_week}")
+        return _empty_team_weeks_frame()
 
     return pl.concat(dfs, how="vertical")
 
+
 def _summarize_window(df_team: pl.DataFrame, label: str) -> pl.DataFrame:
     """Aggregate means for one team over some subset of its rows."""
-    return df_team.select([
-        pl.first("TEAM").alias("TEAM"),
-        pl.lit(label).alias("window"),
-        pl.col("epa_off_mean").mean().alias("epa_off_mean_avg"),
-        pl.col("success_rate_off").mean().alias("success_rate_off_avg"),
-        pl.col("epa_def_mean").mean().alias("epa_def_mean_avg"),
-        pl.col("success_rate_def").mean().alias("success_rate_def_avg"),
-        pl.col("tempo").mean().alias("tempo_avg"),
-        pl.len().alias("games_in_window"),
-    ])
+    return df_team.select(
+        [
+            pl.first("TEAM").alias("TEAM"),
+            pl.lit(label).alias("window"),
+            pl.col("epa_off_mean").mean().alias("epa_off_mean_avg"),
+            pl.col("success_rate_off").mean().alias("success_rate_off_avg"),
+            pl.col("epa_def_mean").mean().alias("epa_def_mean_avg"),
+            pl.col("success_rate_def").mean().alias("success_rate_def_avg"),
+            pl.col("tempo").mean().alias("tempo_avg"),
+            pl.len().alias("games_in_window"),
+        ]
+    )
+
 
 def _team_windows(df_all: pl.DataFrame, team_code: str, current_week: int):
     """
@@ -63,7 +88,10 @@ def _team_windows(df_all: pl.DataFrame, team_code: str, current_week: int):
         "last 3 games",
     )
 
-    return pl.concat([full_summary, last5_summary, last3_summary], how="vertical")
+    summary = pl.concat([full_summary, last5_summary, last3_summary], how="vertical")
+
+    return summary.with_columns(pl.lit(team_code).alias("TEAM"))
+
 
 def compute_form_windows(season: int, current_week: int, teams: list[str]) -> pl.DataFrame:
     """
@@ -77,16 +105,21 @@ def compute_form_windows(season: int, current_week: int, teams: list[str]) -> pl
     for t in teams:
         w = _team_windows(df_all, t, current_week)
         # namespace columns with team code so we can join later
-        w = w.rename({
-            "epa_off_mean_avg": f"epa_off_mean_avg_{t}",
-            "success_rate_off_avg": f"success_rate_off_avg_{t}",
-            "epa_def_mean_avg": f"epa_def_mean_avg_{t}",
-            "success_rate_def_avg": f"success_rate_def_avg_{t}",
-            "tempo_avg": f"tempo_avg_{t}",
-            "games_in_window": f"games_in_window_{t}",
-            "TEAM": f"TEAM_{t}",
-        })
+        w = w.rename(
+            {
+                "epa_off_mean_avg": f"epa_off_mean_avg_{t}",
+                "success_rate_off_avg": f"success_rate_off_avg_{t}",
+                "epa_def_mean_avg": f"epa_def_mean_avg_{t}",
+                "success_rate_def_avg": f"success_rate_def_avg_{t}",
+                "tempo_avg": f"tempo_avg_{t}",
+                "games_in_window": f"games_in_window_{t}",
+                "TEAM": f"TEAM_{t}",
+            }
+        )
         team_summaries.append(w)
+
+    if not team_summaries:
+        return pl.DataFrame()
 
     # join everything on "window"
     out = team_summaries[0]
@@ -94,6 +127,7 @@ def compute_form_windows(season: int, current_week: int, teams: list[str]) -> pl
         out = out.join(extra, on="window", how="inner")
 
     return out
+
 
 # manual test runner (so you can run this file directly)
 if __name__ == "__main__":

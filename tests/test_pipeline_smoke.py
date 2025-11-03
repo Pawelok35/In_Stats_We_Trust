@@ -24,8 +24,8 @@ def test_build_week_stub_pipeline(tmp_path, monkeypatch):
         {
             "game_id": ["G1", "G1"],
             "play_id": [1, 2],
-            "posteam": ["AAA", "BBB"],
-            "defteam": ["BBB", "AAA"],
+            "posteam": ["BAL", "MIA"],
+            "defteam": ["MIA", "BAL"],
             "drive": [1, 1],
             "play_type": ["run", "pass"],
             "epa": [0.1, -0.05],
@@ -33,6 +33,14 @@ def test_build_week_stub_pipeline(tmp_path, monkeypatch):
             "yardline_100": [75.0, 68.0],
             "down": [1, 2],
             "distance": [10, 8],
+            "yards_gained": [5.0, 12.0],
+            "touchdown": [0, 0],
+            "interception": [0, 0],
+            "fumble_lost": [0, 0],
+            "play_description": [
+                "Run for five yards.",
+                "Pass complete for twelve yards.",
+            ],
         }
     ).write_parquet(season_dir / "1.parquet")
 
@@ -61,6 +69,10 @@ def test_build_week_stub_pipeline(tmp_path, monkeypatch):
     monkeypatch.setattr("etl.l1_ingest.load_settings", lambda *args, **kwargs: stub_settings)
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: stub_settings)
     monkeypatch.setattr("app.reports.load_settings", lambda *args, **kwargs: stub_settings)
+    monkeypatch.setattr(
+        "app.reports._load_team_state_before_week",
+        lambda *args, **kwargs: pl.DataFrame(),
+    )
 
     with pytest.raises(SystemExit) as exc:
         cli.main(["build-week", "--season", "2025", "--week", "1"])

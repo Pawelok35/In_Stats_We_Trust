@@ -24,16 +24,25 @@ def test_l2_clean_generates_normalized_artifacts(tmp_path, monkeypatch):
             "season": [2025, 2025, 2025],
             "week": [1, 1, 1],
             "game_id": ["G1", "G1", "G1"],
-            "play_id": [1, 1, 2],
+            "play_id": [1, 2, 3],
             "posteam": ["WAS", "WAS", "SD"],
             "defteam": ["NYG", "NYG", "DEN"],
             "drive": [1, 1, 2],
             "play_type": ["run", "run", "pass"],
             "epa": [0.1, 0.1, 0.2],
             "success": [1.0, 1.0, None],
-            "yardline_100": [75.0, 75.0, 68.0],
-            "down": [1, 1, 2],
-            "distance": [10, 10, 8],
+            "yardline_100": [75.0, 18.0, 68.0],
+            "down": [1, 3, 3],
+            "distance": [10, 2, 8],
+            "yards_gained": [4.0, 6.0, 4.0],
+            "touchdown": [0, 0, 0],
+            "interception": [0, 0, 1],
+            "fumble_lost": [0, 0, 0],
+            "play_description": [
+                "Run for four yards.",
+                "Run for six yards.",
+                "Pass intercepted by defender.",
+            ],
         }
     ).write_parquet(l1_path)
 
@@ -42,15 +51,33 @@ def test_l2_clean_generates_normalized_artifacts(tmp_path, monkeypatch):
     assert output_path.exists()
 
     result = pl.read_parquet(output_path)
-    assert result.height == 2
-    assert set(result["TEAM"]) == {"WSH", "LAC"}
-    assert result.filter(pl.col("TEAM") == "LAC")["success"].item() == 0.0
+    assert result.height == 3
+    assert set(result["TEAM"]) == {"WAS", "SD"}
+    sd_row = result.filter(pl.col("TEAM") == "SD")["success"]
+    assert sd_row.len() == 1
+    assert sd_row.item() is None
     assert "success_bin" in result.columns
+    assert "is_explosive" in result.columns
+    assert "is_third_down" in result.columns
+    assert "third_down_converted" in result.columns
+    assert "is_dropback" in result.columns
+    assert "is_pressure" in result.columns
+    assert "in_redzone" in result.columns
+    # second row is third-and-2 run for 6 yards -> conversion
+    assert result.filter(pl.col("TEAM") == "WAS")["third_down_converted"].sum() == 1
+    # SD play is third down but interception before gain -> no conversion
+    assert result.filter(pl.col("TEAM") == "SD")["third_down_converted"].sum() == 0
+    assert "is_explosive" in result.columns
+    assert result["is_explosive"].sum() == 0
+    assert result.filter(pl.col("TEAM") == "SD")["is_dropback"].sum() == 1
+    assert result["is_pressure"].sum() == 0
+    assert result.filter(pl.col("TEAM") == "WAS")["in_redzone"].sum() == 1
+    assert result.filter(pl.col("TEAM") == "SD")["in_redzone"].sum() == 0
 
     manifest = manifest_path("l2", 2025, 1)
     assert manifest.exists()
     manifest_payload = json.loads(manifest.read_text(encoding="utf-8"))
-    assert manifest_payload["rows"] == 2
+    assert manifest_payload["rows"] == 3
     assert manifest_payload["layer"] == "l2"
 
     audit_file = l2_audit_path(2025, 1)

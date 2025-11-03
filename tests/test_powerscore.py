@@ -41,6 +41,10 @@ def test_powerscore_monotonic(tmp_path, monkeypatch):
             "core_third_down_conv": [0.3, 0.3],
             "core_pressure_rate_def": [0.25, 0.5],
             "core_explosive_play_rate_off": [0.2, 0.4],
+            "core_ypp_diff": [0.05, 0.1],
+            "core_turnover_margin": [0.0, 1.0],
+            "core_points_per_drive_diff": [0.5, 1.2],
+            "core_redzone_td_rate": [0.2, 0.3],
         }
     )
 

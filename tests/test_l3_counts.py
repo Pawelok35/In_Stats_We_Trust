@@ -5,7 +5,7 @@ import polars as pl
 import pytest
 
 from etl.l3_aggregate import run as l3_run
-from utils.paths import manifest_path, path_for
+from utils.paths import path_for, manifest_path
 
 
 def _stub_settings(tmp_path):
@@ -33,6 +33,14 @@ def test_l3_aggregation_produces_team_metrics(tmp_path, monkeypatch):
             "success": [1.0, 0.0, 0.5, 0.0],
             "yards_gained": [5.0, 3.0, 4.0, 2.0],
             "success_bin": [1, 0, 0, 0],
+            "is_turnover": [0, 0, 0, 0],
+            "is_offensive_td": [0, 0, 0, 0],
+            "play_description": [
+                "Run for five yards.",
+                "Pass incomplete.",
+                "Run for four yards.",
+                "Pass incomplete.",
+            ],
         }
     ).write_parquet(l2_path)
 

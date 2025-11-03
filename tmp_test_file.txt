@@ -5,7 +5,6 @@ import polars as pl
 import pytest
 
 from metrics.core12 import compute as core12_compute
-from etl.l3_aggregate import run as l3_run
 from utils.paths import manifest_path, path_for
 
 
@@ -16,6 +15,21 @@ def _settings(tmp_path):
 def test_core12_compute_generates_expected_columns(tmp_path, monkeypatch):
     settings = _settings(tmp_path)
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
+
+    l3_df = pl.DataFrame(
+        {
+            "season": [2025, 2025],
+            "week": [8, 8],
+            "TEAM": ["BAL", "MIA"],
+            "drives": [10, 8],
+            "plays": [65, 58],
+            "epa_off_mean": [0.12, -0.05],
+            "success_rate_off": [0.48, 0.52],
+            "epa_def_mean": [-0.08, 0.03],
+            "success_rate_def": [0.43, 0.51],
+            "tempo": [2.3, 2.0],
+        }
+    )
 
     # Prepare supporting L2/L1 artifacts
     l2_path = path_for("l2", 2025, 8)
@@ -29,24 +43,18 @@ def test_core12_compute_generates_expected_columns(tmp_path, monkeypatch):
             "TEAM": ["BAL", "BAL", "BAL", "MIA", "MIA", "MIA"],
             "OPP": ["MIA", "MIA", "MIA", "BAL", "BAL", "BAL"],
             "drive": [1, 1, 2, 1, 1, 2],
-            "play_type": ["pass", "run", "interception", "field_goal", "pass", "extra_point"],
+            "play_type": ["pass", "run", "interception", "pass", "pass", "pass"],
             "epa": [-0.6, 0.3, -2.0, 0.8, -0.5, 0.4],
             "success": [0.0, 1.0, 0.0, 1.0, 0.0, 1.0],
-            "yards_gained": [-7.0, 12.0, -5.0, 25.0, 18.0, 10.0],
+            "yards_gained": [-7.0, 4.0, -5.0, 25.0, -3.0, 10.0],
             "success_bin": [0, 1, 0, 1, 0, 1],
-            "is_explosive": [0, 1, 0, 0, 1, 0],
             "is_turnover": [0, 0, 1, 0, 0, 0],
             "is_offensive_td": [1, 0, 0, 0, 1, 0],
-            "is_dropback": [1, 0, 1, 1, 1, 0],
-            "is_pressure": [1, 0, 0, 0, 1, 0],
-            "is_third_down": [0, 1, 1, 0, 1, 0],
-            "third_down_converted": [0, 1, 0, 0, 1, 0],
-            "in_redzone": [1, 0, 0, 0, 1, 0],
             "play_description": [
                 "Pass short left to WR for 10 yards, TOUCHDOWN.",
                 "Run up the middle for 4 yards.",
                 "Pass intercepted by defender, tackled.",
-                "Field goal is GOOD.",
+                "Pass left for 25 yards.",
                 "Pass to WR for 15 yards, TOUCHDOWN.",
                 "extra point is GOOD.",
             ],
@@ -64,9 +72,6 @@ def test_core12_compute_generates_expected_columns(tmp_path, monkeypatch):
             "yardline_100": [15.0, 30.0],
         }
     ).write_parquet(l1_path)
-
-    l3_result = l3_run(2025, 8, l2_result=l2_path)
-    l3_df = pl.read_parquet(l3_result)
 
     result = core12_compute(l3_df, 2025, 8)
     expected_columns = {
@@ -86,9 +91,8 @@ def test_core12_compute_generates_expected_columns(tmp_path, monkeypatch):
         "core_pressure_rate_def",
         "core_explosive_play_rate_off",
     }
-    assert expected_columns.issubset(set(result.columns))
-    assert expected_columns.issubset(set(result.columns))
-    assert result.height == 2
+    assert set(result.columns) == expected_columns
+    assert result.shape == (2, len(expected_columns))
     for column, dtype in result.schema.items():
         if column in {"season", "week"}:
             assert dtype == pl.Int64
@@ -100,20 +104,22 @@ def test_core12_compute_generates_expected_columns(tmp_path, monkeypatch):
     bal = result.filter(pl.col("TEAM") == "BAL").row(0, named=True)
     mia = result.filter(pl.col("TEAM") == "MIA").row(0, named=True)
 
-    assert pytest.approx(bal["core_points_per_drive_diff"], rel=1e-6) == -2.0
-    assert pytest.approx(mia["core_points_per_drive_diff"], rel=1e-6) == 2.0
-    assert pytest.approx(bal["core_explosive_play_rate_off"], rel=1e-6) == pytest.approx(1 / 3)
-    assert pytest.approx(mia["core_explosive_play_rate_off"], rel=1e-6) == pytest.approx(1 / 3)
-    assert pytest.approx(bal["core_third_down_conv"], rel=1e-6) == pytest.approx(0.5)
-    assert pytest.approx(mia["core_third_down_conv"], rel=1e-6) == pytest.approx(1.0)
+    assert pytest.approx(bal["core_pressure_rate_def"], rel=1e-6) == 0.333333
+    assert pytest.approx(mia["core_pressure_rate_def"], rel=1e-6) == 1.0
+    assert pytest.approx(bal["core_explosive_play_rate_off"], rel=1e-6) == 0.333333
+    assert pytest.approx(mia["core_explosive_play_rate_off"], rel=1e-6) == 0.666667
+    assert pytest.approx(bal["core_ypp_diff"], rel=1e-6) == -13.333333
+    assert pytest.approx(mia["core_ypp_diff"], rel=1e-6) == 13.333333
+    assert pytest.approx(bal["core_turnover_margin"], rel=1e-6) == 0.0
+    assert pytest.approx(mia["core_turnover_margin"], rel=1e-6) == 1.0
+    assert pytest.approx(bal["core_points_per_drive_diff"], rel=1e-6) == -1.5
+    assert pytest.approx(mia["core_points_per_drive_diff"], rel=1e-6) == 1.5
     assert pytest.approx(bal["core_redzone_td_rate"], rel=1e-6) == 1.0
-    assert pytest.approx(mia["core_redzone_td_rate"], rel=1e-6) == 1.0
-    assert pytest.approx(bal["core_pressure_rate_def"], rel=1e-6) == pytest.approx(0.5)
-    assert pytest.approx(mia["core_pressure_rate_def"], rel=1e-6) == pytest.approx(0.5)
+    assert pytest.approx(mia["core_redzone_td_rate"], rel=1e-6) == 0.0
 
     out_path = path_for("l4_core12", 2025, 8)
     assert out_path.exists()
-    manifest = path_for("l4_core12_manifest", 2025, 8)
+    manifest = manifest_path("l4_core12", 2025, 8)
     payload = json.loads(manifest.read_text(encoding="utf-8"))
     assert payload["rows"] == 2
     assert payload["layer"] == "l4_core12"
@@ -135,17 +141,6 @@ def test_core12_handles_empty_input(tmp_path, monkeypatch):
             "epa_def_mean": [],
             "success_rate_def": [],
             "tempo": [],
-            "pressure_rate_def": [],
-            "explosive_play_rate_off": [],
-            "third_down_conv_off": [],
-            "redzone_td_rate_off": [],
-            "turnover_margin": [],
-            "points_per_drive_off": [],
-            "points_per_drive_def": [],
-            "points_per_drive_diff": [],
-            "ypp_off": [],
-            "ypp_def": [],
-            "ypp_diff": [],
         },
         schema={
             "season": pl.Int64,
@@ -158,17 +153,6 @@ def test_core12_handles_empty_input(tmp_path, monkeypatch):
             "epa_def_mean": pl.Float64,
             "success_rate_def": pl.Float64,
             "tempo": pl.Float64,
-            "pressure_rate_def": pl.Float64,
-            "explosive_play_rate_off": pl.Float64,
-            "third_down_conv_off": pl.Float64,
-            "redzone_td_rate_off": pl.Float64,
-            "turnover_margin": pl.Float64,
-            "points_per_drive_off": pl.Float64,
-            "points_per_drive_def": pl.Float64,
-            "points_per_drive_diff": pl.Float64,
-            "ypp_off": pl.Float64,
-            "ypp_def": pl.Float64,
-            "ypp_diff": pl.Float64,
         },
     )
 
@@ -198,19 +182,12 @@ def test_core12_handles_empty_input(tmp_path, monkeypatch):
             "success": pl.Series([], dtype=pl.Float64),
             "yards_gained": pl.Series([], dtype=pl.Float64),
             "success_bin": pl.Series([], dtype=pl.Int64),
-            "is_turnover": pl.Series([], dtype=pl.Int64),
-            "is_offensive_td": pl.Series([], dtype=pl.Int64),
-            "is_explosive": pl.Series([], dtype=pl.Int64),
-            "is_third_down": pl.Series([], dtype=pl.Int64),
-            "third_down_converted": pl.Series([], dtype=pl.Int64),
-            "in_redzone": pl.Series([], dtype=pl.Int64),
-            "play_description": pl.Series([], dtype=pl.Utf8),
         }
     ).write_parquet(path_for("l2", 2025, 8))
 
     result = core12_compute(empty_l3, 2025, 8)
     assert result.is_empty()
-    expected_columns = {
+    assert set(result.columns) == {
         "season",
         "week",
         "TEAM",
