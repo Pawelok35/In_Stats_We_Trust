@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo MIN | 6.583 | 6.700 | 6.750 | + improving |
 | Tempo BAL | 6.200 | 8.889 | 6.455 | + improving |
 
+## Matchup Analogs
+
+**MIN analogs vs BAL profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 1 | CHI (-) | 0.850 | -0.064 | 44.6% | 0.791 |
+| 3 | CIN (-) | 0.832 | 0.042 | 50.0% | 2.000 |
+| 7 | PHI (-) | 0.712 | -0.019 | 54.2% | 0.000 |
+
+**BAL analogs vs MIN profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 2 | CLE (-) | 0.938 | 0.100 | 43.6% | 1.276 |
+| 5 | HOU (-) | 0.884 | -0.250 | 43.5% | -3.400 |
+| 3 | DET (-) | 0.562 | 0.158 | 55.4% | -0.455 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

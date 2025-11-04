@@ -203,6 +203,18 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Last 5 games | 0.205 | n/a |
 | Last 3 games | 0.192 | n/a |
 
+## Matchup Analogs
+
+**SF analogs vs LAR profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 1 | SEA (-) | 0.937 | 0.012 | 48.9% | 0.245 |
+| 8 | HOU (-) | 0.753 | 0.036 | 45.2% | -0.933 |
+| 6 | TB (-) | 0.653 | 0.016 | 50.0% | -0.827 |
+
+**LAR** has not faced an opponent matching SF's profile yet.
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo GB | 7.300 | 7.000 | 9.500 | + improving |
 | Tempo PHI | 6.800 | 8.778 | 8.778 | + improving |
 
+## Matchup Analogs
+
+**GB analogs vs PHI profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 8 | PIT (-) | 0.800 | 0.169 | 48.8% | 0.644 |
+| 4 | DAL (-) | 0.751 | 0.244 | 52.4% | 0.364 |
+| 2 | WAS (-) | 0.725 | 0.046 | 48.8% | 0.614 |
+
+**PHI analogs vs GB profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 2 | KC (-) | 0.919 | 0.030 | 43.0% | 0.111 |
+| 1 | DAL (-) | 0.700 | 0.169 | 52.6% | 0.167 |
+| 5 | DEN (-) | 0.469 | -0.005 | 41.2% | -0.492 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

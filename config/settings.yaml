@@ -10,3 +10,14 @@ weights:
   offense_success_rate: 0.25
   defense_epa: 0.2
   tempo: 0.2
+analog_profile_weights:
+  core_epa_off: 0.2
+  core_epa_def: 0.2
+  core_sr_off: 0.15
+  core_sr_def: 0.15
+  core_explosive_play_rate_off: 0.1
+  core_third_down_conv: 0.1
+  core_points_per_drive_diff: 0.05
+  core_redzone_td_rate: 0.05
+  core_pressure_rate_def: 0.05
+  tempo: 0.05

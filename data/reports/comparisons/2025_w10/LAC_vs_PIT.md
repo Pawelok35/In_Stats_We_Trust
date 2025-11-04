@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo LAC | 11.500 | 9.778 | 7.545 | - declining |
 | Tempo PIT | 7.500 | 7.273 | 6.231 | - declining |
 
+## Matchup Analogs
+
+**LAC analogs vs PIT profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 5 | WAS (-) | 0.760 | -0.082 | 39.3% | -2.375 |
+| 4 | NYG (-) | 0.742 | -0.066 | 46.8% | -0.273 |
+| 1 | KC (-) | 0.673 | 0.211 | 56.8% | 0.750 |
+
+**PIT analogs vs LAC profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 8 | GB (-) | 0.746 | 0.017 | 43.8% | -0.644 |
+| 3 | NE (-) | 0.688 | 0.037 | 51.5% | 0.544 |
+| 2 | SEA (-) | 0.675 | -0.208 | 36.8% | -0.314 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo IND | 8.222 | 6.091 | 8.364 | + improving |
 | Tempo ATL | 8.556 | 6.091 | 7.300 | - declining |
 
+## Matchup Analogs
+
+**IND analogs vs ATL profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 3 | TEN (-) | 0.923 | 0.263 | 59.7% | 1.278 |
+| 8 | TEN (-) | 0.923 | 0.297 | 47.8% | 2.182 |
+| 5 | LV (-) | 0.905 | 0.242 | 50.7% | 4.333 |
+
+**ATL analogs vs IND profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 6 | BUF (-) | 0.976 | 0.053 | 50.0% | 0.727 |
+| 7 | SF (-) | 0.821 | -0.077 | 44.2% | -1.111 |
+| 9 | NE (-) | 0.787 | 0.016 | 43.8% | 0.118 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

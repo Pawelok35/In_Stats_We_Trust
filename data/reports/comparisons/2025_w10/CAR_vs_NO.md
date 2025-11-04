@@ -1,34 +1,5 @@
 # Matchup Report - CAR vs NO
 
-## PowerScore Breakdown (Model)
-
-| Component | Weight | CAR | NO | Delta |
-| --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.066 | -0.211 | +0.277 |
-| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
-| Success Rate Offense | 25% | 49.3% | 40.7% | +8.6 pp |
-| Tempo | 20% | 0.085 | 0.093 | -0.008 |
-
-## PowerScore Breakdown (7 Metrics)
-
-| Component | Weight | CAR | NO | Delta |
-| --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.066 | -0.211 | +0.277 |
-| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
-| Success Rate Offense | 15% | 49.3% | 40.7% | +8.6 pp |
-| Turnover Margin | 10% | 1.000 | -2.000 | +3.000 |
-| Tempo | 10% | 0.085 | 0.093 | -0.008 |
-| Red Zone TD Rate (Off) | 10% | 11.8% | 12.5% | -0.7 pp |
-| Pressure Rate (Def) | 10% | 2.6% | 5.3% | -2.6 pp |
-
-## PowerScore Summary
-
-**Model (4 metrics):**
-CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
-**7 metrics version:**
-CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
-**Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
-
 ## Model Outlook
 
 | Metric | Value |
@@ -43,8 +14,9 @@ CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CAR | 29.6% | n/a | n/a | 55.3% | 51.7% | n/a |
-| NO | 48.1% | n/a | n/a | 44.7% | 55.3% | n/a |
+| CAR | 29.6% | 44.5% | -15.0% | 55.3% | 51.7% | Run heavy |
+| NO | 48.1% | 44.5% | 3.6% | 44.7% | 55.3% | Pass heavy |
+*Pass rates use latest available L3 data (Week 9).*
 
 ## Situational Edges
 
@@ -217,6 +189,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Def SR NO | 43.8% | 35.6% | 53.1% | - declining |
 | Tempo CAR | 8.182 | 7.091 | 10.143 | + improving |
 | Tempo NO | 6.364 | 7.818 | 6.000 | - declining |
+
+## Matchup Analogs
+
+**CAR analogs vs NO profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 3 | ATL (-) | 24-0 | CAR | 0.907 | 0.066 | 52.1% | 2.400 |
+| 5 | MIA (-) | 27-26 | CAR | 0.765 | 0.114 | 45.6% | 0.055 |
+| 1 | JAX (-) | 10-26 | JAX | 0.680 | -0.108 | 39.5% | -1.600 |
+
+**NO analogs vs CAR profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 5 | NYG (-) | 20-15 | NO | 0.580 | -0.043 | 46.3% | 0.418 |
+| 8 | TB (-) | 3-17 | TB | 0.522 | -0.394 | 38.4% | -1.273 |
+| 3 | SEA (-) | 19-38 | SEA | 0.364 | -0.240 | 42.4% | -1.583 |
 
 ## Core EPA Offense Form (up to Week 9)
 

@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo TB | 6.071 | 6.636 | 6.636 | + improving |
 | Tempo NE | 8.200 | 6.538 | 7.455 | - declining |
 
+## Matchup Analogs
+
+**TB analogs vs NE profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 5 | SEA (-) | 0.905 | 0.339 | 53.9% | 0.300 |
+| 7 | DET (-) | 0.807 | -0.292 | 34.1% | -1.203 |
+| 2 | HOU (-) | 0.746 | 0.006 | 51.5% | 0.273 |
+
+**NE analogs vs TB profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 8 | CLE (-) | 0.880 | -0.008 | 48.2% | 1.224 |
+| 9 | ATL (-) | 0.718 | 0.022 | 45.1% | -0.118 |
+| 6 | NO (-) | 0.667 | 0.091 | 48.1% | 0.667 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

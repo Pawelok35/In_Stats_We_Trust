@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo SEA | 6.000 | 5.688 | 6.500 | + improving |
 | Tempo ARI | 9.000 | 9.778 | 8.200 | - declining |
 
+## Matchup Analogs
+
+**SEA analogs vs ARI profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 4 | ARI (-) | 1.000 | 0.061 | 46.3% | 0.633 |
+| 1 | SF (-) | 0.784 | -0.082 | 52.2% | -0.245 |
+| 6 | JAX (-) | 0.656 | 0.039 | 43.1% | 0.667 |
+
+**ARI analogs vs SEA profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 4 | SEA (-) | 1.000 | -0.006 | 45.2% | -0.633 |
+| 6 | IND (-) | 0.768 | 0.117 | 51.1% | -0.400 |
+| 7 | GB (-) | 0.710 | 0.039 | 48.9% | -0.144 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo MIA | 6.500 | 8.400 | 7.091 | + improving |
 | Tempo BUF | 6.455 | 7.900 | 7.900 | + improving |
 
+## Matchup Analogs
+
+**MIA analogs vs BUF profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 3 | BUF (-) | 1.000 | 0.067 | 44.7% | -1.111 |
+| 1 | IND (-) | 0.976 | -0.156 | 47.4% | -3.571 |
+| 9 | BAL (A) | 0.778 | -0.195 | 42.3% | -2.000 |
+
+**BUF analogs vs MIA profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 3 | MIA (-) | 1.000 | 0.221 | 54.1% | 1.111 |
+| 2 | NYJ (-) | 0.869 | 0.177 | 45.6% | 1.727 |
+| 4 | NO (-) | 0.765 | 0.122 | 46.8% | 0.918 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

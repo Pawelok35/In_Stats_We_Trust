@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo WAS | 7.182 | 6.846 | 8.200 | + improving |
 | Tempo DET | 8.625 | 6.385 | 7.636 | - declining |
 
+## Matchup Analogs
+
+**WAS analogs vs DET profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 9 | SEA (-) | 0.949 | -0.098 | 48.8% | -2.400 |
+| 5 | LAC (-) | 0.720 | 0.185 | 56.8% | 2.375 |
+| 2 | GB (-) | 0.690 | -0.070 | 44.2% | -0.614 |
+
+**DET analogs vs WAS profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 5 | CIN (-) | 0.880 | 0.186 | 53.8% | 0.917 |
+| 3 | BAL (-) | 0.772 | 0.283 | 58.6% | 0.455 |
+| 1 | GB (-) | 0.631 | -0.054 | 43.4% | -1.700 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo NYJ | 6.727 | 8.273 | 8.273 | + improving |
 | Tempo CLE | 6.167 | 5.667 | 5.667 | - declining |
 
+## Matchup Analogs
+
+**NYJ analogs vs CLE profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 3 | TB (-) | 0.880 | -0.069 | 50.6% | -0.667 |
+| 7 | CAR (-) | 0.746 | -0.195 | 35.1% | -0.636 |
+| 6 | DEN (-) | 0.730 | -0.144 | 38.2% | -0.391 |
+
+**CLE analogs vs NYJ profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 1 | CIN (-) | 0.948 | -0.087 | 39.6% | -0.100 |
+| 7 | MIA (-) | 0.869 | -0.054 | 33.8% | 1.583 |
+| 2 | BAL (-) | 0.778 | -0.227 | 43.5% | -1.276 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo HOU | 8.500 | 6.333 | 6.200 | - declining |
 | Tempo JAX | 7.300 | 8.364 | 10.778 | + improving |
 
+## Matchup Analogs
+
+**HOU analogs vs JAX profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 3 | JAX (-) | 1.000 | -0.222 | 36.7% | -0.538 |
+| 4 | TEN (-) | 0.681 | 0.069 | 41.5% | 2.889 |
+| 8 | SF (-) | 0.594 | 0.187 | 48.9% | 0.933 |
+
+**JAX analogs vs HOU profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 3 | HOU (-) | 1.000 | -0.122 | 37.1% | 0.538 |
+| 6 | SEA (-) | 0.735 | -0.087 | 37.2% | -0.667 |
+| 1 | CAR (-) | 0.640 | 0.116 | 47.6% | 1.600 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

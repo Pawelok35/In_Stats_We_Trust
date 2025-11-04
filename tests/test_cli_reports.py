@@ -236,7 +236,7 @@ def test_compare_report_command(tmp_path, monkeypatch):
     assert f"Matchup Report - {TEAM_A} vs {TEAM_B}" in content
     assert "## Edge Summary" not in content
     assert "## Metric Comparison" in content
-    assert f"| Metric | {TEAM_A} | {TEAM_B} | Δ |" in content
+    assert f"| Metric | {TEAM_A} | {TEAM_B} | Delta |" in content
     assert "| PowerScore |" in content
     assert "Yards per Play Differential" in content
     assert "Turnover Margin" in content
@@ -292,7 +292,7 @@ def test_compare_report_command_with_edges(tmp_path, monkeypatch):
     assert "Explosive Edge" in content
     assert "↑ +0.060" in content
     assert "## Metric Comparison" in content
-    assert f"| Metric | {TEAM_A} | {TEAM_B} | Δ |" in content
+    assert f"| Metric | {TEAM_A} | {TEAM_B} | Delta |" in content
 
 
 def test_build_weekly_reports_command(tmp_path, monkeypatch):

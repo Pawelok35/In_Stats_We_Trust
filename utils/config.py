@@ -51,6 +51,7 @@ class Settings(BaseModel):
     default_week: int
     data_sources: DataSourcesSettings
     weights: Dict[str, float]
+    analog_profile_weights: Dict[str, float] = Field(default_factory=dict)
 
     @field_validator("data_root", mode="before")
     @classmethod

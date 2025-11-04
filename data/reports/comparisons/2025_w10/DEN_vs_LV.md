@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo DEN | 6.333 | 7.214 | 6.231 | - declining |
 | Tempo LV | 7.091 | 4.800 | 7.900 | + improving |
 
+## Matchup Analogs
+
+**DEN analogs vs LV profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 1 | TEN (-) | 0.949 | -0.108 | 41.9% | 0.571 |
+| 6 | NYJ (-) | 0.671 | -0.108 | 34.2% | 0.391 |
+| 7 | NYG (-) | 0.670 | 0.106 | 44.6% | -0.310 |
+
+**LV analogs vs DEN profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 1 | NE (-) | 0.768 | 0.081 | 44.4% | 0.485 |
+| 2 | LAC (-) | 0.716 | -0.250 | 36.6% | -0.918 |
+| 6 | TEN (-) | 0.451 | -0.068 | 43.6% | 0.818 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

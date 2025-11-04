@@ -218,6 +218,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Tempo CHI | 7.417 | 9.000 | 8.500 | + improving |
 | Tempo NYG | 8.000 | 7.778 | 7.700 | - declining |
 
+## Matchup Analogs
+
+**CHI analogs vs NYG profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 9 | CIN (-) | 0.906 | 0.306 | 55.9% | 0.917 |
+| 3 | DAL (-) | 0.879 | 0.200 | 47.9% | 1.700 |
+| 6 | WAS (-) | 0.804 | 0.093 | 50.6% | 0.318 |
+
+**NYG analogs vs CHI profile**
+
+| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | ---: | ---: | ---: | ---: |
+| 9 | SF (-) | 0.754 | 0.109 | 54.5% | -0.691 |
+| 2 | DAL (-) | 0.744 | 0.186 | 48.9% | 0.417 |
+| 3 | KC (-) | 0.708 | -0.118 | 42.3% | -1.200 |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

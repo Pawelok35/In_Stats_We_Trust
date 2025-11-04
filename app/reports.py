@@ -11,6 +11,7 @@ from pathlib import Path
 from types import SimpleNamespace
 from typing import Any, Callable, Iterable, Mapping, MutableMapping, Optional
 from metrics.form_windows import compute_form_windows
+from metrics.opponent_similarity import compute_team_analogs
 import matplotlib
 
 matplotlib.use("Agg")
@@ -1919,6 +1920,98 @@ def _build_trend_summary(
     return "\n".join(lines), len(week_values)
 
 
+def _build_matchup_analogs_section(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    top_n: int = 3,
+) -> Optional[str]:
+    analogs_a = compute_team_analogs(
+        season=season,
+        current_week=current_week,
+        team=team_a,
+        target_opponent=team_b,
+        top_n=top_n,
+    )
+    analogs_b = compute_team_analogs(
+        season=season,
+        current_week=current_week,
+        team=team_b,
+        target_opponent=team_a,
+        top_n=top_n,
+    )
+
+    if not analogs_a and not analogs_b:
+        return None
+
+    def _fmt_decimal(value: Optional[float]) -> str:
+        if value is None or not math.isfinite(value):
+            return "n/a"
+        return f"{value:.3f}"
+
+    def _section(team: str, opponent: str, entries: Iterable):
+        lines: list[str] = []
+        if not entries:
+            lines.append(f"**{team}** has not faced an opponent matching {opponent}'s profile yet.")
+            lines.append("")
+            return lines
+
+        lines.append(f"**{team} analogs vs {opponent} profile**")
+        lines.append("")
+        lines.append("| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |")
+        lines.append("| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |")
+
+        def _fmt_score(entry) -> str:
+            if entry.points_for is None or entry.points_against is None:
+                return "n/a"
+            pf = int(round(entry.points_for))
+            pa = int(round(entry.points_against))
+            return f"{pf}-{pa}"
+
+        def _fmt_winner(entry, self_team: str, opponent_team: str) -> str:
+            if entry.winner is None:
+                return "n/a"
+            if entry.winner == "TIE":
+                return "TIE"
+            if entry.winner == self_team:
+                return self_team
+            if entry.winner == opponent_team:
+                return opponent_team
+            return entry.winner
+
+        for entry in entries:
+            if entry.location == "home":
+                marker = "H"
+            elif entry.location == "away":
+                marker = "A"
+            else:
+                marker = "-"
+            opponent_label = f"{entry.opponent} ({marker})"
+            lines.append(
+                "| {week} | {opponent} | {score} | {winner} | {similarity:.3f} | {epa} | {sr} | {ppd} |".format(
+                    week=entry.week,
+                    opponent=opponent_label,
+                    score=_fmt_score(entry),
+                    winner=_fmt_winner(entry, team, opponent),
+                    similarity=entry.similarity,
+                    epa=_fmt_decimal(entry.epa_off),
+                    sr=_fmt_percent(entry.success_rate),
+                    ppd=_fmt_decimal(entry.points_per_drive_diff),
+                )
+            )
+        lines.append("")
+        return lines
+
+    lines: list[str] = []
+    lines.extend(_section(team_a, team_b, analogs_a))
+    lines.extend(_section(team_b, team_a, analogs_b))
+
+    markdown = "\n".join(lines).rstrip()
+    return markdown or None
+
+
 def _compute_strength_of_schedule(
     season: int,
     current_week: int,
@@ -3610,6 +3703,18 @@ def generate_comparison_report(
         md_lines.append(f"## Trend Summary (last {trend_span} weeks)")
         md_lines.append("")
         md_lines.append(trend_md)
+        md_lines.append("")
+
+    analogs_md = _build_matchup_analogs_section(
+        season=season,
+        current_week=week,
+        team_a=team_a,
+        team_b=team_b,
+    )
+    if analogs_md:
+        md_lines.append("## Matchup Analogs")
+        md_lines.append("")
+        md_lines.append(analogs_md)
         md_lines.append("")
 
     # Optional Edge Summary if comparison edges dataset provides entries
