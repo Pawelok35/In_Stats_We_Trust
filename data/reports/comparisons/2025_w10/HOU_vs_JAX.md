@@ -5,23 +5,49 @@
 - Tempo (last 3): 7.311 vs 8.992
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | HOU | JAX | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | HOU | JAX | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.155 | 0.156 | -0.310 |
+| EPA Defense | 20% | -0.155 | 0.165 | -0.320 |
+| Success Rate Offense | 25% | 34.4% | 54.6% | -20.2 pp |
+| Tempo | 20% | 0.043 | 0.124 | -0.081 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | HOU | JAX | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.155 | 0.156 | -0.310 |
+| EPA Defense | 20% | -0.155 | 0.165 | -0.320 |
+| Success Rate Offense | 15% | 34.4% | 54.6% | -20.2 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.043 | 0.124 | -0.081 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 10.0% | -10.0 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 4.8% | -2.2 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+JAX edge: +0.239 (HOU +0.009 vs JAX +0.249)
+**7 metrics version:**
+JAX edge: +0.192 (HOU -0.011 vs JAX +0.181)
+**Verdict:** JAX holds the edge in the extended breakdown (lead 0.192), driven by EPA Offense (25% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W5 | W7 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA HOU | 0.313 | -0.263 | -0.155 | - declining |
+| Off EPA JAX | 0.162 | -0.114 | 0.156 | = stable |
+| Def EPA HOU | -0.250 | -0.178 | -0.155 | - declining |
+| Def EPA JAX | 0.128 | 0.245 | 0.165 | - declining |
+| Off SR HOU | 61.2% | 40.0% | 34.4% | - declining |
+| Off SR JAX | 56.2% | 45.7% | 54.6% | - declining |
+| Def SR HOU | 43.5% | 41.8% | 34.6% | + improving |
+| Def SR JAX | 61.0% | 51.7% | 55.7% | + improving |
+| Tempo HOU | 8.500 | 6.333 | 6.200 | - declining |
+| Tempo JAX | 7.300 | 8.364 | 10.778 | + improving |
 
 ## Core EPA Offense Form (up to Week 9)
 

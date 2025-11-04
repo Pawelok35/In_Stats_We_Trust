@@ -5,23 +5,49 @@
 - Tempo (last 3): 6.676 vs 6.597
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | DEN | LV | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | DEN | LV | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.155 | 0.165 | -0.320 |
+| EPA Defense | 20% | -0.155 | 0.156 | -0.310 |
+| Success Rate Offense | 25% | 34.6% | 55.7% | -21.1 pp |
+| Tempo | 20% | 0.074 | 0.076 | -0.002 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | DEN | LV | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.155 | 0.165 | -0.320 |
+| EPA Defense | 20% | -0.155 | 0.156 | -0.310 |
+| Success Rate Offense | 15% | 34.6% | 55.7% | -21.1 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.074 | 0.076 | -0.002 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 16.7% | -16.7 pp |
+| Pressure Rate (Def) | 10% | 9.1% | 2.9% | +6.2 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+LV edge: +0.227 (DEN +0.016 vs LV +0.243)
+**7 metrics version:**
+LV edge: +0.184 (DEN -0.001 vs LV +0.183)
+**Verdict:** LV holds the edge in the extended breakdown (lead 0.184), driven by EPA Offense (25% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W6 | W7 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA DEN | -0.108 | 0.106 | -0.155 | - declining |
+| Off EPA LV | -0.068 | -0.332 | 0.165 | + improving |
+| Def EPA DEN | -0.144 | 0.140 | -0.155 | + improving |
+| Def EPA LV | -0.216 | 0.194 | 0.156 | - declining |
+| Off SR DEN | 34.2% | 44.6% | 34.6% | = stable |
+| Off SR LV | 43.6% | 33.3% | 55.7% | + improving |
+| Def SR DEN | 38.2% | 38.5% | 34.4% | + improving |
+| Def SR LV | 40.8% | 50.0% | 54.6% | - declining |
+| Tempo DEN | 6.333 | 7.214 | 6.231 | - declining |
+| Tempo LV | 7.091 | 4.800 | 7.900 | + improving |
 
 ## Core EPA Offense Form (up to Week 9)
 

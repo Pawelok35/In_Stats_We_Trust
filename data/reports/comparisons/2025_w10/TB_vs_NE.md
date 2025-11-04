@@ -5,23 +5,49 @@
 - Tempo (last 3): 6.448 vs 7.398
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | TB | NE | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | TB | NE | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.078 | 0.022 | -0.100 |
+| EPA Defense | 20% | -0.394 | 0.016 | -0.410 |
+| Success Rate Offense | 25% | 35.6% | 45.1% | -9.5 pp |
+| Tempo | 20% | 0.068 | 0.110 | -0.041 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | TB | NE | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.078 | 0.022 | -0.100 |
+| EPA Defense | 20% | -0.394 | 0.016 | -0.410 |
+| Success Rate Offense | 15% | 35.6% | 45.1% | -9.5 pp |
+| Turnover Margin | 10% | 3.000 | -2.000 | +5.000 |
+| Tempo | 10% | 0.068 | 0.110 | -0.041 |
+| Red Zone TD Rate (Off) | 10% | 8.3% | 18.8% | -10.4 pp |
+| Pressure Rate (Def) | 10% | 8.9% | 2.6% | +6.3 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+NE edge: +0.149 (TB -0.003 vs NE +0.146)
+**7 metrics version:**
+TB edge: +0.371 (TB +0.279 vs NE -0.091)
+**Verdict:** TB holds the edge in the extended breakdown (lead 0.371), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W7 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA TB | -0.292 | -0.078 | -0.078 | + improving |
+| Off EPA NE | 0.161 | -0.008 | 0.022 | - declining |
+| Def EPA TB | -0.092 | -0.394 | -0.394 | + improving |
+| Def EPA NE | -0.131 | -0.306 | 0.016 | - declining |
+| Off SR TB | 34.1% | 35.6% | 35.6% | + improving |
+| Off SR NE | 46.3% | 48.2% | 45.1% | - declining |
+| Def SR TB | 38.6% | 38.4% | 38.4% | = stable |
+| Def SR NE | 47.8% | 33.8% | 43.8% | + improving |
+| Tempo TB | 6.071 | 6.636 | 6.636 | + improving |
+| Tempo NE | 8.200 | 6.538 | 7.455 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

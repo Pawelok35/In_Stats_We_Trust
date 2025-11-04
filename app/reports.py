@@ -22,7 +22,7 @@ from utils.config import load_settings
 from utils.dataframes import preview_dataframe, read_parquet_or_raise
 from utils.logging import get_logger
 from utils.manifest import write_manifest
-
+from metrics.power_score import _weight_mapping
 from utils.paths import (
     comparison_report_assets_dir,
     comparison_report_path,
@@ -1195,6 +1195,112 @@ def _merge_numeric(source: Mapping[str, Any], key: str) -> Optional[float]:
     return numeric
 
 
+_POWERSCORE_COMPONENTS = [
+    {
+        "label": "EPA Offense",
+        "column": "core_epa_off",
+        "weight_key": "offense_epa",
+        "is_percent": False,
+    },
+    {
+        "label": "EPA Defense",
+        "column": "core_epa_def",
+        "weight_key": "defense_epa",
+        "is_percent": False,
+    },
+    {
+        "label": "Success Rate Offense",
+        "column": "core_sr_off",
+        "weight_key": "offense_success_rate",
+        "is_percent": True,
+    },
+    {
+        "label": "Tempo",
+        "column": "core_ed_sr_off",
+        "weight_key": "tempo",
+        "is_percent": False,
+    },
+]
+
+_EXTENDED_POWERSCORE_COMPONENTS = [
+    {
+        "label": "EPA Offense",
+        "column": "core_epa_off",
+        "weight": 0.25,
+        "is_percent": False,
+    },
+    {
+        "label": "EPA Defense",
+        "column": "core_epa_def",
+        "weight": 0.20,
+        "is_percent": False,
+    },
+    {
+        "label": "Success Rate Offense",
+        "column": "core_sr_off",
+        "weight": 0.15,
+        "is_percent": True,
+    },
+    {
+        "label": "Turnover Margin",
+        "column": "core_turnover_margin",
+        "weight": 0.10,
+        "is_percent": False,
+    },
+    {
+        "label": "Tempo",
+        "column": "core_ed_sr_off",
+        "weight": 0.10,
+        "is_percent": False,
+    },
+    {
+        "label": "Red Zone TD Rate (Off)",
+        "column": "core_redzone_td_rate",
+        "weight": 0.10,
+        "is_percent": True,
+    },
+    {
+        "label": "Pressure Rate (Def)",
+        "column": "core_pressure_rate_def",
+        "weight": 0.10,
+        "is_percent": True,
+    },
+]
+
+_TREND_METRICS = [
+    {
+        "label": "Off EPA",
+        "column": "epa_off_mean",
+        "is_percent": False,
+        "better": "higher",
+    },
+    {
+        "label": "Def EPA",
+        "column": "epa_def_mean",
+        "is_percent": False,
+        "better": "lower",
+    },
+    {
+        "label": "Off SR",
+        "column": "success_rate_off",
+        "is_percent": True,
+        "better": "higher",
+    },
+    {
+        "label": "Def SR",
+        "column": "success_rate_def",
+        "is_percent": True,
+        "better": "lower",
+    },
+    {
+        "label": "Tempo",
+        "column": "tempo",
+        "is_percent": False,
+        "better": "higher",
+    },
+]
+
+
 def _build_comparison_metrics(
     summary_a: SimpleNamespace,
     summary_b: SimpleNamespace,
@@ -1270,6 +1376,218 @@ def _build_comparison_metrics(
         )
 
     return metrics
+
+
+def _build_powerscore_breakdown(
+    season: int,
+    week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: Optional[dict[str, Optional[pl.DataFrame]]] = None,
+    components: Optional[list[dict[str, Any]]] = None,
+    weights_override: Optional[Mapping[str, float]] = None,
+) -> Optional[tuple[str, dict[str, Any]]]:
+    frames = frames or _load_metric_frames(season, week)
+    core12 = frames.get("core12")
+    if core12 is None or core12.is_empty():
+        return None
+
+    teams_df = core12.filter(pl.col("TEAM").is_in([team_a, team_b]))
+    if teams_df.is_empty() or teams_df.height < 2:
+        return None
+
+    components = components or _POWERSCORE_COMPONENTS
+    if weights_override is None:
+        if any("weight_key" in component for component in components):
+            weights = _weight_mapping()
+        else:
+            weights = {}
+    else:
+        weights = dict(weights_override)
+
+    def _get_value(df: pl.DataFrame, team: str, column: str) -> Optional[float]:
+        if column not in df.columns:
+            return None
+        subset = df.filter(pl.col("TEAM") == team).select(column).to_series()
+        if subset.is_empty():
+            return None
+        value = subset.item(0)
+        try:
+            return float(value) if value is not None else None
+        except (TypeError, ValueError):
+            return None
+
+    def _format_value(value: Optional[float], *, is_percent: bool) -> str:
+        if value is None or not math.isfinite(value):
+            return "n/a"
+        if is_percent:
+            return f"{value * 100:.1f}%"
+        return f"{value:.3f}"
+
+    def _format_delta(delta: Optional[float], *, is_percent: bool) -> str:
+        if delta is None or not math.isfinite(delta):
+            return "n/a"
+        if is_percent:
+            return f"{delta * 100:+.1f} pp"
+        return f"{delta:+.3f}"
+
+    rows: list[str] = []
+    rows.append(f"| Component | Weight | {team_a} | {team_b} | Δ |")
+    rows.append("| --- | ---: | ---: | ---: | ---: |")
+
+    has_any = False
+    score_a = 0.0
+    score_b = 0.0
+    entries: list[dict[str, Any]] = []
+
+    for component in components:
+        weight = component.get("weight")
+        if weight is None:
+            weight_key = component.get("weight_key")
+            weight = float(weights.get(weight_key, 0.0)) if weight_key else 0.0
+        if weight == 0.0:
+            continue
+
+        a_val = _get_value(teams_df, team_a, component["column"])
+        b_val = _get_value(teams_df, team_b, component["column"])
+        delta = None
+        if a_val is not None and b_val is not None and math.isfinite(a_val) and math.isfinite(b_val):
+            delta = a_val - b_val
+
+        if a_val is not None and math.isfinite(a_val):
+            score_a += a_val * weight
+        if b_val is not None and math.isfinite(b_val):
+            score_b += b_val * weight
+
+        if a_val is None and b_val is None:
+            continue
+
+        has_any = True
+        entries.append(
+            {
+                "label": component["label"],
+                "weight": weight,
+                "delta": delta,
+                "is_percent": component["is_percent"],
+            }
+        )
+        rows.append(
+            "| {label} | {weight:.0%} | {a} | {b} | {d} |".format(
+                label=component["label"],
+                weight=weight,
+                a=_format_value(a_val, is_percent=component["is_percent"]),
+                b=_format_value(b_val, is_percent=component["is_percent"]),
+                d=_format_delta(delta, is_percent=component["is_percent"]),
+            )
+        )
+
+    if not has_any:
+        return None
+
+    summary = {
+        "score_a": score_a,
+        "score_b": score_b,
+        "delta": score_a - score_b,
+        "entries": entries,
+    }
+
+    return "\n".join(rows), summary
+
+
+def _build_trend_summary(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+) -> Optional[tuple[str, int]]:
+    if current_week <= 1:
+        return None
+
+    week_values: list[int] = []
+    metric_data: dict[str, dict[str, dict[int, Optional[float]]]] = {
+        team: {metric["column"]: {} for metric in _TREND_METRICS}
+        for team in (team_a, team_b)
+    }
+
+    for week in range(current_week - 1, 0, -1):
+        df = _optional_layer_df("l3_team_week", season, week)
+        if df is None or df.is_empty():
+            continue
+        team_frames = {
+            team_a: df.filter(pl.col("TEAM") == team_a),
+            team_b: df.filter(pl.col("TEAM") == team_b),
+        }
+        if any(frame.is_empty() for frame in team_frames.values()):
+            continue
+        week_values.append(week)
+        for team, team_df in team_frames.items():
+            for metric in _TREND_METRICS:
+                column = metric["column"]
+                if column not in team_df.columns:
+                    continue
+                series = team_df.select(column).to_series()
+                if series.is_empty():
+                    continue
+                value = series.item(0)
+                try:
+                    metric_data[team][column][week] = float(value) if value is not None else None
+                except (TypeError, ValueError):
+                    metric_data[team][column][week] = None
+        if len(week_values) >= 3:
+            break
+
+    week_values = sorted(set(week_values))
+    if len(week_values) < 2:
+        return None
+    week_values = week_values[-3:]
+
+    header_cells = ["Metric"] + [f"W{week}" for week in week_values] + ["Trend"]
+    lines = [
+        "| " + " | ".join(header_cells) + " |",
+        "|" + " --- |" * len(header_cells),
+    ]
+
+    def _format_value(value: Optional[float], *, is_percent: bool) -> str:
+        if value is None or not math.isfinite(value):
+            return "n/a"
+        if is_percent:
+            return f"{value * 100:.1f}%"
+        return f"{value:.3f}"
+
+    def _trend_label(values: list[Optional[float]], metric: dict[str, Any]) -> str:
+        valid = [v for v in values if v is not None and math.isfinite(v)]
+        if len(valid) < 2:
+            return "n/a"
+        delta = valid[-1] - valid[0]
+        threshold = 0.01 if not metric["is_percent"] else 0.01
+        adjusted = delta if metric["better"] == "higher" else -delta
+        if adjusted > threshold:
+            return "+ improving"
+        if adjusted < -threshold:
+            return "- declining"
+        return "= stable"
+
+    for metric in _TREND_METRICS:
+        column = metric["column"]
+        for team in (team_a, team_b):
+            raw_values = [
+                metric_data[team][column].get(week) for week in week_values
+            ]
+            formatted_values = [
+                _format_value(val, is_percent=metric["is_percent"]) for val in raw_values
+            ]
+            trend = _trend_label(raw_values, metric)
+            lines.append(
+                "| {metric_label} {team} | {values} {trend} |".format(
+                    metric_label=metric["label"],
+                    team=team,
+                    values=" | ".join(formatted_values) + " |",
+                    trend=trend,
+                )
+            )
+
+    return "\n".join(lines), len(week_values)
 
 
 def _comparison_edges(
@@ -1935,18 +2253,43 @@ def generate_comparison_report(
         md_lines.append(ln)
     md_lines.append("")
 
-    has_metric_values = bool(comparison_rows) or any(
-        value is not None
-        for value in (
-            summary_a.powerscore,
-            summary_b.powerscore,
-            summary_a.tempo,
-            summary_b.tempo,
-        )
+    l3_frame = frames.get("l3")
+    l3_has_current_week = (
+        l3_frame is not None
+        and not l3_frame.filter(pl.col("week") == week).is_empty()
     )
 
+    has_metric_values = l3_has_current_week and bool(comparison_rows)
+
+    breakdown_result = _build_powerscore_breakdown(
+        season=season,
+        week=week,
+        team_a=team_a,
+        team_b=team_b,
+        frames=frames,
+    )
+    if breakdown_result:
+        breakdown_md, breakdown_summary = breakdown_result
+    else:
+        breakdown_md = None
+        breakdown_summary = None
+
+    extended_result = _build_powerscore_breakdown(
+        season=season,
+        week=week,
+        team_a=team_a,
+        team_b=team_b,
+        frames=frames,
+        components=_EXTENDED_POWERSCORE_COMPONENTS,
+        weights_override={},
+    )
+    if extended_result:
+        extended_breakdown_md, extended_summary = extended_result
+    else:
+        extended_breakdown_md = None
+        extended_summary = None
+
     if has_metric_values:
-        # Metric comparison table (Core12 + tempo + PowerScore snapshot)
         md_lines.append("## Metric Comparison")
         md_lines.append("")
         md_lines.append(
@@ -1957,6 +2300,80 @@ def generate_comparison_report(
                 team_b=team_b,
             )
         )
+        md_lines.append("")
+
+    if breakdown_md:
+        md_lines.append("## PowerScore Breakdown (Model)")
+        md_lines.append("")
+        md_lines.append(breakdown_md)
+        md_lines.append("")
+    if extended_breakdown_md:
+        md_lines.append("## PowerScore Breakdown (7 Metrics)")
+        md_lines.append("")
+        md_lines.append(extended_breakdown_md)
+        md_lines.append("")
+
+    summary_lines: list[str] = []
+    if breakdown_summary:
+        delta_base = breakdown_summary["delta"]
+        leader_base = team_a if delta_base > 0 else team_b if delta_base < 0 else "None"
+        summary_lines.append(
+            f"**Model (4 metrics):**\n"
+            f"{leader_base} edge: {abs(delta_base):+.3f} "
+            f"({team_a} {breakdown_summary['score_a']:+.3f} vs {team_b} {breakdown_summary['score_b']:+.3f})"
+        )
+    if extended_summary:
+        delta_ext = extended_summary["delta"]
+        leader_ext = team_a if delta_ext > 0 else team_b if delta_ext < 0 else "None"
+        summary_lines.append(
+            f"**7 metrics version:**\n"
+            f"{leader_ext} edge: {abs(delta_ext):+.3f} "
+            f"({team_a} {extended_summary['score_a']:+.3f} vs {team_b} {extended_summary['score_b']:+.3f})"
+        )
+        entries = extended_summary.get("entries") or []
+        if entries and abs(delta_ext) > 1e-6:
+            leader = team_a if delta_ext > 0 else team_b
+            relevant = [
+                entry for entry in entries
+                if entry.get("delta") is not None and math.isfinite(entry.get("delta", math.nan))
+            ]
+            if delta_ext > 0:
+                positive = [entry for entry in relevant if entry["delta"] > 0]
+                if positive:
+                    relevant = positive
+            else:
+                negative = [entry for entry in relevant if entry["delta"] < 0]
+                if negative:
+                    relevant = negative
+            if relevant:
+                top_entry = max(
+                    relevant,
+                    key=lambda entry: abs(entry.get("delta", 0.0) * entry.get("weight", 0.0))
+                )
+                delta_text = f"{abs(delta_ext):.3f}"
+                summary_lines.append(
+                    f"**Verdict:** {leader} holds the edge in the extended breakdown "
+                    f"(lead {delta_text}), driven by {top_entry['label']} "
+                    f"({top_entry['weight'] * 100:.0f}% weight)."
+                )
+
+    if summary_lines:
+        md_lines.append("## PowerScore Summary")
+        md_lines.append("")
+        md_lines.extend(summary_lines)
+        md_lines.append("")
+
+    trend_result = _build_trend_summary(
+        season=season,
+        current_week=week,
+        team_a=team_a,
+        team_b=team_b,
+    )
+    if trend_result:
+        trend_md, trend_span = trend_result
+        md_lines.append(f"## Trend Summary (last {trend_span} weeks)")
+        md_lines.append("")
+        md_lines.append(trend_md)
         md_lines.append("")
 
     # Optional Edge Summary if comparison edges dataset provides entries
@@ -2225,4 +2642,31 @@ __all__ = [
     "render_markdown",
     "save_report",
     "validate_schedule_for_week",
+]
+from metrics.power_score import _weight_mapping
+_POWERSCORE_COMPONENTS = [
+    {
+        "label": "EPA Offense",
+        "column": "core_epa_off",
+        "weight_key": "offense_epa",
+        "is_percent": False,
+    },
+    {
+        "label": "EPA Defense",
+        "column": "core_epa_def",
+        "weight_key": "defense_epa",
+        "is_percent": False,
+    },
+    {
+        "label": "Success Rate Offense",
+        "column": "core_sr_off",
+        "weight_key": "offense_success_rate",
+        "is_percent": True,
+    },
+    {
+        "label": "Tempo",
+        "column": "core_ed_sr_off",
+        "weight_key": "tempo",
+        "is_percent": False,
+    },
 ]

@@ -5,23 +5,34 @@
 - Tempo (last 3): 7.737 vs 9.600
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | SF | LAR | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | SF | LAR | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.279 | 0.172 | +0.108 |
+| EPA Defense | 20% | 0.109 | -0.211 | +0.320 |
+| Success Rate Offense | 25% | 53.0% | 53.1% | -0.1 pp |
+| Tempo | 20% | 0.133 | 0.115 | +0.018 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | SF | LAR | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.279 | 0.172 | +0.108 |
+| EPA Defense | 20% | 0.109 | -0.211 | +0.320 |
+| Success Rate Offense | 15% | 53.0% | 53.1% | -0.1 pp |
+| Turnover Margin | 10% | -1.000 | 2.000 | -3.000 |
+| Tempo | 10% | 0.133 | 0.115 | +0.018 |
+| Red Zone TD Rate (Off) | 10% | 21.1% | 16.0% | +5.1 pp |
+| Pressure Rate (Def) | 10% | 5.7% | 3.8% | +1.9 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+SF edge: +0.105 (SF +0.279 vs LAR +0.174)
+**7 metrics version:**
+LAR edge: +0.201 (SF +0.111 vs LAR +0.312)
+**Verdict:** LAR holds the edge in the extended breakdown (lead 0.201), driven by Turnover Margin (10% weight).
 
 ## Core EPA Offense Form (up to Week 9)
 

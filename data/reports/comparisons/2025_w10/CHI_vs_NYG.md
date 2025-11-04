@@ -5,23 +5,49 @@
 - Tempo (last 3): 8.306 vs 7.826
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | CHI | NYG | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | CHI | NYG | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.306 | 0.109 | +0.197 |
+| EPA Defense | 20% | 0.247 | 0.279 | -0.032 |
+| Success Rate Offense | 25% | 55.9% | 54.5% | +1.3 pp |
+| Tempo | 20% | 0.147 | 0.104 | +0.043 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | CHI | NYG | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.306 | 0.109 | +0.197 |
+| EPA Defense | 20% | 0.247 | 0.279 | -0.032 |
+| Success Rate Offense | 15% | 55.9% | 54.5% | +1.3 pp |
+| Turnover Margin | 10% | 3.000 | 1.000 | +2.000 |
+| Tempo | 10% | 0.147 | 0.104 | +0.043 |
+| Red Zone TD Rate (Off) | 10% | 14.8% | 18.2% | -3.4 pp |
+| Pressure Rate (Def) | 10% | 7.7% | 7.1% | +0.5 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+CHI edge: +0.075 (CHI +0.326 vs NYG +0.251)
+**7 metrics version:**
+CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
+**Verdict:** CHI holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W7 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA CHI | -0.010 | 0.041 | 0.306 | + improving |
+| Off EPA NYG | 0.140 | 0.097 | 0.109 | - declining |
+| Def EPA CHI | -0.231 | 0.227 | 0.247 | - declining |
+| Def EPA NYG | 0.106 | 0.307 | 0.279 | - declining |
+| Off SR CHI | 43.8% | 46.9% | 55.9% | + improving |
+| Off SR NYG | 38.5% | 48.6% | 54.5% | + improving |
+| Def SR CHI | 42.9% | 55.0% | 55.7% | - declining |
+| Def SR NYG | 44.6% | 58.2% | 53.0% | - declining |
+| Tempo CHI | 7.417 | 9.000 | 8.500 | + improving |
+| Tempo NYG | 8.000 | 7.778 | 7.700 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

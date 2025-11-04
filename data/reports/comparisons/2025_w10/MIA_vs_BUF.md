@@ -5,23 +5,49 @@
 - Tempo (last 3): 7.275 vs 7.418
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | MIA | BUF | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | MIA | BUF | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.195 | 0.151 | -0.346 |
+| EPA Defense | 20% | 0.137 | 0.066 | +0.071 |
+| Success Rate Offense | 25% | 42.3% | 58.2% | -15.9 pp |
+| Tempo | 20% | 0.115 | 0.127 | -0.011 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | MIA | BUF | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.195 | 0.151 | -0.346 |
+| EPA Defense | 20% | 0.137 | 0.066 | +0.071 |
+| Success Rate Offense | 15% | 42.3% | 58.2% | -15.9 pp |
+| Turnover Margin | 10% | -3.000 | 1.000 | -4.000 |
+| Tempo | 10% | 0.115 | 0.127 | -0.011 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 27.3% | -27.3 pp |
+| Pressure Rate (Def) | 10% | 7.4% | 7.9% | -0.5 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+BUF edge: +0.149 (MIA +0.088 vs BUF +0.237)
+**7 metrics version:**
+BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
+**Verdict:** BUF holds the edge in the extended breakdown (lead 0.525), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W6 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA MIA | 0.061 | 0.176 | -0.195 | - declining |
+| Off EPA BUF | -0.088 | 0.283 | 0.151 | + improving |
+| Def EPA MIA | 0.128 | -0.227 | 0.137 | = stable |
+| Def EPA BUF | 0.053 | -0.210 | 0.066 | - declining |
+| Off SR MIA | 48.7% | 53.6% | 42.3% | - declining |
+| Off SR BUF | 49.3% | 51.9% | 58.2% | + improving |
+| Def SR MIA | 50.0% | 41.8% | 52.1% | - declining |
+| Def SR BUF | 50.0% | 47.4% | 47.3% | + improving |
+| Tempo MIA | 6.500 | 8.400 | 7.091 | + improving |
+| Tempo BUF | 6.455 | 7.900 | 7.900 | + improving |
 
 ## Core EPA Offense Form (up to Week 9)
 

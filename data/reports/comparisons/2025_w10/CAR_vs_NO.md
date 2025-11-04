@@ -5,23 +5,49 @@
 - Tempo (last 3): 8.472 vs 6.727
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | CAR | NO | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | CAR | NO | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.066 | -0.211 | +0.277 |
+| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
+| Success Rate Offense | 25% | 49.3% | 40.7% | +8.6 pp |
+| Tempo | 20% | 0.085 | 0.093 | -0.008 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | CAR | NO | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.066 | -0.211 | +0.277 |
+| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
+| Success Rate Offense | 15% | 49.3% | 40.7% | +8.6 pp |
+| Turnover Margin | 10% | 1.000 | -2.000 | +3.000 |
+| Tempo | 10% | 0.085 | 0.093 | -0.008 |
+| Red Zone TD Rate (Off) | 10% | 11.8% | 12.5% | -0.7 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 5.3% | -2.6 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
+**7 metrics version:**
+CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
+**Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W7 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA CAR | -0.053 | -0.210 | 0.066 | + improving |
+| Off EPA NO | -0.231 | -0.394 | -0.211 | + improving |
+| Def EPA CAR | -0.195 | 0.283 | -0.000 | - declining |
+| Def EPA NO | -0.010 | -0.078 | 0.172 | - declining |
+| Off SR CAR | 40.0% | 47.4% | 49.3% | + improving |
+| Off SR NO | 42.9% | 38.4% | 40.7% | - declining |
+| Def SR CAR | 35.1% | 51.9% | 50.0% | - declining |
+| Def SR NO | 43.8% | 35.6% | 53.1% | - declining |
+| Tempo CAR | 8.182 | 7.091 | 10.143 | + improving |
+| Tempo NO | 6.364 | 7.818 | 6.000 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

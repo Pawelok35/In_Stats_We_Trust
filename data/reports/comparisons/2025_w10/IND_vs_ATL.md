@@ -5,23 +5,49 @@
 - Tempo (last 3): 7.559 vs 7.315
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | IND | ATL | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | IND | ATL | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.042 | 0.016 | -0.058 |
+| EPA Defense | 20% | 0.046 | 0.022 | +0.025 |
+| Success Rate Offense | 25% | 52.2% | 43.8% | +8.3 pp |
+| Tempo | 20% | 0.109 | 0.096 | +0.013 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | IND | ATL | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.042 | 0.016 | -0.058 |
+| EPA Defense | 20% | 0.046 | 0.022 | +0.025 |
+| Success Rate Offense | 15% | 52.2% | 43.8% | +8.3 pp |
+| Turnover Margin | 10% | -3.000 | 2.000 | -5.000 |
+| Tempo | 10% | 0.109 | 0.096 | +0.013 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 17.6% | -1.0 pp |
+| Pressure Rate (Def) | 10% | 7.7% | 15.8% | -8.1 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+IND edge: +0.008 (IND +0.147 vs ATL +0.139)
+**7 metrics version:**
+ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
+**Verdict:** ATL holds the edge in the extended breakdown (lead 0.505), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W7 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA IND | 0.367 | 0.297 | -0.042 | - declining |
+| Off EPA ATL | -0.077 | -0.227 | 0.016 | + improving |
+| Def EPA IND | 0.090 | -0.089 | 0.046 | + improving |
+| Def EPA ATL | 0.043 | 0.176 | 0.022 | + improving |
+| Off SR IND | 55.4% | 47.8% | 52.2% | - declining |
+| Off SR ATL | 44.2% | 41.8% | 43.8% | = stable |
+| Def SR IND | 47.8% | 43.2% | 45.7% | + improving |
+| Def SR ATL | 51.9% | 53.6% | 45.1% | + improving |
+| Tempo IND | 8.222 | 6.091 | 8.364 | + improving |
+| Tempo ATL | 8.556 | 6.091 | 7.300 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

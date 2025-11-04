@@ -5,23 +5,49 @@
 - Tempo (last 3): 7.250 vs 8.411
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | MIN | BAL | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | MIN | BAL | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.017 | 0.137 | -0.120 |
+| EPA Defense | 20% | -0.062 | -0.195 | +0.133 |
+| Success Rate Offense | 25% | 42.0% | 52.1% | -10.1 pp |
+| Tempo | 20% | 0.111 | 0.141 | -0.030 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | MIN | BAL | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.017 | 0.137 | -0.120 |
+| EPA Defense | 20% | -0.062 | -0.195 | +0.133 |
+| Success Rate Offense | 15% | 42.0% | 52.1% | -10.1 pp |
+| Turnover Margin | 10% | 0.000 | 3.000 | -3.000 |
+| Tempo | 10% | 0.111 | 0.141 | -0.030 |
+| Red Zone TD Rate (Off) | 10% | 18.8% | 28.6% | -9.8 pp |
+| Pressure Rate (Def) | 10% | 11.9% | 4.8% | +7.1 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+BAL edge: +0.047 (MIN +0.121 vs BAL +0.167)
+**7 metrics version:**
+BAL edge: +0.324 (MIN +0.096 vs BAL +0.421)
+**Verdict:** BAL holds the edge in the extended breakdown (lead 0.324), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W5 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA MIN | 0.044 | -0.255 | 0.017 | - declining |
+| Off EPA BAL | -0.250 | 0.227 | 0.137 | + improving |
+| Def EPA MIN | -0.008 | 0.170 | -0.062 | + improving |
+| Def EPA BAL | 0.313 | 0.041 | -0.195 | + improving |
+| Off SR MIN | 46.8% | 37.3% | 42.0% | - declining |
+| Off SR BAL | 43.5% | 55.0% | 52.1% | + improving |
+| Def SR MIN | 41.1% | 54.5% | 44.0% | - declining |
+| Def SR BAL | 61.2% | 46.9% | 42.3% | + improving |
+| Tempo MIN | 6.583 | 6.700 | 6.750 | + improving |
+| Tempo BAL | 6.200 | 8.889 | 6.455 | + improving |
 
 ## Core EPA Offense Form (up to Week 9)
 

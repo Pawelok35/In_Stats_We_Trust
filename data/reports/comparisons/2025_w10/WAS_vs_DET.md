@@ -5,23 +5,49 @@
 - Tempo (last 3): 7.682 vs 7.549
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | WAS | DET | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | WAS | DET | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.098 | -0.062 | -0.035 |
+| EPA Defense | 20% | 0.333 | 0.017 | +0.317 |
+| Success Rate Offense | 25% | 48.8% | 44.0% | +4.7 pp |
+| Tempo | 20% | 0.073 | 0.119 | -0.046 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | WAS | DET | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.098 | -0.062 | -0.035 |
+| EPA Defense | 20% | 0.333 | 0.017 | +0.317 |
+| Success Rate Offense | 15% | 48.8% | 44.0% | +4.7 pp |
+| Turnover Margin | 10% | -1.000 | 0.000 | -1.000 |
+| Tempo | 10% | 0.073 | 0.119 | -0.046 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 6.7% | +10.0 pp |
+| Pressure Rate (Def) | 10% | 0.0% | 14.7% | -14.7 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+WAS edge: +0.054 (WAS +0.169 vs DET +0.115)
+**7 metrics version:**
+DET edge: +0.048 (WAS +0.039 vs DET +0.087)
+**Verdict:** DET holds the edge in the extended breakdown (lead 0.048), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W6 | W7 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA WAS | 0.036 | -0.106 | -0.098 | - declining |
+| Off EPA DET | 0.067 | -0.092 | -0.062 | - declining |
+| Def EPA WAS | 0.093 | 0.190 | 0.333 | - declining |
+| Def EPA DET | 0.227 | -0.292 | 0.017 | + improving |
+| Off SR WAS | 49.4% | 47.2% | 48.8% | = stable |
+| Off SR DET | 56.5% | 38.6% | 44.0% | - declining |
+| Def SR WAS | 50.6% | 46.5% | 60.0% | - declining |
+| Def SR DET | 56.0% | 34.1% | 42.0% | + improving |
+| Tempo WAS | 7.182 | 6.846 | 8.200 | + improving |
+| Tempo DET | 8.625 | 6.385 | 7.636 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

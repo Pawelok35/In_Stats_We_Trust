@@ -5,23 +5,49 @@
 - Tempo (last 3): 6.062 vs 8.993
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | SEA | ARI | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | SEA | ARI | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.333 | 0.053 | +0.280 |
+| EPA Defense | 20% | -0.098 | -0.122 | +0.025 |
+| Success Rate Offense | 25% | 60.0% | 50.0% | +10.0 pp |
+| Tempo | 20% | 0.169 | 0.146 | +0.023 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | SEA | ARI | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.333 | 0.053 | +0.280 |
+| EPA Defense | 20% | -0.098 | -0.122 | +0.025 |
+| Success Rate Offense | 15% | 60.0% | 50.0% | +10.0 pp |
+| Turnover Margin | 10% | 1.000 | 3.000 | -2.000 |
+| Tempo | 10% | 0.169 | 0.146 | +0.023 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 17.6% | -1.0 pp |
+| Pressure Rate (Def) | 10% | 15.4% | 11.4% | +4.0 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+SEA edge: +0.133 (SEA +0.281 vs ARI +0.148)
+**7 metrics version:**
+ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
+**Verdict:** ARI holds the edge in the extended breakdown (lead 0.105), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W6 | W7 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA SEA | 0.039 | -0.178 | 0.333 | + improving |
+| Off EPA ARI | 0.117 | 0.039 | 0.053 | - declining |
+| Def EPA SEA | -0.087 | -0.263 | -0.098 | + improving |
+| Def EPA ARI | 0.164 | 0.123 | -0.122 | + improving |
+| Off SR SEA | 43.1% | 41.8% | 60.0% | + improving |
+| Off SR ARI | 51.1% | 48.9% | 50.0% | - declining |
+| Def SR SEA | 37.2% | 40.0% | 48.8% | - declining |
+| Def SR ARI | 56.6% | 53.4% | 46.2% | + improving |
+| Tempo SEA | 6.000 | 5.688 | 6.500 | + improving |
+| Tempo ARI | 9.000 | 9.778 | 8.200 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

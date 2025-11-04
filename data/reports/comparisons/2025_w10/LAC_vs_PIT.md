@@ -5,23 +5,49 @@
 - Tempo (last 3): 9.608 vs 7.001
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | LAC | PIT | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | LAC | PIT | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | -0.002 | 0.046 | -0.048 |
+| EPA Defense | 20% | -0.151 | -0.042 | -0.109 |
+| Success Rate Offense | 25% | 54.2% | 45.7% | +8.5 pp |
+| Tempo | 20% | 0.108 | 0.025 | +0.084 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | LAC | PIT | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | -0.002 | 0.046 | -0.048 |
+| EPA Defense | 20% | -0.151 | -0.042 | -0.109 |
+| Success Rate Offense | 15% | 54.2% | 45.7% | +8.5 pp |
+| Turnover Margin | 10% | -1.000 | 3.000 | -4.000 |
+| Tempo | 10% | 0.108 | 0.025 | +0.084 |
+| Red Zone TD Rate (Off) | 10% | 20.0% | 13.0% | +7.0 pp |
+| Pressure Rate (Def) | 10% | 16.0% | 9.1% | +6.9 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+PIT edge: +0.001 (LAC +0.127 vs PIT +0.127)
+**7 metrics version:**
+PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
+**Verdict:** PIT holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W7 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA LAC | 0.090 | 0.170 | -0.002 | - declining |
+| Off EPA PIT | 0.262 | 0.017 | 0.046 | - declining |
+| Def EPA LAC | 0.367 | -0.255 | -0.151 | + improving |
+| Def EPA PIT | 0.219 | 0.169 | -0.042 | + improving |
+| Off SR LAC | 47.8% | 54.5% | 54.2% | + improving |
+| Off SR PIT | 54.7% | 43.8% | 45.7% | - declining |
+| Def SR LAC | 55.4% | 37.3% | 37.5% | + improving |
+| Def SR PIT | 53.7% | 48.8% | 52.2% | + improving |
+| Tempo LAC | 11.500 | 9.778 | 7.545 | - declining |
+| Tempo PIT | 7.500 | 7.273 | 6.231 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 

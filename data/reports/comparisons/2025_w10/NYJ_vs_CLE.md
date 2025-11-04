@@ -5,23 +5,49 @@
 - Tempo (last 3): 7.758 vs 5.833
 - Points per Drive Diff: n/a vs n/a
 
-## Metric Comparison
+## PowerScore Breakdown (Model)
 
-| Metric | NYJ | CLE | Δ |
-|---|---:|---:|---:|
-| Core EPA Offense | n/a | n/a | n/a |
-| Core EPA Defense | n/a | n/a | n/a |
-| Success Rate Offense | n/a | n/a | n/a |
-| Success Rate Defense | n/a | n/a | n/a |
-| Explosive Play Rate (Off) | n/a | n/a | n/a |
-| Third Down Conversion | n/a | n/a | n/a |
-| Points per Drive Differential | n/a | n/a | n/a |
-| Yards per Play Differential | n/a | n/a | n/a |
-| Turnover Margin | n/a | n/a | n/a |
-| Red Zone TD Rate (Off) | n/a | n/a | n/a |
-| Pressure Rate (Def) | n/a | n/a | n/a |
-| Tempo | n/a | n/a | n/a |
-| PowerScore | n/a | n/a | n/a |
+| Component | Weight | NYJ | CLE | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.243 | -0.306 | +0.549 |
+| EPA Defense | 20% | 0.249 | -0.008 | +0.258 |
+| Success Rate Offense | 25% | 56.0% | 33.8% | +22.2 pp |
+| Tempo | 20% | 0.154 | 0.088 | +0.066 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | NYJ | CLE | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.243 | -0.306 | +0.549 |
+| EPA Defense | 20% | 0.249 | -0.008 | +0.258 |
+| Success Rate Offense | 15% | 56.0% | 33.8% | +22.2 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.154 | 0.088 | +0.066 |
+| Red Zone TD Rate (Off) | 10% | 10.7% | 22.2% | -11.5 pp |
+| Pressure Rate (Def) | 10% | 2.9% | 18.2% | -15.3 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+NYJ edge: +0.313 (NYJ +0.306 vs CLE -0.007)
+**7 metrics version:**
+NYJ edge: +0.202 (NYJ +0.224 vs CLE +0.022)
+**Verdict:** NYJ holds the edge in the extended breakdown (lead 0.202), driven by EPA Offense (25% weight).
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W7 | W8 | W9 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA NYJ | -0.195 | 0.243 | 0.243 | + improving |
+| Off EPA CLE | -0.054 | -0.306 | -0.306 | - declining |
+| Def EPA NYJ | -0.053 | 0.249 | 0.249 | - declining |
+| Def EPA CLE | -0.417 | -0.008 | -0.008 | - declining |
+| Off SR NYJ | 35.1% | 56.0% | 56.0% | + improving |
+| Off SR CLE | 33.8% | 33.8% | 33.8% | = stable |
+| Def SR NYJ | 40.0% | 65.8% | 65.8% | - declining |
+| Def SR CLE | 30.3% | 48.2% | 48.2% | - declining |
+| Tempo NYJ | 6.727 | 8.273 | 8.273 | + improving |
+| Tempo CLE | 6.167 | 5.667 | 5.667 | - declining |
 
 ## Core EPA Offense Form (up to Week 9)
 
