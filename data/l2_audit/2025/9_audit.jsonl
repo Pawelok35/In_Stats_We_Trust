@@ -1,3 +1,3 @@
-{"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-04T10:31:40.699142+00:00"}
-{"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-04T10:31:40.699142+00:00"}
-{"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2025-11-04T10:31:40.699142+00:00"}
+{"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-04T10:48:49.521394+00:00"}
+{"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-04T10:48:49.521394+00:00"}
+{"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2025-11-04T10:48:49.521394+00:00"}

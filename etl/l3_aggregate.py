@@ -46,7 +46,9 @@ def _empty_result() -> pl.DataFrame:
             "explosive_play_rate_off": pl.Series([], dtype=pl.Float64),
             "explosive_play_rate_def": pl.Series([], dtype=pl.Float64),
             "third_down_conv_off": pl.Series([], dtype=pl.Float64),
+            "third_down_conv_def": pl.Series([], dtype=pl.Float64),
             "redzone_td_rate_off": pl.Series([], dtype=pl.Float64),
+            "redzone_td_rate_def": pl.Series([], dtype=pl.Float64),
             "turnover_margin": pl.Series([], dtype=pl.Float64),
             "points_per_drive_off": pl.Series([], dtype=pl.Float64),
             "points_per_drive_def": pl.Series([], dtype=pl.Float64),
@@ -348,6 +350,20 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
                 .cast(pl.Float64)
                 .alias("explosive_play_rate_def"),
 
+                _safe_div(
+                    pl.col("third_down_converted").sum().cast(pl.Float64),
+                    pl.col("is_third_down").sum().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("third_down_conv_def"),
+
+                pl.col("in_redzone").sum().cast(pl.Float64).alias("_def_redzone_plays"),
+                (
+                    (pl.col("in_redzone") * pl.col("is_offensive_td"))
+                    .cast(pl.Float64)
+                    .sum()
+                ).alias("_def_redzone_tds"),
+
                 # pressure rate DEF = presja / dropbacki przeciwnika
                 _safe_div(
                     pl.col("is_pressure").sum().cast(pl.Float64),
@@ -369,7 +385,15 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             .cast(pl.Float64)
             .alias("points_per_drive_def")
         )
-        .drop(["_drives_faced"])
+        .with_columns(
+            _safe_div(
+                pl.col("_def_redzone_tds"),
+                pl.col("_def_redzone_plays"),
+            )
+            .cast(pl.Float64)
+            .alias("redzone_td_rate_def")
+        )
+        .drop(["_drives_faced", "_def_redzone_plays", "_def_redzone_tds"])
         .rename({"OPP": "TEAM"})
     )
 
@@ -464,7 +488,9 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         "explosive_play_rate_off",
         "explosive_play_rate_def",
         "third_down_conv_off",
+        "third_down_conv_def",
         "redzone_td_rate_off",
+        "redzone_td_rate_def",
         "turnover_margin",
         "points_per_drive_off",
         "points_per_drive_def",
@@ -506,7 +532,9 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         "explosive_play_rate_off",
         "explosive_play_rate_def",
         "third_down_conv_off",
+        "third_down_conv_def",
         "redzone_td_rate_off",
+        "redzone_td_rate_def",
         "turnover_margin",
         "points_per_drive_off",
         "points_per_drive_def",

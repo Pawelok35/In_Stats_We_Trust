@@ -16,6 +16,7 @@ def _empty_team_weeks_frame() -> pl.DataFrame:
             "epa_def_mean": pl.Series([], dtype=pl.Float64),
             "success_rate_def": pl.Series([], dtype=pl.Float64),
             "tempo": pl.Series([], dtype=pl.Float64),
+            "pass_rate_off": pl.Series([], dtype=pl.Float64),
         }
     )
 
@@ -34,6 +35,16 @@ def _load_team_weeks(season: int, current_week: int) -> pl.DataFrame:
         ("epa_def_mean", pl.Float64),
         ("success_rate_def", pl.Float64),
         ("tempo", pl.Float64),
+    ]
+
+    required_columns: list[tuple[str, pl.DataType]] = [
+        ("TEAM", pl.Utf8),
+        ("epa_off_mean", pl.Float64),
+        ("success_rate_off", pl.Float64),
+        ("epa_def_mean", pl.Float64),
+        ("success_rate_def", pl.Float64),
+        ("tempo", pl.Float64),
+        ("pass_rate_off", pl.Float64),
     ]
 
     dfs = []
@@ -75,6 +86,7 @@ def _summarize_window(df_team: pl.DataFrame, label: str) -> pl.DataFrame:
             pl.col("epa_def_mean").mean().alias("epa_def_mean_avg"),
             pl.col("success_rate_def").mean().alias("success_rate_def_avg"),
             pl.col("tempo").mean().alias("tempo_avg"),
+            pl.col("pass_rate_off").mean().alias("pass_rate_off_avg"),
             pl.len().alias("games_in_window"),
         ]
     )
@@ -129,6 +141,7 @@ def compute_form_windows(season: int, current_week: int, teams: list[str]) -> pl
                 "epa_def_mean_avg": f"epa_def_mean_avg_{t}",
                 "success_rate_def_avg": f"success_rate_def_avg_{t}",
                 "tempo_avg": f"tempo_avg_{t}",
+                "pass_rate_off_avg": f"pass_rate_off_avg_{t}",
                 "games_in_window": f"games_in_window_{t}",
                 "TEAM": f"TEAM_{t}",
             }

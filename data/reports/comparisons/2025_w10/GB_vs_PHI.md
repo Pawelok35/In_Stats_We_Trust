@@ -5,6 +5,24 @@
 - Tempo (last 3): 7.933 vs 7.559
 - Points per Drive Diff: n/a vs n/a
 
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| GB | 50.0% | 45.1% | 4.9% | 40.0% | 55.0% | Pass heavy |
+| PHI | 34.2% | 44.1% | -9.9% | 47.6% | 50.0% | Run heavy |
+*Pass rates use latest available L3 data (Week 9).*
+
+## Situational Edges
+
+| Edge | GB Off vs PHI Def | PHI Off vs GB Def |
+| --- | --- | --- |
+| 3rd Down Conversion | 50.0% vs 38.5% allowed -> GB edge | 22.2% vs 33.3% allowed -> GB edge |
+| Red Zone TD Rate | 5.6% vs 18.2% allowed -> PHI edge | 18.8% vs 11.8% allowed -> PHI edge |
+| Pass Protection vs Pressure | 2.6% vs 20.0% allowed -> PHI edge | 14.8% vs 4.8% allowed -> PHI edge |
+| Explosive Plays | 9.2% vs 8.6% allowed -> balanced | 15.2% vs 8.5% allowed -> PHI edge |
+*Metrics use latest available L3 data (Week 9).*
+
 ## Matchup Edges
 
 | Edge | GB | PHI | Delta |
@@ -141,6 +159,13 @@
 |------|---------------:|-------:|-------:|
 | GB | 7.990 | 8.336 | 7.933 |
 | PHI | 7.353 | 7.069 | 7.559 |
+
+## Pass Rate Offense Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 48.1% | 48.1% | 48.1% |
+| PHI | 34.2% | 34.2% | 34.2% |
 
 ## Recent Form (Season / Last 5 / Last 3)
 

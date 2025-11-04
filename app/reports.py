@@ -1348,6 +1348,11 @@ _DRIVE_CONTEXT_CONFIG = [
     ("Points per Drive Differential", "points_per_drive_diff", "points"),
 ]
 
+_POWERSCORE_SPREAD_COEFFICIENT = 18.5
+_SPREAD_TO_PROB_SCALE = 6.0
+_PROE_LEAN_THRESHOLD = 0.03
+_PROE_NEUTRAL_BAND = 0.01
+
 
 def _coerce_float(value: Any) -> Optional[float]:
     if value is None:
@@ -1914,12 +1919,12 @@ def _build_trend_summary(
     return "\n".join(lines), len(week_values)
 
 
-def _build_strength_of_schedule(
+def _compute_strength_of_schedule(
     season: int,
     current_week: int,
     team_a: str,
     team_b: str,
-) -> Optional[tuple[str, int]]:
+) -> Optional[tuple[dict[str, Optional[float]], dict[str, Optional[float]], int]]:
     eval_week = current_week - 1
     if eval_week < 1:
         return None
@@ -2007,6 +2012,19 @@ def _build_strength_of_schedule(
     sos_b = _team_sos(team_b)
     if not sos_a and not sos_b:
         return None
+    return sos_a, sos_b, eval_week
+
+
+def _build_strength_of_schedule(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+) -> Optional[tuple[str, int]]:
+    result = _compute_strength_of_schedule(season, current_week, team_a, team_b)
+    if result is None:
+        return None
+    sos_a, sos_b, eval_week = result
 
     def _fmt(value: Optional[float]) -> str:
         if value is None or not math.isfinite(value):
@@ -2023,6 +2041,241 @@ def _build_strength_of_schedule(
         )
 
     return "\n".join(lines), eval_week
+
+
+def _league_pass_rate(season: int, week: int, frames: dict[str, Any]) -> Optional[float]:
+    if week is None or week < 1:
+        return None
+    cache_key = f"_league_pass_rate_week_{week}"
+    if cache_key in frames:
+        return frames[cache_key]
+    df = frames.get("l3")
+    if df is None or df.is_empty() or (len(df.columns) > 0 and "week" in df.columns and df["week"].max() != week):
+        df = frames.get(f"_fallback_l3_week_{week}")
+    if df is None:
+        df = _optional_layer_df("l3_team_week", season, week)
+        if df is None:
+            frames[cache_key] = None
+            return None
+        frames[f"_fallback_l3_week_{week}"] = df
+    if "pass_rate_off" not in df.columns:
+        frames[cache_key] = None
+        return None
+    series = df["pass_rate_off"].cast(pl.Float64).drop_nulls()
+    value = float(series.mean()) if series.len() > 0 else None
+    frames[cache_key] = value
+    return value
+
+
+def _build_projected_spread_section(
+    summary_a: SimpleNamespace,
+    summary_b: SimpleNamespace,
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    if summary_a.powerscore is None or summary_b.powerscore is None:
+        return None
+    delta_ps = summary_a.powerscore - summary_b.powerscore
+    model_spread = delta_ps * _POWERSCORE_SPREAD_COEFFICIENT
+    win_prob_a = 1.0 / (1.0 + math.exp(-model_spread / _SPREAD_TO_PROB_SCALE))
+    win_prob_b = 1.0 - win_prob_a
+    spread_text = f"{model_spread:+.1f} pts (favours {team_a if model_spread >= 0 else team_b})"
+    sos_data = _compute_strength_of_schedule(season, current_week, team_a, team_b)
+    sos_diff_text = "n/a"
+    if sos_data is not None:
+        sos_a, sos_b, eval_week = sos_data
+        base_a = sos_a.get("season")
+        base_b = sos_b.get("season")
+        if base_a is not None and base_b is not None:
+            sos_diff_text = f"{base_a - base_b:+.3f}"
+        else:
+            sos_diff_text = "n/a"
+        note = f"Based on schedule through Week {eval_week}."
+    else:
+        note = "Schedule differential unavailable."
+
+    lines = [
+        "| Metric | Value |",
+        "| --- | --- |",
+        f"| Model Spread ({team_a} - {team_b}) | {spread_text} |",
+        f"| Model Win% {team_a} | {win_prob_a * 100:.1f}% |",
+        f"| Model Win% {team_b} | {win_prob_b * 100:.1f}% |",
+        f"| SOS Differential ({team_a}-{team_b}) | {sos_diff_text} |",
+    ]
+    lines.append(f"*Neutral-field assumption. {note}*")
+    return "\n".join(lines)
+
+
+def _proe_lean_label(proe: Optional[float]) -> str:
+    if proe is None or not math.isfinite(proe):
+        return "n/a"
+    if proe > _PROE_LEAN_THRESHOLD:
+        return "Pass heavy"
+    if proe < -_PROE_LEAN_THRESHOLD:
+        return "Run heavy"
+    if abs(proe) <= _PROE_NEUTRAL_BAND:
+        return "Balanced"
+    return "Slight pass lean" if proe > 0 else "Slight run lean"
+
+
+def _fmt_percent(value: Optional[float]) -> str:
+    if value is None or not math.isfinite(value):
+        return "n/a"
+    return f"{value * 100:.1f}%"
+
+
+def _build_proe_section(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    row_a, week_a = _latest_l3_row_with_fallback(season, current_week, team_a, frames=frames)
+    row_b, week_b = _latest_l3_row_with_fallback(season, current_week, team_b, frames=frames)
+    if row_a is None or row_b is None:
+        return None
+    pass_rate_a = _coerce_float(row_a.get("pass_rate_off"))
+    pass_rate_b = _coerce_float(row_b.get("pass_rate_off"))
+    if pass_rate_a is None and pass_rate_b is None:
+        return None
+    baseline_a = _league_pass_rate(season, week_a, frames)
+    baseline_b = _league_pass_rate(season, week_b, frames)
+    proe_a = pass_rate_a - baseline_a if pass_rate_a is not None and baseline_a is not None else None
+    proe_b = pass_rate_b - baseline_b if pass_rate_b is not None and baseline_b is not None else None
+
+    def _row(team: str, pass_rate: Optional[float], baseline: Optional[float], proe: Optional[float], opponent_row: dict[str, Any]) -> list[str]:
+        opp_pass_def = _coerce_float(opponent_row.get("pass_success_rate_def"))
+        opp_rush_def = _coerce_float(opponent_row.get("rush_success_rate_def"))
+        return [
+            team,
+            _fmt_percent(pass_rate),
+            _fmt_percent(baseline),
+            _fmt_percent(proe),
+            _fmt_percent(opp_pass_def),
+            _fmt_percent(opp_rush_def),
+            _proe_lean_label(proe),
+        ]
+
+    table = [
+        "| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |",
+        "| --- | ---: | ---: | ---: | ---: | ---: | --- |",
+    ]
+    for values in [
+        _row(team_a, pass_rate_a, baseline_a, proe_a, row_b),
+        _row(team_b, pass_rate_b, baseline_b, proe_b, row_a),
+    ]:
+        table.append(
+            "| {team} | {pass_rate} | {baseline} | {proe} | {opp_pass} | {opp_rush} | {lean} |".format(
+                team=values[0],
+                pass_rate=values[1],
+                baseline=values[2],
+                proe=values[3],
+                opp_pass=values[4],
+                opp_rush=values[5],
+                lean=values[6],
+            )
+        )
+    reference_week = max(filter(None, [week_a, week_b]), default=None)
+    if reference_week is not None and reference_week < current_week:
+        table.append(f"*Pass rates use latest available L3 data (Week {reference_week}).*")
+    return "\n".join(table)
+
+
+def _situational_edge_text(
+    offense_value: Optional[float],
+    defense_value: Optional[float],
+    offense_team: str,
+    defense_team: str,
+    *,
+    higher_is_better: bool,
+    invert_offense: bool = False,
+    threshold: float = 0.02,
+) -> str:
+    if offense_value is None or defense_value is None:
+        return "n/a"
+    off_val = offense_value
+    def_val = defense_value
+    if invert_offense:
+        # lower offensive value is better (e.g., pressure allowed)
+        margin = def_val - off_val
+        offense_better = margin < -threshold
+        defense_better = margin > threshold
+    else:
+        margin = off_val - def_val
+        offense_better = margin > threshold if higher_is_better else margin < -threshold
+        defense_better = margin < -threshold if higher_is_better else margin > threshold
+    advantage = "balanced"
+    if offense_better:
+        advantage = f"{offense_team} edge"
+    elif defense_better:
+        advantage = f"{defense_team} edge"
+    return (
+        f"{_fmt_percent(off_val)} vs {_fmt_percent(def_val)} allowed -> {advantage}"
+    )
+
+
+def _build_situational_edges_section(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    row_a, week_a = _latest_l3_row_with_fallback(season, current_week, team_a, frames=frames)
+    row_b, week_b = _latest_l3_row_with_fallback(season, current_week, team_b, frames=frames)
+    if row_a is None or row_b is None:
+        return None
+
+    categories = [
+        (
+            "3rd Down Conversion",
+            ("third_down_conv_off", "third_down_conv_def", True, False),
+        ),
+        (
+            "Red Zone TD Rate",
+            ("redzone_td_rate_off", "redzone_td_rate_def", True, False),
+        ),
+        (
+            "Pass Protection vs Pressure",
+            ("pressure_rate_allowed", "pressure_rate_def", False, True),
+        ),
+        (
+            "Explosive Plays",
+            ("explosive_play_rate_off", "explosive_play_rate_def", True, False),
+        ),
+    ]
+
+    lines = [
+        "| Edge | {a} Off vs {b} Def | {b} Off vs {a} Def |".format(a=team_a, b=team_b),
+        "| --- | --- | --- |",
+    ]
+    for label, (off_key, def_key, higher_is_better, invert_offense) in categories:
+        cell_a = _situational_edge_text(
+            _coerce_float(row_a.get(off_key)),
+            _coerce_float(row_b.get(def_key)),
+            team_a,
+            team_b,
+            higher_is_better=higher_is_better,
+            invert_offense=invert_offense,
+        )
+        cell_b = _situational_edge_text(
+            _coerce_float(row_b.get(off_key)),
+            _coerce_float(row_a.get(def_key)),
+            team_b,
+            team_a,
+            higher_is_better=higher_is_better,
+            invert_offense=invert_offense,
+        )
+        lines.append(f"| {label} | {cell_a} | {cell_b} |")
+
+    reference_week = max(filter(None, [week_a, week_b]), default=None)
+    if reference_week is not None and reference_week < current_week:
+        lines.append(f"*Metrics use latest available L3 data (Week {reference_week}).*")
+    return "\n".join(lines)
 
 
 def _comparison_edges(
@@ -2287,6 +2540,14 @@ _METRIC_ALIASES = {
     "tempo": [
         "tempo",
     ],
+    # Pass rate (L3)
+    "pass_rate_off": [
+        "pass_rate_off",
+    ],
+}
+
+_METRIC_LAYER_OVERRIDES: dict[str, str] = {
+    "pass_rate_off": "l3_team_week",
 }
 
 _WEIGHTED_METRIC_CONFIG: dict[str, dict[str, str]] = {
@@ -2300,6 +2561,10 @@ _WEIGHTED_METRIC_CONFIG: dict[str, dict[str, str]] = {
         "column": "plays",
     },
     "core_third_down_conv": {
+        "type": "l3_column",
+        "column": "plays",
+    },
+    "pass_rate_off": {
         "type": "l3_column",
         "column": "plays",
     },
@@ -2352,10 +2617,15 @@ def _metric_form_table(
 
     dfs: list[pl.DataFrame] = []
 
+    layer = _METRIC_LAYER_OVERRIDES.get(column_name, "l4_core12")
+    layer_dir = "l4_core12" if layer is None else layer
+    if layer not in {"l4_core12", "l3_team_week"}:
+        layer_dir = "l4_core12"
+
     # scope: form tables should exclude the current matchup week so that
     # "up to Week N" reflects completed games only (week-1 for current week)
     for w in range(1, current_week):
-        p = Path(f"data/l4_core12/{season}/{w}.parquet")
+        p = Path(f"data/{layer_dir}/{season}/{w}.parquet")
         if not p.exists():
             continue
 
@@ -2388,7 +2658,7 @@ def _metric_form_table(
     # fallback: if we still have no rows, walk backwards for the most recent available week
     if not dfs and current_week > 1:
         for fallback_week in range(current_week - 1, 0, -1):
-            p = Path(f"data/l4_core12/{season}/{fallback_week}.parquet")
+            p = Path(f"data/{layer_dir}/{season}/{fallback_week}.parquet")
             if not p.exists():
                 continue
 
@@ -2592,6 +2862,7 @@ METRIC_FORM_CONFIG = [
     ("Pressure Rate (Def)", "core_pressure_rate_def", True),
 
     ("Tempo", "tempo", False),
+    ("Pass Rate Offense", "pass_rate_off", True),
 ]
 
 
@@ -2796,6 +3067,47 @@ def generate_comparison_report(
         md_lines.append("## PowerScore Summary")
         md_lines.append("")
         md_lines.extend(summary_lines)
+        md_lines.append("")
+
+    projected_md = _build_projected_spread_section(
+        summary_a,
+        summary_b,
+        season,
+        week,
+        team_a,
+        team_b,
+        frames,
+    )
+    if projected_md:
+        md_lines.append("## Model Outlook")
+        md_lines.append("")
+        md_lines.append(projected_md)
+        md_lines.append("")
+
+    proe_md = _build_proe_section(
+        season,
+        week,
+        team_a,
+        team_b,
+        frames,
+    )
+    if proe_md:
+        md_lines.append("## PROE Tendencies")
+        md_lines.append("")
+        md_lines.append(proe_md)
+        md_lines.append("")
+
+    situational_md = _build_situational_edges_section(
+        season,
+        week,
+        team_a,
+        team_b,
+        frames,
+    )
+    if situational_md:
+        md_lines.append("## Situational Edges")
+        md_lines.append("")
+        md_lines.append(situational_md)
         md_lines.append("")
 
     matchup_edges_md = _build_matchup_edges_table(
