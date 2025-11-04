@@ -34,6 +34,14 @@ CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
 CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | CAR | NO |
+| --- | ---: | ---: |
+| Season-to-date | 0.141 | 0.111 |
+| Last 5 games | 0.158 | 0.099 |
+| Last 3 games | 0.128 | 0.085 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

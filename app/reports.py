@@ -383,6 +383,8 @@ def _read_manifest_files(manifest_path: Path) -> list[str]:
 
 
 logger = get_logger(__name__)
+PROJECT_ROOT = Path(__file__).resolve().parents[1]
+DATA_ROOT = PROJECT_ROOT / "data"
 
 PROJECT_ROOT = Path(__file__).resolve().parent.parent
 TEMPLATES_DIR = PROJECT_ROOT / "templates"
@@ -1300,6 +1302,12 @@ _TREND_METRICS = [
     },
 ]
 
+_SOS_WINDOWS = [
+    ("season", None, "Season-to-date"),
+    ("last5", 5, "Last 5 games"),
+    ("last3", 3, "Last 3 games"),
+]
+
 
 def _build_comparison_metrics(
     summary_a: SimpleNamespace,
@@ -1588,6 +1596,117 @@ def _build_trend_summary(
             )
 
     return "\n".join(lines), len(week_values)
+
+
+def _build_strength_of_schedule(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+) -> Optional[tuple[str, int]]:
+    eval_week = current_week - 1
+    if eval_week < 1:
+        return None
+
+    ps_frames: list[pl.DataFrame] = []
+    for wk in range(1, eval_week + 1):
+        ps_path = path_for("l4_powerscore", season, wk)
+        if not ps_path.exists():
+            continue
+        df = pl.read_parquet(ps_path)
+        if df.is_empty():
+            continue
+        rename_map: dict[str, str] = {}
+        if "team" in df.columns and "TEAM" not in df.columns:
+            rename_map["team"] = "TEAM"
+        if "PowerScore" in df.columns and "power_score" not in df.columns:
+            rename_map["PowerScore"] = "power_score"
+        if rename_map:
+            df = df.rename(rename_map)
+        if "TEAM" not in df.columns or "power_score" not in df.columns:
+            continue
+        ps_frames.append(
+            df.select(
+                [
+                    pl.col("TEAM").cast(pl.Utf8).str.to_uppercase(),
+                    pl.lit(wk).cast(pl.Int64).alias("week"),
+                    pl.col("power_score").cast(pl.Float64),
+                ]
+            )
+        )
+
+    if not ps_frames:
+        return None
+
+    ps_df = pl.concat(ps_frames, how="vertical")
+    opponents_frames: list[pl.DataFrame] = []
+    for wk in range(1, eval_week + 1):
+        l2_path = path_for("l2", season, wk)
+        if not l2_path.exists():
+            continue
+        df = pl.read_parquet(l2_path)
+        if df.is_empty() or not {"TEAM", "OPP"}.issubset(df.columns):
+            continue
+        opponents_frames.append(
+            df.select(
+                [
+                    pl.lit(wk).cast(pl.Int64).alias("week"),
+                    pl.col("TEAM").cast(pl.Utf8).str.to_uppercase(),
+                    pl.col("OPP").cast(pl.Utf8).str.to_uppercase(),
+                ]
+            ).unique()
+        )
+
+    if not opponents_frames:
+        return None
+
+    opponents_df = pl.concat(opponents_frames, how="vertical")
+
+    def _team_sos(team: str) -> dict[str, Optional[float]]:
+        games = opponents_df.filter(pl.col("TEAM") == team)
+        if games.is_empty():
+            return {}
+
+        joined = games.join(
+            ps_df,
+            left_on=["OPP", "week"],
+            right_on=["TEAM", "week"],
+            how="inner",
+        )
+        if joined.is_empty():
+            return {}
+
+        joined = joined.sort("week")
+        results: dict[str, Optional[float]] = {}
+        series = joined["power_score"]
+        for key, window, _ in _SOS_WINDOWS:
+            if window is None:
+                subset = series
+            else:
+                subset = series.tail(window)
+            results[key] = float(subset.mean()) if subset.len() > 0 else None
+        return results
+
+    sos_a = _team_sos(team_a)
+    sos_b = _team_sos(team_b)
+    if not sos_a and not sos_b:
+        return None
+
+    def _fmt(value: Optional[float]) -> str:
+        if value is None or not math.isfinite(value):
+            return "n/a"
+        return f"{value:.3f}"
+
+    lines = [
+        f"| Window | {team_a} | {team_b} |",
+        "| --- | ---: | ---: |",
+    ]
+    for key, _, label in _SOS_WINDOWS:
+        lines.append(
+            f"| {label} | {_fmt(sos_a.get(key))} | {_fmt(sos_b.get(key))} |"
+        )
+
+    return "\n".join(lines), eval_week
 
 
 def _comparison_edges(
@@ -2361,6 +2480,19 @@ def generate_comparison_report(
         md_lines.append("## PowerScore Summary")
         md_lines.append("")
         md_lines.extend(summary_lines)
+        md_lines.append("")
+
+    sos_result = _build_strength_of_schedule(
+        season=season,
+        current_week=week,
+        team_a=team_a,
+        team_b=team_b,
+    )
+    if sos_result:
+        sos_md, sos_week = sos_result
+        md_lines.append(f"## Strength of Schedule (through Week {sos_week})")
+        md_lines.append("")
+        md_lines.append(sos_md)
         md_lines.append("")
 
     trend_result = _build_trend_summary(

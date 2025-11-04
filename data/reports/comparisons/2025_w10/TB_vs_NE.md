@@ -34,6 +34,14 @@ NE edge: +0.149 (TB -0.003 vs NE +0.146)
 TB edge: +0.371 (TB +0.279 vs NE -0.091)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.371), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | TB | NE |
+| --- | ---: | ---: |
+| Season-to-date | 0.119 | 0.134 |
+| Last 5 games | 0.113 | 0.116 |
+| Last 3 games | 0.054 | 0.083 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

@@ -34,6 +34,14 @@ SF edge: +0.105 (SF +0.279 vs LAR +0.174)
 LAR edge: +0.201 (SF +0.111 vs LAR +0.312)
 **Verdict:** LAR holds the edge in the extended breakdown (lead 0.201), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | SF | LAR |
+| --- | ---: | ---: |
+| Season-to-date | 0.162 | n/a |
+| Last 5 games | 0.205 | n/a |
+| Last 3 games | 0.192 | n/a |
+
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |

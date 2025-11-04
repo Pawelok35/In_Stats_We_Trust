@@ -34,6 +34,14 @@ BAL edge: +0.047 (MIN +0.121 vs BAL +0.167)
 BAL edge: +0.324 (MIN +0.096 vs BAL +0.421)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.324), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | MIN | BAL |
+| --- | ---: | ---: |
+| Season-to-date | 0.106 | 0.176 |
+| Last 5 games | 0.158 | 0.153 |
+| Last 3 games | 0.146 | 0.115 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W5 | W8 | W9 | Trend |

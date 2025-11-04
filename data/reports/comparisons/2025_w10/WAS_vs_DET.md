@@ -34,6 +34,14 @@ WAS edge: +0.054 (WAS +0.169 vs DET +0.115)
 DET edge: +0.048 (WAS +0.039 vs DET +0.087)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.048), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | WAS | DET |
+| --- | ---: | ---: |
+| Season-to-date | 0.183 | 0.138 |
+| Last 5 games | 0.197 | 0.095 |
+| Last 3 games | 0.224 | 0.119 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W6 | W7 | W9 | Trend |

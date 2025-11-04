@@ -34,6 +34,14 @@ CHI edge: +0.075 (CHI +0.326 vs NYG +0.251)
 CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | CHI | NYG |
+| --- | ---: | ---: |
+| Season-to-date | 0.173 | 0.185 |
+| Last 5 games | 0.174 | 0.207 |
+| Last 3 games | 0.201 | 0.260 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

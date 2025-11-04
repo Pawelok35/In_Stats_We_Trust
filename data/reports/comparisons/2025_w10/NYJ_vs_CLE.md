@@ -34,6 +34,14 @@ NYJ edge: +0.313 (NYJ +0.306 vs CLE -0.007)
 NYJ edge: +0.202 (NYJ +0.224 vs CLE +0.022)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.202), driven by EPA Offense (25% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | NYJ | CLE |
+| --- | ---: | ---: |
+| Season-to-date | 0.172 | 0.075 |
+| Last 5 games | 0.176 | 0.070 |
+| Last 3 games | 0.143 | 0.061 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

@@ -34,6 +34,14 @@ LV edge: +0.227 (DEN +0.016 vs LV +0.243)
 LV edge: +0.184 (DEN -0.001 vs LV +0.183)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.184), driven by EPA Offense (25% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | DEN | LV |
+| --- | ---: | ---: |
+| Season-to-date | 0.108 | 0.135 |
+| Last 5 games | 0.117 | 0.136 |
+| Last 3 games | 0.145 | 0.142 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W6 | W7 | W9 | Trend |

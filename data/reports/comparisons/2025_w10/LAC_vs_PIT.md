@@ -34,6 +34,14 @@ PIT edge: +0.001 (LAC +0.127 vs PIT +0.127)
 PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | LAC | PIT |
+| --- | ---: | ---: |
+| Season-to-date | 0.136 | 0.180 |
+| Last 5 games | 0.168 | 0.188 |
+| Last 3 games | 0.144 | 0.215 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

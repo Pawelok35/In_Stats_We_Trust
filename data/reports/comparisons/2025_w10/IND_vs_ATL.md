@@ -34,6 +34,14 @@ IND edge: +0.008 (IND +0.147 vs ATL +0.139)
 ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.505), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | IND | ATL |
+| --- | ---: | ---: |
+| Season-to-date | 0.173 | 0.134 |
+| Last 5 games | 0.175 | 0.171 |
+| Last 3 games | 0.179 | 0.159 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

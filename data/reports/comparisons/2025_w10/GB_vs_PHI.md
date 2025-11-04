@@ -34,6 +34,14 @@ PHI edge: +0.146 (GB +0.157 vs PHI +0.303)
 PHI edge: +0.230 (GB +0.008 vs PHI +0.237)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.230), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | GB | PHI |
+| --- | ---: | ---: |
+| Season-to-date | 0.162 | 0.159 |
+| Last 5 games | 0.201 | 0.161 |
+| Last 3 games | 0.167 | 0.198 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W7 | W8 | W9 | Trend |

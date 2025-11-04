@@ -34,6 +34,14 @@ BUF edge: +0.149 (MIA +0.088 vs BUF +0.237)
 BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.525), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | MIA | BUF |
+| --- | ---: | ---: |
+| Season-to-date | 0.174 | 0.181 |
+| Last 5 games | 0.129 | 0.161 |
+| Last 3 games | 0.080 | 0.155 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W6 | W8 | W9 | Trend |

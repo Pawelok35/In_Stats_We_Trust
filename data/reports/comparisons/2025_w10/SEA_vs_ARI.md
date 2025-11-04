@@ -34,6 +34,14 @@ SEA edge: +0.133 (SEA +0.281 vs ARI +0.148)
 ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.105), driven by Turnover Margin (10% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | SEA | ARI |
+| --- | ---: | ---: |
+| Season-to-date | 0.116 | 0.151 |
+| Last 5 games | 0.142 | 0.167 |
+| Last 3 games | 0.080 | 0.187 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W6 | W7 | W9 | Trend |

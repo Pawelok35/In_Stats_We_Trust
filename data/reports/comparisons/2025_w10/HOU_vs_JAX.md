@@ -34,6 +34,14 @@ JAX edge: +0.239 (HOU +0.009 vs JAX +0.249)
 JAX edge: +0.192 (HOU -0.011 vs JAX +0.181)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.192), driven by EPA Offense (25% weight).
 
+## Strength of Schedule (through Week 9)
+
+| Window | HOU | JAX |
+| --- | ---: | ---: |
+| Season-to-date | 0.066 | 0.152 |
+| Last 5 games | 0.058 | 0.186 |
+| Last 3 games | 0.072 | 0.191 |
+
 ## Trend Summary (last 3 weeks)
 
 | Metric | W5 | W7 | W9 | Trend |
