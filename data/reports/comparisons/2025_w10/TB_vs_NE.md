@@ -1,13 +1,8 @@
 # Matchup Report - TB vs NE
 
-**Quick Edge:**
-- PowerScore advantage: -0.003 vs 0.146
-- Tempo (last 3): 6.448 vs 7.398
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | TB | NE | Δ |
+| Component | Weight | TB | NE | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | -0.078 | 0.022 | -0.100 |
 | EPA Defense | 20% | -0.394 | 0.016 | -0.410 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | TB | NE | Δ |
+| Component | Weight | TB | NE | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | -0.078 | 0.022 | -0.100 |
 | EPA Defense | 20% | -0.394 | 0.016 | -0.410 |
@@ -34,23 +29,171 @@ NE edge: +0.149 (TB -0.003 vs NE +0.146)
 TB edge: +0.371 (TB +0.279 vs NE -0.091)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.371), driven by Turnover Margin (10% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (TB - NE) | -2.8 pts (favours NE) |
+| Model Win% TB | 38.7% |
+| Model Win% NE | 61.3% |
+| SOS Differential (TB-NE) | -0.015 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| TB | 37.0% | n/a | n/a | 42.1% | 45.7% | n/a |
+| NE | 46.3% | n/a | n/a | 37.5% | 40.0% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | +19.2 pp | +18.6 pp | +9.3 pp |
+| NE | -7.4 pp | -8.5 pp | -2.7 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | -8.2 pp | -7.9 pp | -14.4 pp |
+| NE | +13.9 pp | +10.3 pp | +13.3 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | -5.0 pp | -5.4 pp | -5.1 pp |
+| NE | -8.4 pp | -8.3 pp | -7.0 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | +0.2 pp | +0.6 pp | -3.1 pp |
+| NE | +7.0 pp | +7.6 pp | +9.4 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | -11.2 pp | -11.2 pp | -11.2 pp |
+| NE | +6.9 pp | +6.9 pp | +6.9 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | +6.2 pp | +6.2 pp | +6.2 pp |
+| NE | +9.3 pp | +9.3 pp | +9.3 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | +0.2 pp | +0.6 pp | -3.1 pp |
+| NE | +7.0 pp | +7.6 pp | +9.4 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | -5.0 pp | -5.4 pp | -5.1 pp |
+| NE | -8.4 pp | -8.3 pp | -7.0 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | TB | NE |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 1.55 | 2.18 |
-| Points per Drive Allowed | 0.27 | 2.30 |
-| Points per Drive Differential | 1.27 | -0.12 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 45.1 | 45.1 | 45.1 |
+| NE | 44.6 | 44.6 | 44.6 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 47.9 | 47.9 | 47.9 |
+| NE | 53.2 | 53.2 | 53.2 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | -2.8 | -2.8 | -2.8 |
+| NE | -8.6 | -8.6 | -8.6 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 2.12 | 2.05 | 1.24 |
+| NE | 2.44 | 2.41 | 2.33 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 1.69 | 1.56 | 0.80 |
+| NE | 1.85 | 1.76 | 1.56 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 0.43 | 0.49 | 0.45 |
+| NE | 0.60 | 0.65 | 0.77 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| TB | 6.64 | n/a | n/a | n/a | n/a |
-| NE | 7.45 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 7.19 | 6.64 | 6.45 |
+| NE | 7.81 | 7.78 | 7.40 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 37.0% | 37.0% | 37.0% |
+| NE | 42.6% | 42.6% | 42.6% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 63.0% | 63.0% | 63.0% |
+| NE | 57.4% | 57.4% | 57.4% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 2.66 | 2.46 | 2.38 |
+| NE | 3.33 | 3.31 | 3.15 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| TB | 4.53 | 4.19 | 4.06 |
+| NE | 4.48 | 4.47 | 4.25 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ TB edge: +0.371 (TB +0.279 vs NE -0.091)
 | NE | 7.810 | 7.779 | 7.398 |
 | TB | 7.188 | 6.643 | 6.448 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | TB Off EPA | TB Off SR | TB Def EPA | TB Def SR | TB Tempo | NE Off EPA | NE Off SR | NE Def EPA | NE Def SR | NE Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | -0.008 | 0.427 | -0.081 | 0.454 | 7.188 | 0.070 | 0.468 | -0.043 | 0.461 | 7.810 |
-| last 5 games | 0.010 | 0.426 | -0.124 | 0.445 | 6.643 | 0.067 | 0.480 | -0.079 | 0.451 | 7.779 |
-| last 3 games | -0.149 | 0.351 | -0.293 | 0.384 | 6.448 | 0.058 | 0.466 | -0.140 | 0.418 | 7.398 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| NE | 42.5% | 42.5% | 42.5% |
+| TB | 37.0% | 37.0% | 37.0% |

@@ -1,13 +1,8 @@
 # Matchup Report - SEA vs ARI
 
-**Quick Edge:**
-- PowerScore advantage: 0.281 vs 0.148
-- Tempo (last 3): 6.062 vs 8.993
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | SEA | ARI | Δ |
+| Component | Weight | SEA | ARI | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | 0.333 | 0.053 | +0.280 |
 | EPA Defense | 20% | -0.098 | -0.122 | +0.025 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | SEA | ARI | Δ |
+| Component | Weight | SEA | ARI | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | 0.333 | 0.053 | +0.280 |
 | EPA Defense | 20% | -0.098 | -0.122 | +0.025 |
@@ -34,23 +29,171 @@ SEA edge: +0.133 (SEA +0.281 vs ARI +0.148)
 ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.105), driven by Turnover Margin (10% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (SEA - ARI) | +2.5 pts (favours SEA) |
+| Model Win% SEA | 60.1% |
+| Model Win% ARI | 39.9% |
+| SOS Differential (SEA-ARI) | -0.035 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| SEA | 36.9% | n/a | n/a | 40.9% | 52.8% | n/a |
+| ARI | 46.3% | n/a | n/a | 50.0% | 48.2% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | -3.4 pp | -1.9 pp | -11.8 pp |
+| ARI | +1.6 pp | +6.5 pp | +10.1 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | +10.1 pp | +10.6 pp | +8.5 pp |
+| ARI | -1.3 pp | +0.3 pp | -1.6 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | +5.2 pp | +6.5 pp | +5.9 pp |
+| ARI | -4.6 pp | -3.0 pp | -1.5 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | -0.7 pp | -0.2 pp | +0.0 pp |
+| ARI | +2.1 pp | +3.4 pp | +4.3 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | -4.0 pp | -4.0 pp | -4.0 pp |
+| ARI | +4.1 pp | +4.1 pp | +4.1 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | +38.3 pp | +38.3 pp | +38.3 pp |
+| ARI | -2.6 pp | -2.6 pp | -2.6 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | -0.7 pp | -0.2 pp | +0.0 pp |
+| ARI | +2.1 pp | +3.4 pp | +4.3 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | +5.2 pp | +6.5 pp | +5.9 pp |
+| ARI | -4.6 pp | -3.0 pp | -1.5 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | SEA | ARI |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 3.80 | 3.30 |
-| Points per Drive Allowed | 1.40 | 1.10 |
-| Points per Drive Differential | 2.40 | 2.20 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 39.8 | 39.8 | 39.8 |
+| ARI | 44.8 | 44.8 | 44.8 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 50.5 | 50.5 | 50.5 |
+| ARI | 57.1 | 57.1 | 57.1 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | -10.7 | -10.7 | -10.7 |
+| ARI | -12.3 | -12.3 | -12.3 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 2.44 | 2.59 | 2.38 |
+| ARI | 2.18 | 2.37 | 2.85 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 1.70 | 1.75 | 1.09 |
+| ARI | 1.91 | 2.09 | 2.30 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 0.73 | 0.84 | 1.30 |
+| ARI | 0.27 | 0.28 | 0.55 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| SEA | 6.50 | n/a | n/a | n/a | n/a |
-| ARI | 8.20 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 6.71 | 6.82 | 6.06 |
+| ARI | 8.14 | 8.15 | 8.99 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 36.9% | 36.9% | 36.9% |
+| ARI | 46.3% | 46.3% | 46.3% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 63.1% | 63.1% | 63.1% |
+| ARI | 53.7% | 53.7% | 53.7% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 2.48 | 2.52 | 2.24 |
+| ARI | 3.77 | 3.78 | 4.17 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| SEA | 4.23 | 4.30 | 3.82 |
+| ARI | 4.37 | 4.37 | 4.83 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
 | ARI | 8.143 | 8.149 | 8.993 |
 | SEA | 6.713 | 6.817 | 6.062 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | SEA Off EPA | SEA Off SR | SEA Def EPA | SEA Def SR | SEA Tempo | ARI Off EPA | ARI Off SR | ARI Def EPA | ARI Def SR | ARI Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.076 | 0.497 | -0.069 | 0.442 | 6.713 | 0.024 | 0.459 | 0.010 | 0.487 | 8.143 |
-| last 5 games | 0.100 | 0.497 | -0.023 | 0.450 | 6.817 | 0.028 | 0.468 | 0.040 | 0.495 | 8.149 |
-| last 3 games | 0.065 | 0.483 | -0.149 | 0.420 | 6.062 | 0.070 | 0.500 | 0.055 | 0.521 | 8.993 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| ARI | 46.3% | 46.3% | 46.3% |
+| SEA | 36.9% | 36.9% | 36.9% |

@@ -1,13 +1,8 @@
 # Matchup Report - MIA vs BUF
 
-**Quick Edge:**
-- PowerScore advantage: 0.088 vs 0.237
-- Tempo (last 3): 7.275 vs 7.418
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | MIA | BUF | Δ |
+| Component | Weight | MIA | BUF | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | -0.195 | 0.151 | -0.346 |
 | EPA Defense | 20% | 0.137 | 0.066 | +0.071 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | MIA | BUF | Δ |
+| Component | Weight | MIA | BUF | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | -0.195 | 0.151 | -0.346 |
 | EPA Defense | 20% | 0.137 | 0.066 | +0.071 |
@@ -34,23 +29,171 @@ BUF edge: +0.149 (MIA +0.088 vs BUF +0.237)
 BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.525), driven by Turnover Margin (10% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (MIA - BUF) | -2.8 pts (favours BUF) |
+| Model Win% MIA | 38.7% |
+| Model Win% BUF | 61.3% |
+| SOS Differential (MIA-BUF) | -0.007 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| MIA | 53.8% | n/a | n/a | 34.2% | 61.1% | n/a |
+| BUF | 38.0% | n/a | n/a | 51.9% | 52.3% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | +6.7 pp | -0.4 pp | -7.5 pp |
+| BUF | +14.2 pp | +14.7 pp | +15.2 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | +1.0 pp | -2.8 pp | -7.5 pp |
+| BUF | -5.9 pp | -5.2 pp | -1.5 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | +6.2 pp | +7.4 pp | +7.9 pp |
+| BUF | -2.5 pp | -2.8 pp | -2.3 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | -1.3 pp | -1.1 pp | +0.3 pp |
+| BUF | +1.6 pp | +1.8 pp | +1.4 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | -8.5 pp | -8.5 pp | -8.5 pp |
+| BUF | +7.2 pp | +7.2 pp | +7.2 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | +10.1 pp | +10.1 pp | +10.1 pp |
+| BUF | +8.4 pp | +8.4 pp | +8.4 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | -1.3 pp | -1.1 pp | +0.3 pp |
+| BUF | +1.6 pp | +1.8 pp | +1.4 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | +6.2 pp | +7.4 pp | +7.9 pp |
+| BUF | -2.5 pp | -2.8 pp | -2.3 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | MIA | BUF |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 0.55 | 2.80 |
-| Points per Drive Allowed | 2.55 | 2.10 |
-| Points per Drive Differential | -2.00 | 0.70 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 43.4 | 43.4 | 43.4 |
+| BUF | 47.6 | 47.6 | 47.6 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 44.0 | 44.0 | 44.0 |
+| BUF | 49.8 | 49.8 | 49.8 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | -0.6 | -0.6 | -0.6 |
+| BUF | -2.2 | -2.2 | -2.2 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 1.99 | 1.82 | 1.48 |
+| BUF | 2.78 | 2.58 | 2.69 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 2.78 | 2.18 | 1.85 |
+| BUF | 2.01 | 1.82 | 1.64 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | -0.79 | -0.36 | -0.36 |
+| BUF | 0.77 | 0.75 | 1.05 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| MIA | 7.09 | n/a | n/a | n/a | n/a |
-| BUF | 7.90 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 7.65 | 7.10 | 7.27 |
+| BUF | 7.77 | 7.51 | 7.42 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 43.6% | 43.6% | 43.6% |
+| BUF | 34.8% | 34.8% | 34.8% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 56.4% | 56.4% | 56.4% |
+| BUF | 65.2% | 65.2% | 65.2% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 3.34 | 3.10 | 3.17 |
+| BUF | 2.71 | 2.61 | 2.58 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| MIA | 4.32 | 4.01 | 4.10 |
+| BUF | 5.07 | 4.90 | 4.84 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 | BUF | 7.774 | 7.511 | 7.418 |
 | MIA | 7.654 | 7.105 | 7.275 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | MIA Off EPA | MIA Off SR | MIA Def EPA | MIA Def SR | MIA Tempo | BUF Off EPA | BUF Off SR | BUF Def EPA | BUF Def SR | BUF Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | -0.011 | 0.451 | 0.092 | 0.482 | 7.654 | 0.136 | 0.506 | 0.023 | 0.486 | 7.774 |
-| last 5 games | -0.051 | 0.439 | 0.020 | 0.446 | 7.105 | 0.097 | 0.514 | -0.010 | 0.491 | 7.511 |
-| last 3 games | -0.145 | 0.420 | -0.048 | 0.426 | 7.275 | 0.115 | 0.531 | -0.031 | 0.482 | 7.418 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BUF | 34.8% | 34.8% | 34.8% |
+| MIA | 43.2% | 43.2% | 43.2% |

@@ -1,13 +1,8 @@
 # Matchup Report - NYJ vs CLE
 
-**Quick Edge:**
-- PowerScore advantage: 0.306 vs -0.007
-- Tempo (last 3): 7.758 vs 5.833
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | NYJ | CLE | Δ |
+| Component | Weight | NYJ | CLE | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | 0.243 | -0.306 | +0.549 |
 | EPA Defense | 20% | 0.249 | -0.008 | +0.258 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | NYJ | CLE | Δ |
+| Component | Weight | NYJ | CLE | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | 0.243 | -0.306 | +0.549 |
 | EPA Defense | 20% | 0.249 | -0.008 | +0.258 |
@@ -34,23 +29,171 @@ NYJ edge: +0.313 (NYJ +0.306 vs CLE -0.007)
 NYJ edge: +0.202 (NYJ +0.224 vs CLE +0.022)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.202), driven by EPA Offense (25% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (NYJ - CLE) | +5.8 pts (favours NYJ) |
+| Model Win% NYJ | 72.4% |
+| Model Win% CLE | 27.6% |
+| SOS Differential (NYJ-CLE) | +0.097 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| NYJ | 38.5% | n/a | n/a | 51.5% | 46.2% | n/a |
+| CLE | 54.4% | n/a | n/a | 51.4% | 78.0% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | +13.9 pp | +17.6 pp | +24.8 pp |
+| CLE | -14.1 pp | -18.4 pp | -19.4 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | +1.0 pp | -2.1 pp | -1.6 pp |
+| CLE | -2.1 pp | -2.9 pp | +2.9 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | +10.2 pp | +11.1 pp | +15.9 pp |
+| CLE | +1.2 pp | +0.8 pp | +1.1 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | -8.6 pp | -8.9 pp | -6.5 pp |
+| CLE | -11.2 pp | -10.2 pp | -9.8 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | +9.2 pp | +9.2 pp | +9.2 pp |
+| CLE | -36.1 pp | -36.1 pp | -36.1 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | +5.6 pp | +5.6 pp | +5.6 pp |
+| CLE | -24.4 pp | -24.4 pp | -24.4 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | -8.6 pp | -8.9 pp | -6.5 pp |
+| CLE | -11.2 pp | -10.2 pp | -9.8 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | +10.2 pp | +11.1 pp | +15.9 pp |
+| CLE | +1.2 pp | +0.8 pp | +1.1 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | NYJ | CLE |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 3.55 | 1.08 |
-| Points per Drive Allowed | 3.80 | 2.31 |
-| Points per Drive Differential | -0.25 | -1.22 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 53.8 | 53.8 | 53.8 |
+| CLE | 51.5 | 51.5 | 51.5 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 56.5 | 56.5 | 56.5 |
+| CLE | 45.6 | 45.6 | 45.6 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | -2.7 | -2.7 | -2.7 |
+| CLE | 5.9 | 5.9 | 5.9 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 1.99 | 2.03 | 2.55 |
+| CLE | 1.33 | 1.33 | 1.42 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 2.69 | 2.59 | 2.93 |
+| CLE | 1.87 | 1.88 | 1.71 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | -0.70 | -0.56 | -0.38 |
+| CLE | -0.53 | -0.55 | -0.29 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| NYJ | 8.27 | n/a | n/a | n/a | n/a |
-| CLE | 5.67 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 7.35 | 7.46 | 7.76 |
+| CLE | 7.33 | 7.16 | 5.83 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 38.5% | 38.5% | 38.5% |
+| CLE | 54.4% | 54.4% | 54.4% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 61.5% | 61.5% | 61.5% |
+| CLE | 45.6% | 45.6% | 45.6% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 2.83 | 2.87 | 2.98 |
+| CLE | 3.99 | 3.89 | 3.17 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NYJ | 4.52 | 4.59 | 4.77 |
+| CLE | 3.34 | 3.26 | 2.66 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ NYJ edge: +0.202 (NYJ +0.224 vs CLE +0.022)
 | CLE | 7.329 | 7.156 | 5.833 |
 | NYJ | 7.349 | 7.457 | 7.758 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | NYJ Off EPA | NYJ Off SR | NYJ Def EPA | NYJ Def SR | NYJ Tempo | CLE Off EPA | CLE Off SR | CLE Def EPA | CLE Def SR | CLE Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.018 | 0.489 | 0.122 | 0.485 | 7.349 | -0.171 | 0.377 | -0.047 | 0.429 | 7.329 |
-| last 5 games | 0.034 | 0.471 | 0.119 | 0.507 | 7.457 | -0.151 | 0.372 | -0.055 | 0.432 | 7.156 |
-| last 3 games | 0.097 | 0.491 | 0.148 | 0.572 | 7.758 | -0.222 | 0.338 | -0.145 | 0.422 | 5.833 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| CLE | 54.4% | 54.4% | 54.4% |
+| NYJ | 38.5% | 38.5% | 38.5% |

@@ -1,13 +1,8 @@
 # Matchup Report - CHI vs NYG
 
-**Quick Edge:**
-- PowerScore advantage: 0.326 vs 0.251
-- Tempo (last 3): 8.306 vs 7.826
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | CHI | NYG | Δ |
+| Component | Weight | CHI | NYG | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | 0.306 | 0.109 | +0.197 |
 | EPA Defense | 20% | 0.247 | 0.279 | -0.032 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | CHI | NYG | Δ |
+| Component | Weight | CHI | NYG | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | 0.306 | 0.109 | +0.197 |
 | EPA Defense | 20% | 0.247 | 0.279 | -0.032 |
@@ -34,23 +29,171 @@ CHI edge: +0.075 (CHI +0.326 vs NYG +0.251)
 CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (CHI - NYG) | +1.4 pts (favours CHI) |
+| Model Win% CHI | 55.7% |
+| Model Win% NYG | 44.3% |
+| SOS Differential (CHI-NYG) | -0.012 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| CHI | 39.2% | n/a | n/a | 50.0% | 54.5% | n/a |
+| NYG | 45.5% | n/a | n/a | 53.8% | 58.3% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | +1.9 pp | -1.0 pp | -0.4 pp |
+| NYG | -6.9 pp | -2.3 pp | -6.0 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -7.3 pp | -11.3 pp | -10.3 pp |
+| NYG | +0.2 pp | +6.0 pp | +4.2 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | +2.8 pp | +3.0 pp | +4.8 pp |
+| NYG | -6.2 pp | -5.4 pp | -3.8 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -1.8 pp | -1.3 pp | +0.5 pp |
+| NYG | -4.9 pp | -4.2 pp | -4.4 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -5.3 pp | -5.3 pp | -5.3 pp |
+| NYG | +1.6 pp | +1.6 pp | +1.6 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | +0.2 pp | +0.2 pp | +0.2 pp |
+| NYG | -11.1 pp | -11.1 pp | -11.1 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -1.8 pp | -1.3 pp | +0.5 pp |
+| NYG | -4.9 pp | -4.2 pp | -4.4 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | +2.8 pp | +3.0 pp | +4.8 pp |
+| NYG | -6.2 pp | -5.4 pp | -3.8 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | CHI | NYG |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 3.92 | 2.40 |
-| Points per Drive Allowed | 3.00 | 3.09 |
-| Points per Drive Differential | 0.92 | -0.69 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 53.4 | 53.4 | 53.4 |
+| NYG | 57.6 | 57.6 | 57.6 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 52.8 | 52.8 | 52.8 |
+| NYG | 46.1 | 46.1 | 46.1 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 0.6 | 0.6 | 0.6 |
+| NYG | 11.5 | 11.5 | 11.5 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 2.33 | 2.53 | 2.62 |
+| NYG | 2.08 | 2.42 | 2.43 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 2.47 | 2.39 | 2.54 |
+| NYG | 2.42 | 2.64 | 3.22 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -0.14 | 0.13 | 0.09 |
+| NYG | -0.34 | -0.22 | -0.79 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| CHI | 8.50 | n/a | n/a | n/a | n/a |
-| NYG | 7.70 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 7.65 | 8.15 | 8.31 |
+| NYG | 8.28 | 8.22 | 7.83 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 43.7% | 43.7% | 43.7% |
+| NYG | 44.2% | 44.2% | 44.2% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 56.3% | 56.3% | 56.3% |
+| NYG | 55.8% | 55.8% | 55.8% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 3.34 | 3.56 | 3.63 |
+| NYG | 3.66 | 3.63 | 3.46 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | 4.31 | 4.59 | 4.68 |
+| NYG | 4.63 | 4.59 | 4.37 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 | CHI | 7.652 | 8.145 | 8.306 |
 | NYG | 8.284 | 8.216 | 7.826 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | CHI Off EPA | CHI Off SR | CHI Def EPA | CHI Def SR | CHI Tempo | NYG Off EPA | NYG Off SR | NYG Def EPA | NYG Def SR | NYG Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.041 | 0.460 | 0.043 | 0.509 | 7.652 | 0.026 | 0.460 | 0.093 | 0.492 | 8.284 |
-| last 5 games | 0.072 | 0.484 | 0.021 | 0.515 | 8.145 | 0.061 | 0.474 | 0.123 | 0.506 | 8.216 |
-| last 3 games | 0.113 | 0.489 | 0.081 | 0.512 | 8.306 | 0.115 | 0.472 | 0.231 | 0.519 | 7.826 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| CHI | 43.2% | 43.2% | 43.2% |
+| NYG | 44.2% | 44.2% | 44.2% |

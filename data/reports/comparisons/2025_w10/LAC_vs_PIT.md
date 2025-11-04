@@ -1,13 +1,8 @@
 # Matchup Report - LAC vs PIT
 
-**Quick Edge:**
-- PowerScore advantage: 0.127 vs 0.127
-- Tempo (last 3): 9.608 vs 7.001
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | LAC | PIT | Δ |
+| Component | Weight | LAC | PIT | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | -0.002 | 0.046 | -0.048 |
 | EPA Defense | 20% | -0.151 | -0.042 | -0.109 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | LAC | PIT | Δ |
+| Component | Weight | LAC | PIT | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | -0.002 | 0.046 | -0.048 |
 | EPA Defense | 20% | -0.151 | -0.042 | -0.109 |
@@ -34,23 +29,171 @@ PIT edge: +0.001 (LAC +0.127 vs PIT +0.127)
 PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (LAC - PIT) | -0.0 pts (favours PIT) |
+| Model Win% LAC | 50.0% |
+| Model Win% PIT | 50.0% |
+| SOS Differential (LAC-PIT) | -0.044 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| LAC | 43.4% | n/a | n/a | 47.3% | 59.5% | n/a |
+| PIT | 48.1% | n/a | n/a | 40.0% | 35.9% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | +4.0 pp | +9.6 pp | +12.1 pp |
+| PIT | +17.3 pp | +19.3 pp | +18.2 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | -4.6 pp | -2.4 pp | +1.5 pp |
+| PIT | +11.1 pp | +9.0 pp | +8.3 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | -5.0 pp | -5.1 pp | -7.7 pp |
+| PIT | +0.3 pp | -0.5 pp | +2.0 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | -1.3 pp | -0.5 pp | +0.4 pp |
+| PIT | -1.4 pp | -1.2 pp | -2.6 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | +3.0 pp | +3.0 pp | +3.0 pp |
+| PIT | +11.1 pp | +11.1 pp | +11.1 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | +4.2 pp | +4.2 pp | +4.2 pp |
+| PIT | +2.6 pp | +2.6 pp | +2.6 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | -1.3 pp | -0.5 pp | +0.4 pp |
+| PIT | -1.4 pp | -1.2 pp | -2.6 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | -5.0 pp | -5.1 pp | -7.7 pp |
+| PIT | +0.3 pp | -0.5 pp | +2.0 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | LAC | PIT |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 3.00 | 2.08 |
-| Points per Drive Allowed | 0.80 | 1.82 |
-| Points per Drive Differential | 2.20 | 0.26 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 41.2 | 41.2 | 41.2 |
+| PIT | 54.2 | 54.2 | 54.2 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 61.0 | 61.0 | 61.0 |
+| PIT | 46.6 | 46.6 | 46.6 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | -19.8 | -19.8 | -19.8 |
+| PIT | 7.6 | 7.6 | 7.6 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 2.51 | 2.80 | 3.37 |
+| PIT | 2.39 | 2.44 | 2.48 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 2.08 | 2.33 | 2.01 |
+| PIT | 2.21 | 2.23 | 2.68 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 0.43 | 0.47 | 1.36 |
+| PIT | 0.18 | 0.21 | -0.20 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| LAC | 7.55 | n/a | n/a | n/a | n/a |
-| PIT | 6.23 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 8.60 | 9.12 | 9.61 |
+| PIT | 6.91 | 7.12 | 7.00 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 37.0% | 37.0% | 37.0% |
+| PIT | 49.1% | 49.1% | 49.1% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 63.0% | 63.0% | 63.0% |
+| PIT | 50.9% | 50.9% | 50.9% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 3.18 | 3.38 | 3.56 |
+| PIT | 3.39 | 3.50 | 3.44 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| LAC | 5.41 | 5.75 | 6.05 |
+| PIT | 3.52 | 3.63 | 3.57 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
 | LAC | 8.598 | 9.125 | 9.608 |
 | PIT | 6.907 | 7.122 | 7.001 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | LAC Off EPA | LAC Off SR | LAC Def EPA | LAC Def SR | LAC Tempo | PIT Off EPA | PIT Off SR | PIT Def EPA | PIT Def SR | PIT Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.034 | 0.487 | -0.004 | 0.442 | 8.598 | 0.077 | 0.480 | 0.053 | 0.495 | 6.907 |
-| last 5 games | 0.061 | 0.492 | 0.042 | 0.471 | 9.125 | 0.116 | 0.489 | 0.064 | 0.490 | 7.122 |
-| last 3 games | 0.086 | 0.522 | -0.013 | 0.434 | 9.608 | 0.109 | 0.480 | 0.116 | 0.516 | 7.001 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| LAC | 36.8% | 36.8% | 36.8% |
+| PIT | 49.1% | 49.1% | 49.1% |

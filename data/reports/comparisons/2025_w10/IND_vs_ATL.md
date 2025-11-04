@@ -1,13 +1,8 @@
 # Matchup Report - IND vs ATL
 
-**Quick Edge:**
-- PowerScore advantage: 0.147 vs 0.139
-- Tempo (last 3): 7.559 vs 7.315
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | IND | ATL | Δ |
+| Component | Weight | IND | ATL | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | -0.042 | 0.016 | -0.058 |
 | EPA Defense | 20% | 0.046 | 0.022 | +0.025 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | IND | ATL | Δ |
+| Component | Weight | IND | ATL | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | -0.042 | 0.016 | -0.058 |
 | EPA Defense | 20% | 0.046 | 0.022 | +0.025 |
@@ -34,23 +29,171 @@ IND edge: +0.008 (IND +0.147 vs ATL +0.139)
 ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.505), driven by Turnover Margin (10% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (IND - ATL) | +0.2 pts (favours IND) |
+| Model Win% IND | 50.6% |
+| Model Win% ATL | 49.4% |
+| SOS Differential (IND-ATL) | +0.039 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| IND | 59.8% | n/a | n/a | 42.1% | 47.7% | n/a |
+| ATL | 52.1% | n/a | n/a | 43.6% | 47.6% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | -11.6 pp | -7.8 pp | -15.3 pp |
+| ATL | -1.3 pp | -3.8 pp | -11.4 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | +3.1 pp | +6.8 pp | +6.4 pp |
+| ATL | -2.2 pp | +2.7 pp | +3.9 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | +0.5 pp | +0.3 pp | -0.2 pp |
+| ATL | +4.0 pp | +4.5 pp | +4.6 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | +0.9 pp | +1.0 pp | +3.1 pp |
+| ATL | +2.4 pp | +2.9 pp | +1.2 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | +3.3 pp | +3.3 pp | +3.3 pp |
+| ATL | +0.5 pp | +0.5 pp | +0.5 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | -0.7 pp | -0.7 pp | -0.7 pp |
+| ATL | -3.7 pp | -3.7 pp | -3.7 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | +0.9 pp | +1.0 pp | +3.1 pp |
+| ATL | +2.4 pp | +2.9 pp | +1.2 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | +0.5 pp | +0.3 pp | -0.2 pp |
+| ATL | +4.0 pp | +4.5 pp | +4.6 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | IND | ATL |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 1.82 | 2.30 |
-| Points per Drive Allowed | 2.08 | 2.18 |
-| Points per Drive Differential | -0.26 | 0.12 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 39.4 | 39.4 | 39.4 |
+| ATL | 52.1 | 52.1 | 52.1 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 52.9 | 52.9 | 52.9 |
+| ATL | 44.1 | 44.1 | 44.1 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | -13.6 | -13.6 | -13.6 |
+| ATL | 8.1 | 8.1 | 8.1 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 3.35 | 3.52 | 3.16 |
+| ATL | 1.72 | 1.94 | 1.44 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 2.05 | 1.94 | 2.12 |
+| ATL | 2.17 | 2.42 | 2.60 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 1.30 | 1.58 | 1.05 |
+| ATL | -0.45 | -0.47 | -1.16 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| IND | 8.36 | n/a | n/a | n/a | n/a |
-| ATL | 7.30 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 8.18 | 7.93 | 7.56 |
+| ATL | 7.70 | 7.54 | 7.32 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 55.3% | 55.3% | 55.3% |
+| ATL | 50.7% | 50.7% | 50.7% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 44.7% | 44.7% | 44.7% |
+| ATL | 49.3% | 49.3% | 49.3% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 4.52 | 4.38 | 4.18 |
+| ATL | 3.90 | 3.82 | 3.71 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| IND | 3.66 | 3.55 | 3.38 |
+| ATL | 3.80 | 3.72 | 3.61 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
 | ATL | 7.700 | 7.536 | 7.315 |
 | IND | 8.175 | 7.930 | 7.559 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | IND Off EPA | IND Off SR | IND Def EPA | IND Def SR | IND Tempo | ATL Off EPA | ATL Off SR | ATL Def EPA | ATL Def SR | ATL Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.181 | 0.530 | -0.014 | 0.489 | 8.175 | -0.048 | 0.452 | 0.012 | 0.482 | 7.700 |
-| last 5 games | 0.206 | 0.525 | -0.012 | 0.476 | 7.930 | -0.006 | 0.467 | 0.064 | 0.508 | 7.536 |
-| last 3 games | 0.208 | 0.518 | 0.016 | 0.456 | 7.559 | -0.096 | 0.433 | 0.080 | 0.502 | 7.315 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| ATL | 50.7% | 50.7% | 50.7% |
+| IND | 56.0% | 56.0% | 56.0% |

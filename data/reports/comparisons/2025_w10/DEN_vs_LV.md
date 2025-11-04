@@ -1,13 +1,8 @@
 # Matchup Report - DEN vs LV
 
-**Quick Edge:**
-- PowerScore advantage: 0.016 vs 0.243
-- Tempo (last 3): 6.676 vs 6.597
-- Points per Drive Diff: n/a vs n/a
-
 ## PowerScore Breakdown (Model)
 
-| Component | Weight | DEN | LV | Δ |
+| Component | Weight | DEN | LV | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | -0.155 | 0.165 | -0.320 |
 | EPA Defense | 20% | -0.155 | 0.156 | -0.310 |
@@ -16,7 +11,7 @@
 
 ## PowerScore Breakdown (7 Metrics)
 
-| Component | Weight | DEN | LV | Δ |
+| Component | Weight | DEN | LV | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | -0.155 | 0.165 | -0.320 |
 | EPA Defense | 20% | -0.155 | 0.156 | -0.310 |
@@ -34,23 +29,171 @@ LV edge: +0.227 (DEN +0.016 vs LV +0.243)
 LV edge: +0.184 (DEN -0.001 vs LV +0.183)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.184), driven by EPA Offense (25% weight).
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (DEN - LV) | -4.2 pts (favours LV) |
+| Model Win% DEN | 33.2% |
+| Model Win% LV | 66.8% |
+| SOS Differential (DEN-LV) | -0.028 |
+*Neutral-field assumption. Based on schedule through Week 9.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| DEN | 48.1% | n/a | n/a | 45.7% | 59.7% | n/a |
+| LV | 53.2% | n/a | n/a | 31.8% | 36.7% | n/a |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | -20.4 pp | -20.5 pp | -18.2 pp |
+| LV | +13.3 pp | +14.6 pp | +12.9 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | +4.2 pp | +2.8 pp | +1.1 pp |
+| LV | +5.2 pp | +3.6 pp | +4.3 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | +4.1 pp | +3.5 pp | +5.8 pp |
+| LV | +7.8 pp | +9.8 pp | +3.6 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | -2.2 pp | -2.8 pp | -2.1 pp |
+| LV | +3.3 pp | +1.7 pp | -1.1 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | -8.6 pp | -8.6 pp | -8.6 pp |
+| LV | +0.5 pp | +0.5 pp | +0.5 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | -3.5 pp | -3.5 pp | -3.5 pp |
+| LV | +21.7 pp | +21.7 pp | +21.7 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | -2.2 pp | -2.8 pp | -2.1 pp |
+| LV | +3.3 pp | +1.7 pp | -1.1 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | +4.1 pp | +3.5 pp | +5.8 pp |
+| LV | +7.8 pp | +9.8 pp | +3.6 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
 ## Drive Context
 
-| Metric | DEN | LV |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | n/a | n/a |
-| Opponent Avg Start (own yardline) | n/a | n/a |
-| Field Position Edge (own - opp) | n/a | n/a |
-| Points per Drive (offense) | 1.38 | 2.90 |
-| Points per Drive Allowed | 1.00 | 3.33 |
-| Points per Drive Differential | 0.38 | -0.43 |
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 40.8 | 40.8 | 40.8 |
+| LV | 47.7 | 47.7 | 47.7 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 50.0 | 50.0 | 50.0 |
+| LV | 56.9 | 56.9 | 56.9 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | -9.2 | -9.2 | -9.2 |
+| LV | -9.2 | -9.2 | -9.2 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 2.16 | 2.08 | 2.47 |
+| LV | 1.58 | 1.51 | 1.57 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 1.50 | 1.59 | 1.95 |
+| LV | 2.62 | 3.01 | 2.59 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 0.65 | 0.49 | 0.52 |
+| LV | -1.04 | -1.50 | -1.02 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| DEN | 6.23 | n/a | n/a | n/a | n/a |
-| LV | 7.90 | n/a | n/a | n/a | n/a |
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 7.24 | 7.00 | 6.68 |
+| LV | 7.11 | 6.98 | 6.60 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 44.3% | 44.3% | 44.3% |
+| LV | 53.2% | 53.2% | 53.2% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 55.7% | 55.7% | 55.7% |
+| LV | 46.8% | 46.8% | 46.8% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 3.21 | 3.10 | 2.96 |
+| LV | 3.78 | 3.71 | 3.51 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| DEN | 4.03 | 3.90 | 3.72 |
+| LV | 3.33 | 3.27 | 3.09 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
@@ -159,18 +302,9 @@ LV edge: +0.184 (DEN -0.001 vs LV +0.183)
 | DEN | 7.236 | 7.000 | 6.676 |
 | LV | 7.107 | 6.980 | 6.597 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 9)
 
-| Window | DEN Off EPA | DEN Off SR | DEN Def EPA | DEN Def SR | DEN Tempo | LV Off EPA | LV Off SR | LV Def EPA | LV Def SR | LV Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.041 | 0.444 | -0.042 | 0.414 | 7.236 | -0.103 | 0.447 | 0.049 | 0.482 | 7.107 |
-| last 5 games | 0.047 | 0.442 | -0.020 | 0.415 | 7.000 | -0.126 | 0.474 | 0.061 | 0.482 | 6.980 |
-| last 3 games | 0.094 | 0.462 | 0.016 | 0.428 | 6.676 | -0.078 | 0.442 | 0.045 | 0.485 | 6.597 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| DEN | 44.4% | 44.4% | 44.4% |
+| LV | 53.2% | 53.2% | 53.2% |

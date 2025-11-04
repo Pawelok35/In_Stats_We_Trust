@@ -2653,6 +2653,71 @@ def _build_situational_edges_snapshot(
     return "\n".join(lines)
 
 
+def _build_drive_context_snapshot(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    row_a, week_a = _latest_l3_row_with_fallback(season, current_week, team_a, frames=frames)
+    row_b, week_b = _latest_l3_row_with_fallback(season, current_week, team_b, frames=frames)
+    if row_a is None or row_b is None:
+        return None
+
+    reference_week = max(filter(None, [week_a, week_b]), default=None)
+
+    def _own_yardline(value: Optional[float]) -> Optional[float]:
+        if value is None:
+            return None
+        return 100.0 - value
+
+    def _value(row: dict[str, Any], key: str) -> Optional[float]:
+        return _coerce_float(row.get(key))
+
+    def _fmt(value: Optional[float], kind: str) -> str:
+        if value is None or not math.isfinite(value):
+            return "n/a"
+        if kind == "yardline":
+            return f"{value:.1f}"
+        if kind == "edge":
+            return f"{value:+.1f}"
+        if kind == "points":
+            return f"{value:.2f}"
+        return f"{value:.3f}"
+
+    rows = [
+        ("Avg Start (own yardline)", "avg_start_yd100_off", "yardline"),
+        ("Opponent Avg Start (own yardline)", "avg_start_yd100_def", "yardline"),
+        ("Field Position Edge (own - opp)", "start_field_position_edge", "edge"),
+        ("Points per Drive (offense)", "points_per_drive_off", "points"),
+        ("Points per Drive Allowed", "points_per_drive_def", "points"),
+        ("Points per Drive Differential", "points_per_drive_diff", "points"),
+    ]
+
+    lines = [
+        f"| Metric | {team_a} | {team_b} |",
+        "| --- | ---: | ---: |",
+    ]
+    for label, key, kind in rows:
+        val_a = _value(row_a, key)
+        val_b = _value(row_b, key)
+        if kind == "yardline":
+            val_a = _own_yardline(val_a)
+            val_b = _own_yardline(val_b)
+        lines.append(
+            "| {label} | {a} | {b} |".format(
+                label=label,
+                a=_fmt(val_a, kind),
+                b=_fmt(val_b, kind),
+            )
+        )
+
+    if reference_week is not None and reference_week < current_week:
+        lines.append(f"*Values use latest available L3 data (Week {reference_week}).*")
+    return "\n".join(lines)
+
+
 def _comparison_edges(
     season: int,
     week: int,
@@ -3276,8 +3341,6 @@ def generate_comparison_report(
         teams=[team_a, team_b],
         current_week=week,
     )
-    form_table_md = _pretty_form_table(form_df, team_a, team_b)
-
     # 4. Quick Edge / skrót przewag (używa comparison_rows + rolling form_df)
     # tempo last3
     tempo_a_recent = None
@@ -3329,11 +3392,6 @@ def generate_comparison_report(
     # Header
     md_lines.append(f"# Matchup Report - {team_a} vs {team_b}")
     md_lines.append("")
-    md_lines.append("**Quick Edge:**")
-    for ln in quick_edge_lines:
-        md_lines.append(ln)
-    md_lines.append("")
-
     l3_frame = frames.get("l3")
     l3_has_current_week = (
         l3_frame is not None
@@ -3589,25 +3647,6 @@ def generate_comparison_report(
         md_lines.append("")
 
 
-    # Dodajemy jeszcze podsumowanie 'Recent Form' z szeroką tabelą (Off EPA / SR / Tempo)
-    md_lines.append("## Recent Form (Season / Last 5 / Last 3)")
-    md_lines.append("")
-    md_lines.append(form_table_md)
-    md_lines.append("")
-    md_lines.append(
-        "_Off EPA = średnie EPA/play ataku (wyżej = lepiej). "
-        "Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). "
-        "Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._"
-    )
-    md_lines.append("")
-
-    # Betting Angle sekcja
-    md_lines.append("## Betting Angle / What Stands Out")
-    md_lines.append("")
-    md_lines.append("- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.")
-    md_lines.append("- Defense trend: porównaj Def EPA last 3 obu drużyn.")
-    md_lines.append("- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.")
-    md_lines.append("")
 
     # 6. Ścieżki zapisu (gdzie .md i gdzie PNG)
     markdown_target = comparison_report_path(season, week, team_a, team_b)
