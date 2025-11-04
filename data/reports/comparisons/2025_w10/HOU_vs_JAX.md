@@ -34,6 +34,24 @@ JAX edge: +0.239 (HOU +0.009 vs JAX +0.249)
 JAX edge: +0.192 (HOU -0.011 vs JAX +0.181)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.192), driven by EPA Offense (25% weight).
 
+## Drive Context
+
+| Metric | HOU | JAX |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 1.00 | 3.33 |
+| Points per Drive Allowed | 1.38 | 2.90 |
+| Points per Drive Differential | -0.38 | 0.43 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| HOU | 6.20 | n/a | n/a | n/a | n/a |
+| JAX | 10.78 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | HOU | JAX |

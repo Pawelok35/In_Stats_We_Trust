@@ -34,6 +34,24 @@ NYJ edge: +0.313 (NYJ +0.306 vs CLE -0.007)
 NYJ edge: +0.202 (NYJ +0.224 vs CLE +0.022)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.202), driven by EPA Offense (25% weight).
 
+## Drive Context
+
+| Metric | NYJ | CLE |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 3.55 | 1.08 |
+| Points per Drive Allowed | 3.80 | 2.31 |
+| Points per Drive Differential | -0.25 | -1.22 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| NYJ | 8.27 | n/a | n/a | n/a | n/a |
+| CLE | 5.67 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | NYJ | CLE |

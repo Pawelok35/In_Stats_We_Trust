@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 9
 
-_Generated at 2025-11-04T08:05:58.703304+00:00 (UTC)_
+_Generated at 2025-11-04T10:31:41.145144+00:00 (UTC)_
 
 Data root: `data`
 
@@ -9,21 +9,21 @@ Data root: `data`
 | Layer | Artifact | Manifest | Rows | Columns | Status |
 |-------|----------|----------|------|---------|--------|
 | L1 Ingest | `data\l1\2025\9.parquet` | `data\l1\2025\9_manifest.json` | 2385 | 18 | ready |
-| L2 Clean | `data\l2\2025\9.parquet` | `data\l2\2025\9_manifest.json` | 2385 | 23 | ready |
-| L3 Team Week | `data\l3_team_week\2025\9.parquet` | `data\l3_team_week\2025\9_manifest.json` | 28 | 21 | ready |
+| L2 Clean | `data\l2\2025\9.parquet` | `data\l2\2025\9_manifest.json` | 2385 | 24 | ready |
+| L3 Team Week | `data\l3_team_week\2025\9.parquet` | `data\l3_team_week\2025\9_manifest.json` | 28 | 32 | ready |
 
 ## L2 Audit Snapshot
 
 Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-04T08:05:58.361622+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 23, "rows_removed": 0, "timestamp": "2025-11-04T08:05:58.361622+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 23, "timestamp": "2025-11-04T08:05:58.361622+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-04T10:31:40.699142+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-04T10:31:40.699142+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2025-11-04T10:31:40.699142+00:00"}
 
 ## L3 Sanity
 
 - Rows processed: 28
-- Columns available: 21
+- Columns available: 32
 - Artifact path: `data\l3_team_week\2025\9.parquet`
 
 ## Metrics Snapshot

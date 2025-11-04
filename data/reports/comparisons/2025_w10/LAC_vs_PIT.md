@@ -34,6 +34,24 @@ PIT edge: +0.001 (LAC +0.127 vs PIT +0.127)
 PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | LAC | PIT |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 3.00 | 2.08 |
+| Points per Drive Allowed | 0.80 | 1.82 |
+| Points per Drive Differential | 2.20 | 0.26 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| LAC | 7.55 | n/a | n/a | n/a | n/a |
+| PIT | 6.23 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | LAC | PIT |

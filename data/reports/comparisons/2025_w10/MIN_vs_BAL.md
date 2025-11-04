@@ -34,6 +34,24 @@ BAL edge: +0.047 (MIN +0.121 vs BAL +0.167)
 BAL edge: +0.324 (MIN +0.096 vs BAL +0.421)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.324), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | MIN | BAL |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 2.25 | 2.55 |
+| Points per Drive Allowed | 2.18 | 0.55 |
+| Points per Drive Differential | 0.07 | 2.00 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| MIN | 6.75 | n/a | n/a | n/a | n/a |
+| BAL | 6.45 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | MIN | BAL |

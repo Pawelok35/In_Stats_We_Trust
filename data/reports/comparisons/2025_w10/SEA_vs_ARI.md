@@ -34,6 +34,24 @@ SEA edge: +0.133 (SEA +0.281 vs ARI +0.148)
 ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.105), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | SEA | ARI |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 3.80 | 3.30 |
+| Points per Drive Allowed | 1.40 | 1.10 |
+| Points per Drive Differential | 2.40 | 2.20 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| SEA | 6.50 | n/a | n/a | n/a | n/a |
+| ARI | 8.20 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | SEA | ARI |

@@ -227,9 +227,9 @@ def compare_report(
         raise typer.Exit(code=1)
 
     if paths:
-        typer.echo(f"✅ Comparison report generated: {paths[0]}")
+        typer.echo(f"[OK] Comparison report generated: {paths[0]}")
     else:
-        typer.echo("⚠️  No report generated (empty paths)")
+        typer.echo("[WARN] No report generated (empty paths)")
 
 
 @app.command("build-weekly-reports")

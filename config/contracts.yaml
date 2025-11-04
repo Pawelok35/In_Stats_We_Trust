@@ -41,6 +41,7 @@ L2:
     - play_type:Utf8?
     - epa:Float64
     - success:Float64
+    - yardline_100:Float64?
     - yards_gained:Float64?
     - success_bin:Int64?
     - is_turnover:Int64?

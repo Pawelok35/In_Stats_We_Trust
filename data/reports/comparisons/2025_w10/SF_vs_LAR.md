@@ -34,6 +34,24 @@ SF edge: +0.105 (SF +0.279 vs LAR +0.174)
 LAR edge: +0.201 (SF +0.111 vs LAR +0.312)
 **Verdict:** LAR holds the edge in the extended breakdown (lead 0.201), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | SF | LAR |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 3.09 | 3.40 |
+| Points per Drive Allowed | 2.40 | 1.11 |
+| Points per Drive Differential | 0.69 | 2.29 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| SF | 7.55 | n/a | n/a | n/a | n/a |
+| LAR | 9.60 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | SF | LAR |

@@ -34,6 +34,24 @@ CHI edge: +0.075 (CHI +0.326 vs NYG +0.251)
 CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | CHI | NYG |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 3.92 | 2.40 |
+| Points per Drive Allowed | 3.00 | 3.09 |
+| Points per Drive Differential | 0.92 | -0.69 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| CHI | 8.50 | n/a | n/a | n/a | n/a |
+| NYG | 7.70 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | CHI | NYG |

@@ -34,6 +34,24 @@ IND edge: +0.008 (IND +0.147 vs ATL +0.139)
 ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.505), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | IND | ATL |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 1.82 | 2.30 |
+| Points per Drive Allowed | 2.08 | 2.18 |
+| Points per Drive Differential | -0.26 | 0.12 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| IND | 8.36 | n/a | n/a | n/a | n/a |
+| ATL | 7.30 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | IND | ATL |

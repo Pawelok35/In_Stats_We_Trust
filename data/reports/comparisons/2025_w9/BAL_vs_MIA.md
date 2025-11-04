@@ -23,6 +23,85 @@
 | Tempo | 6.455 | 7.091 | ↓ -0.636 |
 | PowerScore | 0.167 | 0.088 | ↑ +0.079 |
 
+## PowerScore Breakdown (Model)
+
+| Component | Weight | BAL | MIA | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.137 | -0.195 | +0.332 |
+| EPA Defense | 20% | -0.195 | 0.137 | -0.332 |
+| Success Rate Offense | 25% | 52.1% | 42.3% | +9.8 pp |
+| Tempo | 20% | 0.141 | 0.115 | +0.025 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | BAL | MIA | Δ |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.137 | -0.195 | +0.332 |
+| EPA Defense | 20% | -0.195 | 0.137 | -0.332 |
+| Success Rate Offense | 15% | 52.1% | 42.3% | +9.8 pp |
+| Turnover Margin | 10% | 3.000 | -3.000 | +6.000 |
+| Tempo | 10% | 0.141 | 0.115 | +0.025 |
+| Red Zone TD Rate (Off) | 10% | 28.6% | 0.0% | +28.6 pp |
+| Pressure Rate (Def) | 10% | 4.8% | 7.4% | -2.6 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+BAL edge: +0.079 (BAL +0.167 vs MIA +0.088)
+**7 metrics version:**
+BAL edge: +0.660 (BAL +0.421 vs MIA -0.239)
+**Verdict:** BAL holds the edge in the extended breakdown (lead 0.660), driven by Turnover Margin (10% weight).
+
+## Matchup Edges
+
+| Edge | BAL | MIA | Δ |
+| --- | ---: | ---: | ---: |
+| Rush Success Edge (off - opp run def) | +0.0 pp | +0.0 pp | +0.0 pp |
+| Pass Success Edge (off - opp pass def) | +0.0 pp | +0.0 pp | +0.0 pp |
+| Explosive Rate Edge (off - opp def) | +0.0 pp | +0.0 pp | +0.0 pp |
+| Pass Protection Edge | +85.2 pp | +90.5 pp | -5.3 pp |
+
+## Drive Context
+
+| Metric | BAL | MIA |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | 38.7 | 42.3 |
+| Opponent Avg Start (own yardline) | 42.3 | 38.7 |
+| Field Position Edge (own - opp) | -3.5 | +3.5 |
+| Points per Drive (offense) | 2.55 | 0.55 |
+| Points per Drive Allowed | 0.55 | 2.55 |
+| Points per Drive Differential | 2.00 | -2.00 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| BAL | 6.45 | 38.0% | 62.0% | 2.45 | 4.00 |
+| MIA | 7.09 | 53.8% | 46.2% | 3.82 | 3.27 |
+
+## Strength of Schedule (through Week 8)
+
+| Window | BAL | MIA |
+| --- | ---: | ---: |
+| Season-to-date | 0.189 | 0.175 |
+| Last 5 games | 0.196 | 0.140 |
+| Last 3 games | 0.163 | 0.092 |
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W5 | W6 | W8 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA BAL | -0.250 | -0.263 | 0.227 | + improving |
+| Off EPA MIA | 0.121 | 0.061 | 0.176 | + improving |
+| Def EPA BAL | 0.313 | -0.084 | 0.041 | + improving |
+| Def EPA MIA | 0.114 | 0.128 | -0.227 | + improving |
+| Off SR BAL | 43.5% | 40.4% | 55.0% | + improving |
+| Off SR MIA | 44.4% | 48.7% | 53.6% | + improving |
+| Def SR BAL | 61.2% | 46.2% | 46.9% | + improving |
+| Def SR MIA | 45.6% | 50.0% | 41.8% | + improving |
+| Tempo BAL | 6.200 | 9.889 | 8.889 | + improving |
+| Tempo MIA | 7.200 | 6.500 | 8.400 | + improving |
+
 ## Core EPA Offense Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |

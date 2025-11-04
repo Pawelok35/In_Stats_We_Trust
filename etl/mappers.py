@@ -264,6 +264,7 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
                 "play_type": pl.Series([], dtype=pl.Utf8),
                 "epa": pl.Series([], dtype=pl.Float64),
                 "success": pl.Series([], dtype=pl.Float64),
+                "yardline_100": pl.Series([], dtype=pl.Float64),
                 "yards_gained": pl.Series([], dtype=pl.Float64),
                 "is_turnover": pl.Series([], dtype=pl.Int64),
                 "is_offensive_td": pl.Series([], dtype=pl.Int64),
@@ -286,6 +287,11 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     working = working.filter(
         (pl.col("season") == season) & (pl.col("week") == week)
     )
+
+    if "yardline_100" not in working.columns:
+        working = working.with_columns(
+            pl.lit(None).cast(pl.Float64).alias("yardline_100")
+        )
 
     # --- derive TEAM / OPP if not already present
     if "TEAM" not in working.columns:
@@ -338,6 +344,7 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     working = working.with_columns([
         # yards_gained (REAL from L1, fallback 0.0 if null)
         yards_expr.alias("yards_gained"),
+        yardline_expr.alias("yardline_100"),
 
         # normalized down / distance columns
         down_expr.alias("down"),
@@ -422,6 +429,7 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         "play_type",
         "epa",
         "success",
+        "yardline_100",
         "yards_gained",
         "is_turnover",
         "is_offensive_td",

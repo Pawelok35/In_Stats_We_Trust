@@ -34,11 +34,17 @@ def _empty_result() -> pl.DataFrame:
             "plays": pl.Series([], dtype=pl.Int64),
             "epa_off_mean": pl.Series([], dtype=pl.Float64),
             "success_rate_off": pl.Series([], dtype=pl.Float64),
+            "pass_success_rate_off": pl.Series([], dtype=pl.Float64),
+            "rush_success_rate_off": pl.Series([], dtype=pl.Float64),
             "epa_def_mean": pl.Series([], dtype=pl.Float64),
             "success_rate_def": pl.Series([], dtype=pl.Float64),
+            "pass_success_rate_def": pl.Series([], dtype=pl.Float64),
+            "rush_success_rate_def": pl.Series([], dtype=pl.Float64),
             "tempo": pl.Series([], dtype=pl.Float64),
             "pressure_rate_def": pl.Series([], dtype=pl.Float64),
+            "pressure_rate_allowed": pl.Series([], dtype=pl.Float64),
             "explosive_play_rate_off": pl.Series([], dtype=pl.Float64),
+            "explosive_play_rate_def": pl.Series([], dtype=pl.Float64),
             "third_down_conv_off": pl.Series([], dtype=pl.Float64),
             "redzone_td_rate_off": pl.Series([], dtype=pl.Float64),
             "turnover_margin": pl.Series([], dtype=pl.Float64),
@@ -48,6 +54,11 @@ def _empty_result() -> pl.DataFrame:
             "ypp_off": pl.Series([], dtype=pl.Float64),
             "ypp_def": pl.Series([], dtype=pl.Float64),
             "ypp_diff": pl.Series([], dtype=pl.Float64),
+            "pass_rate_off": pl.Series([], dtype=pl.Float64),
+            "rush_rate_off": pl.Series([], dtype=pl.Float64),
+            "avg_start_yd100_off": pl.Series([], dtype=pl.Float64),
+            "avg_start_yd100_def": pl.Series([], dtype=pl.Float64),
+            "start_field_position_edge": pl.Series([], dtype=pl.Float64),
         }
     )
 
@@ -111,6 +122,7 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
     # run one with_columns to enforce presence/types
     df = df.with_columns(safety_exprs)
+    df = df.sort(["season", "week", "game_id", "play_id"])
 
     base = df.with_columns(
         [
@@ -122,6 +134,7 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             pl.col("epa").cast(pl.Float64).fill_null(0.0),
             pl.col("success").cast(pl.Float64).fill_null(0.0),
             pl.col("yards_gained").cast(pl.Float64),
+            pl.col("yardline_100").cast(pl.Float64),
             pl.col("play_type").cast(pl.Utf8).alias("play_type"),
             pl.col("play_description").cast(pl.Utf8).fill_null("").alias("play_description"),
             pl.col("is_dropback").cast(pl.Int64).fill_null(0),
@@ -158,6 +171,32 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         ]
     )
 
+    drive_starts = (
+        base.filter(pl.col("yardline_100").is_not_null())
+        .group_by(["season", "week", "TEAM", "OPP", "drive"])
+        .agg(
+            pl.col("yardline_100")
+            .first()
+            .cast(pl.Float64)
+            .alias("_start_yd100")
+        )
+    )
+
+    start_off = (
+        drive_starts.group_by(["season", "week", "TEAM"])
+        .agg(
+            pl.col("_start_yd100").mean().cast(pl.Float64).alias("avg_start_yd100_off"),
+        )
+    )
+
+    start_def = (
+        drive_starts.group_by(["season", "week", "OPP"])
+        .agg(
+            pl.col("_start_yd100").mean().cast(pl.Float64).alias("avg_start_yd100_def"),
+        )
+        .rename({"OPP": "TEAM"})
+    )
+
     # OFFENSE (per TEAM)
     offense_base = (
         base.group_by(["season", "week", "TEAM"])
@@ -185,6 +224,50 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
                 )
                 .cast(pl.Float64)
                 .alias("explosive_play_rate_off"),
+
+                _safe_div(
+                    (pl.col("success") * pl.col("is_dropback")).sum().cast(pl.Float64),
+                    pl.col("is_dropback").sum().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("pass_success_rate_off"),
+
+                _safe_div(
+                    (
+                        ((pl.lit(1) - pl.col("is_dropback")).cast(pl.Float64))
+                        * pl.col("success").cast(pl.Float64)
+                    ).sum(),
+                    (
+                        pl.len().cast(pl.Float64)
+                        - pl.col("is_dropback").sum().cast(pl.Float64)
+                    ),
+                )
+                .cast(pl.Float64)
+                .alias("rush_success_rate_off"),
+
+                _safe_div(
+                    pl.col("is_dropback").sum().cast(pl.Float64),
+                    pl.len().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("pass_rate_off"),
+
+                _safe_div(
+                    (
+                        pl.len().cast(pl.Float64)
+                        - pl.col("is_dropback").sum().cast(pl.Float64)
+                    ),
+                    pl.len().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("rush_rate_off"),
+
+                _safe_div(
+                    pl.col("is_pressure").sum().cast(pl.Float64),
+                    pl.col("is_dropback").sum().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("pressure_rate_allowed"),
 
                 # third down conversion rate (offense)
                 _safe_div(
@@ -237,6 +320,33 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
                 # yards/play allowed
                 pl.col("yards_gained").mean().cast(pl.Float64).alias("ypp_def"),
+
+                _safe_div(
+                    (pl.col("success") * pl.col("is_dropback")).sum().cast(pl.Float64),
+                    pl.col("is_dropback").sum().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("pass_success_rate_def"),
+
+                _safe_div(
+                    (
+                        ((pl.lit(1) - pl.col("is_dropback")).cast(pl.Float64))
+                        * pl.col("success").cast(pl.Float64)
+                    ).sum(),
+                    (
+                        pl.len().cast(pl.Float64)
+                        - pl.col("is_dropback").sum().cast(pl.Float64)
+                    ),
+                )
+                .cast(pl.Float64)
+                .alias("rush_success_rate_def"),
+
+                _safe_div(
+                    pl.col("is_explosive").sum().cast(pl.Float64),
+                    pl.len().cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("explosive_play_rate_def"),
 
                 # pressure rate DEF = presja / dropbacki przeciwnika
                 _safe_div(
@@ -306,6 +416,9 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         .join(turnover_team, on=["season", "week", "TEAM"], how="left")
     )
 
+    combined = combined.join(start_off, on=["season", "week", "TEAM"], how="left")
+    combined = combined.join(start_def, on=["season", "week", "TEAM"], how="left")
+
     # tempo = plays / drives
     combined = combined.with_columns(
         _safe_div(
@@ -328,17 +441,28 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         )
         .cast(pl.Float64)
         .alias("ypp_diff"),
+        (
+            pl.col("avg_start_yd100_def") - pl.col("avg_start_yd100_off")
+        )
+        .cast(pl.Float64)
+        .alias("start_field_position_edge"),
     )
 
     # fill_null liczbówek
     numeric_fill_cols = [
         "epa_off_mean",
         "success_rate_off",
+        "pass_success_rate_off",
+        "rush_success_rate_off",
         "epa_def_mean",
         "success_rate_def",
+        "pass_success_rate_def",
+        "rush_success_rate_def",
         "tempo",
         "pressure_rate_def",
+        "pressure_rate_allowed",
         "explosive_play_rate_off",
+        "explosive_play_rate_def",
         "third_down_conv_off",
         "redzone_td_rate_off",
         "turnover_margin",
@@ -348,6 +472,11 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         "ypp_off",
         "ypp_def",
         "ypp_diff",
+        "pass_rate_off",
+        "rush_rate_off",
+        "avg_start_yd100_off",
+        "avg_start_yd100_def",
+        "start_field_position_edge",
     ]
     combined = combined.with_columns(
         [
@@ -365,11 +494,17 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         "plays",
         "epa_off_mean",
         "success_rate_off",
+        "pass_success_rate_off",
+        "rush_success_rate_off",
         "epa_def_mean",
         "success_rate_def",
+        "pass_success_rate_def",
+        "rush_success_rate_def",
         "tempo",
         "pressure_rate_def",
+        "pressure_rate_allowed",
         "explosive_play_rate_off",
+        "explosive_play_rate_def",
         "third_down_conv_off",
         "redzone_td_rate_off",
         "turnover_margin",
@@ -379,6 +514,11 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         "ypp_off",
         "ypp_def",
         "ypp_diff",
+        "pass_rate_off",
+        "rush_rate_off",
+        "avg_start_yd100_off",
+        "avg_start_yd100_def",
+        "start_field_position_edge",
     )
 
 

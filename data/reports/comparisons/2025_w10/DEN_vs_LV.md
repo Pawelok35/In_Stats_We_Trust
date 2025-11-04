@@ -34,6 +34,24 @@ LV edge: +0.227 (DEN +0.016 vs LV +0.243)
 LV edge: +0.184 (DEN -0.001 vs LV +0.183)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.184), driven by EPA Offense (25% weight).
 
+## Drive Context
+
+| Metric | DEN | LV |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 1.38 | 2.90 |
+| Points per Drive Allowed | 1.00 | 3.33 |
+| Points per Drive Differential | 0.38 | -0.43 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| DEN | 6.23 | n/a | n/a | n/a | n/a |
+| LV | 7.90 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | DEN | LV |

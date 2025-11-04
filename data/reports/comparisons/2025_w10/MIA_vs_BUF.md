@@ -34,6 +34,24 @@ BUF edge: +0.149 (MIA +0.088 vs BUF +0.237)
 BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.525), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | MIA | BUF |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 0.55 | 2.80 |
+| Points per Drive Allowed | 2.55 | 2.10 |
+| Points per Drive Differential | -2.00 | 0.70 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| MIA | 7.09 | n/a | n/a | n/a | n/a |
+| BUF | 7.90 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | MIA | BUF |

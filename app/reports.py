@@ -214,7 +214,7 @@ def _render_metric_comparison_table(
     team_a: str,
     team_b: str,
 ) -> str:
-    lines: list[str] = [f'| Metric | {team_a} | {team_b} | \u0394 |', '|---|---:|---:|---:|']
+    lines: list[str] = [f'| Metric | {team_a} | {team_b} | Delta |', '|---|---:|---:|---:|']
 
     for label, field, fmt in METRIC_COMPARISON_FIELDS:
         val_a = _to_float(row_a.get(field))
@@ -1308,6 +1308,322 @@ _SOS_WINDOWS = [
     ("last3", 3, "Last 3 games"),
 ]
 
+_MATCHUP_EDGE_CONFIG = [
+    {
+        "label": "Rush Success Edge (off - opp run def)",
+        "off_col": "rush_success_rate_off",
+        "def_col": "rush_success_rate_def",
+        "is_percent": True,
+        "mode": "off_minus_def",
+    },
+    {
+        "label": "Pass Success Edge (off - opp pass def)",
+        "off_col": "pass_success_rate_off",
+        "def_col": "pass_success_rate_def",
+        "is_percent": True,
+        "mode": "off_minus_def",
+    },
+    {
+        "label": "Explosive Rate Edge (off - opp def)",
+        "off_col": "explosive_play_rate_off",
+        "def_col": "explosive_play_rate_def",
+        "is_percent": True,
+        "mode": "off_minus_def",
+    },
+    {
+        "label": "Pass Protection Edge",
+        "off_col": "pressure_rate_allowed",
+        "def_col": "pressure_rate_def",
+        "is_percent": True,
+        "mode": "protection",
+    },
+]
+
+_DRIVE_CONTEXT_CONFIG = [
+    ("Avg Start (own yardline)", "avg_start_yd100_off", "yardline"),
+    ("Opponent Avg Start (own yardline)", "avg_start_yd100_def", "yardline"),
+    ("Field Position Edge (own - opp)", "start_field_position_edge", "edge"),
+    ("Points per Drive (offense)", "points_per_drive_off", "points"),
+    ("Points per Drive Allowed", "points_per_drive_def", "points"),
+    ("Points per Drive Differential", "points_per_drive_diff", "points"),
+]
+
+
+def _coerce_float(value: Any) -> Optional[float]:
+    if value is None:
+        return None
+    try:
+        result = float(value)
+    except (TypeError, ValueError):
+        return None
+    if not math.isfinite(result):
+        return None
+    return result
+
+
+def _latest_l3_row_with_fallback(
+    season: int,
+    current_week: int,
+    team: str,
+    *,
+    frames: Optional[dict[str, Optional[pl.DataFrame]]] = None,
+) -> tuple[Optional[dict[str, Any]], Optional[int]]:
+    search_week = current_week
+    frames = frames or {}
+    while search_week >= 1:
+        if search_week == current_week and frames.get("l3") is not None:
+            frame = frames.get("l3")
+        else:
+            cache_key = f"_fallback_l3_week_{search_week}"
+            if cache_key in frames:
+                frame = frames[cache_key]
+            else:
+                frame = _optional_layer_df("l3_team_week", season, search_week)
+                frames[cache_key] = frame
+        row = _team_row(frame, team)
+        if row:
+            return row, search_week
+        search_week -= 1
+    return None, None
+
+
+def _build_matchup_edges_table(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: Optional[dict[str, Optional[pl.DataFrame]]] = None,
+) -> Optional[str]:
+    row_a, week_a = _latest_l3_row_with_fallback(
+        season,
+        current_week,
+        team_a,
+        frames=frames,
+    )
+    row_b, week_b = _latest_l3_row_with_fallback(
+        season,
+        current_week,
+        team_b,
+        frames=frames,
+    )
+    if row_a is None or row_b is None:
+        return None
+
+    reference_week = max(filter(None, [week_a, week_b]), default=None)
+
+    def _edge_value(
+        offense_row: dict[str, Any],
+        defense_row: dict[str, Any],
+        config: Mapping[str, Any],
+    ) -> Optional[float]:
+        off_val = _coerce_float(offense_row.get(config["off_col"]))
+        def_val = _coerce_float(defense_row.get(config["def_col"]))
+        if off_val is None or def_val is None:
+            return None
+        mode = config.get("mode", "off_minus_def")
+        if mode == "protection":
+            return (1.0 - off_val) - def_val
+        return off_val - def_val
+
+    def _fmt_edge(value: Optional[float], *, is_percent: bool) -> str:
+        if value is None:
+            return "n/a"
+        if is_percent:
+            return f"{value * 100:+.1f} pp"
+        return f"{value:+.3f}"
+
+    lines = [
+        f"| Edge | {team_a} | {team_b} | Delta |",
+        "| --- | ---: | ---: | ---: |",
+    ]
+
+    any_row_added = False
+    for config in _MATCHUP_EDGE_CONFIG:
+        edge_a = _edge_value(row_a, row_b, config)
+        edge_b = _edge_value(row_b, row_a, config)
+        if edge_a is None and edge_b is None:
+            continue
+        delta = None
+        if edge_a is not None and edge_b is not None:
+            delta = edge_a - edge_b
+        lines.append(
+            "| {label} | {a} | {b} | {d} |".format(
+                label=config["label"],
+                a=_fmt_edge(edge_a, is_percent=config["is_percent"]),
+                b=_fmt_edge(edge_b, is_percent=config["is_percent"]),
+                d=_fmt_edge(delta, is_percent=config["is_percent"]),
+            )
+        )
+        any_row_added = True
+
+    if not any_row_added:
+        return None
+
+    if reference_week is not None and reference_week < current_week:
+        lines.append(f"*Values use latest available L3 data (Week {reference_week}).*")
+    return "\n".join(lines)
+
+
+def _build_drive_context_table(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: Optional[dict[str, Optional[pl.DataFrame]]] = None,
+) -> Optional[str]:
+    row_a, week_a = _latest_l3_row_with_fallback(
+        season,
+        current_week,
+        team_a,
+        frames=frames,
+    )
+    row_b, week_b = _latest_l3_row_with_fallback(
+        season,
+        current_week,
+        team_b,
+        frames=frames,
+    )
+    if row_a is None or row_b is None:
+        return None
+
+    reference_week = max(filter(None, [week_a, week_b]), default=None)
+
+    def _own_yardline(raw_value: Optional[float]) -> Optional[float]:
+        if raw_value is None:
+            return None
+        return 100.0 - raw_value
+
+    def _value_for(row: dict[str, Any], key: str) -> Optional[float]:
+        return _coerce_float(row.get(key))
+
+    def _fmt(value: Optional[float], kind: str) -> str:
+        if value is None:
+            return "n/a"
+        if kind == "yardline":
+            return f"{value:.1f}"
+        if kind == "edge":
+            return f"{value:+.1f}"
+        if kind == "points":
+            return f"{value:.2f}"
+        return f"{value:.3f}"
+
+    rows: list[tuple[str, Optional[float], Optional[float], str]] = []
+    for label, key, kind in _DRIVE_CONTEXT_CONFIG:
+        val_a = _value_for(row_a, key)
+        val_b = _value_for(row_b, key)
+        if kind == "yardline":
+            val_a = None if val_a is None else _own_yardline(val_a)
+            val_b = None if val_b is None else _own_yardline(val_b)
+        rows.append((label, val_a, val_b, kind))
+
+    if not any(val_a is not None or val_b is not None for _, val_a, val_b, _ in rows):
+        return None
+
+    lines = [
+        f"| Metric | {team_a} | {team_b} |",
+        "| --- | ---: | ---: |",
+    ]
+    for label, val_a, val_b, kind in rows:
+        lines.append(
+            "| {label} | {a} | {b} |".format(
+                label=label,
+                a=_fmt(val_a, kind),
+                b=_fmt(val_b, kind),
+            )
+        )
+
+    if reference_week is not None and reference_week < current_week:
+        lines.append(f"*Values use latest available L3 data (Week {reference_week}).*")
+    return "\n".join(lines)
+
+
+def _build_game_script_projection(
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: Optional[dict[str, Optional[pl.DataFrame]]] = None,
+) -> Optional[str]:
+    row_a, week_a = _latest_l3_row_with_fallback(
+        season,
+        current_week,
+        team_a,
+        frames=frames,
+    )
+    row_b, week_b = _latest_l3_row_with_fallback(
+        season,
+        current_week,
+        team_b,
+        frames=frames,
+    )
+    if row_a is None or row_b is None:
+        return None
+
+    reference_week = max(filter(None, [week_a, week_b]), default=None)
+
+    def _team_projection(row: dict[str, Any], team: str) -> dict[str, Optional[float]]:
+        tempo = _coerce_float(row.get("tempo"))
+        pass_rate = _coerce_float(row.get("pass_rate_off"))
+        rush_rate = _coerce_float(row.get("rush_rate_off"))
+        passes_per_drive = None
+        runs_per_drive = None
+        if tempo is not None and pass_rate is not None:
+            passes_per_drive = tempo * pass_rate
+        if tempo is not None and rush_rate is not None:
+            runs_per_drive = tempo * rush_rate
+        return {
+            "team": team,
+            "tempo": tempo,
+            "pass_rate": pass_rate,
+            "rush_rate": rush_rate,
+            "passes_per_drive": passes_per_drive,
+            "runs_per_drive": runs_per_drive,
+        }
+
+    projections = [
+        _team_projection(row_a, team_a),
+        _team_projection(row_b, team_b),
+    ]
+
+    if all(
+        all(entry.get(field) is None for field in ("tempo", "pass_rate", "rush_rate"))
+        for entry in projections
+    ):
+        return None
+
+    def _fmt_percent(value: Optional[float]) -> str:
+        if value is None:
+            return "n/a"
+        return f"{value * 100:.1f}%"
+
+    def _fmt_decimal(value: Optional[float], *, digits: int = 2, signed: bool = False) -> str:
+        if value is None:
+            return "n/a"
+        fmt = f"{{:{'+' if signed else ''}.{digits}f}}"
+        return fmt.format(value)
+
+    lines = [
+        "| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |",
+        "| --- | ---: | ---: | ---: | ---: | ---: |",
+    ]
+    for entry in projections:
+        lines.append(
+            "| {team} | {tempo} | {pass_rate} | {rush_rate} | {ppd} | {rpd} |".format(
+                team=entry["team"],
+                tempo=_fmt_decimal(entry.get("tempo"), digits=2),
+                pass_rate=_fmt_percent(entry.get("pass_rate")),
+                rush_rate=_fmt_percent(entry.get("rush_rate")),
+                ppd=_fmt_decimal(entry.get("passes_per_drive"), digits=2),
+                rpd=_fmt_decimal(entry.get("runs_per_drive"), digits=2),
+            )
+        )
+    if reference_week is not None and reference_week < current_week:
+        lines.append(f"*Values use latest available L3 data (Week {reference_week}).*")
+    return "\n".join(lines)
+
 
 def _build_comparison_metrics(
     summary_a: SimpleNamespace,
@@ -1441,7 +1757,7 @@ def _build_powerscore_breakdown(
         return f"{delta:+.3f}"
 
     rows: list[str] = []
-    rows.append(f"| Component | Weight | {team_a} | {team_b} | Δ |")
+    rows.append(f"| Component | Weight | {team_a} | {team_b} | Delta |")
     rows.append("| --- | ---: | ---: | ---: | ---: |")
 
     has_any = False
@@ -1740,7 +2056,7 @@ def _comparison_edges(
                 "team_a_value": team_a_value,
                 "team_b_value": team_b_value,
                 "delta": delta,  # surowa delta; formatowanie w _fmt_delta_arrow
-                "delta_display": f"\u0394 {delta:+.3f}",  # zostawiamy dla zgodności
+                "delta_display": f"Delta {delta:+.3f}",  # zostawiamy dla zgodności
             }
         )
     return edges
@@ -2482,6 +2798,45 @@ def generate_comparison_report(
         md_lines.extend(summary_lines)
         md_lines.append("")
 
+    matchup_edges_md = _build_matchup_edges_table(
+        season,
+        week,
+        team_a,
+        team_b,
+        frames=frames,
+    )
+    if matchup_edges_md:
+        md_lines.append("## Matchup Edges")
+        md_lines.append("")
+        md_lines.append(matchup_edges_md)
+        md_lines.append("")
+
+    drive_context_md = _build_drive_context_table(
+        season,
+        week,
+        team_a,
+        team_b,
+        frames=frames,
+    )
+    if drive_context_md:
+        md_lines.append("## Drive Context")
+        md_lines.append("")
+        md_lines.append(drive_context_md)
+        md_lines.append("")
+
+    game_script_md = _build_game_script_projection(
+        season,
+        week,
+        team_a,
+        team_b,
+        frames=frames,
+    )
+    if game_script_md:
+        md_lines.append("## Game Script Projection")
+        md_lines.append("")
+        md_lines.append(game_script_md)
+        md_lines.append("")
+
     sos_result = _build_strength_of_schedule(
         season=season,
         current_week=week,
@@ -2513,7 +2868,7 @@ def generate_comparison_report(
     if edges:
         md_lines.append("## Edge Summary")
         md_lines.append("")
-        md_lines.append(f"| Edge | {team_a} | {team_b} | Δ |")
+        md_lines.append(f"| Edge | {team_a} | {team_b} | Delta |")
         md_lines.append("| --- | ---: | ---: | ---: |")
         for edge in edges:
             delta_fmt = _fmt_delta_arrow(float(edge.get("delta", 0.0)))

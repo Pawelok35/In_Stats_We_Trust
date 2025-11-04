@@ -27,13 +27,30 @@ def _load_team_weeks(season: int, current_week: int) -> pl.DataFrame:
     [season, week, TEAM, epa_off_mean, success_rate_off, epa_def_mean,
      success_rate_def, tempo]
     """
+    required_columns: list[tuple[str, pl.DataType]] = [
+        ("TEAM", pl.Utf8),
+        ("epa_off_mean", pl.Float64),
+        ("success_rate_off", pl.Float64),
+        ("epa_def_mean", pl.Float64),
+        ("success_rate_def", pl.Float64),
+        ("tempo", pl.Float64),
+    ]
+
     dfs = []
     for wk in range(1, current_week):
         p = Path(f"data/l3_team_week/{season}/{wk}.parquet")
         if not p.exists():
             # skip weeks we don't have yet
             continue
-        df_w = pl.read_parquet(p).with_columns(
+        df_raw = pl.read_parquet(p)
+        # ensure all required columns exist, filling missing ones with nulls
+        select_exprs = []
+        for col_name, dtype in required_columns:
+            if col_name in df_raw.columns:
+                select_exprs.append(pl.col(col_name).cast(dtype).alias(col_name))
+            else:
+                select_exprs.append(pl.lit(None).cast(dtype).alias(col_name))
+        df_w = df_raw.select(select_exprs).with_columns(
             [
                 pl.lit(season).alias("season"),
                 pl.lit(wk).alias("week"),

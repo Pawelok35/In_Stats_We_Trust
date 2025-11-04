@@ -34,6 +34,24 @@ CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
 CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | CAR | NO |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 2.29 | 1.11 |
+| Points per Drive Allowed | 1.62 | 3.40 |
+| Points per Drive Differential | 0.66 | -2.29 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| CAR | 10.14 | n/a | n/a | n/a | n/a |
+| NO | 6.00 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | CAR | NO |

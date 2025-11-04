@@ -34,6 +34,24 @@ WAS edge: +0.054 (WAS +0.169 vs DET +0.115)
 DET edge: +0.048 (WAS +0.039 vs DET +0.087)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.048), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | WAS | DET |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 1.40 | 2.18 |
+| Points per Drive Allowed | 3.80 | 2.25 |
+| Points per Drive Differential | -2.40 | -0.07 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| WAS | 8.20 | n/a | n/a | n/a | n/a |
+| DET | 7.64 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | WAS | DET |

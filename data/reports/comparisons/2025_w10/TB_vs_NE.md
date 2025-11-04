@@ -34,6 +34,24 @@ NE edge: +0.149 (TB -0.003 vs NE +0.146)
 TB edge: +0.371 (TB +0.279 vs NE -0.091)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.371), driven by Turnover Margin (10% weight).
 
+## Drive Context
+
+| Metric | TB | NE |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | n/a | n/a |
+| Opponent Avg Start (own yardline) | n/a | n/a |
+| Field Position Edge (own - opp) | n/a | n/a |
+| Points per Drive (offense) | 1.55 | 2.18 |
+| Points per Drive Allowed | 0.27 | 2.30 |
+| Points per Drive Differential | 1.27 | -0.12 |
+
+## Game Script Projection
+
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| TB | 6.64 | n/a | n/a | n/a | n/a |
+| NE | 7.45 | n/a | n/a | n/a | n/a |
+
 ## Strength of Schedule (through Week 9)
 
 | Window | TB | NE |

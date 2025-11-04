@@ -1,38 +1,39 @@
 # Matchup Report - GB vs PHI
 
 **Quick Edge:**
-- PowerScore advantage: 0.157 vs 0.303
-- Tempo (last 3): 7.933 vs 8.119
+- PowerScore advantage: 0.157 vs n/a
+- Tempo (last 3): 7.933 vs 7.559
 - Points per Drive Diff: n/a vs n/a
 
-## PowerScore Breakdown (Model)
+## Matchup Edges
 
-| Component | Weight | GB | PHI | Δ |
-| --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.000 | 0.307 | -0.308 |
-| EPA Defense | 20% | 0.066 | 0.097 | -0.030 |
-| Success Rate Offense | 25% | 50.0% | 58.2% | -8.2 pp |
-| Tempo | 20% | 0.092 | 0.152 | -0.060 |
+| Edge | GB | PHI | Delta |
+| --- | ---: | ---: | ---: |
+| Rush Success Edge (off - opp run def) | +0.3 pp | +17.3 pp | -17.0 pp |
+| Pass Success Edge (off - opp pass def) | +4.7 pp | -6.9 pp | +11.6 pp |
+| Explosive Rate Edge (off - opp def) | +0.6 pp | +6.7 pp | -6.1 pp |
+| Pass Protection Edge | +77.4 pp | +80.4 pp | -3.1 pp |
+*Values use latest available L3 data (Week 9).*
 
-## PowerScore Breakdown (7 Metrics)
+## Drive Context
 
-| Component | Weight | GB | PHI | Δ |
-| --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.000 | 0.307 | -0.308 |
-| EPA Defense | 20% | 0.066 | 0.097 | -0.030 |
-| Success Rate Offense | 15% | 50.0% | 58.2% | -8.2 pp |
-| Turnover Margin | 10% | -1.000 | 0.000 | -1.000 |
-| Tempo | 10% | 0.092 | 0.152 | -0.060 |
-| Red Zone TD Rate (Off) | 10% | 5.6% | 18.8% | -13.2 pp |
-| Pressure Rate (Def) | 10% | 4.8% | 20.0% | -15.2 pp |
+| Metric | GB | PHI |
+| --- | ---: | ---: |
+| Avg Start (own yardline) | 40.4 | 46.0 |
+| Opponent Avg Start (own yardline) | 45.6 | 59.7 |
+| Field Position Edge (own - opp) | -5.1 | -13.7 |
+| Points per Drive (offense) | 1.62 | 4.22 |
+| Points per Drive Allowed | 2.29 | 2.22 |
+| Points per Drive Differential | -0.66 | 2.00 |
+*Values use latest available L3 data (Week 9).*
 
-## PowerScore Summary
+## Game Script Projection
 
-**Model (4 metrics):**
-PHI edge: +0.146 (GB +0.157 vs PHI +0.303)
-**7 metrics version:**
-PHI edge: +0.230 (GB +0.008 vs PHI +0.237)
-**Verdict:** PHI holds the edge in the extended breakdown (lead 0.230), driven by Turnover Margin (10% weight).
+| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
+| --- | ---: | ---: | ---: | ---: | ---: |
+| GB | 9.50 | 50.0% | 50.0% | 4.75 | 4.75 |
+| PHI | 8.78 | 34.2% | 65.8% | 3.00 | 5.78 |
+*Values use latest available L3 data (Week 9).*
 
 ## Strength of Schedule (through Week 9)
 
@@ -44,110 +45,110 @@ PHI edge: +0.230 (GB +0.008 vs PHI +0.237)
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W7 | W8 | W9 | Trend |
+| Metric | W6 | W7 | W8 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA GB | 0.123 | 0.169 | -0.000 | - declining |
-| Off EPA PHI | 0.065 | 0.307 | 0.307 | + improving |
-| Def EPA GB | 0.039 | 0.017 | 0.066 | - declining |
-| Def EPA PHI | -0.019 | 0.097 | 0.097 | - declining |
-| Off SR GB | 53.4% | 48.8% | 50.0% | - declining |
-| Off SR PHI | 42.6% | 58.2% | 58.2% | + improving |
-| Def SR GB | 48.9% | 43.8% | 49.3% | = stable |
-| Def SR PHI | 54.2% | 48.6% | 48.6% | + improving |
-| Tempo GB | 7.300 | 7.000 | 9.500 | + improving |
-| Tempo PHI | 6.800 | 8.778 | 8.778 | + improving |
+| Off EPA GB | 0.216 | 0.123 | 0.169 | - declining |
+| Off EPA PHI | -0.032 | 0.065 | 0.307 | + improving |
+| Def EPA GB | 0.096 | 0.039 | 0.017 | + improving |
+| Def EPA PHI | 0.170 | -0.019 | 0.097 | + improving |
+| Off SR GB | 58.7% | 53.4% | 48.8% | - declining |
+| Off SR PHI | 50.7% | 42.6% | 58.2% | + improving |
+| Def SR GB | 53.1% | 48.9% | 43.8% | + improving |
+| Def SR PHI | 47.1% | 54.2% | 48.6% | - declining |
+| Tempo GB | 8.333 | 7.300 | 7.000 | - declining |
+| Tempo PHI | 7.100 | 6.800 | 8.778 | + improving |
 
 ## Core EPA Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 0.111 | 0.150 | 0.097 |
-| PHI | 0.082 | 0.128 | 0.226 |
+| PHI | 0.054 | 0.057 | 0.113 |
 
 ## Core EPA Defense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 0.029 | 0.089 | 0.041 |
-| PHI | 0.029 | 0.082 | 0.058 |
+| PHI | 0.020 | 0.033 | 0.083 |
 
 ## Success Rate Offense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 50.1% | 52.5% | 50.6% |
-| PHI | 47.9% | 50.4% | 53.5% |
+| PHI | 46.6% | 47.9% | 50.9% |
 
 ## Success Rate Defense Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 46.9% | 49.5% | 47.3% |
-| PHI | 48.4% | 49.6% | 51.6% |
+| PHI | 48.4% | 47.4% | 50.0% |
 
 ## Explosive Play Rate (Off) Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 12.0% | 12.6% | 10.7% |
-| PHI | 10.5% | 12.7% | 14.6% |
+| PHI | 9.9% | 11.4% | 14.2% |
 
 ## Third Down Conversion Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 43.6% | 46.2% | 40.7% |
-| PHI | 29.4% | 19.6% | 23.7% |
+| PHI | 30.3% | 22.4% | 20.2% |
 
 ## Points per Drive Differential Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 0.466 | 0.338 | 0.130 |
-| PHI | 0.062 | 0.262 | 1.286 |
+| PHI | -0.143 | -0.127 | 0.034 |
 
 ## Yards per Play Differential Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 1.005 | 0.927 | 0.901 |
-| PHI | 0.098 | 0.996 | 1.476 |
+| PHI | -0.126 | 0.286 | 1.035 |
 
 ## Turnover Margin Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 0.000 | -0.200 | 0.333 |
-| PHI | 0.444 | 0.000 | 0.667 |
+| PHI | 0.500 | 0.400 | 0.000 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 16.9% | 17.8% | 13.5% |
-| PHI | 17.6% | 13.2% | 12.5% |
+| PHI | 17.5% | 14.9% | 11.0% |
 
 ## Pressure Rate (Def) Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 7.1% | 6.7% | 9.7% |
-| PHI | 8.0% | 11.6% | 14.8% |
+| PHI | 6.5% | 8.6% | 10.3% |
 
 ## Tempo Form (up to Week 9)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | GB | 7.990 | 8.336 | 7.933 |
-| PHI | 7.512 | 7.624 | 8.119 |
+| PHI | 7.353 | 7.069 | 7.559 |
 
 ## Recent Form (Season / Last 5 / Last 3)
 
 | Window | GB Off EPA | GB Off SR | GB Def EPA | GB Def SR | GB Tempo | PHI Off EPA | PHI Off SR | PHI Def EPA | PHI Def SR | PHI Tempo |
 | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-9 | 0.111 | 0.501 | 0.029 | 0.468 | 7.990 | 0.082 | 0.479 | 0.029 | 0.485 | 7.512 |
-| last 5 games | 0.150 | 0.527 | 0.089 | 0.494 | 8.336 | 0.128 | 0.502 | 0.082 | 0.494 | 7.624 |
-| last 3 games | 0.097 | 0.507 | 0.041 | 0.473 | 7.933 | 0.226 | 0.530 | 0.058 | 0.505 | 8.119 |
+| weeks 1-9 | 0.111 | 0.501 | 0.029 | 0.468 | 7.990 | 0.054 | 0.466 | 0.020 | 0.485 | 7.353 |
+| last 5 games | 0.150 | 0.527 | 0.089 | 0.494 | 8.336 | 0.057 | 0.478 | 0.033 | 0.475 | 7.069 |
+| last 3 games | 0.097 | 0.507 | 0.041 | 0.473 | 7.933 | 0.113 | 0.505 | 0.083 | 0.500 | 7.559 |
 
 _Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
 
