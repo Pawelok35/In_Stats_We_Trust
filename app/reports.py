@@ -9,7 +9,7 @@ from dataclasses import dataclass
 from datetime import datetime, timezone
 from pathlib import Path
 from types import SimpleNamespace
-from typing import Any, Iterable, Mapping, MutableMapping, Optional
+from typing import Any, Callable, Iterable, Mapping, MutableMapping, Optional
 from metrics.form_windows import compute_form_windows
 import matplotlib
 
@@ -1392,7 +1392,7 @@ def _latest_l3_row_with_fallback(
     return None, None
 
 
-def _build_matchup_edges_table(
+def _build_matchup_edges_snapshot(
     season: int,
     current_week: int,
     team_a: str,
@@ -1544,7 +1544,7 @@ def _build_drive_context_table(
     return "\n".join(lines)
 
 
-def _build_game_script_projection(
+def _build_game_script_snapshot(
     season: int,
     current_week: int,
     team_a: str,
@@ -2185,6 +2185,381 @@ def _build_proe_section(
     return "\n".join(table)
 
 
+_WINDOW_ORDER = ["Season-to-date", "Last 5", "Last 3"]
+
+
+def _normalize_window_label(window: str) -> Optional[str]:
+    if window is None:
+        return None
+    window = window.strip().lower()
+    if window.startswith("weeks"):
+        return "Season-to-date"
+    if window == "last 5 games":
+        return "Last 5"
+    if window == "last 3 games":
+        return "Last 3"
+    return None
+
+
+def _form_window_values(
+    form_df: pl.DataFrame,
+    metric_base: str,
+    team: str,
+) -> dict[str, Optional[float]]:
+    col_name = f"{metric_base}_{team}"
+    if col_name not in form_df.columns:
+        return {}
+    subset = form_df.select(["window", col_name])
+    values: dict[str, Optional[float]] = {}
+    for row in subset.to_dicts():
+        label = _normalize_window_label(row["window"])
+        if label:
+            values[label] = row[col_name]
+    return values
+
+
+def _format_general_value(
+    value: Optional[float],
+    *,
+    as_percent: bool,
+    digits: int = 2,
+) -> str:
+    if value is None or not math.isfinite(value):
+        return "n/a"
+    if as_percent:
+        return f"{value * 100:.1f}%"
+    return f"{value:.{digits}f}"
+
+
+def _format_edge_value(value: Optional[float], *, as_percent: bool) -> str:
+    if value is None or not math.isfinite(value):
+        return "n/a"
+    if as_percent:
+        return f"{value * 100:+.1f} pp"
+    return f"{value:+.3f}"
+
+
+def _build_window_table_for_metric(
+    form_df: pl.DataFrame,
+    metric_base: str,
+    team_a: str,
+    team_b: str,
+    *,
+    as_percent: bool,
+    digits: int = 2,
+    transform: Optional[Callable[[Optional[float]], Optional[float]]] = None,
+) -> Optional[str]:
+    values_a = _form_window_values(form_df, metric_base, team_a)
+    values_b = _form_window_values(form_df, metric_base, team_b)
+    if not values_a and not values_b:
+        return None
+
+    def _value_for(team_values: dict[str, Optional[float]], label: str) -> Optional[float]:
+        raw = team_values.get(label)
+        if transform is not None:
+            return transform(raw)
+        return raw
+
+    lines = ["| Team | Season-to-date | Last 5 | Last 3 |", "| --- | ---: | ---: | ---: |"]
+    for team, series in ((team_a, values_a), (team_b, values_b)):
+        row = [
+            _format_general_value(_value_for(series, label), as_percent=as_percent, digits=digits)
+            for label in _WINDOW_ORDER
+        ]
+        if all(cell == "n/a" for cell in row):
+            # skip team rows with no data whatsoever
+            continue
+        lines.append("| {team} | {season} | {last5} | {last3} |".format(
+            team=team,
+            season=row[0],
+            last5=row[1],
+            last3=row[2],
+        ))
+
+    if len(lines) <= 2:
+        return None
+    return "\n".join(lines)
+
+
+def _build_window_table_from_series(
+    team_a: str,
+    team_b: str,
+    series_a: dict[str, Optional[float]],
+    series_b: dict[str, Optional[float]],
+    *,
+    as_percent: bool,
+    digits: int = 2,
+) -> Optional[str]:
+    lines = ["| Team | Season-to-date | Last 5 | Last 3 |", "| --- | ---: | ---: | ---: |"]
+    has_data = False
+    for team, series in ((team_a, series_a), (team_b, series_b)):
+        row = [
+            _format_general_value(series.get(label), as_percent=as_percent, digits=digits)
+            for label in _WINDOW_ORDER
+        ]
+        if all(cell == "n/a" for cell in row):
+            continue
+        has_data = True
+        lines.append(
+            "| {team} | {season} | {last5} | {last3} |".format(
+                team=team,
+                season=row[0],
+                last5=row[1],
+                last3=row[2],
+            )
+        )
+    if not has_data:
+        return None
+    return "\n".join(lines)
+
+
+def _build_edge_window_table(
+    form_df: pl.DataFrame,
+    team_a: str,
+    team_b: str,
+    *,
+    metric_off: str,
+    metric_def: str,
+    as_percent: bool,
+    invert: bool = False,
+) -> Optional[str]:
+    off_a = _form_window_values(form_df, metric_off, team_a)
+    off_b = _form_window_values(form_df, metric_off, team_b)
+    def_a = _form_window_values(form_df, metric_def, team_a)
+    def_b = _form_window_values(form_df, metric_def, team_b)
+    if not off_a and not off_b:
+        return None
+
+    def _edge_series(off_series: dict[str, Optional[float]], opp_def_series: dict[str, Optional[float]]) -> dict[str, Optional[float]]:
+        result: dict[str, Optional[float]] = {}
+        for label in _WINDOW_ORDER:
+            off_val = off_series.get(label)
+            def_val = opp_def_series.get(label)
+            if off_val is None or def_val is None or not math.isfinite(off_val) or not math.isfinite(def_val):
+                result[label] = None
+            else:
+                result[label] = (def_val - off_val) if invert else (off_val - def_val)
+        return result
+
+    edges_a = _edge_series(off_a, def_b)
+    edges_b = _edge_series(off_b, def_a)
+
+    lines = ["| Team | Season-to-date | Last 5 | Last 3 |", "| --- | ---: | ---: | ---: |"]
+    has_data = False
+    for team, series in ((team_a, edges_a), (team_b, edges_b)):
+        row = [_format_edge_value(series.get(label), as_percent=as_percent) for label in _WINDOW_ORDER]
+        if all(cell == "n/a" for cell in row):
+            continue
+        has_data = True
+        lines.append(
+            "| {team} | {season} | {last5} | {last3} |".format(
+                team=team,
+                season=row[0],
+                last5=row[1],
+                last3=row[2],
+            )
+        )
+
+    if not has_data:
+        return None
+    return "\n".join(lines)
+
+
+def _build_matchup_edges_table(
+    form_df: pl.DataFrame,
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    sections: list[str] = []
+    matchups = [
+        ("Rush Success Edge", "rush_success_rate_off_avg", "rush_success_rate_def_avg", True, False),
+        ("Pass Success Edge", "pass_success_rate_off_avg", "pass_success_rate_def_avg", True, False),
+        ("Explosive Rate Edge", "explosive_play_rate_off_avg", "explosive_play_rate_def_avg", True, False),
+        ("Pass Protection vs Pressure", "pressure_rate_allowed_avg", "pressure_rate_def_avg", True, True),
+    ]
+    for label, off_metric, def_metric, as_percent, invert in matchups:
+        table = _build_edge_window_table(
+            form_df,
+            team_a,
+            team_b,
+            metric_off=off_metric,
+            metric_def=def_metric,
+            as_percent=as_percent,
+            invert=invert,
+        )
+        if table:
+            sections.append(f"### {label}\n\n{table}\n")
+    if sections:
+        sections.append("_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._\n")
+        return "\n".join(sections).strip()
+    return _build_matchup_edges_snapshot(
+        season=season,
+        current_week=current_week,
+        team_a=team_a,
+        team_b=team_b,
+        frames=frames,
+    )
+
+
+def _build_situational_edges_section(
+    form_df: pl.DataFrame,
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    sections: list[str] = []
+    situational_metrics = [
+        ("3rd Down Conversion", "third_down_conv_off_avg", "third_down_conv_def_avg", True, False),
+        ("Red Zone TD Rate", "redzone_td_rate_off_avg", "redzone_td_rate_def_avg", True, False),
+        ("Pass Protection vs Pressure", "pressure_rate_allowed_avg", "pressure_rate_def_avg", True, True),
+        ("Explosive Plays", "explosive_play_rate_off_avg", "explosive_play_rate_def_avg", True, False),
+    ]
+    for label, off_metric, def_metric, as_percent, invert in situational_metrics:
+        table = _build_edge_window_table(
+            form_df,
+            team_a,
+            team_b,
+            metric_off=off_metric,
+            metric_def=def_metric,
+            as_percent=as_percent,
+            invert=invert,
+        )
+        if table:
+            sections.append(f"### {label}\n\n{table}\n")
+    if sections:
+        sections.append("_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._")
+        return "\n".join(sections).strip()
+    return _build_situational_edges_snapshot(
+        season=season,
+        current_week=current_week,
+        team_a=team_a,
+        team_b=team_b,
+        frames=frames,
+    )
+
+
+def _build_drive_context_table(
+    form_df: pl.DataFrame,
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    sections: list[str] = []
+    yardline_transform = lambda v: None if v is None else 100.0 - v
+    drive_metrics = [
+        ("Avg Start (own yardline)", "avg_start_yd100_off_avg", False, 1, yardline_transform),
+        ("Opponent Avg Start (own yardline)", "avg_start_yd100_def_avg", False, 1, yardline_transform),
+        ("Field Position Edge (own - opp)", "start_field_position_edge_avg", False, 1, None),
+        ("Points per Drive (offense)", "points_per_drive_off_avg", False, 2, None),
+        ("Points per Drive Allowed", "points_per_drive_def_avg", False, 2, None),
+        ("Points per Drive Differential", "points_per_drive_diff_avg", False, 2, None),
+    ]
+    for label, metric, as_percent, digits, transform in drive_metrics:
+        table = _build_window_table_for_metric(
+            form_df,
+            metric,
+            team_a,
+            team_b,
+            as_percent=as_percent,
+            digits=digits,
+            transform=transform,
+        )
+        if table:
+            sections.append(f"### {label}\n\n{table}\n")
+    if sections:
+        sections.append("_Starting field position expressed as own-yard line (higher = shorter field)._")
+        return "\n".join(sections).strip()
+    return _build_drive_context_snapshot(
+        season=season,
+        current_week=current_week,
+        team_a=team_a,
+        team_b=team_b,
+        frames=frames,
+    )
+
+
+def _build_game_script_projection(
+    form_df: pl.DataFrame,
+    season: int,
+    current_week: int,
+    team_a: str,
+    team_b: str,
+    *,
+    frames: dict[str, Any],
+) -> Optional[str]:
+    tempo_a = _form_window_values(form_df, "tempo_avg", team_a)
+    tempo_b = _form_window_values(form_df, "tempo_avg", team_b)
+    pass_a = _form_window_values(form_df, "pass_rate_off_avg", team_a)
+    pass_b = _form_window_values(form_df, "pass_rate_off_avg", team_b)
+    if not tempo_a and not pass_a:
+        return _build_game_script_snapshot(
+            season=season,
+            current_week=current_week,
+            team_a=team_a,
+            team_b=team_b,
+            frames=frames,
+        )
+
+    def _derive(primary: dict[str, Optional[float]], secondary: Optional[dict[str, Optional[float]]], fn: Callable[[float, Optional[float]], Optional[float]]) -> dict[str, Optional[float]]:
+        result: dict[str, Optional[float]] = {}
+        for label in _WINDOW_ORDER:
+            p_val = primary.get(label)
+            s_val = secondary.get(label) if secondary is not None else None
+            if p_val is None or (secondary is not None and s_val is None):
+                result[label] = None
+            else:
+                try:
+                    result[label] = fn(p_val, s_val)
+                except Exception:
+                    result[label] = None
+        return result
+
+    run_a = {label: (1.0 - value) if value is not None else None for label, value in pass_a.items()}
+    run_b = {label: (1.0 - value) if value is not None else None for label, value in pass_b.items()}
+    passes_per_drive_a = _derive(tempo_a, pass_a, lambda tempo, pr: tempo * pr if pr is not None else None)
+    passes_per_drive_b = _derive(tempo_b, pass_b, lambda tempo, pr: tempo * pr if pr is not None else None)
+    runs_per_drive_a = _derive(tempo_a, run_a, lambda tempo, rr: tempo * rr if rr is not None else None)
+    runs_per_drive_b = _derive(tempo_b, run_b, lambda tempo, rr: tempo * rr if rr is not None else None)
+
+    sections: list[str] = []
+    tempo_table = _build_window_table_from_series(team_a, team_b, tempo_a, tempo_b, as_percent=False, digits=2)
+    if tempo_table:
+        sections.append("### Tempo\n\n" + tempo_table + "\n")
+    pass_table = _build_window_table_from_series(team_a, team_b, pass_a, pass_b, as_percent=True, digits=1)
+    if pass_table:
+        sections.append("### Pass Rate\n\n" + pass_table + "\n")
+    run_table = _build_window_table_from_series(team_a, team_b, run_a, run_b, as_percent=True, digits=1)
+    if run_table:
+        sections.append("### Run Rate\n\n" + run_table + "\n")
+    passes_drive_table = _build_window_table_from_series(team_a, team_b, passes_per_drive_a, passes_per_drive_b, as_percent=False, digits=2)
+    if passes_drive_table:
+        sections.append("### Passes per Drive\n\n" + passes_drive_table + "\n")
+    runs_drive_table = _build_window_table_from_series(team_a, team_b, runs_per_drive_a, runs_per_drive_b, as_percent=False, digits=2)
+    if runs_drive_table:
+        sections.append("### Runs per Drive\n\n" + runs_drive_table + "\n")
+
+    if sections:
+        sections.append("_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._")
+        return "\n".join(sections).strip()
+    return _build_game_script_snapshot(
+        season=season,
+        current_week=current_week,
+        team_a=team_a,
+        team_b=team_b,
+        frames=frames,
+    )
+
+
 def _situational_edge_text(
     offense_value: Optional[float],
     defense_value: Optional[float],
@@ -2218,7 +2593,7 @@ def _situational_edge_text(
     )
 
 
-def _build_situational_edges_section(
+def _build_situational_edges_snapshot(
     season: int,
     current_week: int,
     team_a: str,
@@ -3098,11 +3473,12 @@ def generate_comparison_report(
         md_lines.append("")
 
     situational_md = _build_situational_edges_section(
+        form_df,
         season,
         week,
         team_a,
         team_b,
-        frames,
+        frames=frames,
     )
     if situational_md:
         md_lines.append("## Situational Edges")
@@ -3111,6 +3487,7 @@ def generate_comparison_report(
         md_lines.append("")
 
     matchup_edges_md = _build_matchup_edges_table(
+        form_df,
         season,
         week,
         team_a,
@@ -3124,6 +3501,7 @@ def generate_comparison_report(
         md_lines.append("")
 
     drive_context_md = _build_drive_context_table(
+        form_df,
         season,
         week,
         team_a,
@@ -3137,6 +3515,7 @@ def generate_comparison_report(
         md_lines.append("")
 
     game_script_md = _build_game_script_projection(
+        form_df,
         season,
         week,
         team_a,

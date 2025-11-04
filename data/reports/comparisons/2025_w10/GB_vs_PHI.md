@@ -15,43 +15,152 @@
 
 ## Situational Edges
 
-| Edge | GB Off vs PHI Def | PHI Off vs GB Def |
-| --- | --- | --- |
-| 3rd Down Conversion | 50.0% vs 38.5% allowed -> GB edge | 22.2% vs 33.3% allowed -> GB edge |
-| Red Zone TD Rate | 5.6% vs 18.2% allowed -> PHI edge | 18.8% vs 11.8% allowed -> PHI edge |
-| Pass Protection vs Pressure | 2.6% vs 20.0% allowed -> PHI edge | 14.8% vs 4.8% allowed -> PHI edge |
-| Explosive Plays | 9.2% vs 8.6% allowed -> balanced | 15.2% vs 8.5% allowed -> PHI edge |
-*Metrics use latest available L3 data (Week 9).*
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +4.3 pp | +6.7 pp | +2.1 pp |
+| PHI | +9.2 pp | +1.5 pp | -0.6 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | -1.3 pp | -0.4 pp | -4.7 pp |
+| PHI | +3.3 pp | +0.7 pp | -3.2 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +5.2 pp | +7.3 pp | +9.0 pp |
+| PHI | -7.7 pp | -8.1 pp | -5.1 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +3.4 pp | +3.9 pp | +2.1 pp |
+| PHI | +2.7 pp | +4.2 pp | +6.8 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
 ## Matchup Edges
 
-| Edge | GB | PHI | Delta |
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| Rush Success Edge (off - opp run def) | +0.3 pp | +17.3 pp | -17.0 pp |
-| Pass Success Edge (off - opp pass def) | +4.7 pp | -6.9 pp | +11.6 pp |
-| Explosive Rate Edge (off - opp def) | +0.6 pp | +6.7 pp | -6.1 pp |
-| Pass Protection Edge | +77.4 pp | +80.4 pp | -3.1 pp |
-*Values use latest available L3 data (Week 9).*
+| GB | -6.3 pp | -6.3 pp | -6.3 pp |
+| PHI | +16.1 pp | +16.1 pp | +16.1 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +10.6 pp | +10.6 pp | +10.6 pp |
+| PHI | -0.6 pp | -0.6 pp | -0.6 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +3.4 pp | +3.9 pp | +2.1 pp |
+| PHI | +2.7 pp | +4.2 pp | +6.8 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +5.2 pp | +7.3 pp | +9.0 pp |
+| PHI | -7.7 pp | -8.1 pp | -5.1 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
 ## Drive Context
 
-| Metric | GB | PHI |
-| --- | ---: | ---: |
-| Avg Start (own yardline) | 40.4 | 46.0 |
-| Opponent Avg Start (own yardline) | 45.6 | 59.7 |
-| Field Position Edge (own - opp) | -5.1 | -13.7 |
-| Points per Drive (offense) | 1.62 | 4.22 |
-| Points per Drive Allowed | 2.29 | 2.22 |
-| Points per Drive Differential | -0.66 | 2.00 |
-*Values use latest available L3 data (Week 9).*
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 47.5 | 47.5 | 47.5 |
+| PHI | 46.0 | 46.0 | 46.0 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 48.9 | 48.9 | 48.9 |
+| PHI | 59.7 | 59.7 | 59.7 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | -1.3 | -1.3 | -1.3 |
+| PHI | -13.7 | -13.7 | -13.7 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 2.54 | 2.81 | 2.41 |
+| PHI | 2.30 | 2.29 | 2.71 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 2.09 | 2.51 | 2.37 |
+| PHI | 2.39 | 2.36 | 2.61 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 0.45 | 0.30 | 0.04 |
+| PHI | -0.09 | -0.07 | 0.10 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
 
 ## Game Script Projection
 
-| Team | Tempo | Pass Rate | Rush Rate | Passes/Drive | Runs/Drive |
-| --- | ---: | ---: | ---: | ---: | ---: |
-| GB | 9.50 | 50.0% | 50.0% | 4.75 | 4.75 |
-| PHI | 8.78 | 34.2% | 65.8% | 3.00 | 5.78 |
-*Values use latest available L3 data (Week 9).*
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 7.99 | 8.34 | 7.93 |
+| PHI | 7.35 | 7.07 | 7.56 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 48.2% | 48.2% | 48.2% |
+| PHI | 34.2% | 34.2% | 34.2% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 51.8% | 51.8% | 51.8% |
+| PHI | 65.8% | 65.8% | 65.8% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 3.85 | 4.02 | 3.83 |
+| PHI | 2.51 | 2.42 | 2.58 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 4.14 | 4.32 | 4.11 |
+| PHI | 4.84 | 4.65 | 4.98 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Strength of Schedule (through Week 9)
 
