@@ -42,10 +42,12 @@ L1_SCHEMA: tuple[ColumnDefinition, ...] = (
 
 _DISTANCE_ALIASES = ("distance", "ydstogo")
 _TEAM_ALIAS_MAP = {
-    "WAS": "WSH",
+    "WAS": "WAS",
+    "WSH": "WAS",
     "SD": "LAC",
     "OAK": "LV",
-    "STL": "LA",
+    "STL": "LAR",
+    "LA": "LAR",
     "JAC": "JAX",
     "AAA": "BAL",
     "BBB": "MIA",

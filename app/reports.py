@@ -1935,18 +1935,29 @@ def generate_comparison_report(
         md_lines.append(ln)
     md_lines.append("")
 
-    # Metric comparison table (Core12 + tempo + PowerScore snapshot)
-    md_lines.append("## Metric Comparison")
-    md_lines.append("")
-    md_lines.append(
-        build_metric_comparison_table(
-            season=season,
-            week=week,
-            team_a=team_a,
-            team_b=team_b,
+    has_metric_values = bool(comparison_rows) or any(
+        value is not None
+        for value in (
+            summary_a.powerscore,
+            summary_b.powerscore,
+            summary_a.tempo,
+            summary_b.tempo,
         )
     )
-    md_lines.append("")
+
+    if has_metric_values:
+        # Metric comparison table (Core12 + tempo + PowerScore snapshot)
+        md_lines.append("## Metric Comparison")
+        md_lines.append("")
+        md_lines.append(
+            build_metric_comparison_table(
+                season=season,
+                week=week,
+                team_a=team_a,
+                team_b=team_b,
+            )
+        )
+        md_lines.append("")
 
     # Optional Edge Summary if comparison edges dataset provides entries
     edges = _comparison_edges(season, week, team_a, team_b)

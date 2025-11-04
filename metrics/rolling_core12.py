@@ -1,22 +1,24 @@
 import polars as pl
 from pathlib import Path
 
+from etl.mappers import _TEAM_ALIAS_MAP
+
 
 CORE12_COLS = [
     "season",
     "week",
     "TEAM",
-    "core_epa_offense",
-    "core_epa_defense",
-    "success_rate_offense",
-    "success_rate_defense",
-    "explosive_play_rate_offense",
-    "third_down_conversion_offense",
-    "points_per_drive_diff",
-    "yards_per_play_diff",
-    "turnover_margin",
-    "redzone_td_rate_offense",
-    "pressure_rate_defense",
+    "core_epa_off",
+    "core_epa_def",
+    "core_sr_off",
+    "core_sr_def",
+    "core_explosive_play_rate_off",
+    "core_third_down_conv",
+    "core_points_per_drive_diff",
+    "core_ypp_diff",
+    "core_turnover_margin",
+    "core_redzone_td_rate",
+    "core_pressure_rate_def",
     "tempo",
 ]
 
@@ -64,22 +66,57 @@ def build_core12_rolling_through(season: int, through_week: int) -> pl.DataFrame
                 pl.lit(through_week).alias("through_week"),
 
                 # Średnie wartości metryk
-                pl.col("core_epa_offense").mean().alias("core_epa_offense"),
-                pl.col("core_epa_defense").mean().alias("core_epa_defense"),
-                pl.col("success_rate_offense").mean().alias("success_rate_offense"),
-                pl.col("success_rate_defense").mean().alias("success_rate_defense"),
-                pl.col("explosive_play_rate_offense").mean().alias("explosive_play_rate_offense"),
-                pl.col("third_down_conversion_offense").mean().alias("third_down_conversion_offense"),
-                pl.col("points_per_drive_diff").mean().alias("points_per_drive_diff"),
-                pl.col("yards_per_play_diff").mean().alias("yards_per_play_diff"),
-                pl.col("turnover_margin").mean().alias("turnover_margin"),
-                pl.col("redzone_td_rate_offense").mean().alias("redzone_td_rate_offense"),
-                pl.col("pressure_rate_defense").mean().alias("pressure_rate_defense"),
+                pl.col("core_epa_off").mean().alias("core_epa_off"),
+                pl.col("core_epa_def").mean().alias("core_epa_def"),
+                pl.col("core_sr_off").mean().alias("core_sr_off"),
+                pl.col("core_sr_def").mean().alias("core_sr_def"),
+                pl.col("core_explosive_play_rate_off").mean().alias("core_explosive_play_rate_off"),
+                pl.col("core_third_down_conv").mean().alias("core_third_down_conv"),
+                pl.col("core_points_per_drive_diff").mean().alias("core_points_per_drive_diff"),
+                pl.col("core_ypp_diff").mean().alias("core_ypp_diff"),
+                pl.col("core_turnover_margin").mean().alias("core_turnover_margin"),
+                pl.col("core_redzone_td_rate").mean().alias("core_redzone_td_rate"),
+                pl.col("core_pressure_rate_def").mean().alias("core_pressure_rate_def"),
                 pl.col("tempo").mean().alias("tempo"),
 
                 pl.col("week").n_unique().alias("games_played_window"),
             ]
         )
+    )
+
+    def _normalize(team: str) -> str:
+        canonical = (team or "").upper()
+        return _TEAM_ALIAS_MAP.get(canonical, canonical)
+
+    rolled = rolled.with_columns(
+        pl.col("TEAM")
+        .cast(pl.Utf8)
+        .str.to_uppercase()
+        .map_elements(_normalize, return_dtype=pl.Utf8)
+    )
+
+    rolled = (
+        rolled.group_by("TEAM")
+        .agg(
+            [
+                pl.col("season").max().alias("season"),
+                pl.col("through_week").max().alias("through_week"),
+                pl.col("core_epa_off").mean().alias("core_epa_off"),
+                pl.col("core_epa_def").mean().alias("core_epa_def"),
+                pl.col("core_sr_off").mean().alias("core_sr_off"),
+                pl.col("core_sr_def").mean().alias("core_sr_def"),
+                pl.col("core_explosive_play_rate_off").mean().alias("core_explosive_play_rate_off"),
+                pl.col("core_third_down_conv").mean().alias("core_third_down_conv"),
+                pl.col("core_points_per_drive_diff").mean().alias("core_points_per_drive_diff"),
+                pl.col("core_ypp_diff").mean().alias("core_ypp_diff"),
+                pl.col("core_turnover_margin").mean().alias("core_turnover_margin"),
+                pl.col("core_redzone_td_rate").mean().alias("core_redzone_td_rate"),
+                pl.col("core_pressure_rate_def").mean().alias("core_pressure_rate_def"),
+                pl.col("tempo").mean().alias("tempo"),
+                pl.col("games_played_window").max().alias("games_played_window"),
+            ]
+        )
+        .sort("TEAM")
     )
 
     return rolled

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 9
 
-_Generated at 2025-11-03T14:40:50.794110+00:00 (UTC)_
+_Generated at 2025-11-04T07:59:07.081212+00:00 (UTC)_
 
 Data root: `data`
 
@@ -8,21 +8,21 @@ Data root: `data`
 
 | Layer | Artifact | Manifest | Rows | Columns | Status |
 |-------|----------|----------|------|---------|--------|
-| L1 Ingest | `data\l1\2025\9.parquet` | `data\l1\2025\9_manifest.json` | 2214 | 18 | ready |
-| L2 Clean | `data\l2\2025\9.parquet` | `data\l2\2025\9_manifest.json` | 2214 | 23 | ready |
-| L3 Team Week | `data\l3_team_week\2025\9.parquet` | `data\l3_team_week\2025\9_manifest.json` | 26 | 21 | ready |
+| L1 Ingest | `data\l1\2025\9.parquet` | `data\l1\2025\9_manifest.json` | 2385 | 18 | ready |
+| L2 Clean | `data\l2\2025\9.parquet` | `data\l2\2025\9_manifest.json` | 2385 | 23 | ready |
+| L3 Team Week | `data\l3_team_week\2025\9.parquet` | `data\l3_team_week\2025\9_manifest.json` | 28 | 21 | ready |
 
 ## L2 Audit Snapshot
 
 Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2214, "cols": 18, "timestamp": "2025-11-03T14:40:50.446457+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2214, "cols": 23, "rows_removed": 0, "timestamp": "2025-11-03T14:40:50.446457+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2214, "cols": 23, "timestamp": "2025-11-03T14:40:50.446457+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-04T07:59:06.681704+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 23, "rows_removed": 0, "timestamp": "2025-11-04T07:59:06.681704+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 23, "timestamp": "2025-11-04T07:59:06.681704+00:00"}
 
 ## L3 Sanity
 
-- Rows processed: 26
+- Rows processed: 28
 - Columns available: 21
 - Artifact path: `data\l3_team_week\2025\9.parquet`
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\9.parquet`
 - Manifest: `data\l4_core12\2025\9_manifest.json`
-- Rows: 2
-- Columns: 15
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -47,7 +47,7 @@ Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
 - Artifact: `data\l4_powerscore\2025\9.parquet`
 - Manifest: `data\l4_powerscore\2025\9_manifest.json`
-- Rows: 26
+- Rows: 28
 - Columns: 4
 
 | team | power_score |

@@ -1,0 +1,124 @@
+# Matchup Report - MIN vs BAL
+
+**Quick Edge:**
+- PowerScore advantage: 0.121 vs 0.167
+- Tempo (last 3): 7.250 vs 8.411
+- Points per Drive Diff: n/a vs n/a
+
+## Metric Comparison
+
+| Metric | MIN | BAL | Δ |
+|---|---:|---:|---:|
+| Core EPA Offense | n/a | n/a | n/a |
+| Core EPA Defense | n/a | n/a | n/a |
+| Success Rate Offense | n/a | n/a | n/a |
+| Success Rate Defense | n/a | n/a | n/a |
+| Explosive Play Rate (Off) | n/a | n/a | n/a |
+| Third Down Conversion | n/a | n/a | n/a |
+| Points per Drive Differential | n/a | n/a | n/a |
+| Yards per Play Differential | n/a | n/a | n/a |
+| Turnover Margin | n/a | n/a | n/a |
+| Red Zone TD Rate (Off) | n/a | n/a | n/a |
+| Pressure Rate (Def) | n/a | n/a | n/a |
+| Tempo | n/a | n/a | n/a |
+| PowerScore | n/a | n/a | n/a |
+
+## Core EPA Offense Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 0.051 | -0.039 | 0.034 |
+| MIN | -0.069 | -0.032 | -0.086 |
+
+## Core EPA Defense Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 0.064 | 0.051 | -0.079 |
+| MIN | -0.038 | 0.061 | 0.058 |
+
+## Success Rate Offense Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 49.3% | 48.0% | 48.8% |
+| MIN | 45.5% | 45.9% | 45.0% |
+
+## Success Rate Defense Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 49.3% | 48.9% | 45.1% |
+| MIN | 44.6% | 47.9% | 47.5% |
+
+## Explosive Play Rate (Off) Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 12.2% | 10.5% | 11.2% |
+| MIN | 10.1% | 10.2% | 10.4% |
+
+## Third Down Conversion Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 35.9% | 33.8% | 34.9% |
+| MIN | 29.6% | 31.0% | 34.7% |
+
+## Points per Drive Differential Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | -0.120 | -0.557 | 0.817 |
+| MIN | -0.075 | -0.502 | -0.947 |
+
+## Yards per Play Differential Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | -0.053 | -0.174 | -0.011 |
+| MIN | -0.236 | -0.598 | -1.135 |
+
+## Turnover Margin Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | -0.375 | -0.600 | 0.667 |
+| MIN | -0.250 | -1.200 | -0.667 |
+
+## Red Zone TD Rate (Off) Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 12.3% | 12.8% | 13.5% |
+| MIN | 13.7% | 14.1% | 12.2% |
+
+## Pressure Rate (Def) Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 3.5% | 4.4% | 4.7% |
+| MIN | 9.3% | 8.8% | 10.1% |
+
+## Tempo Form (up to Week 9)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| BAL | 7.298 | 7.706 | 8.411 |
+| MIN | 6.918 | 7.487 | 7.250 |
+
+## Recent Form (Season / Last 5 / Last 3)
+
+| Window | MIN Off EPA | MIN Off SR | MIN Def EPA | MIN Def SR | MIN Tempo | BAL Off EPA | BAL Off SR | BAL Def EPA | BAL Def SR | BAL Tempo |
+| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
+| weeks 1-9 | -0.069 | 0.451 | -0.038 | 0.448 | 6.918 | 0.051 | 0.495 | 0.064 | 0.492 | 7.298 |
+| last 5 games | -0.032 | 0.455 | 0.061 | 0.481 | 7.487 | -0.039 | 0.481 | 0.051 | 0.486 | 7.706 |
+| last 3 games | -0.086 | 0.445 | 0.058 | 0.471 | 7.250 | 0.034 | 0.492 | -0.079 | 0.451 | 8.411 |
+
+_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
+
+## Betting Angle / What Stands Out
+
+- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
+- Defense trend: porównaj Def EPA last 3 obu drużyn.
+- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
