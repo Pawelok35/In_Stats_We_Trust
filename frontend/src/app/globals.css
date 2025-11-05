@@ -1,0 +1,139 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@custom-variant dark (&:is(.dark *));
+
+@theme inline {
+  --color-background: var(--background);
+  --color-foreground: var(--foreground);
+  --font-sans: var(--font-body);
+  --font-mono: var(--font-display);
+  --color-border: var(--border);
+  --color-muted: rgba(36, 33, 68, 0.08);
+  --color-muted-foreground: rgba(36, 33, 68, 0.6);
+  --color-primary: var(--primary);
+  --color-primary-foreground: var(--primary-foreground);
+  --color-secondary: var(--secondary);
+  --color-secondary-foreground: var(--secondary-foreground);
+  --color-ring: var(--primary);
+  --radius-sm: 16px;
+  --radius-md: 20px;
+  --radius-lg: 24px;
+  --radius-xl: 28px;
+}
+
+:root {
+  --radius: 1.25rem;
+  --background: #f5f1e3;
+  --foreground: #2b2443;
+  --card: #faf6eb;
+  --card-foreground: #2b2443;
+  --popover: #faf6eb;
+  --popover-foreground: #2b2443;
+  --primary: #5655f5;
+  --primary-foreground: #fffef9;
+  --secondary: #f1ecdf;
+  --secondary-foreground: #2b2443;
+  --accent: #f7f2e6;
+  --accent-foreground: #2b2443;
+  --border: #514ae2;
+  --ring: rgba(81, 74, 226, 0.4);
+  --muted-foreground: rgba(43, 36, 67, 0.6);
+}
+
+.dark {
+  --background: #171329;
+  --foreground: #f5f1e3;
+  --card: #1e1936;
+  --card-foreground: #f5f1e3;
+  --popover: #1e1936;
+  --popover-foreground: #f5f1e3;
+  --primary: #6a68ff;
+  --primary-foreground: #131123;
+  --secondary: #252042;
+  --secondary-foreground: #f5f1e3;
+  --accent: #2c2750;
+  --accent-foreground: #f5f1e3;
+  --border: rgba(104, 101, 255, 0.7);
+  --ring: rgba(104, 101, 255, 0.5);
+  --muted-foreground: rgba(245, 241, 227, 0.6);
+}
+
+@layer base {
+  * {
+    @apply border-border outline-ring/50;
+  }
+  body {
+    @apply bg-background text-foreground font-sans;
+  }
+  h1, h2, h3, h4 {
+    font-family: var(--font-display), monospace;
+    letter-spacing: 0.08em;
+  }
+}
+
+@layer components {
+  .markdown-body {
+    @apply space-y-6 text-base leading-7;
+  }
+
+  .markdown-body h1 {
+    @apply text-3xl font-semibold leading-tight uppercase;
+  }
+
+  .markdown-body h2 {
+    @apply text-2xl font-semibold leading-tight uppercase;
+  }
+
+  .markdown-body h3 {
+    @apply text-xl font-semibold leading-snug uppercase;
+  }
+
+  .markdown-body h4 {
+    @apply text-lg font-semibold leading-snug uppercase;
+  }
+
+  .markdown-body p {
+    @apply text-foreground/90;
+  }
+
+  .markdown-body a {
+    @apply font-medium text-primary underline-offset-4 hover:underline;
+  }
+
+  .markdown-body ul {
+    @apply list-disc space-y-2 pl-6;
+  }
+
+  .markdown-body ol {
+    @apply list-decimal space-y-2 pl-6;
+  }
+
+  .markdown-body table {
+    @apply w-full border-collapse overflow-hidden rounded-[18px] border-2 border-border/70 bg-card;
+  }
+
+  .markdown-body th {
+    @apply border-b-2 border-border/60 px-4 py-3 text-left text-sm font-semibold uppercase tracking-[0.08em];
+  }
+
+  .markdown-body td {
+    @apply border-t border-border/40 px-4 py-3 text-sm;
+  }
+
+  .markdown-body blockquote {
+    @apply border-l-4 border-primary/50 bg-accent px-4 py-3 italic;
+  }
+
+  .retro-frame {
+    @apply rounded-[22px] border-2 border-border/80 bg-card shadow-none px-6 py-5;
+  }
+
+  .retro-frame-title {
+    @apply text-lg font-semibold uppercase tracking-[0.15em] text-foreground;
+  }
+
+  .retro-label {
+    @apply inline-flex items-center rounded-full border-2 border-border/80 bg-accent px-3 py-1 text-xs font-semibold uppercase tracking-[0.2em] text-foreground;
+  }
+}
