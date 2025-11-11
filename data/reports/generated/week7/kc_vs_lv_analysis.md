@@ -1,0 +1,33 @@
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – KC 39.6 – LV 17.3
+2️⃣ Predicted Winner (Model) – KC
+3️⃣ Predicted Margin (Model) – KC by 22.4 pts
+4️⃣ Win Probability (Model) – 95% (KC)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę KC: KC +0.146 vs LV +0.006. Red Zone TD Rate sprzyja KC (17.2% vs 10.8%). Success Rate Offense pokazuje KC na poziomie 50.2% vs 44.4% (+5.8 pp). Turnover margin faworyzuje KC (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. Na 3rd down KC utrzymuje 38.6%, podczas gdy LV jest na 35.9%, co stabilizuje serie ofensywne.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – KC 34.7 – LV 22.2
+2️⃣ Predicted Winner (Market) – KC
+3️⃣ Predicted Margin (Market) – KC by 12.5 pts
+4️⃣ Win Probability (Market) – 94% (KC)
+5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.146 vs LV +0.006. Points per Drive Differential — KC +0.641 vs LV -0.606. Success Rate Offense — KC 50.2% vs LV 44.4%. Third Down Conversion — KC 38.6% vs LV 35.9%. Red Zone TD Rate — KC 17.2% vs LV 10.8%. Explosive Play Rate — KC 11.6% vs LV 10.1%. Model margin 22.4 pts vs market spread KC +12.5.
+6️⃣ Forum Output (B) – Model idzie w stronę KC po marginesie 22.4 pkt. KC notuje +0.641 PPD vs -0.606 u LV. Różnica w Success Rate to 50.2% vs 44.4%. Na 3rd down KC (38.6%) wygląda solidniej niż LV (35.9%). Red Zone i explosiveness ( 17.2% / 11.6% ) utrzymują przewagę jakościową. Market trzyma 12.5 pkt, więc edge vs linia to +9.9.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +9.9 pts
+• PowerScoreDiff (winner) = +0.140
+• Confidence = 98.0%
+
+🏷 Model Tag: GOY — based on 98.0% confidence, +9.9 pts model edge vs line, and PowerScore Δ +0.140.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – KC 39.6 – LV 17.3
+   • Win Probability – 95% (KC)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – KC 34.7 – LV 22.2
+   • Win Probability – 94% (KC)
+
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — KC (HC -12.5)

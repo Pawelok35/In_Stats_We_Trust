@@ -1,0 +1,33 @@
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – BAL 7.9 – LA 25.4
+2️⃣ Predicted Winner (Model) – LA
+3️⃣ Predicted Margin (Model) – LA by 17.5 pts
+4️⃣ Win Probability (Model) – 95% (LA)
+5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje LA (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę LA: LA +0.052 vs BAL +0.008. Defensive pressure rate wspiera LA (+10.5% vs +6.7%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja LA (14.8% vs 11.6%). Success Rate Offense pokazuje LA na poziomie 51.6% vs 49.7% (+1.9 pp).
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – BAL 25.8 – LA 18.8
+2️⃣ Predicted Winner (Market) – BAL
+3️⃣ Predicted Margin (Market) – BAL by 7.0 pts
+4️⃣ Win Probability (Market) – 74% (BAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — BAL +0.008 vs LA +0.052. Points per Drive Differential — BAL -0.623 vs LA +0.560. Success Rate Offense — BAL 49.7% vs LA 51.6%. Third Down Conversion — BAL 36.6% vs LA 36.9%. Red Zone TD Rate — BAL 11.6% vs LA 14.8%. Explosive Play Rate — BAL 12.9% vs LA 12.7%. Model margin -17.5 pts vs market spread BAL +7.0.
+6️⃣ Forum Output (B) – Model idzie w stronę LA po marginesie -17.5 pkt. LA notuje +0.560 PPD vs -0.623 u BAL. Różnica w Success Rate to 51.6% vs 49.7%. Na 3rd down LA (36.9%) wygląda solidniej niż BAL (36.6%). Red Zone i explosiveness ( 14.8% / 12.7% ) utrzymują przewagę jakościową. Market trzyma 7.0 pkt, więc edge vs linia to +24.5.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +24.5 pts
+• PowerScoreDiff (winner) = +0.044
+• Confidence = 96.5%
+
+🏷 Model Tag: GOW — based on 96.5% confidence, +24.5 pts model edge vs line, and PowerScore Δ +0.044.
+💪 Weekly value pick — wyraźny edge vs rynek.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – BAL 7.9 – LA 25.4
+   • Win Probability – 95% (LA)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – BAL 25.8 – LA 18.8
+   • Win Probability – 74% (BAL)
+
+🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — LA (HC +7.0)

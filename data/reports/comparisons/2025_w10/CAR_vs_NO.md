@@ -1,5 +1,34 @@
 # Matchup Report - CAR vs NO
 
+## PowerScore Breakdown (Model)
+
+| Component | Weight | CAR | NO | Delta |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.066 | -0.211 | +0.277 |
+| EPA Defense | 20% | 0.000 | 0.172 | -0.172 |
+| Success Rate Offense | 25% | 46.9% | 40.5% | +6.4 pp |
+| Tempo | 20% | 0.108 | 0.097 | +0.011 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | CAR | NO | Delta |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.066 | -0.211 | +0.277 |
+| EPA Defense | 20% | 0.000 | 0.172 | -0.172 |
+| Success Rate Offense | 15% | 46.9% | 40.5% | +6.4 pp |
+| Turnover Margin | 10% | -0.222 | -0.444 | +0.222 |
+| Tempo | 10% | 0.108 | 0.097 | +0.011 |
+| Red Zone TD Rate (Off) | 10% | 12.4% | 10.5% | +1.9 pp |
+| Pressure Rate (Def) | 10% | 4.6% | 6.4% | -1.8 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+CAR edge: +0.095 (CAR +0.512 vs NO +0.417)
+**7 metrics version:**
+CAR edge: +0.224 (CAR +0.643 vs NO +0.419)
+**Verdict:** CAR trzyma przewagę w rozszerzonym modelu dzięki wyraźnie lepszemu EPA Offense i Success Rate.
+
 ## Model Outlook
 
 | Metric | Value |

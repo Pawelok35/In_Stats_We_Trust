@@ -1,0 +1,327 @@
+# Matchup Report - GB vs WAS
+
+## Metric Comparison
+
+| Metric | GB | WAS | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.046 | -0.070 | ↑ +0.115 |
+| Core EPA Defense | -0.070 | 0.046 | ↓ -0.115 |
+| Success Rate Offense | 48.8% | 44.2% | ↑ +4.7 pp |
+| Success Rate Defense | 44.2% | 48.8% | ↓ -4.7 pp |
+| Explosive Play Rate (Off) | 12.8% | 2.3% | ↑ +10.5 pp |
+| Third Down Conversion | 38.5% | 27.8% | ↑ +10.7 pp |
+| Points per Drive Differential | 0.614 | -0.614 | ↑ +1.227 |
+| Yards per Play Differential | 2.000 | -2.000 | ↑ +4.000 |
+| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
+| Red Zone TD Rate (Off) | 16.7% | 22.2% | ↓ -5.6 pp |
+| Pressure Rate (Def) | 8.7% | 5.7% | ↑ +3.0 pp |
+| Tempo | 7.167 | 7.818 | ↓ -0.652 |
+| PowerScore | 0.150 | 0.100 | ↑ +0.050 |
+
+## PowerScore Breakdown (Model)
+
+| Component | Weight | GB | WAS | Delta |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.046 | -0.070 | +0.115 |
+| EPA Defense | 20% | -0.070 | 0.046 | -0.115 |
+| Success Rate Offense | 25% | 48.8% | 44.2% | +4.7 pp |
+| Tempo | 20% | 0.128 | 0.023 | +0.105 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | GB | WAS | Delta |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.046 | -0.070 | +0.115 |
+| EPA Defense | 20% | -0.070 | 0.046 | -0.115 |
+| Success Rate Offense | 15% | 48.8% | 44.2% | +4.7 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.128 | 0.023 | +0.105 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 22.2% | -5.6 pp |
+| Pressure Rate (Def) | 10% | 8.7% | 5.7% | +3.0 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+GB edge: +0.050 (GB +0.150 vs WAS +0.100)
+**7 metrics version:**
+GB edge: +0.021 (GB +0.109 vs WAS +0.088)
+**Verdict:** GB holds the edge in the extended breakdown (lead 0.021), driven by EPA Offense (25% weight).
+
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (GB - WAS) | +0.9 pts (favours GB) |
+| Model Win% GB | 53.8% |
+| Model Win% WAS | 46.2% |
+| SOS Differential (GB-WAS) | +0.054 |
+*Neutral-field assumption. Based on schedule through Week 1.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| GB | 40.7% | 44.7% | -4.0% | 48.6% | 49.0% | Run heavy |
+| WAS | 53.5% | 44.7% | 8.8% | 39.1% | 50.0% | Pass heavy |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +15.3 pp | +15.3 pp | +15.3 pp |
+| WAS | +0.0 pp | +0.0 pp | +0.0 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +16.7 pp | +16.7 pp | +16.7 pp |
+| WAS | +18.8 pp | +18.8 pp | +18.8 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +5.1 pp | +5.1 pp | +5.1 pp |
+| WAS | +0.8 pp | +0.8 pp | +0.8 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +7.0 pp | +7.0 pp | +7.0 pp |
+| WAS | +11.7 pp | +11.7 pp | +11.7 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +8.8 pp | +8.8 pp | +8.8 pp |
+| WAS | +12.0 pp | +12.0 pp | +12.0 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +10.9 pp | +10.9 pp | +10.9 pp |
+| WAS | -3.8 pp | -3.8 pp | -3.8 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +7.0 pp | +7.0 pp | +7.0 pp |
+| WAS | +11.7 pp | +11.7 pp | +11.7 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +5.1 pp | +5.1 pp | +5.1 pp |
+| WAS | +0.8 pp | +0.8 pp | +0.8 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
+## Drive Context
+
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 52.6 | 52.6 | 52.6 |
+| WAS | 35.7 | 35.7 | 35.7 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 48.6 | 48.6 | 48.6 |
+| WAS | 39.9 | 39.9 | 39.9 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 4.0 | 4.0 | 4.0 |
+| WAS | -4.2 | -4.2 | -4.2 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 3.00 | 3.00 | 3.00 |
+| WAS | 2.10 | 2.10 | 2.10 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 1.30 | 1.30 | 1.30 |
+| WAS | 0.67 | 0.67 | 0.67 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 1.70 | 1.70 | 1.70 |
+| WAS | 1.43 | 1.43 | 1.43 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
+
+## Game Script Projection
+
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 6.78 | 6.78 | 6.78 |
+| WAS | 8.50 | 8.50 | 8.50 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 37.7% | 37.7% | 37.7% |
+| WAS | 42.4% | 42.4% | 42.4% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 62.3% | 62.3% | 62.3% |
+| WAS | 57.6% | 57.6% | 57.6% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 2.56 | 2.56 | 2.56 |
+| WAS | 3.60 | 3.60 | 3.60 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | 4.22 | 4.22 | 4.22 |
+| WAS | 4.90 | 4.90 | 4.90 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
+
+## Strength of Schedule (through Week 1)
+
+| Window | GB | WAS |
+| --- | ---: | ---: |
+| Season-to-date | 0.136 | 0.081 |
+| Last 5 games | 0.136 | 0.081 |
+| Last 3 games | 0.136 | 0.081 |
+
+## Matchup Analogs
+
+**GB analogs vs WAS profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | DET (H) | 27-12 | GB | 0.075 | 0.182 | 49.2% | 1.700 |
+
+**WAS analogs vs GB profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | NYG (H) | 21-7 | WAS | 0.107 | 0.071 | 48.2% | 1.433 |
+
+## Core EPA Offense Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 0.182 | 0.182 | 0.182 |
+| WAS | 0.071 | 0.071 | 0.071 |
+
+## Core EPA Defense Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | -0.054 | -0.054 | -0.054 |
+| WAS | -0.113 | -0.113 | -0.113 |
+
+## Success Rate Offense Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 49.2% | 49.2% | 49.2% |
+| WAS | 48.2% | 48.2% | 48.2% |
+
+## Success Rate Defense Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 43.4% | 43.4% | 43.4% |
+| WAS | 37.8% | 37.8% | 37.8% |
+
+## Explosive Play Rate (Off) Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 13.1% | 13.1% | 13.1% |
+| WAS | 16.5% | 16.5% | 16.5% |
+
+## Third Down Conversion Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 36.4% | 36.4% | 36.4% |
+| WAS | 33.3% | 33.3% | 33.3% |
+
+## Points per Drive Differential Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 1.700 | 1.700 | 1.700 |
+| WAS | 1.433 | 1.433 | 1.433 |
+
+## Yards per Play Differential Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 1.397 | 1.397 | 1.397 |
+| WAS | 2.265 | 2.265 | 2.265 |
+
+## Turnover Margin Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 1.000 | 1.000 | 1.000 |
+| WAS | 0.000 | 0.000 | 0.000 |
+
+## Red Zone TD Rate (Off) Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 16.7% | 16.7% | 16.7% |
+| WAS | 25.0% | 25.0% | 25.0% |
+
+## Pressure Rate (Def) Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 9.1% | 9.1% | 9.1% |
+| WAS | 5.1% | 5.1% | 5.1% |
+
+## Tempo Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 6.778 | 6.778 | 6.778 |
+| WAS | 8.500 | 8.500 | 8.500 |
+
+## Pass Rate Offense Form (up to Week 1)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| GB | 37.7% | 37.7% | 37.7% |
+| WAS | 42.4% | 42.4% | 42.4% |

@@ -1,0 +1,20 @@
+# variant_o_psdiff_priority.yaml
+GOY:
+  confidence: 89
+  edge: 5.5
+  powerscore_diff: 0.08
+
+GOM:
+  confidence: 84
+  edge: 4.0
+  powerscore_diff: 0.07
+
+GOW:
+  confidence: 77
+  edge: 3.0
+  powerscore_diff: 0.06
+
+VALUE PLAY:
+  confidence: 70
+  edge: 2.0
+  powerscore_diff: 0.05

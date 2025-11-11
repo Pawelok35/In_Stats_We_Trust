@@ -1,0 +1,19 @@
+GOY:
+  confidence: 92
+  edge: 7.5
+  powerscore_diff: 0.07
+
+GOM:
+  confidence: 86
+  edge: 5.5
+  powerscore_diff: 0.05
+
+GOW:
+  confidence: 78
+  edge: 3.5
+  powerscore_diff: 0.03
+
+VALUE PLAY:
+  confidence: 68
+  edge: 2.0
+  powerscore_diff: 0.0

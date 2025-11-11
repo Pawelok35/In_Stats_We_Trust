@@ -1,0 +1,20 @@
+# variant_m_value_boost.yaml
+GOY:
+  confidence: 90
+  edge: 6.0
+  powerscore_diff: 0.05
+
+GOM:
+  confidence: 84
+  edge: 4.5
+  powerscore_diff: 0.04
+
+GOW:
+  confidence: 76
+  edge: 3.0
+  powerscore_diff: 0.03
+
+VALUE PLAY:
+  confidence: 70
+  edge: 1.8
+  powerscore_diff: 0.03

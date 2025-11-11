@@ -6,40 +6,57 @@
 @theme inline {
   --color-background: var(--background);
   --color-foreground: var(--foreground);
+
   --font-sans: var(--font-body);
   --font-mono: var(--font-display);
+
   --color-border: var(--border);
   --color-muted: rgba(36, 33, 68, 0.08);
   --color-muted-foreground: rgba(36, 33, 68, 0.6);
+
   --color-primary: var(--primary);
   --color-primary-foreground: var(--primary-foreground);
+
   --color-secondary: var(--secondary);
   --color-secondary-foreground: var(--secondary-foreground);
+
+  /* 🔹 DODANE – dzięki temu bg-card i bg-accent istnieją jako utilsy */
+  --color-card: var(--card);
+  --color-card-foreground: var(--card-foreground);
+  --color-accent: var(--accent);
+  --color-accent-foreground: var(--accent-foreground);
+
   --color-ring: var(--primary);
+
   --radius-sm: 16px;
   --radius-md: 20px;
   --radius-lg: 24px;
   --radius-xl: 28px;
 }
 
-:root {
-  --radius: 1.25rem;
-  --background: #f5f1e3;
-  --foreground: #2b2443;
-  --card: #faf6eb;
-  --card-foreground: #2b2443;
-  --popover: #faf6eb;
-  --popover-foreground: #2b2443;
-  --primary: #5655f5;
-  --primary-foreground: #fffef9;
-  --secondary: #f1ecdf;
-  --secondary-foreground: #2b2443;
-  --accent: #f7f2e6;
-  --accent-foreground: #2b2443;
-  --border: #514ae2;
-  --ring: rgba(81, 74, 226, 0.4);
-  --muted-foreground: rgba(43, 36, 67, 0.6);
+
+::root {
+  --background: #f9fafb;
+  --foreground: #111827;
+
+  --card: #ffffff;
+  --card-foreground: #111827;
+
+  --primary: #2563eb;
+  --primary-foreground: #ffffff;
+
+  --secondary: #e5e7eb;
+  --secondary-foreground: #111827;
+
+  --accent: #f3f4f6;
+  --accent-foreground: #111827;
+
+  --border: #d1d5db;
+  --ring: #2563eb;
+
+  --muted-foreground: #6b7280;
 }
+
 
 .dark {
   --background: #171329;

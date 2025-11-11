@@ -1,0 +1,129 @@
+# NFL 2025 Week 4 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2025_w4/ARI_vs_SEA.md
+    home: "ARI"
+    away: "SEA"
+    spread: 1.5
+    total: 43.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/PIT_vs_MIN.md
+    home: "PIT"
+    away: "MIN"
+    spread: 2.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/ATL_vs_WAS.md
+    home: "ATL"
+    away: "WAS"
+    spread: -2.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/BUF_vs_NO.md
+    home: "BUF"
+    away: "NO"
+    spread: -14.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/NE_vs_CAR.md
+    home: "NE"
+    away: "CAR"
+    spread: -5.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/DET_vs_CLE.md
+    home: "DET"
+    away: "CLE"
+    spread: -10.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/HOU_vs_TEN.md
+    home: "HOU"
+    away: "TEN"
+    spread: -7.0
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/NYG_vs_LAC.md
+    home: "NYG"
+    away: "LAC"
+    spread: 6.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/TB_vs_PHI.md
+    home: "TB"
+    away: "PHI"
+    spread: 3.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/LA_vs_IND.md
+    home: "LA"
+    away: "IND"
+    spread: -3.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/SF_vs_JAX.md
+    home: "SF"
+    away: "JAX"
+    spread: -3.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/LV_vs_CHI.md
+    home: "LV"
+    away: "CHI"
+    spread: -1.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/KC_vs_BAL.md
+    home: "KC"
+    away: "BAL"
+    spread: 2.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/DAL_vs_GB.md
+    home: "DAL"
+    away: "GB"
+    spread: 7.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/MIA_vs_NYJ.md
+    home: "MIA"
+    away: "NYJ"
+    spread: -2.5
+    total: 45.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w4/DEN_vs_CIN.md
+    home: "DEN"
+    away: "CIN"
+    spread: -7.5
+    total: 44.5
+    prime_time: true
+    neutral_site: false

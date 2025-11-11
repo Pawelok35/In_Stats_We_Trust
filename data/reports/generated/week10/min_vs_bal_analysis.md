@@ -1,0 +1,33 @@
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – MIN 19.6 – BAL 23.2
+2️⃣ Predicted Winner (Model) – BAL
+3️⃣ Predicted Margin (Model) – BAL by 3.6 pts
+4️⃣ Win Probability (Model) – 60% (BAL)
+5️⃣ Why This Team Wins (Model) – Na 3rd down BAL utrzymuje 35.9%, podczas gdy MIN jest na 29.6%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę BAL: BAL +0.167 vs MIN +0.121. Turnover margin faworyzuje BAL (+3.00 vs +0.00), co przekłada się na dodatkowe posiadania. Success Rate Offense pokazuje BAL na poziomie 49.3% vs 45.5% (+3.8 pp). Explosive Play Rate pozostaje po stronie BAL (12.2% vs 10.1%), więc big-play equity jest wyższe.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – MIN 20.2 – BAL 26.2
+2️⃣ Predicted Winner (Market) – BAL
+3️⃣ Predicted Margin (Market) – BAL by 6.0 pts
+4️⃣ Win Probability (Market) – 71% (BAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — MIN +0.121 vs BAL +0.167. Points per Drive Differential — MIN -0.075 vs BAL -0.120. Success Rate Offense — MIN 45.5% vs BAL 49.3%. Third Down Conversion — MIN 29.6% vs BAL 35.9%. Red Zone TD Rate — MIN 13.7% vs BAL 12.3%. Explosive Play Rate — MIN 10.1% vs BAL 12.2%. Model margin -3.6 pts vs market spread MIN -6.0.
+6️⃣ Forum Output (B) – Model idzie w stronę BAL po marginesie -3.6 pkt. BAL notuje -0.120 PPD vs -0.075 u MIN. Różnica w Success Rate to 49.3% vs 45.5%. Na 3rd down BAL (35.9%) wygląda solidniej niż MIN (29.6%). Red Zone i explosiveness ( 12.3% / 12.2% ) utrzymują przewagę jakościową. Market trzyma -6.0 pkt, więc edge vs linia to -2.4.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = -2.4 pts
+• PowerScoreDiff (winner) = +0.046
+• Confidence = 61.5%
+
+🏷 Model Tag: NEUTRAL — based on 61.5% confidence, -2.4 pts model edge vs line, and PowerScore Δ +0.046.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – MIN 19.6 – BAL 23.2
+   • Win Probability – 60% (BAL)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – MIN 20.2 – BAL 26.2
+   • Win Probability – 71% (BAL)
+
+🏷 Model Tag: NEUTRAL — BAL (HC -6.0)

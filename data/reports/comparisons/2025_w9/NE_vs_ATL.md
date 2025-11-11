@@ -1,13 +1,8 @@
 # Matchup Report - NE vs ATL
 
-**Quick Edge:**
-- PowerScore advantage: 0.146 vs 0.139
-- Tempo (last 3): 7.913 vs 7.327
-- Points per Drive Diff: n/a vs n/a
-
 ## Metric Comparison
 
-| Metric | NE | ATL | Δ |
+| Metric | NE | ATL | Delta |
 |---|---:|---:|---:|
 | Core EPA Offense | 0.022 | 0.016 | ↑ +0.006 |
 | Core EPA Defense | 0.016 | 0.022 | ↓ -0.006 |
@@ -22,6 +17,242 @@
 | Pressure Rate (Def) | 2.6% | 15.8% | ↓ -13.2 pp |
 | Tempo | 7.455 | 7.300 | ↑ +0.155 |
 | PowerScore | 0.146 | 0.139 | ↑ +0.007 |
+
+## PowerScore Breakdown (Model)
+
+| Component | Weight | NE | ATL | Delta |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 35% | 0.022 | 0.016 | +0.006 |
+| EPA Defense | 20% | 0.016 | 0.022 | -0.006 |
+| Success Rate Offense | 25% | 45.1% | 43.8% | +1.3 pp |
+| Tempo | 20% | 0.110 | 0.096 | +0.014 |
+
+## PowerScore Breakdown (7 Metrics)
+
+| Component | Weight | NE | ATL | Delta |
+| --- | ---: | ---: | ---: | ---: |
+| EPA Offense | 25% | 0.022 | 0.016 | +0.006 |
+| EPA Defense | 20% | 0.016 | 0.022 | -0.006 |
+| Success Rate Offense | 15% | 45.1% | 43.8% | +1.3 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.110 | 0.096 | +0.014 |
+| Red Zone TD Rate (Off) | 10% | 18.8% | 17.6% | +1.1 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 15.8% | -13.2 pp |
+
+## PowerScore Summary
+
+**Model (4 metrics):**
+NE edge: +0.007 (NE +0.146 vs ATL +0.139)
+**7 metrics version:**
+ATL edge: +0.408 (NE -0.091 vs ATL +0.317)
+**Verdict:** ATL holds the edge in the extended breakdown (lead 0.408), driven by Turnover Margin (10% weight).
+
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (NE - ATL) | +0.1 pts (favours NE) |
+| Model Win% NE | 50.5% |
+| Model Win% ATL | 49.5% |
+| SOS Differential (NE-ATL) | +0.001 |
+*Neutral-field assumption. Based on schedule through Week 8.*
+
+## PROE Tendencies
+
+| Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
+| --- | ---: | ---: | ---: | ---: | ---: | --- |
+| NE | 46.3% | 45.1% | 1.3% | 42.1% | 47.7% | Slight pass lean |
+| ATL | 52.1% | 45.1% | 7.0% | 42.1% | 45.7% | Pass heavy |
+
+## Situational Edges
+
+### 3rd Down Conversion
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -7.6 pp | -12.3 pp | -10.9 pp |
+| ATL | +3.7 pp | +3.1 pp | +5.9 pp |
+
+### Red Zone TD Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -8.7 pp | -11.0 pp | -15.0 pp |
+| ATL | +0.4 pp | +2.6 pp | +4.0 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -3.2 pp | -4.8 pp | -3.7 pp |
+| ATL | +1.1 pp | +0.3 pp | +2.1 pp |
+
+### Explosive Plays
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -0.6 pp | +0.4 pp | +0.5 pp |
+| ATL | +1.5 pp | +2.0 pp | +2.0 pp |
+
+_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
+
+## Matchup Edges
+
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -7.8 pp | -7.8 pp | -10.0 pp |
+| ATL | +1.3 pp | +1.3 pp | +1.3 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | +4.8 pp | +4.8 pp | +5.4 pp |
+| ATL | -3.3 pp | -3.3 pp | +0.5 pp |
+
+### Explosive Rate Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -0.6 pp | +0.4 pp | +0.5 pp |
+| ATL | +1.5 pp | +2.0 pp | +2.0 pp |
+
+### Pass Protection vs Pressure
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | -3.2 pp | -4.8 pp | -3.7 pp |
+| ATL | +1.1 pp | +0.3 pp | +2.1 pp |
+
+_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
+
+## Drive Context
+
+### Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 50.2 | 50.2 | 49.3 |
+| ATL | 43.6 | 43.6 | 43.6 |
+
+### Opponent Avg Start (own yardline)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 47.9 | 47.9 | 49.9 |
+| ATL | 44.6 | 44.6 | 44.6 |
+
+### Field Position Edge (own - opp)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 2.2 | 2.2 | -0.5 |
+| ATL | -1.0 | -1.0 | -1.0 |
+
+### Points per Drive (offense)
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 2.47 | 2.63 | 2.53 |
+| ATL | 1.63 | 1.48 | 1.34 |
+
+### Points per Drive Allowed
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 1.79 | 1.64 | 1.50 |
+| ATL | 2.16 | 2.46 | 2.30 |
+
+### Points per Drive Differential
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 0.68 | 0.99 | 1.03 |
+| ATL | -0.53 | -0.97 | -0.96 |
+
+_Starting field position expressed as own-yard line (higher = shorter field)._
+
+## Game Script Projection
+
+### Tempo
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 7.85 | 7.49 | 7.91 |
+| ATL | 7.76 | 7.53 | 7.33 |
+
+### Pass Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 39.2% | 39.2% | 37.5% |
+| ATL | 47.0% | 47.0% | 47.0% |
+
+### Run Rate
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 60.8% | 60.8% | 62.5% |
+| ATL | 53.0% | 53.0% | 53.0% |
+
+### Passes per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 3.07 | 2.93 | 2.97 |
+| ATL | 3.65 | 3.54 | 3.44 |
+
+### Runs per Drive
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| NE | 4.78 | 4.56 | 4.95 |
+| ATL | 4.11 | 3.99 | 3.88 |
+
+_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
+
+## Strength of Schedule (through Week 8)
+
+| Window | NE | ATL |
+| --- | ---: | ---: |
+| Season-to-date | 0.133 | 0.132 |
+| Last 5 games | 0.114 | 0.158 |
+| Last 3 games | 0.090 | 0.152 |
+
+## Trend Summary (last 3 weeks)
+
+| Metric | W6 | W7 | W8 | Trend |
+| --- | --- | --- | --- | --- |
+| Off EPA NE | 0.091 | 0.161 | -0.008 | - declining |
+| Off EPA ATL | 0.053 | -0.077 | -0.227 | - declining |
+| Def EPA NE | 0.007 | -0.131 | -0.306 | + improving |
+| Def EPA ATL | -0.088 | 0.043 | 0.176 | - declining |
+| Off SR NE | 48.1% | 46.3% | 48.2% | = stable |
+| Off SR ATL | 50.0% | 44.2% | 41.8% | - declining |
+| Def SR NE | 49.3% | 47.8% | 33.8% | + improving |
+| Def SR ATL | 49.3% | 51.9% | 53.6% | - declining |
+| Tempo NE | 9.000 | 8.200 | 6.538 | - declining |
+| Tempo ATL | 7.333 | 8.556 | 6.091 | - declining |
+
+## Matchup Analogs
+
+**NE analogs vs ATL profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | LV (-) | 13-18 | LV | 0.894 | -0.049 | 44.0% | -0.485 |
+| 6 | NO (A) | 25-19 | NE | 0.845 | 0.091 | 48.1% | 0.667 |
+| 7 | TEN (A) | 25-13 | NE | 0.807 | 0.161 | 46.3% | 1.200 |
+
+**ATL analogs vs NE profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | TB (-) | 20-23 | TB | 0.725 | 0.011 | 47.3% | -0.300 |
+| 6 | BUF (H) | 24-15 | ATL | 0.724 | 0.053 | 50.0% | 0.727 |
+| 2 | MIN (-) | 22-6 | ATL | 0.551 | 0.012 | 47.0% | 1.455 |
 
 ## Core EPA Offense Form (up to Week 8)
 
@@ -107,18 +338,9 @@
 | ATL | 7.757 | 7.531 | 7.327 |
 | NE | 7.854 | 7.488 | 7.913 |
 
-## Recent Form (Season / Last 5 / Last 3)
+## Pass Rate Offense Form (up to Week 8)
 
-| Window | NE Off EPA | NE Off SR | NE Def EPA | NE Def SR | NE Tempo | ATL Off EPA | ATL Off SR | ATL Def EPA | ATL Def SR | ATL Tempo |
-| --- | --- | --- | --- | --- | --- | --- | --- | --- | --- | --- |
-| weeks 1-8 | 0.076 | 0.470 | -0.050 | 0.463 | 7.854 | -0.057 | 0.454 | 0.010 | 0.487 | 7.757 |
-| last 5 games | 0.112 | 0.474 | -0.118 | 0.457 | 7.488 | -0.085 | 0.447 | 0.073 | 0.522 | 7.531 |
-| last 3 games | 0.081 | 0.476 | -0.144 | 0.436 | 7.913 | -0.084 | 0.453 | 0.044 | 0.516 | 7.327 |
-
-_Off EPA = średnie EPA/play ataku (wyżej = lepiej). Def EPA = średnie EPA/play oddawane przez obronę (niżej = lepiej). Off SR/Def SR = % udanych akcji. Tempo = jak szybko gra atak._
-
-## Betting Angle / What Stands Out
-
-- Tempo gap: kto gra szybciej → więcej snapów, więcej okazji do punktów.
-- Defense trend: porównaj Def EPA last 3 obu drużyn.
-- Offense trend: czy ofensywa rośnie czy spada względem całego sezonu.
+| Team | Season-to-date | Last 5 | Last 3 |
+|------|---------------:|-------:|-------:|
+| ATL | 46.6% | 46.6% | 46.6% |
+| NE | 39.1% | 39.1% | 37.5% |

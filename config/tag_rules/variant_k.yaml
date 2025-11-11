@@ -1,0 +1,20 @@
+# variant_k_hybrid_focus.yaml
+GOY:
+  confidence: 90
+  edge: 6.5
+  powerscore_diff: 0.06
+
+GOM:
+  confidence: 85
+  edge: 5.0
+  powerscore_diff: 0.05
+
+GOW:
+  confidence: 78
+  edge: 3.2
+  powerscore_diff: 0.04
+
+VALUE PLAY:
+  confidence: 70
+  edge: 2.3
+  powerscore_diff: 0.01

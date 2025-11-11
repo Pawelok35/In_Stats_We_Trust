@@ -1,0 +1,113 @@
+# NFL 2025 Week 5 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2025_w5/LA_vs_SF.md
+    home: "LA"
+    away: "SF"
+    spread: -8.5
+    total: 43.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/CLE_vs_MIN.md
+    home: "CLE"
+    away: "MIN"
+    spread: 3.5
+    total: 36.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/PHI_vs_DEN.md
+    home: "PHI"
+    away: "DEN"
+    spread: -4.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/IND_vs_LV.md
+    home: "IND"
+    away: "LV"
+    spread: -7.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/BAL_vs_HOU.md
+    home: "BAL"
+    away: "HOU"
+    spread: 1.5
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/NYJ_vs_DAL.md
+    home: "NYJ"
+    away: "DAL"
+    spread: 1.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/CAR_vs_MIA.md
+    home: "CAR"
+    away: "MIA"
+    spread: 1.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/NO_vs_NYG.md
+    home: "NO"
+    away: "NYG"
+    spread: -1.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/SEA_vs_TB.md
+    home: "SEA"
+    away: "TB"
+    spread: -3.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/ARI_vs_TEN.md
+    home: "ARI"
+    away: "TEN"
+    spread: -7.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/CIN_vs_DET.md
+    home: "CIN"
+    away: "DET"
+    spread: 10.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/LAC_vs_WAS.md
+    home: "LAC"
+    away: "WAS"
+    spread: -2.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/BUF_vs_NE.md
+    home: "BUF"
+    away: "NE"
+    spread: -8.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w5/JAX_vs_KC.md
+    home: "JAX"
+    away: "KC"
+    spread: 3.5
+    total: 45.5
+    prime_time: true
+    neutral_site: false

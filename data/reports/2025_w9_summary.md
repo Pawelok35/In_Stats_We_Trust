@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 9
 
-_Generated at 2025-11-04T21:34:03.536717+00:00 (UTC)_
+_Generated at 2025-11-10T12:58:54.260334+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-04T21:34:02.889441+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-04T21:34:02.889441+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2025-11-04T21:34:02.889441+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-10T12:58:53.783223+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T12:58:53.783223+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2025-11-10T12:58:53.783223+00:00"}
 
 ## L3 Sanity
 

@@ -1,0 +1,50 @@
+variants:
+  - name: baseline
+    tag_config: config/tag_rules/baseline.yaml
+    picks_dir: data/picks
+  - name: variant_a_high_conf
+    tag_config: config/tag_rules/variant_a_high_conf.yaml
+    picks_dir: data/picks_variant_a_high_conf
+  - name: variant_b_edge_focus
+    tag_config: config/tag_rules/variant_b_edge_focus.yaml
+    picks_dir: data/picks_variant_b_edge_focus
+  - name: variant_c_psdiff
+    tag_config: config/tag_rules/variant_c_psdiff.yaml
+    picks_dir: data/picks_variant_c_psdiff
+  - name: variant_d_balanced
+    tag_config: config/tag_rules/variant_d_balanced.yaml
+    picks_dir: data/picks_variant_d_balanced
+  - name: variant_e_loose
+    tag_config: config/tag_rules/variant_e_loose.yaml
+    picks_dir: data/picks_variant_e_loose
+  - name: variant_f
+    tag_config: config/tag_rules/variant_f.yaml
+    picks_dir: data/picks_variant_f
+  - name: variant_g
+    tag_config: config/tag_rules/variant_g.yaml
+    picks_dir: data/picks_variant_g
+  - name: variant_h
+    tag_config: config/tag_rules/variant_h.yaml
+    picks_dir: data/picks_variant_h
+  - name: variant_i
+    tag_config: config/tag_rules/variant_i.yaml
+    picks_dir: data/picks_variant_i
+  - name: variant_j
+    tag_config: config/tag_rules/variant_j.yaml
+    picks_dir: data/picks_variant_j
+  - name: variant_k
+    tag_config: config/tag_rules/variant_k.yaml
+    picks_dir: data/picks_variant_k
+  - name: variant_l
+    tag_config: config/tag_rules/variant_l.yaml
+    picks_dir: data/picks_variant_l
+  - name: variant_m
+    tag_config: config/tag_rules/variant_m.yaml
+    picks_dir: data/picks_variant_m
+  - name: variant_n
+    tag_config: config/tag_rules/variant_n.yaml
+    picks_dir: data/picks_variant_n
+  - name: variant_o
+    tag_config: config/tag_rules/variant_o.yaml
+    picks_dir: data/picks_variant_o
+

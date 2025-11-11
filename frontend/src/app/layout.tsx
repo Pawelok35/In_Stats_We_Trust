@@ -18,13 +18,9 @@ export const metadata: Metadata = {
   description: "Retro dashboard for weekly NFL matchup reports.",
 };
 
-export default function RootLayout({
-  children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en">
+    <html lang="en" className="dark">
       <body
         suppressHydrationWarning
         className={`${displayFont.variable} ${bodyFont.variable} antialiased`}
@@ -34,3 +30,4 @@ export default function RootLayout({
     </html>
   );
 }
+
