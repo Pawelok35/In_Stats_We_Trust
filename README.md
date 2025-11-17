@@ -115,15 +115,15 @@ Ensure the specified directory contains `{season}/{week}.parquet` files before r
 
 ### Season-specific matchup line files
 
-Scenariusze matchupów korzystają z plików `week*_lines.yaml`. Aby utrzymać wiele sezonów w jednym repo:
+Matchup configs use `week*_lines.yaml`. To keep multiple seasons in one repo:
 
-1. Umieść pliki w katalogu `config/lines/<sezon>/week<nr>_lines.yaml` (np. `config/lines/2025/week11_lines.yaml`).
-2. Funkcja `utils.paths.week_lines_path(season, week)` automatycznie wybierze plik dopasowany do sezonu. Jeśli nie znajdzie sezonowego wariantu, wróci do dziedziczonego `config/week<nr>_lines.yaml`, więc dotychczasowe workflowy dalej działają.
-3. Skrypty takie jak `scripts/tag_variant_runner.py --season 2022 --regenerate ...` korzystają już z tej abstrakcji, więc wystarczy skopiować foldery z liniami dla nowych sezonów.
+1. Place each season’s files under `config/lines/<season>/week<nr>_lines.yaml` (e.g., `config/lines/2025/week11_lines.yaml`).
+2. `utils.paths.week_lines_path(season, week)` automatically picks the season-specific file and falls back to the legacy `config/week<nr>_lines.yaml` when the new location is missing, so old workflows keep working.
+3. Runners such as `scripts/tag_variant_runner.py --season 2022 --regenerate ...` already rely on this helper—just copy the line files into the new folder structure for every season you import.
 
 ### Weekly pipeline helper
 
-Do uruchomienia kompletu kroków dla danego tygodnia (aktualizacja schedule → cumulative → preview → matchup batch → picki) można użyć:
+To trigger the full weekly workflow (schedule update → cumulative build → previews → matchup batch → pick regeneration) run:
 
 ```powershell
 python scripts/run_week_pipeline.py `
@@ -133,14 +133,43 @@ python scripts/run_week_pipeline.py `
   --run-convergence
 ```
 
-Przed startem przygotuj:
+Before running:
 
-- `config/lines/<season>/week<week>_lines.yaml` – linie bukmacherskie i ścieżki raportów.
-- `data/results/manual_results.jsonl` – uzupełnione wyniki (braki pozostaną jako PENDING).
-- Zaktualizowane raporty `data/reports/comparisons/<season>_w<week>/...` jeśli chcesz je nadpisać (skrypt wygeneruje nowe).
-- Jeśli chcesz ograniczyć regenerację picków do mniejszego zakresu, użyj `--picks-start-week`.
+- `config/lines/<season>/week<week>_lines.yaml` — betting lines and report paths.
+- `data/results/manual_results.jsonl` — up-to-date results (missing ones remain `PENDING`).
+- Any pre-existing previews in `data/reports/comparisons/<season>_w<week>/...` can be replaced; the script regenerates them.
+- Adjust `--picks-start-week` if you only want to refresh a partial season.
 
-Opcja `--run-convergence` dodatkowo odpali `scripts/convergence_analyzer.py` na wygenerowanych pickach (`picks_variant_{m,d_balanced,b_edge_focus}`) i wydrukuje rekomendacje.
+Adding `--run-convergence` executes `scripts/convergence_analyzer.py` on the freshly generated picks (`picks_variant_{m,d_balanced,b_edge_focus}`) and prints the recommendation table.
+
+### Weather Scale summary
+
+Once a week has been generated, you can print the forecast table directly from the pick files:
+
+```powershell
+python -X utf8 scripts\convergence_analyzer.py ^
+  --variant-m data/picks_variant_m/2025/week_12.jsonl ^
+  --variant-d data/picks_variant_d_balanced/2025/week_12.jsonl ^
+  --variant-b data/picks_variant_b_edge_focus/2025/week_12.jsonl ^
+  --week-label "Week 12" ^
+  --weather-only
+```
+
+This produces the concise table:
+
+```
+**Weather Scale Picks:**
+| Codename | Rating | Stake | Matchup | Models / direction |
+|:-------- | ------:| -----:|:------- |:------------------ |
+| Ultimate Supercell | - | - | BRAK | - |
+| Supercell | 6.30 | 3.5u | BUF vs TB (→ BUF -5.5) | M:GOY->BUF | D:GOY->BUF | B:GOY->BUF |
+| Supercell | 6.30 | 3.5u | TEN vs HOU (→ HOU -7.5) | M:GOY->HOU | D:GOY->HOU | B:GOY->HOU |
+| Vortex    | 5.90 | 3.0u | LV vs DAL (→ DAL -3.5) | M:GOY->DAL | D:GOY->DAL | B:GOM->DAL |
+| Gale      | 3.80 | 2.0u | PIT vs CIN (→ PIT -5.5) | M:GOM->PIT | D:GOM->PIT | B:GOW->PIT |
+| Calm      | 1.70 | 1.0u | CLE vs BAL (→ BAL -8.5) | M:GOW->BAL | D:GOW->BAL | B:- |
+```
+
+Run the command with any season/week to inspect the recommendations or capture Ultimate Supercell signals.
 
 ## Validation Artifacts
 
