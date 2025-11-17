@@ -1,0 +1,128 @@
+﻿# NFL 2024 Week 16 - Betting Lines
+matchups:
+  # TNF â€“ Broncos @ Chargers
+  - report: data/reports/comparisons/2024_w16/LAC_vs_DEN.md
+    home: LAC
+    away: DEN
+    spread: -2.5
+    total: 41.0
+    prime_time: true
+    neutral_site: false
+
+  # Saturday â€“ Texans @ Chiefs
+  - report: data/reports/comparisons/2024_w16/KC_vs_HOU.md
+    home: KC
+    away: HOU
+    spread: +3.5
+    total: 42.0
+    prime_time: true
+    neutral_site: false
+
+  # Saturday â€“ Steelers @ Ravens
+  - report: data/reports/comparisons/2024_w16/BAL_vs_PIT.md
+    home: BAL
+    away: PIT
+    spread: -6.5
+    total: 45.0
+    prime_time: true
+    neutral_site: false
+
+  # Sunday early window
+  - report: data/reports/comparisons/2024_w16/ATL_vs_NYG.md
+    home: ATL
+    away: NYG
+    spread: -8.5
+    total: 42.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/BUF_vs_NE.md
+    home: BUF
+    away: NE
+    spread: -14.0
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/CHI_vs_DET.md
+    home: CHI
+    away: DET
+    spread: +6.5
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/CIN_vs_CLE.md
+    home: CIN
+    away: CLE
+    spread: -7.5
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/IND_vs_TEN.md
+    home: IND
+    away: TEN
+    spread: -3.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/NYJ_vs_LA.md
+    home: NYJ
+    away: LA
+    spread: +3.0
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/WAS_vs_PHI.md
+    home: WAS
+    away: PHI
+    spread: +3.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/CAR_vs_ARI.md
+    home: CAR
+    away: ARI
+    spread: +5.0
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  # Sunday late window
+  - report: data/reports/comparisons/2024_w16/SEA_vs_MIN.md
+    home: SEA
+    away: MIN
+    spread: +3.0
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/LV_vs_JAX.md
+    home: LV
+    away: JAX
+    spread: -1.5
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w16/MIA_vs_SF.md
+    home: MIA
+    away: SF
+    spread: +1.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  # SNF - Buccaneers @ Cowboys
+  - report: data/reports/comparisons/2024_w16/DAL_vs_TB.md
+    home: DAL
+    away: TB
+    spread: -6.0
+    total: 46.5
+    prime_time: true
+    neutral_site: false
+

@@ -1,0 +1,103 @@
+# NFL 2024 Week 14 - Betting Lines
+matchups:
+  # Niedziela – wczesne okno
+  - report: data/reports/comparisons/2024_w14/TEN_vs_JAX.md
+    home: TEN
+    away: JAX
+    spread: -3.0
+    total: 40.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/MIA_vs_NYJ.md
+    home: MIA
+    away: NYJ
+    spread: -6.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/MIN_vs_ATL.md
+    home: MIN
+    away: ATL
+    spread: -6.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/NYG_vs_NO.md
+    home: NYG
+    away: "NO"
+    spread: +5.5
+    total: 41.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/PHI_vs_CAR.md
+    home: PHI
+    away: CAR
+    spread: -13.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/PIT_vs_CLE.md
+    home: PIT
+    away: CLE
+    spread: -6.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/TB_vs_LV.md
+    home: TB
+    away: LV
+    spread: -6.5
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  # Niedziela – późne okno
+  - report: data/reports/comparisons/2024_w14/ARI_vs_SEA.md
+    home: ARI
+    away: SEA
+    spread: -3.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/LA_vs_BUF.md
+    home: LA
+    away: BUF
+    spread: +3.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w14/SF_vs_CHI.md
+    home: SF
+    away: CHI
+    spread: -3.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  # SNF – Chargers @ Chiefs
+  - report: data/reports/comparisons/2024_w14/KC_vs_LAC.md
+    home: KC
+    away: LAC
+    spread: -4.0
+    total: 43.0
+    prime_time: true
+    neutral_site: false
+
+  # MNF – Bengals @ Cowboys
+  - report: data/reports/comparisons/2024_w14/DAL_vs_CIN.md
+    home: DAL
+    away: CIN
+    spread: +5.5
+    total: 49.5
+    prime_time: true
+    neutral_site: false
+
+

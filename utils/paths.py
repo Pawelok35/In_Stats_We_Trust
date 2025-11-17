@@ -8,6 +8,10 @@ from typing import Optional
 
 from utils.config import load_settings
 
+PROJECT_ROOT = Path(__file__).resolve().parent.parent
+CONFIG_ROOT = PROJECT_ROOT / "config"
+LINES_ROOT = CONFIG_ROOT / "lines"
+
 
 def _validate_positive(name: str, value: int) -> int:
     if value <= 0:
@@ -39,6 +43,22 @@ def _season_week_path(
 def path_for(layer: str, season: int, week: int, *, suffix: str = ".parquet") -> Path:
     """Return the canonical path for the given processing layer artifact."""
     return _season_week_path(layer, season, week, suffix=suffix)
+
+
+def week_lines_path(season: int, week: int) -> Path:
+    """Return the YAML file describing betting lines for the given season/week.
+
+    When season-specific files exist under ``config/lines/<season>/``, they are used.
+    Otherwise the legacy ``config/weekX_lines.yaml`` fallback is returned so older
+    repositories continue to function until migrated.
+    """
+    season_value = _validate_positive("season", season)
+    week_value = _validate_positive("week", week)
+    season_dir = LINES_ROOT / f"{season_value}"
+    season_candidate = season_dir / f"week{week_value}_lines.yaml"
+    if season_candidate.exists():
+        return season_candidate
+    return CONFIG_ROOT / f"week{week_value}_lines.yaml"
 
 
 def manifest_path(layer: str, season: int, week: int) -> Path:

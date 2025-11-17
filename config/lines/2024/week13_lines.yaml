@@ -1,0 +1,139 @@
+# NFL 2024 Week 13 - Betting Lines
+matchups:
+  # Thanksgiving – Bears @ Lions
+  - report: data/reports/comparisons/2024_w13/DET_vs_CHI.md
+    home: DET
+    away: CHI
+    spread: -9.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false
+
+  # Thanksgiving – Giants @ Cowboys
+  - report: data/reports/comparisons/2024_w13/DAL_vs_NYG.md
+    home: DAL
+    away: NYG
+    spread: -3.5
+    total: 37.5
+    prime_time: true
+    neutral_site: false
+
+  # Thanksgiving – Dolphins @ Packers
+  - report: data/reports/comparisons/2024_w13/GB_vs_MIA.md
+    home: GB
+    away: MIA
+    spread: -3.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false
+
+  # Black Friday – Raiders @ Chiefs
+  - report: data/reports/comparisons/2024_w13/KC_vs_LV.md
+    home: KC
+    away: LV
+    spread: -13.5
+    total: 42.0
+    prime_time: true
+    neutral_site: false
+
+  # Sunday early window
+  - report: data/reports/comparisons/2024_w13/ATL_vs_LAC.md
+    home: ATL
+    away: LAC
+    spread: +1.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/CIN_vs_PIT.md
+    home: CIN
+    away: PIT
+    spread: -3.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/MIN_vs_ARI.md
+    home: MIN
+    away: ARI
+    spread: -3.5
+    total: 45.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/NE_vs_IND.md
+    home: NE
+    away: IND
+    spread: +2.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/NYJ_vs_SEA.md
+    home: NYJ
+    away: SEA
+    spread: +1.0
+    total: 42.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/WAS_vs_TEN.md
+    home: WAS
+    away: TEN
+    spread: -5.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/JAX_vs_HOU.md
+    home: JAX
+    away: HOU
+    spread: +3.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  # Sunday late window
+  - report: data/reports/comparisons/2024_w13/NO_vs_LA.md
+    home: "NO"
+    away: LA
+    spread: +3.0
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/CAR_vs_TB.md
+    home: CAR
+    away: TB
+    spread: +6.0
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w13/BAL_vs_PHI.md
+    home: BAL
+    away: PHI
+    spread: -3.0
+    total: 50.5
+    prime_time: false
+    neutral_site: false
+
+  # SNF – 49ers @ Bills
+  - report: data/reports/comparisons/2024_w13/BUF_vs_SF.md
+    home: BUF
+    away: SF
+    spread: -7.0
+    total: 43.5
+    prime_time: true
+    neutral_site: false
+
+  # MNF – Browns @ Broncos
+  - report: data/reports/comparisons/2024_w13/DEN_vs_CLE.md
+    home: DEN
+    away: CLE
+    spread: -5.5
+    total: 41.5
+    prime_time: true
+    neutral_site: false
+
+

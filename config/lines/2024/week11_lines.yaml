@@ -1,0 +1,120 @@
+# NFL 2024 Week 11 - Betting Lines
+matchups:
+  # TNF – Commanders @ Eagles
+  - report: data/reports/comparisons/2024_w11/PHI_vs_WAS.md
+    home: PHI
+    away: WAS
+    spread: -4.0
+    total: 49.5
+    prime_time: true
+    neutral_site: false
+
+  # Niedziela – wczesne okno
+  - report: data/reports/comparisons/2024_w11/CHI_vs_GB.md
+    home: CHI
+    away: GB
+    spread: +5.0
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/DET_vs_JAX.md
+    home: DET
+    away: JAX
+    spread: -13.5
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/TEN_vs_MIN.md
+    home: TEN
+    away: MIN
+    spread: +6.0
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/MIA_vs_LV.md
+    home: MIA
+    away: LV
+    spread: -7.0
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/NE_vs_LA.md
+    home: NE
+    away: LA
+    spread: +4.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/NO_vs_CLE.md
+    home: "NO"
+    away: CLE
+    spread: +1.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/NYJ_vs_IND.md
+    home: NYJ
+    away: IND
+    spread: -4.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/PIT_vs_BAL.md
+    home: PIT
+    away: BAL
+    spread: +3.0
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  # Niedziela – późne okno
+  - report: data/reports/comparisons/2024_w11/DEN_vs_ATL.md
+    home: DEN
+    away: ATL
+    spread: -2.0
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/SF_vs_SEA.md
+    home: SF
+    away: SEA
+    spread: -6.5
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w11/BUF_vs_KC.md
+    home: BUF
+    away: KC
+    spread: -2.0
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  # SNF – Bengals @ Chargers
+  - report: data/reports/comparisons/2024_w11/LAC_vs_CIN.md
+    home: LAC
+    away: CIN
+    spread: -1.5
+    total: 48.0
+    prime_time: true
+    neutral_site: false
+
+  # MNF – Texans @ Cowboys
+  - report: data/reports/comparisons/2024_w11/DAL_vs_HOU.md
+    home: DAL
+    away: HOU
+    spread: +7.5
+    total: 42.0
+    prime_time: true
+    neutral_site: false
+
+

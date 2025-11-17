@@ -198,6 +198,23 @@ _WEEK_MATCHUPS: dict[int, list[tuple[str, str]]] = {
         ("PHI", "DET"),
         ("LV",  "DAL"),
     ],
+    12: [
+        ("HOU", "BUF"),  # Thu
+        ("KC",  "IND"),
+        ("GB",  "MIN"),
+        ("CIN", "NE"),
+        ("DET", "NYG"),
+        ("BAL", "NYJ"),
+        ("CHI", "PIT"),
+        ("TEN", "SEA"),
+        ("LV",  "CLE"),
+        ("ARI", "JAX"),
+        ("NO",  "ATL"),
+        ("DAL", "PHI"),
+        ("LA",  "TB"),   # Rams
+        ("SF",  "CAR"),  # Mon
+],
+
 }
 
 

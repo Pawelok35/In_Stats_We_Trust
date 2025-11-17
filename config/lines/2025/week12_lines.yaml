@@ -1,0 +1,113 @@
+# NFL 2025 Week 12 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2025_w12/HOU_vs_BUF.md
+    home: "HOU"
+    away: "BUF"
+    spread: 3.5
+    total: 43.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/KC_vs_IND.md
+    home: "KC"
+    away: "IND"
+    spread: -3.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/GB_vs_MIN.md
+    home: "GB"
+    away: "MIN"
+    spread: -6.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/CIN_vs_NE.md
+    home: "CIN"
+    away: "NE"
+    spread: 7.0
+    total: 50.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/DET_vs_NYG.md
+    home: "DET"
+    away: "NYG"
+    spread: -11.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/BAL_vs_NYJ.md
+    home: "BAL"
+    away: "NYJ"
+    spread: -14.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/CHI_vs_PIT.md
+    home: "CHI"
+    away: "PIT"
+    spread: -3.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/TEN_vs_SEA.md
+    home: "TEN"
+    away: "SEA"
+    spread: 12.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/LV_vs_CLE.md
+    home: "LV"
+    away: "CLE"
+    spread: -3.0
+    total: 37.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/ARI_vs_JAX.md
+    home: "ARI"
+    away: "JAX"
+    spread: 2.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/NO_vs_ATL.md
+    home: "NO"
+    away: "ATL"
+    spread: 2.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/DAL_vs_PHI.md
+    home: "DAL"
+    away: "PHI"
+    spread: 4.5
+    total: 51.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/LA_vs_TB.md
+    home: "LA"
+    away: "TB"
+    spread: -6.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w12/SF_vs_CAR.md
+    home: "SF"
+    away: "CAR"
+    spread: -7.0
+    total: 47.5
+    prime_time: true
+    neutral_site: false

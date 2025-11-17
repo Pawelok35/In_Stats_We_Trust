@@ -14,6 +14,7 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 from scripts import matchup_batch, evaluate_picks
+from utils.paths import week_lines_path
 
 PAYOUTS = {
     "GOY": (3.6, 4.0),
@@ -76,13 +77,14 @@ def load_variants(path: Path) -> List[Dict[str, str]]:
 def regenerate_variant(
     variant: Dict[str, str],
     weeks: List[int],
+    season: int,
 ) -> None:
     tag_config = Path(variant["tag_config"])
     picks_dir = Path(variant["picks_dir"])
     picks_dir.mkdir(parents=True, exist_ok=True)
 
     for week in weeks:
-        config_path = Path(f"config/week{week}_lines.yaml")
+        config_path = week_lines_path(season, week)
         sink = io.StringIO()
         with contextlib.redirect_stdout(sink), contextlib.redirect_stderr(sink):
             matchup_batch.run_batch(
@@ -149,7 +151,7 @@ def main() -> None:
 
     if args.regenerate:
         for variant in variants:
-            regenerate_variant(variant, weeks)
+            regenerate_variant(variant, weeks, args.season)
 
     for variant in variants:
         name = variant["name"]

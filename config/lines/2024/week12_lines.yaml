@@ -1,0 +1,111 @@
+# NFL 2024 Week 12 - Betting Lines
+matchups:
+  # TNF – Steelers @ Browns
+  - report: data/reports/comparisons/2024_w12/CLE_vs_PIT.md
+    home: CLE
+    away: PIT
+    spread: +3.5
+    total: 36.5
+    prime_time: true
+    neutral_site: false
+
+  # Niedziela – wczesne okno
+  - report: data/reports/comparisons/2024_w12/NYG_vs_TB.md
+    home: NYG
+    away: TB
+    spread: +6.0
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/CAR_vs_KC.md
+    home: CAR
+    away: KC
+    spread: +10.5
+    total: 43.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/IND_vs_DET.md
+    home: IND
+    away: DET
+    spread: +7.5
+    total: 50.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/WAS_vs_DAL.md
+    home: WAS
+    away: DAL
+    spread: -10.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/HOU_vs_TEN.md
+    home: HOU
+    away: TEN
+    spread: -8.0
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/MIA_vs_NE.md
+    home: MIA
+    away: NE
+    spread: -7.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/CHI_vs_MIN.md
+    home: CHI
+    away: MIN
+    spread: +3.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  # Niedziela – późne okno
+  - report: data/reports/comparisons/2024_w12/LV_vs_DEN.md
+    home: LV
+    away: DEN
+    spread: +5.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/GB_vs_SF.md
+    home: GB
+    away: SF
+    spread: -5.5
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w12/SEA_vs_ARI.md
+    home: SEA
+    away: ARI
+    spread: -1.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  # SNF – Eagles @ Rams
+  - report: data/reports/comparisons/2024_w12/LA_vs_PHI.md
+    home: LA
+    away: PHI
+    spread: +3.0
+    total: 49.0
+    prime_time: true
+    neutral_site: false
+
+  # MNF – Ravens @ Chargers
+  - report: data/reports/comparisons/2024_w12/LAC_vs_BAL.md
+    home: LAC
+    away: BAL
+    spread: +2.5
+    total: 51.0
+    prime_time: true
+    neutral_site: false
+

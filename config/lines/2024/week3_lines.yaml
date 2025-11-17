@@ -1,0 +1,131 @@
+# NFL 2024 Week 3 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2024_w3/NYJ_vs_NE.md
+    home: NYJ
+    away: NE
+    spread: -6.0
+    total: 38.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/IND_vs_CHI.md
+    home: IND
+    away: CHI
+    spread: -1.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/CLE_vs_NYG.md
+    home: CLE
+    away: NYG
+    spread: -6.5
+    total: 38.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/NO_vs_PHI.md
+    home: "NO"
+    away: PHI
+    spread: -2.5
+    total: 49.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/MIN_vs_HOU.md
+    home: MIN
+    away: HOU
+    spread: +2.0
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/PIT_vs_LAC.md
+    home: PIT
+    away: LAC
+    spread: -2.5
+    total: 35.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/TB_vs_DEN.md
+    home: TB
+    away: DEN
+    spread: -6.5
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/TEN_vs_GB.md
+    home: TEN
+    away: GB
+    spread: -3.0
+    total: 37.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/LV_vs_CAR.md
+    home: LV
+    away: CAR
+    spread: -5.5
+    total: 40.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/SEA_vs_MIA.md
+    home: SEA
+    away: MIA
+    spread: -4.0
+    total: 42.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/ARI_vs_DET.md
+    home: ARI
+    away: DET
+    spread: +3.0
+    total: 51.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/LA_vs_SF.md
+    home: LA
+    away: SF
+    spread: +6.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/DAL_vs_BAL.md
+    home: DAL
+    away: BAL
+    spread: +1.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/ATL_vs_KC.md
+    home: ATL
+    away: KC
+    spread: +3.0
+    total: 46.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/BUF_vs_JAX.md
+    home: BUF
+    away: JAX
+    spread: -5.5
+    total: 45.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w3/CIN_vs_WAS.md
+    home: CIN
+    away: WAS
+    spread: -7.0
+    total: 46.5
+    prime_time: true
+    neutral_site: false
+
+

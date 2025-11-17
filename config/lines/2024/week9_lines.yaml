@@ -1,0 +1,128 @@
+# NFL 2024 Week 9 - Betting Lines
+matchups:
+  # TNF – Texans @ Jets
+  - report: data/reports/comparisons/2024_w9/NYJ_vs_HOU.md
+    home: NYJ
+    away: HOU
+    spread: -1.5
+    total: 42.5
+    prime_time: true
+    neutral_site: false
+
+  # Niedziela – wczesne okno
+  - report: data/reports/comparisons/2024_w9/ATL_vs_DAL.md
+    home: ATL
+    away: DAL
+    spread: -3.0
+    total: 51.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/BUF_vs_MIA.md
+    home: BUF
+    away: MIA
+    spread: -6.0
+    total: 49.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/CIN_vs_LV.md
+    home: CIN
+    away: LV
+    spread: -7.0
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/CLE_vs_LAC.md
+    home: CLE
+    away: LAC
+    spread: +1.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/TEN_vs_NE.md
+    home: TEN
+    away: NE
+    spread: -3.5
+    total: 38.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/NYG_vs_WAS.md
+    home: NYG
+    away: WAS
+    spread: +4.0
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/CAR_vs_NO.md
+    home: CAR
+    away: "NO"
+    spread: +7.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/BAL_vs_DEN.md
+    home: BAL
+    away: DEN
+    spread: -9.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  # Niedziela – późne okno
+  - report: data/reports/comparisons/2024_w9/PHI_vs_JAX.md
+    home: PHI
+    away: JAX
+    spread: -7.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/ARI_vs_CHI.md
+    home: ARI
+    away: CHI
+    spread: -1.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/GB_vs_DET.md
+    home: GB
+    away: DET
+    spread: +3.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w9/SEA_vs_LA.md
+    home: SEA
+    away: LA
+    spread: +1.5
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  # SNF – Colts @ Vikings
+  - report: data/reports/comparisons/2024_w9/MIN_vs_IND.md
+    home: MIN
+    away: IND
+    spread: -5.0
+    total: 46.5
+    prime_time: true
+    neutral_site: false
+
+  # MNF – Buccaneers @ Chiefs
+  - report: data/reports/comparisons/2024_w9/KC_vs_TB.md
+    home: KC
+    away: TB
+    spread: -8.5
+    total: 45.5
+    prime_time: true
+    neutral_site: false
+
+

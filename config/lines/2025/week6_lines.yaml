@@ -1,0 +1,121 @@
+﻿# NFL 2025 Week 6 – Real Betting Lines (home team listed first)
+matchups:
+  - report: data/reports/comparisons/2025_w6/DEN_vs_NYJ.md
+    home: DEN
+    away: "NYJ"
+    spread: -7.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/ARI_vs_IND.md
+    home: ARI
+    away: IND
+    spread: 10.0
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/CLE_vs_PIT.md
+    home: CLE
+    away: PIT
+    spread: 6.0
+    total: 38.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/DAL_vs_CAR.md
+    home: DAL
+    away: CAR
+    spread: -3.0
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/LAC_vs_MIA.md
+    home: LAC
+    away: MIA
+    spread: -3.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/LA_vs_BAL.md
+    home: "LA"
+    away: BAL
+    spread: 7.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/NE_vs_NO.md
+    home: NE
+    away: "NO"
+    spread: -3.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/SEA_vs_JAX.md
+    home: SEA
+    away: JAX
+    spread: -1.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/TEN_vs_LV.md
+    home: TEN
+    away: LV
+    spread: 3.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/CIN_vs_GB.md
+    home: CIN
+    away: GB
+    spread: 14.0
+    total: 45.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/SF_vs_TB.md
+    home: SF
+    away: TB
+    spread: 3.5
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/DET_vs_KC.md
+    home: DET
+    away: KC
+    spread: 2.5
+    total: 52.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/BUF_vs_ATL.md
+    home: BUF
+    away: ATL
+    spread: -3.5
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/CHI_vs_WAS.md
+    home: CHI
+    away: WAS
+    spread: 4.5
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w6/PHI_vs_NYG.md
+    home: PHI
+    away: NYG
+    spread: -2.5
+    total: 46.0
+    prime_time: false
+    neutral_site: false

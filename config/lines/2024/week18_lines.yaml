@@ -1,0 +1,135 @@
+# NFL 2024 Week 18 - Betting Lines
+matchups:
+  # Saturday – ESPN doubleheader
+  - report: data/reports/comparisons/2024_w18/BAL_vs_CLE.md
+    home: BAL
+    away: CLE
+    spread: -19.5
+    total: 41.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/PIT_vs_CIN.md
+    home: PIT
+    away: CIN
+    spread: +2.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false
+
+  # Sunday early window
+  - report: data/reports/comparisons/2024_w18/ATL_vs_CAR.md
+    home: ATL
+    away: CAR
+    spread: -7.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/DAL_vs_WAS.md
+    home: DAL
+    away: WAS
+    spread: +6.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/GB_vs_CHI.md
+    home: GB
+    away: CHI
+    spread: -10.0
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/TEN_vs_HOU.md
+    home: TEN
+    away: HOU
+    spread: -1.5
+    total: 36.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/IND_vs_JAX.md
+    home: IND
+    away: JAX
+    spread: -4.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/NE_vs_BUF.md
+    home: NE
+    away: BUF
+    spread: +3.0
+    total: 36.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/PHI_vs_NYG.md
+    home: PHI
+    away: NYG
+    spread: -2.5
+    total: 36.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/TB_vs_NO.md
+    home: TB
+    away: "NO"
+    spread: -14.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  # Sunday late window
+  - report: data/reports/comparisons/2024_w18/DEN_vs_KC.md
+    home: DEN
+    away: KC
+    spread: -10.5
+    total: 40.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/LV_vs_LAC.md
+    home: LV
+    away: LAC
+    spread: +4.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/LA_vs_SEA.md
+    home: LA
+    away: SEA
+    spread: +7.0
+    total: 38.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/NYJ_vs_MIA.md
+    home: NYJ
+    away: MIA
+    spread: +1.0
+    total: 39.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w18/ARI_vs_SF.md
+    home: ARI
+    away: SF
+    spread: -4.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  # SNF – Vikings @ Lions
+  - report: data/reports/comparisons/2024_w18/DET_vs_MIN.md
+    home: DET
+    away: MIN
+    spread: -2.5
+    total: 56.5
+    prime_time: true
+    neutral_site: false
+
+

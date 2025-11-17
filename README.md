@@ -113,6 +113,35 @@ Ensure the specified directory contains `{season}/{week}.parquet` files before r
 - Paths resolved through `utils.paths.path_for(layer, season, week)`.
 - CLI defaults read from config (`default_season`, `default_week`).
 
+### Season-specific matchup line files
+
+Scenariusze matchupów korzystają z plików `week*_lines.yaml`. Aby utrzymać wiele sezonów w jednym repo:
+
+1. Umieść pliki w katalogu `config/lines/<sezon>/week<nr>_lines.yaml` (np. `config/lines/2025/week11_lines.yaml`).
+2. Funkcja `utils.paths.week_lines_path(season, week)` automatycznie wybierze plik dopasowany do sezonu. Jeśli nie znajdzie sezonowego wariantu, wróci do dziedziczonego `config/week<nr>_lines.yaml`, więc dotychczasowe workflowy dalej działają.
+3. Skrypty takie jak `scripts/tag_variant_runner.py --season 2022 --regenerate ...` korzystają już z tej abstrakcji, więc wystarczy skopiować foldery z liniami dla nowych sezonów.
+
+### Weekly pipeline helper
+
+Do uruchomienia kompletu kroków dla danego tygodnia (aktualizacja schedule → cumulative → preview → matchup batch → picki) można użyć:
+
+```powershell
+python scripts/run_week_pipeline.py `
+  --season 2025 `
+  --week 12 `
+  --reference-week 4 `
+  --run-convergence
+```
+
+Przed startem przygotuj:
+
+- `config/lines/<season>/week<week>_lines.yaml` – linie bukmacherskie i ścieżki raportów.
+- `data/results/manual_results.jsonl` – uzupełnione wyniki (braki pozostaną jako PENDING).
+- Zaktualizowane raporty `data/reports/comparisons/<season>_w<week>/...` jeśli chcesz je nadpisać (skrypt wygeneruje nowe).
+- Jeśli chcesz ograniczyć regenerację picków do mniejszego zakresu, użyj `--picks-start-week`.
+
+Opcja `--run-convergence` dodatkowo odpali `scripts/convergence_analyzer.py` na wygenerowanych pickach (`picks_variant_{m,d_balanced,b_edge_focus}`) i wydrukuje rekomendacje.
+
 ## Validation Artifacts
 
 Completed validation reports are stored under `docs/validation/` (e.g., `ISTW_T21_PASS.md`, `T32_ci_local.md`).

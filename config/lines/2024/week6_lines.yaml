@@ -1,0 +1,122 @@
+﻿# NFL 2024 Week 6 - Betting Lines
+matchups:
+  # TNF – Seahawks @ 49ers
+  - report: data/reports/comparisons/2024_w6/SEA_vs_SF.md
+    home: SEA
+    away: SF
+    spread: -3.5
+    total: 49.0
+    prime_time: true
+    neutral_site: false
+
+  # London game – Jaguars @ Bears
+  - report: data/reports/comparisons/2024_w6/CHI_vs_JAX.md
+    home: CHI
+    away: JAX
+    spread: -1.0
+    total: 44.5
+    prime_time: false
+    neutral_site: true
+
+  # Niedziela – wczesne okno
+  - report: data/reports/comparisons/2024_w6/GB_vs_ARI.md
+    home: GB
+    away: ARI
+    spread: -5.5
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/TEN_vs_IND.md
+    home: TEN
+    away: IND
+    spread: -2.5
+    total: 43.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/NE_vs_HOU.md
+    home: NE
+    away: HOU
+    spread: +6.5
+    total: 37.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/NO_vs_TB.md
+    home: "NO"
+    away: TB
+    spread: +3.5
+    total: 42.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/PHI_vs_CLE.md
+    home: PHI
+    away: CLE
+    spread: -8.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/BAL_vs_WAS.md
+    home: BAL
+    away: WAS
+    spread: -7.0
+    total: 51.5
+    prime_time: false
+    neutral_site: false
+
+  # Niedziela – pózne okno
+  - report: data/reports/comparisons/2024_w6/DEN_vs_LAC.md
+    home: DEN
+    away: LAC
+    spread: +3.0
+    total: 35.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/LV_vs_PIT.md
+    home: LV
+    away: PIT
+    spread: +3.0
+    total: 36.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/DAL_vs_DET.md
+    home: DAL
+    away: DET
+    spread: +3.5
+    total: 52.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w6/CAR_vs_ATL.md
+    home: CAR
+    away: ATL
+    spread: +6.0
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  # SNF – Bengals @ Giants
+  - report: data/reports/comparisons/2024_w6/NYG_vs_CIN.md
+    home: NYG
+    away: CIN
+    spread: +3.5
+    total: 47.0
+    prime_time: true
+    neutral_site: false
+
+  # MNF – Bills @ Jets
+  - report: data/reports/comparisons/2024_w6/NYJ_vs_BUF.md
+    home: NYJ
+    away: BUF
+    spread: +2.0
+    total: 41.0
+    prime_time: true
+    neutral_site: false
+
+
+

@@ -1,0 +1,105 @@
+# NFL 2025 Week 8 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2025_w8/MIN_vs_LAC.md
+    home: "MIN"
+    away: "LAC"
+    spread: -3.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/MIA_vs_ATL.md
+    home: "MIA"
+    away: "ATL"
+    spread: 7.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/BUF_vs_CAR.md
+    home: "BUF"
+    away: "CAR"
+    spread: -7.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/NYJ_vs_CIN.md
+    home: "NYJ"
+    away: "CIN"
+    spread: 6.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/SF_vs_HOU.md
+    home: "SF"
+    away: "HOU"
+    spread: 1.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/CLE_vs_NE.md
+    home: "CLE"
+    away: "NE"
+    spread: 7.0
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/NYG_vs_PHI.md
+    home: "NYG"
+    away: "PHI"
+    spread: 7.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/CHI_vs_BAL.md
+    home: "CHI"
+    away: "BAL"
+    spread: 6.5
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/TB_vs_NO.md
+    home: "TB"
+    away: "NO"
+    spread: -4.0
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/TEN_vs_IND.md
+    home: "TEN"
+    away: "IND"
+    spread: 14.0
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/DAL_vs_DEN.md
+    home: "DAL"
+    away: "DEN"
+    spread: 3.0
+    total: 51.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/GB_vs_PIT.md
+    home: "GB"
+    away: "PIT"
+    spread: -3.0
+    total: 45.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w8/WAS_vs_KC.md
+    home: "WAS"
+    away: "KC"
+    spread: 10
+    total: 45.5
+    prime_time: false
+    neutral_site: false
