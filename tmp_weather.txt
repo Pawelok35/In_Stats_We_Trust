@@ -1,0 +1,9 @@
+﻿
+**Weather Scale Picks:**
+| Codename | Rating | Stake | Mecz | Modele / kierunek |
+|:-------- | ------:| -----:|:-----|:------------------ |
+| Ultimate Supercell | - | - | BRAK | - |
+| Supercell | 6.30 | 3.5u | HOU vs BUF (ÔåÆ BUF -3.5) | M:GOY->BUF | D:GOY->BUF | B:GOY->BUF |
+| Supercell | 6.30 | 3.5u | LA vs TB (ÔåÆ LA -6.5) | M:GOY->LA | D:GOY->LA | B:GOY->LA |
+| Supercell | 6.30 | 3.5u | TEN vs SEA (ÔåÆ SEA -12.5) | M:GOY->SEA | D:GOY->SEA | B:GOY->SEA |
+| Vortex | 5.90 | 3.0u | GB vs MIN (ÔåÆ GB -6.5) | M:GOY->GB | D:GOY->GB | B:GOM->GB |
