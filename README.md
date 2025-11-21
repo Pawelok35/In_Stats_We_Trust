@@ -171,6 +171,17 @@ This produces the concise table:
 
 Run the command with any season/week to inspect the recommendations or capture Ultimate Supercell signals.
 
+## Running the weekly pipeline (upcoming week) with guardrails
+
+python -X utf8 scripts/generate_weather_buckets.py `
+  --season 2025 `
+  --start-week 12 `
+  --end-week 12 `
+  --guardrails-mode v2_1 `
+  --output data/results/weather_bucket_games.csv
+
+
+
 ### Running the weekly pipeline (upcoming week)
 
 For an upcoming week that jeszcze się nie odbył (np. Week 12), bazujemy na metrykach do zakończonego tygodnia (Week 11), a linie/raporty bierzemy na tydzień nadchodzący (Week 12). Używaj referencji `week - 1`, żeby uniknąć future data leak:

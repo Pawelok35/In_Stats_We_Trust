@@ -15,7 +15,12 @@ if str(ROOT_DIR) not in sys.path:
 
 from scripts import evaluate_picks
 from metrics.form_windows import compute_form_windows
-from utils.guardrails import apply_guardrails, load_guardrails
+from utils.guardrails import (
+    apply_guardrails,
+    apply_guardrails_v2,
+    apply_guardrails_v2_1,
+    load_guardrails,
+)
 
 TAG_POINTS = {"GOY": 3, "GOM": 2, "GOW": 1}
 VARIANT_WEIGHTS = {"J": 1.0, "C": 0.91, "K": 0.88}
@@ -26,6 +31,15 @@ BUCKETS = [
     ("Cyclone", 4.8, 6.0),
     ("Supercell", 6.0, float("inf")),
 ]
+BUCKET_STAKES = {
+    "Calm": 1.0,
+    "Breeze": 1.0,  # nie wymienione w briefie, traktujemy jak Calm
+    "Gale": 2.0,
+    "Vortex": 3.0,
+    "Cyclone": 4.0,
+    "Supercell": 4.0,
+    "Ultimate Supercell": 4.0,
+}
 
 
 def load_picks_for_week(season: int, week: int) -> pd.DataFrame:
@@ -74,7 +88,7 @@ def _extract_window_row(form_df: pl.DataFrame, window_label: str) -> Dict:
     return subset.to_dicts()[0] if subset.height else {}
 
 
-def build_weather_table(season: int, week: int, guardrails_cfg: Dict) -> pd.DataFrame:
+def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str = "v2") -> pd.DataFrame:
     df = load_picks_for_week(season, week)
     if df.empty:
         return pd.DataFrame()
@@ -126,14 +140,31 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict) -> pd.Data
             "last3": last3_row,
             "last5": last5_row,
         }
-        adj_rating, adj_bucket, notes = apply_guardrails(
-            matchup=matchup_metrics,
-            bucket=bucket,
-            rating=rating,
-            guardrails=guardrails_cfg,
-        )
-        # Re-assign bucket if rating zmienił się dodatkowo
-        adj_bucket = assign_bucket(adj_rating, ultimate=False) if adj_bucket == bucket else adj_bucket
+        if mode == "v2_1":
+            adj_rating, adj_bucket, notes, level = apply_guardrails_v2_1(
+                matchup=matchup_metrics,
+                bucket=bucket,
+                rating=rating,
+                guardrails=guardrails_cfg,
+            )
+        elif mode == "v2":
+            adj_rating, adj_bucket, notes, level = apply_guardrails_v2(
+                matchup=matchup_metrics,
+                bucket=bucket,
+                rating=rating,
+                guardrails=guardrails_cfg,
+            )
+        else:
+            adj_rating, adj_bucket, notes = apply_guardrails(
+                matchup=matchup_metrics,
+                bucket=bucket,
+                rating=rating,
+                guardrails=guardrails_cfg,
+            )
+            level = 0 if not notes else 1
+        # Re-assign bucket if rating zmienił się dodatkowo (dla v1)
+        if mode == "v1" and adj_bucket == bucket:
+            adj_bucket = assign_bucket(adj_rating, ultimate=False)
         rows.append(
             {
                 "season": season,
@@ -143,6 +174,9 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict) -> pd.Data
                 "pick_team": pick_team,
                 "rating": round(adj_rating, 3),
                 "bucket": adj_bucket,
+                "stake_u": BUCKET_STAKES.get(adj_bucket, 1.0),
+                "guardrails_mode": mode,
+                "guardrail_level": level,
                 "guardrail_notes": ";".join(notes) if notes else "",
                 "handicap": ref.get("handicap"),
             }
@@ -171,8 +205,14 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--guardrails",
         type=Path,
-        default=Path("config/guardrails.yaml"),
-        help="Path to guardrails YAML (default: config/guardrails.yaml)",
+        default=None,
+        help="Path to guardrails YAML (default depends on --guardrails-mode)",
+    )
+    parser.add_argument(
+        "--guardrails-mode",
+        choices=["v1", "v2", "v2_1"],
+        default="v2",
+        help="Select guardrails logic (default: v2).",
     )
     return parser.parse_args()
 
@@ -186,11 +226,20 @@ def main() -> None:
     else:
         raise SystemExit("Podaj --week lub zakres --start-week/--end-week.")
 
-    guardrails_cfg = load_guardrails(args.guardrails)
+    # pick guardrails file based on mode (unless explicitly set)
+    if args.guardrails is None:
+        if args.guardrails_mode in ("v2", "v2_1"):
+            guardrails_path = Path("config/guardrails_v2.yaml")
+        else:
+            guardrails_path = Path("config/guardrails.yaml")
+    else:
+        guardrails_path = args.guardrails
+
+    guardrails_cfg = load_guardrails(guardrails_path)
 
     tables = []
     for wk in weeks:
-        tbl = build_weather_table(args.season, wk, guardrails_cfg)
+        tbl = build_weather_table(args.season, wk, guardrails_cfg, mode=args.guardrails_mode)
         if tbl.empty:
             print(f"[WARN] Skipping week {wk}: no GOY/GOM/GOW picks found.")
             continue
@@ -222,7 +271,6 @@ def main() -> None:
             return "PUSH"
         return "LOSS"
     table["result"] = table.apply(compute_result, axis=1)
-    table = table.drop(columns=["handicap"])
 
     out_path = args.output
     if out_path.name == "weather_bucket_games.csv":

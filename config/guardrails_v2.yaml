@@ -1,0 +1,40 @@
+min_rating:
+  supercell: 7.0
+  vortex: 6.0
+
+ppd_last3:
+  supercell_min: 1.0
+  vortex_min: 0.7
+  cyclone_min: 0.4   # warning only
+
+third_down_gap_last3:      # fav_3rd_down% - dog_3rd_down% (pp)
+  supercell_min: 10
+  vortex_min: 7
+  cyclone_min: 4         # warning only
+
+explosive_gap_last3:       # fav_explosive% - dog_explosive% (pp)
+  supercell_min: 4.5
+  vortex_min: 3.0
+  cyclone_min: 1.5        # warning only
+
+redzone_td_last3:          # fav red zone TD% (absolute)
+  supercell_min: 20
+  vortex_min: 17
+  cyclone_min: 14         # warning only
+
+pressure_mismatch:         # dog pass pro – fav pressure (pp)
+  warning_threshold: 6.0
+  hard_block_supercell: 10.0
+  rating_penalty: 0.3
+
+def_epa_trend:             # fav_def_epa_last3 - fav_def_epa_last5
+  max_worsening_supercell: 0.02
+  max_worsening_vortex: 0.05
+  rating_penalty: 0.2
+
+notes:
+  guardrail_levels:
+    0: no_guardrail
+    1: soft_warning
+    2: downgraded_supercell
+    3: downgraded_vortex
