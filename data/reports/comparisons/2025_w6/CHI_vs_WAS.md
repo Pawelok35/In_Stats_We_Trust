@@ -70,41 +70,61 @@ CHI edge: +0.599 (CHI +0.438 vs WAS -0.161)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -13.8 pp | -13.8 pp | -6.8 pp |
+| CHI | +5.0 pp | +5.0 pp | +6.9 pp |
+| WAS | -0.5 pp | -0.5 pp | -5.7 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +7.4 pp | +7.4 pp | +4.3 pp |
+| CHI | +2.3 pp | +2.3 pp | -4.1 pp |
+| WAS | +2.5 pp | +2.5 pp | -0.8 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +0.3 pp | +0.3 pp | -2.3 pp |
+| CHI | +3.6 pp | +3.6 pp | +5.7 pp |
+| WAS | -2.3 pp | -2.3 pp | -3.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +2.3 pp | +2.3 pp | +2.1 pp |
+| CHI | -0.3 pp | -0.3 pp | -1.4 pp |
+| WAS | -0.7 pp | -0.7 pp | -0.5 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
 ## Matchup Edges
 
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -1.7 pp | -1.7 pp | +2.9 pp |
+| WAS | +3.6 pp | +3.6 pp | +4.2 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| CHI | -1.5 pp | -1.5 pp | -4.3 pp |
+| WAS | -4.5 pp | -4.5 pp | -3.5 pp |
+
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +2.3 pp | +2.3 pp | +2.1 pp |
+| CHI | -0.3 pp | -0.3 pp | -1.4 pp |
+| WAS | -0.7 pp | -0.7 pp | -0.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +0.3 pp | +0.3 pp | -2.3 pp |
+| CHI | +3.6 pp | +3.6 pp | +5.7 pp |
+| WAS | -2.3 pp | -2.3 pp | -3.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -114,19 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 38.9 | 38.9 | 38.9 |
+| CHI | 51.5 | 51.5 | 52.6 |
+| WAS | 47.6 | 47.6 | 49.9 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 51.9 | 51.9 | 51.9 |
+| CHI | 48.1 | 48.1 | 49.0 |
+| WAS | 46.9 | 46.9 | 50.6 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | -13.0 | -13.0 | -13.0 |
+| CHI | 3.5 | 3.5 | 3.6 |
+| WAS | 0.7 | 0.7 | -0.7 |
 
 ### Points per Drive (offense)
 
@@ -164,25 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 36.5% | 36.5% | 36.5% |
+| CHI | 42.6% | 42.6% | 43.2% |
+| WAS | 40.4% | 40.4% | 35.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 63.5% | 63.5% | 63.5% |
+| CHI | 57.4% | 57.4% | 56.8% |
+| WAS | 59.6% | 59.6% | 64.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 2.93 | 2.93 | 2.90 |
+| CHI | 3.02 | 3.02 | 3.15 |
+| WAS | 3.24 | 3.24 | 2.80 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 5.10 | 5.10 | 5.04 |
+| CHI | 4.08 | 4.08 | 4.15 |
+| WAS | 4.79 | 4.79 | 5.13 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -215,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | DET (-) | 21-56 | DET | 0.866 | -0.121 | 40.2% | -2.718 |
-| 3 | DAL (-) | 31-14 | CHI | 0.604 | 0.200 | 47.9% | 1.700 |
-| 1 | MIN (-) | 18-29 | MIN | 0.553 | -0.109 | 37.4% | -0.791 |
+| 2 | DET (A) | 21-56 | DET | 0.877 | -0.121 | 40.2% | -2.718 |
+| 3 | DAL (H) | 31-14 | CHI | 0.602 | 0.200 | 47.9% | 1.700 |
+| 1 | MIN (H) | 18-29 | MIN | 0.561 | -0.109 | 37.4% | -0.791 |
 
 **WAS analogs vs CHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | LV (-) | 35-30 | WAS | 0.765 | 0.222 | 53.9% | 0.417 |
-| 4 | ATL (-) | 27-31 | ATL | 0.670 | 0.168 | 54.1% | -0.400 |
-| 1 | NYG (-) | 21-7 | WAS | 0.549 | 0.071 | 48.2% | 1.433 |
+| 3 | LV (H) | 35-30 | WAS | 0.764 | 0.222 | 53.9% | 0.417 |
+| 4 | ATL (A) | 27-31 | ATL | 0.686 | 0.168 | 54.1% | -0.400 |
+| 1 | NYG (H) | 21-7 | WAS | 0.568 | 0.071 | 48.2% | 1.433 |
 
 ## Core EPA Offense Form (up to Week 5)
 
@@ -315,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | n/a | n/a | n/a |
-| WAS | 36.5% | 36.5% | 36.5% |
+| CHI | 42.6% | 42.6% | 43.3% |
+| WAS | 40.8% | 40.8% | 35.3% |

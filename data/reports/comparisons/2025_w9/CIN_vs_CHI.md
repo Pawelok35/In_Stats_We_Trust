@@ -70,29 +70,29 @@ CHI edge: +0.606 (CIN -0.059 vs CHI +0.547)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +5.3 pp | +3.0 pp | +11.0 pp |
-| CHI | -10.1 pp | -9.7 pp | -24.9 pp |
+| CIN | +7.3 pp | +5.8 pp | +11.0 pp |
+| CHI | -9.1 pp | -11.7 pp | -24.9 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | -1.9 pp | -4.3 pp | -3.9 pp |
-| CHI | -7.1 pp | -11.2 pp | -11.4 pp |
+| CIN | -0.9 pp | -1.5 pp | -3.9 pp |
+| CHI | -6.3 pp | -11.8 pp | -11.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +3.1 pp | +3.3 pp | +6.9 pp |
-| CHI | -0.6 pp | -1.6 pp | -3.8 pp |
+| CIN | -0.3 pp | +1.9 pp | +6.9 pp |
+| CHI | -0.5 pp | -0.1 pp | -3.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | -0.4 pp | +1.7 pp | +3.7 pp |
-| CHI | -1.3 pp | -1.4 pp | -0.9 pp |
+| CIN | -1.8 pp | +0.9 pp | +3.7 pp |
+| CHI | +0.3 pp | -1.3 pp | -0.9 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +13.1 pp | +13.1 pp | +14.6 pp |
-| CHI | -4.5 pp | -4.5 pp | -7.0 pp |
+| CIN | +4.2 pp | +8.7 pp | +14.6 pp |
+| CHI | -3.8 pp | -5.7 pp | -7.0 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +0.5 pp | +0.5 pp | +3.1 pp |
-| CHI | -15.0 pp | -15.0 pp | -12.9 pp |
+| CIN | -7.6 pp | -4.9 pp | +3.1 pp |
+| CHI | -11.7 pp | -11.6 pp | -12.9 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | -0.4 pp | +1.7 pp | +3.7 pp |
-| CHI | -1.3 pp | -1.4 pp | -0.9 pp |
+| CIN | -1.8 pp | +0.9 pp | +3.7 pp |
+| CHI | +0.3 pp | -1.3 pp | -0.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +3.1 pp | +3.3 pp | +6.9 pp |
-| CHI | -0.6 pp | -1.6 pp | -3.8 pp |
+| CIN | -0.3 pp | +1.9 pp | +6.9 pp |
+| CHI | -0.5 pp | -0.1 pp | -3.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 48.8 | 48.8 | 51.9 |
-| CHI | 50.7 | 50.7 | 50.7 |
+| CIN | 48.4 | 47.4 | 51.9 |
+| CHI | 51.2 | 51.4 | 50.7 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 50.2 | 50.2 | 49.7 |
-| CHI | 50.3 | 50.3 | 50.3 |
+| CIN | 46.9 | 46.2 | 49.7 |
+| CHI | 49.0 | 50.3 | 50.3 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | -1.4 | -1.4 | 2.2 |
-| CHI | 0.3 | 0.3 | 0.3 |
+| CIN | 1.5 | 1.3 | 2.2 |
+| CHI | 2.1 | 1.2 | 0.3 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 52.8% | 52.8% | 52.9% |
-| CHI | 41.3% | 41.3% | 41.3% |
+| CIN | 48.9% | 50.8% | 52.9% |
+| CHI | 42.0% | 42.2% | 41.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 47.2% | 47.2% | 47.1% |
-| CHI | 58.7% | 58.7% | 58.7% |
+| CIN | 51.1% | 49.2% | 47.1% |
+| CHI | 58.0% | 57.8% | 58.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 3.94 | 4.18 | 4.61 |
-| CHI | 3.11 | 3.26 | 3.34 |
+| CIN | 3.65 | 4.02 | 4.61 |
+| CHI | 3.16 | 3.33 | 3.34 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 3.52 | 3.73 | 4.09 |
-| CHI | 4.42 | 4.64 | 4.76 |
+| CIN | 3.81 | 3.89 | 4.09 |
+| CHI | 4.37 | 4.57 | 4.76 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | PIT (H) | 33-31 | CIN | 0.521 | 0.219 | 53.7% | 0.200 |
-| 2 | JAX (-) | 31-25 | CIN | 0.504 | 0.082 | 51.8% | 0.568 |
-| 1 | CLE (-) | 17-16 | CIN | 0.470 | -0.066 | 44.1% | 0.100 |
+| 7 | PIT (A) | 33-31 | CIN | 0.516 | 0.219 | 53.7% | 0.200 |
+| 2 | JAX (H) | 31-25 | CIN | 0.504 | 0.082 | 51.8% | 0.568 |
+| 1 | CLE (A) | 17-16 | CIN | 0.470 | -0.066 | 44.1% | 0.100 |
 
 **CHI analogs vs CIN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | BAL (A) | 16-30 | BAL | 0.894 | 0.041 | 46.9% | -1.556 |
-| 3 | DAL (-) | 31-14 | CHI | 0.887 | 0.200 | 47.9% | 1.700 |
-| 6 | WAS (A) | 25-22 | CHI | 0.679 | 0.093 | 50.6% | 0.318 |
+| 8 | BAL (H) | 16-30 | BAL | 0.894 | 0.041 | 46.9% | -1.556 |
+| 3 | DAL (H) | 31-14 | CHI | 0.890 | 0.200 | 47.9% | 1.700 |
+| 6 | WAS (H) | 25-22 | CHI | 0.680 | 0.093 | 50.6% | 0.318 |
 
 ## Core EPA Offense Form (up to Week 8)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 41.0% | 41.0% | 41.0% |
-| CIN | 53.0% | 53.0% | 53.2% |
+| CHI | 41.9% | 42.1% | 41.0% |
+| CIN | 49.5% | 51.2% | 53.2% |

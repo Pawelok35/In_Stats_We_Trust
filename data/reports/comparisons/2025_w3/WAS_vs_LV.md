@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | GB (A) | 18-25 | GB | 0.424 | -0.070 | 44.2% | -0.614 |
-| 1 | NYG (H) | 21-7 | WAS | 0.375 | 0.071 | 48.2% | 1.433 |
+| 2 | GB (A) | 18-25 | GB | 0.421 | -0.070 | 44.2% | -0.614 |
+| 1 | NYG (H) | 21-7 | WAS | 0.377 | 0.071 | 48.2% | 1.433 |
 
 **LV analogs vs WAS profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | LAC (H) | 9-18 | LAC | 0.761 | -0.250 | 36.6% | -0.918 |
-| 1 | NE (A) | 20-14 | LV | 0.276 | 0.081 | 44.4% | 0.485 |
+| 2 | LAC (H) | 9-18 | LAC | 0.759 | -0.250 | 36.6% | -0.918 |
+| 1 | NE (A) | 20-14 | LV | 0.270 | 0.081 | 44.4% | 0.485 |
 
 ## Core EPA Offense Form (up to Week 2)
 

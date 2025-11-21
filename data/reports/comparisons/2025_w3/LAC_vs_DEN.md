@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | LV (A) | 20-10 | LAC | 0.537 | -0.087 | 46.5% | 0.918 |
-| 1 | KC (H) | 27-21 | LAC | 0.162 | 0.211 | 56.8% | 0.750 |
+| 2 | LV (A) | 20-10 | LAC | 0.536 | -0.087 | 46.5% | 0.918 |
+| 1 | KC (H) | 27-21 | LAC | 0.161 | 0.211 | 56.8% | 0.750 |
 
 **DEN analogs vs LAC profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | IND (A) | 28-24 | DEN | 0.662 | 0.166 | 54.7% | 0.475 |
-| 1 | TEN (H) | 20-12 | DEN | 0.177 | -0.108 | 41.9% | 0.571 |
+| 2 | IND (A) | 28-24 | DEN | 0.658 | 0.166 | 54.7% | 0.475 |
+| 1 | TEN (H) | 20-12 | DEN | 0.178 | -0.108 | 41.9% | 0.571 |
 
 ## Core EPA Offense Form (up to Week 2)
 

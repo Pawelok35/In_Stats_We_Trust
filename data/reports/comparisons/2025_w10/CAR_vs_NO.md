@@ -5,29 +5,29 @@
 | Component | Weight | CAR | NO | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 35% | 0.066 | -0.211 | +0.277 |
-| EPA Defense | 20% | 0.000 | 0.172 | -0.172 |
-| Success Rate Offense | 25% | 46.9% | 40.5% | +6.4 pp |
-| Tempo | 20% | 0.108 | 0.097 | +0.011 |
+| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
+| Success Rate Offense | 25% | 49.3% | 40.7% | +8.6 pp |
+| Tempo | 20% | 0.085 | 0.093 | -0.008 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CAR | NO | Delta |
 | --- | ---: | ---: | ---: | ---: |
 | EPA Offense | 25% | 0.066 | -0.211 | +0.277 |
-| EPA Defense | 20% | 0.000 | 0.172 | -0.172 |
-| Success Rate Offense | 15% | 46.9% | 40.5% | +6.4 pp |
-| Turnover Margin | 10% | -0.222 | -0.444 | +0.222 |
-| Tempo | 10% | 0.108 | 0.097 | +0.011 |
-| Red Zone TD Rate (Off) | 10% | 12.4% | 10.5% | +1.9 pp |
-| Pressure Rate (Def) | 10% | 4.6% | 6.4% | -1.8 pp |
+| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
+| Success Rate Offense | 15% | 49.3% | 40.7% | +8.6 pp |
+| Turnover Margin | 10% | 1.000 | -2.000 | +3.000 |
+| Tempo | 10% | 0.085 | 0.093 | -0.008 |
+| Red Zone TD Rate (Off) | 10% | 11.8% | 12.5% | -0.7 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 5.3% | -2.6 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-CAR edge: +0.095 (CAR +0.512 vs NO +0.417)
+CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
 **7 metrics version:**
-CAR edge: +0.224 (CAR +0.643 vs NO +0.419)
-**Verdict:** CAR trzyma przewagę w rozszerzonym modelu dzięki wyraźnie lepszemu EPA Offense i Success Rate.
+CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
+**Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
@@ -36,16 +36,15 @@ CAR edge: +0.224 (CAR +0.643 vs NO +0.419)
 | Model Spread (CAR - NO) | +1.5 pts (favours CAR) |
 | Model Win% CAR | 56.3% |
 | Model Win% NO | 43.7% |
-| SOS Differential (CAR-NO) | +0.030 |
+| SOS Differential (CAR-NO) | +0.023 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CAR | 29.6% | 44.5% | -15.0% | 55.3% | 51.7% | Run heavy |
-| NO | 48.1% | 44.5% | 3.6% | 44.7% | 55.3% | Pass heavy |
-*Pass rates use latest available L3 data (Week 9).*
+| CAR | 29.6% | n/a | n/a | 55.3% | 51.7% | n/a |
+| NO | 48.1% | n/a | n/a | 44.7% | 55.3% | n/a |
 
 ## Situational Edges
 
@@ -53,29 +52,29 @@ CAR edge: +0.224 (CAR +0.643 vs NO +0.419)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -3.2 pp | -3.1 pp | -3.2 pp |
-| NO | -17.4 pp | -17.4 pp | -18.7 pp |
+| CAR | +0.4 pp | +2.6 pp | +2.0 pp |
+| NO | -6.3 pp | -10.5 pp | -15.7 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | +0.3 pp | -0.4 pp | -2.2 pp |
-| NO | +1.5 pp | -0.7 pp | +1.8 pp |
+| CAR | -2.0 pp | +1.1 pp | -0.7 pp |
+| NO | +0.6 pp | -0.4 pp | +4.8 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -7.3 pp | -8.6 pp | -7.1 pp |
-| NO | -1.8 pp | +0.3 pp | +2.2 pp |
+| CAR | -0.2 pp | -3.9 pp | -4.4 pp |
+| NO | -1.6 pp | +0.5 pp | +0.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -0.1 pp | +1.4 pp | -0.4 pp |
-| NO | -3.7 pp | -3.6 pp | -4.4 pp |
+| CAR | -0.5 pp | +0.7 pp | -2.2 pp |
+| NO | -1.8 pp | -0.1 pp | -1.6 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -85,29 +84,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | +8.4 pp | +8.4 pp | +8.4 pp |
-| NO | -14.8 pp | -14.8 pp | -14.8 pp |
+| CAR | +3.2 pp | +5.4 pp | +4.8 pp |
+| NO | +1.6 pp | -1.6 pp | -6.0 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -3.2 pp | -3.2 pp | -3.2 pp |
-| NO | -6.5 pp | -6.5 pp | -6.5 pp |
+| CAR | -6.0 pp | -4.9 pp | -3.9 pp |
+| NO | -1.9 pp | -1.1 pp | -3.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -0.1 pp | +1.4 pp | -0.4 pp |
-| NO | -3.7 pp | -3.6 pp | -4.4 pp |
+| CAR | -0.5 pp | +0.7 pp | -2.2 pp |
+| NO | -1.8 pp | -0.1 pp | -1.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -7.3 pp | -8.6 pp | -7.1 pp |
-| NO | -1.8 pp | +0.3 pp | +2.2 pp |
+| CAR | -0.2 pp | -3.9 pp | -4.4 pp |
+| NO | -1.6 pp | +0.5 pp | +0.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -117,22 +116,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 48.9 | 48.9 | 48.9 |
-| NO | 50.2 | 50.2 | 50.2 |
+| CAR | 47.3 | 45.1 | 46.0 |
+| NO | 50.8 | 49.2 | 50.3 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 44.3 | 44.3 | 44.3 |
-| NO | 41.5 | 41.5 | 41.5 |
+| CAR | 48.6 | 47.4 | 41.8 |
+| NO | 47.2 | 47.8 | 43.6 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 4.7 | 4.7 | 4.7 |
-| NO | 8.7 | 8.7 | 8.7 |
+| CAR | -1.3 | -2.2 | 4.2 |
+| NO | 3.6 | 1.3 | 6.7 |
 
 ### Points per Drive (offense)
 
@@ -170,29 +169,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 34.7% | 34.7% | 34.7% |
-| NO | 56.6% | 56.6% | 56.6% |
+| CAR | 40.8% | 36.2% | 36.4% |
+| NO | 46.6% | 48.9% | 54.9% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 65.3% | 65.3% | 65.3% |
-| NO | 43.4% | 43.4% | 43.4% |
+| CAR | 59.2% | 63.8% | 63.6% |
+| NO | 53.4% | 51.1% | 45.1% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 2.88 | 2.92 | 2.94 |
-| NO | 4.29 | 4.02 | 3.81 |
+| CAR | 3.39 | 3.05 | 3.09 |
+| NO | 3.53 | 3.47 | 3.69 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 5.43 | 5.50 | 5.54 |
-| NO | 3.29 | 3.08 | 2.92 |
+| CAR | 4.92 | 5.37 | 5.38 |
+| NO | 4.05 | 3.63 | 3.03 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -200,9 +199,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | NO |
 | --- | ---: | ---: |
-| Season-to-date | 0.141 | 0.111 |
-| Last 5 games | 0.158 | 0.099 |
-| Last 3 games | 0.128 | 0.085 |
+| Season-to-date | 0.141 | 0.118 |
+| Last 5 games | 0.158 | 0.097 |
+| Last 3 games | 0.128 | 0.086 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -225,17 +224,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | ATL (-) | 24-0 | CAR | 0.907 | 0.066 | 52.1% | 2.400 |
-| 5 | MIA (-) | 27-26 | CAR | 0.765 | 0.114 | 45.6% | 0.055 |
-| 1 | JAX (-) | 10-26 | JAX | 0.680 | -0.108 | 39.5% | -1.600 |
+| 3 | ATL (H) | 24-0 | CAR | 0.904 | 0.066 | 52.1% | 2.400 |
+| 5 | MIA (H) | 27-26 | CAR | 0.749 | 0.114 | 45.6% | 0.055 |
+| 7 | NYJ (H) | 13-6 | CAR | 0.722 | -0.053 | 40.0% | 0.636 |
 
 **NO analogs vs CAR profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | NYG (-) | 20-15 | NO | 0.580 | -0.043 | 46.3% | 0.418 |
-| 8 | TB (-) | 3-17 | TB | 0.522 | -0.394 | 38.4% | -1.273 |
-| 3 | SEA (-) | 19-38 | SEA | 0.364 | -0.240 | 42.4% | -1.583 |
+| 5 | NYG (H) | 20-15 | NO | 0.545 | -0.043 | 46.3% | 0.418 |
+| 8 | TB (A) | 3-17 | TB | 0.496 | -0.394 | 38.4% | -1.273 |
+| 9 | LA (A) | 10-31 | LA | 0.441 | -0.211 | 40.7% | -2.289 |
 
 ## Core EPA Offense Form (up to Week 9)
 
@@ -325,5 +324,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CAR | 34.9% | 34.9% | 34.9% |
-| NO | 58.6% | 58.6% | 58.6% |
+| CAR | 41.4% | 36.5% | 36.8% |
+| NO | 46.6% | 49.3% | 56.2% |

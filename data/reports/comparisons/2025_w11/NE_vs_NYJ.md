@@ -1,41 +1,59 @@
 # Matchup Report - NE vs NYJ
 
+## Metric Comparison
+
+| Metric | NE | NYJ | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.121 | -0.052 | ↑ +0.173 |
+| Core EPA Defense | -0.052 | 0.121 | ↓ -0.173 |
+| Success Rate Offense | 51.2% | 52.9% | ↓ -1.6 pp |
+| Success Rate Defense | 52.9% | 51.2% | ↑ +1.6 pp |
+| Explosive Play Rate (Off) | 9.8% | 8.6% | ↑ +1.2 pp |
+| Third Down Conversion | 46.2% | 57.1% | ↓ -11.0 pp |
+| Points per Drive Differential | 1.144 | -1.144 | ↑ +2.289 |
+| Yards per Play Differential | 0.598 | -0.598 | ↑ +1.195 |
+| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
+| Red Zone TD Rate (Off) | 20.0% | 11.1% | ↑ +8.9 pp |
+| Pressure Rate (Def) | 6.9% | 2.7% | ↑ +4.2 pp |
+| Tempo | 8.200 | 7.778 | ↑ +0.422 |
+| PowerScore | 0.180 | 0.155 | ↑ +0.024 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | NE | NYJ | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.246 | 0.074 | +0.173 |
-| EPA Defense | 20% | -0.179 | 0.176 | -0.355 |
-| Success Rate Offense | 25% | 42.4% | 56.8% | -14.4 pp |
-| Tempo | 20% | 0.136 | 0.099 | +0.038 |
+| EPA Offense | 35% | 0.121 | -0.052 | +0.173 |
+| EPA Defense | 20% | -0.052 | 0.121 | -0.173 |
+| Success Rate Offense | 25% | 51.2% | 52.9% | -1.6 pp |
+| Tempo | 20% | 0.098 | 0.086 | +0.012 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | NE | NYJ | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.246 | 0.074 | +0.173 |
-| EPA Defense | 20% | -0.179 | 0.176 | -0.355 |
-| Success Rate Offense | 15% | 42.4% | 56.8% | -14.4 pp |
-| Turnover Margin | 10% | 0.000 | -3.000 | +3.000 |
-| Tempo | 10% | 0.136 | 0.099 | +0.038 |
-| Red Zone TD Rate (Off) | 10% | 22.2% | 0.0% | +22.2 pp |
-| Pressure Rate (Def) | 10% | 2.7% | 0.0% | +2.7 pp |
+| EPA Offense | 25% | 0.121 | -0.052 | +0.173 |
+| EPA Defense | 20% | -0.052 | 0.121 | -0.173 |
+| Success Rate Offense | 15% | 51.2% | 52.9% | -1.6 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.098 | 0.086 | +0.012 |
+| Red Zone TD Rate (Off) | 10% | 20.0% | 11.1% | +8.9 pp |
+| Pressure Rate (Def) | 10% | 6.9% | 2.7% | +4.2 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-NYJ edge: +0.039 (NE +0.184 vs NYJ +0.223)
+NE edge: +0.024 (NE +0.180 vs NYJ +0.155)
 **7 metrics version:**
-NE edge: +0.279 (NE +0.128 vs NYJ -0.151)
-**Verdict:** NE holds the edge in the extended breakdown (lead 0.279), driven by Turnover Margin (10% weight).
+NE edge: +0.220 (NE +0.233 vs NYJ +0.013)
+**Verdict:** NE holds the edge in the extended breakdown (lead 0.220), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - NYJ) | -0.7 pts (favours NYJ) |
-| Model Win% NE | 47.0% |
-| Model Win% NYJ | 53.0% |
+| Model Spread (NE - NYJ) | +0.4 pts (favours NE) |
+| Model Win% NE | 51.9% |
+| Model Win% NYJ | 48.1% |
 | SOS Differential (NE-NYJ) | -0.038 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ NE edge: +0.279 (NE +0.128 vs NYJ -0.151)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| NE | 33.3% | n/a | n/a | 48.0% | 47.9% | n/a |
-| NYJ | 35.8% | n/a | n/a | 48.6% | 46.0% | n/a |
+| NE | 45.1% | 44.1% | 1.1% | 54.1% | 48.9% | Slight pass lean |
+| NYJ | 41.4% | 44.1% | -2.6% | 34.5% | 65.9% | Slight run lean |
 
 ## Situational Edges
 

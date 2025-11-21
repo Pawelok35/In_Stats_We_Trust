@@ -223,13 +223,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Matchup Analogs
 
-**TEN** has not faced an opponent matching LA's profile yet.
+**TEN analogs vs LA profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | DEN (A) | 12-20 | DEN | 0.962 | -0.219 | 32.5% | -0.571 |
 
 **LA analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | HOU (H) | 14-9 | LA | 0.954 | -0.074 | 39.5% | 0.556 |
+| 1 | HOU (H) | 14-9 | LA | 0.963 | -0.074 | 39.5% | 0.556 |
 
 ## Core EPA Offense Form (up to Week 1)
 

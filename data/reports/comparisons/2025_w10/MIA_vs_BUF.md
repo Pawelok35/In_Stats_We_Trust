@@ -52,29 +52,29 @@ BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +6.7 pp | -0.4 pp | -7.5 pp |
-| BUF | +14.2 pp | +14.7 pp | +15.2 pp |
+| MIA | +3.0 pp | -1.5 pp | -8.7 pp |
+| BUF | +1.6 pp | +9.8 pp | +14.9 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +1.0 pp | -2.8 pp | -7.5 pp |
-| BUF | -5.9 pp | -5.2 pp | -1.5 pp |
+| MIA | -0.3 pp | -1.7 pp | -5.8 pp |
+| BUF | +3.1 pp | +1.9 pp | +1.8 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +6.2 pp | +7.4 pp | +7.9 pp |
-| BUF | -2.5 pp | -2.8 pp | -2.3 pp |
+| MIA | +4.2 pp | +4.9 pp | +5.5 pp |
+| BUF | -0.6 pp | -2.8 pp | -3.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -1.3 pp | -1.1 pp | +0.3 pp |
-| BUF | +1.6 pp | +1.8 pp | +1.4 pp |
+| MIA | -2.8 pp | -1.9 pp | +0.0 pp |
+| BUF | +0.7 pp | +2.1 pp | +2.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -84,29 +84,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -8.5 pp | -8.5 pp | -8.5 pp |
-| BUF | +7.2 pp | +7.2 pp | +7.2 pp |
+| MIA | -7.6 pp | -10.9 pp | -12.5 pp |
+| BUF | +5.4 pp | +7.8 pp | +12.2 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +10.1 pp | +10.1 pp | +10.1 pp |
-| BUF | +8.4 pp | +8.4 pp | +8.4 pp |
+| MIA | +3.4 pp | +1.9 pp | +1.0 pp |
+| BUF | -2.2 pp | +5.0 pp | +7.8 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -1.3 pp | -1.1 pp | +0.3 pp |
-| BUF | +1.6 pp | +1.8 pp | +1.4 pp |
+| MIA | -2.8 pp | -1.9 pp | +0.0 pp |
+| BUF | +0.7 pp | +2.1 pp | +2.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +6.2 pp | +7.4 pp | +7.9 pp |
-| BUF | -2.5 pp | -2.8 pp | -2.3 pp |
+| MIA | +4.2 pp | +4.9 pp | +5.5 pp |
+| BUF | -0.6 pp | -2.8 pp | -3.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -116,22 +116,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 43.4 | 43.4 | 43.4 |
-| BUF | 47.6 | 47.6 | 47.6 |
+| MIA | 51.7 | 46.8 | 42.9 |
+| BUF | 45.4 | 45.3 | 47.1 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 44.0 | 44.0 | 44.0 |
-| BUF | 49.8 | 49.8 | 49.8 |
+| MIA | 46.4 | 46.8 | 47.3 |
+| BUF | 50.6 | 49.3 | 44.4 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -0.6 | -0.6 | -0.6 |
-| BUF | -2.2 | -2.2 | -2.2 |
+| MIA | 5.3 | 0.0 | -4.4 |
+| BUF | -5.3 | -4.0 | 2.7 |
 
 ### Points per Drive (offense)
 
@@ -169,29 +169,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 43.6% | 43.6% | 43.6% |
-| BUF | 34.8% | 34.8% | 34.8% |
+| MIA | 46.7% | 46.5% | 44.4% |
+| BUF | 39.1% | 37.4% | 37.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 56.4% | 56.4% | 56.4% |
-| BUF | 65.2% | 65.2% | 65.2% |
+| MIA | 53.3% | 53.5% | 55.6% |
+| BUF | 60.9% | 62.6% | 62.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 3.34 | 3.10 | 3.17 |
-| BUF | 2.71 | 2.61 | 2.58 |
+| MIA | 3.57 | 3.30 | 3.23 |
+| BUF | 3.04 | 2.81 | 2.77 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 4.32 | 4.01 | 4.10 |
-| BUF | 5.07 | 4.90 | 4.84 |
+| MIA | 4.08 | 3.80 | 4.04 |
+| BUF | 4.74 | 4.70 | 4.65 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -222,19 +222,19 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 **MIA analogs vs BUF profile**
 
-| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
-| ---: | --- | ---: | ---: | ---: | ---: |
-| 3 | BUF (-) | 1.000 | 0.067 | 44.7% | -1.111 |
-| 1 | IND (-) | 0.976 | -0.156 | 47.4% | -3.571 |
-| 9 | BAL (A) | 0.778 | -0.195 | 42.3% | -2.000 |
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 3 | BUF (A) | 21-31 | BUF | 1.000 | 0.067 | 44.7% | -1.111 |
+| 1 | IND (A) | 8-33 | IND | 0.977 | -0.156 | 47.4% | -3.571 |
+| 9 | BAL (H) | 6-28 | BAL | 0.786 | -0.195 | 42.3% | -2.000 |
 
 **BUF analogs vs MIA profile**
 
-| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
-| ---: | --- | ---: | ---: | ---: | ---: |
-| 3 | MIA (-) | 1.000 | 0.221 | 54.1% | 1.111 |
-| 2 | NYJ (-) | 0.869 | 0.177 | 45.6% | 1.727 |
-| 4 | NO (-) | 0.765 | 0.122 | 46.8% | 0.918 |
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 3 | MIA (H) | 31-21 | BUF | 1.000 | 0.221 | 54.1% | 1.111 |
+| 2 | NYJ (A) | 30-11 | BUF | 0.871 | 0.177 | 45.6% | 1.727 |
+| 4 | NO (H) | 31-21 | BUF | 0.749 | 0.122 | 46.8% | 0.918 |
 
 ## Core EPA Offense Form (up to Week 9)
 
@@ -324,5 +324,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 34.8% | 34.8% | 34.8% |
-| MIA | 43.2% | 43.2% | 43.2% |
+| BUF | 39.4% | 37.3% | 37.1% |
+| MIA | 46.1% | 46.1% | 44.1% |

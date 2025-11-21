@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | PHI (A) | 20-21 | PHI | 0.193 | 0.139 | 51.4% | -0.167 |
+| 1 | PHI (A) | 20-21 | PHI | 0.187 | 0.139 | 51.4% | -0.167 |
 
 **NYG analogs vs DAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | WAS (A) | 6-19 | WAS | 0.292 | -0.113 | 37.8% | -1.433 |
+| 1 | WAS (A) | 6-19 | WAS | 0.288 | -0.113 | 37.8% | -1.433 |
 
 ## Core EPA Offense Form (up to Week 1)
 

@@ -1,41 +1,59 @@
 # Matchup Report - TEN vs HOU
 
+## Metric Comparison
+
+| Metric | TEN | HOU | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.053 | 0.012 | ↓ -0.064 |
+| Core EPA Defense | 0.012 | -0.053 | ↑ +0.064 |
+| Success Rate Offense | 39.2% | 46.0% | ↓ -6.7 pp |
+| Success Rate Defense | 46.0% | 39.2% | ↑ +6.7 pp |
+| Explosive Play Rate (Off) | 6.3% | 6.9% | ↓ -0.6 pp |
+| Third Down Conversion | 31.6% | 28.6% | ↑ +3.0 pp |
+| Points per Drive Differential | -0.273 | 0.273 | ↓ -0.545 |
+| Yards per Play Differential | -0.722 | 0.722 | ↓ -1.444 |
+| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
+| Red Zone TD Rate (Off) | 33.3% | 9.1% | ↑ +24.2 pp |
+| Pressure Rate (Def) | 8.9% | 7.5% | ↑ +1.4 pp |
+| Tempo | 7.182 | 7.909 | ↓ -0.727 |
+| PowerScore | 0.095 | 0.122 | ↓ -0.028 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | TEN | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.398 | 0.069 | -0.467 |
-| EPA Defense | 20% | 0.069 | -0.398 | +0.467 |
-| Success Rate Offense | 25% | 34.4% | 41.5% | -7.1 pp |
-| Tempo | 20% | 0.094 | 0.098 | -0.004 |
+| EPA Offense | 35% | -0.053 | 0.012 | -0.064 |
+| EPA Defense | 20% | 0.012 | -0.053 | +0.064 |
+| Success Rate Offense | 25% | 39.2% | 46.0% | -6.7 pp |
+| Tempo | 20% | 0.063 | 0.069 | -0.006 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | TEN | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.398 | 0.069 | -0.467 |
-| EPA Defense | 20% | 0.069 | -0.398 | +0.467 |
-| Success Rate Offense | 15% | 34.4% | 41.5% | -7.1 pp |
+| EPA Offense | 25% | -0.053 | 0.012 | -0.064 |
+| EPA Defense | 20% | 0.012 | -0.053 | +0.064 |
+| Success Rate Offense | 15% | 39.2% | 46.0% | -6.7 pp |
 | Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
-| Tempo | 10% | 0.094 | 0.098 | -0.004 |
-| Red Zone TD Rate (Off) | 10% | 0.0% | 40.0% | -40.0 pp |
-| Pressure Rate (Def) | 10% | 6.5% | 7.1% | -0.7 pp |
+| Tempo | 10% | 0.063 | 0.069 | -0.006 |
+| Red Zone TD Rate (Off) | 10% | 33.3% | 9.1% | +24.2 pp |
+| Pressure Rate (Def) | 10% | 8.9% | 7.5% | +1.4 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-HOU edge: +0.089 (TEN -0.021 vs HOU +0.068)
+HOU edge: +0.028 (TEN +0.095 vs HOU +0.122)
 **7 metrics version:**
-HOU edge: +0.275 (TEN -0.118 vs HOU +0.157)
-**Verdict:** HOU holds the edge in the extended breakdown (lead 0.275), driven by Turnover Margin (10% weight).
+HOU edge: +0.188 (TEN -0.003 vs HOU +0.185)
+**Verdict:** HOU holds the edge in the extended breakdown (lead 0.188), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - HOU) | -1.6 pts (favours HOU) |
-| Model Win% TEN | 43.2% |
-| Model Win% HOU | 56.8% |
+| Model Spread (TEN - HOU) | -0.5 pts (favours HOU) |
+| Model Win% TEN | 47.9% |
+| Model Win% HOU | 52.1% |
 | SOS Differential (TEN-HOU) | +0.076 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ HOU edge: +0.275 (TEN -0.118 vs HOU +0.157)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| TEN | 43.8% | n/a | n/a | 25.0% | 41.7% | n/a |
-| HOU | 37.8% | n/a | n/a | 48.4% | 37.3% | n/a |
+| TEN | 50.6% | 44.1% | 6.6% | 40.0% | 38.5% | Pass heavy |
+| HOU | 51.7% | 44.1% | 7.7% | 48.9% | 42.9% | Pass heavy |
 
 ## Situational Edges
 

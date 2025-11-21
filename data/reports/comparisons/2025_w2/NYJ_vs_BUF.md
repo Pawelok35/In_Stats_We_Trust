@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | PIT (H) | 32-34 | PIT | 0.940 | 0.158 | 55.0% | -0.182 |
+| 1 | PIT (H) | 32-34 | PIT | 0.942 | 0.158 | 55.0% | -0.182 |
 
 **BUF analogs vs NYJ profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | BAL (H) | 41-47 | BAL | 0.932 | 0.202 | 48.6% | -0.483 |
+| 1 | BAL (H) | 41-47 | BAL | 0.931 | 0.202 | 48.6% | -0.483 |
 
 ## Core EPA Offense Form (up to Week 1)
 

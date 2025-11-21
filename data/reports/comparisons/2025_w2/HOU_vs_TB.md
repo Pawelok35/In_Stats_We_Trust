@@ -223,13 +223,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Matchup Analogs
 
-**HOU** has not faced an opponent matching TB's profile yet.
+**HOU analogs vs TB profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | LA (A) | 9-14 | LA | 0.579 | -0.121 | 36.8% | -0.556 |
 
 **TB analogs vs HOU profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | ATL (A) | 23-20 | TB | 0.559 | 0.075 | 41.3% | 0.300 |
+| 1 | ATL (A) | 23-20 | TB | 0.557 | 0.075 | 41.3% | 0.300 |
 
 ## Core EPA Offense Form (up to Week 1)
 

@@ -1,41 +1,59 @@
 # Matchup Report - LA vs SEA
 
+## Metric Comparison
+
+| Metric | LA | SEA | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.200 | -0.141 | ↓ -0.058 |
+| Core EPA Defense | -0.141 | -0.200 | ↑ +0.058 |
+| Success Rate Offense | 40.6% | 49.5% | ↓ -8.9 pp |
+| Success Rate Defense | 49.5% | 40.6% | ↑ +8.9 pp |
+| Explosive Play Rate (Off) | 8.7% | 6.2% | ↑ +2.5 pp |
+| Third Down Conversion | 16.7% | 43.8% | ↓ -27.1 pp |
+| Points per Drive Differential | 0.167 | -0.167 | ↑ +0.333 |
+| Yards per Play Differential | -0.659 | 0.659 | ↓ -1.319 |
+| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
+| Red Zone TD Rate (Off) | 18.8% | 5.6% | ↑ +13.2 pp |
+| Pressure Rate (Def) | 2.3% | 0.0% | ↑ +2.3 pp |
+| Tempo | 5.750 | 8.083 | ↓ -2.333 |
+| PowerScore | 0.021 | 0.047 | ↓ -0.026 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | LA | SEA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.001 | 0.061 | -0.060 |
-| EPA Defense | 20% | -0.064 | -0.006 | -0.058 |
-| Success Rate Offense | 25% | 52.2% | 46.3% | +5.9 pp |
-| Tempo | 20% | 0.133 | 0.134 | -0.001 |
+| EPA Offense | 35% | -0.200 | -0.141 | -0.058 |
+| EPA Defense | 20% | -0.141 | -0.200 | +0.058 |
+| Success Rate Offense | 25% | 40.6% | 49.5% | -8.9 pp |
+| Tempo | 20% | 0.087 | 0.062 | +0.025 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | LA | SEA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.001 | 0.061 | -0.060 |
-| EPA Defense | 20% | -0.064 | -0.006 | -0.058 |
-| Success Rate Offense | 15% | 52.2% | 46.3% | +5.9 pp |
-| Turnover Margin | 10% | 2.000 | 2.000 | +0.000 |
-| Tempo | 10% | 0.133 | 0.134 | -0.001 |
-| Red Zone TD Rate (Off) | 10% | 18.2% | 14.3% | +3.9 pp |
-| Pressure Rate (Def) | 10% | 5.6% | 12.8% | -7.2 pp |
+| EPA Offense | 25% | -0.200 | -0.141 | -0.058 |
+| EPA Defense | 20% | -0.141 | -0.200 | +0.058 |
+| Success Rate Offense | 15% | 40.6% | 49.5% | -8.9 pp |
+| Turnover Margin | 10% | 3.000 | -3.000 | +6.000 |
+| Tempo | 10% | 0.087 | 0.062 | +0.025 |
+| Red Zone TD Rate (Off) | 10% | 18.8% | 5.6% | +13.2 pp |
+| Pressure Rate (Def) | 10% | 2.3% | 0.0% | +2.3 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-SEA edge: +0.018 (LA +0.145 vs SEA +0.163)
+SEA edge: +0.026 (LA +0.021 vs SEA +0.047)
 **7 metrics version:**
-SEA edge: +0.021 (LA +0.303 vs SEA +0.324)
-**Verdict:** SEA holds the edge in the extended breakdown (lead 0.021), driven by EPA Offense (25% weight).
+LA edge: +0.602 (LA +0.312 vs SEA -0.289)
+**Verdict:** LA holds the edge in the extended breakdown (lead 0.602), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - SEA) | -0.3 pts (favours SEA) |
-| Model Win% LA | 48.6% |
-| Model Win% SEA | 51.4% |
+| Model Spread (LA - SEA) | -0.5 pts (favours SEA) |
+| Model Win% LA | 48.0% |
+| Model Win% SEA | 52.0% |
 | SOS Differential (LA-SEA) | -0.012 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ SEA edge: +0.021 (LA +0.303 vs SEA +0.324)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| LA | 51.1% | n/a | n/a | 40.4% | 51.4% | n/a |
-| SEA | 35.4% | n/a | n/a | 47.2% | 46.5% | n/a |
+| LA | 40.6% | 44.1% | -3.5% | 42.9% | 39.0% | Run heavy |
+| SEA | 45.4% | 44.1% | 1.3% | 52.3% | 47.2% | Slight pass lean |
 
 ## Situational Edges
 

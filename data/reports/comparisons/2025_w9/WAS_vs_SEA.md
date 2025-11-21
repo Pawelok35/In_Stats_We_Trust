@@ -70,29 +70,29 @@ SEA edge: +0.263 (WAS +0.039 vs SEA +0.303)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | -0.1 pp | -1.6 pp | +9.2 pp |
-| SEA | -8.3 pp | -9.6 pp | -7.3 pp |
+| WAS | -2.5 pp | -3.1 pp | +9.2 pp |
+| SEA | -4.6 pp | -11.6 pp | -7.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +10.4 pp | +9.6 pp | +12.6 pp |
-| SEA | +1.9 pp | +4.1 pp | +1.4 pp |
+| WAS | +8.9 pp | +7.9 pp | +12.6 pp |
+| SEA | +2.0 pp | +2.3 pp | +1.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | -0.2 pp | +0.3 pp | -1.5 pp |
-| SEA | +4.7 pp | +4.3 pp | +3.7 pp |
+| WAS | +0.2 pp | +0.5 pp | -1.5 pp |
+| SEA | +3.5 pp | +3.4 pp | +3.7 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +0.9 pp | +1.2 pp | +0.2 pp |
-| SEA | -0.4 pp | -0.6 pp | -2.1 pp |
+| WAS | +2.9 pp | +2.7 pp | +0.2 pp |
+| SEA | -0.4 pp | -1.2 pp | -2.1 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +10.0 pp | +10.0 pp | +9.2 pp |
-| SEA | -1.9 pp | -1.9 pp | -3.5 pp |
+| WAS | +10.2 pp | +10.6 pp | +9.2 pp |
+| SEA | +0.2 pp | -3.3 pp | -3.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +1.5 pp | +1.5 pp | -2.8 pp |
-| SEA | +3.6 pp | +3.6 pp | +0.4 pp |
+| WAS | +1.3 pp | +1.6 pp | -2.8 pp |
+| SEA | +5.5 pp | +5.5 pp | +0.4 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | +0.9 pp | +1.2 pp | +0.2 pp |
-| SEA | -0.4 pp | -0.6 pp | -2.1 pp |
+| WAS | +2.9 pp | +2.7 pp | +0.2 pp |
+| SEA | -0.4 pp | -1.2 pp | -2.1 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | -0.2 pp | +0.3 pp | -1.5 pp |
-| SEA | +4.7 pp | +4.3 pp | +3.7 pp |
+| WAS | +0.2 pp | +0.5 pp | -1.5 pp |
+| SEA | +3.5 pp | +3.4 pp | +3.7 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 48.4 | 48.4 | 51.6 |
-| SEA | 45.4 | 45.4 | 45.4 |
+| WAS | 49.1 | 50.7 | 51.6 |
+| SEA | 46.1 | 46.1 | 45.4 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 45.3 | 45.3 | 43.0 |
-| SEA | 48.0 | 48.0 | 48.0 |
+| WAS | 45.5 | 46.7 | 43.0 |
+| SEA | 48.2 | 50.3 | 48.0 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 3.1 | 3.1 | 8.5 |
-| SEA | -2.6 | -2.6 | -2.6 |
+| WAS | 3.6 | 3.9 | 8.5 |
+| SEA | -2.1 | -4.2 | -2.6 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 41.5% | 41.5% | 43.2% |
-| SEA | 42.3% | 42.3% | 42.3% |
+| WAS | 41.4% | 41.3% | 43.2% |
+| SEA | 38.7% | 38.5% | 42.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 58.5% | 58.5% | 56.8% |
-| SEA | 57.7% | 57.7% | 57.7% |
+| WAS | 58.6% | 58.7% | 56.8% |
+| SEA | 61.3% | 61.5% | 57.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 3.22 | 3.28 | 3.17 |
-| SEA | 2.85 | 2.85 | 2.73 |
+| WAS | 3.22 | 3.26 | 3.17 |
+| SEA | 2.61 | 2.59 | 2.73 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| WAS | 4.54 | 4.62 | 4.17 |
-| SEA | 3.89 | 3.89 | 3.73 |
+| WAS | 4.55 | 4.64 | 4.17 |
+| SEA | 4.13 | 4.14 | 3.73 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | KC (A) | 7-25 | KC | 0.614 | -0.108 | 46.9% | -2.236 |
-| 2 | GB (-) | 18-25 | GB | 0.593 | -0.070 | 44.2% | -0.614 |
-| 5 | LAC (A) | 27-8 | WAS | 0.499 | 0.185 | 56.8% | 2.375 |
+| 8 | KC (H) | 7-25 | KC | 0.666 | -0.108 | 46.9% | -2.236 |
+| 2 | GB (A) | 18-25 | GB | 0.601 | -0.070 | 44.2% | -0.614 |
+| 5 | LAC (A) | 27-8 | WAS | 0.552 | 0.185 | 56.8% | 2.375 |
 
 **SEA analogs vs WAS profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | PIT (-) | 25-21 | SEA | 0.766 | 0.028 | 45.1% | 0.314 |
-| 1 | SF (-) | 13-15 | SF | 0.488 | -0.082 | 52.2% | -0.245 |
-| 3 | NO (-) | 38-19 | SEA | 0.301 | 0.162 | 52.1% | 1.583 |
+| 2 | PIT (A) | 25-21 | SEA | 0.780 | 0.028 | 45.1% | 0.314 |
+| 1 | SF (H) | 13-15 | SF | 0.483 | -0.082 | 52.2% | -0.245 |
+| 3 | NO (H) | 38-19 | SEA | 0.300 | 0.162 | 52.1% | 1.583 |
 
 ## Core EPA Offense Form (up to Week 8)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| SEA | 42.1% | 42.1% | 42.1% |
-| WAS | 41.2% | 41.2% | 42.7% |
+| SEA | 38.8% | 38.5% | 42.1% |
+| WAS | 41.5% | 41.1% | 42.7% |

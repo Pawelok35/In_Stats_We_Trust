@@ -249,8 +249,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | MIN (A) | 22-6 | ATL | 0.691 | 0.012 | 47.0% | 1.455 |
-| 1 | TB (H) | 20-23 | TB | 0.363 | 0.011 | 47.3% | -0.300 |
+| 2 | MIN (A) | 22-6 | ATL | 0.716 | 0.012 | 47.0% | 1.455 |
+| 1 | TB (H) | 20-23 | TB | 0.329 | 0.011 | 47.3% | -0.300 |
 
 ## Core EPA Offense Form (up to Week 2)
 

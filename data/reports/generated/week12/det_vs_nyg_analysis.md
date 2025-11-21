@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – DET 35.4 – NYG 24.8
+1️⃣ Estimated Score (Model) – DET 34.0 – NYG 24.8
 2️⃣ Predicted Winner (Model) – DET
-3️⃣ Predicted Margin (Model) – DET by 10.7 pts
-4️⃣ Win Probability (Model) – 95% (DET)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje DET na poziomie 49.1% vs 45.8% (+3.3 pp). Defensive pressure rate wspiera DET (+7.7% vs +4.7%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja DET (15.5% vs 12.9%). Na 3rd down DET utrzymuje 34.8%, podczas gdy NYG jest na 32.6%, co stabilizuje serie ofensywne. DET prowadzi w Points per Drive Differential (+0.537 vs -0.262), więc bazowa efektywność napędza przewagę.
+3️⃣ Predicted Margin (Model) – DET by 9.2 pts
+4️⃣ Win Probability (Model) – 94% (DET)
+5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje DET na poziomie 47.7% vs 46.0% (+1.7 pp). Turnover margin faworyzuje DET (-1.00 vs -2.00), co przekłada się na dodatkowe posiadania. Explosive Play Rate pozostaje po stronie DET (10.1% vs 9.1%), więc big-play equity jest wyższe. DET prowadzi w Points per Drive Differential (+0.402 vs -0.371), więc bazowa efektywność napędza przewagę. Red Zone TD Rate sprzyja DET (13.7% vs 13.1%).
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – DET 35.8 – NYG 24.3
+1️⃣ Estimated Score (Market) – DET 35.1 – NYG 23.6
 2️⃣ Predicted Winner (Market) – DET
 3️⃣ Predicted Margin (Market) – DET by 11.5 pts
 4️⃣ Win Probability (Market) – 90% (DET)
-5️⃣ Forum Output (A) – PowerScore (Model) — DET +0.014 vs NYG +0.110. Points per Drive Differential — DET +0.537 vs NYG -0.262. Success Rate Offense — DET 49.1% vs NYG 45.8%. Third Down Conversion — DET 34.8% vs NYG 32.6%. Red Zone TD Rate — DET 15.5% vs NYG 12.9%. Explosive Play Rate — DET 9.8% vs NYG 9.4%. Model margin 10.7 pts vs market spread DET +11.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DET po marginesie 10.7 pkt. DET notuje +0.537 PPD vs -0.262 u NYG. Różnica w Success Rate to 49.1% vs 45.8%. Na 3rd down DET (34.8%) wygląda solidniej niż NYG (32.6%). Red Zone i explosiveness ( 15.5% / 9.8% ) utrzymują przewagę jakościową. Market trzyma 11.5 pkt, więc edge vs linia to -0.8.
+5️⃣ Forum Output (A) – PowerScore (Model) — DET -0.021 vs NYG +0.234. Points per Drive Differential — DET +0.402 vs NYG -0.371. Success Rate Offense — DET 47.7% vs NYG 46.0%. Third Down Conversion — DET 33.7% vs NYG 33.7%. Red Zone TD Rate — DET 13.7% vs NYG 13.1%. Explosive Play Rate — DET 10.1% vs NYG 9.1%. Model margin 9.2 pts vs market spread DET +11.5.
+6️⃣ Forum Output (B) – Model idzie w stronę DET po marginesie 9.2 pkt. DET notuje +0.402 PPD vs -0.371 u NYG. Różnica w Success Rate to 47.7% vs 46.0%. Na 3rd down DET (33.7%) wygląda solidniej niż NYG (33.7%). Red Zone i explosiveness ( 13.7% / 10.1% ) utrzymują przewagę jakościową. Market trzyma 11.5 pkt, więc edge vs linia to -2.3.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -0.8 pts
-• PowerScoreDiff (winner) = -0.096
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = -2.3 pts
+• PowerScoreDiff (winner) = -0.255
+• Confidence = 94.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, -0.8 pts model edge vs line, and PowerScore Δ -0.096.
+🏷 Model Tag: NEUTRAL — based on 94.0% confidence, -2.3 pts model edge vs line, and PowerScore Δ -0.255.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – DET 35.4 – NYG 24.8
-   • Win Probability – 95% (DET)
+   • Estimated Score – DET 34.0 – NYG 24.8
+   • Win Probability – 94% (DET)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – DET 35.8 – NYG 24.3
+   • Estimated Score – DET 35.1 – NYG 23.6
    • Win Probability – 90% (DET)
 
 🏷 Model Tag: NEUTRAL — DET (HC -11.5)

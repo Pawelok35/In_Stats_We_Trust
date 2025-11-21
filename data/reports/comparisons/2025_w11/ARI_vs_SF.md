@@ -1,41 +1,59 @@
 # Matchup Report - ARI vs SF
 
+## Metric Comparison
+
+| Metric | ARI | SF | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.067 | 0.246 | ↓ -0.314 |
+| Core EPA Defense | 0.246 | -0.067 | ↑ +0.314 |
+| Success Rate Offense | 46.4% | 55.4% | ↓ -9.0 pp |
+| Success Rate Defense | 55.4% | 46.4% | ↑ +9.0 pp |
+| Explosive Play Rate (Off) | 11.3% | 9.5% | ↑ +1.9 pp |
+| Third Down Conversion | 40.0% | 33.3% | ↑ +6.7 pp |
+| Points per Drive Differential | -1.417 | 1.417 | ↓ -2.833 |
+| Yards per Play Differential | 1.234 | -1.234 | ↑ +2.467 |
+| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
+| Red Zone TD Rate (Off) | 15.0% | 23.5% | ↓ -8.5 pp |
+| Pressure Rate (Def) | 6.5% | 0.0% | ↑ +6.5 pp |
+| Tempo | 8.818 | 6.167 | ↑ +2.652 |
+| PowerScore | 0.164 | 0.230 | ↓ -0.066 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | ARI | SF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.006 | -0.113 | +0.107 |
-| EPA Defense | 20% | 0.061 | -0.029 | +0.089 |
-| Success Rate Offense | 25% | 45.2% | 46.8% | -1.6 pp |
-| Tempo | 20% | 0.083 | 0.127 | -0.043 |
+| EPA Offense | 35% | -0.067 | 0.246 | -0.314 |
+| EPA Defense | 20% | 0.246 | -0.067 | +0.314 |
+| Success Rate Offense | 25% | 46.4% | 55.4% | -9.0 pp |
+| Tempo | 20% | 0.113 | 0.095 | +0.019 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | ARI | SF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.006 | -0.113 | +0.107 |
-| EPA Defense | 20% | 0.061 | -0.029 | +0.089 |
-| Success Rate Offense | 15% | 45.2% | 46.8% | -1.6 pp |
-| Turnover Margin | 10% | -2.000 | -4.000 | +2.000 |
-| Tempo | 10% | 0.083 | 0.127 | -0.043 |
-| Red Zone TD Rate (Off) | 10% | 16.7% | 6.7% | +10.0 pp |
-| Pressure Rate (Def) | 10% | 10.3% | 0.0% | +10.3 pp |
+| EPA Offense | 25% | -0.067 | 0.246 | -0.314 |
+| EPA Defense | 20% | 0.246 | -0.067 | +0.314 |
+| Success Rate Offense | 15% | 46.4% | 55.4% | -9.0 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.113 | 0.095 | +0.019 |
+| Red Zone TD Rate (Off) | 10% | 15.0% | 23.5% | -8.5 pp |
+| Pressure Rate (Def) | 10% | 6.5% | 0.0% | +6.5 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-ARI edge: +0.043 (ARI +0.140 vs SF +0.097)
+SF edge: +0.066 (ARI +0.164 vs SF +0.230)
 **7 metrics version:**
-ARI edge: +0.258 (ARI -0.086 vs SF -0.344)
-**Verdict:** ARI holds the edge in the extended breakdown (lead 0.258), driven by Turnover Margin (10% weight).
+SF edge: +0.629 (ARI -0.165 vs SF +0.464)
+**Verdict:** SF holds the edge in the extended breakdown (lead 0.629), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - SF) | +0.8 pts (favours ARI) |
-| Model Win% ARI | 53.3% |
-| Model Win% SF | 46.7% |
+| Model Spread (ARI - SF) | -1.2 pts (favours SF) |
+| Model Win% ARI | 44.9% |
+| Model Win% SF | 55.1% |
 | SOS Differential (ARI-SF) | -0.011 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ ARI edge: +0.258 (ARI -0.086 vs SF -0.344)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| ARI | 56.0% | n/a | n/a | 48.6% | 42.6% | n/a |
-| SF | 50.6% | n/a | n/a | 51.7% | 43.4% | n/a |
+| ARI | 59.8% | 44.1% | 15.7% | 51.7% | 38.5% | Pass heavy |
+| SF | 41.9% | 44.1% | -2.2% | 51.6% | 58.1% | Slight run lean |
 
 ## Situational Edges
 

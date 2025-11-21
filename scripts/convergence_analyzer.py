@@ -9,17 +9,18 @@ from typing import Dict, Iterable, List, Optional, Tuple
 
 TRACKED_TAGS = {"GOY", "GOM", "GOW"}
 TAG_POINTS = {"GOY": 3, "GOM": 2, "GOW": 1}
-MODEL_WEIGHTS = {"M": 1.0, "D": 0.7, "B": 0.4}
-ULTIMATE_CONF_THRESHOLD = 98.0
-ULTIMATE_EDGE_THRESHOLD = 27.0
+# Weather Scale 2.0 variant weights (V1/V2/V3)
+MODEL_WEIGHTS = {"J": 1.0, "C": 0.91, "K": 0.88}
+ULTIMATE_CONF_THRESHOLD = 99.5
+ULTIMATE_EDGE_THRESHOLD = 35.0
 ULTIMATE_BUCKET = ("Ultimate Supercell", 4.0)
 WEATHER_BUCKETS = [
-    ("Supercell", 3.5, 6.0, math.inf),
-    ("Vortex", 3.0, 5.0, 6.0),
-    ("Cyclone", 2.5, 4.0, 5.0),
-    ("Gale", 2.0, 3.0, 4.0),
-    ("Breeze", 1.5, 2.0, 3.0),
-    ("Calm", 1.0, 0.0, 2.0),
+    ("Supercell", 3.5, 6.6, math.inf),
+    ("Vortex", 3.0, 5.6, 6.6),
+    ("Cyclone", 2.5, 4.6, 5.6),
+    ("Gale", 2.0, 3.5, 4.6),
+    ("Breeze", 1.5, 2.5, 3.5),
+    ("Calm", 1.0, 0.0, 2.5),
 ]
 BASE_BUCKET = ("Base", 0.5)
 
@@ -38,13 +39,13 @@ def parse_args() -> argparse.Namespace:
         description="Analyze convergence between three ISWT variants."
     )
     parser.add_argument(
-        "--variant-m", type=Path, required=True, help="JSONL z pickami modelu bazowego (M)."
+        "--variant-j", type=Path, required=True, help="JSONL z pickami wariantu J (precision)."
     )
     parser.add_argument(
-        "--variant-d", type=Path, required=True, help="JSONL z pickami wariantu D."
+        "--variant-c", type=Path, required=True, help="JSONL z pickami wariantu C (stability)."
     )
     parser.add_argument(
-        "--variant-b", type=Path, required=True, help="JSONL z pickami wariantu B."
+        "--variant-k", type=Path, required=True, help="JSONL z pickami wariantu K (momentum)."
     )
     parser.add_argument(
         "--week-label",
@@ -88,15 +89,14 @@ def index_records(records: Iterable[Dict]) -> Dict[Tuple[int, int, Tuple[str, st
     return {normalize_key(rec): rec for rec in records}
 
 
-def determine_category(has_m: bool, has_d: bool, has_b: bool) -> str:
-    if not has_m:
+def determine_category(has_j: bool, has_c: bool, has_k: bool) -> str:
+    present = int(has_j) + int(has_c) + int(has_k)
+    if present == 0:
         return "IGNORE"
-    if has_d and has_b:
+    if present == 3:
         return "ULTRA"
-    if has_d:
+    if present == 2:
         return "DUAL"
-    if has_b:
-        return "DIAMOND"
     return "BASE"
 
 
@@ -126,30 +126,30 @@ def tag_value(tag: Optional[str]) -> int:
     return TAG_POINTS.get(tag.upper(), 0)
 
 
-def compute_rating(tag_m: Optional[str], tag_d: Optional[str], tag_b: Optional[str]) -> float:
+def compute_rating(tag_j: Optional[str], tag_c: Optional[str], tag_k: Optional[str]) -> float:
     rating = 0.0
-    rating += tag_value(tag_m) * MODEL_WEIGHTS["M"]
-    rating += tag_value(tag_d) * MODEL_WEIGHTS["D"]
-    rating += tag_value(tag_b) * MODEL_WEIGHTS["B"]
+    rating += tag_value(tag_j) * MODEL_WEIGHTS["J"]
+    rating += tag_value(tag_c) * MODEL_WEIGHTS["C"]
+    rating += tag_value(tag_k) * MODEL_WEIGHTS["K"]
     return rating
 
 
 def assign_weather(
-    tag_m: Optional[str],
-    tag_d: Optional[str],
-    tag_b: Optional[str],
+    tag_j: Optional[str],
+    tag_c: Optional[str],
+    tag_k: Optional[str],
     rating: float,
     *,
     ultimate: bool = False,
 ) -> Tuple[str, float]:
+    # Ultimate wyłącznie gdy spełnia warunki ultimate (nie tylko wysoki rating)
     if ultimate:
         return ULTIMATE_BUCKET
-    if not tag_d and not tag_b:
-        return BASE_BUCKET
     for name, stake, low, high in WEATHER_BUCKETS:
         if low <= rating < high:
             return name, stake
-    return WEATHER_BUCKETS[-1][0], WEATHER_BUCKETS[-1][1]
+    # fallback: najwyższy bucket jeśli przekroczono progi
+    return WEATHER_BUCKETS[0][0], WEATHER_BUCKETS[0][1]
 
 
 def _extract_conf_and_edge(picks: Iterable[Dict]) -> Tuple[Optional[float], Optional[float]]:
@@ -170,65 +170,71 @@ def _extract_conf_and_edge(picks: Iterable[Dict]) -> Tuple[Optional[float], Opti
 
 
 def _is_ultimate_signal(
-    tag_m: Optional[str],
-    tag_d: Optional[str],
-    tag_b: Optional[str],
+    tag_j: Optional[str],
+    tag_c: Optional[str],
+    tag_k: Optional[str],
     conf_min: Optional[float],
     edge_min: Optional[float],
+    rating: float,
 ) -> bool:
     if not conf_min or not edge_min:
         return False
-    if not all(tag == "GOY" for tag in (tag_m, tag_d, tag_b)):
+    if not all(tag == "GOY" for tag in (tag_j, tag_c, tag_k)):
         return False
-    return conf_min >= ULTIMATE_CONF_THRESHOLD and edge_min >= ULTIMATE_EDGE_THRESHOLD
+    return (
+        conf_min >= ULTIMATE_CONF_THRESHOLD
+        and edge_min >= ULTIMATE_EDGE_THRESHOLD
+        and rating >= 8.0
+    )
 
 
 def build_entry(
     key: Tuple[int, int, Tuple[str, str]],
-    picks_m: Dict,
-    picks_d: Dict,
-    picks_b: Dict,
+    picks_j: Dict,
+    picks_c: Dict,
+    picks_k: Dict,
 ) -> Optional[Dict]:
-    m = picks_m.get(key)
-    if m is None:
+    j = picks_j.get(key)
+    c = picks_c.get(key)
+    k = picks_k.get(key)
+    if not (j or c or k):
         return None
-    d = picks_d.get(key)
-    b = picks_b.get(key)
-    category = determine_category(True, d is not None, b is not None)
-    match_label = f"{m['home']} vs {m['away']}"
-    result = evaluate_pick(m)
-    m_tag = m.get("tag")
-    d_tag = d.get("tag") if d else None
-    b_tag = b.get("tag") if b else None
-    rating = compute_rating(m_tag, d_tag, b_tag)
-    conf_min, edge_min = _extract_conf_and_edge(tuple(p for p in (m, d, b) if p))
-    ultimate_signal = _is_ultimate_signal(m_tag, d_tag, b_tag, conf_min, edge_min)
+    category = determine_category(j is not None, c is not None, k is not None)
+    ref = j or c or k
+    match_label = f"{ref['home']} vs {ref['away']}"
+    result = evaluate_pick(ref)
+    j_tag = j.get("tag") if j else None
+    c_tag = c.get("tag") if c else None
+    k_tag = k.get("tag") if k else None
+    rating = compute_rating(j_tag, c_tag, k_tag)
+    conf_min, edge_min = _extract_conf_and_edge(tuple(p for p in (j, c, k) if p))
+    ultimate_signal = _is_ultimate_signal(j_tag, c_tag, k_tag, conf_min, edge_min, rating)
     weather_code, weather_stake = assign_weather(
-        m_tag,
-        d_tag,
-        b_tag,
+        j_tag,
+        c_tag,
+        k_tag,
         rating,
         ultimate=ultimate_signal,
     )
     config_text = " | ".join(
         [
-            f"M:{m_tag}->{m['model_winner']}",
-            f"D:{d_tag}->{d['model_winner']}" if d else "D:-",
-            f"B:{b_tag}->{b['model_winner']}" if b else "B:-",
+            f"J:{j_tag}->{j['model_winner']}" if j else "J:-",
+            f"C:{c_tag}->{c['model_winner']}" if c else "C:-",
+            f"K:{k_tag}->{k['model_winner']}" if k else "K:-",
         ]
     )
-    tag_combo = (m_tag or "-", d_tag or "-", b_tag or "-")
+    tag_combo = (j_tag or "-", c_tag or "-", k_tag or "-")
     home_spread = None
     pick_spread = None
     try:
-        home_spread = float(m.get("spread")) if m.get("spread") not in (None, "") else None
+        home_spread = float(ref.get("spread")) if ref.get("spread") not in (None, "") else None
     except (TypeError, ValueError):
         home_spread = None
-    pick_team = m.get("model_winner")
+    pick_team = ref.get("model_winner")
     if home_spread is not None and pick_team:
-        if pick_team == m.get("home"):
+        if pick_team == ref.get("home"):
             pick_spread = home_spread
-        elif pick_team == m.get("away"):
+        elif pick_team == ref.get("away"):
             pick_spread = -home_spread
         else:
             pick_spread = None
@@ -237,17 +243,17 @@ def build_entry(
         "stake": STAKE_RULES[category],
         "label": match_label,
         "result": result,
-        "season": m["season"],
-        "week": m["week"],
+        "season": ref["season"],
+        "week": ref["week"],
         "config_text": config_text,
         "tag_combo": tag_combo,
-        "tag_m": m_tag,
-        "tag_d": d_tag,
-        "tag_b": b_tag,
+        "tag_m": j_tag,
+        "tag_d": c_tag,
+        "tag_b": k_tag,
         "rating": rating,
         "weather_code": weather_code,
         "weather_stake": weather_stake,
-        "pick_team": m.get("model_winner"),
+        "pick_team": pick_team,
         "ultimate_signal": ultimate_signal,
         "ultimate_conf_min": conf_min,
         "ultimate_edge_min": edge_min,
@@ -332,7 +338,7 @@ def print_weather_table(entries: List[Dict]) -> None:
             )
             print(
                 f"| {entry['weather_code']} | {entry['rating']:.2f} | {entry['weather_stake']:.1f}u "
-                f"| {entry['label']} (→ {entry['pick_team']} {spread_display}) | {entry['config_text']} |"
+                f"| {entry['label']} (-> {entry['pick_team']} {spread_display}) | {entry['config_text']} |"
             )
 
     regular_rows = [e for e in entries if not e.get("ultimate_signal")]
@@ -345,19 +351,21 @@ def print_weather_table(entries: List[Dict]) -> None:
         )
         print(
             f"| {entry['weather_code']} | {entry['rating']:.2f} | {entry['weather_stake']:.1f}u "
-            f"| {entry['label']} (→ {entry['pick_team']} {spread_display}) | {entry['config_text']} |"
+            f"| {entry['label']} (-> {entry['pick_team']} {spread_display}) | {entry['config_text']} |"
         )
 
 
 def main() -> None:
     args = parse_args()
-    picks_m = index_records(load_records(args.variant_m, filter_tracked=True))
-    picks_d = index_records(load_records(args.variant_d, filter_tracked=True))
-    picks_b = index_records(load_records(args.variant_b, filter_tracked=True))
+    # tylko sygnały GOY/GOM/GOW (spójne z weather_bucket_games)
+    picks_j = index_records(load_records(args.variant_j, filter_tracked=True))
+    picks_c = index_records(load_records(args.variant_c, filter_tracked=True))
+    picks_k = index_records(load_records(args.variant_k, filter_tracked=True))
 
+    keys = set(picks_j.keys()) | set(picks_c.keys()) | set(picks_k.keys())
     entries: List[Dict] = []
-    for key in sorted(picks_m.keys()):
-        entry = build_entry(key, picks_m, picks_d, picks_b)
+    for key in sorted(keys):
+        entry = build_entry(key, picks_j, picks_c, picks_k)
         if entry:
             entries.append(entry)
     summary, combos = aggregate(entries)
@@ -398,11 +406,11 @@ def main() -> None:
 
     print("\n**Konfiguracje tagów (M | D | B):**")
     if combos:
-        print("| M | D | B | Liczba |")
+        print("| J | C | K | Liczba |")
         print("|:--|:--|:--| -----:|")
         for combo, count in sorted(combos.items(), key=lambda item: item[1], reverse=True):
-            m_tag, d_tag, b_tag = combo
-            print(f"| {m_tag} | {d_tag} | {b_tag} | {count} |")
+            j_tag, c_tag, k_tag = combo
+            print(f"| {j_tag} | {c_tag} | {k_tag} | {count} |")
     else:
         print("- brak danych -")
 

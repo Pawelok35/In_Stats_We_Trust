@@ -242,14 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | DEN (A) | 12-20 | DEN | 0.499 | -0.219 | 32.5% | -0.571 |
+| 2 | LA (H) | 19-33 | LA | 0.539 | -0.024 | 46.6% | -1.273 |
+| 1 | DEN (A) | 12-20 | DEN | 0.506 | -0.219 | 32.5% | -0.571 |
 
 **IND analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | MIA (H) | 33-8 | IND | 0.619 | 0.251 | 55.3% | 3.571 |
-| 2 | DEN (H) | 29-34 | DEN | 0.268 | 0.154 | 52.3% | -0.475 |
+| 1 | MIA (H) | 33-8 | IND | 0.624 | 0.251 | 55.3% | 3.571 |
+| 2 | DEN (H) | 29-34 | DEN | 0.263 | 0.154 | 52.3% | -0.475 |
 
 ## Core EPA Offense Form (up to Week 2)
 

@@ -233,7 +233,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | SEA (A) | 17-14 | SF | 0.619 | 0.012 | 48.9% | 0.245 |
+| 1 | SEA (A) | 17-14 | SF | 0.630 | 0.012 | 48.9% | 0.245 |
 
 ## Core EPA Offense Form (up to Week 1)
 

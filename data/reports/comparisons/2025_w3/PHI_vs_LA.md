@@ -238,13 +238,18 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 ## Matchup Analogs
 
-**PHI** has not faced an opponent matching LA's profile yet.
+**PHI analogs vs LA profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 1 | DAL (H) | 24-22 | PHI | 0.263 | 0.169 | 52.6% | 0.167 |
+| 2 | KC (A) | 20-19 | PHI | 0.162 | 0.030 | 43.0% | 0.111 |
 
 **LA analogs vs PHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | TEN (A) | 33-19 | LA | 0.314 | 0.199 | 51.9% | 1.273 |
+| 2 | TEN (A) | 33-19 | LA | 0.317 | 0.199 | 51.9% | 1.273 |
 | 1 | HOU (H) | 14-9 | LA | 0.088 | -0.074 | 39.5% | 0.556 |
 
 ## Core EPA Offense Form (up to Week 2)

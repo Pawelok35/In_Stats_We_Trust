@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | CHI (A) | 27-17 | MIN | 0.358 | -0.064 | 44.6% | 0.791 |
+| 1 | CHI (A) | 27-17 | MIN | 0.370 | -0.064 | 44.6% | 0.791 |
 
 **ATL analogs vs MIN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | TB (H) | 20-23 | TB | 0.349 | 0.011 | 47.3% | -0.300 |
+| 1 | TB (H) | 20-23 | TB | 0.331 | 0.011 | 47.3% | -0.300 |
 
 ## Core EPA Offense Form (up to Week 1)
 

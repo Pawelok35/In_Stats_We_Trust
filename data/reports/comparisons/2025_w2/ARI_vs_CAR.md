@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | NO (A) | 20-11 | ARI | 0.737 | 0.016 | 44.4% | 1.040 |
+| 1 | NO (A) | 20-11 | ARI | 0.741 | 0.016 | 44.4% | 1.040 |
 
 **CAR analogs vs ARI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | JAX (A) | 10-26 | JAX | 0.873 | -0.108 | 39.5% | -1.600 |
+| 1 | JAX (A) | 10-26 | JAX | 0.877 | -0.108 | 39.5% | -1.600 |
 
 ## Core EPA Offense Form (up to Week 1)
 

@@ -1,41 +1,59 @@
 # Matchup Report - ATL vs CAR
 
+## Metric Comparison
+
+| Metric | ATL | CAR | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.043 | 0.104 | ↓ -0.061 |
+| Core EPA Defense | 0.104 | 0.043 | ↑ +0.061 |
+| Success Rate Offense | 52.3% | 44.7% | ↑ +7.6 pp |
+| Success Rate Defense | 44.7% | 52.3% | ↓ -7.6 pp |
+| Explosive Play Rate (Off) | 8.0% | 12.8% | ↓ -4.8 pp |
+| Third Down Conversion | 28.6% | 35.3% | ↓ -6.7 pp |
+| Points per Drive Differential | -0.423 | 0.423 | ↓ -0.846 |
+| Yards per Play Differential | -1.237 | 1.237 | ↓ -2.474 |
+| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
+| Red Zone TD Rate (Off) | 30.0% | 7.1% | ↑ +22.9 pp |
+| Pressure Rate (Def) | 11.3% | 0.0% | ↑ +11.3 pp |
+| Tempo | 6.769 | 7.833 | ↓ -1.064 |
+| PowerScore | 0.182 | 0.182 | ↑ +0.000 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | ATL | CAR | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.207 | -0.179 | +0.386 |
-| EPA Defense | 20% | 0.168 | 0.246 | -0.078 |
-| Success Rate Offense | 25% | 53.6% | 47.1% | +6.4 pp |
-| Tempo | 20% | 0.143 | 0.115 | +0.028 |
+| EPA Offense | 35% | 0.043 | 0.104 | -0.061 |
+| EPA Defense | 20% | 0.104 | 0.043 | +0.061 |
+| Success Rate Offense | 25% | 52.3% | 44.7% | +7.6 pp |
+| Tempo | 20% | 0.080 | 0.128 | -0.048 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | ATL | CAR | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.207 | -0.179 | +0.386 |
-| EPA Defense | 20% | 0.168 | 0.246 | -0.078 |
-| Success Rate Offense | 15% | 53.6% | 47.1% | +6.4 pp |
-| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
-| Tempo | 10% | 0.143 | 0.115 | +0.028 |
-| Red Zone TD Rate (Off) | 10% | 23.5% | 28.6% | -5.0 pp |
-| Pressure Rate (Def) | 10% | 6.7% | 4.5% | +2.1 pp |
+| EPA Offense | 25% | 0.043 | 0.104 | -0.061 |
+| EPA Defense | 20% | 0.104 | 0.043 | +0.061 |
+| Success Rate Offense | 15% | 52.3% | 44.7% | +7.6 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.080 | 0.128 | -0.048 |
+| Red Zone TD Rate (Off) | 10% | 30.0% | 7.1% | +22.9 pp |
+| Pressure Rate (Def) | 10% | 11.3% | 0.0% | +11.3 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-ATL edge: +0.141 (ATL +0.268 vs CAR +0.127)
+ATL edge: +0.000 (ATL +0.182 vs CAR +0.182)
 **7 metrics version:**
-ATL edge: +0.090 (ATL +0.210 vs CAR +0.120)
-**Verdict:** ATL holds the edge in the extended breakdown (lead 0.090), driven by EPA Offense (25% weight).
+CAR edge: +0.162 (ATL +0.059 vs CAR +0.221)
+**Verdict:** CAR holds the edge in the extended breakdown (lead 0.162), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - CAR) | +2.6 pts (favours ATL) |
-| Model Win% ATL | 60.7% |
-| Model Win% CAR | 39.3% |
+| Model Spread (ATL - CAR) | +0.0 pts (favours ATL) |
+| Model Win% ATL | 50.0% |
+| Model Win% CAR | 50.0% |
 | SOS Differential (ATL-CAR) | -0.007 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ ATL edge: +0.090 (ATL +0.210 vs CAR +0.120)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| ATL | 35.7% | n/a | n/a | 54.5% | 36.4% | n/a |
-| CAR | 42.5% | n/a | n/a | 46.7% | 59.1% | n/a |
+| ATL | 34.1% | 44.1% | -10.0% | 56.7% | 50.0% | Run heavy |
+| CAR | 56.4% | 44.1% | 12.3% | 47.2% | 41.5% | Pass heavy |
 
 ## Situational Edges
 

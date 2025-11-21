@@ -140,7 +140,7 @@ Before running:
 - Any pre-existing previews in `data/reports/comparisons/<season>_w<week>/...` can be replaced; the script regenerates them.
 - Adjust `--picks-start-week` if you only want to refresh a partial season.
 
-Adding `--run-convergence` executes `scripts/convergence_analyzer.py` on the freshly generated picks (`picks_variant_{m,d_balanced,b_edge_focus}`) and prints the recommendation table.
+Adding `--run-convergence` executes `scripts/convergence_analyzer.py` on the freshly generated picks (`picks_variant_{j,c_psdiff,k}` on Weather Scale 2.0) and prints the recommendation table.
 
 ### Weather Scale summary
 
@@ -171,6 +171,28 @@ This produces the concise table:
 
 Run the command with any season/week to inspect the recommendations or capture Ultimate Supercell signals.
 
+### Running the weekly pipeline (upcoming week)
+
+For an upcoming week that jeszcze się nie odbył (np. Week 12), bazujemy na metrykach do zakończonego tygodnia (Week 11), a linie/raporty bierzemy na tydzień nadchodzący (Week 12). Używaj referencji `week - 1`, żeby uniknąć future data leak:
+
+np. Przed nami Week 12 (mecze sie jeszcze nie odbyły).
+```powershell
+python -X utf8 scripts\run_week_pipeline.py `
+  --season 2025 `
+  --week 12 `
+  --reference-week 11 `
+  --picks-start-week 12 `
+  --run-convergence
+```
+
+Co to oznacza:
+- `--week 12` – generujemy raporty/picki na tydzień 12.
+- `--reference-week 11` – metryki rolling (Core12/PowerScore) liczymy na bazie danych do Week 11 (ostatni rozegrany tydzień).
+- `--picks-start-week 12` – start generowania picków od tygodnia 12.
+- `--run-convergence` – uruchamia analizę konwergencyjną wariantów picków.
+
+Jeśli masz kompletne wyniki i metryki dla n+1 (czyli Week 12 po rozegraniu), wtedy referencja może równać się tygodniowi docelowemu. Dla tygodni nadchodzących trzymaj referencję na `week - 1`.
+
 ## Validation Artifacts
 
 Completed validation reports are stored under `docs/validation/` (e.g., `ISTW_T21_PASS.md`, `T32_ci_local.md`).
@@ -181,3 +203,9 @@ Completed validation reports are stored under `docs/validation/` (e.g., `ISTW_T2
 2. Create feature branch
 3. Run `scripts/precommit_check.ps1`
 4. Submit PR with updated tests and documentation
+
+
+
+## Generowanie listy meczy na dany sezon i wybrane kolejki 
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 2 --end-week 12 --output data/results/weather_bucket_games.csv
+

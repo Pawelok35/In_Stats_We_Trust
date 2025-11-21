@@ -70,29 +70,29 @@ DEN edge: +0.218 (NYG +0.042 vs DEN +0.261)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +18.1 pp | +20.3 pp | +26.7 pp |
-| DEN | +9.8 pp | +9.7 pp | +15.6 pp |
+| NYG | +6.9 pp | +6.9 pp | +26.2 pp |
+| DEN | +2.8 pp | +2.9 pp | +15.1 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +3.7 pp | +5.9 pp | +10.0 pp |
-| DEN | +8.7 pp | +10.0 pp | +10.6 pp |
+| NYG | +5.1 pp | +6.1 pp | +12.4 pp |
+| DEN | +2.2 pp | +5.8 pp | +13.0 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +10.3 pp | +9.7 pp | +15.0 pp |
-| DEN | +0.5 pp | -0.1 pp | -0.8 pp |
+| NYG | +6.6 pp | +5.4 pp | +9.1 pp |
+| DEN | +2.3 pp | +1.5 pp | +0.9 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +6.0 pp | +6.6 pp | +5.9 pp |
-| DEN | -1.8 pp | -1.3 pp | -2.0 pp |
+| NYG | +4.5 pp | +4.7 pp | +5.9 pp |
+| DEN | -1.1 pp | +0.5 pp | -0.9 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +5.7 pp | +5.7 pp | +5.7 pp |
-| DEN | -7.3 pp | -7.3 pp | -7.3 pp |
+| NYG | +3.5 pp | +3.8 pp | +6.2 pp |
+| DEN | -5.4 pp | -5.0 pp | -7.8 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +14.7 pp | +14.7 pp | +14.7 pp |
-| DEN | -7.6 pp | -7.6 pp | -7.6 pp |
+| NYG | +6.5 pp | +5.6 pp | +13.0 pp |
+| DEN | -4.5 pp | -4.5 pp | -1.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +6.0 pp | +6.6 pp | +5.9 pp |
-| DEN | -1.8 pp | -1.3 pp | -2.0 pp |
+| NYG | +4.5 pp | +4.7 pp | +5.9 pp |
+| DEN | -1.1 pp | +0.5 pp | -0.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | +10.3 pp | +9.7 pp | +15.0 pp |
-| DEN | +0.5 pp | -0.1 pp | -0.8 pp |
+| NYG | +6.6 pp | +5.4 pp | +9.1 pp |
+| DEN | +2.3 pp | +1.5 pp | +0.9 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 51.5 | 51.5 | 51.5 |
-| DEN | 40.8 | 40.8 | 40.8 |
+| NYG | 49.6 | 51.5 | 51.4 |
+| DEN | 44.3 | 44.3 | 37.3 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 45.8 | 45.8 | 45.8 |
-| DEN | 41.5 | 41.5 | 41.5 |
+| NYG | 42.9 | 44.3 | 43.7 |
+| DEN | 42.6 | 41.1 | 41.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 5.6 | 5.6 | 5.6 |
-| DEN | -0.7 | -0.7 | -0.7 |
+| NYG | 6.7 | 7.3 | 7.7 |
+| DEN | 1.8 | 3.2 | -4.4 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 40.8% | 40.8% | 40.8% |
-| DEN | 43.8% | 43.8% | 43.8% |
+| NYG | 42.0% | 40.9% | 37.0% |
+| DEN | 43.7% | 43.2% | 45.2% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 59.2% | 59.2% | 59.2% |
-| DEN | 56.2% | 56.2% | 56.2% |
+| NYG | 58.0% | 59.1% | 63.0% |
+| DEN | 56.3% | 56.8% | 54.8% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 3.48 | 3.43 | 3.54 |
-| DEN | 3.29 | 3.37 | 3.56 |
+| NYG | 3.58 | 3.43 | 3.20 |
+| DEN | 3.29 | 3.32 | 3.67 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 5.04 | 4.96 | 5.12 |
-| DEN | 4.22 | 4.32 | 4.56 |
+| NYG | 4.93 | 4.96 | 5.45 |
+| DEN | 4.23 | 4.37 | 4.45 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | LAC (-) | 21-18 | NYG | 0.751 | -0.026 | 47.8% | 0.273 |
-| 1 | WAS (-) | 6-19 | WAS | 0.516 | -0.113 | 37.8% | -1.433 |
-| 6 | PHI (A) | 34-17 | NYG | 0.509 | 0.170 | 47.1% | 1.700 |
+| 4 | LAC (H) | 21-18 | NYG | 0.759 | -0.026 | 47.8% | 0.273 |
+| 1 | WAS (A) | 6-19 | WAS | 0.517 | -0.113 | 37.8% | -1.433 |
+| 6 | PHI (A) | 34-17 | NYG | 0.505 | 0.170 | 47.1% | 1.700 |
 
 **DEN analogs vs NYG profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | TEN (-) | 20-12 | DEN | 0.884 | -0.108 | 41.9% | 0.571 |
-| 4 | CIN (-) | 28-3 | DEN | 0.794 | 0.170 | 50.0% | 2.500 |
-| 5 | PHI (A) | 21-16 | DEN | 0.658 | 0.063 | 48.4% | 0.492 |
+| 1 | TEN (H) | 20-12 | DEN | 0.949 | -0.108 | 41.9% | 0.571 |
+| 4 | CIN (H) | 28-3 | DEN | 0.863 | 0.170 | 50.0% | 2.500 |
+| 5 | PHI (A) | 21-16 | DEN | 0.753 | 0.063 | 48.4% | 0.492 |
 
 ## Core EPA Offense Form (up to Week 6)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 43.9% | 43.9% | 43.9% |
-| NYG | 40.9% | 40.9% | 40.9% |
+| DEN | 44.0% | 43.5% | 45.3% |
+| NYG | 41.9% | 40.8% | 36.9% |

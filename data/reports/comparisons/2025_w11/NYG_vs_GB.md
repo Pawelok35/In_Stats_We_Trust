@@ -1,41 +1,59 @@
 # Matchup Report - NYG vs GB
 
+## Metric Comparison
+
+| Metric | NYG | GB | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.122 | 0.293 | ↓ -0.172 |
+| Core EPA Defense | 0.293 | 0.122 | ↑ +0.172 |
+| Success Rate Offense | 47.7% | 48.5% | ↓ -0.9 pp |
+| Success Rate Defense | 48.5% | 47.7% | ↑ +0.9 pp |
+| Explosive Play Rate (Off) | 7.0% | 13.2% | ↓ -6.3 pp |
+| Third Down Conversion | 43.8% | 63.6% | ↓ -19.9 pp |
+| Points per Drive Differential | -1.375 | 1.375 | ↓ -2.750 |
+| Yards per Play Differential | -0.475 | 0.475 | ↓ -0.951 |
+| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
+| Red Zone TD Rate (Off) | 15.8% | 28.6% | ↓ -12.8 pp |
+| Pressure Rate (Def) | 6.9% | 6.2% | ↑ +0.6 pp |
+| Tempo | 8.600 | 8.500 | ↑ +0.100 |
+| PowerScore | 0.234 | 0.275 | ↓ -0.040 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | NYG | GB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.026 | 0.244 | -0.270 |
-| EPA Defense | 20% | -0.066 | 0.228 | -0.294 |
-| Success Rate Offense | 25% | 47.8% | 52.4% | -4.6 pp |
-| Tempo | 20% | 0.065 | 0.143 | -0.078 |
+| EPA Offense | 35% | 0.122 | 0.293 | -0.172 |
+| EPA Defense | 20% | 0.293 | 0.122 | +0.172 |
+| Success Rate Offense | 25% | 47.7% | 48.5% | -0.9 pp |
+| Tempo | 20% | 0.070 | 0.132 | -0.063 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | NYG | GB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.026 | 0.244 | -0.270 |
-| EPA Defense | 20% | -0.066 | 0.228 | -0.294 |
-| Success Rate Offense | 15% | 47.8% | 52.4% | -4.6 pp |
-| Turnover Margin | 10% | 2.000 | -1.000 | +3.000 |
-| Tempo | 10% | 0.065 | 0.143 | -0.078 |
-| Red Zone TD Rate (Off) | 10% | 9.1% | 18.5% | -9.4 pp |
-| Pressure Rate (Def) | 10% | 4.7% | 2.4% | +2.2 pp |
+| EPA Offense | 25% | 0.122 | 0.293 | -0.172 |
+| EPA Defense | 20% | 0.293 | 0.122 | +0.172 |
+| Success Rate Offense | 15% | 47.7% | 48.5% | -0.9 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.070 | 0.132 | -0.063 |
+| Red Zone TD Rate (Off) | 10% | 15.8% | 28.6% | -12.8 pp |
+| Pressure Rate (Def) | 10% | 6.9% | 6.2% | +0.6 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-GB edge: +0.180 (NYG +0.110 vs GB +0.291)
+GB edge: +0.040 (NYG +0.234 vs GB +0.275)
 **7 metrics version:**
-NYG edge: +0.152 (NYG +0.272 vs GB +0.121)
-**Verdict:** NYG holds the edge in the extended breakdown (lead 0.152), driven by Turnover Margin (10% weight).
+GB edge: +0.428 (NYG -0.010 vs GB +0.419)
+**Verdict:** GB holds the edge in the extended breakdown (lead 0.428), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - GB) | -3.3 pts (favours GB) |
-| Model Win% NYG | 36.4% |
-| Model Win% GB | 63.6% |
+| Model Spread (NYG - GB) | -0.7 pts (favours GB) |
+| Model Win% NYG | 46.9% |
+| Model Win% GB | 53.1% |
 | SOS Differential (NYG-GB) | +0.022 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ NYG edge: +0.152 (NYG +0.272 vs GB +0.121)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| NYG | 29.3% | n/a | n/a | 58.5% | 46.9% | n/a |
-| GB | 42.9% | n/a | n/a | 32.6% | 63.9% | n/a |
+| NYG | 37.2% | 44.1% | -6.8% | 43.8% | 50.0% | Run heavy |
+| GB | 42.6% | 44.1% | -1.4% | 51.7% | 46.2% | Slight run lean |
 
 ## Situational Edges
 

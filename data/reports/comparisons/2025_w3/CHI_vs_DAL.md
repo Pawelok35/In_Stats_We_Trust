@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | DET (A) | 21-56 | DET | 0.735 | -0.121 | 40.2% | -2.718 |
-| 1 | MIN (H) | 18-29 | MIN | 0.082 | -0.109 | 37.4% | -0.791 |
+| 2 | DET (A) | 21-56 | DET | 0.740 | -0.121 | 40.2% | -2.718 |
+| 1 | MIN (H) | 18-29 | MIN | 0.081 | -0.109 | 37.4% | -0.791 |
 
 **DAL analogs vs CHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | NYG (H) | 40-46 | NYG | 0.778 | 0.134 | 48.7% | -0.417 |
-| 1 | PHI (A) | 20-21 | PHI | 0.417 | 0.139 | 51.4% | -0.167 |
+| 2 | NYG (H) | 40-46 | NYG | 0.787 | 0.134 | 48.7% | -0.417 |
+| 1 | PHI (A) | 20-21 | PHI | 0.421 | 0.139 | 51.4% | -0.167 |
 
 ## Core EPA Offense Form (up to Week 2)
 

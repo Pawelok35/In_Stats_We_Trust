@@ -1,33 +1,33 @@
 import type { Metadata } from "next";
-import { Space_Mono, Work_Sans } from "next/font/google";
+import { Inter, Manrope } from "next/font/google";
 import "./globals.css";
 
-const displayFont = Space_Mono({
+const displayFont = Manrope({
   variable: "--font-display",
   subsets: ["latin"],
-  weight: ["400", "700"],
+  weight: ["500", "600", "700"],
 });
 
-const bodyFont = Work_Sans({
+const bodyFont = Inter({
   variable: "--font-body",
   subsets: ["latin"],
+  weight: ["400", "500", "600"],
 });
 
 export const metadata: Metadata = {
   title: "In Stats We Trust",
-  description: "Retro dashboard for weekly NFL matchup reports.",
+  description: "Premium NFL betting analytics dashboard powered by Weather Scale picks.",
 };
 
 export default function RootLayout({ children }: { children: React.ReactNode }) {
   return (
-    <html lang="en" className="dark">
+    <html lang="en">
       <body
         suppressHydrationWarning
-        className={`${displayFont.variable} ${bodyFont.variable} antialiased`}
+        className={`${displayFont.variable} ${bodyFont.variable} min-h-screen bg-background text-foreground antialiased`}
       >
         {children}
       </body>
     </html>
   );
 }
-

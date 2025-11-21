@@ -70,29 +70,29 @@ CAR edge: +0.439 (CAR +0.241 vs NYJ -0.199)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -8.2 pp | -11.6 pp | -7.7 pp |
-| NYJ | -8.6 pp | -12.9 pp | -5.9 pp |
+| CAR | +0.1 pp | -3.2 pp | -4.4 pp |
+| NYJ | -6.3 pp | -9.2 pp | -3.5 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -2.9 pp | -0.1 pp | +2.7 pp |
-| NYJ | -1.7 pp | -3.0 pp | -8.8 pp |
+| CAR | -2.0 pp | +3.0 pp | +2.3 pp |
+| NYJ | -0.9 pp | -2.3 pp | -11.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -2.1 pp | -3.6 pp | -4.1 pp |
-| NYJ | -19.3 pp | -18.7 pp | -17.9 pp |
+| CAR | -0.4 pp | -2.3 pp | -2.9 pp |
+| NYJ | -10.7 pp | -12.0 pp | -12.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | +1.0 pp | +1.6 pp | +4.4 pp |
-| NYJ | +1.7 pp | +0.5 pp | +0.5 pp |
+| CAR | -0.1 pp | +0.7 pp | +4.0 pp |
+| NYJ | -1.6 pp | -2.5 pp | -2.0 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | +12.3 pp | +12.3 pp | +12.3 pp |
-| NYJ | +11.2 pp | +11.2 pp | +11.2 pp |
+| CAR | +4.2 pp | +6.7 pp | +7.6 pp |
+| NYJ | +11.9 pp | +13.4 pp | +13.3 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | +5.1 pp | +5.1 pp | +5.1 pp |
-| NYJ | -18.9 pp | -18.9 pp | -18.9 pp |
+| CAR | +0.7 pp | +3.5 pp | +3.6 pp |
+| NYJ | -4.3 pp | -7.6 pp | -10.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | +1.0 pp | +1.6 pp | +4.4 pp |
-| NYJ | +1.7 pp | +0.5 pp | +0.5 pp |
+| CAR | -0.1 pp | +0.7 pp | +4.0 pp |
+| NYJ | -1.6 pp | -2.5 pp | -2.0 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -2.1 pp | -3.6 pp | -4.1 pp |
-| NYJ | -19.3 pp | -18.7 pp | -17.9 pp |
+| CAR | -0.4 pp | -2.3 pp | -2.9 pp |
+| NYJ | -10.7 pp | -12.0 pp | -12.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 43.8 | 43.8 | 43.8 |
-| NYJ | 48.2 | 48.2 | 48.2 |
+| CAR | 48.0 | 46.7 | 45.4 |
+| NYJ | 49.7 | 49.6 | 47.0 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 55.7 | 55.7 | 55.7 |
-| NYJ | 40.1 | 40.1 | 40.1 |
+| CAR | 52.1 | 54.4 | 54.3 |
+| NYJ | 46.8 | 44.6 | 42.3 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | -11.9 | -11.9 | -11.9 |
-| NYJ | 8.1 | 8.1 | 8.1 |
+| CAR | -4.1 | -7.7 | -8.9 |
+| NYJ | 2.9 | 5.0 | 4.7 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 35.9% | 35.9% | 35.9% |
-| NYJ | 44.7% | 44.7% | 44.7% |
+| CAR | 43.0% | 41.9% | 38.1% |
+| NYJ | 40.7% | 42.8% | 41.7% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 64.1% | 64.1% | 64.1% |
-| NYJ | 55.3% | 55.3% | 55.3% |
+| CAR | 57.0% | 58.1% | 61.9% |
+| NYJ | 59.3% | 57.2% | 58.3% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 2.96 | 3.00 | 2.94 |
-| NYJ | 3.19 | 3.18 | 3.29 |
+| CAR | 3.54 | 3.50 | 3.12 |
+| NYJ | 2.91 | 3.05 | 3.07 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CAR | 5.28 | 5.36 | 5.25 |
-| NYJ | 3.95 | 3.94 | 4.08 |
+| CAR | 4.69 | 4.85 | 5.07 |
+| NYJ | 4.24 | 4.07 | 4.30 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | MIA (H) | 27-26 | CAR | 0.660 | 0.114 | 45.6% | 0.055 |
-| 6 | DAL (A) | 30-30 | TIE | 0.624 | 0.153 | 56.5% | 0.000 |
-| 1 | JAX (-) | 10-26 | JAX | 0.380 | -0.108 | 39.5% | -1.600 |
+| 5 | MIA (H) | 27-26 | CAR | 0.663 | 0.114 | 45.6% | 0.055 |
+| 6 | DAL (A) | 30-30 | TIE | 0.630 | 0.153 | 56.5% | 0.000 |
+| 1 | JAX (A) | 10-26 | JAX | 0.373 | -0.108 | 39.5% | -1.600 |
 
 **NYJ analogs vs CAR profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | DEN (A) | 9-14 | DEN | 0.544 | -0.144 | 38.2% | -0.391 |
-| 5 | DAL (H) | 22-37 | DAL | 0.508 | 0.025 | 50.0% | -1.250 |
-| 4 | MIA (-) | 21-30 | MIA | 0.496 | 0.074 | 56.8% | -0.900 |
+| 6 | DEN (A) | 9-14 | DEN | 0.549 | -0.144 | 38.2% | -0.391 |
+| 5 | DAL (H) | 22-37 | DAL | 0.499 | 0.025 | 50.0% | -1.250 |
+| 4 | MIA (A) | 21-30 | MIA | 0.492 | 0.074 | 56.8% | -0.900 |
 
 ## Core EPA Offense Form (up to Week 6)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CAR | 36.0% | 36.0% | 36.0% |
-| NYJ | 46.0% | 46.0% | 46.0% |
+| CAR | 43.5% | 42.6% | 38.2% |
+| NYJ | 41.3% | 43.6% | 42.7% |

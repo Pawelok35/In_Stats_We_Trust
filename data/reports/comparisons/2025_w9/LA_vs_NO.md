@@ -70,29 +70,29 @@ LA edge: +0.442 (LA +0.312 vs NO -0.130)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +8.6 pp | +4.4 pp | +3.3 pp |
-| NO | +4.2 pp | +6.2 pp | +4.3 pp |
+| LA | +3.7 pp | +3.9 pp | +3.3 pp |
+| NO | +2.9 pp | +3.2 pp | +4.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +5.6 pp | +5.6 pp | +11.2 pp |
-| NO | +6.1 pp | +3.9 pp | +5.5 pp |
+| LA | +0.7 pp | +4.4 pp | +11.2 pp |
+| NO | +1.8 pp | -1.5 pp | +5.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +3.6 pp | +3.3 pp | +3.0 pp |
-| NO | +2.4 pp | +1.5 pp | -0.6 pp |
+| LA | +2.3 pp | +2.6 pp | +3.0 pp |
+| NO | +2.7 pp | +0.9 pp | -0.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +1.9 pp | +1.3 pp | +0.2 pp |
-| NO | -1.7 pp | -0.8 pp | -2.9 pp |
+| LA | +2.0 pp | +0.3 pp | +0.2 pp |
+| NO | -1.6 pp | -1.0 pp | -2.9 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +9.9 pp | +9.9 pp | +13.9 pp |
-| NO | -5.2 pp | -5.2 pp | -4.4 pp |
+| LA | +8.0 pp | +11.1 pp | +13.9 pp |
+| NO | +0.3 pp | +0.5 pp | -4.4 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +7.2 pp | +7.2 pp | +5.4 pp |
-| NO | +1.5 pp | +1.5 pp | -1.0 pp |
+| LA | +0.3 pp | +4.9 pp | +5.4 pp |
+| NO | +1.0 pp | -0.6 pp | -1.0 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +1.9 pp | +1.3 pp | +0.2 pp |
-| NO | -1.7 pp | -0.8 pp | -2.9 pp |
+| LA | +2.0 pp | +0.3 pp | +0.2 pp |
+| NO | -1.6 pp | -1.0 pp | -2.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +3.6 pp | +3.3 pp | +3.0 pp |
-| NO | +2.4 pp | +1.5 pp | -0.6 pp |
+| LA | +2.3 pp | +2.6 pp | +3.0 pp |
+| NO | +2.7 pp | +0.9 pp | -0.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 41.0 | 41.0 | 41.0 |
-| NO | 48.4 | 48.4 | 49.6 |
+| LA | 43.9 | 44.3 | 41.0 |
+| NO | 50.6 | 50.7 | 49.6 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 46.2 | 46.2 | 46.2 |
-| NO | 50.3 | 50.3 | 48.9 |
+| LA | 47.4 | 48.3 | 46.2 |
+| NO | 48.4 | 48.8 | 48.9 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | -5.2 | -5.2 | -5.2 |
-| NO | -2.0 | -2.0 | 0.6 |
+| LA | -3.4 | -4.1 | -5.2 |
+| NO | 2.2 | 1.9 | 0.6 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 48.8% | 48.8% | 48.8% |
-| NO | 49.1% | 49.1% | 52.0% |
+| LA | 47.1% | 47.9% | 48.8% |
+| NO | 46.4% | 47.0% | 52.0% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 51.2% | 51.2% | 51.2% |
-| NO | 50.9% | 50.9% | 48.0% |
+| LA | 52.9% | 52.1% | 51.2% |
+| NO | 53.6% | 53.0% | 48.0% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 3.61 | 3.53 | 3.47 |
-| NO | 3.82 | 3.68 | 3.83 |
+| LA | 3.49 | 3.47 | 3.47 |
+| NO | 3.61 | 3.53 | 3.83 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 3.78 | 3.70 | 3.63 |
-| NO | 3.96 | 3.82 | 3.53 |
+| LA | 3.91 | 3.77 | 3.63 |
+| NO | 4.17 | 3.98 | 3.53 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,99 +242,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | TEN (-) | 33-19 | LA | 0.908 | 0.199 | 51.9% | 1.273 |
-| 7 | JAX (A) | 35-8 | LA | 0.783 | 0.245 | 51.7% | 2.280 |
-| 7 | JAX (A) | 35-8 | LA | 0.783 | 0.245 | 51.7% | 2.280 |
+| 2 | TEN (A) | 33-19 | LA | 0.910 | 0.199 | 51.9% | 1.273 |
+| 7 | JAX (H) | 35-8 | LA | 0.784 | 0.245 | 51.7% | 2.280 |
+| 1 | HOU (H) | 14-9 | LA | 0.629 | -0.074 | 39.5% | 0.556 |
 
-**NO** has not faced an opponent matching LA's profile yet.
+**NO analogs vs LA profile**
+
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 3 | SEA (A) | 19-38 | SEA | 0.969 | -0.240 | 42.4% | -1.583 |
+| 6 | NE (A) | 19-25 | NE | 0.873 | 0.007 | 49.3% | -0.667 |
+| 8 | TB (A) | 3-17 | TB | 0.638 | -0.394 | 38.4% | -1.273 |
 
 ## Core EPA Offense Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 0.062 | 0.096 | 0.136 |
+| LA | 0.036 | 0.025 | 0.077 |
 | NO | -0.137 | -0.138 | -0.206 |
 
 ## Core EPA Defense Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | -0.079 | -0.088 | -0.164 |
+| LA | -0.074 | -0.074 | -0.087 |
 | NO | 0.015 | -0.017 | 0.001 |
 
 ## Success Rate Offense Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 51.1% | 52.7% | 50.2% |
+| LA | 51.0% | 53.0% | 53.2% |
 | NO | 44.5% | 45.0% | 43.2% |
 
 ## Success Rate Defense Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 44.3% | 46.1% | 44.0% |
+| LA | 44.0% | 44.8% | 46.0% |
 | NO | 45.8% | 44.7% | 42.8% |
 
 ## Explosive Play Rate (Off) Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 10.8% | 10.0% | 7.5% |
+| LA | 11.4% | 10.8% | 9.8% |
 | NO | 6.9% | 8.0% | 5.7% |
 
 ## Third Down Conversion Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 30.5% | 25.4% | 19.6% |
+| LA | 33.2% | 29.0% | 26.8% |
 | NO | 33.9% | 36.3% | 34.6% |
 
 ## Points per Drive Differential Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 1.121 | 1.270 | 2.012 |
+| LA | 0.938 | 0.934 | 1.152 |
 | NO | -0.812 | -0.662 | -0.962 |
 
 ## Yards per Play Differential Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 0.679 | 0.280 | -0.390 |
+| LA | 0.886 | 0.621 | 0.420 |
 | NO | -0.369 | -0.202 | -0.132 |
 
 ## Turnover Margin Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 0.375 | 0.400 | 0.667 |
+| LA | 0.429 | 0.400 | 0.000 |
 | NO | -0.250 | -0.400 | -2.333 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 15.5% | 17.4% | 16.6% |
+| LA | 14.9% | 15.0% | 16.5% |
 | NO | 10.2% | 8.0% | 9.7% |
 
 ## Pressure Rate (Def) Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 9.7% | 8.7% | 12.0% |
+| LA | 9.2% | 8.3% | 8.4% |
 | NO | 6.6% | 6.2% | 6.0% |
 
 ## Tempo Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 7.379 | 7.209 | 7.000 |
+| LA | 7.398 | 7.232 | 7.098 |
 | NO | 7.779 | 7.505 | 7.357 |
 
 ## Pass Rate Offense Form (up to Week 8)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 48.9% | 48.9% | 48.9% |
-| NO | 49.5% | 49.5% | 52.9% |
+| LA | 47.2% | 48.0% | 48.9% |
+| NO | 46.5% | 47.3% | 52.9% |

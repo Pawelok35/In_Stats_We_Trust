@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | IND (A) | 8-33 | IND | 0.120 | -0.156 | 47.4% | -3.571 |
+| 1 | IND (A) | 8-33 | IND | 0.098 | -0.156 | 47.4% | -3.571 |
 
 **NE analogs vs MIA profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | LV (H) | 13-18 | LV | 0.103 | -0.049 | 44.0% | -0.485 |
+| 1 | LV (H) | 13-18 | LV | 0.092 | -0.049 | 44.0% | -0.485 |
 
 ## Core EPA Offense Form (up to Week 1)
 

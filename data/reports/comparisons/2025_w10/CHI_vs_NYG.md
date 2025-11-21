@@ -52,29 +52,29 @@ CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +1.9 pp | -1.0 pp | -0.4 pp |
-| NYG | -6.9 pp | -2.3 pp | -6.0 pp |
+| CHI | +5.4 pp | +4.9 pp | +2.1 pp |
+| NYG | +2.2 pp | +4.9 pp | -1.9 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -7.3 pp | -11.3 pp | -10.3 pp |
-| NYG | +0.2 pp | +6.0 pp | +4.2 pp |
+| CHI | -2.9 pp | -5.8 pp | -9.7 pp |
+| NYG | -3.1 pp | +2.5 pp | +1.8 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +2.8 pp | +3.0 pp | +4.8 pp |
-| NYG | -6.2 pp | -5.4 pp | -3.8 pp |
+| CHI | +1.7 pp | +2.3 pp | +4.9 pp |
+| NYG | -2.8 pp | -1.6 pp | -3.0 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -1.8 pp | -1.3 pp | +0.5 pp |
-| NYG | -4.9 pp | -4.2 pp | -4.4 pp |
+| CHI | +0.5 pp | +0.3 pp | +1.6 pp |
+| NYG | -1.8 pp | -1.7 pp | -1.6 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -84,29 +84,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -5.3 pp | -5.3 pp | -5.3 pp |
-| NYG | +1.6 pp | +1.6 pp | +1.6 pp |
+| CHI | -5.2 pp | -2.1 pp | -6.3 pp |
+| NYG | -1.5 pp | -1.0 pp | -2.4 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +0.2 pp | +0.2 pp | +0.2 pp |
-| NYG | -11.1 pp | -11.1 pp | -11.1 pp |
+| CHI | -1.7 pp | -2.1 pp | +1.6 pp |
+| NYG | -10.5 pp | -8.9 pp | -7.2 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -1.8 pp | -1.3 pp | +0.5 pp |
-| NYG | -4.9 pp | -4.2 pp | -4.4 pp |
+| CHI | +0.5 pp | +0.3 pp | +1.6 pp |
+| NYG | -1.8 pp | -1.7 pp | -1.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +2.8 pp | +3.0 pp | +4.8 pp |
-| NYG | -6.2 pp | -5.4 pp | -3.8 pp |
+| CHI | +1.7 pp | +2.3 pp | +4.9 pp |
+| NYG | -2.8 pp | -1.6 pp | -3.0 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -116,22 +116,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 53.4 | 53.4 | 53.4 |
-| NYG | 57.6 | 57.6 | 57.6 |
+| CHI | 51.5 | 54.1 | 51.6 |
+| NYG | 50.3 | 51.7 | 51.8 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 52.8 | 52.8 | 52.8 |
-| NYG | 46.1 | 46.1 | 46.1 |
+| CHI | 49.9 | 51.1 | 52.1 |
+| NYG | 44.0 | 46.1 | 46.3 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 0.6 | 0.6 | 0.6 |
-| NYG | 11.5 | 11.5 | 11.5 |
+| CHI | 1.6 | 3.1 | -0.5 |
+| NYG | 6.3 | 5.6 | 5.5 |
 
 ### Points per Drive (offense)
 
@@ -169,29 +169,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 43.7% | 43.7% | 43.7% |
-| NYG | 44.2% | 44.2% | 44.2% |
+| CHI | 41.7% | 41.8% | 40.0% |
+| NYG | 42.2% | 41.9% | 42.6% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 56.3% | 56.3% | 56.3% |
-| NYG | 55.8% | 55.8% | 55.8% |
+| CHI | 58.3% | 58.2% | 60.0% |
+| NYG | 57.8% | 58.1% | 57.4% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 3.34 | 3.56 | 3.63 |
-| NYG | 3.66 | 3.63 | 3.46 |
+| CHI | 3.19 | 3.40 | 3.32 |
+| NYG | 3.50 | 3.44 | 3.34 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 4.31 | 4.59 | 4.68 |
-| NYG | 4.63 | 4.59 | 4.37 |
+| CHI | 4.46 | 4.74 | 4.98 |
+| NYG | 4.79 | 4.77 | 4.49 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -222,19 +222,19 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 **CHI analogs vs NYG profile**
 
-| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
-| ---: | --- | ---: | ---: | ---: | ---: |
-| 9 | CIN (-) | 0.906 | 0.306 | 55.9% | 0.917 |
-| 3 | DAL (-) | 0.879 | 0.200 | 47.9% | 1.700 |
-| 6 | WAS (-) | 0.804 | 0.093 | 50.6% | 0.318 |
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 9 | CIN (A) | 47-36 | CHI | 0.928 | 0.306 | 55.9% | 0.917 |
+| 3 | DAL (H) | 31-14 | CHI | 0.888 | 0.200 | 47.9% | 1.700 |
+| 6 | WAS (H) | 25-22 | CHI | 0.813 | 0.093 | 50.6% | 0.318 |
 
 **NYG analogs vs CHI profile**
 
-| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
-| ---: | --- | ---: | ---: | ---: | ---: |
-| 9 | SF (-) | 0.754 | 0.109 | 54.5% | -0.691 |
-| 2 | DAL (-) | 0.744 | 0.186 | 48.9% | 0.417 |
-| 3 | KC (-) | 0.708 | -0.118 | 42.3% | -1.200 |
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 9 | SF (H) | 24-31 | SF | 0.760 | 0.109 | 54.5% | -0.691 |
+| 2 | DAL (A) | 37-32 | NYG | 0.752 | 0.186 | 48.9% | 0.417 |
+| 3 | KC (H) | 9-20 | KC | 0.719 | -0.118 | 42.3% | -1.200 |
 
 ## Core EPA Offense Form (up to Week 9)
 
@@ -324,5 +324,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 43.2% | 43.2% | 43.2% |
-| NYG | 44.2% | 44.2% | 44.2% |
+| CHI | 41.5% | 41.6% | 39.7% |
+| NYG | 42.0% | 41.8% | 42.4% |

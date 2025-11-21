@@ -70,29 +70,29 @@ NYG edge: +0.189 (NYG +0.301 vs SF +0.111)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -8.2 pp | -3.0 pp | -1.8 pp |
-| SF | +16.5 pp | +20.2 pp | +22.2 pp |
+| NYG | -2.4 pp | +0.4 pp | -1.8 pp |
+| SF | +11.3 pp | +19.9 pp | +22.2 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -3.8 pp | +0.8 pp | +2.8 pp |
-| SF | +1.6 pp | +2.8 pp | +2.6 pp |
+| NYG | -2.6 pp | +2.0 pp | +2.8 pp |
+| SF | -0.4 pp | +5.4 pp | +2.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -6.3 pp | -7.1 pp | -8.5 pp |
-| SF | -0.5 pp | -0.7 pp | +0.3 pp |
+| NYG | -6.4 pp | -9.6 pp | -8.5 pp |
+| SF | +1.2 pp | +0.2 pp | +0.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -2.8 pp | -2.8 pp | -1.4 pp |
-| SF | -2.5 pp | -1.3 pp | -1.8 pp |
+| NYG | -0.0 pp | -1.5 pp | -1.4 pp |
+| SF | -1.7 pp | -0.6 pp | -1.8 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -2.4 pp | -2.4 pp | -0.1 pp |
-| SF | -1.8 pp | -1.8 pp | -3.0 pp |
+| NYG | -2.5 pp | -0.3 pp | -0.1 pp |
+| SF | -4.0 pp | -6.0 pp | -3.0 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -12.0 pp | -12.0 pp | -10.2 pp |
-| SF | +2.7 pp | +2.7 pp | +1.4 pp |
+| NYG | -7.5 pp | -11.2 pp | -10.2 pp |
+| SF | +6.3 pp | +6.1 pp | +1.4 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -2.8 pp | -2.8 pp | -1.4 pp |
-| SF | -2.5 pp | -1.3 pp | -1.8 pp |
+| NYG | -0.0 pp | -1.5 pp | -1.4 pp |
+| SF | -1.7 pp | -0.6 pp | -1.8 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | -6.3 pp | -7.1 pp | -8.5 pp |
-| SF | -0.5 pp | -0.7 pp | +0.3 pp |
+| NYG | -6.4 pp | -9.6 pp | -8.5 pp |
+| SF | +1.2 pp | +0.2 pp | +0.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 50.7 | 50.7 | 49.4 |
-| SF | 47.4 | 47.4 | 48.9 |
+| NYG | 49.7 | 50.8 | 49.4 |
+| SF | 45.0 | 46.6 | 48.9 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 46.1 | 46.1 | 46.5 |
-| SF | 46.5 | 46.5 | 45.4 |
+| NYG | 43.7 | 44.7 | 46.5 |
+| SF | 47.0 | 48.3 | 45.4 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 4.6 | 4.6 | 2.9 |
-| SF | 1.0 | 1.0 | 3.5 |
+| NYG | 6.0 | 6.1 | 2.9 |
+| SF | -2.0 | -1.6 | 3.5 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 41.0% | 41.0% | 39.4% |
-| SF | 47.9% | 47.9% | 48.1% |
+| NYG | 41.8% | 38.7% | 39.4% |
+| SF | 48.8% | 48.4% | 48.1% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 59.0% | 59.0% | 60.6% |
-| SF | 52.1% | 52.1% | 51.9% |
+| NYG | 58.2% | 61.3% | 60.6% |
+| SF | 51.2% | 51.6% | 51.9% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 3.43 | 3.43 | 3.21 |
-| SF | 3.86 | 3.95 | 3.92 |
+| NYG | 3.50 | 3.23 | 3.21 |
+| SF | 3.94 | 4.00 | 3.92 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYG | 4.93 | 4.92 | 4.95 |
-| SF | 4.21 | 4.30 | 4.23 |
+| NYG | 4.86 | 5.12 | 4.95 |
+| SF | 4.13 | 4.26 | 4.23 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | KC (-) | 9-20 | KC | 0.729 | -0.118 | 42.3% | -1.200 |
-| 2 | DAL (-) | 37-32 | NYG | 0.706 | 0.186 | 48.9% | 0.417 |
-| 4 | LAC (-) | 21-18 | NYG | 0.680 | -0.026 | 47.8% | 0.273 |
+| 3 | KC (H) | 9-20 | KC | 0.716 | -0.118 | 42.3% | -1.200 |
+| 2 | DAL (A) | 37-32 | NYG | 0.704 | 0.186 | 48.9% | 0.417 |
+| 4 | LAC (H) | 21-18 | NYG | 0.662 | -0.026 | 47.8% | 0.273 |
 
 **SF analogs vs NYG profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | ARI (-) | 16-14 | SF | 0.724 | -0.022 | 55.1% | 0.155 |
-| 4 | JAX (-) | 27-18 | SF | 0.676 | -0.113 | 46.8% | 0.788 |
-| 7 | ATL (H) | 20-10 | SF | 0.648 | 0.043 | 51.9% | 1.111 |
+| 3 | ARI (H) | 16-14 | SF | 0.706 | -0.022 | 55.1% | 0.155 |
+| 4 | JAX (H) | 27-18 | SF | 0.687 | -0.113 | 46.8% | 0.788 |
+| 7 | ATL (A) | 20-10 | SF | 0.648 | 0.043 | 51.9% | 1.111 |
 
 ## Core EPA Offense Form (up to Week 8)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| NYG | 40.9% | 40.9% | 39.1% |
-| SF | 47.5% | 47.5% | 47.6% |
+| NYG | 41.6% | 38.5% | 39.1% |
+| SF | 48.5% | 48.1% | 47.6% |

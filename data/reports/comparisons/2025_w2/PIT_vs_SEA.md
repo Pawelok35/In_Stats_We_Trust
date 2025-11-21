@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | NYJ (A) | 34-32 | PIT | 0.476 | 0.206 | 50.6% | 0.182 |
+| 1 | NYJ (A) | 34-32 | PIT | 0.470 | 0.206 | 50.6% | 0.182 |
 
 **SEA analogs vs PIT profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | SF (H) | 13-15 | SF | 0.517 | -0.082 | 52.2% | -0.245 |
+| 1 | SF (H) | 13-15 | SF | 0.518 | -0.082 | 52.2% | -0.245 |
 
 ## Core EPA Offense Form (up to Week 1)
 

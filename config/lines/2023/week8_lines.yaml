@@ -90,10 +90,10 @@ matchups:
   total: 35.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w8/NYJ_vs_NYG.md
-  home: NYJ
-  away: NYG
-  spread: -3.0
+- report: data/reports/comparisons/2023_w8/NYG_vs_NYJ.md
+  home: NYG
+  away: NYJ
+  spread: 3.0
   total: 35.0
   prime_time: false
   neutral_site: false

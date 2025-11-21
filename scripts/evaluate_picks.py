@@ -8,6 +8,9 @@ from typing import Dict, Iterable, List, Tuple
 
 import nfl_data_py as nfl
 import pandas as pd
+from urllib.error import URLError
+
+from utils.config import load_settings
 
 
 def load_picks(
@@ -34,16 +37,46 @@ def load_picks(
     return picks
 
 
+def _load_schedule_df(season: int) -> pd.DataFrame:
+    """
+    Best-effort schedule loader: prefer local parquet (written by update_schedule.py),
+    fall back to nfl_data_py only if needed. Protects against network timeouts when
+    evaluating picks.
+    """
+    settings = load_settings()
+    data_root = Path(settings.data_root)
+    candidates = [
+        data_root / "schedules" / f"{season}.parquet",
+        data_root / "schedule" / f"{season}.parquet",
+    ]
+    for path in candidates:
+        if path.exists():
+            return pd.read_parquet(path)
+
+    try:
+        return nfl.import_schedules([season])
+    except URLError as exc:
+        raise RuntimeError(
+            f"Failed to load schedule for season {season}: {exc.reason} "
+            "(network unavailable and no local parquet found)."
+        ) from exc
+
+
 def load_results(
     season: int, manual_overrides: Dict[Tuple[int, str, str], Dict]
 ) -> Dict[Tuple[int, str, str], Dict]:
-    df = nfl.import_schedules([season])
-    df = df[df["game_type"] == "REG"]
+    df = _load_schedule_df(season)
+    # Not every schedule parquet has game_type; filter only when present, otherwise use all rows.
+    if "game_type" in df.columns:
+        df = df[df["game_type"] == "REG"]
     results: Dict[Tuple[int, str, str], Dict] = {}
     for _, row in df.iterrows():
         week = int(row["week"])
-        home = str(row["home_team"]).upper()
-        away = str(row["away_team"]).upper()
+        # Prefer standard naming; fall back to alternative column names if needed.
+        home = str(row.get("home_team") or row.get("team_a") or row.get("TEAM") or "").upper()
+        away = str(row.get("away_team") or row.get("team_b") or row.get("OPP") or "").upper()
+        if not home or not away:
+            continue
         results[(week, home, away)] = {
             "home_score": row.get("home_score"),
             "away_score": row.get("away_score"),

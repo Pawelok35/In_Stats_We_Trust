@@ -70,29 +70,29 @@ NYJ edge: +0.152 (DEN -0.049 vs NYJ +0.103)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | -11.4 pp | -11.4 pp | -12.2 pp |
-| NYJ | +16.3 pp | +16.3 pp | +20.8 pp |
+| DEN | +2.8 pp | +2.8 pp | +1.7 pp |
+| NYJ | +4.0 pp | +4.0 pp | +10.2 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | -2.7 pp | -2.7 pp | -1.6 pp |
-| NYJ | -1.1 pp | -1.1 pp | -4.8 pp |
+| DEN | +0.1 pp | +0.1 pp | +3.1 pp |
+| NYJ | +6.3 pp | +6.3 pp | +0.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | -3.0 pp | -3.0 pp | -5.1 pp |
-| NYJ | +1.5 pp | +1.5 pp | +1.8 pp |
+| DEN | +0.8 pp | +0.8 pp | -2.7 pp |
+| NYJ | +1.7 pp | +1.7 pp | +2.5 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | +1.1 pp | +1.1 pp | +1.4 pp |
-| NYJ | +3.3 pp | +3.3 pp | +2.4 pp |
+| DEN | +1.0 pp | +1.0 pp | +0.8 pp |
+| NYJ | +4.0 pp | +4.0 pp | +3.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | -7.9 pp | -7.9 pp | -7.9 pp |
-| NYJ | +9.4 pp | +9.4 pp | +9.4 pp |
+| DEN | -0.7 pp | -0.7 pp | +0.5 pp |
+| NYJ | +8.5 pp | +8.5 pp | +10.1 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | +13.6 pp | +13.6 pp | +13.6 pp |
-| NYJ | +8.1 pp | +8.1 pp | +8.1 pp |
+| DEN | -0.7 pp | -0.7 pp | -4.4 pp |
+| NYJ | +11.0 pp | +11.0 pp | +14.9 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | +1.1 pp | +1.1 pp | +1.4 pp |
-| NYJ | +3.3 pp | +3.3 pp | +2.4 pp |
+| DEN | +1.0 pp | +1.0 pp | +0.8 pp |
+| NYJ | +4.0 pp | +4.0 pp | +3.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | -3.0 pp | -3.0 pp | -5.1 pp |
-| NYJ | +1.5 pp | +1.5 pp | +1.8 pp |
+| DEN | +0.8 pp | +0.8 pp | -2.7 pp |
+| NYJ | +1.7 pp | +1.7 pp | +2.5 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 42.8 | 42.8 | 42.8 |
-| NYJ | 49.8 | 49.8 | 49.8 |
+| DEN | 45.5 | 45.5 | 40.4 |
+| NYJ | 50.3 | 50.3 | 49.6 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 36.5 | 36.5 | 36.5 |
-| NYJ | 41.3 | 41.3 | 41.3 |
+| DEN | 41.8 | 41.8 | 39.9 |
+| NYJ | 48.4 | 48.4 | 48.6 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 6.3 | 6.3 | 6.3 |
-| NYJ | 8.5 | 8.5 | 8.5 |
+| DEN | 3.6 | 3.6 | 0.5 |
+| NYJ | 1.9 | 1.9 | 1.0 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 44.2% | 44.2% | 44.2% |
-| NYJ | 55.1% | 55.1% | 55.1% |
+| DEN | 43.8% | 43.8% | 44.2% |
+| NYJ | 42.0% | 42.0% | 46.4% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 55.8% | 55.8% | 55.8% |
-| NYJ | 44.9% | 44.9% | 44.9% |
+| DEN | 56.2% | 56.2% | 55.8% |
+| NYJ | 58.0% | 58.0% | 53.6% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 3.43 | 3.43 | 3.51 |
-| NYJ | 4.08 | 4.08 | 4.29 |
+| DEN | 3.39 | 3.39 | 3.51 |
+| NYJ | 3.11 | 3.11 | 3.61 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DEN | 4.33 | 4.33 | 4.42 |
-| NYJ | 3.32 | 3.32 | 3.49 |
+| DEN | 4.36 | 4.36 | 4.42 |
+| NYJ | 4.30 | 4.30 | 4.17 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | CIN (-) | 28-3 | DEN | 0.624 | 0.170 | 50.0% | 2.500 |
-| 1 | TEN (-) | 20-12 | DEN | 0.603 | -0.108 | 41.9% | 0.571 |
-| 2 | IND (-) | 28-24 | DEN | 0.369 | 0.166 | 54.7% | 0.475 |
+| 4 | CIN (H) | 28-3 | DEN | 0.622 | 0.170 | 50.0% | 2.500 |
+| 1 | TEN (H) | 20-12 | DEN | 0.602 | -0.108 | 41.9% | 0.571 |
+| 2 | IND (A) | 28-24 | DEN | 0.371 | 0.166 | 54.7% | 0.475 |
 
 **NYJ analogs vs DEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | BUF (-) | 10-27 | BUF | 0.428 | -0.170 | 42.2% | -1.727 |
-| 3 | TB (-) | 21-29 | TB | 0.319 | -0.069 | 50.6% | -0.667 |
-| 1 | PIT (-) | 32-34 | PIT | 0.217 | 0.158 | 55.0% | -0.182 |
+| 2 | BUF (H) | 10-27 | BUF | 0.426 | -0.170 | 42.2% | -1.727 |
+| 3 | TB (A) | 21-29 | TB | 0.317 | -0.069 | 50.6% | -0.667 |
+| 5 | DAL (H) | 22-37 | DAL | 0.197 | 0.025 | 50.0% | -1.250 |
 
 ## Core EPA Offense Form (up to Week 5)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 44.2% | 44.2% | 44.2% |
-| NYJ | 55.1% | 55.1% | 55.1% |
+| DEN | 44.1% | 44.1% | 44.6% |
+| NYJ | 42.6% | 42.6% | 47.0% |

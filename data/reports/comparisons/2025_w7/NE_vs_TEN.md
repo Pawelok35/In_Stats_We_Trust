@@ -70,29 +70,29 @@ NE edge: +0.432 (NE +0.322 vs TEN -0.110)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | -5.2 pp | -3.3 pp | -11.7 pp |
-| TEN | -17.1 pp | -14.9 pp | -18.5 pp |
+| NE | -1.8 pp | -0.1 pp | -11.7 pp |
+| TEN | -11.2 pp | -9.2 pp | -15.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | -2.9 pp | -2.3 pp | -5.8 pp |
-| TEN | -1.5 pp | +0.3 pp | -0.7 pp |
+| NE | -4.7 pp | -6.1 pp | -13.4 pp |
+| TEN | -9.2 pp | -7.0 pp | -6.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | -2.4 pp | -1.8 pp | +1.0 pp |
-| TEN | -4.1 pp | -4.9 pp | -5.9 pp |
+| NE | -3.2 pp | -2.7 pp | +2.0 pp |
+| TEN | -5.2 pp | -4.7 pp | -4.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | +2.8 pp | +3.3 pp | +3.2 pp |
-| TEN | -1.9 pp | -0.9 pp | +0.3 pp |
+| NE | -0.5 pp | -0.7 pp | +2.5 pp |
+| TEN | -2.9 pp | -1.3 pp | -0.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | +7.4 pp | +7.4 pp | +7.4 pp |
-| TEN | +1.0 pp | +1.0 pp | +1.0 pp |
+| NE | -3.1 pp | -3.8 pp | +4.7 pp |
+| TEN | +2.7 pp | +1.6 pp | -0.8 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | +11.9 pp | +11.9 pp | +11.9 pp |
-| TEN | -14.9 pp | -14.9 pp | -14.9 pp |
+| NE | +6.7 pp | +7.1 pp | +10.0 pp |
+| TEN | -17.9 pp | -14.3 pp | -17.8 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | +2.8 pp | +3.3 pp | +3.2 pp |
-| TEN | -1.9 pp | -0.9 pp | +0.3 pp |
+| NE | -0.5 pp | -0.7 pp | +2.5 pp |
+| TEN | -2.9 pp | -1.3 pp | -0.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | -2.4 pp | -1.8 pp | +1.0 pp |
-| TEN | -4.1 pp | -4.9 pp | -5.9 pp |
+| NE | -3.2 pp | -2.7 pp | +2.0 pp |
+| TEN | -5.2 pp | -4.7 pp | -4.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 53.2 | 53.2 | 53.2 |
-| TEN | 38.3 | 38.3 | 38.3 |
+| NE | 50.3 | 51.8 | 52.7 |
+| TEN | 47.2 | 46.7 | 41.1 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 46.2 | 46.2 | 46.2 |
-| TEN | 47.2 | 47.2 | 47.2 |
+| NE | 47.0 | 49.2 | 47.0 |
+| TEN | 47.6 | 48.2 | 44.8 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 7.1 | 7.1 | 7.1 |
-| TEN | -8.9 | -8.9 | -8.9 |
+| NE | 3.3 | 2.7 | 5.7 |
+| TEN | -0.4 | -1.5 | -3.6 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 40.6% | 40.6% | 40.6% |
-| TEN | 56.4% | 56.4% | 56.4% |
+| NE | 42.8% | 40.4% | 38.2% |
+| TEN | 48.6% | 49.5% | 52.2% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 59.4% | 59.4% | 59.4% |
-| TEN | 43.6% | 43.6% | 43.6% |
+| NE | 57.2% | 59.6% | 61.8% |
+| TEN | 51.4% | 50.5% | 47.8% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 3.25 | 3.23 | 3.07 |
-| TEN | 4.10 | 4.30 | 3.82 |
+| NE | 3.43 | 3.22 | 2.89 |
+| TEN | 3.53 | 3.77 | 3.53 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NE | 4.76 | 4.73 | 4.49 |
-| TEN | 3.17 | 3.32 | 2.95 |
+| NE | 4.59 | 4.75 | 4.68 |
+| TEN | 3.73 | 3.85 | 3.24 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | NO (H) | 25-19 | NE | 0.934 | 0.091 | 48.1% | 0.667 |
-| 1 | LV (-) | 13-18 | LV | 0.920 | -0.049 | 44.0% | -0.485 |
-| 4 | CAR (-) | 36-19 | NE | 0.626 | 0.246 | 42.4% | 1.545 |
+| 6 | NO (H) | 25-19 | NE | 0.942 | 0.091 | 48.1% | 0.667 |
+| 1 | LV (H) | 13-18 | LV | 0.920 | -0.049 | 44.0% | -0.485 |
+| 4 | CAR (H) | 36-19 | NE | 0.637 | 0.246 | 42.4% | 1.545 |
 
 **TEN analogs vs NE profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | IND (-) | 20-32 | IND | 0.859 | -0.080 | 47.7% | -1.278 |
-| 5 | ARI (A) | 16-21 | ARI | 0.523 | -0.026 | 45.1% | -0.385 |
-| 4 | HOU (-) | 0-29 | HOU | 0.503 | -0.398 | 34.4% | -2.889 |
+| 3 | IND (H) | 20-32 | IND | 0.856 | -0.080 | 47.7% | -1.278 |
+| 5 | ARI (A) | 16-21 | ARI | 0.512 | -0.026 | 45.1% | -0.385 |
+| 4 | HOU (A) | 0-29 | HOU | 0.504 | -0.398 | 34.4% | -2.889 |
 
 ## Core EPA Offense Form (up to Week 6)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| NE | 40.5% | 40.5% | 40.5% |
-| TEN | 56.3% | 56.3% | 56.3% |
+| NE | 43.4% | 40.7% | 38.4% |
+| TEN | 48.6% | 49.5% | 52.7% |

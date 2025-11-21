@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | BUF (A) | 40-35 | BAL | 0.797 | 0.340 | 56.3% | 0.483 |
-| 2 | CLE (H) | 35-18 | BAL | 0.103 | 0.100 | 43.6% | 1.276 |
+| 1 | BUF (A) | 40-35 | BAL | 0.801 | 0.340 | 56.3% | 0.483 |
+| 2 | CLE (H) | 35-18 | BAL | 0.104 | 0.100 | 43.6% | 1.276 |
 
 **DET analogs vs BAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | GB (A) | 13-30 | GB | 0.902 | -0.054 | 43.4% | -1.700 |
-| 2 | CHI (H) | 52-19 | DET | 0.248 | 0.304 | 57.1% | 2.718 |
+| 1 | GB (A) | 13-30 | GB | 0.901 | -0.054 | 43.4% | -1.700 |
+| 2 | CHI (H) | 52-19 | DET | 0.233 | 0.304 | 57.1% | 2.718 |
 
 ## Core EPA Offense Form (up to Week 2)
 

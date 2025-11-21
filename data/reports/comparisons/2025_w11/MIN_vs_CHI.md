@@ -1,41 +1,59 @@
 # Matchup Report - MIN vs CHI
 
+## Metric Comparison
+
+| Metric | MIN | CHI | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.181 | -0.084 | ↓ -0.098 |
+| Core EPA Defense | -0.084 | -0.181 | ↑ +0.098 |
+| Success Rate Offense | 39.4% | 44.2% | ↓ -4.8 pp |
+| Success Rate Defense | 44.2% | 39.4% | ↑ +4.8 pp |
+| Explosive Play Rate (Off) | 9.9% | 7.4% | ↑ +2.5 pp |
+| Third Down Conversion | 25.0% | 36.8% | ↓ -11.8 pp |
+| Points per Drive Differential | -0.276 | 0.276 | ↓ -0.551 |
+| Yards per Play Differential | 0.364 | -0.364 | ↑ +0.728 |
+| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
+| Red Zone TD Rate (Off) | 25.0% | 8.3% | ↑ +16.7 pp |
+| Pressure Rate (Def) | 5.9% | 0.0% | ↑ +5.9 pp |
+| Tempo | 5.462 | 7.917 | ↓ -2.455 |
+| PowerScore | 0.038 | 0.060 | ↓ -0.022 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | MIN | CHI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.056 | -0.072 | +0.127 |
-| EPA Defense | 20% | 0.139 | -0.172 | +0.311 |
-| Success Rate Offense | 25% | 47.3% | 44.8% | +2.4 pp |
-| Tempo | 20% | 0.088 | 0.080 | +0.007 |
+| EPA Offense | 35% | -0.181 | -0.084 | -0.098 |
+| EPA Defense | 20% | -0.084 | -0.181 | +0.098 |
+| Success Rate Offense | 25% | 39.4% | 44.2% | -4.8 pp |
+| Tempo | 20% | 0.099 | 0.074 | +0.025 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | MIN | CHI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.056 | -0.072 | +0.127 |
-| EPA Defense | 20% | 0.139 | -0.172 | +0.311 |
-| Success Rate Offense | 15% | 47.3% | 44.8% | +2.4 pp |
-| Turnover Margin | 10% | -2.000 | 3.000 | -5.000 |
-| Tempo | 10% | 0.088 | 0.080 | +0.007 |
-| Red Zone TD Rate (Off) | 10% | 11.8% | 5.3% | +6.5 pp |
-| Pressure Rate (Def) | 10% | 7.7% | 0.0% | +7.7 pp |
+| EPA Offense | 25% | -0.181 | -0.084 | -0.098 |
+| EPA Defense | 20% | -0.084 | -0.181 | +0.098 |
+| Success Rate Offense | 15% | 39.4% | 44.2% | -4.8 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.099 | 0.074 | +0.025 |
+| Red Zone TD Rate (Off) | 10% | 25.0% | 8.3% | +16.7 pp |
+| Pressure Rate (Def) | 10% | 5.9% | 0.0% | +5.9 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-MIN edge: +0.114 (MIN +0.183 vs CHI +0.069)
+CHI edge: +0.022 (MIN +0.038 vs CHI +0.060)
 **7 metrics version:**
-CHI edge: +0.387 (MIN -0.059 vs CHI +0.328)
+CHI edge: +0.387 (MIN -0.162 vs CHI +0.225)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.387), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - CHI) | +2.1 pts (favours MIN) |
-| Model Win% MIN | 58.7% |
-| Model Win% CHI | 41.3% |
+| Model Spread (MIN - CHI) | -0.4 pts (favours CHI) |
+| Model Win% MIN | 48.3% |
+| Model Win% CHI | 51.7% |
 | SOS Differential (MIN-CHI) | -0.066 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ CHI edge: +0.387 (MIN -0.059 vs CHI +0.328)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| MIN | 58.2% | n/a | n/a | 57.1% | 53.3% | n/a |
-| CHI | 46.0% | n/a | n/a | 50.0% | 62.8% | n/a |
+| MIN | 45.1% | 44.1% | 1.0% | 37.5% | 41.0% | Slight pass lean |
+| CHI | 35.8% | 44.1% | -8.3% | 38.2% | 47.5% | Run heavy |
 
 ## Situational Edges
 

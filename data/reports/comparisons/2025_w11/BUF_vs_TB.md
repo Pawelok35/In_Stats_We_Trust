@@ -1,41 +1,59 @@
 # Matchup Report - BUF vs TB
 
+## Metric Comparison
+
+| Metric | BUF | TB | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.320 | 0.142 | ↑ +0.178 |
+| Core EPA Defense | 0.142 | 0.320 | ↓ -0.178 |
+| Success Rate Offense | 54.2% | 49.5% | ↑ +4.7 pp |
+| Success Rate Defense | 49.5% | 54.2% | ↓ -4.7 pp |
+| Explosive Play Rate (Off) | 13.9% | 9.7% | ↑ +4.2 pp |
+| Third Down Conversion | 46.2% | 56.2% | ↓ -10.1 pp |
+| Points per Drive Differential | 1.538 | -1.538 | ↑ +3.077 |
+| Yards per Play Differential | 1.804 | -1.804 | ↑ +3.608 |
+| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
+| Red Zone TD Rate (Off) | 21.4% | 10.0% | ↑ +11.4 pp |
+| Pressure Rate (Def) | 6.2% | 0.0% | ↑ +6.2 pp |
+| Tempo | 6.545 | 7.154 | ↓ -0.608 |
+| PowerScore | 0.304 | 0.257 | ↑ +0.047 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | BUF | TB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.122 | -0.146 | +0.269 |
-| EPA Defense | 20% | -0.028 | -0.051 | +0.024 |
-| Success Rate Offense | 25% | 46.8% | 39.3% | +7.4 pp |
-| Tempo | 20% | 0.143 | 0.056 | +0.087 |
+| EPA Offense | 35% | 0.320 | 0.142 | +0.178 |
+| EPA Defense | 20% | 0.142 | 0.320 | -0.178 |
+| Success Rate Offense | 25% | 54.2% | 49.5% | +4.7 pp |
+| Tempo | 20% | 0.139 | 0.097 | +0.042 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | BUF | TB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.122 | -0.146 | +0.269 |
-| EPA Defense | 20% | -0.028 | -0.051 | +0.024 |
-| Success Rate Offense | 15% | 46.8% | 39.3% | +7.4 pp |
-| Turnover Margin | 10% | 0.000 | -2.000 | +2.000 |
-| Tempo | 10% | 0.143 | 0.056 | +0.087 |
-| Red Zone TD Rate (Off) | 10% | 15.4% | 0.0% | +15.4 pp |
-| Pressure Rate (Def) | 10% | 9.7% | 7.7% | +2.0 pp |
+| EPA Offense | 25% | 0.320 | 0.142 | +0.178 |
+| EPA Defense | 20% | 0.142 | 0.320 | -0.178 |
+| Success Rate Offense | 15% | 54.2% | 49.5% | +4.7 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.139 | 0.097 | +0.042 |
+| Red Zone TD Rate (Off) | 10% | 21.4% | 10.0% | +11.4 pp |
+| Pressure Rate (Def) | 10% | 6.2% | 0.0% | +6.2 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-BUF edge: +0.135 (BUF +0.183 vs TB +0.048)
+BUF edge: +0.047 (BUF +0.304 vs TB +0.257)
 **7 metrics version:**
-BUF edge: +0.309 (BUF +0.135 vs TB -0.175)
-**Verdict:** BUF holds the edge in the extended breakdown (lead 0.309), driven by Turnover Margin (10% weight).
+BUF edge: +0.238 (BUF +0.331 vs TB +0.093)
+**Verdict:** BUF holds the edge in the extended breakdown (lead 0.238), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - TB) | +2.5 pts (favours BUF) |
-| Model Win% BUF | 60.2% |
-| Model Win% TB | 39.8% |
+| Model Spread (BUF - TB) | +0.9 pts (favours BUF) |
+| Model Win% BUF | 53.6% |
+| Model Win% TB | 46.4% |
 | SOS Differential (BUF-TB) | +0.062 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ BUF edge: +0.309 (BUF +0.135 vs TB -0.175)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| BUF | 36.4% | n/a | n/a | 46.2% | 46.2% | n/a |
-| TB | 47.2% | n/a | n/a | 35.5% | 57.1% | n/a |
+| BUF | 43.1% | 44.1% | -1.0% | 48.4% | 58.5% | Balanced |
+| TB | 34.4% | 44.1% | -9.6% | 37.5% | 55.7% | Run heavy |
 
 ## Situational Edges
 

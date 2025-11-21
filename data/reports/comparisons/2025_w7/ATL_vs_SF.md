@@ -70,29 +70,29 @@ SF edge: +0.030 (ATL +0.088 vs SF +0.118)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | +5.5 pp | +5.5 pp | +6.3 pp |
-| SF | +21.0 pp | +20.4 pp | +26.5 pp |
+| ATL | +8.5 pp | +7.9 pp | +9.6 pp |
+| SF | +14.1 pp | +13.5 pp | +29.5 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -12.2 pp | -12.2 pp | -10.4 pp |
-| SF | -17.6 pp | -16.9 pp | -19.2 pp |
+| ATL | -7.6 pp | -9.1 pp | -6.9 pp |
+| SF | -3.6 pp | -2.9 pp | -8.2 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -2.2 pp | -2.3 pp | -3.7 pp |
-| SF | +2.1 pp | +2.1 pp | +0.3 pp |
+| ATL | -1.1 pp | -1.3 pp | -1.0 pp |
+| SF | +4.9 pp | +4.4 pp | +2.0 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -4.0 pp | -4.0 pp | -2.7 pp |
-| SF | -2.2 pp | -1.8 pp | -1.2 pp |
+| ATL | +1.4 pp | +1.1 pp | +0.3 pp |
+| SF | +1.5 pp | +1.9 pp | +2.7 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -5.4 pp | -5.4 pp | -5.4 pp |
-| SF | -7.0 pp | -7.0 pp | -7.0 pp |
+| ATL | -5.7 pp | -4.4 pp | -6.8 pp |
+| SF | -5.0 pp | -4.3 pp | -11.9 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -11.3 pp | -11.3 pp | -11.3 pp |
-| SF | +12.3 pp | +12.3 pp | +12.3 pp |
+| ATL | -2.6 pp | -4.2 pp | -7.9 pp |
+| SF | +13.4 pp | +12.8 pp | +10.7 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -4.0 pp | -4.0 pp | -2.7 pp |
-| SF | -2.2 pp | -1.8 pp | -1.2 pp |
+| ATL | +1.4 pp | +1.1 pp | +0.3 pp |
+| SF | +1.5 pp | +1.9 pp | +2.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -2.2 pp | -2.3 pp | -3.7 pp |
-| SF | +2.1 pp | +2.1 pp | +0.3 pp |
+| ATL | -1.1 pp | -1.3 pp | -1.0 pp |
+| SF | +4.9 pp | +4.4 pp | +2.0 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | 33.7 | 33.7 | 33.7 |
-| SF | 45.3 | 45.3 | 45.3 |
+| ATL | 45.2 | 45.2 | 46.0 |
+| SF | 43.5 | 44.7 | 44.7 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | 46.2 | 46.2 | 46.2 |
-| SF | 52.9 | 52.9 | 52.9 |
+| ATL | 51.5 | 51.5 | 51.1 |
+| SF | 49.3 | 50.4 | 53.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -12.5 | -12.5 | -12.5 |
-| SF | -7.5 | -7.5 | -7.5 |
+| ATL | -6.3 | -6.3 | -5.1 |
+| SF | -5.8 | -5.7 | -9.0 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | 39.8% | 39.8% | 39.8% |
-| SF | 49.2% | 49.2% | 49.2% |
+| ATL | 41.5% | 41.5% | 43.1% |
+| SF | 49.6% | 51.0% | 49.6% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | 60.2% | 60.2% | 60.2% |
-| SF | 50.8% | 50.8% | 50.8% |
+| ATL | 58.5% | 58.5% | 56.9% |
+| SF | 50.4% | 49.0% | 50.4% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | 3.15 | 3.15 | 3.05 |
-| SF | 4.01 | 4.00 | 4.20 |
+| ATL | 3.29 | 3.29 | 3.30 |
+| SF | 4.04 | 4.16 | 4.24 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | 4.78 | 4.78 | 4.62 |
-| SF | 4.14 | 4.14 | 4.34 |
+| ATL | 4.64 | 4.64 | 4.37 |
+| SF | 4.11 | 3.99 | 4.30 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | BUF (A) | 24-15 | ATL | 0.573 | 0.053 | 50.0% | 0.727 |
-| 1 | TB (-) | 20-23 | TB | 0.565 | 0.011 | 47.3% | -0.300 |
-| 4 | WAS (-) | 34-30 | ATL | 0.388 | 0.207 | 53.6% | 0.400 |
+| 6 | BUF (A) | 24-15 | ATL | 0.572 | 0.053 | 50.0% | 0.727 |
+| 1 | TB (H) | 20-23 | TB | 0.572 | 0.011 | 47.3% | -0.300 |
+| 4 | WAS (H) | 34-30 | ATL | 0.381 | 0.207 | 53.6% | 0.400 |
 
 **SF analogs vs ATL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | JAX (-) | 27-18 | SF | 0.631 | -0.113 | 46.8% | 0.788 |
-| 2 | NO (-) | 26-21 | SF | 0.595 | 0.027 | 46.6% | 0.455 |
-| 3 | ARI (-) | 16-14 | SF | 0.566 | -0.022 | 55.1% | 0.155 |
+| 5 | LA (A) | 26-23 | SF | 0.760 | 0.117 | 50.9% | 0.273 |
+| 4 | JAX (H) | 27-18 | SF | 0.638 | -0.113 | 46.8% | 0.788 |
+| 2 | NO (A) | 26-21 | SF | 0.589 | 0.027 | 46.6% | 0.455 |
 
 ## Core EPA Offense Form (up to Week 6)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 39.8% | 39.8% | 39.8% |
-| SF | 49.0% | 49.0% | 49.0% |
+| ATL | 41.5% | 41.5% | 42.9% |
+| SF | 49.3% | 50.8% | 49.5% |

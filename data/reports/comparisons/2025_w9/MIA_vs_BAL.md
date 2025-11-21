@@ -70,29 +70,29 @@ BAL edge: +0.660 (MIA -0.239 vs BAL +0.421)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -4.5 pp | -11.2 pp | -12.8 pp |
-| BAL | +4.9 pp | +5.4 pp | +6.3 pp |
+| MIA | -2.5 pp | -10.5 pp | -12.8 pp |
+| BAL | -4.6 pp | +3.5 pp | +6.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +2.0 pp | +0.1 pp | -2.6 pp |
-| BAL | -4.3 pp | -4.7 pp | -5.6 pp |
+| MIA | -2.7 pp | -1.3 pp | -2.6 pp |
+| BAL | -3.6 pp | -1.8 pp | -5.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -3.8 pp | -3.6 pp | -1.9 pp |
-| BAL | -1.5 pp | -1.8 pp | -2.8 pp |
+| MIA | -3.0 pp | -2.2 pp | -1.9 pp |
+| BAL | -3.6 pp | -4.2 pp | -2.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -2.2 pp | -2.1 pp | -1.6 pp |
-| BAL | +2.4 pp | +0.9 pp | -0.4 pp |
+| MIA | -1.1 pp | -1.5 pp | -1.6 pp |
+| BAL | +0.6 pp | +0.9 pp | -0.4 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -5.0 pp | -5.0 pp | -4.0 pp |
-| BAL | +3.8 pp | +3.8 pp | +5.7 pp |
+| MIA | -4.5 pp | -5.1 pp | -4.0 pp |
+| BAL | +4.2 pp | +4.7 pp | +5.7 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -10.3 pp | -10.3 pp | -11.4 pp |
-| BAL | +3.7 pp | +3.7 pp | +3.1 pp |
+| MIA | -4.8 pp | -8.9 pp | -11.4 pp |
+| BAL | -3.0 pp | +1.5 pp | +3.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -2.2 pp | -2.1 pp | -1.6 pp |
-| BAL | +2.4 pp | +0.9 pp | -0.4 pp |
+| MIA | -1.1 pp | -1.5 pp | -1.6 pp |
+| BAL | +0.6 pp | +0.9 pp | -0.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -3.8 pp | -3.6 pp | -1.9 pp |
-| BAL | -1.5 pp | -1.8 pp | -2.8 pp |
+| MIA | -3.0 pp | -2.2 pp | -1.9 pp |
+| BAL | -3.6 pp | -4.2 pp | -2.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 47.9 | 47.9 | 47.2 |
-| BAL | 53.6 | 53.6 | 53.6 |
+| MIA | 52.8 | 47.7 | 47.2 |
+| BAL | 54.0 | 54.8 | 53.6 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 48.8 | 48.8 | 52.0 |
-| BAL | 47.7 | 47.7 | 47.7 |
+| MIA | 47.4 | 48.0 | 52.0 |
+| BAL | 50.4 | 49.1 | 47.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -0.9 | -0.9 | -4.8 |
-| BAL | 5.9 | 5.9 | 5.9 |
+| MIA | 5.5 | -0.3 | -4.8 |
+| BAL | 3.6 | 5.7 | 5.9 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 44.6% | 44.6% | 41.4% |
-| BAL | 35.5% | 35.5% | 35.5% |
+| MIA | 45.8% | 42.5% | 41.4% |
+| BAL | 40.1% | 41.2% | 35.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 55.4% | 55.4% | 58.6% |
-| BAL | 64.5% | 64.5% | 64.5% |
+| MIA | 54.2% | 57.5% | 58.6% |
+| BAL | 59.9% | 58.8% | 64.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 3.45 | 3.26 | 2.93 |
-| BAL | 2.64 | 2.80 | 2.96 |
+| MIA | 3.54 | 3.11 | 2.93 |
+| BAL | 2.97 | 3.25 | 2.96 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 4.28 | 4.05 | 4.15 |
-| BAL | 4.78 | 5.09 | 5.37 |
+| MIA | 4.19 | 4.20 | 4.15 |
+| BAL | 4.45 | 4.64 | 5.37 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | NYJ (-) | 27-19 | MIA | 0.752 | 0.176 | 47.9% | 0.900 |
-| 3 | BUF (-) | 21-31 | BUF | 0.688 | 0.067 | 44.7% | -1.111 |
-| 1 | IND (-) | 8-33 | IND | 0.634 | -0.156 | 47.4% | -3.571 |
+| 4 | NYJ (H) | 27-19 | MIA | 0.750 | 0.176 | 47.9% | 0.900 |
+| 3 | BUF (A) | 21-31 | BUF | 0.690 | 0.067 | 44.7% | -1.111 |
+| 1 | IND (A) | 8-33 | IND | 0.637 | -0.156 | 47.4% | -3.571 |
 
 **BAL analogs vs MIA profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | CHI (H) | 30-16 | BAL | 0.575 | 0.227 | 55.0% | 1.556 |
-| 2 | CLE (-) | 35-18 | BAL | 0.443 | 0.100 | 43.6% | 1.276 |
-| 1 | BUF (-) | 40-35 | BAL | 0.427 | 0.340 | 56.3% | 0.483 |
+| 8 | CHI (A) | 30-16 | BAL | 0.576 | 0.227 | 55.0% | 1.556 |
+| 2 | CLE (H) | 35-18 | BAL | 0.443 | 0.100 | 43.6% | 1.276 |
+| 1 | BUF (A) | 40-35 | BAL | 0.426 | 0.340 | 56.3% | 0.483 |
 
 ## Core EPA Offense Form (up to Week 8)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 35.9% | 35.9% | 35.9% |
-| MIA | 44.2% | 44.2% | 41.2% |
+| BAL | 40.2% | 41.2% | 35.9% |
+| MIA | 45.1% | 42.3% | 41.2% |

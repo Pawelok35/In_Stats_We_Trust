@@ -1,201 +1,185 @@
 import Link from "next/link";
 
-import { Badge } from "@/components/ui/badge";
-import {
-  Card,
-  CardContent,
-  CardDescription,
-  CardHeader,
-  CardTitle,
-} from "@/components/ui/card";
-import { Separator } from "@/components/ui/separator";
-import { Button } from "@/components/ui/button";
-import { listAvailableWeeks, listMatchupsForWeek } from "@/lib/reports";
+const stats = [
+  { label: "Weather Scale signals", value: "182", detail: "tracked in current season" },
+  { label: "YTD ROI", value: "+34.7%", detail: "after stake sizing & fees" },
+  { label: "Confidence hit rate", value: "78%", detail: "across Supercell/Vortex" },
+];
 
-export default function Home() {
-  const weeks = listAvailableWeeks();
+const features = [
+  {
+    title: "Weather Scale intelligence",
+    description: "Triple-model agreement with codename staking, built for clarity and speed.",
+    icon: "⚡",
+  },
+  {
+    title: "Markdown-to-analytics",
+    description: "Automated parsing of matchup reports, turning tables into live charts.",
+    icon: "📊",
+  },
+  {
+    title: "Apple-grade UI",
+    description: "Glassmorphic cards, gradients, and responsive layout that elevate data.",
+    icon: "✨",
+  },
+  {
+    title: "Core12 + PowerScore",
+    description: "One deterministic source of truth from raw drives to weekly picks.",
+    icon: "🧠",
+  },
+];
 
-  // No reports case – keep it simple and calm
-  if (weeks.length === 0) {
-    return (
-      <main className="flex min-h-screen flex-col items-center justify-center bg-background px-6 py-12">
-        <Card className="max-w-xl">
-          <CardHeader>
-            <CardTitle>No reports found</CardTitle>
-            <CardDescription>
-              No generated matchup reports were found in
-              <code className="ml-1 rounded bg-muted px-1.5 py-0.5 font-mono text-sm">
-                data/reports/comparisons
-              </code>
-              . Once you build reports, they will appear here automatically.
-            </CardDescription>
-          </CardHeader>
-        </Card>
-      </main>
-    );
-  }
+const steps = [
+  { title: "Connect data", detail: "Drop markdown reports into data/reports/comparisons." },
+  { title: "Generate picks", detail: "Weather Scale codename + stake sizing flows automatically." },
+  { title: "Operate & refine", detail: "Use dashboards, insights, and automation hooks." },
+];
 
-  const latest = weeks[0];
-  const matchups = listMatchupsForWeek(latest.season, latest.week);
-
+export default function LandingPage() {
   return (
-    <main className="min-h-screen bg-background px-4 py-10 sm:px-8">
-      <div className="mx-auto flex w-full max-w-6xl flex-col gap-10">
-        {/* HERO / TOP SECTION */}
-<header className="space-y-8 text-center md:text-left">
-  <div className="flex flex-wrap items-center justify-between gap-4">
-    <Badge variant="outline" className="w-fit text-xs sm:text-sm">
-      In Stats We Trust · NFL Analytics
-    </Badge>
-    <span className="text-xs text-muted-foreground">
-      Core12 Engine · Season {latest.season}, Week {latest.week}
-    </span>
-  </div>
-
-  <div className="grid gap-10 md:grid-cols-[minmax(0,2fr)_minmax(0,1.3fr)] md:items-center">
-    <div className="space-y-6">
-      <h1 className="text-4xl font-bold text-gray-900 sm:text-5xl">
-        Data. Models. Insights.
-      </h1>
-      <p className="max-w-xl text-lg text-gray-600">
-        Predict games with confidence. In Stats We Trust transforms NFL data into powerful and transparent analytics – no hype, just numbers.
-      </p>
-
-      <Button asChild size="lg" className="bg-blue-600 hover:bg-blue-700 text-white">
-        <Link href={`/weeks/${latest.season}/${latest.week}`}>Open NFL Dashboard</Link>
-      </Button>
-    </div>
-
-    {/* MINI LIVE PREVIEW – LATEST WEEK */}
-    <Card className="shadow-md border border-gray-200">
-      <CardHeader>
-        <CardTitle className="text-lg font-semibold text-gray-900">
-          Latest Matchup Reports
-        </CardTitle>
-        <CardDescription>
-          Generated from your comparison data.
-        </CardDescription>
-      </CardHeader>
-      <CardContent className="space-y-2">
-        {matchups.slice(0, 3).map((m) => (
-          <div key={m.slug} className="flex items-center justify-between text-sm">
-            <span className="font-medium text-gray-800">{m.title}</span>
+    <main className="min-h-screen bg-gradient-to-b from-[#f8fbff] via-white to-[#eef2ff] px-4 pb-20 pt-12 dark:from-[#080a16] dark:via-[#111530] dark:to-[#0b0f1f] sm:px-8">
+      <div className="mx-auto flex max-w-6xl flex-col gap-14">
+        <header className="glass-card relative overflow-hidden rounded-[32px] p-8 text-center sm:p-12">
+          <div className="absolute inset-0 -z-10 bg-[radial-gradient(circle_at_top,rgba(37,99,235,0.2),transparent_60%)]" />
+          <p className="inline-flex items-center justify-center rounded-full border border-white/60 px-4 py-1 text-xs font-semibold uppercase tracking-[0.3em] text-muted-foreground dark:border-white/10 dark:text-white/60">
+            In Stats We Trust · Premium NFL analytics
+          </p>
+          <h1 className="mt-6 text-4xl font-semibold text-slate-900 dark:text-white sm:text-6xl">
+            Weather Scale picks meet Apple-grade UX
+          </h1>
+          <p className="mx-auto mt-4 max-w-3xl text-base text-muted-foreground">
+            Run the entire betting intelligence stack—from markdown reports to live dashboards—
+            with a single deterministic pipeline. No hype, just polished data infrastructure and
+            design.
+          </p>
+          <div className="mt-8 flex flex-wrap items-center justify-center gap-4">
             <Link
-              href={`/reports/${latest.season}/${latest.week}/${m.slug}`}
-              className="text-blue-600 hover:underline"
+              href="/dashboard"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg shadow-blue-600/30 transition hover:-translate-y-0.5"
             >
-              Open →
+              Launch dashboard
+            </Link>
+            <Link
+              href="https://dribbble.com/search/weather%20scale"
+              target="_blank"
+              className="inline-flex items-center rounded-full border border-white/60 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 dark:border-white/15 dark:bg-white/10 dark:text-white/80"
+            >
+              Design inspiration →
             </Link>
           </div>
-        ))}
-      </CardContent>
-    </Card>
-  </div>
-</header>
-
-
-        <Separator />
-
-        {/* HOW IT WORKS SECTION */}
-        <section id="how-it-works" className="bg-gray-50 py-16">
-
-          <div className="space-y-2">
-            <h2 className="text-2xl font-semibold uppercase tracking-[0.15em]">
-              How it works
-            </h2>
-            <p className="max-w-2xl text-sm text-muted-foreground">
-              ISWT connects your NFL data pipeline with a clear, opinion-free
-              UI. Three simple layers: data in, model logic, actionable insight.
-            </p>
+          <div className="mt-10 grid gap-4 rounded-[24px] border border-white/60 bg-white/70 p-6 text-left shadow-inner dark:border-white/10 dark:bg-white/5 sm:grid-cols-3">
+            {stats.map((stat) => (
+              <div key={stat.label}>
+                <p className="text-xs uppercase tracking-[0.3em] text-muted-foreground">{stat.label}</p>
+                <p className="text-3xl font-semibold text-slate-900 dark:text-white">{stat.value}</p>
+                <p className="text-xs text-muted-foreground">{stat.detail}</p>
+              </div>
+            ))}
           </div>
+        </header>
 
-          <div className="grid gap-4 md:grid-cols-3">
-            <Card className="retro-frame">
-              <CardHeader className="pb-3">
-                <CardTitle className="retro-frame-title text-sm">
-                  01 · Data
-                </CardTitle>
-                <CardDescription>
-                  Play-by-play, Core12 metrics and weekly aggregates from your
-                  backend pipeline.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  ISWT reads your generated reports and Core12 files – no manual
-                  uploads, no spreadsheets.
-                </p>
-              </CardContent>
-            </Card>
+        <section className="grid gap-4 lg:grid-cols-4">
+          {features.map((feature) => (
+            <article key={feature.title} className="glass-card h-full p-5 text-left">
+              <div className="text-2xl">{feature.icon}</div>
+              <h3 className="mt-4 text-lg font-semibold text-slate-900 dark:text-white">
+                {feature.title}
+              </h3>
+              <p className="mt-2 text-sm text-muted-foreground">{feature.description}</p>
+            </article>
+          ))}
+        </section>
 
-            <Card className="retro-frame">
-              <CardHeader className="pb-3">
-                <CardTitle className="retro-frame-title text-sm">
-                  02 · Model
-                </CardTitle>
-                <CardDescription>
-                  Transparent PowerScore and matchup logic – always explainable.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  PowerScore, Core12 and matchup reports are all derived from
-                  the same deterministic pipeline.
-                </p>
-              </CardContent>
-            </Card>
-
-            <Card className="retro-frame">
-              <CardHeader className="pb-3">
-                <CardTitle className="retro-frame-title text-sm">
-                  03 · Insight
-                </CardTitle>
-                <CardDescription>
-                  Clear edges, form snapshots and weekly summaries.
-                </CardDescription>
-              </CardHeader>
-              <CardContent>
-                <p className="text-sm text-muted-foreground">
-                  Use reports and dashboards to spot value, validate intuition
-                  and communicate your reads.
-                </p>
-              </CardContent>
-            </Card>
+        <section className="grid gap-6 lg:grid-cols-[1.1fr_minmax(0,0.9fr)]">
+          <div className="glass-card rounded-[32px] p-8">
+            <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Why now</p>
+            <h2 className="text-3xl font-semibold text-slate-900 dark:text-white">
+              Every matchup, every metric, instantly visualized
+            </h2>
+            <p className="mt-3 text-sm text-muted-foreground">
+              Upload reports, parse them on the server, turn the results into charts, cards, and
+              Weather Scale picks. Controlled, explainable analytics that look like a $30k SaaS.
+            </p>
+            <div className="mt-8 grid gap-4 sm:grid-cols-2">
+              {["PowerScore flows", "Drive context", "Earnings-ready UI", "Automation hooks"].map(
+                (item) => (
+                  <div
+                    key={item}
+                    className="rounded-3xl border border-white/60 bg-white/90 px-4 py-3 text-sm font-medium text-slate-900 dark:border-white/10 dark:bg-white/10 dark:text-white"
+                  >
+                    {item}
+                  </div>
+                ),
+              )}
+            </div>
+          </div>
+          <div className="glass-card rounded-[32px] bg-gradient-to-br from-blue-600/90 via-indigo-500/80 to-teal-400/80 p-6 text-white shadow-xl">
+            <p className="text-xs uppercase tracking-[0.35em]">Next.js + Tailwind + Recharts</p>
+            <h3 className="mt-4 text-2xl font-semibold">Engineered for designers & quants</h3>
+            <p className="mt-2 text-sm text-white/70">
+              We merge deterministic ETL, markdown parsing, and high-end UI primitives to deliver an
+              NFL betting copilot you can ship immediately.
+            </p>
+            <ul className="mt-6 space-y-3 text-sm text-white/80">
+              <li>• Responsive Apple/Stripe inspired layout</li>
+              <li>• Weather Scale + PowerScore data models</li>
+              <li>• Client-side filtering + animated charts</li>
+              <li>• Dark/light mode toggle & theming</li>
+            </ul>
+            <Link
+              href="/dashboard"
+              className="mt-8 inline-flex items-center justify-center rounded-full bg-white/90 px-5 py-2 text-sm font-semibold text-slate-900 transition hover:-translate-y-0.5"
+            >
+              Explore dashboard →
+            </Link>
           </div>
         </section>
 
-        <Separator />
-
-        {/* WEEK INDEX / BROWSER */}
-        <section className="space-y-4">
-          <div className="flex flex-wrap items-center justify-between gap-3">
-            <div>
-              <h2 className="text-2xl font-semibold">Matchup reports</h2>
-              <p className="text-sm text-muted-foreground">
-                Browse all generated comparison reports by season and week.
-              </p>
-            </div>
-            <Link
-              href={`/weeks/${latest.season}/${latest.week}`}
-              className="text-sm font-medium underline-offset-4 hover:underline"
-            >
-              Open latest week →
-            </Link>
-          </div>
-
-          <div className="flex flex-wrap items-center gap-2">
-            <span className="text-xs font-medium text-muted-foreground">
-              Available weeks:
-            </span>
-            {weeks.map((week) => (
-              <Link
-                key={`${week.season}-${week.week}`}
-                href={`/weeks/${week.season}/${week.week}`}
-                className="rounded-full border border-border/60 px-3 py-1 text-xs hover:bg-secondary"
+        <section className="glass-card rounded-[32px] p-8">
+          <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">3-step install</p>
+          <h2 className="text-3xl font-semibold text-slate-900 dark:text-white">
+            From raw data to premium UI in minutes
+          </h2>
+          <div className="mt-6 grid gap-4 md:grid-cols-3">
+            {steps.map((step, idx) => (
+              <div
+                key={step.title}
+                className="rounded-[24px] border border-white/70 bg-white/90 p-5 shadow-inner dark:border-white/10 dark:bg-white/5"
               >
-                {week.season} · Week {week.week}
-              </Link>
+                <p className="text-xs font-semibold uppercase tracking-[0.35em] text-muted-foreground">
+                  {`0${idx + 1}`}
+                </p>
+                <h4 className="mt-1 text-lg font-semibold text-slate-900 dark:text-white">
+                  {step.title}
+                </h4>
+                <p className="text-sm text-muted-foreground">{step.detail}</p>
+              </div>
             ))}
+          </div>
+        </section>
+
+        <section className="text-center">
+          <p className="text-xs uppercase tracking-[0.35em] text-muted-foreground">Ready?</p>
+          <h2 className="text-3xl font-semibold text-slate-900 dark:text-white">
+            Weather Scale insights deserved a premium home.
+          </h2>
+          <p className="mt-2 text-sm text-muted-foreground">
+            Deploy the dashboard, invite your team, and let the data speak with style.
+          </p>
+          <div className="mt-6 flex flex-wrap items-center justify-center gap-4">
+            <Link
+              href="/dashboard"
+              className="inline-flex items-center rounded-full bg-gradient-to-r from-blue-600 to-teal-400 px-6 py-3 text-sm font-semibold text-white shadow-lg transition hover:-translate-y-0.5"
+            >
+              Open dashboard
+            </Link>
+            <Link
+              href="https://github.com/"
+              target="_blank"
+              className="inline-flex items-center rounded-full border border-white/60 bg-white/80 px-6 py-3 text-sm font-semibold text-slate-700 transition hover:-translate-y-0.5 dark:border-white/15 dark:bg-white/10 dark:text-white"
+            >
+              View repo →
+            </Link>
           </div>
         </section>
       </div>

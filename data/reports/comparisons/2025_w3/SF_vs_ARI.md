@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | SEA (A) | 17-14 | SF | 0.837 | 0.012 | 48.9% | 0.245 |
-| 2 | NO (A) | 26-21 | SF | 0.530 | 0.027 | 46.6% | 0.455 |
+| 1 | SEA (A) | 17-14 | SF | 0.847 | 0.012 | 48.9% | 0.245 |
+| 2 | NO (A) | 26-21 | SF | 0.527 | 0.027 | 46.6% | 0.455 |
 
 **ARI analogs vs SF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | NO (A) | 20-11 | ARI | 0.468 | 0.016 | 44.4% | 1.040 |
-| 2 | CAR (H) | 21-22 | CAR | 0.397 | 0.041 | 45.7% | -0.100 |
+| 1 | NO (A) | 20-11 | ARI | 0.465 | 0.016 | 44.4% | 1.040 |
+| 2 | CAR (H) | 21-22 | CAR | 0.390 | 0.041 | 45.7% | -0.100 |
 
 ## Core EPA Offense Form (up to Week 2)
 

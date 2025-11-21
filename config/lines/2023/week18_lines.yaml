@@ -1,78 +1,57 @@
 matchups:
-- report: data/reports/comparisons/2023_w18/LV_vs_DEN.md
-  home: LV
-  away: DEN
-  spread: 8.5
-  total: 51.5
-  prime_time: true
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/JAX_vs_TEN.md
-  home: JAX
-  away: TEN
-  spread: -6.0
-  total: 39.5
-  prime_time: true
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/CIN_vs_CLE.md
-  home: CIN
+- report: data/reports/comparisons/2023_w18/BAL_vs_CLE.md
+  home: BAL
   away: CLE
-  spread: -11.5
-  total: 39.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/ATL_vs_TB.md
-  home: ATL
-  away: TB
-  spread: -5.5
-  total: 40.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/BUF_vs_NE.md
-  home: BUF
-  away: NE
-  spread: -8.5
-  total: 43.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/CHI_vs_MIN.md
-  home: CHI
-  away: MIN
-  spread: 6.5
-  total: 42.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/IND_vs_HOU.md
-  home: IND
-  away: HOU
-  spread: -3.0
-  total: 37.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/MIA_vs_BUF.md
-  home: MIA
-  away: BUF
-  spread: -3.5
-  total: 37.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w18/FALSE_vs_CAR.md
-  home: 'FALSE'
-  away: CAR
-  spread: -3.5
+  spread: -2.5
   total: 41.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w18/PIT_vs_CLE.md
+- report: data/reports/comparisons/2023_w18/PIT_vs_CIN.md
   home: PIT
-  away: CLE
-  spread: -2.5
-  total: 39.5
+  away: CIN
+  spread: -1.5
+  total: 41.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w18/DEN_vs_LAC.md
-  home: DEN
-  away: LAC
-  spread: -6.0
+- report: data/reports/comparisons/2023_w18/ATL_vs_CAR.md
+  home: ATL
+  away: CAR
+  spread: -3.0
+  total: 41.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/IND_vs_JAX.md
+  home: IND
+  away: JAX
+  spread: -1.5
+  total: 44.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/DAL_vs_WAS.md
+  home: DAL
+  away: WAS
+  spread: -7.5
+  total: 40.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/GB_vs_CHI.md
+  home: GB
+  away: CHI
+  spread: -4.5
+  total: 49.5
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/NE_vs_BUF.md
+  home: NE
+  away: BUF
+  spread: 8.5
+  total: 43.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/TEN_vs_HOU.md
+  home: TEN
+  away: HOU
+  spread: -1.5
   total: 39.5
   prime_time: false
   neutral_site: false
@@ -83,31 +62,52 @@ matchups:
   total: 42.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w18/SF_vs_LA.md
-  home: SF
-  away: LA
-  spread: -14.5
+- report: data/reports/comparisons/2023_w18/TB_vs_NO.md
+  home: TB
+  away: "NO"
+  spread: -2.5
   total: 40.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w18/SEA_vs_LA.md
-  home: SEA
-  away: LA
-  spread: -5.5
-  total: 42.5
+- report: data/reports/comparisons/2023_w18/ARI_vs_SF.md
+  home: ARI
+  away: SF
+  spread: 13.5
+  total: 44.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w18/WAS_vs_DAL.md
-  home: WAS
-  away: DAL
-  spread: 7.5
-  total: 40.5
+- report: data/reports/comparisons/2023_w18/DEN_vs_KC.md
+  home: DEN
+  away: KC
+  spread: 6.0
+  total: 45.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w18/GB_vs_CHI.md
-  home: GB
-  away: CHI
-  spread: -4.5
-  total: 49.5
+- report: data/reports/comparisons/2023_w18/NYJ_vs_MIA.md
+  home: NYJ
+  away: MIA
+  spread: 3.5
+  total: 42.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/LV_vs_LAC.md
+  home: LV
+  away: LAC
+  spread: 2.0
+  total: 46.0
   prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/LA_vs_SEA.md
+  home: LA
+  away: SEA
+  spread: 2.5
+  total: 45.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w18/DET_vs_MIN.md
+  home: DET
+  away: MIN
+  spread: -6.5
+  total: 48.0
+  prime_time: false
   neutral_site: false

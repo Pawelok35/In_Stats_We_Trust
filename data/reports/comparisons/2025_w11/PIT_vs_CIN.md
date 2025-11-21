@@ -1,41 +1,59 @@
 # Matchup Report - PIT vs CIN
 
+## Metric Comparison
+
+| Metric | PIT | CIN | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.148 | -0.125 | ↑ +0.273 |
+| Core EPA Defense | -0.125 | 0.148 | ↓ -0.273 |
+| Success Rate Offense | 49.4% | 36.9% | ↑ +12.5 pp |
+| Success Rate Defense | 36.9% | 49.4% | ↓ -12.5 pp |
+| Explosive Play Rate (Off) | 12.3% | 8.3% | ↑ +4.0 pp |
+| Third Down Conversion | 50.0% | 41.2% | ↑ +8.8 pp |
+| Points per Drive Differential | 1.244 | -1.244 | ↑ +2.489 |
+| Yards per Play Differential | 0.699 | -0.699 | ↑ +1.398 |
+| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
+| Red Zone TD Rate (Off) | 11.8% | 0.0% | ↑ +11.8 pp |
+| Pressure Rate (Def) | 2.4% | 3.0% | ↓ -0.6 pp |
+| Tempo | 9.000 | 8.400 | ↑ +0.600 |
+| PowerScore | 0.175 | 0.095 | ↑ +0.080 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | PIT | CIN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.139 | -0.155 | +0.294 |
-| EPA Defense | 20% | 0.056 | 0.170 | -0.114 |
-| Success Rate Offense | 25% | 58.0% | 38.2% | +19.7 pp |
-| Tempo | 20% | 0.087 | 0.029 | +0.058 |
+| EPA Offense | 35% | 0.148 | -0.125 | +0.273 |
+| EPA Defense | 20% | -0.125 | 0.148 | -0.273 |
+| Success Rate Offense | 25% | 49.4% | 36.9% | +12.5 pp |
+| Tempo | 20% | 0.123 | 0.083 | +0.040 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | PIT | CIN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.139 | -0.155 | +0.294 |
-| EPA Defense | 20% | 0.056 | 0.170 | -0.114 |
-| Success Rate Offense | 15% | 58.0% | 38.2% | +19.7 pp |
-| Turnover Margin | 10% | 2.000 | 1.000 | +1.000 |
-| Tempo | 10% | 0.087 | 0.029 | +0.058 |
-| Red Zone TD Rate (Off) | 10% | 9.5% | 0.0% | +9.5 pp |
-| Pressure Rate (Def) | 10% | 11.3% | 0.0% | +11.3 pp |
+| EPA Offense | 25% | 0.148 | -0.125 | +0.273 |
+| EPA Defense | 20% | -0.125 | 0.148 | -0.273 |
+| Success Rate Offense | 15% | 49.4% | 36.9% | +12.5 pp |
+| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
+| Tempo | 10% | 0.123 | 0.083 | +0.040 |
+| Red Zone TD Rate (Off) | 10% | 11.8% | 0.0% | +11.8 pp |
+| Pressure Rate (Def) | 10% | 2.4% | 3.0% | -0.6 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PIT edge: +0.141 (PIT +0.222 vs CIN +0.081)
+PIT edge: +0.080 (PIT +0.175 vs CIN +0.095)
 **7 metrics version:**
-PIT edge: +0.207 (PIT +0.362 vs CIN +0.155)
-**Verdict:** PIT holds the edge in the extended breakdown (lead 0.207), driven by Turnover Margin (10% weight).
+PIT edge: +0.448 (PIT +0.313 vs CIN -0.135)
+**Verdict:** PIT holds the edge in the extended breakdown (lead 0.448), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - CIN) | +2.6 pts (favours PIT) |
-| Model Win% PIT | 60.7% |
-| Model Win% CIN | 39.3% |
+| Model Spread (PIT - CIN) | +1.5 pts (favours PIT) |
+| Model Win% PIT | 56.2% |
+| Model Win% CIN | 43.8% |
 | SOS Differential (PIT-CIN) | -0.032 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ PIT edge: +0.207 (PIT +0.362 vs CIN +0.155)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| PIT | 37.7% | n/a | n/a | 44.4% | 55.1% | n/a |
-| CIN | 42.6% | n/a | n/a | 45.3% | 50.0% | n/a |
+| PIT | 40.7% | 44.1% | -3.3% | 51.5% | 47.9% | Run heavy |
+| CIN | 50.0% | 44.1% | 5.9% | 31.0% | 42.9% | Pass heavy |
 
 ## Situational Edges
 

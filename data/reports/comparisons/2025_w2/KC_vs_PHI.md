@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | LAC (A) | 21-27 | LAC | 0.903 | 0.131 | 45.6% | -0.750 |
+| 1 | LAC (A) | 21-27 | LAC | 0.905 | 0.131 | 45.6% | -0.750 |
 
 **PHI analogs vs KC profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | DAL (H) | 24-22 | PHI | 0.850 | 0.169 | 52.6% | 0.167 |
+| 1 | DAL (H) | 24-22 | PHI | 0.847 | 0.169 | 52.6% | 0.167 |
 
 ## Core EPA Offense Form (up to Week 1)
 

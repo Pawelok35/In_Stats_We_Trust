@@ -189,9 +189,9 @@ def main() -> None:
 
     picks_base = ROOT_DIR / "data"
     variant_paths = {
-        "M": picks_base / "picks_variant_m" / str(season) / f"week_{week:02d}.jsonl",
-        "D": picks_base / "picks_variant_d_balanced" / str(season) / f"week_{week:02d}.jsonl",
-        "B": picks_base / "picks_variant_b_edge_focus" / str(season) / f"week_{week:02d}.jsonl",
+        "J": picks_base / "picks_variant_j" / str(season) / f"week_{week:02d}.jsonl",
+        "C": picks_base / "picks_variant_c_psdiff" / str(season) / f"week_{week:02d}.jsonl",
+        "K": picks_base / "picks_variant_k" / str(season) / f"week_{week:02d}.jsonl",
     }
     missing = [k for k, path in variant_paths.items() if not path.exists()]
     if missing:
@@ -206,12 +206,12 @@ def main() -> None:
             "-X",
             "utf8",
             "scripts/convergence_analyzer.py",
-            "--variant-m",
-            str(variant_paths["M"].relative_to(ROOT_DIR)),
-            "--variant-d",
-            str(variant_paths["D"].relative_to(ROOT_DIR)),
-            "--variant-b",
-            str(variant_paths["B"].relative_to(ROOT_DIR)),
+            "--variant-j",
+            str(variant_paths["J"].relative_to(ROOT_DIR)),
+            "--variant-c",
+            str(variant_paths["C"].relative_to(ROOT_DIR)),
+            "--variant-k",
+            str(variant_paths["K"].relative_to(ROOT_DIR)),
             "--week-label",
             f"Week {week}",
         ],

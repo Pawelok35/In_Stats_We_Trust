@@ -1,41 +1,59 @@
 # Matchup Report - CLE vs BAL
 
+## Metric Comparison
+
+| Metric | CLE | BAL | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.184 | -0.055 | ↓ -0.129 |
+| Core EPA Defense | -0.055 | -0.184 | ↑ +0.129 |
+| Success Rate Offense | 41.1% | 45.0% | ↓ -3.9 pp |
+| Success Rate Defense | 45.0% | 41.1% | ↑ +3.9 pp |
+| Explosive Play Rate (Off) | 9.6% | 11.2% | ↓ -1.7 pp |
+| Third Down Conversion | 14.3% | 35.7% | ↓ -21.4 pp |
+| Points per Drive Differential | -1.000 | 1.000 | ↓ -2.000 |
+| Yards per Play Differential | -1.826 | 1.826 | ↓ -3.652 |
+| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
+| Red Zone TD Rate (Off) | 0.0% | 5.6% | ↓ -5.6 pp |
+| Pressure Rate (Def) | 15.6% | 10.3% | ↑ +5.3 pp |
+| Tempo | 5.615 | 6.154 | ↓ -0.538 |
+| PowerScore | 0.046 | 0.079 | ↓ -0.032 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CLE | BAL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.382 | -0.043 | -0.339 |
-| EPA Defense | 20% | -0.082 | 0.182 | -0.265 |
-| Success Rate Offense | 25% | 30.2% | 49.3% | -19.1 pp |
-| Tempo | 20% | 0.070 | 0.127 | -0.057 |
+| EPA Offense | 35% | -0.184 | -0.055 | -0.129 |
+| EPA Defense | 20% | -0.055 | -0.184 | +0.129 |
+| Success Rate Offense | 25% | 41.1% | 45.0% | -3.9 pp |
+| Tempo | 20% | 0.096 | 0.113 | -0.017 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CLE | BAL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.382 | -0.043 | -0.339 |
-| EPA Defense | 20% | -0.082 | 0.182 | -0.265 |
-| Success Rate Offense | 15% | 30.2% | 49.3% | -19.1 pp |
-| Turnover Margin | 10% | -2.000 | -2.000 | +0.000 |
-| Tempo | 10% | 0.070 | 0.127 | -0.057 |
-| Red Zone TD Rate (Off) | 10% | 8.3% | 11.1% | -2.8 pp |
-| Pressure Rate (Def) | 10% | 0.0% | 2.5% | -2.5 pp |
+| EPA Offense | 25% | -0.184 | -0.055 | -0.129 |
+| EPA Defense | 20% | -0.055 | -0.184 | +0.129 |
+| Success Rate Offense | 15% | 41.1% | 45.0% | -3.9 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.096 | 0.113 | -0.017 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 5.6% | -5.6 pp |
+| Pressure Rate (Def) | 10% | 15.6% | 10.3% | +5.3 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-BAL edge: +0.231 (CLE -0.061 vs BAL +0.170)
+BAL edge: +0.032 (CLE +0.046 vs BAL +0.079)
 **7 metrics version:**
-BAL edge: +0.177 (CLE -0.251 vs BAL -0.074)
-**Verdict:** BAL holds the edge in the extended breakdown (lead 0.177), driven by EPA Offense (25% weight).
+BAL edge: +0.014 (CLE +0.030 vs BAL +0.044)
+**Verdict:** BAL holds the edge in the extended breakdown (lead 0.014), driven by EPA Offense (25% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - BAL) | -4.3 pts (favours BAL) |
-| Model Win% CLE | 32.9% |
-| Model Win% BAL | 67.1% |
+| Model Spread (CLE - BAL) | -0.6 pts (favours BAL) |
+| Model Win% CLE | 47.5% |
+| Model Win% BAL | 52.5% |
 | SOS Differential (CLE-BAL) | -0.101 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ BAL edge: +0.177 (CLE -0.251 vs BAL -0.074)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CLE | 45.3% | n/a | n/a | 52.5% | 41.7% | n/a |
-| BAL | 50.7% | n/a | n/a | 41.4% | 43.1% | n/a |
+| CLE | 39.7% | 44.1% | -4.3% | 24.1% | 52.3% | Run heavy |
+| BAL | 40.0% | 44.1% | -4.1% | 37.5% | 50.0% | Run heavy |
 
 ## Situational Edges
 

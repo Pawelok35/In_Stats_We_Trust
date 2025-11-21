@@ -1,0 +1,33 @@
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – DAL 20.6 – DEN 25.5
+2️⃣ Predicted Winner (Model) – DEN
+3️⃣ Predicted Margin (Model) – DEN by 4.9 pts
+4️⃣ Win Probability (Model) – 65% (DEN)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę DEN: DEN +0.302 vs DAL +0.239. Defensive pressure rate wspiera DEN (+5.4% vs +0.0%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje DEN (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. Explosive Play Rate pozostaje po stronie DEN (10.3% vs 9.0%), więc big-play equity jest wyższe. Field position edge wynosi +1.0 yds na rzecz DEN (2.4 vs 1.4), co skraca ich boisko.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – DAL 24.0 – DEN 27.0
+2️⃣ Predicted Winner (Market) – DEN
+3️⃣ Predicted Margin (Market) – DEN by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (DEN)
+5️⃣ Forum Output (A) – PowerScore (Model) — DAL +0.239 vs DEN +0.302. Points per Drive Differential — DAL +0.057 vs DEN +0.510. Success Rate Offense — DAL 48.6% vs DEN 44.1%. Third Down Conversion — DAL 38.0% vs DEN 34.5%. Red Zone TD Rate — DAL 16.8% vs DEN 16.1%. Explosive Play Rate — DAL 9.0% vs DEN 10.3%. Model margin -4.9 pts vs market spread DAL -3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę DEN po marginesie -4.9 pkt. DEN notuje +0.510 PPD vs +0.057 u DAL. Różnica w Success Rate to 44.1% vs 48.6%. Na 3rd down DEN (34.5%) wygląda solidniej niż DAL (38.0%). Red Zone i explosiveness ( 16.1% / 10.3% ) utrzymują przewagę jakościową. Market trzyma -3.0 pkt, więc edge vs linia to +1.9.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +1.9 pts
+• PowerScoreDiff (winner) = +0.063
+• Confidence = 68.0%
+
+🏷 Model Tag: NEUTRAL — based on 68.0% confidence, +1.9 pts model edge vs line, and PowerScore Δ +0.063.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – DAL 20.6 – DEN 25.5
+   • Win Probability – 65% (DEN)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – DAL 24.0 – DEN 27.0
+   • Win Probability – 60% (DEN)
+
+🏷 Model Tag: NEUTRAL — DEN (HC -3.0)

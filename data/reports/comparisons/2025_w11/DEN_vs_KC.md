@@ -1,41 +1,59 @@
 # Matchup Report - DEN vs KC
 
+## Metric Comparison
+
+| Metric | DEN | KC | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.070 | 0.044 | ↑ +0.026 |
+| Core EPA Defense | 0.044 | 0.070 | ↓ -0.026 |
+| Success Rate Offense | 48.8% | 47.1% | ↑ +1.7 pp |
+| Success Rate Defense | 47.1% | 48.8% | ↓ -1.7 pp |
+| Explosive Play Rate (Off) | 7.3% | 5.7% | ↑ +1.6 pp |
+| Third Down Conversion | 46.7% | 31.2% | ↑ +15.4 pp |
+| Points per Drive Differential | 0.100 | -0.100 | ↑ +0.200 |
+| Yards per Play Differential | 0.596 | -0.596 | ↑ +1.192 |
+| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
+| Red Zone TD Rate (Off) | 5.3% | 7.1% | ↓ -1.9 pp |
+| Pressure Rate (Def) | 6.2% | 4.9% | ↑ +1.4 pp |
+| Tempo | 7.455 | 8.700 | ↓ -1.245 |
+| PowerScore | 0.170 | 0.159 | ↑ +0.011 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | DEN | KC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.170 | 0.182 | -0.013 |
-| EPA Defense | 20% | -0.155 | -0.043 | -0.112 |
-| Success Rate Offense | 25% | 50.0% | 46.6% | +3.4 pp |
-| Tempo | 20% | 0.128 | 0.091 | +0.037 |
+| EPA Offense | 35% | 0.070 | 0.044 | +0.026 |
+| EPA Defense | 20% | 0.044 | 0.070 | -0.026 |
+| Success Rate Offense | 25% | 48.8% | 47.1% | +1.7 pp |
+| Tempo | 20% | 0.073 | 0.057 | +0.016 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | DEN | KC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.170 | 0.182 | -0.013 |
-| EPA Defense | 20% | -0.155 | -0.043 | -0.112 |
-| Success Rate Offense | 15% | 50.0% | 46.6% | +3.4 pp |
-| Turnover Margin | 10% | -1.000 | 2.000 | -3.000 |
-| Tempo | 10% | 0.128 | 0.091 | +0.037 |
-| Red Zone TD Rate (Off) | 10% | 22.2% | 14.3% | +7.9 pp |
-| Pressure Rate (Def) | 10% | 10.3% | 8.3% | +2.0 pp |
+| EPA Offense | 25% | 0.070 | 0.044 | +0.026 |
+| EPA Defense | 20% | 0.044 | 0.070 | -0.026 |
+| Success Rate Offense | 15% | 48.8% | 47.1% | +1.7 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.073 | 0.057 | +0.016 |
+| Red Zone TD Rate (Off) | 10% | 5.3% | 7.1% | -1.9 pp |
+| Pressure Rate (Def) | 10% | 6.2% | 4.9% | +1.4 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-KC edge: +0.011 (DEN +0.179 vs KC +0.190)
+DEN edge: +0.011 (DEN +0.170 vs KC +0.159)
 **7 metrics version:**
-KC edge: +0.307 (DEN +0.032 vs KC +0.339)
-**Verdict:** KC holds the edge in the extended breakdown (lead 0.307), driven by Turnover Margin (10% weight).
+DEN edge: +0.205 (DEN +0.218 vs KC +0.013)
+**Verdict:** DEN holds the edge in the extended breakdown (lead 0.205), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - KC) | -0.2 pts (favours KC) |
-| Model Win% DEN | 49.2% |
-| Model Win% KC | 50.8% |
+| Model Spread (DEN - KC) | +0.2 pts (favours DEN) |
+| Model Win% DEN | 50.9% |
+| Model Win% KC | 49.1% |
 | SOS Differential (DEN-KC) | -0.061 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ KC edge: +0.307 (DEN +0.032 vs KC +0.339)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| DEN | 47.9% | n/a | n/a | 47.2% | 51.4% | n/a |
-| KC | 45.5% | n/a | n/a | 31.0% | 43.6% | n/a |
+| DEN | 50.0% | 44.1% | 5.9% | 46.3% | 51.2% | Pass heavy |
+| KC | 55.2% | 44.1% | 11.1% | 39.6% | 56.4% | Pass heavy |
 
 ## Situational Edges
 

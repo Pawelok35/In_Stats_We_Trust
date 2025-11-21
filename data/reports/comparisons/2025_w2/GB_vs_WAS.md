@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | DET (H) | 27-12 | GB | 0.075 | 0.182 | 49.2% | 1.700 |
+| 1 | DET (H) | 27-12 | GB | 0.073 | 0.182 | 49.2% | 1.700 |
 
 **WAS analogs vs GB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | NYG (H) | 21-7 | WAS | 0.107 | 0.071 | 48.2% | 1.433 |
+| 1 | NYG (H) | 21-7 | WAS | 0.108 | 0.071 | 48.2% | 1.433 |
 
 ## Core EPA Offense Form (up to Week 1)
 

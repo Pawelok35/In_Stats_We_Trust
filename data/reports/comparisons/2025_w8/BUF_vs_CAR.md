@@ -70,29 +70,29 @@ BUF edge: +0.653 (BUF +0.454 vs CAR -0.199)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | -0.8 pp | -1.1 pp | -4.2 pp |
-| CAR | +3.7 pp | +1.2 pp | +3.0 pp |
+| BUF | +1.9 pp | +1.1 pp | -4.2 pp |
+| CAR | -2.7 pp | -2.9 pp | -0.5 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +9.4 pp | +9.5 pp | +10.1 pp |
-| CAR | +3.8 pp | +6.5 pp | +3.5 pp |
+| BUF | +7.7 pp | +8.4 pp | +10.1 pp |
+| CAR | -0.5 pp | +1.5 pp | +2.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | -3.8 pp | -2.8 pp | -0.7 pp |
-| CAR | +2.8 pp | +2.6 pp | +3.2 pp |
+| BUF | -2.1 pp | -1.9 pp | -1.5 pp |
+| CAR | +4.1 pp | +3.7 pp | +3.2 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +7.2 pp | +7.3 pp | +7.5 pp |
-| CAR | -2.4 pp | -1.6 pp | +0.2 pp |
+| BUF | +3.8 pp | +4.6 pp | +7.5 pp |
+| CAR | -3.4 pp | -0.6 pp | -0.1 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +11.5 pp | +11.5 pp | +11.5 pp |
-| CAR | -2.5 pp | -2.5 pp | -2.5 pp |
+| BUF | +10.6 pp | +12.3 pp | +11.3 pp |
+| CAR | -4.7 pp | -1.0 pp | -3.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +4.8 pp | +4.8 pp | +4.8 pp |
-| CAR | -6.8 pp | -6.8 pp | -6.8 pp |
+| BUF | +1.4 pp | +3.0 pp | +1.8 pp |
+| CAR | +0.1 pp | +1.7 pp | -3.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +7.2 pp | +7.3 pp | +7.5 pp |
-| CAR | -2.4 pp | -1.6 pp | +0.2 pp |
+| BUF | +3.8 pp | +4.6 pp | +7.5 pp |
+| CAR | -3.4 pp | -0.6 pp | -0.1 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | -3.8 pp | -2.8 pp | -0.7 pp |
-| CAR | +2.8 pp | +2.6 pp | +3.2 pp |
+| BUF | -2.1 pp | -1.9 pp | -1.5 pp |
+| CAR | +4.1 pp | +3.7 pp | +3.2 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 44.1 | 44.1 | 44.1 |
-| CAR | 42.6 | 42.6 | 42.6 |
+| BUF | 44.6 | 42.8 | 43.7 |
+| CAR | 46.9 | 44.8 | 42.6 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 43.2 | 43.2 | 43.2 |
-| CAR | 49.4 | 49.4 | 49.4 |
+| BUF | 50.9 | 50.8 | 48.9 |
+| CAR | 49.9 | 50.3 | 49.4 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 1.0 | 1.0 | 1.0 |
-| CAR | -6.8 | -6.8 | -6.8 |
+| BUF | -6.3 | -8.0 | -5.2 |
+| CAR | -3.0 | -5.5 | -6.8 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 40.4% | 40.4% | 40.4% |
-| CAR | 37.3% | 37.3% | 37.3% |
+| BUF | 40.5% | 38.7% | 39.1% |
+| CAR | 42.6% | 38.0% | 37.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 59.6% | 59.6% | 59.6% |
-| CAR | 62.7% | 62.7% | 62.7% |
+| BUF | 59.5% | 61.3% | 60.9% |
+| CAR | 57.4% | 62.0% | 62.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 3.12 | 3.08 | 2.93 |
-| CAR | 3.07 | 2.99 | 3.09 |
+| BUF | 3.13 | 2.95 | 2.83 |
+| CAR | 3.50 | 3.05 | 3.09 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 4.61 | 4.55 | 4.32 |
-| CAR | 5.16 | 5.03 | 5.20 |
+| BUF | 4.60 | 4.68 | 4.42 |
+| CAR | 4.72 | 4.97 | 5.20 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | NYJ (-) | 30-11 | BUF | 0.797 | 0.177 | 45.6% | 1.727 |
-| 4 | NO (-) | 31-21 | BUF | 0.602 | 0.122 | 46.8% | 0.918 |
-| 3 | MIA (-) | 31-21 | BUF | 0.428 | 0.221 | 54.1% | 1.111 |
+| 2 | NYJ (A) | 30-11 | BUF | 0.820 | 0.177 | 45.6% | 1.727 |
+| 4 | NO (H) | 31-21 | BUF | 0.601 | 0.122 | 46.8% | 0.918 |
+| 3 | MIA (H) | 31-21 | BUF | 0.427 | 0.221 | 54.1% | 1.111 |
 
 **CAR analogs vs BUF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 6 | DAL (A) | 30-30 | TIE | 0.886 | 0.153 | 56.5% | 0.000 |
-| 4 | NE (-) | 19-36 | NE | 0.815 | -0.179 | 47.1% | -1.545 |
-| 2 | ARI (-) | 22-21 | CAR | 0.556 | -0.006 | 45.5% | 0.100 |
+| 4 | NE (A) | 19-36 | NE | 0.817 | -0.179 | 47.1% | -1.545 |
+| 2 | ARI (A) | 22-21 | CAR | 0.555 | -0.006 | 45.5% | 0.100 |
 
 ## Core EPA Offense Form (up to Week 7)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 40.3% | 40.3% | 40.3% |
-| CAR | 37.4% | 37.4% | 37.4% |
+| BUF | 40.8% | 38.5% | 39.0% |
+| CAR | 43.0% | 38.1% | 37.4% |

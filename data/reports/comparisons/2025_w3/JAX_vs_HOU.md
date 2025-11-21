@@ -242,14 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | CAR (H) | 26-10 | JAX | 0.640 | 0.116 | 47.6% | 1.600 |
-| 2 | CIN (A) | 27-34 | CIN | 0.243 | 0.075 | 50.0% | -0.568 |
+| 1 | CAR (H) | 26-10 | JAX | 0.652 | 0.116 | 47.6% | 1.600 |
+| 2 | CIN (A) | 27-34 | CIN | 0.235 | 0.075 | 50.0% | -0.568 |
 
 **HOU analogs vs JAX profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | TB (H) | 19-22 | TB | 0.793 | 0.000 | 41.9% | -0.273 |
+| 2 | TB (H) | 19-22 | TB | 0.803 | 0.000 | 41.9% | -0.273 |
+| 1 | LA (A) | 9-14 | LA | 0.749 | -0.121 | 36.8% | -0.556 |
 
 ## Core EPA Offense Form (up to Week 2)
 

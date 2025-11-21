@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | MIA (A) | 39-23 | NE | 0.833 | 0.183 | 44.3% | 1.567 |
-| 1 | LV (H) | 13-18 | LV | 0.422 | -0.049 | 44.0% | -0.485 |
+| 2 | MIA (A) | 39-23 | NE | 0.852 | 0.183 | 44.3% | 1.567 |
+| 1 | LV (H) | 13-18 | LV | 0.415 | -0.049 | 44.0% | -0.485 |
 
 **PIT analogs vs NE profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | NYJ (A) | 34-32 | PIT | 0.608 | 0.206 | 50.6% | 0.182 |
-| 2 | SEA (H) | 23-27 | SEA | 0.157 | -0.208 | 36.8% | -0.314 |
+| 1 | NYJ (A) | 34-32 | PIT | 0.614 | 0.206 | 50.6% | 0.182 |
+| 2 | SEA (H) | 23-27 | SEA | 0.159 | -0.208 | 36.8% | -0.314 |
 
 ## Core EPA Offense Form (up to Week 2)
 

@@ -1,41 +1,59 @@
 # Matchup Report - PHI vs DET
 
+## Metric Comparison
+
+| Metric | PHI | DET | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.147 | -0.295 | ↑ +0.148 |
+| Core EPA Defense | -0.295 | -0.147 | ↓ -0.148 |
+| Success Rate Offense | 41.9% | 34.7% | ↑ +7.2 pp |
+| Success Rate Defense | 34.7% | 41.9% | ↓ -7.2 pp |
+| Explosive Play Rate (Off) | 6.5% | 12.5% | ↓ -6.0 pp |
+| Third Down Conversion | 21.1% | 23.1% | ↓ -2.0 pp |
+| Points per Drive Differential | 0.538 | -0.538 | ↑ +1.077 |
+| Yards per Play Differential | -1.478 | 1.478 | ↓ -2.956 |
+| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
+| Red Zone TD Rate (Off) | 10.0% | 0.0% | ↑ +10.0 pp |
+| Pressure Rate (Def) | 5.0% | 3.3% | ↑ +1.7 pp |
+| Tempo | 7.154 | 5.538 | ↑ +1.615 |
+| PowerScore | 0.007 | -0.021 | ↑ +0.028 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | PHI | DET | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.051 | -0.082 | +0.031 |
-| EPA Defense | 20% | -0.146 | -0.382 | +0.236 |
-| Success Rate Offense | 25% | 46.2% | 42.5% | +3.7 pp |
-| Tempo | 20% | 0.090 | 0.062 | +0.027 |
+| EPA Offense | 35% | -0.147 | -0.295 | +0.148 |
+| EPA Defense | 20% | -0.295 | -0.147 | -0.148 |
+| Success Rate Offense | 25% | 41.9% | 34.7% | +7.2 pp |
+| Tempo | 20% | 0.065 | 0.125 | -0.060 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | PHI | DET | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.051 | -0.082 | +0.031 |
-| EPA Defense | 20% | -0.146 | -0.382 | +0.236 |
-| Success Rate Offense | 15% | 46.2% | 42.5% | +3.7 pp |
-| Turnover Margin | 10% | 2.000 | 2.000 | +0.000 |
-| Tempo | 10% | 0.090 | 0.062 | +0.027 |
-| Red Zone TD Rate (Off) | 10% | 27.3% | 20.0% | +7.3 pp |
-| Pressure Rate (Def) | 10% | 4.8% | 7.7% | -2.9 pp |
+| EPA Offense | 25% | -0.147 | -0.295 | +0.148 |
+| EPA Defense | 20% | -0.295 | -0.147 | -0.148 |
+| Success Rate Offense | 15% | 41.9% | 34.7% | +7.2 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.065 | 0.125 | -0.060 |
+| Red Zone TD Rate (Off) | 10% | 10.0% | 0.0% | +10.0 pp |
+| Pressure Rate (Def) | 10% | 5.0% | 3.3% | +1.7 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PHI edge: +0.073 (PHI +0.086 vs DET +0.014)
+PHI edge: +0.028 (PHI +0.007 vs DET -0.021)
 **7 metrics version:**
-PHI edge: +0.067 (PHI +0.268 vs DET +0.201)
-**Verdict:** PHI holds the edge in the extended breakdown (lead 0.067), driven by EPA Defense (20% weight).
+PHI edge: +0.224 (PHI +0.089 vs DET -0.135)
+**Verdict:** PHI holds the edge in the extended breakdown (lead 0.224), driven by Turnover Margin (10% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - DET) | +1.3 pts (favours PHI) |
-| Model Win% PHI | 55.6% |
-| Model Win% DET | 44.4% |
+| Model Spread (PHI - DET) | +0.5 pts (favours PHI) |
+| Model Win% PHI | 52.2% |
+| Model Win% DET | 47.8% |
 | SOS Differential (PHI-DET) | +0.022 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ PHI edge: +0.067 (PHI +0.268 vs DET +0.201)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| PHI | 33.3% | n/a | n/a | 25.6% | 34.0% | n/a |
-| DET | 36.2% | n/a | n/a | 33.3% | 44.7% | n/a |
+| PHI | 32.3% | 44.1% | -11.8% | 33.3% | 46.0% | Run heavy |
+| DET | 55.6% | 44.1% | 11.5% | 30.0% | 40.6% | Pass heavy |
 
 ## Situational Edges
 

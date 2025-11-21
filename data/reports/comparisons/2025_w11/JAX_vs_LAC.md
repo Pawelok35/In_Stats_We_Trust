@@ -1,41 +1,59 @@
 # Matchup Report - JAX vs LAC
 
+## Metric Comparison
+
+| Metric | JAX | LAC | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.142 | -0.320 | ↑ +0.461 |
+| Core EPA Defense | -0.320 | 0.142 | ↓ -0.461 |
+| Success Rate Offense | 56.8% | 41.0% | ↑ +15.8 pp |
+| Success Rate Defense | 41.0% | 56.8% | ↓ -15.8 pp |
+| Explosive Play Rate (Off) | 9.9% | 4.9% | ↑ +5.0 pp |
+| Third Down Conversion | 45.5% | 25.0% | ↑ +20.5 pp |
+| Points per Drive Differential | 2.900 | -2.900 | ↑ +5.800 |
+| Yards per Play Differential | 2.046 | -2.046 | ↑ +4.092 |
+| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
+| Red Zone TD Rate (Off) | 19.2% | 0.0% | ↑ +19.2 pp |
+| Pressure Rate (Def) | 13.8% | 4.5% | ↑ +9.2 pp |
+| Tempo | 8.100 | 6.100 | ↑ +2.000 |
+| PowerScore | 0.147 | 0.029 | ↑ +0.119 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | JAX | LAC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.029 | -0.066 | +0.037 |
-| EPA Defense | 20% | -0.113 | -0.026 | -0.086 |
-| Success Rate Offense | 25% | 44.9% | 46.8% | -1.9 pp |
-| Tempo | 20% | 0.056 | 0.089 | -0.032 |
+| EPA Offense | 35% | 0.142 | -0.320 | +0.461 |
+| EPA Defense | 20% | -0.320 | 0.142 | -0.461 |
+| Success Rate Offense | 25% | 56.8% | 41.0% | +15.8 pp |
+| Tempo | 20% | 0.099 | 0.049 | +0.050 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | JAX | LAC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.029 | -0.066 | +0.037 |
-| EPA Defense | 20% | -0.113 | -0.026 | -0.086 |
-| Success Rate Offense | 15% | 44.9% | 46.8% | -1.9 pp |
-| Turnover Margin | 10% | 4.000 | -2.000 | +6.000 |
-| Tempo | 10% | 0.056 | 0.089 | -0.032 |
-| Red Zone TD Rate (Off) | 10% | 10.0% | 0.0% | +10.0 pp |
-| Pressure Rate (Def) | 10% | 2.5% | 22.2% | -19.7 pp |
+| EPA Offense | 25% | 0.142 | -0.320 | +0.461 |
+| EPA Defense | 20% | -0.320 | 0.142 | -0.461 |
+| Success Rate Offense | 15% | 56.8% | 41.0% | +15.8 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.099 | 0.049 | +0.050 |
+| Red Zone TD Rate (Off) | 10% | 19.2% | 0.0% | +19.2 pp |
+| Pressure Rate (Def) | 10% | 13.8% | 4.5% | +9.2 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-LAC edge: +0.016 (JAX +0.091 vs LAC +0.107)
+JAX edge: +0.119 (JAX +0.147 vs LAC +0.029)
 **7 metrics version:**
-JAX edge: +0.576 (JAX +0.456 vs LAC -0.120)
-**Verdict:** JAX holds the edge in the extended breakdown (lead 0.576), driven by Turnover Margin (10% weight).
+JAX edge: +0.080 (JAX +0.100 vs LAC +0.019)
+**Verdict:** JAX holds the edge in the extended breakdown (lead 0.080), driven by EPA Offense (25% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - LAC) | -0.3 pts (favours LAC) |
-| Model Win% JAX | 48.8% |
-| Model Win% LAC | 51.2% |
+| Model Spread (JAX - LAC) | +2.2 pts (favours JAX) |
+| Model Win% JAX | 59.0% |
+| Model Win% LAC | 41.0% |
 | SOS Differential (JAX-LAC) | +0.015 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ JAX edge: +0.576 (JAX +0.456 vs LAC -0.120)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| JAX | 39.3% | n/a | n/a | 40.7% | 50.8% | n/a |
-| LAC | 54.4% | n/a | n/a | 52.5% | 41.0% | n/a |
+| JAX | 27.2% | 44.1% | -16.9% | 63.6% | 54.2% | Run heavy |
+| LAC | 47.5% | 44.1% | 3.5% | 24.1% | 56.2% | Pass heavy |
 
 ## Situational Edges
 

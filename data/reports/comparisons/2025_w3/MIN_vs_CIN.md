@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | ATL (H) | 6-22 | ATL | 0.653 | -0.369 | 38.5% | -1.455 |
-| 1 | CHI (A) | 27-17 | MIN | 0.281 | -0.064 | 44.6% | 0.791 |
+| 2 | ATL (H) | 6-22 | ATL | 0.658 | -0.369 | 38.5% | -1.455 |
+| 1 | CHI (A) | 27-17 | MIN | 0.271 | -0.064 | 44.6% | 0.791 |
 
 **CIN analogs vs MIN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | CLE (A) | 17-16 | CIN | 0.891 | -0.066 | 44.1% | 0.100 |
-| 2 | JAX (H) | 31-25 | CIN | 0.163 | 0.082 | 51.8% | 0.568 |
+| 1 | CLE (A) | 17-16 | CIN | 0.906 | -0.066 | 44.1% | 0.100 |
+| 2 | JAX (H) | 31-25 | CIN | 0.158 | 0.082 | 51.8% | 0.568 |
 
 ## Core EPA Offense Form (up to Week 2)
 

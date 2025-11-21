@@ -70,29 +70,29 @@ CLE edge: +0.840 (MIA -0.452 vs CLE +0.388)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +11.8 pp | +10.4 pp | +5.2 pp |
-| CLE | -10.7 pp | -14.4 pp | -17.2 pp |
+| MIA | +7.1 pp | +8.5 pp | +2.5 pp |
+| CLE | -17.8 pp | -21.4 pp | -17.4 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -6.6 pp | -6.5 pp | -7.0 pp |
-| CLE | +0.6 pp | +0.3 pp | -5.4 pp |
+| MIA | -1.0 pp | -1.2 pp | -5.8 pp |
+| CLE | -0.3 pp | -1.5 pp | -1.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +0.6 pp | -0.2 pp | -4.1 pp |
-| CLE | -1.6 pp | -1.0 pp | -2.0 pp |
+| MIA | +1.4 pp | +1.1 pp | -1.9 pp |
+| CLE | +0.2 pp | +0.4 pp | -1.9 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -3.9 pp | -3.6 pp | -4.3 pp |
-| CLE | -4.9 pp | -4.9 pp | -4.1 pp |
+| MIA | +0.3 pp | -0.7 pp | -2.2 pp |
+| CLE | -6.1 pp | -5.3 pp | -3.5 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +6.6 pp | +6.6 pp | +6.6 pp |
-| CLE | +4.3 pp | +4.3 pp | +4.3 pp |
+| MIA | +7.5 pp | +4.9 pp | +6.0 pp |
+| CLE | -3.2 pp | +1.2 pp | -3.7 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -3.7 pp | -3.7 pp | -3.7 pp |
-| CLE | -13.4 pp | -13.4 pp | -13.4 pp |
+| MIA | -0.4 pp | +1.3 pp | -0.3 pp |
+| CLE | -20.3 pp | -22.8 pp | -21.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | -3.9 pp | -3.6 pp | -4.3 pp |
-| CLE | -4.9 pp | -4.9 pp | -4.1 pp |
+| MIA | +0.3 pp | -0.7 pp | -2.2 pp |
+| CLE | -6.1 pp | -5.3 pp | -3.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | +0.6 pp | -0.2 pp | -4.1 pp |
-| CLE | -1.6 pp | -1.0 pp | -2.0 pp |
+| MIA | +1.4 pp | +1.1 pp | -1.9 pp |
+| CLE | +0.2 pp | +0.4 pp | -1.9 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 52.6 | 52.6 | 52.6 |
-| CLE | 48.1 | 48.1 | 48.1 |
+| MIA | 56.0 | 54.2 | 50.7 |
+| CLE | 46.6 | 47.5 | 46.3 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 45.9 | 45.9 | 45.9 |
-| CLE | 37.5 | 37.5 | 37.5 |
+| MIA | 45.9 | 46.9 | 45.5 |
+| CLE | 43.5 | 41.8 | 41.1 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 6.7 | 6.7 | 6.7 |
-| CLE | 10.6 | 10.6 | 10.6 |
+| MIA | 10.1 | 7.4 | 5.2 |
+| CLE | 3.1 | 5.7 | 5.2 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 49.5% | 49.5% | 49.5% |
-| CLE | 49.3% | 49.3% | 49.3% |
+| MIA | 47.8% | 45.1% | 44.4% |
+| CLE | 49.6% | 49.2% | 48.0% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 50.5% | 50.5% | 50.5% |
-| CLE | 50.7% | 50.7% | 50.7% |
+| MIA | 52.2% | 54.9% | 55.6% |
+| CLE | 50.4% | 50.8% | 52.0% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 3.88 | 3.85 | 3.60 |
-| CLE | 3.99 | 3.88 | 4.02 |
+| MIA | 3.75 | 3.51 | 3.23 |
+| CLE | 4.01 | 3.87 | 3.91 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIA | 3.96 | 3.93 | 3.67 |
-| CLE | 4.09 | 3.99 | 4.12 |
+| MIA | 4.09 | 4.27 | 4.04 |
+| CLE | 4.07 | 4.00 | 4.23 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | CAR (A) | 24-25 | CAR | 0.647 | 0.121 | 44.4% | -0.055 |
-| 4 | NYJ (-) | 27-19 | MIA | 0.631 | 0.176 | 47.9% | 0.900 |
-| 6 | LAC (A) | 27-35 | LAC | 0.610 | 0.061 | 48.7% | -0.650 |
+| 5 | CAR (A) | 24-25 | CAR | 0.644 | 0.121 | 44.4% | -0.055 |
+| 4 | NYJ (H) | 27-19 | MIA | 0.637 | 0.176 | 47.9% | 0.900 |
+| 6 | LAC (A) | 27-35 | LAC | 0.606 | 0.061 | 48.7% | -0.650 |
 
 **CLE analogs vs MIA profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | BAL (-) | 17-32 | BAL | 0.862 | -0.227 | 43.5% | -1.276 |
-| 1 | CIN (-) | 16-17 | CIN | 0.757 | -0.087 | 39.6% | -0.100 |
-| 6 | PIT (H) | 9-23 | PIT | 0.596 | -0.080 | 43.3% | -1.556 |
+| 2 | BAL (A) | 17-32 | BAL | 0.867 | -0.227 | 43.5% | -1.276 |
+| 1 | CIN (H) | 16-17 | CIN | 0.760 | -0.087 | 39.6% | -0.100 |
+| 6 | PIT (H) | 9-23 | PIT | 0.616 | -0.080 | 43.3% | -1.556 |
 
 ## Core EPA Offense Form (up to Week 6)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CLE | 49.7% | 49.7% | 49.7% |
-| MIA | 49.3% | 49.3% | 49.3% |
+| CLE | 49.8% | 49.4% | 48.4% |
+| MIA | 47.2% | 45.1% | 44.4% |

@@ -52,29 +52,29 @@ JAX edge: +0.192 (HOU -0.011 vs JAX +0.181)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -38.8 pp | -34.4 pp | -42.0 pp |
-| JAX | +0.6 pp | -0.9 pp | -0.8 pp |
+| HOU | -10.4 pp | -6.2 pp | -2.6 pp |
+| JAX | +3.2 pp | +5.5 pp | +6.0 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -7.7 pp | -2.4 pp | -12.5 pp |
-| JAX | -2.3 pp | -5.5 pp | -9.2 pp |
+| HOU | -2.8 pp | -1.2 pp | -9.7 pp |
+| JAX | -4.9 pp | -5.1 pp | -12.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -1.5 pp | -2.4 pp | -1.9 pp |
-| JAX | +3.2 pp | +2.3 pp | +1.8 pp |
+| HOU | -3.9 pp | -3.3 pp | -2.3 pp |
+| JAX | +0.2 pp | -2.9 pp | -5.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | +1.2 pp | +0.7 pp | -0.2 pp |
-| JAX | -1.2 pp | -1.6 pp | -1.0 pp |
+| HOU | -0.0 pp | -2.0 pp | -0.6 pp |
+| JAX | -0.3 pp | -0.6 pp | -1.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -84,29 +84,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -8.1 pp | -8.1 pp | -8.1 pp |
-| JAX | +11.7 pp | +11.7 pp | +11.7 pp |
+| HOU | -6.2 pp | -4.9 pp | -8.3 pp |
+| JAX | +4.9 pp | +7.0 pp | +3.8 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -18.5 pp | -18.5 pp | -18.5 pp |
-| JAX | +13.0 pp | +13.0 pp | +13.0 pp |
+| HOU | -4.1 pp | -6.3 pp | -8.2 pp |
+| JAX | +6.5 pp | +8.8 pp | +8.4 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | +1.2 pp | +0.7 pp | -0.2 pp |
-| JAX | -1.2 pp | -1.6 pp | -1.0 pp |
+| HOU | -0.0 pp | -2.0 pp | -0.6 pp |
+| JAX | -0.3 pp | -0.6 pp | -1.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -1.5 pp | -2.4 pp | -1.9 pp |
-| JAX | +3.2 pp | +2.3 pp | +1.8 pp |
+| HOU | -3.9 pp | -3.3 pp | -2.3 pp |
+| JAX | +0.2 pp | -2.9 pp | -5.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -116,22 +116,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | 37.2 | 37.2 | 37.2 |
-| JAX | 56.9 | 56.9 | 56.9 |
+| HOU | 42.5 | 42.4 | 41.4 |
+| JAX | 46.5 | 49.0 | 47.9 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | 48.4 | 48.4 | 48.4 |
-| JAX | 47.7 | 47.7 | 47.7 |
+| HOU | 45.4 | 50.1 | 47.2 |
+| JAX | 44.4 | 41.9 | 38.2 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | -11.1 | -11.1 | -11.1 |
-| JAX | 9.2 | 9.2 | 9.2 |
+| HOU | -2.9 | -7.7 | -5.8 |
+| JAX | 2.2 | 7.1 | 9.7 |
 
 ### Points per Drive (offense)
 
@@ -169,29 +169,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | 44.9% | 44.9% | 44.9% |
-| JAX | 36.1% | 36.1% | 36.1% |
+| HOU | 45.3% | 44.9% | 48.6% |
+| JAX | 45.5% | 45.3% | 49.7% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | 55.1% | 55.1% | 55.1% |
-| JAX | 63.9% | 63.9% | 63.9% |
+| HOU | 54.7% | 55.1% | 51.4% |
+| JAX | 54.5% | 54.7% | 50.3% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | 3.35 | 3.55 | 3.29 |
-| JAX | 2.89 | 3.01 | 3.24 |
+| HOU | 3.38 | 3.55 | 3.55 |
+| JAX | 3.65 | 3.78 | 4.47 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| HOU | 4.11 | 4.36 | 4.03 |
-| JAX | 5.12 | 5.33 | 5.75 |
+| HOU | 4.08 | 4.36 | 3.76 |
+| JAX | 4.36 | 4.56 | 4.52 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -222,19 +222,19 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 **HOU analogs vs JAX profile**
 
-| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
-| ---: | --- | ---: | ---: | ---: | ---: |
-| 3 | JAX (-) | 1.000 | -0.222 | 36.7% | -0.538 |
-| 4 | TEN (-) | 0.681 | 0.069 | 41.5% | 2.889 |
-| 8 | SF (-) | 0.594 | 0.187 | 48.9% | 0.933 |
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 3 | JAX (A) | 10-17 | JAX | 1.000 | -0.222 | 36.7% | -0.538 |
+| 4 | TEN (H) | 26-0 | HOU | 0.670 | 0.069 | 41.5% | 2.889 |
+| 8 | SF (A) | 26-17 | HOU | 0.588 | 0.187 | 48.9% | 0.933 |
 
 **JAX analogs vs HOU profile**
 
-| Week | Opponent | Similarity | EPA Off | Success Rate | PPD Diff |
-| ---: | --- | ---: | ---: | ---: | ---: |
-| 3 | HOU (-) | 1.000 | -0.122 | 37.1% | 0.538 |
-| 6 | SEA (-) | 0.735 | -0.087 | 37.2% | -0.667 |
-| 1 | CAR (-) | 0.640 | 0.116 | 47.6% | 1.600 |
+| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
+| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 3 | HOU (H) | 17-10 | JAX | 1.000 | -0.122 | 37.1% | 0.538 |
+| 7 | LA (A) | 7-32 | LA | 0.789 | -0.114 | 45.7% | -2.280 |
+| 6 | SEA (A) | 12-20 | SEA | 0.752 | -0.087 | 37.2% | -0.667 |
 
 ## Core EPA Offense Form (up to Week 9)
 
@@ -324,5 +324,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 44.9% | 44.9% | 44.9% |
-| JAX | 36.1% | 36.1% | 36.1% |
+| HOU | 45.5% | 45.2% | 48.6% |
+| JAX | 45.7% | 45.6% | 49.5% |

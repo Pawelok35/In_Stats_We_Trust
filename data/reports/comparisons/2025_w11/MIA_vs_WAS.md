@@ -1,41 +1,59 @@
 # Matchup Report - MIA vs WAS
 
+## Metric Comparison
+
+| Metric | MIA | WAS | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.091 | 0.011 | ↑ +0.081 |
+| Core EPA Defense | 0.011 | 0.091 | ↓ -0.081 |
+| Success Rate Offense | 53.6% | 53.1% | ↑ +0.5 pp |
+| Success Rate Defense | 53.1% | 53.6% | ↓ -0.5 pp |
+| Explosive Play Rate (Off) | 14.5% | 13.6% | ↑ +0.9 pp |
+| Third Down Conversion | 33.3% | 42.9% | ↓ -9.5 pp |
+| Points per Drive Differential | -0.025 | 0.025 | ↓ -0.050 |
+| Yards per Play Differential | -0.172 | 0.172 | ↓ -0.344 |
+| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
+| Red Zone TD Rate (Off) | 4.5% | 5.3% | ↓ -0.7 pp |
+| Pressure Rate (Def) | 3.2% | 13.0% | ↓ -9.8 pp |
+| Tempo | 6.900 | 10.125 | ↓ -3.225 |
+| PowerScore | 0.197 | 0.182 | ↑ +0.015 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | MIA | WAS | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.176 | 0.168 | +0.008 |
-| EPA Defense | 20% | 0.074 | 0.207 | -0.133 |
-| Success Rate Offense | 25% | 47.9% | 54.1% | -6.1 pp |
-| Tempo | 20% | 0.096 | 0.081 | +0.015 |
+| EPA Offense | 35% | 0.091 | 0.011 | +0.081 |
+| EPA Defense | 20% | 0.011 | 0.091 | -0.081 |
+| Success Rate Offense | 25% | 53.6% | 53.1% | +0.5 pp |
+| Tempo | 20% | 0.145 | 0.136 | +0.009 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | MIA | WAS | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.176 | 0.168 | +0.008 |
-| EPA Defense | 20% | 0.074 | 0.207 | -0.133 |
-| Success Rate Offense | 15% | 47.9% | 54.1% | -6.1 pp |
-| Turnover Margin | 10% | 3.000 | 0.000 | +3.000 |
-| Tempo | 10% | 0.096 | 0.081 | +0.015 |
-| Red Zone TD Rate (Off) | 10% | 17.6% | 12.5% | +5.1 pp |
-| Pressure Rate (Def) | 10% | 6.9% | 3.3% | +3.6 pp |
+| EPA Offense | 25% | 0.091 | 0.011 | +0.081 |
+| EPA Defense | 20% | 0.011 | 0.091 | -0.081 |
+| Success Rate Offense | 15% | 53.6% | 53.1% | +0.5 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.145 | 0.136 | +0.009 |
+| Red Zone TD Rate (Off) | 10% | 4.5% | 5.3% | -0.7 pp |
+| Pressure Rate (Def) | 10% | 3.2% | 13.0% | -9.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-WAS edge: +0.036 (MIA +0.215 vs WAS +0.252)
+MIA edge: +0.015 (MIA +0.197 vs WAS +0.182)
 **7 metrics version:**
-MIA edge: +0.276 (MIA +0.465 vs WAS +0.188)
-**Verdict:** MIA holds the edge in the extended breakdown (lead 0.276), driven by Turnover Margin (10% weight).
+WAS edge: +0.005 (MIA +0.128 vs WAS +0.132)
+**Verdict:** WAS holds the edge in the extended breakdown (lead 0.005), driven by EPA Defense (20% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - WAS) | -0.7 pts (favours WAS) |
-| Model Win% MIA | 47.2% |
-| Model Win% WAS | 52.8% |
+| Model Spread (MIA - WAS) | +0.3 pts (favours MIA) |
+| Model Win% MIA | 51.2% |
+| Model Win% WAS | 48.8% |
 | SOS Differential (MIA-WAS) | -0.009 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ MIA edge: +0.276 (MIA +0.465 vs WAS +0.188)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| MIA | 34.2% | n/a | n/a | 60.0% | 50.0% | n/a |
-| WAS | 40.5% | n/a | n/a | 62.1% | 53.8% | n/a |
+| MIA | 33.3% | 44.1% | -10.7% | 52.2% | 54.3% | Run heavy |
+| WAS | 38.3% | 44.1% | -5.8% | 61.3% | 48.0% | Run heavy |
 
 ## Situational Edges
 

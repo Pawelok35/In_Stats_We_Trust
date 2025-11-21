@@ -227,13 +227,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | GB (A) | 13-30 | GB | 0.345 | -0.054 | 43.4% | -1.700 |
+| 1 | GB (A) | 13-30 | GB | 0.330 | -0.054 | 43.4% | -1.700 |
 
 **CHI analogs vs DET profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | MIN (H) | 18-29 | MIN | 0.319 | -0.109 | 37.4% | -0.791 |
+| 1 | MIN (H) | 18-29 | MIN | 0.317 | -0.109 | 37.4% | -0.791 |
 
 ## Core EPA Offense Form (up to Week 1)
 

@@ -1,41 +1,59 @@
 # Matchup Report - LV vs DAL
 
+## Metric Comparison
+
+| Metric | LV | DAL | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.138 | 0.119 | ↓ -0.257 |
+| Core EPA Defense | 0.119 | -0.138 | ↑ +0.257 |
+| Success Rate Offense | 46.2% | 57.3% | ↓ -11.2 pp |
+| Success Rate Defense | 57.3% | 46.2% | ↑ +11.2 pp |
+| Explosive Play Rate (Off) | 10.3% | 13.4% | ↓ -3.2 pp |
+| Third Down Conversion | 23.1% | 36.4% | ↓ -13.3 pp |
+| Points per Drive Differential | -1.645 | 1.645 | ↓ -3.291 |
+| Yards per Play Differential | -1.621 | 1.621 | ↓ -3.241 |
+| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
+| Red Zone TD Rate (Off) | 7.7% | 11.5% | ↓ -3.8 pp |
+| Pressure Rate (Def) | 2.6% | 8.5% | ↓ -5.9 pp |
+| Tempo | 7.091 | 8.200 | ↓ -1.109 |
+| PowerScore | 0.111 | 0.184 | ↓ -0.073 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | LV | DAL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.172 | 0.228 | -0.400 |
-| EPA Defense | 20% | -0.072 | 0.244 | -0.316 |
-| Success Rate Offense | 25% | 54.5% | 52.2% | +2.3 pp |
-| Tempo | 20% | 0.152 | 0.111 | +0.040 |
+| EPA Offense | 35% | -0.138 | 0.119 | -0.257 |
+| EPA Defense | 20% | 0.119 | -0.138 | +0.257 |
+| Success Rate Offense | 25% | 46.2% | 57.3% | -11.2 pp |
+| Tempo | 20% | 0.103 | 0.134 | -0.032 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | LV | DAL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.172 | 0.228 | -0.400 |
-| EPA Defense | 20% | -0.072 | 0.244 | -0.316 |
-| Success Rate Offense | 15% | 54.5% | 52.2% | +2.3 pp |
-| Turnover Margin | 10% | -3.000 | 1.000 | -4.000 |
-| Tempo | 10% | 0.152 | 0.111 | +0.040 |
-| Red Zone TD Rate (Off) | 10% | 15.4% | 22.2% | -6.8 pp |
-| Pressure Rate (Def) | 10% | 2.5% | 2.2% | +0.3 pp |
+| EPA Offense | 25% | -0.138 | 0.119 | -0.257 |
+| EPA Defense | 20% | 0.119 | -0.138 | +0.257 |
+| Success Rate Offense | 15% | 46.2% | 57.3% | -11.2 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.103 | 0.134 | -0.032 |
+| Red Zone TD Rate (Off) | 10% | 7.7% | 11.5% | -3.8 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 8.5% | -5.9 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-DAL edge: +0.189 (LV +0.092 vs DAL +0.282)
+DAL edge: +0.073 (LV +0.111 vs DAL +0.184)
 **7 metrics version:**
-DAL edge: +0.562 (LV -0.242 vs DAL +0.320)
-**Verdict:** DAL holds the edge in the extended breakdown (lead 0.562), driven by Turnover Margin (10% weight).
+DAL edge: +0.042 (LV +0.079 vs DAL +0.121)
+**Verdict:** DAL holds the edge in the extended breakdown (lead 0.042), driven by EPA Offense (25% weight).
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - DAL) | -3.5 pts (favours DAL) |
-| Model Win% LV | 35.8% |
-| Model Win% DAL | 64.2% |
+| Model Spread (LV - DAL) | -1.3 pts (favours DAL) |
+| Model Win% LV | 44.4% |
+| Model Win% DAL | 55.6% |
 | SOS Differential (LV-DAL) | -0.089 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
@@ -43,8 +61,8 @@ DAL edge: +0.562 (LV -0.242 vs DAL +0.320)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| LV | 31.8% | n/a | n/a | 57.8% | 48.3% | n/a |
-| DAL | 45.6% | n/a | n/a | 45.0% | 44.7% | n/a |
+| LV | 60.3% | 44.1% | 16.2% | 40.4% | 54.8% | Pass heavy |
+| DAL | 46.3% | 44.1% | 2.3% | 55.3% | 59.1% | Slight pass lean |
 
 ## Situational Edges
 

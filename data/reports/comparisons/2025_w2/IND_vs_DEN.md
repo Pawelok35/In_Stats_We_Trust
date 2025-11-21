@@ -233,7 +233,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | TEN (H) | 20-12 | DEN | 0.202 | -0.108 | 41.9% | 0.571 |
+| 1 | TEN (H) | 20-12 | DEN | 0.208 | -0.108 | 41.9% | 0.571 |
 
 ## Core EPA Offense Form (up to Week 1)
 

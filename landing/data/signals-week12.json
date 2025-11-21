@@ -1,0 +1,72 @@
+[
+  {
+    "id": "ultimate-none",
+    "date": "2025-11-17",
+    "season": 2025,
+    "week": 12,
+    "codename": "Ultimate Supercell",
+    "rating": null,
+    "stake_units": null,
+    "matchup": "No qualifying matchup",
+    "direction": "-",
+    "result": "Awaiting perfect alignment",
+    "score": "-",
+    "slug": "ultimate_supercell"
+  },
+  {
+    "id": "hou-buf",
+    "date": "2025-11-17",
+    "season": 2025,
+    "week": 12,
+    "codename": "Supercell",
+    "rating": 6.3,
+    "stake_units": 3.5,
+    "matchup": "HOU vs BUF",
+    "direction": "BUF -3.5",
+    "result": "Pending",
+    "score": "-",
+    "slug": "HOU_vs_BUF"
+  },
+  {
+    "id": "la-tb",
+    "date": "2025-11-17",
+    "season": 2025,
+    "week": 12,
+    "codename": "Supercell",
+    "rating": 6.3,
+    "stake_units": 3.5,
+    "matchup": "LA vs TB",
+    "direction": "LA -6.5",
+    "result": "Pending",
+    "score": "-",
+    "slug": "LA_vs_TB"
+  },
+  {
+    "id": "ten-sea",
+    "date": "2025-11-17",
+    "season": 2025,
+    "week": 12,
+    "codename": "Supercell",
+    "rating": 6.3,
+    "stake_units": 3.5,
+    "matchup": "TEN vs SEA",
+    "direction": "SEA -12.5",
+    "result": "Pending",
+    "score": "-",
+    "slug": "TEN_vs_SEA"
+  },
+  {
+    "id": "gb-min",
+    "date": "2025-11-17",
+    "season": 2025,
+    "week": 12,
+    "codename": "Vortex",
+    "rating": 5.9,
+    "stake_units": 3.0,
+    "matchup": "GB vs MIN",
+    "direction": "GB -6.5",
+    "result": "Pending",
+    "score": "-",
+    "slug": "GB_vs_MIN"
+  }
+]

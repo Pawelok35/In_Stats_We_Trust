@@ -70,29 +70,29 @@ LAC edge: +0.062 (MIN +0.055 vs LAC +0.117)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | -4.6 pp | -2.5 pp | -1.8 pp |
-| LAC | +19.4 pp | +19.5 pp | +23.0 pp |
+| MIN | -2.8 pp | +0.8 pp | -1.8 pp |
+| LAC | +13.8 pp | +12.5 pp | +17.1 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | -5.5 pp | -6.2 pp | -5.7 pp |
-| LAC | +4.0 pp | +3.5 pp | +4.9 pp |
+| MIN | +0.7 pp | -3.3 pp | -5.7 pp |
+| LAC | -3.3 pp | -1.4 pp | +3.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | +1.4 pp | +2.2 pp | -2.1 pp |
-| LAC | +2.3 pp | +3.0 pp | +1.3 pp |
+| MIN | -4.0 pp | -3.1 pp | -3.9 pp |
+| LAC | +2.2 pp | +2.9 pp | +1.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | -2.2 pp | -2.1 pp | -1.7 pp |
-| LAC | -2.5 pp | -2.9 pp | -1.8 pp |
+| MIN | -0.1 pp | -0.4 pp | -1.7 pp |
+| LAC | -0.8 pp | -1.0 pp | -0.7 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | -7.0 pp | -7.0 pp | -7.0 pp |
-| LAC | +1.4 pp | +1.4 pp | +1.4 pp |
+| MIN | -4.0 pp | -3.7 pp | -6.8 pp |
+| LAC | +3.7 pp | +1.3 pp | -4.7 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | +0.7 pp | +0.7 pp | +0.7 pp |
-| LAC | +7.6 pp | +7.6 pp | +7.6 pp |
+| MIN | +5.8 pp | +3.7 pp | -1.5 pp |
+| LAC | +6.9 pp | +4.1 pp | +3.5 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | -2.2 pp | -2.1 pp | -1.7 pp |
-| LAC | -2.5 pp | -2.9 pp | -1.8 pp |
+| MIN | -0.1 pp | -0.4 pp | -1.7 pp |
+| LAC | -0.8 pp | -1.0 pp | -0.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | +1.4 pp | +2.2 pp | -2.1 pp |
-| LAC | +2.3 pp | +3.0 pp | +1.3 pp |
+| MIN | -4.0 pp | -3.1 pp | -3.9 pp |
+| LAC | +2.2 pp | +2.9 pp | +1.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | 41.8 | 41.8 | 41.8 |
-| LAC | 52.4 | 52.4 | 52.4 |
+| MIN | 45.5 | 45.5 | 40.9 |
+| LAC | 47.6 | 47.5 | 52.4 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | 50.7 | 50.7 | 50.7 |
-| LAC | 47.1 | 47.1 | 47.1 |
+| MIN | 49.3 | 49.5 | 51.7 |
+| LAC | 49.2 | 48.1 | 47.1 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | -8.9 | -8.9 | -8.9 |
-| LAC | 5.3 | 5.3 | 5.3 |
+| MIN | -3.8 | -3.9 | -10.8 |
+| LAC | -1.6 | -0.6 | 5.3 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | 51.2% | 51.2% | 51.2% |
-| LAC | 52.0% | 52.0% | 52.0% |
+| MIN | 44.8% | 47.0% | 53.5% |
+| LAC | 50.5% | 52.1% | 52.0% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | 48.8% | 48.8% | 48.8% |
-| LAC | 48.0% | 48.0% | 48.0% |
+| MIN | 55.2% | 53.0% | 46.5% |
+| LAC | 49.5% | 47.9% | 48.0% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | 3.57 | 3.71 | 4.09 |
-| LAC | 4.46 | 4.52 | 4.90 |
+| MIN | 3.13 | 3.40 | 4.28 |
+| LAC | 4.33 | 4.53 | 4.90 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| MIN | 3.41 | 3.53 | 3.90 |
-| LAC | 4.12 | 4.18 | 4.53 |
+| MIN | 3.85 | 3.84 | 3.71 |
+| LAC | 4.25 | 4.17 | 4.53 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | CIN (-) | 36-10 | MIN | 0.642 | 0.042 | 50.0% | 2.000 |
-| 4 | PIT (-) | 21-22 | PIT | 0.628 | 0.056 | 47.3% | -0.082 |
-| 2 | ATL (-) | 6-22 | ATL | 0.559 | -0.369 | 38.5% | -1.455 |
+| 4 | PIT (A) | 21-22 | PIT | 0.686 | 0.056 | 47.3% | -0.082 |
+| 3 | CIN (H) | 36-10 | MIN | 0.663 | 0.042 | 50.0% | 2.000 |
+| 2 | ATL (H) | 6-22 | ATL | 0.529 | -0.369 | 38.5% | -1.455 |
 
 **LAC analogs vs MIN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | DEN (-) | 23-22 | LAC | 0.832 | -0.060 | 42.3% | 0.103 |
-| 2 | LV (-) | 20-10 | LAC | 0.642 | -0.087 | 46.5% | 0.918 |
-| 5 | WAS (H) | 10-34 | WAS | 0.427 | -0.082 | 39.3% | -2.375 |
+| 3 | DEN (H) | 23-22 | LAC | 0.834 | -0.060 | 42.3% | 0.103 |
+| 2 | LV (A) | 20-10 | LAC | 0.634 | -0.087 | 46.5% | 0.918 |
+| 5 | WAS (H) | 10-34 | WAS | 0.428 | -0.082 | 39.3% | -2.375 |
 
 ## Core EPA Offense Form (up to Week 7)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LAC | 52.3% | 52.3% | 52.3% |
-| MIN | 51.2% | 51.2% | 51.2% |
+| LAC | 50.8% | 52.1% | 52.3% |
+| MIN | 45.4% | 47.5% | 53.8% |

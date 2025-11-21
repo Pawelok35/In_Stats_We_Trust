@@ -242,15 +242,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | HOU (A) | 20-17 | TB | 0.427 | 0.006 | 51.5% | 0.273 |
+| 2 | HOU (A) | 20-17 | TB | 0.422 | 0.006 | 51.5% | 0.273 |
 | 1 | ATL (A) | 23-20 | TB | 0.106 | 0.075 | 41.3% | 0.300 |
 
 **NYJ analogs vs TB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | BUF (H) | 10-27 | BUF | 0.485 | -0.170 | 42.2% | -1.727 |
-| 1 | PIT (H) | 32-34 | PIT | 0.198 | 0.158 | 55.0% | -0.182 |
+| 2 | BUF (H) | 10-27 | BUF | 0.476 | -0.170 | 42.2% | -1.727 |
+| 1 | PIT (H) | 32-34 | PIT | 0.212 | 0.158 | 55.0% | -0.182 |
 
 ## Core EPA Offense Form (up to Week 2)
 

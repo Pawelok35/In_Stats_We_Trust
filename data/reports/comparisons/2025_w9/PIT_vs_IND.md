@@ -70,29 +70,29 @@ PIT edge: +0.584 (PIT +0.396 vs IND -0.188)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | -11.6 pp | -9.7 pp | -6.9 pp |
-| IND | +5.2 pp | +8.1 pp | +3.8 pp |
+| PIT | -6.6 pp | -6.8 pp | -6.9 pp |
+| IND | +4.1 pp | +10.0 pp | +3.8 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | +8.0 pp | +7.6 pp | +4.8 pp |
-| IND | +11.2 pp | +15.7 pp | +16.6 pp |
+| PIT | +4.9 pp | +6.1 pp | +4.8 pp |
+| IND | +6.5 pp | +12.5 pp | +16.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | +3.4 pp | +3.8 pp | +3.0 pp |
-| IND | +3.2 pp | +3.9 pp | -0.1 pp |
+| PIT | +1.1 pp | +3.6 pp | +3.0 pp |
+| IND | +3.5 pp | +3.5 pp | -0.1 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | -1.6 pp | -0.9 pp | -1.3 pp |
-| IND | +3.3 pp | +2.7 pp | +5.5 pp |
+| PIT | -1.1 pp | -1.4 pp | -1.3 pp |
+| IND | +1.7 pp | +2.5 pp | +5.5 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | +2.5 pp | +2.5 pp | +3.7 pp |
-| IND | +2.1 pp | +2.1 pp | +4.2 pp |
+| PIT | -0.8 pp | +3.4 pp | +3.7 pp |
+| IND | +4.2 pp | +2.5 pp | +4.2 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | -4.7 pp | -4.7 pp | -4.6 pp |
-| IND | +3.2 pp | +3.2 pp | +2.3 pp |
+| PIT | -2.7 pp | -2.2 pp | -4.6 pp |
+| IND | +2.3 pp | +1.1 pp | +2.3 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | -1.6 pp | -0.9 pp | -1.3 pp |
-| IND | +3.3 pp | +2.7 pp | +5.5 pp |
+| PIT | -1.1 pp | -1.4 pp | -1.3 pp |
+| IND | +1.7 pp | +2.5 pp | +5.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | +3.4 pp | +3.8 pp | +3.0 pp |
-| IND | +3.2 pp | +3.9 pp | -0.1 pp |
+| PIT | +1.1 pp | +3.6 pp | +3.0 pp |
+| IND | +3.5 pp | +3.5 pp | -0.1 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | 48.6 | 48.6 | 48.6 |
-| IND | 48.4 | 48.4 | 44.4 |
+| PIT | 49.5 | 47.9 | 48.6 |
+| IND | 48.1 | 48.7 | 44.4 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | 52.2 | 52.2 | 52.2 |
-| IND | 51.9 | 51.9 | 52.0 |
+| PIT | 48.9 | 48.7 | 52.2 |
+| IND | 53.8 | 49.5 | 52.0 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | -3.6 | -3.6 | -3.6 |
-| IND | -3.5 | -3.5 | -7.5 |
+| PIT | 0.6 | -0.8 | -3.6 |
+| IND | -5.7 | -0.8 | -7.5 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | 46.4% | 46.4% | 46.4% |
-| IND | 48.4% | 48.4% | 49.0% |
+| PIT | 44.6% | 43.0% | 46.4% |
+| IND | 44.1% | 47.8% | 49.0% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | 53.6% | 53.6% | 53.6% |
-| IND | 51.6% | 51.6% | 51.0% |
+| PIT | 55.4% | 57.0% | 53.6% |
+| IND | 55.9% | 52.2% | 51.0% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | 3.25 | 3.36 | 3.58 |
-| IND | 3.94 | 3.66 | 3.58 |
+| PIT | 3.12 | 3.11 | 3.58 |
+| IND | 3.60 | 3.62 | 3.58 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| PIT | 3.75 | 3.88 | 4.12 |
-| IND | 4.21 | 3.91 | 3.73 |
+| PIT | 3.88 | 4.12 | 4.12 |
+| IND | 4.55 | 3.95 | 3.73 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | GB (H) | 25-32 | GB | 0.959 | 0.017 | 43.8% | -0.644 |
-| 3 | NE (-) | 21-16 | PIT | 0.782 | 0.037 | 51.5% | 0.544 |
-| 2 | SEA (-) | 23-27 | SEA | 0.609 | -0.208 | 36.8% | -0.314 |
+| 8 | GB (A) | 25-32 | GB | 0.960 | 0.017 | 43.8% | -0.644 |
+| 3 | NE (A) | 21-16 | PIT | 0.780 | 0.037 | 51.5% | 0.544 |
+| 2 | SEA (H) | 23-27 | SEA | 0.623 | -0.208 | 36.8% | -0.314 |
 
 **IND analogs vs PIT profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | MIA (-) | 33-8 | IND | 0.738 | 0.251 | 55.3% | 3.571 |
-| 6 | ARI (H) | 31-27 | IND | 0.651 | 0.164 | 56.6% | 0.400 |
-| 7 | LAC (A) | 38-27 | IND | 0.428 | 0.367 | 55.4% | 1.222 |
+| 1 | MIA (H) | 33-8 | IND | 0.749 | 0.251 | 55.3% | 3.571 |
+| 6 | ARI (A) | 31-27 | IND | 0.687 | 0.164 | 56.6% | 0.400 |
+| 7 | LAC (H) | 38-27 | IND | 0.471 | 0.367 | 55.4% | 1.222 |
 
 ## Core EPA Offense Form (up to Week 8)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| IND | 48.3% | 48.3% | 48.8% |
-| PIT | 46.5% | 46.5% | 46.5% |
+| IND | 43.8% | 47.7% | 48.8% |
+| PIT | 44.8% | 43.3% | 46.5% |

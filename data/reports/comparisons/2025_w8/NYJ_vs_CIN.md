@@ -70,29 +70,29 @@ CIN edge: +0.021 (NYJ +0.224 vs CIN +0.245)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -16.5 pp | -14.4 pp | -15.2 pp |
-| CIN | -1.6 pp | -6.2 pp | +0.4 pp |
+| NYJ | -15.4 pp | -12.8 pp | -15.2 pp |
+| CIN | +3.0 pp | -1.8 pp | +0.4 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -12.8 pp | -16.5 pp | -18.3 pp |
-| CIN | +1.3 pp | +0.7 pp | +2.2 pp |
+| NYJ | -10.3 pp | -16.5 pp | -18.3 pp |
+| CIN | +0.6 pp | +1.7 pp | +2.2 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -14.7 pp | -14.0 pp | -14.0 pp |
-| CIN | +0.6 pp | -0.6 pp | +0.3 pp |
+| NYJ | -8.6 pp | -9.5 pp | -14.0 pp |
+| CIN | -3.2 pp | -3.8 pp | +0.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -5.5 pp | -7.0 pp | -8.4 pp |
-| CIN | -1.2 pp | -0.0 pp | +2.4 pp |
+| NYJ | -4.1 pp | -6.9 pp | -8.4 pp |
+| CIN | -2.0 pp | -0.9 pp | +2.4 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +102,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -8.0 pp | -8.0 pp | -8.0 pp |
-| CIN | +17.5 pp | +17.5 pp | +17.5 pp |
+| NYJ | +1.6 pp | -3.1 pp | -8.0 pp |
+| CIN | +6.3 pp | +10.0 pp | +17.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -26.3 pp | -26.3 pp | -26.3 pp |
-| CIN | +8.0 pp | +8.0 pp | +8.0 pp |
+| NYJ | -12.6 pp | -14.6 pp | -26.3 pp |
+| CIN | +0.4 pp | -2.4 pp | +8.0 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -5.5 pp | -7.0 pp | -8.4 pp |
-| CIN | -1.2 pp | -0.0 pp | +2.4 pp |
+| NYJ | -4.1 pp | -6.9 pp | -8.4 pp |
+| CIN | -2.0 pp | -0.9 pp | +2.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -14.7 pp | -14.0 pp | -14.0 pp |
-| CIN | +0.6 pp | -0.6 pp | +0.3 pp |
+| NYJ | -8.6 pp | -9.5 pp | -14.0 pp |
+| CIN | -3.2 pp | -3.8 pp | +0.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +134,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 44.4 | 44.4 | 44.4 |
-| CIN | 46.2 | 46.2 | 46.2 |
+| NYJ | 47.9 | 46.4 | 44.4 |
+| CIN | 47.2 | 46.2 | 46.2 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 40.1 | 40.1 | 40.1 |
-| CIN | 49.0 | 49.0 | 49.0 |
+| NYJ | 45.9 | 45.0 | 40.1 |
+| CIN | 45.9 | 45.5 | 49.0 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 4.3 | 4.3 | 4.3 |
-| CIN | -2.8 | -2.8 | -2.8 |
+| NYJ | 2.0 | 1.5 | 4.3 |
+| CIN | 1.3 | 0.8 | -2.8 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +187,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 47.8% | 47.8% | 47.8% |
-| CIN | 55.1% | 55.1% | 55.1% |
+| NYJ | 42.6% | 45.5% | 47.8% |
+| CIN | 49.3% | 49.8% | 55.1% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 52.2% | 52.2% | 52.2% |
-| CIN | 44.9% | 44.9% | 44.9% |
+| NYJ | 57.4% | 54.5% | 52.2% |
+| CIN | 50.7% | 50.2% | 44.9% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 3.39 | 3.43 | 3.30 |
-| CIN | 4.10 | 4.16 | 4.62 |
+| NYJ | 3.02 | 3.27 | 3.30 |
+| CIN | 3.67 | 3.76 | 4.62 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 3.70 | 3.75 | 3.61 |
-| CIN | 3.34 | 3.39 | 3.77 |
+| NYJ | 4.07 | 3.92 | 3.61 |
+| CIN | 3.77 | 3.79 | 3.77 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | MIA (-) | 21-30 | MIA | 0.943 | 0.074 | 56.8% | -0.900 |
-| 5 | DAL (H) | 22-37 | DAL | 0.717 | 0.025 | 50.0% | -1.250 |
-| 1 | PIT (-) | 32-34 | PIT | 0.596 | 0.158 | 55.0% | -0.182 |
+| 4 | MIA (A) | 21-30 | MIA | 0.944 | 0.074 | 56.8% | -0.900 |
+| 5 | DAL (H) | 22-37 | DAL | 0.718 | 0.025 | 50.0% | -1.250 |
+| 1 | PIT (H) | 32-34 | PIT | 0.594 | 0.158 | 55.0% | -0.182 |
 
 **CIN analogs vs NYJ profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | JAX (-) | 31-25 | CIN | 0.707 | 0.082 | 51.8% | 0.568 |
-| 1 | CLE (-) | 17-16 | CIN | 0.672 | -0.066 | 44.1% | 0.100 |
-| 3 | MIN (-) | 10-36 | MIN | 0.498 | -0.513 | 33.3% | -2.000 |
+| 2 | JAX (H) | 31-25 | CIN | 0.707 | 0.082 | 51.8% | 0.568 |
+| 1 | CLE (A) | 17-16 | CIN | 0.675 | -0.066 | 44.1% | 0.100 |
+| 3 | MIN (A) | 10-36 | MIN | 0.486 | -0.513 | 33.3% | -2.000 |
 
 ## Core EPA Offense Form (up to Week 7)
 
@@ -342,5 +342,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CIN | 55.1% | 55.1% | 55.1% |
-| NYJ | 48.4% | 48.4% | 48.4% |
+| CIN | 50.0% | 50.4% | 55.1% |
+| NYJ | 43.0% | 45.9% | 48.4% |
