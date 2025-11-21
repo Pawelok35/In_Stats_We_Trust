@@ -28,6 +28,10 @@ ATL edge: +0.000 (WAS +0.182 vs ATL +0.182)
 **7 metrics version:**
 WAS edge: +0.073 (WAS +0.132 vs ATL +0.059)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.073), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

@@ -28,6 +28,10 @@ KC edge: +0.138 (KC +0.159 vs LA +0.021)
 **7 metrics version:**
 LA edge: +0.299 (KC +0.013 vs LA +0.312)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.299), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

@@ -28,6 +28,10 @@ CAR edge: +0.012 (CAR +0.182 vs DEN +0.170)
 **7 metrics version:**
 CAR edge: +0.003 (CAR +0.221 vs DEN +0.218)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.003), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

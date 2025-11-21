@@ -28,6 +28,10 @@ NE edge: +0.141 (MIN +0.038 vs NE +0.180)
 **7 metrics version:**
 NE edge: +0.395 (MIN -0.162 vs NE +0.233)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.395), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

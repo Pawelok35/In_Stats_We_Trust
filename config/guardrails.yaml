@@ -1,0 +1,26 @@
+ppd_last3:
+  min_for_supercell: 1.0
+  min_for_vortex: 0.75
+  min_for_cyclone: 0.4
+
+third_down_gap_last3:
+  min_for_supercell: 11
+  min_for_vortex: 7
+  min_for_cyclone: 4
+
+explosive_gap_last3:
+  min_for_supercell: 4.5
+  min_for_vortex: 3.0
+  min_for_cyclone: 1.5
+
+pressure_mismatch:
+  warning_threshold: 4.5    # dog pass pro – fav pressure (pp)
+  rating_penalty: 0.4
+
+redzone_cap:
+  min_redzone_td_supercell: 22  # %
+  min_redzone_td_cyclone: 18    # %
+  downgrade_if_below: true
+
+defensive_trend_guard:
+  downgrade_if_def_epa_declining: true

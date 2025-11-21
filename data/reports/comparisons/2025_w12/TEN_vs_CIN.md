@@ -28,6 +28,10 @@ CIN edge: +0.000 (TEN +0.095 vs CIN +0.095)
 **7 metrics version:**
 TEN edge: +0.131 (TEN -0.003 vs CIN -0.135)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.131), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

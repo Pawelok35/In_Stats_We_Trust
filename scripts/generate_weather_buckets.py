@@ -7,12 +7,15 @@ from pathlib import Path
 from typing import Dict, List, Tuple
 
 import pandas as pd
+import polars as pl
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 from scripts import evaluate_picks
+from metrics.form_windows import compute_form_windows
+from utils.guardrails import apply_guardrails, load_guardrails
 
 TAG_POINTS = {"GOY": 3, "GOM": 2, "GOW": 1}
 VARIANT_WEIGHTS = {"J": 1.0, "C": 0.91, "K": 0.88}
@@ -57,10 +60,30 @@ def assign_bucket(rating: float, ultimate: bool) -> str:
     return BUCKETS[-1][0]
 
 
-def build_weather_table(season: int, week: int) -> pd.DataFrame:
+def _form_windows_for_teams(season: int, week: int, teams: List[str]) -> pl.DataFrame:
+    teams = sorted({t.upper() for t in teams})
+    if not teams:
+        return pl.DataFrame()
+    return compute_form_windows(season=season, current_week=week, teams=teams)
+
+
+def _extract_window_row(form_df: pl.DataFrame, window_label: str) -> Dict:
+    if form_df.is_empty():
+        return {}
+    subset = form_df.filter(pl.col("window") == window_label)
+    return subset.to_dicts()[0] if subset.height else {}
+
+
+def build_weather_table(season: int, week: int, guardrails_cfg: Dict) -> pd.DataFrame:
     df = load_picks_for_week(season, week)
     if df.empty:
         return pd.DataFrame()
+    # form windows for all teams involved
+    all_teams = set(df["home"].tolist()) | set(df["away"].tolist())
+    form_df = _form_windows_for_teams(season, week, list(all_teams))
+    last3_row = _extract_window_row(form_df, "last 3 games")
+    last5_row = _extract_window_row(form_df, "last 5 games")
+
     rows: List[Dict] = []
     for (home, away), grp in df.groupby(["home", "away"]):
         rating = 0.0
@@ -95,6 +118,22 @@ def build_weather_table(season: int, week: int) -> pd.DataFrame:
         bucket = assign_bucket(rating, ultimate)
         ref = grp[grp["variant"] == "J"].iloc[0] if not grp[grp["variant"] == "J"].empty else grp.iloc[0]
         pick_team = ref["model_winner"]
+        # Guardrails: faworyt = pick_team, underdog = drugi
+        dog_team = home if pick_team == away else away
+        matchup_metrics = {
+            "fav": pick_team,
+            "dog": dog_team,
+            "last3": last3_row,
+            "last5": last5_row,
+        }
+        adj_rating, adj_bucket, notes = apply_guardrails(
+            matchup=matchup_metrics,
+            bucket=bucket,
+            rating=rating,
+            guardrails=guardrails_cfg,
+        )
+        # Re-assign bucket if rating zmienił się dodatkowo
+        adj_bucket = assign_bucket(adj_rating, ultimate=False) if adj_bucket == bucket else adj_bucket
         rows.append(
             {
                 "season": season,
@@ -102,8 +141,9 @@ def build_weather_table(season: int, week: int) -> pd.DataFrame:
                 "home_team": home,
                 "away_team": away,
                 "pick_team": pick_team,
-                "rating": round(rating, 3),
-                "bucket": bucket,
+                "rating": round(adj_rating, 3),
+                "bucket": adj_bucket,
+                "guardrail_notes": ";".join(notes) if notes else "",
                 "handicap": ref.get("handicap"),
             }
         )
@@ -128,6 +168,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("data/results/manual_results.jsonl"),
         help="Optional JSONL with manual results to score picks (for WIN/LOSS/PUSH).",
     )
+    parser.add_argument(
+        "--guardrails",
+        type=Path,
+        default=Path("config/guardrails.yaml"),
+        help="Path to guardrails YAML (default: config/guardrails.yaml)",
+    )
     return parser.parse_args()
 
 
@@ -140,9 +186,11 @@ def main() -> None:
     else:
         raise SystemExit("Podaj --week lub zakres --start-week/--end-week.")
 
+    guardrails_cfg = load_guardrails(args.guardrails)
+
     tables = []
     for wk in weeks:
-        tbl = build_weather_table(args.season, wk)
+        tbl = build_weather_table(args.season, wk, guardrails_cfg)
         if tbl.empty:
             print(f"[WARN] Skipping week {wk}: no GOY/GOM/GOW picks found.")
             continue

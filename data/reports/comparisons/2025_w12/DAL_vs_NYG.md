@@ -28,6 +28,10 @@ NYG edge: +0.050 (DAL +0.184 vs NYG +0.234)
 **7 metrics version:**
 DAL edge: +0.131 (DAL +0.121 vs NYG -0.010)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.131), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

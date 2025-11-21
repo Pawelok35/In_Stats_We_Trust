@@ -28,6 +28,10 @@ NYJ edge: +0.096 (NYJ +0.155 vs CHI +0.060)
 **7 metrics version:**
 CHI edge: +0.212 (NYJ +0.013 vs CHI +0.225)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.212), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

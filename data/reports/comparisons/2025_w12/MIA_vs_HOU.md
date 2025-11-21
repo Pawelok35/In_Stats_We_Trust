@@ -28,6 +28,10 @@ MIA edge: +0.075 (MIA +0.197 vs HOU +0.122)
 **7 metrics version:**
 HOU edge: +0.057 (MIA +0.128 vs HOU +0.185)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.057), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

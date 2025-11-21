@@ -28,6 +28,10 @@ TB edge: +0.210 (CLE +0.046 vs TB +0.257)
 **7 metrics version:**
 TB edge: +0.064 (CLE +0.030 vs TB +0.093)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.064), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

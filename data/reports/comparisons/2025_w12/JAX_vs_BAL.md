@@ -28,6 +28,10 @@ JAX edge: +0.069 (JAX +0.147 vs BAL +0.079)
 **7 metrics version:**
 JAX edge: +0.056 (JAX +0.100 vs BAL +0.044)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.056), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

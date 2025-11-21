@@ -28,6 +28,10 @@ BUF edge: +0.324 (DET -0.021 vs BUF +0.304)
 **7 metrics version:**
 BUF edge: +0.466 (DET -0.135 vs BUF +0.331)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.466), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

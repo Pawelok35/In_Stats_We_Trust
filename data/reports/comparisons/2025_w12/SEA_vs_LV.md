@@ -28,6 +28,10 @@ LV edge: +0.064 (SEA +0.047 vs LV +0.111)
 **7 metrics version:**
 LV edge: +0.368 (SEA -0.289 vs LV +0.079)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.368), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

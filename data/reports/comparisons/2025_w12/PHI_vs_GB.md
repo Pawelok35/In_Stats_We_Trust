@@ -28,6 +28,10 @@ GB edge: +0.268 (PHI +0.007 vs GB +0.275)
 **7 metrics version:**
 GB edge: +0.330 (PHI +0.089 vs GB +0.419)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.330), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

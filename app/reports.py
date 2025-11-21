@@ -3593,6 +3593,33 @@ def generate_comparison_report(
         md_lines.append("## PowerScore Summary")
         md_lines.append("")
         md_lines.extend(summary_lines)
+        risk_flags: list[str] = []
+        # Heurystyka: jeżeli przewaga opiera się głównie na niestabilnych metrykach
+        # (Turnover Margin / Red Zone TD Rate), pokaż ostrzeżenie.
+        def _risk_flags_from_entries(entries: list[dict[str, Any]]) -> list[str]:
+            if not entries:
+                return []
+            vols = [
+                e for e in entries
+                if isinstance(e.get("label"), str)
+                and any(tok in e["label"].lower() for tok in ("turnover", "red zone"))
+            ]
+            share = sum(e.get("weight", 0.0) for e in vols)
+            if share >= 0.20:  # ≥20% wagi z niestabilnych statystyk
+                return [
+                    f"Score relies ~{share * 100:.0f}% on volatile stats (TO/Red Zone) – treat edge with caution."
+                ]
+            return []
+
+        if extended_summary:
+            risk_flags.extend(_risk_flags_from_entries(extended_summary.get("entries") or []))
+
+        if risk_flags:
+            md_lines.append("### Risk flags")
+            md_lines.append("")
+            for flag in risk_flags:
+                md_lines.append(f"- {flag}")
+            md_lines.append("")
         md_lines.append("")
 
     projected_md = _build_projected_spread_section(

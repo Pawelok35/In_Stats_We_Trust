@@ -28,6 +28,10 @@ ARI edge: +0.136 (ARI +0.164 vs LAC +0.029)
 **7 metrics version:**
 LAC edge: +0.185 (ARI -0.165 vs LAC +0.019)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.185), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
