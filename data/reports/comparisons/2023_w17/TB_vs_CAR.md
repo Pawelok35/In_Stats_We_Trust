@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 13 | CAR (A) | 21-18 | TB | 1.000 | -0.081 | 31.2% | 0.231 |
-| 12 | NYG (A) | 20-25 | NYG | 0.944 | -0.088 | 43.6% | -0.455 |
-| 15 | LAC (A) | 34-20 | TB | 0.920 | 0.272 | 49.4% | 1.556 |
+| 7 | CAR (A) | 13-18 | CAR | 1.000 | -0.069 | 37.8% | -0.418 |
+| 16 | ARI (A) | 30-13 | TB | 0.924 | 0.063 | 40.7% | 1.527 |
+| 15 | CIN (H) | 34-20 | TB | 0.786 | 0.272 | 49.4% | 1.556 |
 
 **CAR analogs vs TB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 13 | TB (H) | 18-21 | TB | 1.000 | -0.085 | 45.5% | -0.231 |
-| 16 | ARI (H) | 30-33 | ARI | 0.737 | 0.190 | 46.4% | -0.300 |
-| 2 | LAC (H) | 17-20 | LAC | 0.713 | -0.051 | 44.7% | -0.273 |
+| 7 | TB (H) | n/a | n/a | 1.000 | n/a | n/a | n/a |
+| 13 | TB (-) | 18-21 | TB | 1.000 | -0.085 | 45.5% | -0.231 |
+| 4 | ARI (H) | 7-15 | ARI | 0.737 | -0.182 | 38.2% | -0.800 |
 
 ## Core EPA Offense Form (up to Week 16)
 

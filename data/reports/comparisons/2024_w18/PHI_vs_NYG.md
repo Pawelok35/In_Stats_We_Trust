@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | NYG (A) | 28-3 | PHI | 1.000 | 0.132 | 44.6% | 1.923 |
-| 10 | DAL (A) | 34-6 | PHI | 0.986 | -0.022 | 47.7% | 1.967 |
-| 17 | DAL (H) | 35-8 | PHI | 0.986 | 0.221 | 51.2% | 2.482 |
+| 7 | NYG (-) | 28-3 | PHI | 1.000 | 0.132 | 44.6% | 1.923 |
+| 14 | NYG (H) | 22-16 | PHI | 1.000 | 0.036 | 44.0% | 0.667 |
+| 6 | DAL (H) | 26-11 | PHI | 0.986 | -0.012 | 45.0% | 1.489 |
 
 **NYG analogs vs PHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | PHI (H) | 3-28 | PHI | 1.000 | -0.253 | 39.2% | -1.923 |
+| 14 | PHI (A) | 11-13 | PHI | 1.000 | -0.184 | 33.7% | -0.154 |
 | 1 | MIN (H) | 6-22 | MIN | 0.950 | -0.235 | 38.2% | -1.455 |
-| 8 | PIT (A) | 24-18 | NYG | 0.797 | -0.027 | 43.5% | 0.515 |
+| 16 | MIN (A) | 7-24 | MIN | 0.950 | -0.344 | 47.4% | -1.564 |
 
 ## Core EPA Offense Form (up to Week 17)
 

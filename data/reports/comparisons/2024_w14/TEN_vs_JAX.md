@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 9 | NE (H) | 20-19 | TEN | 0.751 | -0.052 | 40.9% | 0.121 |
-| 4 | MIA (A) | 29-12 | TEN | 0.566 | 0.042 | 41.9% | 1.308 |
-| 6 | IND (H) | 17-22 | IND | 0.554 | -0.029 | 40.3% | -0.455 |
+| 12 | CIN (H) | 30-21 | TEN | 0.793 | -0.006 | 45.6% | 0.643 |
+| 3 | LV (H) | 14-24 | LV | 0.622 | -0.244 | 49.3% | -0.909 |
+| 4 | IND (A) | 29-12 | TEN | 0.554 | 0.042 | 41.9% | 1.308 |
 
 **JAX analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | CLE (H) | 13-18 | CLE | 0.938 | -0.034 | 45.3% | -0.478 |
-| 5 | IND (H) | 37-31 | JAX | 0.924 | 0.235 | 52.6% | 0.468 |
-| 6 | CHI (A) | 16-35 | CHI | 0.880 | 0.012 | 43.6% | -1.900 |
+| 2 | IND (H) | 13-18 | IND | 0.924 | -0.034 | 45.3% | -0.478 |
+| 6 | IND (A) | 16-35 | IND | 0.924 | 0.012 | 43.6% | -1.900 |
+| 7 | NYG (H) | 26-22 | JAX | 0.920 | 0.229 | 56.2% | 0.444 |
 
 ## Core EPA Offense Form (up to Week 13)
 

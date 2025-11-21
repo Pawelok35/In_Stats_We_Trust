@@ -209,3 +209,45 @@ Completed validation reports are stored under `docs/validation/` (e.g., `ISTW_T2
 ## Generowanie listy meczy na dany sezon i wybrane kolejki 
 python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 2 --end-week 12 --output data/results/weather_bucket_games.csv
 
+- Wybór innego sezonu
+python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 2 --end-week 18 --output data/results/weather_bucket_games.csv
+
+
+## Dla całego sezonu week 2 - week 18
+
+
+2..18 | ForEach-Object {
+  $w = $_
+  python -X utf8 scripts/run_week_pipeline.py `
+    --season 2022 `
+    --week $w `
+    --reference-week ($w-1) `
+    --picks-start-week $w `
+    --run-convergence
+}
+
+
+## podsumowanie metryk wg. sezonow 
+
+$rows = @()
+Get-ChildItem data/results/weather_bucket_games_season*.csv -File | ForEach-Object {
+  $csv = Import-Csv $_ | Where-Object { $_.result -in 'WIN','LOSS' }
+  $csv | Group-Object season,bucket | ForEach-Object {
+    $bucket = $_.Group
+    $wins   = ($bucket | Where-Object result -eq 'WIN').Count
+    $losses = ($bucket | Where-Object result -eq 'LOSS').Count
+    $total  = $wins + $losses
+    $winPct = if ($total) { [math]::Round($wins / $total * 100, 1) } else { 0 }
+    $pnl    = [math]::Round($wins * 0.9 - $losses * 1.0, 1)
+    $rows  += [pscustomobject]@{
+      season    = $bucket[0].season
+      bucket    = $bucket[0].bucket
+      count     = $total
+      wins      = $wins
+      losses    = $losses
+      win_pct   = $winPct
+      pnl_units = $pnl
+    }
+  }
+}
+$rows | Sort-Object season,bucket | Format-Table -AutoSize

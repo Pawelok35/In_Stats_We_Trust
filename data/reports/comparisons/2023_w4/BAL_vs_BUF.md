@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | DAL (A) | 17-22 | DAL | 0.932 | -0.135 | 44.6% | -0.312 |
+| 2 | MIA (H) | 33-20 | BAL | 0.845 | 0.079 | 52.2% | 1.417 |
 | 1 | HOU (H) | 25-8 | BAL | 0.396 | -0.053 | 40.5% | 1.523 |
-| 2 | LV (H) | 33-20 | BAL | 0.254 | 0.079 | 52.2% | 1.417 |
+| 3 | NE (A) | 17-22 | NE | 0.392 | -0.135 | 44.6% | -0.312 |
 
 **BUF analogs vs BAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | MIA (A) | 38-10 | BUF | 0.716 | 0.260 | 57.6% | 3.111 |
-| 3 | JAX (H) | 31-3 | BUF | 0.467 | 0.161 | 44.4% | 2.545 |
+| 3 | MIA (A) | 31-3 | BUF | 0.716 | 0.161 | 44.4% | 2.545 |
 | 1 | NYJ (A) | 22-15 | BUF | 0.231 | -0.114 | 46.4% | 0.667 |
+| 2 | TEN (H) | 38-10 | BUF | 0.060 | 0.260 | 57.6% | 3.111 |
 
 ## Core EPA Offense Form (up to Week 3)
 

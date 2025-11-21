@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | PIT (A) | 10-14 | PIT | 0.770 | -0.304 | 27.0% | -0.209 |
-| 6 | CIN (H) | 9-16 | CIN | 0.743 | -0.098 | 44.0% | -0.656 |
-| 12 | TB (H) | 10-7 | NYG | 0.677 | -0.191 | 33.8% | 0.250 |
+| 2 | CAR (H) | 31-28 | NYG | 0.853 | 0.144 | 49.4% | 0.300 |
+| 7 | JAX (A) | 14-7 | NYG | 0.760 | -0.073 | 43.4% | 0.500 |
+| 9 | LV (-) | 6-32 | LV | 0.735 | -0.357 | 34.2% | -2.038 |
 
 **IND analogs vs NYG profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 10 | NE (H) | 10-6 | IND | 0.909 | -0.003 | 41.4% | 0.400 |
-| 13 | NE (A) | 27-28 | NE | 0.909 | 0.025 | 44.9% | -0.071 |
-| 4 | PIT (H) | 23-29 | PIT | 0.845 | -0.013 | 36.7% | -0.500 |
+| 9 | NE (A) | 15-11 | IND | 0.909 | -0.002 | 40.7% | 0.417 |
+| 12 | PIT (H) | 27-22 | IND | 0.845 | 0.005 | 47.1% | 0.455 |
+| 10 | LV (A) | 10-6 | IND | 0.834 | -0.003 | 41.4% | 0.400 |
 
 ## Core EPA Offense Form (up to Week 16)
 

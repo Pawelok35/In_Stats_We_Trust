@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 14 | NO (H) | 11-13 | NO | 0.910 | -0.184 | 33.7% | -0.154 |
-| 3 | CLE (A) | 21-16 | NYG | 0.877 | -0.144 | 42.9% | 0.329 |
-| 5 | SEA (A) | 23-22 | NYG | 0.793 | -0.008 | 49.4% | 0.103 |
+| 10 | HOU (H) | 17-19 | HOU | 0.806 | -0.064 | 55.9% | -0.121 |
+| 8 | SEA (A) | 24-18 | NYG | 0.793 | -0.027 | 43.5% | 0.515 |
+| 4 | CHI (H) | 15-20 | CHI | 0.735 | 0.018 | 42.2% | -0.556 |
 
 **IND analogs vs NYG profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | TEN (A) | 20-15 | IND | 0.946 | 0.024 | 42.9% | 0.455 |
-| 16 | TEN (H) | 38-30 | IND | 0.946 | 0.135 | 51.2% | 0.615 |
-| 3 | CHI (H) | 21-17 | IND | 0.930 | -0.122 | 39.7% | 0.282 |
+| 13 | DAL (A) | 25-22 | IND | 0.971 | 0.118 | 56.8% | 0.378 |
+| 4 | TEN (H) | 27-24 | IND | 0.946 | 0.024 | 45.2% | 0.273 |
+| 7 | TEN (A) | 16-11 | IND | 0.946 | -0.154 | 38.3% | 0.397 |
 
 ## Core EPA Offense Form (up to Week 16)
 

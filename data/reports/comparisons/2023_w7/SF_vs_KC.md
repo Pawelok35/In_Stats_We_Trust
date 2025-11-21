@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | LA (A) | 30-13 | SF | 0.706 | 0.143 | 44.9% | 1.527 |
-| 6 | SEA (A) | 17-19 | SEA | 0.643 | -0.193 | 33.7% | -0.154 |
-| 2 | MIN (A) | 30-21 | SF | 0.370 | 0.115 | 45.9% | 0.909 |
+| 4 | LA (H) | 35-18 | SF | 0.706 | 0.401 | 59.4% | 2.089 |
+| 2 | SEA (H) | 30-21 | SF | 0.643 | 0.115 | 45.9% | 0.909 |
+| 6 | ATL (A) | 17-19 | ATL | 0.407 | -0.193 | 33.7% | -0.154 |
 
 **KC analogs vs SF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | DET (H) | 20-14 | KC | 0.961 | -0.079 | 39.5% | 0.568 |
-| 4 | LAC (A) | 23-18 | KC | 0.520 | 0.075 | 46.4% | 0.455 |
-| 5 | NO (H) | 27-20 | KC | 0.510 | 0.133 | 42.7% | 0.875 |
+| 6 | BUF (H) | 19-9 | KC | 0.922 | -0.011 | 49.4% | 0.927 |
+| 2 | LAC (H) | 17-8 | KC | 0.520 | 0.006 | 37.0% | 0.882 |
 
 ## Core EPA Offense Form (up to Week 6)
 

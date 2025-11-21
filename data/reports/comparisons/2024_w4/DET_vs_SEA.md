@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | ARI (A) | 20-13 | DET | 0.268 | -0.007 | 52.3% | 0.636 |
-| 2 | TB (H) | 16-20 | TB | 0.199 | -0.082 | 45.0% | -0.364 |
+| 3 | MIN (A) | 20-13 | DET | 0.945 | -0.007 | 52.3% | 0.636 |
+| 2 | WAS (H) | 16-20 | WAS | 0.151 | -0.082 | 45.0% | -0.364 |
 | 1 | LA (H) | 26-24 | DET | 0.043 | 0.092 | 54.4% | 0.167 |
 
 **SEA analogs vs DET profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | NE (A) | 23-20 | SEA | 0.397 | 0.061 | 52.9% | 0.250 |
+| 2 | SF (A) | 23-20 | SEA | 0.810 | 0.061 | 52.9% | 0.250 |
+| 3 | ATL (H) | 24-3 | SEA | 0.412 | -0.070 | 41.2% | 1.769 |
 | 1 | DEN (H) | 26-16 | SEA | 0.338 | -0.047 | 46.5% | 0.667 |
-| 3 | MIA (H) | 24-3 | SEA | 0.253 | -0.070 | 41.2% | 1.769 |
 
 ## Core EPA Offense Form (up to Week 3)
 

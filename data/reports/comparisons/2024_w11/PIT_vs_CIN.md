@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | CIN (H) | 37-14 | PIT | 1.000 | 0.176 | 45.2% | 2.114 |
+| 6 | TB (H) | 32-13 | PIT | 0.947 | 0.083 | 44.0% | 1.727 |
 | 1 | ATL (A) | 18-10 | PIT | 0.871 | -0.041 | 42.9% | 0.800 |
-| 8 | GB (A) | 20-26 | GB | 0.613 | 0.051 | 49.4% | -0.515 |
+| 5 | BUF (A) | 17-24 | BUF | 0.690 | 0.031 | 50.0% | -0.677 |
 
 **CIN analogs vs PIT profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | PIT (A) | 21-15 | CIN | 1.000 | -0.102 | 36.5% | 0.400 |
-| 3 | MIN (A) | 33-33 | TIE | 0.918 | 0.300 | 58.4% | -0.036 |
-| 5 | DET (H) | 36-41 | DET | 0.838 | 0.189 | 48.9% | -0.385 |
+| 6 | NO (A) | 17-7 | CIN | 0.631 | 0.017 | 45.5% | 0.909 |
+| 8 | CLE (A) | 17-42 | CLE | 0.569 | -0.017 | 45.1% | -2.736 |
+| 4 | MIA (H) | 34-22 | CIN | 0.411 | 0.201 | 49.4% | 1.218 |
 
 ## Core EPA Offense Form (up to Week 10)
 

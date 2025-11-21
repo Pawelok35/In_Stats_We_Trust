@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | NYG (A) | 31-12 | PHI | 1.000 | 0.074 | 47.6% | 1.878 |
-| 14 | CAR (H) | 7-37 | CAR | 0.954 | -0.151 | 38.9% | -2.967 |
+| 14 | NYG (H) | 7-37 | NYG | 1.000 | -0.151 | 38.9% | -2.967 |
 | 1 | NE (A) | 19-22 | NE | 0.924 | -0.055 | 36.9% | -0.181 |
+| 8 | PIT (H) | 38-34 | PHI | 0.871 | 0.217 | 42.5% | 0.348 |
 
 **NYG analogs vs PHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | PHI (H) | 14-7 | NYG | 1.000 | -0.073 | 43.4% | 0.500 |
-| 5 | SEA (A) | 10-28 | SEA | 0.867 | -0.101 | 38.0% | -1.818 |
-| 6 | CIN (H) | 9-16 | CIN | 0.831 | -0.098 | 44.0% | -0.656 |
+| 14 | PHI (A) | 24-26 | PHI | 1.000 | 0.014 | 47.4% | -0.154 |
+| 5 | GB (A) | 10-28 | GB | 0.974 | -0.101 | 38.0% | -1.818 |
+| 8 | SEA (A) | 10-14 | SEA | 0.867 | -0.304 | 27.0% | -0.209 |
 
 ## Core EPA Offense Form (up to Week 17)
 

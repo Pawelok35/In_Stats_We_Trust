@@ -3,7 +3,7 @@ matchups:
   - report: data/reports/comparisons/2025_w12/HOU_vs_BUF.md
     home: "HOU"
     away: "BUF"
-    spread: 6
+    spread: 5.5
     total: 43.5
     prime_time: true
     neutral_site: false

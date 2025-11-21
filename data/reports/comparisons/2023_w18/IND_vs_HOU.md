@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | HOU (A) | 31-18 | IND | 1.000 | 0.137 | 46.7% | 1.282 |
-| 16 | ATL (A) | 10-32 | ATL | 0.791 | -0.146 | 34.9% | -1.991 |
-| 7 | CLE (H) | 38-31 | IND | 0.775 | -0.103 | 41.1% | 0.434 |
+| 3 | KC (H) | 22-17 | IND | 0.820 | -0.065 | 40.7% | 0.312 |
+| 15 | MIN (A) | 30-12 | IND | 0.737 | -0.059 | 43.4% | 1.644 |
+| 13 | DAL (A) | 27-28 | DAL | 0.620 | 0.025 | 44.9% | -0.071 |
 
 **HOU analogs vs IND profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | IND (H) | 20-34 | IND | 1.000 | -0.035 | 38.8% | -1.282 |
-| 15 | TEN (A) | 19-12 | HOU | 0.896 | -0.065 | 45.8% | 0.524 |
-| 17 | TEN (H) | 20-3 | HOU | 0.896 | 0.055 | 50.0% | 1.922 |
+| 8 | TEN (H) | 13-12 | HOU | 0.896 | -0.043 | 39.4% | 0.081 |
+| 16 | TEN (A) | 22-33 | TEN | 0.896 | -0.121 | 40.7% | -0.879 |
+| 4 | LAC (H) | 30-6 | HOU | 0.894 | 0.100 | 44.8% | 2.400 |
 
 ## Core EPA Offense Form (up to Week 17)
 

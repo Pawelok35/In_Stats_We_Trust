@@ -17,12 +17,11 @@ from scripts import evaluate_picks
 TAG_POINTS = {"GOY": 3, "GOM": 2, "GOW": 1}
 VARIANT_WEIGHTS = {"J": 1.0, "C": 0.91, "K": 0.88}
 BUCKETS = [
-    ("Calm", 0.0, 2.5),
-    ("Breeze", 2.5, 3.5),
-    ("Gale", 3.5, 4.6),
-    ("Cyclone", 4.6, 5.6),
-    ("Vortex", 5.6, 6.6),
-    ("Supercell", 6.6, float("inf")),
+    ("Calm", 0.0, 2.9),
+    ("Breeze", 2.9, 3.2),
+    ("Gale", 3.2, 4.8),
+    ("Cyclone", 4.8, 6.0),
+    ("Supercell", 6.0, float("inf")),
 ]
 
 

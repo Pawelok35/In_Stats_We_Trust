@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 12 | DAL (A) | 10-43 | DAL | 1.000 | -0.180 | 42.6% | -2.991 |
-| 3 | BUF (H) | 3-31 | BUF | 0.962 | -0.428 | 38.8% | -2.545 |
-| 17 | SF (H) | 10-27 | SF | 0.951 | -0.135 | 42.6% | -1.889 |
+| 4 | DAL (A) | 31-31 | TIE | 1.000 | 0.146 | 39.8% | 0.009 |
+| 16 | SF (A) | 28-26 | WAS | 0.951 | -0.158 | 34.5% | 0.102 |
+| 2 | DET (A) | 35-30 | WAS | 0.943 | 0.128 | 46.2% | 0.432 |
 
 **DAL analogs vs WAS profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 12 | WAS (H) | 39-9 | DAL | 1.000 | 0.318 | 51.4% | 2.991 |
-| 3 | ARI (A) | 16-25 | ARI | 0.968 | 0.051 | 45.8% | -1.111 |
-| 6 | LAC (A) | 20-17 | DAL | 0.909 | 0.000 | 38.8% | 0.300 |
+| 4 | WAS (H) | 26-3 | DAL | 1.000 | 0.058 | 46.5% | 2.091 |
+| 17 | TEN (A) | 20-21 | TEN | 0.924 | -0.044 | 43.4% | -0.061 |
+| 2 | CIN (H) | 30-11 | DAL | 0.860 | 0.053 | 41.3% | 1.591 |
 
 ## Core EPA Offense Form (up to Week 17)
 

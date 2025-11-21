@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | MIN (A) | 17-21 | MIN | 0.747 | -0.133 | 49.4% | -0.391 |
-| 6 | SEA (A) | 36-24 | SF | 0.592 | 0.254 | 51.8% | 1.000 |
+| 2 | SEA (H) | 17-21 | SEA | 0.592 | -0.133 | 49.4% | -0.391 |
 | 1 | NYJ (H) | 32-19 | SF | 0.555 | 0.172 | 49.4% | 1.300 |
+| 4 | LA (H) | 24-13 | SF | 0.523 | -0.021 | 42.9% | 0.917 |
 
 **KC analogs vs SF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
+| 4 | TB (A) | 17-11 | KC | 0.965 | -0.103 | 46.1% | 0.545 |
 | 1 | BAL (H) | 27-20 | KC | 0.867 | 0.124 | 47.1% | 0.700 |
-| 2 | CIN (H) | 20-23 | CIN | 0.770 | -0.006 | 53.2% | -0.273 |
-| 3 | ATL (A) | 22-19 | KC | 0.738 | 0.085 | 56.8% | 0.300 |
+| 6 | BUF (H) | n/a | n/a | 0.724 | n/a | n/a | n/a |
 
 ## Core EPA Offense Form (up to Week 6)
 

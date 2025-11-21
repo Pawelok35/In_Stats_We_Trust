@@ -15,12 +15,11 @@ ULTIMATE_CONF_THRESHOLD = 99.5
 ULTIMATE_EDGE_THRESHOLD = 35.0
 ULTIMATE_BUCKET = ("Ultimate Supercell", 4.0)
 WEATHER_BUCKETS = [
-    ("Supercell", 3.5, 6.6, math.inf),
-    ("Vortex", 3.0, 5.6, 6.6),
-    ("Cyclone", 2.5, 4.6, 5.6),
-    ("Gale", 2.0, 3.5, 4.6),
-    ("Breeze", 1.5, 2.5, 3.5),
-    ("Calm", 1.0, 0.0, 2.5),
+    ("Supercell", 3.5, 6.0, math.inf),
+    ("Cyclone", 2.5, 4.8, 6.0),
+    ("Gale", 2.0, 3.2, 4.8),
+    ("Breeze", 1.5, 2.9, 3.2),
+    ("Calm", 1.0, 0.0, 2.9),
 ]
 BASE_BUCKET = ("Base", 0.5)
 

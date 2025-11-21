@@ -242,17 +242,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | TEN (H) | 22-26 | TEN | 0.716 | -0.019 | 41.0% | -0.444 |
-| 4 | CAR (H) | 13-24 | CAR | 0.676 | -0.262 | 43.2% | -0.917 |
-| 8 | CLE (A) | 25-22 | NE | 0.664 | 0.014 | 46.3% | 0.300 |
+| 8 | NYJ (A) | 25-22 | NE | 1.000 | 0.014 | 46.3% | 0.300 |
+| 6 | CLE (A) | 21-41 | CLE | 0.664 | -0.219 | 44.8% | -1.429 |
+| 1 | CIN (A) | 16-12 | NE | 0.552 | 0.077 | 48.8% | 0.350 |
 
 **NYJ analogs vs NE profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 10 | CLE (H) | 6-27 | CLE | 0.883 | -0.049 | 51.5% | -3.429 |
-| 5 | DAL (H) | 17-16 | NYJ | 0.868 | -0.162 | 45.6% | 0.093 |
-| 7 | CAR (A) | 15-40 | CAR | 0.841 | -0.118 | 43.4% | -2.114 |
+| 8 | NE (H) | 22-25 | NE | 1.000 | 0.018 | 49.4% | -0.300 |
+| 2 | CLE (A) | 24-17 | NYJ | 0.883 | 0.085 | 45.3% | 0.636 |
+| 5 | MIA (H) | 17-16 | NYJ | 0.810 | -0.162 | 45.6% | 0.093 |
 
 ## Core EPA Offense Form (up to Week 10)
 

@@ -243,16 +243,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | KC (A) | 20-27 | KC | 0.736 | 0.021 | 55.2% | -0.700 |
-| 3 | DAL (A) | 28-27 | BAL | 0.269 | 0.124 | 46.3% | 0.061 |
-| 2 | LV (H) | 23-26 | LV | 0.131 | -0.034 | 44.9% | -0.250 |
+| 3 | NE (A) | 28-27 | BAL | 0.256 | 0.124 | 46.3% | 0.061 |
+| 2 | MIA (H) | 23-26 | MIA | 0.067 | -0.034 | 44.9% | -0.250 |
 
 **BUF analogs vs BAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | ARI (H) | 34-28 | BUF | 0.738 | 0.189 | 60.5% | 0.600 |
-| 3 | JAX (H) | 47-10 | BUF | 0.602 | 0.342 | 53.8% | 3.700 |
-| 2 | MIA (A) | 25-11 | BUF | 0.300 | 0.111 | 41.0% | 1.273 |
+| 2 | TEN (H) | 25-11 | BUF | 0.373 | 0.111 | 41.0% | 1.273 |
+| 3 | MIA (A) | 47-10 | BUF | 0.300 | 0.342 | 53.8% | 3.700 |
 
 ## Core EPA Offense Form (up to Week 3)
 
