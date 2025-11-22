@@ -4,7 +4,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Tuple
+from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 import polars as pl
@@ -19,6 +19,7 @@ from utils.guardrails import (
     apply_guardrails,
     apply_guardrails_v2,
     apply_guardrails_v2_1,
+    apply_value_buffer_guard,
     load_guardrails,
 )
 
@@ -88,6 +89,16 @@ def _extract_window_row(form_df: pl.DataFrame, window_label: str) -> Dict:
     return subset.to_dicts()[0] if subset.height else {}
 
 
+def _append_rail_guard_logs(records: List[Dict]) -> None:
+    if not records:
+        return
+    path = Path("data/internal_checks/rail_guard_log.jsonl")
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with path.open("a", encoding="utf-8") as f:
+        for rec in records:
+            f.write(json.dumps(rec, ensure_ascii=False) + "\n")
+
+
 def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str = "v2") -> pd.DataFrame:
     df = load_picks_for_week(season, week)
     if df.empty:
@@ -98,6 +109,13 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str 
     last3_row = _extract_window_row(form_df, "last 3 games")
     last5_row = _extract_window_row(form_df, "last 5 games")
 
+    def _safe_float(val: object) -> Optional[float]:
+        try:
+            return float(val)
+        except (TypeError, ValueError):
+            return None
+
+    rail_guard_logs: List[Dict] = []
     rows: List[Dict] = []
     for (home, away), grp in df.groupby(["home", "away"]):
         rating = 0.0
@@ -165,6 +183,35 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str 
         # Re-assign bucket if rating zmienił się dodatkowo (dla v1)
         if mode == "v1" and adj_bucket == bucket:
             adj_bucket = assign_bucket(adj_rating, ultimate=False)
+
+        spread_val = _safe_float(ref.get("handicap") if ref.get("handicap") is not None else ref.get("spread"))
+        predicted_margin_val = _safe_float(ref.get("model_margin"))
+        guard_bucket, value_buffer, rg_status, rg_action, rg_notes = apply_value_buffer_guard(
+            predicted_margin=predicted_margin_val,
+            spread=spread_val,
+            original_bucket=adj_bucket,
+            guardrail_level=level,
+        )
+
+        rail_guard_logs.append(
+            {
+                "season": season,
+                "week": week,
+                "home_team": home,
+                "away_team": away,
+                "spread": spread_val,
+                "predicted_margin": predicted_margin_val,
+                "value_buffer": value_buffer,
+                "original_bucket": adj_bucket,
+                "guard_bucket": guard_bucket,
+                "rail_guard_status": rg_status,
+                "rail_guard_action": rg_action,
+                "guardrail_level": level,
+                "notes": rg_notes,
+            }
+        )
+
+        adj_bucket = guard_bucket
         rows.append(
             {
                 "season": season,
@@ -179,8 +226,12 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str 
                 "guardrail_level": level,
                 "guardrail_notes": ";".join(notes) if notes else "",
                 "handicap": ref.get("handicap"),
+                "value_buffer": value_buffer,
+                "rail_guard_status": rg_status,
+                "rail_guard_action": rg_action,
             }
         )
+    _append_rail_guard_logs(rail_guard_logs)
     return pd.DataFrame(rows)
 
 

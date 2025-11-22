@@ -400,3 +400,124 @@ def apply_guardrails_v2_1(
         bucket_after_v2 = "Cyclone"
 
     return rating_adj, bucket_after_v2, notes, level
+
+
+# === Rail Guard value buffer (model vs spread) =================================
+
+VALUE_BUFFER_BUCKET_ORDER = [
+    "Calm",
+    "Breeze",
+    "Gale",
+    "Cyclone",
+    "Vortex",
+    "Supercell",
+    "Ultimate Supercell",
+]
+
+
+def apply_value_buffer_guard(
+    *,
+    predicted_margin: Optional[float],
+    spread: Optional[float],
+    original_bucket: str,
+    guardrail_level: int = 0,
+) -> tuple[str, Optional[float], str, str, str]:
+    """
+    Zwraca: (guard_bucket, value_buffer, rail_guard_status, rail_guard_action, notes)
+
+    v2.2 zasady:
+      - |buffer| < 3 -> neutral
+      - BOOST wyłącznie Calm/Breeze, sufit = Gale (nigdy nie awansuje do Cyclone/Vortex/Supercell/Ultimate)
+        * +5..+9 -> +1 (do max Gale)
+        * >= +10 -> +2 (do max Gale)
+      - Ujemne progi:
+        * <= -10: -2 tier dla Cyclone/Vortex/Supercell/Ultimate, inaczej -1
+        * -5..-9: -1 tier
+        * -3..-4: -1 tylko jeśli start = Vortex/Supercell/Ultimate (wysoki bucket)
+      - Guardrail level >=2 i buffer <0 -> wymuś co najmniej -1 (nie sumuj podwójnie)
+    """
+    if predicted_margin is None or spread is None:
+        return original_bucket, None, "SKIP", "NO_CHANGE", "Brak danych margin/spread"
+    notes_parts: list[str] = []
+    try:
+        value_buffer = float(predicted_margin) - float(spread)
+    except (TypeError, ValueError):
+        return original_bucket, None, "SKIP", "NO_CHANGE", "Nieprawidłowe margin/spread"
+
+    try:
+        idx = VALUE_BUFFER_BUCKET_ORDER.index(original_bucket)
+    except ValueError:
+        # Jeśli bucket nieznany, nie zmieniamy
+        return original_bucket, value_buffer, "PASS", "NO_CHANGE", "; ".join(notes_parts)
+
+    delta = 0
+    gale_idx = VALUE_BUFFER_BUCKET_ORDER.index("Gale")
+
+    # Strefa neutralna
+    if abs(value_buffer) < 3.0:
+        delta = 0
+        notes_parts.append("v2.2: |buffer|<3 neutral")
+    else:
+        if value_buffer >= 10.0:
+            if original_bucket in ("Calm", "Breeze"):
+                delta = min(2, gale_idx - idx)
+                notes_parts.append("v2.2: buffer>=10, boost cap=Gale")
+            else:
+                delta = 0
+                notes_parts.append("v2.2: buffer>=10 but boost blocked (>=Gale)")
+        elif value_buffer >= 5.0:
+            if original_bucket in ("Calm", "Breeze"):
+                delta = min(1, gale_idx - idx)
+                notes_parts.append("v2.2: buffer 5-9, +1 cap=Gale")
+            else:
+                delta = 0
+                notes_parts.append("v2.2: buffer 5-9 but boost blocked (>=Gale)")
+        elif value_buffer <= -10.0:
+            if original_bucket in ("Cyclone", "Vortex", "Supercell", "Ultimate Supercell"):
+                delta = -2
+                notes_parts.append("v2.2: buffer<=-10, -2 for high bucket")
+            else:
+                delta = -1
+                notes_parts.append("v2.2: buffer<=-10, -1 for low bucket")
+        elif value_buffer <= -5.0:
+            delta = -1
+            notes_parts.append("v2.2: buffer -5..-9, -1")
+        elif value_buffer <= -3.0:
+            if original_bucket in ("Vortex", "Supercell", "Ultimate Supercell"):
+                delta = -1
+                notes_parts.append("v2.2: buffer -3..-4, -1 for high bucket")
+            else:
+                delta = 0
+                notes_parts.append("v2.2: buffer -3..-4, neutral for low bucket")
+
+    # Guardrail level bezpiecznik (nie sumujemy podwójnie)
+    if guardrail_level >= 2 and value_buffer < 0:
+        if delta == 0:
+            delta = -1
+            notes_parts.append("v2.2: guardrail_level>=2, force -1")
+        else:
+            delta = min(delta, -1)  # zostawia -2, nie dodaje kolejnego -1
+            notes_parts.append("v2.2: guardrail_level>=2, min -1 applied")
+
+    new_idx = max(0, min(len(VALUE_BUFFER_BUCKET_ORDER) - 1, idx + delta))
+    # Blok awansu powyżej Gale
+    if new_idx > gale_idx and new_idx > idx:
+        new_idx = idx  # nie awansujemy ponad Gale
+        delta = 0
+        notes_parts.append("v2.2: cap=Gale, boost blocked")
+
+    guard_bucket = VALUE_BUFFER_BUCKET_ORDER[new_idx]
+
+    if guard_bucket != original_bucket:
+        if new_idx > idx:
+            status = "BOOST"
+            action = f"PROMOTE TO {guard_bucket.upper()}"
+        else:
+            status = "DOWNGRADE"
+            action = f"DOWNGRADE TO {guard_bucket.upper()}"
+    else:
+        status = "PASS"
+        action = "NO_CHANGE"
+
+    notes = "; ".join(notes_parts)
+    return guard_bucket, value_buffer, status, action, notes
