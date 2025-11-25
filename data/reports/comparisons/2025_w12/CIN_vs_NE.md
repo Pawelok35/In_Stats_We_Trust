@@ -1,41 +1,65 @@
 # Matchup Report - CIN vs NE
 
+## Metric Comparison
+
+| Metric | CIN | NE | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.002 | 0.075 | -0.074 |
+| Core EPA Defense | 0.156 | -0.044 | 0.200 |
+| Success Rate Offense | 0.481 | 0.472 | 0.009 |
+| Success Rate Defense | 0.518 | 0.467 | 0.051 |
+| Explosive Play Rate (Off) | 0.093 | 0.114 | -0.021 |
+| Third Down Conversion | 0.370 | 0.379 | -0.009 |
+| Points per Drive Differential | -0.746 | 0.650 | -1.396 |
+| Yards per Play Differential | -1.098 | 0.432 | -1.530 |
+| Turnover Margin | -0.700 | 0.100 | -0.800 |
+| Red Zone TD Rate (Off) | 0.137 | 0.145 | -0.008 |
+| Pressure Rate (Def) | 0.043 | 0.062 | -0.019 |
+| Tempo | 7.636 | 7.727 | -0.091 |
+| PowerScore | 0.137 | 0.161 | -0.025 |
+| PowerScore | 0.137 | 0.161 | -0.025 |
+| Tempo | 7.636 | 7.727 | -0.091 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CIN | NE | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.125 | 0.121 | -0.246 |
-| EPA Defense | 20% | 0.148 | -0.052 | +0.200 |
-| Success Rate Offense | 25% | 36.9% | 51.2% | -14.3 pp |
-| Tempo | 20% | 0.083 | 0.098 | -0.014 |
+| EPA Offense | 35% | -0.053 | 0.070 | -0.122 |
+| EPA Defense | 20% | 0.070 | -0.053 | +0.122 |
+| Success Rate Offense | 25% | 48.8% | 50.6% | -1.8 pp |
+| Tempo | 20% | 0.095 | 0.106 | -0.011 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CIN | NE | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.125 | 0.121 | -0.246 |
-| EPA Defense | 20% | 0.148 | -0.052 | +0.200 |
-| Success Rate Offense | 15% | 36.9% | 51.2% | -14.3 pp |
-| Turnover Margin | 10% | -2.000 | 1.000 | -3.000 |
-| Tempo | 10% | 0.083 | 0.098 | -0.014 |
-| Red Zone TD Rate (Off) | 10% | 0.0% | 20.0% | -20.0 pp |
-| Pressure Rate (Def) | 10% | 3.0% | 6.9% | -3.9 pp |
+| EPA Offense | 25% | -0.053 | 0.070 | -0.122 |
+| EPA Defense | 20% | 0.070 | -0.053 | +0.122 |
+| Success Rate Offense | 15% | 48.8% | 50.6% | -1.8 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.095 | 0.106 | -0.011 |
+| Red Zone TD Rate (Off) | 10% | 33.3% | 0.0% | +33.3 pp |
+| Pressure Rate (Def) | 10% | 5.4% | 2.6% | +2.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-NE edge: +0.085 (CIN +0.095 vs NE +0.180)
+NE edge: +0.025 (CIN +0.137 vs NE +0.161)
 **7 metrics version:**
-NE edge: +0.368 (CIN -0.135 vs NE +0.233)
-**Verdict:** NE holds the edge in the extended breakdown (lead 0.368), driven by Turnover Margin (10% weight).
+CIN edge: +0.026 (CIN +0.122 vs NE +0.096)
+**Verdict:** CIN holds the edge in the extended breakdown (lead 0.026), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - NE) | -1.6 pts (favours NE) |
-| Model Win% CIN | 43.5% |
-| Model Win% NE | 56.5% |
+| Model Spread (CIN - NE) | -0.5 pts (favours NE) |
+| Model Win% CIN | 48.1% |
+| Model Win% NE | 51.9% |
 | SOS Differential (CIN-NE) | +0.073 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ NE edge: +0.368 (CIN -0.135 vs NE +0.233)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CIN | 50.0% | n/a | n/a | 34.5% | 65.9% | n/a |
-| NE | 45.1% | n/a | n/a | 51.5% | 47.9% | n/a |
+| CIN | 46.4% | 44.3% | 2.1% | 38.5% | 57.8% | Slight pass lean |
+| NE | 43.5% | 44.3% | -0.8% | 51.4% | 50.0% | Balanced |
 
 ## Situational Edges
 
@@ -225,7 +249,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | DET (H) | 24-35 | DET | 0.797 | -0.019 | 48.8% | -0.917 |
-| 6 | GB (H) | 18-27 | GB | 0.749 | 0.096 | 53.1% | -1.000 |
+| 6 | GB (A) | 18-27 | GB | 0.749 | 0.096 | 53.1% | -1.000 |
 | 4 | DEN (A) | 3-28 | DEN | 0.716 | -0.155 | 38.2% | -2.500 |
 
 **NE analogs vs CIN profile**

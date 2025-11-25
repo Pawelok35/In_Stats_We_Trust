@@ -4,19 +4,21 @@
 
 | Metric | MIA | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.091 | 0.011 | ↑ +0.081 |
-| Core EPA Defense | 0.011 | 0.091 | ↓ -0.081 |
-| Success Rate Offense | 53.6% | 53.1% | ↑ +0.5 pp |
-| Success Rate Defense | 53.1% | 53.6% | ↓ -0.5 pp |
-| Explosive Play Rate (Off) | 14.5% | 13.6% | ↑ +0.9 pp |
-| Third Down Conversion | 33.3% | 42.9% | ↓ -9.5 pp |
-| Points per Drive Differential | -0.025 | 0.025 | ↓ -0.050 |
-| Yards per Play Differential | -0.172 | 0.172 | ↓ -0.344 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 4.5% | 5.3% | ↓ -0.7 pp |
-| Pressure Rate (Def) | 3.2% | 13.0% | ↓ -9.8 pp |
-| Tempo | 6.900 | 10.125 | ↓ -3.225 |
-| PowerScore | 0.197 | 0.182 | ↑ +0.015 |
+| Core EPA Offense | -0.011 | 0.033 | -0.044 |
+| Core EPA Defense | 0.092 | 0.097 | -0.005 |
+| Success Rate Offense | 0.451 | 0.499 | -0.049 |
+| Success Rate Defense | 0.482 | 0.473 | 0.009 |
+| Explosive Play Rate (Off) | 0.092 | 0.100 | -0.007 |
+| Third Down Conversion | 0.364 | 0.326 | 0.038 |
+| Points per Drive Differential | -0.794 | -0.348 | -0.447 |
+| Yards per Play Differential | -0.438 | -0.509 | 0.071 |
+| Turnover Margin | -0.889 | -0.667 | -0.222 |
+| Red Zone TD Rate (Off) | 0.127 | 0.192 | -0.064 |
+| Pressure Rate (Def) | 0.065 | 0.068 | -0.003 |
+| Tempo | 6.900 | 10.125 | -3.225 |
+| PowerScore | 0.197 | 0.182 | 0.015 |
+| PowerScore | 0.197 | 0.182 | 0.015 |
+| Tempo | 6.900 | 10.125 | -3.225 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIA edge: +0.015 (MIA +0.197 vs WAS +0.182)
 **7 metrics version:**
 WAS edge: +0.005 (MIA +0.128 vs WAS +0.132)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.005), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | NYG (H) | 21-7 | WAS | 0.926 | 0.071 | 48.2% | 1.433 |
 | 3 | LV (H) | 35-30 | WAS | 0.841 | 0.222 | 53.9% | 0.417 |
-| 7 | DAL (H) | 20-38 | DAL | 0.755 | -0.106 | 47.2% | -1.385 |
+| 7 | DAL (A) | 20-38 | DAL | 0.755 | -0.106 | 47.2% | -1.385 |
 
 ## Core EPA Offense Form (up to Week 10)
 

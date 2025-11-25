@@ -4,19 +4,21 @@
 
 | Metric | ATL | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.043 | 0.104 | ↓ -0.061 |
-| Core EPA Defense | 0.104 | 0.043 | ↑ +0.061 |
-| Success Rate Offense | 52.3% | 44.7% | ↑ +7.6 pp |
-| Success Rate Defense | 44.7% | 52.3% | ↓ -7.6 pp |
-| Explosive Play Rate (Off) | 8.0% | 12.8% | ↓ -4.8 pp |
-| Third Down Conversion | 28.6% | 35.3% | ↓ -6.7 pp |
-| Points per Drive Differential | -0.423 | 0.423 | ↓ -0.846 |
-| Yards per Play Differential | -1.237 | 1.237 | ↓ -2.474 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 30.0% | 7.1% | ↑ +22.9 pp |
-| Pressure Rate (Def) | 11.3% | 0.0% | ↑ +11.3 pp |
-| Tempo | 6.769 | 7.833 | ↓ -1.064 |
-| PowerScore | 0.182 | 0.182 | ↑ +0.000 |
+| Core EPA Offense | -0.048 | -0.018 | -0.031 |
+| Core EPA Defense | 0.012 | 0.045 | -0.034 |
+| Success Rate Offense | 0.452 | 0.470 | -0.018 |
+| Success Rate Defense | 0.482 | 0.440 | 0.042 |
+| Explosive Play Rate (Off) | 0.099 | 0.091 | 0.009 |
+| Third Down Conversion | 0.328 | 0.325 | 0.003 |
+| Points per Drive Differential | -0.450 | -0.275 | -0.175 |
+| Yards per Play Differential | 0.412 | -0.517 | 0.929 |
+| Turnover Margin | 0.000 | -0.222 | 0.222 |
+| Red Zone TD Rate (Off) | 0.120 | 0.124 | -0.005 |
+| Pressure Rate (Def) | 0.094 | 0.046 | 0.048 |
+| Tempo | 6.769 | 7.833 | -1.064 |
+| PowerScore | 0.182 | 0.182 | 0.000 |
+| PowerScore | 0.182 | 0.182 | 0.000 |
+| Tempo | 6.769 | 7.833 | -1.064 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.000 (ATL +0.182 vs CAR +0.182)
 **7 metrics version:**
 CAR edge: +0.162 (ATL +0.059 vs CAR +0.221)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.162), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -244,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | CAR (A) | 0-26 | CAR | 1.000 | -0.379 | 33.8% | -2.400 |
 | 2 | MIN (A) | 22-6 | ATL | 0.704 | 0.012 | 47.0% | 1.455 |
-| 8 | MIA (A) | 10-37 | MIA | 0.653 | -0.227 | 41.8% | -2.491 |
+| 8 | MIA (H) | 10-37 | MIA | 0.653 | -0.227 | 41.8% | -2.491 |
 
 **CAR analogs vs ATL profile**
 

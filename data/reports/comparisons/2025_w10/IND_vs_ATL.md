@@ -1,5 +1,25 @@
 # Matchup Report - IND vs ATL
 
+## Metric Comparison
+
+| Metric | IND | ATL | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.181 | -0.048 | 0.230 |
+| Core EPA Defense | -0.014 | 0.012 | -0.026 |
+| Success Rate Offense | 0.530 | 0.452 | 0.078 |
+| Success Rate Defense | 0.489 | 0.482 | 0.006 |
+| Explosive Play Rate (Off) | 0.129 | 0.099 | 0.030 |
+| Third Down Conversion | 0.432 | 0.328 | 0.104 |
+| Points per Drive Differential | 1.297 | -0.450 | 1.747 |
+| Yards per Play Differential | 0.920 | 0.412 | 0.507 |
+| Turnover Margin | 0.556 | 0.000 | 0.556 |
+| Red Zone TD Rate (Off) | 0.187 | 0.120 | 0.067 |
+| Pressure Rate (Def) | 0.068 | 0.094 | -0.026 |
+| Tempo | 8.364 | 7.300 | 1.064 |
+| PowerScore | 0.147 | 0.139 | 0.008 |
+| PowerScore | 0.147 | 0.139 | 0.008 |
+| Tempo | 8.364 | 7.300 | 1.064 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | IND | ATL | Delta |
@@ -28,6 +48,10 @@ IND edge: +0.008 (IND +0.147 vs ATL +0.139)
 **7 metrics version:**
 ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.505), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -225,15 +249,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | TEN (A) | 35-22 | IND | 0.916 | 0.263 | 59.7% | 1.278 |
-| 8 | TEN (A) | 38-14 | IND | 0.916 | 0.297 | 47.8% | 2.182 |
+| 8 | TEN (H) | 38-14 | IND | 0.916 | 0.297 | 47.8% | 2.182 |
 | 5 | LV (H) | 40-5 | IND | 0.903 | 0.242 | 50.7% | 4.333 |
 
 **ATL analogs vs IND profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | BUF (A) | 24-15 | ATL | 0.977 | 0.053 | 50.0% | 0.727 |
-| 7 | SF (H) | 10-20 | SF | 0.830 | -0.077 | 44.2% | -1.111 |
+| 6 | BUF (H) | 24-15 | ATL | 0.977 | 0.053 | 50.0% | 0.727 |
+| 7 | SF (A) | 10-20 | SF | 0.830 | -0.077 | 44.2% | -1.111 |
 | 9 | NE (A) | 23-22 | ATL | 0.793 | 0.016 | 43.8% | 0.118 |
 
 ## Core EPA Offense Form (up to Week 9)

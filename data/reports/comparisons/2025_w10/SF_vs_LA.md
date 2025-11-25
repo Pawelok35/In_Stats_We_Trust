@@ -1,5 +1,25 @@
 # Matchup Report - SF vs LA
 
+## Metric Comparison
+
+| Metric | SF | LA | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.044 | 0.053 | -0.009 |
+| Core EPA Defense | 0.028 | -0.091 | 0.119 |
+| Success Rate Offense | 0.498 | 0.510 | -0.012 |
+| Success Rate Defense | 0.500 | 0.433 | 0.066 |
+| Explosive Play Rate (Off) | 0.103 | 0.114 | -0.010 |
+| Third Down Conversion | 0.426 | 0.357 | 0.069 |
+| Points per Drive Differential | 0.217 | 1.092 | -0.874 |
+| Yards per Play Differential | 0.097 | 0.827 | -0.730 |
+| Turnover Margin | -0.667 | 0.625 | -1.292 |
+| Red Zone TD Rate (Off) | 0.152 | 0.151 | 0.001 |
+| Pressure Rate (Def) | 0.038 | 0.085 | -0.047 |
+| Tempo | 7.545 | 9.600 | -2.055 |
+| PowerScore | 0.279 | 0.174 | 0.105 |
+| PowerScore | 0.279 | 0.174 | 0.105 |
+| Tempo | 7.545 | 9.600 | -2.055 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | SF | LA | Delta |
@@ -28,6 +48,10 @@ SF edge: +0.105 (SF +0.279 vs LA +0.174)
 **7 metrics version:**
 LA edge: +0.201 (SF +0.111 vs LA +0.312)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.201), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -226,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | LA (A) | 26-23 | SF | 1.000 | 0.117 | 50.9% | 0.273 |
 | 1 | SEA (A) | 17-14 | SF | 0.984 | 0.012 | 48.9% | 0.245 |
-| 8 | HOU (H) | 15-23 | HOU | 0.789 | 0.036 | 45.2% | -0.933 |
+| 8 | HOU (A) | 15-23 | HOU | 0.789 | 0.036 | 45.2% | -0.933 |
 
 **LA analogs vs SF profile**
 
@@ -234,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | SF (H) | 23-26 | SF | 1.000 | 0.071 | 60.2% | -0.273 |
 | 4 | IND (H) | 27-20 | LA | 0.830 | 0.001 | 52.2% | 0.583 |
-| 6 | BAL (H) | 17-3 | LA | 0.829 | -0.084 | 46.2% | 1.367 |
+| 6 | BAL (A) | 17-3 | LA | 0.829 | -0.084 | 46.2% | 1.367 |
 
 ## Core EPA Offense Form (up to Week 9)
 

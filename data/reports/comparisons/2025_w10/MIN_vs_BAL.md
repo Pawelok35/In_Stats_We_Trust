@@ -1,5 +1,25 @@
 # Matchup Report - MIN vs BAL
 
+## Metric Comparison
+
+| Metric | MIN | BAL | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.069 | 0.051 | -0.119 |
+| Core EPA Defense | -0.038 | 0.064 | -0.103 |
+| Success Rate Offense | 0.451 | 0.495 | -0.044 |
+| Success Rate Defense | 0.448 | 0.492 | -0.045 |
+| Explosive Play Rate (Off) | 0.100 | 0.123 | -0.023 |
+| Third Down Conversion | 0.295 | 0.361 | -0.066 |
+| Points per Drive Differential | -0.182 | -0.201 | 0.019 |
+| Yards per Play Differential | -0.236 | -0.053 | -0.182 |
+| Turnover Margin | -0.250 | -0.375 | 0.125 |
+| Red Zone TD Rate (Off) | 0.137 | 0.123 | 0.014 |
+| Pressure Rate (Def) | 0.093 | 0.035 | 0.058 |
+| Tempo | 6.750 | 6.455 | 0.295 |
+| PowerScore | 0.121 | 0.167 | -0.047 |
+| PowerScore | 0.121 | 0.167 | -0.047 |
+| Tempo | 6.750 | 6.455 | 0.295 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | MIN | BAL | Delta |
@@ -28,6 +48,10 @@ BAL edge: +0.047 (MIN +0.121 vs BAL +0.167)
 **7 metrics version:**
 BAL edge: +0.324 (MIN +0.096 vs BAL +0.421)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.324), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -234,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | CLE (H) | 35-18 | BAL | 0.942 | 0.100 | 43.6% | 1.276 |
 | 5 | HOU (H) | 10-44 | HOU | 0.894 | -0.250 | 43.5% | -3.400 |
-| 6 | LA (A) | 3-15 | LA | 0.649 | -0.263 | 40.4% | -1.367 |
+| 6 | LA (H) | 3-15 | LA | 0.649 | -0.263 | 40.4% | -1.367 |
 
 ## Core EPA Offense Form (up to Week 9)
 

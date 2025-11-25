@@ -4,19 +4,21 @@
 
 | Metric | DET | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.062 | 0.017 | ↓ -0.079 |
-| Core EPA Defense | 0.017 | -0.062 | ↑ +0.079 |
-| Success Rate Offense | 44.0% | 42.0% | ↑ +2.1 pp |
-| Success Rate Defense | 42.0% | 44.0% | ↓ -2.1 pp |
-| Explosive Play Rate (Off) | 11.9% | 11.1% | ↑ +0.8 pp |
-| Third Down Conversion | 26.3% | 28.6% | ↓ -2.3 pp |
-| Points per Drive Differential | -0.068 | 0.068 | ↓ -0.136 |
-| Yards per Play Differential | 0.446 | -0.446 | ↑ +0.892 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 6.7% | 18.8% | ↓ -12.1 pp |
-| Pressure Rate (Def) | 14.7% | 11.9% | ↑ +2.8 pp |
-| Tempo | 7.636 | 6.750 | ↑ +0.886 |
-| PowerScore | 0.115 | 0.121 | ↓ -0.005 |
+| Core EPA Offense | 0.087 | -0.081 | 0.168 |
+| Core EPA Defense | -0.035 | -0.035 | -0.000 |
+| Success Rate Offense | 0.501 | 0.455 | 0.045 |
+| Success Rate Defense | 0.448 | 0.449 | -0.000 |
+| Explosive Play Rate (Off) | 0.095 | 0.099 | -0.003 |
+| Third Down Conversion | 0.363 | 0.296 | 0.066 |
+| Points per Drive Differential | 0.463 | -0.218 | 0.681 |
+| Yards per Play Differential | 0.604 | -0.206 | 0.810 |
+| Turnover Margin | 0.857 | -0.286 | 1.143 |
+| Red Zone TD Rate (Off) | 0.167 | 0.130 | 0.037 |
+| Pressure Rate (Def) | 0.083 | 0.089 | -0.006 |
+| Tempo | 7.636 | 6.750 | 0.886 |
+| PowerScore | 0.115 | 0.121 | -0.005 |
+| PowerScore | 0.115 | 0.121 | -0.005 |
+| Tempo | 7.636 | 6.750 | 0.886 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIN edge: +0.005 (DET +0.115 vs MIN +0.121)
 **7 metrics version:**
 MIN edge: +0.009 (DET +0.087 vs MIN +0.096)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.009), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -243,16 +249,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | CLE (H) | 28-16 | DET | 0.929 | -0.082 | 42.5% | 0.857 |
-| 7 | TB (A) | 24-8 | DET | 0.842 | -0.092 | 38.6% | 1.203 |
+| 7 | TB (H) | 24-8 | DET | 0.842 | -0.092 | 38.6% | 1.203 |
 | 2 | CHI (H) | 52-19 | DET | 0.460 | 0.304 | 57.1% | 2.718 |
 
 **MIN analogs vs DET profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | LAC (H) | 10-41 | LAC | 0.705 | -0.255 | 37.3% | -3.111 |
+| 8 | LAC (A) | 10-41 | LAC | 0.705 | -0.255 | 37.3% | -3.111 |
 | 4 | PIT (A) | 21-22 | PIT | 0.491 | 0.056 | 47.3% | -0.082 |
-| 7 | PHI (A) | 22-22 | TIE | 0.479 | -0.019 | 54.2% | 0.000 |
+| 7 | PHI (H) | 22-22 | TIE | 0.479 | -0.019 | 54.2% | 0.000 |
 
 ## Core EPA Offense Form (up to Week 8)
 

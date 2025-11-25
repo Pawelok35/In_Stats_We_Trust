@@ -4,19 +4,21 @@
 
 | Metric | MIA | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.195 | 0.137 | ↓ -0.332 |
-| Core EPA Defense | 0.137 | -0.195 | ↑ +0.332 |
-| Success Rate Offense | 42.3% | 52.1% | ↓ -9.8 pp |
-| Success Rate Defense | 52.1% | 42.3% | ↑ +9.8 pp |
-| Explosive Play Rate (Off) | 11.5% | 14.1% | ↓ -2.5 pp |
-| Third Down Conversion | 16.7% | 38.5% | ↓ -21.8 pp |
-| Points per Drive Differential | -2.000 | 2.000 | ↓ -4.000 |
-| Yards per Play Differential | -0.504 | 0.504 | ↓ -1.008 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 28.6% | ↓ -28.6 pp |
-| Pressure Rate (Def) | 7.4% | 4.8% | ↑ +2.6 pp |
-| Tempo | 7.091 | 6.455 | ↑ +0.636 |
-| PowerScore | 0.088 | 0.167 | ↓ -0.079 |
+| Core EPA Offense | 0.013 | 0.038 | -0.026 |
+| Core EPA Defense | 0.086 | 0.102 | -0.015 |
+| Success Rate Offense | 0.454 | 0.491 | -0.037 |
+| Success Rate Defense | 0.477 | 0.502 | -0.025 |
+| Explosive Play Rate (Off) | 0.090 | 0.120 | -0.031 |
+| Third Down Conversion | 0.389 | 0.358 | 0.031 |
+| Points per Drive Differential | -0.643 | -0.515 | -0.128 |
+| Yards per Play Differential | -0.430 | -0.133 | -0.297 |
+| Turnover Margin | -0.625 | -0.857 | 0.232 |
+| Red Zone TD Rate (Off) | 0.143 | 0.100 | 0.043 |
+| Pressure Rate (Def) | 0.064 | 0.033 | 0.030 |
+| Tempo | 7.091 | 6.455 | 0.636 |
+| PowerScore | 0.088 | 0.167 | -0.079 |
+| PowerScore | 0.088 | 0.167 | -0.079 |
+| Tempo | 7.091 | 6.455 | 0.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BAL edge: +0.079 (MIA +0.088 vs BAL +0.167)
 **7 metrics version:**
 BAL edge: +0.660 (MIA -0.239 vs BAL +0.421)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.660), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | CHI (A) | 30-16 | BAL | 0.576 | 0.227 | 55.0% | 1.556 |
+| 8 | CHI (H) | 30-16 | BAL | 0.576 | 0.227 | 55.0% | 1.556 |
 | 2 | CLE (H) | 35-18 | BAL | 0.443 | 0.100 | 43.6% | 1.276 |
 | 1 | BUF (A) | 40-35 | BAL | 0.426 | 0.340 | 56.3% | 0.483 |
 

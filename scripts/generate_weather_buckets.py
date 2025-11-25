@@ -33,11 +33,11 @@ BUCKETS = [
     ("Supercell", 6.0, float("inf")),
 ]
 BUCKET_STAKES = {
-    "Calm": 1.0,
-    "Breeze": 1.0,  # nie wymienione w briefie, traktujemy jak Calm
+    "Calm": 0.5,
+    "Breeze": 1.0,
     "Gale": 2.0,
+    "Cyclone": 2.5,
     "Vortex": 3.0,
-    "Cyclone": 4.0,
     "Supercell": 4.0,
     "Ultimate Supercell": 4.0,
 }
@@ -265,6 +265,11 @@ def parse_args() -> argparse.Namespace:
         default="v2",
         help="Select guardrails logic (default: v2).",
     )
+    parser.add_argument(
+        "--preserve-existing",
+        action="store_true",
+        help="Jeśli istnieje plik output, zachowaj wcześniejsze wiersze (np. starsze tygodnie) i nadpisz tylko nowo generowane mecze.",
+    )
     return parser.parse_args()
 
 
@@ -327,6 +332,24 @@ def main() -> None:
     if out_path.name == "weather_bucket_games.csv":
         out_path = out_path.with_name(f"weather_bucket_games_season{args.season}.csv")
     out_path.parent.mkdir(parents=True, exist_ok=True)
+
+    if args.preserve_existing and out_path.exists():
+        try:
+            existing = pd.read_csv(out_path)
+        except pd.errors.EmptyDataError:
+            existing = pd.DataFrame()
+        new = table
+        if not existing.empty:
+            # scal po sezonie/tygodniu/home/away, nowy wpis nadpisuje stary
+            combined = pd.concat([existing, new], ignore_index=True)
+            combined = combined.drop_duplicates(
+                subset=["season", "week", "home_team", "away_team"], keep="last"
+            )
+            combined.to_csv(out_path, index=False)
+            print(
+                f"Wrote {len(new)} new rows (preserved {len(existing)} existing) to {out_path}"
+            )
+            return
     table.to_csv(out_path, index=False)
     print(f"Wrote {len(table)} rows to {out_path}")
 

@@ -4,19 +4,21 @@
 
 | Metric | PHI | DET | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.147 | -0.295 | ↑ +0.148 |
-| Core EPA Defense | -0.295 | -0.147 | ↓ -0.148 |
-| Success Rate Offense | 41.9% | 34.7% | ↑ +7.2 pp |
-| Success Rate Defense | 34.7% | 41.9% | ↓ -7.2 pp |
-| Explosive Play Rate (Off) | 6.5% | 12.5% | ↓ -6.0 pp |
-| Third Down Conversion | 21.1% | 23.1% | ↓ -2.0 pp |
-| Points per Drive Differential | 0.538 | -0.538 | ↑ +1.077 |
-| Yards per Play Differential | -1.478 | 1.478 | ↓ -2.956 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 10.0% | 0.0% | ↑ +10.0 pp |
-| Pressure Rate (Def) | 5.0% | 3.3% | ↑ +1.7 pp |
-| Tempo | 7.154 | 5.538 | ↑ +1.615 |
-| PowerScore | 0.007 | -0.021 | ↑ +0.028 |
+| Core EPA Offense | 0.054 | 0.069 | -0.014 |
+| Core EPA Defense | 0.020 | -0.029 | 0.049 |
+| Success Rate Offense | 0.466 | 0.493 | -0.027 |
+| Success Rate Defense | 0.485 | 0.445 | 0.040 |
+| Explosive Play Rate (Off) | 0.100 | 0.098 | 0.002 |
+| Third Down Conversion | 0.300 | 0.350 | -0.050 |
+| Points per Drive Differential | -0.090 | 0.397 | -0.487 |
+| Yards per Play Differential | -0.126 | 0.585 | -0.711 |
+| Turnover Margin | 0.500 | 0.750 | -0.250 |
+| Red Zone TD Rate (Off) | 0.175 | 0.155 | 0.020 |
+| Pressure Rate (Def) | 0.065 | 0.091 | -0.025 |
+| Tempo | 7.154 | 5.538 | 1.615 |
+| PowerScore | 0.007 | -0.021 | 0.028 |
+| PowerScore | 0.007 | -0.021 | 0.028 |
+| Tempo | 7.154 | 5.538 | 1.615 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PHI edge: +0.028 (PHI +0.007 vs DET -0.021)
 **7 metrics version:**
 PHI edge: +0.224 (PHI +0.089 vs DET -0.135)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.224), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | KC (H) | 17-27 | KC | 0.701 | 0.067 | 56.5% | -1.208 |
+| 6 | KC (A) | 17-27 | KC | 0.701 | 0.067 | 56.5% | -1.208 |
 | 2 | CHI (H) | 52-19 | DET | 0.638 | 0.304 | 57.1% | 2.718 |
 | 10 | WAS (A) | n/a | n/a | 0.634 | n/a | n/a | n/a |
 

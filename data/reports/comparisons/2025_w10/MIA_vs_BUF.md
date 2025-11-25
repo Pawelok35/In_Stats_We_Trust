@@ -1,5 +1,25 @@
 # Matchup Report - MIA vs BUF
 
+## Metric Comparison
+
+| Metric | MIA | BUF | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.011 | 0.136 | -0.146 |
+| Core EPA Defense | 0.092 | 0.023 | 0.069 |
+| Success Rate Offense | 0.451 | 0.506 | -0.056 |
+| Success Rate Defense | 0.482 | 0.486 | -0.004 |
+| Explosive Play Rate (Off) | 0.092 | 0.124 | -0.031 |
+| Third Down Conversion | 0.364 | 0.418 | -0.054 |
+| Points per Drive Differential | -0.794 | 0.766 | -1.560 |
+| Yards per Play Differential | -0.438 | 0.605 | -1.043 |
+| Turnover Margin | -0.889 | 0.375 | -1.264 |
+| Red Zone TD Rate (Off) | 0.127 | 0.183 | -0.056 |
+| Pressure Rate (Def) | 0.065 | 0.103 | -0.038 |
+| Tempo | 7.091 | 7.900 | -0.809 |
+| PowerScore | 0.088 | 0.237 | -0.149 |
+| PowerScore | 0.088 | 0.237 | -0.149 |
+| Tempo | 7.091 | 7.900 | -0.809 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | MIA | BUF | Delta |
@@ -28,6 +48,10 @@ BUF edge: +0.149 (MIA +0.088 vs BUF +0.237)
 **7 metrics version:**
 BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.525), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

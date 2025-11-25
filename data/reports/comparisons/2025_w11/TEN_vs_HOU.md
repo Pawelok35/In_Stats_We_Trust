@@ -4,19 +4,21 @@
 
 | Metric | TEN | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.053 | 0.012 | ↓ -0.064 |
-| Core EPA Defense | 0.012 | -0.053 | ↑ +0.064 |
-| Success Rate Offense | 39.2% | 46.0% | ↓ -6.7 pp |
-| Success Rate Defense | 46.0% | 39.2% | ↑ +6.7 pp |
-| Explosive Play Rate (Off) | 6.3% | 6.9% | ↓ -0.6 pp |
-| Third Down Conversion | 31.6% | 28.6% | ↑ +3.0 pp |
-| Points per Drive Differential | -0.273 | 0.273 | ↓ -0.545 |
-| Yards per Play Differential | -0.722 | 0.722 | ↓ -1.444 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 33.3% | 9.1% | ↑ +24.2 pp |
-| Pressure Rate (Def) | 8.9% | 7.5% | ↑ +1.4 pp |
-| Tempo | 7.182 | 7.909 | ↓ -0.727 |
-| PowerScore | 0.095 | 0.122 | ↓ -0.028 |
+| Core EPA Offense | -0.148 | -0.024 | -0.124 |
+| Core EPA Defense | 0.083 | -0.142 | 0.225 |
+| Success Rate Offense | 0.417 | 0.427 | -0.010 |
+| Success Rate Defense | 0.473 | 0.409 | 0.063 |
+| Explosive Play Rate (Off) | 0.085 | 0.088 | -0.003 |
+| Third Down Conversion | 0.253 | 0.312 | -0.059 |
+| Points per Drive Differential | -1.422 | 0.581 | -2.003 |
+| Yards per Play Differential | -1.341 | 0.451 | -1.792 |
+| Turnover Margin | -0.667 | 0.500 | -1.167 |
+| Red Zone TD Rate (Off) | 0.077 | 0.089 | -0.013 |
+| Pressure Rate (Def) | 0.077 | 0.061 | 0.017 |
+| Tempo | 7.182 | 7.909 | -0.727 |
+| PowerScore | 0.095 | 0.122 | -0.028 |
+| PowerScore | 0.095 | 0.122 | -0.028 |
+| Tempo | 7.182 | 7.909 | -0.727 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ HOU edge: +0.028 (TEN +0.095 vs HOU +0.122)
 **7 metrics version:**
 HOU edge: +0.188 (TEN -0.003 vs HOU +0.185)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.188), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | TEN (H) | 26-0 | HOU | 1.000 | 0.069 | 41.5% | 2.889 |
 | 3 | JAX (A) | 10-17 | JAX | 0.670 | -0.222 | 36.7% | -0.538 |
-| 10 | JAX (H) | n/a | n/a | 0.670 | n/a | n/a | n/a |
+| 2 | TB (H) | 19-22 | TB | 0.621 | 0.000 | 41.9% | -0.273 |
 
 ## Core EPA Offense Form (up to Week 10)
 

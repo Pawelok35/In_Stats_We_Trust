@@ -1,5 +1,25 @@
 # Matchup Report - DEN vs LV
 
+## Metric Comparison
+
+| Metric | DEN | LV | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.041 | -0.103 | 0.143 |
+| Core EPA Defense | -0.042 | 0.049 | -0.091 |
+| Success Rate Offense | 0.444 | 0.447 | -0.003 |
+| Success Rate Defense | 0.414 | 0.482 | -0.067 |
+| Explosive Play Rate (Off) | 0.102 | 0.086 | 0.016 |
+| Third Down Conversion | 0.359 | 0.355 | 0.004 |
+| Points per Drive Differential | 0.654 | -1.042 | 1.696 |
+| Yards per Play Differential | 0.938 | -0.296 | 1.234 |
+| Turnover Margin | 0.111 | -0.625 | 0.736 |
+| Red Zone TD Rate (Off) | 0.142 | 0.102 | 0.040 |
+| Pressure Rate (Def) | 0.126 | 0.054 | 0.073 |
+| Tempo | 6.231 | 7.900 | -1.669 |
+| PowerScore | 0.016 | 0.243 | -0.227 |
+| PowerScore | 0.016 | 0.243 | -0.227 |
+| Tempo | 6.231 | 7.900 | -1.669 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | DEN | LV | Delta |
@@ -28,6 +48,10 @@ LV edge: +0.227 (DEN +0.016 vs LV +0.243)
 **7 metrics version:**
 LV edge: +0.184 (DEN -0.001 vs LV +0.183)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.184), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -225,8 +249,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | TEN (H) | 20-12 | DEN | 0.947 | -0.108 | 41.9% | 0.571 |
-| 6 | NYJ (H) | 13-8 | DEN | 0.749 | -0.108 | 34.2% | 0.391 |
-| 7 | NYG (A) | 33-37 | NYG | 0.679 | 0.106 | 44.6% | -0.310 |
+| 6 | NYJ (A) | 13-8 | DEN | 0.749 | -0.108 | 34.2% | 0.391 |
+| 7 | NYG (H) | 33-37 | NYG | 0.679 | 0.106 | 44.6% | -0.310 |
 
 **LV analogs vs DEN profile**
 

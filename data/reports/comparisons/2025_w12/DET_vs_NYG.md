@@ -1,41 +1,65 @@
 # Matchup Report - DET vs NYG
 
+## Metric Comparison
+
+| Metric | DET | NYG | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.028 | 0.036 | -0.007 |
+| Core EPA Defense | -0.042 | 0.113 | -0.155 |
+| Success Rate Offense | 0.477 | 0.462 | 0.015 |
+| Success Rate Defense | 0.442 | 0.492 | -0.050 |
+| Explosive Play Rate (Off) | 0.101 | 0.091 | 0.010 |
+| Third Down Conversion | 0.337 | 0.336 | 0.001 |
+| Points per Drive Differential | 0.293 | -0.442 | 0.735 |
+| Yards per Play Differential | 0.684 | -0.611 | 1.295 |
+| Turnover Margin | 0.556 | -0.500 | 1.056 |
+| Red Zone TD Rate (Off) | 0.137 | 0.131 | 0.006 |
+| Pressure Rate (Def) | 0.084 | 0.066 | 0.019 |
+| Tempo | 6.923 | 8.167 | -1.244 |
+| PowerScore | 0.234 | 0.205 | 0.029 |
+| PowerScore | 0.234 | 0.205 | 0.029 |
+| Tempo | 6.923 | 8.167 | -1.244 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | DET | NYG | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.295 | 0.122 | -0.417 |
-| EPA Defense | 20% | -0.147 | 0.293 | -0.440 |
-| Success Rate Offense | 25% | 34.7% | 47.7% | -13.0 pp |
-| Tempo | 20% | 0.125 | 0.070 | +0.055 |
+| EPA Offense | 35% | 0.154 | 0.111 | +0.043 |
+| EPA Defense | 20% | 0.111 | 0.154 | -0.043 |
+| Success Rate Offense | 25% | 53.3% | 41.8% | +11.5 pp |
+| Tempo | 20% | 0.122 | 0.153 | -0.031 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | DET | NYG | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.295 | 0.122 | -0.417 |
-| EPA Defense | 20% | -0.147 | 0.293 | -0.440 |
-| Success Rate Offense | 15% | 34.7% | 47.7% | -13.0 pp |
-| Turnover Margin | 10% | -1.000 | -2.000 | +1.000 |
-| Tempo | 10% | 0.125 | 0.070 | +0.055 |
-| Red Zone TD Rate (Off) | 10% | 0.0% | 15.8% | -15.8 pp |
-| Pressure Rate (Def) | 10% | 3.3% | 6.9% | -3.6 pp |
+| EPA Offense | 25% | 0.154 | 0.111 | +0.043 |
+| EPA Defense | 20% | 0.111 | 0.154 | -0.043 |
+| Success Rate Offense | 15% | 53.3% | 41.8% | +11.5 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.122 | 0.153 | -0.031 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 6.2% | +10.4 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 6.7% | -4.1 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-NYG edge: +0.255 (DET -0.021 vs NYG +0.234)
+DET edge: +0.029 (DET +0.234 vs NYG +0.205)
 **7 metrics version:**
-NYG edge: +0.126 (DET -0.135 vs NYG -0.010)
-**Verdict:** NYG holds the edge in the extended breakdown (lead 0.126), driven by EPA Offense (25% weight).
+DET edge: +0.023 (DET +0.172 vs NYG +0.150)
+**Verdict:** DET holds the edge in the extended breakdown (lead 0.023), driven by Success Rate Offense (15% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - NYG) | -4.7 pts (favours NYG) |
-| Model Win% DET | 31.3% |
-| Model Win% NYG | 68.7% |
+| Model Spread (DET - NYG) | +0.5 pts (favours DET) |
+| Model Win% DET | 52.2% |
+| Model Win% NYG | 47.8% |
 | SOS Differential (DET-NYG) | -0.070 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ NYG edge: +0.126 (DET -0.135 vs NYG -0.010)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| DET | 55.6% | n/a | n/a | 51.7% | 46.2% | n/a |
-| NYG | 37.2% | n/a | n/a | 33.3% | 46.0% | n/a |
+| DET | 50.0% | 44.3% | 5.7% | 42.2% | 64.4% | Pass heavy |
+| NYG | 39.8% | 44.3% | -4.5% | 43.6% | 40.7% | Run heavy |
 
 ## Situational Edges
 
@@ -232,9 +256,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | DEN (H) | 32-28 | NYG | 0.907 | 0.140 | 38.5% | 0.310 |
-| 6 | PHI (A) | 34-17 | NYG | 0.740 | 0.170 | 47.1% | 1.700 |
-| 8 | PHI (H) | 20-38 | PHI | 0.740 | 0.097 | 48.6% | -2.000 |
+| 7 | DEN (A) | 32-28 | NYG | 0.907 | 0.140 | 38.5% | 0.310 |
+| 6 | PHI (H) | 34-17 | NYG | 0.740 | 0.170 | 47.1% | 1.700 |
+| 8 | PHI (A) | 20-38 | PHI | 0.740 | 0.097 | 48.6% | -2.000 |
 
 ## Core EPA Offense Form (up to Week 11)
 

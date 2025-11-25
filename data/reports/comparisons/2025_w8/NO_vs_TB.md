@@ -4,19 +4,21 @@
 
 | Metric | NO | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.394 | -0.078 | ↓ -0.316 |
-| Core EPA Defense | -0.078 | -0.394 | ↑ +0.316 |
-| Success Rate Offense | 38.4% | 35.6% | ↑ +2.8 pp |
-| Success Rate Defense | 35.6% | 38.4% | ↓ -2.8 pp |
-| Explosive Play Rate (Off) | 4.7% | 6.8% | ↓ -2.2 pp |
-| Third Down Conversion | 44.4% | 21.4% | ↑ +23.0 pp |
-| Points per Drive Differential | -1.273 | 1.273 | ↓ -2.545 |
-| Yards per Play Differential | 0.294 | -0.294 | ↑ +0.587 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 8.3% | ↓ -8.3 pp |
-| Pressure Rate (Def) | 11.1% | 8.9% | ↑ +2.2 pp |
-| Tempo | 7.818 | 6.636 | ↑ +1.182 |
-| PowerScore | -0.048 | -0.003 | ↓ -0.045 |
+| Core EPA Offense | -0.101 | 0.012 | -0.113 |
+| Core EPA Defense | 0.028 | 0.008 | 0.020 |
+| Success Rate Offense | 0.457 | 0.447 | 0.010 |
+| Success Rate Defense | 0.472 | 0.474 | -0.002 |
+| Explosive Play Rate (Off) | 0.074 | 0.101 | -0.027 |
+| Third Down Conversion | 0.324 | 0.356 | -0.033 |
+| Points per Drive Differential | -0.734 | 0.187 | -0.922 |
+| Yards per Play Differential | -0.463 | 0.015 | -0.478 |
+| Turnover Margin | 0.143 | 0.571 | -0.429 |
+| Red Zone TD Rate (Off) | 0.117 | 0.127 | -0.010 |
+| Pressure Rate (Def) | 0.059 | 0.084 | -0.025 |
+| Tempo | 7.818 | 6.636 | 1.182 |
+| PowerScore | -0.048 | -0.003 | -0.045 |
+| PowerScore | -0.048 | -0.003 | -0.045 |
+| Tempo | 7.818 | 6.636 | 1.182 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TB edge: +0.045 (NO -0.048 vs TB -0.003)
 **7 metrics version:**
 TB edge: +0.620 (NO -0.341 vs TB +0.279)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.620), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -70,29 +76,29 @@ TB edge: +0.620 (NO -0.341 vs TB +0.279)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -8.0 pp | -6.8 pp | -8.3 pp |
-| TB | +9.4 pp | +5.0 pp | +12.6 pp |
+| NO | -2.5 pp | -3.2 pp | -8.3 pp |
+| TB | +4.5 pp | +4.7 pp | +12.6 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -6.9 pp | -8.5 pp | -8.9 pp |
-| TB | +3.0 pp | +0.1 pp | +4.7 pp |
+| NO | -3.5 pp | -9.9 pp | -8.9 pp |
+| TB | -2.5 pp | -4.1 pp | +4.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | +2.3 pp | +2.5 pp | +2.4 pp |
-| TB | +1.3 pp | -0.7 pp | -1.6 pp |
+| NO | +2.3 pp | +2.1 pp | +2.4 pp |
+| TB | +1.0 pp | -0.4 pp | -1.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -3.2 pp | -2.9 pp | -3.0 pp |
-| TB | -0.2 pp | +0.1 pp | +1.4 pp |
+| NO | -2.1 pp | -1.7 pp | -3.0 pp |
+| TB | +0.4 pp | -0.5 pp | +1.4 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | +2.0 pp | +2.0 pp | +2.0 pp |
-| TB | +1.7 pp | +1.7 pp | +1.7 pp |
+| NO | -0.1 pp | -0.5 pp | +2.0 pp |
+| TB | -0.3 pp | -2.4 pp | +1.7 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -7.3 pp | -7.3 pp | -7.3 pp |
-| TB | +0.6 pp | +0.6 pp | +0.6 pp |
+| NO | -4.2 pp | -5.5 pp | -7.3 pp |
+| TB | -4.8 pp | -4.8 pp | +0.6 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -3.2 pp | -2.9 pp | -3.0 pp |
-| TB | -0.2 pp | +0.1 pp | +1.4 pp |
+| NO | -2.1 pp | -1.7 pp | -3.0 pp |
+| TB | +0.4 pp | -0.5 pp | +1.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | +2.3 pp | +2.5 pp | +2.4 pp |
-| TB | +1.3 pp | -0.7 pp | -1.6 pp |
+| NO | +2.3 pp | +2.1 pp | +2.4 pp |
+| TB | +1.0 pp | -0.4 pp | -1.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +140,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 48.5 | 48.5 | 48.5 |
-| TB | 51.0 | 51.0 | 51.0 |
+| NO | 51.0 | 52.6 | 48.5 |
+| TB | 49.4 | 51.5 | 51.0 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 52.1 | 52.1 | 52.1 |
-| TB | 46.2 | 46.2 | 46.2 |
+| NO | 48.9 | 49.9 | 52.1 |
+| TB | 48.4 | 48.7 | 46.2 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -3.6 | -3.6 | -3.6 |
-| TB | 4.7 | 4.7 | 4.7 |
+| NO | 2.1 | 2.7 | -3.6 |
+| TB | 1.0 | 2.8 | 4.7 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +193,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 43.7% | 43.7% | 43.7% |
-| TB | 49.8% | 49.8% | 49.8% |
+| NO | 43.7% | 42.7% | 43.7% |
+| TB | 45.6% | 45.9% | 49.8% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 56.3% | 56.3% | 56.3% |
-| TB | 50.2% | 50.2% | 50.2% |
+| NO | 56.3% | 57.3% | 56.3% |
+| TB | 54.4% | 54.1% | 50.2% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 3.40 | 3.32 | 3.16 |
-| TB | 3.66 | 3.41 | 3.31 |
+| NO | 3.40 | 3.24 | 3.16 |
+| TB | 3.35 | 3.14 | 3.31 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 4.38 | 4.27 | 4.07 |
-| TB | 3.69 | 3.43 | 3.34 |
+| NO | 4.38 | 4.35 | 4.07 |
+| TB | 4.00 | 3.71 | 3.34 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | CHI (A) | 14-24 | CHI | 0.869 | -0.231 | 42.9% | -0.894 |
-| 5 | NYG (H) | 20-15 | NO | 0.655 | -0.043 | 46.3% | 0.418 |
-| 1 | ARI (-) | 13-24 | ARI | 0.619 | -0.090 | 41.7% | -1.040 |
+| 7 | CHI (A) | 14-24 | CHI | 0.867 | -0.231 | 42.9% | -0.894 |
+| 5 | NYG (H) | 20-15 | NO | 0.726 | -0.043 | 46.3% | 0.418 |
+| 1 | ARI (H) | 13-24 | ARI | 0.652 | -0.090 | 41.7% | -1.040 |
 
 **TB analogs vs NO profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | NYJ (-) | 29-21 | TB | 0.821 | -0.053 | 38.9% | 0.667 |
-| 1 | ATL (-) | 23-20 | TB | 0.642 | 0.075 | 41.3% | 0.300 |
-| 4 | PHI (-) | 29-27 | TB | 0.609 | -0.146 | 39.3% | 0.148 |
+| 3 | NYJ (H) | 29-21 | TB | 0.827 | -0.053 | 38.9% | 0.667 |
+| 1 | ATL (A) | 23-20 | TB | 0.641 | 0.075 | 41.3% | 0.300 |
+| 4 | PHI (H) | 29-27 | TB | 0.618 | -0.146 | 39.3% | 0.148 |
 
 ## Core EPA Offense Form (up to Week 7)
 
@@ -342,5 +348,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| NO | 43.5% | 43.5% | 43.5% |
-| TB | 50.9% | 50.9% | 50.9% |
+| NO | 43.7% | 42.5% | 43.5% |
+| TB | 45.6% | 45.9% | 50.9% |

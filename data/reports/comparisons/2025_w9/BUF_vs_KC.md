@@ -4,19 +4,21 @@
 
 | Metric | BUF | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.151 | 0.066 | ↑ +0.085 |
-| Core EPA Defense | 0.066 | 0.151 | ↓ -0.085 |
-| Success Rate Offense | 58.2% | 47.3% | ↑ +10.9 pp |
-| Success Rate Defense | 47.3% | 58.2% | ↓ -10.9 pp |
-| Explosive Play Rate (Off) | 12.7% | 12.2% | ↑ +0.5 pp |
-| Third Down Conversion | 58.3% | 23.1% | ↑ +35.3 pp |
-| Points per Drive Differential | 0.700 | -0.700 | ↑ +1.400 |
-| Yards per Play Differential | 0.965 | -0.965 | ↑ +1.931 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 27.3% | 14.3% | ↑ +13.0 pp |
-| Pressure Rate (Def) | 7.9% | 10.0% | ↓ -2.1 pp |
-| Tempo | 7.900 | 7.400 | ↑ +0.500 |
-| PowerScore | 0.237 | 0.196 | ↑ +0.041 |
+| Core EPA Offense | 0.134 | 0.140 | -0.007 |
+| Core EPA Defense | 0.017 | -0.016 | 0.034 |
+| Success Rate Offense | 0.495 | 0.502 | -0.007 |
+| Success Rate Defense | 0.488 | 0.480 | 0.007 |
+| Explosive Play Rate (Off) | 0.123 | 0.119 | 0.005 |
+| Third Down Conversion | 0.394 | 0.396 | -0.002 |
+| Points per Drive Differential | 0.776 | 1.153 | -0.378 |
+| Yards per Play Differential | 0.553 | 0.746 | -0.193 |
+| Turnover Margin | 0.286 | 0.625 | -0.339 |
+| Red Zone TD Rate (Off) | 0.171 | 0.178 | -0.007 |
+| Pressure Rate (Def) | 0.107 | 0.069 | 0.038 |
+| Tempo | 7.900 | 7.400 | 0.500 |
+| PowerScore | 0.237 | 0.196 | 0.041 |
+| PowerScore | 0.237 | 0.196 | 0.041 |
+| Tempo | 7.900 | 7.400 | 0.500 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BUF edge: +0.041 (BUF +0.237 vs KC +0.196)
 **7 metrics version:**
 BUF edge: +0.232 (BUF +0.286 vs KC +0.054)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.232), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -250,9 +256,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | DET (A) | 30-19 | KC | 0.736 | 0.227 | 56.0% | 1.208 |
+| 6 | DET (H) | 30-19 | KC | 0.736 | 0.227 | 56.0% | 1.208 |
 | 4 | BAL (H) | 37-20 | KC | 0.690 | 0.182 | 46.6% | 1.700 |
-| 8 | WAS (A) | 28-8 | KC | 0.666 | 0.216 | 50.0% | 2.236 |
+| 8 | WAS (H) | 28-8 | KC | 0.666 | 0.216 | 50.0% | 2.236 |
 
 ## Core EPA Offense Form (up to Week 8)
 

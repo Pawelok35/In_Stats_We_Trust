@@ -4,19 +4,21 @@
 
 | Metric | GB | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.216 | 0.096 | ↑ +0.120 |
-| Core EPA Defense | 0.096 | 0.216 | ↓ -0.120 |
-| Success Rate Offense | 58.7% | 53.1% | ↑ +5.6 pp |
-| Success Rate Defense | 53.1% | 58.7% | ↓ -5.6 pp |
-| Explosive Play Rate (Off) | 16.0% | 6.2% | ↑ +9.8 pp |
-| Third Down Conversion | 45.5% | 40.0% | ↑ +5.5 pp |
-| Points per Drive Differential | 1.000 | -1.000 | ↑ +2.000 |
-| Yards per Play Differential | 2.120 | -2.120 | ↑ +4.240 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 30.0% | 15.4% | ↑ +14.6 pp |
-| Pressure Rate (Def) | 2.1% | 3.6% | ↓ -1.4 pp |
-| Tempo | 8.333 | 9.000 | ↓ -0.667 |
-| PowerScore | 0.274 | 0.222 | ↑ +0.052 |
+| Core EPA Offense | 0.094 | -0.134 | 0.229 |
+| Core EPA Defense | 0.003 | 0.077 | -0.074 |
+| Success Rate Offense | 0.475 | 0.432 | 0.043 |
+| Success Rate Defense | 0.449 | 0.487 | -0.037 |
+| Explosive Play Rate (Off) | 0.119 | 0.062 | 0.057 |
+| Third Down Conversion | 0.438 | 0.320 | 0.118 |
+| Points per Drive Differential | 0.624 | -0.950 | 1.574 |
+| Yards per Play Differential | 0.805 | -1.501 | 2.306 |
+| Turnover Margin | 0.000 | -1.000 | 1.000 |
+| Red Zone TD Rate (Off) | 0.161 | 0.167 | -0.006 |
+| Pressure Rate (Def) | 0.064 | 0.062 | 0.002 |
+| Tempo | 8.333 | 9.000 | -0.667 |
+| PowerScore | 0.274 | 0.222 | 0.052 |
+| PowerScore | 0.274 | 0.222 | 0.052 |
+| Tempo | 8.333 | 9.000 | -0.667 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ GB edge: +0.052 (GB +0.274 vs CIN +0.222)
 **7 metrics version:**
 CIN edge: +0.163 (GB +0.109 vs CIN +0.272)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.163), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -70,41 +76,61 @@ CIN edge: +0.163 (GB +0.109 vs CIN +0.272)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| GB | +18.8 pp | +18.8 pp | +21.3 pp |
+| GB | +3.0 pp | +3.0 pp | +9.4 pp |
+| CIN | +3.1 pp | +3.1 pp | -5.0 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| GB | -3.9 pp | -3.9 pp | -4.1 pp |
+| GB | -2.2 pp | -2.2 pp | -5.6 pp |
+| CIN | +2.2 pp | +2.2 pp | -0.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +1.6 pp | +1.6 pp | +0.7 pp |
+| GB | +0.2 pp | +0.2 pp | +0.1 pp |
+| CIN | -2.8 pp | -2.8 pp | -3.9 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| GB | +3.1 pp | +3.1 pp | +2.7 pp |
+| GB | +2.0 pp | +2.0 pp | +0.2 pp |
+| CIN | +0.3 pp | +0.3 pp | +1.2 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
 ## Matchup Edges
 
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | +2.0 pp | +2.0 pp | -4.9 pp |
+| CIN | +1.7 pp | +1.7 pp | -2.2 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| GB | -5.8 pp | -5.8 pp | -5.0 pp |
+| CIN | -5.0 pp | -5.0 pp | -9.5 pp |
+
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| GB | +3.1 pp | +3.1 pp | +2.7 pp |
+| GB | +2.0 pp | +2.0 pp | +0.2 pp |
+| CIN | +0.3 pp | +0.3 pp | +1.2 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | +1.6 pp | +1.6 pp | +0.7 pp |
+| GB | +0.2 pp | +0.2 pp | +0.1 pp |
+| CIN | -2.8 pp | -2.8 pp | -3.9 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -114,19 +140,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 39.2 | 39.2 | 39.2 |
+| GB | 45.2 | 45.2 | 42.8 |
+| CIN | 46.2 | 46.2 | 43.9 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 51.7 | 51.7 | 51.7 |
+| GB | 50.6 | 50.6 | 51.2 |
+| CIN | 45.2 | 45.2 | 44.0 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | -12.4 | -12.4 | -12.4 |
+| GB | -5.3 | -5.3 | -8.5 |
+| CIN | 1.0 | 1.0 | -0.0 |
 
 ### Points per Drive (offense)
 
@@ -164,25 +193,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 52.5% | 52.5% | 52.5% |
+| GB | 39.7% | 39.7% | 40.3% |
+| CIN | 46.5% | 46.5% | 45.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 47.5% | 47.5% | 47.5% |
+| GB | 60.3% | 60.3% | 59.7% |
+| CIN | 53.5% | 53.5% | 54.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 3.53 | 3.53 | 3.37 |
+| GB | 3.15 | 3.15 | 3.36 |
+| CIN | 3.12 | 3.12 | 2.92 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CIN | 3.19 | 3.19 | 3.05 |
+| GB | 4.80 | 4.80 | 4.98 |
+| CIN | 3.59 | 3.59 | 3.49 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -215,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | CLE (-) | 10-12 | CLE | 0.845 | -0.094 | 39.8% | -0.182 |
-| 4 | DAL (-) | 42-38 | GB | 0.419 | 0.244 | 52.4% | 0.364 |
-| 2 | WAS (-) | 27-20 | GB | 0.172 | 0.046 | 48.8% | 0.614 |
+| 3 | CLE (A) | 10-12 | CLE | 0.848 | -0.094 | 39.8% | -0.182 |
+| 4 | DAL (A) | 42-38 | GB | 0.424 | 0.244 | 52.4% | 0.364 |
+| 2 | WAS (H) | 27-20 | GB | 0.173 | 0.046 | 48.8% | 0.614 |
 
 **CIN analogs vs GB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | DET (H) | 24-35 | DET | 0.804 | -0.019 | 48.8% | -0.917 |
-| 4 | DEN (-) | 3-28 | DEN | 0.725 | -0.155 | 38.2% | -2.500 |
-| 2 | JAX (-) | 31-25 | CIN | 0.548 | 0.082 | 51.8% | 0.568 |
+| 5 | DET (H) | 24-35 | DET | 0.816 | -0.019 | 48.8% | -0.917 |
+| 4 | DEN (A) | 3-28 | DEN | 0.725 | -0.155 | 38.2% | -2.500 |
+| 2 | JAX (H) | 31-25 | CIN | 0.553 | 0.082 | 51.8% | 0.568 |
 
 ## Core EPA Offense Form (up to Week 5)
 
@@ -315,5 +348,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CIN | 52.5% | 52.5% | 52.5% |
-| GB | n/a | n/a | n/a |
+| CIN | 47.1% | 47.1% | 45.7% |
+| GB | 40.0% | 40.0% | 40.5% |

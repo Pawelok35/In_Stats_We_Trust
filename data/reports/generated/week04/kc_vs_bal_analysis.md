@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – KC 20.4 – BAL 22.5
+1️⃣ Estimated Score (Model) – KC 21.0 – BAL 24.2
 2️⃣ Predicted Winner (Model) – BAL
-3️⃣ Predicted Margin (Model) – BAL by 2.1 pts
-4️⃣ Win Probability (Model) – 54% (BAL)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę BAL: BAL +0.210 vs KC +0.056. Red Zone TD Rate sprzyja BAL (22.6% vs 8.2%). Explosive Play Rate pozostaje po stronie BAL (13.1% vs 7.2%), więc big-play equity jest wyższe. Na 3rd down BAL utrzymuje 35.2%, podczas gdy KC jest na 31.1%, co stabilizuje serie ofensywne. Turnover margin faworyzuje BAL (+0.00 vs -2.00), co przekłada się na dodatkowe posiadania.
+3️⃣ Predicted Margin (Model) – BAL by 3.2 pts
+4️⃣ Win Probability (Model) – 59% (BAL)
+5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje BAL na poziomie 51.6% vs 46.0% (+5.6 pp). Explosive Play Rate pozostaje po stronie BAL (15.2% vs 10.5%), więc big-play equity jest wyższe. Na 3rd down BAL utrzymuje 39.4%, podczas gdy KC jest na 35.5%, co stabilizuje serie ofensywne. Field position edge wynosi +3.6 yds na rzecz BAL (1.2 vs -2.4), co skraca ich boisko. BAL prowadzi w Points per Drive Differential (+0.510 vs +0.185), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – KC 22.5 – BAL 22.5
-2️⃣ Predicted Winner (Market) – KC
-3️⃣ Predicted Margin (Market) – KC by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (KC)
-5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.056 vs BAL +0.210. Points per Drive Differential — KC +0.244 vs BAL -0.273. Success Rate Offense — KC 52.7% vs BAL 49.1%. Third Down Conversion — KC 31.1% vs BAL 35.2%. Red Zone TD Rate — KC 8.2% vs BAL 22.6%. Explosive Play Rate — KC 7.2% vs BAL 13.1%. Model margin -2.1 pts vs market spread KC -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę BAL po marginesie -2.1 pkt. BAL notuje -0.273 PPD vs +0.244 u KC. Różnica w Success Rate to 49.1% vs 52.7%. Na 3rd down BAL (35.2%) wygląda solidniej niż KC (31.1%). Red Zone i explosiveness ( 22.6% / 13.1% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +2.1.
+1️⃣ Estimated Score (Market) – KC 23.0 – BAL 25.5
+2️⃣ Predicted Winner (Market) – BAL
+3️⃣ Predicted Margin (Market) – BAL by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (BAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.190 vs BAL +0.170. Points per Drive Differential — KC +0.185 vs BAL +0.510. Success Rate Offense — KC 46.0% vs BAL 51.6%. Third Down Conversion — KC 35.5% vs BAL 39.4%. Red Zone TD Rate — KC 13.5% vs BAL 11.4%. Explosive Play Rate — KC 10.5% vs BAL 15.2%. Model margin -3.2 pts vs market spread KC -2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę BAL po marginesie -3.2 pkt. BAL notuje +0.510 PPD vs +0.185 u KC. Różnica w Success Rate to 51.6% vs 46.0%. Na 3rd down BAL (39.4%) wygląda solidniej niż KC (35.5%). Red Zone i explosiveness ( 11.4% / 15.2% ) utrzymują przewagę jakościową. Market trzyma -2.5 pkt, więc edge vs linia to +0.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +2.1 pts
-• PowerScoreDiff (winner) = +0.154
-• Confidence = 57.0%
+• Edge_vs_Line (winner) = +0.7 pts
+• PowerScoreDiff (winner) = -0.020
+• Confidence = 59.0%
 
-🏷 Model Tag: NEUTRAL — based on 57.0% confidence, +2.1 pts model edge vs line, and PowerScore Δ +0.154.
+🏷 Model Tag: NEUTRAL — based on 59.0% confidence, +0.7 pts model edge vs line, and PowerScore Δ -0.020.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – KC 20.4 – BAL 22.5
-   • Win Probability – 54% (BAL)
+   • Estimated Score – KC 21.0 – BAL 24.2
+   • Win Probability – 59% (BAL)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – KC 22.5 – BAL 22.5
-   • Win Probability – 50% (KC)
+   • Estimated Score – KC 23.0 – BAL 25.5
+   • Win Probability – 59% (BAL)
 
-🏷 Model Tag: NEUTRAL — BAL (HC -0.0)
+🏷 Model Tag: NEUTRAL — BAL (HC -2.5)

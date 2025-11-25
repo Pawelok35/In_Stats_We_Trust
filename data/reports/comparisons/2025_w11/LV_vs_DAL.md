@@ -4,19 +4,21 @@
 
 | Metric | LV | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.138 | 0.119 | ↓ -0.257 |
-| Core EPA Defense | 0.119 | -0.138 | ↑ +0.257 |
-| Success Rate Offense | 46.2% | 57.3% | ↓ -11.2 pp |
-| Success Rate Defense | 57.3% | 46.2% | ↑ +11.2 pp |
-| Explosive Play Rate (Off) | 10.3% | 13.4% | ↓ -3.2 pp |
-| Third Down Conversion | 23.1% | 36.4% | ↓ -13.3 pp |
-| Points per Drive Differential | -1.645 | 1.645 | ↓ -3.291 |
-| Yards per Play Differential | -1.621 | 1.621 | ↓ -3.241 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 7.7% | 11.5% | ↓ -3.8 pp |
-| Pressure Rate (Def) | 2.6% | 8.5% | ↓ -5.9 pp |
-| Tempo | 7.091 | 8.200 | ↓ -1.109 |
-| PowerScore | 0.111 | 0.184 | ↓ -0.073 |
+| Core EPA Offense | -0.103 | 0.118 | -0.221 |
+| Core EPA Defense | 0.049 | 0.140 | -0.091 |
+| Success Rate Offense | 0.447 | 0.490 | -0.044 |
+| Success Rate Defense | 0.482 | 0.517 | -0.035 |
+| Explosive Play Rate (Off) | 0.086 | 0.090 | -0.004 |
+| Third Down Conversion | 0.355 | 0.373 | -0.018 |
+| Points per Drive Differential | -1.042 | -0.411 | -0.631 |
+| Yards per Play Differential | -0.296 | -0.266 | -0.030 |
+| Turnover Margin | -0.625 | -0.444 | -0.181 |
+| Red Zone TD Rate (Off) | 0.102 | 0.149 | -0.047 |
+| Pressure Rate (Def) | 0.054 | 0.055 | -0.002 |
+| Tempo | 7.091 | 8.200 | -1.109 |
+| PowerScore | 0.111 | 0.184 | -0.073 |
+| PowerScore | 0.111 | 0.184 | -0.073 |
+| Tempo | 7.091 | 8.200 | -1.109 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DAL edge: +0.073 (LV +0.111 vs DAL +0.184)
 **7 metrics version:**
 DAL edge: +0.042 (LV +0.079 vs DAL +0.121)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.042), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -244,14 +250,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | WAS (A) | 30-35 | WAS | 0.857 | -0.021 | 39.3% | -0.417 |
 | 4 | CHI (H) | 24-25 | CHI | 0.752 | -0.172 | 54.5% | -0.091 |
-| 7 | KC (H) | 0-34 | KC | 0.708 | -0.332 | 33.3% | -3.444 |
+| 7 | KC (A) | 0-34 | KC | 0.708 | -0.332 | 33.3% | -3.444 |
 
 **DAL analogs vs LV profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | NYJ (A) | 37-22 | DAL | 0.749 | 0.258 | 47.6% | 1.250 |
-| 6 | CAR (H) | 27-27 | TIE | 0.722 | 0.177 | 45.2% | 0.000 |
+| 6 | CAR (A) | 27-27 | TIE | 0.722 | 0.177 | 45.2% | 0.000 |
 | 2 | NYG (H) | 40-46 | NYG | 0.679 | 0.134 | 48.7% | -0.417 |
 
 ## Core EPA Offense Form (up to Week 10)

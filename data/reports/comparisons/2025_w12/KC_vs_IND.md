@@ -1,41 +1,65 @@
 # Matchup Report - KC vs IND
 
+## Metric Comparison
+
+| Metric | KC | IND | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.123 | 0.181 | -0.058 |
+| Core EPA Defense | 0.009 | -0.014 | 0.023 |
+| Success Rate Offense | 0.496 | 0.530 | -0.034 |
+| Success Rate Defense | 0.491 | 0.489 | 0.003 |
+| Explosive Play Rate (Off) | 0.113 | 0.129 | -0.016 |
+| Third Down Conversion | 0.371 | 0.432 | -0.061 |
+| Points per Drive Differential | 0.843 | 1.297 | -0.454 |
+| Yards per Play Differential | 0.441 | 0.920 | -0.479 |
+| Turnover Margin | 0.300 | 0.556 | -0.256 |
+| Red Zone TD Rate (Off) | 0.164 | 0.187 | -0.023 |
+| Pressure Rate (Def) | 0.070 | 0.068 | 0.002 |
+| Tempo | 9.500 | 6.364 | 3.136 |
+| PowerScore | 0.143 | 0.133 | 0.011 |
+| PowerScore | 0.143 | 0.133 | 0.011 |
+| Tempo | 9.500 | 6.364 | 3.136 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | KC | IND | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.128 | 0.242 | -0.115 |
-| EPA Defense | 20% | 0.162 | -0.223 | +0.385 |
-| Success Rate Offense | 25% | 61.0% | 50.7% | +10.3 pp |
-| Tempo | 20% | 0.146 | 0.080 | +0.066 |
+| EPA Offense | 35% | 0.015 | 0.013 | +0.002 |
+| EPA Defense | 20% | 0.013 | 0.015 | -0.002 |
+| Success Rate Offense | 25% | 46.5% | 44.3% | +2.2 pp |
+| Tempo | 20% | 0.096 | 0.071 | +0.025 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | KC | IND | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.128 | 0.242 | -0.115 |
-| EPA Defense | 20% | 0.162 | -0.223 | +0.385 |
-| Success Rate Offense | 15% | 61.0% | 50.7% | +10.3 pp |
-| Turnover Margin | 10% | 1.000 | 2.000 | -1.000 |
-| Tempo | 10% | 0.146 | 0.080 | +0.066 |
-| Red Zone TD Rate (Off) | 10% | 29.4% | 22.2% | +7.2 pp |
-| Pressure Rate (Def) | 10% | 10.7% | 10.0% | +0.7 pp |
+| EPA Offense | 25% | 0.015 | 0.013 | +0.002 |
+| EPA Defense | 20% | 0.013 | 0.015 | -0.002 |
+| Success Rate Offense | 15% | 46.5% | 44.3% | +2.2 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.096 | 0.071 | +0.025 |
+| Red Zone TD Rate (Off) | 10% | 3.6% | 14.3% | -10.7 pp |
+| Pressure Rate (Def) | 10% | 0.0% | 7.8% | -7.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-KC edge: +0.076 (KC +0.259 vs IND +0.183)
+KC edge: +0.011 (KC +0.143 vs IND +0.133)
 **7 metrics version:**
-IND edge: +0.022 (KC +0.310 vs IND +0.332)
-**Verdict:** IND holds the edge in the extended breakdown (lead 0.022), driven by Turnover Margin (10% weight).
+IND edge: +0.413 (KC -0.111 vs IND +0.302)
+**Verdict:** IND holds the edge in the extended breakdown (lead 0.413), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - IND) | +1.4 pts (favours KC) |
-| Model Win% KC | 55.8% |
-| Model Win% IND | 44.2% |
+| Model Spread (KC - IND) | +0.2 pts (favours KC) |
+| Model Win% KC | 50.8% |
+| Model Win% IND | 49.2% |
 | SOS Differential (KC-IND) | -0.004 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ IND edge: +0.022 (KC +0.310 vs IND +0.332)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| KC | 50.0% | n/a | n/a | 47.5% | 52.4% | n/a |
-| IND | 46.7% | n/a | n/a | 42.9% | 64.4% | n/a |
+| KC | 44.7% | 44.3% | 0.4% | 47.1% | 46.0% | Balanced |
+| IND | 45.7% | 44.3% | 1.4% | 31.2% | 55.3% | Slight pass lean |
 
 ## Situational Edges
 
@@ -226,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 9 | BUF (A) | 21-28 | BUF | 0.970 | 0.066 | 47.3% | -0.700 |
 | 4 | BAL (H) | 37-20 | KC | 0.798 | 0.182 | 46.6% | 1.700 |
-| 8 | WAS (A) | 28-8 | KC | 0.617 | 0.216 | 50.0% | 2.236 |
+| 8 | WAS (H) | 28-8 | KC | 0.617 | 0.216 | 50.0% | 2.236 |
 
 **IND analogs vs KC profile**
 
@@ -234,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 9 | PIT (A) | 20-23 | PIT | 0.869 | -0.042 | 52.2% | -0.259 |
 | 4 | LA (A) | 20-27 | LA | 0.577 | -0.064 | 46.8% | -0.583 |
-| 6 | ARI (A) | 31-27 | IND | 0.557 | 0.164 | 56.6% | 0.400 |
+| 6 | ARI (H) | 31-27 | IND | 0.557 | 0.164 | 56.6% | 0.400 |
 
 ## Core EPA Offense Form (up to Week 11)
 

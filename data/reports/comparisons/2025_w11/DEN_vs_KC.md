@@ -4,19 +4,21 @@
 
 | Metric | DEN | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.070 | 0.044 | ↑ +0.026 |
-| Core EPA Defense | 0.044 | 0.070 | ↓ -0.026 |
-| Success Rate Offense | 48.8% | 47.1% | ↑ +1.7 pp |
-| Success Rate Defense | 47.1% | 48.8% | ↓ -1.7 pp |
-| Explosive Play Rate (Off) | 7.3% | 5.7% | ↑ +1.6 pp |
-| Third Down Conversion | 46.7% | 31.2% | ↑ +15.4 pp |
-| Points per Drive Differential | 0.100 | -0.100 | ↑ +0.200 |
-| Yards per Play Differential | 0.596 | -0.596 | ↑ +1.192 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 5.3% | 7.1% | ↓ -1.9 pp |
-| Pressure Rate (Def) | 6.2% | 4.9% | ↑ +1.4 pp |
-| Tempo | 7.455 | 8.700 | ↓ -1.245 |
-| PowerScore | 0.170 | 0.159 | ↑ +0.011 |
+| Core EPA Offense | 0.041 | 0.132 | -0.091 |
+| Core EPA Defense | -0.042 | 0.002 | -0.044 |
+| Success Rate Offense | 0.444 | 0.499 | -0.055 |
+| Success Rate Defense | 0.414 | 0.492 | -0.077 |
+| Explosive Play Rate (Off) | 0.102 | 0.119 | -0.017 |
+| Third Down Conversion | 0.359 | 0.377 | -0.019 |
+| Points per Drive Differential | 0.654 | 0.948 | -0.293 |
+| Yards per Play Differential | 0.938 | 0.556 | 0.382 |
+| Turnover Margin | 0.111 | 0.444 | -0.333 |
+| Red Zone TD Rate (Off) | 0.142 | 0.174 | -0.032 |
+| Pressure Rate (Def) | 0.126 | 0.072 | 0.054 |
+| Tempo | 7.455 | 8.700 | -1.245 |
+| PowerScore | 0.170 | 0.159 | 0.011 |
+| PowerScore | 0.170 | 0.159 | 0.011 |
+| Tempo | 7.455 | 8.700 | -1.245 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DEN edge: +0.011 (DEN +0.170 vs KC +0.159)
 **7 metrics version:**
 DEN edge: +0.205 (DEN +0.218 vs KC +0.013)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.205), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -243,14 +249,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | IND (A) | 28-24 | DEN | 0.984 | 0.166 | 54.7% | 0.475 |
-| 8 | DAL (A) | 44-26 | DEN | 0.708 | 0.331 | 59.5% | 1.485 |
+| 8 | DAL (H) | 44-26 | DEN | 0.708 | 0.331 | 59.5% | 1.485 |
 | 5 | PHI (A) | 21-16 | DEN | 0.701 | 0.063 | 48.4% | 0.492 |
 
 **KC analogs vs DEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | DET (A) | 30-19 | KC | 0.818 | 0.227 | 56.0% | 1.208 |
+| 6 | DET (H) | 30-19 | KC | 0.818 | 0.227 | 56.0% | 1.208 |
 | 1 | LAC (A) | 21-27 | LAC | 0.744 | 0.131 | 45.6% | -0.750 |
 | 9 | BUF (A) | 21-28 | BUF | 0.448 | 0.066 | 47.3% | -0.700 |
 

@@ -238,27 +238,26 @@ python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 2 
 }
 
 
-## podsumowanie metryk wg. sezonow 
 
-$rows = @()
-Get-ChildItem data/results/weather_bucket_games_season*.csv -File | ForEach-Object {
-  $csv = Import-Csv $_ | Where-Object { $_.result -in 'WIN','LOSS' }
-  $csv | Group-Object season,bucket | ForEach-Object {
-    $bucket = $_.Group
-    $wins   = ($bucket | Where-Object result -eq 'WIN').Count
-    $losses = ($bucket | Where-Object result -eq 'LOSS').Count
-    $total  = $wins + $losses
-    $winPct = if ($total) { [math]::Round($wins / $total * 100, 1) } else { 0 }
-    $pnl    = [math]::Round($wins * 0.9 - $losses * 1.0, 1)
-    $rows  += [pscustomobject]@{
-      season    = $bucket[0].season
-      bucket    = $bucket[0].bucket
-      count     = $total
-      wins      = $wins
-      losses    = $losses
-      win_pct   = $winPct
-      pnl_units = $pnl
-    }
-  }
-}
-$rows | Sort-Object season,bucket | Format-Table -AutoSize
+## INSTRUKCJA krok po kroku 
+Przyklad gdy analizuje week13 
+
+1) Aktualizuje 
+  - terminarz w scripts/update_schedule.py ,
+  - linie w config/lines/2025/week13_lines.yaml,
+  - wyniki w data/results/manual_results.jsonl (tylko rozegrane mecze; reszta PENDING).
+
+2) Pipeline na referencji poprzedniego tygodnia (12): 
+
+python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 13 --reference-week 12 --run-convergence
+
+3) Buckety tylko dla week 13, dopisanie do istniejącego pliku (bez ruszania historii):
+
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 13 --end-week 13 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
+
+
+
+4) Podgląd w terminalu:
+
+python scripts/show_weather_picks.py --season 2025 --week 13 --guardrails-mode v2_1
+

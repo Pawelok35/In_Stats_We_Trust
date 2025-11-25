@@ -4,19 +4,21 @@
 
 | Metric | HOU | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.069 | -0.398 | ↑ +0.467 |
-| Core EPA Defense | -0.398 | 0.069 | ↓ -0.467 |
-| Success Rate Offense | 41.5% | 34.4% | ↑ +7.1 pp |
-| Success Rate Defense | 34.4% | 41.5% | ↓ -7.1 pp |
-| Explosive Play Rate (Off) | 9.8% | 9.4% | ↑ +0.4 pp |
-| Third Down Conversion | 40.0% | 18.2% | ↑ +21.8 pp |
-| Points per Drive Differential | 2.889 | -2.889 | ↑ +5.778 |
-| Yards per Play Differential | 1.571 | -1.571 | ↑ +3.141 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 40.0% | 0.0% | ↑ +40.0 pp |
-| Pressure Rate (Def) | 7.1% | 6.5% | ↑ +0.7 pp |
-| Tempo | 9.111 | 6.400 | ↑ +2.711 |
-| PowerScore | 0.068 | -0.021 | ↑ +0.089 |
+| Core EPA Offense | -0.114 | -0.108 | -0.007 |
+| Core EPA Defense | -0.063 | 0.118 | -0.181 |
+| Success Rate Offense | 0.385 | 0.423 | -0.038 |
+| Success Rate Defense | 0.427 | 0.512 | -0.085 |
+| Explosive Play Rate (Off) | 0.096 | 0.054 | 0.042 |
+| Third Down Conversion | 0.239 | 0.269 | -0.031 |
+| Points per Drive Differential | -0.456 | -1.041 | 0.585 |
+| Yards per Play Differential | 0.111 | -2.080 | 2.190 |
+| Turnover Margin | -1.000 | -0.333 | -0.667 |
+| Red Zone TD Rate (Off) | 0.000 | 0.081 | -0.081 |
+| Pressure Rate (Def) | 0.076 | 0.017 | 0.059 |
+| Tempo | 9.111 | 6.400 | 2.711 |
+| PowerScore | 0.068 | -0.021 | 0.089 |
+| PowerScore | 0.068 | -0.021 | 0.089 |
+| Tempo | 9.111 | 6.400 | 2.711 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ HOU edge: +0.089 (HOU +0.068 vs TEN -0.021)
 **7 metrics version:**
 HOU edge: +0.275 (HOU +0.157 vs TEN -0.118)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.275), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

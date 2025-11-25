@@ -4,19 +4,21 @@
 
 | Metric | ARI | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.067 | 0.246 | ↓ -0.314 |
-| Core EPA Defense | 0.246 | -0.067 | ↑ +0.314 |
-| Success Rate Offense | 46.4% | 55.4% | ↓ -9.0 pp |
-| Success Rate Defense | 55.4% | 46.4% | ↑ +9.0 pp |
-| Explosive Play Rate (Off) | 11.3% | 9.5% | ↑ +1.9 pp |
-| Third Down Conversion | 40.0% | 33.3% | ↑ +6.7 pp |
-| Points per Drive Differential | -1.417 | 1.417 | ↓ -2.833 |
-| Yards per Play Differential | 1.234 | -1.234 | ↑ +2.467 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 15.0% | 23.5% | ↓ -8.5 pp |
-| Pressure Rate (Def) | 6.5% | 0.0% | ↑ +6.5 pp |
-| Tempo | 8.818 | 6.167 | ↑ +2.652 |
-| PowerScore | 0.164 | 0.230 | ↓ -0.066 |
+| Core EPA Offense | 0.024 | 0.044 | -0.020 |
+| Core EPA Defense | 0.010 | 0.028 | -0.018 |
+| Success Rate Offense | 0.459 | 0.498 | -0.040 |
+| Success Rate Defense | 0.487 | 0.500 | -0.012 |
+| Explosive Play Rate (Off) | 0.094 | 0.103 | -0.009 |
+| Third Down Conversion | 0.416 | 0.426 | -0.010 |
+| Points per Drive Differential | 0.274 | 0.217 | 0.057 |
+| Yards per Play Differential | -0.294 | 0.097 | -0.391 |
+| Turnover Margin | 0.250 | -0.667 | 0.917 |
+| Red Zone TD Rate (Off) | 0.154 | 0.152 | 0.002 |
+| Pressure Rate (Def) | 0.052 | 0.038 | 0.014 |
+| Tempo | 8.818 | 6.167 | 2.652 |
+| PowerScore | 0.164 | 0.230 | -0.066 |
+| PowerScore | 0.164 | 0.230 | -0.066 |
+| Tempo | 8.818 | 6.167 | 2.652 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SF edge: +0.066 (ARI +0.164 vs SF +0.230)
 **7 metrics version:**
 SF edge: +0.629 (ARI -0.165 vs SF +0.464)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.629), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -243,8 +249,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | SF (A) | 13-15 | SF | 1.000 | -0.003 | 42.9% | -0.155 |
-| 6 | IND (H) | 27-31 | IND | 0.830 | 0.117 | 51.1% | -0.400 |
-| 7 | GB (A) | 23-24 | GB | 0.816 | 0.039 | 48.9% | -0.144 |
+| 6 | IND (A) | 27-31 | IND | 0.830 | 0.117 | 51.1% | -0.400 |
+| 7 | GB (H) | 23-24 | GB | 0.816 | 0.039 | 48.9% | -0.144 |
 
 **SF analogs vs ARI profile**
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | ARI (H) | 16-14 | SF | 1.000 | -0.022 | 55.1% | 0.155 |
 | 4 | JAX (H) | 27-18 | SF | 0.626 | -0.113 | 46.8% | 0.788 |
-| 6 | TB (H) | 19-27 | TB | 0.558 | 0.016 | 50.0% | -0.827 |
+| 6 | TB (A) | 19-27 | TB | 0.558 | 0.016 | 50.0% | -0.827 |
 
 ## Core EPA Offense Form (up to Week 10)
 

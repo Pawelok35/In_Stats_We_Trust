@@ -4,19 +4,21 @@
 
 | Metric | NE | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.121 | -0.052 | ↑ +0.173 |
-| Core EPA Defense | -0.052 | 0.121 | ↓ -0.173 |
-| Success Rate Offense | 51.2% | 52.9% | ↓ -1.6 pp |
-| Success Rate Defense | 52.9% | 51.2% | ↑ +1.6 pp |
-| Explosive Play Rate (Off) | 9.8% | 8.6% | ↑ +1.2 pp |
-| Third Down Conversion | 46.2% | 57.1% | ↓ -11.0 pp |
-| Points per Drive Differential | 1.144 | -1.144 | ↑ +2.289 |
-| Yards per Play Differential | 0.598 | -0.598 | ↑ +1.195 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 20.0% | 11.1% | ↑ +8.9 pp |
-| Pressure Rate (Def) | 6.9% | 2.7% | ↑ +4.2 pp |
-| Tempo | 8.200 | 7.778 | ↑ +0.422 |
-| PowerScore | 0.180 | 0.155 | ↑ +0.024 |
+| Core EPA Offense | 0.070 | -0.010 | 0.080 |
+| Core EPA Defense | -0.043 | 0.107 | -0.149 |
+| Success Rate Offense | 0.468 | 0.480 | -0.012 |
+| Success Rate Defense | 0.461 | 0.463 | -0.003 |
+| Explosive Play Rate (Off) | 0.116 | 0.082 | 0.034 |
+| Third Down Conversion | 0.370 | 0.323 | 0.047 |
+| Points per Drive Differential | 0.595 | -0.751 | 1.346 |
+| Yards per Play Differential | 0.414 | -0.485 | 0.899 |
+| Turnover Margin | 0.000 | -1.125 | 1.125 |
+| Red Zone TD Rate (Off) | 0.139 | 0.096 | 0.043 |
+| Pressure Rate (Def) | 0.061 | 0.040 | 0.021 |
+| Tempo | 8.200 | 7.778 | 0.422 |
+| PowerScore | 0.180 | 0.155 | 0.024 |
+| PowerScore | 0.180 | 0.155 | 0.024 |
+| Tempo | 8.200 | 7.778 | 0.422 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NE edge: +0.024 (NE +0.180 vs NYJ +0.155)
 **7 metrics version:**
 NE edge: +0.220 (NE +0.233 vs NYJ +0.013)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.220), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -244,13 +250,13 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | MIA (A) | 39-23 | NE | 0.871 | 0.183 | 44.3% | 1.567 |
 | 4 | CAR (H) | 36-19 | NE | 0.840 | 0.246 | 42.4% | 1.545 |
-| 7 | TEN (H) | 25-13 | NE | 0.774 | 0.161 | 46.3% | 1.200 |
+| 7 | TEN (A) | 25-13 | NE | 0.774 | 0.161 | 46.3% | 1.200 |
 
 **NYJ analogs vs NE profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | DEN (A) | 9-14 | DEN | 0.785 | -0.144 | 38.2% | -0.391 |
+| 6 | DEN (H) | 9-14 | DEN | 0.785 | -0.144 | 38.2% | -0.391 |
 | 2 | BUF (H) | 10-27 | BUF | 0.721 | -0.170 | 42.2% | -1.727 |
 | 3 | TB (A) | 21-29 | TB | 0.719 | -0.069 | 50.6% | -0.667 |
 

@@ -1,41 +1,65 @@
 # Matchup Report - CHI vs PIT
 
+## Metric Comparison
+
+| Metric | CHI | PIT | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.027 | 0.085 | -0.057 |
+| Core EPA Defense | 0.018 | 0.033 | -0.016 |
+| Success Rate Offense | 0.458 | 0.481 | -0.024 |
+| Success Rate Defense | 0.497 | 0.481 | 0.016 |
+| Explosive Play Rate (Off) | 0.118 | 0.090 | 0.029 |
+| Third Down Conversion | 0.379 | 0.371 | 0.008 |
+| Points per Drive Differential | -0.097 | 0.301 | -0.398 |
+| Yards per Play Differential | -0.349 | -0.415 | 0.067 |
+| Turnover Margin | 1.667 | 1.000 | 0.667 |
+| Red Zone TD Rate (Off) | 0.121 | 0.175 | -0.054 |
+| Pressure Rate (Def) | 0.059 | 0.065 | -0.006 |
+| Tempo | 6.917 | 7.818 | -0.902 |
+| PowerScore | 0.138 | 0.140 | -0.002 |
+| PowerScore | 0.138 | 0.140 | -0.002 |
+| Tempo | 6.917 | 7.818 | -0.902 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CHI | PIT | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.084 | 0.148 | -0.232 |
-| EPA Defense | 20% | -0.181 | -0.125 | -0.056 |
-| Success Rate Offense | 25% | 44.2% | 49.4% | -5.2 pp |
-| Tempo | 20% | 0.074 | 0.123 | -0.050 |
+| EPA Offense | 35% | 0.008 | -0.004 | +0.012 |
+| EPA Defense | 20% | -0.004 | 0.008 | -0.012 |
+| Success Rate Offense | 25% | 45.8% | 52.3% | -6.5 pp |
+| Tempo | 20% | 0.108 | 0.047 | +0.062 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CHI | PIT | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.084 | 0.148 | -0.232 |
-| EPA Defense | 20% | -0.181 | -0.125 | -0.056 |
-| Success Rate Offense | 15% | 44.2% | 49.4% | -5.2 pp |
-| Turnover Margin | 10% | 2.000 | 2.000 | +0.000 |
-| Tempo | 10% | 0.074 | 0.123 | -0.050 |
-| Red Zone TD Rate (Off) | 10% | 8.3% | 11.8% | -3.4 pp |
-| Pressure Rate (Def) | 10% | 0.0% | 2.4% | -2.4 pp |
+| EPA Offense | 25% | 0.008 | -0.004 | +0.012 |
+| EPA Defense | 20% | -0.004 | 0.008 | -0.012 |
+| Success Rate Offense | 15% | 45.8% | 52.3% | -6.5 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.108 | 0.047 | +0.062 |
+| Red Zone TD Rate (Off) | 10% | 21.4% | 20.0% | +1.4 pp |
+| Pressure Rate (Def) | 10% | 6.1% | 2.7% | +3.4 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PIT edge: +0.115 (CHI +0.060 vs PIT +0.175)
+PIT edge: +0.002 (CHI +0.138 vs PIT +0.140)
 **7 metrics version:**
-PIT edge: +0.088 (CHI +0.225 vs PIT +0.313)
-**Verdict:** PIT holds the edge in the extended breakdown (lead 0.088), driven by EPA Offense (25% weight).
+CHI edge: +0.002 (CHI +0.108 vs PIT +0.106)
+**Verdict:** CHI holds the edge in the extended breakdown (lead 0.002), driven by Tempo (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - PIT) | -2.1 pts (favours PIT) |
-| Model Win% CHI | 41.2% |
-| Model Win% PIT | 58.8% |
+| Model Spread (CHI - PIT) | -0.0 pts (favours PIT) |
+| Model Win% CHI | 49.8% |
+| Model Win% PIT | 50.2% |
 | SOS Differential (CHI-PIT) | -0.013 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ PIT edge: +0.088 (CHI +0.225 vs PIT +0.313)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CHI | 35.8% | n/a | n/a | 31.0% | 42.9% | n/a |
-| PIT | 40.7% | n/a | n/a | 37.5% | 41.0% | n/a |
+| CHI | 44.6% | 44.3% | 0.3% | 37.8% | 52.2% | Balanced |
+| PIT | 38.4% | 44.3% | -5.9% | 45.5% | 56.6% | Run heavy |
 
 ## Situational Edges
 
@@ -225,14 +249,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | DAL (H) | 31-14 | CHI | 0.893 | 0.200 | 47.9% | 1.700 |
-| 6 | WAS (H) | 25-22 | CHI | 0.720 | 0.093 | 50.6% | 0.318 |
+| 6 | WAS (A) | 25-22 | CHI | 0.720 | 0.093 | 50.6% | 0.318 |
 | 10 | NYG (H) | n/a | n/a | 0.690 | n/a | n/a | n/a |
 
 **PIT analogs vs CHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | CIN (H) | 31-33 | CIN | 0.648 | 0.262 | 54.7% | -0.200 |
+| 7 | CIN (A) | 31-33 | CIN | 0.648 | 0.262 | 54.7% | -0.200 |
 | 11 | CIN (H) | 22-11 | PIT | 0.648 | 0.148 | 49.4% | 1.244 |
 | 9 | IND (H) | 27-24 | PIT | 0.638 | 0.046 | 45.7% | 0.259 |
 

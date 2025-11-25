@@ -4,19 +4,21 @@
 
 | Metric | ATL | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.207 | 0.168 | ↑ +0.039 |
-| Core EPA Defense | 0.168 | 0.207 | ↓ -0.039 |
-| Success Rate Offense | 53.6% | 54.1% | ↓ -0.5 pp |
-| Success Rate Defense | 54.1% | 53.6% | ↑ +0.5 pp |
-| Explosive Play Rate (Off) | 14.3% | 8.1% | ↑ +6.2 pp |
-| Third Down Conversion | 50.0% | 11.1% | ↑ +38.9 pp |
-| Points per Drive Differential | 0.400 | -0.400 | ↑ +0.800 |
-| Yards per Play Differential | 1.179 | -1.179 | ↑ +2.357 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 23.5% | 12.5% | ↑ +11.0 pp |
-| Pressure Rate (Def) | 6.7% | 3.3% | ↑ +3.3 pp |
-| Tempo | 8.400 | 8.222 | ↑ +0.178 |
-| PowerScore | 0.268 | 0.252 | ↑ +0.017 |
+| Core EPA Offense | -0.119 | 0.075 | -0.193 |
+| Core EPA Defense | -0.076 | -0.029 | -0.046 |
+| Success Rate Offense | 0.427 | 0.488 | -0.061 |
+| Success Rate Defense | 0.439 | 0.420 | 0.020 |
+| Explosive Play Rate (Off) | 0.092 | 0.098 | -0.006 |
+| Third Down Conversion | 0.369 | 0.343 | 0.026 |
+| Points per Drive Differential | -0.415 | 0.412 | -0.827 |
+| Yards per Play Differential | 0.810 | 0.430 | 0.380 |
+| Turnover Margin | -1.000 | -0.333 | -0.667 |
+| Red Zone TD Rate (Off) | 0.037 | 0.209 | -0.171 |
+| Pressure Rate (Def) | 0.097 | 0.084 | 0.013 |
+| Tempo | 8.400 | 8.222 | 0.178 |
+| PowerScore | 0.268 | 0.252 | 0.017 |
+| PowerScore | 0.268 | 0.252 | 0.017 |
+| Tempo | 8.400 | 8.222 | 0.178 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.017 (ATL +0.268 vs WAS +0.252)
 **7 metrics version:**
 ATL edge: +0.022 (ATL +0.210 vs WAS +0.188)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.022), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

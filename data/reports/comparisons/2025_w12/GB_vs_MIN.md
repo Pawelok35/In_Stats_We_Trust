@@ -1,41 +1,65 @@
 # Matchup Report - GB vs MIN
 
+## Metric Comparison
+
+| Metric | GB | MIN | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.131 | -0.081 | 0.212 |
+| Core EPA Defense | 0.039 | -0.043 | 0.083 |
+| Success Rate Offense | 0.500 | 0.445 | 0.055 |
+| Success Rate Defense | 0.469 | 0.447 | 0.022 |
+| Explosive Play Rate (Off) | 0.121 | 0.100 | 0.021 |
+| Third Down Conversion | 0.451 | 0.290 | 0.161 |
+| Points per Drive Differential | 0.555 | -0.192 | 0.748 |
+| Yards per Play Differential | 0.946 | -0.169 | 1.115 |
+| Turnover Margin | 0.222 | -0.444 | 0.667 |
+| Red Zone TD Rate (Off) | 0.182 | 0.150 | 0.032 |
+| Pressure Rate (Def) | 0.070 | 0.089 | -0.019 |
+| Tempo | 7.455 | 6.444 | 1.010 |
+| PowerScore | 0.137 | 0.081 | 0.056 |
+| PowerScore | 0.137 | 0.081 | 0.056 |
+| Tempo | 7.455 | 6.444 | 1.010 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | GB | MIN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.293 | -0.181 | +0.475 |
-| EPA Defense | 20% | 0.122 | -0.084 | +0.205 |
-| Success Rate Offense | 25% | 48.5% | 39.4% | +9.1 pp |
-| Tempo | 20% | 0.132 | 0.099 | +0.034 |
+| EPA Offense | 35% | 0.097 | -0.207 | +0.304 |
+| EPA Defense | 20% | -0.207 | 0.097 | -0.304 |
+| Success Rate Offense | 25% | 50.0% | 46.6% | +3.4 pp |
+| Tempo | 20% | 0.098 | 0.086 | +0.011 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | GB | MIN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.293 | -0.181 | +0.475 |
-| EPA Defense | 20% | 0.122 | -0.084 | +0.205 |
-| Success Rate Offense | 15% | 48.5% | 39.4% | +9.1 pp |
-| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
-| Tempo | 10% | 0.132 | 0.099 | +0.034 |
-| Red Zone TD Rate (Off) | 10% | 28.6% | 25.0% | +3.6 pp |
-| Pressure Rate (Def) | 10% | 6.2% | 5.9% | +0.4 pp |
+| EPA Offense | 25% | 0.097 | -0.207 | +0.304 |
+| EPA Defense | 20% | -0.207 | 0.097 | -0.304 |
+| Success Rate Offense | 15% | 50.0% | 46.6% | +3.4 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.098 | 0.086 | +0.011 |
+| Red Zone TD Rate (Off) | 10% | 14.3% | 0.0% | +14.3 pp |
+| Pressure Rate (Def) | 10% | 20.8% | 4.0% | +16.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-GB edge: +0.237 (GB +0.275 vs MIN +0.038)
+GB edge: +0.056 (GB +0.137 vs MIN +0.081)
 **7 metrics version:**
-GB edge: +0.581 (GB +0.419 vs MIN -0.162)
-**Verdict:** GB holds the edge in the extended breakdown (lead 0.581), driven by Turnover Margin (10% weight).
+GB edge: +0.253 (GB +0.203 vs MIN -0.050)
+**Verdict:** GB holds the edge in the extended breakdown (lead 0.253), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - MIN) | +4.4 pts (favours GB) |
-| Model Win% GB | 67.5% |
-| Model Win% MIN | 32.5% |
+| Model Spread (GB - MIN) | +1.0 pts (favours GB) |
+| Model Win% GB | 54.3% |
+| Model Win% MIN | 45.7% |
 | SOS Differential (GB-MIN) | +0.069 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ GB edge: +0.581 (GB +0.419 vs MIN -0.162)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| GB | 42.6% | n/a | n/a | 38.2% | 47.5% | n/a |
-| MIN | 45.1% | n/a | n/a | 43.8% | 50.0% | n/a |
+| GB | 30.5% | 44.3% | -13.8% | 52.0% | 49.1% | Run heavy |
+| MIN | 41.4% | 44.3% | -2.9% | 25.0% | 61.8% | Slight run lean |
 
 ## Situational Edges
 

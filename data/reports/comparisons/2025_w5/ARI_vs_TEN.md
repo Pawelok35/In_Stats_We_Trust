@@ -4,19 +4,21 @@
 
 | Metric | ARI | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.063 | -0.026 | ↓ -0.037 |
-| Core EPA Defense | -0.026 | -0.063 | ↑ +0.037 |
-| Success Rate Offense | 38.6% | 45.1% | ↓ -6.5 pp |
-| Success Rate Defense | 45.1% | 38.6% | ↑ +6.5 pp |
-| Explosive Play Rate (Off) | 10.2% | 11.0% | ↓ -0.7 pp |
-| Third Down Conversion | 44.4% | 33.3% | ↑ +11.1 pp |
-| Points per Drive Differential | 0.385 | -0.385 | ↑ +0.769 |
-| Yards per Play Differential | 0.103 | -0.103 | ↑ +0.206 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 23.1% | 18.2% | ↑ +4.9 pp |
-| Pressure Rate (Def) | 4.4% | 8.6% | ↓ -4.1 pp |
-| Tempo | 6.769 | 6.308 | ↑ +0.462 |
-| PowerScore | 0.090 | 0.113 | ↓ -0.023 |
+| Core EPA Offense | 0.012 | -0.180 | 0.192 |
+| Core EPA Defense | -0.014 | 0.106 | -0.120 |
+| Success Rate Offense | 0.446 | 0.403 | 0.043 |
+| Success Rate Defense | 0.471 | 0.488 | -0.016 |
+| Explosive Play Rate (Off) | 0.076 | 0.064 | 0.012 |
+| Third Down Conversion | 0.345 | 0.248 | 0.098 |
+| Points per Drive Differential | 0.038 | -1.503 | 1.541 |
+| Yards per Play Differential | -0.593 | -1.953 | 1.360 |
+| Turnover Margin | 0.000 | -0.500 | 0.500 |
+| Red Zone TD Rate (Off) | 0.136 | 0.061 | 0.075 |
+| Pressure Rate (Def) | 0.050 | 0.029 | 0.021 |
+| Tempo | 6.769 | 6.308 | 0.462 |
+| PowerScore | 0.090 | 0.113 | -0.023 |
+| PowerScore | 0.090 | 0.113 | -0.023 |
+| Tempo | 6.769 | 6.308 | 0.462 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TEN edge: +0.023 (ARI +0.090 vs TEN +0.113)
 **7 metrics version:**
 TEN edge: +0.012 (ARI +0.075 vs TEN +0.086)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.012), driven by Success Rate Offense (15% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

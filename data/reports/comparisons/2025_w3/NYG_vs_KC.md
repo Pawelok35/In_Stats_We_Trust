@@ -4,19 +4,21 @@
 
 | Metric | NYG | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.118 | 0.082 | ↓ -0.199 |
-| Core EPA Defense | 0.082 | -0.118 | ↑ +0.199 |
-| Success Rate Offense | 42.3% | 46.5% | ↓ -4.2 pp |
-| Success Rate Defense | 46.5% | 42.3% | ↑ +4.2 pp |
-| Explosive Play Rate (Off) | 10.3% | 8.1% | ↑ +2.1 pp |
-| Third Down Conversion | 9.1% | 47.1% | ↓ -38.0 pp |
-| Points per Drive Differential | -1.200 | 1.200 | ↓ -2.400 |
-| Yards per Play Differential | 0.044 | -0.044 | ↑ +0.089 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 9.1% | 22.2% | ↓ -13.1 pp |
-| Pressure Rate (Def) | 4.8% | 5.9% | ↓ -1.1 pp |
-| Tempo | 8.667 | 8.600 | ↑ +0.067 |
-| PowerScore | 0.101 | 0.138 | ↓ -0.036 |
+| Core EPA Offense | 0.037 | 0.048 | -0.011 |
+| Core EPA Defense | 0.102 | 0.120 | -0.018 |
+| Success Rate Offense | 0.433 | 0.458 | -0.024 |
+| Success Rate Defense | 0.485 | 0.499 | -0.014 |
+| Explosive Play Rate (Off) | 0.087 | 0.118 | -0.030 |
+| Third Down Conversion | 0.305 | 0.290 | 0.016 |
+| Points per Drive Differential | -0.508 | -0.431 | -0.078 |
+| Yards per Play Differential | -0.300 | 0.384 | -0.684 |
+| Turnover Margin | 0.000 | -0.500 | 0.500 |
+| Red Zone TD Rate (Off) | 0.022 | 0.092 | -0.070 |
+| Pressure Rate (Def) | 0.078 | 0.076 | 0.002 |
+| Tempo | 8.667 | 8.600 | 0.067 |
+| PowerScore | 0.101 | 0.138 | -0.036 |
+| PowerScore | 0.101 | 0.138 | -0.036 |
+| Tempo | 8.667 | 8.600 | 0.067 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.036 (NYG +0.101 vs KC +0.138)
 **7 metrics version:**
 KC edge: +0.428 (NYG -0.126 vs KC +0.303)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.428), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

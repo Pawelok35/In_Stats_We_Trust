@@ -4,19 +4,21 @@
 
 | Metric | NYG | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.109 | 0.279 | ↓ -0.170 |
-| Core EPA Defense | 0.279 | 0.109 | ↑ +0.170 |
-| Success Rate Offense | 54.5% | 53.0% | ↑ +1.5 pp |
-| Success Rate Defense | 53.0% | 54.5% | ↓ -1.5 pp |
-| Explosive Play Rate (Off) | 10.4% | 13.3% | ↓ -2.9 pp |
-| Third Down Conversion | 35.7% | 50.0% | ↓ -14.3 pp |
-| Points per Drive Differential | -0.691 | 0.691 | ↓ -1.382 |
-| Yards per Play Differential | -0.734 | 0.734 | ↓ -1.468 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 18.2% | 21.1% | ↓ -2.9 pp |
-| Pressure Rate (Def) | 7.1% | 5.7% | ↑ +1.4 pp |
-| Tempo | 7.700 | 7.545 | ↑ +0.155 |
-| PowerScore | 0.251 | 0.279 | ↓ -0.027 |
+| Core EPA Offense | 0.016 | 0.014 | 0.001 |
+| Core EPA Defense | 0.070 | 0.018 | 0.052 |
+| Success Rate Offense | 0.449 | 0.494 | -0.045 |
+| Success Rate Defense | 0.488 | 0.494 | -0.006 |
+| Explosive Play Rate (Off) | 0.092 | 0.100 | -0.007 |
+| Third Down Conversion | 0.321 | 0.417 | -0.096 |
+| Points per Drive Differential | -0.294 | 0.158 | -0.452 |
+| Yards per Play Differential | -0.613 | 0.017 | -0.630 |
+| Turnover Margin | -0.500 | -0.625 | 0.125 |
+| Red Zone TD Rate (Off) | 0.122 | 0.144 | -0.023 |
+| Pressure Rate (Def) | 0.065 | 0.036 | 0.029 |
+| Tempo | 7.700 | 7.545 | 0.155 |
+| PowerScore | 0.251 | 0.279 | -0.027 |
+| PowerScore | 0.251 | 0.279 | -0.027 |
+| Tempo | 7.700 | 7.545 | 0.155 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SF edge: +0.027 (NYG +0.251 vs SF +0.279)
 **7 metrics version:**
 NYG edge: +0.189 (NYG +0.301 vs SF +0.111)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.189), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | ARI (H) | 16-14 | SF | 0.706 | -0.022 | 55.1% | 0.155 |
 | 4 | JAX (H) | 27-18 | SF | 0.687 | -0.113 | 46.8% | 0.788 |
-| 7 | ATL (A) | 20-10 | SF | 0.648 | 0.043 | 51.9% | 1.111 |
+| 7 | ATL (H) | 20-10 | SF | 0.648 | 0.043 | 51.9% | 1.111 |
 
 ## Core EPA Offense Form (up to Week 8)
 

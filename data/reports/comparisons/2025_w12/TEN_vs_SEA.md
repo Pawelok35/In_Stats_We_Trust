@@ -1,41 +1,65 @@
 # Matchup Report - TEN vs SEA
 
+## Metric Comparison
+
+| Metric | TEN | SEA | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.139 | 0.052 | -0.190 |
+| Core EPA Defense | 0.076 | -0.083 | 0.159 |
+| Success Rate Offense | 0.415 | 0.497 | -0.082 |
+| Success Rate Defense | 0.472 | 0.438 | 0.034 |
+| Explosive Play Rate (Off) | 0.083 | 0.112 | -0.029 |
+| Third Down Conversion | 0.259 | 0.360 | -0.101 |
+| Points per Drive Differential | -1.307 | 0.634 | -1.941 |
+| Yards per Play Differential | -1.279 | 1.141 | -2.420 |
+| Turnover Margin | -0.700 | -0.556 | -0.144 |
+| Red Zone TD Rate (Off) | 0.102 | 0.155 | -0.053 |
+| Pressure Rate (Def) | 0.079 | 0.076 | 0.003 |
+| Tempo | 10.000 | 6.900 | 3.100 |
+| PowerScore | 0.124 | 0.174 | -0.051 |
+| PowerScore | 0.124 | 0.174 | -0.051 |
+| Tempo | 10.000 | 6.900 | 3.100 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | TEN | SEA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.053 | -0.141 | +0.088 |
-| EPA Defense | 20% | 0.012 | -0.200 | +0.211 |
-| Success Rate Offense | 25% | 39.2% | 49.5% | -10.2 pp |
-| Tempo | 20% | 0.063 | 0.062 | +0.001 |
+| EPA Offense | 35% | -0.036 | 0.100 | -0.136 |
+| EPA Defense | 20% | 0.100 | -0.036 | +0.136 |
+| Success Rate Offense | 25% | 41.1% | 49.3% | -8.2 pp |
+| Tempo | 20% | 0.067 | 0.116 | -0.049 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | TEN | SEA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.053 | -0.141 | +0.088 |
-| EPA Defense | 20% | 0.012 | -0.200 | +0.211 |
-| Success Rate Offense | 15% | 39.2% | 49.5% | -10.2 pp |
-| Turnover Margin | 10% | -1.000 | -3.000 | +2.000 |
-| Tempo | 10% | 0.063 | 0.062 | +0.001 |
-| Red Zone TD Rate (Off) | 10% | 33.3% | 5.6% | +27.8 pp |
-| Pressure Rate (Def) | 10% | 8.9% | 0.0% | +8.9 pp |
+| EPA Offense | 25% | -0.036 | 0.100 | -0.136 |
+| EPA Defense | 20% | 0.100 | -0.036 | +0.136 |
+| Success Rate Offense | 15% | 41.1% | 49.3% | -8.2 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.067 | 0.116 | -0.049 |
+| Red Zone TD Rate (Off) | 10% | 15.4% | 9.1% | +6.3 pp |
+| Pressure Rate (Def) | 10% | 3.6% | 8.7% | -5.1 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TEN edge: +0.048 (TEN +0.095 vs SEA +0.047)
+SEA edge: +0.051 (TEN +0.124 vs SEA +0.174)
 **7 metrics version:**
-TEN edge: +0.286 (TEN -0.003 vs SEA -0.289)
-**Verdict:** TEN holds the edge in the extended breakdown (lead 0.286), driven by Turnover Margin (10% weight).
+SEA edge: +0.023 (TEN +0.098 vs SEA +0.121)
+**Verdict:** SEA holds the edge in the extended breakdown (lead 0.023), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - SEA) | +0.9 pts (favours TEN) |
-| Model Win% TEN | 53.7% |
-| Model Win% SEA | 46.3% |
+| Model Spread (TEN - SEA) | -0.9 pts (favours SEA) |
+| Model Win% TEN | 46.1% |
+| Model Win% SEA | 53.9% |
 | SOS Differential (TEN-SEA) | +0.035 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ TEN edge: +0.286 (TEN -0.003 vs SEA -0.289)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| TEN | 50.6% | n/a | n/a | 42.9% | 39.0% | n/a |
-| SEA | 45.4% | n/a | n/a | 48.9% | 42.9% | n/a |
+| TEN | 51.1% | 44.3% | 6.8% | 37.0% | 45.5% | Pass heavy |
+| SEA | 40.6% | 44.3% | -3.7% | 42.9% | 53.7% | Run heavy |
 
 ## Situational Edges
 
@@ -225,7 +249,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | LA (H) | 19-33 | LA | 0.987 | -0.024 | 46.6% | -1.273 |
-| 7 | NE (A) | 13-25 | NE | 0.895 | -0.131 | 47.8% | -1.200 |
+| 7 | NE (H) | 13-25 | NE | 0.895 | -0.131 | 47.8% | -1.200 |
 | 1 | DEN (A) | 12-20 | DEN | 0.817 | -0.219 | 32.5% | -0.571 |
 
 **SEA analogs vs TEN profile**
@@ -234,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | NO (H) | 38-19 | SEA | 0.948 | 0.162 | 52.1% | 1.583 |
 | 5 | TB (H) | 35-38 | TB | 0.674 | 0.243 | 57.1% | -0.300 |
-| 7 | HOU (A) | 27-14 | SEA | 0.555 | -0.178 | 41.8% | 0.821 |
+| 7 | HOU (H) | 27-14 | SEA | 0.555 | -0.178 | 41.8% | 0.821 |
 
 ## Core EPA Offense Form (up to Week 11)
 

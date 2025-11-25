@@ -4,19 +4,21 @@
 
 | Metric | NE | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.022 | 0.016 | ↑ +0.006 |
-| Core EPA Defense | 0.016 | 0.022 | ↓ -0.006 |
-| Success Rate Offense | 45.1% | 43.8% | ↑ +1.3 pp |
-| Success Rate Defense | 43.8% | 45.1% | ↓ -1.3 pp |
-| Explosive Play Rate (Off) | 11.0% | 9.6% | ↑ +1.4 pp |
-| Third Down Conversion | 66.7% | 10.0% | ↑ +56.7 pp |
-| Points per Drive Differential | -0.118 | 0.118 | ↓ -0.236 |
-| Yards per Play Differential | 0.091 | -0.091 | ↑ +0.183 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 18.8% | 17.6% | ↑ +1.1 pp |
-| Pressure Rate (Def) | 2.6% | 15.8% | ↓ -13.2 pp |
-| Tempo | 7.455 | 7.300 | ↑ +0.155 |
-| PowerScore | 0.146 | 0.139 | ↑ +0.007 |
+| Core EPA Offense | 0.076 | -0.057 | 0.134 |
+| Core EPA Defense | -0.050 | 0.010 | -0.060 |
+| Success Rate Offense | 0.470 | 0.454 | 0.016 |
+| Success Rate Defense | 0.463 | 0.487 | -0.023 |
+| Explosive Play Rate (Off) | 0.117 | 0.100 | 0.017 |
+| Third Down Conversion | 0.333 | 0.361 | -0.027 |
+| Points per Drive Differential | 0.684 | -0.531 | 1.216 |
+| Yards per Play Differential | 0.454 | 0.484 | -0.030 |
+| Turnover Margin | 0.250 | -0.286 | 0.536 |
+| Red Zone TD Rate (Off) | 0.133 | 0.112 | 0.021 |
+| Pressure Rate (Def) | 0.065 | 0.085 | -0.020 |
+| Tempo | 7.455 | 7.300 | 0.155 |
+| PowerScore | 0.146 | 0.139 | 0.007 |
+| PowerScore | 0.146 | 0.139 | 0.007 |
+| Tempo | 7.455 | 7.300 | 0.155 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NE edge: +0.007 (NE +0.146 vs ATL +0.139)
 **7 metrics version:**
 ATL edge: +0.408 (NE -0.091 vs ATL +0.317)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.408), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -243,15 +249,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | LV (H) | 13-18 | LV | 0.902 | -0.049 | 44.0% | -0.485 |
-| 6 | NO (H) | 25-19 | NE | 0.845 | 0.091 | 48.1% | 0.667 |
-| 7 | TEN (H) | 25-13 | NE | 0.809 | 0.161 | 46.3% | 1.200 |
+| 6 | NO (A) | 25-19 | NE | 0.845 | 0.091 | 48.1% | 0.667 |
+| 7 | TEN (A) | 25-13 | NE | 0.809 | 0.161 | 46.3% | 1.200 |
 
 **ATL analogs vs NE profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | TB (H) | 20-23 | TB | 0.734 | 0.011 | 47.3% | -0.300 |
-| 6 | BUF (A) | 24-15 | ATL | 0.723 | 0.053 | 50.0% | 0.727 |
+| 6 | BUF (H) | 24-15 | ATL | 0.723 | 0.053 | 50.0% | 0.727 |
 | 2 | MIN (A) | 22-6 | ATL | 0.560 | 0.012 | 47.0% | 1.455 |
 
 ## Core EPA Offense Form (up to Week 8)

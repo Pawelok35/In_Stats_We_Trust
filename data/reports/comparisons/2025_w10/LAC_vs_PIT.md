@@ -1,5 +1,25 @@
 # Matchup Report - LAC vs PIT
 
+## Metric Comparison
+
+| Metric | LAC | PIT | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.034 | 0.077 | -0.043 |
+| Core EPA Defense | -0.004 | 0.053 | -0.057 |
+| Success Rate Offense | 0.487 | 0.480 | 0.007 |
+| Success Rate Defense | 0.442 | 0.495 | -0.053 |
+| Explosive Play Rate (Off) | 0.101 | 0.086 | 0.015 |
+| Third Down Conversion | 0.463 | 0.355 | 0.108 |
+| Points per Drive Differential | 0.429 | 0.183 | 0.246 |
+| Yards per Play Differential | 0.601 | -0.555 | 1.155 |
+| Turnover Margin | -0.444 | 0.875 | -1.319 |
+| Red Zone TD Rate (Off) | 0.112 | 0.182 | -0.070 |
+| Pressure Rate (Def) | 0.092 | 0.070 | 0.021 |
+| Tempo | 7.545 | 6.231 | 1.315 |
+| PowerScore | 0.127 | 0.127 | -0.001 |
+| PowerScore | 0.127 | 0.127 | -0.001 |
+| Tempo | 7.545 | 6.231 | 1.315 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | LAC | PIT | Delta |
@@ -28,6 +48,10 @@ PIT edge: +0.001 (LAC +0.127 vs PIT +0.127)
 **7 metrics version:**
 PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -232,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | GB (A) | 25-32 | GB | 0.758 | 0.017 | 43.8% | -0.644 |
+| 8 | GB (H) | 25-32 | GB | 0.758 | 0.017 | 43.8% | -0.644 |
 | 2 | SEA (H) | 23-27 | SEA | 0.738 | -0.208 | 36.8% | -0.314 |
 | 3 | NE (A) | 21-16 | PIT | 0.704 | 0.037 | 51.5% | 0.544 |
 

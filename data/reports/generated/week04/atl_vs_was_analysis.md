@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – ATL 14.4 – WAS 22.5
+1️⃣ Estimated Score (Model) – ATL 8.8 – WAS 23.8
 2️⃣ Predicted Winner (Model) – WAS
-3️⃣ Predicted Margin (Model) – WAS by 8.1 pts
-4️⃣ Win Probability (Model) – 79% (WAS)
-5️⃣ Why This Team Wins (Model) – Na 3rd down WAS utrzymuje 41.4%, podczas gdy ATL jest na 19.5%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera WAS (+15.4% vs +2.7%), więc pasy rywala będą częściej pod presją. PowerScore Summary potwierdza przewagę WAS: WAS +0.292 vs ATL +0.167. Red Zone TD Rate sprzyja WAS (16.7% vs 11.5%). Success Rate Offense pokazuje WAS na poziomie 51.7% vs 47.7% (+4.0 pp).
+3️⃣ Predicted Margin (Model) – WAS by 15.1 pts
+4️⃣ Win Probability (Model) – 95% (WAS)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja WAS (20.9% vs 3.7%). Field position edge wynosi +7.0 yds na rzecz WAS (3.1 vs -3.9), co skraca ich boisko. Success Rate Offense pokazuje WAS na poziomie 48.6% vs 42.9% (+5.7 pp). WAS prowadzi w Points per Drive Differential (+0.381 vs -0.419), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie WAS (9.7% vs 9.1%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – ATL 22.5 – WAS 22.5
+1️⃣ Estimated Score (Market) – ATL 23.0 – WAS 20.5
 2️⃣ Predicted Winner (Market) – ATL
-3️⃣ Predicted Margin (Market) – ATL by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (ATL)
-5️⃣ Forum Output (A) – PowerScore (Model) — ATL +0.167 vs WAS +0.292. Points per Drive Differential — ATL -0.345 vs WAS -0.725. Success Rate Offense — ATL 47.7% vs WAS 51.7%. Third Down Conversion — ATL 19.5% vs WAS 41.4%. Red Zone TD Rate — ATL 11.5% vs WAS 16.7%. Explosive Play Rate — ATL 11.4% vs WAS 10.8%. Model margin -8.1 pts vs market spread ATL -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę WAS po marginesie -8.1 pkt. WAS notuje -0.725 PPD vs -0.345 u ATL. Różnica w Success Rate to 51.7% vs 47.7%. Na 3rd down WAS (41.4%) wygląda solidniej niż ATL (19.5%). Red Zone i explosiveness ( 16.7% / 10.8% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +8.1.
+3️⃣ Predicted Margin (Market) – ATL by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (ATL)
+5️⃣ Forum Output (A) – PowerScore (Model) — ATL +0.268 vs WAS +0.252. Points per Drive Differential — ATL -0.419 vs WAS +0.381. Success Rate Offense — ATL 42.9% vs WAS 48.6%. Third Down Conversion — ATL 36.9% vs WAS 34.0%. Red Zone TD Rate — ATL 3.7% vs WAS 20.9%. Explosive Play Rate — ATL 9.1% vs WAS 9.7%. Model margin -15.1 pts vs market spread ATL +2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę WAS po marginesie -15.1 pkt. WAS notuje +0.381 PPD vs -0.419 u ATL. Różnica w Success Rate to 48.6% vs 42.9%. Na 3rd down WAS (34.0%) wygląda solidniej niż ATL (36.9%). Red Zone i explosiveness ( 20.9% / 9.7% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to +17.6.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +8.1 pts
-• PowerScoreDiff (winner) = +0.125
-• Confidence = 82.0%
+• Edge_vs_Line (winner) = +17.6 pts
+• PowerScoreDiff (winner) = -0.016
+• Confidence = 95.0%
 
-🏷 Model Tag: GOW — based on 82.0% confidence, +8.1 pts model edge vs line, and PowerScore Δ +0.125.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +17.6 pts model edge vs line, and PowerScore Δ -0.016.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – ATL 14.4 – WAS 22.5
-   • Win Probability – 79% (WAS)
+   • Estimated Score – ATL 8.8 – WAS 23.8
+   • Win Probability – 95% (WAS)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – ATL 22.5 – WAS 22.5
-   • Win Probability – 50% (ATL)
+   • Estimated Score – ATL 23.0 – WAS 20.5
+   • Win Probability – 59% (ATL)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — WAS (HC -0.0)
+🏷 Model Tag: NEUTRAL — WAS (HC +2.5)

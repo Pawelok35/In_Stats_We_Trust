@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – MIN 38.1 – CIN 18.2
-2️⃣ Predicted Winner (Model) – MIN
-3️⃣ Predicted Margin (Model) – MIN by 19.9 pts
-4️⃣ Win Probability (Model) – 95% (MIN)
-5️⃣ Why This Team Wins (Model) – Explosive Play Rate pozostaje po stronie MIN (14.6% vs 4.2%), więc big-play equity jest wyższe. Na 3rd down MIN utrzymuje 42.9%, podczas gdy CIN jest na 32.8%, co stabilizuje serie ofensywne. Turnover margin faworyzuje MIN (+2.00 vs +0.00), co przekłada się na dodatkowe posiadania. Defensive pressure rate wspiera MIN (+10.2% vs +7.4%), więc pasy rywala będą częściej pod presją. Field position edge wynosi +2.5 yds na rzecz MIN (-3.1 vs -5.6), co skraca ich boisko.
+1️⃣ Estimated Score (Model) – MIN 16.0 – CIN 20.8
+2️⃣ Predicted Winner (Model) – CIN
+3️⃣ Predicted Margin (Model) – CIN by 4.7 pts
+4️⃣ Win Probability (Model) – 65% (CIN)
+5️⃣ Why This Team Wins (Model) – Na 3rd down CIN utrzymuje 46.1%, podczas gdy MIN jest na 26.2%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja CIN (16.7% vs 8.3%). Success Rate Offense pokazuje CIN na poziomie 48.3% vs 41.7% (+6.6 pp). CIN prowadzi w Points per Drive Differential (+0.345 vs -0.238), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – MIN 22.5 – CIN 22.5
+1️⃣ Estimated Score (Market) – MIN 22.2 – CIN 19.2
 2️⃣ Predicted Winner (Market) – MIN
-3️⃣ Predicted Margin (Market) – MIN by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (MIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — MIN +0.123 vs CIN +0.369. Points per Drive Differential — MIN +0.923 vs CIN +0.011. Success Rate Offense — MIN 48.9% vs CIN 50.7%. Third Down Conversion — MIN 42.9% vs CIN 32.8%. Red Zone TD Rate — MIN 13.3% vs CIN 11.7%. Explosive Play Rate — MIN 14.6% vs CIN 4.2%. Model margin 19.9 pts vs market spread MIN -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę MIN po marginesie 19.9 pkt. MIN notuje +0.923 PPD vs +0.011 u CIN. Różnica w Success Rate to 48.9% vs 50.7%. Na 3rd down MIN (42.9%) wygląda solidniej niż CIN (32.8%). Red Zone i explosiveness ( 13.3% / 14.6% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +19.9.
+3️⃣ Predicted Margin (Market) – MIN by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (MIN)
+5️⃣ Forum Output (A) – PowerScore (Model) — MIN +0.061 vs CIN -0.075. Points per Drive Differential — MIN -0.238 vs CIN +0.345. Success Rate Offense — MIN 41.7% vs CIN 48.3%. Third Down Conversion — MIN 26.2% vs CIN 46.1%. Red Zone TD Rate — MIN 8.3% vs CIN 16.7%. Explosive Play Rate — MIN 8.6% vs CIN 4.6%. Model margin -4.7 pts vs market spread MIN +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -4.7 pkt. CIN notuje +0.345 PPD vs -0.238 u MIN. Różnica w Success Rate to 48.3% vs 41.7%. Na 3rd down CIN (46.1%) wygląda solidniej niż MIN (26.2%). Red Zone i explosiveness ( 16.7% / 4.6% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +7.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +19.9 pts
-• PowerScoreDiff (winner) = -0.246
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +7.7 pts
+• PowerScoreDiff (winner) = -0.136
+• Confidence = 65.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +19.9 pts model edge vs line, and PowerScore Δ -0.246.
+🏷 Model Tag: NEUTRAL — based on 65.0% confidence, +7.7 pts model edge vs line, and PowerScore Δ -0.136.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – MIN 38.1 – CIN 18.2
-   • Win Probability – 95% (MIN)
+   • Estimated Score – MIN 16.0 – CIN 20.8
+   • Win Probability – 65% (CIN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – MIN 22.5 – CIN 22.5
-   • Win Probability – 50% (MIN)
+   • Estimated Score – MIN 22.2 – CIN 19.2
+   • Win Probability – 60% (MIN)
 
-🏷 Model Tag: NEUTRAL — MIN (HC +0.0)
+🏷 Model Tag: NEUTRAL — CIN (HC +3.0)

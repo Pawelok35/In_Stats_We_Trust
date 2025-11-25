@@ -1,41 +1,65 @@
 # Matchup Report - SF vs CAR
 
+## Metric Comparison
+
+| Metric | SF | CAR | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.064 | -0.005 | 0.070 |
+| Core EPA Defense | 0.018 | 0.045 | -0.027 |
+| Success Rate Offense | 0.504 | 0.468 | 0.036 |
+| Success Rate Defense | 0.496 | 0.448 | 0.048 |
+| Explosive Play Rate (Off) | 0.102 | 0.094 | 0.008 |
+| Third Down Conversion | 0.417 | 0.328 | 0.088 |
+| Points per Drive Differential | 0.337 | -0.205 | 0.543 |
+| Yards per Play Differential | -0.036 | -0.341 | 0.305 |
+| Turnover Margin | -0.300 | -0.100 | -0.200 |
+| Red Zone TD Rate (Off) | 0.160 | 0.119 | 0.041 |
+| Pressure Rate (Def) | 0.034 | 0.042 | -0.007 |
+| Tempo | 8.200 | 6.444 | 1.756 |
+| PowerScore | 0.090 | 0.051 | 0.039 |
+| PowerScore | 0.090 | 0.051 | 0.039 |
+| Tempo | 8.200 | 6.444 | 1.756 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | SF | CAR | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.246 | 0.104 | +0.142 |
-| EPA Defense | 20% | -0.067 | 0.043 | -0.110 |
-| Success Rate Offense | 25% | 55.4% | 44.7% | +10.7 pp |
-| Tempo | 20% | 0.095 | 0.128 | -0.033 |
+| EPA Offense | 35% | 0.000 | -0.202 | +0.202 |
+| EPA Defense | 20% | -0.202 | 0.000 | -0.202 |
+| Success Rate Offense | 25% | 46.3% | 43.1% | +3.2 pp |
+| Tempo | 20% | 0.073 | 0.069 | +0.004 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | SF | CAR | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.246 | 0.104 | +0.142 |
-| EPA Defense | 20% | -0.067 | 0.043 | -0.110 |
-| Success Rate Offense | 15% | 55.4% | 44.7% | +10.7 pp |
-| Turnover Margin | 10% | 3.000 | 1.000 | +2.000 |
-| Tempo | 10% | 0.095 | 0.128 | -0.033 |
-| Red Zone TD Rate (Off) | 10% | 23.5% | 7.1% | +16.4 pp |
-| Pressure Rate (Def) | 10% | 0.0% | 0.0% | +0.0 pp |
+| EPA Offense | 25% | 0.000 | -0.202 | +0.202 |
+| EPA Defense | 20% | -0.202 | 0.000 | -0.202 |
+| Success Rate Offense | 15% | 46.3% | 43.1% | +3.2 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.073 | 0.069 | +0.004 |
+| Red Zone TD Rate (Off) | 10% | 18.2% | 0.0% | +18.2 pp |
+| Pressure Rate (Def) | 10% | 3.2% | 0.0% | +3.2 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-SF edge: +0.048 (SF +0.230 vs CAR +0.182)
+SF edge: +0.039 (SF +0.090 vs CAR +0.051)
 **7 metrics version:**
-SF edge: +0.243 (SF +0.464 vs CAR +0.221)
-**Verdict:** SF holds the edge in the extended breakdown (lead 0.243), driven by Turnover Margin (10% weight).
+CAR edge: +0.163 (SF -0.042 vs CAR +0.121)
+**Verdict:** CAR holds the edge in the extended breakdown (lead 0.163), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SF - CAR) | +0.9 pts (favours SF) |
-| Model Win% SF | 53.7% |
-| Model Win% CAR | 46.3% |
+| Model Spread (SF - CAR) | +0.7 pts (favours SF) |
+| Model Win% SF | 53.0% |
+| Model Win% CAR | 47.0% |
 | SOS Differential (SF-CAR) | +0.018 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ SF edge: +0.243 (SF +0.464 vs CAR +0.221)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| SF | 41.9% | n/a | n/a | 56.7% | 50.0% | n/a |
-| CAR | 56.4% | n/a | n/a | 51.7% | 38.5% | n/a |
+| SF | 41.5% | 44.3% | -2.8% | 41.2% | 50.0% | Slight run lean |
+| CAR | 53.4% | 44.3% | 9.1% | 41.9% | 44.4% | Pass heavy |
 
 ## Situational Edges
 
@@ -225,16 +249,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | NO (A) | 26-21 | SF | 0.758 | 0.027 | 46.6% | 0.455 |
-| 8 | HOU (H) | 15-23 | HOU | 0.614 | 0.036 | 45.2% | -0.933 |
+| 8 | HOU (A) | 15-23 | HOU | 0.614 | 0.036 | 45.2% | -0.933 |
 | 9 | NYG (A) | 34-26 | SF | 0.605 | 0.279 | 53.0% | 0.691 |
 
 **CAR analogs vs SF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | BUF (A) | 9-44 | BUF | 0.862 | -0.210 | 47.4% | -3.182 |
+| 8 | BUF (H) | 9-44 | BUF | 0.862 | -0.210 | 47.4% | -3.182 |
 | 9 | GB (A) | 16-11 | CAR | 0.850 | 0.066 | 49.3% | 0.661 |
-| 6 | DAL (A) | 30-30 | TIE | 0.827 | 0.153 | 56.5% | 0.000 |
+| 6 | DAL (H) | 30-30 | TIE | 0.827 | 0.153 | 56.5% | 0.000 |
 
 ## Core EPA Offense Form (up to Week 11)
 

@@ -4,19 +4,21 @@
 
 | Metric | PIT | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.139 | 0.056 | ↑ +0.083 |
-| Core EPA Defense | 0.056 | 0.139 | ↓ -0.083 |
-| Success Rate Offense | 58.0% | 47.3% | ↑ +10.7 pp |
-| Success Rate Defense | 47.3% | 58.0% | ↓ -10.7 pp |
-| Explosive Play Rate (Off) | 8.7% | 8.8% | ↓ -0.1 pp |
-| Third Down Conversion | 40.0% | 26.7% | ↑ +13.3 pp |
-| Points per Drive Differential | 0.082 | -0.082 | ↑ +0.164 |
-| Yards per Play Differential | 0.426 | -0.426 | ↑ +0.853 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 9.5% | 11.8% | ↓ -2.2 pp |
-| Pressure Rate (Def) | 11.3% | 7.7% | ↑ +3.6 pp |
-| Tempo | 6.273 | 9.100 | ↓ -2.827 |
-| PowerScore | 0.222 | 0.183 | ↑ +0.039 |
+| Core EPA Offense | 0.012 | -0.131 | 0.142 |
+| Core EPA Defense | 0.034 | -0.204 | 0.238 |
+| Success Rate Offense | 0.463 | 0.444 | 0.020 |
+| Success Rate Defense | 0.502 | 0.392 | 0.110 |
+| Explosive Play Rate (Off) | 0.082 | 0.098 | -0.016 |
+| Third Down Conversion | 0.320 | 0.273 | 0.047 |
+| Points per Drive Differential | 0.137 | 0.446 | -0.308 |
+| Yards per Play Differential | -1.381 | 0.369 | -1.750 |
+| Turnover Margin | 1.667 | 1.333 | 0.333 |
+| Red Zone TD Rate (Off) | 0.216 | 0.130 | 0.086 |
+| Pressure Rate (Def) | 0.073 | 0.101 | -0.028 |
+| Tempo | 6.273 | 9.100 | -2.827 |
+| PowerScore | 0.222 | 0.183 | 0.039 |
+| PowerScore | 0.222 | 0.183 | 0.039 |
+| Tempo | 6.273 | 9.100 | -2.827 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PIT edge: +0.039 (PIT +0.222 vs MIN +0.183)
 **7 metrics version:**
 PIT edge: +0.422 (PIT +0.362 vs MIN -0.059)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.422), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

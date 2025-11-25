@@ -4,19 +4,21 @@
 
 | Metric | GB | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.000 | 0.066 | ↓ -0.067 |
-| Core EPA Defense | 0.066 | -0.000 | ↑ +0.067 |
-| Success Rate Offense | 50.0% | 49.3% | ↑ +0.7 pp |
-| Success Rate Defense | 49.3% | 50.0% | ↓ -0.7 pp |
-| Explosive Play Rate (Off) | 9.2% | 8.5% | ↑ +0.8 pp |
-| Third Down Conversion | 50.0% | 33.3% | ↑ +16.7 pp |
-| Points per Drive Differential | -0.661 | 0.661 | ↓ -1.321 |
-| Yards per Play Differential | 1.123 | -1.123 | ↑ +2.246 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 5.6% | 11.8% | ↓ -6.2 pp |
-| Pressure Rate (Def) | 4.8% | 2.6% | ↑ +2.1 pp |
-| Tempo | 9.500 | 10.143 | ↓ -0.643 |
-| PowerScore | 0.157 | 0.163 | ↓ -0.007 |
+| Core EPA Offense | 0.127 | -0.028 | 0.155 |
+| Core EPA Defense | 0.024 | 0.051 | -0.028 |
+| Success Rate Offense | 0.502 | 0.467 | 0.035 |
+| Success Rate Defense | 0.465 | 0.433 | 0.032 |
+| Explosive Play Rate (Off) | 0.123 | 0.091 | 0.032 |
+| Third Down Conversion | 0.418 | 0.324 | 0.093 |
+| Points per Drive Differential | 0.612 | -0.392 | 1.004 |
+| Yards per Play Differential | 0.988 | -0.441 | 1.429 |
+| Turnover Margin | 0.143 | -0.375 | 0.518 |
+| Red Zone TD Rate (Off) | 0.185 | 0.125 | 0.060 |
+| Pressure Rate (Def) | 0.074 | 0.049 | 0.025 |
+| Tempo | 9.500 | 10.143 | -0.643 |
+| PowerScore | 0.157 | 0.163 | -0.007 |
+| PowerScore | 0.157 | 0.163 | -0.007 |
+| Tempo | 9.500 | 10.143 | -0.643 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CAR edge: +0.007 (GB +0.157 vs CAR +0.163)
 **7 metrics version:**
 CAR edge: +0.206 (GB +0.008 vs CAR +0.213)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.206), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -244,15 +250,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | CLE (A) | 10-12 | CLE | 0.746 | -0.094 | 39.8% | -0.182 |
 | 2 | WAS (H) | 27-20 | GB | 0.641 | 0.046 | 48.8% | 0.614 |
-| 6 | CIN (A) | 27-18 | GB | 0.498 | 0.216 | 58.7% | 1.000 |
+| 6 | CIN (H) | 27-18 | GB | 0.498 | 0.216 | 58.7% | 1.000 |
 
 **CAR analogs vs GB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | BUF (A) | 9-44 | BUF | 0.953 | -0.210 | 47.4% | -3.182 |
+| 8 | BUF (H) | 9-44 | BUF | 0.953 | -0.210 | 47.4% | -3.182 |
 | 4 | NE (A) | 19-36 | NE | 0.703 | -0.179 | 47.1% | -1.545 |
-| 6 | DAL (A) | 30-30 | TIE | 0.695 | 0.153 | 56.5% | 0.000 |
+| 6 | DAL (H) | 30-30 | TIE | 0.695 | 0.153 | 56.5% | 0.000 |
 
 ## Core EPA Offense Form (up to Week 8)
 

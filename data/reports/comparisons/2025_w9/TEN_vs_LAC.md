@@ -4,19 +4,21 @@
 
 | Metric | TEN | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.151 | -0.002 | ↓ -0.149 |
-| Core EPA Defense | -0.002 | -0.151 | ↑ +0.149 |
-| Success Rate Offense | 37.5% | 54.2% | ↓ -16.7 pp |
-| Success Rate Defense | 54.2% | 37.5% | ↑ +16.7 pp |
-| Explosive Play Rate (Off) | 12.5% | 10.8% | ↑ +1.7 pp |
-| Third Down Conversion | 9.1% | 53.8% | ↓ -44.8 pp |
-| Points per Drive Differential | -2.200 | 2.200 | ↓ -4.400 |
-| Yards per Play Differential | -0.914 | 0.914 | ↓ -1.828 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 20.0% | ↓ -20.0 pp |
-| Pressure Rate (Def) | 16.7% | 16.0% | ↑ +0.7 pp |
-| Tempo | 6.400 | 7.545 | ↓ -1.145 |
-| PowerScore | 0.066 | 0.127 | ↓ -0.061 |
+| Core EPA Offense | -0.148 | 0.038 | -0.186 |
+| Core EPA Defense | 0.094 | 0.015 | 0.079 |
+| Success Rate Offense | 0.423 | 0.480 | -0.058 |
+| Success Rate Defense | 0.464 | 0.450 | 0.014 |
+| Explosive Play Rate (Off) | 0.080 | 0.100 | -0.020 |
+| Third Down Conversion | 0.273 | 0.453 | -0.180 |
+| Points per Drive Differential | -1.324 | 0.208 | -1.532 |
+| Yards per Play Differential | -1.395 | 0.561 | -1.956 |
+| Turnover Margin | -0.875 | -0.375 | -0.500 |
+| Red Zone TD Rate (Off) | 0.086 | 0.101 | -0.015 |
+| Pressure Rate (Def) | 0.066 | 0.083 | -0.017 |
+| Tempo | 6.400 | 7.545 | -1.145 |
+| PowerScore | 0.066 | 0.127 | -0.061 |
+| PowerScore | 0.066 | 0.127 | -0.061 |
+| Tempo | 6.400 | 7.545 | -1.145 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LAC edge: +0.061 (TEN +0.066 vs LAC +0.127)
 **7 metrics version:**
 TEN edge: +0.150 (TEN +0.147 vs LAC -0.002)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.150), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -244,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | DEN (A) | 12-20 | DEN | 0.682 | -0.219 | 32.5% | -0.571 |
 | 3 | IND (H) | 20-32 | IND | 0.679 | -0.080 | 47.7% | -1.278 |
-| 8 | IND (H) | 14-38 | IND | 0.679 | -0.089 | 43.2% | -2.182 |
+| 8 | IND (A) | 14-38 | IND | 0.679 | -0.089 | 43.2% | -2.182 |
 
 **LAC analogs vs TEN profile**
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | LV (A) | 20-10 | LAC | 0.966 | -0.087 | 46.5% | 0.918 |
 | 4 | NYG (A) | 18-21 | NYG | 0.814 | -0.066 | 46.8% | -0.273 |
-| 8 | MIN (A) | 37-9 | LAC | 0.741 | 0.170 | 54.5% | 3.111 |
+| 8 | MIN (H) | 37-9 | LAC | 0.741 | 0.170 | 54.5% | 3.111 |
 
 ## Core EPA Offense Form (up to Week 8)
 

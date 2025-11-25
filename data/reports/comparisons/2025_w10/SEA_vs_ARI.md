@@ -1,5 +1,25 @@
 # Matchup Report - SEA vs ARI
 
+## Metric Comparison
+
+| Metric | SEA | ARI | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.076 | 0.024 | 0.051 |
+| Core EPA Defense | -0.069 | 0.010 | -0.079 |
+| Success Rate Offense | 0.497 | 0.459 | 0.039 |
+| Success Rate Defense | 0.442 | 0.487 | -0.046 |
+| Explosive Play Rate (Off) | 0.118 | 0.094 | 0.024 |
+| Third Down Conversion | 0.350 | 0.416 | -0.066 |
+| Points per Drive Differential | 0.734 | 0.274 | 0.460 |
+| Yards per Play Differential | 1.201 | -0.294 | 1.494 |
+| Turnover Margin | -0.250 | 0.250 | -0.500 |
+| Red Zone TD Rate (Off) | 0.168 | 0.154 | 0.014 |
+| Pressure Rate (Def) | 0.085 | 0.052 | 0.033 |
+| Tempo | 6.500 | 8.200 | -1.700 |
+| PowerScore | 0.281 | 0.148 | 0.133 |
+| PowerScore | 0.281 | 0.148 | 0.133 |
+| Tempo | 6.500 | 8.200 | -1.700 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | SEA | ARI | Delta |
@@ -28,6 +48,10 @@ SEA edge: +0.133 (SEA +0.281 vs ARI +0.148)
 **7 metrics version:**
 ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.105), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -233,8 +257,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | SEA (H) | 20-28 | SEA | 1.000 | -0.006 | 45.2% | -0.633 |
-| 6 | IND (H) | 27-31 | IND | 0.796 | 0.117 | 51.1% | -0.400 |
-| 7 | GB (A) | 23-24 | GB | 0.731 | 0.039 | 48.9% | -0.144 |
+| 6 | IND (A) | 27-31 | IND | 0.796 | 0.117 | 51.1% | -0.400 |
+| 7 | GB (H) | 23-24 | GB | 0.731 | 0.039 | 48.9% | -0.144 |
 
 ## Core EPA Offense Form (up to Week 9)
 

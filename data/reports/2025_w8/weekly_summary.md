@@ -7,16 +7,16 @@
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/teams/2025_w8/BBB.md`
 
 ### Matchup Reports
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/BUF_vs_CAR.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/CHI_vs_BAL.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/CLE_vs_NE.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/DAL_vs_DEN.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/GB_vs_PIT.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/MIA_vs_ATL.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/MIN_vs_LAC.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/NYG_vs_PHI.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/NYJ_vs_CIN.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/SF_vs_HOU.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/TB_vs_NO.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/TEN_vs_IND.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/WAS_vs_KC.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/ATL_vs_MIA.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/BAL_vs_CHI.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/CAR_vs_BUF.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/CIN_vs_NYJ.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/DEN_vs_DAL.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/HOU_vs_SF.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/IND_vs_TEN.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/KC_vs_WAS.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/LAC_vs_MIN.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/NE_vs_CLE.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/NO_vs_TB.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/PHI_vs_NYG.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2025_w8/PIT_vs_GB.md`

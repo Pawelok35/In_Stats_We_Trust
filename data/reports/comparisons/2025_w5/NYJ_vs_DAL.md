@@ -4,19 +4,21 @@
 
 | Metric | NYJ | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.025 | 0.258 | ↓ -0.232 |
-| Core EPA Defense | 0.258 | 0.025 | ↑ +0.232 |
-| Success Rate Offense | 50.0% | 47.6% | ↑ +2.4 pp |
-| Success Rate Defense | 47.6% | 50.0% | ↓ -2.4 pp |
-| Explosive Play Rate (Off) | 10.2% | 9.8% | ↑ +0.4 pp |
-| Third Down Conversion | 41.2% | 46.2% | ↓ -5.0 pp |
-| Points per Drive Differential | -1.250 | 1.250 | ↓ -2.500 |
-| Yards per Play Differential | -1.175 | 1.175 | ↓ -2.350 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 11.8% | 18.8% | ↓ -7.0 pp |
-| Pressure Rate (Def) | 3.0% | 9.3% | ↓ -6.2 pp |
-| Tempo | 8.167 | 6.833 | ↑ +1.333 |
-| PowerScore | 0.206 | 0.234 | ↓ -0.028 |
+| Core EPA Offense | -0.002 | 0.124 | -0.126 |
+| Core EPA Defense | 0.127 | 0.200 | -0.073 |
+| Success Rate Offense | 0.511 | 0.501 | 0.010 |
+| Success Rate Defense | 0.458 | 0.504 | -0.047 |
+| Explosive Play Rate (Off) | 0.093 | 0.094 | -0.001 |
+| Third Down Conversion | 0.293 | 0.371 | -0.078 |
+| Points per Drive Differential | -0.869 | -0.662 | -0.207 |
+| Yards per Play Differential | -0.121 | -0.475 | 0.354 |
+| Turnover Margin | -1.750 | -1.000 | -0.750 |
+| Red Zone TD Rate (Off) | 0.136 | 0.175 | -0.039 |
+| Pressure Rate (Def) | 0.044 | 0.032 | 0.013 |
+| Tempo | 8.167 | 6.833 | 1.333 |
+| PowerScore | 0.206 | 0.234 | -0.028 |
+| PowerScore | 0.206 | 0.234 | -0.028 |
+| Tempo | 8.167 | 6.833 | 1.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DAL edge: +0.028 (NYJ +0.206 vs DAL +0.234)
 **7 metrics version:**
 DAL edge: +0.221 (NYJ +0.058 vs DAL +0.279)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.221), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

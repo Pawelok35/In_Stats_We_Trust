@@ -1,41 +1,65 @@
 # Matchup Report - ARI vs JAX
 
+## Metric Comparison
+
+| Metric | ARI | JAX | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.014 | 0.033 | -0.019 |
+| Core EPA Defense | 0.036 | -0.011 | 0.048 |
+| Success Rate Offense | 0.459 | 0.478 | -0.019 |
+| Success Rate Defense | 0.495 | 0.475 | 0.020 |
+| Explosive Play Rate (Off) | 0.097 | 0.091 | 0.006 |
+| Third Down Conversion | 0.414 | 0.355 | 0.060 |
+| Points per Drive Differential | 0.086 | 0.097 | -0.010 |
+| Yards per Play Differential | -0.124 | -0.088 | -0.036 |
+| Turnover Margin | -0.111 | 0.889 | -1.000 |
+| Red Zone TD Rate (Off) | 0.153 | 0.112 | 0.041 |
+| Pressure Rate (Def) | 0.054 | 0.042 | 0.011 |
+| Tempo | 7.923 | 5.571 | 2.352 |
+| PowerScore | 0.083 | 0.108 | -0.026 |
+| PowerScore | 0.083 | 0.108 | -0.026 |
+| Tempo | 7.923 | 5.571 | 2.352 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | ARI | JAX | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.067 | 0.142 | -0.209 |
-| EPA Defense | 20% | 0.246 | -0.320 | +0.566 |
-| Success Rate Offense | 25% | 46.4% | 56.8% | -10.4 pp |
-| Tempo | 20% | 0.113 | 0.099 | +0.015 |
+| EPA Offense | 35% | -0.097 | -0.056 | -0.042 |
+| EPA Defense | 20% | -0.056 | -0.097 | +0.042 |
+| Success Rate Offense | 25% | 46.6% | 48.7% | -2.1 pp |
+| Tempo | 20% | 0.058 | 0.128 | -0.070 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | ARI | JAX | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.067 | 0.142 | -0.209 |
-| EPA Defense | 20% | 0.246 | -0.320 | +0.566 |
-| Success Rate Offense | 15% | 46.4% | 56.8% | -10.4 pp |
-| Turnover Margin | 10% | -3.000 | 0.000 | -3.000 |
-| Tempo | 10% | 0.113 | 0.099 | +0.015 |
-| Red Zone TD Rate (Off) | 10% | 15.0% | 19.2% | -4.2 pp |
-| Pressure Rate (Def) | 10% | 6.5% | 13.8% | -7.3 pp |
+| EPA Offense | 25% | -0.097 | -0.056 | -0.042 |
+| EPA Defense | 20% | -0.056 | -0.097 | +0.042 |
+| Success Rate Offense | 15% | 46.6% | 48.7% | -2.1 pp |
+| Turnover Margin | 10% | 4.000 | -4.000 | +8.000 |
+| Tempo | 10% | 0.058 | 0.128 | -0.070 |
+| Red Zone TD Rate (Off) | 10% | 7.7% | 21.4% | -13.7 pp |
+| Pressure Rate (Def) | 10% | 8.8% | 10.7% | -1.9 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-ARI edge: +0.017 (ARI +0.164 vs JAX +0.147)
+JAX edge: +0.026 (ARI +0.083 vs JAX +0.108)
 **7 metrics version:**
-JAX edge: +0.265 (ARI -0.165 vs JAX +0.100)
-**Verdict:** JAX holds the edge in the extended breakdown (lead 0.265), driven by Turnover Margin (10% weight).
+ARI edge: +0.772 (ARI +0.457 vs JAX -0.315)
+**Verdict:** ARI holds the edge in the extended breakdown (lead 0.772), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - JAX) | +0.3 pts (favours ARI) |
-| Model Win% ARI | 51.3% |
-| Model Win% JAX | 48.7% |
+| Model Spread (ARI - JAX) | -0.5 pts (favours JAX) |
+| Model Win% ARI | 48.0% |
+| Model Win% JAX | 52.0% |
 | SOS Differential (ARI-JAX) | +0.022 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ JAX edge: +0.265 (ARI -0.165 vs JAX +0.100)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| ARI | 59.8% | n/a | n/a | 24.1% | 56.2% | n/a |
-| JAX | 27.2% | n/a | n/a | 51.6% | 58.1% | n/a |
+| ARI | 54.4% | 44.3% | 10.1% | 41.1% | 53.2% | Pass heavy |
+| JAX | 43.6% | 44.3% | -0.7% | 55.9% | 43.2% | Balanced |
 
 ## Situational Edges
 

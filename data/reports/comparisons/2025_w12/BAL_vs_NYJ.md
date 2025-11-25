@@ -1,41 +1,65 @@
 # Matchup Report - BAL vs NYJ
 
+## Metric Comparison
+
+| Metric | BAL | NYJ | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.039 | -0.014 | 0.053 |
+| Core EPA Defense | 0.037 | 0.108 | -0.071 |
+| Success Rate Offense | 0.490 | 0.485 | 0.004 |
+| Success Rate Defense | 0.483 | 0.469 | 0.015 |
+| Explosive Play Rate (Off) | 0.122 | 0.082 | 0.039 |
+| Third Down Conversion | 0.361 | 0.351 | 0.010 |
+| Points per Drive Differential | -0.067 | -0.795 | 0.727 |
+| Yards per Play Differential | 0.155 | -0.497 | 0.653 |
+| Turnover Margin | -0.333 | -1.111 | 0.778 |
+| Red Zone TD Rate (Off) | 0.116 | 0.098 | 0.018 |
+| Pressure Rate (Def) | 0.043 | 0.039 | 0.004 |
+| Tempo | 7.091 | 7.400 | -0.309 |
+| PowerScore | 0.126 | 0.091 | 0.035 |
+| PowerScore | 0.126 | 0.091 | 0.035 |
+| Tempo | 7.091 | 7.400 | -0.309 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | BAL | NYJ | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.055 | -0.052 | -0.003 |
-| EPA Defense | 20% | -0.184 | 0.121 | -0.306 |
-| Success Rate Offense | 25% | 45.0% | 52.9% | -7.9 pp |
-| Tempo | 20% | 0.113 | 0.086 | +0.027 |
+| EPA Offense | 35% | 0.085 | -0.107 | +0.192 |
+| EPA Defense | 20% | -0.107 | 0.085 | -0.192 |
+| Success Rate Offense | 25% | 41.0% | 39.2% | +1.8 pp |
+| Tempo | 20% | 0.077 | 0.068 | +0.009 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | BAL | NYJ | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.055 | -0.052 | -0.003 |
-| EPA Defense | 20% | -0.184 | 0.121 | -0.306 |
-| Success Rate Offense | 15% | 45.0% | 52.9% | -7.9 pp |
-| Turnover Margin | 10% | 0.000 | -1.000 | +1.000 |
-| Tempo | 10% | 0.113 | 0.086 | +0.027 |
-| Red Zone TD Rate (Off) | 10% | 5.6% | 11.1% | -5.6 pp |
-| Pressure Rate (Def) | 10% | 10.3% | 2.7% | +7.6 pp |
+| EPA Offense | 25% | 0.085 | -0.107 | +0.192 |
+| EPA Defense | 20% | -0.107 | 0.085 | -0.192 |
+| Success Rate Offense | 15% | 41.0% | 39.2% | +1.8 pp |
+| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
+| Tempo | 10% | 0.077 | 0.068 | +0.009 |
+| Red Zone TD Rate (Off) | 10% | 7.7% | 16.7% | -9.0 pp |
+| Pressure Rate (Def) | 10% | 9.7% | 3.8% | +5.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-NYJ edge: +0.077 (BAL +0.079 vs NYJ +0.155)
+BAL edge: +0.035 (BAL +0.126 vs NYJ +0.091)
 **7 metrics version:**
-BAL edge: +0.031 (BAL +0.044 vs NYJ +0.013)
-**Verdict:** BAL holds the edge in the extended breakdown (lead 0.031), driven by Turnover Margin (10% weight).
+BAL edge: +0.410 (BAL +0.286 vs NYJ -0.124)
+**Verdict:** BAL holds the edge in the extended breakdown (lead 0.410), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - NYJ) | -1.4 pts (favours NYJ) |
-| Model Win% BAL | 44.1% |
-| Model Win% NYJ | 55.9% |
+| Model Spread (BAL - NYJ) | +0.7 pts (favours BAL) |
+| Model Win% BAL | 52.7% |
+| Model Win% NYJ | 47.3% |
 | SOS Differential (BAL-NYJ) | -0.011 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ BAL edge: +0.031 (BAL +0.044 vs NYJ +0.013)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| BAL | 40.0% | n/a | n/a | 54.1% | 48.9% | n/a |
-| NYJ | 41.4% | n/a | n/a | 24.1% | 52.3% | n/a |
+| BAL | 33.3% | 44.3% | -11.0% | 34.6% | 44.2% | Run heavy |
+| NYJ | 41.9% | 44.3% | -2.4% | 45.2% | 34.9% | Slight run lean |
 
 ## Situational Edges
 
@@ -234,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | BUF (H) | 10-27 | BUF | 0.806 | -0.170 | 42.2% | -1.727 |
 | 5 | DAL (H) | 22-37 | DAL | 0.762 | 0.025 | 50.0% | -1.250 |
-| 8 | CIN (H) | 39-42 | CIN | 0.695 | 0.243 | 56.0% | -0.255 |
+| 8 | CIN (A) | 39-42 | CIN | 0.695 | 0.243 | 56.0% | -0.255 |
 
 ## Core EPA Offense Form (up to Week 11)
 

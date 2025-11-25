@@ -4,19 +4,21 @@
 
 | Metric | WAS | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.098 | 0.333 | ↓ -0.431 |
-| Core EPA Defense | 0.333 | -0.098 | ↑ +0.431 |
-| Success Rate Offense | 48.8% | 60.0% | ↓ -11.2 pp |
-| Success Rate Defense | 60.0% | 48.8% | ↑ +11.2 pp |
-| Explosive Play Rate (Off) | 7.3% | 16.9% | ↓ -9.6 pp |
-| Third Down Conversion | 40.0% | 58.3% | ↓ -18.3 pp |
-| Points per Drive Differential | -2.400 | 2.400 | ↓ -4.800 |
-| Yards per Play Differential | -2.894 | 2.894 | ↓ -5.788 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 16.7% | ± 0.0 pp |
-| Pressure Rate (Def) | 0.0% | 15.4% | ↓ -15.4 pp |
-| Tempo | 8.200 | 6.500 | ↑ +1.700 |
-| PowerScore | 0.169 | 0.281 | ↓ -0.112 |
+| Core EPA Offense | 0.050 | 0.039 | 0.011 |
+| Core EPA Defense | 0.067 | -0.065 | 0.132 |
+| Success Rate Offense | 0.501 | 0.482 | 0.018 |
+| Success Rate Defense | 0.457 | 0.435 | 0.022 |
+| Explosive Play Rate (Off) | 0.103 | 0.111 | -0.008 |
+| Third Down Conversion | 0.317 | 0.317 | -0.000 |
+| Points per Drive Differential | -0.091 | 0.496 | -0.587 |
+| Yards per Play Differential | -0.211 | 0.959 | -1.170 |
+| Turnover Margin | -0.625 | -0.429 | -0.196 |
+| Red Zone TD Rate (Off) | 0.195 | 0.168 | 0.027 |
+| Pressure Rate (Def) | 0.076 | 0.075 | 0.001 |
+| Tempo | 8.200 | 6.500 | 1.700 |
+| PowerScore | 0.169 | 0.281 | -0.112 |
+| PowerScore | 0.169 | 0.281 | -0.112 |
+| Tempo | 8.200 | 6.500 | 1.700 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.112 (WAS +0.169 vs SEA +0.281)
 **7 metrics version:**
 SEA edge: +0.263 (WAS +0.039 vs SEA +0.303)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.263), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -242,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | KC (H) | 7-25 | KC | 0.666 | -0.108 | 46.9% | -2.236 |
+| 8 | KC (A) | 7-25 | KC | 0.666 | -0.108 | 46.9% | -2.236 |
 | 2 | GB (A) | 18-25 | GB | 0.601 | -0.070 | 44.2% | -0.614 |
 | 5 | LAC (A) | 27-8 | WAS | 0.552 | 0.185 | 56.8% | 2.375 |
 

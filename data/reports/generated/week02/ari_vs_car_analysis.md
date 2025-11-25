@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – ARI 51.5 – CAR 4.8
+1️⃣ Estimated Score (Model) – ARI 44.9 – CAR 13.3
 2️⃣ Predicted Winner (Model) – ARI
-3️⃣ Predicted Margin (Model) – ARI by 46.7 pts
+3️⃣ Predicted Margin (Model) – ARI by 31.6 pts
 4️⃣ Win Probability (Model) – 95% (ARI)
-5️⃣ Why This Team Wins (Model) – Na 3rd down ARI utrzymuje 53.8%, podczas gdy CAR jest na 7.7%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę ARI: ARI +0.269 vs CAR -0.040. Defensive pressure rate wspiera ARI (+15.6% vs +4.2%), więc pasy rywala będą częściej pod presją. Success Rate Offense pokazuje ARI na poziomie 44.7% vs 38.0% (+6.7 pp). Explosive Play Rate pozostaje po stronie ARI (7.9% vs 3.8%), więc big-play equity jest wyższe.
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja ARI (14.3% vs 0.0%). Success Rate Offense pokazuje ARI na poziomie 44.4% vs 39.5% (+4.9 pp). Turnover margin faworyzuje ARI (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. ARI prowadzi w Points per Drive Differential (+1.040 vs -1.600), więc bazowa efektywność napędza przewagę. Defensive pressure rate wspiera ARI (+5.1% vs +3.7%), więc pasy rywala będą częściej pod presją.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – ARI 22.5 – CAR 22.5
+1️⃣ Estimated Score (Market) – ARI 25.0 – CAR 21.5
 2️⃣ Predicted Winner (Market) – ARI
-3️⃣ Predicted Margin (Market) – ARI by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (ARI)
-5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.269 vs CAR -0.040. Points per Drive Differential — ARI -0.600 vs CAR -3.503. Success Rate Offense — ARI 44.7% vs CAR 38.0%. Third Down Conversion — ARI 53.8% vs CAR 7.7%. Red Zone TD Rate — ARI 11.8% vs CAR 14.3%. Explosive Play Rate — ARI 7.9% vs CAR 3.8%. Model margin 46.7 pts vs market spread ARI -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie 46.7 pkt. ARI notuje -0.600 PPD vs -3.503 u CAR. Różnica w Success Rate to 44.7% vs 38.0%. Na 3rd down ARI (53.8%) wygląda solidniej niż CAR (7.7%). Red Zone i explosiveness ( 11.8% / 7.9% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +46.7.
+3️⃣ Predicted Margin (Market) – ARI by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (ARI)
+5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.147 vs CAR +0.136. Points per Drive Differential — ARI +1.040 vs CAR -1.600. Success Rate Offense — ARI 44.4% vs CAR 39.5%. Third Down Conversion — ARI 40.0% vs CAR 50.0%. Red Zone TD Rate — ARI 14.3% vs CAR 0.0%. Explosive Play Rate — ARI 7.4% vs CAR 6.6%. Model margin 31.6 pts vs market spread ARI +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie 31.6 pkt. ARI notuje +1.040 PPD vs -1.600 u CAR. Różnica w Success Rate to 44.4% vs 39.5%. Na 3rd down ARI (40.0%) wygląda solidniej niż CAR (50.0%). Red Zone i explosiveness ( 14.3% / 7.4% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +28.1.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +46.7 pts
-• PowerScoreDiff (winner) = +0.309
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +28.1 pts
+• PowerScoreDiff (winner) = +0.011
+• Confidence = 95.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +46.7 pts model edge vs line, and PowerScore Δ +0.309.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
+🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +28.1 pts model edge vs line, and PowerScore Δ +0.011.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – ARI 51.5 – CAR 4.8
+   • Estimated Score – ARI 44.9 – CAR 13.3
    • Win Probability – 95% (ARI)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – ARI 22.5 – CAR 22.5
-   • Win Probability – 50% (ARI)
+   • Estimated Score – ARI 25.0 – CAR 21.5
+   • Win Probability – 62% (ARI)
 
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — ARI (HC +0.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — ARI (HC -3.5)

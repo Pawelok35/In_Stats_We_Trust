@@ -927,33 +927,35 @@ def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
     # lewa strona: klucze używane później w raporcie
     # prawa strona: nazwy kolumn w df_core12
     rename_map = {
-        "core_epa_off": "core_epa_offense",
-        "core_epa_def": "core_epa_defense",
-        "core_sr_off": "success_rate_offense",
-        "core_sr_def": "success_rate_defense",
-        "core_explosive_play_rate_off": "explosive_play_rate_offense",
-        "core_third_down_conv": "third_down_conversion_offense",
-        "core_points_per_drive_diff": "points_per_drive_diff",
-        "core_ypp_diff": "yards_per_play_diff",
-        "core_turnover_margin": "turnover_margin",
-        "core_redzone_td_rate": "redzone_td_rate_offense",
-        "core_pressure_rate_def": "pressure_rate_defense",
+        "core_epa_off": ["core_epa_offense", "core_epa_off"],
+        "core_epa_def": ["core_epa_defense", "core_epa_def"],
+        "core_sr_off": ["success_rate_offense", "core_sr_off"],
+        "core_sr_def": ["success_rate_defense", "core_sr_def"],
+        "core_explosive_play_rate_off": ["explosive_play_rate_offense", "core_explosive_play_rate_off"],
+        "core_third_down_conv": ["third_down_conversion_offense", "core_third_down_conv"],
+        "core_points_per_drive_diff": ["points_per_drive_diff", "core_points_per_drive_diff"],
+        "core_ypp_diff": ["yards_per_play_diff", "core_ypp_diff"],
+        "core_turnover_margin": ["turnover_margin", "core_turnover_margin"],
+        "core_redzone_td_rate": ["redzone_td_rate_offense", "core_redzone_td_rate"],
+        "core_pressure_rate_def": ["pressure_rate_defense", "core_pressure_rate_def"],
         # tempo NIE jest częścią core_metrics_dict tutaj, tempo łapiemy osobno w _team_summary,
         # ale nie szkodzi mieć go dostępnego:
-        "tempo": "tempo",
+        "tempo": ["tempo"],
     }
 
     out: dict[str, float] = {}
-    for std_key, source_col in rename_map.items():
-        if source_col in raw_row:
-            v = raw_row[source_col]
-            if isinstance(v, (int, float)):
-                try:
-                    fv = float(v)
-                except (TypeError, ValueError):
-                    continue
-                if math.isfinite(fv):
-                    out[std_key] = fv
+    for std_key, candidates in rename_map.items():
+        for source_col in candidates:
+            if source_col in raw_row:
+                v = raw_row[source_col]
+                if isinstance(v, (int, float)):
+                    try:
+                        fv = float(v)
+                    except (TypeError, ValueError):
+                        continue
+                    if math.isfinite(fv):
+                        out[std_key] = fv
+                        break
 
     return out
 
@@ -2853,7 +2855,22 @@ def build_metric_comparison_table(
     week: int,
     team_a: str,
     team_b: str,
+    *,
+    comparison_rows: Optional[list[dict[str, Any]]] = None,
 ) -> str:
+    # Jeżeli mamy już obliczone comparison_rows (np. z fallbacku), użyj ich bez ponownego wczytywania snapshotu.
+    if comparison_rows:
+        lines = ["| Metric | {} | {} | Delta |".format(team_a, team_b), "|---|---:|---:|---:|"]
+        for row in comparison_rows:
+            a_val = row.get("team_a")
+            b_val = row.get("team_b")
+            delta = None
+            if isinstance(a_val, (int, float)) and isinstance(b_val, (int, float)):
+                delta = a_val - b_val
+            fmt = lambda v: f"{v:.3f}" if isinstance(v, (int, float)) else "n/a"
+            lines.append(f"| {row.get('label')} | {fmt(a_val)} | {fmt(b_val)} | {fmt(delta)} |")
+        return "\n".join(lines)
+
     snapshot = load_team_snapshot(season, week, team_a, team_b)
     try:
         row_a = _get_team_row(snapshot, team_a)
@@ -3485,13 +3502,9 @@ def generate_comparison_report(
     # Header
     md_lines.append(f"# Matchup Report - {team_a} vs {team_b}")
     md_lines.append("")
-    l3_frame = frames.get("l3")
-    l3_has_current_week = (
-        l3_frame is not None
-        and not l3_frame.filter(pl.col("week") == week).is_empty()
-    )
-
-    has_metric_values = l3_has_current_week and bool(comparison_rows)
+    # Jeśli korzystamy z fallbacku (metryki z wcześniejszego tygodnia), nadal pokazujemy tabelę,
+    # jeżeli udało się zbudować wartości porównawcze.
+    has_metric_values = bool(comparison_rows)
 
     breakdown_result = _build_powerscore_breakdown(
         season=season,
@@ -3530,6 +3543,7 @@ def generate_comparison_report(
                 week=week,
                 team_a=team_a,
                 team_b=team_b,
+                comparison_rows=comparison_rows,
             )
         )
         md_lines.append("")

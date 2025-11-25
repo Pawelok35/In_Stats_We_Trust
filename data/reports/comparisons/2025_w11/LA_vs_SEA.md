@@ -4,19 +4,21 @@
 
 | Metric | LA | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.200 | -0.141 | ↓ -0.058 |
-| Core EPA Defense | -0.141 | -0.200 | ↑ +0.058 |
-| Success Rate Offense | 40.6% | 49.5% | ↓ -8.9 pp |
-| Success Rate Defense | 49.5% | 40.6% | ↑ +8.9 pp |
-| Explosive Play Rate (Off) | 8.7% | 6.2% | ↑ +2.5 pp |
-| Third Down Conversion | 16.7% | 43.8% | ↓ -27.1 pp |
-| Points per Drive Differential | 0.167 | -0.167 | ↑ +0.333 |
-| Yards per Play Differential | -0.659 | 0.659 | ↓ -1.319 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 18.8% | 5.6% | ↑ +13.2 pp |
-| Pressure Rate (Def) | 2.3% | 0.0% | ↑ +2.3 pp |
-| Tempo | 5.750 | 8.083 | ↓ -2.333 |
-| PowerScore | 0.021 | 0.047 | ↓ -0.026 |
+| Core EPA Offense | 0.053 | 0.076 | -0.023 |
+| Core EPA Defense | -0.091 | -0.069 | -0.022 |
+| Success Rate Offense | 0.510 | 0.497 | 0.013 |
+| Success Rate Defense | 0.433 | 0.442 | -0.008 |
+| Explosive Play Rate (Off) | 0.114 | 0.118 | -0.004 |
+| Third Down Conversion | 0.357 | 0.350 | 0.007 |
+| Points per Drive Differential | 1.092 | 0.734 | 0.358 |
+| Yards per Play Differential | 0.827 | 1.201 | -0.373 |
+| Turnover Margin | 0.625 | -0.250 | 0.875 |
+| Red Zone TD Rate (Off) | 0.151 | 0.168 | -0.017 |
+| Pressure Rate (Def) | 0.085 | 0.085 | 0.000 |
+| Tempo | 5.750 | 8.083 | -2.333 |
+| PowerScore | 0.021 | 0.047 | -0.026 |
+| PowerScore | 0.021 | 0.047 | -0.026 |
+| Tempo | 5.750 | 8.083 | -2.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.026 (LA +0.021 vs SEA +0.047)
 **7 metrics version:**
 LA edge: +0.602 (LA +0.312 vs SEA -0.289)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.602), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | HOU (A) | 27-14 | SEA | 0.789 | -0.178 | 41.8% | 0.821 |
+| 7 | HOU (H) | 27-14 | SEA | 0.789 | -0.178 | 41.8% | 0.821 |
 | 5 | TB (H) | 35-38 | TB | 0.646 | 0.243 | 57.1% | -0.300 |
 | 1 | SF (H) | 13-15 | SF | 0.471 | -0.082 | 52.2% | -0.245 |
 

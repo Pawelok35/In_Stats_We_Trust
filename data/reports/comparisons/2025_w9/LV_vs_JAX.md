@@ -4,19 +4,21 @@
 
 | Metric | LV | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.165 | 0.156 | ↑ +0.009 |
-| Core EPA Defense | 0.156 | 0.165 | ↓ -0.009 |
-| Success Rate Offense | 55.7% | 54.6% | ↑ +1.1 pp |
-| Success Rate Defense | 54.6% | 55.7% | ↓ -1.1 pp |
-| Explosive Play Rate (Off) | 7.6% | 12.4% | ↓ -4.8 pp |
-| Third Down Conversion | 70.0% | 56.2% | ↑ +13.7 pp |
-| Points per Drive Differential | -0.433 | 0.433 | ↓ -0.867 |
-| Yards per Play Differential | 0.406 | -0.406 | ↑ +0.813 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 16.7% | 10.0% | ↑ +6.7 pp |
-| Pressure Rate (Def) | 2.9% | 4.8% | ↓ -1.9 pp |
-| Tempo | 7.900 | 10.778 | ↓ -2.878 |
-| PowerScore | 0.243 | 0.249 | ↓ -0.006 |
+| Core EPA Offense | -0.141 | 0.000 | -0.141 |
+| Core EPA Defense | 0.034 | 0.007 | 0.026 |
+| Success Rate Offense | 0.431 | 0.455 | -0.024 |
+| Success Rate Defense | 0.472 | 0.472 | 0.000 |
+| Explosive Play Rate (Off) | 0.088 | 0.085 | 0.003 |
+| Third Down Conversion | 0.305 | 0.311 | -0.006 |
+| Points per Drive Differential | -1.129 | -0.352 | -0.777 |
+| Yards per Play Differential | -0.396 | -0.348 | -0.048 |
+| Turnover Margin | -0.714 | 1.143 | -1.857 |
+| Red Zone TD Rate (Off) | 0.092 | 0.103 | -0.010 |
+| Pressure Rate (Def) | 0.057 | 0.028 | 0.029 |
+| Tempo | 7.900 | 10.778 | -2.878 |
+| PowerScore | 0.243 | 0.249 | -0.006 |
+| PowerScore | 0.243 | 0.249 | -0.006 |
+| Tempo | 7.900 | 10.778 | -2.878 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.006 (LV +0.243 vs JAX +0.249)
 **7 metrics version:**
 LV edge: +0.002 (LV +0.183 vs JAX +0.181)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.002), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -242,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | TEN (A) | 20-11 | LV | 0.772 | -0.068 | 43.6% | 0.818 |
+| 6 | TEN (H) | 20-11 | LV | 0.772 | -0.068 | 43.6% | 0.818 |
 | 4 | CHI (H) | 24-25 | CHI | 0.504 | -0.172 | 54.5% | -0.091 |
 | 1 | NE (A) | 20-14 | LV | 0.437 | 0.081 | 44.4% | 0.485 |
 

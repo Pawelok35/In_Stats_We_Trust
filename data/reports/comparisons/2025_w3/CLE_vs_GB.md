@@ -4,19 +4,21 @@
 
 | Metric | CLE | GB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.092 | -0.094 | ↑ +0.003 |
-| Core EPA Defense | -0.094 | -0.092 | ↓ -0.003 |
-| Success Rate Offense | 40.0% | 39.8% | ↑ +0.2 pp |
-| Success Rate Defense | 39.8% | 40.0% | ↓ -0.2 pp |
-| Explosive Play Rate (Off) | 5.0% | 7.2% | ↓ -2.2 pp |
-| Third Down Conversion | 21.1% | 41.7% | ↓ -20.6 pp |
-| Points per Drive Differential | 0.182 | -0.182 | ↑ +0.364 |
-| Yards per Play Differential | -0.009 | 0.009 | ↓ -0.017 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 7.1% | 12.5% | ↓ -5.4 pp |
-| Pressure Rate (Def) | 16.1% | 5.3% | ↑ +10.9 pp |
-| Tempo | 7.273 | 8.300 | ↓ -1.027 |
-| PowerScore | 0.059 | 0.062 | ↓ -0.003 |
+| Core EPA Offense | -0.157 | 0.114 | -0.271 |
+| Core EPA Defense | 0.017 | -0.062 | 0.078 |
+| Success Rate Offense | 0.415 | 0.490 | -0.075 |
+| Success Rate Defense | 0.439 | 0.438 | 0.001 |
+| Explosive Play Rate (Off) | 0.060 | 0.130 | -0.069 |
+| Third Down Conversion | 0.421 | 0.374 | 0.047 |
+| Points per Drive Differential | -0.688 | 1.157 | -1.845 |
+| Yards per Play Differential | 0.959 | 1.698 | -0.740 |
+| Turnover Margin | -2.000 | 0.500 | -2.500 |
+| Red Zone TD Rate (Off) | 0.233 | 0.167 | 0.067 |
+| Pressure Rate (Def) | 0.101 | 0.089 | 0.012 |
+| Tempo | 7.273 | 8.300 | -1.027 |
+| PowerScore | 0.059 | 0.062 | -0.003 |
+| PowerScore | 0.059 | 0.062 | -0.003 |
+| Tempo | 7.273 | 8.300 | -1.027 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ GB edge: +0.003 (CLE +0.059 vs GB +0.062)
 **7 metrics version:**
 CLE edge: +0.004 (CLE +0.046 vs GB +0.043)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.004), driven by Pressure Rate (Def) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

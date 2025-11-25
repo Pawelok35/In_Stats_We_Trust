@@ -4,19 +4,21 @@
 
 | Metric | PIT | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.148 | -0.125 | ↑ +0.273 |
-| Core EPA Defense | -0.125 | 0.148 | ↓ -0.273 |
-| Success Rate Offense | 49.4% | 36.9% | ↑ +12.5 pp |
-| Success Rate Defense | 36.9% | 49.4% | ↓ -12.5 pp |
-| Explosive Play Rate (Off) | 12.3% | 8.3% | ↑ +4.0 pp |
-| Third Down Conversion | 50.0% | 41.2% | ↑ +8.8 pp |
-| Points per Drive Differential | 1.244 | -1.244 | ↑ +2.489 |
-| Yards per Play Differential | 0.699 | -0.699 | ↑ +1.398 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 11.8% | 0.0% | ↑ +11.8 pp |
-| Pressure Rate (Def) | 2.4% | 3.0% | ↓ -0.6 pp |
-| Tempo | 9.000 | 8.400 | ↑ +0.600 |
-| PowerScore | 0.175 | 0.095 | ↑ +0.080 |
+| Core EPA Offense | 0.077 | 0.016 | 0.061 |
+| Core EPA Defense | 0.053 | 0.157 | -0.104 |
+| Success Rate Offense | 0.480 | 0.494 | -0.014 |
+| Success Rate Defense | 0.495 | 0.521 | -0.026 |
+| Explosive Play Rate (Off) | 0.086 | 0.094 | -0.009 |
+| Third Down Conversion | 0.355 | 0.366 | -0.011 |
+| Points per Drive Differential | 0.183 | -0.690 | 0.873 |
+| Yards per Play Differential | -0.555 | -1.143 | 0.588 |
+| Turnover Margin | 0.875 | -0.556 | 1.431 |
+| Red Zone TD Rate (Off) | 0.182 | 0.152 | 0.030 |
+| Pressure Rate (Def) | 0.070 | 0.044 | 0.026 |
+| Tempo | 9.000 | 8.400 | 0.600 |
+| PowerScore | 0.175 | 0.095 | 0.080 |
+| PowerScore | 0.175 | 0.095 | 0.080 |
+| Tempo | 9.000 | 8.400 | 0.600 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PIT edge: +0.080 (PIT +0.175 vs CIN +0.095)
 **7 metrics version:**
 PIT edge: +0.448 (PIT +0.313 vs CIN -0.135)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.448), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -242,16 +248,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | CIN (H) | 31-33 | CIN | 1.000 | 0.262 | 54.7% | -0.200 |
+| 7 | CIN (A) | 31-33 | CIN | 1.000 | 0.262 | 54.7% | -0.200 |
 | 1 | NYJ (A) | 34-32 | PIT | 0.832 | 0.206 | 50.6% | 0.182 |
-| 8 | GB (A) | 25-32 | GB | 0.557 | 0.017 | 43.8% | -0.644 |
+| 8 | GB (H) | 25-32 | GB | 0.557 | 0.017 | 43.8% | -0.644 |
 
 **CIN analogs vs PIT profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | PIT (A) | 33-31 | CIN | 1.000 | 0.219 | 53.7% | 0.200 |
-| 6 | GB (H) | 18-27 | GB | 0.677 | 0.096 | 53.1% | -1.000 |
+| 7 | PIT (H) | 33-31 | CIN | 1.000 | 0.219 | 53.7% | 0.200 |
+| 6 | GB (A) | 18-27 | GB | 0.677 | 0.096 | 53.1% | -1.000 |
 | 9 | CHI (H) | 42-55 | CHI | 0.650 | 0.247 | 55.7% | -0.917 |
 
 ## Core EPA Offense Form (up to Week 10)

@@ -4,19 +4,21 @@
 
 | Metric | KC | PHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.036 | 0.030 | ↓ -0.066 |
-| Core EPA Defense | 0.030 | -0.036 | ↑ +0.066 |
-| Success Rate Offense | 45.9% | 43.0% | ↑ +2.9 pp |
-| Success Rate Defense | 43.0% | 45.9% | ↓ -2.9 pp |
-| Explosive Play Rate (Off) | 12.2% | 5.1% | ↑ +7.1 pp |
-| Third Down Conversion | 26.7% | 31.2% | ↓ -4.6 pp |
-| Points per Drive Differential | -0.111 | 0.111 | ↓ -0.222 |
-| Yards per Play Differential | 1.239 | -1.239 | ↑ +2.478 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 10.0% | 25.0% | ↓ -15.0 pp |
-| Pressure Rate (Def) | 7.7% | 6.5% | ↑ +1.2 pp |
-| Tempo | 8.222 | 7.900 | ↑ +0.322 |
-| PowerScore | 0.133 | 0.121 | ↑ +0.012 |
+| Core EPA Offense | 0.131 | 0.169 | -0.038 |
+| Core EPA Defense | 0.211 | 0.139 | 0.072 |
+| Success Rate Offense | 0.456 | 0.526 | -0.070 |
+| Success Rate Defense | 0.568 | 0.514 | 0.054 |
+| Explosive Play Rate (Off) | 0.114 | 0.077 | 0.037 |
+| Third Down Conversion | 0.312 | 0.615 | -0.303 |
+| Points per Drive Differential | -0.750 | 0.167 | -0.917 |
+| Yards per Play Differential | -0.472 | -0.277 | -0.195 |
+| Turnover Margin | 0.000 | 1.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.083 | 0.273 | -0.189 |
+| Pressure Rate (Def) | 0.075 | 0.000 | 0.075 |
+| Tempo | 8.222 | 7.900 | 0.322 |
+| PowerScore | 0.133 | 0.121 | 0.012 |
+| PowerScore | 0.133 | 0.121 | 0.012 |
+| Tempo | 8.222 | 7.900 | 0.322 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.012 (KC +0.133 vs PHI +0.121)
 **7 metrics version:**
 PHI edge: +0.206 (KC -0.004 vs PHI +0.201)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.206), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

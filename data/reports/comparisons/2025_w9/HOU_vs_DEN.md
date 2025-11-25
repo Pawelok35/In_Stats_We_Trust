@@ -4,19 +4,21 @@
 
 | Metric | HOU | DEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.155 | -0.155 | ↑ +0.001 |
-| Core EPA Defense | -0.155 | -0.155 | ↓ -0.001 |
-| Success Rate Offense | 34.4% | 34.6% | ↓ -0.2 pp |
-| Success Rate Defense | 34.6% | 34.4% | ↑ +0.2 pp |
-| Explosive Play Rate (Off) | 4.3% | 7.4% | ↓ -3.1 pp |
-| Third Down Conversion | 17.6% | 40.0% | ↓ -22.4 pp |
-| Points per Drive Differential | -0.385 | 0.385 | ↓ -0.769 |
-| Yards per Play Differential | -0.489 | 0.489 | ↓ -0.977 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 2.6% | 9.1% | ↓ -6.5 pp |
-| Tempo | 6.200 | 6.231 | ↓ -0.031 |
-| PowerScore | 0.009 | 0.016 | ↓ -0.006 |
+| Core EPA Offense | -0.005 | 0.065 | -0.070 |
+| Core EPA Defense | -0.140 | -0.028 | -0.112 |
+| Success Rate Offense | 0.439 | 0.456 | -0.018 |
+| Success Rate Defense | 0.418 | 0.423 | -0.005 |
+| Explosive Play Rate (Off) | 0.094 | 0.106 | -0.011 |
+| Third Down Conversion | 0.331 | 0.354 | -0.023 |
+| Points per Drive Differential | 0.719 | 0.688 | 0.031 |
+| Yards per Play Differential | 0.585 | 0.995 | -0.410 |
+| Turnover Margin | 0.571 | 0.125 | 0.446 |
+| Red Zone TD Rate (Off) | 0.102 | 0.160 | -0.058 |
+| Pressure Rate (Def) | 0.066 | 0.130 | -0.065 |
+| Tempo | 6.200 | 6.231 | -0.031 |
+| PowerScore | 0.009 | 0.016 | -0.006 |
+| PowerScore | 0.009 | 0.016 | -0.006 |
+| Tempo | 6.200 | 6.231 | -0.031 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DEN edge: +0.006 (HOU +0.009 vs DEN +0.016)
 **7 metrics version:**
 DEN edge: +0.010 (HOU -0.011 vs DEN -0.001)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.010), driven by Pressure Rate (Def) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -242,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | SEA (H) | 13-25 | SEA | 0.877 | -0.263 | 40.0% | -0.821 |
+| 7 | SEA (A) | 13-25 | SEA | 0.877 | -0.263 | 40.0% | -0.821 |
 | 1 | LA (A) | 9-14 | LA | 0.824 | -0.121 | 36.8% | -0.556 |
 | 2 | TB (H) | 19-22 | TB | 0.751 | 0.000 | 41.9% | -0.273 |
 

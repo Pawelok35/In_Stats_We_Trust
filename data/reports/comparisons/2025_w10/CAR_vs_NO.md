@@ -1,5 +1,25 @@
 # Matchup Report - CAR vs NO
 
+## Metric Comparison
+
+| Metric | CAR | NO | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.018 | -0.146 | 0.128 |
+| Core EPA Defense | 0.045 | 0.032 | 0.013 |
+| Success Rate Offense | 0.470 | 0.443 | 0.027 |
+| Success Rate Defense | 0.440 | 0.465 | -0.025 |
+| Explosive Play Rate (Off) | 0.091 | 0.073 | 0.018 |
+| Third Down Conversion | 0.325 | 0.326 | -0.000 |
+| Points per Drive Differential | -0.275 | -0.967 | 0.692 |
+| Yards per Play Differential | -0.517 | -0.374 | -0.143 |
+| Turnover Margin | -0.222 | -0.444 | 0.222 |
+| Red Zone TD Rate (Off) | 0.124 | 0.105 | 0.019 |
+| Pressure Rate (Def) | 0.046 | 0.064 | -0.018 |
+| Tempo | 10.143 | 6.000 | 4.143 |
+| PowerScore | 0.163 | 0.081 | 0.082 |
+| PowerScore | 0.163 | 0.081 | 0.082 |
+| Tempo | 10.143 | 6.000 | 4.143 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CAR | NO | Delta |
@@ -28,6 +48,10 @@ CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
 **7 metrics version:**
 CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -226,14 +250,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | ATL (H) | 24-0 | CAR | 0.904 | 0.066 | 52.1% | 2.400 |
 | 5 | MIA (H) | 27-26 | CAR | 0.749 | 0.114 | 45.6% | 0.055 |
-| 7 | NYJ (H) | 13-6 | CAR | 0.722 | -0.053 | 40.0% | 0.636 |
+| 7 | NYJ (A) | 13-6 | CAR | 0.722 | -0.053 | 40.0% | 0.636 |
 
 **NO analogs vs CAR profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | NYG (H) | 20-15 | NO | 0.545 | -0.043 | 46.3% | 0.418 |
-| 8 | TB (A) | 3-17 | TB | 0.496 | -0.394 | 38.4% | -1.273 |
+| 8 | TB (H) | 3-17 | TB | 0.496 | -0.394 | 38.4% | -1.273 |
 | 9 | LA (A) | 10-31 | LA | 0.441 | -0.211 | 40.7% | -2.289 |
 
 ## Core EPA Offense Form (up to Week 9)

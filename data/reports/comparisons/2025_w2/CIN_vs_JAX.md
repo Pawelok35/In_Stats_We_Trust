@@ -4,19 +4,21 @@
 
 | Metric | CIN | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.082 | 0.075 | ↑ +0.007 |
-| Core EPA Defense | 0.075 | 0.082 | ↓ -0.007 |
-| Success Rate Offense | 51.8% | 50.0% | ↑ +1.8 pp |
-| Success Rate Defense | 50.0% | 51.8% | ↓ -1.8 pp |
-| Explosive Play Rate (Off) | 7.2% | 9.1% | ↓ -1.9 pp |
-| Third Down Conversion | 42.9% | 46.2% | ↓ -3.3 pp |
-| Points per Drive Differential | 0.568 | -0.568 | ↑ +1.136 |
-| Yards per Play Differential | -0.329 | 0.329 | ↓ -0.657 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 13.6% | ↑ +3.0 pp |
-| Pressure Rate (Def) | 2.3% | 6.2% | ↓ -3.9 pp |
-| Tempo | 7.545 | 7.333 | ↑ +0.212 |
-| PowerScore | 0.188 | 0.186 | ↑ +0.002 |
+| Core EPA Offense | -0.066 | 0.116 | -0.183 |
+| Core EPA Defense | -0.087 | -0.108 | 0.021 |
+| Success Rate Offense | 0.441 | 0.476 | -0.034 |
+| Success Rate Defense | 0.396 | 0.395 | 0.001 |
+| Explosive Play Rate (Off) | 0.015 | 0.110 | -0.095 |
+| Third Down Conversion | 0.500 | 0.417 | 0.083 |
+| Points per Drive Differential | 0.100 | 1.600 | -1.500 |
+| Yards per Play Differential | -1.520 | 1.254 | -2.774 |
+| Turnover Margin | 2.000 | 2.000 | 0.000 |
+| Red Zone TD Rate (Off) | 0.167 | 0.111 | 0.056 |
+| Pressure Rate (Def) | 0.043 | 0.027 | 0.016 |
+| Tempo | 7.545 | 7.333 | 0.212 |
+| PowerScore | 0.188 | 0.186 | 0.002 |
+| PowerScore | 0.188 | 0.186 | 0.002 |
+| Tempo | 7.545 | 7.333 | 0.212 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CIN edge: +0.002 (CIN +0.188 vs JAX +0.186)
 **7 metrics version:**
 JAX edge: +0.200 (CIN +0.040 vs JAX +0.239)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.200), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

@@ -4,19 +4,21 @@
 
 | Metric | ATL | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.053 | -0.088 | ↑ +0.140 |
-| Core EPA Defense | -0.088 | 0.053 | ↓ -0.140 |
-| Success Rate Offense | 50.0% | 49.3% | ↑ +0.7 pp |
-| Success Rate Defense | 49.3% | 50.0% | ↓ -0.7 pp |
-| Explosive Play Rate (Off) | 11.4% | 11.3% | ↑ +0.1 pp |
-| Third Down Conversion | 33.3% | 20.0% | ↑ +13.3 pp |
-| Points per Drive Differential | 0.727 | -0.727 | ↑ +1.455 |
-| Yards per Play Differential | 0.935 | -0.935 | ↑ +1.871 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 6.7% | 28.6% | ↓ -21.9 pp |
-| Pressure Rate (Def) | 13.3% | 5.7% | ↑ +7.6 pp |
-| Tempo | 7.333 | 6.455 | ↑ +0.879 |
-| PowerScore | 0.149 | 0.126 | ↑ +0.023 |
+| Core EPA Offense | -0.037 | 0.148 | -0.186 |
+| Core EPA Defense | -0.015 | 0.056 | -0.071 |
+| Success Rate Offense | 0.454 | 0.491 | -0.037 |
+| Success Rate Defense | 0.465 | 0.488 | -0.023 |
+| Explosive Play Rate (Off) | 0.105 | 0.125 | -0.020 |
+| Third Down Conversion | 0.402 | 0.411 | -0.010 |
+| Points per Drive Differential | -0.211 | 0.595 | -0.806 |
+| Yards per Play Differential | 0.902 | 0.549 | 0.353 |
+| Turnover Margin | -0.750 | 0.200 | -0.950 |
+| Red Zone TD Rate (Off) | 0.087 | 0.157 | -0.070 |
+| Pressure Rate (Def) | 0.089 | 0.093 | -0.004 |
+| Tempo | 7.333 | 6.455 | 0.879 |
+| PowerScore | 0.149 | 0.126 | 0.023 |
+| PowerScore | 0.149 | 0.126 | 0.023 |
+| Tempo | 7.333 | 6.455 | 0.879 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.023 (ATL +0.149 vs BUF +0.126)
 **7 metrics version:**
 ATL edge: +0.394 (ATL +0.302 vs BUF -0.092)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.394), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -70,41 +76,61 @@ ATL edge: +0.394 (ATL +0.302 vs BUF -0.092)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | +17.1 pp | +17.1 pp | +18.0 pp |
+| ATL | +5.3 pp | +5.3 pp | -1.7 pp |
+| BUF | +12.5 pp | +12.5 pp | +24.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -3.1 pp | -3.1 pp | -2.4 pp |
+| ATL | -6.2 pp | -6.2 pp | -5.4 pp |
+| BUF | +4.6 pp | +4.6 pp | +8.8 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +5.8 pp | +5.8 pp | +7.8 pp |
+| ATL | +4.9 pp | +4.9 pp | +2.0 pp |
+| BUF | +3.8 pp | +3.8 pp | +4.1 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -1.2 pp | -1.2 pp | +0.4 pp |
+| ATL | -2.3 pp | -2.3 pp | +1.0 pp |
+| BUF | +5.9 pp | +5.9 pp | +8.0 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
 ## Matchup Edges
 
+### Rush Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| ATL | -7.6 pp | -7.6 pp | -6.4 pp |
+| BUF | -1.1 pp | -1.1 pp | -4.2 pp |
+
+### Pass Success Edge
+
+| Team | Season-to-date | Last 5 | Last 3 |
+| --- | ---: | ---: | ---: |
+| ATL | +2.6 pp | +2.6 pp | -0.5 pp |
+| BUF | +8.2 pp | +8.2 pp | +12.4 pp |
+
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| ATL | -1.2 pp | -1.2 pp | +0.4 pp |
+| ATL | -2.3 pp | -2.3 pp | +1.0 pp |
+| BUF | +5.9 pp | +5.9 pp | +8.0 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +5.8 pp | +5.8 pp | +7.8 pp |
+| ATL | +4.9 pp | +4.9 pp | +2.0 pp |
+| BUF | +3.8 pp | +3.8 pp | +4.1 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -114,19 +140,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 42.1 | 42.1 | 42.1 |
+| ATL | 48.1 | 48.1 | 48.7 |
+| BUF | 44.3 | 44.3 | 43.2 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 52.7 | 52.7 | 52.7 |
+| ATL | 52.8 | 52.8 | 54.0 |
+| BUF | 54.4 | 54.4 | 55.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | -10.6 | -10.6 | -10.6 |
+| ATL | -4.7 | -4.7 | -5.3 |
+| BUF | -10.0 | -10.0 | -12.6 |
 
 ### Points per Drive (offense)
 
@@ -164,25 +193,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 38.6% | 38.6% | 38.6% |
+| ATL | 42.0% | 42.0% | 39.9% |
+| BUF | 40.1% | 40.1% | 38.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 61.4% | 61.4% | 61.4% |
+| ATL | 58.0% | 58.0% | 60.1% |
+| BUF | 59.9% | 59.9% | 61.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 3.08 | 3.08 | 3.02 |
+| ATL | 3.39 | 3.39 | 3.09 |
+| BUF | 3.20 | 3.20 | 3.02 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 4.91 | 4.91 | 4.82 |
+| ATL | 4.69 | 4.69 | 4.65 |
+| BUF | 4.78 | 4.78 | 4.82 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -215,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | TB (-) | 20-23 | TB | 0.754 | 0.011 | 47.3% | -0.300 |
-| 4 | WAS (-) | 34-30 | ATL | 0.708 | 0.207 | 53.6% | 0.400 |
-| 3 | CAR (-) | 0-26 | CAR | 0.179 | -0.379 | 33.8% | -2.400 |
+| 1 | TB (H) | 20-23 | TB | 0.752 | 0.011 | 47.3% | -0.300 |
+| 4 | WAS (H) | 34-30 | ATL | 0.706 | 0.207 | 53.6% | 0.400 |
+| 3 | CAR (A) | 0-26 | CAR | 0.167 | -0.379 | 33.8% | -2.400 |
 
 **BUF analogs vs ATL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | NO (-) | 31-21 | BUF | 0.745 | 0.122 | 46.8% | 0.918 |
-| 3 | MIA (-) | 31-21 | BUF | 0.326 | 0.221 | 54.1% | 1.111 |
-| 5 | NE (H) | 20-23 | NE | 0.286 | 0.019 | 50.6% | -0.300 |
+| 4 | NO (H) | 31-21 | BUF | 0.741 | 0.122 | 46.8% | 0.918 |
+| 3 | MIA (H) | 31-21 | BUF | 0.316 | 0.221 | 54.1% | 1.111 |
+| 1 | BAL (H) | 41-47 | BAL | 0.283 | 0.202 | 48.6% | -0.483 |
 
 ## Core EPA Offense Form (up to Week 5)
 
@@ -315,5 +348,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | n/a | n/a | n/a |
-| BUF | 38.6% | 38.6% | 38.6% |
+| ATL | 42.0% | 42.0% | 39.7% |
+| BUF | 40.6% | 40.6% | 38.5% |

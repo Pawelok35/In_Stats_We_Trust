@@ -4,19 +4,21 @@
 
 | Metric | DET | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.082 | -0.382 | ↑ +0.300 |
-| Core EPA Defense | -0.382 | -0.082 | ↓ -0.300 |
-| Success Rate Offense | 42.5% | 30.2% | ↑ +12.3 pp |
-| Success Rate Defense | 30.2% | 42.5% | ↓ -12.3 pp |
-| Explosive Play Rate (Off) | 6.2% | 7.0% | ↓ -0.7 pp |
-| Third Down Conversion | 40.0% | 20.0% | ↑ +20.0 pp |
-| Points per Drive Differential | 0.857 | -0.857 | ↑ +1.714 |
-| Yards per Play Differential | 0.567 | -0.567 | ↑ +1.134 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 20.0% | 8.3% | ↑ +11.7 pp |
-| Pressure Rate (Def) | 7.7% | 0.0% | ↑ +7.7 pp |
-| Tempo | 5.714 | 6.143 | ↓ -0.429 |
-| PowerScore | 0.014 | -0.061 | ↑ +0.074 |
+| Core EPA Offense | 0.178 | -0.135 | 0.313 |
+| Core EPA Defense | 0.073 | -0.020 | 0.093 |
+| Success Rate Offense | 0.530 | 0.410 | 0.120 |
+| Success Rate Defense | 0.483 | 0.425 | 0.058 |
+| Explosive Play Rate (Off) | 0.098 | 0.057 | 0.041 |
+| Third Down Conversion | 0.411 | 0.351 | 0.060 |
+| Points per Drive Differential | 0.491 | -0.398 | 0.889 |
+| Yards per Play Differential | 0.647 | 0.636 | 0.011 |
+| Turnover Margin | 0.667 | -1.333 | 2.000 |
+| Red Zone TD Rate (Off) | 0.162 | 0.179 | -0.017 |
+| Pressure Rate (Def) | 0.101 | 0.121 | -0.020 |
+| Tempo | 5.714 | 6.143 | -0.429 |
+| PowerScore | 0.014 | -0.061 | 0.074 |
+| PowerScore | 0.014 | -0.061 | 0.074 |
+| Tempo | 5.714 | 6.143 | -0.429 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DET edge: +0.074 (DET +0.014 vs CLE -0.061)
 **7 metrics version:**
 DET edge: +0.452 (DET +0.201 vs CLE -0.251)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.452), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

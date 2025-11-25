@@ -1,41 +1,65 @@
 # Matchup Report - LA vs TB
 
+## Metric Comparison
+
+| Metric | LA | TB | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.025 | 0.017 | 0.008 |
+| Core EPA Defense | -0.097 | -0.002 | -0.095 |
+| Success Rate Offense | 0.498 | 0.442 | 0.056 |
+| Success Rate Defense | 0.440 | 0.471 | -0.031 |
+| Explosive Play Rate (Off) | 0.111 | 0.097 | 0.014 |
+| Third Down Conversion | 0.336 | 0.364 | -0.028 |
+| Points per Drive Differential | 0.989 | 0.116 | 0.873 |
+| Yards per Play Differential | 0.662 | -0.221 | 0.883 |
+| Turnover Margin | 0.889 | 0.667 | 0.222 |
+| Red Zone TD Rate (Off) | 0.155 | 0.119 | 0.036 |
+| Pressure Rate (Def) | 0.078 | 0.075 | 0.003 |
+| Tempo | 6.900 | 7.545 | -0.645 |
+| PowerScore | 0.119 | -0.004 | 0.123 |
+| PowerScore | 0.119 | -0.004 | 0.123 |
+| Tempo | 6.900 | 7.545 | -0.645 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | LA | TB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.200 | 0.142 | -0.341 |
-| EPA Defense | 20% | -0.141 | 0.320 | -0.461 |
-| Success Rate Offense | 25% | 40.6% | 49.5% | -8.9 pp |
-| Tempo | 20% | 0.087 | 0.097 | -0.010 |
+| EPA Offense | 35% | 0.072 | -0.340 | +0.412 |
+| EPA Defense | 20% | -0.340 | 0.072 | -0.412 |
+| Success Rate Offense | 25% | 56.5% | 37.3% | +19.2 pp |
+| Tempo | 20% | 0.101 | 0.036 | +0.065 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | LA | TB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.200 | 0.142 | -0.341 |
-| EPA Defense | 20% | -0.141 | 0.320 | -0.461 |
-| Success Rate Offense | 15% | 40.6% | 49.5% | -8.9 pp |
-| Turnover Margin | 10% | 3.000 | -1.000 | +4.000 |
-| Tempo | 10% | 0.087 | 0.097 | -0.010 |
-| Red Zone TD Rate (Off) | 10% | 18.8% | 10.0% | +8.8 pp |
-| Pressure Rate (Def) | 10% | 2.3% | 0.0% | +2.3 pp |
+| EPA Offense | 25% | 0.072 | -0.340 | +0.412 |
+| EPA Defense | 20% | -0.340 | 0.072 | -0.412 |
+| Success Rate Offense | 15% | 56.5% | 37.3% | +19.2 pp |
+| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
+| Tempo | 10% | 0.101 | 0.036 | +0.065 |
+| Red Zone TD Rate (Off) | 10% | 20.0% | 9.1% | +10.9 pp |
+| Pressure Rate (Def) | 10% | 10.5% | 2.8% | +7.7 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TB edge: +0.236 (LA +0.021 vs TB +0.257)
+LA edge: +0.123 (LA +0.119 vs TB -0.004)
 **7 metrics version:**
-LA edge: +0.219 (LA +0.312 vs TB +0.093)
-**Verdict:** LA holds the edge in the extended breakdown (lead 0.219), driven by Turnover Margin (10% weight).
+LA edge: +0.475 (LA +0.275 vs TB -0.199)
+**Verdict:** LA holds the edge in the extended breakdown (lead 0.475), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - TB) | -4.4 pts (favours TB) |
-| Model Win% LA | 32.6% |
-| Model Win% TB | 67.4% |
+| Model Spread (LA - TB) | +2.3 pts (favours LA) |
+| Model Win% LA | 59.4% |
+| Model Win% TB | 40.6% |
 | SOS Differential (LA-TB) | -0.041 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ LA edge: +0.219 (LA +0.312 vs TB +0.093)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| LA | 40.6% | n/a | n/a | 48.4% | 58.5% | n/a |
-| TB | 34.4% | n/a | n/a | 52.3% | 47.2% | n/a |
+| LA | 52.2% | 44.3% | 7.9% | 55.6% | 57.6% | Pass heavy |
+| TB | 45.8% | 44.3% | 1.5% | 21.1% | 51.1% | Slight pass lean |
 
 ## Situational Edges
 
@@ -233,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | SEA (A) | 38-35 | TB | 0.987 | 0.339 | 53.9% | 0.300 |
-| 7 | DET (H) | 9-26 | DET | 0.962 | -0.292 | 34.1% | -1.203 |
+| 7 | DET (A) | 9-26 | DET | 0.962 | -0.292 | 34.1% | -1.203 |
 | 10 | NE (H) | n/a | n/a | 0.856 | n/a | n/a | n/a |
 
 ## Core EPA Offense Form (up to Week 11)

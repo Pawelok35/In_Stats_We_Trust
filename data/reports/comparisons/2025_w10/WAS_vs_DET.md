@@ -1,5 +1,25 @@
 # Matchup Report - WAS vs DET
 
+## Metric Comparison
+
+| Metric | WAS | DET | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.033 | 0.069 | -0.035 |
+| Core EPA Defense | 0.097 | -0.029 | 0.125 |
+| Success Rate Offense | 0.499 | 0.493 | 0.006 |
+| Success Rate Defense | 0.473 | 0.445 | 0.028 |
+| Explosive Play Rate (Off) | 0.100 | 0.098 | 0.002 |
+| Third Down Conversion | 0.326 | 0.350 | -0.024 |
+| Points per Drive Differential | -0.348 | 0.397 | -0.744 |
+| Yards per Play Differential | -0.509 | 0.585 | -1.094 |
+| Turnover Margin | -0.667 | 0.750 | -1.417 |
+| Red Zone TD Rate (Off) | 0.192 | 0.155 | 0.037 |
+| Pressure Rate (Def) | 0.068 | 0.091 | -0.023 |
+| Tempo | 8.200 | 7.636 | 0.564 |
+| PowerScore | 0.169 | 0.115 | 0.054 |
+| PowerScore | 0.169 | 0.115 | 0.054 |
+| Tempo | 8.200 | 7.636 | 0.564 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | WAS | DET | Delta |
@@ -28,6 +48,10 @@ WAS edge: +0.054 (WAS +0.169 vs DET +0.115)
 **7 metrics version:**
 DET edge: +0.048 (WAS +0.039 vs DET +0.087)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.048), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

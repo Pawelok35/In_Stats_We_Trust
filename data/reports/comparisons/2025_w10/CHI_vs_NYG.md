@@ -1,5 +1,25 @@
 # Matchup Report - CHI vs NYG
 
+## Metric Comparison
+
+| Metric | CHI | NYG | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | 0.041 | 0.026 | 0.015 |
+| Core EPA Defense | 0.043 | 0.093 | -0.050 |
+| Success Rate Offense | 0.460 | 0.460 | -0.000 |
+| Success Rate Defense | 0.509 | 0.492 | 0.017 |
+| Explosive Play Rate (Off) | 0.124 | 0.093 | 0.031 |
+| Third Down Conversion | 0.380 | 0.325 | 0.055 |
+| Points per Drive Differential | -0.143 | -0.338 | 0.195 |
+| Yards per Play Differential | -0.347 | -0.626 | 0.279 |
+| Turnover Margin | 1.625 | -0.333 | 1.958 |
+| Red Zone TD Rate (Off) | 0.126 | 0.129 | -0.003 |
+| Pressure Rate (Def) | 0.067 | 0.066 | 0.001 |
+| Tempo | 8.500 | 7.700 | 0.800 |
+| PowerScore | 0.326 | 0.251 | 0.075 |
+| PowerScore | 0.326 | 0.251 | 0.075 |
+| Tempo | 8.500 | 7.700 | 0.800 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CHI | NYG | Delta |
@@ -28,6 +48,10 @@ CHI edge: +0.075 (CHI +0.326 vs NYG +0.251)
 **7 metrics version:**
 CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -226,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 9 | CIN (A) | 47-36 | CHI | 0.928 | 0.306 | 55.9% | 0.917 |
 | 3 | DAL (H) | 31-14 | CHI | 0.888 | 0.200 | 47.9% | 1.700 |
-| 6 | WAS (H) | 25-22 | CHI | 0.813 | 0.093 | 50.6% | 0.318 |
+| 6 | WAS (A) | 25-22 | CHI | 0.813 | 0.093 | 50.6% | 0.318 |
 
 **NYG analogs vs CHI profile**
 

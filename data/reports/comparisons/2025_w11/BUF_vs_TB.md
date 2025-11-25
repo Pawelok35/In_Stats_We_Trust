@@ -4,19 +4,21 @@
 
 | Metric | BUF | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.320 | 0.142 | ↑ +0.178 |
-| Core EPA Defense | 0.142 | 0.320 | ↓ -0.178 |
-| Success Rate Offense | 54.2% | 49.5% | ↑ +4.7 pp |
-| Success Rate Defense | 49.5% | 54.2% | ↓ -4.7 pp |
-| Explosive Play Rate (Off) | 13.9% | 9.7% | ↑ +4.2 pp |
-| Third Down Conversion | 46.2% | 56.2% | ↓ -10.1 pp |
-| Points per Drive Differential | 1.538 | -1.538 | ↑ +3.077 |
-| Yards per Play Differential | 1.804 | -1.804 | ↑ +3.608 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 21.4% | 10.0% | ↑ +11.4 pp |
-| Pressure Rate (Def) | 6.2% | 0.0% | ↑ +6.2 pp |
-| Tempo | 6.545 | 7.154 | ↓ -0.608 |
-| PowerScore | 0.304 | 0.257 | ↑ +0.047 |
+| Core EPA Offense | 0.136 | 0.001 | 0.135 |
+| Core EPA Defense | 0.023 | -0.042 | 0.065 |
+| Success Rate Offense | 0.506 | 0.436 | 0.071 |
+| Success Rate Defense | 0.486 | 0.462 | 0.023 |
+| Explosive Play Rate (Off) | 0.124 | 0.097 | 0.027 |
+| Third Down Conversion | 0.418 | 0.339 | 0.079 |
+| Points per Drive Differential | 0.766 | 0.323 | 0.443 |
+| Yards per Play Differential | 0.605 | -0.023 | 0.628 |
+| Turnover Margin | 0.375 | 0.875 | -0.500 |
+| Red Zone TD Rate (Off) | 0.183 | 0.121 | 0.062 |
+| Pressure Rate (Def) | 0.103 | 0.085 | 0.018 |
+| Tempo | 6.545 | 7.154 | -0.608 |
+| PowerScore | 0.304 | 0.257 | 0.047 |
+| PowerScore | 0.304 | 0.257 | 0.047 |
+| Tempo | 6.545 | 7.154 | -0.608 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BUF edge: +0.047 (BUF +0.304 vs TB +0.257)
 **7 metrics version:**
 BUF edge: +0.238 (BUF +0.331 vs TB +0.093)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.238), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -242,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | ATL (H) | 14-22 | ATL | 0.750 | -0.088 | 49.3% | -0.727 |
+| 6 | ATL (A) | 14-22 | ATL | 0.750 | -0.088 | 49.3% | -0.727 |
 | 5 | NE (H) | 20-23 | NE | 0.719 | 0.019 | 50.6% | -0.300 |
 | 4 | NO (H) | 31-21 | BUF | 0.663 | 0.122 | 46.8% | 0.918 |
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | SF (A) | 30-21 | TB | 0.816 | 0.157 | 53.6% | 0.827 |
+| 6 | SF (H) | 30-21 | TB | 0.816 | 0.157 | 53.6% | 0.827 |
 | 5 | SEA (A) | 38-35 | TB | 0.723 | 0.339 | 53.9% | 0.300 |
 | 10 | NE (H) | n/a | n/a | 0.721 | n/a | n/a | n/a |
 

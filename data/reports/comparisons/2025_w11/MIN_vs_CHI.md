@@ -4,19 +4,21 @@
 
 | Metric | MIN | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.181 | -0.084 | ↓ -0.098 |
-| Core EPA Defense | -0.084 | -0.181 | ↑ +0.098 |
-| Success Rate Offense | 39.4% | 44.2% | ↓ -4.8 pp |
-| Success Rate Defense | 44.2% | 39.4% | ↑ +4.8 pp |
-| Explosive Play Rate (Off) | 9.9% | 7.4% | ↑ +2.5 pp |
-| Third Down Conversion | 25.0% | 36.8% | ↓ -11.8 pp |
-| Points per Drive Differential | -0.276 | 0.276 | ↓ -0.551 |
-| Yards per Play Differential | 0.364 | -0.364 | ↑ +0.728 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 25.0% | 8.3% | ↑ +16.7 pp |
-| Pressure Rate (Def) | 5.9% | 0.0% | ↑ +5.9 pp |
-| Tempo | 5.462 | 7.917 | ↓ -2.455 |
-| PowerScore | 0.038 | 0.060 | ↓ -0.022 |
+| Core EPA Offense | -0.069 | 0.041 | -0.110 |
+| Core EPA Defense | -0.038 | 0.043 | -0.081 |
+| Success Rate Offense | 0.451 | 0.460 | -0.009 |
+| Success Rate Defense | 0.448 | 0.509 | -0.062 |
+| Explosive Play Rate (Off) | 0.100 | 0.124 | -0.024 |
+| Third Down Conversion | 0.295 | 0.380 | -0.085 |
+| Points per Drive Differential | -0.182 | -0.143 | -0.039 |
+| Yards per Play Differential | -0.236 | -0.347 | 0.111 |
+| Turnover Margin | -0.250 | 1.625 | -1.875 |
+| Red Zone TD Rate (Off) | 0.137 | 0.126 | 0.011 |
+| Pressure Rate (Def) | 0.093 | 0.067 | 0.026 |
+| Tempo | 5.462 | 7.917 | -2.455 |
+| PowerScore | 0.038 | 0.060 | -0.022 |
+| PowerScore | 0.038 | 0.060 | -0.022 |
+| Tempo | 5.462 | 7.917 | -2.455 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CHI edge: +0.022 (MIN +0.038 vs CHI +0.060)
 **7 metrics version:**
 CHI edge: +0.387 (MIN -0.162 vs CHI +0.225)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.387), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | MIN (H) | 18-29 | MIN | 1.000 | -0.109 | 37.4% | -0.791 |
-| 7 | NO (A) | 26-15 | CHI | 0.820 | -0.010 | 43.8% | 0.894 |
+| 7 | NO (H) | 26-15 | CHI | 0.820 | -0.010 | 43.8% | 0.894 |
 | 4 | LV (A) | 25-24 | CHI | 0.714 | -0.072 | 44.8% | 0.091 |
 
 ## Core EPA Offense Form (up to Week 10)

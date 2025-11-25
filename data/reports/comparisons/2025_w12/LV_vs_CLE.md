@@ -1,41 +1,65 @@
 # Matchup Report - LV vs CLE
 
+## Metric Comparison
+
+| Metric | LV | CLE | Delta |
+|---|---:|---:|---:|
+| Core EPA Offense | -0.107 | -0.158 | 0.051 |
+| Core EPA Defense | 0.057 | -0.052 | 0.108 |
+| Success Rate Offense | 0.448 | 0.385 | 0.064 |
+| Success Rate Defense | 0.492 | 0.426 | 0.066 |
+| Explosive Play Rate (Off) | 0.088 | 0.073 | 0.015 |
+| Third Down Conversion | 0.341 | 0.257 | 0.084 |
+| Points per Drive Differential | -1.109 | -0.509 | -0.600 |
+| Yards per Play Differential | -0.443 | -0.574 | 0.131 |
+| Turnover Margin | -0.556 | 0.000 | -0.556 |
+| Red Zone TD Rate (Off) | 0.099 | 0.121 | -0.022 |
+| Pressure Rate (Def) | 0.051 | 0.099 | -0.049 |
+| Tempo | 6.667 | 4.733 | 1.933 |
+| PowerScore | -0.071 | -0.046 | -0.025 |
+| PowerScore | -0.071 | -0.046 | -0.025 |
+| Tempo | 6.667 | 4.733 | 1.933 |
+
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | LV | CLE | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.138 | -0.184 | +0.046 |
-| EPA Defense | 20% | 0.119 | -0.055 | +0.174 |
-| Success Rate Offense | 25% | 46.2% | 41.1% | +5.1 pp |
-| Tempo | 20% | 0.103 | 0.096 | +0.007 |
+| EPA Offense | 35% | -0.343 | -0.213 | -0.130 |
+| EPA Defense | 20% | -0.213 | -0.343 | +0.130 |
+| Success Rate Offense | 25% | 32.0% | 31.0% | +1.0 pp |
+| Tempo | 20% | 0.060 | 0.099 | -0.039 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | LV | CLE | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.138 | -0.184 | +0.046 |
-| EPA Defense | 20% | 0.119 | -0.055 | +0.174 |
-| Success Rate Offense | 15% | 46.2% | 41.1% | +5.1 pp |
-| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
-| Tempo | 10% | 0.103 | 0.096 | +0.007 |
-| Red Zone TD Rate (Off) | 10% | 7.7% | 0.0% | +7.7 pp |
-| Pressure Rate (Def) | 10% | 2.6% | 15.6% | -13.0 pp |
+| EPA Offense | 25% | -0.343 | -0.213 | -0.130 |
+| EPA Defense | 20% | -0.213 | -0.343 | +0.130 |
+| Success Rate Offense | 15% | 32.0% | 31.0% | +1.0 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.060 | 0.099 | -0.039 |
+| Red Zone TD Rate (Off) | 10% | 20.0% | 28.6% | -8.6 pp |
+| Pressure Rate (Def) | 10% | 4.5% | 18.5% | -14.0 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-LV edge: +0.065 (LV +0.111 vs CLE +0.046)
+CLE edge: +0.025 (LV -0.071 vs CLE -0.046)
 **7 metrics version:**
-LV edge: +0.049 (LV +0.079 vs CLE +0.030)
-**Verdict:** LV holds the edge in the extended breakdown (lead 0.049), driven by EPA Defense (20% weight).
+LV edge: +0.169 (LV +0.050 vs CLE -0.118)
+**Verdict:** LV holds the edge in the extended breakdown (lead 0.169), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - CLE) | +1.2 pts (favours LV) |
-| Model Win% LV | 55.0% |
-| Model Win% CLE | 45.0% |
+| Model Spread (LV - CLE) | -0.5 pts (favours CLE) |
+| Model Win% LV | 48.1% |
+| Model Win% CLE | 51.9% |
 | SOS Differential (LV-CLE) | +0.065 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
@@ -43,8 +67,8 @@ LV edge: +0.049 (LV +0.079 vs CLE +0.030)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| LV | 60.3% | n/a | n/a | 37.5% | 50.0% | n/a |
-| CLE | 39.7% | n/a | n/a | 55.3% | 59.1% | n/a |
+| LV | 54.0% | 44.3% | 9.7% | 35.2% | 28.3% | Pass heavy |
+| CLE | 31.0% | 44.3% | -13.3% | 22.7% | 34.7% | Run heavy |
 
 ## Situational Edges
 
@@ -224,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | TEN (A) | 20-11 | LV | 0.868 | -0.068 | 43.6% | 0.818 |
+| 6 | TEN (H) | 20-11 | LV | 0.868 | -0.068 | 43.6% | 0.818 |
 | 10 | DEN (A) | n/a | n/a | 0.733 | n/a | n/a | n/a |
 | 2 | LAC (H) | 9-18 | LAC | 0.516 | -0.250 | 36.6% | -0.918 |
 
@@ -232,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | MIA (A) | 25-6 | CLE | 0.834 | -0.054 | 33.8% | 1.583 |
+| 7 | MIA (H) | 25-6 | CLE | 0.834 | -0.054 | 33.8% | 1.583 |
 | 10 | NYJ (A) | n/a | n/a | 0.765 | n/a | n/a | n/a |
 | 1 | CIN (H) | 16-17 | CIN | 0.747 | -0.087 | 39.6% | -0.100 |
 

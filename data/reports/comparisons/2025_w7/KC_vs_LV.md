@@ -4,19 +4,21 @@
 
 | Metric | KC | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.194 | -0.332 | ↑ +0.526 |
-| Core EPA Defense | -0.332 | 0.194 | ↓ -0.526 |
-| Success Rate Offense | 50.0% | 33.3% | ↑ +16.7 pp |
-| Success Rate Defense | 33.3% | 50.0% | ↓ -16.7 pp |
-| Explosive Play Rate (Off) | 9.6% | 0.0% | ↑ +9.6 pp |
-| Third Down Conversion | 50.0% | 0.0% | ↑ +50.0 pp |
-| Points per Drive Differential | 3.444 | -3.444 | ↑ +6.889 |
-| Yards per Play Differential | 2.638 | -2.638 | ↑ +5.276 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 15.4% | 0.0% | ↑ +15.4 pp |
-| Pressure Rate (Def) | 5.3% | 2.6% | ↑ +2.7 pp |
-| Tempo | 10.444 | 4.800 | ↑ +5.644 |
-| PowerScore | 0.146 | 0.006 | ↑ +0.140 |
+| Core EPA Offense | 0.119 | -0.109 | 0.228 |
+| Core EPA Defense | 0.052 | 0.007 | 0.045 |
+| Success Rate Offense | 0.503 | 0.447 | 0.055 |
+| Success Rate Defense | 0.507 | 0.468 | 0.039 |
+| Explosive Play Rate (Off) | 0.117 | 0.103 | 0.014 |
+| Third Down Conversion | 0.384 | 0.356 | 0.028 |
+| Points per Drive Differential | 0.591 | -0.743 | 1.334 |
+| Yards per Play Differential | 0.310 | -0.022 | 0.332 |
+| Turnover Margin | 0.667 | -0.667 | 1.333 |
+| Red Zone TD Rate (Off) | 0.172 | 0.108 | 0.064 |
+| Pressure Rate (Def) | 0.072 | 0.062 | 0.010 |
+| Tempo | 10.444 | 4.800 | 5.644 |
+| PowerScore | 0.146 | 0.006 | 0.140 |
+| PowerScore | 0.146 | 0.006 | 0.140 |
+| Tempo | 10.444 | 4.800 | 5.644 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.140 (KC +0.146 vs LV +0.006)
 **7 metrics version:**
 KC edge: +0.279 (KC +0.187 vs LV -0.092)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.279), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -70,29 +76,29 @@ KC edge: +0.279 (KC +0.187 vs LV -0.092)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | -5.7 pp | -4.3 pp | -2.3 pp |
-| LV | -8.0 pp | -8.0 pp | -5.7 pp |
+| KC | +0.2 pp | -1.1 pp | -1.3 pp |
+| LV | +1.5 pp | +4.6 pp | -0.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +0.6 pp | +2.3 pp | +4.2 pp |
-| LV | -0.9 pp | -2.7 pp | -2.8 pp |
+| KC | +5.3 pp | +6.9 pp | +8.0 pp |
+| LV | -3.0 pp | -4.8 pp | -2.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +2.2 pp | +1.8 pp | +2.1 pp |
-| LV | -3.1 pp | -3.2 pp | -2.9 pp |
+| KC | +1.8 pp | +1.5 pp | +2.6 pp |
+| LV | -1.4 pp | -1.1 pp | +0.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +3.1 pp | +3.1 pp | +4.2 pp |
-| LV | +0.4 pp | -0.3 pp | -0.7 pp |
+| KC | +3.0 pp | +2.9 pp | +4.4 pp |
+| LV | +0.3 pp | +0.1 pp | -1.6 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +8.9 pp | +8.9 pp | +8.9 pp |
-| LV | -11.0 pp | -11.0 pp | -11.0 pp |
+| KC | +3.3 pp | +3.0 pp | +4.9 pp |
+| LV | -9.0 pp | -6.7 pp | -6.7 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +16.1 pp | +16.1 pp | +16.1 pp |
-| LV | -6.2 pp | -6.2 pp | -6.2 pp |
+| KC | +3.2 pp | +4.2 pp | +13.3 pp |
+| LV | +0.7 pp | +1.6 pp | -0.9 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +3.1 pp | +3.1 pp | +4.2 pp |
-| LV | +0.4 pp | -0.3 pp | -0.7 pp |
+| KC | +3.0 pp | +2.9 pp | +4.4 pp |
+| LV | +0.3 pp | +0.1 pp | -1.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +2.2 pp | +1.8 pp | +2.1 pp |
-| LV | -3.1 pp | -3.2 pp | -2.9 pp |
+| KC | +1.8 pp | +1.5 pp | +2.6 pp |
+| LV | -1.4 pp | -1.1 pp | +0.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +140,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 49.9 | 49.9 | 49.9 |
-| LV | 50.7 | 50.7 | 50.7 |
+| KC | 48.9 | 47.3 | 51.4 |
+| LV | 46.8 | 48.9 | 50.0 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 49.7 | 49.7 | 49.7 |
-| LV | 49.7 | 49.7 | 49.7 |
+| KC | 50.6 | 51.2 | 52.5 |
+| LV | 50.9 | 52.6 | 54.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 0.2 | 0.2 | 0.2 |
-| LV | 1.1 | 1.1 | 1.1 |
+| KC | -1.8 | -3.9 | -1.1 |
+| LV | -4.2 | -3.7 | -4.6 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +193,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 49.7% | 49.7% | 49.7% |
-| LV | 42.3% | 42.3% | 42.3% |
+| KC | 48.1% | 47.1% | 48.3% |
+| LV | 43.7% | 42.9% | 38.8% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 50.3% | 50.3% | 50.3% |
-| LV | 57.7% | 57.7% | 57.7% |
+| KC | 51.9% | 52.9% | 51.7% |
+| LV | 56.3% | 57.1% | 61.2% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 4.31 | 4.19 | 4.19 |
-| LV | 3.12 | 3.17 | 3.13 |
+| KC | 4.17 | 3.97 | 4.08 |
+| LV | 3.22 | 3.21 | 2.87 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | 4.36 | 4.24 | 4.25 |
-| LV | 4.24 | 4.31 | 4.27 |
+| KC | 4.50 | 4.46 | 4.37 |
+| LV | 4.14 | 4.27 | 4.53 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | NYG (-) | 22-10 | KC | 0.784 | 0.082 | 46.5% | 1.200 |
-| 2 | PHI (-) | 17-18 | PHI | 0.604 | -0.036 | 45.9% | -0.111 |
-| 1 | LAC (-) | 21-27 | LAC | 0.594 | 0.131 | 45.6% | -0.750 |
+| 3 | NYG (A) | 22-10 | KC | 0.843 | 0.082 | 46.5% | 1.200 |
+| 1 | LAC (A) | 21-27 | LAC | 0.605 | 0.131 | 45.6% | -0.750 |
+| 2 | PHI (H) | 17-18 | PHI | 0.596 | -0.036 | 45.9% | -0.111 |
 
 **LV analogs vs KC profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | IND (A) | 6-45 | IND | 0.916 | -0.223 | 50.0% | -4.333 |
-| 1 | NE (-) | 20-14 | LV | 0.867 | 0.081 | 44.4% | 0.485 |
-| 3 | WAS (-) | 30-35 | WAS | 0.729 | -0.021 | 39.3% | -0.417 |
+| 1 | NE (A) | 20-14 | LV | 0.860 | 0.081 | 44.4% | 0.485 |
+| 3 | WAS (A) | 30-35 | WAS | 0.729 | -0.021 | 39.3% | -0.417 |
 
 ## Core EPA Offense Form (up to Week 6)
 
@@ -342,5 +348,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| KC | 49.7% | 49.7% | 49.7% |
-| LV | 42.5% | 42.5% | 42.5% |
+| KC | 48.1% | 47.2% | 48.2% |
+| LV | 44.2% | 43.4% | 39.4% |

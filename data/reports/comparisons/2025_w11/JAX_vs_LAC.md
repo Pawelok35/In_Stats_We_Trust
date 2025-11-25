@@ -4,19 +4,21 @@
 
 | Metric | JAX | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.142 | -0.320 | ↑ +0.461 |
-| Core EPA Defense | -0.320 | 0.142 | ↓ -0.461 |
-| Success Rate Offense | 56.8% | 41.0% | ↑ +15.8 pp |
-| Success Rate Defense | 41.0% | 56.8% | ↓ -15.8 pp |
-| Explosive Play Rate (Off) | 9.9% | 4.9% | ↑ +5.0 pp |
-| Third Down Conversion | 45.5% | 25.0% | ↑ +20.5 pp |
-| Points per Drive Differential | 2.900 | -2.900 | ↑ +5.800 |
-| Yards per Play Differential | 2.046 | -2.046 | ↑ +4.092 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 19.2% | 0.0% | ↑ +19.2 pp |
-| Pressure Rate (Def) | 13.8% | 4.5% | ↑ +9.2 pp |
-| Tempo | 8.100 | 6.100 | ↑ +2.000 |
-| PowerScore | 0.147 | 0.029 | ↑ +0.119 |
+| Core EPA Offense | 0.020 | 0.034 | -0.014 |
+| Core EPA Defense | 0.027 | -0.004 | 0.031 |
+| Success Rate Offense | 0.467 | 0.487 | -0.020 |
+| Success Rate Defense | 0.483 | 0.442 | 0.041 |
+| Explosive Play Rate (Off) | 0.090 | 0.101 | -0.011 |
+| Third Down Conversion | 0.342 | 0.463 | -0.120 |
+| Points per Drive Differential | -0.254 | 0.429 | -0.683 |
+| Yards per Play Differential | -0.355 | 0.601 | -0.956 |
+| Turnover Margin | 1.000 | -0.444 | 1.444 |
+| Red Zone TD Rate (Off) | 0.102 | 0.112 | -0.010 |
+| Pressure Rate (Def) | 0.030 | 0.092 | -0.061 |
+| Tempo | 8.100 | 6.100 | 2.000 |
+| PowerScore | 0.147 | 0.029 | 0.119 |
+| PowerScore | 0.147 | 0.029 | 0.119 |
+| Tempo | 8.100 | 6.100 | 2.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.119 (JAX +0.147 vs LAC +0.029)
 **7 metrics version:**
 JAX edge: +0.080 (JAX +0.100 vs LAC +0.019)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.080), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -242,8 +248,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | LA (A) | 7-32 | LA | 0.773 | -0.114 | 45.7% | -2.280 |
-| 6 | SEA (A) | 12-20 | SEA | 0.738 | -0.087 | 37.2% | -0.667 |
+| 7 | LA (H) | 7-32 | LA | 0.773 | -0.114 | 45.7% | -2.280 |
+| 6 | SEA (H) | 12-20 | SEA | 0.738 | -0.087 | 37.2% | -0.667 |
 | 3 | HOU (H) | 17-10 | JAX | 0.617 | -0.122 | 37.1% | 0.538 |
 
 **LAC analogs vs JAX profile**
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | NYG (A) | 18-21 | NYG | 0.750 | -0.066 | 46.8% | -0.273 |
 | 2 | LV (A) | 20-10 | LAC | 0.713 | -0.087 | 46.5% | 0.918 |
-| 6 | MIA (H) | 29-22 | LAC | 0.707 | 0.128 | 50.0% | 0.650 |
+| 6 | MIA (A) | 29-22 | LAC | 0.707 | 0.128 | 50.0% | 0.650 |
 
 ## Core EPA Offense Form (up to Week 10)
 

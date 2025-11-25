@@ -4,19 +4,21 @@
 
 | Metric | LA | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.071 | 0.117 | ↓ -0.046 |
-| Core EPA Defense | 0.117 | 0.071 | ↑ +0.046 |
-| Success Rate Offense | 60.2% | 50.9% | ↑ +9.3 pp |
-| Success Rate Defense | 50.9% | 60.2% | ↓ -9.3 pp |
-| Explosive Play Rate (Off) | 13.3% | 8.5% | ↑ +4.8 pp |
-| Third Down Conversion | 33.3% | 36.8% | ↓ -3.5 pp |
-| Points per Drive Differential | -0.273 | 0.273 | ↓ -0.545 |
-| Yards per Play Differential | 1.654 | -1.654 | ↑ +3.309 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 18.8% | 12.5% | ↑ +6.2 pp |
-| Pressure Rate (Def) | 2.0% | 2.1% | ↓ -0.1 pp |
-| Tempo | 7.545 | 9.636 | ↓ -2.091 |
-| PowerScore | 0.225 | 0.199 | ↑ +0.026 |
+| Core EPA Offense | 0.005 | -0.024 | 0.029 |
+| Core EPA Defense | -0.064 | -0.049 | -0.016 |
+| Success Rate Offense | 0.492 | 0.494 | -0.002 |
+| Success Rate Defense | 0.422 | 0.471 | -0.049 |
+| Explosive Play Rate (Off) | 0.125 | 0.091 | 0.034 |
+| Third Down Conversion | 0.381 | 0.420 | -0.039 |
+| Points per Drive Differential | 0.768 | 0.411 | 0.357 |
+| Yards per Play Differential | 1.236 | 0.971 | 0.265 |
+| Turnover Margin | 0.750 | -1.250 | 2.000 |
+| Red Zone TD Rate (Off) | 0.138 | 0.110 | 0.028 |
+| Pressure Rate (Def) | 0.098 | 0.038 | 0.060 |
+| Tempo | 7.545 | 9.636 | -2.091 |
+| PowerScore | 0.225 | 0.199 | 0.026 |
+| PowerScore | 0.225 | 0.199 | 0.026 |
+| Tempo | 7.545 | 9.636 | -2.091 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LA edge: +0.026 (LA +0.225 vs SF +0.199)
 **7 metrics version:**
 SF edge: +0.377 (LA -0.035 vs SF +0.343)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.377), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 

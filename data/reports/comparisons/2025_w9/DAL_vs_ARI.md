@@ -4,19 +4,21 @@
 
 | Metric | DAL | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.122 | 0.053 | ↓ -0.175 |
-| Core EPA Defense | 0.053 | -0.122 | ↑ +0.175 |
-| Success Rate Offense | 46.2% | 50.0% | ↓ -3.7 pp |
-| Success Rate Defense | 50.0% | 46.2% | ↑ +3.7 pp |
-| Explosive Play Rate (Off) | 12.5% | 14.6% | ↓ -2.1 pp |
-| Third Down Conversion | 38.5% | 46.7% | ↓ -8.2 pp |
-| Points per Drive Differential | -2.200 | 2.200 | ↓ -4.400 |
-| Yards per Play Differential | 0.016 | -0.016 | ↑ +0.032 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 6.7% | 17.6% | ↓ -11.0 pp |
-| Pressure Rate (Def) | 13.2% | 11.4% | ↑ +1.8 pp |
-| Tempo | 8.000 | 8.200 | ↓ -0.200 |
-| PowerScore | 0.108 | 0.148 | ↓ -0.040 |
+| Core EPA Offense | 0.148 | 0.020 | 0.128 |
+| Core EPA Defense | 0.150 | 0.029 | 0.121 |
+| Success Rate Offense | 0.494 | 0.453 | 0.041 |
+| Success Rate Defense | 0.519 | 0.491 | 0.028 |
+| Explosive Play Rate (Off) | 0.086 | 0.087 | -0.001 |
+| Third Down Conversion | 0.371 | 0.409 | -0.038 |
+| Points per Drive Differential | -0.187 | -0.001 | -0.186 |
+| Yards per Play Differential | -0.301 | -0.333 | 0.032 |
+| Turnover Margin | -0.125 | -0.143 | 0.018 |
+| Red Zone TD Rate (Off) | 0.159 | 0.150 | 0.009 |
+| Pressure Rate (Def) | 0.045 | 0.044 | 0.002 |
+| Tempo | 8.000 | 8.200 | -0.200 |
+| PowerScore | 0.108 | 0.148 | -0.040 |
+| PowerScore | 0.108 | 0.148 | -0.040 |
+| Tempo | 8.000 | 8.200 | -0.200 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ARI edge: +0.040 (DAL +0.108 vs ARI +0.148)
 **7 metrics version:**
 ARI edge: +0.626 (DAL -0.218 vs ARI +0.407)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.626), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -251,8 +257,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | SF (A) | 13-15 | SF | 0.704 | -0.003 | 42.9% | -0.155 |
-| 7 | GB (A) | 23-24 | GB | 0.695 | 0.039 | 48.9% | -0.144 |
-| 6 | IND (H) | 27-31 | IND | 0.686 | 0.117 | 51.1% | -0.400 |
+| 7 | GB (H) | 23-24 | GB | 0.695 | 0.039 | 48.9% | -0.144 |
+| 6 | IND (A) | 27-31 | IND | 0.686 | 0.117 | 51.1% | -0.400 |
 
 ## Core EPA Offense Form (up to Week 8)
 

@@ -4,19 +4,21 @@
 
 | Metric | JAX | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.087 | 0.039 | ↓ -0.126 |
-| Core EPA Defense | 0.039 | -0.087 | ↑ +0.126 |
-| Success Rate Offense | 37.2% | 43.1% | ↓ -5.8 pp |
-| Success Rate Defense | 43.1% | 37.2% | ↑ +5.8 pp |
-| Explosive Play Rate (Off) | 5.3% | 9.7% | ↓ -4.4 pp |
-| Third Down Conversion | 23.5% | 8.3% | ↑ +15.2 pp |
-| Points per Drive Differential | -0.667 | 0.667 | ↓ -1.333 |
-| Yards per Play Differential | -1.901 | 1.901 | ↓ -3.803 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 5.9% | ↓ -5.9 pp |
-| Pressure Rate (Def) | 3.2% | 14.0% | ↓ -10.8 pp |
-| Tempo | 7.833 | 6.000 | ↑ +1.833 |
-| PowerScore | 0.081 | 0.123 | ↓ -0.042 |
+| Core EPA Offense | 0.040 | 0.082 | -0.042 |
+| Core EPA Defense | -0.047 | -0.021 | -0.026 |
+| Success Rate Offense | 0.471 | 0.506 | -0.034 |
+| Success Rate Defense | 0.472 | 0.455 | 0.017 |
+| Explosive Play Rate (Off) | 0.089 | 0.113 | -0.025 |
+| Third Down Conversion | 0.350 | 0.401 | -0.050 |
+| Points per Drive Differential | 0.096 | 0.397 | -0.301 |
+| Yards per Play Differential | -0.262 | 0.802 | -1.064 |
+| Turnover Margin | 1.600 | 0.000 | 1.600 |
+| Red Zone TD Rate (Off) | 0.144 | 0.177 | -0.033 |
+| Pressure Rate (Def) | 0.033 | 0.066 | -0.034 |
+| Tempo | 7.833 | 6.000 | 1.833 |
+| PowerScore | 0.081 | 0.123 | -0.042 |
+| PowerScore | 0.081 | 0.123 | -0.042 |
+| Tempo | 7.833 | 6.000 | 1.833 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.042 (JAX +0.081 vs SEA +0.123)
 **7 metrics version:**
 SEA edge: +0.036 (JAX +0.050 vs SEA +0.087)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.036), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -70,29 +76,29 @@ SEA edge: +0.036 (JAX +0.050 vs SEA +0.087)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -23.3 pp | -23.3 pp | -29.2 pp |
-| SEA | -15.5 pp | -15.5 pp | -12.2 pp |
+| JAX | -5.4 pp | -5.4 pp | -13.9 pp |
+| SEA | -8.2 pp | -8.2 pp | -6.1 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -6.7 pp | -6.7 pp | -5.3 pp |
-| SEA | -11.7 pp | -11.7 pp | -7.4 pp |
+| JAX | +0.9 pp | +0.9 pp | -0.2 pp |
+| SEA | +7.2 pp | +7.2 pp | +10.0 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -4.1 pp | -4.1 pp | -4.0 pp |
-| SEA | +3.3 pp | +3.3 pp | +2.5 pp |
+| JAX | +3.1 pp | +3.1 pp | +1.6 pp |
+| SEA | -0.8 pp | -0.8 pp | -1.0 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -5.6 pp | -5.6 pp | -6.4 pp |
-| SEA | -3.3 pp | -3.3 pp | -3.5 pp |
+| JAX | +1.3 pp | +1.3 pp | -0.5 pp |
+| SEA | +2.1 pp | +2.1 pp | +0.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -102,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | +14.4 pp | +14.4 pp | +14.4 pp |
-| SEA | -9.5 pp | -9.5 pp | -9.5 pp |
+| JAX | +4.9 pp | +4.9 pp | +3.2 pp |
+| SEA | -1.9 pp | -1.9 pp | -0.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -15.5 pp | -15.5 pp | -15.5 pp |
-| SEA | +5.2 pp | +5.2 pp | +5.2 pp |
+| JAX | -3.7 pp | -3.7 pp | -7.9 pp |
+| SEA | +10.4 pp | +10.4 pp | +12.8 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -5.6 pp | -5.6 pp | -6.4 pp |
-| SEA | -3.3 pp | -3.3 pp | -3.5 pp |
+| JAX | +1.3 pp | +1.3 pp | -0.5 pp |
+| SEA | +2.1 pp | +2.1 pp | +0.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -4.1 pp | -4.1 pp | -4.0 pp |
-| SEA | +3.3 pp | +3.3 pp | +2.5 pp |
+| JAX | +3.1 pp | +3.1 pp | +1.6 pp |
+| SEA | -0.8 pp | -0.8 pp | -1.0 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -134,22 +140,22 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | 45.7 | 45.7 | 45.7 |
-| SEA | 55.2 | 55.2 | 55.2 |
+| JAX | 45.7 | 45.7 | 45.2 |
+| SEA | 48.4 | 48.4 | 49.9 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | 51.1 | 51.1 | 51.1 |
-| SEA | 53.6 | 53.6 | 53.6 |
+| JAX | 48.0 | 48.0 | 46.0 |
+| SEA | 49.4 | 49.4 | 53.8 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | -5.4 | -5.4 | -5.4 |
-| SEA | 1.6 | 1.6 | 1.6 |
+| JAX | -2.3 | -2.3 | -0.8 |
+| SEA | -1.0 | -1.0 | -3.8 |
 
 ### Points per Drive (offense)
 
@@ -187,29 +193,29 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | 38.4% | 38.4% | 38.4% |
-| SEA | 44.2% | 44.2% | 44.2% |
+| JAX | 43.0% | 43.0% | 42.0% |
+| SEA | 37.6% | 37.6% | 36.6% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | 61.6% | 61.6% | 61.6% |
-| SEA | 55.8% | 55.8% | 55.8% |
+| JAX | 57.0% | 57.0% | 58.0% |
+| SEA | 62.4% | 62.4% | 63.4% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | 2.85 | 2.85 | 2.76 |
-| SEA | 3.14 | 3.14 | 3.24 |
+| JAX | 3.19 | 3.19 | 3.02 |
+| SEA | 2.67 | 2.67 | 2.68 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| JAX | 4.57 | 4.57 | 4.43 |
-| SEA | 3.97 | 3.97 | 4.09 |
+| JAX | 4.23 | 4.23 | 4.17 |
+| SEA | 4.43 | 4.43 | 4.65 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | KC (H) | 25-28 | KC | 0.706 | 0.162 | 56.2% | -0.300 |
-| 4 | SF (-) | 20-29 | SF | 0.616 | -0.029 | 44.9% | -0.788 |
-| 3 | HOU (-) | 17-10 | JAX | 0.609 | -0.122 | 37.1% | 0.538 |
+| 5 | KC (H) | 25-28 | KC | 0.745 | 0.162 | 56.2% | -0.300 |
+| 4 | SF (A) | 20-29 | SF | 0.628 | -0.029 | 44.9% | -0.788 |
+| 3 | HOU (H) | 17-10 | JAX | 0.609 | -0.122 | 37.1% | 0.538 |
 
 **SEA analogs vs JAX profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 1 | SF (-) | 13-15 | SF | 0.745 | -0.082 | 52.2% | -0.245 |
-| 4 | ARI (-) | 23-17 | SEA | 0.703 | 0.061 | 46.3% | 0.633 |
-| 2 | PIT (-) | 25-21 | SEA | 0.497 | 0.028 | 45.1% | 0.314 |
+| 1 | SF (H) | 13-15 | SF | 0.754 | -0.082 | 52.2% | -0.245 |
+| 4 | ARI (A) | 23-17 | SEA | 0.703 | 0.061 | 46.3% | 0.633 |
+| 2 | PIT (A) | 25-21 | SEA | 0.476 | 0.028 | 45.1% | 0.314 |
 
 ## Core EPA Offense Form (up to Week 5)
 
@@ -342,5 +348,5 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 38.4% | 38.4% | 38.4% |
-| SEA | 44.2% | 44.2% | 44.2% |
+| JAX | 43.2% | 43.2% | 42.2% |
+| SEA | 37.8% | 37.8% | 36.6% |

@@ -4,19 +4,21 @@
 
 | Metric | NYG | GB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.122 | 0.293 | ↓ -0.172 |
-| Core EPA Defense | 0.293 | 0.122 | ↑ +0.172 |
-| Success Rate Offense | 47.7% | 48.5% | ↓ -0.9 pp |
-| Success Rate Defense | 48.5% | 47.7% | ↑ +0.9 pp |
-| Explosive Play Rate (Off) | 7.0% | 13.2% | ↓ -6.3 pp |
-| Third Down Conversion | 43.8% | 63.6% | ↓ -19.9 pp |
-| Points per Drive Differential | -1.375 | 1.375 | ↓ -2.750 |
-| Yards per Play Differential | -0.475 | 0.475 | ↓ -0.951 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 15.8% | 28.6% | ↓ -12.8 pp |
-| Pressure Rate (Def) | 6.9% | 6.2% | ↑ +0.6 pp |
-| Tempo | 8.600 | 8.500 | ↑ +0.100 |
-| PowerScore | 0.234 | 0.275 | ↓ -0.040 |
+| Core EPA Offense | 0.026 | 0.111 | -0.085 |
+| Core EPA Defense | 0.093 | 0.029 | 0.064 |
+| Success Rate Offense | 0.460 | 0.501 | -0.041 |
+| Success Rate Defense | 0.492 | 0.468 | 0.024 |
+| Explosive Play Rate (Off) | 0.093 | 0.119 | -0.026 |
+| Third Down Conversion | 0.325 | 0.428 | -0.103 |
+| Points per Drive Differential | -0.338 | 0.453 | -0.791 |
+| Yards per Play Differential | -0.626 | 1.005 | -1.631 |
+| Turnover Margin | -0.333 | 0.000 | -0.333 |
+| Red Zone TD Rate (Off) | 0.129 | 0.169 | -0.040 |
+| Pressure Rate (Def) | 0.066 | 0.071 | -0.005 |
+| Tempo | 8.600 | 8.500 | 0.100 |
+| PowerScore | 0.234 | 0.275 | -0.040 |
+| PowerScore | 0.234 | 0.275 | -0.040 |
+| Tempo | 8.600 | 8.500 | 0.100 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ GB edge: +0.040 (NYG +0.234 vs GB +0.275)
 **7 metrics version:**
 GB edge: +0.428 (NYG -0.010 vs GB +0.419)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.428), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | CIN (A) | 27-18 | GB | 0.928 | 0.216 | 58.7% | 1.000 |
+| 6 | CIN (H) | 27-18 | GB | 0.928 | 0.216 | 58.7% | 1.000 |
 | 4 | DAL (A) | 42-38 | GB | 0.888 | 0.244 | 52.4% | 0.364 |
 | 2 | WAS (H) | 27-20 | GB | 0.813 | 0.046 | 48.8% | 0.614 |
 
