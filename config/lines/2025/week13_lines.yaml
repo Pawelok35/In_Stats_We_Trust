@@ -51,7 +51,7 @@ matchups:
   - report: data/reports/comparisons/2025_w13/CLE_vs_SF.md
     home: "CLE"
     away: "SF"
-    spread: 6.5
+    spread: 5
     total: 39.5
     prime_time: false
     neutral_site: false
@@ -75,7 +75,7 @@ matchups:
   - report: data/reports/comparisons/2025_w13/SEA_vs_MIN.md
     home: "SEA"
     away: "MIN"
-    spread: -9.5
+    spread: -11.5
     total: 42
     prime_time: false
     neutral_site: false

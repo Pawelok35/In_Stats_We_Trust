@@ -261,3 +261,60 @@ python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 13
 
 python scripts/show_weather_picks.py --season 2025 --week 13 --guardrails-mode v2_1
 
+
+
+## KOMENDY LICZĄCE
+
+1)  policzy średni rating wygranych/przegranych, profit per bucket i winrate per action na bazie Twojego pliku.
+
+Profit per bucket:
+Gale       21.20
+Cyclone    13.25
+Vortex      7.80
+Calm        1.20
+Breeze      0.90
+
+Skutecznosc per rail_guard_action (% WIN):
+DOWNGRADE TO BREEZE     100.0
+DOWNGRADE TO CYCLONE    100.0
+PROMOTE TO GALE         100.0
+NO_CHANGE                78.3
+DOWNGRADE TO GALE        50.0
+
+
+
+python -X utf8 -c "import pandas as pd
+from pathlib import Path
+df = pd.read_csv('data/results/weather_bucket_games_season2025.csv')
+df = df[df['result'].isin(['WIN','LOSS'])].copy()
+df['pnl'] = df.apply(lambda r: 0.9*r['stake_u'] if r['result']=='WIN' else -1*r['stake_u'], axis=1)
+print('Profit per bucket:')
+print(df.groupby('bucket')['pnl'].sum().sort_values(ascending=False).round(2))
+winrate = (df.assign(is_win=lambda d: d['result']=='WIN')
+             .groupby('rail_guard_action')['is_win']
+             .mean()
+             .sort_values(ascending=False)
+             .mul(100)
+             .round(1))
+print('\nSkutecznosc per rail_guard_action (% WIN):')
+print(winrate)
+"
+
+
+2) Liczby (tylko WIN/LOSS):
+
+PROMOTE TO GALE: 9 gier, 100.0% WIN
+DOWNGRADE TO CYCLONE: 2 gier, 100.0% WIN
+DOWNGRADE TO BREEZE: 1 gra, 100.0% WIN
+NO_CHANGE: 23 gier, 78.3% WIN
+DOWNGRADE TO GALE: 4 gier, 50.0% WIN
+
+
+python -X utf8 -c "import pandas as pd
+df = pd.read_csv('data/results/weather_bucket_games_season2025.csv')
+df = df[df['result'].isin(['WIN','LOSS'])].copy()
+df['is_win'] = df['result']=='WIN'
+counts = df.groupby('rail_guard_action').agg(games=('is_win','size'), winrate=('is_win','mean'))
+counts = counts.sort_values(by='winrate', ascending=False)
+print(counts.assign(winrate=lambda d: (d['winrate']*100).round(1)))"
+
