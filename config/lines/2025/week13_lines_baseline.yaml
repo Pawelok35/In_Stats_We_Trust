@@ -75,7 +75,7 @@ matchups:
   - report: data/reports/comparisons/2025_w13/SEA_vs_MIN.md
     home: "SEA"
     away: "MIN"
-    spread: -12
+    spread: -9.5
     total: 42
     prime_time: false
     neutral_site: false

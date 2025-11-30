@@ -10,10 +10,10 @@ import pandas as pd
 
 def load_variant(season: int, week: int, variant: str) -> Dict[Tuple[str, str], dict]:
     """
-    Wczytaj picki jednego wariantu (J / C / K).
+    Wczytaj picki jednego wariantu (np. B / F / D).
     Zwraca mapowanie (home, away) -> rekord.
     """
-    key = "c_psdiff" if variant.lower().startswith("c") else variant.lower()
+    key = variant.lower()
     path = Path(f"data/picks_variant_{key}/{season}/week_{week:02d}.jsonl")
     records: Dict[Tuple[str, str], dict] = {}
     if not path.exists():
@@ -40,9 +40,9 @@ def pick_spread(
     away: str,
     pick: str,
     row_handicap,
-    vj: Dict[Tuple[str, str], dict],
-    vc: Dict[Tuple[str, str], dict],
-    vk: Dict[Tuple[str, str], dict],
+    vb: Dict[Tuple[str, str], dict],
+    vf: Dict[Tuple[str, str], dict],
+    vd: Dict[Tuple[str, str], dict],
 ) -> str:
     def from_rec(rec: dict) -> str | None:
         # prefer 'spread' (home perspective); fallback to handicap
@@ -65,8 +65,8 @@ def pick_spread(
             return None
         return None
 
-    # prefer J, then C, then K
-    rec = vj.get((home, away)) or vc.get((home, away)) or vk.get((home, away))
+    # prefer B, then F, then D
+    rec = vb.get((home, away)) or vf.get((home, away)) or vd.get((home, away))
     if rec:
         val = from_rec(rec)
         if val is not None:
@@ -93,9 +93,9 @@ def build_table(season: int, week: int, mode: str) -> str:
     if df.empty:
         return f"Brak picków dla season={season}, week={week}, mode={mode}."
 
-    vj = load_variant(season, week, "j")
-    vc = load_variant(season, week, "c")
-    vk = load_variant(season, week, "k")
+    vb = load_variant(season, week, "b_edge_focus")
+    vf = load_variant(season, week, "f")
+    vd = load_variant(season, week, "d_balanced")
 
     df = df.sort_values(["stake_u", "rating"], ascending=[False, False])
     lines = [
@@ -107,9 +107,9 @@ def build_table(season: int, week: int, mode: str) -> str:
     for _, r in df.iterrows():
         home, away = r.home_team, r.away_team
         pick = r.pick_team
-        spread_disp = pick_spread(home, away, pick, r.get("handicap"), vj, vc, vk)
+        spread_disp = pick_spread(home, away, pick, r.get("handicap"), vb, vf, vd)
         match = f"{home} vs {away} (-> ** {pick} {spread_disp} **)"
-        cfg_text = f"`J:{dir_for(vj, home, away)} | C:{dir_for(vc, home, away)} | K:{dir_for(vk, home, away)}`"
+        cfg_text = f"`B:{dir_for(vb, home, away)} | F:{dir_for(vf, home, away)} | D:{dir_for(vd, home, away)}`"
         lines.append(
             f"| {r.bucket} | {float(r.rating):.2f} | {float(r.stake_u):.1f}u | {match} | {cfg_text} |"
         )

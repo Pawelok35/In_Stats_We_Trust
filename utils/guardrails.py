@@ -421,6 +421,8 @@ def apply_value_buffer_guard(
     spread: Optional[float],
     original_bucket: str,
     guardrail_level: int = 0,
+    baseline_spread: Optional[float] = None,
+    line_deadband: float = 0.5,
 ) -> tuple[str, Optional[float], str, str, str]:
     """
     Zwraca: (guard_bucket, value_buffer, rail_guard_status, rail_guard_action, notes)
@@ -450,39 +452,52 @@ def apply_value_buffer_guard(
         # Jeśli bucket nieznany, nie zmieniamy
         return original_bucket, value_buffer, "PASS", "NO_CHANGE", "; ".join(notes_parts)
 
+    # Deadband: jeżeli linia ruszyła się nieznacznie vs baseline, decyzję opieramy o buffer z baseline
+    decision_buffer = value_buffer
+    if baseline_spread is not None and spread is not None:
+        try:
+            spread_delta = float(spread) - float(baseline_spread)
+            baseline_buffer = float(predicted_margin) - float(baseline_spread)
+        except (TypeError, ValueError):
+            spread_delta = None
+            baseline_buffer = None
+        if spread_delta is not None and baseline_buffer is not None and abs(spread_delta) <= line_deadband:
+            decision_buffer = baseline_buffer
+            notes_parts.append(f"v2.2: deadband applied (Δspread={spread_delta:+.2f}<= {line_deadband})")
+
     delta = 0
     gale_idx = VALUE_BUFFER_BUCKET_ORDER.index("Gale")
 
     # Strefa neutralna
-    if abs(value_buffer) < 3.0:
+    if abs(decision_buffer) < 3.0:
         delta = 0
         notes_parts.append("v2.2: |buffer|<3 neutral")
     else:
-        if value_buffer >= 10.0:
+        if decision_buffer >= 10.0:
             if original_bucket in ("Calm", "Breeze"):
                 delta = min(2, gale_idx - idx)
                 notes_parts.append("v2.2: buffer>=10, boost cap=Gale")
             else:
                 delta = 0
                 notes_parts.append("v2.2: buffer>=10 but boost blocked (>=Gale)")
-        elif value_buffer >= 5.0:
+        elif decision_buffer >= 5.0:
             if original_bucket in ("Calm", "Breeze"):
                 delta = min(1, gale_idx - idx)
                 notes_parts.append("v2.2: buffer 5-9, +1 cap=Gale")
             else:
                 delta = 0
                 notes_parts.append("v2.2: buffer 5-9 but boost blocked (>=Gale)")
-        elif value_buffer <= -10.0:
+        elif decision_buffer <= -10.0:
             if original_bucket in ("Cyclone", "Vortex", "Supercell", "Ultimate Supercell"):
                 delta = -2
                 notes_parts.append("v2.2: buffer<=-10, -2 for high bucket")
             else:
                 delta = -1
                 notes_parts.append("v2.2: buffer<=-10, -1 for low bucket")
-        elif value_buffer <= -5.0:
+        elif decision_buffer <= -5.0:
             delta = -1
             notes_parts.append("v2.2: buffer -5..-9, -1")
-        elif value_buffer <= -3.0:
+        elif decision_buffer <= -3.0:
             if original_bucket in ("Vortex", "Supercell", "Ultimate Supercell"):
                 delta = -1
                 notes_parts.append("v2.2: buffer -3..-4, -1 for high bucket")
@@ -491,7 +506,7 @@ def apply_value_buffer_guard(
                 notes_parts.append("v2.2: buffer -3..-4, neutral for low bucket")
 
     # Guardrail level bezpiecznik (nie sumujemy podwójnie)
-    if guardrail_level >= 2 and value_buffer < 0:
+    if guardrail_level >= 2 and decision_buffer < 0:
         if delta == 0:
             delta = -1
             notes_parts.append("v2.2: guardrail_level>=2, force -1")

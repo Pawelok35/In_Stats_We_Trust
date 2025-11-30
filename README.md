@@ -253,9 +253,21 @@ python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 13 --reference-
 
 3) Buckety tylko dla week 13, dopisanie do istniejącego pliku (bez ruszania historii):
 
+- DLA JEDNEGO WEEK !!!
+
+python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 5 --end-week 5  --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2024.csv
+
+
+- Bierzące linie !!!!!!!!!!!!!!!!!!!!!!
+
 python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 13 --end-week 13 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
 
 
+'''
+- Pierwsza linia baseline
+
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 13 --end-week 13 --guardrails-mode v2_1 --baseline-lines config/lines/2025/week13_lines_baseline.yaml --line-deadband 0.5 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
+'''
 
 4) Podgląd w terminalu:
 
@@ -318,3 +330,15 @@ counts = df.groupby('rail_guard_action').agg(games=('is_win','size'), winrate=('
 counts = counts.sort_values(by='winrate', ascending=False)
 print(counts.assign(winrate=lambda d: (d['winrate']*100).round(1)))"
 
+3) Oblicza skuteczność metryk 
+
+         WIN  LOSS  Razem   WIN%
+Breeze     2     0      2  100.0%
+Calm      11     3     14   78.6%
+Cyclone    5     2      7   71.4%
+Gale       9     5     14   64.3%
+Vortex    17     2     19   89.5%
+
+
+
+python -X utf8 -c "import pandas as pd; df=pd.read_csv('data/results/weather_bucket_games_season2025.csv'); df=df[df['result'].isin(['WIN','LOSS'])].copy(); df['pnl']=df.apply(lambda r: 0.9*r['stake_u'] if r['result']=='WIN' else -1*r['stake_u'], axis=1); counts=df.groupby('bucket')['result'].value_counts().unstack(fill_value=0)[['WIN','LOSS']]; print('Win/Loss per bucket:\\n', counts); print('\\nWinrate % per bucket:\\n', df.groupby('bucket')['result'].apply(lambda s: (s=='WIN').mean()*100).round(1)); print('\\nPnL per bucket (0.9/-1):\\n', df.groupby('bucket')['pnl'].sum().round(2))"

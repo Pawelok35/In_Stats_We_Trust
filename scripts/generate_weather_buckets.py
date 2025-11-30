@@ -8,6 +8,7 @@ from typing import Dict, List, Optional, Tuple
 
 import pandas as pd
 import polars as pl
+import yaml
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
@@ -24,7 +25,7 @@ from utils.guardrails import (
 )
 
 TAG_POINTS = {"GOY": 3, "GOM": 2, "GOW": 1}
-VARIANT_WEIGHTS = {"J": 1.0, "C": 0.91, "K": 0.88}
+VARIANT_WEIGHTS = {"B": 1.0, "F": 0.91, "D": 0.88}
 BUCKETS = [
     ("Calm", 0.0, 2.9),
     ("Breeze", 2.9, 3.2),
@@ -45,9 +46,9 @@ BUCKET_STAKES = {
 
 def load_picks_for_week(season: int, week: int) -> pd.DataFrame:
     variants: List[Tuple[str, Path]] = [
-        ("J", Path("data") / "picks_variant_j" / str(season) / f"week_{week:02d}.jsonl"),
-        ("C", Path("data") / "picks_variant_c_psdiff" / str(season) / f"week_{week:02d}.jsonl"),
-        ("K", Path("data") / "picks_variant_k" / str(season) / f"week_{week:02d}.jsonl"),
+        ("B", Path("data") / "picks_variant_b_edge_focus" / str(season) / f"week_{week:02d}.jsonl"),
+        ("F", Path("data") / "picks_variant_f" / str(season) / f"week_{week:02d}.jsonl"),
+        ("D", Path("data") / "picks_variant_d_balanced" / str(season) / f"week_{week:02d}.jsonl"),
     ]
     records: List[Dict] = []
     for variant, path in variants:
@@ -99,7 +100,30 @@ def _append_rail_guard_logs(records: List[Dict]) -> None:
             f.write(json.dumps(rec, ensure_ascii=False) + "\n")
 
 
-def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str = "v2") -> pd.DataFrame:
+def _load_lines_spreads(path: Optional[Path]) -> Dict[Tuple[str, str], float]:
+    if path is None or not path.exists():
+        return {}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    spreads: Dict[Tuple[str, str], float] = {}
+    for m in data.get("matchups", []):
+        home = m.get("home")
+        away = m.get("away")
+        spread = m.get("spread")
+        try:
+            spreads[(str(home), str(away))] = float(spread)
+        except (TypeError, ValueError):
+            continue
+    return spreads
+
+
+def build_weather_table(
+    season: int,
+    week: int,
+    guardrails_cfg: Dict,
+    mode: str = "v2",
+    baseline_spreads: Optional[Dict[Tuple[str, str], float]] = None,
+    line_deadband: float = 0.5,
+) -> pd.DataFrame:
     df = load_picks_for_week(season, week)
     if df.empty:
         return pd.DataFrame()
@@ -148,7 +172,7 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str 
             and rating >= 8.0
         )
         bucket = assign_bucket(rating, ultimate)
-        ref = grp[grp["variant"] == "J"].iloc[0] if not grp[grp["variant"] == "J"].empty else grp.iloc[0]
+        ref = grp[grp["variant"] == "B"].iloc[0] if not grp[grp["variant"] == "B"].empty else grp.iloc[0]
         pick_team = ref["model_winner"]
         # Guardrails: faworyt = pick_team, underdog = drugi
         dog_team = home if pick_team == away else away
@@ -186,11 +210,16 @@ def build_weather_table(season: int, week: int, guardrails_cfg: Dict, mode: str 
 
         spread_val = _safe_float(ref.get("handicap") if ref.get("handicap") is not None else ref.get("spread"))
         predicted_margin_val = _safe_float(ref.get("model_margin"))
+        baseline_spread_val = None
+        if baseline_spreads:
+            baseline_spread_val = baseline_spreads.get((home, away))
         guard_bucket, value_buffer, rg_status, rg_action, rg_notes = apply_value_buffer_guard(
             predicted_margin=predicted_margin_val,
             spread=spread_val,
             original_bucket=adj_bucket,
             guardrail_level=level,
+            baseline_spread=baseline_spread_val,
+            line_deadband=line_deadband,
         )
 
         rail_guard_logs.append(
@@ -270,6 +299,18 @@ def parse_args() -> argparse.Namespace:
         action="store_true",
         help="Jeśli istnieje plik output, zachowaj wcześniejsze wiersze (np. starsze tygodnie) i nadpisz tylko nowo generowane mecze.",
     )
+    parser.add_argument(
+        "--baseline-lines",
+        type=Path,
+        default=None,
+        help="Opcjonalny plik z bazowymi liniami (snapshot) do porównania ruchu spreadu.",
+    )
+    parser.add_argument(
+        "--line-deadband",
+        type=float,
+        default=0.5,
+        help="Martwa strefa dla ruchu linii (w pkt spread). |Δspread| <= deadband -> decyzja wg bufferu z baseline (domyślnie 0.5).",
+    )
     return parser.parse_args()
 
 
@@ -292,10 +333,18 @@ def main() -> None:
         guardrails_path = args.guardrails
 
     guardrails_cfg = load_guardrails(guardrails_path)
+    baseline_spreads = _load_lines_spreads(args.baseline_lines)
 
     tables = []
     for wk in weeks:
-        tbl = build_weather_table(args.season, wk, guardrails_cfg, mode=args.guardrails_mode)
+        tbl = build_weather_table(
+            args.season,
+            wk,
+            guardrails_cfg,
+            mode=args.guardrails_mode,
+            baseline_spreads=baseline_spreads,
+            line_deadband=args.line_deadband,
+        )
         if tbl.empty:
             print(f"[WARN] Skipping week {wk}: no GOY/GOM/GOW picks found.")
             continue
