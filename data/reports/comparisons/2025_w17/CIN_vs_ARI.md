@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.169 | 0.159 | 0.010 |
 | Pressure Rate (Def) | 0.057 | 0.049 | 0.008 |
 | Tempo | 6.667 | 8.111 | -1.444 |
-| PowerScore | 0.281 | 0.160 | 0.121 |
-| PowerScore | 0.281 | 0.160 | 0.121 |
+| PowerScore | 1.590 | 1.758 | -0.168 |
+| PowerScore | 1.590 | 1.758 | -0.168 |
 | Tempo | 6.667 | 8.111 | -1.444 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ CIN edge: +0.308 (CIN +0.513 vs ARI +0.205)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - ARI) | +2.2 pts (favours CIN) |
-| Model Win% CIN | 59.2% |
-| Model Win% ARI | 40.8% |
-| SOS Differential (CIN-ARI) | +0.028 |
+| Model Spread (CIN - ARI) | -3.1 pts (favours ARI) |
+| Model Win% CIN | 37.3% |
+| Model Win% ARI | 62.7% |
+| SOS Differential (CIN-ARI) | -0.031 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.196 | 0.168 |
-| Last 5 games | 0.169 | 0.181 |
-| Last 3 games | 0.211 | 0.226 |
+| Season-to-date | 0.278 | 0.309 |
+| Last 5 games | 0.417 | 0.577 |
+| Last 3 games | 0.624 | 0.886 |
 
 ## Trend Summary (last 3 weeks)
 

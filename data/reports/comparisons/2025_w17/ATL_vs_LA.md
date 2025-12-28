@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.152 | 0.162 | -0.010 |
 | Pressure Rate (Def) | 0.091 | 0.077 | 0.014 |
 | Tempo | 10.000 | 8.143 | 1.857 |
-| PowerScore | 0.171 | 0.169 | 0.003 |
-| PowerScore | 0.171 | 0.169 | 0.003 |
+| PowerScore | 2.151 | 1.780 | 0.372 |
+| PowerScore | 2.151 | 1.780 | 0.372 |
 | Tempo | 10.000 | 8.143 | 1.857 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ LA edge: +0.399 (ATL +0.030 vs LA +0.429)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - LA) | +0.1 pts (favours ATL) |
-| Model Win% ATL | 50.2% |
-| Model Win% LA | 49.8% |
-| SOS Differential (ATL-LA) | +0.028 |
+| Model Spread (ATL - LA) | +6.9 pts (favours ATL) |
+| Model Win% ATL | 75.9% |
+| Model Win% LA | 24.1% |
+| SOS Differential (ATL-LA) | +0.056 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | LA |
 | --- | ---: | ---: |
-| Season-to-date | 0.147 | 0.120 |
-| Last 5 games | 0.163 | 0.158 |
-| Last 3 games | 0.200 | 0.189 |
+| Season-to-date | 0.262 | 0.206 |
+| Last 5 games | 0.482 | 0.399 |
+| Last 3 games | 0.733 | 0.591 |
 
 ## Trend Summary (last 3 weeks)
 

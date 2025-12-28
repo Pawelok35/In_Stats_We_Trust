@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 16
 
-_Generated at 2025-12-28T12:12:10.408093+00:00 (UTC)_
+_Generated at 2025-12-28T12:56:36.028019+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\16_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2750, "cols": 18, "timestamp": "2025-12-28T12:12:09.973532+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2750, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T12:12:09.973532+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2750, "cols": 24, "timestamp": "2025-12-28T12:12:09.973532+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2750, "cols": 18, "timestamp": "2025-12-28T12:56:35.656010+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2750, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T12:56:35.656010+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2750, "cols": 24, "timestamp": "2025-12-28T12:56:35.656010+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2025\16_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\16.parquet`
 - Manifest: `data\l4_core12\2025\16_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\16_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| CIN | 0.2813661518512833 |
-| SF | 0.26498809476530677 |
-| LAC | 0.25807770201005287 |
-| CAR | 0.21759415813411276 |
-| NE | 0.21393278683024713 |
-| CHI | 0.21354461955150497 |
-| GB | 0.20461120897285928 |
-| BAL | 0.19704150035678714 |
-| JAX | 0.19386076248384693 |
-| SEA | 0.1922036355082784 |
+| LAC | 2.1824366763690275 |
+| ATL | 2.151371745243612 |
+| TB | 2.041740278275462 |
+| PIT | 1.974777368170784 |
+| NE | 1.9443873322847929 |
+| PHI | 1.8984149252885116 |
+| GB | 1.863182637544288 |
+| NYG | 1.8166980146968985 |
+| CHI | 1.7885446195515051 |
+| DAL | 1.7883289105934448 |
 
 
 ## Visualizations

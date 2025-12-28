@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.191 | 0.137 | 0.054 |
 | Pressure Rate (Def) | 0.057 | 0.049 | 0.008 |
 | Tempo | 8.000 | 7.417 | 0.583 |
-| PowerScore | 0.182 | 0.194 | -0.012 |
-| PowerScore | 0.182 | 0.194 | -0.012 |
+| PowerScore | 1.765 | 1.657 | 0.108 |
+| PowerScore | 1.765 | 1.657 | 0.108 |
 | Tempo | 8.000 | 7.417 | 0.583 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ JAX edge: +0.286 (IND +0.058 vs JAX +0.345)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - JAX) | -0.2 pts (favours JAX) |
-| Model Win% IND | 49.1% |
-| Model Win% JAX | 50.9% |
-| SOS Differential (IND-JAX) | +0.051 |
+| Model Spread (IND - JAX) | +2.0 pts (favours IND) |
+| Model Win% IND | 58.2% |
+| Model Win% JAX | 41.8% |
+| SOS Differential (IND-JAX) | +0.057 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.172 | 0.122 |
-| Last 5 games | 0.171 | 0.092 |
-| Last 3 games | 0.193 | 0.149 |
+| Season-to-date | 0.276 | 0.220 |
+| Last 5 games | 0.463 | 0.367 |
+| Last 3 games | 0.679 | 0.606 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -340,6 +340,11 @@ Vortex    17     2     19   89.5%
 
 
 
+python -X utf8 -c "import pandas as pd; df=pd.read_csv('data/results/weather_bucket_games_season2025.csv'); df=df[df['result'].isin(['WIN','LOSS'])].copy(); df['pnl']=df.apply(lambda r: 0.9*r['stake_u'] if r['result']=='WIN' else -1*r['stake_u'], axis=1); counts=df.groupby('bucket')['result'].value_counts().unstack(fill_value=0); winrate=df.groupby('bucket')['result'].apply(lambda s:(s=='WIN').mean()*100).rename('winrate_%'); pnl=df.groupby('bucket')['pnl'].sum().rename('pnl_0.9/-1'); table=counts.reindex(columns=['WIN','LOSS']).copy(); table['winrate_%']=winrate.round(1); table['pnl_0.9/-1']=pnl.round(2); print(table.to_string())"
+
+
+
+
 python -X utf8 -c "import pandas as pd; df=pd.read_csv('data/results/weather_bucket_games_season2025.csv'); df=df[df['result'].isin(['WIN','LOSS'])].copy(); df['pnl']=df.apply(lambda r: 0.9*r['stake_u'] if r['result']=='WIN' else -1*r['stake_u'], axis=1); counts=df.groupby('bucket')['result'].value_counts().unstack(fill_value=0)[['WIN','LOSS']]; print('Win/Loss per bucket:\\n', counts); print('\\nWinrate % per bucket:\\n', df.groupby('bucket')['result'].apply(lambda s: (s=='WIN').mean()*100).round(1)); print('\\nPnL per bucket (0.9/-1):\\n', df.groupby('bucket')['pnl'].sum().round(2))"
 
 

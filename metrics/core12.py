@@ -2,7 +2,7 @@
 from pathlib import Path
 import polars as pl
 
-from utils.paths import path_for
+from utils.paths import path_for, manifest_path
 from utils.manifest import write_manifest
 
 logger = logging.getLogger(__name__)
@@ -121,9 +121,9 @@ def compute(df_l3: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     work.write_parquet(out_path)
 
-    write_manifest(
+    manifest_json = write_manifest(
         path=out_path,
-        manifest_path=path_for("l4_core12_manifest", season, week),
+        manifest_path=manifest_path("l4_core12", season, week),
         layer="l4_core12",
         season=season,
         week=week,
@@ -131,6 +131,16 @@ def compute(df_l3: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         cols=len(work.columns),
         files=[out_path],
     )
+
+    # Legacy location compatibility: write a copy where older code/tests expect it.
+    legacy_manifest = path_for("l4_core12_manifest", season, week)
+    legacy_manifest.parent.mkdir(parents=True, exist_ok=True)
+    manifest_text = manifest_json.read_text(encoding="utf-8")
+    # write to the original (historical) path even if suffix is .parquet
+    legacy_manifest.write_text(manifest_text, encoding="utf-8")
+    # also drop a .json sibling for clarity
+    legacy_json = legacy_manifest.with_suffix(".json")
+    legacy_json.write_text(manifest_text, encoding="utf-8")
 
     logger.info(
         "Core12 written to %s (rows=%s cols=%s)",

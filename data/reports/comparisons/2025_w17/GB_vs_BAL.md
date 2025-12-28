@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.149 | 0.115 | 0.034 |
 | Pressure Rate (Def) | 0.069 | 0.047 | 0.022 |
 | Tempo | 8.400 | 7.300 | 1.100 |
-| PowerScore | 0.205 | 0.197 | 0.008 |
-| PowerScore | 0.205 | 0.197 | 0.008 |
+| PowerScore | 1.863 | 1.632 | 0.231 |
+| PowerScore | 1.863 | 1.632 | 0.231 |
 | Tempo | 8.400 | 7.300 | 1.100 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BAL edge: +0.125 (GB +0.035 vs BAL +0.161)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - BAL) | +0.1 pts (favours GB) |
-| Model Win% GB | 50.6% |
-| Model Win% BAL | 49.4% |
-| SOS Differential (GB-BAL) | +0.027 |
+| Model Spread (GB - BAL) | +4.3 pts (favours GB) |
+| Model Win% GB | 67.1% |
+| Model Win% BAL | 32.9% |
+| SOS Differential (GB-BAL) | +0.016 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | GB | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.178 | 0.151 |
-| Last 5 games | 0.191 | 0.131 |
-| Last 3 games | 0.216 | 0.155 |
+| Season-to-date | 0.290 | 0.274 |
+| Last 5 games | 0.506 | 0.477 |
+| Last 3 games | 0.741 | 0.732 |
 
 ## Trend Summary (last 3 weeks)
 

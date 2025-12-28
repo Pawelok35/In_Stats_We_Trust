@@ -3,10 +3,13 @@ from pathlib import Path
 from typing import Optional
 import polars as pl
 
+from utils.contracts import validate_df
+from utils.guards import check_no_inf, check_no_nan_in_keys
+from utils.logging import get_logger
 from utils.paths import path_for, manifest_path
 from utils.manifest import write_manifest
 
-logger = logging.getLogger(__name__)
+logger = get_logger(__name__)
 
 
 def _safe_div(num_expr: pl.Expr, den_expr: pl.Expr) -> pl.Expr:
@@ -105,6 +108,12 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         safety_exprs.append(pl.lit(0.0).cast(pl.Float64).alias("yards_gained"))
     else:
         safety_exprs.append(pl.col("yards_gained").cast(pl.Float64).alias("yards_gained"))
+
+    # yardline_100 mo��e by�� brakuj���, ale potrzebujemy do redzone/field position
+    if "yardline_100" not in df.columns:
+        safety_exprs.append(pl.lit(None).cast(pl.Float64).alias("yardline_100"))
+    else:
+        safety_exprs.append(pl.col("yardline_100").cast(pl.Float64).alias("yardline_100"))
 
     # epa w Float64 na pewno
     if "epa" not in df.columns:
@@ -570,6 +579,11 @@ def run(season: int, week: int, l2_result: Optional[Path] = None) -> Path:
         result = _aggregate(df_l2)
         # Drop any rows where TEAM is null or empty
         result = result.filter(pl.col("TEAM").is_not_null() & (pl.col("TEAM") != ""))
+
+    # Validate and guard before writing
+    validate_df(result, "L3")
+    check_no_nan_in_keys(result, ["season", "week", "TEAM"])
+    check_no_inf(result)
 
     out_path = path_for("l3_team_week", season, week)
     out_path.parent.mkdir(parents=True, exist_ok=True)

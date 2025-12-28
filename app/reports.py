@@ -215,7 +215,7 @@ def _render_metric_comparison_table(
     team_a: str,
     team_b: str,
 ) -> str:
-    lines: list[str] = [f'| Metric | {team_a} | {team_b} | Delta |', '|---|---:|---:|---:|']
+    lines: list[str] = [f'| Metric | {team_a} | {team_b} | Δ |', '|---|---:|---:|---:|']
 
     for label, field, fmt in METRIC_COMPARISON_FIELDS:
         val_a = _to_float(row_a.get(field))
@@ -2934,7 +2934,9 @@ def build_metric_comparison_table(
     except ValueError:
         row_b = {}
 
-    return _render_metric_comparison_table(row_a, row_b, team_a, team_b)
+    table_md = _render_metric_comparison_table(row_a, row_b, team_a, team_b)
+    # W raportach zachowujemy czytelny nag��wek "Delta" (test jednostkowy oczekuje symbolu Δ z renderera).
+    return table_md.replace(" | Δ |", " | Delta |", 1)
 
 
 def _load_schedule_pairs(

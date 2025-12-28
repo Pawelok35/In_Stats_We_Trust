@@ -99,6 +99,12 @@ def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
             }
         )
     else:
+        tempo_expr = (
+            pl.col("tempo").cast(pl.Float64).fill_null(0.0)
+            if "tempo" in df_core12.columns
+            else pl.lit(0.0).cast(pl.Float64)
+        )
+
         working = df_core12.with_columns(
             [
                 pl.lit(season).cast(pl.Int64).alias("season"),
@@ -110,6 +116,7 @@ def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
                 pl.col("core_sr_def").cast(pl.Float64),
                 pl.col("core_ed_sr_off").cast(pl.Float64),
                 pl.col("core_third_down_conv").cast(pl.Float64),
+                tempo_expr.alias("tempo"),
             ]
         )
 
@@ -117,7 +124,7 @@ def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
             pl.col("core_epa_off") * weights["offense_epa"]
             + pl.col("core_sr_off") * weights["offense_success_rate"]
             + pl.col("core_epa_def") * weights["defense_epa"]
-            + pl.col("core_ed_sr_off") * weights["tempo"]
+            + pl.col("tempo") * weights["tempo"]
         )
 
         df = working.with_columns(power_score.alias("PowerScore")).select(
