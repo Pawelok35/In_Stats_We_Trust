@@ -109,7 +109,7 @@ def evaluate_variant(
     picks_dir = Path(variant["picks_dir"])
     tag_filter = None
     picks = evaluate_picks.load_picks(picks_dir, season, start_week, end_week)
-    manual = evaluate_picks.load_manual_results(manual_path) if manual_path else {}
+    manual = evaluate_picks.load_manual_results(manual_path, season=season) if manual_path else {}
     results = evaluate_picks.load_results(season, manual)
     summary = evaluate_picks.evaluate_picks(picks, results, tag_filter)
     return summary

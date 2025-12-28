@@ -29,6 +29,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--season", type=int, required=True)
     parser.add_argument("--week", type=int, required=True)
     parser.add_argument(
+        "--ingest-week",
+        type=int,
+        help=(
+            "Week to fully ingest/build (L1-L4). Defaults to week-1 so latest completed games are pulled."
+        ),
+    )
+    parser.add_argument(
         "--reference-week",
         type=int,
         help="Reference form window for previews (defaults to week-7, min 1).",
@@ -64,6 +71,10 @@ def main() -> None:
     through_week = week - 1
     if through_week <= 0:
         raise SystemExit("Week must be > 1 (build-cumulative requires week-1 >= 1).")
+
+    ingest_week = args.ingest_week if args.ingest_week is not None else through_week
+    if ingest_week <= 0:
+        ingest_week = 1
 
     reference_week = (
         args.reference_week if args.reference_week is not None else max(1, week - 7)
@@ -105,7 +116,22 @@ def main() -> None:
         desc="Update schedule",
     )
 
-    # 2) Build cumulative form
+    # 2) Ingest + build latest completed week (L1->L4) so PBP/parquets are fresh
+    run(
+        [
+            sys.executable,
+            "-m",
+            "app.cli",
+            "build-week",
+            "--season",
+            str(season),
+            "--week",
+            str(ingest_week),
+        ],
+        desc=f"Build week {ingest_week} (L1-L4)",
+    )
+
+    # 3) Build cumulative form
     run(
         [
             sys.executable,
@@ -120,7 +146,7 @@ def main() -> None:
         desc="Build cumulative Core12",
     )
 
-    # 3) Generate matchup previews
+    # 4) Generate matchup previews
     run(
         [
             sys.executable,
@@ -138,7 +164,7 @@ def main() -> None:
         desc="Generate matchup previews",
     )
 
-    # 4) Run matchup batch
+    # 5) Run matchup batch
     run(
         [
             sys.executable,
@@ -155,7 +181,7 @@ def main() -> None:
         desc="Run matchup batch + betting analysis",
     )
 
-    # 5) Regenerate pick variants
+    # 6) Regenerate pick variants
     run(
         [
             sys.executable,

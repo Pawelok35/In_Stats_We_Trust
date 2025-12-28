@@ -100,7 +100,7 @@ def load_picks(variant_dir: Path, season: int, start_week: int, end_week: int) -
 
 def main() -> None:
     args = parse_args()
-    manual = evaluate_picks.load_manual_results(args.manual_results)
+    manual = evaluate_picks.load_manual_results(args.manual_results, season=args.season)
     results = evaluate_picks.load_results(args.season, manual)
 
     rows: List[Dict] = []

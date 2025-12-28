@@ -825,6 +825,7 @@ def available_teams(
 ) -> list[str]:
     frames = frames or _load_metric_frames(season, week)
     candidates = [frames.get("l3"), frames.get("powerscore"), frames.get("core12")]
+    teams_accum: set[str] = set()
     for df in candidates:
         if df is None or df.is_empty():
             continue
@@ -834,9 +835,50 @@ def available_teams(
         series = df.select(team_col).drop_nulls().unique()
         if series.is_empty():
             continue
-        teams = sorted({str(value).upper() for value in series.to_series().to_list() if value})
-        if teams:
-            return teams
+        teams_accum |= {str(value).upper() for value in series.to_series().to_list() if value}
+
+    # If partial list (e.g., bye teams missing), enrich with rolling snapshot through week-1.
+    if teams_accum and len(teams_accum) < 32:
+        try:
+            rolling_path = Path(rolling_core12_through_path(season, max(1, week - 1)))
+            if rolling_path.exists():
+                df_roll = pl.read_parquet(rolling_path)
+                if "TEAM" in df_roll.columns:
+                    teams_accum |= {
+                        str(value).upper()
+                        for value in df_roll.select("TEAM").drop_nulls().to_series().to_list()
+                        if value
+                    }
+        except Exception:
+            logger.debug("Failed to merge rolling snapshot for available_teams.", exc_info=True)
+        if teams_accum:
+            return sorted(teams_accum)
+
+    if teams_accum:
+        return sorted(teams_accum)
+
+    # Fallback: use rolling Core12 snapshot (through week-1) so bye teams are not dropped.
+    try:
+        rolling_path = Path(rolling_core12_through_path(season, max(1, week - 1)))
+    except Exception:
+        return []
+    if rolling_path.exists():
+        try:
+            df_roll = pl.read_parquet(rolling_path)
+        except Exception:
+            logger.debug("Failed to load rolling Core12 snapshot from %s", rolling_path, exc_info=True)
+            return []
+        if "TEAM" in df_roll.columns:
+            teams = (
+                df_roll.select("TEAM")
+                .drop_nulls()
+                .unique()
+                .to_series()
+                .to_list()
+            )
+            teams = sorted({str(value).upper() for value in teams if value})
+            if teams:
+                return teams
     return []
 
 
@@ -1723,10 +1765,21 @@ def _build_powerscore_breakdown(
     frames = frames or _load_metric_frames(season, week)
     core12 = frames.get("core12")
     if core12 is None or core12.is_empty():
-        return None
+        teams_df = None
+    else:
+        teams_df = core12.filter(pl.col("TEAM").is_in([team_a, team_b]))
 
-    teams_df = core12.filter(pl.col("TEAM").is_in([team_a, team_b]))
-    if teams_df.is_empty() or teams_df.height < 2:
+    # Fallback: if any team missing (bye/missing game), try rolling snapshot through week-1.
+    if teams_df is None or teams_df.height < 2:
+        try:
+            rolling_path = Path(rolling_core12_through_path(season, max(1, week - 1)))
+            if rolling_path.exists():
+                rolling_df = pl.read_parquet(rolling_path)
+                teams_df = rolling_df.filter(pl.col("TEAM").is_in([team_a, team_b]))
+        except Exception:
+            teams_df = None
+
+    if teams_df is None or teams_df.is_empty() or teams_df.height < 2:
         return None
 
     components = components or _POWERSCORE_COMPONENTS

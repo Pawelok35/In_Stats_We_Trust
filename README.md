@@ -237,41 +237,40 @@ python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 2 
     --run-convergence
 }
 
+## NOWA INSTRUKCJA 
 
+Jak używać (Twoja instrukcja 1–4, uaktualniona)
 
-## INSTRUKCJA krok po kroku 
-Przyklad gdy analizuje week13 
+1) Zaktualizuj wejścia:
 
-1) Aktualizuje 
-  - terminarz w scripts/update_schedule.py ,
-  - linie w config/lines/2025/week13_lines.yaml,
-  - wyniki w data/results/manual_results.jsonl (tylko rozegrane mecze; reszta PENDING).
+scripts/update_schedule.py (nadchodzący tydzień),
+config/lines/2025/week17_lines.yaml,
+data/results/manual_results.jsonl (tylko rozegrane mecze, reszta PENDING).
 
-2) Pipeline na referencji poprzedniego tygodnia (12): 
+2) Jedna komenda na tydzień 17 (ingestuje week 16 domyślnie, bo to najnowszy zakończony tydzień), z konwergencją:
 
-python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 13 --reference-week 12 --run-convergence
+python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 17 --reference-week 16 --run-convergence
 
-3) Buckety tylko dla week 13, dopisanie do istniejącego pliku (bez ruszania historii):
+## SPRAWDZIC CZY PARQUET SIE UTWORZYL ZA POPRZEDNIA KOLEJKE !!!
 
-- DLA JEDNEGO WEEK !!!
+Jeśli chcesz wymusić inny tydzień do ingerencji (np. 17, gdy już rozegrany), dodaj --ingest-week 17.
 
-python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 5 --end-week 5  --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2024.csv
+3) Buckety tylko dla week 17 (dopisz do istniejącego pliku):
 
-
-- Bierzące linie !!!!!!!!!!!!!!!!!!!!!!
-
-python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 13 --end-week 13 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
-
-
-'''
-- Pierwsza linia baseline
-
-python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 13 --end-week 13 --guardrails-mode v2_1 --baseline-lines config/lines/2025/week13_lines_baseline.yaml --line-deadband 0.5 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
-'''
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 17 --end-week 17 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
 
 4) Podgląd w terminalu:
 
-python scripts/show_weather_picks.py --season 2025 --week 13 --guardrails-mode v2_1
+python scripts/show_weather_picks.py --season 2025 --week 17 --guardrails-mode v2_1
+
+Teraz całość działa jednym wywołaniem (krok 2), dba o PBP i artefakty, a kroki 3–4 są opcjonalne wg Twojej listy.
+
+
+
+
+
+
+
 
 
 
@@ -342,3 +341,32 @@ Vortex    17     2     19   89.5%
 
 
 python -X utf8 -c "import pandas as pd; df=pd.read_csv('data/results/weather_bucket_games_season2025.csv'); df=df[df['result'].isin(['WIN','LOSS'])].copy(); df['pnl']=df.apply(lambda r: 0.9*r['stake_u'] if r['result']=='WIN' else -1*r['stake_u'], axis=1); counts=df.groupby('bucket')['result'].value_counts().unstack(fill_value=0)[['WIN','LOSS']]; print('Win/Loss per bucket:\\n', counts); print('\\nWinrate % per bucket:\\n', df.groupby('bucket')['result'].apply(lambda s: (s=='WIN').mean()*100).round(1)); print('\\nPnL per bucket (0.9/-1):\\n', df.groupby('bucket')['pnl'].sum().round(2))"
+
+
+
+
+
+
+## STARA INSTRUKCJA krok po kroku 
+Przyklad gdy analizuje week
+
+1) Aktualizuje 
+  - terminarz w scripts/update_schedule.py ,
+  - linie w config/lines/2025/week13_lines.yaml,
+  - wyniki w data/results/manual_results.jsonl (tylko rozegrane mecze; reszta PENDING).
+
+2) Pipeline na referencji poprzedniego tygodnia (12): 
+
+python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 17 --reference-week 16 --run-convergence
+
+3) Buckety tylko dla week 13, dopisanie do istniejącego pliku (bez ruszania historii):
+
+
+
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 17 --end-week 17  --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
+
+
+
+4) Podgląd w terminalu:
+
+python scripts/show_weather_picks.py --season 2025 --week 17 --guardrails-mode v2_1

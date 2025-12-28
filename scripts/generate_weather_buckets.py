@@ -353,7 +353,7 @@ def main() -> None:
         raise SystemExit("Brak picków w podanym zakresie tygodni.")
     table = pd.concat(tables, ignore_index=True)
     # compute result if scores available
-    manual = evaluate_picks.load_manual_results(args.manual_results)
+    manual = evaluate_picks.load_manual_results(args.manual_results, season=args.season)
     results = evaluate_picks.load_results(args.season, manual)
     def compute_result(row: pd.Series) -> str:
         key = (int(row["week"]), row["home_team"], row["away_team"])

@@ -88,7 +88,7 @@ def load_results(
     return results
 
 
-def load_manual_results(path: Path | None) -> Dict[Tuple[int, str, str], Dict]:
+def load_manual_results(path: Path | None, season: int | None = None) -> Dict[Tuple[int, str, str], Dict]:
     if not path or not path.exists():
         return {}
     overrides: Dict[Tuple[int, str, str], Dict] = {}
@@ -97,7 +97,9 @@ def load_manual_results(path: Path | None) -> Dict[Tuple[int, str, str], Dict]:
         if not line:
             continue
         data = json.loads(line)
-        season = int(data["season"])
+        season_val = int(data["season"])
+        if season is not None and season_val != season:
+            continue
         week = int(data["week"])
         # only override current season
         home = str(data["home_team"]).upper()
@@ -109,7 +111,11 @@ def load_manual_results(path: Path | None) -> Dict[Tuple[int, str, str], Dict]:
     return overrides
 
 
-def evaluate_picks(picks: Iterable[Dict], results: Dict[Tuple[int, str, str], Dict], tags: set[str] | None) -> Dict[str, Dict]:
+def evaluate_picks(
+    picks: Iterable[Dict],
+    results: Dict[Tuple[int, str, str], Dict],
+    tags: set[str] | None,
+) -> Dict[str, Dict]:
     summary: Dict[str, Dict[str, float]] = defaultdict(lambda: {"wins": 0, "losses": 0, "pushes": 0, "pending": 0})
 
     for pick in picks:
@@ -186,7 +192,7 @@ def main() -> None:
     if not picks:
         print("Brak picków do ocenienia w zadanym zakresie.")
         return
-    manual = load_manual_results(args.manual_results)
+    manual = load_manual_results(args.manual_results, season=args.season)
     results = load_results(args.season, manual)
     summary = evaluate_picks(picks, results, tags)
     print_summary(summary, tags)

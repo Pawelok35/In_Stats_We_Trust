@@ -81,7 +81,7 @@ def load_picks(base_dir: Path, args: argparse.Namespace) -> List[Dict]:
 
 
 def load_results(args: argparse.Namespace) -> Dict[Key, Dict]:
-    manual = evaluate_picks.load_manual_results(args.manual_results)
+    manual = evaluate_picks.load_manual_results(args.manual_results, season=args.season)
     return evaluate_picks.load_results(args.season, manual)
 
 

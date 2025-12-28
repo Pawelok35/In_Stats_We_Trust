@@ -113,8 +113,11 @@ def _frames_with_fallback(
     (or target_week-1 when not provided).
     """
     frames = reports._load_metric_frames(season, target_week)
+
+    # We need real metric frames (L3/L4); rolling-only availability is not enough.
+    has_metrics = any(df is not None and not df.is_empty() for df in frames.values())
     teams = reports.available_teams(season, target_week, frames=frames)
-    if teams:
+    if teams and has_metrics:
         return frames, target_week
 
     ref_week = reference_week if reference_week is not None else max(1, target_week - 1)

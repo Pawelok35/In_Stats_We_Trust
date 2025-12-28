@@ -231,6 +231,76 @@ _WEEK_MATCHUPS: dict[int, list[tuple[str, str]]] = {
         ("WAS", "DEN"),
         ("NE", "NYG"),
     ],
+    14: [
+        ("DET", "DAL"),
+        ("TB", "NO"),
+        ("NYJ", "MIA"),
+        ("CLE", "TEN"),
+        ("MIN", "WAS"),
+        ("BUF", "CIN"),
+        ("BAL", "PIT"),
+        ("ATL", "SEA"),
+        ("JAX", "IND"),
+        ("LV", "DEN"),
+        ("GB", "CHI"),
+        ("ARI", "LA"),
+        ("KC", "HOU"),
+        ("LAC", "PHI"),
+    ],
+    15: [
+        ("TB", "ATL"),
+        ("CIN", "BAL"),
+        ("JAX", "NYJ"),
+        ("PHI", "LV"),
+        ("HOU", "ARI"),
+        ("KC", "LAC"),
+        ("CHI", "CLE"),
+        ("NYG", "WAS"),
+        ("NE", "BUF"),
+        ("SEA", "IND"),
+        ("NO", "CAR"),
+        ("SF", "TEN"),
+        ("LA", "DET"),
+        ("DEN", "GB"),
+        ("DAL", "MIN"),
+        ("PIT", "MIA"),
+    ],
+    16: [
+        ("SEA", "LA"),   # Rams @ Seahawks
+        ("WAS", "PHI"),  # Eagles @ Commanders
+        ("CHI", "GB"),   # Packers @ Bears
+        ("CLE", "BUF"),  # Bills @ Browns
+        ("MIA", "CIN"),  # Bengals @ Dolphins
+        ("CAR", "TB"),   # Buccaneers @ Panthers
+        ("NO", "NYJ"),   # Jets @ Saints
+        ("NYG", "MIN"),  # Vikings @ Giants
+        ("DAL", "LAC"),  # Chargers @ Cowboys
+        ("TEN", "KC"),   # Chiefs @ Titans
+        ("ARI", "ATL"),  # Falcons @ Cardinals
+        ("DEN", "JAX"),  # Jaguars @ Broncos
+        ("HOU", "LV"),   # Raiders @ Texans
+        ("DET", "PIT"),  # Steelers @ Lions
+        ("BAL", "NE"),   # Patriots @ Ravens
+        ("IND", "SF"),   # 49ers @ Colts
+    ],
+    17: [
+        ("WAS", "DAL"),  # Cowboys @ Commanders
+        ("MIN", "DET"),  # Lions @ Vikings
+        ("KC", "DEN"),   # Broncos @ Chiefs
+        ("LAC", "HOU"),  # Texans @ Chargers
+        ("GB", "BAL"),   # Ravens @ Packers
+        ("MIA", "TB"),   # Buccaneers @ Dolphins
+        ("CAR", "SEA"),  # Seahawks @ Panthers
+        ("CIN", "ARI"),  # Cardinals @ Bengals
+        ("CLE", "PIT"),  # Steelers @ Browns
+        ("NYJ", "NE"),   # Patriots @ Jets
+        ("IND", "JAX"),  # Jaguars @ Colts
+        ("TEN", "NO"),   # Saints @ Titans
+        ("LV", "NYG"),   # Giants @ Raiders
+        ("BUF", "PHI"),  # Eagles @ Bills
+        ("SF", "CHI"),   # Bears @ 49ers
+        ("ATL", "LA"),   # Rams @ Falcons
+    ],
 
 }
 

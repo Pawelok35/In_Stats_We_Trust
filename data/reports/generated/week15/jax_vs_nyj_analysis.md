@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – JAX 9.4 – NYJ 20.9
-2️⃣ Predicted Winner (Model) – NYJ
-3️⃣ Predicted Margin (Model) – NYJ by 11.5 pts
-4️⃣ Win Probability (Model) – 93% (NYJ)
-5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje NYJ (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Na 3rd down NYJ utrzymuje 34.9%, podczas gdy JAX jest na 31.0%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera NYJ (+4.1% vs +3.0%), więc pasy rywala będą częściej pod presją. Success Rate Offense pokazuje NYJ na poziomie 46.1% vs 45.4% (+0.7 pp). PowerScore Summary potwierdza przewagę NYJ: NYJ +0.274 vs JAX +0.267.
+1️⃣ Estimated Score (Model) – JAX 35.9 – NYJ 16.6
+2️⃣ Predicted Winner (Model) – JAX
+3️⃣ Predicted Margin (Model) – JAX by 19.3 pts
+4️⃣ Win Probability (Model) – 95% (JAX)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę JAX: JAX +0.139 vs NYJ +0.040. Turnover margin faworyzuje JAX (+2.00 vs -3.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja JAX (12.6% vs 9.8%). JAX prowadzi w Points per Drive Differential (+0.350 vs -0.933), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie JAX (9.1% vs 8.0%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – JAX 18.8 – NYJ 21.8
-2️⃣ Predicted Winner (Market) – NYJ
-3️⃣ Predicted Margin (Market) – NYJ by 3.0 pts
-4️⃣ Win Probability (Market) – 60% (NYJ)
-5️⃣ Forum Output (A) – PowerScore (Model) — JAX +0.267 vs NYJ +0.274. Points per Drive Differential — JAX -0.876 vs NYJ -0.231. Success Rate Offense — JAX 45.4% vs NYJ 46.1%. Third Down Conversion — JAX 31.0% vs NYJ 34.9%. Red Zone TD Rate — JAX 13.6% vs NYJ 13.6%. Explosive Play Rate — JAX 10.1% vs NYJ 9.4%. Model margin -11.5 pts vs market spread JAX -3.0.
-6️⃣ Forum Output (B) – Model idzie w stronę NYJ po marginesie -11.5 pkt. NYJ notuje -0.231 PPD vs -0.876 u JAX. Różnica w Success Rate to 46.1% vs 45.4%. Na 3rd down NYJ (34.9%) wygląda solidniej niż JAX (31.0%). Red Zone i explosiveness ( 13.6% / 9.4% ) utrzymują przewagę jakościową. Market trzyma -3.0 pkt, więc edge vs linia to +8.5.
+1️⃣ Estimated Score (Market) – JAX 33.2 – NYJ 19.2
+2️⃣ Predicted Winner (Market) – JAX
+3️⃣ Predicted Margin (Market) – JAX by 14.0 pts
+4️⃣ Win Probability (Market) – 95% (JAX)
+5️⃣ Forum Output (A) – PowerScore (Model) — JAX +0.139 vs NYJ +0.040. Points per Drive Differential — JAX +0.350 vs NYJ -0.933. Success Rate Offense — JAX 46.4% vs NYJ 47.2%. Third Down Conversion — JAX 34.2% vs NYJ 33.7%. Red Zone TD Rate — JAX 12.6% vs NYJ 9.8%. Explosive Play Rate — JAX 9.1% vs NYJ 8.0%. Model margin 19.3 pts vs market spread JAX +14.0.
+6️⃣ Forum Output (B) – Model idzie w stronę JAX po marginesie 19.3 pkt. JAX notuje +0.350 PPD vs -0.933 u NYJ. Różnica w Success Rate to 46.4% vs 47.2%. Na 3rd down JAX (34.2%) wygląda solidniej niż NYJ (33.7%). Red Zone i explosiveness ( 12.6% / 9.1% ) utrzymują przewagę jakościową. Market trzyma 14.0 pkt, więc edge vs linia to +5.3.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +8.5 pts
-• PowerScoreDiff (winner) = +0.007
-• Confidence = 93.0%
+• Edge_vs_Line (winner) = +5.3 pts
+• PowerScoreDiff (winner) = +0.099
+• Confidence = 98.0%
 
-🏷 Model Tag: VALUE PLAY — based on 93.0% confidence, +8.5 pts model edge vs line, and PowerScore Δ +0.007.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: GOM — based on 98.0% confidence, +5.3 pts model edge vs line, and PowerScore Δ +0.099.
+📈 Strong monthly signal — wysokie zaufanie modelowe.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – JAX 9.4 – NYJ 20.9
-   • Win Probability – 93% (NYJ)
+   • Estimated Score – JAX 35.9 – NYJ 16.6
+   • Win Probability – 95% (JAX)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – JAX 18.8 – NYJ 21.8
-   • Win Probability – 60% (NYJ)
+   • Estimated Score – JAX 33.2 – NYJ 19.2
+   • Win Probability – 95% (JAX)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — NYJ (HC -3.0)
+🏷 Model Tag: <span style="color:#9c27b0; font-weight:600;">GOM</span> — JAX (HC -14.0)

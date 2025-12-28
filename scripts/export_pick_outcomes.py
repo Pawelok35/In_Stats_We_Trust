@@ -116,7 +116,7 @@ def main() -> None:
     if not picks:
         raise SystemExit("[error] Brak pickow GOY/GOM/GOW w zadanym zakresie.")
 
-    manual = evaluate_picks.load_manual_results(args.manual_results)
+    manual = evaluate_picks.load_manual_results(args.manual_results, season=args.season)
     results = evaluate_picks.load_results(args.season, manual)
 
     rows = []
