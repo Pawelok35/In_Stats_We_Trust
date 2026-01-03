@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 5
 
-_Generated at 2025-11-10T20:37:48.826424+00:00 (UTC)_
+_Generated at 2026-01-02T10:19:59.083275+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\5_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2430, "cols": 18, "timestamp": "2025-11-10T20:37:48.297056+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2430, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:37:48.297056+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2430, "cols": 24, "timestamp": "2025-11-10T20:37:48.297056+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2430, "cols": 18, "timestamp": "2026-01-02T10:19:58.698232+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2430, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:19:58.698232+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2430, "cols": 24, "timestamp": "2026-01-02T10:19:58.698232+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\5_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\5.parquet`
 - Manifest: `data\l4_core12\2023\5_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\5_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| JAX | 0.21630110665228688 |
-| DET | 0.21388261674643289 |
-| BUF | 0.21184313675420907 |
-| CHI | 0.20299454235109587 |
-| IND | 0.20087665365375712 |
-| TEN | 0.18494546480240048 |
-| PHI | 0.1844652242355323 |
-| MIA | 0.1725423805166275 |
-| KC | 0.16996827857622743 |
-| MIN | 0.1552539840085993 |
+| PHI | 2.4396850044553124 |
+| MIN | 2.2889749142411575 |
+| KC | 2.207773156625008 |
+| IND | 2.196247024024127 |
+| TEN | 1.9907673826106198 |
+| JAX | 1.9396344399856202 |
+| CAR | 1.93279151037687 |
+| NYG | 1.9115358618473575 |
+| LA | 1.816912980707129 |
+| CHI | 1.6879890658998364 |
 
 
 ## Visualizations

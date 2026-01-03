@@ -4,19 +4,21 @@
 
 | Metric | PHI | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.018 | -0.089 | ↑ +0.108 |
-| Core EPA Defense | -0.089 | 0.018 | ↓ -0.108 |
-| Success Rate Offense | 51.0% | 34.2% | ↑ +16.9 pp |
-| Success Rate Defense | 34.2% | 51.0% | ↓ -16.9 pp |
-| Explosive Play Rate (Off) | 13.5% | 7.6% | ↑ +5.9 pp |
-| Third Down Conversion | 47.1% | 28.6% | ↑ +18.5 pp |
-| Points per Drive Differential | 1.023 | -1.023 | ↑ +2.045 |
-| Yards per Play Differential | 1.122 | -1.122 | ↑ +2.244 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 10.5% | 16.7% | ↓ -6.1 pp |
-| Pressure Rate (Def) | 3.0% | 2.6% | ↑ +0.5 pp |
-| Tempo | 8.000 | 7.182 | ↑ +0.818 |
-| PowerScore | 0.143 | 0.073 | ↑ +0.070 |
+| Core EPA Offense | 0.057 | -0.166 | 0.223 |
+| Core EPA Defense | 0.033 | -0.021 | 0.055 |
+| Success Rate Offense | 0.442 | 0.368 | 0.074 |
+| Success Rate Defense | 0.435 | 0.441 | -0.006 |
+| Explosive Play Rate (Off) | 0.097 | 0.076 | 0.021 |
+| Third Down Conversion | 0.435 | 0.273 | 0.162 |
+| Points per Drive Differential | -0.074 | -0.922 | 0.848 |
+| Yards per Play Differential | 0.066 | -1.149 | 1.215 |
+| Turnover Margin | -0.571 | 0.571 | -1.143 |
+| Red Zone TD Rate (Off) | 0.160 | 0.146 | 0.014 |
+| Pressure Rate (Def) | 0.067 | 0.052 | 0.016 |
+| Tempo | 8.000 | 7.182 | 0.818 |
+| PowerScore | 1.716 | 1.494 | 0.222 |
+| PowerScore | 1.716 | 1.494 | 0.222 |
+| Tempo | 8.000 | 7.182 | 0.818 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PHI edge: +0.070 (PHI +0.143 vs NYG +0.073)
 **7 metrics version:**
 NYG edge: +0.169 (PHI -0.010 vs NYG +0.159)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.169), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - NYG) | +1.3 pts (favours PHI) |
-| Model Win% PHI | 55.4% |
-| Model Win% NYG | 44.6% |
-| SOS Differential (PHI-NYG) | +0.061 |
+| Model Spread (PHI - NYG) | +4.1 pts (favours PHI) |
+| Model Win% PHI | 66.5% |
+| Model Win% NYG | 33.5% |
+| SOS Differential (PHI-NYG) | +0.276 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PHI | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.153 | 0.092 |
-| Last 5 games | 0.174 | 0.111 |
-| Last 3 games | 0.220 | 0.085 |
+| Season-to-date | 1.766 | 1.490 |
+| Last 5 games | 1.906 | 1.552 |
+| Last 3 games | 2.013 | 1.573 |
 
 ## Trend Summary (last 3 weeks)
 

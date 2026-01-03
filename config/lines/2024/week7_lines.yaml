@@ -1,24 +1,16 @@
 # NFL 2024 Week 7 - Betting Lines
-matchups:
-  # TNF – Broncos @ Saints
-  - report: data/reports/comparisons/2024_w7/NO_vs_DEN.md
-    home: "NO"
-    away: DEN
-    spread: +2.5
-    total: 37.0
-    prime_time: true
-    neutral_site: false
+season: 2024
+week: 7
 
-  # London game – Patriots @ Jaguars
+matchups:
   - report: data/reports/comparisons/2024_w7/JAX_vs_NE.md
     home: JAX
     away: NE
     spread: -6.0
     total: 42.0
     prime_time: false
-    neutral_site: true
+    neutral_site: false
 
-  # Niedziela – wczesne okno
   - report: data/reports/comparisons/2024_w7/ATL_vs_SEA.md
     home: ATL
     away: SEA
@@ -75,7 +67,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # Niedziela – późne okno
   - report: data/reports/comparisons/2024_w7/LA_vs_LV.md
     home: LA
     away: LV
@@ -100,7 +91,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # SNF – Jets @ Steelers
   - report: data/reports/comparisons/2024_w7/PIT_vs_NYJ.md
     home: PIT
     away: NYJ
@@ -109,7 +99,6 @@ matchups:
     prime_time: true
     neutral_site: false
 
-  # MNF (doubleheader)
   - report: data/reports/comparisons/2024_w7/TB_vs_BAL.md
     home: TB
     away: BAL
@@ -126,4 +115,10 @@ matchups:
     prime_time: true
     neutral_site: false
 
-
+  - report: data/reports/comparisons/2024_w7/NO_vs_DEN.md
+    home: "NO"
+    away: DEN
+    spread: +2.5
+    total: 37.0
+    prime_time: true
+    neutral_site: false

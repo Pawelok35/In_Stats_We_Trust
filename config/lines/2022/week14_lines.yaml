@@ -41,9 +41,9 @@ matchups:
   total: 42.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w14/PHI_vs_NYG.md
-  home: PHI
-  away: NYG
+- report: data/reports/comparisons/2022_w14/NYG_vs_PHI.md
+  home: NYG
+  away: PHI
   spread: -7.5
   total: 44.5
   prime_time: false

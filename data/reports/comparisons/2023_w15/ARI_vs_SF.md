@@ -4,19 +4,21 @@
 
 | Metric | ARI | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.048 | 0.335 | ↓ -0.288 |
-| Core EPA Defense | 0.335 | 0.048 | ↑ +0.288 |
-| Success Rate Offense | 40.2% | 53.4% | ↓ -13.2 pp |
-| Success Rate Defense | 53.4% | 40.2% | ↑ +13.2 pp |
-| Explosive Play Rate (Off) | 12.0% | 20.5% | ↓ -8.6 pp |
-| Third Down Conversion | 43.8% | 57.1% | ↓ -13.4 pp |
-| Points per Drive Differential | -0.645 | 0.645 | ↓ -1.291 |
-| Yards per Play Differential | -0.823 | 0.823 | ↓ -1.645 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 12.5% | 28.6% | ↓ -16.1 pp |
-| Pressure Rate (Def) | 0.0% | 7.0% | ↓ -7.0 pp |
-| Tempo | 9.200 | 6.636 | ↑ +2.564 |
-| PowerScore | 0.208 | 0.302 | ↓ -0.093 |
+| Core EPA Offense | -0.093 | 0.133 | -0.226 |
+| Core EPA Defense | 0.033 | -0.078 | 0.111 |
+| Success Rate Offense | 0.379 | 0.486 | -0.107 |
+| Success Rate Defense | 0.459 | 0.411 | 0.048 |
+| Explosive Play Rate (Off) | 0.092 | 0.139 | -0.047 |
+| Third Down Conversion | 0.329 | 0.430 | -0.101 |
+| Points per Drive Differential | -0.711 | 1.235 | -1.946 |
+| Yards per Play Differential | -0.749 | 1.455 | -2.203 |
+| Turnover Margin | -0.154 | 0.692 | -0.846 |
+| Red Zone TD Rate (Off) | 0.122 | 0.165 | -0.043 |
+| Pressure Rate (Def) | 0.074 | 0.083 | -0.009 |
+| Tempo | 9.200 | 6.636 | 2.564 |
+| PowerScore | 2.024 | 1.588 | 0.437 |
+| PowerScore | 2.024 | 1.588 | 0.437 |
+| Tempo | 9.200 | 6.636 | 2.564 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SF edge: +0.093 (ARI +0.208 vs SF +0.302)
 **7 metrics version:**
 SF edge: +0.466 (ARI -0.036 vs SF +0.430)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.466), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - SF) | -1.7 pts (favours SF) |
-| Model Win% ARI | 42.9% |
-| Model Win% SF | 57.1% |
-| SOS Differential (ARI-SF) | +0.009 |
+| Model Spread (ARI - SF) | +8.1 pts (favours ARI) |
+| Model Win% ARI | 79.3% |
+| Model Win% SF | 20.7% |
+| SOS Differential (ARI-SF) | -0.018 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.127 | 0.119 |
-| Last 5 games | 0.099 | 0.126 |
-| Last 3 games | 0.132 | 0.152 |
+| Season-to-date | 1.662 | 1.680 |
+| Last 5 games | 1.567 | 1.643 |
+| Last 3 games | 1.593 | 1.644 |
 
 ## Trend Summary (last 3 weeks)
 

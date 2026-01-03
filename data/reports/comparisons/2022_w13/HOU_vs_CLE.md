@@ -4,19 +4,21 @@
 
 | Metric | HOU | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.363 | -0.139 | ↓ -0.224 |
-| Core EPA Defense | -0.139 | -0.363 | ↑ +0.224 |
-| Success Rate Offense | 39.8% | 39.0% | ↑ +0.7 pp |
-| Success Rate Defense | 39.0% | 39.8% | ↓ -0.7 pp |
-| Explosive Play Rate (Off) | 4.8% | 7.3% | ↓ -2.5 pp |
-| Third Down Conversion | 8.3% | 26.7% | ↓ -18.3 pp |
-| Points per Drive Differential | 0.643 | -0.643 | ↑ +1.286 |
-| Yards per Play Differential | -0.298 | 0.298 | ↓ -0.595 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 7.7% | 0.0% | ↑ +7.7 pp |
-| Pressure Rate (Def) | 3.8% | 0.0% | ↑ +3.8 pp |
-| Tempo | 5.929 | 5.857 | ↑ +0.071 |
-| PowerScore | -0.046 | -0.009 | ↓ -0.037 |
+| Core EPA Offense | -0.111 | 0.034 | -0.145 |
+| Core EPA Defense | 0.010 | 0.064 | -0.055 |
+| Success Rate Offense | 0.383 | 0.444 | -0.060 |
+| Success Rate Defense | 0.436 | 0.443 | -0.007 |
+| Explosive Play Rate (Off) | 0.090 | 0.118 | -0.028 |
+| Third Down Conversion | 0.251 | 0.378 | -0.128 |
+| Points per Drive Differential | -0.507 | -0.180 | -0.327 |
+| Yards per Play Differential | -0.779 | 0.094 | -0.873 |
+| Turnover Margin | -0.545 | -0.455 | -0.091 |
+| Red Zone TD Rate (Off) | 0.157 | 0.146 | 0.011 |
+| Pressure Rate (Def) | 0.088 | 0.068 | 0.020 |
+| Tempo | 5.929 | 5.857 | 0.071 |
+| PowerScore | 1.130 | 1.148 | -0.018 |
+| PowerScore | 1.130 | 1.148 | -0.018 |
+| Tempo | 5.929 | 5.857 | 0.071 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CLE edge: +0.037 (HOU -0.046 vs CLE -0.009)
 **7 metrics version:**
 CLE edge: +0.001 (HOU -0.042 vs CLE -0.041)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.001), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - CLE) | -0.7 pts (favours CLE) |
-| Model Win% HOU | 47.2% |
-| Model Win% CLE | 52.8% |
-| SOS Differential (HOU-CLE) | -0.045 |
+| Model Spread (HOU - CLE) | -0.3 pts (favours CLE) |
+| Model Win% HOU | 48.7% |
+| Model Win% CLE | 51.3% |
+| SOS Differential (HOU-CLE) | +0.025 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.118 | 0.163 |
-| Last 5 games | 0.100 | 0.159 |
-| Last 3 games | 0.079 | 0.193 |
+| Season-to-date | 1.621 | 1.596 |
+| Last 5 games | 1.555 | 1.637 |
+| Last 3 games | 1.525 | 1.738 |
 
 ## Trend Summary (last 3 weeks)
 

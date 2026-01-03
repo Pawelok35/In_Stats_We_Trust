@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 14
 
-_Generated at 2025-11-11T12:25:19.890262+00:00 (UTC)_
+_Generated at 2026-01-02T11:36:57.606137+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\14_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2274, "cols": 18, "timestamp": "2025-11-11T12:25:19.296628+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2274, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:25:19.296628+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2274, "cols": 24, "timestamp": "2025-11-11T12:25:19.296628+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2274, "cols": 18, "timestamp": "2026-01-02T11:36:57.193456+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2274, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:36:57.193456+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2274, "cols": 24, "timestamp": "2026-01-02T11:36:57.193456+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\14_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\14.parquet`
 - Manifest: `data\l4_core12\2022\14_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 26
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\14_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| PHI | 0.2748450358593075 |
-| DET | 0.1952944911011509 |
-| CAR | 0.1874227192075792 |
-| MIN | 0.17428559455620785 |
-| NYG | 0.17360527657409341 |
-| JAX | 0.172105561464187 |
-| SF | 0.16687353311056632 |
-| KC | 0.1641993890430757 |
-| SEA | 0.14922038325996848 |
-| LV | 0.14338816995655937 |
+| LAC | 1.8987835875603947 |
+| CAR | 1.822187953972814 |
+| DET | 1.7748399456466055 |
+| LV | 1.7464323099870007 |
+| LA | 1.7024671088943373 |
+| PHI | 1.6562175848789153 |
+| JAX | 1.6498833392419647 |
+| NYG | 1.6450021723612331 |
+| CLE | 1.6424528242982426 |
+| PIT | 1.6423174333663246 |
 
 
 ## Visualizations

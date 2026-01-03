@@ -4,19 +4,21 @@
 
 | Metric | SF | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.107 | 0.025 | ↑ +0.081 |
-| Core EPA Defense | 0.025 | 0.107 | ↓ -0.081 |
-| Success Rate Offense | 51.8% | 46.9% | ↑ +4.9 pp |
-| Success Rate Defense | 46.9% | 51.8% | ↓ -4.9 pp |
-| Explosive Play Rate (Off) | 14.1% | 11.1% | ↑ +3.0 pp |
-| Third Down Conversion | 47.1% | 30.8% | ↑ +16.3 pp |
-| Points per Drive Differential | 0.500 | -0.500 | ↑ +1.000 |
-| Yards per Play Differential | 1.913 | -1.913 | ↑ +3.825 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 20.0% | 20.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 4.9% | 6.9% | ↓ -2.0 pp |
-| Tempo | 7.083 | 6.750 | ↑ +0.333 |
-| PowerScore | 0.200 | 0.170 | ↑ +0.030 |
+| Core EPA Offense | 0.036 | -0.020 | 0.055 |
+| Core EPA Defense | -0.008 | 0.093 | -0.102 |
+| Success Rate Offense | 0.489 | 0.455 | 0.034 |
+| Success Rate Defense | 0.489 | 0.462 | 0.028 |
+| Explosive Play Rate (Off) | 0.117 | 0.091 | 0.026 |
+| Third Down Conversion | 0.377 | 0.348 | 0.029 |
+| Points per Drive Differential | 0.040 | -0.712 | 0.752 |
+| Yards per Play Differential | 0.808 | -0.477 | 1.285 |
+| Turnover Margin | 0.286 | -1.000 | 1.286 |
+| Red Zone TD Rate (Off) | 0.111 | 0.117 | -0.006 |
+| Pressure Rate (Def) | 0.076 | 0.064 | 0.012 |
+| Tempo | 7.083 | 6.750 | 0.333 |
+| PowerScore | 0.200 | 0.170 | 0.030 |
+| PowerScore | 0.200 | 0.170 | 0.030 |
+| Tempo | 7.083 | 6.750 | 0.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SF edge: +0.030 (SF +0.200 vs DAL +0.170)
 **7 metrics version:**
 SF edge: +0.412 (SF +0.348 vs DAL -0.064)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.412), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ SF edge: +0.412 (SF +0.348 vs DAL -0.064)
 | Model Spread (SF - DAL) | +0.6 pts (favours SF) |
 | Model Win% SF | 52.3% |
 | Model Win% DAL | 47.7% |
-| SOS Differential (SF-DAL) | -0.023 |
+| SOS Differential (SF-DAL) | -0.049 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.145 | 0.167 |
-| Last 5 games | 0.146 | 0.202 |
-| Last 3 games | 0.162 | 0.177 |
+| Season-to-date | 1.582 | 1.631 |
+| Last 5 games | 1.661 | 1.681 |
+| Last 3 games | 1.696 | 1.720 |
 
 ## Trend Summary (last 3 weeks)
 

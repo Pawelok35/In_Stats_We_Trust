@@ -4,19 +4,21 @@
 
 | Metric | JAX | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.163 | -0.262 | ↑ +0.099 |
-| Core EPA Defense | 0.342 | 0.118 | ↑ +0.223 |
-| Success Rate Offense | 42.7% | 33.7% | ↑ +9.0 pp |
-| Success Rate Defense | 53.8% | 48.8% | ↑ +5.1 pp |
-| Explosive Play Rate (Off) | 6.7% | 10.5% | ↓ -3.7 pp |
-| Third Down Conversion | 14.3% | 20.0% | ↓ -5.7 pp |
-| Points per Drive Differential | -3.700 | -2.455 | ↓ -1.245 |
-| Yards per Play Differential | -2.289 | 0.017 | ↓ -2.306 |
-| Turnover Margin | -2.000 | -2.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 7.1% | 11.1% | ↓ -4.0 pp |
-| Pressure Rate (Def) | 0.0% | 12.1% | ↓ -12.1 pp |
-| Tempo | 8.900 | 7.818 | ↑ +1.082 |
-| PowerScore | 0.132 | 0.037 | ↑ +0.094 |
+| Core EPA Offense | -0.038 | 0.033 | -0.071 |
+| Core EPA Defense | 0.021 | -0.018 | 0.038 |
+| Success Rate Offense | 0.442 | 0.445 | -0.003 |
+| Success Rate Defense | 0.437 | 0.471 | -0.034 |
+| Explosive Play Rate (Off) | 0.122 | 0.124 | -0.001 |
+| Third Down Conversion | 0.233 | 0.319 | -0.086 |
+| Points per Drive Differential | -0.299 | 0.049 | -0.348 |
+| Yards per Play Differential | -0.006 | 0.310 | -0.316 |
+| Turnover Margin | -0.500 | 1.000 | -1.500 |
+| Red Zone TD Rate (Off) | 0.142 | 0.100 | 0.042 |
+| Pressure Rate (Def) | 0.065 | 0.127 | -0.062 |
+| Tempo | 8.900 | 7.818 | 1.082 |
+| PowerScore | 0.132 | 0.037 | 0.094 |
+| PowerScore | 0.132 | 0.037 | 0.094 |
+| Tempo | 8.900 | 7.818 | 1.082 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.094 (JAX +0.132 vs HOU +0.037)
 **7 metrics version:**
 JAX edge: +0.063 (JAX -0.094 vs HOU -0.158)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.063), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ JAX edge: +0.063 (JAX -0.094 vs HOU -0.158)
 | Model Spread (JAX - HOU) | +1.7 pts (favours JAX) |
 | Model Win% JAX | 57.2% |
 | Model Win% HOU | 42.8% |
-| SOS Differential (JAX-HOU) | -0.010 |
+| SOS Differential (JAX-HOU) | +0.337 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.124 | 0.134 |
-| Last 5 games | 0.124 | 0.134 |
-| Last 3 games | 0.124 | 0.134 |
+| Season-to-date | 1.803 | 1.466 |
+| Last 5 games | 1.803 | 1.466 |
+| Last 3 games | 1.803 | 1.466 |
 
 ## Trend Summary (last 2 weeks)
 

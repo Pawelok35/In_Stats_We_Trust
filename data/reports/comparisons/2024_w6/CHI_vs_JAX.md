@@ -4,19 +4,21 @@
 
 | Metric | CHI | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.267 | 0.012 | ↑ +0.255 |
-| Core EPA Defense | 0.012 | 0.267 | ↓ -0.255 |
-| Success Rate Offense | 53.8% | 43.6% | ↑ +10.2 pp |
-| Success Rate Defense | 43.6% | 53.8% | ↓ -10.2 pp |
-| Explosive Play Rate (Off) | 15.0% | 7.7% | ↑ +7.3 pp |
-| Third Down Conversion | 33.3% | 43.8% | ↓ -10.4 pp |
-| Points per Drive Differential | 1.900 | -1.900 | ↑ +3.800 |
-| Yards per Play Differential | 1.098 | -1.098 | ↑ +2.197 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 28.6% | 5.3% | ↑ +23.3 pp |
-| Pressure Rate (Def) | 9.5% | 8.6% | ↑ +1.0 pp |
-| Tempo | 8.000 | 7.800 | ↑ +0.200 |
-| PowerScore | 0.260 | 0.182 | ↑ +0.078 |
+| Core EPA Offense | -0.052 | 0.022 | -0.074 |
+| Core EPA Defense | -0.123 | 0.131 | -0.253 |
+| Success Rate Offense | 0.433 | 0.458 | -0.025 |
+| Success Rate Defense | 0.426 | 0.478 | -0.052 |
+| Explosive Play Rate (Off) | 0.067 | 0.102 | -0.035 |
+| Third Down Conversion | 0.282 | 0.261 | 0.021 |
+| Points per Drive Differential | 0.251 | -0.913 | 1.164 |
+| Yards per Play Differential | -0.569 | -0.256 | -0.312 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.106 | 0.138 | -0.031 |
+| Pressure Rate (Def) | 0.079 | 0.052 | 0.027 |
+| Tempo | 8.000 | 7.800 | 0.200 |
+| PowerScore | 0.260 | 0.182 | 0.078 |
+| PowerScore | 0.260 | 0.182 | 0.078 |
+| Tempo | 8.000 | 7.800 | 0.200 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CHI edge: +0.078 (CHI +0.260 vs JAX +0.182)
 **7 metrics version:**
 CHI edge: +0.260 (CHI +0.303 vs JAX +0.043)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.260), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CHI edge: +0.260 (CHI +0.303 vs JAX +0.043)
 | Model Spread (CHI - JAX) | +1.4 pts (favours CHI) |
 | Model Win% CHI | 56.0% |
 | Model Win% JAX | 44.0% |
-| SOS Differential (CHI-JAX) | -0.116 |
+| SOS Differential (CHI-JAX) | -0.464 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.077 | 0.192 |
-| Last 5 games | 0.077 | 0.192 |
-| Last 3 games | 0.108 | 0.238 |
+| Season-to-date | 1.346 | 1.810 |
+| Last 5 games | 1.346 | 1.810 |
+| Last 3 games | 1.388 | 1.814 |
 
 ## Trend Summary (last 3 weeks)
 

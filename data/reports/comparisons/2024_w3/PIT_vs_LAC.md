@@ -4,19 +4,21 @@
 
 | Metric | PIT | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.048 | -0.115 | ↑ +0.163 |
-| Core EPA Defense | -0.115 | 0.048 | ↓ -0.163 |
-| Success Rate Offense | 48.8% | 41.9% | ↑ +6.8 pp |
-| Success Rate Defense | 41.9% | 48.8% | ↓ -6.8 pp |
-| Explosive Play Rate (Off) | 12.2% | 8.1% | ↑ +4.1 pp |
-| Third Down Conversion | 46.7% | 25.0% | ↑ +21.7 pp |
-| Points per Drive Differential | 1.000 | -1.000 | ↑ +2.000 |
-| Yards per Play Differential | 1.542 | -1.542 | ↑ +3.084 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 6.2% | 0.0% | ↑ +6.2 pp |
-| Pressure Rate (Def) | 20.0% | 5.6% | ↑ +14.4 pp |
-| Tempo | 8.200 | 6.200 | ↑ +2.000 |
-| PowerScore | 0.140 | 0.090 | ↑ +0.050 |
+| Core EPA Offense | -0.025 | -0.034 | 0.009 |
+| Core EPA Defense | -0.179 | -0.348 | 0.169 |
+| Success Rate Offense | 0.403 | 0.433 | -0.029 |
+| Success Rate Defense | 0.456 | 0.350 | 0.107 |
+| Explosive Play Rate (Off) | 0.054 | 0.088 | -0.034 |
+| Third Down Conversion | 0.322 | 0.406 | -0.085 |
+| Points per Drive Differential | 0.741 | 1.409 | -0.668 |
+| Yards per Play Differential | -0.392 | 0.957 | -1.349 |
+| Turnover Margin | 2.500 | 1.000 | 1.500 |
+| Red Zone TD Rate (Off) | 0.056 | 0.134 | -0.078 |
+| Pressure Rate (Def) | 0.063 | 0.090 | -0.027 |
+| Tempo | 8.200 | 6.200 | 2.000 |
+| PowerScore | 1.756 | 1.314 | 0.442 |
+| PowerScore | 1.756 | 1.314 | 0.442 |
+| Tempo | 8.200 | 6.200 | 2.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PIT edge: +0.050 (PIT +0.140 vs LAC +0.090)
 **7 metrics version:**
 LAC edge: +0.157 (PIT +0.001 vs LAC +0.157)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.157), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - LAC) | +0.9 pts (favours PIT) |
-| Model Win% PIT | 53.8% |
-| Model Win% LAC | 46.2% |
-| SOS Differential (PIT-LAC) | +0.093 |
+| Model Spread (PIT - LAC) | +8.2 pts (favours PIT) |
+| Model Win% PIT | 79.6% |
+| Model Win% LAC | 20.4% |
+| SOS Differential (PIT-LAC) | +0.269 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.064 | -0.029 |
-| Last 5 games | 0.064 | -0.029 |
-| Last 3 games | 0.064 | -0.029 |
+| Season-to-date | 1.388 | 1.119 |
+| Last 5 games | 1.388 | 1.119 |
+| Last 3 games | 1.388 | 1.119 |
 
 ## Trend Summary (last 2 weeks)
 

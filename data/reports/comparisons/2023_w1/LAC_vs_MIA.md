@@ -4,19 +4,21 @@
 
 | Metric | LAC | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.131 | 0.219 | ↓ -0.088 |
-| Core EPA Defense | 0.219 | 0.131 | ↑ +0.088 |
-| Success Rate Offense | 54.0% | 47.6% | ↑ +6.4 pp |
-| Success Rate Defense | 47.6% | 54.0% | ↓ -6.4 pp |
-| Explosive Play Rate (Off) | 10.0% | 23.8% | ↓ -13.8 pp |
-| Third Down Conversion | 56.2% | 50.0% | ↑ +6.2 pp |
-| Points per Drive Differential | 0.127 | -0.127 | ↑ +0.255 |
-| Yards per Play Differential | -2.051 | 2.051 | ↓ -4.102 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 15.4% | 14.3% | ↑ +1.1 pp |
-| Pressure Rate (Def) | 0.0% | 8.3% | ↓ -8.3 pp |
-| Tempo | 10.000 | 7.636 | ↑ +2.364 |
-| PowerScore | 0.245 | 0.270 | ↓ -0.025 |
+| Core EPA Offense | 0.131 | 0.219 | -0.088 |
+| Core EPA Defense | 0.219 | 0.131 | 0.088 |
+| Success Rate Offense | 0.540 | 0.476 | 0.064 |
+| Success Rate Defense | 0.476 | 0.540 | -0.064 |
+| Explosive Play Rate (Off) | 0.100 | 0.238 | -0.138 |
+| Third Down Conversion | 0.562 | 0.500 | 0.062 |
+| Points per Drive Differential | 0.127 | -0.127 | 0.255 |
+| Yards per Play Differential | -2.051 | 2.051 | -4.102 |
+| Turnover Margin | 2.000 | -2.000 | 4.000 |
+| Red Zone TD Rate (Off) | 0.154 | 0.143 | 0.011 |
+| Pressure Rate (Def) | 0.000 | 0.083 | -0.083 |
+| Tempo | 10.000 | 7.636 | 2.364 |
+| PowerScore | 2.225 | 1.749 | 0.476 |
+| PowerScore | 2.225 | 1.749 | 0.476 |
+| Tempo | 10.000 | 7.636 | 2.364 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ MIA edge: +0.025 (LAC +0.245 vs MIA +0.270)
 **7 metrics version:**
 LAC edge: +0.384 (LAC +0.383 vs MIA -0.001)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.384), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - MIA) | -0.5 pts (favours MIA) |
-| Model Win% LAC | 48.1% |
-| Model Win% MIA | 51.9% |
+| Model Spread (LAC - MIA) | +8.8 pts (favours LAC) |
+| Model Win% LAC | 81.2% |
+| Model Win% MIA | 18.8% |
 | SOS Differential (LAC-MIA) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

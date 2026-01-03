@@ -4,19 +4,21 @@
 
 | Metric | NE | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.246 | -0.354 | ↑ +0.108 |
-| Core EPA Defense | -0.354 | -0.246 | ↓ -0.108 |
-| Success Rate Offense | 37.7% | 29.2% | ↑ +8.5 pp |
-| Success Rate Defense | 29.2% | 37.7% | ↓ -8.5 pp |
-| Explosive Play Rate (Off) | 10.4% | 2.8% | ↑ +7.6 pp |
-| Third Down Conversion | 25.0% | 18.8% | ↑ +6.2 pp |
-| Points per Drive Differential | -0.359 | 0.359 | ↓ -0.718 |
-| Yards per Play Differential | 2.427 | -2.427 | ↑ +4.853 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 15.4% | 18.2% | ↓ -2.8 pp |
-| Tempo | 6.417 | 5.538 | ↑ +0.878 |
-| PowerScore | -0.042 | -0.095 | ↑ +0.053 |
+| Core EPA Offense | -0.057 | -0.041 | -0.016 |
+| Core EPA Defense | -0.113 | -0.054 | -0.059 |
+| Success Rate Offense | 0.418 | 0.414 | 0.004 |
+| Success Rate Defense | 0.399 | 0.422 | -0.023 |
+| Explosive Play Rate (Off) | 0.105 | 0.107 | -0.002 |
+| Third Down Conversion | 0.361 | 0.312 | 0.049 |
+| Points per Drive Differential | 0.208 | 0.070 | 0.138 |
+| Yards per Play Differential | -0.009 | 0.272 | -0.281 |
+| Turnover Margin | -0.444 | 0.111 | -0.556 |
+| Red Zone TD Rate (Off) | 0.128 | 0.116 | 0.013 |
+| Pressure Rate (Def) | 0.097 | 0.074 | 0.022 |
+| Tempo | 6.417 | 5.538 | 0.878 |
+| PowerScore | 1.221 | 1.007 | 0.213 |
+| PowerScore | 1.221 | 1.007 | 0.213 |
+| Tempo | 6.417 | 5.538 | 0.878 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NE edge: +0.053 (NE -0.042 vs NYJ -0.095)
 **7 metrics version:**
 NE edge: +0.023 (NE -0.050 vs NYJ -0.073)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.023), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - NYJ) | +1.0 pts (favours NE) |
-| Model Win% NE | 54.1% |
-| Model Win% NYJ | 45.9% |
-| SOS Differential (NE-NYJ) | -0.027 |
+| Model Spread (NE - NYJ) | +3.9 pts (favours NE) |
+| Model Win% NE | 65.9% |
+| Model Win% NYJ | 34.1% |
+| SOS Differential (NE-NYJ) | -0.034 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.069 | 0.096 |
-| Last 5 games | 0.017 | 0.068 |
-| Last 3 games | 0.002 | 0.076 |
+| Season-to-date | 1.453 | 1.487 |
+| Last 5 games | 1.370 | 1.543 |
+| Last 3 games | 1.268 | 1.609 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 8 | NE (H) | 17-22 | NE | 1.000 | -0.192 | 33.8% | -0.385 |
-| 7 | DEN (H) | 16-10 | NYJ | 0.843 | -0.072 | 35.0% | 0.481 |
+| 7 | DEN (A) | 16-10 | NYJ | 0.843 | -0.072 | 35.0% | 0.481 |
 | 9 | BUF (H) | 20-17 | NYJ | 0.594 | 0.026 | 56.0% | 0.333 |
 
 ## Core EPA Offense Form (up to Week 10)

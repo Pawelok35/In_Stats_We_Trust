@@ -4,19 +4,21 @@
 
 | Metric | NYJ | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.191 | -0.078 | ↑ +0.269 |
-| Core EPA Defense | -0.078 | 0.191 | ↓ -0.269 |
-| Success Rate Offense | 50.0% | 33.3% | ↑ +16.7 pp |
-| Success Rate Defense | 33.3% | 50.0% | ↓ -16.7 pp |
-| Explosive Play Rate (Off) | 13.2% | 11.1% | ↑ +2.0 pp |
-| Third Down Conversion | 58.3% | 30.8% | ↑ +27.6 pp |
-| Points per Drive Differential | 2.100 | -2.100 | ↑ +4.200 |
-| Yards per Play Differential | 2.076 | -2.076 | ↑ +4.152 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 12.5% | 11.1% | ↑ +1.4 pp |
-| Pressure Rate (Def) | 7.1% | 3.1% | ↑ +4.0 pp |
-| Tempo | 7.600 | 7.200 | ↑ +0.400 |
-| PowerScore | 0.202 | 0.116 | ↑ +0.086 |
+| Core EPA Offense | -0.073 | 0.003 | -0.075 |
+| Core EPA Defense | -0.073 | 0.047 | -0.120 |
+| Success Rate Offense | 0.402 | 0.412 | -0.011 |
+| Success Rate Defense | 0.418 | 0.457 | -0.040 |
+| Explosive Play Rate (Off) | 0.099 | 0.122 | -0.023 |
+| Third Down Conversion | 0.299 | 0.410 | -0.110 |
+| Points per Drive Differential | 0.099 | -0.104 | 0.203 |
+| Yards per Play Differential | 0.002 | -0.258 | 0.261 |
+| Turnover Margin | 0.100 | 0.091 | 0.009 |
+| Red Zone TD Rate (Off) | 0.104 | 0.148 | -0.044 |
+| Pressure Rate (Def) | 0.085 | 0.048 | 0.037 |
+| Tempo | 7.600 | 7.200 | 0.400 |
+| PowerScore | 1.696 | 1.534 | 0.162 |
+| PowerScore | 1.696 | 1.534 | 0.162 |
+| Tempo | 7.600 | 7.200 | 0.400 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYJ edge: +0.086 (NYJ +0.202 vs CHI +0.116)
 **7 metrics version:**
 NYJ edge: +0.246 (NYJ +0.240 vs CHI -0.006)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - CHI) | +1.6 pts (favours NYJ) |
-| Model Win% NYJ | 56.6% |
-| Model Win% CHI | 43.4% |
-| SOS Differential (NYJ-CHI) | -0.073 |
+| Model Spread (NYJ - CHI) | +3.0 pts (favours NYJ) |
+| Model Win% NYJ | 62.2% |
+| Model Win% CHI | 37.8% |
+| SOS Differential (NYJ-CHI) | -0.159 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.082 | 0.155 |
-| Last 5 games | 0.036 | 0.180 |
-| Last 3 games | 0.054 | 0.194 |
+| Season-to-date | 1.461 | 1.620 |
+| Last 5 games | 1.486 | 1.518 |
+| Last 3 games | 1.496 | 1.580 |
 
 ## Trend Summary (last 3 weeks)
 

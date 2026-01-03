@@ -4,19 +4,21 @@
 
 | Metric | SEA | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.085 | 0.192 | ↓ -0.107 |
-| Core EPA Defense | 0.192 | 0.085 | ↑ +0.107 |
-| Success Rate Offense | 46.4% | 52.9% | ↓ -6.5 pp |
-| Success Rate Defense | 52.9% | 46.4% | ↑ +6.5 pp |
-| Explosive Play Rate (Off) | 15.9% | 12.6% | ↑ +3.3 pp |
-| Third Down Conversion | 30.0% | 46.2% | ↓ -16.2 pp |
-| Points per Drive Differential | -0.444 | 0.444 | ↓ -0.889 |
-| Yards per Play Differential | -0.031 | 0.031 | ↓ -0.063 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 18.2% | 10.0% | ↑ +8.2 pp |
-| Pressure Rate (Def) | 3.8% | 2.9% | ↑ +0.9 pp |
-| Tempo | 7.667 | 8.700 | ↓ -1.033 |
-| PowerScore | 0.216 | 0.242 | ↓ -0.026 |
+| Core EPA Offense | -0.004 | -0.095 | 0.092 |
+| Core EPA Defense | 0.025 | -0.054 | 0.079 |
+| Success Rate Offense | 0.436 | 0.388 | 0.048 |
+| Success Rate Defense | 0.441 | 0.408 | 0.033 |
+| Explosive Play Rate (Off) | 0.099 | 0.084 | 0.015 |
+| Third Down Conversion | 0.321 | 0.324 | -0.004 |
+| Points per Drive Differential | -0.258 | -0.342 | 0.084 |
+| Yards per Play Differential | -0.207 | -0.409 | 0.202 |
+| Turnover Margin | 0.467 | 0.800 | -0.333 |
+| Red Zone TD Rate (Off) | 0.097 | 0.114 | -0.017 |
+| Pressure Rate (Def) | 0.075 | 0.074 | 0.001 |
+| Tempo | 7.667 | 8.700 | -1.033 |
+| PowerScore | 1.717 | 1.956 | -0.239 |
+| PowerScore | 1.717 | 1.956 | -0.239 |
+| Tempo | 7.667 | 8.700 | -1.033 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PIT edge: +0.026 (SEA +0.216 vs PIT +0.242)
 **7 metrics version:**
 PIT edge: +0.203 (SEA +0.067 vs PIT +0.270)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.203), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - PIT) | -0.5 pts (favours PIT) |
-| Model Win% SEA | 48.0% |
-| Model Win% PIT | 52.0% |
-| SOS Differential (SEA-PIT) | +0.052 |
+| Model Spread (SEA - PIT) | -4.4 pts (favours PIT) |
+| Model Win% SEA | 32.4% |
+| Model Win% PIT | 67.6% |
+| SOS Differential (SEA-PIT) | +0.131 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.137 | 0.085 |
-| Last 5 games | 0.191 | 0.066 |
-| Last 3 games | 0.187 | 0.051 |
+| Season-to-date | 1.697 | 1.566 |
+| Last 5 games | 1.828 | 1.409 |
+| Last 3 games | 1.822 | 1.379 |
 
 ## Trend Summary (last 3 weeks)
 

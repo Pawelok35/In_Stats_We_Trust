@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 2
 
-_Generated at 2025-11-10T20:37:17.228106+00:00 (UTC)_
+_Generated at 2026-01-02T10:09:46.901754+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\2_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2844, "cols": 18, "timestamp": "2025-11-10T20:37:16.829020+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2844, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:37:16.829020+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2844, "cols": 24, "timestamp": "2025-11-10T20:37:16.829020+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2844, "cols": 18, "timestamp": "2026-01-02T10:09:46.519468+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2844, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:09:46.519468+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2844, "cols": 24, "timestamp": "2026-01-02T10:09:46.519468+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\2_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\2.parquet`
 - Manifest: `data\l4_core12\2023\2_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\2_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BUF | 0.23263581038143832 |
-| NYG | 0.21737164140187148 |
-| WAS | 0.20949905995122217 |
-| DEN | 0.19813933432464645 |
-| MIN | 0.19654535254846808 |
-| PHI | 0.19365810878541784 |
-| ARI | 0.18778749159813063 |
-| BAL | 0.18709535181065706 |
-| SEA | 0.18383405317167714 |
-| IND | 0.17613343741826135 |
+| BUF | 2.2553411243911 |
+| BAL | 2.209800665820319 |
+| ATL | 2.105117203182683 |
+| HOU | 1.9848719964656507 |
+| CIN | 1.946390161667765 |
+| ARI | 1.9002012847015788 |
+| NYG | 1.8914892884606953 |
+| WAS | 1.8724511616130015 |
+| LA | 1.8613427713815862 |
+| SEA | 1.8283004563337326 |
 
 
 ## Visualizations

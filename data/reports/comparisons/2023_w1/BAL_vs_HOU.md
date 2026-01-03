@@ -4,19 +4,21 @@
 
 | Metric | BAL | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.053 | -0.231 | ↑ +0.178 |
-| Core EPA Defense | -0.231 | -0.053 | ↓ -0.178 |
-| Success Rate Offense | 40.5% | 30.9% | ↑ +9.7 pp |
-| Success Rate Defense | 30.9% | 40.5% | ↓ -9.7 pp |
-| Explosive Play Rate (Off) | 11.4% | 4.3% | ↑ +7.1 pp |
-| Third Down Conversion | 53.3% | 30.4% | ↑ +22.9 pp |
-| Points per Drive Differential | 1.523 | -1.523 | ↑ +3.045 |
-| Yards per Play Differential | 0.529 | -0.529 | ↑ +1.057 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 0.0% | ↑ +16.7 pp |
-| Pressure Rate (Def) | 10.2% | 15.4% | ↓ -5.2 pp |
-| Tempo | 7.182 | 7.833 | ↓ -0.652 |
-| PowerScore | 0.059 | -0.006 | ↑ +0.065 |
+| Core EPA Offense | -0.053 | -0.231 | 0.178 |
+| Core EPA Defense | -0.231 | -0.053 | -0.178 |
+| Success Rate Offense | 0.405 | 0.309 | 0.097 |
+| Success Rate Defense | 0.309 | 0.405 | -0.097 |
+| Explosive Play Rate (Off) | 0.114 | 0.043 | 0.071 |
+| Third Down Conversion | 0.533 | 0.304 | 0.229 |
+| Points per Drive Differential | 1.523 | -1.523 | 3.045 |
+| Yards per Play Differential | 0.529 | -0.529 | 1.057 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.167 | 0.000 | 0.167 |
+| Pressure Rate (Def) | 0.102 | 0.154 | -0.052 |
+| Tempo | 7.182 | 7.833 | -0.652 |
+| PowerScore | 1.473 | 1.553 | -0.079 |
+| PowerScore | 1.473 | 1.553 | -0.079 |
+| Tempo | 7.182 | 7.833 | -0.652 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ BAL edge: +0.065 (BAL +0.059 vs HOU -0.006)
 **7 metrics version:**
 HOU edge: +0.158 (BAL -0.060 vs HOU +0.098)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.158), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - HOU) | +1.2 pts (favours BAL) |
-| Model Win% BAL | 55.0% |
-| Model Win% HOU | 45.0% |
+| Model Spread (BAL - HOU) | -1.5 pts (favours HOU) |
+| Model Win% BAL | 43.9% |
+| Model Win% HOU | 56.1% |
 | SOS Differential (BAL-HOU) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

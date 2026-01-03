@@ -4,19 +4,21 @@
 
 | Metric | MIN | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.098 | 0.049 | ↑ +0.049 |
-| Core EPA Defense | 0.049 | 0.098 | ↓ -0.049 |
-| Success Rate Offense | 43.3% | 41.7% | ↑ +1.7 pp |
-| Success Rate Defense | 41.7% | 43.3% | ↓ -1.7 pp |
-| Explosive Play Rate (Off) | 7.8% | 13.9% | ↓ -6.1 pp |
-| Third Down Conversion | 44.4% | 27.3% | ↑ +17.2 pp |
-| Points per Drive Differential | 0.636 | -0.636 | ↑ +1.273 |
-| Yards per Play Differential | -1.703 | 1.703 | ↓ -3.406 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 12.0% | 0.0% | ↑ +12.0 pp |
-| Pressure Rate (Def) | 7.1% | 2.5% | ↑ +4.6 pp |
-| Tempo | 8.182 | 6.545 | ↑ +1.636 |
-| PowerScore | 0.168 | 0.169 | ↓ -0.001 |
+| Core EPA Offense | -0.024 | -0.076 | 0.052 |
+| Core EPA Defense | 0.001 | -0.137 | 0.138 |
+| Success Rate Offense | 0.428 | 0.414 | 0.014 |
+| Success Rate Defense | 0.453 | 0.388 | 0.065 |
+| Explosive Play Rate (Off) | 0.104 | 0.105 | -0.001 |
+| Third Down Conversion | 0.319 | 0.350 | -0.031 |
+| Points per Drive Differential | -0.174 | 0.151 | -0.326 |
+| Yards per Play Differential | -0.623 | 0.235 | -0.858 |
+| Turnover Margin | 0.300 | -0.400 | 0.700 |
+| Red Zone TD Rate (Off) | 0.130 | 0.115 | 0.015 |
+| Pressure Rate (Def) | 0.068 | 0.102 | -0.034 |
+| Tempo | 8.182 | 6.545 | 1.636 |
+| PowerScore | 1.789 | 1.450 | 0.339 |
+| PowerScore | 1.789 | 1.450 | 0.339 |
+| Tempo | 8.182 | 6.545 | 1.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NE edge: +0.001 (MIN +0.168 vs NE +0.169)
 **7 metrics version:**
 NE edge: +0.185 (MIN +0.026 vs NE +0.211)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.185), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - NE) | -0.0 pts (favours NE) |
-| Model Win% MIN | 49.9% |
-| Model Win% NE | 50.1% |
-| SOS Differential (MIN-NE) | +0.080 |
+| Model Spread (MIN - NE) | +6.3 pts (favours MIN) |
+| Model Win% MIN | 74.0% |
+| Model Win% NE | 26.0% |
+| SOS Differential (MIN-NE) | +0.205 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.133 | 0.053 |
-| Last 5 games | 0.127 | -0.006 |
-| Last 3 games | 0.150 | -0.075 |
+| Season-to-date | 1.614 | 1.409 |
+| Last 5 games | 1.572 | 1.261 |
+| Last 3 games | 1.595 | 1.046 |
 
 ## Trend Summary (last 3 weeks)
 

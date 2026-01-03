@@ -4,19 +4,21 @@
 
 | Metric | WAS | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.070 | 0.040 | ↑ +0.030 |
-| Core EPA Defense | 0.040 | 0.070 | ↓ -0.030 |
-| Success Rate Offense | 39.8% | 45.9% | ↓ -6.1 pp |
-| Success Rate Defense | 45.9% | 39.8% | ↑ +6.1 pp |
-| Explosive Play Rate (Off) | 9.7% | 12.9% | ↓ -3.3 pp |
-| Third Down Conversion | 53.8% | 25.0% | ↑ +28.8 pp |
-| Points per Drive Differential | 0.333 | -0.333 | ↑ +0.667 |
-| Yards per Play Differential | -0.291 | 0.291 | ↓ -0.582 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 25.0% | 10.5% | ↑ +14.5 pp |
-| Pressure Rate (Def) | 4.4% | 4.3% | ↑ +0.2 pp |
-| Tempo | 7.750 | 7.727 | ↑ +0.023 |
-| PowerScore | 0.151 | 0.169 | ↓ -0.017 |
+| Core EPA Offense | 0.070 | 0.040 | 0.030 |
+| Core EPA Defense | 0.040 | 0.070 | -0.030 |
+| Success Rate Offense | 0.398 | 0.459 | -0.061 |
+| Success Rate Defense | 0.459 | 0.398 | 0.061 |
+| Explosive Play Rate (Off) | 0.097 | 0.129 | -0.033 |
+| Third Down Conversion | 0.538 | 0.250 | 0.288 |
+| Points per Drive Differential | 0.333 | -0.333 | 0.667 |
+| Yards per Play Differential | -0.291 | 0.291 | -0.582 |
+| Turnover Margin | -2.000 | 2.000 | -4.000 |
+| Red Zone TD Rate (Off) | 0.250 | 0.105 | 0.145 |
+| Pressure Rate (Def) | 0.044 | 0.043 | 0.002 |
+| Tempo | 7.750 | 7.727 | 0.023 |
+| PowerScore | 1.682 | 1.688 | -0.006 |
+| PowerScore | 1.682 | 1.688 | -0.006 |
+| Tempo | 7.750 | 7.727 | 0.023 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ JAX edge: +0.017 (WAS +0.151 vs JAX +0.169)
 **7 metrics version:**
 JAX edge: +0.396 (WAS -0.076 vs JAX +0.321)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.396), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - JAX) | -0.3 pts (favours JAX) |
-| Model Win% WAS | 48.7% |
-| Model Win% JAX | 51.3% |
+| Model Spread (WAS - JAX) | -0.1 pts (favours JAX) |
+| Model Win% WAS | 49.5% |
+| Model Win% JAX | 50.5% |
 | SOS Differential (WAS-JAX) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

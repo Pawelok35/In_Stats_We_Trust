@@ -4,19 +4,21 @@
 
 | Metric | KC | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.101 | -0.022 | ↑ +0.123 |
-| Core EPA Defense | -0.022 | 0.101 | ↓ -0.123 |
-| Success Rate Offense | 40.6% | 32.2% | ↑ +8.4 pp |
-| Success Rate Defense | 32.2% | 40.6% | ↓ -8.4 pp |
-| Explosive Play Rate (Off) | 11.6% | 6.7% | ↑ +4.9 pp |
-| Third Down Conversion | 25.0% | 44.4% | ↓ -19.4 pp |
-| Points per Drive Differential | 0.800 | -0.800 | ↑ +1.600 |
-| Yards per Play Differential | 2.484 | -2.484 | ↑ +4.967 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 8.3% | 9.1% | ↓ -0.8 pp |
-| Pressure Rate (Def) | 15.4% | 6.1% | ↑ +9.3 pp |
-| Tempo | 6.900 | 9.000 | ↓ -2.100 |
-| PowerScore | 0.156 | 0.106 | ↑ +0.049 |
+| Core EPA Offense | 0.001 | -0.015 | 0.017 |
+| Core EPA Defense | -0.075 | 0.010 | -0.085 |
+| Success Rate Offense | 0.435 | 0.427 | 0.008 |
+| Success Rate Defense | 0.387 | 0.444 | -0.057 |
+| Explosive Play Rate (Off) | 0.100 | 0.082 | 0.017 |
+| Third Down Conversion | 0.411 | 0.337 | 0.074 |
+| Points per Drive Differential | 0.509 | -0.268 | 0.777 |
+| Yards per Play Differential | 0.600 | -0.710 | 1.309 |
+| Turnover Margin | -0.400 | 0.400 | -0.800 |
+| Red Zone TD Rate (Off) | 0.144 | 0.132 | 0.012 |
+| Pressure Rate (Def) | 0.097 | 0.071 | 0.026 |
+| Tempo | 6.900 | 9.000 | -2.100 |
+| PowerScore | 1.512 | 1.893 | -0.381 |
+| PowerScore | 1.512 | 1.893 | -0.381 |
+| Tempo | 6.900 | 9.000 | -2.100 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.049 (KC +0.156 vs CIN +0.106)
 **7 metrics version:**
 CIN edge: +0.168 (KC +0.017 vs CIN +0.185)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.168), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - CIN) | +0.9 pts (favours KC) |
-| Model Win% KC | 53.8% |
-| Model Win% CIN | 46.2% |
-| SOS Differential (KC-CIN) | -0.047 |
+| Model Spread (KC - CIN) | -7.0 pts (favours CIN) |
+| Model Win% KC | 23.6% |
+| Model Win% CIN | 76.4% |
+| SOS Differential (KC-CIN) | -0.060 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.088 | 0.135 |
-| Last 5 games | 0.080 | 0.146 |
-| Last 3 games | 0.020 | 0.142 |
+| Season-to-date | 1.539 | 1.600 |
+| Last 5 games | 1.535 | 1.658 |
+| Last 3 games | 1.320 | 1.595 |
 
 ## Trend Summary (last 3 weeks)
 

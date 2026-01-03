@@ -4,19 +4,21 @@
 
 | Metric | CAR | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.196 | 0.160 | ↓ -0.356 |
-| Core EPA Defense | 0.160 | -0.196 | ↑ +0.356 |
-| Success Rate Offense | 38.2% | 43.7% | ↓ -5.5 pp |
-| Success Rate Defense | 43.7% | 38.2% | ↑ +5.5 pp |
-| Explosive Play Rate (Off) | 7.9% | 9.2% | ↓ -1.3 pp |
-| Third Down Conversion | 29.4% | 41.2% | ↓ -11.8 pp |
-| Points per Drive Differential | -1.700 | 1.700 | ↓ -3.400 |
-| Yards per Play Differential | -1.114 | 1.114 | ↓ -2.228 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 12.5% | 10.5% | ↑ +2.0 pp |
-| Pressure Rate (Def) | 0.0% | 18.9% | ↓ -18.9 pp |
-| Tempo | 7.600 | 8.700 | ↓ -1.100 |
-| PowerScore | 0.075 | 0.145 | ↓ -0.070 |
+| Core EPA Offense | -0.105 | 0.055 | -0.160 |
+| Core EPA Defense | 0.025 | -0.118 | 0.143 |
+| Success Rate Offense | 0.389 | 0.449 | -0.060 |
+| Success Rate Defense | 0.457 | 0.393 | 0.063 |
+| Explosive Play Rate (Off) | 0.061 | 0.116 | -0.055 |
+| Third Down Conversion | 0.317 | 0.432 | -0.114 |
+| Points per Drive Differential | -0.905 | 0.674 | -1.579 |
+| Yards per Play Differential | -0.749 | 0.960 | -1.709 |
+| Turnover Margin | -0.667 | 0.667 | -1.333 |
+| Red Zone TD Rate (Off) | 0.121 | 0.106 | 0.016 |
+| Pressure Rate (Def) | 0.064 | 0.094 | -0.030 |
+| Tempo | 7.600 | 8.700 | -1.100 |
+| PowerScore | 0.075 | 0.145 | -0.070 |
+| PowerScore | 0.075 | 0.145 | -0.070 |
+| Tempo | 7.600 | 8.700 | -1.100 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DAL edge: +0.070 (CAR +0.075 vs DAL +0.145)
 **7 metrics version:**
 DAL edge: +0.444 (CAR -0.139 vs DAL +0.305)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.444), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ DAL edge: +0.444 (CAR -0.139 vs DAL +0.305)
 | Model Spread (CAR - DAL) | -1.3 pts (favours DAL) |
 | Model Win% CAR | 44.6% |
 | Model Win% DAL | 55.4% |
-| SOS Differential (CAR-DAL) | +0.037 |
+| SOS Differential (CAR-DAL) | +0.035 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.122 | 0.084 |
-| Last 5 games | 0.122 | 0.133 |
-| Last 3 games | 0.072 | 0.146 |
+| Season-to-date | 1.546 | 1.511 |
+| Last 5 games | 1.628 | 1.577 |
+| Last 3 games | 1.665 | 1.525 |
 
 ## Trend Summary (last 3 weeks)
 

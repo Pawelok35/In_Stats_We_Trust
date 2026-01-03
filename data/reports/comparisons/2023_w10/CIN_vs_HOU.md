@@ -4,19 +4,21 @@
 
 | Metric | CIN | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.052 | 0.095 | ↓ -0.043 |
-| Core EPA Defense | 0.095 | 0.052 | ↑ +0.043 |
-| Success Rate Offense | 41.0% | 43.6% | ↓ -2.7 pp |
-| Success Rate Defense | 43.6% | 41.0% | ↑ +2.7 pp |
-| Explosive Play Rate (Off) | 12.0% | 20.2% | ↓ -8.2 pp |
-| Third Down Conversion | 42.9% | 26.7% | ↑ +16.2 pp |
-| Points per Drive Differential | -0.379 | 0.379 | ↓ -0.758 |
-| Yards per Play Differential | -1.209 | 1.209 | ↓ -2.418 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 9.1% | 16.7% | ↓ -7.6 pp |
-| Pressure Rate (Def) | 2.5% | 8.9% | ↓ -6.4 pp |
-| Tempo | 5.929 | 7.231 | ↓ -1.302 |
-| PowerScore | 0.164 | 0.193 | ↓ -0.029 |
+| Core EPA Offense | -0.044 | 0.013 | -0.057 |
+| Core EPA Defense | -0.037 | -0.029 | -0.009 |
+| Success Rate Offense | 0.428 | 0.404 | 0.024 |
+| Success Rate Defense | 0.442 | 0.419 | 0.023 |
+| Explosive Play Rate (Off) | 0.068 | 0.110 | -0.042 |
+| Third Down Conversion | 0.333 | 0.384 | -0.052 |
+| Points per Drive Differential | -0.268 | 0.236 | -0.504 |
+| Yards per Play Differential | -1.030 | 0.317 | -1.347 |
+| Turnover Margin | 1.125 | 0.500 | 0.625 |
+| Red Zone TD Rate (Off) | 0.139 | 0.107 | 0.031 |
+| Pressure Rate (Def) | 0.076 | 0.064 | 0.012 |
+| Tempo | 5.929 | 7.231 | -1.302 |
+| PowerScore | 0.164 | 0.193 | -0.029 |
+| PowerScore | 0.164 | 0.193 | -0.029 |
+| Tempo | 5.929 | 7.231 | -1.302 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ HOU edge: +0.029 (CIN +0.164 vs HOU +0.193)
 **7 metrics version:**
 CIN edge: +0.172 (CIN +0.217 vs HOU +0.045)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.172), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CIN edge: +0.172 (CIN +0.217 vs HOU +0.045)
 | Model Spread (CIN - HOU) | -0.5 pts (favours HOU) |
 | Model Win% CIN | 47.7% |
 | Model Win% HOU | 52.3% |
-| SOS Differential (CIN-HOU) | -0.002 |
+| SOS Differential (CIN-HOU) | -0.111 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.114 | 0.116 |
-| Last 5 games | 0.129 | 0.114 |
-| Last 3 games | 0.160 | 0.144 |
+| Season-to-date | 1.553 | 1.663 |
+| Last 5 games | 1.546 | 1.676 |
+| Last 3 games | 1.577 | 1.760 |
 
 ## Trend Summary (last 3 weeks)
 

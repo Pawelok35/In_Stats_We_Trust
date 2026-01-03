@@ -4,19 +4,21 @@
 
 | Metric | HOU | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.301 | -0.045 | ↓ -0.256 |
-| Core EPA Defense | -0.045 | -0.301 | ↑ +0.256 |
-| Success Rate Offense | 28.6% | 43.0% | ↓ -14.5 pp |
-| Success Rate Defense | 43.0% | 28.6% | ↑ +14.5 pp |
-| Explosive Play Rate (Off) | 4.3% | 14.0% | ↓ -9.7 pp |
-| Third Down Conversion | 14.3% | 23.1% | ↓ -8.8 pp |
-| Points per Drive Differential | -0.636 | 0.636 | ↓ -1.273 |
-| Yards per Play Differential | -1.886 | 1.886 | ↓ -3.771 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 6.7% | 5.9% | ↑ +0.8 pp |
-| Pressure Rate (Def) | 0.0% | 12.8% | ↓ -12.8 pp |
-| Tempo | 6.364 | 7.818 | ↓ -1.455 |
-| PowerScore | -0.034 | 0.060 | ↓ -0.094 |
+| Core EPA Offense | -0.068 | -0.041 | -0.026 |
+| Core EPA Defense | 0.027 | -0.016 | 0.043 |
+| Success Rate Offense | 0.402 | 0.402 | -0.000 |
+| Success Rate Defense | 0.444 | 0.411 | 0.033 |
+| Explosive Play Rate (Off) | 0.101 | 0.081 | 0.020 |
+| Third Down Conversion | 0.274 | 0.318 | -0.044 |
+| Points per Drive Differential | -0.486 | -0.138 | -0.348 |
+| Yards per Play Differential | -0.649 | -0.341 | -0.308 |
+| Turnover Margin | -0.222 | -0.600 | 0.378 |
+| Red Zone TD Rate (Off) | 0.173 | 0.134 | 0.039 |
+| Pressure Rate (Def) | 0.096 | 0.072 | 0.025 |
+| Tempo | 6.364 | 7.818 | -1.455 |
+| PowerScore | 1.230 | 1.595 | -0.365 |
+| PowerScore | 1.230 | 1.595 | -0.365 |
+| Tempo | 6.364 | 7.818 | -1.455 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ WAS edge: +0.094 (HOU -0.034 vs WAS +0.060)
 **7 metrics version:**
 WAS edge: +0.456 (HOU -0.230 vs WAS +0.226)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.456), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - WAS) | -1.7 pts (favours WAS) |
-| Model Win% HOU | 42.8% |
-| Model Win% WAS | 57.2% |
-| SOS Differential (HOU-WAS) | +0.027 |
+| Model Spread (HOU - WAS) | -6.8 pts (favours WAS) |
+| Model Win% HOU | 24.5% |
+| Model Win% WAS | 75.5% |
+| SOS Differential (HOU-WAS) | +0.215 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.136 | 0.108 |
-| Last 5 games | 0.155 | 0.095 |
-| Last 3 games | 0.142 | 0.102 |
+| Season-to-date | 1.653 | 1.439 |
+| Last 5 games | 1.666 | 1.447 |
+| Last 3 games | 1.608 | 1.392 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | BAL | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.045 | -0.140 | ↑ +0.095 |
-| Core EPA Defense | -0.140 | -0.045 | ↓ -0.095 |
-| Success Rate Offense | 40.0% | 39.0% | ↑ +1.0 pp |
-| Success Rate Defense | 39.0% | 40.0% | ↓ -1.0 pp |
-| Explosive Play Rate (Off) | 12.3% | 8.5% | ↑ +3.8 pp |
-| Third Down Conversion | 33.3% | 33.3% | ± 0.0 pp |
-| Points per Drive Differential | 0.889 | -0.889 | ↑ +1.778 |
-| Yards per Play Differential | 0.643 | -0.643 | ↑ +1.286 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 5.3% | 0.0% | ↑ +5.3 pp |
-| Pressure Rate (Def) | 5.7% | 0.0% | ↑ +5.7 pp |
-| Tempo | 7.222 | 9.111 | ↓ -1.889 |
-| PowerScore | 0.081 | 0.056 | ↑ +0.024 |
+| Core EPA Offense | 0.032 | 0.010 | 0.022 |
+| Core EPA Defense | -0.028 | 0.034 | -0.062 |
+| Success Rate Offense | 0.445 | 0.454 | -0.010 |
+| Success Rate Defense | 0.433 | 0.471 | -0.038 |
+| Explosive Play Rate (Off) | 0.119 | 0.106 | 0.013 |
+| Third Down Conversion | 0.392 | 0.388 | 0.005 |
+| Points per Drive Differential | 0.155 | -0.397 | 0.552 |
+| Yards per Play Differential | 0.141 | -0.448 | 0.589 |
+| Turnover Margin | 0.357 | 0.071 | 0.286 |
+| Red Zone TD Rate (Off) | 0.113 | 0.143 | -0.031 |
+| Pressure Rate (Def) | 0.082 | 0.043 | 0.039 |
+| Tempo | 7.222 | 9.111 | -1.889 |
+| PowerScore | 1.501 | 1.862 | -0.361 |
+| PowerScore | 1.501 | 1.862 | -0.361 |
+| Tempo | 7.222 | 9.111 | -1.889 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.024 (BAL +0.081 vs ATL +0.056)
 **7 metrics version:**
 BAL edge: +0.221 (BAL +0.144 vs ATL -0.077)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.221), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - ATL) | +0.4 pts (favours BAL) |
-| Model Win% BAL | 51.9% |
-| Model Win% ATL | 48.1% |
-| SOS Differential (BAL-ATL) | -0.029 |
+| Model Spread (BAL - ATL) | -6.7 pts (favours ATL) |
+| Model Win% BAL | 24.7% |
+| Model Win% ATL | 75.3% |
+| SOS Differential (BAL-ATL) | -0.161 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.124 | 0.152 |
-| Last 5 games | 0.075 | 0.146 |
-| Last 3 games | 0.080 | 0.167 |
+| Season-to-date | 1.632 | 1.793 |
+| Last 5 games | 1.515 | 1.777 |
+| Last 3 games | 1.564 | 1.800 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | PIT | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.129 | 0.192 | ↓ -0.320 |
-| Core EPA Defense | 0.192 | -0.129 | ↑ +0.320 |
-| Success Rate Offense | 45.2% | 50.0% | ↓ -4.8 pp |
-| Success Rate Defense | 50.0% | 45.2% | ↑ +4.8 pp |
-| Explosive Play Rate (Off) | 14.0% | 9.2% | ↑ +4.8 pp |
-| Third Down Conversion | 50.0% | 25.0% | ↑ +25.0 pp |
-| Points per Drive Differential | -1.991 | 1.991 | ↓ -3.982 |
-| Yards per Play Differential | -1.204 | 1.204 | ↓ -2.409 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 6.2% | 23.5% | ↓ -17.3 pp |
-| Pressure Rate (Def) | 0.0% | 11.9% | ↓ -11.9 pp |
-| Tempo | 8.455 | 7.600 | ↑ +0.855 |
-| PowerScore | 0.134 | 0.185 | ↓ -0.051 |
+| Core EPA Offense | 0.014 | 0.056 | -0.042 |
+| Core EPA Defense | -0.051 | -0.017 | -0.034 |
+| Success Rate Offense | 0.459 | 0.504 | -0.046 |
+| Success Rate Defense | 0.470 | 0.452 | 0.018 |
+| Explosive Play Rate (Off) | 0.098 | 0.083 | 0.016 |
+| Third Down Conversion | 0.351 | 0.466 | -0.115 |
+| Points per Drive Differential | 0.170 | 0.418 | -0.248 |
+| Yards per Play Differential | -0.106 | 0.094 | -0.200 |
+| Turnover Margin | 0.733 | 0.133 | 0.600 |
+| Red Zone TD Rate (Off) | 0.129 | 0.121 | 0.008 |
+| Pressure Rate (Def) | 0.068 | 0.065 | 0.003 |
+| Tempo | 8.455 | 7.600 | 0.855 |
+| PowerScore | 0.134 | 0.185 | -0.051 |
+| PowerScore | 0.134 | 0.185 | -0.051 |
+| Tempo | 8.455 | 7.600 | 0.855 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.051 (PIT +0.134 vs KC +0.185)
 **7 metrics version:**
 KC edge: +0.448 (PIT -0.106 vs KC +0.342)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.448), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.448 (PIT -0.106 vs KC +0.342)
 | Model Spread (PIT - KC) | -0.9 pts (favours KC) |
 | Model Win% PIT | 46.1% |
 | Model Win% KC | 53.9% |
-| SOS Differential (PIT-KC) | -0.013 |
+| SOS Differential (PIT-KC) | -0.089 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.123 | 0.136 |
-| Last 5 games | 0.154 | 0.138 |
-| Last 3 games | 0.141 | 0.113 |
+| Season-to-date | 1.601 | 1.689 |
+| Last 5 games | 1.741 | 1.664 |
+| Last 3 games | 1.806 | 1.529 |
 
 ## Trend Summary (last 3 weeks)
 

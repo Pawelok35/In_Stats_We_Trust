@@ -4,19 +4,21 @@
 
 | Metric | BAL | DEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.103 | -0.103 | ↓ -0.000 |
-| Core EPA Defense | -0.103 | -0.103 | ↑ +0.000 |
-| Success Rate Offense | 38.6% | 36.8% | ↑ +1.9 pp |
-| Success Rate Defense | 36.8% | 38.6% | ↓ -1.9 pp |
-| Explosive Play Rate (Off) | 5.7% | 10.3% | ↓ -4.6 pp |
-| Third Down Conversion | 21.4% | 16.7% | ↑ +4.8 pp |
-| Points per Drive Differential | 0.015 | -0.015 | ↑ +0.030 |
-| Yards per Play Differential | -0.761 | 0.761 | ↓ -1.523 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 11.1% | 0.0% | ↑ +11.1 pp |
-| Pressure Rate (Def) | 8.3% | 9.8% | ↓ -1.4 pp |
-| Tempo | 7.333 | 6.182 | ↑ +1.152 |
-| PowerScore | 0.051 | 0.056 | ↓ -0.005 |
+| Core EPA Offense | 0.068 | -0.097 | 0.165 |
+| Core EPA Defense | -0.014 | -0.050 | 0.036 |
+| Success Rate Offense | 0.453 | 0.368 | 0.085 |
+| Success Rate Defense | 0.431 | 0.423 | 0.008 |
+| Explosive Play Rate (Off) | 0.126 | 0.094 | 0.033 |
+| Third Down Conversion | 0.419 | 0.270 | 0.149 |
+| Points per Drive Differential | 0.293 | -0.235 | 0.528 |
+| Yards per Play Differential | 0.229 | 0.120 | 0.110 |
+| Turnover Margin | 0.545 | -0.091 | 0.636 |
+| Red Zone TD Rate (Off) | 0.124 | 0.118 | 0.006 |
+| Pressure Rate (Def) | 0.083 | 0.062 | 0.021 |
+| Tempo | 7.333 | 6.182 | 1.152 |
+| PowerScore | 1.507 | 1.272 | 0.235 |
+| PowerScore | 1.507 | 1.272 | 0.235 |
+| Tempo | 7.333 | 6.182 | 1.152 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DEN edge: +0.005 (BAL +0.051 vs DEN +0.056)
 **7 metrics version:**
 DEN edge: +0.392 (BAL -0.163 vs DEN +0.229)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.392), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - DEN) | -0.1 pts (favours DEN) |
-| Model Win% BAL | 49.6% |
-| Model Win% DEN | 50.4% |
-| SOS Differential (BAL-DEN) | +0.047 |
+| Model Spread (BAL - DEN) | +4.3 pts (favours BAL) |
+| Model Win% BAL | 67.4% |
+| Model Win% DEN | 32.6% |
+| SOS Differential (BAL-DEN) | +0.135 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | DEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.136 | 0.088 |
-| Last 5 games | 0.109 | 0.108 |
-| Last 3 games | 0.072 | 0.122 |
+| Season-to-date | 1.650 | 1.515 |
+| Last 5 games | 1.576 | 1.493 |
+| Last 3 games | 1.449 | 1.483 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | SEA (A) | 16-17 | SEA | 0.847 | 0.058 | 46.3% | -0.125 |
-| 8 | JAX (H) | 21-19 | DEN | 0.835 | 0.017 | 44.9% | 0.205 |
+| 8 | JAX (A) | 21-19 | DEN | 0.835 | 0.017 | 44.9% | 0.205 |
 | 3 | SF (H) | 9-10 | SF | 0.681 | -0.208 | 29.8% | -0.071 |
 
 ## Core EPA Offense Form (up to Week 12)

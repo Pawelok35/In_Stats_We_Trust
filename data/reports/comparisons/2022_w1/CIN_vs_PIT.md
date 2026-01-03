@@ -4,19 +4,21 @@
 
 | Metric | CIN | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.162 | -0.136 | ↓ -0.026 |
-| Core EPA Defense | -0.136 | -0.162 | ↑ +0.026 |
-| Success Rate Offense | 36.8% | 33.7% | ↑ +3.0 pp |
-| Success Rate Defense | 33.7% | 36.8% | ↓ -3.0 pp |
-| Explosive Play Rate (Off) | 7.7% | 8.4% | ↓ -0.7 pp |
-| Third Down Conversion | 42.1% | 22.2% | ↑ +19.9 pp |
-| Points per Drive Differential | 0.271 | -0.271 | ↑ +0.542 |
-| Yards per Play Differential | 0.493 | -0.493 | ↑ +0.985 |
-| Turnover Margin | -5.000 | 5.000 | ↓ -10.000 |
-| Red Zone TD Rate (Off) | 8.0% | 9.1% | ↓ -1.1 pp |
-| Pressure Rate (Def) | 2.5% | 11.5% | ↓ -9.0 pp |
-| Tempo | 7.800 | 5.188 | ↑ +2.612 |
-| PowerScore | 0.023 | 0.021 | ↑ +0.002 |
+| Core EPA Offense | -0.162 | -0.136 | -0.026 |
+| Core EPA Defense | -0.136 | -0.162 | 0.026 |
+| Success Rate Offense | 0.368 | 0.337 | 0.030 |
+| Success Rate Defense | 0.337 | 0.368 | -0.030 |
+| Explosive Play Rate (Off) | 0.077 | 0.084 | -0.007 |
+| Third Down Conversion | 0.421 | 0.222 | 0.199 |
+| Points per Drive Differential | 0.271 | -0.271 | 0.542 |
+| Yards per Play Differential | 0.493 | -0.493 | 0.985 |
+| Turnover Margin | -5.000 | 5.000 | -10.000 |
+| Red Zone TD Rate (Off) | 0.080 | 0.091 | -0.011 |
+| Pressure Rate (Def) | 0.025 | 0.115 | -0.090 |
+| Tempo | 7.800 | 5.188 | 2.612 |
+| PowerScore | 1.568 | 1.042 | 0.526 |
+| PowerScore | 1.568 | 1.042 | 0.526 |
+| Tempo | 7.800 | 5.188 | 2.612 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ CIN edge: +0.002 (CIN +0.023 vs PIT +0.021)
 **7 metrics version:**
 PIT edge: +1.008 (CIN -0.494 vs PIT +0.513)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 1.008), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - PIT) | +0.0 pts (favours CIN) |
-| Model Win% CIN | 50.2% |
-| Model Win% PIT | 49.8% |
+| Model Spread (CIN - PIT) | +9.7 pts (favours CIN) |
+| Model Win% CIN | 83.5% |
+| Model Win% PIT | 16.5% |
 | SOS Differential (CIN-PIT) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

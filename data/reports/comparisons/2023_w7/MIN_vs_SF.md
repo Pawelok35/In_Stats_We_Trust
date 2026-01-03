@@ -4,19 +4,21 @@
 
 | Metric | MIN | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.055 | 0.011 | ↑ +0.044 |
-| Core EPA Defense | 0.011 | 0.055 | ↓ -0.044 |
-| Success Rate Offense | 40.7% | 50.0% | ↓ -9.3 pp |
-| Success Rate Defense | 50.0% | 40.7% | ↑ +9.3 pp |
-| Explosive Play Rate (Off) | 12.8% | 10.3% | ↑ +2.5 pp |
-| Third Down Conversion | 61.5% | 50.0% | ↑ +11.5 pp |
-| Points per Drive Differential | 0.556 | -0.556 | ↑ +1.111 |
-| Yards per Play Differential | 0.476 | -0.476 | ↑ +0.953 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 6.7% | 14.3% | ↓ -7.6 pp |
-| Pressure Rate (Def) | 3.1% | 0.0% | ↑ +3.1 pp |
-| Tempo | 9.556 | 7.556 | ↑ +2.000 |
-| PowerScore | 0.149 | 0.160 | ↓ -0.012 |
+| Core EPA Offense | -0.044 | 0.118 | -0.162 |
+| Core EPA Defense | -0.029 | -0.136 | 0.107 |
+| Success Rate Offense | 0.439 | 0.469 | -0.030 |
+| Success Rate Defense | 0.431 | 0.400 | 0.031 |
+| Explosive Play Rate (Off) | 0.105 | 0.120 | -0.015 |
+| Third Down Conversion | 0.324 | 0.367 | -0.043 |
+| Points per Drive Differential | -0.127 | 1.449 | -1.577 |
+| Yards per Play Differential | 0.460 | 1.102 | -0.642 |
+| Turnover Margin | -0.833 | 1.333 | -2.167 |
+| Red Zone TD Rate (Off) | 0.172 | 0.170 | 0.002 |
+| Pressure Rate (Def) | 0.090 | 0.068 | 0.023 |
+| Tempo | 9.556 | 7.556 | 2.000 |
+| PowerScore | 0.149 | 0.160 | -0.012 |
+| PowerScore | 0.149 | 0.160 | -0.012 |
+| Tempo | 9.556 | 7.556 | 2.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SF edge: +0.012 (MIN +0.149 vs SF +0.160)
 **7 metrics version:**
 MIN edge: +0.386 (MIN +0.299 vs SF -0.087)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.386), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIN edge: +0.386 (MIN +0.299 vs SF -0.087)
 | Model Spread (MIN - SF) | -0.2 pts (favours SF) |
 | Model Win% MIN | 49.1% |
 | Model Win% SF | 50.9% |
-| SOS Differential (MIN-SF) | +0.015 |
+| SOS Differential (MIN-SF) | +0.061 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.103 | 0.088 |
-| Last 5 games | 0.112 | 0.100 |
-| Last 3 games | 0.071 | 0.086 |
+| Season-to-date | 1.697 | 1.636 |
+| Last 5 games | 1.736 | 1.672 |
+| Last 3 games | 1.753 | 1.690 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 3
 
-_Generated at 2025-11-11T12:23:25.092811+00:00 (UTC)_
+_Generated at 2026-01-02T11:28:34.562233+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\3_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2807, "cols": 18, "timestamp": "2025-11-11T12:23:24.652032+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2807, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:23:24.652032+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2807, "cols": 24, "timestamp": "2025-11-11T12:23:24.652032+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2807, "cols": 18, "timestamp": "2026-01-02T11:28:34.161464+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2807, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:28:34.161464+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2807, "cols": 24, "timestamp": "2026-01-02T11:28:34.161464+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\3_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\3.parquet`
 - Manifest: `data\l4_core12\2022\3_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\3_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| ATL | 0.2814268481665135 |
-| SEA | 0.27251420664473325 |
-| TEN | 0.19751518936792245 |
-| BAL | 0.19628491927035654 |
-| LV | 0.18306322337516148 |
-| BUF | 0.17322511297887036 |
-| MIA | 0.16835007084465922 |
-| DAL | 0.16804973210206872 |
-| NE | 0.1537470212825185 |
-| LA | 0.1525767059664719 |
+| BUF | 2.509912744006124 |
+| SEA | 2.419927999748182 |
+| ARI | 2.279290831196741 |
+| LV | 2.046069759322874 |
+| NYG | 1.9184291671836124 |
+| ATL | 1.8282187104513337 |
+| JAX | 1.786240985944726 |
+| CLE | 1.7165921086719103 |
+| DAL | 1.6506346170965924 |
+| KC | 1.6478670342219226 |
 
 
 ## Visualizations

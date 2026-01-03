@@ -4,19 +4,21 @@
 
 | Metric | LAC | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.009 | 0.003 | ↑ +0.005 |
-| Core EPA Defense | 0.003 | 0.009 | ↓ -0.005 |
-| Success Rate Offense | 34.8% | 38.0% | ↓ -3.2 pp |
-| Success Rate Defense | 38.0% | 34.8% | ↑ +3.2 pp |
-| Explosive Play Rate (Off) | 9.0% | 11.3% | ↓ -2.3 pp |
-| Third Down Conversion | 25.0% | 50.0% | ↓ -25.0 pp |
-| Points per Drive Differential | -0.567 | 0.567 | ↓ -1.133 |
-| Yards per Play Differential | -1.685 | 1.685 | ↓ -3.369 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 9.1% | 15.4% | ↓ -6.3 pp |
-| Pressure Rate (Def) | 4.5% | 13.2% | ↓ -8.6 pp |
-| Tempo | 7.417 | 7.100 | ↑ +0.317 |
-| PowerScore | 0.109 | 0.120 | ↓ -0.012 |
+| Core EPA Offense | -0.053 | 0.076 | -0.129 |
+| Core EPA Defense | -0.003 | -0.060 | 0.057 |
+| Success Rate Offense | 0.406 | 0.472 | -0.066 |
+| Success Rate Defense | 0.431 | 0.416 | 0.015 |
+| Explosive Play Rate (Off) | 0.088 | 0.113 | -0.026 |
+| Third Down Conversion | 0.374 | 0.453 | -0.078 |
+| Points per Drive Differential | -0.205 | 0.889 | -1.095 |
+| Yards per Play Differential | -0.387 | 0.662 | -1.050 |
+| Turnover Margin | -0.143 | 0.214 | -0.357 |
+| Red Zone TD Rate (Off) | 0.142 | 0.166 | -0.024 |
+| Pressure Rate (Def) | 0.078 | 0.121 | -0.043 |
+| Tempo | 7.417 | 7.100 | 0.317 |
+| PowerScore | 1.574 | 1.518 | 0.056 |
+| PowerScore | 1.574 | 1.518 | 0.056 |
+| Tempo | 7.417 | 7.100 | 0.317 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BUF edge: +0.012 (LAC +0.109 vs BUF +0.120)
 **7 metrics version:**
 LAC edge: +0.178 (LAC +0.178 vs BUF -0.001)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.178), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - BUF) | -0.2 pts (favours BUF) |
-| Model Win% LAC | 49.1% |
-| Model Win% BUF | 50.9% |
-| SOS Differential (LAC-BUF) | -0.003 |
+| Model Spread (LAC - BUF) | +1.0 pts (favours LAC) |
+| Model Win% LAC | 54.3% |
+| Model Win% BUF | 45.7% |
+| SOS Differential (LAC-BUF) | -0.002 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LAC | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.117 | 0.120 |
-| Last 5 games | 0.064 | 0.091 |
-| Last 3 games | 0.042 | 0.136 |
+| Season-to-date | 1.607 | 1.610 |
+| Last 5 games | 1.467 | 1.572 |
+| Last 3 games | 1.321 | 1.628 |
 
 ## Trend Summary (last 3 weeks)
 

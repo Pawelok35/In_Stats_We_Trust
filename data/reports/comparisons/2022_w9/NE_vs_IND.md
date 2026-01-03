@@ -4,19 +4,21 @@
 
 | Metric | NE | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.219 | -0.534 | ↑ +0.316 |
-| Core EPA Defense | -0.534 | -0.219 | ↓ -0.316 |
-| Success Rate Offense | 34.6% | 25.3% | ↑ +9.3 pp |
-| Success Rate Defense | 25.3% | 34.6% | ↓ -9.3 pp |
-| Explosive Play Rate (Off) | 7.4% | 2.4% | ↑ +5.0 pp |
-| Third Down Conversion | 33.3% | 0.0% | ↑ +33.3 pp |
-| Points per Drive Differential | 1.133 | -1.133 | ↑ +2.267 |
-| Yards per Play Differential | 1.048 | -1.048 | ↑ +2.097 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 8.3% | 0.0% | ↑ +8.3 pp |
-| Pressure Rate (Def) | 23.7% | 11.4% | ↑ +12.3 pp |
-| Tempo | 5.400 | 5.533 | ↓ -0.133 |
-| PowerScore | -0.082 | -0.163 | ↑ +0.080 |
+| Core EPA Offense | -0.037 | -0.091 | 0.054 |
+| Core EPA Defense | -0.060 | -0.022 | -0.039 |
+| Success Rate Offense | 0.427 | 0.407 | 0.021 |
+| Success Rate Defense | 0.417 | 0.436 | -0.019 |
+| Explosive Play Rate (Off) | 0.109 | 0.101 | 0.008 |
+| Third Down Conversion | 0.364 | 0.381 | -0.017 |
+| Points per Drive Differential | 0.092 | -0.182 | 0.274 |
+| Yards per Play Differential | -0.141 | -0.065 | -0.076 |
+| Turnover Margin | -0.500 | -1.250 | 0.750 |
+| Red Zone TD Rate (Off) | 0.134 | 0.118 | 0.016 |
+| Pressure Rate (Def) | 0.079 | 0.073 | 0.006 |
+| Tempo | 5.400 | 5.533 | -0.133 |
+| PowerScore | 0.983 | 0.939 | 0.044 |
+| PowerScore | 0.983 | 0.939 | 0.044 |
+| Tempo | 5.400 | 5.533 | -0.133 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NE edge: +0.080 (NE -0.082 vs IND -0.163)
 **7 metrics version:**
 NE edge: +0.055 (NE -0.070 vs IND -0.126)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.055), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - IND) | +1.5 pts (favours NE) |
-| Model Win% NE | 56.2% |
-| Model Win% IND | 43.8% |
-| SOS Differential (NE-IND) | -0.002 |
+| Model Spread (NE - IND) | +0.8 pts (favours NE) |
+| Model Win% NE | 53.4% |
+| Model Win% IND | 46.6% |
+| SOS Differential (NE-IND) | +0.042 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.098 | 0.101 |
-| Last 5 games | 0.077 | 0.106 |
-| Last 3 games | 0.076 | 0.132 |
+| Season-to-date | 1.518 | 1.476 |
+| Last 5 games | 1.449 | 1.462 |
+| Last 3 games | 1.452 | 1.524 |
 
 ## Trend Summary (last 3 weeks)
 

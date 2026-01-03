@@ -4,19 +4,20 @@
 
 | Metric | KC | DET | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.079 | -0.046 | ↓ -0.034 |
-| Core EPA Defense | -0.046 | -0.079 | ↑ +0.034 |
-| Success Rate Offense | 39.5% | 35.6% | ↑ +3.9 pp |
-| Success Rate Defense | 35.6% | 39.5% | ↓ -3.9 pp |
-| Explosive Play Rate (Off) | 7.4% | 9.2% | ↓ -1.8 pp |
-| Third Down Conversion | 33.3% | 31.2% | ↑ +2.1 pp |
-| Points per Drive Differential | 0.568 | -0.568 | ↑ +1.136 |
-| Yards per Play Differential | -0.329 | 0.329 | ↓ -0.657 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 20.0% | 16.7% | ↑ +3.3 pp |
-| Pressure Rate (Def) | 2.6% | 0.0% | ↑ +2.6 pp |
-| Tempo | 7.364 | 7.250 | ↑ +0.114 |
-| PowerScore | 0.077 | 0.076 | ↑ +0.001 |
+| Core EPA Offense | -0.079 | -0.046 | -0.034 |
+| Core EPA Defense | -0.046 | -0.079 | 0.034 |
+| Success Rate Offense | 0.395 | 0.356 | 0.039 |
+| Success Rate Defense | 0.356 | 0.395 | -0.039 |
+| Explosive Play Rate (Off) | 0.074 | 0.092 | -0.018 |
+| Third Down Conversion | 0.333 | 0.312 | 0.021 |
+| Points per Drive Differential | 0.568 | -0.568 | 1.136 |
+| Yards per Play Differential | -0.329 | 0.329 | -0.657 |
+| Red Zone TD Rate (Off) | 0.200 | 0.167 | 0.033 |
+| Pressure Rate (Def) | 0.026 | 0.000 | 0.026 |
+| Tempo | 7.364 | 7.250 | 0.114 |
+| PowerScore | 1.535 | 1.507 | 0.027 |
+| PowerScore | 1.535 | 1.507 | 0.027 |
+| Tempo | 7.364 | 7.250 | 0.114 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ KC edge: +0.001 (KC +0.077 vs DET +0.076)
 **7 metrics version:**
 KC edge: +0.008 (KC +0.060 vs DET +0.052)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.008), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - DET) | +0.0 pts (favours KC) |
-| Model Win% KC | 50.1% |
-| Model Win% DET | 49.9% |
+| Model Spread (KC - DET) | +0.5 pts (favours KC) |
+| Model Win% KC | 52.1% |
+| Model Win% DET | 47.9% |
 | SOS Differential (KC-DET) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

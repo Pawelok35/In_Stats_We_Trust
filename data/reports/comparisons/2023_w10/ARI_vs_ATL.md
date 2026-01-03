@@ -4,19 +4,21 @@
 
 | Metric | ARI | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.016 | 0.007 | ↑ +0.009 |
-| Core EPA Defense | 0.007 | 0.016 | ↓ -0.009 |
-| Success Rate Offense | 47.6% | 40.7% | ↑ +6.9 pp |
-| Success Rate Defense | 40.7% | 47.6% | ↓ -6.9 pp |
-| Explosive Play Rate (Off) | 12.2% | 9.3% | ↑ +2.9 pp |
-| Third Down Conversion | 27.3% | 43.8% | ↓ -16.5 pp |
-| Points per Drive Differential | -0.027 | 0.027 | ↓ -0.055 |
-| Yards per Play Differential | 1.339 | -1.339 | ↑ +2.678 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 13.3% | 17.6% | ↓ -4.3 pp |
-| Pressure Rate (Def) | 11.5% | 5.6% | ↑ +6.0 pp |
-| Tempo | 7.455 | 8.600 | ↓ -1.145 |
-| PowerScore | 0.150 | 0.126 | ↑ +0.024 |
+| Core EPA Offense | -0.120 | -0.086 | -0.035 |
+| Core EPA Defense | 0.045 | -0.038 | 0.083 |
+| Success Rate Offense | 0.372 | 0.405 | -0.033 |
+| Success Rate Defense | 0.463 | 0.388 | 0.075 |
+| Explosive Play Rate (Off) | 0.084 | 0.102 | -0.018 |
+| Third Down Conversion | 0.325 | 0.370 | -0.045 |
+| Points per Drive Differential | -0.886 | -0.213 | -0.673 |
+| Yards per Play Differential | -0.788 | 0.242 | -1.030 |
+| Turnover Margin | -0.667 | -0.778 | 0.111 |
+| Red Zone TD Rate (Off) | 0.105 | 0.126 | -0.021 |
+| Pressure Rate (Def) | 0.084 | 0.062 | 0.022 |
+| Tempo | 7.455 | 8.600 | -1.145 |
+| PowerScore | 0.150 | 0.126 | 0.024 |
+| PowerScore | 0.150 | 0.126 | 0.024 |
+| Tempo | 7.455 | 8.600 | -1.145 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ARI edge: +0.024 (ARI +0.150 vs ATL +0.126)
 **7 metrics version:**
 ATL edge: +0.185 (ARI +0.014 vs ATL +0.199)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.185), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ ATL edge: +0.185 (ARI +0.014 vs ATL +0.199)
 | Model Spread (ARI - ATL) | +0.5 pts (favours ARI) |
 | Model Win% ARI | 51.9% |
 | Model Win% ATL | 48.1% |
-| SOS Differential (ARI-ATL) | +0.042 |
+| SOS Differential (ARI-ATL) | +0.209 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.126 | 0.084 |
-| Last 5 games | 0.081 | 0.090 |
-| Last 3 games | 0.066 | 0.100 |
+| Season-to-date | 1.666 | 1.458 |
+| Last 5 games | 1.449 | 1.430 |
+| Last 3 games | 1.379 | 1.524 |
 
 ## Trend Summary (last 3 weeks)
 

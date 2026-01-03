@@ -4,19 +4,21 @@
 
 | Metric | JAX | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.052 | 0.089 | ↓ -0.037 |
-| Core EPA Defense | 0.089 | 0.052 | ↑ +0.037 |
-| Success Rate Offense | 40.7% | 45.5% | ↓ -4.7 pp |
-| Success Rate Defense | 45.5% | 40.7% | ↑ +4.7 pp |
-| Explosive Play Rate (Off) | 11.1% | 11.4% | ↓ -0.3 pp |
-| Third Down Conversion | 28.6% | 53.3% | ↓ -24.8 pp |
-| Points per Drive Differential | 0.091 | -0.091 | ↑ +0.182 |
-| Yards per Play Differential | -0.615 | 0.615 | ↓ -1.230 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 11.8% | 7.7% | ↑ +4.1 pp |
-| Pressure Rate (Def) | 2.9% | 9.5% | ↓ -6.7 pp |
-| Tempo | 7.364 | 8.000 | ↓ -0.636 |
-| PowerScore | 0.160 | 0.178 | ↓ -0.018 |
+| Core EPA Offense | 0.020 | 0.066 | -0.045 |
+| Core EPA Defense | -0.011 | -0.021 | 0.010 |
+| Success Rate Offense | 0.458 | 0.453 | 0.005 |
+| Success Rate Defense | 0.415 | 0.433 | -0.018 |
+| Explosive Play Rate (Off) | 0.108 | 0.127 | -0.019 |
+| Third Down Conversion | 0.393 | 0.408 | -0.014 |
+| Points per Drive Differential | -0.035 | 0.331 | -0.366 |
+| Yards per Play Differential | 0.004 | 0.191 | -0.187 |
+| Turnover Margin | 0.100 | 0.700 | -0.600 |
+| Red Zone TD Rate (Off) | 0.133 | 0.129 | 0.005 |
+| Pressure Rate (Def) | 0.049 | 0.082 | -0.033 |
+| Tempo | 7.364 | 8.000 | -0.636 |
+| PowerScore | 1.611 | 1.755 | -0.145 |
+| PowerScore | 1.611 | 1.755 | -0.145 |
+| Tempo | 7.364 | 8.000 | -0.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.018 (JAX +0.160 vs BAL +0.178)
 **7 metrics version:**
 JAX edge: +0.188 (JAX +0.218 vs BAL +0.030)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.188), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - BAL) | -0.3 pts (favours BAL) |
-| Model Win% JAX | 48.6% |
-| Model Win% BAL | 51.4% |
-| SOS Differential (JAX-BAL) | -0.007 |
+| Model Spread (JAX - BAL) | -2.7 pts (favours BAL) |
+| Model Win% JAX | 39.0% |
+| Model Win% BAL | 61.0% |
+| SOS Differential (JAX-BAL) | +0.016 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.126 | 0.133 |
-| Last 5 games | 0.182 | 0.105 |
-| Last 3 games | 0.151 | 0.079 |
+| Season-to-date | 1.670 | 1.654 |
+| Last 5 games | 1.815 | 1.607 |
+| Last 3 games | 1.509 | 1.541 |
 
 ## Trend Summary (last 3 weeks)
 

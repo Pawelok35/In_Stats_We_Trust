@@ -1,0 +1,113 @@
+# NFL 2021 Week 13 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w13/BUF_vs_NE.md
+    home: BUF
+    away: NE
+    spread: -3.0
+    total: 45.0
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/KC_vs_DEN.md
+    home: KC
+    away: DEN
+    spread: -10.0
+    total: 49.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/LA_vs_JAX.md
+    home: LA
+    away: JAX
+    spread: -13.0
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/PIT_vs_BAL.md
+    home: PIT
+    away: BAL
+    spread: +3.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/SEA_vs_SF.md
+    home: SEA
+    away: SF
+    spread: +2.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/LV_vs_WAS.md
+    home: LV
+    away: WAS
+    spread: -2.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/ATL_vs_TB.md
+    home: ATL
+    away: TB
+    spread: +10.0
+    total: 51.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/CHI_vs_ARI.md
+    home: CHI
+    away: ARI
+    spread: +7.0
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/CIN_vs_LAC.md
+    home: CIN
+    away: LAC
+    spread: -2.5
+    total: 50.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/DET_vs_MIN.md
+    home: DET
+    away: MIN
+    spread: +7.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/HOU_vs_IND.md
+    home: HOU
+    away: IND
+    spread: +7.5
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/MIA_vs_NYG.md
+    home: MIA
+    away: NYG
+    spread: -2.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/NYJ_vs_PHI.md
+    home: NYJ
+    away: PHI
+    spread: +7.0
+    total: 45.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w13/NO_vs_DAL.md
+    home: "NO"
+    away: DAL
+    spread: +6.0
+    total: 47.5
+    prime_time: true
+    neutral_site: false

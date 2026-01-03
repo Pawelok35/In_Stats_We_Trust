@@ -4,19 +4,21 @@
 
 | Metric | TEN | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.018 | 0.041 | ↓ -0.023 |
-| Core EPA Defense | 0.041 | 0.018 | ↑ +0.023 |
-| Success Rate Offense | 43.0% | 42.7% | ↑ +0.4 pp |
-| Success Rate Defense | 42.7% | 43.0% | ↓ -0.4 pp |
-| Explosive Play Rate (Off) | 9.3% | 13.3% | ↓ -4.0 pp |
-| Third Down Conversion | 20.0% | 18.2% | ↑ +1.8 pp |
-| Points per Drive Differential | -0.083 | 0.083 | ↓ -0.167 |
-| Yards per Play Differential | -1.106 | 1.106 | ↓ -2.211 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 10.0% | 14.3% | ↓ -4.3 pp |
-| Pressure Rate (Def) | 18.5% | 2.9% | ↑ +15.6 pp |
-| Tempo | 7.167 | 6.250 | ↑ +0.917 |
-| PowerScore | 0.141 | 0.151 | ↓ -0.011 |
+| Core EPA Offense | 0.018 | 0.041 | -0.023 |
+| Core EPA Defense | 0.041 | 0.018 | 0.023 |
+| Success Rate Offense | 0.430 | 0.427 | 0.004 |
+| Success Rate Defense | 0.427 | 0.430 | -0.004 |
+| Explosive Play Rate (Off) | 0.093 | 0.133 | -0.040 |
+| Third Down Conversion | 0.200 | 0.182 | 0.018 |
+| Points per Drive Differential | -0.083 | 0.083 | -0.167 |
+| Yards per Play Differential | -1.106 | 1.106 | -2.211 |
+| Turnover Margin | 3.000 | -3.000 | 6.000 |
+| Red Zone TD Rate (Off) | 0.100 | 0.143 | -0.043 |
+| Pressure Rate (Def) | 0.185 | 0.029 | 0.156 |
+| Tempo | 7.167 | 6.250 | 0.917 |
+| PowerScore | 1.556 | 1.375 | 0.181 |
+| PowerScore | 1.556 | 1.375 | 0.181 |
+| Tempo | 7.167 | 6.250 | 0.917 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ NYG edge: +0.011 (TEN +0.141 vs NYG +0.151)
 **7 metrics version:**
 TEN edge: +0.607 (TEN +0.415 vs NYG -0.191)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.607), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - NYG) | -0.2 pts (favours NYG) |
-| Model Win% TEN | 49.2% |
-| Model Win% NYG | 50.8% |
+| Model Spread (TEN - NYG) | +3.3 pts (favours TEN) |
+| Model Win% TEN | 63.6% |
+| Model Win% NYG | 36.4% |
 | SOS Differential (TEN-NYG) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

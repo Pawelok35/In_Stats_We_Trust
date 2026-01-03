@@ -4,19 +4,21 @@
 
 | Metric | ARI | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.190 | -0.107 | ↓ -0.082 |
-| Core EPA Defense | -0.107 | -0.190 | ↑ +0.082 |
-| Success Rate Offense | 28.9% | 39.0% | ↓ -10.1 pp |
-| Success Rate Defense | 39.0% | 28.9% | ↑ +10.1 pp |
-| Explosive Play Rate (Off) | 8.2% | 6.0% | ↑ +2.2 pp |
-| Third Down Conversion | 25.0% | 30.0% | ↓ -5.0 pp |
-| Points per Drive Differential | -0.290 | 0.290 | ↓ -0.581 |
-| Yards per Play Differential | -0.609 | 0.609 | ↓ -1.219 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 6.2% | ↓ -6.2 pp |
-| Pressure Rate (Def) | 0.0% | 2.1% | ↓ -2.1 pp |
-| Tempo | 6.467 | 7.143 | ↓ -0.676 |
-| PowerScore | 0.001 | 0.034 | ↓ -0.033 |
+| Core EPA Offense | -0.073 | -0.055 | -0.018 |
+| Core EPA Defense | 0.005 | -0.011 | 0.016 |
+| Success Rate Offense | 0.395 | 0.424 | -0.029 |
+| Success Rate Defense | 0.470 | 0.428 | 0.041 |
+| Explosive Play Rate (Off) | 0.081 | 0.075 | 0.006 |
+| Third Down Conversion | 0.318 | 0.339 | -0.021 |
+| Points per Drive Differential | -0.575 | -0.282 | -0.293 |
+| Yards per Play Differential | -0.606 | 0.050 | -0.656 |
+| Turnover Margin | 0.071 | -0.214 | 0.286 |
+| Red Zone TD Rate (Off) | 0.140 | 0.115 | 0.025 |
+| Pressure Rate (Def) | 0.058 | 0.078 | -0.020 |
+| Tempo | 6.467 | 7.143 | -0.676 |
+| PowerScore | 1.278 | 1.451 | -0.173 |
+| PowerScore | 1.278 | 1.451 | -0.173 |
+| Tempo | 6.467 | 7.143 | -0.676 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ TB edge: +0.033 (ARI +0.001 vs TB +0.034)
 **7 metrics version:**
 TB edge: +0.225 (ARI -0.117 vs TB +0.108)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.225), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - TB) | -0.6 pts (favours TB) |
-| Model Win% ARI | 47.4% |
-| Model Win% TB | 52.6% |
-| SOS Differential (ARI-TB) | +0.015 |
+| Model Spread (ARI - TB) | -3.2 pts (favours TB) |
+| Model Win% ARI | 37.0% |
+| Model Win% TB | 63.0% |
+| SOS Differential (ARI-TB) | +0.008 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | TB |
 | --- | ---: | ---: |
-| Season-to-date | 0.126 | 0.111 |
-| Last 5 games | 0.093 | 0.132 |
-| Last 3 games | 0.066 | 0.123 |
+| Season-to-date | 1.554 | 1.547 |
+| Last 5 games | 1.438 | 1.515 |
+| Last 3 games | 1.376 | 1.497 |
 
 ## Trend Summary (last 3 weeks)
 

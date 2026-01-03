@@ -1,0 +1,129 @@
+# NFL 2021 Week 18 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w18/LV_vs_LAC.md
+    home: LV
+    away: LAC
+    spread: +2.5
+    total: 48.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/ARI_vs_SEA.md
+    home: ARI
+    away: SEA
+    spread: -6.5
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/LA_vs_SF.md
+    home: LA
+    away: SF
+    spread: -6.0
+    total: 44.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/ATL_vs_NO.md
+    home: ATL
+    away: "NO"
+    spread: +4.0
+    total: 40.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/BAL_vs_PIT.md
+    home: BAL
+    away: PIT
+    spread: -5.0
+    total: 42.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/BUF_vs_NYJ.md
+    home: BUF
+    away: NYJ
+    spread: -16.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/CLE_vs_CIN.md
+    home: CLE
+    away: CIN
+    spread: -3.0
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/DET_vs_GB.md
+    home: DET
+    away: GB
+    spread: +2.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/HOU_vs_TEN.md
+    home: HOU
+    away: TEN
+    spread: +11.0
+    total: 43.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/JAX_vs_IND.md
+    home: JAX
+    away: IND
+    spread: +14.5
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/MIA_vs_NE.md
+    home: MIA
+    away: NE
+    spread: +5.5
+    total: 40.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/MIN_vs_CHI.md
+    home: MIN
+    away: CHI
+    spread: -3.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/NYG_vs_WAS.md
+    home: NYG
+    away: WAS
+    spread: +6.5
+    total: 39.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/TB_vs_CAR.md
+    home: TB
+    away: CAR
+    spread: -10.0
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/PHI_vs_DAL.md
+    home: PHI
+    away: DAL
+    spread: +2.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w18/DEN_vs_KC.md
+    home: DEN
+    away: KC
+    spread: +10.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false

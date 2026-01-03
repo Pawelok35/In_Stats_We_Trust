@@ -1,0 +1,113 @@
+# NFL 2021 Week 9 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w9/PIT_vs_CHI.md
+    home: PIT
+    away: CHI
+    spread: -6.5
+    total: 40.0
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/LA_vs_TEN.md
+    home: LA
+    away: TEN
+    spread: -6.0
+    total: 54.0
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/KC_vs_GB.md
+    home: KC
+    away: GB
+    spread: -3.0
+    total: 54.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/SF_vs_ARI.md
+    home: SF
+    away: ARI
+    spread: +2.5
+    total: 47.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/PHI_vs_LAC.md
+    home: PHI
+    away: LAC
+    spread: +3.0
+    total: 51.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/BAL_vs_MIN.md
+    home: BAL
+    away: MIN
+    spread: -6.0
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/CAR_vs_NE.md
+    home: CAR
+    away: NE
+    spread: +2.5
+    total: 43.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/CIN_vs_CLE.md
+    home: CIN
+    away: CLE
+    spread: -3.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/DAL_vs_DEN.md
+    home: DAL
+    away: DEN
+    spread: -7.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/JAX_vs_BUF.md
+    home: JAX
+    away: BUF
+    spread: +14.0
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/MIA_vs_HOU.md
+    home: MIA
+    away: HOU
+    spread: -7.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/NO_vs_ATL.md
+    home: "NO"
+    away: ATL
+    spread: -5.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/NYG_vs_LV.md
+    home: NYG
+    away: LV
+    spread: +3.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w9/IND_vs_NYJ.md
+    home: IND
+    away: NYJ
+    spread: -10.5
+    total: 47.0
+    prime_time: true
+    neutral_site: false

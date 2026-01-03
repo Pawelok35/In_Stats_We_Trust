@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 13
 
-_Generated at 2025-11-11T12:25:09.306897+00:00 (UTC)_
+_Generated at 2026-01-02T11:36:03.905178+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\13_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2633, "cols": 18, "timestamp": "2025-11-11T12:25:08.821258+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2633, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:25:08.821258+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2633, "cols": 24, "timestamp": "2025-11-11T12:25:08.821258+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2633, "cols": 18, "timestamp": "2026-01-02T11:36:03.482350+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2633, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:36:03.482350+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2633, "cols": 24, "timestamp": "2026-01-02T11:36:03.482350+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\13_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\13.parquet`
 - Manifest: `data\l4_core12\2022\13_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\13_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| KC | 0.26819791895589873 |
-| CIN | 0.24341836913555237 |
-| DET | 0.21644887710154 |
-| SEA | 0.19265306997736178 |
-| GB | 0.17551225461613557 |
-| LA | 0.1689952363969404 |
-| PIT | 0.16479969720097903 |
-| ATL | 0.161540592380275 |
-| CHI | 0.157891170052815 |
-| BUF | 0.15125846858892364 |
+| CIN | 2.3724881365774126 |
+| DET | 2.223286483939147 |
+| PIT | 2.0395709390310444 |
+| BUF | 1.9155281315102721 |
+| KC | 1.9073770234335108 |
+| ATL | 1.8943977352374177 |
+| PHI | 1.875091479873876 |
+| TB | 1.7993450625765368 |
+| GB | 1.7960000594941843 |
+| LA | 1.7667730141747182 |
 
 
 ## Visualizations

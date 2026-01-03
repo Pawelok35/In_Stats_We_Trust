@@ -4,19 +4,21 @@
 
 | Metric | CAR | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.052 | 0.171 | ↓ -0.119 |
-| Core EPA Defense | 0.171 | 0.052 | ↑ +0.119 |
-| Success Rate Offense | 35.5% | 50.0% | ↓ -14.5 pp |
-| Success Rate Defense | 50.0% | 35.5% | ↑ +14.5 pp |
-| Explosive Play Rate (Off) | 9.7% | 7.1% | ↑ +2.5 pp |
-| Third Down Conversion | 33.3% | 63.2% | ↓ -29.8 pp |
-| Points per Drive Differential | -0.667 | 0.667 | ↓ -1.333 |
-| Yards per Play Differential | -0.498 | 0.498 | ↓ -0.996 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 8.3% | 17.6% | ↓ -9.3 pp |
-| Pressure Rate (Def) | 4.2% | 14.8% | ↓ -10.6 pp |
-| Tempo | 7.750 | 9.333 | ↓ -1.583 |
-| PowerScore | 0.160 | 0.209 | ↓ -0.049 |
+| Core EPA Offense | -0.072 | -0.046 | -0.027 |
+| Core EPA Defense | -0.036 | 0.028 | -0.064 |
+| Success Rate Offense | 0.403 | 0.424 | -0.020 |
+| Success Rate Defense | 0.422 | 0.443 | -0.021 |
+| Explosive Play Rate (Off) | 0.091 | 0.078 | 0.013 |
+| Third Down Conversion | 0.260 | 0.358 | -0.099 |
+| Points per Drive Differential | -0.222 | -0.425 | 0.203 |
+| Yards per Play Differential | -0.176 | -0.696 | 0.520 |
+| Turnover Margin | 0.000 | 0.154 | -0.154 |
+| Red Zone TD Rate (Off) | 0.130 | 0.137 | -0.007 |
+| Pressure Rate (Def) | 0.061 | 0.071 | -0.010 |
+| Tempo | 7.750 | 9.333 | -1.583 |
+| PowerScore | 1.691 | 2.062 | -0.371 |
+| PowerScore | 1.691 | 2.062 | -0.371 |
+| Tempo | 7.750 | 9.333 | -1.583 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PIT edge: +0.049 (CAR +0.160 vs PIT +0.209)
 **7 metrics version:**
 PIT edge: +0.045 (CAR +0.123 vs PIT +0.168)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.045), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - PIT) | -0.9 pts (favours PIT) |
-| Model Win% CAR | 46.2% |
-| Model Win% PIT | 53.8% |
-| SOS Differential (CAR-PIT) | -0.034 |
+| Model Spread (CAR - PIT) | -6.9 pts (favours PIT) |
+| Model Win% CAR | 24.2% |
+| Model Win% PIT | 75.8% |
+| SOS Differential (CAR-PIT) | -0.065 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.100 | 0.134 |
-| Last 5 games | 0.109 | 0.139 |
-| Last 3 games | 0.073 | 0.144 |
+| Season-to-date | 1.535 | 1.600 |
+| Last 5 games | 1.489 | 1.580 |
+| Last 3 games | 1.383 | 1.716 |
 
 ## Trend Summary (last 3 weeks)
 

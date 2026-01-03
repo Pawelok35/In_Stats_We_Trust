@@ -4,19 +4,20 @@
 
 | Metric | SEA | LA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.153 | -0.040 | ↓ -0.113 |
-| Core EPA Defense | -0.040 | -0.153 | ↑ +0.113 |
-| Success Rate Offense | 43.1% | 41.5% | ↑ +1.6 pp |
-| Success Rate Defense | 41.5% | 43.1% | ↓ -1.6 pp |
-| Explosive Play Rate (Off) | 12.7% | 8.5% | ↑ +4.2 pp |
-| Third Down Conversion | 23.5% | 20.0% | ↑ +3.5 pp |
-| Points per Drive Differential | -0.083 | 0.083 | ↓ -0.167 |
-| Yards per Play Differential | 0.263 | -0.263 | ↑ +0.526 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 15.4% | 5.0% | ↑ +10.4 pp |
-| Pressure Rate (Def) | 0.0% | 16.7% | ↓ -16.7 pp |
-| Tempo | 6.375 | 6.267 | ↑ +0.108 |
-| PowerScore | 0.072 | 0.076 | ↓ -0.004 |
+| Core EPA Offense | -0.006 | -0.019 | 0.014 |
+| Core EPA Defense | 0.019 | 0.064 | -0.045 |
+| Success Rate Offense | 0.479 | 0.501 | -0.022 |
+| Success Rate Defense | 0.471 | 0.496 | -0.025 |
+| Explosive Play Rate (Off) | 0.101 | 0.092 | 0.010 |
+| Third Down Conversion | 0.307 | 0.338 | -0.031 |
+| Points per Drive Differential | -0.030 | -0.580 | 0.550 |
+| Yards per Play Differential | -0.106 | -0.393 | 0.287 |
+| Red Zone TD Rate (Off) | 0.136 | 0.122 | 0.015 |
+| Pressure Rate (Def) | 0.076 | 0.066 | 0.009 |
+| Tempo | 6.375 | 6.267 | 0.108 |
+| PowerScore | 0.072 | 0.076 | -0.004 |
+| PowerScore | 0.072 | 0.076 | -0.004 |
+| Tempo | 6.375 | 6.267 | 0.108 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +47,10 @@ LA edge: +0.004 (SEA +0.072 vs LA +0.076)
 **7 metrics version:**
 LA edge: +0.405 (SEA -0.153 vs LA +0.252)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.405), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +59,7 @@ LA edge: +0.405 (SEA -0.153 vs LA +0.252)
 | Model Spread (SEA - LA) | -0.1 pts (favours LA) |
 | Model Win% SEA | 49.7% |
 | Model Win% LA | 50.3% |
-| SOS Differential (SEA-LA) | -0.020 |
+| SOS Differential (SEA-LA) | -0.151 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | LA |
 | --- | ---: | ---: |
-| Season-to-date | 0.142 | 0.162 |
-| Last 5 games | 0.195 | 0.133 |
-| Last 3 games | 0.189 | 0.091 |
+| Season-to-date | 1.555 | 1.705 |
+| Last 5 games | 1.682 | 1.687 |
+| Last 3 games | 1.820 | 1.526 |
 
 ## Trend Summary (last 3 weeks)
 

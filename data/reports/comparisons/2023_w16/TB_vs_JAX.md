@@ -4,19 +4,21 @@
 
 | Metric | TB | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.063 | -0.189 | ↑ +0.252 |
-| Core EPA Defense | -0.189 | 0.063 | ↓ -0.252 |
-| Success Rate Offense | 40.7% | 43.4% | ↓ -2.8 pp |
-| Success Rate Defense | 43.4% | 40.7% | ↑ +2.8 pp |
-| Explosive Play Rate (Off) | 9.9% | 9.2% | ↑ +0.7 pp |
-| Third Down Conversion | 50.0% | 33.3% | ↑ +16.7 pp |
-| Points per Drive Differential | 1.527 | -1.527 | ↑ +3.055 |
-| Yards per Play Differential | -0.332 | 0.332 | ↓ -0.664 |
-| Turnover Margin | 4.000 | -4.000 | ↑ +8.000 |
-| Red Zone TD Rate (Off) | 8.7% | 20.0% | ↓ -11.3 pp |
-| Pressure Rate (Def) | 8.0% | 7.5% | ↑ +0.5 pp |
-| Tempo | 8.273 | 7.600 | ↑ +0.673 |
-| PowerScore | 0.105 | 0.073 | ↑ +0.032 |
+| Core EPA Offense | -0.016 | -0.029 | 0.013 |
+| Core EPA Defense | -0.023 | -0.023 | 0.000 |
+| Success Rate Offense | 0.397 | 0.421 | -0.024 |
+| Success Rate Defense | 0.437 | 0.421 | 0.015 |
+| Explosive Play Rate (Off) | 0.098 | 0.088 | 0.010 |
+| Third Down Conversion | 0.375 | 0.303 | 0.072 |
+| Points per Drive Differential | 0.024 | -0.069 | 0.092 |
+| Yards per Play Differential | -0.493 | -0.430 | -0.063 |
+| Turnover Margin | 0.429 | -0.071 | 0.500 |
+| Red Zone TD Rate (Off) | 0.124 | 0.123 | 0.002 |
+| Pressure Rate (Def) | 0.077 | 0.057 | 0.019 |
+| Tempo | 8.273 | 7.600 | 0.673 |
+| PowerScore | 1.740 | 1.575 | 0.165 |
+| PowerScore | 1.740 | 1.575 | 0.165 |
+| Tempo | 8.273 | 7.600 | 0.673 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ TB edge: +0.032 (TB +0.105 vs JAX +0.073)
 **7 metrics version:**
 TB edge: +0.798 (TB +0.465 vs JAX -0.333)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.798), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TB - JAX) | +0.6 pts (favours TB) |
-| Model Win% TB | 52.5% |
-| Model Win% JAX | 47.5% |
-| SOS Differential (TB-JAX) | +0.006 |
+| Model Spread (TB - JAX) | +3.1 pts (favours TB) |
+| Model Win% TB | 62.5% |
+| Model Win% JAX | 37.5% |
+| SOS Differential (TB-JAX) | +0.109 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.119 | 0.113 |
-| Last 5 games | 0.141 | 0.146 |
-| Last 3 games | 0.125 | 0.134 |
+| Season-to-date | 1.609 | 1.500 |
+| Last 5 games | 1.618 | 1.567 |
+| Last 3 games | 1.584 | 1.562 |
 
 ## Trend Summary (last 3 weeks)
 

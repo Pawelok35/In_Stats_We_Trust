@@ -4,19 +4,21 @@
 
 | Metric | TB | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.069 | -0.011 | ↓ -0.058 |
-| Core EPA Defense | -0.011 | -0.069 | ↑ +0.058 |
-| Success Rate Offense | 37.8% | 44.9% | ↓ -7.1 pp |
-| Success Rate Defense | 44.9% | 37.8% | ↑ +7.1 pp |
-| Explosive Play Rate (Off) | 7.8% | 14.1% | ↓ -6.3 pp |
-| Third Down Conversion | 42.9% | 53.3% | ↓ -10.5 pp |
-| Points per Drive Differential | -0.418 | 0.418 | ↓ -0.836 |
-| Yards per Play Differential | -1.485 | 1.485 | ↓ -2.971 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 4.0% | ↓ -4.0 pp |
-| Pressure Rate (Def) | 3.8% | 6.5% | ↓ -2.7 pp |
-| Tempo | 8.182 | 7.800 | ↑ +0.382 |
-| PowerScore | 0.084 | 0.123 | ↓ -0.039 |
+| Core EPA Offense | -0.073 | -0.112 | 0.039 |
+| Core EPA Defense | -0.071 | -0.043 | -0.027 |
+| Success Rate Offense | 0.385 | 0.404 | -0.019 |
+| Success Rate Defense | 0.418 | 0.384 | 0.034 |
+| Explosive Play Rate (Off) | 0.085 | 0.100 | -0.015 |
+| Third Down Conversion | 0.364 | 0.334 | 0.030 |
+| Points per Drive Differential | -0.084 | -0.266 | 0.182 |
+| Yards per Play Differential | -0.336 | 0.154 | -0.489 |
+| Turnover Margin | 1.200 | -1.000 | 2.200 |
+| Red Zone TD Rate (Off) | 0.083 | 0.132 | -0.049 |
+| Pressure Rate (Def) | 0.080 | 0.056 | 0.024 |
+| Tempo | 8.182 | 7.800 | 0.382 |
+| PowerScore | 0.084 | 0.123 | -0.039 |
+| PowerScore | 0.084 | 0.123 | -0.039 |
+| Tempo | 8.182 | 7.800 | 0.382 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.039 (TB +0.084 vs ATL +0.123)
 **7 metrics version:**
 TB edge: +0.173 (TB +0.149 vs ATL -0.025)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.173), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ TB edge: +0.173 (TB +0.149 vs ATL -0.025)
 | Model Spread (TB - ATL) | -0.7 pts (favours ATL) |
 | Model Win% TB | 47.0% |
 | Model Win% ATL | 53.0% |
-| SOS Differential (TB-ATL) | +0.007 |
+| SOS Differential (TB-ATL) | +0.191 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.083 | 0.076 |
-| Last 5 games | 0.083 | 0.087 |
-| Last 3 games | 0.082 | 0.089 |
+| Season-to-date | 1.615 | 1.425 |
+| Last 5 games | 1.615 | 1.405 |
+| Last 3 games | 1.711 | 1.371 |
 
 ## Trend Summary (last 3 weeks)
 

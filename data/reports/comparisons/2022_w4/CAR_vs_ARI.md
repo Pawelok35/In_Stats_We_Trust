@@ -4,19 +4,21 @@
 
 | Metric | CAR | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.326 | -0.070 | ↓ -0.256 |
-| Core EPA Defense | -0.070 | -0.326 | ↑ +0.256 |
-| Success Rate Offense | 40.9% | 43.3% | ↓ -2.4 pp |
-| Success Rate Defense | 43.3% | 40.9% | ↑ +2.4 pp |
-| Explosive Play Rate (Off) | 9.1% | 8.9% | ↑ +0.2 pp |
-| Third Down Conversion | 18.2% | 37.5% | ↓ -19.3 pp |
-| Points per Drive Differential | -1.333 | 1.333 | ↓ -2.667 |
-| Yards per Play Differential | -0.422 | 0.422 | ↓ -0.844 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 25.0% | 9.5% | ↑ +15.5 pp |
-| Pressure Rate (Def) | 5.4% | 5.1% | ↑ +0.3 pp |
-| Tempo | 5.500 | 7.500 | ↓ -2.000 |
-| PowerScore | -0.008 | 0.036 | ↓ -0.044 |
+| Core EPA Offense | -0.048 | -0.010 | -0.038 |
+| Core EPA Defense | -0.056 | 0.136 | -0.192 |
+| Success Rate Offense | 0.407 | 0.406 | 0.001 |
+| Success Rate Defense | 0.406 | 0.498 | -0.093 |
+| Explosive Play Rate (Off) | 0.079 | 0.062 | 0.018 |
+| Third Down Conversion | 0.243 | 0.260 | -0.017 |
+| Points per Drive Differential | -0.142 | -0.967 | 0.825 |
+| Yards per Play Differential | -0.115 | -1.240 | 1.125 |
+| Turnover Margin | 0.000 | 0.667 | -0.667 |
+| Red Zone TD Rate (Off) | 0.078 | 0.141 | -0.063 |
+| Pressure Rate (Def) | 0.043 | 0.020 | 0.023 |
+| Tempo | 5.500 | 7.500 | -2.000 |
+| PowerScore | 1.074 | 1.519 | -0.444 |
+| PowerScore | 1.074 | 1.519 | -0.444 |
+| Tempo | 5.500 | 7.500 | -2.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ARI edge: +0.044 (CAR -0.008 vs ARI +0.036)
 **7 metrics version:**
 ARI edge: +0.400 (CAR -0.195 vs ARI +0.206)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.400), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - ARI) | -0.8 pts (favours ARI) |
-| Model Win% CAR | 46.6% |
-| Model Win% ARI | 53.4% |
-| SOS Differential (CAR-ARI) | -0.109 |
+| Model Spread (CAR - ARI) | -8.2 pts (favours ARI) |
+| Model Win% CAR | 20.3% |
+| Model Win% ARI | 79.7% |
+| SOS Differential (CAR-ARI) | -0.081 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.091 | 0.200 |
-| Last 5 games | 0.091 | 0.200 |
-| Last 3 games | 0.091 | 0.200 |
+| Season-to-date | 1.629 | 1.710 |
+| Last 5 games | 1.629 | 1.710 |
+| Last 3 games | 1.629 | 1.710 |
 
 ## Trend Summary (last 3 weeks)
 

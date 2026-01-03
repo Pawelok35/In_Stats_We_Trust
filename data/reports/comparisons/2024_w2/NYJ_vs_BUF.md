@@ -4,19 +4,21 @@
 
 | Metric | NYJ | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.085 | 0.111 | ↓ -0.026 |
-| Core EPA Defense | -0.066 | -0.236 | ↑ +0.169 |
-| Success Rate Offense | 45.3% | 41.0% | ↑ +4.3 pp |
-| Success Rate Defense | 46.2% | 47.2% | ↓ -0.9 pp |
-| Explosive Play Rate (Off) | 8.0% | 8.2% | ↓ -0.2 pp |
-| Third Down Conversion | 35.7% | 33.3% | ↑ +2.4 pp |
-| Points per Drive Differential | 0.636 | 1.273 | ↓ -0.636 |
-| Yards per Play Differential | -0.217 | 0.105 | ↓ -0.322 |
-| Turnover Margin | 2.000 | 3.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 22.2% | 25.0% | ↓ -2.8 pp |
-| Pressure Rate (Def) | 12.5% | 4.9% | ↑ +7.6 pp |
-| Tempo | 6.818 | 5.545 | ↑ +1.273 |
-| PowerScore | 0.146 | 0.111 | ↑ +0.035 |
+| Core EPA Offense | -0.003 | 0.189 | -0.192 |
+| Core EPA Defense | 0.172 | 0.141 | 0.031 |
+| Success Rate Offense | 0.484 | 0.605 | -0.121 |
+| Success Rate Defense | 0.494 | 0.447 | 0.047 |
+| Explosive Play Rate (Off) | 0.062 | 0.086 | -0.024 |
+| Third Down Conversion | 0.600 | 0.250 | 0.350 |
+| Points per Drive Differential | -1.300 | 0.600 | -1.900 |
+| Yards per Play Differential | -0.349 | 0.767 | -1.116 |
+| Turnover Margin | -2.000 | 0.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.182 | 0.174 | 0.008 |
+| Pressure Rate (Def) | 0.091 | 0.111 | -0.020 |
+| Tempo | 6.818 | 5.545 | 1.273 |
+| PowerScore | 0.146 | 0.111 | 0.035 |
+| PowerScore | 0.146 | 0.111 | 0.035 |
+| Tempo | 6.818 | 5.545 | 1.273 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NYJ edge: +0.035 (NYJ +0.146 vs BUF +0.111)
 **7 metrics version:**
 BUF edge: +0.062 (NYJ +0.319 vs BUF +0.380)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.062), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ BUF edge: +0.062 (NYJ +0.319 vs BUF +0.380)
 | Model Spread (NYJ - BUF) | +0.7 pts (favours NYJ) |
 | Model Win% NYJ | 52.7% |
 | Model Win% BUF | 47.3% |
-| SOS Differential (NYJ-BUF) | -0.005 |
+| SOS Differential (NYJ-BUF) | +0.244 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.210 | 0.215 |
-| Last 5 games | 0.210 | 0.215 |
-| Last 3 games | 0.210 | 0.215 |
+| Season-to-date | 1.963 | 1.719 |
+| Last 5 games | 1.963 | 1.719 |
+| Last 3 games | 1.963 | 1.719 |
 
 ## Matchup Analogs
 

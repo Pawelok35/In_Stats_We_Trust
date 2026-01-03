@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 6
 
-_Generated at 2025-11-10T20:38:00.419227+00:00 (UTC)_
+_Generated at 2026-01-02T10:22:31.170600+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\6_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2607, "cols": 18, "timestamp": "2025-11-10T20:37:59.847566+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2607, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:37:59.847566+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2607, "cols": 24, "timestamp": "2025-11-10T20:37:59.847566+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2607, "cols": 18, "timestamp": "2026-01-02T10:22:30.773965+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2607, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:22:30.773965+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2607, "cols": 24, "timestamp": "2026-01-02T10:22:30.773965+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\6_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\6.parquet`
 - Manifest: `data\l4_core12\2023\6_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\6_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| MIA | 0.17933149366783033 |
-| BAL | 0.1617472368011912 |
-| LA | 0.1317713383651541 |
-| HOU | 0.1315349154811827 |
-| TEN | 0.12477851059226004 |
-| NE | 0.12123021636319946 |
-| JAX | 0.11953519793087453 |
-| NO | 0.1163915933811943 |
-| DAL | 0.11254211557267618 |
-| SEA | 0.10920041509053789 |
+| NO | 2.0378348923502663 |
+| LV | 2.002006945599718 |
+| NYG | 1.8789020069715117 |
+| ATL | 1.839617565711678 |
+| LAC | 1.7893465026659987 |
+| NE | 1.7718968830298665 |
+| BUF | 1.731231562966686 |
+| PHI | 1.6935364206299541 |
+| DAL | 1.6850421155726762 |
+| DET | 1.670123960592273 |
 
 
 ## Visualizations

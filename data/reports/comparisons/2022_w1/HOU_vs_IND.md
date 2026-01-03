@@ -4,19 +4,21 @@
 
 | Metric | HOU | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.062 | -0.020 | ↓ -0.042 |
-| Core EPA Defense | -0.020 | -0.062 | ↑ +0.042 |
-| Success Rate Offense | 43.5% | 45.9% | ↓ -2.5 pp |
-| Success Rate Defense | 45.9% | 43.5% | ↑ +2.5 pp |
-| Explosive Play Rate (Off) | 5.4% | 14.4% | ↓ -9.0 pp |
-| Third Down Conversion | 31.2% | 37.5% | ↓ -6.2 pp |
-| Points per Drive Differential | -0.110 | 0.110 | ↓ -0.220 |
-| Yards per Play Differential | -1.408 | 1.408 | ↓ -2.815 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 33.3% | 9.5% | ↑ +23.8 pp |
-| Pressure Rate (Def) | 3.8% | 7.3% | ↓ -3.5 pp |
-| Tempo | 6.571 | 8.538 | ↓ -1.967 |
-| PowerScore | 0.094 | 0.124 | ↓ -0.030 |
+| Core EPA Offense | -0.062 | -0.020 | -0.042 |
+| Core EPA Defense | -0.020 | -0.062 | 0.042 |
+| Success Rate Offense | 0.435 | 0.459 | -0.025 |
+| Success Rate Defense | 0.459 | 0.435 | 0.025 |
+| Explosive Play Rate (Off) | 0.054 | 0.144 | -0.090 |
+| Third Down Conversion | 0.312 | 0.375 | -0.062 |
+| Points per Drive Differential | -0.110 | 0.110 | -0.220 |
+| Yards per Play Differential | -1.408 | 1.408 | -2.815 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.333 | 0.095 | 0.238 |
+| Pressure Rate (Def) | 0.038 | 0.073 | -0.035 |
+| Tempo | 6.571 | 8.538 | -1.967 |
+| PowerScore | 1.397 | 1.803 | -0.406 |
+| PowerScore | 1.397 | 1.803 | -0.406 |
+| Tempo | 6.571 | 8.538 | -1.967 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ IND edge: +0.030 (HOU +0.094 vs IND +0.124)
 **7 metrics version:**
 HOU edge: +0.206 (HOU +0.188 vs IND -0.017)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.206), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - IND) | -0.6 pts (favours IND) |
-| Model Win% HOU | 47.7% |
-| Model Win% IND | 52.3% |
+| Model Spread (HOU - IND) | -7.5 pts (favours IND) |
+| Model Win% HOU | 22.2% |
+| Model Win% IND | 77.8% |
 | SOS Differential (HOU-IND) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

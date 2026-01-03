@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 10
 
-_Generated at 2025-11-10T17:50:11.678834+00:00 (UTC)_
+_Generated at 2025-12-28T14:38:58.120136+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\10_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2401, "cols": 18, "timestamp": "2025-11-10T17:50:11.052234+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2401, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:50:11.052234+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2401, "cols": 24, "timestamp": "2025-11-10T17:50:11.052234+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2401, "cols": 18, "timestamp": "2025-12-28T14:38:57.728116+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2401, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:38:57.728116+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2401, "cols": 24, "timestamp": "2025-12-28T14:38:57.728116+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\10_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\10.parquet`
 - Manifest: `data\l4_core12\2024\10_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\10_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| ARI | 0.28464085515778736 |
-| BAL | 0.2523063571097678 |
-| CIN | 0.24832209514343273 |
-| LAC | 0.2323415643456421 |
-| SF | 0.22434554026973477 |
-| TEN | 0.20165692377936884 |
-| NYJ | 0.18264191758783163 |
-| TB | 0.18052544647173463 |
-| WAS | 0.16943196313232944 |
-| PIT | 0.14243814558114296 |
+| NYJ | 2.440485054842734 |
+| ARI | 2.3056726011895337 |
+| CIN | 1.9750266405979782 |
+| KC | 1.908975710183129 |
+| MIN | 1.8552991509226415 |
+| LAC | 1.8271665262938916 |
+| ATL | 1.8259845022460186 |
+| TEN | 1.821777043899489 |
+| SF | 1.8018455402697349 |
+| DEN | 1.77254169189907 |
 
 
 ## Visualizations

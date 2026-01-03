@@ -4,19 +4,21 @@
 
 | Metric | CAR | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.023 | 0.081 | ↓ -0.058 |
-| Core EPA Defense | 0.081 | 0.023 | ↑ +0.058 |
-| Success Rate Offense | 36.5% | 44.9% | ↓ -8.4 pp |
-| Success Rate Defense | 44.9% | 36.5% | ↑ +8.4 pp |
-| Explosive Play Rate (Off) | 6.8% | 10.2% | ↓ -3.4 pp |
-| Third Down Conversion | 30.8% | 38.1% | ↓ -7.3 pp |
-| Points per Drive Differential | -0.364 | 0.364 | ↓ -0.727 |
-| Yards per Play Differential | -0.095 | 0.095 | ↓ -0.191 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 6.2% | ↑ +10.4 pp |
-| Pressure Rate (Def) | 2.9% | 12.5% | ↓ -9.6 pp |
-| Tempo | 6.167 | 8.909 | ↓ -2.742 |
-| PowerScore | 0.129 | 0.166 | ↓ -0.037 |
+| Core EPA Offense | 0.023 | 0.081 | -0.058 |
+| Core EPA Defense | 0.081 | 0.023 | 0.058 |
+| Success Rate Offense | 0.365 | 0.449 | -0.084 |
+| Success Rate Defense | 0.449 | 0.365 | 0.084 |
+| Explosive Play Rate (Off) | 0.068 | 0.102 | -0.034 |
+| Third Down Conversion | 0.308 | 0.381 | -0.073 |
+| Points per Drive Differential | -0.364 | 0.364 | -0.727 |
+| Yards per Play Differential | -0.095 | 0.095 | -0.191 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.167 | 0.062 | 0.104 |
+| Pressure Rate (Def) | 0.029 | 0.125 | -0.096 |
+| Tempo | 6.167 | 8.909 | -2.742 |
+| PowerScore | 1.349 | 1.927 | -0.578 |
+| PowerScore | 1.349 | 1.927 | -0.578 |
+| Tempo | 6.167 | 8.909 | -2.742 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ CLE edge: +0.037 (CAR +0.129 vs CLE +0.166)
 **7 metrics version:**
 CLE edge: +0.218 (CAR +0.003 vs CLE +0.221)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.218), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - CLE) | -0.7 pts (favours CLE) |
-| Model Win% CAR | 47.2% |
-| Model Win% CLE | 52.8% |
+| Model Spread (CAR - CLE) | -10.7 pts (favours CLE) |
+| Model Win% CAR | 14.4% |
+| Model Win% CLE | 85.6% |
 | SOS Differential (CAR-CLE) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

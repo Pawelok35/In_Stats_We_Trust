@@ -4,19 +4,21 @@
 
 | Metric | NYG | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.144 | 0.085 | ↓ -0.228 |
-| Core EPA Defense | -0.252 | -0.006 | ↓ -0.245 |
-| Success Rate Offense | 42.9% | 56.8% | ↓ -14.0 pp |
-| Success Rate Defense | 43.9% | 46.1% | ↓ -2.2 pp |
-| Explosive Play Rate (Off) | 6.6% | 4.5% | ↑ +2.0 pp |
-| Third Down Conversion | 26.7% | 42.9% | ↓ -16.2 pp |
-| Points per Drive Differential | 0.329 | 0.300 | ↑ +0.029 |
-| Yards per Play Differential | 1.066 | -0.172 | ↑ +1.237 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 17.6% | 10.5% | ↑ +7.1 pp |
-| Pressure Rate (Def) | 17.0% | 6.2% | ↑ +10.8 pp |
-| Tempo | 6.067 | 8.000 | ↓ -1.933 |
-| PowerScore | 0.020 | 0.180 | ↓ -0.160 |
+| Core EPA Offense | -0.072 | 0.059 | -0.131 |
+| Core EPA Defense | 0.112 | 0.038 | 0.074 |
+| Success Rate Offense | 0.419 | 0.502 | -0.083 |
+| Success Rate Defense | 0.461 | 0.535 | -0.074 |
+| Explosive Play Rate (Off) | 0.087 | 0.090 | -0.003 |
+| Third Down Conversion | 0.357 | 0.250 | 0.107 |
+| Points per Drive Differential | -0.608 | 0.214 | -0.822 |
+| Yards per Play Differential | -1.072 | 0.002 | -1.074 |
+| Turnover Margin | -0.500 | -1.000 | 0.500 |
+| Red Zone TD Rate (Off) | 0.125 | 0.070 | 0.055 |
+| Pressure Rate (Def) | 0.089 | 0.050 | 0.038 |
+| Tempo | 6.067 | 8.000 | -1.933 |
+| PowerScore | 0.020 | 0.180 | -0.160 |
+| PowerScore | 0.020 | 0.180 | -0.160 |
+| Tempo | 6.067 | 8.000 | -1.933 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.160 (NYG +0.020 vs KC +0.180)
 **7 metrics version:**
 KC edge: +0.107 (NYG +0.019 vs KC +0.126)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.107), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.107 (NYG +0.019 vs KC +0.126)
 | Model Spread (NYG - KC) | -3.0 pts (favours KC) |
 | Model Win% NYG | 37.9% |
 | Model Win% KC | 62.1% |
-| SOS Differential (NYG-KC) | -0.007 |
+| SOS Differential (NYG-KC) | -0.097 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.169 | 0.176 |
-| Last 5 games | 0.169 | 0.176 |
-| Last 3 games | 0.169 | 0.176 |
+| Season-to-date | 1.758 | 1.855 |
+| Last 5 games | 1.758 | 1.855 |
+| Last 3 games | 1.758 | 1.855 |
 
 ## Trend Summary (last 2 weeks)
 

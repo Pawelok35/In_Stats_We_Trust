@@ -1,6 +1,8 @@
 # NFL 2024 Week 9 - Betting Lines
+season: 2024
+week: 9
+
 matchups:
-  # TNF – Texans @ Jets
   - report: data/reports/comparisons/2024_w9/NYJ_vs_HOU.md
     home: NYJ
     away: HOU
@@ -9,7 +11,6 @@ matchups:
     prime_time: true
     neutral_site: false
 
-  # Niedziela – wczesne okno
   - report: data/reports/comparisons/2024_w9/ATL_vs_DAL.md
     home: ATL
     away: DAL
@@ -74,7 +75,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # Niedziela – późne okno
   - report: data/reports/comparisons/2024_w9/PHI_vs_JAX.md
     home: PHI
     away: JAX
@@ -107,7 +107,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # SNF – Colts @ Vikings
   - report: data/reports/comparisons/2024_w9/MIN_vs_IND.md
     home: MIN
     away: IND
@@ -116,7 +115,6 @@ matchups:
     prime_time: true
     neutral_site: false
 
-  # MNF – Buccaneers @ Chiefs
   - report: data/reports/comparisons/2024_w9/KC_vs_TB.md
     home: KC
     away: TB
@@ -124,5 +122,3 @@ matchups:
     total: 45.5
     prime_time: true
     neutral_site: false
-
-

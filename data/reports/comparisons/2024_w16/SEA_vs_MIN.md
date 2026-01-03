@@ -4,19 +4,21 @@
 
 | Metric | SEA | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.038 | 0.123 | ↓ -0.085 |
-| Core EPA Defense | 0.123 | 0.038 | ↑ +0.085 |
-| Success Rate Offense | 52.9% | 50.0% | ↑ +2.9 pp |
-| Success Rate Defense | 50.0% | 52.9% | ↓ -2.9 pp |
-| Explosive Play Rate (Off) | 13.8% | 7.1% | ↑ +6.7 pp |
-| Third Down Conversion | 16.7% | 21.4% | ↓ -4.8 pp |
-| Points per Drive Differential | -0.077 | 0.077 | ↓ -0.154 |
-| Yards per Play Differential | 0.602 | -0.602 | ↑ +1.204 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 22.2% | 25.0% | ↓ -2.8 pp |
-| Pressure Rate (Def) | 7.3% | 4.4% | ↑ +2.9 pp |
-| Tempo | 7.250 | 6.462 | ↑ +0.788 |
-| PowerScore | 0.198 | 0.190 | ↑ +0.008 |
+| Core EPA Offense | -0.022 | 0.041 | -0.062 |
+| Core EPA Defense | -0.016 | -0.099 | 0.084 |
+| Success Rate Offense | 0.463 | 0.487 | -0.024 |
+| Success Rate Defense | 0.462 | 0.443 | 0.019 |
+| Explosive Play Rate (Off) | 0.104 | 0.116 | -0.011 |
+| Third Down Conversion | 0.322 | 0.365 | -0.042 |
+| Points per Drive Differential | 0.023 | 0.635 | -0.612 |
+| Yards per Play Differential | -0.122 | 0.418 | -0.540 |
+| Turnover Margin | -0.071 | 0.571 | -0.643 |
+| Red Zone TD Rate (Off) | 0.146 | 0.134 | 0.012 |
+| Pressure Rate (Def) | 0.065 | 0.078 | -0.013 |
+| Tempo | 7.250 | 6.462 | 0.788 |
+| PowerScore | 0.198 | 0.190 | 0.008 |
+| PowerScore | 0.198 | 0.190 | 0.008 |
+| Tempo | 7.250 | 6.462 | 0.788 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.008 (SEA +0.198 vs MIN +0.190)
 **7 metrics version:**
 MIN edge: +0.393 (SEA -0.043 vs MIN +0.350)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.393), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIN edge: +0.393 (SEA -0.043 vs MIN +0.350)
 | Model Spread (SEA - MIN) | +0.1 pts (favours SEA) |
 | Model Win% SEA | 50.6% |
 | Model Win% MIN | 49.4% |
-| SOS Differential (SEA-MIN) | +0.019 |
+| SOS Differential (SEA-MIN) | -0.080 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | MIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.124 | 0.104 |
-| Last 5 games | 0.103 | 0.138 |
-| Last 3 games | 0.108 | 0.149 |
+| Season-to-date | 1.537 | 1.617 |
+| Last 5 games | 1.555 | 1.750 |
+| Last 3 games | 1.481 | 1.944 |
 
 ## Trend Summary (last 3 weeks)
 

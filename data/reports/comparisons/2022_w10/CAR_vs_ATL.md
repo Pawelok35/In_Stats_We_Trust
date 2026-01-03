@@ -4,19 +4,21 @@
 
 | Metric | CAR | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.007 | -0.139 | ↑ +0.147 |
-| Core EPA Defense | -0.139 | 0.007 | ↓ -0.147 |
-| Success Rate Offense | 40.0% | 40.0% | ± 0.0 pp |
-| Success Rate Defense | 40.0% | 40.0% | ± 0.0 pp |
-| Explosive Play Rate (Off) | 10.6% | 13.8% | ↓ -3.2 pp |
-| Third Down Conversion | 37.5% | 25.0% | ↑ +12.5 pp |
-| Points per Drive Differential | 1.023 | -1.023 | ↑ +2.045 |
-| Yards per Play Differential | 0.280 | -0.280 | ↑ +0.560 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 11.1% | 12.5% | ↓ -1.4 pp |
-| Pressure Rate (Def) | 14.3% | 5.9% | ↑ +8.4 pp |
-| Tempo | 7.727 | 6.667 | ↑ +1.061 |
-| PowerScore | 0.096 | 0.080 | ↑ +0.016 |
+| Core EPA Offense | -0.089 | 0.023 | -0.112 |
+| Core EPA Defense | -0.002 | 0.029 | -0.031 |
+| Success Rate Offense | 0.392 | 0.456 | -0.065 |
+| Success Rate Defense | 0.432 | 0.477 | -0.045 |
+| Explosive Play Rate (Off) | 0.091 | 0.100 | -0.009 |
+| Third Down Conversion | 0.242 | 0.424 | -0.182 |
+| Points per Drive Differential | -0.498 | -0.418 | -0.080 |
+| Yards per Play Differential | -0.283 | -0.680 | 0.397 |
+| Turnover Margin | -0.444 | 0.222 | -0.667 |
+| Red Zone TD Rate (Off) | 0.151 | 0.149 | 0.002 |
+| Pressure Rate (Def) | 0.046 | 0.033 | 0.013 |
+| Tempo | 7.727 | 6.667 | 1.061 |
+| PowerScore | 1.620 | 1.386 | 0.234 |
+| PowerScore | 1.620 | 1.386 | 0.234 |
+| Tempo | 7.727 | 6.667 | 1.061 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CAR edge: +0.016 (CAR +0.096 vs ATL +0.080)
 **7 metrics version:**
 CAR edge: +0.211 (CAR +0.170 vs ATL -0.041)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.211), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - ATL) | +0.3 pts (favours CAR) |
-| Model Win% CAR | 51.2% |
-| Model Win% ATL | 48.8% |
-| SOS Differential (CAR-ATL) | -0.045 |
+| Model Spread (CAR - ATL) | +4.3 pts (favours CAR) |
+| Model Win% CAR | 67.3% |
+| Model Win% ATL | 32.7% |
+| SOS Differential (CAR-ATL) | -0.200 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.111 | 0.156 |
-| Last 5 games | 0.138 | 0.147 |
-| Last 3 games | 0.155 | 0.157 |
+| Season-to-date | 1.602 | 1.801 |
+| Last 5 games | 1.602 | 1.802 |
+| Last 3 games | 1.633 | 1.818 |
 
 ## Trend Summary (last 3 weeks)
 

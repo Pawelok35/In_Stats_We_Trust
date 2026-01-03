@@ -4,19 +4,21 @@
 
 | Metric | MIN | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.026 | -0.031 | ↑ +0.057 |
-| Core EPA Defense | -0.031 | 0.026 | ↓ -0.057 |
-| Success Rate Offense | 48.9% | 45.8% | ↑ +3.1 pp |
-| Success Rate Defense | 45.8% | 48.9% | ↓ -3.1 pp |
-| Explosive Play Rate (Off) | 13.3% | 8.3% | ↑ +5.0 pp |
-| Third Down Conversion | 40.0% | 28.6% | ↑ +11.4 pp |
-| Points per Drive Differential | 0.449 | -0.449 | ↑ +0.897 |
-| Yards per Play Differential | 0.327 | -0.327 | ↑ +0.654 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 27.8% | 14.3% | ↑ +13.5 pp |
-| Pressure Rate (Def) | 8.2% | 7.7% | ↑ +0.5 pp |
-| Tempo | 6.923 | 8.000 | ↓ -1.077 |
-| PowerScore | 0.152 | 0.126 | ↑ +0.026 |
+| Core EPA Offense | -0.001 | -0.029 | 0.028 |
+| Core EPA Defense | -0.025 | 0.014 | -0.040 |
+| Success Rate Offense | 0.456 | 0.399 | 0.056 |
+| Success Rate Defense | 0.434 | 0.484 | -0.050 |
+| Explosive Play Rate (Off) | 0.099 | 0.087 | 0.011 |
+| Third Down Conversion | 0.320 | 0.316 | 0.003 |
+| Points per Drive Differential | 0.220 | -0.477 | 0.697 |
+| Yards per Play Differential | -0.585 | -0.636 | 0.051 |
+| Turnover Margin | 0.333 | 0.714 | -0.381 |
+| Red Zone TD Rate (Off) | 0.146 | 0.110 | 0.036 |
+| Pressure Rate (Def) | 0.073 | 0.043 | 0.030 |
+| Tempo | 6.923 | 8.000 | -1.077 |
+| PowerScore | 1.510 | 1.709 | -0.199 |
+| PowerScore | 1.510 | 1.709 | -0.199 |
+| Tempo | 6.923 | 8.000 | -1.077 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIN edge: +0.026 (MIN +0.152 vs ARI +0.126)
 **7 metrics version:**
 MIN edge: +0.026 (MIN +0.123 vs ARI +0.097)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.026), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - ARI) | +0.5 pts (favours MIN) |
-| Model Win% MIN | 52.0% |
-| Model Win% ARI | 48.0% |
-| SOS Differential (MIN-ARI) | -0.020 |
+| Model Spread (MIN - ARI) | -3.7 pts (favours ARI) |
+| Model Win% MIN | 35.1% |
+| Model Win% ARI | 64.9% |
+| SOS Differential (MIN-ARI) | -0.029 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.126 | 0.146 |
-| Last 5 games | 0.133 | 0.115 |
-| Last 3 games | 0.148 | 0.143 |
+| Season-to-date | 1.607 | 1.637 |
+| Last 5 games | 1.644 | 1.549 |
+| Last 3 games | 1.572 | 1.751 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | DET | PHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.083 | 0.131 | ↓ -0.048 |
-| Core EPA Defense | 0.131 | 0.083 | ↑ +0.048 |
-| Success Rate Offense | 40.4% | 46.9% | ↓ -6.5 pp |
-| Success Rate Defense | 46.9% | 40.4% | ↑ +6.5 pp |
-| Explosive Play Rate (Off) | 12.4% | 13.3% | ↓ -0.9 pp |
-| Third Down Conversion | 56.2% | 50.0% | ↑ +6.2 pp |
-| Points per Drive Differential | 0.273 | -0.273 | ↑ +0.545 |
-| Yards per Play Differential | -0.306 | 0.306 | ↓ -0.612 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 19.0% | 18.2% | ↑ +0.9 pp |
-| Pressure Rate (Def) | 2.9% | 2.6% | ↑ +0.4 pp |
-| Tempo | 8.091 | 8.909 | ↓ -0.818 |
-| PowerScore | 0.181 | 0.206 | ↓ -0.025 |
+| Core EPA Offense | 0.083 | 0.131 | -0.048 |
+| Core EPA Defense | 0.131 | 0.083 | 0.048 |
+| Success Rate Offense | 0.404 | 0.469 | -0.065 |
+| Success Rate Defense | 0.469 | 0.404 | 0.065 |
+| Explosive Play Rate (Off) | 0.124 | 0.133 | -0.009 |
+| Third Down Conversion | 0.562 | 0.500 | 0.062 |
+| Points per Drive Differential | 0.273 | -0.273 | 0.545 |
+| Yards per Play Differential | -0.306 | 0.306 | -0.612 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.190 | 0.182 | 0.009 |
+| Pressure Rate (Def) | 0.029 | 0.026 | 0.004 |
+| Tempo | 8.091 | 8.909 | -0.818 |
+| PowerScore | 1.775 | 1.962 | -0.187 |
+| PowerScore | 1.775 | 1.962 | -0.187 |
+| Tempo | 8.091 | 8.909 | -0.818 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ PHI edge: +0.025 (DET +0.181 vs PHI +0.206)
 **7 metrics version:**
 PHI edge: +0.212 (DET +0.042 vs PHI +0.254)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.212), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - PHI) | -0.5 pts (favours PHI) |
-| Model Win% DET | 48.1% |
-| Model Win% PHI | 51.9% |
+| Model Spread (DET - PHI) | -3.5 pts (favours PHI) |
+| Model Win% DET | 36.0% |
+| Model Win% PHI | 64.0% |
 | SOS Differential (DET-PHI) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

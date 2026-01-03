@@ -4,19 +4,21 @@
 
 | Metric | LA | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.086 | -0.137 | ↑ +0.051 |
-| Core EPA Defense | -0.137 | -0.086 | ↓ -0.051 |
-| Success Rate Offense | 51.9% | 42.7% | ↑ +9.3 pp |
-| Success Rate Defense | 42.7% | 51.9% | ↓ -9.3 pp |
-| Explosive Play Rate (Off) | 10.4% | 8.0% | ↑ +2.4 pp |
-| Third Down Conversion | 70.0% | 25.0% | ↑ +45.0 pp |
-| Points per Drive Differential | 1.636 | -1.636 | ↑ +3.273 |
-| Yards per Play Differential | 0.870 | -0.870 | ↑ +1.740 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 18.2% | 8.3% | ↑ +9.8 pp |
-| Pressure Rate (Def) | 10.0% | 2.7% | ↑ +7.3 pp |
-| Tempo | 7.000 | 6.818 | ↑ +0.182 |
-| PowerScore | 0.093 | 0.058 | ↑ +0.036 |
+| Core EPA Offense | -0.232 | 0.012 | -0.244 |
+| Core EPA Defense | 0.136 | 0.041 | 0.095 |
+| Success Rate Offense | 0.390 | 0.475 | -0.085 |
+| Success Rate Defense | 0.514 | 0.455 | 0.060 |
+| Explosive Play Rate (Off) | 0.049 | 0.101 | -0.052 |
+| Third Down Conversion | 0.400 | 0.400 | 0.000 |
+| Points per Drive Differential | -2.100 | -0.250 | -1.850 |
+| Yards per Play Differential | -2.937 | -0.824 | -2.113 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.143 | 0.154 | -0.011 |
+| Pressure Rate (Def) | 0.059 | 0.103 | -0.044 |
+| Tempo | 7.000 | 6.818 | 0.182 |
+| PowerScore | 1.472 | 1.405 | 0.067 |
+| PowerScore | 1.472 | 1.405 | 0.067 |
+| Tempo | 7.000 | 6.818 | 0.182 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LA edge: +0.036 (LA +0.093 vs ATL +0.058)
 **7 metrics version:**
 LA edge: +0.036 (LA +0.068 vs ATL +0.032)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.036), driven by Success Rate Offense (15% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - ATL) | +0.7 pts (favours LA) |
-| Model Win% LA | 52.7% |
-| Model Win% ATL | 47.3% |
-| SOS Differential (LA-ATL) | -0.009 |
+| Model Spread (LA - ATL) | +1.2 pts (favours LA) |
+| Model Win% LA | 55.2% |
+| Model Win% ATL | 44.8% |
+| SOS Differential (LA-ATL) | +0.116 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LA | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.150 | 0.159 |
-| Last 5 games | 0.150 | 0.159 |
-| Last 3 games | 0.150 | 0.159 |
+| Season-to-date | 1.530 | 1.414 |
+| Last 5 games | 1.530 | 1.414 |
+| Last 3 games | 1.530 | 1.414 |
 
 ## Matchup Analogs
 

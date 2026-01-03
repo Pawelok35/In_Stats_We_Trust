@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 17
 
-_Generated at 2025-11-10T17:51:30.844652+00:00 (UTC)_
+_Generated at 2025-12-28T14:53:27.309921+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\17_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2766, "cols": 18, "timestamp": "2025-11-10T17:51:30.328619+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2766, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:51:30.328619+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2766, "cols": 24, "timestamp": "2025-11-10T17:51:30.328619+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2766, "cols": 18, "timestamp": "2025-12-28T14:53:26.935390+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2766, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:53:26.935390+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2766, "cols": 24, "timestamp": "2025-12-28T14:53:26.935390+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\17_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\17.parquet`
 - Manifest: `data\l4_core12\2024\17_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\17_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DET | 0.3189710680925211 |
-| SF | 0.31234392016680995 |
-| TB | 0.27311098349426005 |
-| NYG | 0.24725150412095764 |
-| IND | 0.22999221602685488 |
-| CIN | 0.2232338202683818 |
-| ATL | 0.22161099959601704 |
-| WAS | 0.21151010618365307 |
-| DEN | 0.20420435270807138 |
-| BAL | 0.2009773925947825 |
+| TEN | 2.2301966243837446 |
+| SF | 2.1326919790690857 |
+| TB | 2.0739805487116514 |
+| LAC | 2.0500939004807193 |
+| WAS | 2.0280717623492697 |
+| CIN | 1.9878755648166684 |
+| ATL | 1.9793887773737948 |
+| DET | 1.9775424966639499 |
+| JAX | 1.9704355426338704 |
+| ARI | 1.9530347201474494 |
 
 
 ## Visualizations

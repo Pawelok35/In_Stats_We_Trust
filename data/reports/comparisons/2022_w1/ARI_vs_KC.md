@@ -4,19 +4,21 @@
 
 | Metric | ARI | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.012 | 0.366 | ↓ -0.354 |
-| Core EPA Defense | 0.366 | 0.012 | ↑ +0.354 |
-| Success Rate Offense | 37.3% | 59.0% | ↓ -21.7 pp |
-| Success Rate Defense | 59.0% | 37.3% | ↑ +21.7 pp |
-| Explosive Play Rate (Off) | 8.4% | 18.1% | ↓ -9.6 pp |
-| Third Down Conversion | 25.0% | 55.6% | ↓ -30.6 pp |
-| Points per Drive Differential | -2.491 | 2.491 | ↓ -4.982 |
-| Yards per Play Differential | -2.458 | 2.458 | ↓ -4.916 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 27.3% | 24.0% | ↑ +3.3 pp |
-| Pressure Rate (Def) | 0.0% | 6.8% | ↓ -6.8 pp |
-| Tempo | 7.545 | 8.300 | ↓ -0.755 |
-| PowerScore | 0.187 | 0.314 | ↓ -0.127 |
+| Core EPA Offense | 0.012 | 0.366 | -0.354 |
+| Core EPA Defense | 0.366 | 0.012 | 0.354 |
+| Success Rate Offense | 0.373 | 0.590 | -0.217 |
+| Success Rate Defense | 0.590 | 0.373 | 0.217 |
+| Explosive Play Rate (Off) | 0.084 | 0.181 | -0.096 |
+| Third Down Conversion | 0.250 | 0.556 | -0.306 |
+| Points per Drive Differential | -2.491 | 2.491 | -4.982 |
+| Yards per Play Differential | -2.458 | 2.458 | -4.916 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.273 | 0.240 | 0.033 |
+| Pressure Rate (Def) | 0.000 | 0.068 | -0.068 |
+| Tempo | 7.545 | 8.300 | -0.755 |
+| PowerScore | 1.680 | 1.938 | -0.258 |
+| PowerScore | 1.680 | 1.938 | -0.258 |
+| Tempo | 7.545 | 8.300 | -0.755 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ KC edge: +0.127 (ARI +0.187 vs KC +0.314)
 **7 metrics version:**
 ARI edge: +0.137 (ARI +0.268 vs KC +0.131)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.137), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - KC) | -2.3 pts (favours KC) |
-| Model Win% ARI | 40.4% |
-| Model Win% KC | 59.6% |
+| Model Spread (ARI - KC) | -4.8 pts (favours KC) |
+| Model Win% ARI | 31.1% |
+| Model Win% KC | 68.9% |
 | SOS Differential (ARI-KC) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -4,19 +4,21 @@
 
 | Metric | TEN | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.156 | -0.065 | ↓ -0.091 |
-| Core EPA Defense | -0.065 | -0.156 | ↑ +0.091 |
-| Success Rate Offense | 26.2% | 45.8% | ↓ -19.6 pp |
-| Success Rate Defense | 45.8% | 26.2% | ↑ +19.6 pp |
-| Explosive Play Rate (Off) | 8.8% | 11.5% | ↓ -2.7 pp |
-| Third Down Conversion | 33.3% | 22.2% | ↑ +11.1 pp |
-| Points per Drive Differential | -0.524 | 0.524 | ↓ -1.048 |
-| Yards per Play Differential | -0.992 | 0.992 | ↓ -1.983 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 16.7% | 6.2% | ↑ +10.4 pp |
-| Pressure Rate (Def) | 10.0% | 21.2% | ↓ -11.2 pp |
-| Tempo | 6.667 | 6.857 | ↓ -0.190 |
-| PowerScore | 0.015 | 0.083 | ↓ -0.068 |
+| Core EPA Offense | -0.016 | -0.018 | 0.002 |
+| Core EPA Defense | 0.034 | -0.021 | 0.055 |
+| Success Rate Offense | 0.409 | 0.399 | 0.011 |
+| Success Rate Defense | 0.444 | 0.415 | 0.029 |
+| Explosive Play Rate (Off) | 0.089 | 0.122 | -0.033 |
+| Third Down Conversion | 0.271 | 0.368 | -0.097 |
+| Points per Drive Differential | -0.252 | 0.092 | -0.344 |
+| Yards per Play Differential | -0.359 | 0.176 | -0.535 |
+| Turnover Margin | -0.077 | 0.385 | -0.462 |
+| Red Zone TD Rate (Off) | 0.126 | 0.137 | -0.011 |
+| Pressure Rate (Def) | 0.078 | 0.068 | 0.010 |
+| Tempo | 6.667 | 6.857 | -0.190 |
+| PowerScore | 1.331 | 1.432 | -0.101 |
+| PowerScore | 1.331 | 1.432 | -0.101 |
+| Tempo | 6.667 | 6.857 | -0.190 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ HOU edge: +0.068 (TEN +0.015 vs HOU +0.083)
 **7 metrics version:**
 HOU edge: +0.037 (TEN +0.023 vs HOU +0.060)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.037), driven by Success Rate Offense (15% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - HOU) | -1.3 pts (favours HOU) |
-| Model Win% TEN | 44.8% |
-| Model Win% HOU | 55.2% |
-| SOS Differential (TEN-HOU) | +0.026 |
+| Model Spread (TEN - HOU) | -1.9 pts (favours HOU) |
+| Model Win% TEN | 42.3% |
+| Model Win% HOU | 57.7% |
+| SOS Differential (TEN-HOU) | +0.103 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.139 | 0.113 |
-| Last 5 games | 0.141 | 0.107 |
-| Last 3 games | 0.127 | 0.090 |
+| Season-to-date | 1.672 | 1.570 |
+| Last 5 games | 1.630 | 1.420 |
+| Last 3 games | 1.586 | 1.425 |
 
 ## Trend Summary (last 3 weeks)
 

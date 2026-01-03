@@ -4,19 +4,21 @@
 
 | Metric | KC | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.029 | -0.159 | ↑ +0.188 |
-| Core EPA Defense | -0.159 | 0.029 | ↓ -0.188 |
-| Success Rate Offense | 47.8% | 35.5% | ↑ +12.3 pp |
-| Success Rate Defense | 35.5% | 47.8% | ↓ -12.3 pp |
-| Explosive Play Rate (Off) | 7.5% | 7.5% | ↓ -0.1 pp |
-| Third Down Conversion | 27.3% | 11.8% | ↑ +15.5 pp |
-| Points per Drive Differential | 1.413 | -1.413 | ↑ +2.825 |
-| Yards per Play Differential | 0.852 | -0.852 | ↑ +1.704 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 27.3% | 10.0% | ↑ +17.3 pp |
-| Pressure Rate (Def) | 4.8% | 3.4% | ↑ +1.3 pp |
-| Tempo | 6.091 | 7.154 | ↓ -1.063 |
-| PowerScore | 0.113 | 0.054 | ↑ +0.059 |
+| Core EPA Offense | 0.132 | 0.037 | 0.095 |
+| Core EPA Defense | 0.027 | 0.030 | -0.003 |
+| Success Rate Offense | 0.496 | 0.461 | 0.035 |
+| Success Rate Defense | 0.429 | 0.422 | 0.008 |
+| Explosive Play Rate (Off) | 0.128 | 0.114 | 0.014 |
+| Third Down Conversion | 0.459 | 0.369 | 0.090 |
+| Points per Drive Differential | 0.568 | -0.041 | 0.608 |
+| Yards per Play Differential | 1.125 | 0.014 | 1.111 |
+| Turnover Margin | 0.000 | 0.071 | -0.071 |
+| Red Zone TD Rate (Off) | 0.161 | 0.113 | 0.048 |
+| Pressure Rate (Def) | 0.080 | 0.071 | 0.009 |
+| Tempo | 6.091 | 7.154 | -1.063 |
+| PowerScore | 1.316 | 1.470 | -0.154 |
+| PowerScore | 1.316 | 1.470 | -0.154 |
+| Tempo | 6.091 | 7.154 | -1.063 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.059 (KC +0.113 vs SEA +0.054)
 **7 metrics version:**
 KC edge: +0.246 (KC +0.187 vs SEA -0.060)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - SEA) | +1.1 pts (favours KC) |
-| Model Win% KC | 54.5% |
-| Model Win% SEA | 45.5% |
-| SOS Differential (KC-SEA) | +0.017 |
+| Model Spread (KC - SEA) | -2.8 pts (favours SEA) |
+| Model Win% KC | 38.4% |
+| Model Win% SEA | 61.6% |
+| SOS Differential (KC-SEA) | -0.024 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.162 | 0.145 |
-| Last 5 games | 0.151 | 0.168 |
-| Last 3 games | 0.153 | 0.154 |
+| Season-to-date | 1.696 | 1.720 |
+| Last 5 games | 1.707 | 1.705 |
+| Last 3 games | 1.739 | 1.680 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | SF | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.051 | 0.372 | ↓ -0.321 |
-| Core EPA Defense | 0.372 | 0.051 | ↑ +0.321 |
-| Success Rate Offense | 44.3% | 55.0% | ↓ -10.7 pp |
-| Success Rate Defense | 55.0% | 44.3% | ↑ +10.7 pp |
-| Explosive Play Rate (Off) | 16.5% | 18.8% | ↓ -2.3 pp |
-| Third Down Conversion | 53.3% | 46.2% | ↑ +7.2 pp |
-| Points per Drive Differential | -2.109 | 2.109 | ↓ -4.218 |
-| Yards per Play Differential | -2.035 | 2.035 | ↓ -4.070 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 13.3% | 22.2% | ↓ -8.9 pp |
-| Pressure Rate (Def) | 2.5% | 9.6% | ↓ -7.1 pp |
-| Tempo | 8.818 | 8.000 | ↑ +0.818 |
-| PowerScore | 0.236 | 0.315 | ↓ -0.079 |
+| Core EPA Offense | -0.054 | 0.133 | -0.187 |
+| Core EPA Defense | -0.132 | 0.059 | -0.191 |
+| Success Rate Offense | 0.424 | 0.486 | -0.062 |
+| Success Rate Defense | 0.389 | 0.456 | -0.067 |
+| Explosive Play Rate (Off) | 0.102 | 0.107 | -0.005 |
+| Third Down Conversion | 0.380 | 0.430 | -0.050 |
+| Points per Drive Differential | 0.588 | 0.402 | 0.186 |
+| Yards per Play Differential | 1.161 | 0.334 | 0.827 |
+| Turnover Margin | -0.667 | 0.167 | -0.833 |
+| Red Zone TD Rate (Off) | 0.139 | 0.142 | -0.003 |
+| Pressure Rate (Def) | 0.104 | 0.055 | 0.050 |
+| Tempo | 8.818 | 8.000 | 0.818 |
+| PowerScore | 1.967 | 1.878 | 0.089 |
+| PowerScore | 1.967 | 1.878 | 0.089 |
+| Tempo | 8.818 | 8.000 | 0.818 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.079 (SF +0.236 vs KC +0.315)
 **7 metrics version:**
 KC edge: +0.650 (SF -0.114 vs KC +0.536)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.650), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SF - KC) | -1.5 pts (favours KC) |
-| Model Win% SF | 43.9% |
-| Model Win% KC | 56.1% |
-| SOS Differential (SF-KC) | -0.125 |
+| Model Spread (SF - KC) | +1.6 pts (favours SF) |
+| Model Win% SF | 56.8% |
+| Model Win% KC | 43.2% |
+| SOS Differential (SF-KC) | -0.225 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.054 | 0.179 |
-| Last 5 games | 0.061 | 0.177 |
-| Last 3 games | 0.102 | 0.202 |
+| Season-to-date | 1.532 | 1.756 |
+| Last 5 games | 1.562 | 1.772 |
+| Last 3 games | 1.730 | 1.838 |
 
 ## Trend Summary (last 3 weeks)
 

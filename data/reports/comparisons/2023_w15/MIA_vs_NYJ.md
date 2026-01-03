@@ -4,19 +4,21 @@
 
 | Metric | MIA | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.036 | -0.441 | ↑ +0.476 |
-| Core EPA Defense | -0.441 | 0.036 | ↓ -0.476 |
-| Success Rate Offense | 37.7% | 21.6% | ↑ +16.0 pp |
-| Success Rate Defense | 21.6% | 37.7% | ↓ -16.0 pp |
-| Explosive Play Rate (Off) | 7.8% | 2.7% | ↑ +5.1 pp |
-| Third Down Conversion | 37.5% | 31.2% | ↑ +6.2 pp |
-| Points per Drive Differential | 3.000 | -3.000 | ↑ +6.000 |
-| Yards per Play Differential | 2.374 | -2.374 | ↑ +4.749 |
-| Turnover Margin | 4.000 | -4.000 | ↑ +8.000 |
-| Red Zone TD Rate (Off) | 8.7% | 0.0% | ↑ +8.7 pp |
-| Pressure Rate (Def) | 14.0% | 9.7% | ↑ +4.3 pp |
-| Tempo | 7.700 | 6.727 | ↑ +0.973 |
-| PowerScore | 0.034 | -0.088 | ↑ +0.122 |
+| Core EPA Offense | 0.087 | -0.171 | 0.258 |
+| Core EPA Defense | -0.040 | -0.096 | 0.055 |
+| Success Rate Offense | 0.481 | 0.360 | 0.121 |
+| Success Rate Defense | 0.417 | 0.381 | 0.036 |
+| Explosive Play Rate (Off) | 0.142 | 0.074 | 0.068 |
+| Third Down Conversion | 0.402 | 0.215 | 0.187 |
+| Points per Drive Differential | 0.709 | -0.433 | 1.142 |
+| Yards per Play Differential | 1.444 | -0.135 | 1.578 |
+| Turnover Margin | -0.308 | -0.385 | 0.077 |
+| Red Zone TD Rate (Off) | 0.163 | 0.083 | 0.079 |
+| Pressure Rate (Def) | 0.084 | 0.090 | -0.006 |
+| Tempo | 7.700 | 6.727 | 0.973 |
+| PowerScore | 1.558 | 1.252 | 0.306 |
+| PowerScore | 1.558 | 1.252 | 0.306 |
+| Tempo | 7.700 | 6.727 | 0.973 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIA edge: +0.122 (MIA +0.034 vs NYJ -0.088)
 **7 metrics version:**
 MIA edge: +0.866 (MIA +0.408 vs NYJ -0.458)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.866), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - NYJ) | +2.3 pts (favours MIA) |
-| Model Win% MIA | 59.3% |
-| Model Win% NYJ | 40.7% |
-| SOS Differential (MIA-NYJ) | +0.079 |
+| Model Spread (MIA - NYJ) | +5.7 pts (favours MIA) |
+| Model Win% MIA | 72.0% |
+| Model Win% NYJ | 28.0% |
+| SOS Differential (MIA-NYJ) | +0.132 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.123 | 0.045 |
-| Last 5 games | 0.081 | 0.032 |
-| Last 3 games | 0.086 | 0.023 |
+| Season-to-date | 1.554 | 1.422 |
+| Last 5 games | 1.382 | 1.355 |
+| Last 3 games | 1.453 | 1.242 |
 
 ## Trend Summary (last 3 weeks)
 

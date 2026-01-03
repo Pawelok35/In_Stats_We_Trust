@@ -4,19 +4,21 @@
 
 | Metric | MIA | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.028 | -0.163 | ↑ +0.191 |
-| Core EPA Defense | -0.163 | 0.028 | ↓ -0.191 |
-| Success Rate Offense | 48.6% | 43.5% | ↑ +5.2 pp |
-| Success Rate Defense | 43.5% | 48.6% | ↓ -5.2 pp |
-| Explosive Play Rate (Off) | 9.5% | 10.1% | ↓ -0.7 pp |
-| Third Down Conversion | 40.0% | 36.4% | ↑ +3.6 pp |
-| Points per Drive Differential | 0.778 | -0.778 | ↑ +1.556 |
-| Yards per Play Differential | 0.221 | -0.221 | ↑ +0.442 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 25.0% | ↓ -25.0 pp |
-| Pressure Rate (Def) | 6.1% | 7.9% | ↓ -1.8 pp |
-| Tempo | 8.222 | 7.667 | ↑ +0.556 |
-| PowerScore | 0.118 | 0.078 | ↑ +0.040 |
+| Core EPA Offense | 0.028 | -0.163 | 0.191 |
+| Core EPA Defense | -0.163 | 0.028 | -0.191 |
+| Success Rate Offense | 0.486 | 0.435 | 0.052 |
+| Success Rate Defense | 0.435 | 0.486 | -0.052 |
+| Explosive Play Rate (Off) | 0.095 | 0.101 | -0.007 |
+| Third Down Conversion | 0.400 | 0.364 | 0.036 |
+| Points per Drive Differential | 0.778 | -0.778 | 1.556 |
+| Yards per Play Differential | 0.221 | -0.221 | 0.442 |
+| Turnover Margin | 3.000 | -3.000 | 6.000 |
+| Red Zone TD Rate (Off) | 0.000 | 0.250 | -0.250 |
+| Pressure Rate (Def) | 0.061 | 0.079 | -0.018 |
+| Tempo | 8.222 | 7.667 | 0.556 |
+| PowerScore | 1.743 | 1.591 | 0.153 |
+| PowerScore | 1.743 | 1.591 | 0.153 |
+| Tempo | 8.222 | 7.667 | 0.556 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ MIA edge: +0.040 (MIA +0.118 vs NE +0.078)
 **7 metrics version:**
 MIA edge: +0.590 (MIA +0.363 vs NE -0.227)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.590), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - NE) | +0.7 pts (favours MIA) |
-| Model Win% MIA | 53.1% |
-| Model Win% NE | 46.9% |
+| Model Spread (MIA - NE) | +2.8 pts (favours MIA) |
+| Model Win% MIA | 61.6% |
+| Model Win% NE | 38.4% |
 | SOS Differential (MIA-NE) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

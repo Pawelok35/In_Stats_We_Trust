@@ -4,19 +4,21 @@
 
 | Metric | NYG | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.197 | -0.188 | ↑ +0.385 |
-| Core EPA Defense | -0.188 | 0.197 | ↓ -0.385 |
-| Success Rate Offense | 60.5% | 34.7% | ↑ +25.8 pp |
-| Success Rate Defense | 34.7% | 60.5% | ↓ -25.8 pp |
-| Explosive Play Rate (Off) | 15.8% | 6.9% | ↑ +8.8 pp |
-| Third Down Conversion | 50.0% | 23.1% | ↑ +26.9 pp |
-| Points per Drive Differential | 2.444 | -2.444 | ↑ +4.889 |
-| Yards per Play Differential | 1.684 | -1.684 | ↑ +3.368 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 23.5% | 10.0% | ↑ +13.5 pp |
-| Pressure Rate (Def) | 6.9% | 0.0% | ↑ +6.9 pp |
-| Tempo | 8.444 | 8.000 | ↑ +0.444 |
-| PowerScore | 0.214 | 0.074 | ↑ +0.140 |
+| Core EPA Offense | 0.019 | -0.152 | 0.172 |
+| Core EPA Defense | 0.049 | -0.040 | 0.088 |
+| Success Rate Offense | 0.432 | 0.396 | 0.036 |
+| Success Rate Defense | 0.444 | 0.430 | 0.014 |
+| Explosive Play Rate (Off) | 0.105 | 0.089 | 0.015 |
+| Third Down Conversion | 0.321 | 0.323 | -0.002 |
+| Points per Drive Differential | -0.110 | -0.511 | 0.401 |
+| Yards per Play Differential | -0.404 | -0.249 | -0.155 |
+| Turnover Margin | 0.267 | -1.000 | 1.267 |
+| Red Zone TD Rate (Off) | 0.159 | 0.097 | 0.061 |
+| Pressure Rate (Def) | 0.067 | 0.081 | -0.014 |
+| Tempo | 8.444 | 8.000 | 0.444 |
+| PowerScore | 1.871 | 1.660 | 0.211 |
+| PowerScore | 1.871 | 1.660 | 0.211 |
+| Tempo | 8.444 | 8.000 | 0.444 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYG edge: +0.140 (NYG +0.214 vs IND +0.074)
 **7 metrics version:**
 NYG edge: +0.087 (NYG +0.148 vs IND +0.061)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.087), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - IND) | +2.6 pts (favours NYG) |
-| Model Win% NYG | 60.6% |
-| Model Win% IND | 39.4% |
-| SOS Differential (NYG-IND) | +0.077 |
+| Model Spread (NYG - IND) | +3.9 pts (favours NYG) |
+| Model Win% NYG | 65.7% |
+| Model Win% IND | 34.3% |
+| SOS Differential (NYG-IND) | +0.211 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.158 | 0.081 |
-| Last 5 games | 0.160 | 0.076 |
-| Last 3 games | 0.180 | 0.063 |
+| Season-to-date | 1.670 | 1.458 |
+| Last 5 games | 1.691 | 1.466 |
+| Last 3 games | 1.616 | 1.369 |
 
 ## Trend Summary (last 3 weeks)
 

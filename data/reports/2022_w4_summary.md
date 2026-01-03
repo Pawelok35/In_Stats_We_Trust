@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 4
 
-_Generated at 2025-11-11T12:23:35.605251+00:00 (UTC)_
+_Generated at 2026-01-02T11:29:10.873452+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\4_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2795, "cols": 18, "timestamp": "2025-11-11T12:23:35.077252+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2795, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:23:35.077252+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2795, "cols": 24, "timestamp": "2025-11-11T12:23:35.077252+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2795, "cols": 18, "timestamp": "2026-01-02T11:29:10.439473+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2795, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:29:10.439473+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2795, "cols": 24, "timestamp": "2026-01-02T11:29:10.439473+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\4_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\4.parquet`
 - Manifest: `data\l4_core12\2022\4_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\4_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| SEA | 0.3218903872566347 |
-| DET | 0.2625860815591579 |
-| KC | 0.23913791237559234 |
-| NO | 0.2235153391219196 |
-| MIN | 0.21064413519754052 |
-| TB | 0.20310564136641374 |
-| NYG | 0.16142281656474375 |
-| ATL | 0.16075209568123097 |
-| CHI | 0.15013267987113904 |
-| BUF | 0.14415794398759368 |
+| SEA | 2.06593533107686 |
+| KC | 1.9658424578301377 |
+| DET | 1.9645956509371487 |
+| CLE | 1.8960245754095588 |
+| MIN | 1.863806190533509 |
+| IND | 1.8562492626449978 |
+| LA | 1.8430732587480316 |
+| BAL | 1.7018436856489165 |
+| BUF | 1.6836451234747731 |
+| PHI | 1.6795059688811722 |
 
 
 ## Visualizations

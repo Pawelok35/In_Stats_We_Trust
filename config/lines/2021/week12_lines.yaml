@@ -1,0 +1,121 @@
+# NFL 2021 Week 12 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w12/WAS_vs_SEA.md
+    home: WAS
+    away: SEA
+    spread: +2.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/BAL_vs_CLE.md
+    home: BAL
+    away: CLE
+    spread: -4.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/GB_vs_LA.md
+    home: GB
+    away: LA
+    spread: -2.0
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/SF_vs_MIN.md
+    home: SF
+    away: MIN
+    spread: -2.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/DEN_vs_LAC.md
+    home: DEN
+    away: LAC
+    spread: +1.5
+    total: 49.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/CIN_vs_PIT.md
+    home: CIN
+    away: PIT
+    spread: -4.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/HOU_vs_NYJ.md
+    home: HOU
+    away: NYJ
+    spread: -3.0
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/IND_vs_TB.md
+    home: IND
+    away: TB
+    spread: +2.5
+    total: 51.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/JAX_vs_ATL.md
+    home: JAX
+    away: ATL
+    spread: +1.0
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/MIA_vs_CAR.md
+    home: MIA
+    away: CAR
+    spread: -1.0
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/NE_vs_TEN.md
+    home: NE
+    away: TEN
+    spread: -6.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/NYG_vs_PHI.md
+    home: NYG
+    away: PHI
+    spread: +3.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/NO_vs_BUF.md
+    home: "NO"
+    away: BUF
+    spread: +4.5
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/DAL_vs_LV.md
+    home: DAL
+    away: LV
+    spread: -7.5
+    total: 50.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w12/DET_vs_CHI.md
+    home: DET
+    away: CHI
+    spread: +3.5
+    total: 42.0
+    prime_time: false
+    neutral_site: false

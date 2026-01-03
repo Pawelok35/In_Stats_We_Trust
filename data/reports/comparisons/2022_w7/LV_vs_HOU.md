@@ -4,19 +4,21 @@
 
 | Metric | LV | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.237 | -0.004 | ↑ +0.241 |
-| Core EPA Defense | -0.004 | 0.237 | ↓ -0.241 |
-| Success Rate Offense | 54.1% | 43.8% | ↑ +10.3 pp |
-| Success Rate Defense | 43.8% | 54.1% | ↓ -10.3 pp |
-| Explosive Play Rate (Off) | 21.6% | 12.5% | ↑ +9.1 pp |
-| Third Down Conversion | 44.4% | 60.0% | ↓ -15.6 pp |
-| Points per Drive Differential | 1.333 | -1.333 | ↑ +2.667 |
-| Yards per Play Differential | 0.355 | -0.355 | ↑ +0.711 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 33.3% | 7.1% | ↑ +26.2 pp |
-| Pressure Rate (Def) | 2.4% | 3.3% | ↓ -1.0 pp |
-| Tempo | 8.222 | 8.889 | ↓ -0.667 |
-| PowerScore | 0.260 | 0.180 | ↑ +0.080 |
+| Core EPA Offense | 0.033 | -0.061 | 0.093 |
+| Core EPA Defense | 0.012 | -0.027 | 0.039 |
+| Success Rate Offense | 0.434 | 0.403 | 0.031 |
+| Success Rate Defense | 0.426 | 0.408 | 0.018 |
+| Explosive Play Rate (Off) | 0.110 | 0.094 | 0.016 |
+| Third Down Conversion | 0.364 | 0.259 | 0.105 |
+| Points per Drive Differential | -0.074 | -0.155 | 0.082 |
+| Yards per Play Differential | 0.056 | -0.689 | 0.745 |
+| Turnover Margin | -0.400 | 0.600 | -1.000 |
+| Red Zone TD Rate (Off) | 0.123 | 0.217 | -0.094 |
+| Pressure Rate (Def) | 0.045 | 0.071 | -0.027 |
+| Tempo | 8.222 | 8.889 | -0.667 |
+| PowerScore | 1.862 | 1.933 | -0.071 |
+| PowerScore | 1.862 | 1.933 | -0.071 |
+| Tempo | 8.222 | 8.889 | -0.667 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LV edge: +0.080 (LV +0.260 vs HOU +0.180)
 **7 metrics version:**
 LV edge: +0.262 (LV +0.297 vs HOU +0.035)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.262), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - HOU) | +1.5 pts (favours LV) |
-| Model Win% LV | 56.2% |
-| Model Win% HOU | 43.8% |
-| SOS Differential (LV-HOU) | +0.032 |
+| Model Spread (LV - HOU) | -1.3 pts (favours HOU) |
+| Model Win% LV | 44.5% |
+| Model Win% HOU | 55.5% |
+| SOS Differential (LV-HOU) | +0.143 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.139 | 0.107 |
-| Last 5 games | 0.139 | 0.107 |
-| Last 3 games | 0.155 | 0.112 |
+| Season-to-date | 1.781 | 1.639 |
+| Last 5 games | 1.781 | 1.639 |
+| Last 3 games | 1.647 | 1.542 |
 
 ## Trend Summary (last 3 weeks)
 

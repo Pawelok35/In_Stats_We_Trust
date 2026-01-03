@@ -4,19 +4,21 @@
 
 | Metric | JAX | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.034 | 0.048 | ↓ -0.082 |
-| Core EPA Defense | 0.048 | -0.034 | ↑ +0.082 |
-| Success Rate Offense | 45.3% | 44.3% | ↑ +1.0 pp |
-| Success Rate Defense | 44.3% | 45.3% | ↓ -1.0 pp |
-| Explosive Play Rate (Off) | 12.0% | 5.7% | ↑ +6.3 pp |
-| Third Down Conversion | 30.0% | 12.5% | ↑ +17.5 pp |
-| Points per Drive Differential | -0.478 | 0.478 | ↓ -0.956 |
-| Yards per Play Differential | 0.932 | -0.932 | ↑ +1.863 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 6.2% | 12.5% | ↓ -6.2 pp |
-| Pressure Rate (Def) | 5.6% | 11.8% | ↓ -6.2 pp |
-| Tempo | 7.500 | 9.778 | ↓ -2.278 |
-| PowerScore | 0.135 | 0.132 | ↑ +0.003 |
+| Core EPA Offense | -0.042 | -0.244 | 0.203 |
+| Core EPA Defense | -0.006 | -0.037 | 0.031 |
+| Success Rate Offense | 0.431 | 0.296 | 0.135 |
+| Success Rate Defense | 0.430 | 0.412 | 0.018 |
+| Explosive Play Rate (Off) | 0.125 | 0.051 | 0.074 |
+| Third Down Conversion | 0.167 | 0.125 | 0.042 |
+| Points per Drive Differential | -0.121 | -0.157 | 0.036 |
+| Yards per Play Differential | -0.943 | -0.771 | -0.172 |
+| Turnover Margin | -1.000 | -2.000 | 1.000 |
+| Red Zone TD Rate (Off) | 0.222 | 0.182 | 0.040 |
+| Pressure Rate (Def) | 0.075 | 0.083 | -0.008 |
+| Tempo | 7.500 | 9.778 | -2.278 |
+| PowerScore | 1.611 | 2.076 | -0.465 |
+| PowerScore | 1.611 | 2.076 | -0.465 |
+| Tempo | 7.500 | 9.778 | -2.278 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ JAX edge: +0.003 (JAX +0.135 vs CLE +0.132)
 **7 metrics version:**
 CLE edge: +0.009 (JAX +0.093 vs CLE +0.102)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.009), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - CLE) | +0.1 pts (favours JAX) |
-| Model Win% JAX | 50.2% |
-| Model Win% CLE | 49.8% |
-| SOS Differential (JAX-CLE) | +0.058 |
+| Model Spread (JAX - CLE) | -8.6 pts (favours CLE) |
+| Model Win% JAX | 19.2% |
+| Model Win% CLE | 80.8% |
+| SOS Differential (JAX-CLE) | +0.356 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.116 | 0.057 |
-| Last 5 games | 0.116 | 0.057 |
-| Last 3 games | 0.116 | 0.057 |
+| Season-to-date | 1.530 | 1.174 |
+| Last 5 games | 1.530 | 1.174 |
+| Last 3 games | 1.530 | 1.174 |
 
 ## Matchup Analogs
 

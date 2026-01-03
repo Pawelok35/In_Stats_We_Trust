@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 8
 
-_Generated at 2025-11-11T12:24:18.433632+00:00 (UTC)_
+_Generated at 2026-01-02T11:31:54.923929+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\8_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2587, "cols": 18, "timestamp": "2025-11-11T12:24:17.829112+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2587, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:24:17.829112+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2587, "cols": 24, "timestamp": "2025-11-11T12:24:17.829112+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2587, "cols": 18, "timestamp": "2026-01-02T11:31:54.449550+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2587, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:31:54.449550+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2587, "cols": 24, "timestamp": "2026-01-02T11:31:54.449550+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\8_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\8.parquet`
 - Manifest: `data\l4_core12\2022\8_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\8_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DAL | 0.28929568984680865 |
-| MIA | 0.2615542638435543 |
-| DET | 0.24267632040794926 |
-| PHI | 0.24081628432103278 |
-| SF | 0.23519812841655666 |
-| BAL | 0.22877199010926558 |
-| CHI | 0.1986281722973338 |
-| BUF | 0.19489786210764626 |
-| TB | 0.18121046028405247 |
-| PIT | 0.163973472314671 |
+| MIA | 2.2265542638435543 |
+| DET | 2.202486446990228 |
+| PIT | 2.020569216995522 |
+| CHI | 1.9539157418706177 |
+| NO | 1.9447164508128252 |
+| SF | 1.889302606028497 |
+| TB | 1.8872569719119594 |
+| GB | 1.8846394029521267 |
+| BAL | 1.765651422733379 |
+| JAX | 1.7526153913098472 |
 
 
 ## Visualizations

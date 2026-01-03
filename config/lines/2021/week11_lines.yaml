@@ -1,0 +1,121 @@
+# NFL 2021 Week 11 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w11/TB_vs_NYG.md
+    home: TB
+    away: NYG
+    spread: -11.5
+    total: 50.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/LAC_vs_PIT.md
+    home: LAC
+    away: PIT
+    spread: -3.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/KC_vs_DAL.md
+    home: KC
+    away: DAL
+    spread: -2.0
+    total: 54.0
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/SEA_vs_ARI.md
+    home: SEA
+    away: ARI
+    spread: +2.0
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/LV_vs_CIN.md
+    home: LV
+    away: CIN
+    spread: +1.0
+    total: 49.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/BUF_vs_IND.md
+    home: BUF
+    away: IND
+    spread: -7.0
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/CAR_vs_WAS.md
+    home: CAR
+    away: WAS
+    spread: -3.0
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/CHI_vs_BAL.md
+    home: CHI
+    away: BAL
+    spread: +6.0
+    total: 45.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/CLE_vs_DET.md
+    home: CLE
+    away: DET
+    spread: -10.5
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/JAX_vs_SF.md
+    home: JAX
+    away: SF
+    spread: +5.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/MIN_vs_GB.md
+    home: MIN
+    away: GB
+    spread: +2.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/NYJ_vs_MIA.md
+    home: NYJ
+    away: MIA
+    spread: +3.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/PHI_vs_NO.md
+    home: PHI
+    away: "NO"
+    spread: -1.5
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/TEN_vs_HOU.md
+    home: TEN
+    away: HOU
+    spread: -10.0
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w11/ATL_vs_NE.md
+    home: ATL
+    away: NE
+    spread: +5.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false

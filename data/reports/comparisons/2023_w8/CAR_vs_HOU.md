@@ -4,19 +4,21 @@
 
 | Metric | CAR | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.021 | -0.043 | ↑ +0.023 |
-| Core EPA Defense | -0.043 | -0.021 | ↓ -0.023 |
-| Success Rate Offense | 41.0% | 39.4% | ↑ +1.5 pp |
-| Success Rate Defense | 39.4% | 41.0% | ↓ -1.5 pp |
-| Explosive Play Rate (Off) | 4.8% | 8.5% | ↓ -3.6 pp |
-| Third Down Conversion | 33.3% | 38.5% | ↓ -5.1 pp |
-| Points per Drive Differential | -0.081 | 0.081 | ↓ -0.162 |
-| Yards per Play Differential | -0.527 | 0.527 | ↓ -1.053 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 5.3% | 20.0% | ↓ -14.7 pp |
-| Pressure Rate (Def) | 7.4% | 16.2% | ↓ -8.8 pp |
-| Tempo | 7.545 | 7.889 | ↓ -0.343 |
-| PowerScore | 0.096 | 0.096 | ↓ -0.000 |
+| Core EPA Offense | -0.100 | -0.000 | -0.100 |
+| Core EPA Defense | 0.064 | -0.063 | 0.128 |
+| Success Rate Offense | 0.403 | 0.406 | -0.003 |
+| Success Rate Defense | 0.482 | 0.419 | 0.063 |
+| Explosive Play Rate (Off) | 0.070 | 0.107 | -0.037 |
+| Third Down Conversion | 0.329 | 0.412 | -0.083 |
+| Points per Drive Differential | -1.058 | 0.315 | -1.374 |
+| Yards per Play Differential | -1.040 | 0.039 | -1.079 |
+| Turnover Margin | -0.500 | 0.833 | -1.333 |
+| Red Zone TD Rate (Off) | 0.152 | 0.080 | 0.072 |
+| Pressure Rate (Def) | 0.078 | 0.048 | 0.030 |
+| Tempo | 7.545 | 7.889 | -0.343 |
+| PowerScore | 0.096 | 0.096 | -0.000 |
+| PowerScore | 0.096 | 0.096 | -0.000 |
+| Tempo | 7.545 | 7.889 | -0.343 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ HOU edge: +0.000 (CAR +0.096 vs HOU +0.096)
 **7 metrics version:**
 CAR edge: +0.176 (CAR +0.165 vs HOU -0.011)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.176), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CAR edge: +0.176 (CAR +0.165 vs HOU -0.011)
 | Model Spread (CAR - HOU) | -0.0 pts (favours HOU) |
 | Model Win% CAR | 50.0% |
 | Model Win% HOU | 50.0% |
-| SOS Differential (CAR-HOU) | +0.045 |
+| SOS Differential (CAR-HOU) | -0.192 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.147 | 0.102 |
-| Last 5 games | 0.165 | 0.111 |
-| Last 3 games | 0.161 | 0.084 |
+| Season-to-date | 1.486 | 1.678 |
+| Last 5 games | 1.561 | 1.719 |
+| Last 3 games | 1.455 | 1.713 |
 
 ## Trend Summary (last 3 weeks)
 

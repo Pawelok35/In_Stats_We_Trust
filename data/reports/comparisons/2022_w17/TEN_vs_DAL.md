@@ -4,19 +4,21 @@
 
 | Metric | TEN | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.129 | 0.091 | ↓ -0.220 |
-| Core EPA Defense | 0.091 | -0.129 | ↑ +0.220 |
-| Success Rate Offense | 30.5% | 45.2% | ↓ -14.7 pp |
-| Success Rate Defense | 45.2% | 30.5% | ↑ +14.7 pp |
-| Explosive Play Rate (Off) | 9.8% | 5.4% | ↑ +4.4 pp |
-| Third Down Conversion | 43.8% | 53.3% | ↓ -9.6 pp |
-| Points per Drive Differential | -1.371 | 1.371 | ↓ -2.742 |
-| Yards per Play Differential | -0.016 | 0.016 | ↓ -0.032 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 10.0% | 21.4% | ↓ -11.4 pp |
-| Pressure Rate (Def) | 2.4% | 4.9% | ↓ -2.5 pp |
-| Tempo | 6.833 | 8.455 | ↓ -1.621 |
-| PowerScore | 0.069 | 0.130 | ↓ -0.061 |
+| Core EPA Offense | -0.062 | 0.041 | -0.103 |
+| Core EPA Defense | -0.020 | -0.080 | 0.060 |
+| Success Rate Offense | 0.418 | 0.448 | -0.031 |
+| Success Rate Defense | 0.409 | 0.400 | 0.009 |
+| Explosive Play Rate (Off) | 0.094 | 0.112 | -0.018 |
+| Third Down Conversion | 0.340 | 0.428 | -0.087 |
+| Points per Drive Differential | -0.259 | 0.749 | -1.007 |
+| Yards per Play Differential | -0.383 | 0.464 | -0.847 |
+| Turnover Margin | 0.200 | 0.800 | -0.600 |
+| Red Zone TD Rate (Off) | 0.160 | 0.163 | -0.003 |
+| Pressure Rate (Def) | 0.060 | 0.095 | -0.035 |
+| Tempo | 6.833 | 8.455 | -1.621 |
+| PowerScore | 1.416 | 1.810 | -0.394 |
+| PowerScore | 1.416 | 1.810 | -0.394 |
+| Tempo | 6.833 | 8.455 | -1.621 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DAL edge: +0.061 (TEN +0.069 vs DAL +0.130)
 **7 metrics version:**
 TEN edge: +0.157 (TEN +0.154 vs DAL -0.004)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.157), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - DAL) | -1.1 pts (favours DAL) |
-| Model Win% TEN | 45.3% |
-| Model Win% DAL | 54.7% |
-| SOS Differential (TEN-DAL) | +0.002 |
+| Model Spread (TEN - DAL) | -7.3 pts (favours DAL) |
+| Model Win% TEN | 22.9% |
+| Model Win% DAL | 77.1% |
+| SOS Differential (TEN-DAL) | +0.008 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.103 | 0.101 |
-| Last 5 games | 0.118 | 0.133 |
-| Last 3 games | 0.096 | 0.164 |
+| Season-to-date | 1.588 | 1.580 |
+| Last 5 games | 1.596 | 1.528 |
+| Last 3 games | 1.465 | 1.538 |
 
 ## Trend Summary (last 3 weeks)
 

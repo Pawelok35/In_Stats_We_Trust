@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 13
 
-_Generated at 2025-11-10T20:39:17.897187+00:00 (UTC)_
+_Generated at 2026-01-02T10:28:37.732698+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\13_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2329, "cols": 18, "timestamp": "2025-11-10T20:39:17.417975+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2329, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:39:17.417975+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2329, "cols": 24, "timestamp": "2025-11-10T20:39:17.417975+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2329, "cols": 18, "timestamp": "2026-01-02T10:28:37.338712+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2329, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:28:37.338712+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2329, "cols": 24, "timestamp": "2026-01-02T10:28:37.338712+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\13_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\13.parquet`
 - Manifest: `data\l4_core12\2023\13_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 26
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\13_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| SF | 0.34416089981156167 |
-| GB | 0.2494933985562731 |
-| MIA | 0.2461640932413696 |
-| DAL | 0.24191437564514978 |
-| KC | 0.2340129077003674 |
-| PHI | 0.2153024454218279 |
-| SEA | 0.21194518455018235 |
-| CIN | 0.21028002517879116 |
-| JAX | 0.19013104601886482 |
-| LA | 0.12562198478717118 |
+| GB | 2.226993398556273 |
+| KC | 2.1887597431434056 |
+| PHI | 2.175102695109718 |
+| DAL | 2.13195766568844 |
+| SF | 2.021505777156439 |
+| SEA | 1.9358532305271938 |
+| ARI | 1.7580943908401379 |
+| JAX | 1.7312657977919144 |
+| MIA | 1.7018397689170455 |
+| CIN | 1.688057802956569 |
 
 
 ## Visualizations

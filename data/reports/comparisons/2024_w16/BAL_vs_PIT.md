@@ -4,19 +4,21 @@
 
 | Metric | BAL | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.166 | -0.083 | ↑ +0.248 |
-| Core EPA Defense | -0.083 | 0.166 | ↓ -0.248 |
-| Success Rate Offense | 55.1% | 47.4% | ↑ +7.7 pp |
-| Success Rate Defense | 47.4% | 55.1% | ↓ -7.7 pp |
-| Explosive Play Rate (Off) | 15.4% | 9.0% | ↑ +6.4 pp |
-| Third Down Conversion | 36.4% | 36.4% | ± 0.0 pp |
-| Points per Drive Differential | 1.000 | -1.000 | ↑ +2.000 |
-| Yards per Play Differential | 1.321 | -1.321 | ↑ +2.641 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 15.8% | 33.3% | ↓ -17.5 pp |
-| Pressure Rate (Def) | 8.3% | 3.7% | ↑ +4.6 pp |
-| Tempo | 7.091 | 7.091 | ± 0.000 |
-| PowerScore | 0.210 | 0.141 | ↑ +0.069 |
+| Core EPA Offense | 0.140 | 0.021 | 0.118 |
+| Core EPA Defense | 0.046 | -0.067 | 0.113 |
+| Success Rate Offense | 0.509 | 0.458 | 0.052 |
+| Success Rate Defense | 0.464 | 0.464 | -0.000 |
+| Explosive Play Rate (Off) | 0.139 | 0.099 | 0.040 |
+| Third Down Conversion | 0.446 | 0.350 | 0.096 |
+| Points per Drive Differential | 0.637 | 0.254 | 0.383 |
+| Yards per Play Differential | 1.217 | -0.019 | 1.236 |
+| Turnover Margin | 0.143 | 0.857 | -0.714 |
+| Red Zone TD Rate (Off) | 0.222 | 0.114 | 0.108 |
+| Pressure Rate (Def) | 0.079 | 0.070 | 0.008 |
+| Tempo | 7.091 | 7.091 | 0.000 |
+| PowerScore | 0.210 | 0.141 | 0.069 |
+| PowerScore | 0.210 | 0.141 | 0.069 |
+| Tempo | 7.091 | 7.091 | 0.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BAL edge: +0.069 (BAL +0.210 vs PIT +0.141)
 **7 metrics version:**
 BAL edge: +0.217 (BAL +0.247 vs PIT +0.030)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.217), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ BAL edge: +0.217 (BAL +0.247 vs PIT +0.030)
 | Model Spread (BAL - PIT) | +1.3 pts (favours BAL) |
 | Model Win% BAL | 55.3% |
 | Model Win% PIT | 44.7% |
-| SOS Differential (BAL-PIT) | +0.063 |
+| SOS Differential (BAL-PIT) | +0.143 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.180 | 0.117 |
-| Last 5 games | 0.167 | 0.122 |
-| Last 3 games | 0.179 | 0.151 |
+| Season-to-date | 1.744 | 1.601 |
+| Last 5 games | 1.813 | 1.670 |
+| Last 3 games | 1.850 | 1.847 |
 
 ## Trend Summary (last 3 weeks)
 

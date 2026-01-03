@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 9
 
-_Generated at 2025-11-10T17:49:59.830551+00:00 (UTC)_
+_Generated at 2025-12-28T14:31:32.560970+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2651, "cols": 18, "timestamp": "2025-11-10T17:49:59.232696+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2651, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:49:59.232696+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2651, "cols": 24, "timestamp": "2025-11-10T17:49:59.232696+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2651, "cols": 18, "timestamp": "2025-12-28T14:31:32.186454+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2651, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:31:32.186454+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2651, "cols": 24, "timestamp": "2025-12-28T14:31:32.186454+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\9_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\9.parquet`
 - Manifest: `data\l4_core12\2024\9_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\9_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| MIA | 0.2866283923181811 |
-| BUF | 0.27902765762696013 |
-| BAL | 0.27313686718813557 |
-| WAS | 0.271826362285572 |
-| NYG | 0.23992170758645695 |
-| KC | 0.22709739410228272 |
-| TB | 0.20242715476762616 |
-| NYJ | 0.17584478155124247 |
-| CIN | 0.1743072574788823 |
-| DET | 0.1657702635912135 |
+| BUF | 2.26402765762696 |
+| NYG | 2.1591524768172263 |
+| WAS | 2.122826362285572 |
+| HOU | 2.0297863652018213 |
+| MIA | 2.014335846607914 |
+| GB | 1.8982454827850983 |
+| KC | 1.8926089452573982 |
+| NO | 1.8836072564973627 |
+| DEN | 1.83532787603349 |
+| DAL | 1.8081033671051483 |
 
 
 ## Visualizations

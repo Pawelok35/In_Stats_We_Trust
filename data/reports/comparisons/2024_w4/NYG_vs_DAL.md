@@ -4,19 +4,21 @@
 
 | Metric | NYG | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.018 | 0.108 | ↓ -0.090 |
-| Core EPA Defense | 0.108 | 0.018 | ↑ +0.090 |
-| Success Rate Offense | 42.2% | 51.4% | ↓ -9.2 pp |
-| Success Rate Defense | 51.4% | 42.2% | ↑ +9.2 pp |
-| Explosive Play Rate (Off) | 7.2% | 6.9% | ↑ +0.3 pp |
-| Third Down Conversion | 27.8% | 25.0% | ↑ +2.8 pp |
-| Points per Drive Differential | -0.556 | 0.556 | ↓ -1.111 |
-| Yards per Play Differential | -0.419 | 0.419 | ↓ -0.838 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 25.0% | ↓ -25.0 pp |
-| Pressure Rate (Def) | 3.4% | 2.4% | ↑ +1.1 pp |
-| Tempo | 9.222 | 8.000 | ↑ +1.222 |
-| PowerScore | 0.148 | 0.184 | ↓ -0.036 |
+| Core EPA Offense | -0.096 | -0.016 | -0.080 |
+| Core EPA Defense | -0.009 | 0.071 | -0.080 |
+| Success Rate Offense | 0.422 | 0.428 | -0.006 |
+| Success Rate Defense | 0.454 | 0.449 | 0.004 |
+| Explosive Play Rate (Off) | 0.080 | 0.095 | -0.015 |
+| Third Down Conversion | 0.327 | 0.369 | -0.042 |
+| Points per Drive Differential | -0.296 | -0.801 | 0.505 |
+| Yards per Play Differential | -0.359 | -0.801 | 0.442 |
+| Turnover Margin | -0.333 | 0.000 | -0.333 |
+| Red Zone TD Rate (Off) | 0.142 | 0.133 | 0.010 |
+| Pressure Rate (Def) | 0.116 | 0.056 | 0.060 |
+| Tempo | 9.222 | 8.000 | 1.222 |
+| PowerScore | 1.978 | 1.770 | 0.208 |
+| PowerScore | 1.978 | 1.770 | 0.208 |
+| Tempo | 9.222 | 8.000 | 1.222 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DAL edge: +0.036 (NYG +0.148 vs DAL +0.184)
 **7 metrics version:**
 DAL edge: +0.242 (NYG +0.000 vs DAL +0.242)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.242), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - DAL) | -0.7 pts (favours DAL) |
-| Model Win% NYG | 47.2% |
-| Model Win% DAL | 52.8% |
-| SOS Differential (NYG-DAL) | -0.041 |
+| Model Spread (NYG - DAL) | +3.8 pts (favours NYG) |
+| Model Win% NYG | 65.5% |
+| Model Win% DAL | 34.5% |
+| SOS Differential (NYG-DAL) | +0.018 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.116 | 0.157 |
-| Last 5 games | 0.116 | 0.157 |
-| Last 3 games | 0.116 | 0.157 |
+| Season-to-date | 1.560 | 1.543 |
+| Last 5 games | 1.560 | 1.543 |
+| Last 3 games | 1.560 | 1.543 |
 
 ## Trend Summary (last 3 weeks)
 

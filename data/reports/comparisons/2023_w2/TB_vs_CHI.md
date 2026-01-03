@@ -4,19 +4,21 @@
 
 | Metric | TB | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.040 | -0.092 | ↑ +0.132 |
-| Core EPA Defense | -0.092 | 0.040 | ↓ -0.132 |
-| Success Rate Offense | 41.1% | 42.6% | ↓ -1.5 pp |
-| Success Rate Defense | 42.6% | 41.1% | ↑ +1.5 pp |
-| Explosive Play Rate (Off) | 11.1% | 8.8% | ↑ +2.3 pp |
-| Third Down Conversion | 44.4% | 46.2% | ↓ -1.7 pp |
-| Points per Drive Differential | 0.209 | -0.209 | ↑ +0.418 |
-| Yards per Play Differential | 1.385 | -1.385 | ↑ +2.770 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 6.7% | 40.0% | ↓ -33.3 pp |
-| Pressure Rate (Def) | 20.0% | 0.0% | ↑ +20.0 pp |
-| Tempo | 8.182 | 6.800 | ↑ +1.382 |
-| PowerScore | 0.121 | 0.100 | ↑ +0.021 |
+| Core EPA Offense | -0.045 | -0.163 | 0.118 |
+| Core EPA Defense | -0.121 | 0.110 | -0.231 |
+| Success Rate Offense | 0.368 | 0.407 | -0.039 |
+| Success Rate Defense | 0.388 | 0.392 | -0.005 |
+| Explosive Play Rate (Off) | 0.023 | 0.099 | -0.076 |
+| Third Down Conversion | 0.333 | 0.231 | 0.103 |
+| Points per Drive Differential | 0.121 | -1.000 | 1.121 |
+| Yards per Play Differential | -1.831 | -0.725 | -1.106 |
+| Turnover Margin | 3.000 | -2.000 | 5.000 |
+| Red Zone TD Rate (Off) | 0.091 | 0.143 | -0.052 |
+| Pressure Rate (Def) | 0.043 | 0.036 | 0.008 |
+| Tempo | 8.182 | 6.800 | 1.382 |
+| PowerScore | 0.121 | 0.100 | 0.021 |
+| PowerScore | 0.121 | 0.100 | 0.021 |
+| Tempo | 8.182 | 6.800 | 1.382 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TB edge: +0.021 (TB +0.121 vs CHI +0.100)
 **7 metrics version:**
 TB edge: +0.393 (TB +0.291 vs CHI -0.102)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.393), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ TB edge: +0.393 (TB +0.291 vs CHI -0.102)
 | Model Spread (TB - CHI) | +0.4 pts (favours TB) |
 | Model Win% TB | 51.6% |
 | Model Win% CHI | 48.4% |
-| SOS Differential (TB-CHI) | -0.056 |
+| SOS Differential (TB-CHI) | +0.079 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.066 | 0.122 |
-| Last 5 games | 0.066 | 0.122 |
-| Last 3 games | 0.066 | 0.122 |
+| Season-to-date | 1.500 | 1.421 |
+| Last 5 games | 1.500 | 1.421 |
+| Last 3 games | 1.500 | 1.421 |
 
 ## Matchup Analogs
 

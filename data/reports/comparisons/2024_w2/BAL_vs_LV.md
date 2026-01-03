@@ -4,19 +4,21 @@
 
 | Metric | BAL | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.034 | 0.030 | ↓ -0.064 |
-| Core EPA Defense | 0.030 | -0.034 | ↑ +0.064 |
-| Success Rate Offense | 44.9% | 49.4% | ↓ -4.4 pp |
-| Success Rate Defense | 49.4% | 44.9% | ↑ +4.4 pp |
-| Explosive Play Rate (Off) | 11.2% | 7.6% | ↑ +3.6 pp |
-| Third Down Conversion | 21.4% | 30.8% | ↓ -9.3 pp |
-| Points per Drive Differential | -0.250 | 0.250 | ↓ -0.500 |
-| Yards per Play Differential | 0.731 | -0.731 | ↑ +1.463 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 28.6% | 14.3% | ↑ +14.3 pp |
-| Pressure Rate (Def) | 11.4% | 5.6% | ↑ +5.8 pp |
-| Tempo | 7.417 | 6.583 | ↑ +0.833 |
-| PowerScore | 0.129 | 0.142 | ↓ -0.013 |
+| Core EPA Offense | 0.021 | -0.312 | 0.333 |
+| Core EPA Defense | 0.124 | -0.123 | 0.247 |
+| Success Rate Offense | 0.552 | 0.392 | 0.160 |
+| Success Rate Defense | 0.471 | 0.359 | 0.112 |
+| Explosive Play Rate (Off) | 0.125 | 0.095 | 0.030 |
+| Third Down Conversion | 0.438 | 0.333 | 0.104 |
+| Points per Drive Differential | -0.700 | -0.923 | 0.223 |
+| Yards per Play Differential | -0.335 | -0.051 | -0.283 |
+| Turnover Margin | 0.000 | -3.000 | 3.000 |
+| Red Zone TD Rate (Off) | 0.059 | 0.000 | 0.059 |
+| Pressure Rate (Def) | 0.065 | 0.033 | 0.031 |
+| Tempo | 7.417 | 6.583 | 0.833 |
+| PowerScore | 1.590 | 1.444 | 0.146 |
+| PowerScore | 1.590 | 1.444 | 0.146 |
+| Tempo | 7.417 | 6.583 | 0.833 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LV edge: +0.013 (BAL +0.129 vs LV +0.142)
 **7 metrics version:**
 BAL edge: +0.014 (BAL +0.116 vs LV +0.102)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.014), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - LV) | -0.2 pts (favours LV) |
-| Model Win% BAL | 49.0% |
-| Model Win% LV | 51.0% |
-| SOS Differential (BAL-LV) | +0.192 |
+| Model Spread (BAL - LV) | +2.7 pts (favours BAL) |
+| Model Win% BAL | 61.1% |
+| Model Win% LV | 38.9% |
+| SOS Differential (BAL-LV) | +0.381 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | LV |
 | --- | ---: | ---: |
-| Season-to-date | 0.191 | -0.000 |
-| Last 5 games | 0.191 | -0.000 |
-| Last 3 games | 0.191 | -0.000 |
+| Season-to-date | 1.565 | 1.184 |
+| Last 5 games | 1.565 | 1.184 |
+| Last 3 games | 1.565 | 1.184 |
 
 ## Matchup Analogs
 

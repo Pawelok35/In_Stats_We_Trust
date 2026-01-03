@@ -4,19 +4,21 @@
 
 | Metric | ATL | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.064 | -0.213 | ↑ +0.150 |
-| Core EPA Defense | -0.213 | -0.064 | ↓ -0.150 |
-| Success Rate Offense | 40.0% | 37.4% | ↑ +2.6 pp |
-| Success Rate Defense | 37.4% | 40.0% | ↓ -2.6 pp |
-| Explosive Play Rate (Off) | 10.0% | 6.6% | ↑ +3.4 pp |
-| Third Down Conversion | 16.7% | 31.2% | ↓ -14.6 pp |
-| Points per Drive Differential | 1.013 | -1.013 | ↑ +2.026 |
-| Yards per Play Differential | 0.069 | -0.069 | ↑ +0.138 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 30.0% | 12.5% | ↑ +17.5 pp |
-| Pressure Rate (Def) | 7.5% | 17.4% | ↓ -9.9 pp |
-| Tempo | 5.385 | 7.583 | ↓ -2.199 |
-| PowerScore | 0.055 | 0.019 | ↑ +0.036 |
+| Core EPA Offense | -0.064 | -0.213 | 0.150 |
+| Core EPA Defense | -0.213 | -0.064 | -0.150 |
+| Success Rate Offense | 0.400 | 0.374 | 0.026 |
+| Success Rate Defense | 0.374 | 0.400 | -0.026 |
+| Explosive Play Rate (Off) | 0.100 | 0.066 | 0.034 |
+| Third Down Conversion | 0.167 | 0.312 | -0.146 |
+| Points per Drive Differential | 1.013 | -1.013 | 2.026 |
+| Yards per Play Differential | 0.069 | -0.069 | 0.138 |
+| Turnover Margin | 3.000 | -3.000 | 6.000 |
+| Red Zone TD Rate (Off) | 0.300 | 0.125 | 0.175 |
+| Pressure Rate (Def) | 0.075 | 0.174 | -0.099 |
+| Tempo | 5.385 | 7.583 | -2.199 |
+| PowerScore | 1.112 | 1.523 | -0.411 |
+| PowerScore | 1.112 | 1.523 | -0.411 |
+| Tempo | 5.385 | 7.583 | -2.199 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ ATL edge: +0.036 (ATL +0.055 vs CAR +0.019)
 **7 metrics version:**
 ATL edge: +0.622 (ATL +0.349 vs CAR -0.274)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.622), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - CAR) | +0.7 pts (favours ATL) |
-| Model Win% ATL | 52.8% |
-| Model Win% CAR | 47.2% |
+| Model Spread (ATL - CAR) | -7.6 pts (favours CAR) |
+| Model Win% ATL | 22.0% |
+| Model Win% CAR | 78.0% |
 | SOS Differential (ATL-CAR) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

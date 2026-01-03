@@ -4,19 +4,21 @@
 
 | Metric | CHI | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.297 | -0.036 | ↓ -0.261 |
-| Core EPA Defense | -0.036 | -0.297 | ↑ +0.261 |
-| Success Rate Offense | 35.0% | 48.1% | ↓ -13.1 pp |
-| Success Rate Defense | 48.1% | 35.0% | ↑ +13.1 pp |
-| Explosive Play Rate (Off) | 2.5% | 10.1% | ↓ -7.6 pp |
-| Third Down Conversion | 6.2% | 35.7% | ↓ -29.5 pp |
-| Points per Drive Differential | -1.311 | 1.311 | ↓ -2.621 |
-| Yards per Play Differential | -2.377 | 2.377 | ↓ -4.754 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 5.6% | ↓ -5.6 pp |
-| Pressure Rate (Def) | 3.7% | 23.1% | ↓ -19.4 pp |
-| Tempo | 7.273 | 6.583 | ↑ +0.689 |
-| PowerScore | -0.019 | 0.069 | ↓ -0.087 |
+| Core EPA Offense | -0.031 | -0.094 | 0.063 |
+| Core EPA Defense | -0.070 | 0.043 | -0.113 |
+| Success Rate Offense | 0.431 | 0.447 | -0.015 |
+| Success Rate Defense | 0.435 | 0.476 | -0.040 |
+| Explosive Play Rate (Off) | 0.084 | 0.078 | 0.005 |
+| Third Down Conversion | 0.258 | 0.309 | -0.051 |
+| Points per Drive Differential | 0.179 | -0.634 | 0.813 |
+| Yards per Play Differential | -0.667 | -1.208 | 0.542 |
+| Turnover Margin | 0.875 | -0.556 | 1.431 |
+| Red Zone TD Rate (Off) | 0.114 | 0.097 | 0.016 |
+| Pressure Rate (Def) | 0.084 | 0.050 | 0.034 |
+| Tempo | 7.273 | 6.583 | 0.689 |
+| PowerScore | -0.019 | 0.069 | -0.087 |
+| PowerScore | -0.019 | 0.069 | -0.087 |
+| Tempo | 7.273 | 6.583 | 0.689 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NE edge: +0.087 (CHI -0.019 vs NE +0.069)
 **7 metrics version:**
 CHI edge: +0.135 (CHI +0.077 vs NE -0.057)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.135), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CHI edge: +0.135 (CHI +0.077 vs NE -0.057)
 | Model Spread (CHI - NE) | -1.6 pts (favours NE) |
 | Model Win% CHI | 43.3% |
 | Model Win% NE | 56.7% |
-| SOS Differential (CHI-NE) | -0.035 |
+| SOS Differential (CHI-NE) | -0.249 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.101 | 0.135 |
-| Last 5 games | 0.138 | 0.138 |
-| Last 3 games | 0.141 | 0.162 |
+| Season-to-date | 1.424 | 1.672 |
+| Last 5 games | 1.534 | 1.636 |
+| Last 3 games | 1.554 | 1.723 |
 
 ## Trend Summary (last 3 weeks)
 

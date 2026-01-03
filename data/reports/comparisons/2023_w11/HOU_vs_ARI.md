@@ -4,19 +4,21 @@
 
 | Metric | HOU | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.021 | -0.048 | ↑ +0.027 |
-| Core EPA Defense | -0.048 | -0.021 | ↓ -0.027 |
-| Success Rate Offense | 44.3% | 39.4% | ↑ +4.9 pp |
-| Success Rate Defense | 39.4% | 44.3% | ↓ -4.9 pp |
-| Explosive Play Rate (Off) | 17.7% | 11.3% | ↑ +6.5 pp |
-| Third Down Conversion | 69.2% | 25.0% | ↑ +44.2 pp |
-| Points per Drive Differential | 0.309 | -0.309 | ↑ +0.618 |
-| Yards per Play Differential | 0.811 | -0.811 | ↑ +1.622 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 13.3% | 16.7% | ↓ -3.3 pp |
-| Pressure Rate (Def) | 9.1% | 9.3% | ↓ -0.2 pp |
-| Tempo | 7.182 | 7.100 | ↑ +0.082 |
-| PowerScore | 0.129 | 0.100 | ↑ +0.029 |
+| Core EPA Offense | 0.022 | -0.106 | 0.129 |
+| Core EPA Defense | -0.020 | 0.041 | -0.061 |
+| Success Rate Offense | 0.408 | 0.382 | 0.026 |
+| Success Rate Defense | 0.418 | 0.457 | -0.040 |
+| Explosive Play Rate (Off) | 0.120 | 0.088 | 0.033 |
+| Third Down Conversion | 0.371 | 0.320 | 0.051 |
+| Points per Drive Differential | 0.252 | -0.800 | 1.052 |
+| Yards per Play Differential | 0.416 | -0.575 | 0.991 |
+| Turnover Margin | 0.333 | -0.700 | 1.033 |
+| Red Zone TD Rate (Off) | 0.114 | 0.108 | 0.006 |
+| Pressure Rate (Def) | 0.067 | 0.087 | -0.020 |
+| Tempo | 7.182 | 7.100 | 0.082 |
+| PowerScore | 0.129 | 0.100 | 0.029 |
+| PowerScore | 0.129 | 0.100 | 0.029 |
+| Tempo | 7.182 | 7.100 | 0.082 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ HOU edge: +0.029 (HOU +0.129 vs ARI +0.100)
 **7 metrics version:**
 ARI edge: +0.588 (HOU -0.208 vs ARI +0.380)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.588), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ ARI edge: +0.588 (HOU -0.208 vs ARI +0.380)
 | Model Spread (HOU - ARI) | +0.5 pts (favours HOU) |
 | Model Win% HOU | 52.2% |
 | Model Win% ARI | 47.8% |
-| SOS Differential (HOU-ARI) | -0.005 |
+| SOS Differential (HOU-ARI) | -0.057 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.121 | 0.126 |
-| Last 5 games | 0.140 | 0.091 |
-| Last 3 games | 0.160 | 0.073 |
+| Season-to-date | 1.626 | 1.682 |
+| Last 5 games | 1.641 | 1.502 |
+| Last 3 games | 1.522 | 1.481 |
 
 ## Trend Summary (last 3 weeks)
 

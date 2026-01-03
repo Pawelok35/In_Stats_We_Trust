@@ -4,19 +4,21 @@
 
 | Metric | PHI | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.054 | -0.211 | ↑ +0.158 |
-| Core EPA Defense | -0.211 | -0.054 | ↓ -0.158 |
-| Success Rate Offense | 42.9% | 43.3% | ↓ -0.5 pp |
-| Success Rate Defense | 43.3% | 42.9% | ↑ +0.5 pp |
-| Explosive Play Rate (Off) | 13.3% | 11.7% | ↑ +1.6 pp |
-| Third Down Conversion | 26.7% | 28.6% | ↓ -1.9 pp |
-| Points per Drive Differential | 1.167 | -1.167 | ↑ +2.333 |
-| Yards per Play Differential | 0.442 | -0.442 | ↑ +0.884 |
-| Turnover Margin | 4.000 | -4.000 | ↑ +8.000 |
-| Red Zone TD Rate (Off) | 14.8% | 22.2% | ↓ -7.4 pp |
-| Pressure Rate (Def) | 14.8% | 6.5% | ↑ +8.4 pp |
-| Tempo | 8.167 | 5.000 | ↑ +3.167 |
-| PowerScore | 0.073 | 0.047 | ↑ +0.026 |
+| Core EPA Offense | 0.081 | 0.099 | -0.018 |
+| Core EPA Defense | -0.088 | -0.178 | 0.090 |
+| Success Rate Offense | 0.451 | 0.458 | -0.008 |
+| Success Rate Defense | 0.420 | 0.339 | 0.081 |
+| Explosive Play Rate (Off) | 0.137 | 0.084 | 0.052 |
+| Third Down Conversion | 0.424 | 0.394 | 0.029 |
+| Points per Drive Differential | 0.924 | 1.374 | -0.449 |
+| Yards per Play Differential | 1.474 | 0.460 | 1.013 |
+| Turnover Margin | 1.333 | 2.333 | -1.000 |
+| Red Zone TD Rate (Off) | 0.145 | 0.124 | 0.021 |
+| Pressure Rate (Def) | 0.079 | 0.069 | 0.010 |
+| Tempo | 8.167 | 5.000 | 3.167 |
+| PowerScore | 1.680 | 1.024 | 0.656 |
+| PowerScore | 1.680 | 1.024 | 0.656 |
+| Tempo | 8.167 | 5.000 | 3.167 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PHI edge: +0.026 (PHI +0.073 vs JAX +0.047)
 **7 metrics version:**
 PHI edge: +0.810 (PHI +0.452 vs JAX -0.358)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.810), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - JAX) | +0.5 pts (favours PHI) |
-| Model Win% PHI | 52.0% |
-| Model Win% JAX | 48.0% |
-| SOS Differential (PHI-JAX) | +0.051 |
+| Model Spread (PHI - JAX) | +12.1 pts (favours PHI) |
+| Model Win% PHI | 88.3% |
+| Model Win% JAX | 11.7% |
+| SOS Differential (PHI-JAX) | +0.179 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PHI | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.110 | 0.060 |
-| Last 5 games | 0.110 | 0.060 |
-| Last 3 games | 0.110 | 0.060 |
+| Season-to-date | 1.639 | 1.460 |
+| Last 5 games | 1.639 | 1.460 |
+| Last 3 games | 1.639 | 1.460 |
 
 ## Trend Summary (last 3 weeks)
 

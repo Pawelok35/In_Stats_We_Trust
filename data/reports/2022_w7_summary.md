@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 7
 
-_Generated at 2025-11-11T12:24:08.184674+00:00 (UTC)_
+_Generated at 2026-01-02T11:31:11.743150+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\7_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2390, "cols": 18, "timestamp": "2025-11-11T12:24:07.720808+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2390, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:24:07.720808+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2390, "cols": 24, "timestamp": "2025-11-11T12:24:07.720808+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2390, "cols": 18, "timestamp": "2026-01-02T11:31:11.316486+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2390, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:31:11.316486+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2390, "cols": 24, "timestamp": "2026-01-02T11:31:11.316486+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\7_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\7.parquet`
 - Manifest: `data\l4_core12\2022\7_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\7_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| KC | 0.31543011091656437 |
-| LV | 0.2604558844917857 |
-| CIN | 0.2444387870859505 |
-| SF | 0.23609053635241262 |
-| NYG | 0.22423495773446725 |
-| JAX | 0.18440853406754118 |
-| HOU | 0.1802344716513196 |
-| NO | 0.17862678092091722 |
-| ARI | 0.1769178500508935 |
-| ATL | 0.1550202241119948 |
+| NYG | 2.4222686655996357 |
+| JAX | 2.114964089623097 |
+| CIN | 2.082534025181189 |
+| SF | 1.966737209267127 |
+| HOU | 1.9330122494290976 |
+| KC | 1.8779301109165645 |
+| LV | 1.8616570856929868 |
+| WAS | 1.7358986672848016 |
+| ARI | 1.7126472369430712 |
+| NO | 1.6858731577325115 |
 
 
 ## Visualizations

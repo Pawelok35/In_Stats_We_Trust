@@ -4,19 +4,21 @@
 
 | Metric | NYJ | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.267 | -0.170 | ↓ -0.097 |
-| Core EPA Defense | -0.170 | -0.267 | ↑ +0.097 |
-| Success Rate Offense | 30.6% | 33.3% | ↓ -2.7 pp |
-| Success Rate Defense | 33.3% | 30.6% | ↑ +2.7 pp |
-| Explosive Play Rate (Off) | 5.9% | 3.4% | ↑ +2.4 pp |
-| Third Down Conversion | 12.5% | 26.7% | ↓ -14.2 pp |
-| Points per Drive Differential | -0.405 | 0.405 | ↓ -0.810 |
-| Yards per Play Differential | 0.817 | -0.817 | ↑ +1.634 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 16.7% | ↓ -16.7 pp |
-| Pressure Rate (Def) | 9.7% | 9.5% | ↑ +0.2 pp |
-| Tempo | 6.538 | 5.800 | ↑ +0.738 |
-| PowerScore | -0.039 | -0.023 | ↓ -0.017 |
+| Core EPA Offense | -0.182 | -0.066 | -0.116 |
+| Core EPA Defense | -0.068 | -0.034 | -0.034 |
+| Success Rate Offense | 0.361 | 0.410 | -0.050 |
+| Success Rate Defense | 0.394 | 0.401 | -0.007 |
+| Explosive Play Rate (Off) | 0.070 | 0.109 | -0.040 |
+| Third Down Conversion | 0.209 | 0.388 | -0.180 |
+| Points per Drive Differential | -0.628 | -0.145 | -0.483 |
+| Yards per Play Differential | -0.433 | 0.069 | -0.501 |
+| Turnover Margin | -0.091 | -0.545 | 0.455 |
+| Red Zone TD Rate (Off) | 0.071 | 0.130 | -0.059 |
+| Pressure Rate (Def) | 0.084 | 0.058 | 0.026 |
+| Tempo | 6.538 | 5.800 | 0.738 |
+| PowerScore | -0.039 | -0.023 | -0.017 |
+| PowerScore | -0.039 | -0.023 | -0.017 |
+| Tempo | 6.538 | 5.800 | 0.738 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.017 (NYJ -0.039 vs ATL -0.023)
 **7 metrics version:**
 ATL edge: +0.623 (NYJ -0.339 vs ATL +0.284)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.623), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ ATL edge: +0.623 (NYJ -0.339 vs ATL +0.284)
 | Model Spread (NYJ - ATL) | -0.3 pts (favours ATL) |
 | Model Win% NYJ | 48.7% |
 | Model Win% ATL | 51.3% |
-| SOS Differential (NYJ-ATL) | -0.037 |
+| SOS Differential (NYJ-ATL) | -0.029 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.057 | 0.094 |
-| Last 5 games | 0.025 | 0.115 |
-| Last 3 games | 0.069 | 0.126 |
+| Season-to-date | 1.476 | 1.505 |
+| Last 5 games | 1.330 | 1.602 |
+| Last 3 games | 1.508 | 1.644 |
 
 ## Trend Summary (last 3 weeks)
 

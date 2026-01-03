@@ -4,19 +4,21 @@
 
 | Metric | HOU | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.408 | -0.003 | ↓ -0.405 |
-| Core EPA Defense | -0.003 | -0.408 | ↑ +0.405 |
-| Success Rate Offense | 26.7% | 48.1% | ↓ -21.3 pp |
-| Success Rate Defense | 48.1% | 26.7% | ↑ +21.3 pp |
-| Explosive Play Rate (Off) | 7.0% | 10.4% | ↓ -3.4 pp |
-| Third Down Conversion | 35.3% | 33.3% | ↑ +2.0 pp |
-| Points per Drive Differential | -1.692 | 1.692 | ↓ -3.385 |
-| Yards per Play Differential | -1.156 | 1.156 | ↓ -2.311 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 18.2% | ↓ -18.2 pp |
-| Pressure Rate (Def) | 6.5% | 4.3% | ↑ +2.1 pp |
-| Tempo | 6.615 | 5.923 | ↑ +0.692 |
-| PowerScore | -0.063 | 0.058 | ↓ -0.121 |
+| Core EPA Offense | -0.115 | 0.028 | -0.143 |
+| Core EPA Defense | -0.013 | -0.003 | -0.010 |
+| Success Rate Offense | 0.386 | 0.448 | -0.062 |
+| Success Rate Defense | 0.439 | 0.434 | 0.005 |
+| Explosive Play Rate (Off) | 0.084 | 0.109 | -0.025 |
+| Third Down Conversion | 0.254 | 0.395 | -0.141 |
+| Points per Drive Differential | -0.379 | -0.052 | -0.327 |
+| Yards per Play Differential | -0.814 | 0.086 | -0.901 |
+| Turnover Margin | -0.267 | 0.333 | -0.600 |
+| Red Zone TD Rate (Off) | 0.144 | 0.132 | 0.012 |
+| Pressure Rate (Def) | 0.082 | 0.055 | 0.027 |
+| Tempo | 6.615 | 5.923 | 0.692 |
+| PowerScore | 1.247 | 1.222 | 0.024 |
+| PowerScore | 1.247 | 1.222 | 0.024 |
+| Tempo | 6.615 | 5.923 | 0.692 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ JAX edge: +0.121 (HOU -0.063 vs JAX +0.058)
 **7 metrics version:**
 HOU edge: +0.128 (HOU +0.051 vs JAX -0.077)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.128), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - JAX) | -2.2 pts (favours JAX) |
-| Model Win% HOU | 40.8% |
-| Model Win% JAX | 59.2% |
-| SOS Differential (HOU-JAX) | -0.026 |
+| Model Spread (HOU - JAX) | +0.5 pts (favours HOU) |
+| Model Win% HOU | 51.9% |
+| Model Win% JAX | 48.1% |
+| SOS Differential (HOU-JAX) | -0.133 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.108 | 0.134 |
-| Last 5 games | 0.068 | 0.151 |
-| Last 3 games | 0.112 | 0.120 |
+| Season-to-date | 1.563 | 1.696 |
+| Last 5 games | 1.394 | 1.750 |
+| Last 3 games | 1.489 | 1.591 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | HOU (H) | 6-14 | HOU | 1.000 | -0.108 | 40.2% | -0.755 |
-| 8 | DEN (A) | 17-19 | DEN | 0.960 | -0.027 | 48.9% | -0.205 |
+| 8 | DEN (H) | 17-19 | DEN | 0.960 | -0.027 | 48.9% | -0.205 |
 | 2 | IND (H) | 24-0 | JAX | 0.928 | 0.081 | 42.2% | 2.000 |
 
 ## Core EPA Offense Form (up to Week 16)

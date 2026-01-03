@@ -1,15 +1,8 @@
 # NFL 2024 Week 8 - Betting Lines
-matchups:
-  # TNF – Vikings @ Rams (Amazon Prime)
-  - report: data/reports/comparisons/2024_w8/LA_vs_MIN.md
-    home: LA
-    away: MIN
-    spread: +2.5
-    total: 47.5
-    prime_time: true
-    neutral_site: false
+season: 2024
+week: 8
 
-  # Niedziela – wczesne okno
+matchups:
   - report: data/reports/comparisons/2024_w8/DET_vs_TEN.md
     home: DET
     away: TEN
@@ -74,7 +67,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # Niedziela – późne okno
   - report: data/reports/comparisons/2024_w8/LAC_vs_NO.md
     home: LAC
     away: "NO"
@@ -115,7 +107,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # SNF – Cowboys @ 49ers
   - report: data/reports/comparisons/2024_w8/SF_vs_DAL.md
     home: SF
     away: DAL
@@ -124,7 +115,6 @@ matchups:
     prime_time: true
     neutral_site: false
 
-  # MNF – Giants @ Steelers
   - report: data/reports/comparisons/2024_w8/PIT_vs_NYG.md
     home: PIT
     away: NYG
@@ -133,4 +123,10 @@ matchups:
     prime_time: true
     neutral_site: false
 
-
+  - report: data/reports/comparisons/2024_w8/LA_vs_MIN.md
+    home: LA
+    away: MIN
+    spread: +2.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false

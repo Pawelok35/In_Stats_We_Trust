@@ -4,19 +4,21 @@
 
 | Metric | DET | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.244 | -0.108 | ↑ +0.351 |
-| Core EPA Defense | -0.108 | 0.244 | ↓ -0.351 |
-| Success Rate Offense | 54.9% | 34.2% | ↑ +20.7 pp |
-| Success Rate Defense | 34.2% | 54.9% | ↓ -20.7 pp |
-| Explosive Play Rate (Off) | 7.7% | 9.6% | ↓ -1.9 pp |
-| Third Down Conversion | 66.7% | 23.1% | ↑ +43.6 pp |
-| Points per Drive Differential | 2.889 | -2.889 | ↑ +5.778 |
-| Yards per Play Differential | 1.131 | -1.131 | ↑ +2.262 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 22.2% | 10.0% | ↑ +12.2 pp |
-| Pressure Rate (Def) | 5.4% | 4.4% | ↑ +1.0 pp |
-| Tempo | 10.111 | 8.111 | ↑ +2.000 |
-| PowerScore | 0.216 | 0.116 | ↑ +0.101 |
+| Core EPA Offense | 0.001 | 0.023 | -0.022 |
+| Core EPA Defense | 0.058 | -0.002 | 0.059 |
+| Success Rate Offense | 0.434 | 0.453 | -0.019 |
+| Success Rate Defense | 0.463 | 0.418 | 0.045 |
+| Explosive Play Rate (Off) | 0.110 | 0.108 | 0.002 |
+| Third Down Conversion | 0.370 | 0.384 | -0.013 |
+| Points per Drive Differential | -0.260 | -0.023 | -0.237 |
+| Yards per Play Differential | -0.512 | -0.053 | -0.459 |
+| Turnover Margin | -0.182 | 0.182 | -0.364 |
+| Red Zone TD Rate (Off) | 0.169 | 0.132 | 0.037 |
+| Pressure Rate (Def) | 0.048 | 0.047 | 0.001 |
+| Tempo | 10.111 | 8.111 | 2.000 |
+| PowerScore | 2.223 | 1.719 | 0.504 |
+| PowerScore | 2.223 | 1.719 | 0.504 |
+| Tempo | 10.111 | 8.111 | 2.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DET edge: +0.101 (DET +0.216 vs JAX +0.116)
 **7 metrics version:**
 DET edge: +0.260 (DET +0.257 vs JAX -0.003)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.260), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - JAX) | +1.9 pts (favours DET) |
-| Model Win% DET | 57.7% |
-| Model Win% JAX | 42.3% |
-| SOS Differential (DET-JAX) | +0.033 |
+| Model Spread (DET - JAX) | +9.3 pts (favours DET) |
+| Model Win% DET | 82.6% |
+| Model Win% JAX | 17.4% |
+| SOS Differential (DET-JAX) | +0.076 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.164 | 0.130 |
-| Last 5 games | 0.163 | 0.171 |
-| Last 3 games | 0.162 | 0.167 |
+| Season-to-date | 1.753 | 1.677 |
+| Last 5 games | 1.869 | 1.741 |
+| Last 3 games | 1.768 | 1.623 |
 
 ## Trend Summary (last 3 weeks)
 

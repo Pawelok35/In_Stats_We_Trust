@@ -4,19 +4,20 @@
 
 | Metric | SEA | DEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.071 | 0.058 | ↑ +0.013 |
-| Core EPA Defense | 0.058 | 0.071 | ↓ -0.013 |
-| Success Rate Offense | 44.8% | 46.3% | ↓ -1.6 pp |
-| Success Rate Defense | 46.3% | 44.8% | ↑ +1.6 pp |
-| Explosive Play Rate (Off) | 13.4% | 13.4% | ↑ +0.0 pp |
-| Third Down Conversion | 50.0% | 50.0% | ± 0.0 pp |
-| Points per Drive Differential | 0.125 | -0.125 | ↑ +0.250 |
-| Yards per Play Differential | -1.504 | 1.504 | ↓ -3.009 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 4.5% | 6.1% | ↓ -1.5 pp |
-| Tempo | 8.375 | 10.250 | ↓ -1.875 |
-| PowerScore | 0.175 | 0.177 | ↓ -0.002 |
+| Core EPA Offense | 0.071 | 0.058 | 0.013 |
+| Core EPA Defense | 0.058 | 0.071 | -0.013 |
+| Success Rate Offense | 0.448 | 0.463 | -0.016 |
+| Success Rate Defense | 0.463 | 0.448 | 0.016 |
+| Explosive Play Rate (Off) | 0.134 | 0.134 | 0.000 |
+| Third Down Conversion | 0.500 | 0.500 | 0.000 |
+| Points per Drive Differential | 0.125 | -0.125 | 0.250 |
+| Yards per Play Differential | -1.504 | 1.504 | -3.009 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Pressure Rate (Def) | 0.045 | 0.061 | -0.015 |
+| Tempo | 8.375 | 10.250 | -1.875 |
+| PowerScore | 1.823 | 2.200 | -0.377 |
+| PowerScore | 1.823 | 2.200 | -0.377 |
+| Tempo | 8.375 | 10.250 | -1.875 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ DEN edge: +0.002 (SEA +0.175 vs DEN +0.177)
 **7 metrics version:**
 SEA edge: +0.197 (SEA +0.214 vs DEN +0.018)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.197), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - DEN) | -0.0 pts (favours DEN) |
-| Model Win% SEA | 49.8% |
-| Model Win% DEN | 50.2% |
+| Model Spread (SEA - DEN) | -7.0 pts (favours DEN) |
+| Model Win% SEA | 23.8% |
+| Model Win% DEN | 76.2% |
 | SOS Differential (SEA-DEN) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

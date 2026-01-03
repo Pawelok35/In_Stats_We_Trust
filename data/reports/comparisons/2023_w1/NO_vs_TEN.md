@@ -4,19 +4,21 @@
 
 | Metric | NO | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.188 | -0.162 | ↓ -0.026 |
-| Core EPA Defense | -0.162 | -0.188 | ↑ +0.026 |
-| Success Rate Offense | 36.9% | 33.3% | ↑ +3.6 pp |
-| Success Rate Defense | 33.3% | 36.9% | ↓ -3.6 pp |
-| Explosive Play Rate (Off) | 10.7% | 8.6% | ↑ +2.1 pp |
-| Third Down Conversion | 41.2% | 13.3% | ↑ +27.8 pp |
-| Points per Drive Differential | -0.019 | 0.019 | ↓ -0.038 |
-| Yards per Play Differential | 0.660 | -0.660 | ↑ +1.320 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 6.7% | 0.0% | ↑ +6.7 pp |
-| Pressure Rate (Def) | 8.1% | 10.3% | ↓ -2.1 pp |
-| Tempo | 6.462 | 6.750 | ↓ -0.288 |
-| PowerScore | 0.015 | 0.006 | ↑ +0.009 |
+| Core EPA Offense | -0.188 | -0.162 | -0.026 |
+| Core EPA Defense | -0.162 | -0.188 | 0.026 |
+| Success Rate Offense | 0.369 | 0.333 | 0.036 |
+| Success Rate Defense | 0.333 | 0.369 | -0.036 |
+| Explosive Play Rate (Off) | 0.107 | 0.086 | 0.021 |
+| Third Down Conversion | 0.412 | 0.133 | 0.278 |
+| Points per Drive Differential | -0.019 | 0.019 | -0.038 |
+| Yards per Play Differential | 0.660 | -0.660 | 1.320 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.067 | 0.000 | 0.067 |
+| Pressure Rate (Def) | 0.081 | 0.103 | -0.021 |
+| Tempo | 6.462 | 6.750 | -0.288 |
+| PowerScore | 1.286 | 1.339 | -0.053 |
+| PowerScore | 1.286 | 1.339 | -0.053 |
+| Tempo | 6.462 | 6.750 | -0.288 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ NO edge: +0.009 (NO +0.015 vs TEN +0.006)
 **7 metrics version:**
 NO edge: +0.211 (NO +0.101 vs TEN -0.109)
 **Verdict:** NO holds the edge in the extended breakdown (lead 0.211), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NO - TEN) | +0.2 pts (favours NO) |
-| Model Win% NO | 50.7% |
-| Model Win% TEN | 49.3% |
+| Model Spread (NO - TEN) | -1.0 pts (favours TEN) |
+| Model Win% NO | 45.9% |
+| Model Win% TEN | 54.1% |
 | SOS Differential (NO-TEN) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

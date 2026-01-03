@@ -4,19 +4,21 @@
 
 | Metric | ARI | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.060 | 0.374 | ↓ -0.434 |
-| Core EPA Defense | 0.374 | -0.060 | ↑ +0.434 |
-| Success Rate Offense | 50.7% | 60.7% | ↓ -10.0 pp |
-| Success Rate Defense | 60.7% | 50.7% | ↑ +10.0 pp |
-| Explosive Play Rate (Off) | 12.3% | 10.7% | ↑ +1.6 pp |
-| Third Down Conversion | 36.4% | 75.0% | ↓ -38.6 pp |
-| Points per Drive Differential | -3.111 | 3.111 | ↓ -6.222 |
-| Yards per Play Differential | -1.314 | 1.314 | ↓ -2.629 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 22.2% | 28.6% | ↓ -6.3 pp |
-| Pressure Rate (Def) | 0.0% | 15.4% | ↓ -15.4 pp |
-| Tempo | 8.111 | 9.333 | ↓ -1.222 |
-| PowerScore | 0.205 | 0.292 | ↓ -0.087 |
+| Core EPA Offense | 0.109 | 0.201 | -0.092 |
+| Core EPA Defense | 0.013 | 0.220 | -0.207 |
+| Success Rate Offense | 0.502 | 0.520 | -0.017 |
+| Success Rate Defense | 0.550 | 0.530 | 0.021 |
+| Explosive Play Rate (Off) | 0.112 | 0.105 | 0.007 |
+| Third Down Conversion | 0.404 | 0.415 | -0.011 |
+| Points per Drive Differential | 0.773 | -0.697 | 1.470 |
+| Yards per Play Differential | 0.400 | -0.489 | 0.889 |
+| Turnover Margin | 0.000 | 0.333 | -0.333 |
+| Red Zone TD Rate (Off) | 0.189 | 0.167 | 0.023 |
+| Pressure Rate (Def) | 0.102 | 0.037 | 0.065 |
+| Tempo | 8.111 | 9.333 | -1.222 |
+| PowerScore | 1.803 | 2.137 | -0.335 |
+| PowerScore | 1.803 | 2.137 | -0.335 |
+| Tempo | 8.111 | 9.333 | -1.222 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ WAS edge: +0.087 (ARI +0.205 vs WAS +0.292)
 **7 metrics version:**
 WAS edge: +0.057 (ARI +0.170 vs WAS +0.227)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.057), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - WAS) | -1.6 pts (favours WAS) |
-| Model Win% ARI | 43.3% |
-| Model Win% WAS | 56.7% |
-| SOS Differential (ARI-WAS) | -0.094 |
+| Model Spread (ARI - WAS) | -6.2 pts (favours WAS) |
+| Model Win% ARI | 26.3% |
+| Model Win% WAS | 73.7% |
+| SOS Differential (ARI-WAS) | -0.566 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.183 | 0.278 |
-| Last 5 games | 0.183 | 0.278 |
-| Last 3 games | 0.183 | 0.278 |
+| Season-to-date | 1.672 | 2.238 |
+| Last 5 games | 1.672 | 2.238 |
+| Last 3 games | 1.672 | 2.238 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | CIN | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.087 | 0.031 | ↑ +0.057 |
-| Core EPA Defense | 0.031 | 0.087 | ↓ -0.057 |
-| Success Rate Offense | 44.7% | 50.0% | ↓ -5.3 pp |
-| Success Rate Defense | 50.0% | 44.7% | ↑ +5.3 pp |
-| Explosive Play Rate (Off) | 11.8% | 10.0% | ↑ +1.8 pp |
-| Third Down Conversion | 42.1% | 58.3% | ↓ -16.2 pp |
-| Points per Drive Differential | 0.667 | -0.667 | ↑ +1.333 |
-| Yards per Play Differential | 0.113 | -0.113 | ↑ +0.227 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 13.3% | 22.2% | ↓ -8.9 pp |
-| Pressure Rate (Def) | 2.5% | 2.1% | ↑ +0.4 pp |
-| Tempo | 9.444 | 7.778 | ↑ +1.667 |
-| PowerScore | 0.172 | 0.173 | ↓ -0.001 |
+| Core EPA Offense | -0.063 | 0.106 | -0.170 |
+| Core EPA Defense | -0.047 | -0.060 | 0.013 |
+| Success Rate Offense | 0.426 | 0.493 | -0.067 |
+| Success Rate Defense | 0.433 | 0.430 | 0.004 |
+| Explosive Play Rate (Off) | 0.061 | 0.112 | -0.051 |
+| Third Down Conversion | 0.320 | 0.455 | -0.136 |
+| Points per Drive Differential | -0.401 | 1.111 | -1.512 |
+| Yards per Play Differential | -1.193 | 0.501 | -1.694 |
+| Turnover Margin | 1.000 | 0.250 | 0.750 |
+| Red Zone TD Rate (Off) | 0.139 | 0.170 | -0.031 |
+| Pressure Rate (Def) | 0.083 | 0.121 | -0.038 |
+| Tempo | 9.444 | 7.778 | 1.667 |
+| PowerScore | 0.172 | 0.173 | -0.001 |
+| PowerScore | 0.172 | 0.173 | -0.001 |
+| Tempo | 9.444 | 7.778 | 1.667 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BUF edge: +0.001 (CIN +0.172 vs BUF +0.173)
 **7 metrics version:**
 CIN edge: +0.388 (CIN +0.323 vs BUF -0.066)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.388), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CIN edge: +0.388 (CIN +0.323 vs BUF -0.066)
 | Model Spread (CIN - BUF) | -0.0 pts (favours BUF) |
 | Model Win% CIN | 49.9% |
 | Model Win% BUF | 50.1% |
-| SOS Differential (CIN-BUF) | -0.026 |
+| SOS Differential (CIN-BUF) | -0.049 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.105 | 0.131 |
-| Last 5 games | 0.106 | 0.161 |
-| Last 3 games | 0.101 | 0.130 |
+| Season-to-date | 1.530 | 1.580 |
+| Last 5 games | 1.449 | 1.774 |
+| Last 3 games | 1.374 | 1.759 |
 
 ## Trend Summary (last 3 weeks)
 

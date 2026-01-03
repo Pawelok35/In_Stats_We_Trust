@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 12
 
-_Generated at 2025-11-10T17:50:34.484199+00:00 (UTC)_
+_Generated at 2025-12-28T14:41:19.600677+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\12_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2291, "cols": 18, "timestamp": "2025-11-10T17:50:33.997054+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2291, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:50:33.997054+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2291, "cols": 24, "timestamp": "2025-11-10T17:50:33.997054+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2291, "cols": 18, "timestamp": "2025-12-28T14:41:19.214051+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2291, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:41:19.214051+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2291, "cols": 24, "timestamp": "2025-12-28T14:41:19.214051+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\12_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\12.parquet`
 - Manifest: `data\l4_core12\2024\12_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 26
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\12_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| KC | 0.28396122802038726 |
-| BAL | 0.24551231020347566 |
-| PHI | 0.24499363708193597 |
-| CAR | 0.24201093049980846 |
-| LAC | 0.22316452936168663 |
-| MIN | 0.2058843685275254 |
-| LA | 0.19671002257033302 |
-| TB | 0.18981313640567343 |
-| CHI | 0.18008281795222444 |
-| DET | 0.15866526163356345 |
+| KC | 2.4864893179080276 |
+| LAC | 2.135808207522606 |
+| CAR | 2.067178266510518 |
+| PHI | 2.0025217269695768 |
+| BAL | 1.9732197644932086 |
+| DET | 1.9139461605099681 |
+| TB | 1.8523862358208782 |
+| LA | 1.756456858013371 |
+| LV | 1.7432748996400973 |
+| GB | 1.696431928422585 |
 
 
 ## Visualizations

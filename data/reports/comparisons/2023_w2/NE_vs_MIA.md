@@ -4,19 +4,21 @@
 
 | Metric | NE | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.035 | 0.067 | ↓ -0.101 |
-| Core EPA Defense | 0.067 | -0.035 | ↑ +0.101 |
-| Success Rate Offense | 51.7% | 52.5% | ↓ -0.8 pp |
-| Success Rate Defense | 52.5% | 51.7% | ↑ +0.8 pp |
-| Explosive Play Rate (Off) | 2.3% | 13.8% | ↓ -11.5 pp |
-| Third Down Conversion | 53.3% | 40.0% | ↑ +13.3 pp |
-| Points per Drive Differential | -0.455 | 0.455 | ↓ -0.909 |
-| Yards per Play Differential | -1.552 | 1.552 | ↓ -3.104 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 28.6% | 16.7% | ↑ +11.9 pp |
-| Pressure Rate (Def) | 3.1% | 8.5% | ↓ -5.4 pp |
-| Tempo | 7.909 | 6.667 | ↑ +1.242 |
-| PowerScore | 0.135 | 0.175 | ↓ -0.040 |
+| Core EPA Offense | -0.166 | 0.219 | -0.385 |
+| Core EPA Defense | -0.055 | 0.131 | -0.186 |
+| Success Rate Offense | 0.385 | 0.476 | -0.091 |
+| Success Rate Defense | 0.369 | 0.540 | -0.171 |
+| Explosive Play Rate (Off) | 0.083 | 0.238 | -0.155 |
+| Third Down Conversion | 0.312 | 0.500 | -0.188 |
+| Points per Drive Differential | 0.181 | -0.127 | 0.309 |
+| Yards per Play Differential | 0.991 | 2.051 | -1.060 |
+| Turnover Margin | -1.000 | -2.000 | 1.000 |
+| Red Zone TD Rate (Off) | 0.200 | 0.143 | 0.057 |
+| Pressure Rate (Def) | 0.081 | 0.083 | -0.002 |
+| Tempo | 7.909 | 6.667 | 1.242 |
+| PowerScore | 0.135 | 0.175 | -0.040 |
+| PowerScore | 0.135 | 0.175 | -0.040 |
+| Tempo | 7.909 | 6.667 | 1.242 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIA edge: +0.040 (NE +0.135 vs MIA +0.175)
 **7 metrics version:**
 MIA edge: +0.211 (NE +0.016 vs MIA +0.227)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.211), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIA edge: +0.211 (NE +0.016 vs MIA +0.227)
 | Model Spread (NE - MIA) | -0.7 pts (favours MIA) |
 | Model Win% NE | 46.9% |
 | Model Win% MIA | 53.1% |
-| SOS Differential (NE-MIA) | -0.193 |
+| SOS Differential (NE-MIA) | -0.985 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.052 | 0.245 |
-| Last 5 games | 0.052 | 0.245 |
-| Last 3 games | 0.052 | 0.245 |
+| Season-to-date | 1.240 | 2.225 |
+| Last 5 games | 1.240 | 2.225 |
+| Last 3 games | 1.240 | 2.225 |
 
 ## Matchup Analogs
 

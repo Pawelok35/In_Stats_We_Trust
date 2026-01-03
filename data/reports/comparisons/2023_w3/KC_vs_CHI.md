@@ -4,19 +4,21 @@
 
 | Metric | KC | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.171 | -0.263 | ↑ +0.434 |
-| Core EPA Defense | -0.263 | 0.171 | ↓ -0.434 |
-| Success Rate Offense | 51.1% | 32.4% | ↑ +18.7 pp |
-| Success Rate Defense | 32.4% | 51.1% | ↓ -18.7 pp |
-| Explosive Play Rate (Off) | 14.1% | 7.4% | ↑ +6.8 pp |
-| Third Down Conversion | 62.5% | 30.8% | ↑ +31.7 pp |
-| Points per Drive Differential | 2.727 | -2.727 | ↑ +5.455 |
-| Yards per Play Differential | 1.971 | -1.971 | ↑ +3.942 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 18.5% | 7.1% | ↑ +11.4 pp |
-| Pressure Rate (Def) | 12.0% | 0.0% | ↑ +12.0 pp |
-| Tempo | 8.364 | 6.800 | ↑ +1.564 |
-| PowerScore | 0.163 | 0.038 | ↑ +0.125 |
+| Core EPA Offense | -0.037 | -0.128 | 0.091 |
+| Core EPA Defense | -0.079 | 0.075 | -0.154 |
+| Success Rate Offense | 0.383 | 0.417 | -0.034 |
+| Success Rate Defense | 0.392 | 0.402 | -0.009 |
+| Explosive Play Rate (Off) | 0.105 | 0.094 | 0.011 |
+| Third Down Conversion | 0.345 | 0.346 | -0.001 |
+| Points per Drive Differential | 0.725 | -0.605 | 1.330 |
+| Yards per Play Differential | 0.686 | -1.055 | 1.741 |
+| Turnover Margin | 0.000 | -2.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.159 | 0.271 | -0.113 |
+| Pressure Rate (Def) | 0.056 | 0.018 | 0.038 |
+| Tempo | 8.364 | 6.800 | 1.564 |
+| PowerScore | 0.163 | 0.038 | 0.125 |
+| PowerScore | 0.163 | 0.038 | 0.125 |
+| Tempo | 8.364 | 6.800 | 1.564 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.125 (KC +0.163 vs CHI +0.038)
 **7 metrics version:**
 KC edge: +0.080 (KC +0.112 vs CHI +0.032)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.080), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.080 (KC +0.112 vs CHI +0.032)
 | Model Spread (KC - CHI) | +2.3 pts (favours KC) |
 | Model Win% KC | 59.6% |
 | Model Win% CHI | 40.4% |
-| SOS Differential (KC-CHI) | -0.044 |
+| SOS Differential (KC-CHI) | -0.026 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.077 | 0.121 |
-| Last 5 games | 0.077 | 0.121 |
-| Last 3 games | 0.077 | 0.121 |
+| Season-to-date | 1.552 | 1.578 |
+| Last 5 games | 1.552 | 1.578 |
+| Last 3 games | 1.552 | 1.578 |
 
 ## Trend Summary (last 2 weeks)
 

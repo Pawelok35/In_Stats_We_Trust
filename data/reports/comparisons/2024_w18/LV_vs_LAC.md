@@ -4,19 +4,21 @@
 
 | Metric | LV | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.009 | 0.210 | ↓ -0.201 |
-| Core EPA Defense | 0.210 | 0.009 | ↑ +0.201 |
-| Success Rate Offense | 52.2% | 55.3% | ↓ -3.1 pp |
-| Success Rate Defense | 55.3% | 52.2% | ↑ +3.1 pp |
-| Explosive Play Rate (Off) | 10.4% | 12.8% | ↓ -2.3 pp |
-| Third Down Conversion | 22.2% | 41.2% | ↓ -19.0 pp |
-| Points per Drive Differential | -1.400 | 1.400 | ↓ -2.800 |
-| Yards per Play Differential | -1.113 | 1.113 | ↓ -2.226 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 10.0% | 9.4% | ↑ +0.6 pp |
-| Pressure Rate (Def) | 2.6% | 0.0% | ↑ +2.6 pp |
-| Tempo | 6.700 | 9.400 | ↓ -2.700 |
-| PowerScore | 0.197 | 0.239 | ↓ -0.043 |
+| Core EPA Offense | -0.112 | 0.016 | -0.128 |
+| Core EPA Defense | -0.023 | -0.058 | 0.035 |
+| Success Rate Offense | 0.447 | 0.445 | 0.003 |
+| Success Rate Defense | 0.444 | 0.461 | -0.017 |
+| Explosive Play Rate (Off) | 0.080 | 0.101 | -0.022 |
+| Third Down Conversion | 0.319 | 0.352 | -0.033 |
+| Points per Drive Differential | -0.590 | 0.413 | -1.003 |
+| Yards per Play Differential | -0.224 | -0.039 | -0.185 |
+| Turnover Margin | -0.938 | 0.750 | -1.688 |
+| Red Zone TD Rate (Off) | 0.142 | 0.125 | 0.018 |
+| Pressure Rate (Def) | 0.067 | 0.078 | -0.011 |
+| Tempo | 6.700 | 9.400 | -2.700 |
+| PowerScore | 0.197 | 0.239 | -0.043 |
+| PowerScore | 0.197 | 0.239 | -0.043 |
+| Tempo | 6.700 | 9.400 | -2.700 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LAC edge: +0.043 (LV +0.197 vs LAC +0.239)
 **7 metrics version:**
 LAC edge: +0.214 (LV +0.046 vs LAC +0.259)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.214), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ LAC edge: +0.214 (LV +0.046 vs LAC +0.259)
 | Model Spread (LV - LAC) | -0.8 pts (favours LAC) |
 | Model Win% LV | 46.7% |
 | Model Win% LAC | 53.3% |
-| SOS Differential (LV-LAC) | -0.017 |
+| SOS Differential (LV-LAC) | -0.021 |
 *Neutral-field assumption. Based on schedule through Week 17.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.101 | 0.118 |
-| Last 5 games | 0.052 | 0.147 |
-| Last 3 games | 0.005 | 0.169 |
+| Season-to-date | 1.591 | 1.611 |
+| Last 5 games | 1.482 | 1.744 |
+| Last 3 games | 1.395 | 1.636 |
 
 ## Trend Summary (last 3 weeks)
 

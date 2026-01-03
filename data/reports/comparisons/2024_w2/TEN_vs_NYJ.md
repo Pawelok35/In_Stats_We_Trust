@@ -4,19 +4,21 @@
 
 | Metric | TEN | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.066 | 0.085 | ↓ -0.152 |
-| Core EPA Defense | 0.085 | -0.066 | ↑ +0.152 |
-| Success Rate Offense | 46.2% | 45.3% | ↑ +0.9 pp |
-| Success Rate Defense | 45.3% | 46.2% | ↓ -0.9 pp |
-| Explosive Play Rate (Off) | 12.5% | 8.0% | ↑ +4.5 pp |
-| Third Down Conversion | 35.7% | 35.7% | ± 0.0 pp |
-| Points per Drive Differential | -0.636 | 0.636 | ↓ -1.273 |
-| Yards per Play Differential | 0.217 | -0.217 | ↑ +0.433 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 7.1% | 22.2% | ↓ -15.1 pp |
-| Pressure Rate (Def) | 6.1% | 12.5% | ↓ -6.4 pp |
-| Tempo | 7.273 | 6.818 | ↑ +0.455 |
-| PowerScore | 0.134 | 0.146 | ↓ -0.011 |
+| Core EPA Offense | -0.278 | -0.003 | -0.276 |
+| Core EPA Defense | -0.199 | 0.172 | -0.371 |
+| Success Rate Offense | 0.398 | 0.484 | -0.087 |
+| Success Rate Defense | 0.408 | 0.494 | -0.086 |
+| Explosive Play Rate (Off) | 0.096 | 0.062 | 0.034 |
+| Third Down Conversion | 0.200 | 0.600 | -0.400 |
+| Points per Drive Differential | 0.769 | -1.300 | 2.069 |
+| Yards per Play Differential | 0.966 | -0.349 | 1.315 |
+| Turnover Margin | -2.000 | -2.000 | 0.000 |
+| Red Zone TD Rate (Off) | 0.111 | 0.182 | -0.071 |
+| Pressure Rate (Def) | 0.059 | 0.091 | -0.032 |
+| Tempo | 7.273 | 6.818 | 0.455 |
+| PowerScore | 1.564 | 1.494 | 0.070 |
+| PowerScore | 1.564 | 1.494 | 0.070 |
+| Tempo | 7.273 | 6.818 | 0.455 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYJ edge: +0.011 (TEN +0.134 vs NYJ +0.146)
 **7 metrics version:**
 NYJ edge: +0.423 (TEN -0.104 vs NYJ +0.319)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.423), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - NYJ) | -0.2 pts (favours NYJ) |
-| Model Win% TEN | 49.1% |
-| Model Win% NYJ | 50.9% |
-| SOS Differential (TEN-NYJ) | -0.226 |
+| Model Spread (TEN - NYJ) | +1.3 pts (favours TEN) |
+| Model Win% TEN | 55.4% |
+| Model Win% NYJ | 44.6% |
+| SOS Differential (TEN-NYJ) | -0.720 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | -0.015 | 0.210 |
-| Last 5 games | -0.015 | 0.210 |
-| Last 3 games | -0.015 | 0.210 |
+| Season-to-date | 1.243 | 1.963 |
+| Last 5 games | 1.243 | 1.963 |
+| Last 3 games | 1.243 | 1.963 |
 
 ## Matchup Analogs
 

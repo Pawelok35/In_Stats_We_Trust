@@ -4,19 +4,21 @@
 
 | Metric | KC | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.023 | -0.065 | ↑ +0.088 |
-| Core EPA Defense | -0.065 | 0.023 | ↓ -0.088 |
-| Success Rate Offense | 45.3% | 45.0% | ↑ +0.3 pp |
-| Success Rate Defense | 45.0% | 45.3% | ↓ -0.3 pp |
-| Explosive Play Rate (Off) | 8.0% | 10.0% | ↓ -2.0 pp |
-| Third Down Conversion | 25.0% | 20.0% | ↑ +5.0 pp |
-| Points per Drive Differential | 0.083 | -0.083 | ↑ +0.167 |
-| Yards per Play Differential | -0.090 | 0.090 | ↓ -0.180 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 28.6% | 33.3% | ↓ -4.8 pp |
-| Pressure Rate (Def) | 8.1% | 5.7% | ↑ +2.4 pp |
-| Tempo | 6.250 | 6.667 | ↓ -0.417 |
-| PowerScore | 0.124 | 0.114 | ↑ +0.010 |
+| Core EPA Offense | 0.033 | 0.103 | -0.071 |
+| Core EPA Defense | -0.077 | 0.005 | -0.082 |
+| Success Rate Offense | 0.440 | 0.492 | -0.052 |
+| Success Rate Defense | 0.385 | 0.443 | -0.058 |
+| Explosive Play Rate (Off) | 0.107 | 0.160 | -0.053 |
+| Third Down Conversion | 0.424 | 0.405 | 0.019 |
+| Points per Drive Differential | 0.793 | 0.648 | 0.145 |
+| Yards per Play Differential | 0.966 | 1.655 | -0.689 |
+| Turnover Margin | 0.000 | -0.500 | 0.500 |
+| Red Zone TD Rate (Off) | 0.124 | 0.158 | -0.034 |
+| Pressure Rate (Def) | 0.109 | 0.088 | 0.021 |
+| Tempo | 6.250 | 6.667 | -0.417 |
+| PowerScore | 0.124 | 0.114 | 0.010 |
+| PowerScore | 0.124 | 0.114 | 0.010 |
+| Tempo | 6.250 | 6.667 | -0.417 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.010 (KC +0.124 vs MIA +0.114)
 **7 metrics version:**
 KC edge: +0.001 (KC +0.105 vs MIA +0.105)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.001), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.001 (KC +0.105 vs MIA +0.105)
 | Model Spread (KC - MIA) | +0.2 pts (favours KC) |
 | Model Win% KC | 50.8% |
 | Model Win% MIA | 49.2% |
-| SOS Differential (KC-MIA) | -0.058 |
+| SOS Differential (KC-MIA) | -0.064 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.092 | 0.150 |
-| Last 5 games | 0.108 | 0.133 |
-| Last 3 games | 0.094 | 0.101 |
+| Season-to-date | 1.597 | 1.661 |
+| Last 5 games | 1.657 | 1.604 |
+| Last 3 games | 1.510 | 1.540 |
 
 ## Trend Summary (last 3 weeks)
 

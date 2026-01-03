@@ -4,19 +4,21 @@
 
 | Metric | CAR | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.088 | 0.199 | ↓ -0.287 |
-| Core EPA Defense | 0.199 | -0.088 | ↑ +0.287 |
-| Success Rate Offense | 45.3% | 53.0% | ↓ -7.7 pp |
-| Success Rate Defense | 53.0% | 45.3% | ↑ +7.7 pp |
-| Explosive Play Rate (Off) | 9.3% | 10.8% | ↓ -1.5 pp |
-| Third Down Conversion | 41.7% | 53.8% | ↓ -12.2 pp |
-| Points per Drive Differential | -1.455 | 1.455 | ↓ -2.909 |
-| Yards per Play Differential | -1.225 | 1.225 | ↓ -2.450 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 10.5% | 13.3% | ↓ -2.8 pp |
-| Pressure Rate (Def) | 0.0% | 0.0% | ± 0.0 pp |
-| Tempo | 8.600 | 7.545 | ↑ +1.055 |
-| PowerScore | 0.141 | 0.206 | ↓ -0.065 |
+| Core EPA Offense | -0.149 | 0.023 | -0.172 |
+| Core EPA Defense | 0.103 | 0.076 | 0.026 |
+| Success Rate Offense | 0.429 | 0.471 | -0.042 |
+| Success Rate Defense | 0.493 | 0.507 | -0.015 |
+| Explosive Play Rate (Off) | 0.077 | 0.117 | -0.041 |
+| Third Down Conversion | 0.226 | 0.270 | -0.044 |
+| Points per Drive Differential | -1.523 | -0.398 | -1.125 |
+| Yards per Play Differential | -0.933 | 0.298 | -1.230 |
+| Turnover Margin | -1.000 | -0.600 | -0.400 |
+| Red Zone TD Rate (Off) | 0.089 | 0.105 | -0.016 |
+| Pressure Rate (Def) | 0.036 | 0.035 | 0.001 |
+| Tempo | 8.600 | 7.545 | 1.055 |
+| PowerScore | 0.141 | 0.206 | -0.065 |
+| PowerScore | 0.141 | 0.206 | -0.065 |
+| Tempo | 8.600 | 7.545 | 1.055 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.065 (CAR +0.141 vs ATL +0.206)
 **7 metrics version:**
 ATL edge: +0.230 (CAR +0.006 vs ATL +0.236)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.230), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ ATL edge: +0.230 (CAR +0.006 vs ATL +0.236)
 | Model Spread (CAR - ATL) | -1.2 pts (favours ATL) |
 | Model Win% CAR | 45.0% |
 | Model Win% ATL | 55.0% |
-| SOS Differential (CAR-ATL) | -0.025 |
+| SOS Differential (CAR-ATL) | -0.240 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.151 | 0.176 |
-| Last 5 games | 0.151 | 0.176 |
-| Last 3 games | 0.174 | 0.208 |
+| Season-to-date | 1.593 | 1.832 |
+| Last 5 games | 1.593 | 1.832 |
+| Last 3 games | 1.651 | 1.783 |
 
 ## Trend Summary (last 3 weeks)
 

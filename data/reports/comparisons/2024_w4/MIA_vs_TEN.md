@@ -4,19 +4,21 @@
 
 | Metric | MIA | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.265 | 0.042 | ↓ -0.307 |
-| Core EPA Defense | 0.042 | -0.265 | ↑ +0.307 |
-| Success Rate Offense | 35.5% | 41.9% | ↓ -6.3 pp |
-| Success Rate Defense | 41.9% | 35.5% | ↑ +6.3 pp |
-| Explosive Play Rate (Off) | 7.9% | 8.1% | ↓ -0.2 pp |
-| Third Down Conversion | 15.4% | 13.3% | ↑ +2.1 pp |
-| Points per Drive Differential | -1.308 | 1.308 | ↓ -2.615 |
-| Yards per Play Differential | -0.416 | 0.416 | ↓ -0.832 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 14.3% | 15.4% | ↓ -1.1 pp |
-| Pressure Rate (Def) | 4.5% | 8.0% | ↓ -3.5 pp |
-| Tempo | 5.846 | 6.615 | ↓ -0.769 |
-| PowerScore | 0.020 | 0.083 | ↓ -0.062 |
+| Core EPA Offense | -0.203 | -0.196 | -0.006 |
+| Core EPA Defense | -0.000 | -0.017 | 0.017 |
+| Success Rate Offense | 0.410 | 0.451 | -0.041 |
+| Success Rate Defense | 0.418 | 0.423 | -0.005 |
+| Explosive Play Rate (Off) | 0.101 | 0.108 | -0.006 |
+| Third Down Conversion | 0.318 | 0.286 | 0.032 |
+| Points per Drive Differential | -0.974 | -0.259 | -0.715 |
+| Yards per Play Differential | -0.398 | -0.016 | -0.381 |
+| Turnover Margin | 0.000 | -2.333 | 2.333 |
+| Red Zone TD Rate (Off) | 0.048 | 0.135 | -0.087 |
+| Pressure Rate (Def) | 0.067 | 0.085 | -0.018 |
+| Tempo | 5.846 | 6.615 | -0.769 |
+| PowerScore | 1.174 | 1.389 | -0.216 |
+| PowerScore | 1.174 | 1.389 | -0.216 |
+| Tempo | 5.846 | 6.615 | -0.769 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ TEN edge: +0.062 (MIA +0.020 vs TEN +0.083)
 **7 metrics version:**
 TEN edge: +0.030 (MIA +0.022 vs TEN +0.052)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.030), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - TEN) | -1.2 pts (favours TEN) |
-| Model Win% MIA | 45.2% |
-| Model Win% TEN | 54.8% |
-| SOS Differential (MIA-TEN) | +0.011 |
+| Model Spread (MIA - TEN) | -4.0 pts (favours TEN) |
+| Model Win% MIA | 34.0% |
+| Model Win% TEN | 66.0% |
+| SOS Differential (MIA-TEN) | -0.114 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | TEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.088 | 0.078 |
-| Last 5 games | 0.088 | 0.078 |
-| Last 3 games | 0.088 | 0.078 |
+| Season-to-date | 1.314 | 1.428 |
+| Last 5 games | 1.314 | 1.428 |
+| Last 3 games | 1.314 | 1.428 |
 
 ## Trend Summary (last 3 weeks)
 

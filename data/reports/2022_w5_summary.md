@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 5
 
-_Generated at 2025-11-11T12:23:46.145890+00:00 (UTC)_
+_Generated at 2026-01-02T11:29:50.563187+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\5_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2802, "cols": 18, "timestamp": "2025-11-11T12:23:45.586934+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2802, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:23:45.586934+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2802, "cols": 24, "timestamp": "2025-11-11T12:23:45.586934+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2802, "cols": 18, "timestamp": "2026-01-02T11:29:49.595456+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2802, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:29:49.595456+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2802, "cols": 24, "timestamp": "2026-01-02T11:29:49.595456+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\5_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\5.parquet`
 - Manifest: `data\l4_core12\2022\5_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\5_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| NYG | 0.24082103245941933 |
-| CLE | 0.23854432109063967 |
-| LAC | 0.2330827803874983 |
-| KC | 0.2316695581314055 |
-| LV | 0.22558984663469114 |
-| GB | 0.22232030346283727 |
-| PHI | 0.1974728475545855 |
-| MIN | 0.19532697514569874 |
-| NYJ | 0.17510516606322438 |
-| BUF | 0.16847932012677783 |
+| MIN | 2.3057436418123656 |
+| NYG | 2.1223999798278403 |
+| PHI | 2.0853281447122085 |
+| ARI | 2.019824498128016 |
+| KC | 2.01611400257585 |
+| GB | 2.0075054886480226 |
+| TB | 1.969664131596263 |
+| LV | 1.9634238832029052 |
+| ATL | 1.9410263994182742 |
+| CLE | 1.844397979627225 |
 
 
 ## Visualizations

@@ -1,24 +1,16 @@
 # NFL 2024 Week 5 - Betting Lines
-matchups:
-  # TNF – Buccaneers @ Falcons
-  - report: data/reports/comparisons/2024_w5/ATL_vs_TB.md
-    home: ATL
-    away: TB
-    spread: -2.5
-    total: 44.0
-    prime_time: true
-    neutral_site: false
+season: 2024
+week: 5
 
-  # London game – Jets @ Vikings
+matchups:
   - report: data/reports/comparisons/2024_w5/MIN_vs_NYJ.md
     home: MIN
     away: NYJ
     spread: -2.5
     total: 41.5
     prime_time: false
-    neutral_site: true
+    neutral_site: false
 
-  # Niedziela – wczesne okno
   - report: data/reports/comparisons/2024_w5/CHI_vs_CAR.md
     home: CHI
     away: CAR
@@ -67,7 +59,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # Niedziela – późne okno
   - report: data/reports/comparisons/2024_w5/DEN_vs_LV.md
     home: DEN
     away: LV
@@ -100,7 +91,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # SNF – Cowboys @ Steelers
   - report: data/reports/comparisons/2024_w5/PIT_vs_DAL.md
     home: PIT
     away: DAL
@@ -109,7 +99,6 @@ matchups:
     prime_time: true
     neutral_site: false
 
-  # MNF – Saints @ Chiefs
   - report: data/reports/comparisons/2024_w5/KC_vs_NO.md
     home: KC
     away: "NO"
@@ -118,4 +107,10 @@ matchups:
     prime_time: true
     neutral_site: false
 
-
+  - report: data/reports/comparisons/2024_w5/ATL_vs_TB.md
+    home: ATL
+    away: TB
+    spread: -2.5
+    total: 44.0
+    prime_time: true
+    neutral_site: false

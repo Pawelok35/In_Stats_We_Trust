@@ -4,19 +4,21 @@
 
 | Metric | LAC | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.038 | -0.082 | ↑ +0.044 |
-| Core EPA Defense | -0.082 | -0.038 | ↓ -0.044 |
-| Success Rate Offense | 41.2% | 40.8% | ↑ +0.3 pp |
-| Success Rate Defense | 40.8% | 41.2% | ↓ -0.3 pp |
-| Explosive Play Rate (Off) | 8.2% | 14.1% | ↓ -5.8 pp |
-| Third Down Conversion | 40.0% | 45.5% | ↓ -5.5 pp |
-| Points per Drive Differential | 0.455 | -0.455 | ↑ +0.909 |
-| Yards per Play Differential | -0.331 | 0.331 | ↓ -0.661 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 15.4% | 16.7% | ↓ -1.3 pp |
-| Pressure Rate (Def) | 13.6% | 0.0% | ↑ +13.6 pp |
-| Tempo | 7.727 | 6.455 | ↑ +1.273 |
-| PowerScore | 0.090 | 0.094 | ↓ -0.004 |
+| Core EPA Offense | -0.038 | -0.082 | 0.044 |
+| Core EPA Defense | -0.082 | -0.038 | -0.044 |
+| Success Rate Offense | 0.412 | 0.408 | 0.003 |
+| Success Rate Defense | 0.408 | 0.412 | -0.003 |
+| Explosive Play Rate (Off) | 0.082 | 0.141 | -0.058 |
+| Third Down Conversion | 0.400 | 0.455 | -0.055 |
+| Points per Drive Differential | 0.455 | -0.455 | 0.909 |
+| Yards per Play Differential | -0.331 | 0.331 | -0.661 |
+| Turnover Margin | 3.000 | -3.000 | 6.000 |
+| Red Zone TD Rate (Off) | 0.154 | 0.167 | -0.013 |
+| Pressure Rate (Def) | 0.136 | 0.000 | 0.136 |
+| Tempo | 7.727 | 6.455 | 1.273 |
+| PowerScore | 1.619 | 1.357 | 0.262 |
+| PowerScore | 1.619 | 1.357 | 0.262 |
+| Tempo | 7.727 | 6.455 | 1.273 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ LV edge: +0.004 (LAC +0.090 vs LV +0.094)
 **7 metrics version:**
 LAC edge: +0.609 (LAC +0.373 vs LV -0.236)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.609), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - LV) | -0.1 pts (favours LV) |
-| Model Win% LAC | 49.7% |
-| Model Win% LV | 50.3% |
+| Model Spread (LAC - LV) | +4.8 pts (favours LAC) |
+| Model Win% LAC | 69.2% |
+| Model Win% LV | 30.8% |
 | SOS Differential (LAC-LV) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

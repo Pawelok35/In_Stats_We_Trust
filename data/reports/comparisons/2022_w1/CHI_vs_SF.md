@@ -4,19 +4,21 @@
 
 | Metric | CHI | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.105 | -0.196 | ↑ +0.091 |
-| Core EPA Defense | -0.196 | -0.105 | ↓ -0.091 |
-| Success Rate Offense | 30.3% | 39.8% | ↓ -9.5 pp |
-| Success Rate Defense | 39.8% | 30.3% | ↑ +9.5 pp |
-| Explosive Play Rate (Off) | 9.2% | 9.6% | ↓ -0.4 pp |
-| Third Down Conversion | 33.3% | 42.1% | ↓ -8.8 pp |
-| Points per Drive Differential | 0.818 | -0.818 | ↑ +1.636 |
-| Yards per Play Differential | -1.304 | 1.304 | ↓ -2.607 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 20.0% | 7.1% | ↑ +12.9 pp |
-| Pressure Rate (Def) | 6.7% | 9.1% | ↓ -2.4 pp |
-| Tempo | 6.909 | 7.545 | ↓ -0.636 |
-| PowerScore | 0.018 | 0.029 | ↓ -0.011 |
+| Core EPA Offense | -0.105 | -0.196 | 0.091 |
+| Core EPA Defense | -0.196 | -0.105 | -0.091 |
+| Success Rate Offense | 0.303 | 0.398 | -0.095 |
+| Success Rate Defense | 0.398 | 0.303 | 0.095 |
+| Explosive Play Rate (Off) | 0.092 | 0.096 | -0.004 |
+| Third Down Conversion | 0.333 | 0.421 | -0.088 |
+| Points per Drive Differential | 0.818 | -0.818 | 1.636 |
+| Yards per Play Differential | -1.304 | 1.304 | -2.607 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.200 | 0.071 | 0.129 |
+| Pressure Rate (Def) | 0.067 | 0.091 | -0.024 |
+| Tempo | 6.909 | 7.545 | -0.636 |
+| PowerScore | 1.382 | 1.519 | -0.137 |
+| PowerScore | 1.382 | 1.519 | -0.137 |
+| Tempo | 6.909 | 7.545 | -0.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ SF edge: +0.011 (CHI +0.018 vs SF +0.029)
 **7 metrics version:**
 CHI edge: +0.200 (CHI +0.116 vs SF -0.084)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.200), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - SF) | -0.2 pts (favours SF) |
-| Model Win% CHI | 49.2% |
-| Model Win% SF | 50.8% |
+| Model Spread (CHI - SF) | -2.5 pts (favours SF) |
+| Model Win% CHI | 39.6% |
+| Model Win% SF | 60.4% |
 | SOS Differential (CHI-SF) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

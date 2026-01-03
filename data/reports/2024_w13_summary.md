@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 13
 
-_Generated at 2025-11-10T17:50:45.883324+00:00 (UTC)_
+_Generated at 2025-12-28T14:48:52.159170+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\13_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2848, "cols": 18, "timestamp": "2025-11-10T17:50:45.119791+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2848, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:50:45.119791+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2848, "cols": 24, "timestamp": "2025-11-10T17:50:45.119791+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2848, "cols": 18, "timestamp": "2025-12-28T14:48:51.592754+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2848, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:48:51.592754+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2848, "cols": 24, "timestamp": "2025-12-28T14:48:51.592754+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\13_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\13.parquet`
 - Manifest: `data\l4_core12\2024\13_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\13_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| GB | 0.27194211103358407 |
-| PIT | 0.26840732541456797 |
-| CIN | 0.24019729761188663 |
-| MIA | 0.22835715907367152 |
-| IND | 0.2114095810994255 |
-| NE | 0.20536222832691858 |
-| LA | 0.19061704276932204 |
-| WAS | 0.190367180093105 |
-| MIN | 0.1872144921187594 |
-| DEN | 0.1804901085165399 |
+| MIA | 2.2105793812958936 |
+| ARI | 2.1975112751272503 |
+| NO | 2.170925092283958 |
+| DET | 2.014575301423485 |
+| NE | 1.90210641437343 |
+| ATL | 1.8912778045573546 |
+| WAS | 1.8538985332284186 |
+| IND | 1.845043214733059 |
+| JAX | 1.8444433150739343 |
+| PIT | 1.7521069591142016 |
 
 
 ## Visualizations

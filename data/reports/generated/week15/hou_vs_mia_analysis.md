@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – HOU 29.1 – MIA 23.2
-2️⃣ Predicted Winner (Model) – HOU
-3️⃣ Predicted Margin (Model) – HOU by 5.8 pts
-4️⃣ Win Probability (Model) – 79% (HOU)
-5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje HOU (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Field position edge wynosi +3.7 yds na rzecz HOU (0.9 vs -2.8), co skraca ich boisko. PowerScore Summary potwierdza przewagę HOU: HOU +0.053 vs MIA +0.043. Explosive Play Rate pozostaje po stronie HOU (11.0% vs 10.5%), więc big-play equity jest wyższe. HOU prowadzi w Points per Drive Differential (+0.018 vs -0.104), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – HOU 9.7 – MIA 25.9
+2️⃣ Predicted Winner (Model) – MIA
+3️⃣ Predicted Margin (Model) – MIA by 16.3 pts
+4️⃣ Win Probability (Model) – 95% (MIA)
+5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje MIA na poziomie 48.1% vs 39.8% (+8.3 pp). Turnover margin faworyzuje MIA (+4.00 vs +0.00), co przekłada się na dodatkowe posiadania. Na 3rd down MIA utrzymuje 40.3%, podczas gdy HOU jest na 36.6%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja MIA (16.3% vs 13.7%). Explosive Play Rate pozostaje po stronie MIA (14.2% vs 12.2%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – HOU 24.8 – MIA 21.8
+1️⃣ Estimated Score (Market) – HOU 25.0 – MIA 22.5
 2️⃣ Predicted Winner (Market) – HOU
-3️⃣ Predicted Margin (Market) – HOU by 3.0 pts
-4️⃣ Win Probability (Market) – 60% (HOU)
-5️⃣ Forum Output (A) – PowerScore (Model) — HOU +0.053 vs MIA +0.043. Points per Drive Differential — HOU +0.018 vs MIA -0.104. Success Rate Offense — HOU 43.5% vs MIA 47.7%. Third Down Conversion — HOU 32.6% vs MIA 34.3%. Red Zone TD Rate — HOU 12.7% vs MIA 13.8%. Explosive Play Rate — HOU 11.0% vs MIA 10.5%. Model margin 5.8 pts vs market spread HOU +3.0.
-6️⃣ Forum Output (B) – Model idzie w stronę HOU po marginesie 5.8 pkt. HOU notuje +0.018 PPD vs -0.104 u MIA. Różnica w Success Rate to 43.5% vs 47.7%. Na 3rd down HOU (32.6%) wygląda solidniej niż MIA (34.3%). Red Zone i explosiveness ( 12.7% / 11.0% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +2.8.
+3️⃣ Predicted Margin (Market) – HOU by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (HOU)
+5️⃣ Forum Output (A) – PowerScore (Model) — HOU +0.083 vs MIA +0.034. Points per Drive Differential — HOU +0.051 vs MIA +0.776. Success Rate Offense — HOU 39.8% vs MIA 48.1%. Third Down Conversion — HOU 36.6% vs MIA 40.3%. Red Zone TD Rate — HOU 13.7% vs MIA 16.3%. Explosive Play Rate — HOU 12.2% vs MIA 14.2%. Model margin -16.3 pts vs market spread HOU +2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę MIA po marginesie -16.3 pkt. MIA notuje +0.776 PPD vs +0.051 u HOU. Różnica w Success Rate to 48.1% vs 39.8%. Na 3rd down MIA (40.3%) wygląda solidniej niż HOU (36.6%). Red Zone i explosiveness ( 16.3% / 14.2% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to +18.8.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +2.8 pts
-• PowerScoreDiff (winner) = +0.010
-• Confidence = 79.0%
+• Edge_vs_Line (winner) = +18.8 pts
+• PowerScoreDiff (winner) = -0.049
+• Confidence = 95.0%
 
-🏷 Model Tag: VALUE PLAY — based on 79.0% confidence, +2.8 pts model edge vs line, and PowerScore Δ +0.010.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +18.8 pts model edge vs line, and PowerScore Δ -0.049.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – HOU 29.1 – MIA 23.2
-   • Win Probability – 79% (HOU)
+   • Estimated Score – HOU 9.7 – MIA 25.9
+   • Win Probability – 95% (MIA)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – HOU 24.8 – MIA 21.8
-   • Win Probability – 60% (HOU)
+   • Estimated Score – HOU 25.0 – MIA 22.5
+   • Win Probability – 59% (HOU)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — HOU (HC -3.0)
+🏷 Model Tag: NEUTRAL — MIA (HC +2.5)

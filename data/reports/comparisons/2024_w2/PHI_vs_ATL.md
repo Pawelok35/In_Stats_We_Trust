@@ -4,19 +4,21 @@
 
 | Metric | PHI | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.089 | 0.138 | ↓ -0.049 |
-| Core EPA Defense | 0.138 | 0.089 | ↑ +0.049 |
-| Success Rate Offense | 47.7% | 50.0% | ↓ -2.3 pp |
-| Success Rate Defense | 50.0% | 47.7% | ↑ +2.3 pp |
-| Explosive Play Rate (Off) | 11.6% | 14.9% | ↓ -3.2 pp |
-| Third Down Conversion | 42.9% | 22.2% | ↑ +20.6 pp |
-| Points per Drive Differential | -0.111 | 0.111 | ↓ -0.222 |
-| Yards per Play Differential | -0.935 | 0.935 | ↓ -1.871 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 7.4% | 6.7% | ↑ +0.7 pp |
-| Pressure Rate (Def) | 3.0% | 3.1% | ↓ -0.1 pp |
-| Tempo | 9.556 | 8.222 | ↑ +1.333 |
-| PowerScore | 0.201 | 0.221 | ↓ -0.020 |
+| Core EPA Offense | 0.104 | -0.240 | 0.343 |
+| Core EPA Defense | 0.091 | -0.041 | 0.131 |
+| Success Rate Offense | 0.526 | 0.471 | 0.055 |
+| Success Rate Defense | 0.465 | 0.429 | 0.037 |
+| Explosive Play Rate (Off) | 0.095 | 0.086 | 0.009 |
+| Third Down Conversion | 0.286 | 0.182 | 0.104 |
+| Points per Drive Differential | 0.455 | -0.800 | 1.255 |
+| Yards per Play Differential | -0.498 | 0.014 | -0.512 |
+| Turnover Margin | -2.000 | -3.000 | 1.000 |
+| Red Zone TD Rate (Off) | 0.120 | 0.125 | -0.005 |
+| Pressure Rate (Def) | 0.054 | 0.080 | -0.026 |
+| Tempo | 9.556 | 8.222 | 1.333 |
+| PowerScore | 2.089 | 1.835 | 0.253 |
+| PowerScore | 2.089 | 1.835 | 0.253 |
+| Tempo | 9.556 | 8.222 | 1.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.020 (PHI +0.201 vs ATL +0.221)
 **7 metrics version:**
 ATL edge: +0.209 (PHI +0.043 vs ATL +0.252)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.209), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - ATL) | -0.4 pts (favours ATL) |
-| Model Win% PHI | 48.5% |
-| Model Win% ATL | 51.5% |
-| SOS Differential (PHI-ATL) | +0.137 |
+| Model Spread (PHI - ATL) | +4.7 pts (favours PHI) |
+| Model Win% PHI | 68.6% |
+| Model Win% ATL | 31.4% |
+| SOS Differential (PHI-ATL) | +0.007 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PHI | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.192 | 0.055 |
-| Last 5 games | 0.192 | 0.055 |
-| Last 3 games | 0.192 | 0.055 |
+| Season-to-date | 1.732 | 1.725 |
+| Last 5 games | 1.732 | 1.725 |
+| Last 3 games | 1.732 | 1.725 |
 
 ## Matchup Analogs
 

@@ -4,19 +4,21 @@
 
 | Metric | PIT | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.051 | -0.027 | ↑ +0.078 |
-| Core EPA Defense | -0.027 | 0.051 | ↓ -0.078 |
-| Success Rate Offense | 49.4% | 43.5% | ↑ +5.9 pp |
-| Success Rate Defense | 43.5% | 49.4% | ↓ -5.9 pp |
-| Explosive Play Rate (Off) | 11.8% | 10.9% | ↑ +0.9 pp |
-| Third Down Conversion | 40.0% | 27.8% | ↑ +12.2 pp |
-| Points per Drive Differential | -0.515 | 0.515 | ↓ -1.030 |
-| Yards per Play Differential | 0.729 | -0.729 | ↑ +1.458 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 9.3% | 12.1% | ↓ -2.8 pp |
-| Tempo | 7.083 | 8.364 | ↓ -1.280 |
-| PowerScore | 0.159 | 0.131 | ↑ +0.028 |
+| Core EPA Offense | 0.039 | -0.095 | 0.133 |
+| Core EPA Defense | -0.106 | 0.008 | -0.114 |
+| Success Rate Offense | 0.458 | 0.435 | 0.023 |
+| Success Rate Defense | 0.454 | 0.470 | -0.015 |
+| Explosive Play Rate (Off) | 0.098 | 0.079 | 0.019 |
+| Third Down Conversion | 0.339 | 0.309 | 0.030 |
+| Points per Drive Differential | 0.768 | -0.596 | 1.364 |
+| Yards per Play Differential | -0.018 | -0.660 | 0.641 |
+| Turnover Margin | 1.286 | -0.286 | 1.571 |
+| Red Zone TD Rate (Off) | 0.137 | 0.111 | 0.027 |
+| Pressure Rate (Def) | 0.069 | 0.127 | -0.058 |
+| Tempo | 7.083 | 8.364 | -1.280 |
+| PowerScore | 0.159 | 0.131 | 0.028 |
+| PowerScore | 0.159 | 0.131 | 0.028 |
+| Tempo | 7.083 | 8.364 | -1.280 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PIT edge: +0.028 (PIT +0.159 vs NYG +0.131)
 **7 metrics version:**
 PIT edge: +0.211 (PIT +0.202 vs NYG -0.009)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.211), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ PIT edge: +0.211 (PIT +0.202 vs NYG -0.009)
 | Model Spread (PIT - NYG) | +0.5 pts (favours PIT) |
 | Model Win% PIT | 52.2% |
 | Model Win% NYG | 47.8% |
-| SOS Differential (PIT-NYG) | -0.018 |
+| SOS Differential (PIT-NYG) | +0.035 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.104 | 0.123 |
-| Last 5 games | 0.121 | 0.104 |
-| Last 3 games | 0.123 | 0.109 |
+| Season-to-date | 1.539 | 1.504 |
+| Last 5 games | 1.600 | 1.402 |
+| Last 3 games | 1.680 | 1.359 |
 
 ## Trend Summary (last 3 weeks)
 

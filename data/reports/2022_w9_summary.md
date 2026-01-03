@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 9
 
-_Generated at 2025-11-11T12:24:28.526928+00:00 (UTC)_
+_Generated at 2026-01-02T11:32:39.730839+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2238, "cols": 18, "timestamp": "2025-11-11T12:24:28.087617+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2238, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:24:28.087617+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2238, "cols": 24, "timestamp": "2025-11-11T12:24:28.087617+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2238, "cols": 18, "timestamp": "2026-01-02T11:32:39.297713+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2238, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:32:39.297713+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2238, "cols": 24, "timestamp": "2026-01-02T11:32:39.297713+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\9_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\9.parquet`
 - Manifest: `data\l4_core12\2022\9_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 26
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\9_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| CIN | 0.2440223415000983 |
-| MIA | 0.23185249242071174 |
-| CHI | 0.20063665788156815 |
-| PHI | 0.19581268914754424 |
-| JAX | 0.1843754159799216 |
-| NYJ | 0.1737836339934729 |
-| BAL | 0.15390197334110167 |
-| CAR | 0.14925526853583443 |
-| BUF | 0.14171386000079414 |
-| LV | 0.14107403478447483 |
+| CHI | 1.9581647477692088 |
+| BAL | 1.9566120004413725 |
+| CIN | 1.9112755184306949 |
+| NYJ | 1.8164503006601398 |
+| GB | 1.8156250076528986 |
+| BUF | 1.7897138600007945 |
+| KC | 1.7622805884014037 |
+| HOU | 1.7490832463141057 |
+| LAC | 1.7458237573596607 |
+| PHI | 1.742901296742481 |
 
 
 ## Visualizations

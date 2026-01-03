@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 17
 
-_Generated at 2025-11-11T12:25:51.252010+00:00 (UTC)_
+_Generated at 2026-01-02T11:40:05.524913+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\17_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2566, "cols": 18, "timestamp": "2025-11-11T12:25:50.672449+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2566, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:25:50.672449+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2566, "cols": 24, "timestamp": "2025-11-11T12:25:50.672449+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2566, "cols": 18, "timestamp": "2026-01-02T11:40:05.049223+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2566, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:40:05.049223+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2566, "cols": 24, "timestamp": "2026-01-02T11:40:05.049223+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\17_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\17.parquet`
 - Manifest: `data\l4_core12\2022\17_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\17_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| SF | 0.23164286786642413 |
-| NYG | 0.21401414622808668 |
-| LV | 0.2041982918563181 |
-| PIT | 0.19237513729839772 |
-| LAC | 0.19020781652749352 |
-| DET | 0.17425452743336414 |
-| BAL | 0.16703126100610144 |
-| KC | 0.1514425852828935 |
-| TB | 0.15034956609276737 |
-| CAR | 0.14110504844907468 |
+| PIT | 2.042375137298398 |
+| ARI | 2.0409474305754944 |
+| LAC | 1.922978561956467 |
+| NYG | 1.8713240877485546 |
+| BAL | 1.8181506639911762 |
+| DAL | 1.809661429641938 |
+| MIA | 1.7354041923540398 |
+| WAS | 1.722865438064844 |
+| LV | 1.662812524066056 |
+| IND | 1.6602074779794085 |
 
 
 ## Visualizations

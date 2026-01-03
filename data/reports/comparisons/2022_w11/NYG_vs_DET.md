@@ -4,19 +4,21 @@
 
 | Metric | NYG | DET | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.080 | 0.102 | ↓ -0.182 |
-| Core EPA Defense | 0.102 | -0.080 | ↑ +0.182 |
-| Success Rate Offense | 40.7% | 47.6% | ↓ -7.0 pp |
-| Success Rate Defense | 47.6% | 40.7% | ↑ +7.0 pp |
-| Explosive Play Rate (Off) | 15.4% | 11.9% | ↑ +3.5 pp |
-| Third Down Conversion | 33.3% | 40.0% | ↓ -6.7 pp |
-| Points per Drive Differential | -1.182 | 1.182 | ↓ -2.364 |
-| Yards per Play Differential | 0.669 | -0.669 | ↑ +1.339 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 33.3% | 20.0% | ↑ +13.3 pp |
-| Pressure Rate (Def) | 0.0% | 4.3% | ↓ -4.3 pp |
-| Tempo | 8.273 | 7.636 | ↑ +0.636 |
-| PowerScore | 0.125 | 0.163 | ↓ -0.038 |
+| Core EPA Offense | 0.051 | -0.017 | 0.068 |
+| Core EPA Defense | 0.036 | 0.070 | -0.034 |
+| Success Rate Offense | 0.428 | 0.425 | 0.003 |
+| Success Rate Defense | 0.436 | 0.466 | -0.030 |
+| Explosive Play Rate (Off) | 0.105 | 0.111 | -0.006 |
+| Third Down Conversion | 0.355 | 0.367 | -0.012 |
+| Points per Drive Differential | 0.262 | -0.413 | 0.674 |
+| Yards per Play Differential | -0.459 | -0.486 | 0.028 |
+| Turnover Margin | 0.667 | -0.444 | 1.111 |
+| Red Zone TD Rate (Off) | 0.116 | 0.169 | -0.053 |
+| Pressure Rate (Def) | 0.069 | 0.046 | 0.022 |
+| Tempo | 8.273 | 7.636 | 0.636 |
+| PowerScore | 1.749 | 1.666 | 0.083 |
+| PowerScore | 1.749 | 1.666 | 0.083 |
+| Tempo | 8.273 | 7.636 | 0.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DET edge: +0.038 (NYG +0.125 vs DET +0.163)
 **7 metrics version:**
 DET edge: +0.607 (NYG -0.190 vs DET +0.417)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.607), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - DET) | -0.7 pts (favours DET) |
-| Model Win% NYG | 47.1% |
-| Model Win% DET | 52.9% |
-| SOS Differential (NYG-DET) | -0.009 |
+| Model Spread (NYG - DET) | +1.5 pts (favours NYG) |
+| Model Win% NYG | 56.3% |
+| Model Win% DET | 43.7% |
+| SOS Differential (NYG-DET) | -0.068 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | DET |
 | --- | ---: | ---: |
-| Season-to-date | 0.156 | 0.165 |
-| Last 5 games | 0.172 | 0.142 |
-| Last 3 games | 0.161 | 0.167 |
+| Season-to-date | 1.658 | 1.726 |
+| Last 5 games | 1.776 | 1.732 |
+| Last 3 games | 1.689 | 1.864 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,19 @@
 
 | Metric | DET | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.025 | 0.094 | ↓ -0.119 |
-| Core EPA Defense | 0.094 | -0.025 | ↑ +0.119 |
-| Success Rate Offense | 47.5% | 51.1% | ↓ -3.6 pp |
-| Success Rate Defense | 51.1% | 47.5% | ↑ +3.6 pp |
-| Explosive Play Rate (Off) | 11.2% | 14.1% | ↓ -2.9 pp |
-| Third Down Conversion | 50.0% | 35.7% | ↑ +14.3 pp |
-| Points per Drive Differential | -0.235 | 0.235 | ↓ -0.470 |
-| Yards per Play Differential | 0.953 | -0.953 | ↑ +1.907 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 15.4% | 15.4% | ± 0.0 pp |
-| Pressure Rate (Def) | 2.4% | 5.4% | ↓ -3.0 pp |
-| Tempo | 6.667 | 8.364 | ↓ -1.697 |
-| PowerScore | 0.151 | 0.184 | ↓ -0.033 |
+| Core EPA Offense | -0.046 | -0.059 | 0.013 |
+| Core EPA Defense | -0.079 | 0.189 | -0.269 |
+| Success Rate Offense | 0.356 | 0.500 | -0.144 |
+| Success Rate Defense | 0.395 | 0.500 | -0.105 |
+| Explosive Play Rate (Off) | 0.092 | 0.044 | 0.048 |
+| Third Down Conversion | 0.312 | 0.200 | 0.112 |
+| Points per Drive Differential | -0.568 | -1.889 | 1.321 |
+| Yards per Play Differential | 0.329 | -1.700 | 2.029 |
+| Red Zone TD Rate (Off) | 0.167 | 0.125 | 0.042 |
+| Tempo | 6.667 | 8.364 | -1.697 |
+| PowerScore | 0.151 | 0.184 | -0.033 |
+| PowerScore | 0.151 | 0.184 | -0.033 |
+| Tempo | 6.667 | 8.364 | -1.697 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +46,10 @@ SEA edge: +0.033 (DET +0.151 vs SEA +0.184)
 **7 metrics version:**
 SEA edge: +0.617 (DET -0.187 vs SEA +0.430)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.617), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +58,7 @@ SEA edge: +0.617 (DET -0.187 vs SEA +0.430)
 | Model Spread (DET - SEA) | -0.6 pts (favours SEA) |
 | Model Win% DET | 47.5% |
 | Model Win% SEA | 52.5% |
-| SOS Differential (DET-SEA) | -0.121 |
+| SOS Differential (DET-SEA) | -0.823 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +221,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.077 | 0.198 |
-| Last 5 games | 0.077 | 0.198 |
-| Last 3 games | 0.077 | 0.198 |
+| Season-to-date | 1.535 | 2.357 |
+| Last 5 games | 1.535 | 2.357 |
+| Last 3 games | 1.535 | 2.357 |
 
 ## Matchup Analogs
 

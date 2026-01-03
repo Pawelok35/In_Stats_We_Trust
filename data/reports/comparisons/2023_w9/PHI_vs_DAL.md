@@ -4,19 +4,21 @@
 
 | Metric | PHI | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.209 | 0.150 | ↑ +0.059 |
-| Core EPA Defense | 0.150 | 0.209 | ↓ -0.059 |
-| Success Rate Offense | 49.4% | 47.8% | ↑ +1.6 pp |
-| Success Rate Defense | 47.8% | 49.4% | ↓ -1.6 pp |
-| Explosive Play Rate (Off) | 8.6% | 11.1% | ↓ -2.5 pp |
-| Third Down Conversion | 46.7% | 37.5% | ↑ +9.2 pp |
-| Points per Drive Differential | 0.300 | -0.300 | ↑ +0.600 |
-| Yards per Play Differential | -0.906 | 0.906 | ↓ -1.812 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 17.6% | 15.8% | ↑ +1.9 pp |
-| Pressure Rate (Def) | 10.0% | 11.5% | ↓ -1.5 pp |
-| Tempo | 8.100 | 9.000 | ↓ -0.900 |
-| PowerScore | 0.244 | 0.236 | ↑ +0.008 |
+| Core EPA Offense | 0.075 | 0.014 | 0.060 |
+| Core EPA Defense | -0.030 | -0.158 | 0.129 |
+| Success Rate Offense | 0.456 | 0.434 | 0.022 |
+| Success Rate Defense | 0.417 | 0.387 | 0.030 |
+| Explosive Play Rate (Off) | 0.091 | 0.104 | -0.013 |
+| Third Down Conversion | 0.460 | 0.430 | 0.030 |
+| Points per Drive Differential | 0.514 | 0.544 | -0.030 |
+| Yards per Play Differential | 0.451 | 0.436 | 0.015 |
+| Turnover Margin | -0.625 | 1.143 | -1.768 |
+| Red Zone TD Rate (Off) | 0.138 | 0.082 | 0.057 |
+| Pressure Rate (Def) | 0.076 | 0.082 | -0.006 |
+| Tempo | 8.100 | 9.000 | -0.900 |
+| PowerScore | 0.244 | 0.236 | 0.008 |
+| PowerScore | 0.244 | 0.236 | 0.008 |
+| Tempo | 8.100 | 9.000 | -0.900 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PHI edge: +0.008 (PHI +0.244 vs DAL +0.236)
 **7 metrics version:**
 PHI edge: +0.203 (PHI +0.292 vs DAL +0.089)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.203), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ PHI edge: +0.203 (PHI +0.292 vs DAL +0.089)
 | Model Spread (PHI - DAL) | +0.1 pts (favours PHI) |
 | Model Win% PHI | 50.6% |
 | Model Win% DAL | 49.4% |
-| SOS Differential (PHI-DAL) | +0.070 |
+| SOS Differential (PHI-DAL) | +0.138 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PHI | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.130 | 0.061 |
-| Last 5 games | 0.144 | 0.097 |
-| Last 3 games | 0.125 | 0.110 |
+| Season-to-date | 1.647 | 1.509 |
+| Last 5 games | 1.770 | 1.610 |
+| Last 3 games | 1.628 | 1.616 |
 
 ## Trend Summary (last 3 weeks)
 

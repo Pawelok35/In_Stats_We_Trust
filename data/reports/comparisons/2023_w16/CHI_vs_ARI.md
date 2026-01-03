@@ -4,19 +4,21 @@
 
 | Metric | CHI | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.107 | -0.028 | ↑ +0.135 |
-| Core EPA Defense | -0.028 | 0.107 | ↓ -0.135 |
-| Success Rate Offense | 44.8% | 34.2% | ↑ +10.7 pp |
-| Success Rate Defense | 34.2% | 44.8% | ↓ -10.7 pp |
-| Explosive Play Rate (Off) | 13.8% | 11.4% | ↑ +2.4 pp |
-| Third Down Conversion | 47.1% | 43.8% | ↑ +3.3 pp |
-| Points per Drive Differential | 1.121 | -1.121 | ↑ +2.242 |
-| Yards per Play Differential | 0.954 | -0.954 | ↑ +1.908 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 33.3% | ↓ -16.7 pp |
-| Pressure Rate (Def) | 4.9% | 3.6% | ↑ +1.3 pp |
-| Tempo | 7.909 | 6.583 | ↑ +1.326 |
-| PowerScore | 0.172 | 0.120 | ↑ +0.052 |
+| Core EPA Offense | -0.090 | -0.083 | -0.007 |
+| Core EPA Defense | -0.063 | 0.055 | -0.117 |
+| Success Rate Offense | 0.393 | 0.381 | 0.013 |
+| Success Rate Defense | 0.403 | 0.464 | -0.061 |
+| Explosive Play Rate (Off) | 0.100 | 0.094 | 0.006 |
+| Third Down Conversion | 0.391 | 0.337 | 0.054 |
+| Points per Drive Differential | -0.070 | -0.706 | 0.637 |
+| Yards per Play Differential | -0.171 | -0.754 | 0.583 |
+| Turnover Margin | 0.071 | -0.286 | 0.357 |
+| Red Zone TD Rate (Off) | 0.142 | 0.122 | 0.020 |
+| Pressure Rate (Def) | 0.044 | 0.069 | -0.025 |
+| Tempo | 7.909 | 6.583 | 1.326 |
+| PowerScore | 1.726 | 1.414 | 0.312 |
+| PowerScore | 1.726 | 1.414 | 0.312 |
+| Tempo | 7.909 | 6.583 | 1.326 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CHI edge: +0.052 (CHI +0.172 vs ARI +0.120)
 **7 metrics version:**
 ARI edge: +0.190 (CHI +0.024 vs ARI +0.214)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.190), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - ARI) | +1.0 pts (favours CHI) |
-| Model Win% CHI | 54.0% |
-| Model Win% ARI | 46.0% |
-| SOS Differential (CHI-ARI) | -0.063 |
+| Model Spread (CHI - ARI) | +5.8 pts (favours CHI) |
+| Model Win% CHI | 72.4% |
+| Model Win% ARI | 27.6% |
+| SOS Differential (CHI-ARI) | -0.161 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.077 | 0.140 |
-| Last 5 games | 0.024 | 0.165 |
-| Last 3 games | -0.013 | 0.190 |
+| Season-to-date | 1.496 | 1.656 |
+| Last 5 games | 1.364 | 1.639 |
+| Last 3 games | 1.232 | 1.612 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | SF | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.112 | 0.052 | ↓ -0.165 |
-| Core EPA Defense | 0.052 | -0.112 | ↑ +0.165 |
-| Success Rate Offense | 49.3% | 54.1% | ↓ -4.8 pp |
-| Success Rate Defense | 54.1% | 49.3% | ↑ +4.8 pp |
-| Explosive Play Rate (Off) | 9.3% | 9.4% | ↓ -0.1 pp |
-| Third Down Conversion | 16.7% | 57.1% | ↓ -40.5 pp |
-| Points per Drive Differential | -0.909 | 0.909 | ↓ -1.818 |
-| Yards per Play Differential | 0.263 | -0.263 | ↑ +0.525 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 12.5% | 19.0% | ↓ -6.5 pp |
-| Pressure Rate (Def) | 6.5% | 3.0% | ↑ +3.4 pp |
-| Tempo | 6.818 | 7.727 | ↓ -0.909 |
-| PowerScore | 0.113 | 0.150 | ↓ -0.037 |
+| Core EPA Offense | 0.060 | 0.039 | 0.022 |
+| Core EPA Defense | -0.018 | -0.047 | 0.029 |
+| Success Rate Offense | 0.488 | 0.519 | -0.031 |
+| Success Rate Defense | 0.481 | 0.446 | 0.035 |
+| Explosive Play Rate (Off) | 0.121 | 0.082 | 0.039 |
+| Third Down Conversion | 0.412 | 0.378 | 0.034 |
+| Points per Drive Differential | 0.199 | 0.515 | -0.316 |
+| Yards per Play Differential | 0.899 | 0.536 | 0.363 |
+| Turnover Margin | 0.500 | -0.800 | 1.300 |
+| Red Zone TD Rate (Off) | 0.109 | 0.090 | 0.019 |
+| Pressure Rate (Def) | 0.078 | 0.052 | 0.026 |
+| Tempo | 6.818 | 7.727 | -0.909 |
+| PowerScore | 0.113 | 0.150 | -0.037 |
+| PowerScore | 0.113 | 0.150 | -0.037 |
+| Tempo | 6.818 | 7.727 | -0.909 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.037 (SF +0.113 vs KC +0.150)
 **7 metrics version:**
 KC edge: +0.219 (SF -0.015 vs KC +0.203)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.219), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.219 (SF -0.015 vs KC +0.203)
 | Model Spread (SF - KC) | -0.7 pts (favours KC) |
 | Model Win% SF | 47.2% |
 | Model Win% KC | 52.8% |
-| SOS Differential (SF-KC) | +0.026 |
+| SOS Differential (SF-KC) | -0.094 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.144 | 0.118 |
-| Last 5 games | 0.139 | 0.118 |
-| Last 3 games | 0.118 | 0.079 |
+| Season-to-date | 1.567 | 1.661 |
+| Last 5 games | 1.593 | 1.661 |
+| Last 3 games | 1.591 | 1.532 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | SEA (H) | 17-21 | SEA | 0.592 | -0.133 | 49.4% | -0.391 |
+| 2 | MIN (A) | 17-21 | MIN | 0.747 | -0.133 | 49.4% | -0.391 |
+| 6 | SEA (A) | 36-24 | SF | 0.592 | 0.254 | 51.8% | 1.000 |
 | 1 | NYJ (H) | 32-19 | SF | 0.555 | 0.172 | 49.4% | 1.300 |
-| 4 | LA (H) | 24-13 | SF | 0.523 | -0.021 | 42.9% | 0.917 |
 
 **KC analogs vs SF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | TB (A) | 17-11 | KC | 0.965 | -0.103 | 46.1% | 0.545 |
 | 1 | BAL (H) | 27-20 | KC | 0.867 | 0.124 | 47.1% | 0.700 |
-| 6 | BUF (H) | n/a | n/a | 0.724 | n/a | n/a | n/a |
+| 2 | CIN (H) | 20-23 | CIN | 0.770 | -0.006 | 53.2% | -0.273 |
+| 3 | ATL (A) | 22-19 | KC | 0.738 | 0.085 | 56.8% | 0.300 |
 
 ## Core EPA Offense Form (up to Week 6)
 

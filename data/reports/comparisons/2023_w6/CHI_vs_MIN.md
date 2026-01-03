@@ -4,19 +4,21 @@
 
 | Metric | CHI | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.246 | -0.165 | ↓ -0.081 |
-| Core EPA Defense | -0.165 | -0.246 | ↑ +0.081 |
-| Success Rate Offense | 46.3% | 41.3% | ↑ +5.0 pp |
-| Success Rate Defense | 41.3% | 46.3% | ↓ -5.0 pp |
-| Explosive Play Rate (Off) | 12.2% | 4.0% | ↑ +8.2 pp |
-| Third Down Conversion | 37.5% | 13.3% | ↑ +24.2 pp |
-| Points per Drive Differential | -0.083 | 0.083 | ↓ -0.167 |
-| Yards per Play Differential | 0.420 | -0.420 | ↑ +0.841 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 11.1% | 25.0% | ↓ -13.9 pp |
-| Pressure Rate (Def) | 5.9% | 16.7% | ↓ -10.8 pp |
-| Tempo | 6.308 | 6.250 | ↑ +0.058 |
-| PowerScore | 0.021 | 0.004 | ↑ +0.017 |
+| Core EPA Offense | -0.043 | -0.019 | -0.024 |
+| Core EPA Defense | 0.084 | 0.014 | 0.069 |
+| Success Rate Offense | 0.407 | 0.444 | -0.037 |
+| Success Rate Defense | 0.428 | 0.425 | 0.003 |
+| Explosive Play Rate (Off) | 0.105 | 0.118 | -0.013 |
+| Third Down Conversion | 0.380 | 0.362 | 0.017 |
+| Points per Drive Differential | -0.333 | -0.170 | -0.164 |
+| Yards per Play Differential | -0.505 | 0.636 | -1.140 |
+| Turnover Margin | -0.800 | -1.400 | 0.600 |
+| Red Zone TD Rate (Off) | 0.189 | 0.156 | 0.033 |
+| Pressure Rate (Def) | 0.035 | 0.075 | -0.040 |
+| Tempo | 6.308 | 6.250 | 0.058 |
+| PowerScore | 0.021 | 0.004 | 0.017 |
+| PowerScore | 0.021 | 0.004 | 0.017 |
+| Tempo | 6.308 | 6.250 | 0.058 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CHI edge: +0.017 (CHI +0.021 vs MIN +0.004)
 **7 metrics version:**
 MIN edge: +0.413 (CHI -0.196 vs MIN +0.217)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.413), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIN edge: +0.413 (CHI -0.196 vs MIN +0.217)
 | Model Spread (CHI - MIN) | +0.3 pts (favours CHI) |
 | Model Win% CHI | 51.3% |
 | Model Win% MIN | 48.7% |
-| SOS Differential (CHI-MIN) | +0.030 |
+| SOS Differential (CHI-MIN) | -0.173 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | MIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.149 | 0.119 |
-| Last 5 games | 0.149 | 0.119 |
-| Last 3 games | 0.168 | 0.116 |
+| Season-to-date | 1.612 | 1.785 |
+| Last 5 games | 1.612 | 1.785 |
+| Last 3 games | 1.634 | 1.869 |
 
 ## Trend Summary (last 3 weeks)
 

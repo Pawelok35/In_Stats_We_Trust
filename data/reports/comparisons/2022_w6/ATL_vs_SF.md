@@ -4,19 +4,21 @@
 
 | Metric | ATL | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.060 | -0.137 | ↑ +0.197 |
-| Core EPA Defense | -0.137 | 0.060 | ↓ -0.197 |
-| Success Rate Offense | 52.8% | 49.3% | ↑ +3.4 pp |
-| Success Rate Defense | 49.3% | 52.8% | ↓ -3.4 pp |
-| Explosive Play Rate (Off) | 8.3% | 5.3% | ↑ +3.0 pp |
-| Third Down Conversion | 64.3% | 44.4% | ↑ +19.8 pp |
-| Points per Drive Differential | 1.044 | -1.044 | ↑ +2.089 |
-| Yards per Play Differential | -0.599 | 0.599 | ↓ -1.199 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 18.8% | 20.0% | ↓ -1.3 pp |
-| Pressure Rate (Def) | 0.0% | 12.5% | ↓ -12.5 pp |
-| Tempo | 8.000 | 7.500 | ↑ +0.500 |
-| PowerScore | 0.142 | 0.098 | ↑ +0.044 |
+| Core EPA Offense | 0.042 | -0.037 | 0.079 |
+| Core EPA Defense | 0.034 | -0.171 | 0.205 |
+| Success Rate Offense | 0.453 | 0.410 | 0.043 |
+| Success Rate Defense | 0.489 | 0.362 | 0.128 |
+| Explosive Play Rate (Off) | 0.113 | 0.112 | 0.001 |
+| Third Down Conversion | 0.372 | 0.368 | 0.004 |
+| Points per Drive Differential | -0.421 | 0.915 | -1.335 |
+| Yards per Play Differential | -0.457 | 1.273 | -1.730 |
+| Turnover Margin | -0.200 | -0.200 | 0.000 |
+| Red Zone TD Rate (Off) | 0.176 | 0.126 | 0.050 |
+| Pressure Rate (Def) | 0.040 | 0.100 | -0.060 |
+| Tempo | 8.000 | 7.500 | 0.500 |
+| PowerScore | 1.725 | 1.587 | 0.138 |
+| PowerScore | 1.725 | 1.587 | 0.138 |
+| Tempo | 8.000 | 7.500 | 0.500 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.044 (ATL +0.142 vs SF +0.098)
 **7 metrics version:**
 ATL edge: +0.604 (ATL +0.394 vs SF -0.211)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.604), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - SF) | +0.8 pts (favours ATL) |
-| Model Win% ATL | 53.4% |
-| Model Win% SF | 46.6% |
-| SOS Differential (ATL-SF) | +0.130 |
+| Model Spread (ATL - SF) | +2.6 pts (favours ATL) |
+| Model Win% ATL | 60.5% |
+| Model Win% SF | 39.5% |
+| SOS Differential (ATL-SF) | +0.341 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.166 | 0.036 |
-| Last 5 games | 0.166 | 0.036 |
-| Last 3 games | 0.193 | 0.043 |
+| Season-to-date | 1.834 | 1.493 |
+| Last 5 games | 1.834 | 1.493 |
+| Last 3 games | 2.095 | 1.586 |
 
 ## Trend Summary (last 3 weeks)
 

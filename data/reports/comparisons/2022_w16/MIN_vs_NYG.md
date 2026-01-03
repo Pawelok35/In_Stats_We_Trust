@@ -4,19 +4,21 @@
 
 | Metric | MIN | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.010 | 0.014 | ↓ -0.003 |
-| Core EPA Defense | 0.014 | 0.010 | ↑ +0.003 |
-| Success Rate Offense | 46.2% | 48.8% | ↓ -2.7 pp |
-| Success Rate Defense | 48.8% | 46.2% | ↑ +2.7 pp |
-| Explosive Play Rate (Off) | 11.0% | 13.1% | ↓ -2.1 pp |
-| Third Down Conversion | 46.2% | 27.3% | ↑ +18.9 pp |
-| Points per Drive Differential | -0.105 | 0.105 | ↓ -0.210 |
-| Yards per Play Differential | -1.442 | 1.442 | ↓ -2.885 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 25.0% | 14.3% | ↑ +10.7 pp |
-| Pressure Rate (Def) | 6.5% | 7.7% | ↓ -1.2 pp |
-| Tempo | 7.000 | 7.636 | ↓ -0.636 |
-| PowerScore | 0.144 | 0.155 | ↓ -0.011 |
+| Core EPA Offense | -0.017 | 0.020 | -0.037 |
+| Core EPA Defense | 0.007 | 0.052 | -0.045 |
+| Success Rate Offense | 0.423 | 0.428 | -0.006 |
+| Success Rate Defense | 0.446 | 0.443 | 0.003 |
+| Explosive Play Rate (Off) | 0.101 | 0.103 | -0.002 |
+| Third Down Conversion | 0.344 | 0.325 | 0.019 |
+| Points per Drive Differential | -0.073 | -0.126 | 0.052 |
+| Yards per Play Differential | -0.611 | -0.536 | -0.075 |
+| Turnover Margin | 0.000 | 0.429 | -0.429 |
+| Red Zone TD Rate (Off) | 0.151 | 0.160 | -0.009 |
+| Pressure Rate (Def) | 0.061 | 0.066 | -0.006 |
+| Tempo | 7.000 | 7.636 | -0.636 |
+| PowerScore | 1.522 | 1.656 | -0.134 |
+| PowerScore | 1.522 | 1.656 | -0.134 |
+| Tempo | 7.000 | 7.636 | -0.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYG edge: +0.011 (MIN +0.144 vs NYG +0.155)
 **7 metrics version:**
 MIN edge: +0.403 (MIN +0.317 vs NYG -0.086)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.403), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - NYG) | -0.2 pts (favours NYG) |
-| Model Win% MIN | 49.1% |
-| Model Win% NYG | 50.9% |
-| SOS Differential (MIN-NYG) | -0.025 |
+| Model Spread (MIN - NYG) | -2.5 pts (favours NYG) |
+| Model Win% MIN | 39.8% |
+| Model Win% NYG | 60.2% |
+| SOS Differential (MIN-NYG) | -0.080 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.134 | 0.159 |
-| Last 5 games | 0.144 | 0.164 |
-| Last 3 games | 0.124 | 0.165 |
+| Season-to-date | 1.600 | 1.680 |
+| Last 5 games | 1.625 | 1.720 |
+| Last 3 games | 1.605 | 1.662 |
 
 ## Trend Summary (last 3 weeks)
 

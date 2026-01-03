@@ -4,19 +4,21 @@
 
 | Metric | JAX | GB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.061 | 0.131 | ↓ -0.070 |
-| Core EPA Defense | 0.131 | 0.061 | ↑ +0.070 |
-| Success Rate Offense | 50.0% | 48.9% | ↑ +1.1 pp |
-| Success Rate Defense | 48.9% | 50.0% | ↓ -1.1 pp |
-| Explosive Play Rate (Off) | 16.7% | 8.9% | ↑ +7.8 pp |
-| Third Down Conversion | 9.1% | 26.7% | ↓ -17.6 pp |
-| Points per Drive Differential | -0.231 | 0.231 | ↓ -0.462 |
-| Yards per Play Differential | 0.311 | -0.311 | ↑ +0.622 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 27.3% | 9.5% | ↑ +17.7 pp |
-| Pressure Rate (Def) | 3.2% | 3.0% | ↑ +0.2 pp |
-| Tempo | 6.000 | 6.923 | ↓ -0.923 |
-| PowerScore | 0.206 | 0.198 | ↑ +0.008 |
+| Core EPA Offense | 0.050 | 0.039 | 0.011 |
+| Core EPA Defense | 0.129 | -0.057 | 0.186 |
+| Success Rate Offense | 0.470 | 0.453 | 0.017 |
+| Success Rate Defense | 0.477 | 0.499 | -0.022 |
+| Explosive Play Rate (Off) | 0.101 | 0.116 | -0.015 |
+| Third Down Conversion | 0.335 | 0.337 | -0.002 |
+| Points per Drive Differential | -0.860 | 0.516 | -1.376 |
+| Yards per Play Differential | -0.164 | 0.602 | -0.766 |
+| Turnover Margin | -0.857 | 0.857 | -1.714 |
+| Red Zone TD Rate (Off) | 0.123 | 0.153 | -0.031 |
+| Pressure Rate (Def) | 0.056 | 0.079 | -0.023 |
+| Tempo | 6.000 | 6.923 | -0.923 |
+| PowerScore | 0.206 | 0.198 | 0.008 |
+| PowerScore | 0.206 | 0.198 | 0.008 |
+| Tempo | 6.000 | 6.923 | -0.923 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.008 (JAX +0.206 vs GB +0.198)
 **7 metrics version:**
 GB edge: +0.176 (JAX +0.064 vs GB +0.240)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.176), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ GB edge: +0.176 (JAX +0.064 vs GB +0.240)
 | Model Spread (JAX - GB) | +0.1 pts (favours JAX) |
 | Model Win% JAX | 50.6% |
 | Model Win% GB | 49.4% |
-| SOS Differential (JAX-GB) | +0.064 |
+| SOS Differential (JAX-GB) | +0.255 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | GB |
 | --- | ---: | ---: |
-| Season-to-date | 0.197 | 0.133 |
-| Last 5 games | 0.227 | 0.122 |
-| Last 3 games | 0.225 | 0.136 |
+| Season-to-date | 1.822 | 1.567 |
+| Last 5 games | 1.829 | 1.519 |
+| Last 3 games | 1.789 | 1.665 |
 
 ## Trend Summary (last 3 weeks)
 

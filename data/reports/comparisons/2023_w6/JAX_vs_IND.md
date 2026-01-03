@@ -4,19 +4,21 @@
 
 | Metric | JAX | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.068 | -0.146 | ↑ +0.213 |
-| Core EPA Defense | -0.146 | 0.068 | ↓ -0.213 |
-| Success Rate Offense | 45.3% | 37.2% | ↑ +8.1 pp |
-| Success Rate Defense | 37.2% | 45.3% | ↓ -8.1 pp |
-| Explosive Play Rate (Off) | 5.8% | 6.4% | ↓ -0.6 pp |
-| Third Down Conversion | 25.0% | 33.3% | ↓ -8.3 pp |
-| Points per Drive Differential | 1.104 | -1.104 | ↑ +2.209 |
-| Yards per Play Differential | -1.057 | 1.057 | ↓ -2.113 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 15.4% | 10.5% | ↑ +4.9 pp |
-| Pressure Rate (Def) | 5.2% | 8.1% | ↓ -2.9 pp |
-| Tempo | 6.143 | 7.231 | ↓ -1.088 |
-| PowerScore | 0.120 | 0.068 | ↑ +0.051 |
+| Core EPA Offense | -0.042 | -0.028 | -0.013 |
+| Core EPA Defense | -0.042 | -0.040 | -0.002 |
+| Success Rate Offense | 0.443 | 0.390 | 0.052 |
+| Success Rate Defense | 0.413 | 0.431 | -0.019 |
+| Explosive Play Rate (Off) | 0.085 | 0.098 | -0.013 |
+| Third Down Conversion | 0.330 | 0.352 | -0.022 |
+| Points per Drive Differential | -0.074 | 0.181 | -0.255 |
+| Yards per Play Differential | -0.440 | -0.160 | -0.280 |
+| Turnover Margin | 0.400 | 0.600 | -0.200 |
+| Red Zone TD Rate (Off) | 0.110 | 0.147 | -0.037 |
+| Pressure Rate (Def) | 0.046 | 0.071 | -0.026 |
+| Tempo | 6.143 | 7.231 | -1.088 |
+| PowerScore | 0.120 | 0.068 | 0.051 |
+| PowerScore | 0.120 | 0.068 | 0.051 |
+| Tempo | 6.143 | 7.231 | -1.088 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.051 (JAX +0.120 vs IND +0.068)
 **7 metrics version:**
 JAX edge: +0.624 (JAX +0.382 vs IND -0.242)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.624), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ JAX edge: +0.624 (JAX +0.382 vs IND -0.242)
 | Model Spread (JAX - IND) | +0.9 pts (favours JAX) |
 | Model Win% JAX | 53.9% |
 | Model Win% IND | 46.1% |
-| SOS Differential (JAX-IND) | -0.009 |
+| SOS Differential (JAX-IND) | -0.165 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.100 | 0.109 |
-| Last 5 games | 0.100 | 0.109 |
-| Last 3 games | 0.160 | 0.141 |
+| Season-to-date | 1.453 | 1.618 |
+| Last 5 games | 1.453 | 1.618 |
+| Last 3 games | 1.491 | 1.665 |
 
 ## Trend Summary (last 3 weeks)
 

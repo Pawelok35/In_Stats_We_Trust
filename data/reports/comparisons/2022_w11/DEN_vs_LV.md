@@ -4,19 +4,21 @@
 
 | Metric | DEN | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.002 | 0.078 | ↓ -0.076 |
-| Core EPA Defense | 0.078 | 0.002 | ↑ +0.076 |
-| Success Rate Offense | 43.2% | 44.6% | ↓ -1.4 pp |
-| Success Rate Defense | 44.6% | 43.2% | ↑ +1.4 pp |
-| Explosive Play Rate (Off) | 11.1% | 14.5% | ↓ -3.3 pp |
-| Third Down Conversion | 38.5% | 25.0% | ↑ +13.5 pp |
-| Points per Drive Differential | -0.745 | 0.745 | ↓ -1.491 |
-| Yards per Play Differential | -0.953 | 0.953 | ↓ -1.906 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 16.7% | 0.0% | ↑ +16.7 pp |
-| Pressure Rate (Def) | 2.6% | 8.8% | ↓ -6.2 pp |
-| Tempo | 7.364 | 8.300 | ↓ -0.936 |
-| PowerScore | 0.147 | 0.168 | ↓ -0.022 |
+| Core EPA Offense | -0.099 | 0.008 | -0.108 |
+| Core EPA Defense | -0.074 | 0.029 | -0.102 |
+| Success Rate Offense | 0.362 | 0.418 | -0.056 |
+| Success Rate Defense | 0.417 | 0.452 | -0.034 |
+| Explosive Play Rate (Off) | 0.094 | 0.107 | -0.013 |
+| Third Down Conversion | 0.256 | 0.364 | -0.108 |
+| Points per Drive Differential | -0.087 | -0.307 | 0.220 |
+| Yards per Play Differential | 0.375 | -0.417 | 0.791 |
+| Turnover Margin | 0.222 | -0.111 | 0.333 |
+| Red Zone TD Rate (Off) | 0.118 | 0.122 | -0.004 |
+| Pressure Rate (Def) | 0.073 | 0.031 | 0.042 |
+| Tempo | 7.364 | 8.300 | -0.936 |
+| PowerScore | 1.597 | 1.799 | -0.202 |
+| PowerScore | 1.597 | 1.799 | -0.202 |
+| Tempo | 7.364 | 8.300 | -0.936 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LV edge: +0.022 (DEN +0.147 vs LV +0.168)
 **7 metrics version:**
 DEN edge: +0.001 (DEN +0.111 vs LV +0.110)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.001), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - LV) | -0.4 pts (favours LV) |
-| Model Win% DEN | 48.3% |
-| Model Win% LV | 51.7% |
-| SOS Differential (DEN-LV) | -0.069 |
+| Model Spread (DEN - LV) | -3.7 pts (favours LV) |
+| Model Win% DEN | 34.9% |
+| Model Win% LV | 65.1% |
+| SOS Differential (DEN-LV) | -0.282 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | LV |
 | --- | ---: | ---: |
-| Season-to-date | 0.077 | 0.146 |
-| Last 5 games | 0.073 | 0.171 |
-| Last 3 games | 0.089 | 0.147 |
+| Season-to-date | 1.502 | 1.784 |
+| Last 5 games | 1.520 | 1.832 |
+| Last 3 games | 1.438 | 1.738 |
 
 ## Trend Summary (last 3 weeks)
 

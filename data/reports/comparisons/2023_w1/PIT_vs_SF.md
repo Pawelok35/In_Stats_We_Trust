@@ -4,19 +4,21 @@
 
 | Metric | PIT | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.276 | 0.107 | ↓ -0.383 |
-| Core EPA Defense | 0.107 | -0.276 | ↑ +0.383 |
-| Success Rate Offense | 38.0% | 40.2% | ↓ -2.3 pp |
-| Success Rate Defense | 40.2% | 38.0% | ↑ +2.3 pp |
-| Explosive Play Rate (Off) | 5.1% | 13.8% | ↓ -8.7 pp |
-| Third Down Conversion | 29.4% | 42.9% | ↓ -13.4 pp |
-| Points per Drive Differential | -1.864 | 1.864 | ↓ -3.727 |
-| Yards per Play Differential | -1.469 | 1.469 | ↓ -2.938 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 7.1% | 18.2% | ↓ -11.0 pp |
-| Pressure Rate (Def) | 8.6% | 9.8% | ↓ -1.2 pp |
-| Tempo | 7.182 | 7.250 | ↓ -0.068 |
-| PowerScore | 0.030 | 0.111 | ↓ -0.081 |
+| Core EPA Offense | -0.276 | 0.107 | -0.383 |
+| Core EPA Defense | 0.107 | -0.276 | 0.383 |
+| Success Rate Offense | 0.380 | 0.402 | -0.023 |
+| Success Rate Defense | 0.402 | 0.380 | 0.023 |
+| Explosive Play Rate (Off) | 0.051 | 0.138 | -0.087 |
+| Third Down Conversion | 0.294 | 0.429 | -0.134 |
+| Points per Drive Differential | -1.864 | 1.864 | -3.727 |
+| Yards per Play Differential | -1.469 | 1.469 | -2.938 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.071 | 0.182 | -0.110 |
+| Pressure Rate (Def) | 0.086 | 0.098 | -0.012 |
+| Tempo | 7.182 | 7.250 | -0.068 |
+| PowerScore | 1.456 | 1.533 | -0.077 |
+| PowerScore | 1.456 | 1.533 | -0.077 |
+| Tempo | 7.182 | 7.250 | -0.068 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ SF edge: +0.081 (PIT +0.030 vs SF +0.111)
 **7 metrics version:**
 SF edge: +0.244 (PIT -0.070 vs SF +0.174)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.244), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - SF) | -1.5 pts (favours SF) |
-| Model Win% PIT | 43.8% |
-| Model Win% SF | 56.2% |
+| Model Spread (PIT - SF) | -1.4 pts (favours SF) |
+| Model Win% PIT | 44.1% |
+| Model Win% SF | 55.9% |
 | SOS Differential (PIT-SF) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

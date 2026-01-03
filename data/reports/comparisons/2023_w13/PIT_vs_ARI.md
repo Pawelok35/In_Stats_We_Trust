@@ -4,19 +4,21 @@
 
 | Metric | PIT | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.174 | 0.051 | ↓ -0.225 |
-| Core EPA Defense | 0.051 | -0.174 | ↑ +0.225 |
-| Success Rate Offense | 40.5% | 38.1% | ↑ +2.4 pp |
-| Success Rate Defense | 38.1% | 40.5% | ↓ -2.4 pp |
-| Explosive Play Rate (Off) | 7.6% | 10.7% | ↓ -3.1 pp |
-| Third Down Conversion | 33.3% | 50.0% | ↓ -16.7 pp |
-| Points per Drive Differential | -1.491 | 1.491 | ↓ -2.982 |
-| Yards per Play Differential | 0.656 | -0.656 | ↑ +1.311 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 7.7% | 18.8% | ↓ -11.1 pp |
-| Pressure Rate (Def) | 7.1% | 0.0% | ↑ +7.1 pp |
-| Tempo | 7.182 | 8.400 | ↓ -1.218 |
-| PowerScore | 0.066 | 0.100 | ↓ -0.034 |
+| Core EPA Offense | -0.083 | -0.105 | 0.022 |
+| Core EPA Defense | -0.045 | 0.050 | -0.095 |
+| Success Rate Offense | 0.387 | 0.379 | 0.008 |
+| Success Rate Defense | 0.417 | 0.463 | -0.047 |
+| Explosive Play Rate (Off) | 0.086 | 0.091 | -0.004 |
+| Third Down Conversion | 0.322 | 0.315 | 0.007 |
+| Points per Drive Differential | -0.318 | -0.895 | 0.577 |
+| Yards per Play Differential | -0.432 | -0.756 | 0.325 |
+| Turnover Margin | 1.182 | -0.250 | 1.432 |
+| Red Zone TD Rate (Off) | 0.102 | 0.117 | -0.014 |
+| Pressure Rate (Def) | 0.074 | 0.080 | -0.007 |
+| Tempo | 7.182 | 8.400 | -1.218 |
+| PowerScore | 0.066 | 0.100 | -0.034 |
+| PowerScore | 0.066 | 0.100 | -0.034 |
+| Tempo | 7.182 | 8.400 | -1.218 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ARI edge: +0.034 (PIT +0.066 vs ARI +0.100)
 **7 metrics version:**
 ARI edge: +0.215 (PIT -0.050 vs ARI +0.164)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.215), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ ARI edge: +0.215 (PIT -0.050 vs ARI +0.164)
 | Model Spread (PIT - ARI) | -0.6 pts (favours ARI) |
 | Model Win% PIT | 47.4% |
 | Model Win% ARI | 52.6% |
-| SOS Differential (PIT-ARI) | -0.040 |
+| SOS Differential (PIT-ARI) | -0.077 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.092 | 0.133 |
-| Last 5 games | 0.110 | 0.110 |
-| Last 3 games | 0.086 | 0.152 |
+| Season-to-date | 1.599 | 1.676 |
+| Last 5 games | 1.618 | 1.547 |
+| Last 3 games | 1.449 | 1.706 |
 
 ## Trend Summary (last 3 weeks)
 

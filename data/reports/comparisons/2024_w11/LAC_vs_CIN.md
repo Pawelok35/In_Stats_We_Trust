@@ -4,19 +4,21 @@
 
 | Metric | LAC | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.041 | 0.009 | ↑ +0.033 |
-| Core EPA Defense | 0.009 | 0.041 | ↓ -0.033 |
-| Success Rate Offense | 48.3% | 41.7% | ↑ +6.5 pp |
-| Success Rate Defense | 41.7% | 48.3% | ↓ -6.5 pp |
-| Explosive Play Rate (Off) | 16.1% | 10.7% | ↑ +5.4 pp |
-| Third Down Conversion | 21.4% | 29.4% | ↓ -8.0 pp |
-| Points per Drive Differential | 0.538 | -0.538 | ↑ +1.077 |
-| Yards per Play Differential | 0.612 | -0.612 | ↑ +1.223 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 6.7% | 8.0% | ↓ -1.3 pp |
-| Pressure Rate (Def) | 5.7% | 5.3% | ↑ +0.4 pp |
-| Tempo | 6.692 | 7.923 | ↓ -1.231 |
-| PowerScore | 0.169 | 0.137 | ↑ +0.032 |
+| Core EPA Offense | -0.005 | 0.089 | -0.093 |
+| Core EPA Defense | -0.127 | 0.088 | -0.216 |
+| Success Rate Offense | 0.420 | 0.493 | -0.073 |
+| Success Rate Defense | 0.439 | 0.507 | -0.068 |
+| Explosive Play Rate (Off) | 0.104 | 0.089 | 0.014 |
+| Third Down Conversion | 0.373 | 0.450 | -0.076 |
+| Points per Drive Differential | 0.638 | 0.112 | 0.526 |
+| Yards per Play Differential | 0.142 | 0.205 | -0.063 |
+| Turnover Margin | 1.111 | 0.200 | 0.911 |
+| Red Zone TD Rate (Off) | 0.101 | 0.133 | -0.032 |
+| Pressure Rate (Def) | 0.092 | 0.045 | 0.047 |
+| Tempo | 6.692 | 7.923 | -1.231 |
+| PowerScore | 0.169 | 0.137 | 0.032 |
+| PowerScore | 0.169 | 0.137 | 0.032 |
+| Tempo | 6.692 | 7.923 | -1.231 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LAC edge: +0.032 (LAC +0.169 vs CIN +0.137)
 **7 metrics version:**
 CIN edge: +0.184 (LAC +0.013 vs CIN +0.197)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.184), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CIN edge: +0.184 (LAC +0.013 vs CIN +0.197)
 | Model Spread (LAC - CIN) | +0.6 pts (favours LAC) |
 | Model Win% LAC | 52.5% |
 | Model Win% CIN | 47.5% |
-| SOS Differential (LAC-CIN) | -0.108 |
+| SOS Differential (LAC-CIN) | -0.276 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LAC | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.085 | 0.194 |
-| Last 5 games | 0.126 | 0.151 |
-| Last 3 games | 0.089 | 0.215 |
+| Season-to-date | 1.488 | 1.764 |
+| Last 5 games | 1.596 | 1.672 |
+| Last 3 games | 1.592 | 1.743 |
 
 ## Trend Summary (last 3 weeks)
 

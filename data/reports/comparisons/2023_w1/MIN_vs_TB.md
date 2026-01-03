@@ -4,19 +4,21 @@
 
 | Metric | MIN | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.121 | -0.045 | ↓ -0.075 |
-| Core EPA Defense | -0.045 | -0.121 | ↑ +0.075 |
-| Success Rate Offense | 38.8% | 36.8% | ↑ +2.0 pp |
-| Success Rate Defense | 36.8% | 38.8% | ↓ -2.0 pp |
-| Explosive Play Rate (Off) | 10.0% | 2.3% | ↑ +7.7 pp |
-| Third Down Conversion | 37.5% | 33.3% | ↑ +4.2 pp |
-| Points per Drive Differential | -0.121 | 0.121 | ↓ -0.242 |
-| Yards per Play Differential | 1.831 | -1.831 | ↑ +3.662 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 6.2% | 9.1% | ↓ -2.8 pp |
-| Pressure Rate (Def) | 2.6% | 4.3% | ↓ -1.7 pp |
-| Tempo | 7.273 | 7.250 | ↑ +0.023 |
-| PowerScore | 0.066 | 0.057 | ↑ +0.009 |
+| Core EPA Offense | -0.121 | -0.045 | -0.075 |
+| Core EPA Defense | -0.045 | -0.121 | 0.075 |
+| Success Rate Offense | 0.388 | 0.368 | 0.020 |
+| Success Rate Defense | 0.368 | 0.388 | -0.020 |
+| Explosive Play Rate (Off) | 0.100 | 0.023 | 0.077 |
+| Third Down Conversion | 0.375 | 0.333 | 0.042 |
+| Points per Drive Differential | -0.121 | 0.121 | -0.242 |
+| Yards per Play Differential | 1.831 | -1.831 | 3.662 |
+| Turnover Margin | -3.000 | 3.000 | -6.000 |
+| Red Zone TD Rate (Off) | 0.062 | 0.091 | -0.028 |
+| Pressure Rate (Def) | 0.026 | 0.043 | -0.017 |
+| Tempo | 7.273 | 7.250 | 0.023 |
+| PowerScore | 1.500 | 1.502 | -0.002 |
+| PowerScore | 1.500 | 1.502 | -0.002 |
+| Tempo | 7.273 | 7.250 | 0.023 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ MIN edge: +0.009 (MIN +0.066 vs TB +0.057)
 **7 metrics version:**
 TB edge: +0.598 (MIN -0.262 vs TB +0.336)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.598), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - TB) | +0.2 pts (favours MIN) |
-| Model Win% MIN | 50.7% |
-| Model Win% TB | 49.3% |
+| Model Spread (MIN - TB) | -0.0 pts (favours TB) |
+| Model Win% MIN | 49.9% |
+| Model Win% TB | 50.1% |
 | SOS Differential (MIN-TB) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

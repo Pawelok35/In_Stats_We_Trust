@@ -4,19 +4,20 @@
 
 | Metric | DET | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.082 | -0.018 | ↓ -0.063 |
-| Core EPA Defense | -0.018 | -0.082 | ↑ +0.063 |
-| Success Rate Offense | 45.0% | 45.3% | ↓ -0.3 pp |
-| Success Rate Defense | 45.3% | 45.0% | ↑ +0.3 pp |
-| Explosive Play Rate (Off) | 12.0% | 15.6% | ↓ -3.6 pp |
-| Third Down Conversion | 38.9% | 20.0% | ↑ +18.9 pp |
-| Points per Drive Differential | -0.364 | 0.364 | ↓ -0.727 |
-| Yards per Play Differential | 1.255 | -1.255 | ↑ +2.510 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 3.8% | 14.3% | ↓ -10.4 pp |
-| Pressure Rate (Def) | 20.0% | 0.0% | ↑ +20.0 pp |
-| Tempo | 9.091 | 5.818 | ↑ +3.273 |
-| PowerScore | 0.104 | 0.122 | ↓ -0.018 |
+| Core EPA Offense | 0.092 | 0.270 | -0.177 |
+| Core EPA Defense | 0.053 | 0.052 | 0.001 |
+| Success Rate Offense | 0.544 | 0.549 | -0.004 |
+| Success Rate Defense | 0.495 | 0.500 | -0.005 |
+| Explosive Play Rate (Off) | 0.089 | 0.134 | -0.046 |
+| Third Down Conversion | 0.462 | 0.529 | -0.068 |
+| Points per Drive Differential | 0.167 | 1.889 | -1.722 |
+| Yards per Play Differential | 0.434 | 0.740 | -0.306 |
+| Red Zone TD Rate (Off) | 0.105 | 0.200 | -0.095 |
+| Pressure Rate (Def) | 0.039 | 0.071 | -0.032 |
+| Tempo | 9.091 | 5.818 | 3.273 |
+| PowerScore | 1.898 | 1.254 | 0.644 |
+| PowerScore | 1.898 | 1.254 | 0.644 |
+| Tempo | 9.091 | 5.818 | 3.273 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +47,19 @@ TB edge: +0.018 (DET +0.104 vs TB +0.122)
 **7 metrics version:**
 TB edge: +0.198 (DET -0.021 vs TB +0.177)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.198), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - TB) | -0.3 pts (favours TB) |
-| Model Win% DET | 48.7% |
-| Model Win% TB | 51.3% |
-| SOS Differential (DET-TB) | -0.040 |
+| Model Spread (DET - TB) | +11.9 pts (favours DET) |
+| Model Win% DET | 87.9% |
+| Model Win% TB | 12.1% |
+| SOS Differential (DET-TB) | +0.179 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | TB |
 | --- | ---: | ---: |
-| Season-to-date | 0.176 | 0.216 |
-| Last 5 games | 0.176 | 0.216 |
-| Last 3 games | 0.176 | 0.216 |
+| Season-to-date | 2.021 | 1.841 |
+| Last 5 games | 2.021 | 1.841 |
+| Last 3 games | 2.021 | 1.841 |
 
 ## Matchup Analogs
 

@@ -4,19 +4,21 @@
 
 | Metric | ATL | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.052 | -0.060 | ↑ +0.008 |
-| Core EPA Defense | -0.060 | -0.052 | ↓ -0.008 |
-| Success Rate Offense | 43.4% | 37.3% | ↑ +6.1 pp |
-| Success Rate Defense | 37.3% | 43.4% | ↓ -6.1 pp |
-| Explosive Play Rate (Off) | 13.1% | 10.7% | ↑ +2.5 pp |
-| Third Down Conversion | 46.7% | 30.8% | ↑ +15.9 pp |
-| Points per Drive Differential | -0.112 | 0.112 | ↓ -0.224 |
-| Yards per Play Differential | 0.362 | -0.362 | ↑ +0.724 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 16.7% | 14.3% | ↑ +2.4 pp |
-| Pressure Rate (Def) | 0.0% | 0.0% | ± 0.0 pp |
-| Tempo | 7.615 | 6.818 | ↑ +0.797 |
-| PowerScore | 0.105 | 0.083 | ↑ +0.021 |
+| Core EPA Offense | -0.122 | 0.009 | -0.131 |
+| Core EPA Defense | -0.041 | -0.068 | 0.027 |
+| Success Rate Offense | 0.403 | 0.406 | -0.003 |
+| Success Rate Defense | 0.392 | 0.407 | -0.015 |
+| Explosive Play Rate (Off) | 0.091 | 0.101 | -0.010 |
+| Third Down Conversion | 0.315 | 0.458 | -0.143 |
+| Points per Drive Differential | -0.234 | 0.353 | -0.588 |
+| Yards per Play Differential | -0.144 | 0.305 | -0.449 |
+| Turnover Margin | -0.250 | 0.750 | -1.000 |
+| Red Zone TD Rate (Off) | 0.127 | 0.061 | 0.066 |
+| Pressure Rate (Def) | 0.042 | 0.063 | -0.020 |
+| Tempo | 7.615 | 6.818 | 0.797 |
+| PowerScore | 0.105 | 0.083 | 0.021 |
+| PowerScore | 0.105 | 0.083 | 0.021 |
+| Tempo | 7.615 | 6.818 | 0.797 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ATL edge: +0.021 (ATL +0.105 vs HOU +0.083)
 **7 metrics version:**
 HOU edge: +0.386 (ATL -0.130 vs HOU +0.256)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.386), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ HOU edge: +0.386 (ATL -0.130 vs HOU +0.256)
 | Model Spread (ATL - HOU) | +0.4 pts (favours ATL) |
 | Model Win% ATL | 51.7% |
 | Model Win% HOU | 48.3% |
-| SOS Differential (ATL-HOU) | -0.022 |
+| SOS Differential (ATL-HOU) | -0.114 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.075 | 0.098 |
-| Last 5 games | 0.075 | 0.098 |
-| Last 3 games | 0.094 | 0.111 |
+| Season-to-date | 1.493 | 1.607 |
+| Last 5 games | 1.493 | 1.607 |
+| Last 3 games | 1.483 | 1.651 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | SEA | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.070 | -0.366 | ↑ +0.296 |
-| Core EPA Defense | -0.366 | -0.070 | ↓ -0.296 |
-| Success Rate Offense | 41.2% | 32.9% | ↑ +8.3 pp |
-| Success Rate Defense | 32.9% | 41.2% | ↓ -8.3 pp |
-| Explosive Play Rate (Off) | 16.2% | 7.6% | ↑ +8.7 pp |
-| Third Down Conversion | 23.1% | 7.1% | ↑ +15.9 pp |
-| Points per Drive Differential | 1.769 | -1.769 | ↑ +3.538 |
-| Yards per Play Differential | 2.030 | -2.030 | ↑ +4.060 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 33.3% | 0.0% | ↑ +33.3 pp |
-| Pressure Rate (Def) | 15.8% | 7.7% | ↑ +8.1 pp |
-| Tempo | 6.667 | 6.077 | ↑ +0.590 |
-| PowerScore | 0.038 | -0.045 | ↑ +0.083 |
+| Core EPA Offense | 0.007 | -0.121 | 0.128 |
+| Core EPA Defense | -0.053 | 0.035 | -0.088 |
+| Success Rate Offense | 0.497 | 0.451 | 0.046 |
+| Success Rate Defense | 0.430 | 0.420 | 0.009 |
+| Explosive Play Rate (Off) | 0.075 | 0.114 | -0.039 |
+| Third Down Conversion | 0.360 | 0.441 | -0.081 |
+| Points per Drive Differential | 0.458 | -0.576 | 1.034 |
+| Yards per Play Differential | 0.801 | 0.419 | 0.383 |
+| Turnover Margin | 1.500 | -1.000 | 2.500 |
+| Red Zone TD Rate (Off) | 0.050 | 0.072 | -0.022 |
+| Pressure Rate (Def) | 0.073 | 0.062 | 0.010 |
+| Tempo | 6.667 | 6.077 | 0.590 |
+| PowerScore | 1.339 | 1.156 | 0.183 |
+| PowerScore | 1.339 | 1.156 | 0.183 |
+| Tempo | 6.667 | 6.077 | 0.590 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SEA edge: +0.083 (SEA +0.038 vs MIA -0.045)
 **7 metrics version:**
 MIA edge: +0.323 (SEA -0.164 vs MIA +0.159)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.323), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - MIA) | +1.5 pts (favours SEA) |
-| Model Win% SEA | 56.3% |
-| Model Win% MIA | 43.7% |
-| SOS Differential (SEA-MIA) | -0.011 |
+| Model Spread (SEA - MIA) | +3.4 pts (favours SEA) |
+| Model Win% SEA | 63.8% |
+| Model Win% MIA | 36.2% |
+| SOS Differential (SEA-MIA) | +0.133 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.102 | 0.114 |
-| Last 5 games | 0.102 | 0.114 |
-| Last 3 games | 0.102 | 0.114 |
+| Season-to-date | 1.435 | 1.302 |
+| Last 5 games | 1.435 | 1.302 |
+| Last 3 games | 1.435 | 1.302 |
 
 ## Trend Summary (last 2 weeks)
 

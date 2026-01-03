@@ -4,19 +4,21 @@
 
 | Metric | LA | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.068 | -0.107 | ↑ +0.174 |
-| Core EPA Defense | -0.107 | 0.068 | ↓ -0.174 |
-| Success Rate Offense | 42.0% | 39.3% | ↑ +2.7 pp |
-| Success Rate Defense | 39.3% | 42.0% | ↓ -2.7 pp |
-| Explosive Play Rate (Off) | 9.1% | 7.9% | ↑ +1.2 pp |
-| Third Down Conversion | 30.8% | 41.2% | ↓ -10.4 pp |
-| Points per Drive Differential | 1.032 | -1.032 | ↑ +2.064 |
-| Yards per Play Differential | 0.860 | -0.860 | ↑ +1.720 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 15.0% | 14.3% | ↑ +0.7 pp |
-| Pressure Rate (Def) | 4.3% | 0.0% | ↑ +4.3 pp |
-| Tempo | 6.769 | 7.417 | ↓ -0.647 |
-| PowerScore | 0.126 | 0.090 | ↑ +0.035 |
+| Core EPA Offense | -0.028 | -0.096 | 0.068 |
+| Core EPA Defense | -0.012 | -0.169 | 0.156 |
+| Success Rate Offense | 0.419 | 0.393 | 0.026 |
+| Success Rate Defense | 0.414 | 0.351 | 0.063 |
+| Explosive Play Rate (Off) | 0.093 | 0.085 | 0.008 |
+| Third Down Conversion | 0.358 | 0.291 | 0.067 |
+| Points per Drive Differential | 0.147 | 0.290 | -0.143 |
+| Yards per Play Differential | 0.175 | 0.356 | -0.180 |
+| Turnover Margin | -0.091 | -0.455 | 0.364 |
+| Red Zone TD Rate (Off) | 0.139 | 0.142 | -0.003 |
+| Pressure Rate (Def) | 0.061 | 0.108 | -0.047 |
+| Tempo | 6.769 | 7.417 | -0.647 |
+| PowerScore | 0.126 | 0.090 | 0.035 |
+| PowerScore | 0.126 | 0.090 | 0.035 |
+| Tempo | 6.769 | 7.417 | -0.647 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LA edge: +0.035 (LA +0.126 vs CLE +0.090)
 **7 metrics version:**
 LA edge: +0.219 (LA +0.187 vs CLE -0.032)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.219), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ LA edge: +0.219 (LA +0.187 vs CLE -0.032)
 | Model Spread (LA - CLE) | +0.7 pts (favours LA) |
 | Model Win% LA | 52.7% |
 | Model Win% CLE | 47.3% |
-| SOS Differential (LA-CLE) | +0.087 |
+| SOS Differential (LA-CLE) | +0.417 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LA | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.112 | 0.026 |
-| Last 5 games | 0.095 | 0.050 |
-| Last 3 games | 0.062 | 0.084 |
+| Season-to-date | 1.638 | 1.221 |
+| Last 5 games | 1.538 | 1.278 |
+| Last 3 games | 1.572 | 1.406 |
 
 ## Trend Summary (last 3 weeks)
 

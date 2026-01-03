@@ -7,6 +7,7 @@ No team reports generated.
 ### Matchup Reports
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w17/ATL_vs_ARI.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w17/BAL_vs_PIT.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w17/CIN_vs_BUF.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w17/DET_vs_CHI.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w17/GB_vs_MIN.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w17/HOU_vs_JAX.md`

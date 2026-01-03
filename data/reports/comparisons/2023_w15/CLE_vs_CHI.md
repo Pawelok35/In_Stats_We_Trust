@@ -4,19 +4,21 @@
 
 | Metric | CLE | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.253 | -0.253 | ↑ +0.001 |
-| Core EPA Defense | -0.253 | -0.253 | ↓ -0.001 |
-| Success Rate Offense | 35.6% | 26.3% | ↑ +9.2 pp |
-| Success Rate Defense | 26.3% | 35.6% | ↓ -9.2 pp |
-| Explosive Play Rate (Off) | 6.7% | 7.4% | ↓ -0.7 pp |
-| Third Down Conversion | 23.5% | 22.2% | ↑ +1.3 pp |
-| Points per Drive Differential | 0.489 | -0.489 | ↑ +0.978 |
-| Yards per Play Differential | 1.705 | -1.705 | ↑ +3.409 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 5.6% | 10.0% | ↓ -4.4 pp |
-| Pressure Rate (Def) | 7.0% | 8.2% | ↓ -1.2 pp |
-| Tempo | 5.294 | 5.938 | ↓ -0.643 |
-| PowerScore | -0.037 | -0.059 | ↑ +0.022 |
+| Core EPA Offense | -0.097 | -0.077 | -0.020 |
+| Core EPA Defense | -0.148 | -0.048 | -0.099 |
+| Success Rate Offense | 0.394 | 0.403 | -0.009 |
+| Success Rate Defense | 0.356 | 0.407 | -0.051 |
+| Explosive Play Rate (Off) | 0.084 | 0.102 | -0.018 |
+| Third Down Conversion | 0.293 | 0.404 | -0.111 |
+| Points per Drive Differential | 0.184 | -0.037 | 0.221 |
+| Yards per Play Differential | 0.306 | -0.054 | 0.360 |
+| Turnover Margin | -0.385 | -0.077 | -0.308 |
+| Red Zone TD Rate (Off) | 0.140 | 0.146 | -0.006 |
+| Pressure Rate (Def) | 0.099 | 0.042 | 0.057 |
+| Tempo | 5.294 | 5.938 | -0.643 |
+| PowerScore | 1.009 | 1.114 | -0.105 |
+| PowerScore | 1.009 | 1.114 | -0.105 |
+| Tempo | 5.294 | 5.938 | -0.643 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CLE edge: +0.022 (CLE -0.037 vs CHI -0.059)
 **7 metrics version:**
 CHI edge: +0.392 (CLE -0.241 vs CHI +0.151)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.392), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - CHI) | +0.4 pts (favours CLE) |
-| Model Win% CLE | 51.7% |
-| Model Win% CHI | 48.3% |
-| SOS Differential (CLE-CHI) | -0.052 |
+| Model Spread (CLE - CHI) | -2.0 pts (favours CHI) |
+| Model Win% CLE | 41.9% |
+| Model Win% CHI | 58.1% |
+| SOS Differential (CLE-CHI) | -0.296 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.034 | 0.086 |
-| Last 5 games | 0.082 | 0.037 |
-| Last 3 games | 0.087 | 0.051 |
+| Season-to-date | 1.237 | 1.533 |
+| Last 5 games | 1.373 | 1.424 |
+| Last 3 games | 1.392 | 1.409 |
 
 ## Trend Summary (last 3 weeks)
 

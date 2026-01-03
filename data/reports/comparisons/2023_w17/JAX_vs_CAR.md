@@ -4,19 +4,21 @@
 
 | Metric | JAX | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.055 | -0.377 | ↑ +0.432 |
-| Core EPA Defense | -0.377 | 0.055 | ↓ -0.432 |
-| Success Rate Offense | 40.0% | 31.9% | ↑ +8.1 pp |
-| Success Rate Defense | 31.9% | 40.0% | ↓ -8.1 pp |
-| Explosive Play Rate (Off) | 8.0% | 1.4% | ↑ +6.6 pp |
-| Third Down Conversion | 43.8% | 7.1% | ↑ +36.6 pp |
-| Points per Drive Differential | 2.364 | -2.364 | ↑ +4.727 |
-| Yards per Play Differential | 2.430 | -2.430 | ↑ +4.859 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 4.8% | 0.0% | ↑ +4.8 pp |
-| Pressure Rate (Def) | 15.8% | 9.7% | ↑ +6.1 pp |
-| Tempo | 6.818 | 6.900 | ↓ -0.082 |
-| PowerScore | 0.060 | -0.038 | ↑ +0.098 |
+| Core EPA Offense | -0.040 | -0.108 | 0.068 |
+| Core EPA Defense | -0.017 | 0.012 | -0.029 |
+| Success Rate Offense | 0.422 | 0.393 | 0.028 |
+| Success Rate Defense | 0.420 | 0.440 | -0.019 |
+| Explosive Play Rate (Off) | 0.089 | 0.078 | 0.010 |
+| Third Down Conversion | 0.305 | 0.319 | -0.014 |
+| Points per Drive Differential | -0.166 | -0.796 | 0.630 |
+| Yards per Play Differential | -0.379 | -0.568 | 0.189 |
+| Turnover Margin | -0.333 | -0.533 | 0.200 |
+| Red Zone TD Rate (Off) | 0.128 | 0.131 | -0.003 |
+| Pressure Rate (Def) | 0.058 | 0.047 | 0.011 |
+| Tempo | 6.818 | 6.900 | -0.082 |
+| PowerScore | 1.407 | 1.339 | 0.069 |
+| PowerScore | 1.407 | 1.339 | 0.069 |
+| Tempo | 6.818 | 6.900 | -0.082 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ JAX edge: +0.098 (JAX +0.060 vs CAR -0.038)
 **7 metrics version:**
 JAX edge: +0.251 (JAX +0.127 vs CAR -0.124)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.251), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - CAR) | +1.8 pts (favours JAX) |
-| Model Win% JAX | 57.5% |
-| Model Win% CAR | 42.5% |
-| SOS Differential (JAX-CAR) | +0.001 |
+| Model Spread (JAX - CAR) | +1.3 pts (favours JAX) |
+| Model Win% JAX | 55.3% |
+| Model Win% CAR | 44.7% |
+| SOS Differential (JAX-CAR) | +0.014 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.112 | 0.111 |
-| Last 5 games | 0.129 | 0.086 |
-| Last 3 games | 0.099 | 0.086 |
+| Season-to-date | 1.516 | 1.502 |
+| Last 5 games | 1.614 | 1.351 |
+| Last 3 games | 1.579 | 1.367 |
 
 ## Trend Summary (last 3 weeks)
 

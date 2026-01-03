@@ -4,19 +4,21 @@
 
 | Metric | ATL | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.006 | 0.085 | ↓ -0.091 |
-| Core EPA Defense | 0.085 | -0.006 | ↑ +0.091 |
-| Success Rate Offense | 46.1% | 56.8% | ↓ -10.8 pp |
-| Success Rate Defense | 56.8% | 46.1% | ↑ +10.8 pp |
-| Explosive Play Rate (Off) | 10.5% | 4.5% | ↑ +6.0 pp |
-| Third Down Conversion | 18.2% | 42.9% | ↓ -24.7 pp |
-| Points per Drive Differential | -0.300 | 0.300 | ↓ -0.600 |
-| Yards per Play Differential | 0.172 | -0.172 | ↑ +0.343 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 15.4% | 10.5% | ↑ +4.9 pp |
-| Pressure Rate (Def) | 0.0% | 6.2% | ↓ -6.2 pp |
-| Tempo | 7.600 | 8.000 | ↓ -0.400 |
-| PowerScore | 0.151 | 0.180 | ↓ -0.029 |
+| Core EPA Offense | -0.051 | 0.059 | -0.110 |
+| Core EPA Defense | 0.024 | 0.038 | -0.014 |
+| Success Rate Offense | 0.486 | 0.502 | -0.016 |
+| Success Rate Defense | 0.453 | 0.535 | -0.083 |
+| Explosive Play Rate (Off) | 0.117 | 0.090 | 0.028 |
+| Third Down Conversion | 0.202 | 0.250 | -0.048 |
+| Points per Drive Differential | -0.344 | 0.214 | -0.558 |
+| Yards per Play Differential | 0.475 | 0.002 | 0.473 |
+| Turnover Margin | -1.000 | -1.000 | 0.000 |
+| Red Zone TD Rate (Off) | 0.096 | 0.070 | 0.026 |
+| Pressure Rate (Def) | 0.056 | 0.050 | 0.005 |
+| Tempo | 7.600 | 8.000 | -0.400 |
+| PowerScore | 1.650 | 1.770 | -0.121 |
+| PowerScore | 1.650 | 1.770 | -0.121 |
+| Tempo | 7.600 | 8.000 | -0.400 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.029 (ATL +0.151 vs KC +0.180)
 **7 metrics version:**
 KC edge: +0.016 (ATL +0.110 vs KC +0.126)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.016), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - KC) | -0.5 pts (favours KC) |
-| Model Win% ATL | 47.8% |
-| Model Win% KC | 52.2% |
-| SOS Differential (ATL-KC) | -0.049 |
+| Model Spread (ATL - KC) | -2.2 pts (favours KC) |
+| Model Win% ATL | 40.8% |
+| Model Win% KC | 59.2% |
+| SOS Differential (ATL-KC) | +0.052 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.128 | 0.176 |
-| Last 5 games | 0.128 | 0.176 |
-| Last 3 games | 0.128 | 0.176 |
+| Season-to-date | 1.907 | 1.855 |
+| Last 5 games | 1.907 | 1.855 |
+| Last 3 games | 1.907 | 1.855 |
 
 ## Trend Summary (last 2 weeks)
 

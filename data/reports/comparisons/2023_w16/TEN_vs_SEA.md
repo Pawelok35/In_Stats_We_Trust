@@ -4,19 +4,21 @@
 
 | Metric | TEN | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.080 | 0.166 | ↓ -0.085 |
-| Core EPA Defense | 0.166 | 0.080 | ↑ +0.085 |
-| Success Rate Offense | 48.2% | 46.1% | ↑ +2.1 pp |
-| Success Rate Defense | 46.1% | 48.2% | ↓ -2.1 pp |
-| Explosive Play Rate (Off) | 7.2% | 9.2% | ↓ -2.0 pp |
-| Third Down Conversion | 40.0% | 50.0% | ↓ -10.0 pp |
-| Points per Drive Differential | -0.732 | 0.732 | ↓ -1.464 |
-| Yards per Play Differential | -0.134 | 0.134 | ↓ -0.269 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 22.2% | 13.3% | ↑ +8.9 pp |
-| Pressure Rate (Def) | 7.7% | 18.2% | ↓ -10.5 pp |
-| Tempo | 10.375 | 10.857 | ↓ -0.482 |
-| PowerScore | 0.196 | 0.208 | ↓ -0.011 |
+| Core EPA Offense | -0.026 | -0.016 | -0.010 |
+| Core EPA Defense | 0.027 | 0.021 | 0.006 |
+| Success Rate Offense | 0.399 | 0.434 | -0.035 |
+| Success Rate Defense | 0.445 | 0.438 | 0.008 |
+| Explosive Play Rate (Off) | 0.089 | 0.100 | -0.011 |
+| Third Down Conversion | 0.276 | 0.308 | -0.032 |
+| Points per Drive Differential | -0.271 | -0.329 | 0.058 |
+| Yards per Play Differential | -0.404 | -0.231 | -0.173 |
+| Turnover Margin | -0.071 | 0.500 | -0.571 |
+| Red Zone TD Rate (Off) | 0.129 | 0.094 | 0.035 |
+| Pressure Rate (Def) | 0.080 | 0.067 | 0.012 |
+| Tempo | 10.375 | 10.857 | -0.482 |
+| PowerScore | 2.257 | 2.361 | -0.104 |
+| PowerScore | 2.257 | 2.361 | -0.104 |
+| Tempo | 10.375 | 10.857 | -0.482 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SEA edge: +0.011 (TEN +0.196 vs SEA +0.208)
 **7 metrics version:**
 SEA edge: +0.005 (TEN +0.163 vs SEA +0.167)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.005), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - SEA) | -0.2 pts (favours SEA) |
-| Model Win% TEN | 49.1% |
-| Model Win% SEA | 50.9% |
-| SOS Differential (TEN-SEA) | +0.002 |
+| Model Spread (TEN - SEA) | -1.9 pts (favours SEA) |
+| Model Win% TEN | 42.1% |
+| Model Win% SEA | 57.9% |
+| SOS Differential (TEN-SEA) | -0.002 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.135 | 0.133 |
-| Last 5 games | 0.145 | 0.168 |
-| Last 3 games | 0.123 | 0.202 |
+| Season-to-date | 1.655 | 1.657 |
+| Last 5 games | 1.622 | 1.693 |
+| Last 3 games | 1.457 | 1.781 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | ARI (-) | 20-8 | SEA | 0.941 | -0.005 | 45.8% | 1.167 |
+| 7 | ARI (H) | 20-8 | SEA | 0.941 | -0.005 | 45.8% | 1.167 |
 | 10 | WAS (H) | 29-31 | WAS | 0.895 | 0.098 | 45.2% | -0.133 |
 | 6 | CIN (A) | 13-17 | CIN | 0.892 | -0.055 | 44.2% | -0.364 |
 

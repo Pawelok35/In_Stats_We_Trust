@@ -4,19 +4,21 @@
 
 | Metric | IND | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.004 | -0.031 | ↑ +0.027 |
-| Core EPA Defense | -0.031 | -0.004 | ↓ -0.027 |
-| Success Rate Offense | 46.4% | 39.7% | ↑ +6.7 pp |
-| Success Rate Defense | 39.7% | 46.4% | ↓ -6.7 pp |
-| Explosive Play Rate (Off) | 6.0% | 9.0% | ↓ -3.0 pp |
-| Third Down Conversion | 37.5% | 30.0% | ↑ +7.5 pp |
-| Points per Drive Differential | 0.118 | -0.118 | ↑ +0.236 |
-| Yards per Play Differential | -0.981 | 0.981 | ↓ -1.962 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 25.0% | 9.5% | ↑ +15.5 pp |
-| Pressure Rate (Def) | 2.6% | 11.6% | ↓ -9.0 pp |
-| Tempo | 7.636 | 7.800 | ↓ -0.164 |
-| PowerScore | 0.121 | 0.106 | ↑ +0.015 |
+| Core EPA Offense | -0.177 | 0.212 | -0.389 |
+| Core EPA Defense | 0.010 | 0.018 | -0.008 |
+| Success Rate Offense | 0.370 | 0.525 | -0.155 |
+| Success Rate Defense | 0.428 | 0.431 | -0.003 |
+| Explosive Play Rate (Off) | 0.119 | 0.130 | -0.011 |
+| Third Down Conversion | 0.278 | 0.432 | -0.153 |
+| Points per Drive Differential | -0.945 | 1.120 | -2.066 |
+| Yards per Play Differential | 0.413 | 1.195 | -0.782 |
+| Turnover Margin | -2.000 | 0.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.048 | 0.162 | -0.114 |
+| Pressure Rate (Def) | 0.037 | 0.054 | -0.017 |
+| Tempo | 7.636 | 7.800 | -0.164 |
+| PowerScore | 1.636 | 1.648 | -0.012 |
+| PowerScore | 1.636 | 1.648 | -0.012 |
+| Tempo | 7.636 | 7.800 | -0.164 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ IND edge: +0.015 (IND +0.121 vs KC +0.106)
 **7 metrics version:**
 KC edge: +0.185 (IND -0.004 vs KC +0.181)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.185), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - KC) | +0.3 pts (favours IND) |
-| Model Win% IND | 51.1% |
-| Model Win% KC | 48.9% |
-| SOS Differential (IND-KC) | -0.088 |
+| Model Spread (IND - KC) | -0.2 pts (favours KC) |
+| Model Win% IND | 49.1% |
+| Model Win% KC | 50.9% |
+| SOS Differential (IND-KC) | -0.270 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.084 | 0.172 |
-| Last 5 games | 0.084 | 0.172 |
-| Last 3 games | 0.084 | 0.172 |
+| Season-to-date | 1.424 | 1.694 |
+| Last 5 games | 1.424 | 1.694 |
+| Last 3 games | 1.424 | 1.694 |
 
 ## Trend Summary (last 2 weeks)
 

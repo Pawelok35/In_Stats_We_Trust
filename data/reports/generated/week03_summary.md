@@ -1,607 +1,607 @@
 # Weekly Matchup Summary
 
-## BUF vs MIA
+## DAL vs PHI
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – BUF 44.7 – MIA 17.1
-2️⃣ Predicted Winner (Model) – BUF
-3️⃣ Predicted Margin (Model) – BUF by 27.6 pts
-4️⃣ Win Probability (Model) – 95% (BUF)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę BUF: BUF +0.258 vs MIA +0.198. Turnover margin faworyzuje BUF (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. BUF prowadzi w Points per Drive Differential (+0.530 vs -2.444), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie BUF (10.2% vs 8.9%), więc big-play equity jest wyższe. Success Rate Offense pokazuje BUF na poziomie 47.2% vs 46.7% (+0.5 pp).
+1️⃣ Estimated Score (Model) – DAL 19.2 – PHI 25.8
+2️⃣ Predicted Winner (Model) – PHI
+3️⃣ Predicted Margin (Model) – PHI by 6.5 pts
+4️⃣ Win Probability (Model) – 72% (PHI)
+5️⃣ Why This Team Wins (Model) – Field position edge wynosi +8.5 yds na rzecz PHI (4.7 vs -3.8), co skraca ich boisko. Red Zone TD Rate sprzyja PHI (16.5% vs 11.1%). PHI prowadzi w Points per Drive Differential (+1.025 vs +0.048), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie PHI (10.8% vs 10.6%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – BUF 37.2 – MIA 24.7
-2️⃣ Predicted Winner (Market) – BUF
-3️⃣ Predicted Margin (Market) – BUF by 12.5 pts
-4️⃣ Win Probability (Market) – 94% (BUF)
-5️⃣ Forum Output (A) – PowerScore (Model) — BUF +0.258 vs MIA +0.198. Points per Drive Differential — BUF +0.530 vs MIA -2.444. Success Rate Offense — BUF 47.2% vs MIA 46.7%. Third Down Conversion — BUF 34.6% vs MIA 40.4%. Red Zone TD Rate — BUF 13.9% vs MIA 15.5%. Explosive Play Rate — BUF 10.2% vs MIA 8.9%. Model margin 27.6 pts vs market spread BUF +12.5.
-6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie 27.6 pkt. BUF notuje +0.530 PPD vs -2.444 u MIA. Różnica w Success Rate to 47.2% vs 46.7%. Na 3rd down BUF (34.6%) wygląda solidniej niż MIA (40.4%). Red Zone i explosiveness ( 13.9% / 10.2% ) utrzymują przewagę jakościową. Market trzyma 12.5 pkt, więc edge vs linia to +15.1.
+1️⃣ Estimated Score (Market) – DAL 27.8 – PHI 23.8
+2️⃣ Predicted Winner (Market) – DAL
+3️⃣ Predicted Margin (Market) – DAL by 4.0 pts
+4️⃣ Win Probability (Market) – 64% (DAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — DAL +0.199 vs PHI +0.153. Points per Drive Differential — DAL +0.048 vs PHI +1.025. Success Rate Offense — DAL 51.7% vs PHI 48.7%. Third Down Conversion — DAL 45.8% vs PHI 42.7%. Red Zone TD Rate — DAL 11.1% vs PHI 16.5%. Explosive Play Rate — DAL 10.6% vs PHI 10.8%. Model margin -6.5 pts vs market spread DAL +4.0.
+6️⃣ Forum Output (B) – Model idzie w stronę PHI po marginesie -6.5 pkt. PHI notuje +1.025 PPD vs +0.048 u DAL. Różnica w Success Rate to 48.7% vs 51.7%. Na 3rd down PHI (42.7%) wygląda solidniej niż DAL (45.8%). Red Zone i explosiveness ( 16.5% / 10.8% ) utrzymują przewagę jakościową. Market trzyma 4.0 pkt, więc edge vs linia to +10.5.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +15.1 pts
-• PowerScoreDiff (winner) = +0.060
+• Edge_vs_Line (winner) = +10.5 pts
+• PowerScoreDiff (winner) = -0.046
+• Confidence = 72.0%
+
+🏷 Model Tag: NEUTRAL — based on 72.0% confidence, +10.5 pts model edge vs line, and PowerScore Δ -0.046.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – DAL 19.2 – PHI 25.8
+   • Win Probability – 72% (PHI)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – DAL 27.8 – PHI 23.8
+   • Win Probability – 64% (DAL)
+
+🏷 Model Tag: NEUTRAL — PHI (HC +4.0)
+
+---
+
+## SF vs GB
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – SF 39.3 – GB 20.1
+2️⃣ Predicted Winner (Model) – SF
+3️⃣ Predicted Margin (Model) – SF by 19.2 pts
+4️⃣ Win Probability (Model) – 95% (SF)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja SF (20.8% vs 9.5%). Na 3rd down SF utrzymuje 36.9%, podczas gdy GB jest na 30.7%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera SF (+7.4% vs +2.7%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie SF (10.8% vs 6.7%), więc big-play equity jest wyższe. SF prowadzi w Points per Drive Differential (+0.348 vs -0.994), więc bazowa efektywność napędza przewagę.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – SF 25.5 – GB 22.0
+2️⃣ Predicted Winner (Market) – SF
+3️⃣ Predicted Margin (Market) – SF by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (SF)
+5️⃣ Forum Output (A) – PowerScore (Model) — SF +0.155 vs GB +0.223. Points per Drive Differential — SF +0.348 vs GB -0.994. Success Rate Offense — SF 44.6% vs GB 44.3%. Third Down Conversion — SF 36.9% vs GB 30.7%. Red Zone TD Rate — SF 20.8% vs GB 9.5%. Explosive Play Rate — SF 10.8% vs GB 6.7%. Model margin 19.2 pts vs market spread SF +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę SF po marginesie 19.2 pkt. SF notuje +0.348 PPD vs -0.994 u GB. Różnica w Success Rate to 44.6% vs 44.3%. Na 3rd down SF (36.9%) wygląda solidniej niż GB (30.7%). Red Zone i explosiveness ( 20.8% / 10.8% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +15.7.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +15.7 pts
+• PowerScoreDiff (winner) = -0.068
+• Confidence = 95.0%
+
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +15.7 pts model edge vs line, and PowerScore Δ -0.068.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – SF 39.3 – GB 20.1
+   • Win Probability – 95% (SF)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – SF 25.5 – GB 22.0
+   • Win Probability – 62% (SF)
+
+🏷 Model Tag: NEUTRAL — SF (HC -3.5)
+
+---
+
+## LA vs TB
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – LA 34.1 – TB 27.2
+2️⃣ Predicted Winner (Model) – LA
+3️⃣ Predicted Margin (Model) – LA by 6.9 pts
+4️⃣ Win Probability (Model) – 84% (LA)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę LA: LA +0.165 vs TB +0.102. Defensive pressure rate wspiera LA (+7.5% vs +2.0%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie LA (14.4% vs 12.4%), więc big-play equity jest wyższe. LA prowadzi w Points per Drive Differential (+1.520 vs +0.569), więc bazowa efektywność napędza przewagę.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – LA 27.8 – TB 26.8
+2️⃣ Predicted Winner (Market) – LA
+3️⃣ Predicted Margin (Market) – LA by 1.0 pts
+4️⃣ Win Probability (Market) – 54% (LA)
+5️⃣ Forum Output (A) – PowerScore (Model) — LA +0.165 vs TB +0.102. Points per Drive Differential — LA +1.520 vs TB +0.569. Success Rate Offense — LA 46.8% vs TB 49.4%. Third Down Conversion — LA 39.3% vs TB 39.5%. Red Zone TD Rate — LA 14.9% vs TB 19.3%. Explosive Play Rate — LA 14.4% vs TB 12.4%. Model margin 6.9 pts vs market spread LA +1.0.
+6️⃣ Forum Output (B) – Model idzie w stronę LA po marginesie 6.9 pkt. LA notuje +1.520 PPD vs +0.569 u TB. Różnica w Success Rate to 46.8% vs 49.4%. Na 3rd down LA (39.3%) wygląda solidniej niż TB (39.5%). Red Zone i explosiveness ( 14.9% / 14.4% ) utrzymują przewagę jakościową. Market trzyma 1.0 pkt, więc edge vs linia to +5.9.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +5.9 pts
+• PowerScoreDiff (winner) = +0.063
+• Confidence = 87.0%
+
+🏷 Model Tag: GOM — based on 87.0% confidence, +5.9 pts model edge vs line, and PowerScore Δ +0.063.
+📈 Strong monthly signal — wysokie zaufanie modelowe.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – LA 34.1 – TB 27.2
+   • Win Probability – 84% (LA)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – LA 27.8 – TB 26.8
+   • Win Probability – 54% (LA)
+
+🏷 Model Tag: <span style="color:#9c27b0; font-weight:600;">GOM</span> — LA (HC -1.0)
+
+---
+
+## MIN vs SEA
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – MIN 21.7 – SEA 27.8
+2️⃣ Predicted Winner (Model) – SEA
+3️⃣ Predicted Margin (Model) – SEA by 6.1 pts
+4️⃣ Win Probability (Model) – 71% (SEA)
+5️⃣ Why This Team Wins (Model) – Na 3rd down SEA utrzymuje 36.4%, podczas gdy MIN jest na 27.8%, co stabilizuje serie ofensywne. Field position edge wynosi +7.6 yds na rzecz SEA (5.0 vs -2.6), co skraca ich boisko. Explosive Play Rate pozostaje po stronie SEA (11.0% vs 10.1%), więc big-play equity jest wyższe. SEA prowadzi w Points per Drive Differential (+0.455 vs -0.284), więc bazowa efektywność napędza przewagę.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – MIN 27.2 – SEA 28.2
+2️⃣ Predicted Winner (Market) – SEA
+3️⃣ Predicted Margin (Market) – SEA by 1.0 pts
+4️⃣ Win Probability (Market) – 54% (SEA)
+5️⃣ Forum Output (A) – PowerScore (Model) — MIN +0.194 vs SEA +0.154. Points per Drive Differential — MIN -0.284 vs SEA +0.455. Success Rate Offense — MIN 42.9% vs SEA 40.4%. Third Down Conversion — MIN 27.8% vs SEA 36.4%. Red Zone TD Rate — MIN 23.4% vs SEA 20.2%. Explosive Play Rate — MIN 10.1% vs SEA 11.0%. Model margin -6.1 pts vs market spread MIN -1.0.
+6️⃣ Forum Output (B) – Model idzie w stronę SEA po marginesie -6.1 pkt. SEA notuje +0.455 PPD vs -0.284 u MIN. Różnica w Success Rate to 40.4% vs 42.9%. Na 3rd down SEA (36.4%) wygląda solidniej niż MIN (27.8%). Red Zone i explosiveness ( 20.2% / 11.0% ) utrzymują przewagę jakościową. Market trzyma -1.0 pkt, więc edge vs linia to +5.1.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +5.1 pts
+• PowerScoreDiff (winner) = -0.040
+• Confidence = 71.0%
+
+🏷 Model Tag: NEUTRAL — based on 71.0% confidence, +5.1 pts model edge vs line, and PowerScore Δ -0.040.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – MIN 21.7 – SEA 27.8
+   • Win Probability – 71% (SEA)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – MIN 27.2 – SEA 28.2
+   • Win Probability – 54% (SEA)
+
+🏷 Model Tag: NEUTRAL — SEA (HC -1.0)
+
+---
+
+## DEN vs NYJ
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – DEN 42.1 – NYJ 9.1
+2️⃣ Predicted Winner (Model) – DEN
+3️⃣ Predicted Margin (Model) – DEN by 33.0 pts
+4️⃣ Win Probability (Model) – 95% (DEN)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę DEN: DEN +0.160 vs NYJ +0.027. Success Rate Offense pokazuje DEN na poziomie 46.3% vs 35.7% (+10.6 pp). Turnover margin faworyzuje DEN (+2.00 vs -4.00), co przekłada się na dodatkowe posiadania. DEN prowadzi w Points per Drive Differential (+1.400 vs -1.095), więc bazowa efektywność napędza przewagę. Red Zone TD Rate sprzyja DEN (11.8% vs 10.0%).
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – DEN 30.9 – NYJ 20.4
+2️⃣ Predicted Winner (Market) – DEN
+3️⃣ Predicted Margin (Market) – DEN by 10.5 pts
+4️⃣ Win Probability (Market) – 87% (DEN)
+5️⃣ Forum Output (A) – PowerScore (Model) — DEN +0.160 vs NYJ +0.027. Points per Drive Differential — DEN +1.400 vs NYJ -1.095. Success Rate Offense — DEN 46.3% vs NYJ 35.7%. Third Down Conversion — DEN 30.8% vs NYJ 33.7%. Red Zone TD Rate — DEN 11.8% vs NYJ 10.0%. Explosive Play Rate — DEN 9.8% vs NYJ 10.7%. Model margin 33.0 pts vs market spread DEN +10.5.
+6️⃣ Forum Output (B) – Model idzie w stronę DEN po marginesie 33.0 pkt. DEN notuje +1.400 PPD vs -1.095 u NYJ. Różnica w Success Rate to 46.3% vs 35.7%. Na 3rd down DEN (30.8%) wygląda solidniej niż NYJ (33.7%). Red Zone i explosiveness ( 11.8% / 9.8% ) utrzymują przewagę jakościową. Market trzyma 10.5 pkt, więc edge vs linia to +22.5.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +22.5 pts
+• PowerScoreDiff (winner) = +0.133
 • Confidence = 98.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +15.1 pts model edge vs line, and PowerScore Δ +0.060.
+🏷 Model Tag: GOY — based on 98.0% confidence, +22.5 pts model edge vs line, and PowerScore Δ +0.133.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – BUF 44.7 – MIA 17.1
-   • Win Probability – 95% (BUF)
+   • Estimated Score – DEN 42.1 – NYJ 9.1
+   • Win Probability – 95% (DEN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – BUF 37.2 – MIA 24.7
-   • Win Probability – 94% (BUF)
+   • Estimated Score – DEN 30.9 – NYJ 20.4
+   • Win Probability – 87% (DEN)
 
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — BUF (HC -12.5)
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — DEN (HC -10.5)
 
 ---
 
-## CLE vs GB
+## LV vs MIA
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CLE 6.7 – GB 24.4
-2️⃣ Predicted Winner (Model) – GB
-3️⃣ Predicted Margin (Model) – GB by 17.6 pts
-4️⃣ Win Probability (Model) – 95% (GB)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje GB na poziomie 49.0% vs 41.5% (+7.5 pp). Explosive Play Rate pozostaje po stronie GB (12.9% vs 6.0%), więc big-play equity jest wyższe. GB prowadzi w Points per Drive Differential (+1.079 vs -0.741), więc bazowa efektywność napędza przewagę. Field position edge wynosi +1.3 yds na rzecz GB (-2.9 vs -4.2), co skraca ich boisko. PowerScore Summary potwierdza przewagę GB: GB +0.062 vs CLE +0.059.
+1️⃣ Estimated Score (Model) – LV 41.1 – MIA 15.8
+2️⃣ Predicted Winner (Model) – LV
+3️⃣ Predicted Margin (Model) – LV by 25.4 pts
+4️⃣ Win Probability (Model) – 95% (LV)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę LV: LV +0.211 vs MIA -0.019. Success Rate Offense pokazuje LV na poziomie 44.8% vs 35.7% (+9.1 pp). Explosive Play Rate pozostaje po stronie LV (12.4% vs 7.6%), więc big-play equity jest wyższe. LV prowadzi w Points per Drive Differential (+0.496 vs -1.586), więc bazowa efektywność napędza przewagę. Defensive pressure rate wspiera LV (+4.8% vs +2.8%), więc pasy rywala będą częściej pod presją.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CLE 16.5 – GB 25.0
-2️⃣ Predicted Winner (Market) – GB
-3️⃣ Predicted Margin (Market) – GB by 8.5 pts
-4️⃣ Win Probability (Market) – 80% (GB)
-5️⃣ Forum Output (A) – PowerScore (Model) — CLE +0.059 vs GB +0.062. Points per Drive Differential — CLE -0.741 vs GB +1.079. Success Rate Offense — CLE 41.5% vs GB 49.0%. Third Down Conversion — CLE 42.1% vs GB 37.6%. Red Zone TD Rate — CLE 23.3% vs GB 16.7%. Explosive Play Rate — CLE 6.0% vs GB 12.9%. Model margin -17.6 pts vs market spread CLE -8.5.
-6️⃣ Forum Output (B) – Model idzie w stronę GB po marginesie -17.6 pkt. GB notuje +1.079 PPD vs -0.741 u CLE. Różnica w Success Rate to 49.0% vs 41.5%. Na 3rd down GB (37.6%) wygląda solidniej niż CLE (42.1%). Red Zone i explosiveness ( 16.7% / 12.9% ) utrzymują przewagę jakościową. Market trzyma -8.5 pkt, więc edge vs linia to +9.1.
+1️⃣ Estimated Score (Market) – LV 24.5 – MIA 21.0
+2️⃣ Predicted Winner (Market) – LV
+3️⃣ Predicted Margin (Market) – LV by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (LV)
+5️⃣ Forum Output (A) – PowerScore (Model) — LV +0.211 vs MIA -0.019. Points per Drive Differential — LV +0.496 vs MIA -1.586. Success Rate Offense — LV 44.8% vs MIA 35.7%. Third Down Conversion — LV 32.4% vs MIA 37.1%. Red Zone TD Rate — LV 10.6% vs MIA 14.3%. Explosive Play Rate — LV 12.4% vs MIA 7.6%. Model margin 25.4 pts vs market spread LV +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę LV po marginesie 25.4 pkt. LV notuje +0.496 PPD vs -1.586 u MIA. Różnica w Success Rate to 44.8% vs 35.7%. Na 3rd down LV (32.4%) wygląda solidniej niż MIA (37.1%). Red Zone i explosiveness ( 10.6% / 12.4% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +21.9.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +9.1 pts
-• PowerScoreDiff (winner) = +0.003
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +21.9 pts
+• PowerScoreDiff (winner) = +0.230
+• Confidence = 98.0%
 
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +9.1 pts model edge vs line, and PowerScore Δ +0.003.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: GOY — based on 98.0% confidence, +21.9 pts model edge vs line, and PowerScore Δ +0.230.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – CLE 6.7 – GB 24.4
-   • Win Probability – 95% (GB)
+   • Estimated Score – LV 41.1 – MIA 15.8
+   • Win Probability – 95% (LV)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CLE 16.5 – GB 25.0
-   • Win Probability – 80% (GB)
+   • Estimated Score – LV 24.5 – MIA 21.0
+   • Win Probability – 62% (LV)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — GB (HC -8.5)
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — LV (HC -3.5)
+
+---
+
+## BUF vs WAS
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – BUF 38.6 – WAS 18.9
+2️⃣ Predicted Winner (Model) – BUF
+3️⃣ Predicted Margin (Model) – BUF by 19.6 pts
+4️⃣ Win Probability (Model) – 95% (BUF)
+5️⃣ Why This Team Wins (Model) – Na 3rd down BUF utrzymuje 48.6%, podczas gdy WAS jest na 25.9%, co stabilizuje serie ofensywne. BUF prowadzi w Points per Drive Differential (+1.726 vs -0.268), więc bazowa efektywność napędza przewagę. Defensive pressure rate wspiera BUF (+11.8% vs +10.8%), więc pasy rywala będą częściej pod presją.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – BUF 27.5 – WAS 18.5
+2️⃣ Predicted Winner (Market) – BUF
+3️⃣ Predicted Margin (Market) – BUF by 9.0 pts
+4️⃣ Win Probability (Market) – 82% (BUF)
+5️⃣ Forum Output (A) – PowerScore (Model) — BUF +0.092 vs WAS +0.220. Points per Drive Differential — BUF +1.726 vs WAS -0.268. Success Rate Offense — BUF 41.4% vs WAS 47.0%. Third Down Conversion — BUF 48.6% vs WAS 25.9%. Red Zone TD Rate — BUF 11.5% vs WAS 25.0%. Explosive Play Rate — BUF 6.1% vs WAS 7.8%. Model margin 19.6 pts vs market spread BUF +9.0.
+6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie 19.6 pkt. BUF notuje +1.726 PPD vs -0.268 u WAS. Różnica w Success Rate to 41.4% vs 47.0%. Na 3rd down BUF (48.6%) wygląda solidniej niż WAS (25.9%). Red Zone i explosiveness ( 11.5% / 6.1% ) utrzymują przewagę jakościową. Market trzyma 9.0 pkt, więc edge vs linia to +10.6.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +10.6 pts
+• PowerScoreDiff (winner) = -0.128
+• Confidence = 95.0%
+
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +10.6 pts model edge vs line, and PowerScore Δ -0.128.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – BUF 38.6 – WAS 18.9
+   • Win Probability – 95% (BUF)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – BUF 27.5 – WAS 18.5
+   • Win Probability – 82% (BUF)
+
+🏷 Model Tag: NEUTRAL — BUF (HC -9.0)
+
+---
+
+## CLE vs CHI
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – CLE 36.3 – CHI 21.8
+2️⃣ Predicted Winner (Model) – CLE
+3️⃣ Predicted Margin (Model) – CLE by 14.6 pts
+4️⃣ Win Probability (Model) – 95% (CLE)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę CLE: CLE +0.227 vs CHI -0.032. Success Rate Offense pokazuje CLE na poziomie 53.1% vs 40.6% (+12.5 pp). Red Zone TD Rate sprzyja CLE (18.4% vs 10.7%). Explosive Play Rate pozostaje po stronie CLE (12.9% vs 6.1%), więc big-play equity jest wyższe. CLE prowadzi w Points per Drive Differential (+0.193 vs -1.012), więc bazowa efektywność napędza przewagę.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – CLE 27.0 – CHI 19.5
+2️⃣ Predicted Winner (Market) – CLE
+3️⃣ Predicted Margin (Market) – CLE by 7.5 pts
+4️⃣ Win Probability (Market) – 76% (CLE)
+5️⃣ Forum Output (A) – PowerScore (Model) — CLE +0.227 vs CHI -0.032. Points per Drive Differential — CLE +0.193 vs CHI -1.012. Success Rate Offense — CLE 53.1% vs CHI 40.6%. Third Down Conversion — CLE 34.7% vs CHI 36.5%. Red Zone TD Rate — CLE 18.4% vs CHI 10.7%. Explosive Play Rate — CLE 12.9% vs CHI 6.1%. Model margin 14.6 pts vs market spread CLE +7.5.
+6️⃣ Forum Output (B) – Model idzie w stronę CLE po marginesie 14.6 pkt. CLE notuje +0.193 PPD vs -1.012 u CHI. Różnica w Success Rate to 53.1% vs 40.6%. Na 3rd down CLE (34.7%) wygląda solidniej niż CHI (36.5%). Red Zone i explosiveness ( 18.4% / 12.9% ) utrzymują przewagę jakościową. Market trzyma 7.5 pkt, więc edge vs linia to +7.1.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +7.1 pts
+• PowerScoreDiff (winner) = +0.259
+• Confidence = 98.0%
+
+🏷 Model Tag: GOY — based on 98.0% confidence, +7.1 pts model edge vs line, and PowerScore Δ +0.259.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – CLE 36.3 – CHI 21.8
+   • Win Probability – 95% (CLE)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – CLE 27.0 – CHI 19.5
+   • Win Probability – 76% (CLE)
+
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — CLE (HC -7.5)
+
+---
+
+## DET vs BAL
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – DET 14.1 – BAL 24.8
+2️⃣ Predicted Winner (Model) – BAL
+3️⃣ Predicted Margin (Model) – BAL by 10.6 pts
+4️⃣ Win Probability (Model) – 90% (BAL)
+5️⃣ Why This Team Wins (Model) – Na 3rd down BAL utrzymuje 38.0%, podczas gdy DET jest na 32.7%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę BAL: BAL +0.239 vs DET +0.202. Turnover margin faworyzuje BAL (+0.00 vs -2.00), co przekłada się na dodatkowe posiadania. Explosive Play Rate pozostaje po stronie BAL (13.0% vs 10.4%), więc big-play equity jest wyższe. Red Zone TD Rate sprzyja BAL (23.8% vs 22.6%).
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – DET 20.0 – BAL 29.5
+2️⃣ Predicted Winner (Market) – BAL
+3️⃣ Predicted Margin (Market) – BAL by 9.5 pts
+4️⃣ Win Probability (Market) – 83% (BAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — DET +0.202 vs BAL +0.239. Points per Drive Differential — DET -0.717 vs BAL +0.225. Success Rate Offense — DET 47.8% vs BAL 46.9%. Third Down Conversion — DET 32.7% vs BAL 38.0%. Red Zone TD Rate — DET 22.6% vs BAL 23.8%. Explosive Play Rate — DET 10.4% vs BAL 13.0%. Model margin -10.6 pts vs market spread DET -9.5.
+6️⃣ Forum Output (B) – Model idzie w stronę BAL po marginesie -10.6 pkt. BAL notuje +0.225 PPD vs -0.717 u DET. Różnica w Success Rate to 46.9% vs 47.8%. Na 3rd down BAL (38.0%) wygląda solidniej niż DET (32.7%). Red Zone i explosiveness ( 23.8% / 13.0% ) utrzymują przewagę jakościową. Market trzyma -9.5 pkt, więc edge vs linia to +1.1.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +1.1 pts
+• PowerScoreDiff (winner) = +0.037
+• Confidence = 91.5%
+
+🏷 Model Tag: NEUTRAL — based on 91.5% confidence, +1.1 pts model edge vs line, and PowerScore Δ +0.037.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – DET 14.1 – BAL 24.8
+   • Win Probability – 90% (BAL)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – DET 20.0 – BAL 29.5
+   • Win Probability – 83% (BAL)
+
+🏷 Model Tag: NEUTRAL — BAL (HC -9.5)
+
+---
+
+## JAX vs ARI
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – JAX 3.3 – ARI 35.3
+2️⃣ Predicted Winner (Model) – ARI
+3️⃣ Predicted Margin (Model) – ARI by 31.9 pts
+4️⃣ Win Probability (Model) – 95% (ARI)
+5️⃣ Why This Team Wins (Model) – Na 3rd down ARI utrzymuje 39.0%, podczas gdy JAX jest na 23.9%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja ARI (19.1% vs 7.1%). PowerScore Summary potwierdza przewagę ARI: ARI +0.203 vs JAX +0.115. Success Rate Offense pokazuje ARI na poziomie 44.1% vs 39.4% (+4.7 pp). Explosive Play Rate pozostaje po stronie ARI (13.5% vs 9.4%), więc big-play equity jest wyższe.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – JAX 22.0 – ARI 29.5
+2️⃣ Predicted Winner (Market) – ARI
+3️⃣ Predicted Margin (Market) – ARI by 7.5 pts
+4️⃣ Win Probability (Market) – 76% (ARI)
+5️⃣ Forum Output (A) – PowerScore (Model) — JAX +0.115 vs ARI +0.203. Points per Drive Differential — JAX -1.040 vs ARI +1.190. Success Rate Offense — JAX 39.4% vs ARI 44.1%. Third Down Conversion — JAX 23.9% vs ARI 39.0%. Red Zone TD Rate — JAX 7.1% vs ARI 19.1%. Explosive Play Rate — JAX 9.4% vs ARI 13.5%. Model margin -31.9 pts vs market spread JAX -7.5.
+6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie -31.9 pkt. ARI notuje +1.190 PPD vs -1.040 u JAX. Różnica w Success Rate to 44.1% vs 39.4%. Na 3rd down ARI (39.0%) wygląda solidniej niż JAX (23.9%). Red Zone i explosiveness ( 19.1% / 13.5% ) utrzymują przewagę jakościową. Market trzyma -7.5 pkt, więc edge vs linia to +24.4.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +24.4 pts
+• PowerScoreDiff (winner) = +0.088
+• Confidence = 98.0%
+
+🏷 Model Tag: GOY — based on 98.0% confidence, +24.4 pts model edge vs line, and PowerScore Δ +0.088.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – JAX 3.3 – ARI 35.3
+   • Win Probability – 95% (ARI)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – JAX 22.0 – ARI 29.5
+   • Win Probability – 76% (ARI)
+
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — ARI (HC -7.5)
+
+---
+
+## KC vs LAC
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – KC 25.5 – LAC 27.8
+2️⃣ Predicted Winner (Model) – LAC
+3️⃣ Predicted Margin (Model) – LAC by 2.2 pts
+4️⃣ Win Probability (Model) – 54% (LAC)
+5️⃣ Why This Team Wins (Model) – Na 3rd down LAC utrzymuje 53.3%, podczas gdy KC jest na 38.2%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera LAC (+6.9% vs +3.3%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie LAC (12.8% vs 9.5%), więc big-play equity jest wyższe. LAC prowadzi w Points per Drive Differential (+0.059 vs -0.150), więc bazowa efektywność napędza przewagę.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – KC 31.0 – LAC 24.5
+2️⃣ Predicted Winner (Market) – KC
+3️⃣ Predicted Margin (Market) – KC by 6.5 pts
+4️⃣ Win Probability (Market) – 73% (KC)
+5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.249 vs LAC +0.156. Points per Drive Differential — KC -0.150 vs LAC +0.059. Success Rate Offense — KC 50.3% vs LAC 44.7%. Third Down Conversion — KC 38.2% vs LAC 53.3%. Red Zone TD Rate — KC 13.4% vs LAC 6.8%. Explosive Play Rate — KC 9.5% vs LAC 12.8%. Model margin -2.2 pts vs market spread KC +6.5.
+6️⃣ Forum Output (B) – Model idzie w stronę LAC po marginesie -2.2 pkt. LAC notuje +0.059 PPD vs -0.150 u KC. Różnica w Success Rate to 44.7% vs 50.3%. Na 3rd down LAC (53.3%) wygląda solidniej niż KC (38.2%). Red Zone i explosiveness ( 6.8% / 12.8% ) utrzymują przewagę jakościową. Market trzyma 6.5 pkt, więc edge vs linia to +8.7.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +8.7 pts
+• PowerScoreDiff (winner) = -0.093
+• Confidence = 54.0%
+
+🏷 Model Tag: NEUTRAL — based on 54.0% confidence, +8.7 pts model edge vs line, and PowerScore Δ -0.093.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – KC 25.5 – LAC 27.8
+   • Win Probability – 54% (LAC)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – KC 31.0 – LAC 24.5
+   • Win Probability – 73% (KC)
+
+🏷 Model Tag: NEUTRAL — LAC (HC +6.5)
+
+---
+
+## NE vs NO
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – NE 33.3 – NO 20.5
+2️⃣ Predicted Winner (Model) – NE
+3️⃣ Predicted Margin (Model) – NE by 12.8 pts
+4️⃣ Win Probability (Model) – 95% (NE)
+5️⃣ Why This Team Wins (Model) – Na 3rd down NE utrzymuje 46.3%, podczas gdy NO jest na 30.0%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę NE: NE +0.080 vs NO -0.007. Turnover margin faworyzuje NE (+4.00 vs -1.00), co przekłada się na dodatkowe posiadania. Defensive pressure rate wspiera NE (+10.5% vs +5.0%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie NE (10.0% vs 7.9%), więc big-play equity jest wyższe.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – NE 23.0 – NO 20.0
+2️⃣ Predicted Winner (Market) – NE
+3️⃣ Predicted Margin (Market) – NE by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (NE)
+5️⃣ Forum Output (A) – PowerScore (Model) — NE +0.080 vs NO -0.007. Points per Drive Differential — NE +1.073 vs NO +0.762. Success Rate Offense — NE 46.2% vs NO 45.7%. Third Down Conversion — NE 46.3% vs NO 30.0%. Red Zone TD Rate — NE 8.0% vs NO 17.9%. Explosive Play Rate — NE 10.0% vs NO 7.9%. Model margin 12.8 pts vs market spread NE +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę NE po marginesie 12.8 pkt. NE notuje +1.073 PPD vs +0.762 u NO. Różnica w Success Rate to 46.2% vs 45.7%. Na 3rd down NE (46.3%) wygląda solidniej niż NO (30.0%). Red Zone i explosiveness ( 8.0% / 10.0% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +9.8.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +9.8 pts
+• PowerScoreDiff (winner) = +0.087
+• Confidence = 98.0%
+
+🏷 Model Tag: GOY — based on 98.0% confidence, +9.8 pts model edge vs line, and PowerScore Δ +0.087.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – NE 33.3 – NO 20.5
+   • Win Probability – 95% (NE)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – NE 23.0 – NO 20.0
+   • Win Probability – 60% (NE)
+
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — NE (HC -3.0)
+
+---
+
+## NYG vs ATL
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – NYG 38.4 – ATL 22.3
+2️⃣ Predicted Winner (Model) – NYG
+3️⃣ Predicted Margin (Model) – NYG by 16.1 pts
+4️⃣ Win Probability (Model) – 95% (NYG)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę NYG: NYG +0.213 vs ATL +0.044. Field position edge wynosi +14.0 yds na rzecz NYG (8.5 vs -5.5), co skraca ich boisko. Turnover margin faworyzuje NYG (+1.00 vs -2.00), co przekłada się na dodatkowe posiadania. Na 3rd down NYG utrzymuje 32.1%, podczas gdy ATL jest na 28.0%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje NYG na poziomie 43.3% vs 39.3% (+4.0 pp).
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – NYG 25.8 – ATL 22.8
+2️⃣ Predicted Winner (Market) – NYG
+3️⃣ Predicted Margin (Market) – NYG by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (NYG)
+5️⃣ Forum Output (A) – PowerScore (Model) — NYG +0.213 vs ATL +0.044. Points per Drive Differential — NYG -0.917 vs ATL -1.641. Success Rate Offense — NYG 43.3% vs ATL 39.3%. Third Down Conversion — NYG 32.1% vs ATL 28.0%. Red Zone TD Rate — NYG 6.9% vs ATL 10.7%. Explosive Play Rate — NYG 11.6% vs ATL 7.7%. Model margin 16.1 pts vs market spread NYG +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę NYG po marginesie 16.1 pkt. NYG notuje -0.917 PPD vs -1.641 u ATL. Różnica w Success Rate to 43.3% vs 39.3%. Na 3rd down NYG (32.1%) wygląda solidniej niż ATL (28.0%). Red Zone i explosiveness ( 6.9% / 11.6% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +13.1.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +13.1 pts
+• PowerScoreDiff (winner) = +0.169
+• Confidence = 98.0%
+
+🏷 Model Tag: GOY — based on 98.0% confidence, +13.1 pts model edge vs line, and PowerScore Δ +0.169.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – NYG 38.4 – ATL 22.3
+   • Win Probability – 95% (NYG)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – NYG 25.8 – ATL 22.8
+   • Win Probability – 60% (NYG)
+
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — NYG (HC -3.0)
+
+---
+
+## PIT vs CIN
+
+🔹 MODEL PROJECTION (Pure)
+1️⃣ Estimated Score (Model) – PIT 12.7 – CIN 22.0
+2️⃣ Predicted Winner (Model) – CIN
+3️⃣ Predicted Margin (Model) – CIN by 9.3 pts
+4️⃣ Win Probability (Model) – 84% (CIN)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja CIN (26.7% vs 17.0%). Success Rate Offense pokazuje CIN na poziomie 39.6% vs 36.7% (+2.9 pp). Defensive pressure rate wspiera CIN (+10.0% vs +7.7%), więc pasy rywala będą częściej pod presją. CIN prowadzi w Points per Drive Differential (+0.240 vs -0.809), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie CIN (9.1% vs 8.7%), więc big-play equity jest wyższe.
+
+🔹 MARKET PROJECTION (Balanced)
+1️⃣ Estimated Score (Market) – PIT 24.2 – CIN 19.8
+2️⃣ Predicted Winner (Market) – PIT
+3️⃣ Predicted Margin (Market) – PIT by 4.5 pts
+4️⃣ Win Probability (Market) – 66% (PIT)
+5️⃣ Forum Output (A) – PowerScore (Model) — PIT +0.140 vs CIN -0.026. Points per Drive Differential — PIT -0.809 vs CIN +0.240. Success Rate Offense — PIT 36.7% vs CIN 39.6%. Third Down Conversion — PIT 34.9% vs CIN 31.2%. Red Zone TD Rate — PIT 17.0% vs CIN 26.7%. Explosive Play Rate — PIT 8.7% vs CIN 9.1%. Model margin -9.3 pts vs market spread PIT +4.5.
+6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -9.3 pkt. CIN notuje +0.240 PPD vs -0.809 u PIT. Różnica w Success Rate to 39.6% vs 36.7%. Na 3rd down CIN (31.2%) wygląda solidniej niż PIT (34.9%). Red Zone i explosiveness ( 26.7% / 9.1% ) utrzymują przewagę jakościową. Market trzyma 4.5 pkt, więc edge vs linia to +13.8.
+
+🔹 MODEL vs MARKET
+• Edge_vs_Line (winner) = +13.8 pts
+• PowerScoreDiff (winner) = -0.166
+• Confidence = 84.0%
+
+🏷 Model Tag: NEUTRAL — based on 84.0% confidence, +13.8 pts model edge vs line, and PowerScore Δ -0.166.
+😴 Brak value — model i rynek w równowadze.
+
+SUMMARY:
+1. MODEL PROJECTION (Pure)
+   • Estimated Score – PIT 12.7 – CIN 22.0
+   • Win Probability – 84% (CIN)
+
+2. MARKET PROJECTION (Balanced)
+   • Estimated Score – PIT 24.2 – CIN 19.8
+   • Win Probability – 66% (PIT)
+
+🏷 Model Tag: NEUTRAL — CIN (HC +4.5)
 
 ---
 
 ## TEN vs IND
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TEN -0.6 – IND 33.2
-2️⃣ Predicted Winner (Model) – IND
-3️⃣ Predicted Margin (Model) – IND by 33.8 pts
-4️⃣ Win Probability (Model) – 95% (IND)
-5️⃣ Why This Team Wins (Model) – Na 3rd down IND utrzymuje 46.4%, podczas gdy TEN jest na 25.5%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje IND na poziomie 53.8% vs 40.0% (+13.8 pp). PowerScore Summary potwierdza przewagę IND: IND +0.259 vs TEN +0.158. Defensive pressure rate wspiera IND (+9.5% vs +0.0%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie IND (12.7% vs 4.8%), więc big-play equity jest wyższe.
+1️⃣ Estimated Score (Model) – TEN 30.6 – IND 24.0
+2️⃣ Predicted Winner (Model) – TEN
+3️⃣ Predicted Margin (Model) – TEN by 6.6 pts
+4️⃣ Win Probability (Model) – 83% (TEN)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę TEN: TEN +0.206 vs IND +0.137. Defensive pressure rate wspiera TEN (+8.8% vs +3.2%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja TEN (15.1% vs 9.5%). Na 3rd down TEN utrzymuje 36.7%, podczas gdy IND jest na 34.7%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie TEN (9.6% vs 8.6%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – TEN 19.0 – IND 24.5
-2️⃣ Predicted Winner (Market) – IND
-3️⃣ Predicted Margin (Market) – IND by 5.5 pts
-4️⃣ Win Probability (Market) – 69% (IND)
-5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.158 vs IND +0.259. Points per Drive Differential — TEN -0.880 vs IND +1.099. Success Rate Offense — TEN 40.0% vs IND 53.8%. Third Down Conversion — TEN 25.5% vs IND 46.4%. Red Zone TD Rate — TEN 5.6% vs IND 7.7%. Explosive Play Rate — TEN 4.8% vs IND 12.7%. Model margin -33.8 pts vs market spread TEN -5.5.
-6️⃣ Forum Output (B) – Model idzie w stronę IND po marginesie -33.8 pkt. IND notuje +1.099 PPD vs -0.880 u TEN. Różnica w Success Rate to 53.8% vs 40.0%. Na 3rd down IND (46.4%) wygląda solidniej niż TEN (25.5%). Red Zone i explosiveness ( 7.7% / 12.7% ) utrzymują przewagę jakościową. Market trzyma -5.5 pkt, więc edge vs linia to +28.3.
+1️⃣ Estimated Score (Market) – TEN 26.5 – IND 21.5
+2️⃣ Predicted Winner (Market) – TEN
+3️⃣ Predicted Margin (Market) – TEN by 5.0 pts
+4️⃣ Win Probability (Market) – 68% (TEN)
+5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.206 vs IND +0.137. Points per Drive Differential — TEN -0.880 vs IND -1.205. Success Rate Offense — TEN 45.7% vs IND 44.8%. Third Down Conversion — TEN 36.7% vs IND 34.7%. Red Zone TD Rate — TEN 15.1% vs IND 9.5%. Explosive Play Rate — TEN 9.6% vs IND 8.6%. Model margin 6.6 pts vs market spread TEN +5.0.
+6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 6.6 pkt. TEN notuje -0.880 PPD vs -1.205 u IND. Różnica w Success Rate to 45.7% vs 44.8%. Na 3rd down TEN (36.7%) wygląda solidniej niż IND (34.7%). Red Zone i explosiveness ( 15.1% / 9.6% ) utrzymują przewagę jakościową. Market trzyma 5.0 pkt, więc edge vs linia to +1.6.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +28.3 pts
-• PowerScoreDiff (winner) = +0.101
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +1.6 pts
+• PowerScoreDiff (winner) = +0.069
+• Confidence = 86.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +28.3 pts model edge vs line, and PowerScore Δ +0.101.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – TEN -0.6 – IND 33.2
-   • Win Probability – 95% (IND)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – TEN 19.0 – IND 24.5
-   • Win Probability – 69% (IND)
-
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — IND (HC -5.5)
-
----
-
-## MIN vs CIN
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – MIN 16.0 – CIN 20.8
-2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 4.7 pts
-4️⃣ Win Probability (Model) – 65% (CIN)
-5️⃣ Why This Team Wins (Model) – Na 3rd down CIN utrzymuje 46.1%, podczas gdy MIN jest na 26.2%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja CIN (16.7% vs 8.3%). Success Rate Offense pokazuje CIN na poziomie 48.3% vs 41.7% (+6.6 pp). CIN prowadzi w Points per Drive Differential (+0.345 vs -0.238), więc bazowa efektywność napędza przewagę.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – MIN 22.2 – CIN 19.2
-2️⃣ Predicted Winner (Market) – MIN
-3️⃣ Predicted Margin (Market) – MIN by 3.0 pts
-4️⃣ Win Probability (Market) – 60% (MIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — MIN +0.061 vs CIN -0.075. Points per Drive Differential — MIN -0.238 vs CIN +0.345. Success Rate Offense — MIN 41.7% vs CIN 48.3%. Third Down Conversion — MIN 26.2% vs CIN 46.1%. Red Zone TD Rate — MIN 8.3% vs CIN 16.7%. Explosive Play Rate — MIN 8.6% vs CIN 4.6%. Model margin -4.7 pts vs market spread MIN +3.0.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -4.7 pkt. CIN notuje +0.345 PPD vs -0.238 u MIN. Różnica w Success Rate to 48.3% vs 41.7%. Na 3rd down CIN (46.1%) wygląda solidniej niż MIN (26.2%). Red Zone i explosiveness ( 16.7% / 4.6% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +7.7.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +7.7 pts
-• PowerScoreDiff (winner) = -0.136
-• Confidence = 65.0%
-
-🏷 Model Tag: NEUTRAL — based on 65.0% confidence, +7.7 pts model edge vs line, and PowerScore Δ -0.136.
+🏷 Model Tag: NEUTRAL — based on 86.0% confidence, +1.6 pts model edge vs line, and PowerScore Δ +0.069.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – MIN 16.0 – CIN 20.8
-   • Win Probability – 65% (CIN)
+   • Estimated Score – TEN 30.6 – IND 24.0
+   • Win Probability – 83% (TEN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – MIN 22.2 – CIN 19.2
-   • Win Probability – 60% (MIN)
+   • Estimated Score – TEN 26.5 – IND 21.5
+   • Win Probability – 68% (TEN)
 
-🏷 Model Tag: NEUTRAL — CIN (HC +3.0)
+🏷 Model Tag: NEUTRAL — TEN (HC -5.0)
 
 ---
 
-## NE vs PIT
+## HOU vs CAR
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – NE 21.6 – PIT 22.2
-2️⃣ Predicted Winner (Model) – PIT
-3️⃣ Predicted Margin (Model) – PIT by 0.6 pts
-4️⃣ Win Probability (Model) – 48% (PIT)
-5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje PIT (+4.00 vs -4.00), co przekłada się na dodatkowe posiadania. Defensive pressure rate wspiera PIT (+11.9% vs +0.0%), więc pasy rywala będą częściej pod presją. Field position edge wynosi +6.7 yds na rzecz PIT (4.0 vs -2.7), co skraca ich boisko. Red Zone TD Rate sprzyja PIT (19.9% vs 15.6%). PowerScore Summary potwierdza przewagę PIT: PIT +0.143 vs NE +0.129.
+1️⃣ Estimated Score (Model) – HOU 19.8 – CAR 22.0
+2️⃣ Predicted Winner (Model) – CAR
+3️⃣ Predicted Margin (Model) – CAR by 2.2 pts
+4️⃣ Win Probability (Model) – 54% (CAR)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera CAR (+18.5% vs +7.7%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie CAR (11.4% vs 8.0%), więc big-play equity jest wyższe. Success Rate Offense pokazuje CAR na poziomie 42.3% vs 40.9% (+1.4 pp). CAR prowadzi w Points per Drive Differential (+1.000 vs +0.396), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – NE 21.5 – PIT 23.0
-2️⃣ Predicted Winner (Market) – PIT
-3️⃣ Predicted Margin (Market) – PIT by 1.5 pts
-4️⃣ Win Probability (Market) – 55% (PIT)
-5️⃣ Forum Output (A) – PowerScore (Model) — NE +0.129 vs PIT +0.143. Points per Drive Differential — NE +0.492 vs PIT -0.087. Success Rate Offense — NE 44.1% vs PIT 43.8%. Third Down Conversion — NE 40.5% vs PIT 31.4%. Red Zone TD Rate — NE 15.6% vs PIT 19.9%. Explosive Play Rate — NE 8.8% vs PIT 7.8%. Model margin -0.6 pts vs market spread NE -1.5.
-6️⃣ Forum Output (B) – Model idzie w stronę PIT po marginesie -0.6 pkt. PIT notuje -0.087 PPD vs +0.492 u NE. Różnica w Success Rate to 43.8% vs 44.1%. Na 3rd down PIT (31.4%) wygląda solidniej niż NE (40.5%). Red Zone i explosiveness ( 19.9% / 7.8% ) utrzymują przewagę jakościową. Market trzyma -1.5 pkt, więc edge vs linia to -0.9.
+1️⃣ Estimated Score (Market) – HOU 18.2 – CAR 25.8
+2️⃣ Predicted Winner (Market) – CAR
+3️⃣ Predicted Margin (Market) – CAR by 7.5 pts
+4️⃣ Win Probability (Market) – 76% (CAR)
+5️⃣ Forum Output (A) – PowerScore (Model) — HOU +0.161 vs CAR +0.075. Points per Drive Differential — HOU +0.396 vs CAR +1.000. Success Rate Offense — HOU 40.9% vs CAR 42.3%. Third Down Conversion — HOU 54.0% vs CAR 41.6%. Red Zone TD Rate — HOU 17.0% vs CAR 12.9%. Explosive Play Rate — HOU 8.0% vs CAR 11.4%. Model margin -2.2 pts vs market spread HOU -7.5.
+6️⃣ Forum Output (B) – Model idzie w stronę CAR po marginesie -2.2 pkt. CAR notuje +1.000 PPD vs +0.396 u HOU. Różnica w Success Rate to 42.3% vs 40.9%. Na 3rd down CAR (41.6%) wygląda solidniej niż HOU (54.0%). Red Zone i explosiveness ( 12.9% / 11.4% ) utrzymują przewagę jakościową. Market trzyma -7.5 pkt, więc edge vs linia to -5.3.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -0.9 pts
-• PowerScoreDiff (winner) = +0.014
-• Confidence = 48.0%
+• Edge_vs_Line (winner) = -5.3 pts
+• PowerScoreDiff (winner) = -0.086
+• Confidence = 54.0%
 
-🏷 Model Tag: NEUTRAL — based on 48.0% confidence, -0.9 pts model edge vs line, and PowerScore Δ +0.014.
+🏷 Model Tag: NEUTRAL — based on 54.0% confidence, -5.3 pts model edge vs line, and PowerScore Δ -0.086.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – NE 21.6 – PIT 22.2
-   • Win Probability – 48% (PIT)
+   • Estimated Score – HOU 19.8 – CAR 22.0
+   • Win Probability – 54% (CAR)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – NE 21.5 – PIT 23.0
-   • Win Probability – 55% (PIT)
+   • Estimated Score – HOU 18.2 – CAR 25.8
+   • Win Probability – 76% (CAR)
 
-🏷 Model Tag: NEUTRAL — PIT (HC -1.5)
-
----
-
-## PHI vs LA
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – PHI 15.3 – LA 22.8
-2️⃣ Predicted Winner (Model) – LA
-3️⃣ Predicted Margin (Model) – LA by 7.4 pts
-4️⃣ Win Probability (Model) – 76% (LA)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera LA (+10.5% vs +2.9%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie LA (12.9% vs 6.4%), więc big-play equity jest wyższe. PowerScore Summary potwierdza przewagę LA: LA +0.108 vs PHI +0.078. LA prowadzi w Points per Drive Differential (+0.950 vs +0.137), więc bazowa efektywność napędza przewagę.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – PHI 24.5 – LA 21.0
-2️⃣ Predicted Winner (Market) – PHI
-3️⃣ Predicted Margin (Market) – PHI by 3.5 pts
-4️⃣ Win Probability (Market) – 62% (PHI)
-5️⃣ Forum Output (A) – PowerScore (Model) — PHI +0.078 vs LA +0.108. Points per Drive Differential — PHI +0.137 vs LA +0.950. Success Rate Offense — PHI 47.8% vs LA 45.8%. Third Down Conversion — PHI 46.3% vs LA 44.1%. Red Zone TD Rate — PHI 26.1% vs LA 14.9%. Explosive Play Rate — PHI 6.4% vs LA 12.9%. Model margin -7.4 pts vs market spread PHI +3.5.
-6️⃣ Forum Output (B) – Model idzie w stronę LA po marginesie -7.4 pkt. LA notuje +0.950 PPD vs +0.137 u PHI. Różnica w Success Rate to 45.8% vs 47.8%. Na 3rd down LA (44.1%) wygląda solidniej niż PHI (46.3%). Red Zone i explosiveness ( 14.9% / 12.9% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +10.9.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +10.9 pts
-• PowerScoreDiff (winner) = +0.030
-• Confidence = 77.5%
-
-🏷 Model Tag: VALUE PLAY — based on 77.5% confidence, +10.9 pts model edge vs line, and PowerScore Δ +0.030.
-⚖️ Moderate value — umiarkowany edge.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – PHI 15.3 – LA 22.8
-   • Win Probability – 76% (LA)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – PHI 24.5 – LA 21.0
-   • Win Probability – 62% (PHI)
-
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — LA (HC +3.5)
-
----
-
-## TB vs NYJ
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TB 38.3 – NYJ 16.1
-2️⃣ Predicted Winner (Model) – TB
-3️⃣ Predicted Margin (Model) – TB by 22.2 pts
-4️⃣ Win Probability (Model) – 95% (TB)
-5️⃣ Why This Team Wins (Model) – Na 3rd down TB utrzymuje 46.0%, podczas gdy NYJ jest na 27.8%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera TB (+9.8% vs +3.2%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje TB (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. TB prowadzi w Points per Drive Differential (+0.286 vs -0.918), więc bazowa efektywność napędza przewagę. Red Zone TD Rate sprzyja TB (20.0% vs 18.8%).
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – TB 25.0 – NYJ 18.5
-2️⃣ Predicted Winner (Market) – TB
-3️⃣ Predicted Margin (Market) – TB by 6.5 pts
-4️⃣ Win Probability (Market) – 73% (TB)
-5️⃣ Forum Output (A) – PowerScore (Model) — TB +0.088 vs NYJ +0.104. Points per Drive Differential — TB +0.286 vs NYJ -0.918. Success Rate Offense — TB 47.1% vs NYJ 49.3%. Third Down Conversion — TB 46.0% vs NYJ 27.8%. Red Zone TD Rate — TB 20.0% vs NYJ 18.8%. Explosive Play Rate — TB 9.3% vs NYJ 11.1%. Model margin 22.2 pts vs market spread TB +6.5.
-6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie 22.2 pkt. TB notuje +0.286 PPD vs -0.918 u NYJ. Różnica w Success Rate to 47.1% vs 49.3%. Na 3rd down TB (46.0%) wygląda solidniej niż NYJ (27.8%). Red Zone i explosiveness ( 20.0% / 9.3% ) utrzymują przewagę jakościową. Market trzyma 6.5 pkt, więc edge vs linia to +15.7.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +15.7 pts
-• PowerScoreDiff (winner) = -0.016
-• Confidence = 95.0%
-
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +15.7 pts model edge vs line, and PowerScore Δ -0.016.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – TB 38.3 – NYJ 16.1
-   • Win Probability – 95% (TB)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – TB 25.0 – NYJ 18.5
-   • Win Probability – 73% (TB)
-
-🏷 Model Tag: NEUTRAL — TB (HC -6.5)
-
----
-
-## WAS vs LV
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – WAS 31.6 – LV 21.8
-2️⃣ Predicted Winner (Model) – WAS
-3️⃣ Predicted Margin (Model) – WAS by 9.9 pts
-4️⃣ Win Probability (Model) – 95% (WAS)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja WAS (23.6% vs 10.0%). Defensive pressure rate wspiera WAS (+14.3% vs +4.5%), więc pasy rywala będą częściej pod presją. PowerScore Summary potwierdza przewagę WAS: WAS +0.229 vs LV +0.161. Field position edge wynosi +6.5 yds na rzecz WAS (2.8 vs -3.7), co skraca ich boisko. Success Rate Offense pokazuje WAS na poziomie 46.2% vs 40.5% (+5.7 pp).
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – WAS 23.0 – LV 20.5
-2️⃣ Predicted Winner (Market) – WAS
-3️⃣ Predicted Margin (Market) – WAS by 2.5 pts
-4️⃣ Win Probability (Market) – 59% (WAS)
-5️⃣ Forum Output (A) – PowerScore (Model) — WAS +0.229 vs LV +0.161. Points per Drive Differential — WAS +0.361 vs LV -0.153. Success Rate Offense — WAS 46.2% vs LV 40.5%. Third Down Conversion — WAS 30.5% vs LV 39.3%. Red Zone TD Rate — WAS 23.6% vs LV 10.0%. Explosive Play Rate — WAS 9.4% vs LV 10.4%. Model margin 9.9 pts vs market spread WAS +2.5.
-6️⃣ Forum Output (B) – Model idzie w stronę WAS po marginesie 9.9 pkt. WAS notuje +0.361 PPD vs -0.153 u LV. Różnica w Success Rate to 46.2% vs 40.5%. Na 3rd down WAS (30.5%) wygląda solidniej niż LV (39.3%). Red Zone i explosiveness ( 23.6% / 9.4% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to +7.4.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +7.4 pts
-• PowerScoreDiff (winner) = +0.068
-• Confidence = 98.0%
-
-🏷 Model Tag: GOY — based on 98.0% confidence, +7.4 pts model edge vs line, and PowerScore Δ +0.068.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – WAS 31.6 – LV 21.8
-   • Win Probability – 95% (WAS)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – WAS 23.0 – LV 20.5
-   • Win Probability – 59% (WAS)
-
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — WAS (HC -2.5)
-
----
-
-## CAR vs ATL
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CAR 16.5 – ATL 22.2
-2️⃣ Predicted Winner (Model) – ATL
-3️⃣ Predicted Margin (Model) – ATL by 5.8 pts
-4️⃣ Win Probability (Model) – 69% (ATL)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje ATL na poziomie 47.1% vs 42.9% (+4.2 pp). Defensive pressure rate wspiera ATL (+3.8% vs +0.0%), więc pasy rywala będą częściej pod presją. ATL prowadzi w Points per Drive Differential (+0.619 vs -0.750), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie ATL (8.6% vs 7.4%), więc big-play equity jest wyższe. Na 3rd down ATL utrzymuje 37.5%, podczas gdy CAR jest na 36.6%, co stabilizuje serie ofensywne.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CAR 19.5 – ATL 25.0
-2️⃣ Predicted Winner (Market) – ATL
-3️⃣ Predicted Margin (Market) – ATL by 5.5 pts
-4️⃣ Win Probability (Market) – 69% (ATL)
-5️⃣ Forum Output (A) – PowerScore (Model) — CAR +0.083 vs ATL -0.015. Points per Drive Differential — CAR -0.750 vs ATL +0.619. Success Rate Offense — CAR 42.9% vs ATL 47.1%. Third Down Conversion — CAR 36.6% vs ATL 37.5%. Red Zone TD Rate — CAR 6.2% vs ATL 5.6%. Explosive Play Rate — CAR 7.4% vs ATL 8.6%. Model margin -5.8 pts vs market spread CAR -5.5.
-6️⃣ Forum Output (B) – Model idzie w stronę ATL po marginesie -5.8 pkt. ATL notuje +0.619 PPD vs -0.750 u CAR. Różnica w Success Rate to 47.1% vs 42.9%. Na 3rd down ATL (37.5%) wygląda solidniej niż CAR (36.6%). Red Zone i explosiveness ( 5.6% / 8.6% ) utrzymują przewagę jakościową. Market trzyma -5.5 pkt, więc edge vs linia to +0.3.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +0.3 pts
-• PowerScoreDiff (winner) = -0.098
-• Confidence = 69.0%
-
-🏷 Model Tag: NEUTRAL — based on 69.0% confidence, +0.3 pts model edge vs line, and PowerScore Δ -0.098.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – CAR 16.5 – ATL 22.2
-   • Win Probability – 69% (ATL)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CAR 19.5 – ATL 25.0
-   • Win Probability – 69% (ATL)
-
-🏷 Model Tag: NEUTRAL — ATL (HC -5.5)
-
----
-
-## JAX vs HOU
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – JAX 40.2 – HOU 14.1
-2️⃣ Predicted Winner (Model) – JAX
-3️⃣ Predicted Margin (Model) – JAX by 26.1 pts
-4️⃣ Win Probability (Model) – 95% (JAX)
-5️⃣ Why This Team Wins (Model) – Na 3rd down JAX utrzymuje 44.0%, podczas gdy HOU jest na 20.0%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja JAX (12.4% vs 0.0%). Success Rate Offense pokazuje JAX na poziomie 48.8% vs 39.1% (+9.7 pp). Turnover margin faworyzuje JAX (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę JAX: JAX +0.024 vs HOU -0.000.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – JAX 22.5 – HOU 21.0
-2️⃣ Predicted Winner (Market) – JAX
-3️⃣ Predicted Margin (Market) – JAX by 1.5 pts
-4️⃣ Win Probability (Market) – 55% (JAX)
-5️⃣ Forum Output (A) – PowerScore (Model) — JAX +0.024 vs HOU -0.000. Points per Drive Differential — JAX +0.417 vs HOU -0.400. Success Rate Offense — JAX 48.8% vs HOU 39.1%. Third Down Conversion — JAX 44.0% vs HOU 20.0%. Red Zone TD Rate — JAX 12.4% vs HOU 0.0%. Explosive Play Rate — JAX 10.0% vs HOU 11.6%. Model margin 26.1 pts vs market spread JAX +1.5.
-6️⃣ Forum Output (B) – Model idzie w stronę JAX po marginesie 26.1 pkt. JAX notuje +0.417 PPD vs -0.400 u HOU. Różnica w Success Rate to 48.8% vs 39.1%. Na 3rd down JAX (44.0%) wygląda solidniej niż HOU (20.0%). Red Zone i explosiveness ( 12.4% / 10.0% ) utrzymują przewagę jakościową. Market trzyma 1.5 pkt, więc edge vs linia to +24.6.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +24.6 pts
-• PowerScoreDiff (winner) = +0.024
-• Confidence = 95.0%
-
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +24.6 pts model edge vs line, and PowerScore Δ +0.024.
-⚖️ Moderate value — umiarkowany edge.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – JAX 40.2 – HOU 14.1
-   • Win Probability – 95% (JAX)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – JAX 22.5 – HOU 21.0
-   • Win Probability – 55% (JAX)
-
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — JAX (HC -1.5)
-
----
-
-## LAC vs DEN
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – LAC 22.1 – DEN 22.8
-2️⃣ Predicted Winner (Model) – DEN
-3️⃣ Predicted Margin (Model) – DEN by 0.7 pts
-4️⃣ Win Probability (Model) – 48% (DEN)
-5️⃣ Why This Team Wins (Model) – Field position edge wynosi +12.4 yds na rzecz DEN (8.4 vs -4.0), co skraca ich boisko. Turnover margin faworyzuje DEN (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja DEN (14.5% vs 10.5%). Defensive pressure rate wspiera DEN (+9.6% vs +7.1%), więc pasy rywala będą częściej pod presją.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – LAC 24.0 – DEN 21.5
-2️⃣ Predicted Winner (Market) – LAC
-3️⃣ Predicted Margin (Market) – LAC by 2.5 pts
-4️⃣ Win Probability (Market) – 59% (LAC)
-5️⃣ Forum Output (A) – PowerScore (Model) — LAC +0.079 vs DEN +0.054. Points per Drive Differential — LAC +0.847 vs DEN +0.534. Success Rate Offense — LAC 52.0% vs DEN 47.6%. Third Down Conversion — LAC 42.2% vs DEN 35.8%. Red Zone TD Rate — LAC 10.5% vs DEN 14.5%. Explosive Play Rate — LAC 10.5% vs DEN 10.1%. Model margin -0.7 pts vs market spread LAC +2.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DEN po marginesie -0.7 pkt. DEN notuje +0.534 PPD vs +0.847 u LAC. Różnica w Success Rate to 47.6% vs 52.0%. Na 3rd down DEN (35.8%) wygląda solidniej niż LAC (42.2%). Red Zone i explosiveness ( 14.5% / 10.1% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to +3.2.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +3.2 pts
-• PowerScoreDiff (winner) = -0.025
-• Confidence = 48.0%
-
-🏷 Model Tag: NEUTRAL — based on 48.0% confidence, +3.2 pts model edge vs line, and PowerScore Δ -0.025.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – LAC 22.1 – DEN 22.8
-   • Win Probability – 48% (DEN)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – LAC 24.0 – DEN 21.5
-   • Win Probability – 59% (LAC)
-
-🏷 Model Tag: NEUTRAL — DEN (HC +2.5)
-
----
-
-## SEA vs NO
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – SEA 32.8 – NO 19.1
-2️⃣ Predicted Winner (Model) – SEA
-3️⃣ Predicted Margin (Model) – SEA by 13.6 pts
-4️⃣ Win Probability (Model) – 95% (SEA)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę SEA: SEA +0.158 vs NO +0.061. Na 3rd down SEA utrzymuje 35.8%, podczas gdy NO jest na 29.2%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie SEA (12.1% vs 6.6%), więc big-play equity jest wyższe. Defensive pressure rate wspiera SEA (+4.7% vs +0.0%), więc pasy rywala będą częściej pod presją. Success Rate Offense pokazuje SEA na poziomie 48.3% vs 44.8% (+3.5 pp).
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – SEA 24.5 – NO 17.0
-2️⃣ Predicted Winner (Market) – SEA
-3️⃣ Predicted Margin (Market) – SEA by 7.5 pts
-4️⃣ Win Probability (Market) – 76% (SEA)
-5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.158 vs NO +0.061. Points per Drive Differential — SEA +0.060 vs NO -0.747. Success Rate Offense — SEA 48.3% vs NO 44.8%. Third Down Conversion — SEA 35.8% vs NO 29.2%. Red Zone TD Rate — SEA 11.3% vs NO 15.8%. Explosive Play Rate — SEA 12.1% vs NO 6.6%. Model margin 13.6 pts vs market spread SEA +7.5.
-6️⃣ Forum Output (B) – Model idzie w stronę SEA po marginesie 13.6 pkt. SEA notuje +0.060 PPD vs -0.747 u NO. Różnica w Success Rate to 48.3% vs 44.8%. Na 3rd down SEA (35.8%) wygląda solidniej niż NO (29.2%). Red Zone i explosiveness ( 11.3% / 12.1% ) utrzymują przewagę jakościową. Market trzyma 7.5 pkt, więc edge vs linia to +6.1.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +6.1 pts
-• PowerScoreDiff (winner) = +0.097
-• Confidence = 98.0%
-
-🏷 Model Tag: GOY — based on 98.0% confidence, +6.1 pts model edge vs line, and PowerScore Δ +0.097.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – SEA 32.8 – NO 19.1
-   • Win Probability – 95% (SEA)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – SEA 24.5 – NO 17.0
-   • Win Probability – 76% (SEA)
-
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — SEA (HC -7.5)
-
----
-
-## CHI vs DAL
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CHI 16.0 – DAL 24.8
-2️⃣ Predicted Winner (Model) – DAL
-3️⃣ Predicted Margin (Model) – DAL by 8.7 pts
-4️⃣ Win Probability (Model) – 82% (DAL)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje DAL na poziomie 49.7% vs 38.8% (+10.9 pp). Na 3rd down DAL utrzymuje 44.2%, podczas gdy CHI jest na 35.4%, co stabilizuje serie ofensywne. DAL prowadzi w Points per Drive Differential (-0.330 vs -1.719), więc bazowa efektywność napędza przewagę.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CHI 24.0 – DAL 25.5
-2️⃣ Predicted Winner (Market) – DAL
-3️⃣ Predicted Margin (Market) – DAL by 1.5 pts
-4️⃣ Win Probability (Market) – 55% (DAL)
-5️⃣ Forum Output (A) – PowerScore (Model) — CHI +0.208 vs DAL +0.173. Points per Drive Differential — CHI -1.719 vs DAL -0.330. Success Rate Offense — CHI 38.8% vs DAL 49.7%. Third Down Conversion — CHI 35.4% vs DAL 44.2%. Red Zone TD Rate — CHI 22.5% vs DAL 21.1%. Explosive Play Rate — CHI 12.4% vs DAL 9.9%. Model margin -8.7 pts vs market spread CHI -1.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DAL po marginesie -8.7 pkt. DAL notuje -0.330 PPD vs -1.719 u CHI. Różnica w Success Rate to 49.7% vs 38.8%. Na 3rd down DAL (44.2%) wygląda solidniej niż CHI (35.4%). Red Zone i explosiveness ( 21.1% / 9.9% ) utrzymują przewagę jakościową. Market trzyma -1.5 pkt, więc edge vs linia to +7.2.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +7.2 pts
-• PowerScoreDiff (winner) = -0.035
-• Confidence = 82.0%
-
-🏷 Model Tag: NEUTRAL — based on 82.0% confidence, +7.2 pts model edge vs line, and PowerScore Δ -0.035.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – CHI 16.0 – DAL 24.8
-   • Win Probability – 82% (DAL)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CHI 24.0 – DAL 25.5
-   • Win Probability – 55% (DAL)
-
-🏷 Model Tag: NEUTRAL — DAL (HC -1.5)
-
----
-
-## SF vs ARI
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – SF 22.5 – ARI 22.2
-2️⃣ Predicted Winner (Model) – SF
-3️⃣ Predicted Margin (Model) – SF by 0.3 pts
-4️⃣ Win Probability (Model) – 56% (SF)
-5️⃣ Why This Team Wins (Model) – Na 3rd down SF utrzymuje 44.1%, podczas gdy ARI jest na 34.1%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę SF: SF +0.153 vs ARI +0.111. Success Rate Offense pokazuje SF na poziomie 47.8% vs 45.0% (+2.8 pp). Red Zone TD Rate sprzyja SF (14.8% vs 13.4%). Defensive pressure rate wspiera SF (+2.8% vs +2.3%), więc pasy rywala będą częściej pod presją.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – SF 23.5 – ARI 21.0
-2️⃣ Predicted Winner (Market) – SF
-3️⃣ Predicted Margin (Market) – SF by 2.5 pts
-4️⃣ Win Probability (Market) – 59% (SF)
-5️⃣ Forum Output (A) – PowerScore (Model) — SF +0.153 vs ARI +0.111. Points per Drive Differential — SF +0.350 vs ARI +0.440. Success Rate Offense — SF 47.8% vs ARI 45.0%. Third Down Conversion — SF 44.1% vs ARI 34.1%. Red Zone TD Rate — SF 14.8% vs ARI 13.4%. Explosive Play Rate — SF 6.2% vs ARI 8.6%. Model margin 0.3 pts vs market spread SF +2.5.
-6️⃣ Forum Output (B) – Model idzie w stronę SF po marginesie 0.3 pkt. SF notuje +0.350 PPD vs +0.440 u ARI. Różnica w Success Rate to 47.8% vs 45.0%. Na 3rd down SF (44.1%) wygląda solidniej niż ARI (34.1%). Red Zone i explosiveness ( 14.8% / 6.2% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to -2.2.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -2.2 pts
-• PowerScoreDiff (winner) = +0.042
-• Confidence = 57.5%
-
-🏷 Model Tag: NEUTRAL — based on 57.5% confidence, -2.2 pts model edge vs line, and PowerScore Δ +0.042.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – SF 22.5 – ARI 22.2
-   • Win Probability – 56% (SF)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – SF 23.5 – ARI 21.0
-   • Win Probability – 59% (SF)
-
-🏷 Model Tag: NEUTRAL — SF (HC -2.5)
-
----
-
-## NYG vs KC
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – NYG 17.0 – KC 22.2
-2️⃣ Predicted Winner (Model) – KC
-3️⃣ Predicted Margin (Model) – KC by 5.2 pts
-4️⃣ Win Probability (Model) – 67% (KC)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja KC (9.2% vs 2.2%). Turnover margin faworyzuje KC (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę KC: KC +0.138 vs NYG +0.101. Explosive Play Rate pozostaje po stronie KC (11.8% vs 8.8%), więc big-play equity jest wyższe. Success Rate Offense pokazuje KC na poziomie 45.8% vs 43.5% (+2.3 pp).
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – NYG 19.2 – KC 25.2
-2️⃣ Predicted Winner (Market) – KC
-3️⃣ Predicted Margin (Market) – KC by 6.0 pts
-4️⃣ Win Probability (Market) – 71% (KC)
-5️⃣ Forum Output (A) – PowerScore (Model) — NYG +0.101 vs KC +0.138. Points per Drive Differential — NYG -0.376 vs KC -0.412. Success Rate Offense — NYG 43.5% vs KC 45.8%. Third Down Conversion — NYG 30.9% vs KC 29.0%. Red Zone TD Rate — NYG 2.2% vs KC 9.2%. Explosive Play Rate — NYG 8.8% vs KC 11.8%. Model margin -5.2 pts vs market spread NYG -6.0.
-6️⃣ Forum Output (B) – Model idzie w stronę KC po marginesie -5.2 pkt. KC notuje -0.412 PPD vs -0.376 u NYG. Różnica w Success Rate to 45.8% vs 43.5%. Na 3rd down KC (29.0%) wygląda solidniej niż NYG (30.9%). Red Zone i explosiveness ( 9.2% / 11.8% ) utrzymują przewagę jakościową. Market trzyma -6.0 pkt, więc edge vs linia to -0.8.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -0.8 pts
-• PowerScoreDiff (winner) = +0.037
-• Confidence = 68.5%
-
-🏷 Model Tag: NEUTRAL — based on 68.5% confidence, -0.8 pts model edge vs line, and PowerScore Δ +0.037.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – NYG 17.0 – KC 22.2
-   • Win Probability – 67% (KC)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – NYG 19.2 – KC 25.2
-   • Win Probability – 71% (KC)
-
-🏷 Model Tag: NEUTRAL — KC (HC -6.0)
-
----
-
-## BAL vs DET
-
-🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – BAL 23.7 – DET 26.2
-2️⃣ Predicted Winner (Model) – DET
-3️⃣ Predicted Margin (Model) – DET by 2.5 pts
-4️⃣ Win Probability (Model) – 56% (DET)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera DET (+19.4% vs +0.0%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja DET (15.6% vs 10.9%). Turnover margin faworyzuje DET (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. Na 3rd down DET utrzymuje 36.5%, podczas gdy BAL jest na 34.1%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę DET: DET +0.298 vs BAL +0.280.
-
-🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – BAL 28.5 – DET 24.0
-2️⃣ Predicted Winner (Market) – BAL
-3️⃣ Predicted Margin (Market) – BAL by 4.5 pts
-4️⃣ Win Probability (Market) – 66% (BAL)
-5️⃣ Forum Output (A) – PowerScore (Model) — BAL +0.280 vs DET +0.298. Points per Drive Differential — BAL +0.912 vs DET +0.710. Success Rate Offense — BAL 49.7% vs DET 50.0%. Third Down Conversion — BAL 34.1% vs DET 36.5%. Red Zone TD Rate — BAL 10.9% vs DET 15.6%. Explosive Play Rate — BAL 15.4% vs DET 9.4%. Model margin -2.5 pts vs market spread BAL +4.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DET po marginesie -2.5 pkt. DET notuje +0.710 PPD vs +0.912 u BAL. Różnica w Success Rate to 50.0% vs 49.7%. Na 3rd down DET (36.5%) wygląda solidniej niż BAL (34.1%). Red Zone i explosiveness ( 15.6% / 9.4% ) utrzymują przewagę jakościową. Market trzyma 4.5 pkt, więc edge vs linia to +7.0.
-
-🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +7.0 pts
-• PowerScoreDiff (winner) = +0.018
-• Confidence = 56.0%
-
-🏷 Model Tag: NEUTRAL — based on 56.0% confidence, +7.0 pts model edge vs line, and PowerScore Δ +0.018.
-😴 Brak value — model i rynek w równowadze.
-
-SUMMARY:
-1. MODEL PROJECTION (Pure)
-   • Estimated Score – BAL 23.7 – DET 26.2
-   • Win Probability – 56% (DET)
-
-2. MARKET PROJECTION (Balanced)
-   • Estimated Score – BAL 28.5 – DET 24.0
-   • Win Probability – 66% (BAL)
-
-🏷 Model Tag: NEUTRAL — DET (HC +4.5)
+🏷 Model Tag: NEUTRAL — CAR (HC -7.5)

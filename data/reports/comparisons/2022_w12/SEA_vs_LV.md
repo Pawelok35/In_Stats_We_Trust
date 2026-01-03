@@ -4,19 +4,21 @@
 
 | Metric | SEA | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.053 | 0.118 | ↓ -0.065 |
-| Core EPA Defense | 0.118 | 0.053 | ↑ +0.065 |
-| Success Rate Offense | 51.8% | 48.0% | ↑ +3.8 pp |
-| Success Rate Defense | 48.0% | 51.8% | ↓ -3.8 pp |
-| Explosive Play Rate (Off) | 12.9% | 12.2% | ↑ +0.7 pp |
-| Third Down Conversion | 30.0% | 57.1% | ↓ -27.1 pp |
-| Points per Drive Differential | -0.429 | 0.429 | ↓ -0.857 |
-| Yards per Play Differential | -1.501 | 1.501 | ↓ -3.002 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 17.6% | 11.1% | ↑ +6.5 pp |
-| Pressure Rate (Def) | 2.7% | 7.3% | ↓ -4.6 pp |
-| Tempo | 6.071 | 7.000 | ↓ -0.929 |
-| PowerScore | 0.198 | 0.196 | ↑ +0.001 |
+| Core EPA Offense | 0.047 | 0.015 | 0.031 |
+| Core EPA Defense | 0.014 | 0.026 | -0.012 |
+| Success Rate Offense | 0.458 | 0.420 | 0.038 |
+| Success Rate Defense | 0.406 | 0.450 | -0.044 |
+| Explosive Play Rate (Off) | 0.118 | 0.111 | 0.007 |
+| Third Down Conversion | 0.372 | 0.353 | 0.020 |
+| Points per Drive Differential | 0.081 | -0.202 | 0.282 |
+| Yards per Play Differential | 0.123 | -0.280 | 0.403 |
+| Turnover Margin | 0.400 | -0.100 | 0.500 |
+| Red Zone TD Rate (Off) | 0.092 | 0.110 | -0.018 |
+| Pressure Rate (Def) | 0.072 | 0.036 | 0.036 |
+| Tempo | 6.071 | 7.000 | -0.929 |
+| PowerScore | 1.386 | 1.572 | -0.186 |
+| PowerScore | 1.386 | 1.572 | -0.186 |
+| Tempo | 6.071 | 7.000 | -0.929 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SEA edge: +0.001 (SEA +0.198 vs LV +0.196)
 **7 metrics version:**
 SEA edge: +0.005 (SEA +0.148 vs LV +0.143)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.005), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - LV) | +0.0 pts (favours SEA) |
-| Model Win% SEA | 50.1% |
-| Model Win% LV | 49.9% |
-| SOS Differential (SEA-LV) | -0.009 |
+| Model Spread (SEA - LV) | -3.4 pts (favours LV) |
+| Model Win% SEA | 36.1% |
+| Model Win% LV | 63.9% |
+| SOS Differential (SEA-LV) | -0.018 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | LV |
 | --- | ---: | ---: |
-| Season-to-date | 0.138 | 0.146 |
-| Last 5 games | 0.082 | 0.154 |
-| Last 3 games | 0.112 | 0.159 |
+| Season-to-date | 1.747 | 1.765 |
+| Last 5 games | 1.618 | 1.749 |
+| Last 3 games | 1.703 | 1.622 |
 
 ## Trend Summary (last 3 weeks)
 

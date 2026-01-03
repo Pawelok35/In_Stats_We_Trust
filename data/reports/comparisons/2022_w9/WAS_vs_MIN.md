@@ -4,19 +4,21 @@
 
 | Metric | WAS | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.053 | 0.007 | ↓ -0.060 |
-| Core EPA Defense | 0.007 | -0.053 | ↑ +0.060 |
-| Success Rate Offense | 40.5% | 39.8% | ↑ +0.7 pp |
-| Success Rate Defense | 39.8% | 40.5% | ↓ -0.7 pp |
-| Explosive Play Rate (Off) | 6.3% | 9.6% | ↓ -3.3 pp |
-| Third Down Conversion | 25.0% | 41.2% | ↓ -16.2 pp |
-| Points per Drive Differential | -0.402 | 0.402 | ↓ -0.803 |
-| Yards per Play Differential | -0.297 | 0.297 | ↓ -0.595 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 25.0% | 10.0% | ↑ +15.0 pp |
-| Pressure Rate (Def) | 4.7% | 9.4% | ↓ -4.7 pp |
-| Tempo | 6.583 | 7.545 | ↓ -0.962 |
-| PowerScore | 0.097 | 0.111 | ↓ -0.014 |
+| Core EPA Offense | -0.057 | 0.003 | -0.060 |
+| Core EPA Defense | -0.007 | -0.026 | 0.020 |
+| Success Rate Offense | 0.390 | 0.460 | -0.070 |
+| Success Rate Defense | 0.408 | 0.437 | -0.029 |
+| Explosive Play Rate (Off) | 0.086 | 0.104 | -0.018 |
+| Third Down Conversion | 0.301 | 0.331 | -0.030 |
+| Points per Drive Differential | -0.209 | 0.253 | -0.461 |
+| Yards per Play Differential | -0.297 | -0.455 | 0.157 |
+| Turnover Margin | -1.000 | 0.286 | -1.286 |
+| Red Zone TD Rate (Off) | 0.121 | 0.165 | -0.044 |
+| Pressure Rate (Def) | 0.079 | 0.074 | 0.005 |
+| Tempo | 6.583 | 7.545 | -0.962 |
+| PowerScore | 1.401 | 1.600 | -0.199 |
+| PowerScore | 1.401 | 1.600 | -0.199 |
+| Tempo | 6.583 | 7.545 | -0.962 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIN edge: +0.014 (WAS +0.097 vs MIN +0.111)
 **7 metrics version:**
 WAS edge: +0.005 (WAS +0.085 vs MIN +0.080)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.005), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - MIN) | -0.3 pts (favours MIN) |
-| Model Win% WAS | 48.9% |
-| Model Win% MIN | 51.1% |
-| SOS Differential (WAS-MIN) | -0.018 |
+| Model Spread (WAS - MIN) | -3.7 pts (favours MIN) |
+| Model Win% WAS | 35.1% |
+| Model Win% MIN | 64.9% |
+| SOS Differential (WAS-MIN) | -0.183 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | WAS | MIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.108 | 0.126 |
-| Last 5 games | 0.085 | 0.132 |
-| Last 3 games | 0.085 | 0.116 |
+| Season-to-date | 1.439 | 1.622 |
+| Last 5 games | 1.430 | 1.614 |
+| Last 3 games | 1.454 | 1.596 |
 
 ## Trend Summary (last 3 weeks)
 

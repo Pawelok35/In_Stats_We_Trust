@@ -4,19 +4,21 @@
 
 | Metric | HOU | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.061 | -0.018 | ↓ -0.042 |
-| Core EPA Defense | -0.130 | -0.082 | ↓ -0.048 |
-| Success Rate Offense | 38.6% | 45.3% | ↓ -6.8 pp |
-| Success Rate Defense | 40.0% | 45.0% | ↓ -5.0 pp |
-| Explosive Play Rate (Off) | 14.5% | 15.6% | ↓ -1.2 pp |
-| Third Down Conversion | 25.0% | 20.0% | ↑ +5.0 pp |
-| Points per Drive Differential | 0.462 | 0.364 | ↑ +0.098 |
-| Yards per Play Differential | 1.457 | -1.255 | ↑ +2.712 |
-| Turnover Margin | 1.000 | 1.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 14.3% | ↓ -14.3 pp |
-| Pressure Rate (Def) | 15.9% | 0.0% | ↑ +15.9 pp |
-| Tempo | 6.385 | 5.818 | ↑ +0.566 |
-| PowerScore | 0.078 | 0.122 | ↓ -0.044 |
+| Core EPA Offense | 0.126 | 0.270 | -0.143 |
+| Core EPA Defense | 0.095 | 0.052 | 0.043 |
+| Success Rate Offense | 0.505 | 0.549 | -0.044 |
+| Success Rate Defense | 0.542 | 0.500 | 0.042 |
+| Explosive Play Rate (Off) | 0.103 | 0.134 | -0.031 |
+| Third Down Conversion | 0.389 | 0.529 | -0.141 |
+| Points per Drive Differential | -0.364 | 1.889 | -2.253 |
+| Yards per Play Differential | -0.837 | 0.740 | -1.577 |
+| Turnover Margin | 1.000 | 0.000 | 1.000 |
+| Red Zone TD Rate (Off) | 0.200 | 0.200 | 0.000 |
+| Pressure Rate (Def) | 0.095 | 0.071 | 0.024 |
+| Tempo | 6.385 | 5.818 | 0.566 |
+| PowerScore | 0.078 | 0.122 | -0.044 |
+| PowerScore | 0.078 | 0.122 | -0.044 |
+| Tempo | 6.385 | 5.818 | 0.566 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TB edge: +0.044 (HOU +0.078 vs TB +0.122)
 **7 metrics version:**
 TB edge: +0.030 (HOU +0.147 vs TB +0.177)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.030), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ TB edge: +0.030 (HOU +0.147 vs TB +0.177)
 | Model Spread (HOU - TB) | -0.8 pts (favours TB) |
 | Model Win% HOU | 46.6% |
 | Model Win% TB | 53.4% |
-| SOS Differential (HOU-TB) | -0.002 |
+| SOS Differential (HOU-TB) | -0.336 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | TB |
 | --- | ---: | ---: |
-| Season-to-date | 0.214 | 0.216 |
-| Last 5 games | 0.214 | 0.216 |
-| Last 3 games | 0.214 | 0.216 |
+| Season-to-date | 1.505 | 1.841 |
+| Last 5 games | 1.505 | 1.841 |
+| Last 3 games | 1.505 | 1.841 |
 
 ## Matchup Analogs
 

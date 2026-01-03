@@ -4,19 +4,21 @@
 
 | Metric | DEN | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.208 | -0.253 | ↑ +0.046 |
-| Core EPA Defense | -0.253 | -0.208 | ↓ -0.046 |
-| Success Rate Offense | 29.8% | 41.4% | ↓ -11.6 pp |
-| Success Rate Defense | 41.4% | 29.8% | ↑ +11.6 pp |
-| Explosive Play Rate (Off) | 7.4% | 11.4% | ↓ -4.0 pp |
-| Third Down Conversion | 26.1% | 8.3% | ↑ +17.8 pp |
-| Points per Drive Differential | -0.071 | 0.071 | ↓ -0.143 |
-| Yards per Play Differential | -1.038 | 1.038 | ↓ -2.075 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 25.0% | 20.0% | ↑ +5.0 pp |
-| Pressure Rate (Def) | 12.1% | 9.8% | ↑ +2.4 pp |
-| Tempo | 6.714 | 5.000 | ↑ +1.714 |
-| PowerScore | -0.034 | -0.004 | ↓ -0.030 |
+| Core EPA Offense | 0.011 | -0.057 | 0.069 |
+| Core EPA Defense | -0.019 | -0.172 | 0.152 |
+| Success Rate Offense | 0.407 | 0.434 | -0.027 |
+| Success Rate Defense | 0.419 | 0.336 | 0.083 |
+| Explosive Play Rate (Off) | 0.115 | 0.094 | 0.021 |
+| Third Down Conversion | 0.357 | 0.377 | -0.020 |
+| Points per Drive Differential | 0.256 | 1.191 | -0.935 |
+| Yards per Play Differential | 1.094 | 1.134 | -0.040 |
+| Turnover Margin | -1.000 | 0.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.000 | 0.098 | -0.098 |
+| Pressure Rate (Def) | 0.066 | 0.076 | -0.010 |
+| Tempo | 6.714 | 5.000 | 1.714 |
+| PowerScore | 1.294 | 0.973 | 0.321 |
+| PowerScore | 1.294 | 0.973 | 0.321 |
+| Tempo | 6.714 | 5.000 | 1.714 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SF edge: +0.030 (DEN -0.034 vs SF -0.004)
 **7 metrics version:**
 DEN edge: +0.588 (DEN +0.287 vs SF -0.302)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.588), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - SF) | -0.6 pts (favours SF) |
-| Model Win% DEN | 47.7% |
-| Model Win% SF | 52.3% |
-| SOS Differential (DEN-SF) | +0.099 |
+| Model Spread (DEN - SF) | +5.9 pts (favours DEN) |
+| Model Win% DEN | 72.9% |
+| Model Win% SF | 27.1% |
+| SOS Differential (DEN-SF) | +0.284 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.125 | 0.026 |
-| Last 5 games | 0.125 | 0.026 |
-| Last 3 games | 0.125 | 0.026 |
+| Season-to-date | 1.638 | 1.353 |
+| Last 5 games | 1.638 | 1.353 |
+| Last 3 games | 1.638 | 1.353 |
 
 ## Trend Summary (last 2 weeks)
 

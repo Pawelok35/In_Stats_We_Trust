@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 6
 
-_Generated at 2025-11-11T12:23:56.907632+00:00 (UTC)_
+_Generated at 2026-01-02T11:30:30.046209+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\6_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2459, "cols": 18, "timestamp": "2025-11-11T12:23:56.380617+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2459, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:23:56.380617+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2459, "cols": 24, "timestamp": "2025-11-11T12:23:56.380617+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2459, "cols": 18, "timestamp": "2026-01-02T11:30:29.610268+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2459, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:30:29.610268+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2459, "cols": 24, "timestamp": "2026-01-02T11:30:29.610268+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\6_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\6.parquet`
 - Manifest: `data\l4_core12\2022\6_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\6_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| JAX | 0.24711429906930388 |
-| CIN | 0.24402291273287557 |
-| IND | 0.23463110520881886 |
-| NO | 0.21654887824050367 |
-| BUF | 0.17741245923981327 |
-| KC | 0.16103854234118412 |
-| BAL | 0.1550647334393236 |
-| TB | 0.14312826378855564 |
-| ATL | 0.14200872767173375 |
-| NYG | 0.14010539182922976 |
+| IND | 2.1275477718754856 |
+| NO | 2.0123730540646796 |
+| TB | 1.9902250379821043 |
+| BUF | 1.8921251029179742 |
+| BAL | 1.8044799381176864 |
+| LAC | 1.7897525663618439 |
+| KC | 1.776648298438745 |
+| NYG | 1.7679102698780103 |
+| JAX | 1.7559454679004727 |
+| ATL | 1.7253420610050672 |
 
 
 ## Visualizations

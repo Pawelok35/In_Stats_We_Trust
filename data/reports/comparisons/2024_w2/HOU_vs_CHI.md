@@ -4,19 +4,21 @@
 
 | Metric | HOU | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.061 | -0.130 | ↑ +0.069 |
-| Core EPA Defense | -0.130 | -0.061 | ↓ -0.069 |
-| Success Rate Offense | 38.6% | 40.0% | ↓ -1.4 pp |
-| Success Rate Defense | 40.0% | 38.6% | ↑ +1.4 pp |
-| Explosive Play Rate (Off) | 14.5% | 5.6% | ↑ +8.9 pp |
-| Third Down Conversion | 25.0% | 28.6% | ↓ -3.6 pp |
-| Points per Drive Differential | 0.462 | -0.462 | ↑ +0.923 |
-| Yards per Play Differential | 1.457 | -1.457 | ↑ +2.914 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 20.0% | ↓ -20.0 pp |
-| Pressure Rate (Def) | 15.9% | 7.5% | ↑ +8.4 pp |
-| Tempo | 6.385 | 6.923 | ↓ -0.538 |
-| PowerScore | 0.078 | 0.054 | ↑ +0.025 |
+| Core EPA Offense | 0.126 | -0.199 | 0.325 |
+| Core EPA Defense | 0.095 | -0.278 | 0.373 |
+| Success Rate Offense | 0.505 | 0.408 | 0.097 |
+| Success Rate Defense | 0.542 | 0.398 | 0.145 |
+| Explosive Play Rate (Off) | 0.103 | 0.039 | 0.064 |
+| Third Down Conversion | 0.389 | 0.133 | 0.256 |
+| Points per Drive Differential | -0.364 | -0.769 | 0.406 |
+| Yards per Play Differential | -0.837 | -0.966 | 0.129 |
+| Turnover Margin | 1.000 | 2.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.200 | 0.000 | 0.200 |
+| Pressure Rate (Def) | 0.095 | 0.086 | 0.010 |
+| Tempo | 6.385 | 6.923 | -0.538 |
+| PowerScore | 1.326 | 1.427 | -0.101 |
+| PowerScore | 1.326 | 1.427 | -0.101 |
+| Tempo | 6.385 | 6.923 | -0.538 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ HOU edge: +0.025 (HOU +0.078 vs CHI +0.054)
 **7 metrics version:**
 HOU edge: +0.199 (HOU +0.147 vs CHI -0.052)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.199), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - CHI) | +0.5 pts (favours HOU) |
-| Model Win% HOU | 51.9% |
-| Model Win% CHI | 48.1% |
-| SOS Differential (HOU-CHI) | +0.233 |
+| Model Spread (HOU - CHI) | -1.9 pts (favours CHI) |
+| Model Win% HOU | 42.3% |
+| Model Win% CHI | 57.7% |
+| SOS Differential (HOU-CHI) | +0.266 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.214 | -0.018 |
-| Last 5 games | 0.214 | -0.018 |
-| Last 3 games | 0.214 | -0.018 |
+| Season-to-date | 1.505 | 1.239 |
+| Last 5 games | 1.505 | 1.239 |
+| Last 3 games | 1.505 | 1.239 |
 
 ## Matchup Analogs
 

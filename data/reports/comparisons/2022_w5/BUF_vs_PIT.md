@@ -4,19 +4,21 @@
 
 | Metric | BUF | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.197 | -0.270 | ↑ +0.468 |
-| Core EPA Defense | -0.270 | 0.197 | ↓ -0.468 |
-| Success Rate Offense | 45.8% | 37.4% | ↑ +8.5 pp |
-| Success Rate Defense | 37.4% | 45.8% | ↓ -8.5 pp |
-| Explosive Play Rate (Off) | 19.4% | 6.6% | ↑ +12.9 pp |
-| Third Down Conversion | 55.6% | 33.3% | ↑ +22.2 pp |
-| Points per Drive Differential | 2.464 | -2.464 | ↑ +4.929 |
-| Yards per Play Differential | 3.667 | -3.667 | ↑ +7.333 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 6.7% | 0.0% | ↑ +6.7 pp |
-| Pressure Rate (Def) | 7.3% | 0.0% | ↑ +7.3 pp |
-| Tempo | 5.143 | 7.583 | ↓ -2.440 |
-| PowerScore | 0.168 | 0.051 | ↑ +0.117 |
+| Core EPA Offense | 0.098 | -0.083 | 0.180 |
+| Core EPA Defense | -0.111 | -0.019 | -0.092 |
+| Success Rate Offense | 0.496 | 0.400 | 0.096 |
+| Success Rate Defense | 0.413 | 0.414 | -0.001 |
+| Explosive Play Rate (Off) | 0.106 | 0.086 | 0.021 |
+| Third Down Conversion | 0.502 | 0.327 | 0.175 |
+| Points per Drive Differential | 1.032 | -0.401 | 1.433 |
+| Yards per Play Differential | 1.744 | -0.555 | 2.299 |
+| Turnover Margin | 0.000 | 0.750 | -0.750 |
+| Red Zone TD Rate (Off) | 0.140 | 0.185 | -0.045 |
+| Pressure Rate (Def) | 0.113 | 0.083 | 0.030 |
+| Tempo | 5.143 | 7.583 | -2.440 |
+| PowerScore | 1.158 | 1.555 | -0.397 |
+| PowerScore | 1.158 | 1.555 | -0.397 |
+| Tempo | 5.143 | 7.583 | -2.440 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BUF edge: +0.117 (BUF +0.168 vs PIT +0.051)
 **7 metrics version:**
 BUF edge: +0.063 (BUF +0.097 vs PIT +0.035)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.063), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - PIT) | +2.2 pts (favours BUF) |
-| Model Win% BUF | 58.9% |
-| Model Win% PIT | 41.1% |
-| SOS Differential (BUF-PIT) | -0.002 |
+| Model Spread (BUF - PIT) | -7.3 pts (favours PIT) |
+| Model Win% BUF | 22.7% |
+| Model Win% PIT | 77.3% |
+| SOS Differential (BUF-PIT) | -0.096 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.097 | 0.099 |
-| Last 5 games | 0.097 | 0.099 |
-| Last 3 games | 0.112 | 0.125 |
+| Season-to-date | 1.585 | 1.681 |
+| Last 5 games | 1.585 | 1.681 |
+| Last 3 games | 1.552 | 1.719 |
 
 ## Trend Summary (last 3 weeks)
 

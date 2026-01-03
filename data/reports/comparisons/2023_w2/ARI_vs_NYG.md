@@ -4,19 +4,20 @@
 
 | Metric | ARI | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.088 | 0.144 | ↓ -0.056 |
-| Core EPA Defense | 0.144 | 0.088 | ↑ +0.056 |
-| Success Rate Offense | 40.2% | 49.4% | ↓ -9.2 pp |
-| Success Rate Defense | 49.4% | 40.2% | ↑ +9.2 pp |
-| Explosive Play Rate (Off) | 13.8% | 12.9% | ↑ +0.9 pp |
-| Third Down Conversion | 30.8% | 53.8% | ↓ -23.1 pp |
-| Points per Drive Differential | -0.300 | 0.300 | ↓ -0.600 |
-| Yards per Play Differential | -0.785 | 0.785 | ↓ -1.571 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 18.2% | 14.8% | ↑ +3.4 pp |
-| Pressure Rate (Def) | 7.5% | 0.0% | ↑ +7.5 pp |
-| Tempo | 8.700 | 8.500 | ↑ +0.200 |
-| PowerScore | 0.188 | 0.217 | ↓ -0.030 |
+| Core EPA Offense | -0.250 | -0.495 | 0.245 |
+| Core EPA Defense | -0.197 | 0.102 | -0.299 |
+| Success Rate Offense | 0.329 | 0.306 | 0.023 |
+| Success Rate Defense | 0.367 | 0.458 | -0.092 |
+| Explosive Play Rate (Off) | 0.053 | 0.047 | 0.006 |
+| Third Down Conversion | 0.267 | 0.294 | -0.027 |
+| Points per Drive Differential | -0.595 | -2.300 | 1.705 |
+| Yards per Play Differential | 0.008 | -1.669 | 1.676 |
+| Turnover Margin | 1.000 | -3.000 | 4.000 |
+| Pressure Rate (Def) | 0.162 | 0.000 | 0.162 |
+| Tempo | 8.700 | 8.500 | 0.200 |
+| PowerScore | 0.188 | 0.217 | -0.030 |
+| PowerScore | 0.188 | 0.217 | -0.030 |
+| Tempo | 8.700 | 8.500 | 0.200 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +47,10 @@ NYG edge: +0.030 (ARI +0.188 vs NYG +0.217)
 **7 metrics version:**
 ARI edge: +0.195 (ARI +0.251 vs NYG +0.055)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.195), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +59,7 @@ ARI edge: +0.195 (ARI +0.251 vs NYG +0.055)
 | Model Spread (ARI - NYG) | -0.5 pts (favours NYG) |
 | Model Win% ARI | 47.7% |
 | Model Win% NYG | 52.3% |
-| SOS Differential (ARI-NYG) | -0.084 |
+| SOS Differential (ARI-NYG) | -0.233 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | NYG |
 | --- | ---: | ---: |
-| Season-to-date | -0.016 | 0.068 |
-| Last 5 games | -0.016 | 0.068 |
-| Last 3 games | -0.016 | 0.068 |
+| Season-to-date | 1.258 | 1.491 |
+| Last 5 games | 1.258 | 1.491 |
+| Last 3 games | 1.258 | 1.491 |
 
 ## Matchup Analogs
 

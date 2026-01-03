@@ -4,19 +4,21 @@
 
 | Metric | GB | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.001 | -0.098 | ↑ +0.099 |
-| Core EPA Defense | -0.098 | 0.001 | ↓ -0.099 |
-| Success Rate Offense | 39.3% | 46.4% | ↓ -7.1 pp |
-| Success Rate Defense | 46.4% | 39.3% | ↑ +7.1 pp |
-| Explosive Play Rate (Off) | 14.3% | 17.4% | ↓ -3.1 pp |
-| Third Down Conversion | 55.6% | 20.0% | ↑ +35.6 pp |
-| Points per Drive Differential | 0.455 | -0.455 | ↑ +0.909 |
-| Yards per Play Differential | -0.339 | 0.339 | ↓ -0.678 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 12.5% | 10.0% | ↑ +2.5 pp |
-| Pressure Rate (Def) | 2.9% | 0.0% | ↑ +2.9 pp |
-| Tempo | 7.636 | 6.900 | ↑ +0.736 |
-| PowerScore | 0.108 | 0.117 | ↓ -0.009 |
+| Core EPA Offense | 0.091 | 0.095 | -0.004 |
+| Core EPA Defense | 0.104 | 0.126 | -0.023 |
+| Success Rate Offense | 0.465 | 0.542 | -0.077 |
+| Success Rate Defense | 0.526 | 0.505 | 0.021 |
+| Explosive Play Rate (Off) | 0.116 | 0.102 | 0.015 |
+| Third Down Conversion | 0.214 | 0.455 | -0.240 |
+| Points per Drive Differential | -0.455 | 0.364 | -0.818 |
+| Yards per Play Differential | 0.498 | 0.837 | -0.338 |
+| Turnover Margin | 2.000 | -1.000 | 3.000 |
+| Red Zone TD Rate (Off) | 0.037 | 0.167 | -0.130 |
+| Pressure Rate (Def) | 0.056 | 0.105 | -0.050 |
+| Tempo | 7.636 | 6.900 | 0.736 |
+| PowerScore | 1.606 | 1.462 | 0.144 |
+| PowerScore | 1.606 | 1.462 | 0.144 |
+| Tempo | 7.636 | 6.900 | 0.736 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ IND edge: +0.009 (GB +0.108 vs IND +0.117)
 **7 metrics version:**
 GB edge: +0.397 (GB +0.269 vs IND -0.127)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.397), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - IND) | -0.2 pts (favours IND) |
-| Model Win% GB | 49.3% |
-| Model Win% IND | 50.7% |
-| SOS Differential (GB-IND) | -0.005 |
+| Model Spread (GB - IND) | +2.7 pts (favours GB) |
+| Model Win% GB | 60.9% |
+| Model Win% IND | 39.1% |
+| SOS Differential (GB-IND) | -0.040 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | GB | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.205 | 0.210 |
-| Last 5 games | 0.205 | 0.210 |
-| Last 3 games | 0.205 | 0.210 |
+| Season-to-date | 1.913 | 1.953 |
+| Last 5 games | 1.913 | 1.953 |
+| Last 3 games | 1.913 | 1.953 |
 
 ## Matchup Analogs
 

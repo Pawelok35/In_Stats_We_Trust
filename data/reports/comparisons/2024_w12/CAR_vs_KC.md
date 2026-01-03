@@ -4,19 +4,21 @@
 
 | Metric | CAR | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.135 | 0.244 | ↓ -0.109 |
-| Core EPA Defense | 0.244 | 0.135 | ↑ +0.109 |
-| Success Rate Offense | 50.6% | 59.6% | ↓ -8.9 pp |
-| Success Rate Defense | 59.6% | 50.6% | ↑ +8.9 pp |
-| Explosive Play Rate (Off) | 9.6% | 11.2% | ↓ -1.6 pp |
-| Third Down Conversion | 33.3% | 50.0% | ↓ -16.7 pp |
-| Points per Drive Differential | -0.750 | 0.750 | ↓ -1.500 |
-| Yards per Play Differential | -0.345 | 0.345 | ↓ -0.690 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 6.5% | 8.3% | ↓ -1.9 pp |
-| Pressure Rate (Def) | 11.9% | 5.4% | ↑ +6.5 pp |
-| Tempo | 9.222 | 11.125 | ↓ -1.903 |
-| PowerScore | 0.242 | 0.284 | ↓ -0.042 |
+| Core EPA Offense | -0.125 | 0.052 | -0.177 |
+| Core EPA Defense | 0.099 | -0.013 | 0.112 |
+| Success Rate Offense | 0.436 | 0.515 | -0.079 |
+| Success Rate Defense | 0.504 | 0.456 | 0.048 |
+| Explosive Play Rate (Off) | 0.080 | 0.081 | -0.000 |
+| Third Down Conversion | 0.292 | 0.477 | -0.185 |
+| Points per Drive Differential | -1.262 | 0.365 | -1.627 |
+| Yards per Play Differential | -0.978 | 0.291 | -1.269 |
+| Turnover Margin | -0.700 | -0.500 | -0.200 |
+| Red Zone TD Rate (Off) | 0.137 | 0.128 | 0.009 |
+| Pressure Rate (Def) | 0.034 | 0.058 | -0.024 |
+| Tempo | 9.222 | 11.125 | -1.903 |
+| PowerScore | 0.242 | 0.284 | -0.042 |
+| PowerScore | 0.242 | 0.284 | -0.042 |
+| Tempo | 9.222 | 11.125 | -1.903 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.042 (CAR +0.242 vs KC +0.284)
 **7 metrics version:**
 KC edge: +0.016 (CAR +0.187 vs KC +0.202)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.016), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.016 (CAR +0.187 vs KC +0.202)
 | Model Spread (CAR - KC) | -0.8 pts (favours KC) |
 | Model Win% CAR | 46.8% |
 | Model Win% KC | 53.2% |
-| SOS Differential (CAR-KC) | +0.023 |
+| SOS Differential (CAR-KC) | -0.052 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.158 | 0.135 |
-| Last 5 games | 0.165 | 0.152 |
-| Last 3 games | 0.144 | 0.172 |
+| Season-to-date | 1.651 | 1.702 |
+| Last 5 games | 1.709 | 1.744 |
+| Last 3 games | 1.664 | 1.830 |
 
 ## Trend Summary (last 3 weeks)
 

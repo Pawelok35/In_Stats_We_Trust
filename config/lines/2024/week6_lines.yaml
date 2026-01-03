@@ -1,24 +1,16 @@
 ﻿# NFL 2024 Week 6 - Betting Lines
-matchups:
-  # TNF – Seahawks @ 49ers
-  - report: data/reports/comparisons/2024_w6/SEA_vs_SF.md
-    home: SEA
-    away: SF
-    spread: -3.5
-    total: 49.0
-    prime_time: true
-    neutral_site: false
+season: 2024
+week: 6
 
-  # London game – Jaguars @ Bears
+matchups:
   - report: data/reports/comparisons/2024_w6/CHI_vs_JAX.md
     home: CHI
     away: JAX
     spread: -1.0
     total: 44.5
     prime_time: false
-    neutral_site: true
+    neutral_site: false
 
-  # Niedziela – wczesne okno
   - report: data/reports/comparisons/2024_w6/GB_vs_ARI.md
     home: GB
     away: ARI
@@ -67,7 +59,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # Niedziela – pózne okno
   - report: data/reports/comparisons/2024_w6/DEN_vs_LAC.md
     home: DEN
     away: LAC
@@ -100,7 +91,6 @@ matchups:
     prime_time: false
     neutral_site: false
 
-  # SNF – Bengals @ Giants
   - report: data/reports/comparisons/2024_w6/NYG_vs_CIN.md
     home: NYG
     away: CIN
@@ -109,7 +99,6 @@ matchups:
     prime_time: true
     neutral_site: false
 
-  # MNF – Bills @ Jets
   - report: data/reports/comparisons/2024_w6/NYJ_vs_BUF.md
     home: NYJ
     away: BUF
@@ -118,5 +107,10 @@ matchups:
     prime_time: true
     neutral_site: false
 
-
-
+  - report: data/reports/comparisons/2024_w6/SEA_vs_SF.md
+    home: SEA
+    away: SF
+    spread: -3.5
+    total: 49.0
+    prime_time: true
+    neutral_site: false

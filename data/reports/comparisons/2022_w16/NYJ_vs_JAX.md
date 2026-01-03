@@ -4,19 +4,21 @@
 
 | Metric | NYJ | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.248 | 0.034 | ↓ -0.283 |
-| Core EPA Defense | 0.034 | -0.248 | ↑ +0.283 |
-| Success Rate Offense | 32.5% | 40.0% | ↓ -7.5 pp |
-| Success Rate Defense | 40.0% | 32.5% | ↑ +7.5 pp |
-| Explosive Play Rate (Off) | 6.5% | 9.4% | ↓ -2.9 pp |
-| Third Down Conversion | 15.4% | 43.8% | ↓ -28.4 pp |
-| Points per Drive Differential | -1.600 | 1.600 | ↓ -3.200 |
-| Yards per Play Differential | -1.346 | 1.346 | ↓ -2.692 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 9.1% | ↓ -9.1 pp |
-| Pressure Rate (Def) | 2.9% | 8.3% | ↓ -5.5 pp |
-| Tempo | 7.700 | 8.500 | ↓ -0.800 |
-| PowerScore | 0.014 | 0.081 | ↓ -0.067 |
+| Core EPA Offense | -0.061 | 0.028 | -0.089 |
+| Core EPA Defense | -0.066 | 0.014 | -0.080 |
+| Success Rate Offense | 0.405 | 0.452 | -0.047 |
+| Success Rate Defense | 0.405 | 0.441 | -0.037 |
+| Explosive Play Rate (Off) | 0.103 | 0.110 | -0.007 |
+| Third Down Conversion | 0.336 | 0.392 | -0.057 |
+| Points per Drive Differential | 0.193 | -0.170 | 0.363 |
+| Yards per Play Differential | 0.289 | -0.004 | 0.293 |
+| Turnover Margin | -0.214 | 0.286 | -0.500 |
+| Red Zone TD Rate (Off) | 0.104 | 0.134 | -0.031 |
+| Pressure Rate (Def) | 0.077 | 0.053 | 0.023 |
+| Tempo | 7.700 | 8.500 | -0.800 |
+| PowerScore | 1.541 | 1.762 | -0.221 |
+| PowerScore | 1.541 | 1.762 | -0.221 |
+| Tempo | 7.700 | 8.500 | -0.800 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ JAX edge: +0.067 (NYJ +0.014 vs JAX +0.081)
 **7 metrics version:**
 JAX edge: +0.243 (NYJ -0.097 vs JAX +0.146)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.243), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - JAX) | -1.2 pts (favours JAX) |
-| Model Win% NYJ | 44.8% |
-| Model Win% JAX | 55.2% |
-| SOS Differential (NYJ-JAX) | -0.059 |
+| Model Spread (NYJ - JAX) | -4.1 pts (favours JAX) |
+| Model Win% NYJ | 33.6% |
+| Model Win% JAX | 66.4% |
+| SOS Differential (NYJ-JAX) | -0.244 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.084 | 0.143 |
-| Last 5 games | 0.061 | 0.185 |
-| Last 3 games | 0.077 | 0.187 |
+| Season-to-date | 1.464 | 1.707 |
+| Last 5 games | 1.422 | 1.745 |
+| Last 3 games | 1.451 | 1.818 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | WAS (A) | 22-26 | WAS | 0.921 | 0.040 | 45.9% | -0.333 |
-| 8 | DEN (A) | 17-19 | DEN | 0.913 | -0.027 | 48.9% | -0.205 |
+| 8 | DEN (H) | 17-19 | DEN | 0.913 | -0.027 | 48.9% | -0.205 |
 | 14 | TEN (A) | 36-22 | JAX | 0.838 | 0.139 | 47.8% | 1.167 |
 
 ## Core EPA Offense Form (up to Week 15)

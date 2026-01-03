@@ -4,19 +4,21 @@
 
 | Metric | JAX | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.072 | 0.139 | ↓ -0.068 |
-| Core EPA Defense | 0.139 | 0.072 | ↑ +0.068 |
-| Success Rate Offense | 44.7% | 50.0% | ↓ -5.3 pp |
-| Success Rate Defense | 50.0% | 44.7% | ↑ +5.3 pp |
-| Explosive Play Rate (Off) | 12.8% | 11.1% | ↑ +1.7 pp |
-| Third Down Conversion | 30.0% | 57.1% | ↓ -27.1 pp |
-| Points per Drive Differential | -0.250 | 0.250 | ↓ -0.500 |
-| Yards per Play Differential | -1.456 | 1.456 | ↓ -2.911 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 18.8% | ↓ -2.1 pp |
-| Pressure Rate (Def) | 4.9% | 9.3% | ↓ -4.4 pp |
-| Tempo | 7.833 | 7.500 | ↑ +0.333 |
-| PowerScore | 0.190 | 0.210 | ↓ -0.020 |
+| Core EPA Offense | -0.010 | -0.039 | 0.029 |
+| Core EPA Defense | -0.037 | -0.002 | -0.034 |
+| Success Rate Offense | 0.431 | 0.419 | 0.012 |
+| Success Rate Defense | 0.405 | 0.445 | -0.040 |
+| Explosive Play Rate (Off) | 0.088 | 0.076 | 0.012 |
+| Third Down Conversion | 0.306 | 0.310 | -0.004 |
+| Points per Drive Differential | 0.102 | -0.408 | 0.510 |
+| Yards per Play Differential | -0.290 | -1.127 | 0.838 |
+| Turnover Margin | 0.000 | 0.909 | -0.909 |
+| Red Zone TD Rate (Off) | 0.118 | 0.141 | -0.023 |
+| Pressure Rate (Def) | 0.056 | 0.072 | -0.015 |
+| Tempo | 7.833 | 7.500 | 0.333 |
+| PowerScore | 0.190 | 0.210 | -0.020 |
+| PowerScore | 0.190 | 0.210 | -0.020 |
+| Tempo | 7.833 | 7.500 | 0.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CIN edge: +0.020 (JAX +0.190 vs CIN +0.210)
 **7 metrics version:**
 JAX edge: +0.184 (JAX +0.247 vs CIN +0.063)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.184), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ JAX edge: +0.184 (JAX +0.247 vs CIN +0.063)
 | Model Spread (JAX - CIN) | -0.4 pts (favours CIN) |
 | Model Win% JAX | 48.4% |
 | Model Win% CIN | 51.6% |
-| SOS Differential (JAX-CIN) | -0.021 |
+| SOS Differential (JAX-CIN) | -0.105 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.107 | 0.128 |
-| Last 5 games | 0.121 | 0.175 |
-| Last 3 games | 0.167 | 0.167 |
+| Season-to-date | 1.484 | 1.589 |
+| Last 5 games | 1.511 | 1.628 |
+| Last 3 games | 1.552 | 1.685 |
 
 ## Trend Summary (last 3 weeks)
 

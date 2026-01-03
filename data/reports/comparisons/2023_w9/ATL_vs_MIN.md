@@ -4,19 +4,21 @@
 
 | Metric | ATL | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.072 | -0.019 | ↓ -0.053 |
-| Core EPA Defense | -0.019 | -0.072 | ↑ +0.053 |
-| Success Rate Offense | 34.8% | 40.2% | ↓ -5.4 pp |
-| Success Rate Defense | 40.2% | 34.8% | ↑ +5.4 pp |
-| Explosive Play Rate (Off) | 9.8% | 10.9% | ↓ -1.1 pp |
-| Third Down Conversion | 52.6% | 41.2% | ↑ +11.5 pp |
-| Points per Drive Differential | -0.385 | 0.385 | ↓ -0.769 |
-| Yards per Play Differential | 0.054 | -0.054 | ↑ +0.109 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 10.0% | 11.5% | ↓ -1.5 pp |
-| Pressure Rate (Def) | 9.5% | 2.6% | ↑ +7.0 pp |
-| Tempo | 7.077 | 7.077 | ± 0.000 |
-| PowerScore | 0.077 | 0.101 | ↓ -0.024 |
+| Core EPA Offense | -0.087 | -0.019 | -0.068 |
+| Core EPA Defense | -0.040 | -0.042 | 0.002 |
+| Success Rate Offense | 0.412 | 0.433 | -0.021 |
+| Success Rate Defense | 0.386 | 0.435 | -0.049 |
+| Explosive Play Rate (Off) | 0.102 | 0.108 | -0.005 |
+| Third Down Conversion | 0.351 | 0.390 | -0.039 |
+| Points per Drive Differential | -0.192 | 0.149 | -0.341 |
+| Yards per Play Differential | 0.266 | 0.521 | -0.255 |
+| Turnover Margin | -0.875 | -0.375 | -0.500 |
+| Red Zone TD Rate (Off) | 0.129 | 0.157 | -0.028 |
+| Pressure Rate (Def) | 0.057 | 0.083 | -0.025 |
+| Tempo | 7.077 | 7.077 | 0.000 |
+| PowerScore | 0.077 | 0.101 | -0.024 |
+| PowerScore | 0.077 | 0.101 | -0.024 |
+| Tempo | 7.077 | 7.077 | 0.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIN edge: +0.024 (ATL +0.077 vs MIN +0.101)
 **7 metrics version:**
 MIN edge: +0.006 (ATL +0.060 vs MIN +0.066)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.006), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIN edge: +0.006 (ATL +0.060 vs MIN +0.066)
 | Model Spread (ATL - MIN) | -0.4 pts (favours MIN) |
 | Model Win% ATL | 48.2% |
 | Model Win% MIN | 51.8% |
-| SOS Differential (ATL-MIN) | -0.024 |
+| SOS Differential (ATL-MIN) | -0.247 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | MIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.082 | 0.105 |
-| Last 5 games | 0.093 | 0.087 |
-| Last 3 games | 0.089 | 0.081 |
+| Season-to-date | 1.453 | 1.700 |
+| Last 5 games | 1.438 | 1.736 |
+| Last 3 games | 1.409 | 1.559 |
 
 ## Trend Summary (last 3 weeks)
 

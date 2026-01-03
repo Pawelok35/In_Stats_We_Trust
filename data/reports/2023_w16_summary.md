@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 16
 
-_Generated at 2025-11-10T20:39:52.540621+00:00 (UTC)_
+_Generated at 2026-01-02T11:06:39.832522+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\16_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2844, "cols": 18, "timestamp": "2025-11-10T20:39:52.018971+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2844, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:39:52.018971+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2844, "cols": 24, "timestamp": "2025-11-10T20:39:52.018971+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2844, "cols": 18, "timestamp": "2026-01-02T11:06:39.393725+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2844, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:06:39.393725+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2844, "cols": 24, "timestamp": "2026-01-02T11:06:39.393725+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\16_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\16.parquet`
 - Manifest: `data\l4_core12\2023\16_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\16_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| GB | 0.27751548925991215 |
-| CAR | 0.264908578570023 |
-| MIA | 0.21709127900028805 |
-| SEA | 0.20754551943397465 |
-| TEN | 0.19611887799508895 |
-| DAL | 0.18861142087830002 |
-| CHI | 0.17172718702508014 |
-| DET | 0.1706849747173695 |
-| ATL | 0.16663433427920601 |
-| MIN | 0.15730729052883288 |
+| SEA | 2.360553038230967 |
+| TEN | 2.256661046669788 |
+| DAL | 1.9986385211493027 |
+| DET | 1.9872466308829861 |
+| GB | 1.9289440606884838 |
+| CAR | 1.9115752452366899 |
+| LA | 1.8649129775682307 |
+| MIA | 1.832701035097849 |
+| ATL | 1.7953090330743868 |
+| TB | 1.7402464021084665 |
 
 
 ## Visualizations

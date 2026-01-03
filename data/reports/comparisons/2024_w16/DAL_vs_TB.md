@@ -4,19 +4,21 @@
 
 | Metric | DAL | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.054 | 0.026 | ↑ +0.028 |
-| Core EPA Defense | 0.026 | 0.054 | ↓ -0.028 |
-| Success Rate Offense | 42.0% | 57.0% | ↓ -15.0 pp |
-| Success Rate Defense | 57.0% | 42.0% | ↑ +15.0 pp |
-| Explosive Play Rate (Off) | 7.4% | 14.0% | ↓ -6.5 pp |
-| Third Down Conversion | 33.3% | 50.0% | ↓ -16.7 pp |
-| Points per Drive Differential | -0.015 | 0.015 | ↓ -0.030 |
-| Yards per Play Differential | -0.854 | 0.854 | ↓ -1.708 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 25.0% | 30.0% | ↓ -5.0 pp |
-| Pressure Rate (Def) | 8.5% | 2.6% | ↑ +5.9 pp |
-| Tempo | 6.750 | 7.818 | ↓ -1.068 |
-| PowerScore | 0.144 | 0.190 | ↓ -0.046 |
+| Core EPA Offense | -0.047 | 0.086 | -0.133 |
+| Core EPA Defense | 0.043 | 0.003 | 0.040 |
+| Success Rate Offense | 0.457 | 0.506 | -0.049 |
+| Success Rate Defense | 0.468 | 0.499 | -0.031 |
+| Explosive Play Rate (Off) | 0.092 | 0.126 | -0.034 |
+| Third Down Conversion | 0.313 | 0.430 | -0.116 |
+| Points per Drive Differential | -0.492 | 0.580 | -1.073 |
+| Yards per Play Differential | -0.541 | 0.400 | -0.941 |
+| Turnover Margin | -0.214 | -0.429 | 0.214 |
+| Red Zone TD Rate (Off) | 0.120 | 0.178 | -0.059 |
+| Pressure Rate (Def) | 0.085 | 0.070 | 0.016 |
+| Tempo | 6.750 | 7.818 | -1.068 |
+| PowerScore | 0.144 | 0.190 | -0.046 |
+| PowerScore | 0.144 | 0.190 | -0.046 |
+| Tempo | 6.750 | 7.818 | -1.068 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TB edge: +0.046 (DAL +0.144 vs TB +0.190)
 **7 metrics version:**
 DAL edge: +0.373 (DAL +0.322 vs TB -0.051)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.373), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ DAL edge: +0.373 (DAL +0.322 vs TB -0.051)
 | Model Spread (DAL - TB) | -0.9 pts (favours TB) |
 | Model Win% DAL | 46.4% |
 | Model Win% TB | 53.6% |
-| SOS Differential (DAL-TB) | -0.017 |
+| SOS Differential (DAL-TB) | -0.128 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DAL | TB |
 | --- | ---: | ---: |
-| Season-to-date | 0.144 | 0.161 |
-| Last 5 games | 0.129 | 0.121 |
-| Last 3 games | 0.138 | 0.094 |
+| Season-to-date | 1.533 | 1.661 |
+| Last 5 games | 1.497 | 1.521 |
+| Last 3 games | 1.581 | 1.420 |
 
 ## Trend Summary (last 3 weeks)
 

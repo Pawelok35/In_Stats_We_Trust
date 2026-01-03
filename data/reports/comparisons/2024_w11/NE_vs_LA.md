@@ -4,19 +4,21 @@
 
 | Metric | NE | LA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.070 | 0.208 | ↓ -0.138 |
-| Core EPA Defense | 0.208 | 0.070 | ↑ +0.138 |
-| Success Rate Offense | 50.5% | 53.6% | ↓ -3.1 pp |
-| Success Rate Defense | 53.6% | 50.5% | ↑ +3.1 pp |
-| Explosive Play Rate (Off) | 9.5% | 14.5% | ↓ -5.0 pp |
-| Third Down Conversion | 37.5% | 22.2% | ↑ +15.3 pp |
-| Points per Drive Differential | -0.356 | 0.356 | ↓ -0.711 |
-| Yards per Play Differential | -1.805 | 1.805 | ↓ -3.610 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 9.5% | 25.0% | ↓ -15.5 pp |
-| Pressure Rate (Def) | 0.0% | 7.1% | ↓ -7.1 pp |
-| Tempo | 10.556 | 6.900 | ↑ +3.656 |
-| PowerScore | 0.211 | 0.250 | ↓ -0.039 |
+| Core EPA Offense | -0.088 | -0.042 | -0.047 |
+| Core EPA Defense | 0.009 | 0.025 | -0.017 |
+| Success Rate Offense | 0.450 | 0.489 | -0.039 |
+| Success Rate Defense | 0.463 | 0.483 | -0.019 |
+| Explosive Play Rate (Off) | 0.081 | 0.090 | -0.009 |
+| Third Down Conversion | 0.314 | 0.309 | 0.005 |
+| Points per Drive Differential | -0.440 | -0.523 | 0.083 |
+| Yards per Play Differential | -0.850 | -0.306 | -0.544 |
+| Turnover Margin | -0.600 | 0.222 | -0.822 |
+| Red Zone TD Rate (Off) | 0.093 | 0.100 | -0.007 |
+| Pressure Rate (Def) | 0.068 | 0.081 | -0.012 |
+| Tempo | 10.556 | 6.900 | 3.656 |
+| PowerScore | 0.211 | 0.250 | -0.039 |
+| PowerScore | 0.211 | 0.250 | -0.039 |
+| Tempo | 10.556 | 6.900 | 3.656 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LA edge: +0.039 (NE +0.211 vs LA +0.250)
 **7 metrics version:**
 LA edge: +0.439 (NE -0.046 vs LA +0.393)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.439), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ LA edge: +0.439 (NE -0.046 vs LA +0.393)
 | Model Spread (NE - LA) | -0.7 pts (favours LA) |
 | Model Win% NE | 47.0% |
 | Model Win% LA | 53.0% |
-| SOS Differential (NE-LA) | -0.021 |
+| SOS Differential (NE-LA) | +0.032 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | LA |
 | --- | ---: | ---: |
-| Season-to-date | 0.120 | 0.141 |
-| Last 5 games | 0.118 | 0.083 |
-| Last 3 games | 0.075 | 0.115 |
+| Season-to-date | 1.648 | 1.616 |
+| Last 5 games | 1.581 | 1.436 |
+| Last 3 games | 1.587 | 1.412 |
 
 ## Trend Summary (last 3 weeks)
 

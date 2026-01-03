@@ -4,19 +4,20 @@
 
 | Metric | PIT | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.009 | 0.061 | ↓ -0.071 |
-| Core EPA Defense | -0.118 | 0.026 | ↓ -0.145 |
-| Success Rate Offense | 37.8% | 52.9% | ↓ -15.1 pp |
-| Success Rate Defense | 44.2% | 48.3% | ↓ -4.1 pp |
-| Explosive Play Rate (Off) | 6.1% | 6.9% | ↓ -0.8 pp |
-| Third Down Conversion | 22.2% | 41.2% | ↓ -19.0 pp |
-| Points per Drive Differential | 0.682 | 0.250 | ↑ +0.432 |
-| Yards per Play Differential | -0.770 | 0.552 | ↓ -1.322 |
-| Turnover Margin | 2.000 | 0.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 11.1% | 10.0% | ↑ +1.1 pp |
-| Pressure Rate (Def) | 5.4% | 10.0% | ↓ -4.6 pp |
-| Tempo | 7.455 | 7.250 | ↑ +0.205 |
-| PowerScore | 0.080 | 0.173 | ↓ -0.093 |
+| Core EPA Offense | -0.041 | -0.047 | 0.007 |
+| Core EPA Defense | -0.240 | -0.133 | -0.107 |
+| Success Rate Offense | 0.429 | 0.465 | -0.037 |
+| Success Rate Defense | 0.471 | 0.376 | 0.095 |
+| Explosive Play Rate (Off) | 0.048 | 0.081 | -0.034 |
+| Third Down Conversion | 0.421 | 0.308 | 0.113 |
+| Points per Drive Differential | 0.800 | 0.667 | 0.133 |
+| Yards per Play Differential | -0.014 | 1.051 | -1.065 |
+| Turnover Margin | 3.000 | 3.000 | 0.000 |
+| Pressure Rate (Def) | 0.071 | 0.045 | 0.026 |
+| Tempo | 7.455 | 7.250 | 0.205 |
+| PowerScore | 0.080 | 0.173 | -0.093 |
+| PowerScore | 0.080 | 0.173 | -0.093 |
+| Tempo | 7.455 | 7.250 | 0.205 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +47,10 @@ SEA edge: +0.093 (PIT +0.080 vs SEA +0.173)
 **7 metrics version:**
 PIT edge: +0.127 (PIT +0.253 vs SEA +0.127)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.127), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +59,7 @@ PIT edge: +0.127 (PIT +0.253 vs SEA +0.127)
 | Model Spread (PIT - SEA) | -1.7 pts (favours SEA) |
 | Model Win% PIT | 42.9% |
 | Model Win% SEA | 57.1% |
-| SOS Differential (PIT-SEA) | -0.006 |
+| SOS Differential (PIT-SEA) | +0.148 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.043 | 0.049 |
-| Last 5 games | 0.043 | 0.049 |
-| Last 3 games | 0.043 | 0.049 |
+| Season-to-date | 1.426 | 1.278 |
+| Last 5 games | 1.426 | 1.278 |
+| Last 3 games | 1.426 | 1.278 |
 
 ## Matchup Analogs
 

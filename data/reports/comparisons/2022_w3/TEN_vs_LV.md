@@ -4,19 +4,21 @@
 
 | Metric | TEN | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.089 | 0.096 | ↓ -0.007 |
-| Core EPA Defense | 0.096 | 0.089 | ↑ +0.007 |
-| Success Rate Offense | 45.9% | 42.4% | ↑ +3.6 pp |
-| Success Rate Defense | 42.4% | 45.9% | ↓ -3.6 pp |
-| Explosive Play Rate (Off) | 16.2% | 12.9% | ↑ +3.3 pp |
-| Third Down Conversion | 50.0% | 7.1% | ↑ +42.9 pp |
-| Points per Drive Differential | -0.044 | 0.044 | ↓ -0.089 |
-| Yards per Play Differential | 0.220 | -0.220 | ↑ +0.439 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 30.0% | 6.9% | ↑ +23.1 pp |
-| Pressure Rate (Def) | 2.1% | 3.3% | ↓ -1.2 pp |
-| Tempo | 7.400 | 9.444 | ↓ -2.044 |
-| PowerScore | 0.198 | 0.183 | ↑ +0.014 |
+| Core EPA Offense | -0.128 | -0.052 | -0.076 |
+| Core EPA Defense | 0.119 | -0.001 | 0.120 |
+| Success Rate Offense | 0.402 | 0.433 | -0.031 |
+| Success Rate Defense | 0.458 | 0.441 | 0.017 |
+| Explosive Play Rate (Off) | 0.067 | 0.119 | -0.052 |
+| Third Down Conversion | 0.292 | 0.458 | -0.166 |
+| Points per Drive Differential | -1.182 | -0.355 | -0.827 |
+| Yards per Play Differential | -1.713 | 0.032 | -1.745 |
+| Turnover Margin | 0.500 | -1.500 | 2.000 |
+| Red Zone TD Rate (Off) | 0.150 | 0.142 | 0.008 |
+| Pressure Rate (Def) | 0.104 | 0.010 | 0.094 |
+| Tempo | 7.400 | 9.444 | -2.044 |
+| PowerScore | 1.645 | 2.046 | -0.401 |
+| PowerScore | 1.645 | 2.046 | -0.401 |
+| Tempo | 7.400 | 9.444 | -2.044 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ TEN edge: +0.014 (TEN +0.198 vs LV +0.183)
 **7 metrics version:**
 TEN edge: +0.030 (TEN +0.159 vs LV +0.128)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.030), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - LV) | +0.3 pts (favours TEN) |
-| Model Win% TEN | 51.1% |
-| Model Win% LV | 48.9% |
-| SOS Differential (TEN-LV) | +0.042 |
+| Model Spread (TEN - LV) | -7.4 pts (favours LV) |
+| Model Win% TEN | 22.5% |
+| Model Win% LV | 77.5% |
+| SOS Differential (TEN-LV) | -0.511 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | LV |
 | --- | ---: | ---: |
-| Season-to-date | 0.157 | 0.115 |
-| Last 5 games | 0.157 | 0.115 |
-| Last 3 games | 0.157 | 0.115 |
+| Season-to-date | 1.472 | 1.983 |
+| Last 5 games | 1.472 | 1.983 |
+| Last 3 games | 1.472 | 1.983 |
 
 ## Trend Summary (last 2 weeks)
 

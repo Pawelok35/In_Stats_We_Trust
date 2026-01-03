@@ -4,19 +4,21 @@
 
 | Metric | LAC | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.031 | -0.041 | ↑ +0.072 |
-| Core EPA Defense | -0.041 | 0.031 | ↓ -0.072 |
-| Success Rate Offense | 38.4% | 34.8% | ↑ +3.6 pp |
-| Success Rate Defense | 34.8% | 38.4% | ↓ -3.6 pp |
-| Explosive Play Rate (Off) | 13.1% | 7.2% | ↑ +5.9 pp |
-| Third Down Conversion | 40.9% | 23.1% | ↑ +17.8 pp |
-| Points per Drive Differential | 0.545 | -0.545 | ↑ +1.091 |
-| Yards per Play Differential | 1.190 | -1.190 | ↑ +2.379 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 7.1% | 0.0% | ↑ +7.1 pp |
-| Pressure Rate (Def) | 6.7% | 7.0% | ↓ -0.4 pp |
-| Tempo | 9.000 | 6.273 | ↑ +2.727 |
-| PowerScore | 0.125 | 0.093 | ↑ +0.032 |
+| Core EPA Offense | -0.037 | 0.035 | -0.072 |
+| Core EPA Defense | 0.014 | 0.012 | 0.002 |
+| Success Rate Offense | 0.406 | 0.444 | -0.038 |
+| Success Rate Defense | 0.443 | 0.429 | 0.014 |
+| Explosive Play Rate (Off) | 0.089 | 0.126 | -0.037 |
+| Third Down Conversion | 0.390 | 0.357 | 0.033 |
+| Points per Drive Differential | -0.286 | 0.114 | -0.400 |
+| Yards per Play Differential | -0.603 | 0.682 | -1.285 |
+| Turnover Margin | 0.083 | -0.250 | 0.333 |
+| Red Zone TD Rate (Off) | 0.122 | 0.155 | -0.033 |
+| Pressure Rate (Def) | 0.052 | 0.059 | -0.007 |
+| Tempo | 9.000 | 6.273 | 2.727 |
+| PowerScore | 1.899 | 1.333 | 0.565 |
+| PowerScore | 1.899 | 1.333 | 0.565 |
+| Tempo | 9.000 | 6.273 | 2.727 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LAC edge: +0.032 (LAC +0.125 vs MIA +0.093)
 **7 metrics version:**
 LAC edge: +0.022 (LAC +0.084 vs MIA +0.063)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.022), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - MIA) | +0.6 pts (favours LAC) |
-| Model Win% LAC | 52.4% |
-| Model Win% MIA | 47.6% |
-| SOS Differential (LAC-MIA) | -0.005 |
+| Model Spread (LAC - MIA) | +10.5 pts (favours LAC) |
+| Model Win% LAC | 85.1% |
+| Model Win% MIA | 14.9% |
+| SOS Differential (LAC-MIA) | -0.132 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LAC | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.131 | 0.136 |
-| Last 5 games | 0.127 | 0.131 |
-| Last 3 games | 0.135 | 0.070 |
+| Season-to-date | 1.538 | 1.670 |
+| Last 5 games | 1.581 | 1.771 |
+| Last 3 games | 1.543 | 1.564 |
 
 ## Trend Summary (last 3 weeks)
 

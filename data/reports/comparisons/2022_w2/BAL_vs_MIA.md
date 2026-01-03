@@ -4,19 +4,21 @@
 
 | Metric | BAL | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.293 | 0.342 | ↓ -0.049 |
-| Core EPA Defense | 0.342 | 0.293 | ↑ +0.049 |
-| Success Rate Offense | 46.8% | 51.7% | ↓ -5.0 pp |
-| Success Rate Defense | 51.7% | 46.8% | ↑ +5.0 pp |
-| Explosive Play Rate (Off) | 16.9% | 10.3% | ↑ +6.5 pp |
-| Third Down Conversion | 30.0% | 63.6% | ↓ -33.6 pp |
-| Points per Drive Differential | -0.364 | 0.364 | ↓ -0.727 |
-| Yards per Play Differential | -0.144 | 0.144 | ↓ -0.289 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 13.3% | 25.0% | ↓ -11.7 pp |
-| Pressure Rate (Def) | 2.0% | 0.0% | ↑ +2.0 pp |
-| Tempo | 7.000 | 7.909 | ↓ -0.909 |
-| PowerScore | 0.321 | 0.328 | ↓ -0.007 |
+| Core EPA Offense | 0.016 | 0.028 | -0.012 |
+| Core EPA Defense | -0.195 | -0.163 | -0.033 |
+| Success Rate Offense | 0.408 | 0.486 | -0.078 |
+| Success Rate Defense | 0.364 | 0.435 | -0.071 |
+| Explosive Play Rate (Off) | 0.099 | 0.095 | 0.004 |
+| Third Down Conversion | 0.385 | 0.400 | -0.015 |
+| Points per Drive Differential | 1.096 | 0.778 | 0.318 |
+| Yards per Play Differential | 0.021 | 0.221 | -0.200 |
+| Turnover Margin | 1.000 | 3.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.100 | 0.000 | 0.100 |
+| Pressure Rate (Def) | 0.048 | 0.061 | -0.012 |
+| Tempo | 7.000 | 7.909 | -0.909 |
+| PowerScore | 1.688 | 1.889 | -0.202 |
+| PowerScore | 1.688 | 1.889 | -0.202 |
+| Tempo | 7.000 | 7.909 | -0.909 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIA edge: +0.007 (BAL +0.321 vs MIA +0.328)
 **7 metrics version:**
 BAL edge: +0.387 (BAL +0.444 vs MIA +0.057)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.387), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - MIA) | -0.1 pts (favours MIA) |
-| Model Win% BAL | 49.5% |
-| Model Win% MIA | 50.5% |
-| SOS Differential (BAL-MIA) | -0.032 |
+| Model Spread (BAL - MIA) | -3.7 pts (favours MIA) |
+| Model Win% BAL | 34.9% |
+| Model Win% MIA | 65.1% |
+| SOS Differential (BAL-MIA) | +0.085 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.046 | 0.078 |
-| Last 5 games | 0.046 | 0.078 |
-| Last 3 games | 0.046 | 0.078 |
+| Season-to-date | 1.676 | 1.591 |
+| Last 5 games | 1.676 | 1.591 |
+| Last 3 games | 1.676 | 1.591 |
 
 ## Matchup Analogs
 

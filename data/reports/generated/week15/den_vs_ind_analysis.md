@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – DEN 33.4 – IND 21.6
-2️⃣ Predicted Winner (Model) – DEN
-3️⃣ Predicted Margin (Model) – DEN by 11.9 pts
-4️⃣ Win Probability (Model) – 95% (DEN)
-5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje DEN (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja DEN (15.9% vs 10.7%). Field position edge wynosi +3.0 yds na rzecz DEN (2.7 vs -0.3), co skraca ich boisko. Success Rate Offense pokazuje DEN na poziomie 46.3% vs 43.9% (+2.4 pp). Defensive pressure rate wspiera DEN (+5.0% vs +2.7%), więc pasy rywala będą częściej pod presją.
+1️⃣ Estimated Score (Model) – DEN 18.4 – IND 21.0
+2️⃣ Predicted Winner (Model) – IND
+3️⃣ Predicted Margin (Model) – IND by 2.6 pts
+4️⃣ Win Probability (Model) – 56% (IND)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera IND (+13.3% vs +5.6%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje IND (+3.00 vs -1.00), co przekłada się na dodatkowe posiadania. Field position edge wynosi +0.2 yds na rzecz IND (2.5 vs 2.3), co skraca ich boisko.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – DEN 24.2 – IND 19.8
+1️⃣ Estimated Score (Market) – DEN 21.8 – IND 20.2
 2️⃣ Predicted Winner (Market) – DEN
-3️⃣ Predicted Margin (Market) – DEN by 4.5 pts
-4️⃣ Win Probability (Market) – 66% (DEN)
-5️⃣ Forum Output (A) – PowerScore (Model) — DEN -0.036 vs IND -0.058. Points per Drive Differential — DEN +0.294 vs IND -0.163. Success Rate Offense — DEN 46.3% vs IND 43.9%. Third Down Conversion — DEN 35.9% vs IND 34.1%. Red Zone TD Rate — DEN 15.9% vs IND 10.7%. Explosive Play Rate — DEN 10.3% vs IND 11.1%. Model margin 11.9 pts vs market spread DEN +4.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DEN po marginesie 11.9 pkt. DEN notuje +0.294 PPD vs -0.163 u IND. Różnica w Success Rate to 46.3% vs 43.9%. Na 3rd down DEN (35.9%) wygląda solidniej niż IND (34.1%). Red Zone i explosiveness ( 15.9% / 10.3% ) utrzymują przewagę jakościową. Market trzyma 4.5 pkt, więc edge vs linia to +7.4.
+3️⃣ Predicted Margin (Market) – DEN by 1.5 pts
+4️⃣ Win Probability (Market) – 55% (DEN)
+5️⃣ Forum Output (A) – PowerScore (Model) — DEN +0.138 vs IND +0.045. Points per Drive Differential — DEN -0.171 vs IND -0.186. Success Rate Offense — DEN 41.0% vs IND 40.2%. Third Down Conversion — DEN 33.3% vs IND 31.8%. Red Zone TD Rate — DEN 14.1% vs IND 12.5%. Explosive Play Rate — DEN 9.8% vs IND 8.1%. Model margin -2.6 pts vs market spread DEN +1.5.
+6️⃣ Forum Output (B) – Model idzie w stronę IND po marginesie -2.6 pkt. IND notuje -0.186 PPD vs -0.171 u DEN. Różnica w Success Rate to 40.2% vs 41.0%. Na 3rd down IND (31.8%) wygląda solidniej niż DEN (33.3%). Red Zone i explosiveness ( 12.5% / 8.1% ) utrzymują przewagę jakościową. Market trzyma 1.5 pkt, więc edge vs linia to +4.1.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +7.4 pts
-• PowerScoreDiff (winner) = +0.022
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +4.1 pts
+• PowerScoreDiff (winner) = -0.093
+• Confidence = 56.0%
 
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +7.4 pts model edge vs line, and PowerScore Δ +0.022.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 56.0% confidence, +4.1 pts model edge vs line, and PowerScore Δ -0.093.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – DEN 33.4 – IND 21.6
-   • Win Probability – 95% (DEN)
+   • Estimated Score – DEN 18.4 – IND 21.0
+   • Win Probability – 56% (IND)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – DEN 24.2 – IND 19.8
-   • Win Probability – 66% (DEN)
+   • Estimated Score – DEN 21.8 – IND 20.2
+   • Win Probability – 55% (DEN)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — DEN (HC -4.5)
+🏷 Model Tag: NEUTRAL — IND (HC +1.5)

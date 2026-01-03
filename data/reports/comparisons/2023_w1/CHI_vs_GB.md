@@ -4,19 +4,21 @@
 
 | Metric | CHI | GB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.163 | 0.110 | ↓ -0.273 |
-| Core EPA Defense | 0.110 | -0.163 | ↑ +0.273 |
-| Success Rate Offense | 40.7% | 39.2% | ↑ +1.4 pp |
-| Success Rate Defense | 39.2% | 40.7% | ↓ -1.4 pp |
-| Explosive Play Rate (Off) | 9.9% | 8.9% | ↑ +1.0 pp |
-| Third Down Conversion | 23.1% | 50.0% | ↓ -26.9 pp |
-| Points per Drive Differential | -1.000 | 1.000 | ↓ -2.000 |
-| Yards per Play Differential | -0.725 | 0.725 | ↓ -1.450 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 14.3% | 20.0% | ↓ -5.7 pp |
-| Pressure Rate (Def) | 3.6% | 9.5% | ↓ -6.0 pp |
-| Tempo | 7.583 | 6.583 | ↑ +1.000 |
-| PowerScore | 0.086 | 0.122 | ↓ -0.035 |
+| Core EPA Offense | -0.163 | 0.110 | -0.273 |
+| Core EPA Defense | 0.110 | -0.163 | 0.273 |
+| Success Rate Offense | 0.407 | 0.392 | 0.014 |
+| Success Rate Defense | 0.392 | 0.407 | -0.014 |
+| Explosive Play Rate (Off) | 0.099 | 0.089 | 0.010 |
+| Third Down Conversion | 0.231 | 0.500 | -0.269 |
+| Points per Drive Differential | -1.000 | 1.000 | -2.000 |
+| Yards per Play Differential | -0.725 | 0.725 | -1.450 |
+| Turnover Margin | -2.000 | 2.000 | -4.000 |
+| Red Zone TD Rate (Off) | 0.143 | 0.200 | -0.057 |
+| Pressure Rate (Def) | 0.036 | 0.095 | -0.060 |
+| Tempo | 7.583 | 6.583 | 1.000 |
+| PowerScore | 1.583 | 1.421 | 0.163 |
+| PowerScore | 1.583 | 1.421 | 0.163 |
+| Tempo | 7.583 | 6.583 | 1.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ GB edge: +0.035 (CHI +0.086 vs GB +0.122)
 **7 metrics version:**
 GB edge: +0.422 (CHI -0.130 vs GB +0.292)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.422), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - GB) | -0.7 pts (favours GB) |
-| Model Win% CHI | 47.3% |
-| Model Win% GB | 52.7% |
+| Model Spread (CHI - GB) | +3.0 pts (favours CHI) |
+| Model Win% CHI | 62.3% |
+| Model Win% GB | 37.7% |
 | SOS Differential (CHI-GB) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -4,19 +4,21 @@
 
 | Metric | DEN | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.059 | -0.123 | ↑ +0.181 |
-| Core EPA Defense | -0.123 | 0.059 | ↓ -0.181 |
-| Success Rate Offense | 47.1% | 44.9% | ↑ +2.3 pp |
-| Success Rate Defense | 44.9% | 47.1% | ↓ -2.3 pp |
-| Explosive Play Rate (Off) | 11.5% | 6.4% | ↑ +5.1 pp |
-| Third Down Conversion | 70.6% | 29.4% | ↑ +41.2 pp |
-| Points per Drive Differential | 1.061 | -1.061 | ↑ +2.121 |
-| Yards per Play Differential | 0.957 | -0.957 | ↑ +1.913 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 17.4% | 20.0% | ↓ -2.6 pp |
-| Pressure Rate (Def) | 5.0% | 4.7% | ↑ +0.3 pp |
-| Tempo | 7.250 | 7.091 | ↑ +0.159 |
-| PowerScore | 0.137 | 0.094 | ↑ +0.043 |
+| Core EPA Offense | -0.050 | -0.163 | 0.113 |
+| Core EPA Defense | -0.131 | 0.133 | -0.264 |
+| Success Rate Offense | 0.463 | 0.436 | 0.027 |
+| Success Rate Defense | 0.420 | 0.510 | -0.090 |
+| Explosive Play Rate (Off) | 0.100 | 0.077 | 0.023 |
+| Third Down Conversion | 0.242 | 0.264 | -0.022 |
+| Points per Drive Differential | 0.325 | -1.681 | 2.006 |
+| Yards per Play Differential | 0.379 | -1.134 | 1.513 |
+| Turnover Margin | -0.286 | -1.143 | 0.857 |
+| Red Zone TD Rate (Off) | 0.182 | 0.107 | 0.074 |
+| Pressure Rate (Def) | 0.102 | 0.031 | 0.072 |
+| Tempo | 7.250 | 7.091 | 0.159 |
+| PowerScore | 0.137 | 0.094 | 0.043 |
+| PowerScore | 0.137 | 0.094 | 0.043 |
+| Tempo | 7.250 | 7.091 | 0.159 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DEN edge: +0.043 (DEN +0.137 vs CAR +0.094)
 **7 metrics version:**
 DEN edge: +0.015 (DEN +0.095 vs CAR +0.079)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.015), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ DEN edge: +0.015 (DEN +0.095 vs CAR +0.079)
 | Model Spread (DEN - CAR) | +0.8 pts (favours DEN) |
 | Model Win% DEN | 53.3% |
 | Model Win% CAR | 46.7% |
-| SOS Differential (DEN-CAR) | -0.102 |
+| SOS Differential (DEN-CAR) | -0.165 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.062 | 0.164 |
-| Last 5 games | 0.054 | 0.183 |
-| Last 3 games | 0.080 | 0.180 |
+| Season-to-date | 1.480 | 1.645 |
+| Last 5 games | 1.517 | 1.701 |
+| Last 3 games | 1.608 | 1.724 |
 
 ## Trend Summary (last 3 weeks)
 

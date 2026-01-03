@@ -241,6 +241,8 @@ python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 2 
 
 Jak używać (Twoja instrukcja 1–4, uaktualniona)
 
+0) ZAKTUALIZOWAC JESZCZE RAZ POPRZEDNIA KOLEJKĘ O WYNIKI CZYLI NAJPIERW UZUPEŁNIAM manual_result -> JESZCZE RAZ PRZECHODZE PRZEZ KRTOKI DLA ZAKOŃCZONEJ KOLEJKI
+
 1) Zaktualizuj wejścia:
 
 scripts/update_schedule.py (nadchodzący tydzień),
@@ -249,7 +251,7 @@ data/results/manual_results.jsonl (tylko rozegrane mecze, reszta PENDING).
 
 2) Jedna komenda na tydzień 17 (ingestuje week 16 domyślnie, bo to najnowszy zakończony tydzień), z konwergencją:
 
-python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 17 --reference-week 16 --run-convergence
+python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 18 --reference-week 17 --run-convergence
 
 ## SPRAWDZIC CZY PARQUET SIE UTWORZYL ZA POPRZEDNIA KOLEJKE !!!
 
@@ -257,11 +259,11 @@ Jeśli chcesz wymusić inny tydzień do ingerencji (np. 17, gdy już rozegrany),
 
 3) Buckety tylko dla week 17 (dopisz do istniejącego pliku):
 
-python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 17 --end-week 17 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 18 --end-week 18 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
 
 4) Podgląd w terminalu:
 
-python scripts/show_weather_picks.py --season 2025 --week 17 --guardrails-mode v2_1
+python scripts/show_weather_picks.py --season 2025 --week 18 --guardrails-mode v2_1
 
 Teraz całość działa jednym wywołaniem (krok 2), dba o PBP i artefakty, a kroki 3–4 są opcjonalne wg Twojej listy.
 
@@ -347,7 +349,22 @@ python -X utf8 -c "import pandas as pd; df=pd.read_csv('data/results/weather_buc
 
 python -X utf8 -c "import pandas as pd; df=pd.read_csv('data/results/weather_bucket_games_season2025.csv'); df=df[df['result'].isin(['WIN','LOSS'])].copy(); df['pnl']=df.apply(lambda r: 0.9*r['stake_u'] if r['result']=='WIN' else -1*r['stake_u'], axis=1); counts=df.groupby('bucket')['result'].value_counts().unstack(fill_value=0)[['WIN','LOSS']]; print('Win/Loss per bucket:\\n', counts); print('\\nWinrate % per bucket:\\n', df.groupby('bucket')['result'].apply(lambda s: (s=='WIN').mean()*100).round(1)); print('\\nPnL per bucket (0.9/-1):\\n', df.groupby('bucket')['pnl'].sum().round(2))"
 
+## PORÓWNANIE WSZYTSKICH SEZONÓW 
+Przykłady użycia:
 
+1) Wszystkie dostępne sezony:
+
+python -X utf8 scripts/bucket_summary.py
+
+2) Konkretny sezon:
+
+python -X utf8 scripts/bucket_summary.py --season 2024
+
+3) Kilka sezonów:
+
+python -X utf8 scripts/bucket_summary.py --season 2022 2023 2024 2025
+
+Wynik drukuje tabelę per sezon (kolumny: WIN, LOSS, Total, Win%, PnL_0.9/-1).
 
 
 

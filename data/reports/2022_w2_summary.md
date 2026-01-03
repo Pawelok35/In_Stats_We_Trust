@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 2
 
-_Generated at 2025-11-11T12:23:14.755308+00:00 (UTC)_
+_Generated at 2026-01-02T11:28:00.891724+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\2_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2747, "cols": 18, "timestamp": "2025-11-11T12:23:14.361372+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2747, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:23:14.361372+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2747, "cols": 24, "timestamp": "2025-11-11T12:23:14.361372+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2747, "cols": 18, "timestamp": "2026-01-02T11:28:00.523051+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2747, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:28:00.523051+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2747, "cols": 24, "timestamp": "2026-01-02T11:28:00.523051+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\2_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\2.parquet`
 - Manifest: `data\l4_core12\2022\2_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\2_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| MIA | 0.32809966134898433 |
-| BAL | 0.3213805844672739 |
-| CLE | 0.26077146505162196 |
-| NYJ | 0.23616449457365124 |
-| GB | 0.19817008743931988 |
-| BUF | 0.16164130973014545 |
-| LAC | 0.15719438651707002 |
-| KC | 0.15616059555734163 |
-| DET | 0.15452572681788587 |
-| ARI | 0.14005265610632825 |
+| ARI | 2.3482748783285508 |
+| GB | 1.9935630413688592 |
+| MIA | 1.8892281879947526 |
+| NYJ | 1.8871526368661415 |
+| CIN | 1.886050090799548 |
+| PHI | 1.8557518685982488 |
+| SF | 1.8383671554318892 |
+| NE | 1.7813287103128004 |
+| LV | 1.7740069396394722 |
+| DEN | 1.7627317347544245 |
 
 
 ## Visualizations

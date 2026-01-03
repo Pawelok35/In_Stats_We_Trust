@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 14
 
-_Generated at 2025-11-10T20:39:29.101244+00:00 (UTC)_
+_Generated at 2026-01-02T11:04:34.796935+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\14_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2664, "cols": 18, "timestamp": "2025-11-10T20:39:28.571817+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2664, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:39:28.571817+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2664, "cols": 24, "timestamp": "2025-11-10T20:39:28.571817+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2664, "cols": 18, "timestamp": "2026-01-02T11:04:34.423151+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2664, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:04:34.423151+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2664, "cols": 24, "timestamp": "2026-01-02T11:04:34.423151+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\14_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\14.parquet`
 - Manifest: `data\l4_core12\2023\14_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\14_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| LA | 0.18228450873215626 |
-| BAL | 0.18112689656356723 |
-| SF | 0.17965133956967547 |
-| MIA | 0.16667100168390037 |
-| CIN | 0.15744209584343022 |
-| NYG | 0.14946171888005585 |
-| DAL | 0.14538661968278271 |
-| SEA | 0.1441320441031546 |
-| TEN | 0.14395134862785672 |
-| GB | 0.1288291084766521 |
+| DAL | 2.2641366196827826 |
+| BUF | 1.7605751497039819 |
+| LA | 1.7240642975707685 |
+| KC | 1.6715113565313158 |
+| GB | 1.6186429091338264 |
+| CIN | 1.5735525676501048 |
+| IND | 1.5583790565952778 |
+| MIA | 1.558142573590255 |
+| TB | 1.5512461323564366 |
+| MIN | 1.5411243196283606 |
 
 
 ## Visualizations

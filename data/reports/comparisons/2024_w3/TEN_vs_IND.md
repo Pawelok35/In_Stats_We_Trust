@@ -4,19 +4,21 @@
 
 | Metric | TEN | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.244 | -0.122 | ↓ -0.122 |
-| Core EPA Defense | 0.062 | -0.124 | ↑ +0.187 |
-| Success Rate Offense | 49.3% | 39.7% | ↑ +9.5 pp |
-| Success Rate Defense | 40.7% | 39.4% | ↑ +1.3 pp |
-| Explosive Play Rate (Off) | 10.1% | 11.0% | ↓ -0.8 pp |
-| Third Down Conversion | 30.0% | 25.0% | ↑ +5.0 pp |
-| Points per Drive Differential | -0.909 | 0.282 | ↓ -1.191 |
-| Yards per Play Differential | -1.232 | 0.394 | ↓ -1.626 |
-| Turnover Margin | -3.000 | 1.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 22.2% | 15.4% | ↑ +6.8 pp |
-| Pressure Rate (Def) | 13.6% | 7.0% | ↑ +6.6 pp |
-| Tempo | 6.273 | 5.615 | ↑ +0.657 |
-| PowerScore | 0.071 | 0.054 | ↑ +0.017 |
+| Core EPA Offense | -0.172 | -0.002 | -0.171 |
+| Core EPA Defense | -0.057 | 0.064 | -0.120 |
+| Success Rate Offense | 0.430 | 0.503 | -0.073 |
+| Success Rate Defense | 0.431 | 0.449 | -0.018 |
+| Explosive Play Rate (Off) | 0.111 | 0.138 | -0.027 |
+| Third Down Conversion | 0.279 | 0.327 | -0.049 |
+| Points per Drive Differential | 0.066 | -0.045 | 0.112 |
+| Yards per Play Differential | 0.591 | 0.588 | 0.004 |
+| Turnover Margin | -2.000 | -1.500 | -0.500 |
+| Red Zone TD Rate (Off) | 0.091 | 0.133 | -0.042 |
+| Pressure Rate (Def) | 0.060 | 0.053 | 0.007 |
+| Tempo | 6.273 | 5.615 | 0.657 |
+| PowerScore | 0.071 | 0.054 | 0.017 |
+| PowerScore | 0.071 | 0.054 | 0.017 |
+| Tempo | 6.273 | 5.615 | 0.657 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TEN edge: +0.017 (TEN +0.071 vs IND +0.054)
 **7 metrics version:**
 IND edge: +0.366 (TEN -0.229 vs IND +0.138)
 **Verdict:** IND holds the edge in the extended breakdown (lead 0.366), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ IND edge: +0.366 (TEN -0.229 vs IND +0.138)
 | Model Spread (TEN - IND) | +0.3 pts (favours TEN) |
 | Model Win% TEN | 51.3% |
 | Model Win% IND | 48.7% |
-| SOS Differential (TEN-IND) | -0.093 |
+| SOS Differential (TEN-IND) | -0.411 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.065 | 0.159 |
-| Last 5 games | 0.065 | 0.159 |
-| Last 3 games | 0.065 | 0.159 |
+| Season-to-date | 1.369 | 1.780 |
+| Last 5 games | 1.369 | 1.780 |
+| Last 3 games | 1.369 | 1.780 |
 
 ## Trend Summary (last 2 weeks)
 

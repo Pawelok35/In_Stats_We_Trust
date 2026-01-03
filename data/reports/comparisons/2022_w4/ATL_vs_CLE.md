@@ -4,19 +4,21 @@
 
 | Metric | ATL | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.053 | -0.004 | ↑ +0.057 |
-| Core EPA Defense | -0.004 | 0.053 | ↓ -0.057 |
-| Success Rate Offense | 45.7% | 42.7% | ↑ +3.0 pp |
-| Success Rate Defense | 42.7% | 45.7% | ↓ -3.0 pp |
-| Explosive Play Rate (Off) | 14.3% | 12.4% | ↑ +1.9 pp |
-| Third Down Conversion | 33.3% | 35.7% | ↓ -2.4 pp |
-| Points per Drive Differential | 0.091 | -0.091 | ↑ +0.182 |
-| Yards per Play Differential | 0.229 | -0.229 | ↑ +0.458 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 5.9% | ↑ +8.4 pp |
-| Pressure Rate (Def) | 2.8% | 4.3% | ↓ -1.6 pp |
-| Tempo | 6.364 | 8.900 | ↓ -2.536 |
-| PowerScore | 0.161 | 0.141 | ↑ +0.020 |
+| Core EPA Offense | 0.052 | 0.113 | -0.061 |
+| Core EPA Defense | 0.034 | 0.037 | -0.003 |
+| Success Rate Offense | 0.465 | 0.464 | 0.001 |
+| Success Rate Defense | 0.509 | 0.422 | 0.087 |
+| Explosive Play Rate (Off) | 0.112 | 0.121 | -0.009 |
+| Third Down Conversion | 0.383 | 0.467 | -0.084 |
+| Points per Drive Differential | -0.587 | 0.273 | -0.860 |
+| Yards per Play Differential | -0.362 | 0.313 | -0.674 |
+| Turnover Margin | -0.667 | 0.667 | -1.333 |
+| Red Zone TD Rate (Off) | 0.162 | 0.137 | 0.025 |
+| Pressure Rate (Def) | 0.058 | 0.066 | -0.008 |
+| Tempo | 6.364 | 8.900 | -2.536 |
+| PowerScore | 1.405 | 1.896 | -0.491 |
+| PowerScore | 1.405 | 1.896 | -0.491 |
+| Tempo | 6.364 | 8.900 | -2.536 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.020 (ATL +0.161 vs CLE +0.141)
 **7 metrics version:**
 ATL edge: +0.216 (ATL +0.212 vs CLE -0.004)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.216), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - CLE) | +0.4 pts (favours ATL) |
-| Model Win% ATL | 51.5% |
-| Model Win% CLE | 48.5% |
-| SOS Differential (ATL-CLE) | +0.014 |
+| Model Spread (ATL - CLE) | -9.1 pts (favours CLE) |
+| Model Win% ATL | 18.0% |
+| Model Win% CLE | 82.0% |
+| SOS Differential (ATL-CLE) | +0.192 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.175 | 0.160 |
-| Last 5 games | 0.175 | 0.160 |
-| Last 3 games | 0.175 | 0.160 |
+| Season-to-date | 1.769 | 1.576 |
+| Last 5 games | 1.769 | 1.576 |
+| Last 3 games | 1.769 | 1.576 |
 
 ## Trend Summary (last 3 weeks)
 

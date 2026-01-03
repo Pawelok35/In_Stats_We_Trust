@@ -4,19 +4,21 @@
 
 | Metric | JAX | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.041 | -0.067 | ↑ +0.026 |
-| Core EPA Defense | -0.067 | -0.041 | ↓ -0.026 |
-| Success Rate Offense | 45.5% | 44.9% | ↑ +0.5 pp |
-| Success Rate Defense | 44.9% | 45.5% | ↓ -0.5 pp |
-| Explosive Play Rate (Off) | 7.6% | 6.7% | ↑ +0.8 pp |
-| Third Down Conversion | 38.5% | 31.6% | ↑ +6.9 pp |
-| Points per Drive Differential | -0.200 | 0.200 | ↓ -0.400 |
-| Yards per Play Differential | -0.142 | 0.142 | ↓ -0.284 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 12.1% | 2.9% | ↑ +9.3 pp |
-| Tempo | 6.600 | 8.900 | ↓ -2.300 |
-| PowerScore | 0.101 | 0.094 | ↑ +0.007 |
+| Core EPA Offense | 0.026 | -0.066 | 0.093 |
+| Core EPA Defense | -0.028 | -0.013 | -0.015 |
+| Success Rate Offense | 0.450 | 0.411 | 0.040 |
+| Success Rate Defense | 0.423 | 0.412 | 0.011 |
+| Explosive Play Rate (Off) | 0.109 | 0.094 | 0.015 |
+| Third Down Conversion | 0.392 | 0.346 | 0.045 |
+| Points per Drive Differential | 0.057 | -0.328 | 0.385 |
+| Yards per Play Differential | 0.153 | -0.360 | 0.513 |
+| Turnover Margin | 0.250 | 0.250 | 0.000 |
+| Red Zone TD Rate (Off) | 0.135 | 0.156 | -0.022 |
+| Pressure Rate (Def) | 0.054 | 0.057 | -0.003 |
+| Tempo | 6.600 | 8.900 | -2.300 |
+| PowerScore | 0.101 | 0.094 | 0.007 |
+| PowerScore | 0.101 | 0.094 | 0.007 |
+| Tempo | 6.600 | 8.900 | -2.300 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.007 (JAX +0.101 vs TEN +0.094)
 **7 metrics version:**
 JAX edge: +0.212 (JAX +0.164 vs TEN -0.048)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.212), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ JAX edge: +0.212 (JAX +0.164 vs TEN -0.048)
 | Model Spread (JAX - TEN) | +0.1 pts (favours JAX) |
 | Model Win% JAX | 50.5% |
 | Model Win% TEN | 49.5% |
-| SOS Differential (JAX-TEN) | +0.017 |
+| SOS Differential (JAX-TEN) | +0.067 |
 *Neutral-field assumption. Based on schedule through Week 17.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | TEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.122 | 0.104 |
-| Last 5 games | 0.103 | 0.113 |
-| Last 3 games | 0.052 | 0.082 |
+| Season-to-date | 1.668 | 1.601 |
+| Last 5 games | 1.648 | 1.616 |
+| Last 3 games | 1.512 | 1.518 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -244,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 14 | TEN (A) | 36-22 | JAX | 1.000 | 0.139 | 47.8% | 1.167 |
 | 1 | WAS (A) | 22-26 | WAS | 0.929 | 0.040 | 45.9% | -0.333 |
-| 8 | DEN (A) | 17-19 | DEN | 0.857 | -0.027 | 48.9% | -0.205 |
+| 8 | DEN (H) | 17-19 | DEN | 0.857 | -0.027 | 48.9% | -0.205 |
 
 **TEN analogs vs JAX profile**
 

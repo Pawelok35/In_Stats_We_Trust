@@ -4,19 +4,21 @@
 
 | Metric | CAR | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.178 | -0.002 | ↓ -0.176 |
-| Core EPA Defense | -0.002 | -0.178 | ↑ +0.176 |
-| Success Rate Offense | 37.1% | 40.7% | ↓ -3.7 pp |
-| Success Rate Defense | 40.7% | 37.1% | ↑ +3.7 pp |
-| Explosive Play Rate (Off) | 6.7% | 3.7% | ↑ +3.0 pp |
-| Third Down Conversion | 36.8% | 21.1% | ↑ +15.8 pp |
-| Points per Drive Differential | -0.417 | 0.417 | ↓ -0.833 |
-| Yards per Play Differential | 0.645 | -0.645 | ↑ +1.291 |
-| Turnover Margin | -4.000 | 4.000 | ↓ -8.000 |
-| Red Zone TD Rate (Off) | 12.5% | 8.3% | ↑ +4.2 pp |
-| Pressure Rate (Def) | 3.3% | 9.3% | ↓ -6.0 pp |
-| Tempo | 7.417 | 8.100 | ↓ -0.683 |
-| PowerScore | 0.043 | 0.073 | ↓ -0.030 |
+| Core EPA Offense | -0.089 | -0.045 | -0.044 |
+| Core EPA Defense | 0.049 | 0.001 | 0.048 |
+| Success Rate Offense | 0.404 | 0.388 | 0.016 |
+| Success Rate Defense | 0.469 | 0.432 | 0.037 |
+| Explosive Play Rate (Off) | 0.067 | 0.093 | -0.026 |
+| Third Down Conversion | 0.330 | 0.368 | -0.038 |
+| Points per Drive Differential | -0.919 | -0.086 | -0.833 |
+| Yards per Play Differential | -0.967 | -0.030 | -0.937 |
+| Turnover Margin | -0.286 | -0.250 | -0.036 |
+| Red Zone TD Rate (Off) | 0.138 | 0.142 | -0.003 |
+| Pressure Rate (Def) | 0.077 | 0.065 | 0.012 |
+| Tempo | 7.417 | 8.100 | -0.683 |
+| PowerScore | 0.043 | 0.073 | -0.030 |
+| PowerScore | 0.043 | 0.073 | -0.030 |
+| Tempo | 7.417 | 8.100 | -0.683 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ IND edge: +0.030 (CAR +0.043 vs IND +0.073)
 **7 metrics version:**
 IND edge: +0.813 (CAR -0.367 vs IND +0.446)
 **Verdict:** IND holds the edge in the extended breakdown (lead 0.813), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ IND edge: +0.813 (CAR -0.367 vs IND +0.446)
 | Model Spread (CAR - IND) | -0.5 pts (favours IND) |
 | Model Win% CAR | 47.7% |
 | Model Win% IND | 52.3% |
-| SOS Differential (CAR-IND) | +0.019 |
+| SOS Differential (CAR-IND) | -0.021 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.139 | 0.120 |
-| Last 5 games | 0.160 | 0.152 |
-| Last 3 games | 0.163 | 0.139 |
+| Season-to-date | 1.510 | 1.531 |
+| Last 5 games | 1.529 | 1.591 |
+| Last 3 games | 1.601 | 1.386 |
 
 ## Trend Summary (last 3 weeks)
 

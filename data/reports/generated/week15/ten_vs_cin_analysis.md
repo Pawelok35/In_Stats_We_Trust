@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TEN 8.4 – CIN 26.5
+1️⃣ Estimated Score (Model) – TEN 18.5 – CIN 20.5
 2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 18.2 pts
-4️⃣ Win Probability (Model) – 95% (CIN)
-5️⃣ Why This Team Wins (Model) – Na 3rd down CIN utrzymuje 42.4%, podczas gdy TEN jest na 31.3%, co stabilizuje serie ofensywne. Turnover margin faworyzuje CIN (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Success Rate Offense pokazuje CIN na poziomie 49.7% vs 42.3% (+7.4 pp). Red Zone TD Rate sprzyja CIN (13.6% vs 11.1%). CIN prowadzi w Points per Drive Differential (+0.105 vs -0.525), więc bazowa efektywność napędza przewagę.
+3️⃣ Predicted Margin (Model) – CIN by 2.0 pts
+4️⃣ Win Probability (Model) – 53% (CIN)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę CIN: CIN +0.178 vs TEN +0.015. Na 3rd down CIN utrzymuje 33.0%, podczas gdy TEN jest na 27.7%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje CIN na poziomie 42.7% vs 41.0% (+1.7 pp). Red Zone TD Rate sprzyja CIN (14.2% vs 12.6%). Turnover margin faworyzuje CIN (+1.00 vs +0.00), co przekłada się na dodatkowe posiadania.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – TEN 20.8 – CIN 25.8
+1️⃣ Estimated Score (Market) – TEN 19.2 – CIN 21.8
 2️⃣ Predicted Winner (Market) – CIN
-3️⃣ Predicted Margin (Market) – CIN by 5.0 pts
-4️⃣ Win Probability (Market) – 68% (CIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.165 vs CIN +0.170. Points per Drive Differential — TEN -0.525 vs CIN +0.105. Success Rate Offense — TEN 42.3% vs CIN 49.7%. Third Down Conversion — TEN 31.3% vs CIN 42.4%. Red Zone TD Rate — TEN 11.1% vs CIN 13.6%. Explosive Play Rate — TEN 9.6% vs CIN 9.7%. Model margin -18.2 pts vs market spread TEN -5.0.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -18.2 pkt. CIN notuje +0.105 PPD vs -0.525 u TEN. Różnica w Success Rate to 49.7% vs 42.3%. Na 3rd down CIN (42.4%) wygląda solidniej niż TEN (31.3%). Red Zone i explosiveness ( 13.6% / 9.7% ) utrzymują przewagę jakościową. Market trzyma -5.0 pkt, więc edge vs linia to +13.2.
+3️⃣ Predicted Margin (Market) – CIN by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (CIN)
+5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.015 vs CIN +0.178. Points per Drive Differential — TEN -0.197 vs CIN -0.132. Success Rate Offense — TEN 41.0% vs CIN 42.7%. Third Down Conversion — TEN 27.7% vs CIN 33.0%. Red Zone TD Rate — TEN 12.6% vs CIN 14.2%. Explosive Play Rate — TEN 9.0% vs CIN 8.1%. Model margin -2.0 pts vs market spread TEN -2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -2.0 pkt. CIN notuje -0.132 PPD vs -0.197 u TEN. Różnica w Success Rate to 42.7% vs 41.0%. Na 3rd down CIN (33.0%) wygląda solidniej niż TEN (27.7%). Red Zone i explosiveness ( 14.2% / 8.1% ) utrzymują przewagę jakościową. Market trzyma -2.5 pkt, więc edge vs linia to -0.5.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +13.2 pts
-• PowerScoreDiff (winner) = +0.005
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = -0.5 pts
+• PowerScoreDiff (winner) = +0.163
+• Confidence = 56.0%
 
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +13.2 pts model edge vs line, and PowerScore Δ +0.005.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 56.0% confidence, -0.5 pts model edge vs line, and PowerScore Δ +0.163.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – TEN 8.4 – CIN 26.5
-   • Win Probability – 95% (CIN)
+   • Estimated Score – TEN 18.5 – CIN 20.5
+   • Win Probability – 53% (CIN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – TEN 20.8 – CIN 25.8
-   • Win Probability – 68% (CIN)
+   • Estimated Score – TEN 19.2 – CIN 21.8
+   • Win Probability – 59% (CIN)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — CIN (HC -5.0)
+🏷 Model Tag: NEUTRAL — CIN (HC -2.5)

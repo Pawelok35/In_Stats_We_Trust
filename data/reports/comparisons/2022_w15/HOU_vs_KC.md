@@ -4,19 +4,21 @@
 
 | Metric | HOU | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.015 | 0.056 | ↓ -0.072 |
-| Core EPA Defense | 0.056 | -0.015 | ↑ +0.072 |
-| Success Rate Offense | 36.2% | 53.8% | ↓ -17.5 pp |
-| Success Rate Defense | 53.8% | 36.2% | ↑ +17.5 pp |
-| Explosive Play Rate (Off) | 6.2% | 12.9% | ↓ -6.7 pp |
-| Third Down Conversion | 26.7% | 50.0% | ↓ -23.3 pp |
-| Points per Drive Differential | -0.654 | 0.654 | ↓ -1.308 |
-| Yards per Play Differential | -2.682 | 2.682 | ↓ -5.364 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 23.1% | ↓ -8.8 pp |
-| Pressure Rate (Def) | 4.5% | 3.1% | ↑ +1.4 pp |
-| Tempo | 6.154 | 7.750 | ↓ -1.596 |
-| PowerScore | 0.109 | 0.177 | ↓ -0.068 |
+| Core EPA Offense | -0.125 | 0.138 | -0.262 |
+| Core EPA Defense | -0.003 | 0.030 | -0.034 |
+| Success Rate Offense | 0.385 | 0.492 | -0.107 |
+| Success Rate Defense | 0.433 | 0.435 | -0.001 |
+| Explosive Play Rate (Off) | 0.086 | 0.127 | -0.041 |
+| Third Down Conversion | 0.252 | 0.456 | -0.204 |
+| Points per Drive Differential | -0.416 | 0.561 | -0.978 |
+| Yards per Play Differential | -0.736 | 1.005 | -1.741 |
+| Turnover Margin | -0.538 | 0.077 | -0.615 |
+| Red Zone TD Rate (Off) | 0.146 | 0.156 | -0.010 |
+| Pressure Rate (Def) | 0.079 | 0.083 | -0.004 |
+| Tempo | 6.154 | 7.750 | -1.596 |
+| PowerScore | 1.327 | 1.701 | -0.374 |
+| PowerScore | 1.327 | 1.701 | -0.374 |
+| Tempo | 6.154 | 7.750 | -1.596 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.068 (HOU +0.109 vs KC +0.177)
 **7 metrics version:**
 HOU edge: +0.156 (HOU +0.187 vs KC +0.031)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.156), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - KC) | -1.3 pts (favours KC) |
-| Model Win% HOU | 44.8% |
-| Model Win% KC | 55.2% |
-| SOS Differential (HOU-KC) | -0.057 |
+| Model Spread (HOU - KC) | -6.9 pts (favours KC) |
+| Model Win% HOU | 24.0% |
+| Model Win% KC | 76.0% |
+| SOS Differential (HOU-KC) | -0.144 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.109 | 0.166 |
-| Last 5 games | 0.071 | 0.155 |
-| Last 3 games | 0.044 | 0.147 |
+| Season-to-date | 1.580 | 1.725 |
+| Last 5 games | 1.458 | 1.759 |
+| Last 3 games | 1.357 | 1.802 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -244,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | JAX (A) | 13-5 | HOU | 0.921 | 0.005 | 39.2% | 0.755 |
 | 12 | MIA (A) | 15-22 | MIA | 0.856 | -0.312 | 31.2% | -0.560 |
-| 9 | PHI (A) | 17-26 | PHI | 0.854 | -0.080 | 43.2% | -1.011 |
+| 9 | PHI (H) | 17-26 | PHI | 0.854 | -0.080 | 43.2% | -1.011 |
 
 **KC analogs vs HOU profile**
 

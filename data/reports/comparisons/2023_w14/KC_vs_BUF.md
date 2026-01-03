@@ -4,19 +4,21 @@
 
 | Metric | KC | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.102 | -0.027 | ↓ -0.075 |
-| Core EPA Defense | -0.027 | -0.102 | ↑ +0.075 |
-| Success Rate Offense | 45.0% | 39.8% | ↑ +5.2 pp |
-| Success Rate Defense | 39.8% | 45.0% | ↓ -5.2 pp |
-| Explosive Play Rate (Off) | 11.2% | 7.5% | ↑ +3.7 pp |
-| Third Down Conversion | 46.2% | 33.3% | ↑ +12.8 pp |
-| Points per Drive Differential | -0.118 | 0.118 | ↓ -0.236 |
-| Yards per Play Differential | 0.809 | -0.809 | ↑ +1.618 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 15.4% | 8.3% | ↑ +7.1 pp |
-| Pressure Rate (Def) | 6.4% | 4.5% | ↑ +1.8 pp |
-| Tempo | 8.000 | 8.455 | ↓ -0.455 |
-| PowerScore | 0.094 | 0.085 | ↑ +0.009 |
+| Core EPA Offense | 0.036 | 0.072 | -0.036 |
+| Core EPA Defense | -0.052 | -0.057 | 0.005 |
+| Success Rate Offense | 0.440 | 0.474 | -0.034 |
+| Success Rate Defense | 0.392 | 0.412 | -0.021 |
+| Explosive Play Rate (Off) | 0.101 | 0.114 | -0.013 |
+| Third Down Conversion | 0.422 | 0.459 | -0.037 |
+| Points per Drive Differential | 0.541 | 0.845 | -0.304 |
+| Yards per Play Differential | 0.563 | 0.715 | -0.152 |
+| Turnover Margin | -0.167 | 0.083 | -0.250 |
+| Red Zone TD Rate (Off) | 0.142 | 0.172 | -0.030 |
+| Pressure Rate (Def) | 0.100 | 0.126 | -0.026 |
+| Tempo | 8.000 | 8.455 | -0.455 |
+| PowerScore | 0.094 | 0.085 | 0.009 |
+| PowerScore | 0.094 | 0.085 | 0.009 |
+| Tempo | 8.000 | 8.455 | -0.455 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.009 (KC +0.094 vs BUF +0.085)
 **7 metrics version:**
 BUF edge: +0.183 (KC -0.030 vs BUF +0.153)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.183), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ BUF edge: +0.183 (KC -0.030 vs BUF +0.153)
 | Model Spread (KC - BUF) | +0.2 pts (favours KC) |
 | Model Win% KC | 50.7% |
 | Model Win% BUF | 49.3% |
-| SOS Differential (KC-BUF) | -0.015 |
+| SOS Differential (KC-BUF) | +0.012 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.105 | 0.120 |
-| Last 5 games | 0.118 | 0.105 |
-| Last 3 games | 0.136 | 0.073 |
+| Season-to-date | 1.594 | 1.582 |
+| Last 5 games | 1.596 | 1.613 |
+| Last 3 games | 1.643 | 1.437 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | JAX | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.112 | 0.006 | ↓ -0.118 |
-| Core EPA Defense | 0.006 | -0.112 | ↑ +0.118 |
-| Success Rate Offense | 42.9% | 37.0% | ↑ +5.8 pp |
-| Success Rate Defense | 37.0% | 42.9% | ↓ -5.8 pp |
-| Explosive Play Rate (Off) | 4.8% | 13.6% | ↓ -8.8 pp |
-| Third Down Conversion | 16.7% | 35.7% | ↓ -19.0 pp |
-| Points per Drive Differential | -0.882 | 0.882 | ↓ -1.764 |
-| Yards per Play Differential | -1.700 | 1.700 | ↓ -3.399 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 11.8% | ↓ -11.8 pp |
-| Pressure Rate (Def) | 2.2% | 8.7% | ↓ -6.5 pp |
-| Tempo | 7.636 | 8.100 | ↓ -0.464 |
-| PowerScore | 0.079 | 0.100 | ↓ -0.021 |
+| Core EPA Offense | -0.215 | -0.079 | -0.136 |
+| Core EPA Defense | -0.356 | -0.046 | -0.310 |
+| Success Rate Offense | 0.482 | 0.395 | 0.087 |
+| Success Rate Defense | 0.315 | 0.356 | -0.042 |
+| Explosive Play Rate (Off) | 0.082 | 0.074 | 0.008 |
+| Third Down Conversion | 0.250 | 0.333 | -0.083 |
+| Points per Drive Differential | 1.067 | 0.568 | 0.498 |
+| Yards per Play Differential | 0.877 | -0.329 | 1.206 |
+| Turnover Margin | 1.000 | 0.000 | 1.000 |
+| Red Zone TD Rate (Off) | 0.214 | 0.200 | 0.014 |
+| Pressure Rate (Def) | 0.093 | 0.026 | 0.067 |
+| Tempo | 7.636 | 8.100 | -0.464 |
+| PowerScore | 0.079 | 0.100 | -0.021 |
+| PowerScore | 0.079 | 0.100 | -0.021 |
+| Tempo | 7.636 | 8.100 | -0.464 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.021 (JAX +0.079 vs KC +0.100)
 **7 metrics version:**
 KC edge: +0.024 (JAX +0.045 vs KC +0.069)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.024), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.024 (JAX +0.045 vs KC +0.069)
 | Model Spread (JAX - KC) | -0.4 pts (favours KC) |
 | Model Win% JAX | 48.4% |
 | Model Win% KC | 51.6% |
-| SOS Differential (JAX-KC) | -0.153 |
+| SOS Differential (JAX-KC) | -0.410 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | KC |
 | --- | ---: | ---: |
-| Season-to-date | -0.078 | 0.076 |
-| Last 5 games | -0.078 | 0.076 |
-| Last 3 games | -0.078 | 0.076 |
+| Season-to-date | 1.098 | 1.507 |
+| Last 5 games | 1.098 | 1.507 |
+| Last 3 games | 1.098 | 1.507 |
 
 ## Matchup Analogs
 

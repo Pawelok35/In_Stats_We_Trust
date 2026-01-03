@@ -4,19 +4,21 @@
 
 | Metric | PIT | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.190 | -0.019 | ↓ -0.171 |
-| Core EPA Defense | -0.019 | -0.190 | ↑ +0.171 |
-| Success Rate Offense | 37.6% | 49.4% | ↓ -11.8 pp |
-| Success Rate Defense | 49.4% | 37.6% | ↑ +11.8 pp |
-| Explosive Play Rate (Off) | 4.7% | 11.8% | ↓ -7.1 pp |
-| Third Down Conversion | 21.4% | 35.3% | ↓ -13.9 pp |
-| Points per Drive Differential | -1.049 | 1.049 | ↓ -2.098 |
-| Yards per Play Differential | -1.388 | 1.388 | ↓ -2.776 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 8.6% | 6.5% | ↑ +2.0 pp |
-| Tempo | 6.538 | 7.727 | ↓ -1.189 |
-| PowerScore | 0.033 | 0.102 | ↓ -0.069 |
+| Core EPA Offense | -0.135 | -0.024 | -0.111 |
+| Core EPA Defense | -0.058 | -0.066 | 0.007 |
+| Success Rate Offense | 0.360 | 0.435 | -0.075 |
+| Success Rate Defense | 0.412 | 0.402 | 0.011 |
+| Explosive Play Rate (Off) | 0.085 | 0.084 | 0.001 |
+| Third Down Conversion | 0.325 | 0.295 | 0.030 |
+| Points per Drive Differential | -0.605 | 0.135 | -0.739 |
+| Yards per Play Differential | -0.756 | -0.405 | -0.351 |
+| Turnover Margin | 1.333 | 0.857 | 0.476 |
+| Red Zone TD Rate (Off) | 0.113 | 0.141 | -0.028 |
+| Pressure Rate (Def) | 0.076 | 0.043 | 0.033 |
+| Tempo | 6.538 | 7.727 | -1.189 |
+| PowerScore | 0.033 | 0.102 | -0.069 |
+| PowerScore | 0.033 | 0.102 | -0.069 |
+| Tempo | 6.538 | 7.727 | -1.189 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.069 (PIT +0.033 vs JAX +0.102)
 **7 metrics version:**
 PIT edge: +0.169 (PIT +0.118 vs JAX -0.050)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.169), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ PIT edge: +0.169 (PIT +0.118 vs JAX -0.050)
 | Model Spread (PIT - JAX) | -1.3 pts (favours JAX) |
 | Model Win% PIT | 44.7% |
 | Model Win% JAX | 55.3% |
-| SOS Differential (PIT-JAX) | -0.014 |
+| SOS Differential (PIT-JAX) | +0.107 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.078 | 0.092 |
-| Last 5 games | 0.071 | 0.124 |
-| Last 3 games | 0.091 | 0.118 |
+| Season-to-date | 1.583 | 1.476 |
+| Last 5 games | 1.594 | 1.509 |
+| Last 3 games | 1.661 | 1.497 |
 
 ## Trend Summary (last 3 weeks)
 

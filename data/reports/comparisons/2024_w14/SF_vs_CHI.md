@@ -4,19 +4,21 @@
 
 | Metric | SF | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.307 | -0.068 | ↑ +0.375 |
-| Core EPA Defense | -0.068 | 0.307 | ↓ -0.375 |
-| Success Rate Offense | 50.6% | 47.1% | ↑ +3.6 pp |
-| Success Rate Defense | 47.1% | 50.6% | ↓ -3.6 pp |
-| Explosive Play Rate (Off) | 14.3% | 2.9% | ↑ +11.3 pp |
-| Third Down Conversion | 46.2% | 40.0% | ↑ +6.2 pp |
-| Points per Drive Differential | 2.500 | -2.500 | ↑ +5.000 |
-| Yards per Play Differential | 3.488 | -3.488 | ↑ +6.976 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 25.0% | 22.2% | ↑ +2.8 pp |
-| Pressure Rate (Def) | 21.9% | 3.6% | ↑ +18.3 pp |
-| Tempo | 7.700 | 6.800 | ↑ +0.900 |
-| PowerScore | 0.249 | 0.161 | ↑ +0.088 |
+| Core EPA Offense | -0.004 | -0.030 | 0.026 |
+| Core EPA Defense | 0.031 | -0.011 | 0.043 |
+| Success Rate Offense | 0.476 | 0.433 | 0.043 |
+| Success Rate Defense | 0.495 | 0.458 | 0.036 |
+| Explosive Play Rate (Off) | 0.114 | 0.084 | 0.030 |
+| Third Down Conversion | 0.385 | 0.288 | 0.096 |
+| Points per Drive Differential | -0.372 | -0.095 | -0.278 |
+| Yards per Play Differential | 0.661 | -0.981 | 1.642 |
+| Turnover Margin | -0.083 | 1.000 | -1.083 |
+| Red Zone TD Rate (Off) | 0.116 | 0.110 | 0.006 |
+| Pressure Rate (Def) | 0.070 | 0.074 | -0.005 |
+| Tempo | 7.700 | 6.800 | 0.900 |
+| PowerScore | 0.249 | 0.161 | 0.088 |
+| PowerScore | 0.249 | 0.161 | 0.088 |
+| Tempo | 7.700 | 6.800 | 0.900 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SF edge: +0.088 (SF +0.249 vs CHI +0.161)
 **7 metrics version:**
 SF edge: +0.057 (SF +0.200 vs CHI +0.144)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.057), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ SF edge: +0.057 (SF +0.200 vs CHI +0.144)
 | Model Spread (SF - CHI) | +1.6 pts (favours SF) |
 | Model Win% SF | 56.7% |
 | Model Win% CHI | 43.3% |
-| SOS Differential (SF-CHI) | +0.023 |
+| SOS Differential (SF-CHI) | +0.115 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.152 | 0.129 |
-| Last 5 games | 0.163 | 0.176 |
-| Last 3 games | 0.156 | 0.226 |
+| Season-to-date | 1.620 | 1.505 |
+| Last 5 games | 1.672 | 1.621 |
+| Last 3 games | 1.752 | 1.769 |
 
 ## Trend Summary (last 3 weeks)
 

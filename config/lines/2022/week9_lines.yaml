@@ -1,7 +1,7 @@
 matchups:
-- report: data/reports/comparisons/2022_w9/PHI_vs_HOU.md
-  home: PHI
-  away: HOU
+- report: data/reports/comparisons/2022_w9/HOU_vs_PHI.md
+  home: HOU
+  away: PHI
   spread: -14.0
   total: 45.5
   prime_time: true

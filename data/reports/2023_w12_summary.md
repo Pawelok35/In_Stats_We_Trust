@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 12
 
-_Generated at 2025-11-10T20:39:06.918237+00:00 (UTC)_
+_Generated at 2026-01-02T10:27:40.206185+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\12_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2756, "cols": 18, "timestamp": "2025-11-10T20:39:06.464544+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2756, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:39:06.464544+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2756, "cols": 24, "timestamp": "2025-11-10T20:39:06.464544+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2756, "cols": 18, "timestamp": "2026-01-02T10:27:39.827145+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2756, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:27:39.827145+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2756, "cols": 24, "timestamp": "2026-01-02T10:27:39.827145+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\12_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\12.parquet`
 - Manifest: `data\l4_core12\2023\12_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\12_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DAL | 0.24119662523108296 |
-| LA | 0.20181638729162565 |
-| PHI | 0.17298031844935946 |
-| KC | 0.1645386284144753 |
-| BUF | 0.1627327741932047 |
-| ATL | 0.15560943636046104 |
-| SF | 0.1506075452563805 |
-| HOU | 0.13824363374016385 |
-| JAX | 0.13516255184137202 |
-| WAS | 0.12846502080749392 |
+| NO | 1.820083185563427 |
+| CAR | 1.816880601968831 |
+| WAS | 1.816279334153722 |
+| BUF | 1.8102297216901524 |
+| DET | 1.7938677348198233 |
+| PIT | 1.773721254849474 |
+| JAX | 1.7721255888044092 |
+| LA | 1.7615632227346638 |
+| ARI | 1.7108531895123547 |
+| KC | 1.6863568102326572 |
 
 
 ## Visualizations

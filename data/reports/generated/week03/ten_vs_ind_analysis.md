@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TEN -0.6 – IND 33.2
-2️⃣ Predicted Winner (Model) – IND
-3️⃣ Predicted Margin (Model) – IND by 33.8 pts
-4️⃣ Win Probability (Model) – 95% (IND)
-5️⃣ Why This Team Wins (Model) – Na 3rd down IND utrzymuje 46.4%, podczas gdy TEN jest na 25.5%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje IND na poziomie 53.8% vs 40.0% (+13.8 pp). PowerScore Summary potwierdza przewagę IND: IND +0.259 vs TEN +0.158. Defensive pressure rate wspiera IND (+9.5% vs +0.0%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie IND (12.7% vs 4.8%), więc big-play equity jest wyższe.
+1️⃣ Estimated Score (Model) – TEN 30.6 – IND 24.0
+2️⃣ Predicted Winner (Model) – TEN
+3️⃣ Predicted Margin (Model) – TEN by 6.6 pts
+4️⃣ Win Probability (Model) – 83% (TEN)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę TEN: TEN +0.206 vs IND +0.137. Defensive pressure rate wspiera TEN (+8.8% vs +3.2%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja TEN (15.1% vs 9.5%). Na 3rd down TEN utrzymuje 36.7%, podczas gdy IND jest na 34.7%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie TEN (9.6% vs 8.6%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – TEN 19.0 – IND 24.5
-2️⃣ Predicted Winner (Market) – IND
-3️⃣ Predicted Margin (Market) – IND by 5.5 pts
-4️⃣ Win Probability (Market) – 69% (IND)
-5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.158 vs IND +0.259. Points per Drive Differential — TEN -0.880 vs IND +1.099. Success Rate Offense — TEN 40.0% vs IND 53.8%. Third Down Conversion — TEN 25.5% vs IND 46.4%. Red Zone TD Rate — TEN 5.6% vs IND 7.7%. Explosive Play Rate — TEN 4.8% vs IND 12.7%. Model margin -33.8 pts vs market spread TEN -5.5.
-6️⃣ Forum Output (B) – Model idzie w stronę IND po marginesie -33.8 pkt. IND notuje +1.099 PPD vs -0.880 u TEN. Różnica w Success Rate to 53.8% vs 40.0%. Na 3rd down IND (46.4%) wygląda solidniej niż TEN (25.5%). Red Zone i explosiveness ( 7.7% / 12.7% ) utrzymują przewagę jakościową. Market trzyma -5.5 pkt, więc edge vs linia to +28.3.
+1️⃣ Estimated Score (Market) – TEN 26.5 – IND 21.5
+2️⃣ Predicted Winner (Market) – TEN
+3️⃣ Predicted Margin (Market) – TEN by 5.0 pts
+4️⃣ Win Probability (Market) – 68% (TEN)
+5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.206 vs IND +0.137. Points per Drive Differential — TEN -0.880 vs IND -1.205. Success Rate Offense — TEN 45.7% vs IND 44.8%. Third Down Conversion — TEN 36.7% vs IND 34.7%. Red Zone TD Rate — TEN 15.1% vs IND 9.5%. Explosive Play Rate — TEN 9.6% vs IND 8.6%. Model margin 6.6 pts vs market spread TEN +5.0.
+6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 6.6 pkt. TEN notuje -0.880 PPD vs -1.205 u IND. Różnica w Success Rate to 45.7% vs 44.8%. Na 3rd down TEN (36.7%) wygląda solidniej niż IND (34.7%). Red Zone i explosiveness ( 15.1% / 9.6% ) utrzymują przewagę jakościową. Market trzyma 5.0 pkt, więc edge vs linia to +1.6.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +28.3 pts
-• PowerScoreDiff (winner) = +0.101
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +1.6 pts
+• PowerScoreDiff (winner) = +0.069
+• Confidence = 86.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +28.3 pts model edge vs line, and PowerScore Δ +0.101.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
+🏷 Model Tag: NEUTRAL — based on 86.0% confidence, +1.6 pts model edge vs line, and PowerScore Δ +0.069.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – TEN -0.6 – IND 33.2
-   • Win Probability – 95% (IND)
+   • Estimated Score – TEN 30.6 – IND 24.0
+   • Win Probability – 83% (TEN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – TEN 19.0 – IND 24.5
-   • Win Probability – 69% (IND)
+   • Estimated Score – TEN 26.5 – IND 21.5
+   • Win Probability – 68% (TEN)
 
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — IND (HC -5.5)
+🏷 Model Tag: NEUTRAL — TEN (HC -5.0)

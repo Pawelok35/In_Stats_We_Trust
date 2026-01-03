@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 4
 
-_Generated at 2025-11-10T20:37:37.959596+00:00 (UTC)_
+_Generated at 2026-01-02T10:18:31.576047+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\4_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2730, "cols": 18, "timestamp": "2025-11-10T20:37:37.498235+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2730, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:37:37.498235+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2730, "cols": 24, "timestamp": "2025-11-10T20:37:37.498235+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2730, "cols": 18, "timestamp": "2026-01-02T10:18:31.162886+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2730, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:18:31.162886+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2730, "cols": 24, "timestamp": "2026-01-02T10:18:31.162886+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\4_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\4.parquet`
 - Manifest: `data\l4_core12\2023\4_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\4_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| SF | 0.33356572191579686 |
-| BUF | 0.2783065928727936 |
-| ARI | 0.23196490539729414 |
-| PHI | 0.23065503329253031 |
-| WAS | 0.20843109294519724 |
-| DEN | 0.20539190297982857 |
-| MIA | 0.20014879821082018 |
-| CHI | 0.19510012245307876 |
-| TEN | 0.17004765072136568 |
-| KC | 0.1636428892491082 |
+| ARI | 2.6751542741680585 |
+| WAS | 2.1480229296798914 |
+| SF | 2.02958021466942 |
+| CHI | 1.96621123356419 |
+| TEN | 1.9002867505807188 |
+| HOU | 1.8398382114100786 |
+| PHI | 1.830859323384461 |
+| LA | 1.8040658415301867 |
+| CAR | 1.794395184795517 |
+| DET | 1.6861894626902472 |
 
 
 ## Visualizations

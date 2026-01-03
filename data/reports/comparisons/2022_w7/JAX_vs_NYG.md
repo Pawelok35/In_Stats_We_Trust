@@ -4,19 +4,20 @@
 
 | Metric | JAX | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.065 | 0.157 | ↓ -0.092 |
-| Core EPA Defense | 0.157 | 0.065 | ↑ +0.092 |
-| Success Rate Offense | 42.0% | 51.7% | ↓ -9.6 pp |
-| Success Rate Defense | 51.7% | 42.0% | ↑ +9.6 pp |
-| Explosive Play Rate (Off) | 12.5% | 13.5% | ↓ -1.0 pp |
-| Third Down Conversion | 46.2% | 42.9% | ↑ +3.3 pp |
-| Points per Drive Differential | -0.986 | 0.986 | ↓ -1.972 |
-| Yards per Play Differential | 0.260 | -0.260 | ↑ +0.520 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 9.5% | 5.9% | ↑ +3.6 pp |
-| Pressure Rate (Def) | 3.2% | 0.0% | ↑ +3.2 pp |
-| Tempo | 9.778 | 11.125 | ↓ -1.347 |
-| PowerScore | 0.184 | 0.224 | ↓ -0.040 |
+| Core EPA Offense | 0.022 | 0.050 | -0.028 |
+| Core EPA Defense | -0.067 | 0.027 | -0.094 |
+| Success Rate Offense | 0.453 | 0.428 | 0.025 |
+| Success Rate Defense | 0.383 | 0.441 | -0.058 |
+| Explosive Play Rate (Off) | 0.109 | 0.102 | 0.007 |
+| Third Down Conversion | 0.377 | 0.330 | 0.047 |
+| Points per Drive Differential | 0.217 | 0.286 | -0.070 |
+| Yards per Play Differential | 0.470 | -0.399 | 0.869 |
+| Red Zone TD Rate (Off) | 0.137 | 0.108 | 0.030 |
+| Pressure Rate (Def) | 0.052 | 0.069 | -0.018 |
+| Tempo | 9.778 | 11.125 | -1.347 |
+| PowerScore | 2.115 | 2.422 | -0.307 |
+| PowerScore | 2.115 | 2.422 | -0.307 |
+| Tempo | 9.778 | 11.125 | -1.347 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +47,19 @@ NYG edge: +0.040 (JAX +0.184 vs NYG +0.224)
 **7 metrics version:**
 NYG edge: +0.213 (JAX +0.036 vs NYG +0.249)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.213), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - NYG) | -0.7 pts (favours NYG) |
-| Model Win% JAX | 46.9% |
-| Model Win% NYG | 53.1% |
-| SOS Differential (JAX-NYG) | -0.057 |
+| Model Spread (JAX - NYG) | -5.7 pts (favours NYG) |
+| Model Win% JAX | 27.9% |
+| Model Win% NYG | 72.1% |
+| SOS Differential (JAX-NYG) | -0.018 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.097 | 0.154 |
-| Last 5 games | 0.086 | 0.156 |
-| Last 3 games | 0.134 | 0.176 |
+| Season-to-date | 1.624 | 1.643 |
+| Last 5 games | 1.613 | 1.660 |
+| Last 3 games | 1.788 | 1.739 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | MIA | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.164 | -0.108 | ↑ +0.272 |
-| Core EPA Defense | -0.108 | 0.164 | ↓ -0.272 |
-| Success Rate Offense | 48.8% | 38.8% | ↑ +10.0 pp |
-| Success Rate Defense | 38.8% | 48.8% | ↓ -10.0 pp |
-| Explosive Play Rate (Off) | 10.7% | 8.2% | ↑ +2.5 pp |
-| Third Down Conversion | 53.8% | 33.3% | ↑ +20.5 pp |
-| Points per Drive Differential | 2.250 | -2.250 | ↑ +4.500 |
-| Yards per Play Differential | 1.565 | -1.565 | ↑ +3.131 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 21.7% | 20.0% | ↑ +1.7 pp |
-| Pressure Rate (Def) | 9.3% | 0.0% | ↑ +9.3 pp |
-| Tempo | 7.000 | 7.083 | ↓ -0.083 |
-| PowerScore | 0.179 | 0.109 | ↑ +0.071 |
+| Core EPA Offense | 0.154 | -0.099 | 0.253 |
+| Core EPA Defense | 0.045 | 0.045 | 0.000 |
+| Success Rate Offense | 0.518 | 0.406 | 0.112 |
+| Success Rate Defense | 0.465 | 0.481 | -0.016 |
+| Explosive Play Rate (Off) | 0.183 | 0.068 | 0.115 |
+| Third Down Conversion | 0.412 | 0.329 | 0.084 |
+| Points per Drive Differential | 0.707 | -0.820 | 1.527 |
+| Yards per Play Differential | 2.216 | -0.935 | 3.151 |
+| Turnover Margin | -0.600 | -0.800 | 0.200 |
+| Red Zone TD Rate (Off) | 0.191 | 0.143 | 0.048 |
+| Pressure Rate (Def) | 0.088 | 0.093 | -0.006 |
+| Tempo | 7.000 | 7.083 | -0.083 |
+| PowerScore | 0.179 | 0.109 | 0.071 |
+| PowerScore | 0.179 | 0.109 | 0.071 |
+| Tempo | 7.000 | 7.083 | -0.083 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIA edge: +0.071 (MIA +0.179 vs CAR +0.109)
 **7 metrics version:**
 CAR edge: +0.158 (MIA +0.034 vs CAR +0.192)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.158), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CAR edge: +0.158 (MIA +0.034 vs CAR +0.192)
 | Model Spread (MIA - CAR) | +1.3 pts (favours MIA) |
 | Model Win% MIA | 55.4% |
 | Model Win% CAR | 44.6% |
-| SOS Differential (MIA-CAR) | +0.039 |
+| SOS Differential (MIA-CAR) | +0.262 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.179 | 0.140 |
-| Last 5 games | 0.179 | 0.140 |
-| Last 3 games | 0.172 | 0.174 |
+| Season-to-date | 1.734 | 1.471 |
+| Last 5 games | 1.734 | 1.471 |
+| Last 3 games | 1.577 | 1.476 |
 
 ## Trend Summary (last 3 weeks)
 

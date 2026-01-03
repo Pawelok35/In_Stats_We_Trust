@@ -4,19 +4,21 @@
 
 | Metric | CLE | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.125 | 0.194 | ↓ -0.069 |
-| Core EPA Defense | 0.194 | 0.125 | ↑ +0.069 |
-| Success Rate Offense | 48.8% | 44.3% | ↑ +4.5 pp |
-| Success Rate Defense | 44.3% | 48.8% | ↓ -4.5 pp |
-| Explosive Play Rate (Off) | 17.1% | 14.8% | ↑ +2.3 pp |
-| Third Down Conversion | 36.4% | 25.0% | ↑ +11.4 pp |
-| Points per Drive Differential | 0.073 | -0.073 | ↑ +0.145 |
-| Yards per Play Differential | 0.118 | -0.118 | ↑ +0.237 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 15.8% | 9.1% | ↑ +6.7 pp |
-| Pressure Rate (Def) | 2.7% | 0.0% | ↑ +2.7 pp |
-| Tempo | 8.200 | 8.000 | ↑ +0.200 |
-| PowerScore | 0.239 | 0.233 | ↑ +0.005 |
+| Core EPA Offense | 0.084 | -0.059 | 0.143 |
+| Core EPA Defense | 0.041 | 0.010 | 0.031 |
+| Success Rate Offense | 0.455 | 0.412 | 0.042 |
+| Success Rate Defense | 0.431 | 0.429 | 0.002 |
+| Explosive Play Rate (Off) | 0.122 | 0.092 | 0.030 |
+| Third Down Conversion | 0.439 | 0.387 | 0.052 |
+| Points per Drive Differential | 0.182 | -0.229 | 0.411 |
+| Yards per Play Differential | 0.177 | -0.198 | 0.375 |
+| Turnover Margin | 0.250 | 0.250 | 0.000 |
+| Red Zone TD Rate (Off) | 0.118 | 0.180 | -0.062 |
+| Pressure Rate (Def) | 0.060 | 0.066 | -0.006 |
+| Tempo | 8.200 | 8.000 | 0.200 |
+| PowerScore | 1.844 | 1.804 | 0.041 |
+| PowerScore | 1.844 | 1.804 | 0.041 |
+| Tempo | 8.200 | 8.000 | 0.200 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CLE edge: +0.005 (CLE +0.239 vs LAC +0.233)
 **7 metrics version:**
 LAC edge: +0.185 (CLE +0.079 vs LAC +0.264)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.185), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - LAC) | +0.1 pts (favours CLE) |
-| Model Win% CLE | 50.4% |
-| Model Win% LAC | 49.6% |
-| SOS Differential (CLE-LAC) | +0.041 |
+| Model Spread (CLE - LAC) | +0.8 pts (favours CLE) |
+| Model Win% CLE | 53.1% |
+| Model Win% LAC | 46.9% |
+| SOS Differential (CLE-LAC) | +0.073 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.161 | 0.120 |
-| Last 5 games | 0.161 | 0.120 |
-| Last 3 games | 0.171 | 0.128 |
+| Season-to-date | 1.533 | 1.460 |
+| Last 5 games | 1.533 | 1.460 |
+| Last 3 games | 1.595 | 1.495 |
 
 ## Trend Summary (last 3 weeks)
 

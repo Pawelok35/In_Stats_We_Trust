@@ -4,19 +4,21 @@
 
 | Metric | LV | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.075 | 0.161 | ↓ -0.237 |
-| Core EPA Defense | 0.161 | -0.075 | ↑ +0.237 |
-| Success Rate Offense | 52.5% | 51.6% | ↑ +0.9 pp |
-| Success Rate Defense | 51.6% | 52.5% | ↓ -0.9 pp |
-| Explosive Play Rate (Off) | 8.8% | 12.9% | ↓ -4.2 pp |
-| Third Down Conversion | 25.0% | 33.3% | ↓ -8.3 pp |
-| Points per Drive Differential | -1.167 | 1.167 | ↓ -2.333 |
-| Yards per Play Differential | -0.536 | 0.536 | ↓ -1.073 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 27.3% | 15.0% | ↑ +12.3 pp |
-| Pressure Rate (Def) | 4.8% | 6.8% | ↓ -2.1 pp |
-| Tempo | 6.667 | 7.750 | ↓ -1.083 |
-| PowerScore | 0.155 | 0.196 | ↓ -0.042 |
+| Core EPA Offense | -0.141 | -0.377 | 0.236 |
+| Core EPA Defense | -0.079 | 0.125 | -0.204 |
+| Success Rate Offense | 0.443 | 0.344 | 0.099 |
+| Success Rate Defense | 0.404 | 0.500 | -0.096 |
+| Explosive Play Rate (Off) | 0.085 | 0.034 | 0.051 |
+| Third Down Conversion | 0.321 | 0.077 | 0.244 |
+| Points per Drive Differential | -0.337 | -2.699 | 2.362 |
+| Yards per Play Differential | -0.391 | -2.049 | 1.658 |
+| Turnover Margin | -1.500 | -1.500 | 0.000 |
+| Red Zone TD Rate (Off) | 0.071 | 0.071 | 0.000 |
+| Pressure Rate (Def) | 0.044 | 0.041 | 0.004 |
+| Tempo | 6.667 | 7.750 | -1.083 |
+| PowerScore | 1.470 | 1.720 | -0.250 |
+| PowerScore | 1.470 | 1.720 | -0.250 |
+| Tempo | 6.667 | 7.750 | -1.083 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CAR edge: +0.042 (LV +0.155 vs CAR +0.196)
 **7 metrics version:**
 CAR edge: +0.204 (LV +0.033 vs CAR +0.237)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.204), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - CAR) | -0.8 pts (favours CAR) |
-| Model Win% LV | 46.8% |
-| Model Win% CAR | 53.2% |
-| SOS Differential (LV-CAR) | -0.053 |
+| Model Spread (LV - CAR) | -4.6 pts (favours CAR) |
+| Model Win% LV | 31.6% |
+| Model Win% CAR | 68.4% |
+| SOS Differential (LV-CAR) | -0.118 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.064 | 0.117 |
-| Last 5 games | 0.064 | 0.117 |
-| Last 3 games | 0.064 | 0.117 |
+| Season-to-date | 1.387 | 1.505 |
+| Last 5 games | 1.387 | 1.505 |
+| Last 3 games | 1.387 | 1.505 |
 
 ## Trend Summary (last 2 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 3
 
-_Generated at 2025-11-10T20:37:27.707306+00:00 (UTC)_
+_Generated at 2026-01-02T10:17:32.217603+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\3_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2882, "cols": 18, "timestamp": "2025-11-10T20:37:27.306918+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2882, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:37:27.306918+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2882, "cols": 24, "timestamp": "2025-11-10T20:37:27.306918+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2882, "cols": 18, "timestamp": "2026-01-02T10:17:31.822192+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2882, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:17:31.822192+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2882, "cols": 24, "timestamp": "2026-01-02T10:17:31.822192+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\3_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\3.parquet`
 - Manifest: `data\l4_core12\2023\3_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\3_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| MIA | 0.3273345805345512 |
-| ARI | 0.22981372155422247 |
-| SEA | 0.2194158706006793 |
-| DAL | 0.19350622289117053 |
-| HOU | 0.1879343717349543 |
-| SF | 0.16908701179137445 |
-| KC | 0.16337436809802375 |
-| LAC | 0.1557293599822363 |
-| PHI | 0.15239066748173105 |
-| DEN | 0.15204529822939944 |
+| DAL | 2.574756222891171 |
+| PHI | 2.0068587525881143 |
+| CLE | 1.9557180141725166 |
+| ARI | 1.9426342343747354 |
+| MIN | 1.939563418603028 |
+| CAR | 1.9297229766450559 |
+| SF | 1.9243745813646582 |
+| KC | 1.8078407712600792 |
+| JAX | 1.797144812910305 |
+| LV | 1.6229547728408726 |
 
 
 ## Visualizations

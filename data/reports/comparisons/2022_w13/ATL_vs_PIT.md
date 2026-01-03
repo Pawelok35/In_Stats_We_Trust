@@ -4,19 +4,21 @@
 
 | Metric | ATL | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.009 | 0.081 | ↓ -0.071 |
-| Core EPA Defense | 0.081 | 0.009 | ↑ +0.071 |
-| Success Rate Offense | 50.0% | 48.2% | ↑ +1.8 pp |
-| Success Rate Defense | 48.2% | 50.0% | ↓ -1.8 pp |
-| Explosive Play Rate (Off) | 8.6% | 7.1% | ↑ +1.5 pp |
-| Third Down Conversion | 25.0% | 46.2% | ↓ -21.2 pp |
-| Points per Drive Differential | -0.111 | 0.111 | ↓ -0.222 |
-| Yards per Play Differential | 0.242 | -0.242 | ↑ +0.484 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 11.1% | 11.1% | ± 0.0 pp |
-| Pressure Rate (Def) | 0.0% | 4.0% | ↓ -4.0 pp |
-| Tempo | 8.750 | 9.444 | ↓ -0.694 |
-| PowerScore | 0.162 | 0.165 | ↓ -0.003 |
+| Core EPA Offense | 0.010 | -0.057 | 0.067 |
+| Core EPA Defense | 0.031 | 0.029 | 0.002 |
+| Success Rate Offense | 0.452 | 0.415 | 0.038 |
+| Success Rate Defense | 0.468 | 0.439 | 0.028 |
+| Explosive Play Rate (Off) | 0.112 | 0.081 | 0.031 |
+| Third Down Conversion | 0.384 | 0.341 | 0.043 |
+| Points per Drive Differential | -0.429 | -0.508 | 0.079 |
+| Yards per Play Differential | -0.414 | -0.850 | 0.435 |
+| Turnover Margin | 0.167 | 0.364 | -0.197 |
+| Red Zone TD Rate (Off) | 0.147 | 0.136 | 0.011 |
+| Pressure Rate (Def) | 0.043 | 0.069 | -0.026 |
+| Tempo | 8.750 | 9.444 | -0.694 |
+| PowerScore | 1.894 | 2.040 | -0.145 |
+| PowerScore | 1.894 | 2.040 | -0.145 |
+| Tempo | 8.750 | 9.444 | -0.694 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PIT edge: +0.003 (ATL +0.162 vs PIT +0.165)
 **7 metrics version:**
 PIT edge: +0.203 (ATL +0.013 vs PIT +0.217)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.203), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - PIT) | -0.1 pts (favours PIT) |
-| Model Win% ATL | 49.7% |
-| Model Win% PIT | 50.3% |
-| SOS Differential (ATL-PIT) | +0.019 |
+| Model Spread (ATL - PIT) | -2.7 pts (favours PIT) |
+| Model Win% ATL | 39.0% |
+| Model Win% PIT | 61.0% |
+| SOS Differential (ATL-PIT) | +0.221 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.150 | 0.131 |
-| Last 5 games | 0.126 | 0.147 |
-| Last 3 games | 0.134 | 0.134 |
+| Season-to-date | 1.797 | 1.575 |
+| Last 5 games | 1.744 | 1.491 |
+| Last 3 games | 1.783 | 1.478 |
 
 ## Trend Summary (last 3 weeks)
 

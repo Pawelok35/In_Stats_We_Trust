@@ -4,19 +4,21 @@
 
 | Metric | DEN | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.077 | -0.188 | ↑ +0.111 |
-| Core EPA Defense | -0.188 | -0.077 | ↓ -0.111 |
-| Success Rate Offense | 49.4% | 32.1% | ↑ +17.3 pp |
-| Success Rate Defense | 32.1% | 49.4% | ↓ -17.3 pp |
-| Explosive Play Rate (Off) | 7.1% | 6.2% | ↑ +0.9 pp |
-| Third Down Conversion | 30.8% | 14.3% | ↑ +16.5 pp |
-| Points per Drive Differential | 0.775 | -0.775 | ↑ +1.549 |
-| Yards per Play Differential | 0.849 | -0.849 | ↑ +1.698 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 33.3% | 33.3% | ± 0.0 pp |
-| Pressure Rate (Def) | 7.5% | 20.0% | ↓ -12.5 pp |
-| Tempo | 6.538 | 5.786 | ↑ +0.753 |
-| PowerScore | 0.073 | 0.011 | ↑ +0.062 |
+| Core EPA Offense | -0.093 | -0.065 | -0.029 |
+| Core EPA Defense | -0.044 | 0.012 | -0.056 |
+| Success Rate Offense | 0.366 | 0.401 | -0.035 |
+| Success Rate Defense | 0.424 | 0.468 | -0.043 |
+| Explosive Play Rate (Off) | 0.095 | 0.082 | 0.012 |
+| Third Down Conversion | 0.269 | 0.332 | -0.063 |
+| Points per Drive Differential | -0.188 | -0.559 | 0.371 |
+| Yards per Play Differential | 0.039 | -0.588 | 0.627 |
+| Turnover Margin | 0.154 | 0.154 | 0.000 |
+| Red Zone TD Rate (Off) | 0.117 | 0.125 | -0.008 |
+| Pressure Rate (Def) | 0.063 | 0.047 | 0.017 |
+| Tempo | 6.538 | 5.786 | 0.753 |
+| PowerScore | 1.367 | 1.156 | 0.210 |
+| PowerScore | 1.367 | 1.156 | 0.210 |
+| Tempo | 6.538 | 5.786 | 0.753 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DEN edge: +0.062 (DEN +0.073 vs ARI +0.011)
 **7 metrics version:**
 DEN edge: +0.220 (DEN +0.165 vs ARI -0.055)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.220), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - ARI) | +1.1 pts (favours DEN) |
-| Model Win% DEN | 54.7% |
-| Model Win% ARI | 45.3% |
-| SOS Differential (DEN-ARI) | -0.039 |
+| Model Spread (DEN - ARI) | +3.9 pts (favours DEN) |
+| Model Win% DEN | 65.7% |
+| Model Win% ARI | 34.3% |
+| SOS Differential (DEN-ARI) | -0.066 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.091 | 0.130 |
-| Last 5 games | 0.116 | 0.104 |
-| Last 3 games | 0.108 | 0.118 |
+| Season-to-date | 1.503 | 1.569 |
+| Last 5 games | 1.465 | 1.486 |
+| Last 3 games | 1.408 | 1.440 |
 
 ## Trend Summary (last 3 weeks)
 

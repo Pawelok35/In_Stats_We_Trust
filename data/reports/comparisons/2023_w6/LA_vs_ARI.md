@@ -4,19 +4,21 @@
 
 | Metric | LA | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.056 | -0.151 | ↑ +0.207 |
-| Core EPA Defense | -0.151 | 0.056 | ↓ -0.207 |
-| Success Rate Offense | 45.8% | 35.1% | ↑ +10.7 pp |
-| Success Rate Defense | 35.1% | 45.8% | ↓ -10.7 pp |
-| Explosive Play Rate (Off) | 13.9% | 10.6% | ↑ +3.3 pp |
-| Third Down Conversion | 28.6% | 35.3% | ↓ -6.7 pp |
-| Points per Drive Differential | 1.850 | -1.850 | ↑ +3.700 |
-| Yards per Play Differential | 1.635 | -1.635 | ↑ +3.271 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 10.0% | 0.0% | ↑ +10.0 pp |
-| Pressure Rate (Def) | 4.5% | 11.1% | ↓ -6.6 pp |
-| Tempo | 7.200 | 7.833 | ↓ -0.633 |
-| PowerScore | 0.132 | 0.067 | ↑ +0.064 |
+| Core EPA Offense | 0.025 | -0.030 | 0.055 |
+| Core EPA Defense | 0.022 | 0.078 | -0.056 |
+| Success Rate Offense | 0.430 | 0.395 | 0.036 |
+| Success Rate Defense | 0.430 | 0.484 | -0.054 |
+| Explosive Play Rate (Off) | 0.094 | 0.092 | 0.002 |
+| Third Down Conversion | 0.390 | 0.365 | 0.025 |
+| Points per Drive Differential | 0.045 | -0.498 | 0.543 |
+| Yards per Play Differential | 0.196 | -0.278 | 0.474 |
+| Turnover Margin | -0.400 | 0.200 | -0.600 |
+| Red Zone TD Rate (Off) | 0.158 | 0.152 | 0.006 |
+| Pressure Rate (Def) | 0.048 | 0.077 | -0.029 |
+| Tempo | 7.200 | 7.833 | -0.633 |
+| PowerScore | 0.132 | 0.067 | 0.064 |
+| PowerScore | 0.132 | 0.067 | 0.064 |
+| Tempo | 7.200 | 7.833 | -0.633 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LA edge: +0.064 (LA +0.132 vs ARI +0.067)
 **7 metrics version:**
 LA edge: +0.633 (LA +0.381 vs ARI -0.252)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.633), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ LA edge: +0.633 (LA +0.381 vs ARI -0.252)
 | Model Spread (LA - ARI) | +1.2 pts (favours LA) |
 | Model Win% LA | 54.9% |
 | Model Win% ARI | 45.1% |
-| SOS Differential (LA-ARI) | -0.023 |
+| SOS Differential (LA-ARI) | -0.119 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LA | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.138 | 0.161 |
-| Last 5 games | 0.138 | 0.161 |
-| Last 3 games | 0.121 | 0.201 |
+| Season-to-date | 1.744 | 1.863 |
+| Last 5 games | 1.744 | 1.863 |
+| Last 3 games | 1.813 | 2.055 |
 
 ## Trend Summary (last 3 weeks)
 

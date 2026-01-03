@@ -4,19 +4,21 @@
 
 | Metric | DEN | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.219 | -0.156 | ↓ -0.063 |
-| Core EPA Defense | -0.156 | -0.219 | ↑ +0.063 |
-| Success Rate Offense | 41.9% | 33.8% | ↑ +8.1 pp |
-| Success Rate Defense | 33.8% | 41.9% | ↓ -8.1 pp |
-| Explosive Play Rate (Off) | 8.1% | 7.8% | ↑ +0.3 pp |
-| Third Down Conversion | 28.6% | 21.4% | ↑ +7.1 pp |
-| Points per Drive Differential | 0.105 | -0.105 | ↑ +0.210 |
-| Yards per Play Differential | -0.497 | 0.497 | ↓ -0.995 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 18.2% | ↓ -3.9 pp |
-| Pressure Rate (Def) | 5.7% | 11.4% | ↓ -5.6 pp |
-| Tempo | 5.733 | 5.500 | ↑ +0.233 |
-| PowerScore | 0.013 | 0.002 | ↑ +0.011 |
+| Core EPA Offense | -0.033 | -0.179 | 0.146 |
+| Core EPA Defense | 0.008 | -0.048 | 0.056 |
+| Success Rate Offense | 0.410 | 0.376 | 0.034 |
+| Success Rate Defense | 0.437 | 0.407 | 0.030 |
+| Explosive Play Rate (Off) | 0.098 | 0.075 | 0.024 |
+| Third Down Conversion | 0.330 | 0.293 | 0.038 |
+| Points per Drive Differential | -0.299 | -0.495 | 0.195 |
+| Yards per Play Differential | -0.788 | -0.096 | -0.692 |
+| Turnover Margin | 0.214 | -0.571 | 0.786 |
+| Red Zone TD Rate (Off) | 0.139 | 0.126 | 0.012 |
+| Pressure Rate (Def) | 0.072 | 0.054 | 0.018 |
+| Tempo | 5.733 | 5.500 | 0.233 |
+| PowerScore | 1.143 | 1.086 | 0.057 |
+| PowerScore | 1.143 | 1.086 | 0.057 |
+| Tempo | 5.733 | 5.500 | 0.233 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DEN edge: +0.011 (DEN +0.013 vs NE +0.002)
 **7 metrics version:**
 NE edge: +0.200 (DEN -0.095 vs NE +0.105)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.200), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - NE) | +0.2 pts (favours DEN) |
-| Model Win% DEN | 50.9% |
-| Model Win% NE | 49.1% |
-| SOS Differential (DEN-NE) | +0.064 |
+| Model Spread (DEN - NE) | +1.1 pts (favours DEN) |
+| Model Win% DEN | 54.4% |
+| Model Win% NE | 45.6% |
+| SOS Differential (DEN-NE) | +0.177 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.128 | 0.065 |
-| Last 5 games | 0.074 | 0.027 |
-| Last 3 games | 0.076 | 0.013 |
+| Season-to-date | 1.644 | 1.468 |
+| Last 5 games | 1.556 | 1.277 |
+| Last 3 games | 1.472 | 1.260 |
 
 ## Trend Summary (last 3 weeks)
 

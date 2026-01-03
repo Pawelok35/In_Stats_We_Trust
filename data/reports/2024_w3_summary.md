@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 3
 
-_Generated at 2025-11-10T17:48:53.591393+00:00 (UTC)_
+_Generated at 2025-12-28T14:19:42.448634+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\3_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2732, "cols": 18, "timestamp": "2025-11-10T17:48:53.041000+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2732, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:48:53.041000+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2732, "cols": 24, "timestamp": "2025-11-10T17:48:53.041000+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2732, "cols": 18, "timestamp": "2025-12-28T14:19:42.057919+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2732, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:19:42.057919+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2732, "cols": 24, "timestamp": "2025-12-28T14:19:42.057919+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\3_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\3.parquet`
 - Manifest: `data\l4_core12\2024\3_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\3_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| CIN | 0.3689977817762877 |
-| WAS | 0.3683007690588522 |
-| BUF | 0.2523896398103266 |
-| SF | 0.228054765803493 |
-| LA | 0.22400909400411012 |
-| BAL | 0.2034436162531555 |
-| CAR | 0.1962444046362033 |
-| KC | 0.17954197713651146 |
-| DAL | 0.17871595472209803 |
-| LV | 0.1546147740354401 |
+| CIN | 2.5352315480100542 |
+| NYJ | 2.2795607741886013 |
+| WAS | 2.25514287432201 |
+| SF | 2.1182356443564645 |
+| DAL | 1.9134863389770185 |
+| JAX | 1.898127730341115 |
+| LA | 1.8522373222323383 |
+| BUF | 1.7816204090410959 |
+| KC | 1.7704510680456025 |
+| CHI | 1.7640201636566681 |
 
 
 ## Visualizations

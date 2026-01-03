@@ -4,19 +4,21 @@
 
 | Metric | IND | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.122 | -0.124 | ↑ +0.002 |
-| Core EPA Defense | -0.124 | -0.122 | ↓ -0.002 |
-| Success Rate Offense | 39.7% | 39.4% | ↑ +0.3 pp |
-| Success Rate Defense | 39.4% | 39.7% | ↓ -0.3 pp |
-| Explosive Play Rate (Off) | 11.0% | 6.7% | ↑ +4.2 pp |
-| Third Down Conversion | 25.0% | 42.9% | ↓ -17.9 pp |
-| Points per Drive Differential | 0.282 | -0.282 | ↑ +0.564 |
-| Yards per Play Differential | 0.394 | -0.394 | ↑ +0.787 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 15.4% | 9.5% | ↑ +5.9 pp |
-| Pressure Rate (Def) | 7.0% | 4.2% | ↑ +2.9 pp |
-| Tempo | 5.615 | 8.667 | ↓ -3.051 |
-| PowerScore | 0.054 | 0.044 | ↑ +0.009 |
+| Core EPA Offense | -0.002 | -0.164 | 0.163 |
+| Core EPA Defense | 0.064 | -0.169 | 0.233 |
+| Success Rate Offense | 0.503 | 0.404 | 0.099 |
+| Success Rate Defense | 0.449 | 0.392 | 0.057 |
+| Explosive Play Rate (Off) | 0.138 | 0.048 | 0.090 |
+| Third Down Conversion | 0.327 | 0.210 | 0.118 |
+| Points per Drive Differential | -0.045 | -0.615 | 0.570 |
+| Yards per Play Differential | 0.588 | -1.212 | 1.799 |
+| Turnover Margin | -1.500 | 0.500 | -2.000 |
+| Red Zone TD Rate (Off) | 0.133 | 0.100 | 0.033 |
+| Pressure Rate (Def) | 0.053 | 0.080 | -0.028 |
+| Tempo | 5.615 | 8.667 | -3.051 |
+| PowerScore | 1.155 | 1.764 | -0.609 |
+| PowerScore | 1.155 | 1.764 | -0.609 |
+| Tempo | 5.615 | 8.667 | -3.051 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ IND edge: +0.009 (IND +0.054 vs CHI +0.044)
 **7 metrics version:**
 IND edge: +0.213 (IND +0.138 vs CHI -0.076)
 **Verdict:** IND holds the edge in the extended breakdown (lead 0.213), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - CHI) | +0.2 pts (favours IND) |
-| Model Win% IND | 50.7% |
-| Model Win% CHI | 49.3% |
-| SOS Differential (IND-CHI) | +0.129 |
+| Model Spread (IND - CHI) | -11.3 pts (favours CHI) |
+| Model Win% IND | 13.3% |
+| Model Win% CHI | 86.7% |
+| SOS Differential (IND-CHI) | +0.497 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.159 | 0.030 |
-| Last 5 games | 0.159 | 0.030 |
-| Last 3 games | 0.159 | 0.030 |
+| Season-to-date | 1.780 | 1.283 |
+| Last 5 games | 1.780 | 1.283 |
+| Last 3 games | 1.780 | 1.283 |
 
 ## Trend Summary (last 2 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | KC | PHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.119 | -0.074 | ↓ -0.045 |
-| Core EPA Defense | -0.074 | -0.119 | ↑ +0.045 |
-| Success Rate Offense | 34.3% | 38.6% | ↓ -4.2 pp |
-| Success Rate Defense | 38.6% | 34.3% | ↑ +4.2 pp |
-| Explosive Play Rate (Off) | 9.1% | 10.0% | ↓ -0.9 pp |
-| Third Down Conversion | 36.4% | 27.3% | ↑ +9.1 pp |
-| Points per Drive Differential | -0.333 | 0.333 | ↓ -0.667 |
-| Yards per Play Differential | -0.006 | 0.006 | ↓ -0.012 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 18.2% | 37.5% | ↓ -19.3 pp |
-| Pressure Rate (Def) | 16.7% | 2.3% | ↑ +14.4 pp |
-| Tempo | 8.250 | 5.833 | ↑ +2.417 |
-| PowerScore | 0.048 | 0.067 | ↓ -0.019 |
+| Core EPA Offense | 0.032 | 0.090 | -0.058 |
+| Core EPA Defense | -0.076 | -0.010 | -0.066 |
+| Success Rate Offense | 0.442 | 0.460 | -0.019 |
+| Success Rate Defense | 0.392 | 0.424 | -0.032 |
+| Explosive Play Rate (Off) | 0.104 | 0.091 | 0.013 |
+| Third Down Conversion | 0.405 | 0.461 | -0.056 |
+| Points per Drive Differential | 0.714 | 0.490 | 0.224 |
+| Yards per Play Differential | 0.849 | 0.300 | 0.548 |
+| Turnover Margin | 0.000 | -0.444 | 0.444 |
+| Red Zone TD Rate (Off) | 0.142 | 0.142 | -0.001 |
+| Pressure Rate (Def) | 0.106 | 0.079 | 0.027 |
+| Tempo | 8.250 | 5.833 | 2.417 |
+| PowerScore | 0.048 | 0.067 | -0.019 |
+| PowerScore | 0.048 | 0.067 | -0.019 |
+| Tempo | 8.250 | 5.833 | 2.417 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PHI edge: +0.019 (KC +0.048 vs PHI +0.067)
 **7 metrics version:**
 PHI edge: +0.214 (KC -0.049 vs PHI +0.165)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.214), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ PHI edge: +0.214 (KC -0.049 vs PHI +0.165)
 | Model Spread (KC - PHI) | -0.4 pts (favours PHI) |
 | Model Win% KC | 48.5% |
 | Model Win% PHI | 51.5% |
-| SOS Differential (KC-PHI) | -0.048 |
+| SOS Differential (KC-PHI) | -0.110 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | PHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.094 | 0.142 |
-| Last 5 games | 0.110 | 0.150 |
-| Last 3 games | 0.117 | 0.185 |
+| Season-to-date | 1.578 | 1.688 |
+| Last 5 games | 1.649 | 1.743 |
+| Last 3 games | 1.550 | 1.793 |
 
 ## Trend Summary (last 3 weeks)
 

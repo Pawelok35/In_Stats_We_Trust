@@ -4,19 +4,21 @@
 
 | Metric | SEA | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.146 | 0.280 | ↓ -0.135 |
-| Core EPA Defense | 0.280 | 0.146 | ↑ +0.135 |
-| Success Rate Offense | 55.2% | 49.3% | ↑ +5.9 pp |
-| Success Rate Defense | 49.3% | 55.2% | ↓ -5.9 pp |
-| Explosive Play Rate (Off) | 13.8% | 15.5% | ↓ -1.7 pp |
-| Third Down Conversion | 52.9% | 50.0% | ↑ +2.9 pp |
-| Points per Drive Differential | -0.125 | 0.125 | ↓ -0.250 |
-| Yards per Play Differential | -0.609 | 0.609 | ↓ -1.218 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 11.1% | 25.0% | ↓ -13.9 pp |
-| Pressure Rate (Def) | 12.0% | 4.3% | ↑ +7.7 pp |
-| Tempo | 10.875 | 7.889 | ↑ +2.986 |
-| PowerScore | 0.273 | 0.281 | ↓ -0.009 |
+| Core EPA Offense | -0.084 | -0.062 | -0.022 |
+| Core EPA Defense | 0.069 | -0.022 | 0.092 |
+| Success Rate Offense | 0.408 | 0.451 | -0.042 |
+| Success Rate Defense | 0.467 | 0.487 | -0.020 |
+| Explosive Play Rate (Off) | 0.090 | 0.091 | -0.000 |
+| Third Down Conversion | 0.375 | 0.325 | 0.050 |
+| Points per Drive Differential | -1.537 | -0.943 | -0.594 |
+| Yards per Play Differential | -1.234 | -0.847 | -0.387 |
+| Turnover Margin | 0.000 | -0.500 | 0.500 |
+| Red Zone TD Rate (Off) | 0.000 | 0.119 | -0.119 |
+| Pressure Rate (Def) | 0.043 | 0.065 | -0.022 |
+| Tempo | 10.875 | 7.889 | 2.986 |
+| PowerScore | 2.420 | 1.828 | 0.592 |
+| PowerScore | 2.420 | 1.828 | 0.592 |
+| Tempo | 10.875 | 7.889 | 2.986 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.009 (SEA +0.273 vs ATL +0.281)
 **7 metrics version:**
 SEA edge: +0.194 (SEA +0.312 vs ATL +0.118)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.194), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - ATL) | -0.2 pts (favours ATL) |
-| Model Win% SEA | 49.3% |
-| Model Win% ATL | 50.7% |
-| SOS Differential (SEA-ATL) | +0.021 |
+| Model Spread (SEA - ATL) | +10.9 pts (favours SEA) |
+| Model Win% SEA | 86.1% |
+| Model Win% ATL | 13.9% |
+| SOS Differential (SEA-ATL) | +0.576 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.147 | 0.126 |
-| Last 5 games | 0.147 | 0.126 |
-| Last 3 games | 0.147 | 0.126 |
+| Season-to-date | 2.019 | 1.443 |
+| Last 5 games | 2.019 | 1.443 |
+| Last 3 games | 2.019 | 1.443 |
 
 ## Trend Summary (last 2 weeks)
 

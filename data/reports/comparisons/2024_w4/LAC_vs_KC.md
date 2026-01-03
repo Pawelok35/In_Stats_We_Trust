@@ -4,19 +4,21 @@
 
 | Metric | LAC | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.220 | -0.103 | ↓ -0.118 |
-| Core EPA Defense | -0.103 | -0.220 | ↑ +0.118 |
-| Success Rate Offense | 32.0% | 46.1% | ↓ -14.1 pp |
-| Success Rate Defense | 46.1% | 32.0% | ↑ +14.1 pp |
-| Explosive Play Rate (Off) | 6.7% | 10.5% | ↓ -3.9 pp |
-| Third Down Conversion | 30.8% | 56.2% | ↓ -25.5 pp |
-| Points per Drive Differential | -0.545 | 0.545 | ↓ -1.091 |
-| Yards per Play Differential | -1.342 | 1.342 | ↓ -2.685 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 12.5% | 12.5% | ± 0.0 pp |
-| Pressure Rate (Def) | 8.6% | 6.9% | ↑ +1.7 pp |
-| Tempo | 7.500 | 6.909 | ↑ +0.591 |
-| PowerScore | -0.004 | 0.056 | ↓ -0.060 |
+| Core EPA Offense | -0.061 | 0.068 | -0.129 |
+| Core EPA Defense | -0.216 | 0.023 | -0.239 |
+| Success Rate Offense | 0.428 | 0.524 | -0.096 |
+| Success Rate Defense | 0.396 | 0.510 | -0.115 |
+| Explosive Play Rate (Off) | 0.085 | 0.075 | 0.011 |
+| Third Down Conversion | 0.354 | 0.310 | 0.045 |
+| Points per Drive Differential | 0.606 | 0.242 | 0.363 |
+| Yards per Play Differential | 0.124 | -0.056 | 0.180 |
+| Turnover Margin | 1.000 | -0.667 | 1.667 |
+| Red Zone TD Rate (Off) | 0.089 | 0.082 | 0.008 |
+| Pressure Rate (Def) | 0.078 | 0.054 | 0.024 |
+| Tempo | 7.500 | 6.909 | 0.591 |
+| PowerScore | 1.482 | 1.417 | 0.065 |
+| PowerScore | 1.482 | 1.417 | 0.065 |
+| Tempo | 7.500 | 6.909 | 0.591 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.060 (LAC -0.004 vs KC +0.056)
 **7 metrics version:**
 LAC edge: +0.371 (LAC +0.200 vs KC -0.171)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.371), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - KC) | -1.1 pts (favours KC) |
-| Model Win% LAC | 45.4% |
-| Model Win% KC | 54.6% |
-| SOS Differential (LAC-KC) | -0.140 |
+| Model Spread (LAC - KC) | +1.2 pts (favours LAC) |
+| Model Win% LAC | 55.0% |
+| Model Win% KC | 45.0% |
+| SOS Differential (LAC-KC) | -0.456 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LAC | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.028 | 0.168 |
-| Last 5 games | 0.028 | 0.168 |
-| Last 3 games | 0.028 | 0.168 |
+| Season-to-date | 1.331 | 1.787 |
+| Last 5 games | 1.331 | 1.787 |
+| Last 3 games | 1.331 | 1.787 |
 
 ## Trend Summary (last 3 weeks)
 

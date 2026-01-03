@@ -4,19 +4,21 @@
 
 | Metric | SF | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.005 | 0.061 | ↓ -0.066 |
-| Core EPA Defense | 0.061 | -0.005 | ↑ +0.066 |
-| Success Rate Offense | 46.2% | 50.0% | ↓ -3.8 pp |
-| Success Rate Defense | 50.0% | 46.2% | ↑ +3.8 pp |
-| Explosive Play Rate (Off) | 6.4% | 10.8% | ↓ -4.4 pp |
-| Third Down Conversion | 53.8% | 42.9% | ↑ +11.0 pp |
-| Points per Drive Differential | -0.611 | 0.611 | ↓ -1.222 |
-| Yards per Play Differential | -0.354 | 0.354 | ↓ -0.708 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 12.5% | 40.0% | ↓ -27.5 pp |
-| Pressure Rate (Def) | 11.1% | 6.7% | ↑ +4.4 pp |
-| Tempo | 8.667 | 9.250 | ↓ -0.583 |
-| PowerScore | 0.139 | 0.167 | ↓ -0.028 |
+| Core EPA Offense | 0.054 | -0.022 | 0.076 |
+| Core EPA Defense | 0.003 | 0.012 | -0.009 |
+| Success Rate Offense | 0.501 | 0.474 | 0.027 |
+| Success Rate Defense | 0.488 | 0.465 | 0.023 |
+| Explosive Play Rate (Off) | 0.119 | 0.104 | 0.015 |
+| Third Down Conversion | 0.392 | 0.299 | 0.093 |
+| Points per Drive Differential | 0.141 | -0.036 | 0.177 |
+| Yards per Play Differential | 1.112 | -0.065 | 1.177 |
+| Turnover Margin | 0.556 | -0.222 | 0.778 |
+| Red Zone TD Rate (Off) | 0.116 | 0.138 | -0.022 |
+| Pressure Rate (Def) | 0.072 | 0.067 | 0.004 |
+| Tempo | 8.667 | 9.250 | -0.583 |
+| PowerScore | 0.139 | 0.167 | -0.028 |
+| PowerScore | 0.139 | 0.167 | -0.028 |
+| Tempo | 8.667 | 9.250 | -0.583 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.028 (SF +0.139 vs SEA +0.167)
 **7 metrics version:**
 SEA edge: +0.037 (SF +0.110 vs SEA +0.147)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.037), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ SEA edge: +0.037 (SF +0.110 vs SEA +0.147)
 | Model Spread (SF - SEA) | -0.5 pts (favours SEA) |
 | Model Win% SF | 47.8% |
 | Model Win% SEA | 52.2% |
-| SOS Differential (SF-SEA) | +0.017 |
+| SOS Differential (SF-SEA) | +0.048 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.151 | 0.135 |
-| Last 5 games | 0.167 | 0.151 |
-| Last 3 games | 0.167 | 0.132 |
+| Season-to-date | 1.576 | 1.528 |
+| Last 5 games | 1.638 | 1.640 |
+| Last 3 games | 1.594 | 1.722 |
 
 ## Trend Summary (last 3 weeks)
 

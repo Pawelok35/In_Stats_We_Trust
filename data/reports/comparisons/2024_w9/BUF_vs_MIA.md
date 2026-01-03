@@ -4,19 +4,21 @@
 
 | Metric | BUF | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.215 | 0.210 | ↑ +0.005 |
-| Core EPA Defense | 0.210 | 0.215 | ↓ -0.005 |
-| Success Rate Offense | 58.8% | 57.0% | ↑ +1.8 pp |
-| Success Rate Defense | 57.0% | 58.8% | ↓ -1.8 pp |
-| Explosive Play Rate (Off) | 7.5% | 13.9% | ↓ -6.4 pp |
-| Third Down Conversion | 38.5% | 44.4% | ↓ -6.0 pp |
-| Points per Drive Differential | 0.750 | -0.750 | ↑ +1.500 |
-| Yards per Play Differential | -0.634 | 0.634 | ↓ -1.268 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 10.5% | 20.0% | ↓ -9.5 pp |
-| Pressure Rate (Def) | 3.3% | 2.4% | ↑ +0.9 pp |
-| Tempo | 10.000 | 8.778 | ↑ +1.222 |
-| PowerScore | 0.279 | 0.287 | ↓ -0.008 |
+| Core EPA Offense | 0.119 | -0.136 | 0.254 |
+| Core EPA Defense | -0.031 | -0.008 | -0.023 |
+| Success Rate Offense | 0.479 | 0.425 | 0.054 |
+| Success Rate Defense | 0.459 | 0.427 | 0.032 |
+| Explosive Play Rate (Off) | 0.109 | 0.108 | 0.001 |
+| Third Down Conversion | 0.328 | 0.338 | -0.010 |
+| Points per Drive Differential | 0.988 | -0.569 | 1.557 |
+| Yards per Play Differential | 0.182 | -0.095 | 0.278 |
+| Turnover Margin | 1.125 | -0.429 | 1.554 |
+| Red Zone TD Rate (Off) | 0.167 | 0.098 | 0.070 |
+| Pressure Rate (Def) | 0.070 | 0.049 | 0.021 |
+| Tempo | 10.000 | 8.778 | 1.222 |
+| PowerScore | 0.279 | 0.287 | -0.008 |
+| PowerScore | 0.279 | 0.287 | -0.008 |
+| Tempo | 10.000 | 8.778 | 1.222 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIA edge: +0.008 (BUF +0.279 vs MIA +0.287)
 **7 metrics version:**
 MIA edge: +0.012 (BUF +0.205 vs MIA +0.217)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.012), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIA edge: +0.012 (BUF +0.205 vs MIA +0.217)
 | Model Spread (BUF - MIA) | -0.1 pts (favours MIA) |
 | Model Win% BUF | 49.4% |
 | Model Win% MIA | 50.6% |
-| SOS Differential (BUF-MIA) | +0.049 |
+| SOS Differential (BUF-MIA) | +0.242 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.149 | 0.100 |
-| Last 5 games | 0.153 | 0.095 |
-| Last 3 games | 0.144 | 0.118 |
+| Season-to-date | 1.678 | 1.436 |
+| Last 5 games | 1.594 | 1.490 |
+| Last 3 games | 1.725 | 1.574 |
 
 ## Trend Summary (last 3 weeks)
 

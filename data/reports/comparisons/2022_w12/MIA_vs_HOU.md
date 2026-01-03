@@ -4,19 +4,21 @@
 
 | Metric | MIA | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.091 | -0.312 | ↑ +0.221 |
-| Core EPA Defense | -0.312 | -0.091 | ↓ -0.221 |
-| Success Rate Offense | 36.8% | 31.2% | ↑ +5.7 pp |
-| Success Rate Defense | 31.2% | 36.8% | ↓ -5.7 pp |
-| Explosive Play Rate (Off) | 8.4% | 3.9% | ↑ +4.5 pp |
-| Third Down Conversion | 25.0% | 14.3% | ↑ +10.7 pp |
-| Points per Drive Differential | 0.560 | -0.560 | ↑ +1.121 |
-| Yards per Play Differential | 0.841 | -0.841 | ↑ +1.682 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 10.5% | 11.1% | ↓ -0.6 pp |
-| Pressure Rate (Def) | 11.1% | 10.2% | ↑ +0.9 pp |
-| Tempo | 6.786 | 5.923 | ↑ +0.863 |
-| PowerScore | 0.015 | -0.042 | ↑ +0.056 |
+| Core EPA Offense | 0.077 | -0.091 | 0.168 |
+| Core EPA Defense | 0.044 | 0.020 | 0.024 |
+| Success Rate Offense | 0.457 | 0.390 | 0.067 |
+| Success Rate Defense | 0.439 | 0.443 | -0.004 |
+| Explosive Play Rate (Off) | 0.131 | 0.095 | 0.036 |
+| Third Down Conversion | 0.403 | 0.261 | 0.142 |
+| Points per Drive Differential | 0.157 | -0.501 | 0.659 |
+| Yards per Play Differential | 0.612 | -0.773 | 1.384 |
+| Turnover Margin | -0.200 | -0.400 | 0.200 |
+| Red Zone TD Rate (Off) | 0.176 | 0.162 | 0.014 |
+| Pressure Rate (Def) | 0.052 | 0.087 | -0.035 |
+| Tempo | 6.786 | 5.923 | 0.863 |
+| PowerScore | 1.355 | 1.135 | 0.220 |
+| PowerScore | 1.355 | 1.135 | 0.220 |
+| Tempo | 6.786 | 5.923 | 0.863 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIA edge: +0.056 (MIA +0.015 vs HOU -0.042)
 **7 metrics version:**
 MIA edge: +0.424 (MIA +0.200 vs HOU -0.224)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.424), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - HOU) | +1.0 pts (favours MIA) |
-| Model Win% MIA | 54.3% |
-| Model Win% HOU | 45.7% |
-| SOS Differential (MIA-HOU) | +0.032 |
+| Model Spread (MIA - HOU) | +4.1 pts (favours MIA) |
+| Model Win% MIA | 66.3% |
+| Model Win% HOU | 33.7% |
+| SOS Differential (MIA-HOU) | +0.083 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.160 | 0.128 |
-| Last 5 games | 0.142 | 0.149 |
-| Last 3 games | 0.205 | 0.139 |
+| Season-to-date | 1.731 | 1.647 |
+| Last 5 games | 1.733 | 1.656 |
+| Last 3 games | 2.039 | 1.654 |
 
 ## Trend Summary (last 3 weeks)
 

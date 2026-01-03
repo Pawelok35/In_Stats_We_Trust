@@ -4,19 +4,21 @@
 
 | Metric | WAS | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.197 | -0.250 | ↑ +0.053 |
-| Core EPA Defense | -0.250 | -0.197 | ↓ -0.053 |
-| Success Rate Offense | 36.7% | 32.9% | ↑ +3.8 pp |
-| Success Rate Defense | 32.9% | 36.7% | ↓ -3.8 pp |
-| Explosive Play Rate (Off) | 5.6% | 5.3% | ↑ +0.3 pp |
-| Third Down Conversion | 28.6% | 26.7% | ↑ +1.9 pp |
-| Points per Drive Differential | 0.595 | -0.595 | ↑ +1.190 |
-| Yards per Play Differential | -0.008 | 0.008 | ↓ -0.015 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 0.0% | ↑ +14.3 pp |
-| Pressure Rate (Def) | 9.1% | 16.2% | ↓ -7.1 pp |
-| Tempo | 6.429 | 6.333 | ↑ +0.095 |
-| PowerScore | -0.016 | -0.034 | ↑ +0.018 |
+| Core EPA Offense | -0.197 | -0.250 | 0.053 |
+| Core EPA Defense | -0.250 | -0.197 | -0.053 |
+| Success Rate Offense | 0.367 | 0.329 | 0.038 |
+| Success Rate Defense | 0.329 | 0.367 | -0.038 |
+| Explosive Play Rate (Off) | 0.056 | 0.053 | 0.003 |
+| Third Down Conversion | 0.286 | 0.267 | 0.019 |
+| Points per Drive Differential | 0.595 | -0.595 | 1.190 |
+| Yards per Play Differential | -0.008 | 0.008 | -0.015 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.143 | 0.000 | 0.143 |
+| Pressure Rate (Def) | 0.091 | 0.162 | -0.071 |
+| Tempo | 6.429 | 6.333 | 0.095 |
+| PowerScore | 1.258 | 1.222 | 0.036 |
+| PowerScore | 1.258 | 1.222 | 0.036 |
+| Tempo | 6.429 | 6.333 | 0.095 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ WAS edge: +0.018 (WAS -0.016 vs ARI -0.034)
 **7 metrics version:**
 ARI edge: +0.184 (WAS -0.115 vs ARI +0.069)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.184), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - ARI) | +0.3 pts (favours WAS) |
-| Model Win% WAS | 51.4% |
-| Model Win% ARI | 48.6% |
+| Model Spread (WAS - ARI) | +0.7 pts (favours WAS) |
+| Model Win% WAS | 52.8% |
+| Model Win% ARI | 47.2% |
 | SOS Differential (WAS-ARI) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 4
 
-_Generated at 2025-11-10T17:49:05.059365+00:00 (UTC)_
+_Generated at 2025-12-28T14:20:47.292034+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\4_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2748, "cols": 18, "timestamp": "2025-11-10T17:49:04.449400+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2748, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:49:04.449400+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2748, "cols": 24, "timestamp": "2025-11-10T17:49:04.449400+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2748, "cols": 18, "timestamp": "2025-12-28T14:20:46.890923+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2748, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:20:46.890923+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2748, "cols": 24, "timestamp": "2025-12-28T14:20:46.890923+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\4_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\4.parquet`
 - Manifest: `data\l4_core12\2024\4_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\4_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DET | 0.2979523130106586 |
-| WAS | 0.292124845545998 |
-| SEA | 0.2524817422875599 |
-| CIN | 0.22170229127306657 |
-| TB | 0.21438021876669505 |
-| BAL | 0.20963039548495113 |
-| ARI | 0.20525474691084927 |
-| HOU | 0.20423192228595322 |
-| CAR | 0.2019495539809502 |
-| JAX | 0.19614637396219264 |
+| SEA | 2.169898904564535 |
+| WAS | 2.1373629407840937 |
+| NO | 2.00099940318674 |
+| HOU | 1.997858295912327 |
+| NYG | 1.9779059768786715 |
+| TB | 1.9121792618288962 |
+| CIN | 1.8624251828393317 |
+| ARI | 1.802819434886496 |
+| CAR | 1.7860404630718594 |
+| DAL | 1.7699932755582892 |
 
 
 ## Visualizations

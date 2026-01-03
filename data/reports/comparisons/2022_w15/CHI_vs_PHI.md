@@ -4,19 +4,21 @@
 
 | Metric | CHI | PHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.131 | -0.042 | ↓ -0.089 |
-| Core EPA Defense | -0.042 | -0.131 | ↑ +0.089 |
-| Success Rate Offense | 44.9% | 41.9% | ↑ +3.0 pp |
-| Success Rate Defense | 41.9% | 44.9% | ↓ -3.0 pp |
-| Explosive Play Rate (Off) | 9.0% | 10.5% | ↓ -1.5 pp |
-| Third Down Conversion | 33.3% | 56.2% | ↓ -22.9 pp |
-| Points per Drive Differential | -0.417 | 0.417 | ↓ -0.833 |
-| Yards per Play Differential | -1.739 | 1.739 | ↓ -3.478 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 20.0% | 12.5% | ↑ +7.5 pp |
-| Pressure Rate (Def) | 2.5% | 20.7% | ↓ -18.2 pp |
-| Tempo | 6.500 | 7.167 | ↓ -0.667 |
-| PowerScore | 0.076 | 0.085 | ↓ -0.009 |
+| Core EPA Offense | -0.003 | 0.085 | -0.088 |
+| Core EPA Defense | 0.064 | -0.064 | 0.128 |
+| Success Rate Offense | 0.408 | 0.478 | -0.070 |
+| Success Rate Defense | 0.460 | 0.419 | 0.041 |
+| Explosive Play Rate (Off) | 0.122 | 0.128 | -0.006 |
+| Third Down Conversion | 0.412 | 0.428 | -0.016 |
+| Points per Drive Differential | -0.318 | 0.948 | -1.267 |
+| Yards per Play Differential | -0.231 | 0.833 | -1.064 |
+| Turnover Margin | -0.231 | 1.077 | -1.308 |
+| Red Zone TD Rate (Off) | 0.146 | 0.165 | -0.018 |
+| Pressure Rate (Def) | 0.043 | 0.102 | -0.059 |
+| Tempo | 6.500 | 7.167 | -0.667 |
+| PowerScore | 1.358 | 1.497 | -0.139 |
+| PowerScore | 1.358 | 1.497 | -0.139 |
+| Tempo | 6.500 | 7.167 | -0.667 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PHI edge: +0.009 (CHI +0.076 vs PHI +0.085)
 **7 metrics version:**
 CHI edge: +0.388 (CHI +0.258 vs PHI -0.130)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.388), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - PHI) | -0.2 pts (favours PHI) |
-| Model Win% CHI | 49.3% |
-| Model Win% PHI | 50.7% |
-| SOS Differential (CHI-PHI) | +0.041 |
+| Model Spread (CHI - PHI) | -2.6 pts (favours PHI) |
+| Model Win% CHI | 39.4% |
+| Model Win% PHI | 60.6% |
+| SOS Differential (CHI-PHI) | -0.007 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | PHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.160 | 0.119 |
-| Last 5 games | 0.192 | 0.125 |
-| Last 3 games | 0.181 | 0.156 |
+| Season-to-date | 1.639 | 1.646 |
+| Last 5 games | 1.646 | 1.597 |
+| Last 3 games | 1.677 | 1.469 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 12 | GB (H) | 40-33 | PHI | 0.920 | 0.167 | 52.5% | 0.636 |
 | 2 | MIN (H) | 24-7 | PHI | 0.903 | 0.047 | 46.6% | 1.700 |
-| 14 | NYG (H) | 48-24 | PHI | 0.898 | 0.335 | 54.1% | 2.000 |
+| 14 | NYG (A) | 48-24 | PHI | 0.898 | 0.335 | 54.1% | 2.000 |
 
 ## Core EPA Offense Form (up to Week 14)
 

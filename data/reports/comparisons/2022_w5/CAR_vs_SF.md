@@ -4,19 +4,21 @@
 
 | Metric | CAR | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.155 | 0.154 | ↓ -0.309 |
-| Core EPA Defense | 0.154 | -0.155 | ↑ +0.309 |
-| Success Rate Offense | 40.0% | 41.9% | ↓ -1.9 pp |
-| Success Rate Defense | 41.9% | 40.0% | ↑ +1.9 pp |
-| Explosive Play Rate (Off) | 7.1% | 15.1% | ↓ -8.1 pp |
-| Third Down Conversion | 17.6% | 58.3% | ↓ -40.7 pp |
-| Points per Drive Differential | -1.220 | 1.220 | ↓ -2.439 |
-| Yards per Play Differential | -0.993 | 0.993 | ↓ -1.985 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 14.3% | 23.5% | ↓ -9.2 pp |
-| Pressure Rate (Def) | 5.9% | 12.5% | ↓ -6.6 pp |
-| Tempo | 7.727 | 7.167 | ↑ +0.561 |
-| PowerScore | 0.091 | 0.158 | ↓ -0.067 |
+| Core EPA Offense | -0.117 | -0.085 | -0.032 |
+| Core EPA Defense | -0.059 | -0.175 | 0.116 |
+| Success Rate Offense | 0.408 | 0.408 | -0.000 |
+| Success Rate Defense | 0.413 | 0.352 | 0.061 |
+| Explosive Play Rate (Off) | 0.082 | 0.102 | -0.020 |
+| Third Down Conversion | 0.228 | 0.314 | -0.086 |
+| Points per Drive Differential | -0.440 | 0.838 | -1.278 |
+| Yards per Play Differential | -0.192 | 1.343 | -1.535 |
+| Turnover Margin | -0.500 | -0.250 | -0.250 |
+| Red Zone TD Rate (Off) | 0.121 | 0.099 | 0.022 |
+| Pressure Rate (Def) | 0.046 | 0.094 | -0.048 |
+| Tempo | 7.727 | 7.167 | 0.561 |
+| PowerScore | 1.622 | 1.561 | 0.061 |
+| PowerScore | 1.622 | 1.561 | 0.061 |
+| Tempo | 7.727 | 7.167 | 0.561 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SF edge: +0.067 (CAR +0.091 vs SF +0.158)
 **7 metrics version:**
 SF edge: +0.042 (CAR +0.079 vs SF +0.122)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.042), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - SF) | -1.2 pts (favours SF) |
-| Model Win% CAR | 44.8% |
-| Model Win% SF | 55.2% |
-| SOS Differential (CAR-SF) | +0.055 |
+| Model Spread (CAR - SF) | +1.1 pts (favours CAR) |
+| Model Win% CAR | 54.7% |
+| Model Win% SF | 45.3% |
+| SOS Differential (CAR-SF) | +0.140 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.077 | 0.023 |
-| Last 5 games | 0.077 | 0.023 |
-| Last 3 games | 0.048 | 0.024 |
+| Season-to-date | 1.601 | 1.461 |
+| Last 5 games | 1.601 | 1.461 |
+| Last 3 games | 1.493 | 1.487 |
 
 ## Trend Summary (last 3 weeks)
 

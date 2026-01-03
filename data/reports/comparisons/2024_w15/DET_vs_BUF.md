@@ -4,19 +4,21 @@
 
 | Metric | DET | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.183 | 0.361 | ↓ -0.178 |
-| Core EPA Defense | 0.361 | 0.183 | ↑ +0.178 |
-| Success Rate Offense | 54.5% | 59.3% | ↓ -4.8 pp |
-| Success Rate Defense | 59.3% | 54.5% | ↑ +4.8 pp |
-| Explosive Play Rate (Off) | 12.1% | 16.5% | ↓ -4.4 pp |
-| Third Down Conversion | 46.2% | 38.5% | ↑ +7.7 pp |
-| Points per Drive Differential | -0.182 | 0.182 | ↓ -0.364 |
-| Yards per Play Differential | -0.880 | 0.880 | ↓ -1.760 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 22.7% | 17.9% | ↑ +4.9 pp |
-| Pressure Rate (Def) | 0.0% | 4.8% | ↓ -4.8 pp |
-| Tempo | 9.000 | 7.583 | ↑ +1.417 |
-| PowerScore | 0.297 | 0.344 | ↓ -0.047 |
+| Core EPA Offense | 0.120 | 0.136 | -0.016 |
+| Core EPA Defense | -0.079 | -0.012 | -0.067 |
+| Success Rate Offense | 0.522 | 0.493 | 0.029 |
+| Success Rate Defense | 0.446 | 0.474 | -0.028 |
+| Explosive Play Rate (Off) | 0.123 | 0.110 | 0.013 |
+| Third Down Conversion | 0.430 | 0.374 | 0.056 |
+| Points per Drive Differential | 1.214 | 1.041 | 0.172 |
+| Yards per Play Differential | 0.825 | 0.271 | 0.554 |
+| Turnover Margin | 0.615 | 1.154 | -0.538 |
+| Red Zone TD Rate (Off) | 0.175 | 0.173 | 0.002 |
+| Pressure Rate (Def) | 0.065 | 0.068 | -0.002 |
+| Tempo | 9.000 | 7.583 | 1.417 |
+| PowerScore | 0.297 | 0.344 | -0.047 |
+| PowerScore | 0.297 | 0.344 | -0.047 |
+| Tempo | 9.000 | 7.583 | 1.417 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BUF edge: +0.047 (DET +0.297 vs BUF +0.344)
 **7 metrics version:**
 BUF edge: +0.220 (DET +0.135 vs BUF +0.355)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.220), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ BUF edge: +0.220 (DET +0.135 vs BUF +0.355)
 | Model Spread (DET - BUF) | -0.9 pts (favours BUF) |
 | Model Win% DET | 46.4% |
 | Model Win% BUF | 53.6% |
-| SOS Differential (DET-BUF) | -0.034 |
+| SOS Differential (DET-BUF) | -0.109 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.129 | 0.163 |
-| Last 5 games | 0.124 | 0.186 |
-| Last 3 games | 0.140 | 0.186 |
+| Season-to-date | 1.599 | 1.708 |
+| Last 5 games | 1.528 | 1.756 |
+| Last 3 games | 1.579 | 1.749 |
 
 ## Trend Summary (last 3 weeks)
 

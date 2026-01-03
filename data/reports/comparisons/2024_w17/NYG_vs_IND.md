@@ -4,19 +4,21 @@
 
 | Metric | NYG | IND | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.255 | 0.075 | ↑ +0.180 |
-| Core EPA Defense | 0.075 | 0.255 | ↓ -0.180 |
-| Success Rate Offense | 46.8% | 54.3% | ↓ -7.5 pp |
-| Success Rate Defense | 54.3% | 46.8% | ↑ +7.5 pp |
-| Explosive Play Rate (Off) | 13.0% | 8.5% | ↑ +4.5 pp |
-| Third Down Conversion | 46.7% | 53.8% | ↓ -7.2 pp |
-| Points per Drive Differential | 0.712 | -0.712 | ↑ +1.423 |
-| Yards per Play Differential | 0.307 | -0.307 | ↑ +0.615 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 11.8% | 12.5% | ↓ -0.7 pp |
-| Pressure Rate (Def) | 4.9% | 0.0% | ↑ +4.9 pp |
-| Tempo | 5.923 | 7.833 | ↓ -1.910 |
-| PowerScore | 0.247 | 0.230 | ↑ +0.017 |
+| Core EPA Offense | -0.101 | -0.053 | -0.048 |
+| Core EPA Defense | 0.046 | -0.008 | 0.054 |
+| Success Rate Offense | 0.442 | 0.440 | 0.002 |
+| Success Rate Defense | 0.480 | 0.466 | 0.014 |
+| Explosive Play Rate (Off) | 0.085 | 0.110 | -0.025 |
+| Third Down Conversion | 0.312 | 0.343 | -0.032 |
+| Points per Drive Differential | -0.745 | -0.150 | -0.594 |
+| Yards per Play Differential | -0.898 | -0.144 | -0.754 |
+| Turnover Margin | -0.667 | -0.133 | -0.533 |
+| Red Zone TD Rate (Off) | 0.129 | 0.102 | 0.027 |
+| Pressure Rate (Def) | 0.081 | 0.059 | 0.021 |
+| Tempo | 5.923 | 7.833 | -1.910 |
+| PowerScore | 0.247 | 0.230 | 0.017 |
+| PowerScore | 0.247 | 0.230 | 0.017 |
+| Tempo | 5.923 | 7.833 | -1.910 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NYG edge: +0.017 (NYG +0.247 vs IND +0.230)
 **7 metrics version:**
 NYG edge: +0.606 (NYG +0.479 vs IND -0.128)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.606), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ NYG edge: +0.606 (NYG +0.479 vs IND -0.128)
 | Model Spread (NYG - IND) | +0.3 pts (favours NYG) |
 | Model Win% NYG | 51.3% |
 | Model Win% IND | 48.7% |
-| SOS Differential (NYG-IND) | +0.014 |
+| SOS Differential (NYG-IND) | +0.007 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.138 | 0.124 |
-| Last 5 games | 0.135 | 0.131 |
-| Last 3 games | 0.137 | 0.120 |
+| Season-to-date | 1.582 | 1.575 |
+| Last 5 games | 1.659 | 1.494 |
+| Last 3 games | 1.607 | 1.412 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 10 | HOU (H) | 17-19 | HOU | 0.806 | -0.064 | 55.9% | -0.121 |
-| 8 | SEA (A) | 24-18 | NYG | 0.793 | -0.027 | 43.5% | 0.515 |
-| 4 | CHI (H) | 15-20 | CHI | 0.735 | 0.018 | 42.2% | -0.556 |
+| 14 | NO (H) | 11-13 | NO | 0.910 | -0.184 | 33.7% | -0.154 |
+| 3 | CLE (A) | 21-16 | NYG | 0.877 | -0.144 | 42.9% | 0.329 |
+| 5 | SEA (A) | 23-22 | NYG | 0.793 | -0.008 | 49.4% | 0.103 |
 
 **IND analogs vs NYG profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 13 | DAL (A) | 25-22 | IND | 0.971 | 0.118 | 56.8% | 0.378 |
-| 4 | TEN (H) | 27-24 | IND | 0.946 | 0.024 | 45.2% | 0.273 |
-| 7 | TEN (A) | 16-11 | IND | 0.946 | -0.154 | 38.3% | 0.397 |
+| 6 | TEN (A) | 20-15 | IND | 0.946 | 0.024 | 42.9% | 0.455 |
+| 16 | TEN (H) | 38-30 | IND | 0.946 | 0.135 | 51.2% | 0.615 |
+| 3 | CHI (H) | 21-17 | IND | 0.930 | -0.122 | 39.7% | 0.282 |
 
 ## Core EPA Offense Form (up to Week 16)
 

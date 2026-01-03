@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 17
 
-_Generated at 2025-11-10T20:40:04.786704+00:00 (UTC)_
+_Generated at 2026-01-02T11:07:49.476434+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\17_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2692, "cols": 18, "timestamp": "2025-11-10T20:40:04.312500+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2692, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:40:04.312500+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2692, "cols": 24, "timestamp": "2025-11-10T20:40:04.312500+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2692, "cols": 18, "timestamp": "2026-01-02T11:07:48.892488+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2692, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:07:48.892488+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2692, "cols": 24, "timestamp": "2026-01-02T11:07:48.892488+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\17_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\17.parquet`
 - Manifest: `data\l4_core12\2023\17_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\17_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| ARI | 0.30450373627174077 |
-| PHI | 0.2809320701427544 |
-| BAL | 0.27863363148856224 |
-| PIT | 0.24159761124170911 |
-| SF | 0.21758351937072845 |
-| SEA | 0.2159730043256309 |
-| IND | 0.19418053802969318 |
-| GB | 0.1854723062988964 |
-| MIA | 0.17385065017680806 |
-| LV | 0.16606679820036357 |
+| ARI | 2.5047846351481455 |
+| LV | 2.309251219735301 |
+| SF | 1.9854847539386298 |
+| PIT | 1.95631025491987 |
+| PHI | 1.9066896459003302 |
+| GB | 1.9001849499770573 |
+| CIN | 1.8930279071879734 |
+| HOU | 1.7178087789383352 |
+| SEA | 1.71742227968795 |
+| DEN | 1.6651496203757568 |
 
 
 ## Visualizations

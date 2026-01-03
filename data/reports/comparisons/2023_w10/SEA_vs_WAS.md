@@ -4,19 +4,21 @@
 
 | Metric | SEA | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.098 | 0.107 | ↓ -0.009 |
-| Core EPA Defense | 0.107 | 0.098 | ↑ +0.009 |
-| Success Rate Offense | 45.2% | 43.8% | ↑ +1.4 pp |
-| Success Rate Defense | 43.8% | 45.2% | ↓ -1.4 pp |
-| Explosive Play Rate (Off) | 14.4% | 11.2% | ↑ +3.2 pp |
-| Third Down Conversion | 28.6% | 43.8% | ↓ -15.2 pp |
-| Points per Drive Differential | -0.133 | 0.133 | ↓ -0.266 |
-| Yards per Play Differential | 0.252 | -0.252 | ↑ +0.504 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 10.0% | 25.0% | ↓ -15.0 pp |
-| Pressure Rate (Def) | 6.4% | 2.1% | ↑ +4.3 pp |
-| Tempo | 8.000 | 7.273 | ↑ +0.727 |
-| PowerScore | 0.197 | 0.189 | ↑ +0.009 |
+| Core EPA Offense | -0.042 | -0.053 | 0.011 |
+| Core EPA Defense | -0.031 | 0.050 | -0.081 |
+| Success Rate Offense | 0.447 | 0.409 | 0.039 |
+| Success Rate Defense | 0.423 | 0.415 | 0.007 |
+| Explosive Play Rate (Off) | 0.101 | 0.102 | -0.002 |
+| Third Down Conversion | 0.292 | 0.310 | -0.019 |
+| Points per Drive Differential | -0.188 | -0.392 | 0.204 |
+| Yards per Play Differential | -0.016 | -0.585 | 0.569 |
+| Turnover Margin | 0.500 | -0.333 | 0.833 |
+| Red Zone TD Rate (Off) | 0.106 | 0.148 | -0.042 |
+| Pressure Rate (Def) | 0.080 | 0.073 | 0.008 |
+| Tempo | 8.000 | 7.273 | 0.727 |
+| PowerScore | 0.197 | 0.189 | 0.009 |
+| PowerScore | 0.197 | 0.189 | 0.009 |
+| Tempo | 8.000 | 7.273 | 0.727 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.009 (SEA +0.197 vs WAS +0.189)
 **7 metrics version:**
 SEA edge: +0.194 (SEA +0.244 vs WAS +0.050)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.194), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ SEA edge: +0.194 (SEA +0.244 vs WAS +0.050)
 | Model Spread (SEA - WAS) | +0.2 pts (favours SEA) |
 | Model Win% SEA | 50.7% |
 | Model Win% WAS | 49.3% |
-| SOS Differential (SEA-WAS) | -0.028 |
+| SOS Differential (SEA-WAS) | +0.097 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.103 | 0.131 |
-| Last 5 games | 0.066 | 0.135 |
-| Last 3 games | 0.101 | 0.138 |
+| Season-to-date | 1.639 | 1.542 |
+| Last 5 games | 1.472 | 1.543 |
+| Last 3 games | 1.564 | 1.396 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,7 +249,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | LA (H) | 13-30 | LA | 0.894 | -0.059 | 50.0% | -1.889 |
-| 7 | ARI (-) | 20-8 | SEA | 0.816 | -0.005 | 45.8% | 1.167 |
+| 7 | ARI (H) | 20-8 | SEA | 0.816 | -0.005 | 45.8% | 1.167 |
 | 3 | CAR (H) | 37-29 | SEA | 0.806 | 0.163 | 52.7% | 0.596 |
 
 **WAS analogs vs SEA profile**

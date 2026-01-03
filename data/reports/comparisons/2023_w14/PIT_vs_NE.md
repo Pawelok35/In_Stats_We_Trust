@@ -4,19 +4,21 @@
 
 | Metric | PIT | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.173 | -0.138 | ↓ -0.035 |
-| Core EPA Defense | -0.138 | -0.173 | ↑ +0.035 |
-| Success Rate Offense | 40.7% | 32.4% | ↑ +8.3 pp |
-| Success Rate Defense | 32.4% | 40.7% | ↓ -8.3 pp |
-| Explosive Play Rate (Off) | 5.8% | 10.8% | ↓ -5.0 pp |
-| Third Down Conversion | 20.0% | 28.6% | ↓ -8.6 pp |
-| Points per Drive Differential | -0.330 | 0.330 | ↓ -0.659 |
-| Yards per Play Differential | -1.002 | 1.002 | ↓ -2.003 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 10.0% | 28.6% | ↓ -18.6 pp |
-| Pressure Rate (Def) | 6.7% | 5.0% | ↑ +1.7 pp |
-| Tempo | 6.143 | 5.692 | ↑ +0.451 |
-| PowerScore | 0.025 | 0.020 | ↑ +0.005 |
+| Core EPA Offense | -0.091 | -0.170 | 0.079 |
+| Core EPA Defense | -0.037 | -0.032 | -0.005 |
+| Success Rate Offense | 0.389 | 0.382 | 0.006 |
+| Success Rate Defense | 0.414 | 0.410 | 0.004 |
+| Explosive Play Rate (Off) | 0.086 | 0.071 | 0.014 |
+| Third Down Conversion | 0.323 | 0.305 | 0.019 |
+| Points per Drive Differential | -0.415 | -0.545 | 0.130 |
+| Yards per Play Differential | -0.341 | -0.102 | -0.239 |
+| Turnover Margin | 1.000 | -0.750 | 1.750 |
+| Red Zone TD Rate (Off) | 0.100 | 0.109 | -0.009 |
+| Pressure Rate (Def) | 0.073 | 0.053 | 0.021 |
+| Tempo | 6.143 | 5.692 | 0.451 |
+| PowerScore | 0.025 | 0.020 | 0.005 |
+| PowerScore | 0.025 | 0.020 | 0.005 |
+| Tempo | 6.143 | 5.692 | 0.451 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PIT edge: +0.005 (PIT +0.025 vs NE +0.020)
 **7 metrics version:**
 NE edge: +0.011 (PIT +0.013 vs NE +0.024)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.011), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ NE edge: +0.011 (PIT +0.013 vs NE +0.024)
 | Model Spread (PIT - NE) | +0.1 pts (favours PIT) |
 | Model Win% PIT | 50.4% |
 | Model Win% NE | 49.6% |
-| SOS Differential (PIT-NE) | +0.020 |
+| SOS Differential (PIT-NE) | +0.099 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.093 | 0.073 |
-| Last 5 games | 0.109 | 0.072 |
-| Last 3 games | 0.068 | 0.035 |
+| Season-to-date | 1.613 | 1.513 |
+| Last 5 games | 1.645 | 1.494 |
+| Last 3 games | 1.487 | 1.333 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | NYJ (A) | 13-10 | NE | 0.965 | -0.121 | 31.5% | 0.231 |
 | 6 | LV (A) | 17-19 | LV | 0.924 | -0.029 | 45.3% | -0.222 |
-| 12 | NYG (A) | 7-10 | NYG | 0.903 | -0.189 | 39.5% | -0.250 |
+| 12 | NYG (H) | 7-10 | NYG | 0.903 | -0.189 | 39.5% | -0.250 |
 
 ## Core EPA Offense Form (up to Week 13)
 

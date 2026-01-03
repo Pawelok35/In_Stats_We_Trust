@@ -4,19 +4,21 @@
 
 | Metric | WAS | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.135 | 0.166 | ↓ -0.301 |
-| Core EPA Defense | 0.166 | -0.135 | ↑ +0.301 |
-| Success Rate Offense | 42.6% | 61.7% | ↓ -19.1 pp |
-| Success Rate Defense | 61.7% | 42.6% | ↑ +19.1 pp |
-| Explosive Play Rate (Off) | 9.8% | 16.0% | ↓ -6.2 pp |
-| Third Down Conversion | 30.0% | 44.4% | ↓ -14.4 pp |
-| Points per Drive Differential | -1.889 | 1.889 | ↓ -3.778 |
-| Yards per Play Differential | -1.349 | 1.349 | ↓ -2.697 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 8.3% | 10.3% | ↓ -2.0 pp |
-| Pressure Rate (Def) | 3.2% | 3.4% | ↓ -0.2 pp |
-| Tempo | 6.778 | 9.000 | ↓ -2.222 |
-| PowerScore | 0.112 | 0.218 | ↓ -0.105 |
+| Core EPA Offense | -0.079 | 0.128 | -0.207 |
+| Core EPA Defense | 0.070 | -0.058 | 0.129 |
+| Success Rate Offense | 0.397 | 0.484 | -0.087 |
+| Success Rate Defense | 0.432 | 0.415 | 0.017 |
+| Explosive Play Rate (Off) | 0.103 | 0.143 | -0.040 |
+| Third Down Conversion | 0.327 | 0.438 | -0.110 |
+| Points per Drive Differential | -0.670 | 1.033 | -1.703 |
+| Yards per Play Differential | -0.730 | 1.378 | -2.108 |
+| Turnover Margin | -0.667 | 0.400 | -1.067 |
+| Red Zone TD Rate (Off) | 0.174 | 0.171 | 0.003 |
+| Pressure Rate (Def) | 0.068 | 0.080 | -0.013 |
+| Tempo | 6.778 | 9.000 | -2.222 |
+| PowerScore | 1.448 | 1.985 | -0.537 |
+| PowerScore | 1.448 | 1.985 | -0.537 |
+| Tempo | 6.778 | 9.000 | -2.222 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SF edge: +0.105 (WAS +0.112 vs SF +0.218)
 **7 metrics version:**
 SF edge: +0.452 (WAS -0.115 vs SF +0.337)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.452), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - SF) | -1.9 pts (favours SF) |
-| Model Win% WAS | 42.0% |
-| Model Win% SF | 58.0% |
-| SOS Differential (WAS-SF) | +0.013 |
+| Model Spread (WAS - SF) | -9.9 pts (favours SF) |
+| Model Win% WAS | 16.0% |
+| Model Win% SF | 84.0% |
+| SOS Differential (WAS-SF) | -0.154 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | WAS | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.139 | 0.126 |
-| Last 5 games | 0.143 | 0.161 |
-| Last 3 games | 0.130 | 0.164 |
+| Season-to-date | 1.540 | 1.695 |
+| Last 5 games | 1.491 | 1.703 |
+| Last 3 games | 1.556 | 1.643 |
 
 ## Trend Summary (last 3 weeks)
 

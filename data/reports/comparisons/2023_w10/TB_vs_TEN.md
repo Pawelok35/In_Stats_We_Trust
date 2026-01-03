@@ -4,19 +4,21 @@
 
 | Metric | TB | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.020 | -0.206 | ↑ +0.186 |
-| Core EPA Defense | -0.206 | -0.020 | ↓ -0.186 |
-| Success Rate Offense | 34.2% | 35.9% | ↓ -1.7 pp |
-| Success Rate Defense | 35.9% | 34.2% | ↑ +1.7 pp |
-| Explosive Play Rate (Off) | 13.9% | 7.7% | ↑ +6.2 pp |
-| Third Down Conversion | 43.8% | 40.0% | ↑ +3.7 pp |
-| Points per Drive Differential | 1.273 | -1.273 | ↑ +2.545 |
-| Yards per Play Differential | 1.624 | -1.624 | ↑ +3.249 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 0.0% | ± 0.0 pp |
-| Pressure Rate (Def) | 9.3% | 9.1% | ↑ +0.2 pp |
-| Tempo | 7.182 | 7.091 | ↑ +0.091 |
-| PowerScore | 0.065 | 0.029 | ↑ +0.036 |
+| Core EPA Offense | -0.031 | -0.004 | -0.027 |
+| Core EPA Defense | -0.018 | 0.021 | -0.039 |
+| Success Rate Offense | 0.389 | 0.415 | -0.025 |
+| Success Rate Defense | 0.432 | 0.448 | -0.016 |
+| Explosive Play Rate (Off) | 0.090 | 0.087 | 0.003 |
+| Third Down Conversion | 0.336 | 0.263 | 0.073 |
+| Points per Drive Differential | -0.163 | -0.164 | 0.001 |
+| Yards per Play Differential | -0.807 | -0.372 | -0.434 |
+| Turnover Margin | 1.000 | -0.125 | 1.125 |
+| Red Zone TD Rate (Off) | 0.116 | 0.101 | 0.015 |
+| Pressure Rate (Def) | 0.072 | 0.073 | -0.001 |
+| Tempo | 7.182 | 7.091 | 0.091 |
+| PowerScore | 0.065 | 0.029 | 0.036 |
+| PowerScore | 0.065 | 0.029 | 0.036 |
+| Tempo | 7.182 | 7.091 | 0.091 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TB edge: +0.036 (TB +0.065 vs TEN +0.029)
 **7 metrics version:**
 TB edge: +0.013 (TB +0.028 vs TEN +0.015)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.013), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ TB edge: +0.013 (TB +0.028 vs TEN +0.015)
 | Model Spread (TB - TEN) | +0.7 pts (favours TB) |
 | Model Win% TB | 52.8% |
 | Model Win% TEN | 47.2% |
-| SOS Differential (TB-TEN) | -0.020 |
+| SOS Differential (TB-TEN) | -0.073 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | TEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.117 | 0.137 |
-| Last 5 games | 0.123 | 0.157 |
-| Last 3 games | 0.174 | 0.161 |
+| Season-to-date | 1.626 | 1.698 |
+| Last 5 games | 1.611 | 1.733 |
+| Last 3 games | 1.644 | 1.638 |
 
 ## Trend Summary (last 3 weeks)
 

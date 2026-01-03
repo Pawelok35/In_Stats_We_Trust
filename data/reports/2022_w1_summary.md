@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 1
 
-_Generated at 2025-11-11T12:23:04.542752+00:00 (UTC)_
+_Generated at 2026-01-02T11:27:32.309002+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\1_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2848, "cols": 18, "timestamp": "2025-11-11T12:23:03.868069+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2848, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:23:03.868069+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2848, "cols": 24, "timestamp": "2025-11-11T12:23:03.868069+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2848, "cols": 18, "timestamp": "2026-01-02T11:27:31.920557+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2848, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:27:31.920557+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2848, "cols": 24, "timestamp": "2026-01-02T11:27:31.920557+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\1_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\1.parquet`
 - Manifest: `data\l4_core12\2022\1_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\1_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| KC | 0.3140454267729523 |
-| PHI | 0.20634056964997657 |
-| ARI | 0.18742858514144836 |
-| DET | 0.18111049688574524 |
-| DEN | 0.17702402604556014 |
-| SEA | 0.1750721466095259 |
-| JAX | 0.16866181526429702 |
-| CLE | 0.16568292613614863 |
-| NO | 0.15891944213486767 |
-| NYG | 0.1514668817316478 |
+| DEN | 2.2001947577528775 |
+| PHI | 1.9616281392232604 |
+| KC | 1.9379008484596993 |
+| CLE | 1.9270929446890244 |
+| SEA | 1.8232064749677348 |
+| IND | 1.8030935518448188 |
+| DET | 1.774573213943968 |
+| MIA | 1.7434546547916205 |
+| JAX | 1.688234007777666 |
+| LA | 1.683342796671902 |
 
 
 ## Visualizations

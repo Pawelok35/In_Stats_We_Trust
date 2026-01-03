@@ -4,19 +4,21 @@
 
 | Metric | LA | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.232 | 0.136 | ↓ -0.368 |
-| Core EPA Defense | 0.136 | -0.232 | ↑ +0.368 |
-| Success Rate Offense | 39.0% | 51.4% | ↓ -12.4 pp |
-| Success Rate Defense | 51.4% | 39.0% | ↑ +12.4 pp |
-| Explosive Play Rate (Off) | 4.9% | 10.0% | ↓ -5.1 pp |
-| Third Down Conversion | 40.0% | 75.0% | ↓ -35.0 pp |
-| Points per Drive Differential | -2.100 | 2.100 | ↓ -4.200 |
-| Yards per Play Differential | -2.937 | 2.937 | ↓ -5.873 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 20.0% | ↓ -5.7 pp |
-| Pressure Rate (Def) | 5.9% | 14.6% | ↓ -8.7 pp |
-| Tempo | 8.200 | 7.000 | ↑ +1.200 |
-| PowerScore | 0.053 | 0.150 | ↓ -0.096 |
+| Core EPA Offense | -0.232 | 0.136 | -0.368 |
+| Core EPA Defense | 0.136 | -0.232 | 0.368 |
+| Success Rate Offense | 0.390 | 0.514 | -0.124 |
+| Success Rate Defense | 0.514 | 0.390 | 0.124 |
+| Explosive Play Rate (Off) | 0.049 | 0.100 | -0.051 |
+| Third Down Conversion | 0.400 | 0.750 | -0.350 |
+| Points per Drive Differential | -2.100 | 2.100 | -4.200 |
+| Yards per Play Differential | -2.937 | 2.937 | -5.873 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.143 | 0.200 | -0.057 |
+| Pressure Rate (Def) | 0.059 | 0.146 | -0.087 |
+| Tempo | 8.200 | 7.000 | 1.200 |
+| PowerScore | 1.683 | 1.530 | 0.154 |
+| PowerScore | 1.683 | 1.530 | 0.154 |
+| Tempo | 8.200 | 7.000 | 1.200 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ BUF edge: +0.096 (LA +0.053 vs BUF +0.150)
 **7 metrics version:**
 LA edge: +0.143 (LA +0.153 vs BUF +0.009)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.143), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - BUF) | -1.8 pts (favours BUF) |
-| Model Win% LA | 42.6% |
-| Model Win% BUF | 57.4% |
+| Model Spread (LA - BUF) | +2.8 pts (favours LA) |
+| Model Win% LA | 61.6% |
+| Model Win% BUF | 38.4% |
 | SOS Differential (LA-BUF) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

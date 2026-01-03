@@ -4,19 +4,21 @@
 
 | Metric | PHI | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.047 | -0.187 | ↑ +0.234 |
-| Core EPA Defense | -0.187 | 0.047 | ↓ -0.234 |
-| Success Rate Offense | 46.6% | 45.2% | ↑ +1.4 pp |
-| Success Rate Defense | 45.2% | 46.6% | ↓ -1.4 pp |
-| Explosive Play Rate (Off) | 17.0% | 9.6% | ↑ +7.5 pp |
-| Third Down Conversion | 43.8% | 33.3% | ↑ +10.4 pp |
-| Points per Drive Differential | 1.700 | -1.700 | ↑ +3.400 |
-| Yards per Play Differential | 1.906 | -1.906 | ↑ +3.813 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 14.3% | 9.1% | ↑ +5.2 pp |
-| Pressure Rate (Def) | 4.2% | 8.8% | ↓ -4.7 pp |
-| Tempo | 8.800 | 7.300 | ↑ +1.500 |
-| PowerScore | 0.130 | 0.076 | ↑ +0.053 |
+| Core EPA Offense | 0.131 | 0.082 | 0.049 |
+| Core EPA Defense | 0.083 | -0.169 | 0.252 |
+| Success Rate Offense | 0.469 | 0.410 | 0.059 |
+| Success Rate Defense | 0.404 | 0.413 | -0.009 |
+| Explosive Play Rate (Off) | 0.133 | 0.115 | 0.017 |
+| Third Down Conversion | 0.500 | 0.286 | 0.214 |
+| Points per Drive Differential | -0.273 | 1.664 | -1.936 |
+| Yards per Play Differential | 0.306 | 0.557 | -0.252 |
+| Turnover Margin | 1.000 | 2.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.182 | 0.062 | 0.119 |
+| Pressure Rate (Def) | 0.026 | 0.091 | -0.065 |
+| Tempo | 8.800 | 7.300 | 1.500 |
+| PowerScore | 1.856 | 1.517 | 0.339 |
+| PowerScore | 1.856 | 1.517 | 0.339 |
+| Tempo | 8.800 | 7.300 | 1.500 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PHI edge: +0.053 (PHI +0.130 vs MIN +0.076)
 **7 metrics version:**
 PHI edge: +0.422 (PHI +0.280 vs MIN -0.142)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.422), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - MIN) | +1.0 pts (favours PHI) |
-| Model Win% PHI | 54.1% |
-| Model Win% MIN | 45.9% |
-| SOS Differential (PHI-MIN) | +0.091 |
+| Model Spread (PHI - MIN) | +6.3 pts (favours PHI) |
+| Model Win% PHI | 74.0% |
+| Model Win% MIN | 26.0% |
+| SOS Differential (PHI-MIN) | +0.350 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PHI | MIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.181 | 0.090 |
-| Last 5 games | 0.181 | 0.090 |
-| Last 3 games | 0.181 | 0.090 |
+| Season-to-date | 1.775 | 1.424 |
+| Last 5 games | 1.775 | 1.424 |
+| Last 3 games | 1.775 | 1.424 |
 
 ## Matchup Analogs
 

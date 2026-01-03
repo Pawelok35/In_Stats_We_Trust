@@ -4,19 +4,21 @@
 
 | Metric | NYJ | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.043 | -0.328 | ↑ +0.371 |
-| Core EPA Defense | -0.328 | 0.043 | ↓ -0.371 |
-| Success Rate Offense | 40.2% | 29.3% | ↑ +10.9 pp |
-| Success Rate Defense | 29.3% | 40.2% | ↓ -10.9 pp |
-| Explosive Play Rate (Off) | 13.8% | 5.3% | ↑ +8.5 pp |
-| Third Down Conversion | 37.5% | 7.7% | ↑ +29.8 pp |
-| Points per Drive Differential | 1.681 | -1.681 | ↑ +3.363 |
-| Yards per Play Differential | 2.189 | -2.189 | ↑ +4.377 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 30.0% | 25.0% | ↑ +5.0 pp |
-| Pressure Rate (Def) | 15.2% | 9.8% | ↑ +5.4 pp |
-| Tempo | 6.214 | 5.769 | ↑ +0.445 |
-| PowerScore | 0.078 | -0.022 | ↑ +0.100 |
+| Core EPA Offense | -0.189 | 0.007 | -0.196 |
+| Core EPA Defense | -0.076 | -0.027 | -0.050 |
+| Success Rate Offense | 0.356 | 0.407 | -0.051 |
+| Success Rate Defense | 0.389 | 0.416 | -0.027 |
+| Explosive Play Rate (Off) | 0.069 | 0.128 | -0.059 |
+| Third Down Conversion | 0.202 | 0.393 | -0.191 |
+| Points per Drive Differential | -0.609 | 0.240 | -0.849 |
+| Yards per Play Differential | -0.328 | 0.373 | -0.701 |
+| Turnover Margin | -0.333 | 0.333 | -0.667 |
+| Red Zone TD Rate (Off) | 0.065 | 0.128 | -0.063 |
+| Pressure Rate (Def) | 0.085 | 0.066 | 0.019 |
+| Tempo | 6.214 | 5.769 | 0.445 |
+| PowerScore | 0.078 | -0.022 | 0.100 |
+| PowerScore | 0.078 | -0.022 | 0.100 |
+| Tempo | 6.214 | 5.769 | 0.445 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NYJ edge: +0.100 (NYJ +0.078 vs HOU -0.022)
 **7 metrics version:**
 HOU edge: +0.146 (NYJ -0.036 vs HOU +0.111)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.146), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ HOU edge: +0.146 (NYJ -0.036 vs HOU +0.111)
 | Model Spread (NYJ - HOU) | +1.8 pts (favours NYJ) |
 | Model Win% NYJ | 57.6% |
 | Model Win% HOU | 42.4% |
-| SOS Differential (NYJ-HOU) | -0.065 |
+| SOS Differential (NYJ-HOU) | -0.146 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.050 | 0.115 |
-| Last 5 games | 0.040 | 0.135 |
-| Last 3 games | 0.052 | 0.098 |
+| Season-to-date | 1.447 | 1.593 |
+| Last 5 games | 1.354 | 1.490 |
+| Last 3 games | 1.395 | 1.494 |
 
 ## Trend Summary (last 3 weeks)
 

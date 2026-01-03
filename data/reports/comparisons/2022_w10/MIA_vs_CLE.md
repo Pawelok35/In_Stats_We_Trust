@@ -4,19 +4,21 @@
 
 | Metric | MIA | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.265 | -0.020 | ↑ +0.284 |
-| Core EPA Defense | -0.020 | 0.265 | ↓ -0.284 |
-| Success Rate Offense | 56.6% | 44.4% | ↑ +12.2 pp |
-| Success Rate Defense | 44.4% | 56.6% | ↓ -12.2 pp |
-| Explosive Play Rate (Off) | 20.5% | 7.4% | ↑ +13.1 pp |
-| Third Down Conversion | 54.5% | 35.7% | ↑ +18.8 pp |
-| Points per Drive Differential | 2.444 | -2.444 | ↑ +4.889 |
-| Yards per Play Differential | 2.249 | -2.249 | ↑ +4.498 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 22.2% | 11.1% | ↑ +11.1 pp |
-| Pressure Rate (Def) | 7.7% | 2.7% | ↑ +5.0 pp |
-| Tempo | 9.222 | 9.000 | ↑ +0.222 |
-| PowerScore | 0.271 | 0.172 | ↑ +0.099 |
+| Core EPA Offense | 0.056 | 0.047 | 0.009 |
+| Core EPA Defense | 0.051 | 0.042 | 0.009 |
+| Success Rate Offense | 0.445 | 0.448 | -0.004 |
+| Success Rate Defense | 0.438 | 0.426 | 0.013 |
+| Explosive Play Rate (Off) | 0.123 | 0.123 | -0.000 |
+| Third Down Conversion | 0.387 | 0.402 | -0.015 |
+| Points per Drive Differential | -0.097 | 0.107 | -0.204 |
+| Yards per Play Differential | 0.430 | 0.409 | 0.021 |
+| Turnover Margin | -0.333 | -0.250 | -0.083 |
+| Red Zone TD Rate (Off) | 0.170 | 0.147 | 0.024 |
+| Pressure Rate (Def) | 0.049 | 0.074 | -0.025 |
+| Tempo | 9.222 | 9.000 | 0.222 |
+| PowerScore | 2.075 | 1.957 | 0.118 |
+| PowerScore | 2.075 | 1.957 | 0.118 |
+| Tempo | 9.222 | 9.000 | 0.222 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIA edge: +0.099 (MIA +0.271 vs CLE +0.172)
 **7 metrics version:**
 MIA edge: +0.262 (MIA +0.297 vs CLE +0.036)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.262), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - CLE) | +1.8 pts (favours MIA) |
-| Model Win% MIA | 57.6% |
-| Model Win% CLE | 42.4% |
-| SOS Differential (MIA-CLE) | +0.006 |
+| Model Spread (MIA - CLE) | +2.2 pts (favours MIA) |
+| Model Win% MIA | 59.0% |
+| Model Win% CLE | 41.0% |
+| SOS Differential (MIA-CLE) | +0.162 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.158 | 0.152 |
-| Last 5 games | 0.143 | 0.147 |
-| Last 3 games | 0.165 | 0.113 |
+| Season-to-date | 1.705 | 1.543 |
+| Last 5 games | 1.612 | 1.523 |
+| Last 3 games | 1.900 | 1.470 |
 
 ## Trend Summary (last 3 weeks)
 

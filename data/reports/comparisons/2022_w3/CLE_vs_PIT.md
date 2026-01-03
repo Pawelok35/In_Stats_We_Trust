@@ -4,19 +4,21 @@
 
 | Metric | CLE | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.063 | -0.096 | ↑ +0.159 |
-| Core EPA Defense | -0.096 | 0.063 | ↓ -0.159 |
-| Success Rate Offense | 45.5% | 45.5% | ± 0.0 pp |
-| Success Rate Defense | 45.5% | 45.5% | ± 0.0 pp |
-| Explosive Play Rate (Off) | 9.1% | 11.7% | ↓ -2.6 pp |
-| Third Down Conversion | 35.3% | 9.1% | ↑ +26.2 pp |
-| Points per Drive Differential | 0.545 | -0.545 | ↑ +1.091 |
-| Yards per Play Differential | 0.273 | -0.273 | ↑ +0.545 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 15.0% | 22.2% | ↓ -7.2 pp |
-| Pressure Rate (Def) | 3.0% | 6.1% | ↓ -3.0 pp |
-| Tempo | 8.000 | 7.000 | ↑ +1.000 |
-| PowerScore | 0.135 | 0.116 | ↑ +0.019 |
+| Core EPA Offense | 0.138 | -0.093 | 0.231 |
+| Core EPA Defense | 0.103 | -0.079 | 0.183 |
+| Success Rate Offense | 0.468 | 0.367 | 0.101 |
+| Success Rate Defense | 0.405 | 0.404 | 0.001 |
+| Explosive Play Rate (Off) | 0.136 | 0.063 | 0.074 |
+| Third Down Conversion | 0.524 | 0.378 | 0.146 |
+| Points per Drive Differential | 0.136 | -0.208 | 0.344 |
+| Yards per Play Differential | 0.332 | -0.806 | 1.139 |
+| Turnover Margin | 0.500 | 3.000 | -2.500 |
+| Red Zone TD Rate (Off) | 0.131 | 0.117 | 0.014 |
+| Pressure Rate (Def) | 0.083 | 0.071 | 0.013 |
+| Tempo | 8.000 | 7.000 | 1.000 |
+| PowerScore | 1.717 | 1.493 | 0.224 |
+| PowerScore | 1.717 | 1.493 | 0.224 |
+| Tempo | 8.000 | 7.000 | 1.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CLE edge: +0.019 (CLE +0.135 vs PIT +0.116)
 **7 metrics version:**
 CLE edge: +0.195 (CLE +0.192 vs PIT -0.003)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.195), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - PIT) | +0.3 pts (favours CLE) |
-| Model Win% CLE | 51.4% |
-| Model Win% PIT | 48.6% |
-| SOS Differential (CLE-PIT) | +0.112 |
+| Model Spread (CLE - PIT) | +4.1 pts (favours CLE) |
+| Model Win% CLE | 66.6% |
+| Model Win% PIT | 33.4% |
+| SOS Differential (CLE-PIT) | -0.057 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.183 | 0.071 |
-| Last 5 games | 0.183 | 0.071 |
-| Last 3 games | 0.183 | 0.071 |
+| Season-to-date | 1.618 | 1.675 |
+| Last 5 games | 1.618 | 1.675 |
+| Last 3 games | 1.618 | 1.675 |
 
 ## Trend Summary (last 2 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2022, Week 10
 
-_Generated at 2025-11-11T12:24:38.600249+00:00 (UTC)_
+_Generated at 2026-01-02T11:33:26.746900+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2022\10_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2480, "cols": 18, "timestamp": "2025-11-11T12:24:38.179248+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2480, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T12:24:38.179248+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2480, "cols": 24, "timestamp": "2025-11-11T12:24:38.179248+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2480, "cols": 18, "timestamp": "2026-01-02T11:33:26.300792+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2480, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T11:33:26.300792+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2480, "cols": 24, "timestamp": "2026-01-02T11:33:26.300792+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2022\10_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2022\10.parquet`
 - Manifest: `data\l4_core12\2022\10_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2022\10_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| MIA | 0.2711311202822904 |
-| SEA | 0.1927419370407182 |
-| GB | 0.18538256208552326 |
-| DAL | 0.1851747714091781 |
-| DET | 0.18469526385029783 |
-| KC | 0.18260087441154008 |
-| TB | 0.18210822500669482 |
-| CHI | 0.17346277417546985 |
-| BUF | 0.17277541928164597 |
-| CLE | 0.17186979558568896 |
+| WAS | 2.1158971895163385 |
+| MIA | 2.074611709305048 |
+| CLE | 1.9570549807708741 |
+| TB | 1.9148354977339679 |
+| PIT | 1.877604886936263 |
+| LV | 1.7532662658530165 |
+| DAL | 1.6840092702436769 |
+| SF | 1.6541525659335192 |
+| SEA | 1.6381964824952637 |
+| NYG | 1.6231792759551398 |
 
 
 ## Visualizations

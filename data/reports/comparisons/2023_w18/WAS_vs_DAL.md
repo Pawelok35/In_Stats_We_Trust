@@ -4,19 +4,21 @@
 
 | Metric | WAS | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.289 | 0.168 | ↓ -0.458 |
-| Core EPA Defense | 0.168 | -0.289 | ↑ +0.458 |
-| Success Rate Offense | 34.4% | 60.7% | ↓ -26.3 pp |
-| Success Rate Defense | 60.7% | 34.4% | ↑ +26.3 pp |
-| Explosive Play Rate (Off) | 4.7% | 11.9% | ↓ -7.2 pp |
-| Third Down Conversion | 16.7% | 60.0% | ↓ -43.3 pp |
-| Points per Drive Differential | -3.222 | 3.222 | ↓ -6.444 |
-| Yards per Play Differential | -2.426 | 2.426 | ↓ -4.851 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 8.3% | 18.5% | ↓ -10.2 pp |
-| Pressure Rate (Def) | 0.0% | 12.1% | ↓ -12.1 pp |
-| Tempo | 6.400 | 9.333 | ↓ -2.933 |
-| PowerScore | 0.028 | 0.177 | ↓ -0.149 |
+| Core EPA Offense | -0.083 | 0.081 | -0.163 |
+| Core EPA Defense | 0.076 | -0.072 | 0.148 |
+| Success Rate Offense | 0.399 | 0.455 | -0.057 |
+| Success Rate Defense | 0.444 | 0.411 | 0.033 |
+| Explosive Play Rate (Off) | 0.102 | 0.106 | -0.003 |
+| Third Down Conversion | 0.326 | 0.435 | -0.109 |
+| Points per Drive Differential | -0.747 | 0.732 | -1.479 |
+| Yards per Play Differential | -0.769 | 0.535 | -1.303 |
+| Turnover Margin | -0.750 | 0.625 | -1.375 |
+| Red Zone TD Rate (Off) | 0.168 | 0.127 | 0.041 |
+| Pressure Rate (Def) | 0.065 | 0.086 | -0.021 |
+| Tempo | 6.400 | 9.333 | -2.933 |
+| PowerScore | 0.028 | 0.177 | -0.149 |
+| PowerScore | 0.028 | 0.177 | -0.149 |
+| Tempo | 6.400 | 9.333 | -2.933 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DAL edge: +0.149 (WAS +0.028 vs DAL +0.177)
 **7 metrics version:**
 DAL edge: +0.492 (WAS -0.174 vs DAL +0.318)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.492), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ DAL edge: +0.492 (WAS -0.174 vs DAL +0.318)
 | Model Spread (WAS - DAL) | -2.8 pts (favours DAL) |
 | Model Win% WAS | 38.7% |
 | Model Win% DAL | 61.3% |
-| SOS Differential (WAS-DAL) | +0.031 |
+| SOS Differential (WAS-DAL) | -0.051 |
 *Neutral-field assumption. Based on schedule through Week 17.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | WAS | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.144 | 0.113 |
-| Last 5 games | 0.170 | 0.169 |
-| Last 3 games | 0.120 | 0.181 |
+| Season-to-date | 1.568 | 1.619 |
+| Last 5 games | 1.652 | 1.782 |
+| Last 3 games | 1.651 | 1.823 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | DAL (A) | 31-31 | TIE | 1.000 | 0.146 | 39.8% | 0.009 |
-| 16 | SF (A) | 28-26 | WAS | 0.951 | -0.158 | 34.5% | 0.102 |
-| 2 | DET (A) | 35-30 | WAS | 0.943 | 0.128 | 46.2% | 0.432 |
+| 12 | DAL (A) | 10-43 | DAL | 1.000 | -0.180 | 42.6% | -2.991 |
+| 3 | BUF (H) | 3-31 | BUF | 0.962 | -0.428 | 38.8% | -2.545 |
+| 17 | SF (H) | 10-27 | SF | 0.951 | -0.135 | 42.6% | -1.889 |
 
 **DAL analogs vs WAS profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | WAS (H) | 26-3 | DAL | 1.000 | 0.058 | 46.5% | 2.091 |
-| 17 | TEN (A) | 20-21 | TEN | 0.924 | -0.044 | 43.4% | -0.061 |
-| 2 | CIN (H) | 30-11 | DAL | 0.860 | 0.053 | 41.3% | 1.591 |
+| 12 | WAS (H) | 39-9 | DAL | 1.000 | 0.318 | 51.4% | 2.991 |
+| 3 | ARI (A) | 16-25 | ARI | 0.968 | 0.051 | 45.8% | -1.111 |
+| 6 | LAC (A) | 20-17 | DAL | 0.909 | 0.000 | 38.8% | 0.300 |
 
 ## Core EPA Offense Form (up to Week 17)
 

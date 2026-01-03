@@ -4,19 +4,21 @@
 
 | Metric | NYJ | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.231 | -0.001 | ↓ -0.230 |
-| Core EPA Defense | -0.001 | -0.231 | ↑ +0.230 |
-| Success Rate Offense | 37.0% | 41.2% | ↓ -4.2 pp |
-| Success Rate Defense | 41.2% | 37.0% | ↑ +4.2 pp |
-| Explosive Play Rate (Off) | 9.8% | 4.7% | ↑ +5.1 pp |
-| Third Down Conversion | 36.8% | 41.2% | ↓ -4.3 pp |
-| Points per Drive Differential | -1.327 | 1.327 | ↓ -2.654 |
-| Yards per Play Differential | -0.317 | 0.317 | ↓ -0.634 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 11.8% | ↓ -11.8 pp |
-| Pressure Rate (Def) | 5.0% | 7.1% | ↓ -2.1 pp |
-| Tempo | 7.077 | 7.083 | ↓ -0.006 |
-| PowerScore | 0.031 | 0.066 | ↓ -0.035 |
+| Core EPA Offense | -0.006 | -0.065 | 0.059 |
+| Core EPA Defense | 0.105 | -0.056 | 0.161 |
+| Success Rate Offense | 0.405 | 0.364 | 0.041 |
+| Success Rate Defense | 0.448 | 0.370 | 0.078 |
+| Explosive Play Rate (Off) | 0.105 | 0.083 | 0.021 |
+| Third Down Conversion | 0.309 | 0.377 | -0.068 |
+| Points per Drive Differential | -0.503 | 0.076 | -0.579 |
+| Yards per Play Differential | -0.295 | -0.504 | 0.209 |
+| Turnover Margin | -0.500 | -2.000 | 1.500 |
+| Red Zone TD Rate (Off) | 0.129 | 0.140 | -0.011 |
+| Pressure Rate (Def) | 0.047 | 0.028 | 0.019 |
+| Tempo | 7.077 | 7.083 | -0.006 |
+| PowerScore | 1.427 | 1.473 | -0.046 |
+| PowerScore | 1.427 | 1.473 | -0.046 |
+| Tempo | 7.077 | 7.083 | -0.006 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CIN edge: +0.035 (NYJ +0.031 vs CIN +0.066)
 **7 metrics version:**
 CIN edge: +0.627 (NYJ -0.288 vs CIN +0.339)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.627), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - CIN) | -0.6 pts (favours CIN) |
-| Model Win% NYJ | 47.3% |
-| Model Win% CIN | 52.7% |
-| SOS Differential (NYJ-CIN) | +0.096 |
+| Model Spread (NYJ - CIN) | -0.9 pts (favours CIN) |
+| Model Win% NYJ | 46.4% |
+| Model Win% CIN | 53.6% |
+| SOS Differential (NYJ-CIN) | +0.161 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.175 | 0.079 |
-| Last 5 games | 0.175 | 0.079 |
-| Last 3 games | 0.175 | 0.079 |
+| Season-to-date | 1.439 | 1.279 |
+| Last 5 games | 1.439 | 1.279 |
+| Last 3 games | 1.439 | 1.279 |
 
 ## Trend Summary (last 2 weeks)
 

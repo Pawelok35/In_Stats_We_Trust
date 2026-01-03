@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 7
 
-_Generated at 2025-11-10T17:49:38.363596+00:00 (UTC)_
+_Generated at 2025-12-28T14:29:41.051530+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\7_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2566, "cols": 18, "timestamp": "2025-11-10T17:49:37.794324+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2566, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:49:37.795319+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2566, "cols": 24, "timestamp": "2025-11-10T17:49:37.795319+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2566, "cols": 18, "timestamp": "2025-12-28T14:29:40.641609+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2566, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:29:40.641609+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2566, "cols": 24, "timestamp": "2025-12-28T14:29:40.641609+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\7_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\7.parquet`
 - Manifest: `data\l4_core12\2024\7_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\7_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BAL | 0.2859710785559084 |
-| TB | 0.24732905719811588 |
-| JAX | 0.24140725685039835 |
-| ARI | 0.2078348242435075 |
-| LAC | 0.1982943784337096 |
-| WAS | 0.1867197049671759 |
-| BUF | 0.18350063095788033 |
-| PIT | 0.1773152141736115 |
-| SEA | 0.16898140720837754 |
-| DET | 0.1633426963791975 |
+| LAC | 2.1252174553567866 |
+| TB | 1.8859957238647829 |
+| NE | 1.8749561872861595 |
+| WAS | 1.858484410849529 |
+| JAX | 1.8389719448260453 |
+| ATL | 1.797430925148869 |
+| SEA | 1.6856047838317543 |
+| PIT | 1.6783974652558626 |
+| KC | 1.6766108558779143 |
+| ARI | 1.658105094513778 |
 
 
 ## Visualizations

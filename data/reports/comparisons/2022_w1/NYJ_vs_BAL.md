@@ -4,19 +4,21 @@
 
 | Metric | NYJ | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.195 | 0.016 | ↓ -0.212 |
-| Core EPA Defense | 0.016 | -0.195 | ↑ +0.212 |
-| Success Rate Offense | 36.4% | 40.8% | ↓ -4.5 pp |
-| Success Rate Defense | 40.8% | 36.4% | ↑ +4.5 pp |
-| Explosive Play Rate (Off) | 10.1% | 9.9% | ↑ +0.2 pp |
-| Third Down Conversion | 11.8% | 38.5% | ↓ -26.7 pp |
-| Points per Drive Differential | -1.096 | 1.096 | ↓ -2.192 |
-| Yards per Play Differential | -0.021 | 0.021 | ↓ -0.042 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 7.1% | 10.0% | ↓ -2.9 pp |
-| Pressure Rate (Def) | 5.9% | 4.8% | ↑ +1.0 pp |
-| Tempo | 8.250 | 5.462 | ↑ +2.788 |
-| PowerScore | 0.046 | 0.088 | ↓ -0.042 |
+| Core EPA Offense | -0.195 | 0.016 | -0.212 |
+| Core EPA Defense | 0.016 | -0.195 | 0.212 |
+| Success Rate Offense | 0.364 | 0.408 | -0.045 |
+| Success Rate Defense | 0.408 | 0.364 | 0.045 |
+| Explosive Play Rate (Off) | 0.101 | 0.099 | 0.002 |
+| Third Down Conversion | 0.118 | 0.385 | -0.267 |
+| Points per Drive Differential | -1.096 | 1.096 | -2.192 |
+| Yards per Play Differential | -0.021 | 0.021 | -0.042 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.071 | 0.100 | -0.029 |
+| Pressure Rate (Def) | 0.059 | 0.048 | 0.010 |
+| Tempo | 8.250 | 5.462 | 2.788 |
+| PowerScore | 1.676 | 1.161 | 0.515 |
+| PowerScore | 1.676 | 1.161 | 0.515 |
+| Tempo | 8.250 | 5.462 | 2.788 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ BAL edge: +0.042 (NYJ +0.046 vs BAL +0.088)
 **7 metrics version:**
 BAL edge: +0.219 (NYJ -0.068 vs BAL +0.151)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.219), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - BAL) | -0.8 pts (favours BAL) |
-| Model Win% NYJ | 46.7% |
-| Model Win% BAL | 53.3% |
+| Model Spread (NYJ - BAL) | +9.5 pts (favours NYJ) |
+| Model Win% NYJ | 83.0% |
+| Model Win% BAL | 17.0% |
 | SOS Differential (NYJ-BAL) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

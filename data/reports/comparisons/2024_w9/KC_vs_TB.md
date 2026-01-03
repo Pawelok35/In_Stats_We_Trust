@@ -4,19 +4,21 @@
 
 | Metric | KC | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.140 | 0.133 | ↑ +0.006 |
-| Core EPA Defense | 0.133 | 0.140 | ↓ -0.006 |
-| Success Rate Offense | 53.5% | 44.4% | ↑ +9.0 pp |
-| Success Rate Defense | 44.4% | 53.5% | ↓ -9.0 pp |
-| Explosive Play Rate (Off) | 8.9% | 8.3% | ↑ +0.6 pp |
-| Third Down Conversion | 66.7% | 35.7% | ↑ +31.0 pp |
-| Points per Drive Differential | -0.167 | 0.167 | ↓ -0.333 |
-| Yards per Play Differential | -0.142 | 0.142 | ↓ -0.285 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 22.2% | 27.3% | ↓ -5.1 pp |
-| Pressure Rate (Def) | 6.1% | 8.3% | ↓ -2.3 pp |
-| Tempo | 8.417 | 8.000 | ↑ +0.417 |
-| PowerScore | 0.227 | 0.202 | ↑ +0.025 |
+| Core EPA Offense | 0.045 | 0.072 | -0.027 |
+| Core EPA Defense | -0.056 | 0.046 | -0.102 |
+| Success Rate Offense | 0.522 | 0.512 | 0.011 |
+| Success Rate Defense | 0.460 | 0.508 | -0.047 |
+| Explosive Play Rate (Off) | 0.084 | 0.130 | -0.046 |
+| Third Down Conversion | 0.459 | 0.468 | -0.009 |
+| Points per Drive Differential | 0.609 | 0.251 | 0.357 |
+| Yards per Play Differential | 0.460 | 0.038 | 0.422 |
+| Turnover Margin | -0.429 | -0.500 | 0.071 |
+| Red Zone TD Rate (Off) | 0.115 | 0.171 | -0.056 |
+| Pressure Rate (Def) | 0.061 | 0.070 | -0.008 |
+| Tempo | 8.417 | 8.000 | 0.417 |
+| PowerScore | 0.227 | 0.202 | 0.025 |
+| PowerScore | 0.227 | 0.202 | 0.025 |
+| Tempo | 8.417 | 8.000 | 0.417 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.025 (KC +0.227 vs TB +0.202)
 **7 metrics version:**
 TB edge: +0.193 (KC +0.079 vs TB +0.272)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.193), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ TB edge: +0.193 (KC +0.079 vs TB +0.272)
 | Model Spread (KC - TB) | +0.5 pts (favours KC) |
 | Model Win% KC | 51.9% |
 | Model Win% TB | 48.1% |
-| SOS Differential (KC-TB) | -0.058 |
+| SOS Differential (KC-TB) | -0.072 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | TB |
 | --- | ---: | ---: |
-| Season-to-date | 0.119 | 0.178 |
-| Last 5 games | 0.097 | 0.193 |
-| Last 3 games | 0.112 | 0.189 |
+| Season-to-date | 1.647 | 1.719 |
+| Last 5 games | 1.564 | 1.655 |
+| Last 3 games | 1.563 | 1.547 |
 
 ## Trend Summary (last 3 weeks)
 

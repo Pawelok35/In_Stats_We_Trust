@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 9
 
-_Generated at 2025-11-10T20:38:33.195368+00:00 (UTC)_
+_Generated at 2026-01-02T10:25:17.463377+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2452, "cols": 18, "timestamp": "2025-11-10T20:38:32.731884+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2452, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:38:32.731884+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2452, "cols": 24, "timestamp": "2025-11-10T20:38:32.731884+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2452, "cols": 18, "timestamp": "2026-01-02T10:25:17.046917+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2452, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:25:17.046917+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2452, "cols": 24, "timestamp": "2026-01-02T10:25:17.046917+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\9_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\9.parquet`
 - Manifest: `data\l4_core12\2023\9_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\9_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| PHI | 0.24370034547246713 |
-| DAL | 0.23580824214413212 |
-| TB | 0.220823524342738 |
-| HOU | 0.2183819221787205 |
-| PIT | 0.20284699161140118 |
-| TEN | 0.18638810468456624 |
-| BUF | 0.1731690494798343 |
-| CIN | 0.17199116768612832 |
-| WAS | 0.14703800927975827 |
-| BAL | 0.13507493762708792 |
+| TEN | 2.119216387512849 |
+| CIN | 2.0373506448103114 |
+| DAL | 2.01358601992191 |
+| PIT | 1.9606247693891792 |
+| PHI | 1.8464163948551833 |
+| WAS | 1.7114239741920392 |
+| BUF | 1.70872460503539 |
+| IND | 1.6855650055454263 |
+| TB | 1.645536168020899 |
+| BAL | 1.6275657801179304 |
 
 
 ## Visualizations

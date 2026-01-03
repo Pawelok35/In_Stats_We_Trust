@@ -4,19 +4,21 @@
 
 | Metric | NYG | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.084 | 0.004 | ↑ +0.080 |
-| Core EPA Defense | 0.004 | 0.084 | ↓ -0.080 |
-| Success Rate Offense | 43.8% | 44.4% | ↓ -0.6 pp |
-| Success Rate Defense | 44.4% | 43.8% | ↑ +0.6 pp |
-| Explosive Play Rate (Off) | 11.2% | 14.8% | ↓ -3.6 pp |
-| Third Down Conversion | 46.7% | 25.0% | ↑ +21.7 pp |
-| Points per Drive Differential | 0.545 | -0.545 | ↑ +1.091 |
-| Yards per Play Differential | -0.654 | 0.654 | ↓ -1.308 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 20.0% | 5.3% | ↑ +14.7 pp |
-| Pressure Rate (Def) | 12.2% | 14.3% | ↓ -2.1 pp |
-| Tempo | 7.417 | 7.364 | ↑ +0.053 |
-| PowerScore | 0.162 | 0.159 | ↑ +0.003 |
+| Core EPA Offense | 0.047 | -0.077 | 0.124 |
+| Core EPA Defense | 0.039 | 0.020 | 0.020 |
+| Success Rate Offense | 0.427 | 0.397 | 0.030 |
+| Success Rate Defense | 0.435 | 0.445 | -0.010 |
+| Explosive Play Rate (Off) | 0.104 | 0.095 | 0.009 |
+| Third Down Conversion | 0.341 | 0.278 | 0.063 |
+| Points per Drive Differential | 0.226 | -0.479 | 0.705 |
+| Yards per Play Differential | -0.434 | -0.812 | 0.378 |
+| Turnover Margin | 0.500 | 0.000 | 0.500 |
+| Red Zone TD Rate (Off) | 0.106 | 0.187 | -0.081 |
+| Pressure Rate (Def) | 0.062 | 0.091 | -0.029 |
+| Tempo | 7.417 | 7.364 | 0.053 |
+| PowerScore | 1.623 | 1.602 | 0.021 |
+| PowerScore | 1.623 | 1.602 | 0.021 |
+| Tempo | 7.417 | 7.364 | 0.053 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYG edge: +0.003 (NYG +0.162 vs HOU +0.159)
 **7 metrics version:**
 NYG edge: +0.412 (NYG +0.331 vs HOU -0.081)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.412), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - HOU) | +0.1 pts (favours NYG) |
-| Model Win% NYG | 50.2% |
-| Model Win% HOU | 49.8% |
-| SOS Differential (NYG-HOU) | +0.023 |
+| Model Spread (NYG - HOU) | +0.4 pts (favours NYG) |
+| Model Win% NYG | 51.6% |
+| Model Win% HOU | 48.4% |
+| SOS Differential (NYG-HOU) | +0.008 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.156 | 0.132 |
-| Last 5 games | 0.170 | 0.148 |
-| Last 3 games | 0.159 | 0.175 |
+| Season-to-date | 1.665 | 1.657 |
+| Last 5 games | 1.736 | 1.661 |
+| Last 3 games | 1.756 | 1.688 |
 
 ## Trend Summary (last 3 weeks)
 

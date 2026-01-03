@@ -4,19 +4,20 @@
 
 | Metric | SEA | LA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.059 | 0.189 | ↓ -0.248 |
-| Core EPA Defense | 0.189 | -0.059 | ↑ +0.248 |
-| Success Rate Offense | 50.0% | 50.0% | ± 0.0 pp |
-| Success Rate Defense | 50.0% | 50.0% | ± 0.0 pp |
-| Explosive Play Rate (Off) | 4.4% | 9.2% | ↓ -4.8 pp |
-| Third Down Conversion | 20.0% | 61.1% | ↓ -41.1 pp |
-| Points per Drive Differential | -1.889 | 1.889 | ↓ -3.778 |
-| Yards per Play Differential | -1.700 | 1.700 | ↓ -3.400 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 12.5% | 15.0% | ↓ -2.5 pp |
-| Pressure Rate (Def) | 0.0% | 7.1% | ↓ -7.1 pp |
-| Tempo | 7.556 | 10.889 | ↓ -3.333 |
-| PowerScore | 0.151 | 0.198 | ↓ -0.047 |
+| Core EPA Offense | -0.059 | 0.189 | -0.248 |
+| Core EPA Defense | 0.189 | -0.059 | 0.248 |
+| Success Rate Offense | 0.500 | 0.500 | 0.000 |
+| Success Rate Defense | 0.500 | 0.500 | 0.000 |
+| Explosive Play Rate (Off) | 0.044 | 0.092 | -0.048 |
+| Third Down Conversion | 0.200 | 0.611 | -0.411 |
+| Points per Drive Differential | -1.889 | 1.889 | -3.778 |
+| Yards per Play Differential | -1.700 | 1.700 | -3.400 |
+| Red Zone TD Rate (Off) | 0.125 | 0.150 | -0.025 |
+| Pressure Rate (Def) | 0.000 | 0.071 | -0.071 |
+| Tempo | 7.556 | 10.889 | -3.333 |
+| PowerScore | 1.653 | 2.357 | -0.704 |
+| PowerScore | 1.653 | 2.357 | -0.704 |
+| Tempo | 7.556 | 10.889 | -3.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ LA edge: +0.047 (SEA +0.151 vs LA +0.198)
 **7 metrics version:**
 LA edge: +0.027 (SEA +0.115 vs LA +0.142)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.027), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - LA) | -0.9 pts (favours LA) |
-| Model Win% SEA | 46.4% |
-| Model Win% LA | 53.6% |
+| Model Spread (SEA - LA) | -13.0 pts (favours LA) |
+| Model Win% SEA | 10.2% |
+| Model Win% LA | 89.8% |
 | SOS Differential (SEA-LA) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -4,19 +4,21 @@
 
 | Metric | MIA | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.051 | -0.127 | ↑ +0.075 |
-| Core EPA Defense | -0.127 | -0.051 | ↓ -0.075 |
-| Success Rate Offense | 40.5% | 37.8% | ↑ +2.7 pp |
-| Success Rate Defense | 37.8% | 40.5% | ↓ -2.7 pp |
-| Explosive Play Rate (Off) | 16.5% | 5.6% | ↑ +10.9 pp |
-| Third Down Conversion | 26.7% | 25.0% | ↑ +1.7 pp |
-| Points per Drive Differential | 0.500 | -0.500 | ↑ +1.000 |
-| Yards per Play Differential | 0.920 | -0.920 | ↑ +1.840 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 9.1% | 16.7% | ↓ -7.6 pp |
-| Pressure Rate (Def) | 4.3% | 0.0% | ↑ +4.3 pp |
-| Tempo | 6.583 | 7.500 | ↓ -0.917 |
-| PowerScore | 0.091 | 0.051 | ↑ +0.040 |
+| Core EPA Offense | 0.020 | -0.096 | 0.116 |
+| Core EPA Defense | 0.059 | 0.024 | 0.035 |
+| Success Rate Offense | 0.450 | 0.398 | 0.052 |
+| Success Rate Defense | 0.437 | 0.432 | 0.006 |
+| Explosive Play Rate (Off) | 0.099 | 0.081 | 0.019 |
+| Third Down Conversion | 0.351 | 0.342 | 0.008 |
+| Points per Drive Differential | -0.162 | -0.645 | 0.483 |
+| Yards per Play Differential | 0.132 | -0.963 | 1.096 |
+| Turnover Margin | -0.833 | 0.500 | -1.333 |
+| Red Zone TD Rate (Off) | 0.172 | 0.147 | 0.025 |
+| Pressure Rate (Def) | 0.051 | 0.067 | -0.016 |
+| Tempo | 6.583 | 7.500 | -0.917 |
+| PowerScore | 1.375 | 1.540 | -0.165 |
+| PowerScore | 1.375 | 1.540 | -0.165 |
+| Tempo | 6.583 | 7.500 | -0.917 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIA edge: +0.040 (MIA +0.091 vs PIT +0.051)
 **7 metrics version:**
 MIA edge: +0.616 (MIA +0.352 vs PIT -0.263)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.616), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - PIT) | +0.7 pts (favours MIA) |
-| Model Win% MIA | 53.1% |
-| Model Win% PIT | 46.9% |
-| SOS Differential (MIA-PIT) | +0.037 |
+| Model Spread (MIA - PIT) | -3.1 pts (favours PIT) |
+| Model Win% MIA | 37.5% |
+| Model Win% PIT | 62.5% |
+| SOS Differential (MIA-PIT) | -0.037 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.155 | 0.118 |
-| Last 5 games | 0.170 | 0.137 |
-| Last 3 games | 0.119 | 0.144 |
+| Season-to-date | 1.608 | 1.646 |
+| Last 5 games | 1.612 | 1.661 |
+| Last 3 games | 1.287 | 1.603 |
 
 ## Trend Summary (last 3 weeks)
 

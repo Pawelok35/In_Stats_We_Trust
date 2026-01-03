@@ -4,19 +4,21 @@
 
 | Metric | CAR | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.383 | 0.054 | ↓ -0.438 |
-| Core EPA Defense | 0.054 | -0.383 | ↑ +0.438 |
-| Success Rate Offense | 30.8% | 50.6% | ↓ -19.8 pp |
-| Success Rate Defense | 50.6% | 30.8% | ↑ +19.8 pp |
-| Explosive Play Rate (Off) | 3.1% | 9.9% | ↓ -6.8 pp |
-| Third Down Conversion | 7.7% | 56.2% | ↓ -48.6 pp |
-| Points per Drive Differential | -1.894 | 1.894 | ↓ -3.788 |
-| Yards per Play Differential | -1.862 | 1.862 | ↓ -3.725 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 12.5% | ↓ -12.5 pp |
-| Pressure Rate (Def) | 4.2% | 7.1% | ↓ -3.0 pp |
-| Tempo | 5.909 | 6.750 | ↓ -0.841 |
-| PowerScore | -0.040 | 0.089 | ↓ -0.129 |
+| Core EPA Offense | -0.370 | -0.123 | -0.247 |
+| Core EPA Defense | 0.197 | -0.312 | 0.509 |
+| Success Rate Offense | 0.380 | 0.359 | 0.021 |
+| Success Rate Defense | 0.494 | 0.392 | 0.102 |
+| Explosive Play Rate (Off) | 0.038 | 0.077 | -0.039 |
+| Third Down Conversion | 0.077 | 0.250 | -0.173 |
+| Points per Drive Differential | -3.503 | 0.923 | -4.427 |
+| Yards per Play Differential | -2.236 | 0.051 | -2.287 |
+| Turnover Margin | -4.000 | 3.000 | -7.000 |
+| Red Zone TD Rate (Off) | 0.143 | 0.143 | 0.000 |
+| Pressure Rate (Def) | 0.040 | 0.108 | -0.068 |
+| Tempo | 5.909 | 6.750 | -0.841 |
+| PowerScore | 1.135 | 1.419 | -0.283 |
+| PowerScore | 1.135 | 1.419 | -0.283 |
+| Tempo | 5.909 | 6.750 | -0.841 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LAC edge: +0.129 (CAR -0.040 vs LAC +0.089)
 **7 metrics version:**
 CAR edge: +0.126 (CAR +0.068 vs LAC -0.058)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.126), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - LAC) | -2.4 pts (favours LAC) |
-| Model Win% CAR | 40.2% |
-| Model Win% LAC | 59.8% |
-| SOS Differential (CAR-LAC) | +0.163 |
+| Model Spread (CAR - LAC) | -5.2 pts (favours LAC) |
+| Model Win% CAR | 29.4% |
+| Model Win% LAC | 70.6% |
+| SOS Differential (CAR-LAC) | +0.489 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.145 | -0.017 |
-| Last 5 games | 0.145 | -0.017 |
-| Last 3 games | 0.145 | -0.017 |
+| Season-to-date | 1.591 | 1.102 |
+| Last 5 games | 1.591 | 1.102 |
+| Last 3 games | 1.591 | 1.102 |
 
 ## Matchup Analogs
 

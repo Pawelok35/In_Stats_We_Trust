@@ -4,19 +4,21 @@
 
 | Metric | NYG | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.039 | 0.007 | ↑ +0.032 |
-| Core EPA Defense | 0.007 | 0.039 | ↓ -0.032 |
-| Success Rate Offense | 45.1% | 42.1% | ↑ +3.0 pp |
-| Success Rate Defense | 42.1% | 45.1% | ↓ -3.0 pp |
-| Explosive Play Rate (Off) | 6.1% | 19.7% | ↓ -13.6 pp |
-| Third Down Conversion | 43.8% | 36.4% | ↑ +7.4 pp |
-| Points per Drive Differential | 0.178 | -0.178 | ↑ +0.356 |
-| Yards per Play Differential | -2.440 | 2.440 | ↓ -4.879 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 12.0% | 7.7% | ↑ +4.3 pp |
-| Pressure Rate (Def) | 5.9% | 11.8% | ↓ -5.9 pp |
-| Tempo | 8.200 | 8.444 | ↓ -0.244 |
-| PowerScore | 0.140 | 0.155 | ↓ -0.015 |
+| Core EPA Offense | 0.052 | 0.094 | -0.042 |
+| Core EPA Defense | 0.030 | 0.021 | 0.010 |
+| Success Rate Offense | 0.424 | 0.447 | -0.024 |
+| Success Rate Defense | 0.445 | 0.451 | -0.006 |
+| Explosive Play Rate (Off) | 0.110 | 0.128 | -0.017 |
+| Third Down Conversion | 0.309 | 0.383 | -0.074 |
+| Points per Drive Differential | 0.308 | 0.168 | 0.140 |
+| Yards per Play Differential | 0.009 | -0.232 | 0.240 |
+| Turnover Margin | -0.200 | 1.000 | -1.200 |
+| Red Zone TD Rate (Off) | 0.105 | 0.142 | -0.036 |
+| Pressure Rate (Def) | 0.071 | 0.051 | 0.020 |
+| Tempo | 8.200 | 8.444 | -0.244 |
+| PowerScore | 1.768 | 1.804 | -0.037 |
+| PowerScore | 1.768 | 1.804 | -0.037 |
+| Tempo | 8.200 | 8.444 | -0.244 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.015 (NYG +0.140 vs BAL +0.155)
 **7 metrics version:**
 NYG edge: +0.191 (NYG +0.203 vs BAL +0.012)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.191), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - BAL) | -0.3 pts (favours BAL) |
-| Model Win% NYG | 48.8% |
-| Model Win% BAL | 51.2% |
-| SOS Differential (NYG-BAL) | -0.008 |
+| Model Spread (NYG - BAL) | -0.7 pts (favours BAL) |
+| Model Win% NYG | 47.2% |
+| Model Win% BAL | 52.8% |
+| SOS Differential (NYG-BAL) | -0.090 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.153 | 0.161 |
-| Last 5 games | 0.153 | 0.161 |
-| Last 3 games | 0.180 | 0.144 |
+| Season-to-date | 1.610 | 1.701 |
+| Last 5 games | 1.610 | 1.701 |
+| Last 3 games | 1.688 | 1.646 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 8
 
-_Generated at 2025-11-10T20:38:22.488442+00:00 (UTC)_
+_Generated at 2026-01-02T10:24:36.465696+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\8_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2834, "cols": 18, "timestamp": "2025-11-10T20:38:21.978949+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2834, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:38:21.979342+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2834, "cols": 24, "timestamp": "2025-11-10T20:38:21.979342+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2834, "cols": 18, "timestamp": "2026-01-02T10:24:36.061941+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2834, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:24:36.061941+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2834, "cols": 24, "timestamp": "2026-01-02T10:24:36.061941+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\8_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\8.parquet`
 - Manifest: `data\l4_core12\2023\8_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\8_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| CIN | 0.24011757207956622 |
-| NO | 0.23035781763986463 |
-| PHI | 0.22295406006751967 |
-| WAS | 0.21753966677377726 |
-| SF | 0.19742067538240737 |
-| DAL | 0.1889636118418435 |
-| BUF | 0.17988345875161976 |
-| IND | 0.1622656498216959 |
-| TB | 0.13426725126466166 |
-| SEA | 0.13353579728198492 |
+| WAS | 1.8250144142485247 |
+| MIN | 1.7905497690549992 |
+| CIN | 1.7693483413103355 |
+| GB | 1.7693088362443072 |
+| MIA | 1.75967662619187 |
+| IND | 1.7287568778918714 |
+| BUF | 1.7202640084344951 |
+| TB | 1.7160854330828434 |
+| LAC | 1.7142028679759933 |
+| DET | 1.6592897358298329 |
 
 
 ## Visualizations

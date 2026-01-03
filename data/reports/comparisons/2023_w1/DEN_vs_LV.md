@@ -4,19 +4,21 @@
 
 | Metric | DEN | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.062 | 0.122 | ↓ -0.059 |
-| Core EPA Defense | 0.122 | 0.062 | ↑ +0.059 |
-| Success Rate Offense | 46.8% | 36.6% | ↑ +10.1 pp |
-| Success Rate Defense | 36.6% | 46.8% | ↓ -10.1 pp |
-| Explosive Play Rate (Off) | 10.4% | 7.0% | ↑ +3.3 pp |
-| Third Down Conversion | 35.7% | 35.7% | ± 0.0 pp |
-| Points per Drive Differential | 0.238 | -0.238 | ↑ +0.476 |
-| Yards per Play Differential | -0.299 | 0.299 | ↓ -0.599 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 10.5% | ↑ +3.8 pp |
-| Pressure Rate (Def) | 0.0% | 5.6% | ↓ -5.6 pp |
-| Tempo | 12.833 | 10.143 | ↑ +2.690 |
-| PowerScore | 0.184 | 0.161 | ↑ +0.023 |
+| Core EPA Offense | 0.062 | 0.122 | -0.059 |
+| Core EPA Defense | 0.122 | 0.062 | 0.059 |
+| Success Rate Offense | 0.468 | 0.366 | 0.101 |
+| Success Rate Defense | 0.366 | 0.468 | -0.101 |
+| Explosive Play Rate (Off) | 0.104 | 0.070 | 0.033 |
+| Third Down Conversion | 0.357 | 0.357 | 0.000 |
+| Points per Drive Differential | 0.238 | -0.238 | 0.476 |
+| Yards per Play Differential | -0.299 | 0.299 | -0.599 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.143 | 0.105 | 0.038 |
+| Pressure Rate (Def) | 0.000 | 0.056 | -0.056 |
+| Tempo | 12.833 | 10.143 | 2.690 |
+| PowerScore | 2.730 | 2.175 | 0.555 |
+| PowerScore | 2.730 | 2.175 | 0.555 |
+| Tempo | 12.833 | 10.143 | 2.690 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ DEN edge: +0.023 (DEN +0.184 vs LV +0.161)
 **7 metrics version:**
 DEN edge: +0.214 (DEN +0.235 vs LV +0.021)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.214), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - LV) | +0.4 pts (favours DEN) |
-| Model Win% DEN | 51.8% |
-| Model Win% LV | 48.2% |
+| Model Spread (DEN - LV) | +10.3 pts (favours DEN) |
+| Model Win% DEN | 84.7% |
+| Model Win% LV | 15.3% |
 | SOS Differential (DEN-LV) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

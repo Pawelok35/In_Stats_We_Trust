@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 8
 
-_Generated at 2025-11-10T17:49:49.078537+00:00 (UTC)_
+_Generated at 2025-12-28T14:30:35.770645+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\8_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2815, "cols": 18, "timestamp": "2025-11-10T17:49:48.594862+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2815, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:49:48.594862+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2815, "cols": 24, "timestamp": "2025-11-10T17:49:48.594862+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2815, "cols": 18, "timestamp": "2025-12-28T14:30:35.263304+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2815, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:30:35.263304+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2815, "cols": 24, "timestamp": "2025-12-28T14:30:35.263304+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\8_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\8.parquet`
 - Manifest: `data\l4_core12\2024\8_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\8_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| ARI | 0.2785941973403372 |
-| PHI | 0.2720709706848129 |
-| MIA | 0.2715010726040654 |
-| ATL | 0.22936956920875218 |
-| LA | 0.21993666280347568 |
-| JAX | 0.20614335638570447 |
-| CLE | 0.20523558221390692 |
-| MIN | 0.20354781044176323 |
-| BUF | 0.20130588392519017 |
-| SF | 0.19996511358809005 |
+| LA | 2.2157852586520717 |
+| PHI | 2.140492023316392 |
+| ARI | 2.094122979134179 |
+| KC | 2.058513326449588 |
+| BUF | 2.055773969031573 |
+| MIA | 2.0017401724634185 |
+| TB | 1.84353916910585 |
+| NYG | 1.7819414592697498 |
+| LV | 1.7690334071102367 |
+| NE | 1.7644786984306915 |
 
 
 ## Visualizations

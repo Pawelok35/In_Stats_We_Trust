@@ -4,19 +4,21 @@
 
 | Metric | NYJ | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.015 | -0.114 | ↑ +0.099 |
-| Core EPA Defense | -0.114 | -0.015 | ↓ -0.099 |
-| Success Rate Offense | 38.9% | 46.4% | ↓ -7.5 pp |
-| Success Rate Defense | 46.4% | 38.9% | ↑ +7.5 pp |
-| Explosive Play Rate (Off) | 9.7% | 10.7% | ↓ -1.0 pp |
-| Third Down Conversion | 38.5% | 38.5% | ± 0.0 pp |
-| Points per Drive Differential | -0.667 | 0.667 | ↓ -1.333 |
-| Yards per Play Differential | 0.276 | -0.276 | ↑ +0.552 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 7.1% | 16.7% | ↓ -9.5 pp |
-| Pressure Rate (Def) | 10.9% | 11.1% | ↓ -0.2 pp |
-| Tempo | 6.000 | 7.636 | ↓ -1.636 |
-| PowerScore | 0.089 | 0.095 | ↓ -0.006 |
+| Core EPA Offense | -0.015 | -0.114 | 0.099 |
+| Core EPA Defense | -0.114 | -0.015 | -0.099 |
+| Success Rate Offense | 0.389 | 0.464 | -0.075 |
+| Success Rate Defense | 0.464 | 0.389 | 0.075 |
+| Explosive Play Rate (Off) | 0.097 | 0.107 | -0.010 |
+| Third Down Conversion | 0.385 | 0.385 | 0.000 |
+| Points per Drive Differential | -0.667 | 0.667 | -1.333 |
+| Yards per Play Differential | 0.276 | -0.276 | 0.552 |
+| Turnover Margin | 3.000 | -3.000 | 6.000 |
+| Red Zone TD Rate (Off) | 0.071 | 0.167 | -0.095 |
+| Pressure Rate (Def) | 0.109 | 0.111 | -0.002 |
+| Tempo | 6.000 | 7.636 | -1.636 |
+| PowerScore | 1.269 | 1.600 | -0.331 |
+| PowerScore | 1.269 | 1.600 | -0.331 |
+| Tempo | 6.000 | 7.636 | -1.636 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ BUF edge: +0.006 (NYJ +0.089 vs BUF +0.095)
 **7 metrics version:**
 NYJ edge: +0.583 (NYJ +0.359 vs BUF -0.223)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.583), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - BUF) | -0.1 pts (favours BUF) |
-| Model Win% NYJ | 49.5% |
-| Model Win% BUF | 50.5% |
+| Model Spread (NYJ - BUF) | -6.1 pts (favours BUF) |
+| Model Win% NYJ | 26.5% |
+| Model Win% BUF | 73.5% |
 | SOS Differential (NYJ-BUF) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

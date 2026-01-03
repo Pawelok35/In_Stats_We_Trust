@@ -4,19 +4,21 @@
 
 | Metric | IND | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.147 | 0.068 | ↑ +0.079 |
-| Core EPA Defense | 0.068 | 0.147 | ↓ -0.079 |
-| Success Rate Offense | 41.7% | 40.2% | ↑ +1.5 pp |
-| Success Rate Defense | 40.2% | 41.7% | ↓ -1.5 pp |
-| Explosive Play Rate (Off) | 12.5% | 6.2% | ↑ +6.3 pp |
-| Third Down Conversion | 40.0% | 31.2% | ↑ +8.8 pp |
-| Points per Drive Differential | -0.131 | 0.131 | ↓ -0.263 |
-| Yards per Play Differential | 1.033 | -1.033 | ↑ +2.066 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 8.3% | 11.8% | ↓ -3.4 pp |
-| Pressure Rate (Def) | 4.1% | 4.0% | ↑ +0.1 pp |
-| Tempo | 6.545 | 10.778 | ↓ -4.232 |
-| PowerScore | 0.194 | 0.166 | ↑ +0.028 |
+| Core EPA Offense | -0.044 | -0.114 | 0.070 |
+| Core EPA Defense | -0.027 | -0.080 | 0.052 |
+| Success Rate Offense | 0.401 | 0.396 | 0.005 |
+| Success Rate Defense | 0.424 | 0.418 | 0.006 |
+| Explosive Play Rate (Off) | 0.084 | 0.078 | 0.006 |
+| Third Down Conversion | 0.325 | 0.315 | 0.010 |
+| Points per Drive Differential | -0.146 | -0.265 | 0.118 |
+| Yards per Play Differential | -0.119 | -0.270 | 0.151 |
+| Turnover Margin | 0.533 | -0.333 | 0.867 |
+| Red Zone TD Rate (Off) | 0.124 | 0.119 | 0.004 |
+| Pressure Rate (Def) | 0.083 | 0.070 | 0.013 |
+| Tempo | 6.545 | 10.778 | -4.232 |
+| PowerScore | 1.478 | 2.309 | -0.831 |
+| PowerScore | 1.478 | 2.309 | -0.831 |
+| Tempo | 6.545 | 10.778 | -4.232 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ IND edge: +0.028 (IND +0.194 vs LV +0.166)
 **7 metrics version:**
 IND edge: +0.009 (IND +0.138 vs LV +0.129)
 **Verdict:** IND holds the edge in the extended breakdown (lead 0.009), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - LV) | +0.5 pts (favours IND) |
-| Model Win% IND | 52.2% |
-| Model Win% LV | 47.8% |
-| SOS Differential (IND-LV) | +0.037 |
+| Model Spread (IND - LV) | -15.4 pts (favours LV) |
+| Model Win% IND | 7.2% |
+| Model Win% LV | 92.8% |
+| SOS Differential (IND-LV) | -0.068 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | LV |
 | --- | ---: | ---: |
-| Season-to-date | 0.109 | 0.072 |
-| Last 5 games | 0.101 | 0.043 |
-| Last 3 games | 0.099 | 0.002 |
+| Season-to-date | 1.544 | 1.612 |
+| Last 5 games | 1.527 | 1.459 |
+| Last 3 games | 1.512 | 1.453 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,7 +249,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 15 | PIT (H) | 30-12 | IND | 0.953 | -0.059 | 43.4% | 1.644 |
-| 10 | NE (H) | 10-6 | IND | 0.949 | -0.003 | 41.4% | 0.400 |
+| 10 | NE (A) | 10-6 | IND | 0.949 | -0.003 | 41.4% | 0.400 |
 | 7 | CLE (H) | 38-31 | IND | 0.821 | -0.103 | 41.1% | 0.434 |
 
 **LV analogs vs IND profile**

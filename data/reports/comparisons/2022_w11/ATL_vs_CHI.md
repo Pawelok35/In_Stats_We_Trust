@@ -4,19 +4,21 @@
 
 | Metric | ATL | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.047 | 0.027 | ↑ +0.020 |
-| Core EPA Defense | 0.027 | 0.047 | ↓ -0.020 |
-| Success Rate Offense | 47.1% | 41.4% | ↑ +5.8 pp |
-| Success Rate Defense | 41.4% | 47.1% | ↓ -5.8 pp |
-| Explosive Play Rate (Off) | 12.9% | 5.7% | ↑ +7.1 pp |
-| Third Down Conversion | 18.2% | 50.0% | ↓ -31.8 pp |
-| Points per Drive Differential | 0.300 | -0.300 | ↑ +0.600 |
-| Yards per Play Differential | 0.690 | -0.690 | ↑ +1.379 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 18.2% | 18.8% | ↓ -0.6 pp |
-| Pressure Rate (Def) | 16.0% | 0.0% | ↑ +16.0 pp |
-| Tempo | 7.000 | 8.700 | ↓ -1.700 |
-| PowerScore | 0.165 | 0.134 | ↑ +0.032 |
+| Core EPA Offense | 0.007 | 0.000 | 0.007 |
+| Core EPA Defense | 0.027 | 0.047 | -0.020 |
+| Success Rate Offense | 0.451 | 0.412 | 0.038 |
+| Success Rate Defense | 0.469 | 0.456 | 0.013 |
+| Explosive Play Rate (Off) | 0.104 | 0.129 | -0.025 |
+| Third Down Conversion | 0.407 | 0.400 | 0.006 |
+| Points per Drive Differential | -0.478 | -0.084 | -0.394 |
+| Yards per Play Differential | -0.640 | -0.215 | -0.425 |
+| Turnover Margin | 0.100 | 0.200 | -0.100 |
+| Red Zone TD Rate (Off) | 0.147 | 0.144 | 0.003 |
+| Pressure Rate (Def) | 0.035 | 0.053 | -0.018 |
+| Tempo | 7.000 | 8.700 | -1.700 |
+| PowerScore | 1.540 | 1.862 | -0.323 |
+| PowerScore | 1.540 | 1.862 | -0.323 |
+| Tempo | 7.000 | 8.700 | -1.700 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.032 (ATL +0.165 vs CHI +0.134)
 **7 metrics version:**
 ATL edge: +0.232 (ATL +0.235 vs CHI +0.003)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.232), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - CHI) | +0.6 pts (favours ATL) |
-| Model Win% ATL | 52.4% |
-| Model Win% CHI | 47.6% |
-| SOS Differential (ATL-CHI) | -0.004 |
+| Model Spread (ATL - CHI) | -6.0 pts (favours CHI) |
+| Model Win% ATL | 27.0% |
+| Model Win% CHI | 73.0% |
+| SOS Differential (ATL-CHI) | +0.155 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.150 | 0.154 |
-| Last 5 games | 0.133 | 0.166 |
-| Last 3 games | 0.108 | 0.235 |
+| Season-to-date | 1.783 | 1.628 |
+| Last 5 games | 1.732 | 1.492 |
+| Last 3 games | 1.664 | 1.600 |
 
 ## Trend Summary (last 3 weeks)
 

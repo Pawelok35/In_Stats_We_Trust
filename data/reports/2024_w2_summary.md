@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 2
 
-_Generated at 2025-11-10T17:48:42.767025+00:00 (UTC)_
+_Generated at 2025-12-28T14:13:27.946917+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\2_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2721, "cols": 18, "timestamp": "2025-11-10T17:48:42.344453+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2721, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:48:42.344453+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2721, "cols": 24, "timestamp": "2025-11-10T17:48:42.344453+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2721, "cols": 18, "timestamp": "2025-12-28T14:13:27.553275+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2721, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:13:27.553275+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2721, "cols": 24, "timestamp": "2025-12-28T14:13:27.553275+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\2_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\2.parquet`
 - Manifest: `data\l4_core12\2024\2_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\2_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| NO | 0.27633495461207436 |
-| ARI | 0.2685365538667801 |
-| ATL | 0.22064187622190884 |
-| WAS | 0.2117335344193613 |
-| PHI | 0.2009976225506045 |
-| NYG | 0.1952262613801529 |
-| SEA | 0.1726702138952825 |
-| DAL | 0.16705396296501912 |
-| LA | 0.16012353736083212 |
-| CIN | 0.15750549848275563 |
+| WAS | 2.1806224233082503 |
+| NYG | 2.11455399247259 |
+| PHI | 2.0888529197082275 |
+| CLE | 2.0762915438153 |
+| ARI | 2.008814331644558 |
+| DET | 1.8984403108350765 |
+| DAL | 1.8955597100914559 |
+| MIA | 1.8378352710273311 |
+| ATL | 1.8353565909366234 |
+| SF | 1.7664113574211375 |
 
 
 ## Visualizations

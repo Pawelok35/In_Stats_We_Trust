@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 11
 
-_Generated at 2025-11-10T20:38:56.217284+00:00 (UTC)_
+_Generated at 2026-01-02T10:26:48.066779+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\11_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2410, "cols": 18, "timestamp": "2025-11-10T20:38:55.760798+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2410, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:38:55.760798+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2410, "cols": 24, "timestamp": "2025-11-10T20:38:55.760798+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2410, "cols": 18, "timestamp": "2026-01-02T10:26:47.634502+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2410, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:26:47.634502+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2410, "cols": 24, "timestamp": "2026-01-02T10:26:47.634502+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\11_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\11.parquet`
 - Manifest: `data\l4_core12\2023\11_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\11_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| JAX | 0.2592946743346485 |
-| SF | 0.20119197909205438 |
-| BAL | 0.19414792681581486 |
-| TEN | 0.18731724859037927 |
-| DET | 0.15493725253750776 |
-| CHI | 0.14732227620279825 |
-| DAL | 0.1445430239031505 |
-| GB | 0.1434983386389149 |
-| CIN | 0.1423387141602995 |
-| LAC | 0.13831459058079942 |
+| JAX | 1.9202470552870297 |
+| DAL | 1.8661522193054494 |
+| MIN | 1.856388370584046 |
+| TB | 1.804693877974166 |
+| CHI | 1.802658244582245 |
+| GB | 1.755417530558107 |
+| BAL | 1.6839617274729892 |
+| KC | 1.6795487110932663 |
+| CIN | 1.6529447747663601 |
+| SF | 1.6514622493623248 |
 
 
 ## Visualizations

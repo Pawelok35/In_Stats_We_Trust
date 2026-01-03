@@ -4,19 +4,21 @@
 
 | Metric | LV | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.003 | -0.357 | ↑ +0.354 |
-| Core EPA Defense | -0.357 | -0.003 | ↓ -0.354 |
-| Success Rate Offense | 46.7% | 34.2% | ↑ +12.5 pp |
-| Success Rate Defense | 34.2% | 46.7% | ↓ -12.5 pp |
-| Explosive Play Rate (Off) | 9.3% | 5.1% | ↑ +4.3 pp |
-| Third Down Conversion | 35.7% | 25.0% | ↑ +10.7 pp |
-| Points per Drive Differential | 2.038 | -2.038 | ↑ +4.077 |
-| Yards per Play Differential | 0.947 | -0.947 | ↑ +1.894 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 21.4% | 25.0% | ↓ -3.6 pp |
-| Pressure Rate (Def) | 21.1% | 0.0% | ↑ +21.1 pp |
-| Tempo | 6.250 | 6.077 | ↑ +0.173 |
-| PowerScore | 0.063 | -0.030 | ↑ +0.093 |
+| Core EPA Offense | -0.115 | -0.176 | 0.062 |
+| Core EPA Defense | 0.005 | -0.035 | 0.040 |
+| Success Rate Offense | 0.411 | 0.378 | 0.033 |
+| Success Rate Defense | 0.440 | 0.438 | 0.002 |
+| Explosive Play Rate (Off) | 0.077 | 0.068 | 0.009 |
+| Third Down Conversion | 0.285 | 0.314 | -0.030 |
+| Points per Drive Differential | -0.757 | -0.872 | 0.116 |
+| Yards per Play Differential | -0.535 | -1.182 | 0.647 |
+| Turnover Margin | -1.000 | 0.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.127 | 0.136 | -0.009 |
+| Pressure Rate (Def) | 0.057 | 0.064 | -0.006 |
+| Tempo | 6.250 | 6.077 | 0.173 |
+| PowerScore | 0.063 | -0.030 | 0.093 |
+| PowerScore | 0.063 | -0.030 | 0.093 |
+| Tempo | 6.250 | 6.077 | 0.173 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LV edge: +0.093 (LV +0.063 vs NYG -0.030)
 **7 metrics version:**
 LV edge: +0.458 (LV +0.250 vs NYG -0.209)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.458), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ LV edge: +0.458 (LV +0.250 vs NYG -0.209)
 | Model Spread (LV - NYG) | +1.7 pts (favours LV) |
 | Model Win% LV | 57.1% |
 | Model Win% NYG | 42.9% |
-| SOS Differential (LV-NYG) | +0.024 |
+| SOS Differential (LV-NYG) | +0.303 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.109 | 0.084 |
-| Last 5 games | 0.069 | 0.050 |
-| Last 3 games | 0.085 | 0.022 |
+| Season-to-date | 1.778 | 1.475 |
+| Last 5 games | 1.590 | 1.297 |
+| Last 3 games | 1.769 | 1.323 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | ARI (A) | 31-28 | NYG | 0.833 | 0.144 | 49.4% | 0.300 |
 | 7 | WAS (H) | 14-7 | NYG | 0.822 | -0.073 | 43.4% | 0.500 |
-| 8 | NYJ (A) | 10-14 | NYJ | 0.686 | -0.304 | 27.0% | -0.209 |
+| 8 | NYJ (H) | 10-14 | NYJ | 0.686 | -0.304 | 27.0% | -0.209 |
 
 ## Core EPA Offense Form (up to Week 8)
 

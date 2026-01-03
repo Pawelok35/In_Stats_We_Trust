@@ -9,10 +9,10 @@ No team reports generated.
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/BUF_vs_GB.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/CLE_vs_CIN.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/DAL_vs_CHI.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/DEN_vs_JAX.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/DET_vs_MIA.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/HOU_vs_TEN.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/IND_vs_WAS.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/JAX_vs_DEN.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/LA_vs_SF.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/MIN_vs_ARI.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w8/NO_vs_LV.md`

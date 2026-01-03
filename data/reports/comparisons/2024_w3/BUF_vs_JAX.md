@@ -4,19 +4,21 @@
 
 | Metric | BUF | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.342 | -0.163 | ↑ +0.504 |
-| Core EPA Defense | -0.163 | 0.342 | ↓ -0.504 |
-| Success Rate Offense | 53.8% | 42.7% | ↑ +11.1 pp |
-| Success Rate Defense | 42.7% | 53.8% | ↓ -11.1 pp |
-| Explosive Play Rate (Off) | 15.4% | 6.7% | ↑ +8.6 pp |
-| Third Down Conversion | 54.5% | 14.3% | ↑ +40.3 pp |
-| Points per Drive Differential | 3.700 | -3.700 | ↑ +7.400 |
-| Yards per Play Differential | 2.289 | -2.289 | ↑ +4.578 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 14.8% | 7.1% | ↑ +7.7 pp |
-| Pressure Rate (Def) | 11.8% | 0.0% | ↑ +11.8 pp |
-| Tempo | 7.800 | 8.900 | ↓ -1.100 |
-| PowerScore | 0.252 | 0.132 | ↑ +0.121 |
+| Core EPA Offense | 0.150 | -0.038 | 0.188 |
+| Core EPA Defense | -0.047 | 0.021 | -0.068 |
+| Success Rate Offense | 0.507 | 0.442 | 0.065 |
+| Success Rate Defense | 0.460 | 0.437 | 0.023 |
+| Explosive Play Rate (Off) | 0.084 | 0.122 | -0.038 |
+| Third Down Conversion | 0.292 | 0.233 | 0.058 |
+| Points per Drive Differential | 0.936 | -0.299 | 1.236 |
+| Yards per Play Differential | 0.436 | -0.006 | 0.442 |
+| Turnover Margin | 1.500 | -0.500 | 2.000 |
+| Red Zone TD Rate (Off) | 0.212 | 0.142 | 0.070 |
+| Pressure Rate (Def) | 0.080 | 0.065 | 0.015 |
+| Tempo | 7.800 | 8.900 | -1.100 |
+| PowerScore | 1.782 | 1.898 | -0.117 |
+| PowerScore | 1.782 | 1.898 | -0.117 |
+| Tempo | 7.800 | 8.900 | -1.100 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BUF edge: +0.121 (BUF +0.252 vs JAX +0.132)
 **7 metrics version:**
 BUF edge: +0.470 (BUF +0.376 vs JAX -0.094)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.470), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - JAX) | +2.2 pts (favours BUF) |
-| Model Win% BUF | 59.2% |
-| Model Win% JAX | 40.8% |
-| SOS Differential (BUF-JAX) | +0.026 |
+| Model Spread (BUF - JAX) | -2.2 pts (favours JAX) |
+| Model Win% BUF | 41.1% |
+| Model Win% JAX | 58.9% |
+| SOS Differential (BUF-JAX) | -0.025 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.150 | 0.124 |
-| Last 5 games | 0.150 | 0.124 |
-| Last 3 games | 0.150 | 0.124 |
+| Season-to-date | 1.778 | 1.803 |
+| Last 5 games | 1.778 | 1.803 |
+| Last 3 games | 1.778 | 1.803 |
 
 ## Trend Summary (last 2 weeks)
 

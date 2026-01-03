@@ -4,19 +4,21 @@
 
 | Metric | TB | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.159 | 0.024 | ↓ -0.184 |
-| Core EPA Defense | 0.024 | -0.159 | ↑ +0.184 |
-| Success Rate Offense | 40.9% | 48.2% | ↓ -7.3 pp |
-| Success Rate Defense | 48.2% | 40.9% | ↑ +7.3 pp |
-| Explosive Play Rate (Off) | 8.0% | 3.6% | ↑ +4.3 pp |
-| Third Down Conversion | 33.3% | 35.7% | ↓ -2.4 pp |
-| Points per Drive Differential | -0.742 | 0.742 | ↓ -1.485 |
-| Yards per Play Differential | 1.620 | -1.620 | ↑ +3.241 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 16.7% | 15.4% | ↑ +1.3 pp |
-| Pressure Rate (Def) | 4.4% | 2.2% | ↑ +2.3 pp |
-| Tempo | 8.000 | 6.917 | ↑ +1.083 |
-| PowerScore | 0.067 | 0.104 | ↓ -0.037 |
+| Core EPA Offense | -0.047 | 0.067 | -0.114 |
+| Core EPA Defense | -0.014 | -0.011 | -0.003 |
+| Success Rate Offense | 0.425 | 0.460 | -0.035 |
+| Success Rate Defense | 0.424 | 0.426 | -0.002 |
+| Explosive Play Rate (Off) | 0.075 | 0.098 | -0.023 |
+| Third Down Conversion | 0.340 | 0.430 | -0.091 |
+| Points per Drive Differential | -0.246 | 0.580 | -0.826 |
+| Yards per Play Differential | -0.071 | 0.253 | -0.324 |
+| Turnover Margin | 0.000 | 0.308 | -0.308 |
+| Red Zone TD Rate (Off) | 0.111 | 0.167 | -0.056 |
+| Pressure Rate (Def) | 0.081 | 0.052 | 0.028 |
+| Tempo | 8.000 | 6.917 | 1.083 |
+| PowerScore | 1.651 | 1.480 | 0.171 |
+| PowerScore | 1.651 | 1.480 | 0.171 |
+| Tempo | 8.000 | 6.917 | 1.083 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ CIN edge: +0.037 (TB +0.067 vs CIN +0.104)
 **7 metrics version:**
 CIN edge: +0.612 (TB -0.245 vs CIN +0.368)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.612), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TB - CIN) | -0.7 pts (favours CIN) |
-| Model Win% TB | 47.1% |
-| Model Win% CIN | 52.9% |
+| Model Spread (TB - CIN) | +3.2 pts (favours TB) |
+| Model Win% TB | 62.9% |
+| Model Win% CIN | 37.1% |
 | SOS Differential (TB-CIN) | -0.025 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.112 | 0.137 |
-| Last 5 games | 0.114 | 0.163 |
-| Last 3 games | 0.121 | 0.165 |
+| Season-to-date | 1.552 | 1.577 |
+| Last 5 games | 1.439 | 1.636 |
+| Last 3 games | 1.486 | 1.728 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 7
 
-_Generated at 2025-11-10T20:38:11.289916+00:00 (UTC)_
+_Generated at 2026-01-02T10:23:09.362362+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\7_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2252, "cols": 18, "timestamp": "2025-11-10T20:38:10.855767+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2252, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:38:10.855767+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2252, "cols": 24, "timestamp": "2025-11-10T20:38:10.855767+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2252, "cols": 18, "timestamp": "2026-01-02T10:23:08.936679+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2252, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:23:08.936679+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2252, "cols": 24, "timestamp": "2026-01-02T10:23:08.936679+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\7_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\7.parquet`
 - Manifest: `data\l4_core12\2023\7_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 26
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\7_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BAL | 0.2673077183155666 |
-| KC | 0.22003754866741462 |
-| NE | 0.18597189352399798 |
-| DEN | 0.17877776966405434 |
-| GB | 0.17305971336433915 |
-| BUF | 0.17224749367206213 |
-| LAC | 0.16749377562587306 |
-| SF | 0.16019933490941327 |
-| MIN | 0.14853084944763506 |
-| DET | 0.14012547461944647 |
+| MIN | 2.034060565209909 |
+| GB | 1.950837491142117 |
+| BUF | 1.9186111300356987 |
+| DET | 1.8842163837103558 |
+| CHI | 1.8743790599677441 |
+| PHI | 1.7985424830855499 |
+| LV | 1.7912395649715784 |
+| LA | 1.7104846089146435 |
+| KC | 1.7050320722161552 |
+| TB | 1.7043141797360428 |
 
 
 ## Visualizations

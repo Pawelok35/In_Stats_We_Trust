@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CHI 20.6 – WAS 25.0
-2️⃣ Predicted Winner (Model) – WAS
-3️⃣ Predicted Margin (Model) – WAS by 4.4 pts
-4️⃣ Win Probability (Model) – 64% (WAS)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje WAS na poziomie 51.1% vs 42.3% (+8.8 pp). Red Zone TD Rate sprzyja WAS (18.2% vs 15.7%). WAS prowadzi w Points per Drive Differential (+0.560 vs -0.592), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – CHI 25.3 – WAS 19.2
+2️⃣ Predicted Winner (Model) – CHI
+3️⃣ Predicted Margin (Model) – CHI by 6.0 pts
+4️⃣ Win Probability (Model) – 80% (CHI)
+5️⃣ Why This Team Wins (Model) – Explosive Play Rate pozostaje po stronie CHI (13.0% vs 8.4%), więc big-play equity jest wyższe. Red Zone TD Rate sprzyja CHI (15.7% vs 12.9%). Success Rate Offense pokazuje CHI na poziomie 37.7% vs 36.9% (+0.8 pp). CHI prowadzi w Points per Drive Differential (-0.385 vs -0.606), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CHI 22.8 – WAS 27.2
+1️⃣ Estimated Score (Market) – CHI 18.8 – WAS 19.8
 2️⃣ Predicted Winner (Market) – WAS
-3️⃣ Predicted Margin (Market) – WAS by 4.5 pts
-4️⃣ Win Probability (Market) – 66% (WAS)
-5️⃣ Forum Output (A) – PowerScore (Model) — CHI +0.192 vs WAS +0.172. Points per Drive Differential — CHI -0.592 vs WAS +0.560. Success Rate Offense — CHI 42.3% vs WAS 51.1%. Third Down Conversion — CHI 41.6% vs WAS 26.4%. Red Zone TD Rate — CHI 15.7% vs WAS 18.2%. Explosive Play Rate — CHI 10.7% vs WAS 10.6%. Model margin -4.4 pts vs market spread CHI -4.5.
-6️⃣ Forum Output (B) – Model idzie w stronę WAS po marginesie -4.4 pkt. WAS notuje +0.560 PPD vs -0.592 u CHI. Różnica w Success Rate to 51.1% vs 42.3%. Na 3rd down WAS (26.4%) wygląda solidniej niż CHI (41.6%). Red Zone i explosiveness ( 18.2% / 10.6% ) utrzymują przewagę jakościową. Market trzyma -4.5 pkt, więc edge vs linia to -0.1.
+3️⃣ Predicted Margin (Market) – WAS by 1.0 pts
+4️⃣ Win Probability (Market) – 54% (WAS)
+5️⃣ Forum Output (A) – PowerScore (Model) — CHI +0.090 vs WAS +0.096. Points per Drive Differential — CHI -0.385 vs WAS -0.606. Success Rate Offense — CHI 37.7% vs WAS 36.9%. Third Down Conversion — CHI 33.4% vs WAS 34.2%. Red Zone TD Rate — CHI 15.7% vs WAS 12.9%. Explosive Play Rate — CHI 13.0% vs WAS 8.4%. Model margin 6.0 pts vs market spread CHI -1.0.
+6️⃣ Forum Output (B) – Model idzie w stronę CHI po marginesie 6.0 pkt. CHI notuje -0.385 PPD vs -0.606 u WAS. Różnica w Success Rate to 37.7% vs 36.9%. Na 3rd down CHI (33.4%) wygląda solidniej niż WAS (34.2%). Red Zone i explosiveness ( 15.7% / 13.0% ) utrzymują przewagę jakościową. Market trzyma -1.0 pkt, więc edge vs linia to +7.0.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -0.1 pts
-• PowerScoreDiff (winner) = -0.020
-• Confidence = 64.0%
+• Edge_vs_Line (winner) = +7.0 pts
+• PowerScoreDiff (winner) = -0.006
+• Confidence = 80.0%
 
-🏷 Model Tag: NEUTRAL — based on 64.0% confidence, -0.1 pts model edge vs line, and PowerScore Δ -0.020.
+🏷 Model Tag: NEUTRAL — based on 80.0% confidence, +7.0 pts model edge vs line, and PowerScore Δ -0.006.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – CHI 20.6 – WAS 25.0
-   • Win Probability – 64% (WAS)
+   • Estimated Score – CHI 25.3 – WAS 19.2
+   • Win Probability – 80% (CHI)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CHI 22.8 – WAS 27.2
-   • Win Probability – 66% (WAS)
+   • Estimated Score – CHI 18.8 – WAS 19.8
+   • Win Probability – 54% (WAS)
 
-🏷 Model Tag: NEUTRAL — WAS (HC -4.5)
+🏷 Model Tag: NEUTRAL — CHI (HC +1.0)

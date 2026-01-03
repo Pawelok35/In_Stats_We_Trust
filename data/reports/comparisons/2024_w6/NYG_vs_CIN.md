@@ -4,19 +4,21 @@
 
 | Metric | NYG | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.132 | 0.017 | ↓ -0.150 |
-| Core EPA Defense | 0.017 | -0.132 | ↑ +0.150 |
-| Success Rate Offense | 47.3% | 45.5% | ↑ +1.8 pp |
-| Success Rate Defense | 45.5% | 47.3% | ↓ -1.8 pp |
-| Explosive Play Rate (Off) | 8.8% | 9.1% | ↓ -0.3 pp |
-| Third Down Conversion | 29.4% | 33.3% | ↓ -3.9 pp |
-| Points per Drive Differential | -0.909 | 0.909 | ↓ -1.818 |
-| Yards per Play Differential | -1.210 | 1.210 | ↓ -2.421 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 25.0% | 0.0% | ↑ +25.0 pp |
-| Pressure Rate (Def) | 11.8% | 4.5% | ↑ +7.2 pp |
-| Tempo | 8.273 | 6.000 | ↑ +2.273 |
-| PowerScore | 0.093 | 0.111 | ↓ -0.019 |
+| Core EPA Offense | -0.056 | 0.141 | -0.197 |
+| Core EPA Defense | -0.018 | 0.157 | -0.175 |
+| Success Rate Offense | 0.436 | 0.516 | -0.079 |
+| Success Rate Defense | 0.478 | 0.545 | -0.067 |
+| Explosive Play Rate (Off) | 0.088 | 0.091 | -0.004 |
+| Third Down Conversion | 0.339 | 0.447 | -0.108 |
+| Points per Drive Differential | -0.268 | 0.144 | -0.412 |
+| Yards per Play Differential | -0.166 | 0.206 | -0.372 |
+| Turnover Margin | -0.400 | 0.400 | -0.800 |
+| Red Zone TD Rate (Off) | 0.105 | 0.136 | -0.031 |
+| Pressure Rate (Def) | 0.106 | 0.041 | 0.065 |
+| Tempo | 8.273 | 6.000 | 2.273 |
+| PowerScore | 0.093 | 0.111 | -0.019 |
+| PowerScore | 0.093 | 0.111 | -0.019 |
+| Tempo | 8.273 | 6.000 | 2.273 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CIN edge: +0.019 (NYG +0.093 vs CIN +0.111)
 **7 metrics version:**
 NYG edge: +0.027 (NYG +0.087 vs CIN +0.060)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.027), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ NYG edge: +0.027 (NYG +0.087 vs CIN +0.060)
 | Model Spread (NYG - CIN) | -0.3 pts (favours CIN) |
 | Model Win% NYG | 48.6% |
 | Model Win% CIN | 51.4% |
-| SOS Differential (NYG-CIN) | -0.113 |
+| SOS Differential (NYG-CIN) | -0.286 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.124 | 0.237 |
-| Last 5 games | 0.124 | 0.237 |
-| Last 3 games | 0.094 | 0.290 |
+| Season-to-date | 1.570 | 1.856 |
+| Last 5 games | 1.570 | 1.856 |
+| Last 3 games | 1.445 | 1.925 |
 
 ## Trend Summary (last 3 weeks)
 

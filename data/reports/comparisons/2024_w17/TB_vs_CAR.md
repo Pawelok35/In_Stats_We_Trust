@@ -4,19 +4,21 @@
 
 | Metric | TB | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.316 | -0.130 | ↑ +0.446 |
-| Core EPA Defense | -0.130 | 0.316 | ↓ -0.446 |
-| Success Rate Offense | 59.8% | 47.8% | ↑ +12.0 pp |
-| Success Rate Defense | 47.8% | 59.8% | ↓ -12.0 pp |
-| Explosive Play Rate (Off) | 19.6% | 10.4% | ↑ +9.1 pp |
-| Third Down Conversion | 66.7% | 22.2% | ↑ +44.4 pp |
-| Points per Drive Differential | 2.200 | -2.200 | ↑ +4.400 |
-| Yards per Play Differential | 2.944 | -2.944 | ↑ +5.889 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 17.2% | 25.0% | ↓ -7.8 pp |
-| Pressure Rate (Def) | 15.2% | 5.4% | ↑ +9.7 pp |
-| Tempo | 9.200 | 6.700 | ↑ +2.500 |
-| PowerScore | 0.273 | 0.158 | ↑ +0.115 |
+| Core EPA Offense | 0.082 | -0.074 | 0.156 |
+| Core EPA Defense | 0.006 | 0.103 | -0.097 |
+| Success Rate Offense | 0.510 | 0.446 | 0.064 |
+| Success Rate Defense | 0.494 | 0.508 | -0.014 |
+| Explosive Play Rate (Off) | 0.127 | 0.084 | 0.043 |
+| Third Down Conversion | 0.434 | 0.306 | 0.128 |
+| Points per Drive Differential | 0.543 | -1.027 | 1.570 |
+| Yards per Play Differential | 0.431 | -0.801 | 1.231 |
+| Turnover Margin | -0.533 | -0.533 | 0.000 |
+| Red Zone TD Rate (Off) | 0.186 | 0.125 | 0.061 |
+| Pressure Rate (Def) | 0.067 | 0.056 | 0.011 |
+| Tempo | 9.200 | 6.700 | 2.500 |
+| PowerScore | 0.273 | 0.158 | 0.115 |
+| PowerScore | 0.273 | 0.158 | 0.115 |
+| Tempo | 9.200 | 6.700 | 2.500 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ TB edge: +0.115 (TB +0.273 vs CAR +0.158)
 **7 metrics version:**
 TB edge: +0.051 (TB +0.195 vs CAR +0.143)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.051), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ TB edge: +0.051 (TB +0.195 vs CAR +0.143)
 | Model Spread (TB - CAR) | +2.1 pts (favours TB) |
 | Model Win% TB | 58.8% |
 | Model Win% CAR | 41.2% |
-| SOS Differential (TB-CAR) | -0.012 |
+| SOS Differential (TB-CAR) | -0.078 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.160 | 0.172 |
-| Last 5 games | 0.105 | 0.199 |
-| Last 3 games | 0.105 | 0.195 |
+| Season-to-date | 1.649 | 1.727 |
+| Last 5 games | 1.457 | 1.881 |
+| Last 3 games | 1.453 | 1.810 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | CAR (A) | 31-45 | CAR | 1.000 | 0.088 | 52.0% | -1.144 |
-| 14 | SF (A) | 28-12 | TB | 0.804 | 0.062 | 48.1% | 1.618 |
-| 9 | LA (H) | 24-22 | TB | 0.758 | 0.133 | 44.4% | 0.167 |
+| 13 | CAR (A) | 26-25 | TB | 1.000 | -0.026 | 50.0% | 0.090 |
+| 16 | DAL (A) | 24-24 | TIE | 0.904 | 0.026 | 57.0% | 0.015 |
+| 12 | NYG (A) | 30-6 | TB | 0.900 | 0.211 | 50.0% | 2.633 |
 
 **CAR analogs vs TB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | TB (H) | 7-34 | TB | 1.000 | -0.309 | 45.2% | -2.700 |
-| 13 | TB (-) | 23-24 | TB | 1.000 | -0.075 | 50.0% | -0.090 |
-| 11 | BAL (A) | n/a | n/a | 0.900 | n/a | n/a | n/a |
+| 13 | TB (H) | 23-24 | TB | 1.000 | -0.075 | 50.0% | -0.090 |
+| 16 | ARI (H) | 36-35 | CAR | 0.881 | 0.176 | 45.6% | 0.042 |
+| 4 | CIN (H) | 24-37 | CIN | 0.856 | 0.044 | 52.3% | -1.218 |
 
 ## Core EPA Offense Form (up to Week 16)
 

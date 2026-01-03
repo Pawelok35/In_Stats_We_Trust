@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – ARI 36.8 – NE 21.3
-2️⃣ Predicted Winner (Model) – ARI
-3️⃣ Predicted Margin (Model) – ARI by 15.5 pts
-4️⃣ Win Probability (Model) – 95% (ARI)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera ARI (+8.0% vs +0.0%), więc pasy rywala będą częściej pod presją. Na 3rd down ARI utrzymuje 37.9%, podczas gdy NE jest na 32.9%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja ARI (13.4% vs 8.5%). Success Rate Offense pokazuje ARI na poziomie 50.3% vs 45.7% (+4.6 pp). Explosive Play Rate pozostaje po stronie ARI (12.0% vs 8.4%), więc big-play equity jest wyższe.
+1️⃣ Estimated Score (Model) – ARI 15.2 – NE 18.8
+2️⃣ Predicted Winner (Model) – NE
+3️⃣ Predicted Margin (Model) – NE by 3.6 pts
+4️⃣ Win Probability (Model) – 60% (NE)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera NE (+6.8% vs +0.0%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje NE (+1.00 vs -2.00), co przekłada się na dodatkowe posiadania. Field position edge wynosi +2.7 yds na rzecz NE (1.5 vs -1.2), co skraca ich boisko. NE prowadzi w Points per Drive Differential (-0.483 vs -0.751), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – ARI 26.2 – NE 20.2
-2️⃣ Predicted Winner (Market) – ARI
-3️⃣ Predicted Margin (Market) – ARI by 6.0 pts
-4️⃣ Win Probability (Market) – 71% (ARI)
-5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.197 vs NE +0.222. Points per Drive Differential — ARI +0.057 vs NE -0.556. Success Rate Offense — ARI 50.3% vs NE 45.7%. Third Down Conversion — ARI 37.9% vs NE 32.9%. Red Zone TD Rate — ARI 13.4% vs NE 8.5%. Explosive Play Rate — ARI 12.0% vs NE 8.4%. Model margin 15.5 pts vs market spread ARI +6.0.
-6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie 15.5 pkt. ARI notuje +0.057 PPD vs -0.556 u NE. Różnica w Success Rate to 50.3% vs 45.7%. Na 3rd down ARI (37.9%) wygląda solidniej niż NE (32.9%). Red Zone i explosiveness ( 13.4% / 12.0% ) utrzymują przewagę jakościową. Market trzyma 6.0 pkt, więc edge vs linia to +9.5.
+1️⃣ Estimated Score (Market) – ARI 18.0 – NE 19.5
+2️⃣ Predicted Winner (Market) – NE
+3️⃣ Predicted Margin (Market) – NE by 1.5 pts
+4️⃣ Win Probability (Market) – 55% (NE)
+5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.208 vs NE -0.033. Points per Drive Differential — ARI -0.751 vs NE -0.483. Success Rate Offense — ARI 38.2% vs NE 38.0%. Third Down Conversion — ARI 33.4% vs NE 30.9%. Red Zone TD Rate — ARI 12.2% vs NE 12.2%. Explosive Play Rate — ARI 9.3% vs NE 7.4%. Model margin -3.6 pts vs market spread ARI -1.5.
+6️⃣ Forum Output (B) – Model idzie w stronę NE po marginesie -3.6 pkt. NE notuje -0.483 PPD vs -0.751 u ARI. Różnica w Success Rate to 38.0% vs 38.2%. Na 3rd down NE (30.9%) wygląda solidniej niż ARI (33.4%). Red Zone i explosiveness ( 12.2% / 7.4% ) utrzymują przewagę jakościową. Market trzyma -1.5 pkt, więc edge vs linia to +2.1.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +9.5 pts
-• PowerScoreDiff (winner) = -0.025
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +2.1 pts
+• PowerScoreDiff (winner) = -0.241
+• Confidence = 60.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +9.5 pts model edge vs line, and PowerScore Δ -0.025.
+🏷 Model Tag: NEUTRAL — based on 60.0% confidence, +2.1 pts model edge vs line, and PowerScore Δ -0.241.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – ARI 36.8 – NE 21.3
-   • Win Probability – 95% (ARI)
+   • Estimated Score – ARI 15.2 – NE 18.8
+   • Win Probability – 60% (NE)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – ARI 26.2 – NE 20.2
-   • Win Probability – 71% (ARI)
+   • Estimated Score – ARI 18.0 – NE 19.5
+   • Win Probability – 55% (NE)
 
-🏷 Model Tag: NEUTRAL — ARI (HC -6.0)
+🏷 Model Tag: NEUTRAL — NE (HC -1.5)

@@ -4,19 +4,21 @@
 
 | Metric | CIN | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.037 | -0.112 | ↑ +0.149 |
-| Core EPA Defense | -0.112 | 0.037 | ↓ -0.149 |
-| Success Rate Offense | 42.7% | 44.2% | ↓ -1.5 pp |
-| Success Rate Defense | 44.2% | 42.7% | ↑ +1.5 pp |
-| Explosive Play Rate (Off) | 11.0% | 8.1% | ↑ +2.8 pp |
-| Third Down Conversion | 35.3% | 25.0% | ↑ +10.3 pp |
-| Points per Drive Differential | 1.182 | -1.182 | ↑ +2.364 |
-| Yards per Play Differential | 0.427 | -0.427 | ↑ +0.854 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 16.7% | 6.2% | ↑ +10.4 pp |
-| Pressure Rate (Def) | 4.4% | 5.3% | ↓ -0.8 pp |
-| Tempo | 7.455 | 7.818 | ↓ -0.364 |
-| PowerScore | 0.119 | 0.095 | ↑ +0.024 |
+| Core EPA Offense | 0.069 | 0.019 | 0.050 |
+| Core EPA Defense | -0.002 | 0.029 | -0.031 |
+| Success Rate Offense | 0.463 | 0.439 | 0.024 |
+| Success Rate Defense | 0.425 | 0.439 | -0.014 |
+| Explosive Play Rate (Off) | 0.097 | 0.114 | -0.017 |
+| Third Down Conversion | 0.437 | 0.369 | 0.068 |
+| Points per Drive Differential | 0.530 | -0.219 | 0.749 |
+| Yards per Play Differential | 0.239 | 0.111 | 0.128 |
+| Turnover Margin | 0.333 | -0.417 | 0.750 |
+| Red Zone TD Rate (Off) | 0.167 | 0.134 | 0.033 |
+| Pressure Rate (Def) | 0.053 | 0.063 | -0.010 |
+| Tempo | 7.455 | 7.818 | -0.364 |
+| PowerScore | 1.588 | 1.642 | -0.054 |
+| PowerScore | 1.588 | 1.642 | -0.054 |
+| Tempo | 7.455 | 7.818 | -0.364 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CIN edge: +0.024 (CIN +0.119 vs CLE +0.095)
 **7 metrics version:**
 CIN edge: +0.018 (CIN +0.083 vs CLE +0.065)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.018), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - CLE) | +0.4 pts (favours CIN) |
-| Model Win% CIN | 51.9% |
-| Model Win% CLE | 48.1% |
-| SOS Differential (CIN-CLE) | -0.005 |
+| Model Spread (CIN - CLE) | -1.0 pts (favours CLE) |
+| Model Win% CIN | 45.8% |
+| Model Win% CLE | 54.2% |
+| SOS Differential (CIN-CLE) | +0.014 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.140 | 0.146 |
-| Last 5 games | 0.173 | 0.121 |
-| Last 3 games | 0.190 | 0.088 |
+| Season-to-date | 1.572 | 1.557 |
+| Last 5 games | 1.645 | 1.548 |
+| Last 3 games | 1.735 | 1.423 |
 
 ## Trend Summary (last 3 weeks)
 

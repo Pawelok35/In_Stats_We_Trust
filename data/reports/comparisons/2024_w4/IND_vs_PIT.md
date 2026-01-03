@@ -4,19 +4,21 @@
 
 | Metric | IND | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.024 | -0.019 | ↑ +0.042 |
-| Core EPA Defense | -0.019 | 0.024 | ↓ -0.042 |
-| Success Rate Offense | 45.2% | 51.8% | ↓ -6.5 pp |
-| Success Rate Defense | 51.8% | 45.2% | ↑ +6.5 pp |
-| Explosive Play Rate (Off) | 13.1% | 12.9% | ↑ +0.2 pp |
-| Third Down Conversion | 53.3% | 42.9% | ↑ +10.5 pp |
-| Points per Drive Differential | 0.273 | -0.273 | ↑ +0.545 |
-| Yards per Play Differential | -0.491 | 0.491 | ↓ -0.982 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 13.6% | 17.6% | ↓ -4.0 pp |
-| Pressure Rate (Def) | 10.5% | 6.1% | ↑ +4.5 pp |
-| Tempo | 7.636 | 7.727 | ↓ -0.091 |
-| PowerScore | 0.144 | 0.154 | ↓ -0.010 |
+| Core EPA Offense | -0.042 | -0.001 | -0.041 |
+| Core EPA Defense | 0.001 | -0.158 | 0.159 |
+| Success Rate Offense | 0.468 | 0.431 | 0.036 |
+| Success Rate Defense | 0.431 | 0.444 | -0.013 |
+| Explosive Play Rate (Off) | 0.128 | 0.077 | 0.052 |
+| Third Down Conversion | 0.302 | 0.370 | -0.068 |
+| Points per Drive Differential | 0.064 | 0.827 | -0.764 |
+| Yards per Play Differential | 0.523 | 0.253 | 0.271 |
+| Turnover Margin | -0.667 | 1.333 | -2.000 |
+| Red Zone TD Rate (Off) | 0.140 | 0.058 | 0.082 |
+| Pressure Rate (Def) | 0.058 | 0.108 | -0.050 |
+| Tempo | 7.636 | 7.727 | -0.091 |
+| PowerScore | 1.645 | 1.673 | -0.028 |
+| PowerScore | 1.645 | 1.673 | -0.028 |
+| Tempo | 7.636 | 7.727 | -0.091 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PIT edge: +0.010 (IND +0.144 vs PIT +0.154)
 **7 metrics version:**
 IND edge: +0.393 (IND +0.307 vs PIT -0.086)
 **Verdict:** IND holds the edge in the extended breakdown (lead 0.393), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - PIT) | -0.2 pts (favours PIT) |
-| Model Win% IND | 49.3% |
-| Model Win% PIT | 50.7% |
-| SOS Differential (IND-PIT) | +0.048 |
+| Model Spread (IND - PIT) | -0.5 pts (favours PIT) |
+| Model Win% IND | 47.8% |
+| Model Win% PIT | 52.2% |
+| SOS Differential (IND-PIT) | +0.411 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.121 | 0.073 |
-| Last 5 games | 0.121 | 0.073 |
-| Last 3 games | 0.121 | 0.073 |
+| Season-to-date | 1.774 | 1.364 |
+| Last 5 games | 1.774 | 1.364 |
+| Last 3 games | 1.774 | 1.364 |
 
 ## Trend Summary (last 3 weeks)
 

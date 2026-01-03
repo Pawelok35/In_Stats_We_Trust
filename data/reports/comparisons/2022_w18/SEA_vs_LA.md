@@ -4,19 +4,21 @@
 
 | Metric | SEA | LA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.072 | -0.085 | ↑ +0.013 |
-| Core EPA Defense | -0.085 | -0.072 | ↓ -0.013 |
-| Success Rate Offense | 44.6% | 34.6% | ↑ +9.9 pp |
-| Success Rate Defense | 34.6% | 44.6% | ↓ -9.9 pp |
-| Explosive Play Rate (Off) | 9.8% | 11.5% | ↓ -1.8 pp |
-| Third Down Conversion | 7.1% | 26.7% | ↓ -19.5 pp |
-| Points per Drive Differential | 0.024 | -0.024 | ↑ +0.048 |
-| Yards per Play Differential | 0.921 | -0.921 | ↑ +1.842 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 0.0% | 10.0% | ↓ -10.0 pp |
-| Pressure Rate (Def) | 15.6% | 8.8% | ↑ +6.8 pp |
-| Tempo | 6.571 | 6.500 | ↑ +0.071 |
-| PowerScore | 0.089 | 0.066 | ↑ +0.023 |
+| Core EPA Offense | 0.019 | -0.074 | 0.092 |
+| Core EPA Defense | 0.011 | 0.003 | 0.008 |
+| Success Rate Offense | 0.451 | 0.403 | 0.047 |
+| Success Rate Defense | 0.421 | 0.441 | -0.021 |
+| Explosive Play Rate (Off) | 0.109 | 0.087 | 0.022 |
+| Third Down Conversion | 0.350 | 0.376 | -0.026 |
+| Points per Drive Differential | -0.024 | -0.377 | 0.352 |
+| Yards per Play Differential | -0.005 | -0.682 | 0.676 |
+| Turnover Margin | 0.188 | -0.250 | 0.438 |
+| Red Zone TD Rate (Off) | 0.111 | 0.126 | -0.015 |
+| Pressure Rate (Def) | 0.069 | 0.066 | 0.003 |
+| Tempo | 6.571 | 6.500 | 0.071 |
+| PowerScore | 0.089 | 0.066 | 0.023 |
+| PowerScore | 0.089 | 0.066 | 0.023 |
+| Tempo | 6.571 | 6.500 | 0.071 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SEA edge: +0.023 (SEA +0.089 vs LA +0.066)
 **7 metrics version:**
 LA edge: +0.189 (SEA -0.043 vs LA +0.147)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.189), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | LA |
 | --- | ---: | ---: |
-| Season-to-date | 0.134 | 0.114 |
-| Last 5 games | 0.114 | 0.157 |
-| Last 3 games | 0.071 | 0.149 |
+| Season-to-date | 1.673 | 1.653 |
+| Last 5 games | 1.546 | 1.782 |
+| Last 3 games | 1.381 | 1.859 |
 
 ## Trend Summary (last 3 weeks)
 

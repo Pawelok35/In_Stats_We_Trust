@@ -4,19 +4,21 @@
 
 | Metric | NYJ | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.319 | -0.075 | ↓ -0.243 |
-| Core EPA Defense | -0.075 | -0.319 | ↑ +0.243 |
-| Success Rate Offense | 35.4% | 35.9% | ↓ -0.5 pp |
-| Success Rate Defense | 35.9% | 35.4% | ↑ +0.5 pp |
-| Explosive Play Rate (Off) | 5.2% | 7.7% | ↓ -2.5 pp |
-| Third Down Conversion | 15.8% | 43.8% | ↓ -28.0 pp |
-| Points per Drive Differential | -0.577 | 0.577 | ↓ -1.154 |
-| Yards per Play Differential | 0.364 | -0.364 | ↑ +0.728 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 25.0% | ↓ -25.0 pp |
-| Pressure Rate (Def) | 13.9% | 14.0% | ↓ -0.1 pp |
-| Tempo | 7.385 | 5.571 | ↑ +1.813 |
-| PowerScore | -0.028 | 0.015 | ↓ -0.043 |
+| Core EPA Offense | -0.129 | 0.029 | -0.159 |
+| Core EPA Defense | -0.094 | 0.023 | -0.117 |
+| Success Rate Offense | 0.375 | 0.419 | -0.044 |
+| Success Rate Defense | 0.389 | 0.433 | -0.044 |
+| Explosive Play Rate (Off) | 0.073 | 0.098 | -0.026 |
+| Third Down Conversion | 0.213 | 0.379 | -0.166 |
+| Points per Drive Differential | -0.307 | 0.160 | -0.467 |
+| Yards per Play Differential | -0.186 | -0.258 | 0.072 |
+| Turnover Margin | 0.429 | 0.571 | -0.143 |
+| Red Zone TD Rate (Off) | 0.062 | 0.151 | -0.089 |
+| Pressure Rate (Def) | 0.077 | 0.083 | -0.006 |
+| Tempo | 7.385 | 5.571 | 1.813 |
+| PowerScore | -0.028 | 0.015 | -0.043 |
+| PowerScore | -0.028 | 0.015 | -0.043 |
+| Tempo | 7.385 | 5.571 | 1.813 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ LAC edge: +0.043 (NYJ -0.028 vs LAC +0.015)
 **7 metrics version:**
 LAC edge: +0.641 (NYJ -0.323 vs LAC +0.318)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.641), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ LAC edge: +0.641 (NYJ -0.323 vs LAC +0.318)
 | Model Spread (NYJ - LAC) | -0.8 pts (favours LAC) |
 | Model Win% NYJ | 46.7% |
 | Model Win% LAC | 53.3% |
-| SOS Differential (NYJ-LAC) | -0.089 |
+| SOS Differential (NYJ-LAC) | -0.172 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.058 | 0.147 |
-| Last 5 games | 0.046 | 0.119 |
-| Last 3 games | 0.018 | 0.128 |
+| Season-to-date | 1.513 | 1.686 |
+| Last 5 games | 1.440 | 1.701 |
+| Last 3 games | 1.378 | 1.632 |
 
 ## Trend Summary (last 3 weeks)
 

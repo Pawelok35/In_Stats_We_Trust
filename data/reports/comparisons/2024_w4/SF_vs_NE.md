@@ -4,19 +4,21 @@
 
 | Metric | SF | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.021 | -0.262 | ↑ +0.241 |
-| Core EPA Defense | -0.262 | -0.021 | ↓ -0.241 |
-| Success Rate Offense | 42.9% | 43.2% | ↓ -0.4 pp |
-| Success Rate Defense | 43.2% | 42.9% | ↑ +0.4 pp |
-| Explosive Play Rate (Off) | 13.0% | 3.7% | ↑ +9.3 pp |
-| Third Down Conversion | 50.0% | 27.8% | ↑ +22.2 pp |
-| Points per Drive Differential | 0.917 | -0.917 | ↑ +1.833 |
-| Yards per Play Differential | 2.968 | -2.968 | ↑ +5.936 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 11.1% | 11.1% | ± 0.0 pp |
-| Pressure Rate (Def) | 15.8% | 3.4% | ↑ +12.3 pp |
-| Tempo | 6.417 | 6.750 | ↓ -0.333 |
-| PowerScore | 0.073 | 0.020 | ↑ +0.054 |
+| Core EPA Offense | 0.058 | -0.038 | 0.096 |
+| Core EPA Defense | 0.035 | 0.048 | -0.013 |
+| Success Rate Offense | 0.500 | 0.464 | 0.036 |
+| Success Rate Defense | 0.502 | 0.515 | -0.013 |
+| Explosive Play Rate (Off) | 0.119 | 0.082 | 0.037 |
+| Third Down Conversion | 0.352 | 0.306 | 0.046 |
+| Points per Drive Differential | 0.192 | -0.856 | 1.047 |
+| Yards per Play Differential | 0.036 | -1.056 | 1.092 |
+| Turnover Margin | 0.333 | -0.333 | 0.667 |
+| Red Zone TD Rate (Off) | 0.120 | 0.059 | 0.061 |
+| Pressure Rate (Def) | 0.087 | 0.070 | 0.016 |
+| Tempo | 6.417 | 6.750 | -0.333 |
+| PowerScore | 1.331 | 1.362 | -0.031 |
+| PowerScore | 1.331 | 1.362 | -0.031 |
+| Tempo | 6.417 | 6.750 | -0.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ SF edge: +0.054 (SF +0.073 vs NE +0.020)
 **7 metrics version:**
 SF edge: +0.233 (SF +0.147 vs NE -0.087)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.233), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SF - NE) | +1.0 pts (favours SF) |
-| Model Win% SF | 54.1% |
-| Model Win% NE | 45.9% |
-| SOS Differential (SF-NE) | +0.017 |
+| Model Spread (SF - NE) | -0.6 pts (favours NE) |
+| Model Win% SF | 47.6% |
+| Model Win% NE | 52.4% |
+| SOS Differential (SF-NE) | -0.304 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.169 | 0.152 |
-| Last 5 games | 0.169 | 0.152 |
-| Last 3 games | 0.169 | 0.152 |
+| Season-to-date | 1.542 | 1.846 |
+| Last 5 games | 1.542 | 1.846 |
+| Last 3 games | 1.542 | 1.846 |
 
 ## Trend Summary (last 3 weeks)
 

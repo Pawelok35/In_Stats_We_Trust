@@ -1,6 +1,6 @@
 # Weekly Report - Season 2023, Week 1
 
-_Generated at 2025-11-10T20:37:07.060444+00:00 (UTC)_
+_Generated at 2026-01-02T10:06:17.641889+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2023\1_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2816, "cols": 18, "timestamp": "2025-11-10T20:37:06.371840+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2816, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T20:37:06.371840+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2816, "cols": 24, "timestamp": "2025-11-10T20:37:06.371840+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2816, "cols": 18, "timestamp": "2026-01-02T10:06:17.066339+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2816, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-02T10:06:17.066339+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2816, "cols": 24, "timestamp": "2026-01-02T10:06:17.066339+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2023\1_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2023\1.parquet`
 - Manifest: `data\l4_core12\2023\1_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2023\1_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| MIA | 0.2695271155848168 |
-| LAC | 0.24470218628662682 |
-| LA | 0.1978073285983446 |
-| DEN | 0.18388400942705388 |
-| LV | 0.16076536105512435 |
-| SEA | 0.15100533276576786 |
-| GB | 0.12183369423344 |
-| SF | 0.11061435741793554 |
-| BUF | 0.09461152717445254 |
-| NYJ | 0.08855619756939141 |
+| DEN | 2.7297714553145 |
+| LA | 2.357217759437347 |
+| LAC | 2.2247021862866267 |
+| LV | 2.1752522825842995 |
+| MIA | 1.7491807952384966 |
+| SEA | 1.6532929144651143 |
+| BUF | 1.6004556830186085 |
+| CHI | 1.5833055454362162 |
+| HOU | 1.5525198199385506 |
+| KC | 1.5345257331338795 |
 
 
 ## Visualizations

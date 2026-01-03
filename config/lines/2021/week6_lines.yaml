@@ -1,0 +1,113 @@
+# NFL 2021 Week 6 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w6/TEN_vs_BUF.md
+    home: TEN
+    away: BUF
+    spread: +3.5
+    total: 53.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/PIT_vs_SEA.md
+    home: PIT
+    away: SEA
+    spread: -3.5
+    total: 43.0
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/DEN_vs_LV.md
+    home: DEN
+    away: LV
+    spread: -3.0
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/NE_vs_DAL.md
+    home: NE
+    away: DAL
+    spread: +3.0
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/CLE_vs_ARI.md
+    home: CLE
+    away: ARI
+    spread: -3.0
+    total: 54.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/BAL_vs_LAC.md
+    home: BAL
+    away: LAC
+    spread: -3.5
+    total: 50.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/CAR_vs_MIN.md
+    home: CAR
+    away: MIN
+    spread: -1.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/CHI_vs_GB.md
+    home: CHI
+    away: GB
+    spread: +4.5
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/DET_vs_CIN.md
+    home: DET
+    away: CIN
+    spread: +3.5
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/IND_vs_HOU.md
+    home: IND
+    away: HOU
+    spread: -10.0
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/NYG_vs_LA.md
+    home: NYG
+    away: LA
+    spread: +10.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/WAS_vs_KC.md
+    home: WAS
+    away: KC
+    spread: +6.5
+    total: 54.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/JAX_vs_MIA.md
+    home: JAX
+    away: MIA
+    spread: +3.0
+    total: 45.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w6/PHI_vs_TB.md
+    home: PHI
+    away: TB
+    spread: +6.5
+    total: 53.0
+    prime_time: true
+    neutral_site: false

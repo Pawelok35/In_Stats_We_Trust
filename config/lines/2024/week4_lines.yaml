@@ -1,131 +1,124 @@
 # NFL 2024 Week 4 - Betting Lines
+season: 2024
+week: 4
+
 matchups:
-  - report: data/reports/comparisons/2024_w4/ARI_vs_SEA.md
-    home: ARI
-    away: SEA
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/ATL_vs_WAS.md
+  - report: data/reports/comparisons/2024_w4/ATL_vs_NO.md
     home: ATL
-    away: WAS
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/BUF_vs_NO.md
-    home: BUF
     away: "NO"
-    spread: 0.0
-    total: 45.0
+    spread: -2.5
+    total: 41.0
     prime_time: false
     neutral_site: false
 
-  - report: data/reports/comparisons/2024_w4/DAL_vs_GB.md
-    home: DAL
-    away: GB
-    spread: 0.0
-    total: 45.0
+  - report: data/reports/comparisons/2024_w4/CHI_vs_LA.md
+    home: CHI
+    away: LA
+    spread: -3.0
+    total: 40.5
     prime_time: false
     neutral_site: false
 
-  - report: data/reports/comparisons/2024_w4/DEN_vs_CIN.md
-    home: DEN
-    away: CIN
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/DET_vs_CLE.md
-    home: DET
-    away: CLE
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/HOU_vs_TEN.md
-    home: HOU
-    away: TEN
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/KC_vs_BAL.md
-    home: KC
-    away: BAL
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/LA_vs_IND.md
-    home: LA
-    away: IND
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/LV_vs_CHI.md
-    home: LV
-    away: CHI
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/MIA_vs_NYJ.md
-    home: MIA
-    away: NYJ
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/NE_vs_CAR.md
-    home: NE
-    away: CAR
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/NYG_vs_LAC.md
-    home: NYG
-    away: LAC
-    spread: 0.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2024_w4/PIT_vs_MIN.md
-    home: PIT
+  - report: data/reports/comparisons/2024_w4/GB_vs_MIN.md
+    home: GB
     away: MIN
-    spread: 0.0
-    total: 45.0
+    spread: -3.0
+    total: 44.0
     prime_time: false
     neutral_site: false
 
-  - report: data/reports/comparisons/2024_w4/SF_vs_JAX.md
-    home: SF
-    away: JAX
-    spread: 0.0
-    total: 45.0
+  - report: data/reports/comparisons/2024_w4/IND_vs_PIT.md
+    home: IND
+    away: PIT
+    spread: +2.0
+    total: 40.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/NYJ_vs_DEN.md
+    home: NYJ
+    away: DEN
+    spread: -8.0
+    total: 39.0
     prime_time: false
     neutral_site: false
 
   - report: data/reports/comparisons/2024_w4/TB_vs_PHI.md
     home: TB
     away: PHI
-    spread: 0.0
-    total: 45.0
+    spread: +1.0
+    total: 42.0
     prime_time: false
     neutral_site: false
 
+  - report: data/reports/comparisons/2024_w4/CAR_vs_CIN.md
+    home: CAR
+    away: CIN
+    spread: +4.5
+    total: 47.0
+    prime_time: false
+    neutral_site: false
 
+  - report: data/reports/comparisons/2024_w4/HOU_vs_JAX.md
+    home: HOU
+    away: JAX
+    spread: -6.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/ARI_vs_WAS.md
+    home: ARI
+    away: WAS
+    spread: -3.5
+    total: 49.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/SF_vs_NE.md
+    home: SF
+    away: NE
+    spread: -10.5
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/LV_vs_CLE.md
+    home: LV
+    away: CLE
+    spread: +2.5
+    total: 36.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/LAC_vs_KC.md
+    home: LAC
+    away: KC
+    spread: +6.5
+    total: 41.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/BAL_vs_BUF.md
+    home: BAL
+    away: BUF
+    spread: -2.5
+    total: 46.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/MIA_vs_TEN.md
+    home: MIA
+    away: TEN
+    spread: -1.5
+    total: 37.0
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2024_w4/DET_vs_SEA.md
+    home: DET
+    away: SEA
+    spread: -3.5
+    total: 46.0
+    prime_time: true
+    neutral_site: false

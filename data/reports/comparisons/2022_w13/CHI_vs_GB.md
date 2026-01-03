@@ -4,19 +4,21 @@
 
 | Metric | CHI | GB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.004 | 0.121 | ↓ -0.117 |
-| Core EPA Defense | 0.121 | 0.004 | ↑ +0.117 |
-| Success Rate Offense | 43.1% | 45.1% | ↓ -2.0 pp |
-| Success Rate Defense | 45.1% | 43.1% | ↑ +2.0 pp |
-| Explosive Play Rate (Off) | 12.3% | 9.8% | ↑ +2.6 pp |
-| Third Down Conversion | 54.5% | 46.2% | ↑ +8.4 pp |
-| Points per Drive Differential | -0.900 | 0.900 | ↓ -1.800 |
-| Yards per Play Differential | 1.914 | -1.914 | ↑ +3.829 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 16.7% | 6.2% | ↑ +10.4 pp |
-| Pressure Rate (Def) | 0.0% | 0.0% | ± 0.0 pp |
-| Tempo | 6.500 | 8.200 | ↓ -1.700 |
-| PowerScore | 0.158 | 0.176 | ↓ -0.018 |
+| Core EPA Offense | -0.004 | -0.022 | 0.018 |
+| Core EPA Defense | 0.059 | 0.029 | 0.030 |
+| Success Rate Offense | 0.406 | 0.436 | -0.031 |
+| Success Rate Defense | 0.461 | 0.455 | 0.006 |
+| Explosive Play Rate (Off) | 0.121 | 0.110 | 0.012 |
+| Third Down Conversion | 0.401 | 0.362 | 0.039 |
+| Points per Drive Differential | -0.270 | -0.351 | 0.081 |
+| Yards per Play Differential | -0.410 | 0.057 | -0.467 |
+| Turnover Margin | 0.000 | -0.083 | 0.083 |
+| Red Zone TD Rate (Off) | 0.145 | 0.142 | 0.002 |
+| Pressure Rate (Def) | 0.047 | 0.076 | -0.029 |
+| Tempo | 6.500 | 8.200 | -1.700 |
+| PowerScore | 1.433 | 1.796 | -0.363 |
+| PowerScore | 1.433 | 1.796 | -0.363 |
+| Tempo | 6.500 | 8.200 | -1.700 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ GB edge: +0.018 (CHI +0.158 vs GB +0.176)
 **7 metrics version:**
 GB edge: +0.596 (CHI -0.181 vs GB +0.415)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.596), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - GB) | -0.3 pts (favours GB) |
-| Model Win% CHI | 48.6% |
-| Model Win% GB | 51.4% |
-| SOS Differential (CHI-GB) | +0.017 |
+| Model Spread (CHI - GB) | -6.7 pts (favours GB) |
+| Model Win% CHI | 24.6% |
+| Model Win% GB | 75.4% |
+| SOS Differential (CHI-GB) | +0.013 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | GB |
 | --- | ---: | ---: |
-| Season-to-date | 0.159 | 0.141 |
-| Last 5 games | 0.215 | 0.174 |
-| Last 3 games | 0.184 | 0.202 |
+| Season-to-date | 1.626 | 1.613 |
+| Last 5 games | 1.607 | 1.724 |
+| Last 3 games | 1.606 | 1.771 |
 
 ## Trend Summary (last 3 weeks)
 

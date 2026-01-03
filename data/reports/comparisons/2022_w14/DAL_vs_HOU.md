@@ -4,19 +4,21 @@
 
 | Metric | DAL | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.009 | -0.034 | ↑ +0.025 |
-| Core EPA Defense | -0.034 | -0.009 | ↓ -0.025 |
-| Success Rate Offense | 44.3% | 39.3% | ↑ +5.0 pp |
-| Success Rate Defense | 39.3% | 44.3% | ↓ -5.0 pp |
-| Explosive Play Rate (Off) | 12.5% | 8.3% | ↑ +4.2 pp |
-| Third Down Conversion | 53.3% | 43.8% | ↑ +9.6 pp |
-| Points per Drive Differential | 0.481 | -0.481 | ↑ +0.962 |
-| Yards per Play Differential | 0.698 | -0.698 | ↑ +1.396 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 13.6% | 9.1% | ↑ +4.5 pp |
-| Pressure Rate (Def) | 0.0% | 2.4% | ↓ -2.4 pp |
-| Tempo | 7.333 | 6.462 | ↑ +0.872 |
-| PowerScore | 0.126 | 0.101 | ↑ +0.025 |
+| Core EPA Offense | 0.037 | -0.132 | 0.169 |
+| Core EPA Defense | -0.109 | -0.003 | -0.106 |
+| Success Rate Offense | 0.438 | 0.384 | 0.053 |
+| Success Rate Defense | 0.385 | 0.432 | -0.048 |
+| Explosive Play Rate (Off) | 0.111 | 0.087 | 0.025 |
+| Third Down Conversion | 0.402 | 0.237 | 0.165 |
+| Points per Drive Differential | 0.796 | -0.411 | 1.207 |
+| Yards per Play Differential | 0.665 | -0.739 | 1.404 |
+| Turnover Margin | 0.583 | -0.500 | 1.083 |
+| Red Zone TD Rate (Off) | 0.162 | 0.151 | 0.011 |
+| Pressure Rate (Def) | 0.114 | 0.084 | 0.030 |
+| Tempo | 7.333 | 6.462 | 0.872 |
+| PowerScore | 1.567 | 1.377 | 0.191 |
+| PowerScore | 1.567 | 1.377 | 0.191 |
+| Tempo | 7.333 | 6.462 | 0.872 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DAL edge: +0.025 (DAL +0.126 vs HOU +0.101)
 **7 metrics version:**
 DAL edge: +0.215 (DAL +0.183 vs HOU -0.032)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.215), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DAL - HOU) | +0.5 pts (favours DAL) |
-| Model Win% DAL | 51.9% |
-| Model Win% HOU | 48.1% |
-| SOS Differential (DAL-HOU) | -0.023 |
+| Model Spread (DAL - HOU) | +3.5 pts (favours DAL) |
+| Model Win% DAL | 64.3% |
+| Model Win% HOU | 35.7% |
+| SOS Differential (DAL-HOU) | +0.009 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DAL | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.085 | 0.107 |
-| Last 5 games | 0.115 | 0.085 |
-| Last 3 games | 0.064 | 0.022 |
+| Season-to-date | 1.590 | 1.581 |
+| Last 5 games | 1.605 | 1.493 |
+| Last 3 games | 1.543 | 1.366 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 9 | PHI (A) | 17-26 | PHI | 0.888 | -0.080 | 43.2% | -1.011 |
+| 9 | PHI (H) | 17-26 | PHI | 0.888 | -0.080 | 43.2% | -1.011 |
 | 11 | WAS (H) | 10-17 | WAS | 0.752 | -0.301 | 28.6% | -0.636 |
 | 8 | TEN (H) | 10-19 | TEN | 0.679 | -0.226 | 29.0% | -0.712 |
 

@@ -4,19 +4,21 @@
 
 | Metric | DET | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.036 | -0.247 | ↑ +0.283 |
-| Core EPA Defense | -0.247 | 0.036 | ↓ -0.283 |
-| Success Rate Offense | 51.2% | 35.8% | ↑ +15.4 pp |
-| Success Rate Defense | 35.8% | 51.2% | ↓ -15.4 pp |
-| Explosive Play Rate (Off) | 9.5% | 6.2% | ↑ +3.4 pp |
-| Third Down Conversion | 38.5% | 20.0% | ↑ +18.5 pp |
-| Points per Drive Differential | 1.765 | -1.765 | ↑ +3.530 |
-| Yards per Play Differential | 1.456 | -1.456 | ↑ +2.912 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 21.4% | 0.0% | ↑ +21.4 pp |
-| Pressure Rate (Def) | 4.5% | 5.7% | ↓ -1.2 pp |
-| Tempo | 7.000 | 7.364 | ↓ -0.364 |
-| PowerScore | 0.110 | 0.023 | ↑ +0.088 |
+| Core EPA Offense | 0.148 | 0.042 | 0.106 |
+| Core EPA Defense | -0.029 | -0.087 | 0.058 |
+| Success Rate Offense | 0.529 | 0.489 | 0.040 |
+| Success Rate Defense | 0.466 | 0.452 | 0.014 |
+| Explosive Play Rate (Off) | 0.123 | 0.112 | 0.011 |
+| Third Down Conversion | 0.448 | 0.359 | 0.089 |
+| Points per Drive Differential | 1.083 | 0.558 | 0.525 |
+| Yards per Play Differential | 0.660 | 0.406 | 0.254 |
+| Turnover Margin | 0.688 | 0.625 | 0.062 |
+| Red Zone TD Rate (Off) | 0.171 | 0.143 | 0.028 |
+| Pressure Rate (Def) | 0.059 | 0.077 | -0.018 |
+| Tempo | 7.000 | 7.364 | -0.364 |
+| PowerScore | 0.110 | 0.023 | 0.088 |
+| PowerScore | 0.110 | 0.023 | 0.088 |
+| Tempo | 7.000 | 7.364 | -0.364 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DET edge: +0.088 (DET +0.110 vs MIN +0.023)
 **7 metrics version:**
 MIN edge: +0.339 (DET -0.128 vs MIN +0.211)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.339), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIN edge: +0.339 (DET -0.128 vs MIN +0.211)
 | Model Spread (DET - MIN) | +1.6 pts (favours DET) |
 | Model Win% DET | 56.7% |
 | Model Win% MIN | 43.3% |
-| SOS Differential (DET-MIN) | +0.047 |
+| SOS Differential (DET-MIN) | +0.053 |
 *Neutral-field assumption. Based on schedule through Week 17.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | MIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.158 | 0.111 |
-| Last 5 games | 0.240 | 0.154 |
-| Last 3 games | 0.285 | 0.131 |
+| Season-to-date | 1.673 | 1.619 |
+| Last 5 games | 1.856 | 1.820 |
+| Last 3 games | 1.992 | 1.629 |
 
 ## Trend Summary (last 3 weeks)
 

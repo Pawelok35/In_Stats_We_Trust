@@ -4,19 +4,21 @@
 
 | Metric | LA | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.043 | -0.158 | ↑ +0.115 |
-| Core EPA Defense | -0.158 | -0.043 | ↓ -0.115 |
-| Success Rate Offense | 41.3% | 36.0% | ↑ +5.3 pp |
-| Success Rate Defense | 36.0% | 41.3% | ↓ -5.3 pp |
-| Explosive Play Rate (Off) | 12.0% | 10.7% | ↑ +1.3 pp |
-| Third Down Conversion | 52.9% | 20.0% | ↑ +32.9 pp |
-| Points per Drive Differential | 0.667 | -0.667 | ↑ +1.333 |
-| Yards per Play Differential | 0.899 | -0.899 | ↑ +1.797 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 4.5% | 12.5% | ↓ -8.0 pp |
-| Pressure Rate (Def) | 2.7% | 8.3% | ↓ -5.6 pp |
-| Tempo | 7.667 | 6.250 | ↑ +1.417 |
-| PowerScore | 0.081 | 0.047 | ↑ +0.033 |
+| Core EPA Offense | -0.014 | -0.067 | 0.054 |
+| Core EPA Defense | -0.009 | 0.092 | -0.101 |
+| Success Rate Offense | 0.419 | 0.404 | 0.015 |
+| Success Rate Defense | 0.411 | 0.432 | -0.020 |
+| Explosive Play Rate (Off) | 0.096 | 0.101 | -0.005 |
+| Third Down Conversion | 0.350 | 0.345 | 0.005 |
+| Points per Drive Differential | 0.241 | -0.730 | 0.971 |
+| Yards per Play Differential | 0.147 | -0.738 | 0.885 |
+| Turnover Margin | 0.077 | -0.923 | 1.000 |
+| Red Zone TD Rate (Off) | 0.140 | 0.167 | -0.027 |
+| Pressure Rate (Def) | 0.059 | 0.072 | -0.013 |
+| Tempo | 7.667 | 6.250 | 1.417 |
+| PowerScore | 1.590 | 1.276 | 0.314 |
+| PowerScore | 1.590 | 1.276 | 0.314 |
+| Tempo | 7.667 | 6.250 | 1.417 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LA edge: +0.033 (LA +0.081 vs WAS +0.047)
 **7 metrics version:**
 WAS edge: +0.199 (LA -0.061 vs WAS +0.137)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.199), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - WAS) | +0.6 pts (favours LA) |
-| Model Win% LA | 52.5% |
-| Model Win% WAS | 47.5% |
-| SOS Differential (LA-WAS) | -0.034 |
+| Model Spread (LA - WAS) | +5.8 pts (favours LA) |
+| Model Win% LA | 72.5% |
+| Model Win% WAS | 27.5% |
+| SOS Differential (LA-WAS) | +0.071 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LA | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.116 | 0.150 |
-| Last 5 games | 0.091 | 0.176 |
-| Last 3 games | 0.122 | 0.191 |
+| Season-to-date | 1.620 | 1.549 |
+| Last 5 games | 1.549 | 1.535 |
+| Last 3 games | 1.581 | 1.496 |
 
 ## Trend Summary (last 3 weeks)
 

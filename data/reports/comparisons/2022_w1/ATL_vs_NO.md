@@ -4,19 +4,21 @@
 
 | Metric | ATL | NO | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.012 | 0.041 | ↓ -0.029 |
-| Core EPA Defense | 0.041 | 0.012 | ↑ +0.029 |
-| Success Rate Offense | 47.5% | 45.5% | ↑ +2.0 pp |
-| Success Rate Defense | 45.5% | 47.5% | ↓ -2.0 pp |
-| Explosive Play Rate (Off) | 10.1% | 14.3% | ↓ -4.2 pp |
-| Third Down Conversion | 40.0% | 30.8% | ↑ +9.2 pp |
-| Points per Drive Differential | -0.250 | 0.250 | ↓ -0.500 |
-| Yards per Play Differential | -0.824 | 0.824 | ↓ -1.648 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 15.4% | 37.5% | ↓ -22.1 pp |
-| Pressure Rate (Def) | 10.3% | 0.0% | ↑ +10.3 pp |
-| Tempo | 7.615 | 6.417 | ↑ +1.199 |
-| PowerScore | 0.151 | 0.159 | ↓ -0.008 |
+| Core EPA Offense | 0.012 | 0.041 | -0.029 |
+| Core EPA Defense | 0.041 | 0.012 | 0.029 |
+| Success Rate Offense | 0.475 | 0.455 | 0.020 |
+| Success Rate Defense | 0.455 | 0.475 | -0.020 |
+| Explosive Play Rate (Off) | 0.101 | 0.143 | -0.042 |
+| Third Down Conversion | 0.400 | 0.308 | 0.092 |
+| Points per Drive Differential | -0.250 | 0.250 | -0.500 |
+| Yards per Play Differential | -0.824 | 0.824 | -1.648 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.154 | 0.375 | -0.221 |
+| Pressure Rate (Def) | 0.103 | 0.000 | 0.103 |
+| Tempo | 7.615 | 6.417 | 1.199 |
+| PowerScore | 1.654 | 1.414 | 0.240 |
+| PowerScore | 1.654 | 1.414 | 0.240 |
+| Tempo | 7.615 | 6.417 | 1.199 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ NO edge: +0.008 (ATL +0.151 vs NO +0.159)
 **7 metrics version:**
 NO edge: +0.214 (ATL +0.018 vs NO +0.233)
 **Verdict:** NO holds the edge in the extended breakdown (lead 0.214), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - NO) | -0.1 pts (favours NO) |
-| Model Win% ATL | 49.4% |
-| Model Win% NO | 50.6% |
+| Model Spread (ATL - NO) | +4.4 pts (favours ATL) |
+| Model Win% ATL | 67.7% |
+| Model Win% NO | 32.3% |
 | SOS Differential (ATL-NO) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

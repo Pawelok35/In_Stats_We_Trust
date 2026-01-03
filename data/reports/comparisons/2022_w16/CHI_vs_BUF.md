@@ -4,19 +4,21 @@
 
 | Metric | CHI | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.270 | 0.063 | ↓ -0.333 |
-| Core EPA Defense | 0.063 | -0.270 | ↑ +0.333 |
-| Success Rate Offense | 34.6% | 48.1% | ↓ -13.4 pp |
-| Success Rate Defense | 48.1% | 34.6% | ↑ +13.4 pp |
-| Explosive Play Rate (Off) | 5.1% | 16.9% | ↓ -11.8 pp |
-| Third Down Conversion | 13.3% | 54.5% | ↓ -41.2 pp |
-| Points per Drive Differential | -1.988 | 1.988 | ↓ -3.976 |
-| Yards per Play Differential | -2.879 | 2.879 | ↓ -5.758 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 7.1% | 15.0% | ↓ -7.9 pp |
-| Pressure Rate (Def) | 3.6% | 6.7% | ↓ -3.1 pp |
-| Tempo | 5.571 | 6.417 | ↓ -0.845 |
-| PowerScore | 0.015 | 0.122 | ↓ -0.107 |
+| Core EPA Offense | -0.012 | 0.088 | -0.101 |
+| Core EPA Defense | 0.056 | -0.046 | 0.102 |
+| Success Rate Offense | 0.411 | 0.487 | -0.076 |
+| Success Rate Defense | 0.457 | 0.436 | 0.021 |
+| Explosive Play Rate (Off) | 0.119 | 0.120 | -0.001 |
+| Third Down Conversion | 0.407 | 0.438 | -0.031 |
+| Points per Drive Differential | -0.326 | 0.747 | -1.072 |
+| Yards per Play Differential | -0.339 | 0.830 | -1.168 |
+| Turnover Margin | -0.071 | -0.071 | 0.000 |
+| Red Zone TD Rate (Off) | 0.150 | 0.139 | 0.011 |
+| Pressure Rate (Def) | 0.042 | 0.079 | -0.037 |
+| Tempo | 5.571 | 6.417 | -0.845 |
+| PowerScore | 1.119 | 1.371 | -0.253 |
+| PowerScore | 1.119 | 1.371 | -0.253 |
+| Tempo | 5.571 | 6.417 | -0.845 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BUF edge: +0.107 (CHI +0.015 vs BUF +0.122)
 **7 metrics version:**
 CHI edge: +0.140 (CHI +0.113 vs BUF -0.028)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.140), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - BUF) | -2.0 pts (favours BUF) |
-| Model Win% CHI | 41.8% |
-| Model Win% BUF | 58.2% |
-| SOS Differential (CHI-BUF) | +0.024 |
+| Model Spread (CHI - BUF) | -4.7 pts (favours BUF) |
+| Model Win% CHI | 31.5% |
+| Model Win% BUF | 68.5% |
+| SOS Differential (CHI-BUF) | -0.039 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.155 | 0.131 |
-| Last 5 games | 0.163 | 0.151 |
-| Last 3 games | 0.154 | 0.131 |
+| Season-to-date | 1.629 | 1.668 |
+| Last 5 games | 1.622 | 1.686 |
+| Last 3 games | 1.663 | 1.600 |
 
 ## Trend Summary (last 3 weeks)
 

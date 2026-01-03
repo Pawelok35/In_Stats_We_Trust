@@ -4,19 +4,21 @@
 
 | Metric | CLE | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.062 | -0.536 | ↑ +0.474 |
-| Core EPA Defense | -0.536 | -0.062 | ↓ -0.474 |
-| Success Rate Offense | 34.8% | 23.5% | ↑ +11.3 pp |
-| Success Rate Defense | 23.5% | 34.8% | ↓ -11.3 pp |
-| Explosive Play Rate (Off) | 7.9% | 2.9% | ↑ +4.9 pp |
-| Third Down Conversion | 33.3% | 7.7% | ↑ +25.6 pp |
-| Points per Drive Differential | 1.929 | -1.929 | ↑ +3.857 |
-| Yards per Play Differential | 2.810 | -2.810 | ↑ +5.620 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 21.4% | 0.0% | ↑ +21.4 pp |
-| Pressure Rate (Def) | 25.9% | 3.2% | ↑ +22.7 pp |
-| Tempo | 6.357 | 4.857 | ↑ +1.500 |
-| PowerScore | -0.026 | -0.135 | ↑ +0.109 |
+| Core EPA Offense | -0.105 | -0.068 | -0.037 |
+| Core EPA Defense | -0.169 | 0.058 | -0.227 |
+| Success Rate Offense | 0.397 | 0.389 | 0.008 |
+| Success Rate Defense | 0.348 | 0.477 | -0.129 |
+| Explosive Play Rate (Off) | 0.086 | 0.091 | -0.004 |
+| Third Down Conversion | 0.288 | 0.356 | -0.068 |
+| Points per Drive Differential | 0.288 | -0.755 | 1.043 |
+| Yards per Play Differential | 0.283 | -0.535 | 0.818 |
+| Turnover Margin | -1.000 | -0.375 | -0.625 |
+| Red Zone TD Rate (Off) | 0.157 | 0.118 | 0.039 |
+| Pressure Rate (Def) | 0.098 | 0.091 | 0.007 |
+| Tempo | 6.357 | 4.857 | 1.500 |
+| PowerScore | -0.026 | -0.135 | 0.109 |
+| PowerScore | -0.026 | -0.135 | 0.109 |
+| Tempo | 6.357 | 4.857 | 1.500 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CLE edge: +0.109 (CLE -0.026 vs ARI -0.135)
 **7 metrics version:**
 CLE edge: +0.690 (CLE +0.285 vs ARI -0.405)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.690), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CLE edge: +0.690 (CLE +0.285 vs ARI -0.405)
 | Model Spread (CLE - ARI) | +2.0 pts (favours CLE) |
 | Model Win% CLE | 58.3% |
 | Model Win% ARI | 41.7% |
-| SOS Differential (CLE-ARI) | -0.121 |
+| SOS Differential (CLE-ARI) | -0.523 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.024 | 0.145 |
-| Last 5 games | 0.064 | 0.153 |
-| Last 3 games | 0.070 | 0.118 |
+| Season-to-date | 1.198 | 1.721 |
+| Last 5 games | 1.307 | 1.609 |
+| Last 3 games | 1.282 | 1.484 |
 
 ## Trend Summary (last 3 weeks)
 

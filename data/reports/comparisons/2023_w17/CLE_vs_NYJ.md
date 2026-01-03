@@ -4,19 +4,21 @@
 
 | Metric | CLE | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.044 | -0.221 | ↑ +0.177 |
-| Core EPA Defense | -0.221 | -0.044 | ↓ -0.177 |
-| Success Rate Offense | 45.3% | 38.4% | ↑ +6.9 pp |
-| Success Rate Defense | 38.4% | 45.3% | ↓ -6.9 pp |
-| Explosive Play Rate (Off) | 17.3% | 9.1% | ↑ +8.2 pp |
-| Third Down Conversion | 45.5% | 33.3% | ↑ +12.1 pp |
-| Points per Drive Differential | 1.385 | -1.385 | ↑ +2.769 |
-| Yards per Play Differential | 2.070 | -2.070 | ↑ +4.141 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 14.3% | 0.0% | ↑ +14.3 pp |
-| Pressure Rate (Def) | 4.3% | 3.3% | ↑ +0.9 pp |
-| Tempo | 5.769 | 7.071 | ↓ -1.302 |
-| PowerScore | 0.088 | 0.028 | ↑ +0.060 |
+| Core EPA Offense | -0.095 | -0.184 | 0.089 |
+| Core EPA Defense | -0.153 | -0.091 | -0.062 |
+| Success Rate Offense | 0.395 | 0.357 | 0.038 |
+| Success Rate Defense | 0.353 | 0.379 | -0.026 |
+| Explosive Play Rate (Off) | 0.084 | 0.071 | 0.013 |
+| Third Down Conversion | 0.295 | 0.223 | 0.072 |
+| Points per Drive Differential | 0.251 | -0.582 | 0.833 |
+| Yards per Play Differential | 0.494 | -0.245 | 0.739 |
+| Turnover Margin | -0.467 | -0.667 | 0.200 |
+| Red Zone TD Rate (Off) | 0.132 | 0.079 | 0.054 |
+| Pressure Rate (Def) | 0.094 | 0.087 | 0.007 |
+| Tempo | 5.769 | 7.071 | -1.302 |
+| PowerScore | 1.208 | 1.424 | -0.217 |
+| PowerScore | 1.208 | 1.424 | -0.217 |
+| Tempo | 5.769 | 7.071 | -1.302 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CLE edge: +0.060 (CLE +0.088 vs NYJ +0.028)
 **7 metrics version:**
 NYJ edge: +0.157 (CLE -0.051 vs NYJ +0.106)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.157), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - NYJ) | +1.1 pts (favours CLE) |
-| Model Win% CLE | 54.6% |
-| Model Win% NYJ | 45.4% |
-| SOS Differential (CLE-NYJ) | -0.012 |
+| Model Spread (CLE - NYJ) | -4.0 pts (favours NYJ) |
+| Model Win% CLE | 33.9% |
+| Model Win% NYJ | 66.1% |
+| SOS Differential (CLE-NYJ) | -0.167 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.031 | 0.043 |
-| Last 5 games | 0.058 | 0.027 |
-| Last 3 games | 0.020 | 0.015 |
+| Season-to-date | 1.245 | 1.411 |
+| Last 5 games | 1.353 | 1.283 |
+| Last 3 games | 1.258 | 1.270 |
 
 ## Trend Summary (last 3 weeks)
 

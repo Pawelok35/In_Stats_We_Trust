@@ -4,19 +4,21 @@
 
 | Metric | CHI | DET | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.017 | -0.200 | ↑ +0.218 |
-| Core EPA Defense | -0.200 | 0.017 | ↓ -0.218 |
-| Success Rate Offense | 33.3% | 34.9% | ↓ -1.6 pp |
-| Success Rate Defense | 34.9% | 33.3% | ↑ +1.6 pp |
-| Explosive Play Rate (Off) | 13.1% | 8.4% | ↑ +4.7 pp |
-| Third Down Conversion | 37.5% | 37.5% | ± 0.0 pp |
-| Points per Drive Differential | 1.152 | -1.152 | ↑ +2.303 |
-| Yards per Play Differential | 0.783 | -0.783 | ↑ +1.566 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 10.0% | 28.6% | ↓ -18.6 pp |
-| Pressure Rate (Def) | 10.3% | 7.7% | ↑ +2.6 pp |
-| Tempo | 7.000 | 7.545 | ↓ -0.545 |
-| PowerScore | 0.076 | 0.038 | ↑ +0.038 |
+| Core EPA Offense | -0.085 | 0.014 | -0.100 |
+| Core EPA Defense | -0.036 | -0.044 | 0.009 |
+| Success Rate Offense | 0.409 | 0.441 | -0.032 |
+| Success Rate Defense | 0.412 | 0.426 | -0.014 |
+| Explosive Play Rate (Off) | 0.100 | 0.105 | -0.005 |
+| Third Down Conversion | 0.407 | 0.422 | -0.015 |
+| Points per Drive Differential | -0.136 | 0.313 | -0.450 |
+| Yards per Play Differential | -0.123 | 0.680 | -0.803 |
+| Turnover Margin | -0.333 | -0.250 | -0.083 |
+| Red Zone TD Rate (Off) | 0.150 | 0.119 | 0.031 |
+| Pressure Rate (Def) | 0.036 | 0.062 | -0.025 |
+| Tempo | 7.000 | 7.545 | -0.545 |
+| PowerScore | 0.076 | 0.038 | 0.038 |
+| PowerScore | 0.076 | 0.038 | 0.038 |
+| Tempo | 7.000 | 7.545 | -0.545 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CHI edge: +0.038 (CHI +0.076 vs DET +0.038)
 **7 metrics version:**
 CHI edge: +0.597 (CHI +0.348 vs DET -0.249)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.597), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CHI edge: +0.597 (CHI +0.348 vs DET -0.249)
 | Model Spread (CHI - DET) | +0.7 pts (favours CHI) |
 | Model Win% CHI | 52.9% |
 | Model Win% DET | 47.1% |
-| SOS Differential (CHI-DET) | -0.024 |
+| SOS Differential (CHI-DET) | -0.008 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | DET |
 | --- | ---: | ---: |
-| Season-to-date | 0.090 | 0.113 |
-| Last 5 games | 0.051 | 0.117 |
-| Last 3 games | 0.040 | 0.123 |
+| Season-to-date | 1.533 | 1.542 |
+| Last 5 games | 1.461 | 1.511 |
+| Last 3 games | 1.426 | 1.518 |
 
 ## Trend Summary (last 3 weeks)
 

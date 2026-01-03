@@ -4,19 +4,21 @@
 
 | Metric | ARI | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.098 | 0.021 | ↓ -0.119 |
-| Core EPA Defense | 0.021 | -0.098 | ↑ +0.119 |
-| Success Rate Offense | 44.6% | 48.2% | ↓ -3.6 pp |
-| Success Rate Defense | 48.2% | 44.6% | ↑ +3.6 pp |
-| Explosive Play Rate (Off) | 7.6% | 6.0% | ↑ +1.6 pp |
-| Third Down Conversion | 35.7% | 33.3% | ↑ +2.4 pp |
-| Points per Drive Differential | -0.538 | 0.538 | ↓ -1.077 |
-| Yards per Play Differential | 0.162 | -0.162 | ↑ +0.325 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 18.8% | 25.0% | ↓ -6.2 pp |
-| Pressure Rate (Def) | 15.6% | 4.9% | ↑ +10.7 pp |
-| Tempo | 7.077 | 6.385 | ↑ +0.692 |
-| PowerScore | 0.096 | 0.120 | ↓ -0.024 |
+| Core EPA Offense | -0.064 | 0.028 | -0.092 |
+| Core EPA Defense | 0.063 | -0.118 | 0.182 |
+| Success Rate Offense | 0.380 | 0.464 | -0.083 |
+| Success Rate Defense | 0.476 | 0.385 | 0.092 |
+| Explosive Play Rate (Off) | 0.093 | 0.124 | -0.031 |
+| Third Down Conversion | 0.356 | 0.439 | -0.083 |
+| Points per Drive Differential | -0.786 | 1.133 | -1.919 |
+| Yards per Play Differential | -0.634 | 1.265 | -1.899 |
+| Turnover Margin | -0.143 | -0.714 | 0.571 |
+| Red Zone TD Rate (Off) | 0.108 | 0.196 | -0.088 |
+| Pressure Rate (Def) | 0.081 | 0.101 | -0.020 |
+| Tempo | 7.077 | 6.385 | 0.692 |
+| PowerScore | 0.096 | 0.120 | -0.024 |
+| PowerScore | 0.096 | 0.120 | -0.024 |
+| Tempo | 7.077 | 6.385 | 0.692 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ BAL edge: +0.024 (ARI +0.096 vs BAL +0.120)
 **7 metrics version:**
 BAL edge: +0.405 (ARI -0.112 vs BAL +0.294)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.405), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ BAL edge: +0.405 (ARI -0.112 vs BAL +0.294)
 | Model Spread (ARI - BAL) | -0.4 pts (favours BAL) |
 | Model Win% ARI | 48.2% |
 | Model Win% BAL | 51.8% |
-| SOS Differential (ARI-BAL) | +0.074 |
+| SOS Differential (ARI-BAL) | +0.197 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.149 | 0.075 |
-| Last 5 games | 0.168 | 0.074 |
-| Last 3 games | 0.104 | 0.109 |
+| Season-to-date | 1.769 | 1.572 |
+| Last 5 games | 1.847 | 1.500 |
+| Last 3 games | 1.543 | 1.621 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -244,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | SF (A) | 16-31 | SF | 0.931 | 0.078 | 44.2% | -2.089 |
 | 3 | DAL (H) | 28-18 | ARI | 0.864 | 0.212 | 50.0% | 1.111 |
-| 7 | SEA (-) | 10-24 | SEA | 0.833 | -0.147 | 33.7% | -1.167 |
+| 7 | SEA (A) | 10-24 | SEA | 0.833 | -0.147 | 33.7% | -1.167 |
 
 **BAL analogs vs ARI profile**
 

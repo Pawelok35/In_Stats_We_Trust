@@ -4,19 +4,21 @@
 
 | Metric | DEN | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.132 | 0.120 | ↑ +0.012 |
-| Core EPA Defense | 0.120 | 0.132 | ↓ -0.012 |
-| Success Rate Offense | 44.6% | 44.2% | ↑ +0.4 pp |
-| Success Rate Defense | 44.2% | 44.6% | ↓ -0.4 pp |
-| Explosive Play Rate (Off) | 18.1% | 9.3% | ↑ +8.8 pp |
-| Third Down Conversion | 38.5% | 50.0% | ↓ -11.5 pp |
-| Points per Drive Differential | 0.429 | -0.429 | ↑ +0.859 |
-| Yards per Play Differential | 1.558 | -1.558 | ↑ +3.117 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 23.1% | 15.8% | ↑ +7.3 pp |
-| Pressure Rate (Def) | 2.1% | 7.7% | ↓ -5.6 pp |
-| Tempo | 6.917 | 6.615 | ↑ +0.301 |
-| PowerScore | 0.218 | 0.197 | ↑ +0.020 |
+| Core EPA Offense | -0.093 | -0.028 | -0.066 |
+| Core EPA Defense | -0.026 | -0.039 | 0.013 |
+| Success Rate Offense | 0.377 | 0.417 | -0.041 |
+| Success Rate Defense | 0.430 | 0.423 | 0.007 |
+| Explosive Play Rate (Off) | 0.096 | 0.094 | 0.001 |
+| Third Down Conversion | 0.270 | 0.399 | -0.130 |
+| Points per Drive Differential | -0.314 | 0.088 | -0.402 |
+| Yards per Play Differential | -0.041 | -0.199 | 0.158 |
+| Turnover Margin | -0.188 | 0.125 | -0.312 |
+| Red Zone TD Rate (Off) | 0.146 | 0.126 | 0.020 |
+| Pressure Rate (Def) | 0.056 | 0.072 | -0.016 |
+| Tempo | 6.917 | 6.615 | 0.301 |
+| PowerScore | 0.218 | 0.197 | 0.020 |
+| PowerScore | 0.218 | 0.197 | 0.020 |
+| Tempo | 6.917 | 6.615 | 0.301 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ DEN edge: +0.020 (DEN +0.218 vs LAC +0.197)
 **7 metrics version:**
 DEN edge: +0.412 (DEN +0.367 vs LAC -0.045)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.412), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ DEN edge: +0.412 (DEN +0.367 vs LAC -0.045)
 | Model Spread (DEN - LAC) | +0.4 pts (favours DEN) |
 | Model Win% DEN | 51.6% |
 | Model Win% LAC | 48.4% |
-| SOS Differential (DEN-LAC) | -0.010 |
+| SOS Differential (DEN-LAC) | +0.026 |
 *Neutral-field assumption. Based on schedule through Week 17.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.099 | 0.108 |
-| Last 5 games | 0.122 | 0.046 |
-| Last 3 games | 0.131 | 0.023 |
+| Season-to-date | 1.498 | 1.472 |
+| Last 5 games | 1.459 | 1.287 |
+| Last 3 games | 1.474 | 1.254 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,7 +249,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 6 | LAC (A) | 16-16 | TIE | 1.000 | -0.097 | 36.8% | -0.007 |
-| 7 | NYJ (A) | 9-15 | NYJ | 0.836 | -0.163 | 32.3% | -0.481 |
+| 7 | NYJ (H) | 9-15 | NYJ | 0.836 | -0.163 | 32.3% | -0.481 |
 | 3 | SF (H) | 9-10 | SF | 0.773 | -0.208 | 29.8% | -0.071 |
 
 **LAC analogs vs DEN profile**

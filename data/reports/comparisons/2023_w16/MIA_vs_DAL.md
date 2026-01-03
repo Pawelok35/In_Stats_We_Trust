@@ -4,19 +4,21 @@
 
 | Metric | MIA | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.126 | 0.119 | ↑ +0.007 |
-| Core EPA Defense | 0.119 | 0.126 | ↓ -0.007 |
-| Success Rate Offense | 50.0% | 43.9% | ↑ +6.1 pp |
-| Success Rate Defense | 43.9% | 50.0% | ↓ -6.1 pp |
-| Explosive Play Rate (Off) | 12.2% | 6.1% | ↑ +6.1 pp |
-| Third Down Conversion | 37.5% | 26.7% | ↑ +10.8 pp |
-| Points per Drive Differential | -0.022 | 0.022 | ↓ -0.044 |
-| Yards per Play Differential | 0.439 | -0.439 | ↑ +0.878 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 5.3% | 6.2% | ↓ -1.0 pp |
-| Pressure Rate (Def) | 10.8% | 2.5% | ↑ +8.3 pp |
-| Tempo | 8.200 | 9.111 | ↓ -0.911 |
-| PowerScore | 0.217 | 0.189 | ↑ +0.028 |
+| Core EPA Offense | 0.083 | 0.087 | -0.003 |
+| Core EPA Defense | -0.069 | -0.088 | 0.019 |
+| Success Rate Offense | 0.474 | 0.458 | 0.015 |
+| Success Rate Defense | 0.403 | 0.407 | -0.004 |
+| Explosive Play Rate (Off) | 0.137 | 0.111 | 0.027 |
+| Third Down Conversion | 0.400 | 0.445 | -0.045 |
+| Points per Drive Differential | 0.873 | 0.840 | 0.033 |
+| Yards per Play Differential | 1.510 | 0.665 | 0.845 |
+| Turnover Margin | 0.000 | 0.786 | -0.786 |
+| Red Zone TD Rate (Off) | 0.157 | 0.131 | 0.026 |
+| Pressure Rate (Def) | 0.088 | 0.095 | -0.007 |
+| Tempo | 8.200 | 9.111 | -0.911 |
+| PowerScore | 1.833 | 1.999 | -0.166 |
+| PowerScore | 1.833 | 1.999 | -0.166 |
+| Tempo | 8.200 | 9.111 | -0.911 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIA edge: +0.028 (MIA +0.217 vs DAL +0.189)
 **7 metrics version:**
 MIA edge: +0.223 (MIA +0.258 vs DAL +0.035)
 **Verdict:** MIA holds the edge in the extended breakdown (lead 0.223), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - DAL) | +0.5 pts (favours MIA) |
-| Model Win% MIA | 52.2% |
-| Model Win% DAL | 47.8% |
-| SOS Differential (MIA-DAL) | +0.002 |
+| Model Spread (MIA - DAL) | -3.1 pts (favours DAL) |
+| Model Win% MIA | 37.5% |
+| Model Win% DAL | 62.5% |
+| SOS Differential (MIA-DAL) | -0.072 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.108 | 0.107 |
-| Last 5 games | 0.039 | 0.147 |
-| Last 3 games | 0.050 | 0.177 |
+| Season-to-date | 1.532 | 1.604 |
+| Last 5 games | 1.361 | 1.772 |
+| Last 3 games | 1.398 | 1.821 |
 
 ## Trend Summary (last 3 weeks)
 

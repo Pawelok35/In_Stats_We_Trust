@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 6
 
-_Generated at 2025-11-10T17:49:27.440358+00:00 (UTC)_
+_Generated at 2025-12-28T14:28:45.428222+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\6_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2450, "cols": 18, "timestamp": "2025-11-10T17:49:26.964046+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2450, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:49:26.964046+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2450, "cols": 24, "timestamp": "2025-11-10T17:49:26.964046+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2450, "cols": 18, "timestamp": "2025-12-28T14:28:44.898440+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2450, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:28:44.898440+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2450, "cols": 24, "timestamp": "2025-12-28T14:28:44.898440+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\6_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\6.parquet`
 - Manifest: `data\l4_core12\2024\6_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\6_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BAL | 0.2623884920736147 |
-| CHI | 0.2602972094193459 |
-| SF | 0.2460764954775829 |
-| WAS | 0.2304568971224102 |
-| DET | 0.2160765387001161 |
-| ATL | 0.20627370549287724 |
-| BUF | 0.20160351728104603 |
-| NYJ | 0.19237457121860682 |
-| GB | 0.18545277068471924 |
-| SEA | 0.18478142938728986 |
+| BUF | 2.1188448965913906 |
+| BAL | 2.093340873025996 |
+| WAS | 1.9484056150711282 |
+| NYJ | 1.9175503799387195 |
+| LAC | 1.8806249549797298 |
+| CAR | 1.8423805401122202 |
+| GB | 1.8342669999337313 |
+| CHI | 1.830297209419346 |
+| SEA | 1.7911388177034413 |
+| IND | 1.7895668830842313 |
 
 
 ## Visualizations

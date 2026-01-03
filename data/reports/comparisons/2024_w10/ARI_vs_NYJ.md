@@ -4,19 +4,21 @@
 
 | Metric | ARI | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.312 | -0.049 | ↑ +0.361 |
-| Core EPA Defense | -0.049 | 0.312 | ↓ -0.361 |
-| Success Rate Offense | 59.7% | 51.5% | ↑ +8.3 pp |
-| Success Rate Defense | 51.5% | 59.7% | ↓ -8.3 pp |
-| Explosive Play Rate (Off) | 18.1% | 4.4% | ↑ +13.6 pp |
-| Third Down Conversion | 71.4% | 42.9% | ↑ +28.6 pp |
-| Points per Drive Differential | 3.429 | -3.429 | ↑ +6.857 |
-| Yards per Play Differential | 2.595 | -2.595 | ↑ +5.190 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 30.8% | 0.0% | ↑ +30.8 pp |
-| Pressure Rate (Def) | 7.9% | 3.8% | ↑ +4.0 pp |
-| Tempo | 10.286 | 11.333 | ↓ -1.048 |
-| PowerScore | 0.285 | 0.183 | ↑ +0.102 |
+| Core EPA Offense | 0.056 | -0.010 | 0.066 |
+| Core EPA Defense | 0.072 | -0.010 | 0.082 |
+| Success Rate Offense | 0.506 | 0.453 | 0.052 |
+| Success Rate Defense | 0.512 | 0.445 | 0.067 |
+| Explosive Play Rate (Off) | 0.123 | 0.101 | 0.022 |
+| Third Down Conversion | 0.368 | 0.369 | -0.001 |
+| Points per Drive Differential | 0.015 | 0.008 | 0.007 |
+| Yards per Play Differential | 0.047 | 0.471 | -0.425 |
+| Turnover Margin | -0.222 | -0.333 | 0.111 |
+| Red Zone TD Rate (Off) | 0.145 | 0.129 | 0.016 |
+| Pressure Rate (Def) | 0.065 | 0.099 | -0.035 |
+| Tempo | 10.286 | 11.333 | -1.048 |
+| PowerScore | 0.285 | 0.183 | 0.102 |
+| PowerScore | 0.285 | 0.183 | 0.102 |
+| Tempo | 10.286 | 11.333 | -1.048 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ ARI edge: +0.102 (ARI +0.285 vs NYJ +0.183)
 **7 metrics version:**
 ARI edge: +0.279 (ARI +0.314 vs NYJ +0.036)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.279), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ ARI edge: +0.279 (ARI +0.314 vs NYJ +0.036)
 | Model Spread (ARI - NYJ) | +1.9 pts (favours ARI) |
 | Model Win% ARI | 57.8% |
 | Model Win% NYJ | 42.2% |
-| SOS Differential (ARI-NYJ) | +0.061 |
+| SOS Differential (ARI-NYJ) | +0.133 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.186 | 0.125 |
-| Last 5 games | 0.166 | 0.146 |
-| Last 3 games | 0.170 | 0.154 |
+| Season-to-date | 1.813 | 1.680 |
+| Last 5 games | 1.834 | 1.794 |
+| Last 3 games | 1.895 | 1.824 |
 
 ## Trend Summary (last 3 weeks)
 

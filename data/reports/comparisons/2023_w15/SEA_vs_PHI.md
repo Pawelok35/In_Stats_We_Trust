@@ -4,19 +4,21 @@
 
 | Metric | SEA | PHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.092 | 0.069 | ↑ +0.023 |
-| Core EPA Defense | 0.069 | 0.092 | ↓ -0.023 |
-| Success Rate Offense | 42.5% | 48.2% | ↓ -5.7 pp |
-| Success Rate Defense | 48.2% | 42.5% | ↑ +5.7 pp |
-| Explosive Play Rate (Off) | 8.8% | 10.6% | ↓ -1.8 pp |
-| Third Down Conversion | 40.0% | 50.0% | ↓ -10.0 pp |
-| Points per Drive Differential | 0.300 | -0.300 | ↑ +0.600 |
-| Yards per Play Differential | -0.064 | 0.064 | ↓ -0.128 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 0.0% | 11.8% | ↓ -11.8 pp |
-| Pressure Rate (Def) | 0.0% | 5.6% | ↓ -5.6 pp |
-| Tempo | 8.000 | 8.500 | ↓ -0.500 |
-| PowerScore | 0.170 | 0.185 | ↓ -0.015 |
+| Core EPA Offense | -0.024 | 0.056 | -0.081 |
+| Core EPA Defense | 0.017 | 0.029 | -0.012 |
+| Success Rate Offense | 0.435 | 0.439 | -0.005 |
+| Success Rate Defense | 0.434 | 0.436 | -0.002 |
+| Explosive Play Rate (Off) | 0.101 | 0.097 | 0.004 |
+| Third Down Conversion | 0.301 | 0.430 | -0.129 |
+| Points per Drive Differential | -0.377 | -0.057 | -0.320 |
+| Yards per Play Differential | -0.244 | 0.066 | -0.310 |
+| Turnover Margin | 0.385 | -0.462 | 0.846 |
+| Red Zone TD Rate (Off) | 0.102 | 0.163 | -0.061 |
+| Pressure Rate (Def) | 0.073 | 0.068 | 0.004 |
+| Tempo | 8.000 | 8.500 | -0.500 |
+| PowerScore | 1.752 | 1.863 | -0.111 |
+| PowerScore | 1.752 | 1.863 | -0.111 |
+| Tempo | 8.000 | 8.500 | -0.500 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ PHI edge: +0.015 (SEA +0.170 vs PHI +0.185)
 **7 metrics version:**
 SEA edge: +0.373 (SEA +0.309 vs PHI -0.064)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.373), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - PHI) | -0.3 pts (favours PHI) |
-| Model Win% SEA | 48.9% |
-| Model Win% PHI | 51.1% |
-| SOS Differential (SEA-PHI) | -0.024 |
+| Model Spread (SEA - PHI) | -2.1 pts (favours PHI) |
+| Model Win% SEA | 41.5% |
+| Model Win% PHI | 58.5% |
+| SOS Differential (SEA-PHI) | -0.125 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | PHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.129 | 0.152 |
-| Last 5 games | 0.169 | 0.187 |
-| Last 3 games | 0.191 | 0.217 |
+| Season-to-date | 1.641 | 1.767 |
+| Last 5 games | 1.645 | 1.958 |
+| Last 3 games | 1.674 | 2.032 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 14
 
-_Generated at 2025-11-10T17:50:56.850899+00:00 (UTC)_
+_Generated at 2025-12-28T14:49:55.768135+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\14_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2271, "cols": 18, "timestamp": "2025-11-10T17:50:56.330363+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2271, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:50:56.330363+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2271, "cols": 24, "timestamp": "2025-11-10T17:50:56.330363+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2271, "cols": 18, "timestamp": "2025-12-28T14:49:55.370710+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2271, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:49:55.370710+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2271, "cols": 24, "timestamp": "2025-12-28T14:49:55.370710+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\14_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\14.parquet`
 - Manifest: `data\l4_core12\2024\14_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 26
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\14_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BUF | 0.32723247501887576 |
-| LA | 0.3173726691416232 |
-| MIA | 0.28542548382752947 |
-| NYJ | 0.27785088651564455 |
-| MIN | 0.26590806453304544 |
-| SF | 0.24903072587718134 |
-| ATL | 0.22415392504253984 |
-| CIN | 0.20229746440896845 |
-| DET | 0.2007186644925565 |
-| GB | 0.19901752066409925 |
+| LA | 2.21028933580829 |
+| BUF | 2.0750102527966536 |
+| NYJ | 2.017396341061099 |
+| ATL | 2.0155824964711115 |
+| CAR | 1.9506786927559725 |
+| MIA | 1.926784125186171 |
+| KC | 1.9197733775111747 |
+| DET | 1.911149286502126 |
+| LAC | 1.7955428357250673 |
+| PHI | 1.7891548349346715 |
 
 
 ## Visualizations

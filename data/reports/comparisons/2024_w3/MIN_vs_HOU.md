@@ -4,19 +4,21 @@
 
 | Metric | MIN | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.118 | -0.262 | ↑ +0.380 |
-| Core EPA Defense | -0.262 | 0.118 | ↓ -0.380 |
-| Success Rate Offense | 48.8% | 33.7% | ↑ +15.0 pp |
-| Success Rate Defense | 33.7% | 48.8% | ↓ -15.0 pp |
-| Explosive Play Rate (Off) | 6.2% | 10.5% | ↓ -4.2 pp |
-| Third Down Conversion | 35.3% | 20.0% | ↑ +15.3 pp |
-| Points per Drive Differential | 2.455 | -2.455 | ↑ +4.909 |
-| Yards per Play Differential | -0.017 | 0.017 | ↓ -0.034 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 20.0% | 11.1% | ↑ +8.9 pp |
-| Pressure Rate (Def) | 10.2% | 12.1% | ↓ -1.9 pp |
-| Tempo | 7.273 | 7.818 | ↓ -0.545 |
-| PowerScore | 0.123 | 0.037 | ↑ +0.086 |
+| Core EPA Offense | 0.020 | 0.033 | -0.013 |
+| Core EPA Defense | -0.184 | -0.018 | -0.166 |
+| Success Rate Offense | 0.489 | 0.445 | 0.043 |
+| Success Rate Defense | 0.438 | 0.471 | -0.033 |
+| Explosive Play Rate (Off) | 0.146 | 0.124 | 0.022 |
+| Third Down Conversion | 0.428 | 0.319 | 0.109 |
+| Points per Drive Differential | 0.923 | 0.049 | 0.874 |
+| Yards per Play Differential | 1.537 | 0.310 | 1.226 |
+| Turnover Margin | 0.000 | 1.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.133 | 0.100 | 0.033 |
+| Pressure Rate (Def) | 0.125 | 0.127 | -0.003 |
+| Tempo | 7.273 | 7.818 | -0.545 |
+| PowerScore | 1.565 | 1.580 | -0.014 |
+| PowerScore | 1.565 | 1.580 | -0.014 |
+| Tempo | 7.273 | 7.818 | -0.545 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ MIN edge: +0.086 (MIN +0.123 vs HOU +0.037)
 **7 metrics version:**
 MIN edge: +0.444 (MIN +0.287 vs HOU -0.158)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.444), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - HOU) | +1.6 pts (favours MIN) |
-| Model Win% MIN | 56.6% |
-| Model Win% HOU | 43.4% |
-| SOS Differential (MIN-HOU) | -0.067 |
+| Model Spread (MIN - HOU) | -0.3 pts (favours HOU) |
+| Model Win% MIN | 48.9% |
+| Model Win% HOU | 51.1% |
+| SOS Differential (MIN-HOU) | +0.242 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.067 | 0.134 |
-| Last 5 games | 0.067 | 0.134 |
-| Last 3 games | 0.067 | 0.134 |
+| Season-to-date | 1.708 | 1.466 |
+| Last 5 games | 1.708 | 1.466 |
+| Last 3 games | 1.708 | 1.466 |
 
 ## Trend Summary (last 2 weeks)
 

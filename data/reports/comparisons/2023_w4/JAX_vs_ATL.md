@@ -4,19 +4,21 @@
 
 | Metric | JAX | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.094 | -0.178 | ↑ +0.272 |
-| Core EPA Defense | -0.178 | 0.094 | ↓ -0.272 |
-| Success Rate Offense | 40.5% | 42.5% | ↓ -2.0 pp |
-| Success Rate Defense | 42.5% | 40.5% | ↑ +2.0 pp |
-| Explosive Play Rate (Off) | 7.6% | 8.2% | ↓ -0.6 pp |
-| Third Down Conversion | 35.7% | 42.9% | ↓ -7.1 pp |
-| Points per Drive Differential | 0.845 | -0.845 | ↑ +1.691 |
-| Yards per Play Differential | -0.134 | 0.134 | ↓ -0.268 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 0.0% | 12.5% | ↓ -12.5 pp |
-| Pressure Rate (Def) | 11.4% | 5.7% | ↑ +5.7 pp |
-| Tempo | 7.182 | 7.300 | ↓ -0.118 |
-| PowerScore | 0.114 | 0.079 | ↑ +0.035 |
+| Core EPA Offense | -0.148 | -0.103 | -0.045 |
+| Core EPA Defense | -0.050 | -0.086 | 0.036 |
+| Success Rate Offense | 0.447 | 0.396 | 0.051 |
+| Success Rate Defense | 0.388 | 0.388 | 0.001 |
+| Explosive Play Rate (Off) | 0.072 | 0.095 | -0.023 |
+| Third Down Conversion | 0.272 | 0.278 | -0.006 |
+| Points per Drive Differential | -0.544 | -0.031 | -0.514 |
+| Yards per Play Differential | -0.453 | -0.236 | -0.216 |
+| Turnover Margin | -0.333 | 0.667 | -1.000 |
+| Red Zone TD Rate (Off) | 0.138 | 0.128 | 0.010 |
+| Pressure Rate (Def) | 0.038 | 0.037 | 0.001 |
+| Tempo | 7.182 | 7.300 | -0.118 |
+| PowerScore | 0.114 | 0.079 | 0.035 |
+| PowerScore | 0.114 | 0.079 | 0.035 |
+| Tempo | 7.182 | 7.300 | -0.118 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ JAX edge: +0.035 (JAX +0.114 vs ATL +0.079)
 **7 metrics version:**
 JAX edge: +0.603 (JAX +0.368 vs ATL -0.236)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.603), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ JAX edge: +0.603 (JAX +0.368 vs ATL -0.236)
 | Model Spread (JAX - ATL) | +0.6 pts (favours JAX) |
 | Model Win% JAX | 52.7% |
 | Model Win% ATL | 47.3% |
-| SOS Differential (JAX-ATL) | +0.007 |
+| SOS Differential (JAX-ATL) | -0.038 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.070 | 0.063 |
-| Last 5 games | 0.070 | 0.063 |
-| Last 3 games | 0.070 | 0.063 |
+| Season-to-date | 1.440 | 1.479 |
+| Last 5 games | 1.440 | 1.479 |
+| Last 3 games | 1.440 | 1.479 |
 
 ## Trend Summary (last 3 weeks)
 

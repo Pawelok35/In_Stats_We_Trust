@@ -1,0 +1,128 @@
+matchups:
+- report: data/reports/comparisons/2021_w2/WAS_vs_NYG.md
+  home: WAS
+  away: NYG
+  spread: -3.5
+  total: 42.5
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/CHI_vs_CIN.md
+  home: CHI
+  away: CIN
+  spread: -3.5
+  total: 45.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/CLE_vs_HOU.md
+  home: CLE
+  away: HOU
+  spread: -11.5
+  total: 47.5
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/IND_vs_LA.md
+  home: IND
+  away: LA
+  spread: +4.0
+  total: 47.5
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/MIA_vs_BUF.md
+  home: MIA
+  away: BUF
+  spread: +3.5
+  total: 48.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/NYJ_vs_NE.md
+  home: NYJ
+  away: NE
+  spread: +5.0
+  total: 43.5
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/PHI_vs_SF.md
+  home: PHI
+  away: SF
+  spread: +3.5
+  total: 50.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/PIT_vs_LV.md
+  home: PIT
+  away: LV
+  spread: -6.5
+  total: 49.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/CAR_vs_NO.md
+  home: CAR
+  away: "NO"
+  spread: +3.0
+  total: 46.5
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/JAX_vs_DEN.md
+  home: JAX
+  away: DEN
+  spread: +6.0
+  total: 43.5
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/ARI_vs_MIN.md
+  home: ARI
+  away: MIN
+  spread: -4.5
+  total: 51.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/TB_vs_ATL.md
+  home: TB
+  away: ATL
+  spread: -13.0
+  total: 52.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/LAC_vs_DAL.md
+  home: LAC
+  away: DAL
+  spread: -2.5
+  total: 55.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/SEA_vs_TEN.md
+  home: SEA
+  away: TEN
+  spread: -5.5
+  total: 54.0
+  prime_time: false
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/BAL_vs_KC.md
+  home: BAL
+  away: KC
+  spread: +2.5
+  total: 55.5
+  prime_time: true
+  neutral_site: false
+
+- report: data/reports/comparisons/2021_w2/GB_vs_DET.md
+  home: GB
+  away: DET
+  spread: -10.5
+  total: 49.5
+  prime_time: true
+  neutral_site: false

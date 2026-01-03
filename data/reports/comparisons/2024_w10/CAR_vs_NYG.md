@@ -4,19 +4,21 @@
 
 | Metric | CAR | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.016 | -0.064 | ↑ +0.048 |
-| Core EPA Defense | -0.064 | -0.016 | ↓ -0.048 |
-| Success Rate Offense | 42.5% | 55.9% | ↓ -13.4 pp |
-| Success Rate Defense | 55.9% | 42.5% | ↑ +13.4 pp |
-| Explosive Play Rate (Off) | 8.8% | 8.6% | ↑ +0.1 pp |
-| Third Down Conversion | 37.5% | 46.7% | ↓ -9.2 pp |
-| Points per Drive Differential | 0.121 | -0.121 | ↑ +0.242 |
-| Yards per Play Differential | 0.148 | -0.148 | ↑ +0.295 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 14.3% | 11.1% | ↑ +3.2 pp |
-| Pressure Rate (Def) | 5.0% | 3.8% | ↑ +1.2 pp |
-| Tempo | 5.714 | 7.154 | ↓ -1.440 |
-| PowerScore | 0.105 | 0.131 | ↓ -0.026 |
+| Core EPA Offense | -0.137 | -0.063 | -0.074 |
+| Core EPA Defense | 0.117 | 0.036 | 0.081 |
+| Success Rate Offense | 0.437 | 0.441 | -0.004 |
+| Success Rate Defense | 0.498 | 0.485 | 0.012 |
+| Explosive Play Rate (Off) | 0.079 | 0.090 | -0.011 |
+| Third Down Conversion | 0.282 | 0.323 | -0.041 |
+| Points per Drive Differential | -1.416 | -0.476 | -0.940 |
+| Yards per Play Differential | -1.103 | -0.660 | -0.443 |
+| Turnover Margin | -1.000 | -0.444 | -0.556 |
+| Red Zone TD Rate (Off) | 0.136 | 0.105 | 0.031 |
+| Pressure Rate (Def) | 0.032 | 0.112 | -0.080 |
+| Tempo | 5.714 | 7.154 | -1.440 |
+| PowerScore | 0.105 | 0.131 | -0.026 |
+| PowerScore | 0.105 | 0.131 | -0.026 |
+| Tempo | 5.714 | 7.154 | -1.440 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NYG edge: +0.026 (CAR +0.105 vs NYG +0.131)
 **7 metrics version:**
 CAR edge: +0.387 (CAR +0.275 vs NYG -0.112)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.387), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ CAR edge: +0.387 (CAR +0.275 vs NYG -0.112)
 | Model Spread (CAR - NYG) | -0.5 pts (favours NYG) |
 | Model Win% CAR | 48.0% |
 | Model Win% NYG | 52.0% |
-| SOS Differential (CAR-NYG) | +0.018 |
+| SOS Differential (CAR-NYG) | +0.084 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.161 | 0.143 |
-| Last 5 games | 0.168 | 0.152 |
-| Last 3 games | 0.163 | 0.187 |
+| Season-to-date | 1.662 | 1.578 |
+| Last 5 games | 1.724 | 1.551 |
+| Last 3 games | 1.769 | 1.686 |
 
 ## Trend Summary (last 3 weeks)
 

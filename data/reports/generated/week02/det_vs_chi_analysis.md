@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – DET 18.0 – CHI 23.2
-2️⃣ Predicted Winner (Model) – CHI
-3️⃣ Predicted Margin (Model) – CHI by 5.2 pts
-4️⃣ Win Probability (Model) – 67% (CHI)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja CHI (25.0% vs 6.2%). Field position edge wynosi +7.2 yds na rzecz CHI (3.2 vs -4.0), co skraca ich boisko. Explosive Play Rate pozostaje po stronie CHI (11.0% vs 4.8%), więc big-play equity jest wyższe. CHI prowadzi w Points per Drive Differential (-0.791 vs -1.700), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – DET 44.8 – CHI 11.5
+2️⃣ Predicted Winner (Model) – DET
+3️⃣ Predicted Margin (Model) – DET by 33.2 pts
+4️⃣ Win Probability (Model) – 95% (DET)
+5️⃣ Why This Team Wins (Model) – Na 3rd down DET utrzymuje 46.2%, podczas gdy CHI jest na 13.3%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje DET na poziomie 54.4% vs 40.8% (+13.6 pp). Defensive pressure rate wspiera DET (+20.0% vs +7.5%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja DET (10.5% vs 0.0%). Explosive Play Rate pozostaje po stronie DET (8.9% vs 3.9%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – DET 26.5 – CHI 20.0
+1️⃣ Estimated Score (Market) – DET 22.5 – CHI 22.5
 2️⃣ Predicted Winner (Market) – DET
-3️⃣ Predicted Margin (Market) – DET by 6.5 pts
-4️⃣ Win Probability (Market) – 73% (DET)
-5️⃣ Forum Output (A) – PowerScore (Model) — DET +0.254 vs CHI +0.147. Points per Drive Differential — DET -1.700 vs CHI -0.791. Success Rate Offense — DET 43.4% vs CHI 37.4%. Third Down Conversion — DET 33.3% vs CHI 21.4%. Red Zone TD Rate — DET 6.2% vs CHI 25.0%. Explosive Play Rate — DET 4.8% vs CHI 11.0%. Model margin -5.2 pts vs market spread DET +6.5.
-6️⃣ Forum Output (B) – Model idzie w stronę CHI po marginesie -5.2 pkt. CHI notuje -0.791 PPD vs -1.700 u DET. Różnica w Success Rate to 37.4% vs 43.4%. Na 3rd down CHI (21.4%) wygląda solidniej niż DET (33.3%). Red Zone i explosiveness ( 25.0% / 11.0% ) utrzymują przewagę jakościową. Market trzyma 6.5 pkt, więc edge vs linia to +11.7.
+3️⃣ Predicted Margin (Market) – DET by 0.0 pts
+4️⃣ Win Probability (Market) – 50% (DET)
+5️⃣ Forum Output (A) – PowerScore (Model) — DET +0.104 vs CHI +0.054. Points per Drive Differential — DET +0.167 vs CHI -0.769. Success Rate Offense — DET 54.4% vs CHI 40.8%. Third Down Conversion — DET 46.2% vs CHI 13.3%. Red Zone TD Rate — DET 10.5% vs CHI 0.0%. Explosive Play Rate — DET 8.9% vs CHI 3.9%. Model margin 33.2 pts vs market spread DET -0.0.
+6️⃣ Forum Output (B) – Model idzie w stronę DET po marginesie 33.2 pkt. DET notuje +0.167 PPD vs -0.769 u CHI. Różnica w Success Rate to 54.4% vs 40.8%. Na 3rd down DET (46.2%) wygląda solidniej niż CHI (13.3%). Red Zone i explosiveness ( 10.5% / 8.9% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +33.2.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +11.7 pts
-• PowerScoreDiff (winner) = -0.107
-• Confidence = 67.0%
+• Edge_vs_Line (winner) = +33.2 pts
+• PowerScoreDiff (winner) = +0.050
+• Confidence = 96.5%
 
-🏷 Model Tag: NEUTRAL — based on 67.0% confidence, +11.7 pts model edge vs line, and PowerScore Δ -0.107.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: GOW — based on 96.5% confidence, +33.2 pts model edge vs line, and PowerScore Δ +0.050.
+💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – DET 18.0 – CHI 23.2
-   • Win Probability – 67% (CHI)
+   • Estimated Score – DET 44.8 – CHI 11.5
+   • Win Probability – 95% (DET)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – DET 26.5 – CHI 20.0
-   • Win Probability – 73% (DET)
+   • Estimated Score – DET 22.5 – CHI 22.5
+   • Win Probability – 50% (DET)
 
-🏷 Model Tag: NEUTRAL — CHI (HC +6.5)
+🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — DET (HC +0.0)

@@ -4,19 +4,21 @@
 
 | Metric | PHI | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.004 | -0.083 | ↑ +0.079 |
-| Core EPA Defense | -0.083 | -0.004 | ↓ -0.079 |
-| Success Rate Offense | 43.5% | 42.6% | ↑ +0.9 pp |
-| Success Rate Defense | 42.6% | 43.5% | ↓ -0.9 pp |
-| Explosive Play Rate (Off) | 5.9% | 5.9% | ± 0.0 pp |
-| Third Down Conversion | 21.4% | 28.6% | ↓ -7.1 pp |
-| Points per Drive Differential | 0.556 | -0.556 | ↑ +1.111 |
-| Yards per Play Differential | 0.065 | -0.065 | ↑ +0.129 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 15.4% | 0.0% | ↑ +15.4 pp |
-| Pressure Rate (Def) | 0.0% | 4.5% | ↓ -4.5 pp |
-| Tempo | 8.500 | 7.556 | ↑ +0.944 |
-| PowerScore | 0.102 | 0.088 | ↑ +0.014 |
+| Core EPA Offense | 0.084 | -0.079 | 0.163 |
+| Core EPA Defense | -0.063 | 0.048 | -0.111 |
+| Success Rate Offense | 0.472 | 0.444 | 0.029 |
+| Success Rate Defense | 0.445 | 0.484 | -0.039 |
+| Explosive Play Rate (Off) | 0.113 | 0.087 | 0.026 |
+| Third Down Conversion | 0.398 | 0.321 | 0.077 |
+| Points per Drive Differential | 0.940 | -0.654 | 1.594 |
+| Yards per Play Differential | 0.797 | -0.823 | 1.619 |
+| Turnover Margin | 0.750 | -0.438 | 1.188 |
+| Red Zone TD Rate (Off) | 0.128 | 0.128 | -0.001 |
+| Pressure Rate (Def) | 0.074 | 0.079 | -0.005 |
+| Tempo | 8.500 | 7.556 | 0.944 |
+| PowerScore | 0.102 | 0.088 | 0.014 |
+| PowerScore | 0.102 | 0.088 | 0.014 |
+| Tempo | 8.500 | 7.556 | 0.944 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ PHI edge: +0.014 (PHI +0.102 vs NYG +0.088)
 **7 metrics version:**
 PHI edge: +0.216 (PHI +0.169 vs NYG -0.047)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.216), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ PHI edge: +0.216 (PHI +0.169 vs NYG -0.047)
 | Model Spread (PHI - NYG) | +0.3 pts (favours PHI) |
 | Model Win% PHI | 51.1% |
 | Model Win% NYG | 48.9% |
-| SOS Differential (PHI-NYG) | -0.022 |
+| SOS Differential (PHI-NYG) | -0.020 |
 *Neutral-field assumption. Based on schedule through Week 17.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PHI | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.122 | 0.144 |
-| Last 5 games | 0.122 | 0.143 |
-| Last 3 games | 0.124 | 0.206 |
+| Season-to-date | 1.574 | 1.594 |
+| Last 5 games | 1.587 | 1.644 |
+| Last 3 games | 1.458 | 1.783 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | NYG (-) | 28-3 | PHI | 1.000 | 0.132 | 44.6% | 1.923 |
-| 14 | NYG (H) | 22-16 | PHI | 1.000 | 0.036 | 44.0% | 0.667 |
-| 6 | DAL (H) | 26-11 | PHI | 0.986 | -0.012 | 45.0% | 1.489 |
+| 7 | NYG (A) | 28-3 | PHI | 1.000 | 0.132 | 44.6% | 1.923 |
+| 10 | DAL (A) | 34-6 | PHI | 0.986 | -0.022 | 47.7% | 1.967 |
+| 17 | DAL (H) | 35-8 | PHI | 0.986 | 0.221 | 51.2% | 2.482 |
 
 **NYG analogs vs PHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 14 | PHI (A) | 11-13 | PHI | 1.000 | -0.184 | 33.7% | -0.154 |
+| 7 | PHI (H) | 3-28 | PHI | 1.000 | -0.253 | 39.2% | -1.923 |
 | 1 | MIN (H) | 6-22 | MIN | 0.950 | -0.235 | 38.2% | -1.455 |
-| 16 | MIN (A) | 7-24 | MIN | 0.950 | -0.344 | 47.4% | -1.564 |
+| 8 | PIT (A) | 24-18 | NYG | 0.797 | -0.027 | 43.5% | 0.515 |
 
 ## Core EPA Offense Form (up to Week 17)
 

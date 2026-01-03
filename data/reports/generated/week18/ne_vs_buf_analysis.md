@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – NE 1.7 – BUF 25.7
+1️⃣ Estimated Score (Model) – NE 6.3 – BUF 26.3
 2️⃣ Predicted Winner (Model) – BUF
-3️⃣ Predicted Margin (Model) – BUF by 24.0 pts
+3️⃣ Predicted Margin (Model) – BUF by 19.9 pts
 4️⃣ Win Probability (Model) – 95% (BUF)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja BUF (17.1% vs 8.9%). Na 3rd down BUF utrzymuje 38.2%, podczas gdy NE jest na 31.4%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje BUF na poziomie 50.1% vs 46.8% (+3.3 pp). Turnover margin faworyzuje BUF (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. Defensive pressure rate wspiera BUF (+2.9% vs +0.0%), więc pasy rywala będą częściej pod presją.
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę BUF: BUF +0.149 vs NE -0.136. Na 3rd down BUF utrzymuje 45.4%, podczas gdy NE jest na 30.0%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje BUF na poziomie 46.5% vs 37.5% (+9.0 pp). Explosive Play Rate pozostaje po stronie BUF (11.0% vs 7.7%), więc big-play equity jest wyższe. Turnover margin faworyzuje BUF (-1.00 vs -2.00), co przekłada się na dodatkowe posiadania.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – NE 16.8 – BUF 19.8
+1️⃣ Estimated Score (Market) – NE 17.5 – BUF 26.0
 2️⃣ Predicted Winner (Market) – BUF
-3️⃣ Predicted Margin (Market) – BUF by 3.0 pts
-4️⃣ Win Probability (Market) – 60% (BUF)
-5️⃣ Forum Output (A) – PowerScore (Model) — NE +0.103 vs BUF +0.080. Points per Drive Differential — NE -0.731 vs BUF +0.936. Success Rate Offense — NE 46.8% vs BUF 50.1%. Third Down Conversion — NE 31.4% vs BUF 38.2%. Red Zone TD Rate — NE 8.9% vs BUF 17.1%. Explosive Play Rate — NE 8.8% vs BUF 11.0%. Model margin -24.0 pts vs market spread NE -3.0.
-6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie -24.0 pkt. BUF notuje +0.936 PPD vs -0.731 u NE. Różnica w Success Rate to 50.1% vs 46.8%. Na 3rd down BUF (38.2%) wygląda solidniej niż NE (31.4%). Red Zone i explosiveness ( 17.1% / 11.0% ) utrzymują przewagę jakościową. Market trzyma -3.0 pkt, więc edge vs linia to +21.0.
+3️⃣ Predicted Margin (Market) – BUF by 8.5 pts
+4️⃣ Win Probability (Market) – 80% (BUF)
+5️⃣ Forum Output (A) – PowerScore (Model) — NE -0.136 vs BUF +0.149. Points per Drive Differential — NE -0.440 vs BUF +0.777. Success Rate Offense — NE 37.5% vs BUF 46.5%. Third Down Conversion — NE 30.0% vs BUF 45.4%. Red Zone TD Rate — NE 14.7% vs BUF 16.0%. Explosive Play Rate — NE 7.7% vs BUF 11.0%. Model margin -19.9 pts vs market spread NE -8.5.
+6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie -19.9 pkt. BUF notuje +0.777 PPD vs -0.440 u NE. Różnica w Success Rate to 46.5% vs 37.5%. Na 3rd down BUF (45.4%) wygląda solidniej niż NE (30.0%). Red Zone i explosiveness ( 16.0% / 11.0% ) utrzymują przewagę jakościową. Market trzyma -8.5 pkt, więc edge vs linia to +11.4.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +21.0 pts
-• PowerScoreDiff (winner) = -0.023
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +11.4 pts
+• PowerScoreDiff (winner) = +0.285
+• Confidence = 98.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +21.0 pts model edge vs line, and PowerScore Δ -0.023.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: GOY — based on 98.0% confidence, +11.4 pts model edge vs line, and PowerScore Δ +0.285.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – NE 1.7 – BUF 25.7
+   • Estimated Score – NE 6.3 – BUF 26.3
    • Win Probability – 95% (BUF)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – NE 16.8 – BUF 19.8
-   • Win Probability – 60% (BUF)
+   • Estimated Score – NE 17.5 – BUF 26.0
+   • Win Probability – 80% (BUF)
 
-🏷 Model Tag: NEUTRAL — BUF (HC -3.0)
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — BUF (HC -8.5)

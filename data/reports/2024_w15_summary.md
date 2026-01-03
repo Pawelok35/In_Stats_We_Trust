@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 15
 
-_Generated at 2025-11-10T17:51:08.127401+00:00 (UTC)_
+_Generated at 2025-12-28T14:51:04.275658+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\15_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2780, "cols": 18, "timestamp": "2025-11-10T17:51:07.601887+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2780, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:51:07.601887+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2780, "cols": 24, "timestamp": "2025-11-10T17:51:07.601887+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2780, "cols": 18, "timestamp": "2025-12-28T14:51:03.802189+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2780, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:51:03.802189+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2780, "cols": 24, "timestamp": "2025-12-28T14:51:03.802189+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\15_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\15.parquet`
 - Manifest: `data\l4_core12\2024\15_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\15_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BUF | 0.34411505769280953 |
-| DET | 0.29675158798762424 |
-| BAL | 0.27907933580654354 |
-| NYJ | 0.274159669116514 |
-| JAX | 0.2669692952815282 |
-| NE | 0.22163212000866567 |
-| DAL | 0.20965721391302233 |
-| ARI | 0.19668192262701592 |
-| TB | 0.19154272729834151 |
-| CIN | 0.1697726947812782 |
+| PHI | 2.251626791217505 |
+| WAS | 2.2261746257046795 |
+| JAX | 2.1904744499207034 |
+| DET | 2.0725091637452002 |
+| ARI | 2.0490628750079685 |
+| NYG | 2.015805464320116 |
+| MIN | 2.0139693646700745 |
+| CIN | 1.9497726947812783 |
+| BAL | 1.8656851196726014 |
+| BUF | 1.8278146913924431 |
 
 
 ## Visualizations

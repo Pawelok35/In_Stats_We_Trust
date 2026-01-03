@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – ARI 13.7 – LA 24.0
-2️⃣ Predicted Winner (Model) – LA
-3️⃣ Predicted Margin (Model) – LA by 10.3 pts
-4️⃣ Win Probability (Model) – 88% (LA)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę LA: LA +0.284 vs ARI +0.160. Success Rate Offense pokazuje LA na poziomie 51.7% vs 47.2% (+4.5 pp). Defensive pressure rate wspiera LA (+8.0% vs +6.1%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie LA (11.3% vs 9.6%), więc big-play equity jest wyższe. LA prowadzi w Points per Drive Differential (+1.033 vs -0.040), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – ARI 32.3 – LA 26.0
+2️⃣ Predicted Winner (Model) – ARI
+3️⃣ Predicted Margin (Model) – ARI by 6.3 pts
+4️⃣ Win Probability (Model) – 82% (ARI)
+5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje ARI (+4.00 vs +2.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja ARI (17.5% vs 15.1%). ARI prowadzi w Points per Drive Differential (+1.042 vs +0.695), więc bazowa efektywność napędza przewagę. Na 3rd down ARI utrzymuje 37.6%, podczas gdy LA jest na 37.4%, co stabilizuje serie ofensywne.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – ARI 20.0 – LA 28.0
-2️⃣ Predicted Winner (Market) – LA
-3️⃣ Predicted Margin (Market) – LA by 8.0 pts
-4️⃣ Win Probability (Market) – 78% (LA)
-5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.160 vs LA +0.284. Points per Drive Differential — ARI -0.040 vs LA +1.033. Success Rate Offense — ARI 47.2% vs LA 51.7%. Third Down Conversion — ARI 39.8% vs LA 34.3%. Red Zone TD Rate — ARI 16.3% vs LA 16.2%. Explosive Play Rate — ARI 9.6% vs LA 11.3%. Model margin -10.3 pts vs market spread ARI -8.0.
-6️⃣ Forum Output (B) – Model idzie w stronę LA po marginesie -10.3 pkt. LA notuje +1.033 PPD vs -0.040 u ARI. Różnica w Success Rate to 51.7% vs 47.2%. Na 3rd down LA (34.3%) wygląda solidniej niż ARI (39.8%). Red Zone i explosiveness ( 16.2% / 11.3% ) utrzymują przewagę jakościową. Market trzyma -8.0 pkt, więc edge vs linia to +2.3.
+1️⃣ Estimated Score (Market) – ARI 27.5 – LA 24.5
+2️⃣ Predicted Winner (Market) – ARI
+3️⃣ Predicted Margin (Market) – ARI by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (ARI)
+5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.170 vs LA +0.187. Points per Drive Differential — ARI +1.042 vs LA +0.695. Success Rate Offense — ARI 46.3% vs LA 46.3%. Third Down Conversion — ARI 37.6% vs LA 37.4%. Red Zone TD Rate — ARI 17.5% vs LA 15.1%. Explosive Play Rate — ARI 10.5% vs LA 11.4%. Model margin 6.3 pts vs market spread ARI +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie 6.3 pkt. ARI notuje +1.042 PPD vs +0.695 u LA. Różnica w Success Rate to 46.3% vs 46.3%. Na 3rd down ARI (37.6%) wygląda solidniej niż LA (37.4%). Red Zone i explosiveness ( 17.5% / 10.5% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +3.3.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +2.3 pts
-• PowerScoreDiff (winner) = +0.124
-• Confidence = 91.0%
+• Edge_vs_Line (winner) = +3.3 pts
+• PowerScoreDiff (winner) = -0.017
+• Confidence = 82.0%
 
-🏷 Model Tag: VALUE PLAY — based on 91.0% confidence, +2.3 pts model edge vs line, and PowerScore Δ +0.124.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 82.0% confidence, +3.3 pts model edge vs line, and PowerScore Δ -0.017.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – ARI 13.7 – LA 24.0
-   • Win Probability – 88% (LA)
+   • Estimated Score – ARI 32.3 – LA 26.0
+   • Win Probability – 82% (ARI)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – ARI 20.0 – LA 28.0
-   • Win Probability – 78% (LA)
+   • Estimated Score – ARI 27.5 – LA 24.5
+   • Win Probability – 60% (ARI)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — LA (HC -8.0)
+🏷 Model Tag: NEUTRAL — ARI (HC -3.0)

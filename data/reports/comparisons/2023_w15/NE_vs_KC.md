@@ -4,19 +4,21 @@
 
 | Metric | NE | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.331 | -0.113 | ↓ -0.218 |
-| Core EPA Defense | -0.113 | -0.331 | ↑ +0.218 |
-| Success Rate Offense | 35.2% | 37.0% | ↓ -1.8 pp |
-| Success Rate Defense | 37.0% | 35.2% | ↑ +1.8 pp |
-| Explosive Play Rate (Off) | 8.5% | 9.9% | ↓ -1.4 pp |
-| Third Down Conversion | 15.4% | 35.7% | ↓ -20.3 pp |
-| Points per Drive Differential | -0.714 | 0.714 | ↓ -1.429 |
-| Yards per Play Differential | -1.123 | 1.123 | ↓ -2.247 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 18.2% | 14.3% | ↑ +3.9 pp |
-| Pressure Rate (Def) | 6.8% | 11.4% | ↓ -4.6 pp |
-| Tempo | 5.071 | 5.786 | ↓ -0.714 |
-| PowerScore | -0.033 | 0.007 | ↓ -0.040 |
+| Core EPA Offense | -0.167 | 0.025 | -0.193 |
+| Core EPA Defense | -0.043 | -0.050 | 0.007 |
+| Success Rate Offense | 0.378 | 0.441 | -0.063 |
+| Success Rate Defense | 0.410 | 0.392 | 0.017 |
+| Explosive Play Rate (Off) | 0.074 | 0.102 | -0.028 |
+| Third Down Conversion | 0.303 | 0.425 | -0.121 |
+| Points per Drive Differential | -0.478 | 0.490 | -0.968 |
+| Yards per Play Differential | -0.017 | 0.582 | -0.599 |
+| Turnover Margin | -0.692 | -0.231 | -0.462 |
+| Red Zone TD Rate (Off) | 0.122 | 0.142 | -0.020 |
+| Pressure Rate (Def) | 0.052 | 0.097 | -0.045 |
+| Tempo | 5.071 | 5.786 | -0.714 |
+| PowerScore | 0.964 | 1.144 | -0.180 |
+| PowerScore | 0.964 | 1.144 | -0.180 |
+| Tempo | 5.071 | 5.786 | -0.714 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.040 (NE -0.033 vs KC +0.007)
 **7 metrics version:**
 NE edge: +0.184 (NE +0.081 vs KC -0.103)
 **Verdict:** NE holds the edge in the extended breakdown (lead 0.184), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - KC) | -0.7 pts (favours KC) |
-| Model Win% NE | 46.9% |
-| Model Win% KC | 53.1% |
-| SOS Differential (NE-KC) | -0.034 |
+| Model Spread (NE - KC) | -3.3 pts (favours KC) |
+| Model Win% NE | 36.5% |
+| Model Win% KC | 63.5% |
+| SOS Differential (NE-KC) | -0.115 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.069 | 0.103 |
-| Last 5 games | 0.055 | 0.121 |
-| Last 3 games | 0.009 | 0.142 |
+| Season-to-date | 1.492 | 1.607 |
+| Last 5 games | 1.390 | 1.623 |
+| Last 3 games | 1.249 | 1.825 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | NE | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.014 | 0.018 | ↓ -0.004 |
-| Core EPA Defense | 0.018 | 0.014 | ↑ +0.004 |
-| Success Rate Offense | 46.3% | 49.4% | ↓ -3.0 pp |
-| Success Rate Defense | 49.4% | 46.3% | ↑ +3.0 pp |
-| Explosive Play Rate (Off) | 6.1% | 12.7% | ↓ -6.6 pp |
-| Third Down Conversion | 46.7% | 33.3% | ↑ +13.3 pp |
-| Points per Drive Differential | 0.300 | -0.300 | ↑ +0.600 |
-| Yards per Play Differential | -1.204 | 1.204 | ↓ -2.409 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 15.8% | 15.8% | ± 0.0 pp |
-| Pressure Rate (Def) | 3.3% | 6.1% | ↓ -2.7 pp |
-| Tempo | 8.200 | 7.900 | ↑ +0.300 |
-| PowerScore | 0.137 | 0.158 | ↓ -0.021 |
+| Core EPA Offense | -0.111 | -0.032 | -0.079 |
+| Core EPA Defense | 0.060 | -0.016 | 0.076 |
+| Success Rate Offense | 0.441 | 0.449 | -0.007 |
+| Success Rate Defense | 0.483 | 0.447 | 0.036 |
+| Explosive Play Rate (Off) | 0.082 | 0.096 | -0.014 |
+| Third Down Conversion | 0.302 | 0.372 | -0.070 |
+| Points per Drive Differential | -0.841 | -0.061 | -0.780 |
+| Yards per Play Differential | -1.257 | 0.352 | -1.609 |
+| Turnover Margin | -0.429 | -0.429 | 0.000 |
+| Red Zone TD Rate (Off) | 0.082 | 0.143 | -0.061 |
+| Pressure Rate (Def) | 0.055 | 0.090 | -0.035 |
+| Tempo | 8.200 | 7.900 | 0.300 |
+| PowerScore | 0.137 | 0.158 | -0.021 |
+| PowerScore | 0.137 | 0.158 | -0.021 |
+| Tempo | 8.200 | 7.900 | 0.300 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ NYJ edge: +0.021 (NE +0.137 vs NYJ +0.158)
 **7 metrics version:**
 NYJ edge: +0.014 (NE +0.102 vs NYJ +0.116)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.014), driven by Tempo (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ NYJ edge: +0.014 (NE +0.102 vs NYJ +0.116)
 | Model Spread (NE - NYJ) | -0.4 pts (favours NYJ) |
 | Model Win% NE | 48.4% |
 | Model Win% NYJ | 51.6% |
-| SOS Differential (NE-NYJ) | +0.019 |
+| SOS Differential (NE-NYJ) | +0.056 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.139 | 0.120 |
-| Last 5 games | 0.134 | 0.099 |
-| Last 3 games | 0.148 | 0.148 |
+| Season-to-date | 1.675 | 1.618 |
+| Last 5 games | 1.693 | 1.560 |
+| Last 3 games | 1.618 | 1.725 |
 
 ## Trend Summary (last 3 weeks)
 

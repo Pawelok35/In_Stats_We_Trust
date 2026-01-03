@@ -1,4 +1,7 @@
 # NFL 2024 Week 1 - Betting Lines
+season: 2024
+week: 1
+
 matchups:
   - report: data/reports/comparisons/2024_w1/ATL_vs_PIT.md
     home: ATL
@@ -43,7 +46,7 @@ matchups:
   - report: data/reports/comparisons/2024_w1/IND_vs_HOU.md
     home: IND
     away: HOU
-    spread: 3.0
+    spread: +3.0
     total: 48.5
     prime_time: false
     neutral_site: false
@@ -59,7 +62,7 @@ matchups:
   - report: data/reports/comparisons/2024_w1/NYG_vs_MIN.md
     home: NYG
     away: MIN
-    spread: 1.5
+    spread: +1.5
     total: 41.0
     prime_time: false
     neutral_site: false
@@ -111,5 +114,3 @@ matchups:
     total: 43.5
     prime_time: true
     neutral_site: false
-
-

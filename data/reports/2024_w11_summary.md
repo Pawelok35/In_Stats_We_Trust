@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 11
 
-_Generated at 2025-11-10T17:50:23.565796+00:00 (UTC)_
+_Generated at 2025-12-28T14:40:20.734563+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\11_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2424, "cols": 18, "timestamp": "2025-11-10T17:50:23.018596+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2424, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T17:50:23.018596+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2424, "cols": 24, "timestamp": "2025-11-10T17:50:23.018596+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2424, "cols": 18, "timestamp": "2025-12-28T14:40:20.346141+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2424, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:40:20.346141+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2424, "cols": 24, "timestamp": "2025-12-28T14:40:20.346141+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2024\11_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2024\11.parquet`
 - Manifest: `data\l4_core12\2024\11_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2024\11_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DET | 0.31346406882358646 |
-| MIA | 0.2979544274686757 |
-| GB | 0.29538594916964916 |
-| LA | 0.24975061813893662 |
-| CHI | 0.24473293700357557 |
-| LV | 0.2434066023279784 |
-| DEN | 0.22983220268987178 |
-| NO | 0.22337564002504814 |
-| NE | 0.21119725030009343 |
-| BUF | 0.1935171114950016 |
+| MIA | 2.6212993752038676 |
+| LV | 2.490422877192355 |
+| CHI | 2.371477123050087 |
+| DET | 2.325299817615857 |
+| NE | 2.303360992990152 |
+| SEA | 1.9953255802475411 |
+| BUF | 1.9330625660404563 |
+| DEN | 1.8950368810524452 |
+| SF | 1.8590753728308285 |
+| GB | 1.8525288063125065 |
 
 
 ## Visualizations

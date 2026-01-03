@@ -4,19 +4,21 @@
 
 | Metric | MIN | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.118 | 0.300 | ↓ -0.182 |
-| Core EPA Defense | -0.262 | 0.420 | ↓ -0.682 |
-| Success Rate Offense | 48.8% | 58.4% | ↓ -9.7 pp |
-| Success Rate Defense | 33.7% | 59.2% | ↓ -25.5 pp |
-| Explosive Play Rate (Off) | 6.2% | 16.9% | ↓ -10.6 pp |
-| Third Down Conversion | 35.3% | 60.0% | ↓ -24.7 pp |
-| Points per Drive Differential | 2.455 | -0.036 | ↑ +2.490 |
-| Yards per Play Differential | -0.017 | 0.978 | ↓ -0.995 |
-| Turnover Margin | 2.000 | 0.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 20.0% | 9.5% | ↑ +10.5 pp |
-| Pressure Rate (Def) | 10.2% | 7.4% | ↑ +2.8 pp |
-| Tempo | 7.273 | 11.000 | ↓ -3.727 |
-| PowerScore | 0.123 | 0.369 | ↓ -0.246 |
+| Core EPA Offense | 0.020 | 0.008 | 0.012 |
+| Core EPA Defense | -0.184 | 0.035 | -0.219 |
+| Success Rate Offense | 0.489 | 0.505 | -0.016 |
+| Success Rate Defense | 0.438 | 0.510 | -0.072 |
+| Explosive Play Rate (Off) | 0.146 | 0.041 | 0.105 |
+| Third Down Conversion | 0.428 | 0.335 | 0.093 |
+| Points per Drive Differential | 0.923 | -0.039 | 0.961 |
+| Yards per Play Differential | 1.537 | 0.233 | 1.304 |
+| Turnover Margin | 0.000 | 1.000 | -1.000 |
+| Red Zone TD Rate (Off) | 0.133 | 0.117 | 0.016 |
+| Pressure Rate (Def) | 0.125 | 0.054 | 0.071 |
+| Tempo | 7.273 | 11.000 | -3.727 |
+| PowerScore | 0.123 | 0.369 | -0.246 |
+| PowerScore | 0.123 | 0.369 | -0.246 |
+| Tempo | 7.273 | 11.000 | -3.727 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ CIN edge: +0.246 (MIN +0.123 vs CIN +0.369)
 **7 metrics version:**
 MIN edge: +0.006 (MIN +0.287 vs CIN +0.281)
 **Verdict:** MIN holds the edge in the extended breakdown (lead 0.006), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ MIN edge: +0.006 (MIN +0.287 vs CIN +0.281)
 | Model Spread (MIN - CIN) | -4.5 pts (favours CIN) |
 | Model Win% MIN | 31.9% |
 | Model Win% CIN | 68.1% |
-| SOS Differential (MIN-CIN) | -0.090 |
+| SOS Differential (MIN-CIN) | -0.043 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.067 | 0.156 |
-| Last 5 games | 0.067 | 0.156 |
-| Last 3 games | 0.067 | 0.156 |
+| Season-to-date | 1.708 | 1.751 |
+| Last 5 games | 1.708 | 1.751 |
+| Last 3 games | 1.708 | 1.751 |
 
 ## Trend Summary (last 2 weeks)
 

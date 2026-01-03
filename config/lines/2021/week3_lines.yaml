@@ -1,0 +1,129 @@
+# NFL 2021 Week 3 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2021_w3/DAL_vs_PHI.md
+    home: DAL
+    away: PHI
+    spread: -4.0
+    total: 51.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/SF_vs_GB.md
+    home: SF
+    away: GB
+    spread: -3.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/LA_vs_TB.md
+    home: LA
+    away: TB
+    spread: -1.0
+    total: 54.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/MIN_vs_SEA.md
+    home: MIN
+    away: SEA
+    spread: +1.0
+    total: 55.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/DEN_vs_NYJ.md
+    home: DEN
+    away: NYJ
+    spread: -10.5
+    total: 41.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/LV_vs_MIA.md
+    home: LV
+    away: MIA
+    spread: -3.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/BUF_vs_WAS.md
+    home: BUF
+    away: WAS
+    spread: -9.0
+    total: 46.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/CLE_vs_CHI.md
+    home: CLE
+    away: CHI
+    spread: -7.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/DET_vs_BAL.md
+    home: DET
+    away: BAL
+    spread: +9.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/JAX_vs_ARI.md
+    home: JAX
+    away: ARI
+    spread: +7.5
+    total: 51.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/KC_vs_LAC.md
+    home: KC
+    away: LAC
+    spread: -6.5
+    total: 55.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/NE_vs_NO.md
+    home: NE
+    away: "NO"
+    spread: -3.0
+    total: 43.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/NYG_vs_ATL.md
+    home: NYG
+    away: ATL
+    spread: -3.0
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/PIT_vs_CIN.md
+    home: PIT
+    away: CIN
+    spread: -4.5
+    total: 44.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/TEN_vs_IND.md
+    home: TEN
+    away: IND
+    spread: -5.0
+    total: 48.0
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2021_w3/HOU_vs_CAR.md
+    home: HOU
+    away: CAR
+    spread: +7.5
+    total: 44.0
+    prime_time: true
+    neutral_site: false

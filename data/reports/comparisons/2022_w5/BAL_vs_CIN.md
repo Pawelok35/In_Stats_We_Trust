@@ -4,19 +4,21 @@
 
 | Metric | BAL | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.026 | -0.017 | ↑ +0.043 |
-| Core EPA Defense | -0.017 | 0.026 | ↓ -0.043 |
-| Success Rate Offense | 46.2% | 46.7% | ↓ -0.4 pp |
-| Success Rate Defense | 46.7% | 46.2% | ↑ +0.4 pp |
-| Explosive Play Rate (Off) | 11.2% | 9.3% | ↑ +1.9 pp |
-| Third Down Conversion | 41.7% | 33.3% | ↑ +8.3 pp |
-| Points per Drive Differential | -0.162 | 0.162 | ↓ -0.323 |
-| Yards per Play Differential | 0.183 | -0.183 | ↑ +0.365 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 10.0% | 13.3% | ↓ -3.3 pp |
-| Pressure Rate (Def) | 7.9% | 2.9% | ↑ +5.0 pp |
-| Tempo | 7.273 | 8.333 | ↓ -1.061 |
-| PowerScore | 0.144 | 0.134 | ↑ +0.009 |
+| Core EPA Offense | 0.111 | -0.010 | 0.122 |
+| Core EPA Defense | 0.030 | -0.104 | 0.135 |
+| Success Rate Offense | 0.443 | 0.387 | 0.056 |
+| Success Rate Defense | 0.447 | 0.374 | 0.073 |
+| Explosive Play Rate (Off) | 0.131 | 0.078 | 0.054 |
+| Third Down Conversion | 0.374 | 0.417 | -0.042 |
+| Points per Drive Differential | 0.250 | 0.591 | -0.341 |
+| Yards per Play Differential | -0.335 | -0.236 | -0.099 |
+| Turnover Margin | 1.250 | 0.250 | 1.000 |
+| Red Zone TD Rate (Off) | 0.152 | 0.135 | 0.017 |
+| Pressure Rate (Def) | 0.044 | 0.038 | 0.006 |
+| Tempo | 7.273 | 8.333 | -1.061 |
+| PowerScore | 1.576 | 1.782 | -0.207 |
+| PowerScore | 1.576 | 1.782 | -0.207 |
+| Tempo | 7.273 | 8.333 | -1.061 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.009 (BAL +0.144 vs CIN +0.134)
 **7 metrics version:**
 BAL edge: +0.005 (BAL +0.101 vs CIN +0.096)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.005), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - CIN) | +0.2 pts (favours BAL) |
-| Model Win% BAL | 50.7% |
-| Model Win% CIN | 49.3% |
-| SOS Differential (BAL-CIN) | +0.092 |
+| Model Spread (BAL - CIN) | -3.8 pts (favours CIN) |
+| Model Win% BAL | 34.6% |
+| Model Win% CIN | 65.4% |
+| SOS Differential (BAL-CIN) | +0.298 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.168 | 0.076 |
-| Last 5 games | 0.168 | 0.076 |
-| Last 3 games | 0.209 | 0.094 |
+| Season-to-date | 1.680 | 1.382 |
+| Last 5 games | 1.680 | 1.382 |
+| Last 3 games | 1.682 | 1.495 |
 
 ## Trend Summary (last 3 weeks)
 

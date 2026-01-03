@@ -4,19 +4,21 @@
 
 | Metric | PIT | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.050 | 0.019 | ↓ -0.069 |
-| Core EPA Defense | 0.019 | -0.050 | ↑ +0.069 |
-| Success Rate Offense | 41.2% | 39.5% | ↑ +1.7 pp |
-| Success Rate Defense | 39.5% | 41.2% | ↓ -1.7 pp |
-| Explosive Play Rate (Off) | 10.0% | 12.8% | ↓ -2.8 pp |
-| Third Down Conversion | 46.2% | 35.3% | ↑ +10.9 pp |
-| Points per Drive Differential | -0.643 | 0.643 | ↓ -1.287 |
-| Yards per Play Differential | -0.334 | 0.334 | ↓ -0.668 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 28.6% | 16.7% | ↑ +11.9 pp |
-| Pressure Rate (Def) | 13.2% | 10.3% | ↑ +2.8 pp |
-| Tempo | 6.154 | 7.818 | ↓ -1.664 |
-| PowerScore | 0.110 | 0.121 | ↓ -0.012 |
+| Core EPA Offense | -0.094 | -0.081 | -0.013 |
+| Core EPA Defense | -0.032 | 0.070 | -0.102 |
+| Success Rate Offense | 0.396 | 0.393 | 0.003 |
+| Success Rate Defense | 0.421 | 0.436 | -0.015 |
+| Explosive Play Rate (Off) | 0.081 | 0.103 | -0.022 |
+| Third Down Conversion | 0.282 | 0.329 | -0.047 |
+| Points per Drive Differential | -0.320 | -0.777 | 0.457 |
+| Yards per Play Differential | -0.628 | -0.302 | -0.326 |
+| Turnover Margin | 1.667 | -1.333 | 3.000 |
+| Red Zone TD Rate (Off) | 0.152 | 0.086 | 0.066 |
+| Pressure Rate (Def) | 0.067 | 0.048 | 0.019 |
+| Tempo | 6.154 | 7.818 | -1.664 |
+| PowerScore | 1.320 | 1.659 | -0.339 |
+| PowerScore | 1.320 | 1.659 | -0.339 |
+| Tempo | 6.154 | 7.818 | -1.664 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYJ edge: +0.012 (PIT +0.110 vs NYJ +0.121)
 **7 metrics version:**
 NYJ edge: +0.389 (PIT -0.095 vs NYJ +0.294)
 **Verdict:** NYJ holds the edge in the extended breakdown (lead 0.389), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - NYJ) | -0.2 pts (favours NYJ) |
-| Model Win% PIT | 49.1% |
-| Model Win% NYJ | 50.9% |
-| SOS Differential (PIT-NYJ) | -0.046 |
+| Model Spread (PIT - NYJ) | -6.3 pts (favours NYJ) |
+| Model Win% PIT | 26.0% |
+| Model Win% NYJ | 74.0% |
+| SOS Differential (PIT-NYJ) | +0.238 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.092 | 0.138 |
-| Last 5 games | 0.092 | 0.138 |
-| Last 3 games | 0.092 | 0.138 |
+| Season-to-date | 1.689 | 1.451 |
+| Last 5 games | 1.689 | 1.451 |
+| Last 3 games | 1.689 | 1.451 |
 
 ## Trend Summary (last 3 weeks)
 

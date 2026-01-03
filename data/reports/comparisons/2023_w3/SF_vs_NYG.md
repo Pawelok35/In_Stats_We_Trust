@@ -4,19 +4,21 @@
 
 | Metric | SF | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.143 | -0.099 | ↑ +0.242 |
-| Core EPA Defense | -0.099 | 0.143 | ↓ -0.242 |
-| Success Rate Offense | 44.9% | 37.3% | ↑ +7.6 pp |
-| Success Rate Defense | 37.3% | 44.9% | ↓ -7.6 pp |
-| Explosive Play Rate (Off) | 13.3% | 3.0% | ↑ +10.3 pp |
-| Third Down Conversion | 50.0% | 23.1% | ↑ +26.9 pp |
-| Points per Drive Differential | 1.527 | -1.527 | ↑ +3.055 |
-| Yards per Play Differential | 2.261 | -2.261 | ↑ +4.522 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 7.1% | 50.0% | ↓ -42.9 pp |
-| Pressure Rate (Def) | 8.3% | 4.8% | ↑ +3.6 pp |
-| Tempo | 8.909 | 6.700 | ↑ +2.209 |
-| PowerScore | 0.169 | 0.093 | ↑ +0.076 |
+| Core EPA Offense | 0.111 | -0.176 | 0.287 |
+| Core EPA Defense | -0.148 | 0.095 | -0.243 |
+| Success Rate Offense | 0.431 | 0.400 | 0.031 |
+| Success Rate Defense | 0.427 | 0.430 | -0.004 |
+| Explosive Play Rate (Off) | 0.130 | 0.088 | 0.042 |
+| Third Down Conversion | 0.314 | 0.416 | -0.102 |
+| Points per Drive Differential | 1.386 | -1.000 | 2.386 |
+| Yards per Play Differential | 1.169 | -0.442 | 1.611 |
+| Turnover Margin | 1.500 | -2.000 | 3.500 |
+| Red Zone TD Rate (Off) | 0.170 | 0.074 | 0.096 |
+| Pressure Rate (Def) | 0.058 | 0.000 | 0.058 |
+| Tempo | 8.909 | 6.700 | 2.209 |
+| PowerScore | 0.169 | 0.093 | 0.076 |
+| PowerScore | 0.169 | 0.093 | 0.076 |
+| Tempo | 8.909 | 6.700 | 2.209 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ SF edge: +0.076 (SF +0.169 vs NYG +0.093)
 **7 metrics version:**
 SF edge: +0.194 (SF +0.212 vs NYG +0.018)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.194), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ SF edge: +0.194 (SF +0.212 vs NYG +0.018)
 | Model Spread (SF - NYG) | +1.4 pts (favours SF) |
 | Model Win% SF | 55.8% |
 | Model Win% NYG | 44.2% |
-| SOS Differential (SF-NYG) | -0.039 |
+| SOS Differential (SF-NYG) | -0.037 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.088 | 0.128 |
-| Last 5 games | 0.088 | 0.128 |
-| Last 3 games | 0.088 | 0.128 |
+| Season-to-date | 1.659 | 1.696 |
+| Last 5 games | 1.659 | 1.696 |
+| Last 3 games | 1.659 | 1.696 |
 
 ## Trend Summary (last 2 weeks)
 

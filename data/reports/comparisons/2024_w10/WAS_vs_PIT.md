@@ -4,19 +4,21 @@
 
 | Metric | WAS | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.029 | 0.056 | ↓ -0.028 |
-| Core EPA Defense | 0.056 | 0.029 | ↑ +0.028 |
-| Success Rate Offense | 54.3% | 40.2% | ↑ +14.1 pp |
-| Success Rate Defense | 40.2% | 54.3% | ↓ -14.1 pp |
-| Explosive Play Rate (Off) | 6.2% | 8.2% | ↓ -2.1 pp |
-| Third Down Conversion | 35.7% | 43.8% | ↓ -8.0 pp |
-| Points per Drive Differential | 0.250 | -0.250 | ↑ +0.500 |
-| Yards per Play Differential | -0.229 | 0.229 | ↓ -0.458 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 20.0% | 17.6% | ↑ +2.4 pp |
-| Pressure Rate (Def) | 8.6% | 8.1% | ↑ +0.5 pp |
-| Tempo | 6.750 | 6.929 | ↓ -0.179 |
-| PowerScore | 0.169 | 0.142 | ↑ +0.027 |
+| Core EPA Offense | 0.178 | 0.040 | 0.138 |
+| Core EPA Defense | 0.037 | -0.096 | 0.133 |
+| Success Rate Offense | 0.516 | 0.462 | 0.054 |
+| Success Rate Defense | 0.486 | 0.452 | 0.034 |
+| Explosive Play Rate (Off) | 0.113 | 0.100 | 0.012 |
+| Third Down Conversion | 0.429 | 0.347 | 0.082 |
+| Points per Drive Differential | 0.610 | 0.607 | 0.003 |
+| Yards per Play Differential | 0.545 | 0.075 | 0.470 |
+| Turnover Margin | 0.556 | 1.250 | -0.694 |
+| Red Zone TD Rate (Off) | 0.142 | 0.120 | 0.022 |
+| Pressure Rate (Def) | 0.096 | 0.072 | 0.024 |
+| Tempo | 6.750 | 6.929 | -0.179 |
+| PowerScore | 0.169 | 0.142 | 0.027 |
+| PowerScore | 0.169 | 0.142 | 0.027 |
+| Tempo | 6.750 | 6.929 | -0.179 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ WAS edge: +0.027 (WAS +0.169 vs PIT +0.142)
 **7 metrics version:**
 WAS edge: +0.621 (WAS +0.435 vs PIT -0.186)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.621), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ WAS edge: +0.621 (WAS +0.435 vs PIT -0.186)
 | Model Spread (WAS - PIT) | +0.5 pts (favours WAS) |
 | Model Win% WAS | 52.1% |
 | Model Win% PIT | 47.9% |
-| SOS Differential (WAS-PIT) | +0.087 |
+| SOS Differential (WAS-PIT) | +0.307 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | WAS | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.195 | 0.108 |
-| Last 5 games | 0.143 | 0.129 |
-| Last 3 games | 0.134 | 0.105 |
+| Season-to-date | 1.876 | 1.570 |
+| Last 5 games | 1.674 | 1.693 |
+| Last 3 games | 1.666 | 1.530 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | KC | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.027 | -0.057 | ↑ +0.031 |
-| Core EPA Defense | -0.057 | -0.027 | ↓ -0.031 |
-| Success Rate Offense | 39.0% | 33.3% | ↑ +5.6 pp |
-| Success Rate Defense | 33.3% | 39.0% | ↓ -5.6 pp |
-| Explosive Play Rate (Off) | 8.5% | 8.7% | ↓ -0.2 pp |
-| Third Down Conversion | 38.1% | 8.3% | ↑ +29.8 pp |
-| Points per Drive Differential | 0.121 | -0.121 | ↑ +0.242 |
-| Yards per Play Differential | 0.927 | -0.927 | ↑ +1.854 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 8.3% | 22.2% | ↓ -13.9 pp |
-| Pressure Rate (Def) | 15.0% | 5.6% | ↑ +9.4 pp |
-| Tempo | 8.429 | 5.308 | ↑ +3.121 |
-| PowerScore | 0.094 | 0.075 | ↑ +0.018 |
+| Core EPA Offense | 0.167 | -0.042 | 0.209 |
+| Core EPA Defense | 0.058 | -0.039 | 0.097 |
+| Success Rate Offense | 0.495 | 0.433 | 0.062 |
+| Success Rate Defense | 0.454 | 0.398 | 0.056 |
+| Explosive Play Rate (Off) | 0.119 | 0.093 | 0.026 |
+| Third Down Conversion | 0.435 | 0.351 | 0.084 |
+| Points per Drive Differential | 0.646 | -0.096 | 0.741 |
+| Yards per Play Differential | 0.577 | -0.611 | 1.188 |
+| Turnover Margin | 0.571 | 1.143 | -0.571 |
+| Red Zone TD Rate (Off) | 0.153 | 0.174 | -0.020 |
+| Pressure Rate (Def) | 0.061 | 0.075 | -0.015 |
+| Tempo | 8.429 | 5.308 | 3.121 |
+| PowerScore | 1.762 | 1.119 | 0.643 |
+| PowerScore | 1.762 | 1.119 | 0.643 |
+| Tempo | 8.429 | 5.308 | 3.121 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ KC edge: +0.018 (KC +0.094 vs TEN +0.075)
 **7 metrics version:**
 TEN edge: +0.195 (KC -0.028 vs TEN +0.167)
 **Verdict:** TEN holds the edge in the extended breakdown (lead 0.195), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - TEN) | +0.3 pts (favours KC) |
-| Model Win% KC | 51.4% |
-| Model Win% TEN | 48.6% |
-| SOS Differential (KC-TEN) | +0.088 |
+| Model Spread (KC - TEN) | +11.9 pts (favours KC) |
+| Model Win% KC | 87.9% |
+| Model Win% TEN | 12.1% |
+| SOS Differential (KC-TEN) | +0.221 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | TEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.187 | 0.098 |
-| Last 5 games | 0.193 | 0.075 |
-| Last 3 games | 0.213 | 0.037 |
+| Season-to-date | 1.786 | 1.565 |
+| Last 5 games | 1.823 | 1.603 |
+| Last 3 games | 1.941 | 1.370 |
 
 ## Trend Summary (last 3 weeks)
 

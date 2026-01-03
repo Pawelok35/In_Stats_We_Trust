@@ -4,19 +4,20 @@
 
 | Metric | LV | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.023 | 0.037 | ↓ -0.060 |
-| Core EPA Defense | 0.037 | -0.023 | ↑ +0.060 |
-| Success Rate Offense | 45.8% | 47.0% | ↓ -1.2 pp |
-| Success Rate Defense | 47.0% | 45.8% | ↑ +1.2 pp |
-| Explosive Play Rate (Off) | 9.6% | 7.0% | ↑ +2.6 pp |
-| Third Down Conversion | 46.2% | 21.4% | ↑ +24.7 pp |
-| Points per Drive Differential | -0.256 | 0.256 | ↓ -0.511 |
-| Yards per Play Differential | -0.266 | 0.266 | ↓ -0.533 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 11.8% | 15.0% | ↓ -3.2 pp |
-| Pressure Rate (Def) | 2.0% | 2.5% | ↓ -0.5 pp |
-| Tempo | 8.300 | 11.111 | ↓ -2.811 |
-| PowerScore | 0.133 | 0.140 | ↓ -0.007 |
+| Core EPA Offense | -0.082 | 0.012 | -0.094 |
+| Core EPA Defense | -0.038 | 0.366 | -0.404 |
+| Success Rate Offense | 0.408 | 0.373 | 0.035 |
+| Success Rate Defense | 0.412 | 0.590 | -0.179 |
+| Explosive Play Rate (Off) | 0.141 | 0.084 | 0.057 |
+| Third Down Conversion | 0.455 | 0.250 | 0.205 |
+| Points per Drive Differential | -0.455 | -2.491 | 2.036 |
+| Yards per Play Differential | 0.331 | -2.458 | 2.788 |
+| Turnover Margin | -3.000 | 1.000 | -4.000 |
+| Red Zone TD Rate (Off) | 0.167 | 0.273 | -0.106 |
+| Tempo | 8.300 | 11.111 | -2.811 |
+| PowerScore | 1.774 | 2.348 | -0.574 |
+| PowerScore | 1.774 | 2.348 | -0.574 |
+| Tempo | 8.300 | 11.111 | -2.811 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +47,19 @@ ARI edge: +0.007 (LV +0.133 vs ARI +0.140)
 **7 metrics version:**
 ARI edge: +0.006 (LV +0.094 vs ARI +0.100)
 **Verdict:** ARI holds the edge in the extended breakdown (lead 0.006), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - ARI) | -0.1 pts (favours ARI) |
-| Model Win% LV | 49.5% |
-| Model Win% ARI | 50.5% |
-| SOS Differential (LV-ARI) | -0.224 |
+| Model Spread (LV - ARI) | -10.6 pts (favours ARI) |
+| Model Win% LV | 14.5% |
+| Model Win% ARI | 85.5% |
+| SOS Differential (LV-ARI) | -0.319 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -217,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.090 | 0.314 |
-| Last 5 games | 0.090 | 0.314 |
-| Last 3 games | 0.090 | 0.314 |
+| Season-to-date | 1.619 | 1.938 |
+| Last 5 games | 1.619 | 1.938 |
+| Last 3 games | 1.619 | 1.938 |
 
 ## Matchup Analogs
 

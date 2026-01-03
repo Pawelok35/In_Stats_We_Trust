@@ -18,6 +18,6 @@ No team reports generated.
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/MIN_vs_IND.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/NO_vs_ATL.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/NYJ_vs_DET.md`
-- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/SF_vs_SEA.md`
+- `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/SEA_vs_SF.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/TB_vs_CIN.md`
 - `C:/Users/Daniel/Desktop/In_Stats_We_Trust/data/reports/comparisons/2022_w15/WAS_vs_NYG.md`

@@ -4,19 +4,21 @@
 
 | Metric | CLE | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.252 | -0.144 | ↓ -0.108 |
-| Core EPA Defense | -0.144 | -0.252 | ↑ +0.108 |
-| Success Rate Offense | 43.9% | 42.9% | ↑ +1.0 pp |
-| Success Rate Defense | 42.9% | 43.9% | ↓ -1.0 pp |
-| Explosive Play Rate (Off) | 8.5% | 6.6% | ↑ +1.9 pp |
-| Third Down Conversion | 26.7% | 26.7% | ± 0.0 pp |
-| Points per Drive Differential | -0.329 | 0.329 | ↓ -0.657 |
-| Yards per Play Differential | -1.066 | 1.066 | ↓ -2.131 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 25.0% | 17.6% | ↑ +7.4 pp |
-| Pressure Rate (Def) | 5.0% | 17.0% | ↓ -12.0 pp |
-| Tempo | 5.857 | 6.067 | ↓ -0.210 |
-| PowerScore | 0.010 | 0.020 | ↓ -0.010 |
+| Core EPA Offense | -0.098 | -0.072 | -0.026 |
+| Core EPA Defense | -0.036 | 0.112 | -0.148 |
+| Success Rate Offense | 0.370 | 0.419 | -0.049 |
+| Success Rate Defense | 0.433 | 0.461 | -0.029 |
+| Explosive Play Rate (Off) | 0.054 | 0.087 | -0.033 |
+| Third Down Conversion | 0.125 | 0.357 | -0.232 |
+| Points per Drive Differential | 0.160 | -0.608 | 0.769 |
+| Yards per Play Differential | -0.851 | -1.072 | 0.220 |
+| Turnover Margin | -1.000 | -0.500 | -0.500 |
+| Red Zone TD Rate (Off) | 0.153 | 0.125 | 0.028 |
+| Pressure Rate (Def) | 0.100 | 0.089 | 0.012 |
+| Tempo | 5.857 | 6.067 | -0.210 |
+| PowerScore | 1.164 | 1.220 | -0.056 |
+| PowerScore | 1.164 | 1.220 | -0.056 |
+| Tempo | 5.857 | 6.067 | -0.210 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYG edge: +0.010 (CLE +0.010 vs NYG +0.020)
 **7 metrics version:**
 NYG edge: +0.007 (CLE +0.013 vs NYG +0.019)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.007), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - NYG) | -0.2 pts (favours NYG) |
-| Model Win% CLE | 49.3% |
-| Model Win% NYG | 50.7% |
-| SOS Differential (CLE-NYG) | -0.073 |
+| Model Spread (CLE - NYG) | -1.0 pts (favours NYG) |
+| Model Win% CLE | 45.7% |
+| Model Win% NYG | 54.3% |
+| SOS Differential (CLE-NYG) | -0.366 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.096 | 0.169 |
-| Last 5 games | 0.096 | 0.169 |
-| Last 3 games | 0.096 | 0.169 |
+| Season-to-date | 1.393 | 1.758 |
+| Last 5 games | 1.393 | 1.758 |
+| Last 3 games | 1.393 | 1.758 |
 
 ## Trend Summary (last 2 weeks)
 

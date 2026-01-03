@@ -4,19 +4,21 @@
 
 | Metric | MIA | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.059 | -0.101 | ↑ +0.160 |
-| Core EPA Defense | -0.101 | 0.059 | ↓ -0.160 |
-| Success Rate Offense | 55.9% | 38.0% | ↑ +17.8 pp |
-| Success Rate Defense | 38.0% | 55.9% | ↓ -17.8 pp |
-| Explosive Play Rate (Off) | 16.2% | 7.6% | ↑ +8.6 pp |
-| Third Down Conversion | 37.5% | 26.3% | ↑ +11.2 pp |
-| Points per Drive Differential | 1.818 | -1.818 | ↑ +3.636 |
-| Yards per Play Differential | 4.793 | -4.793 | ↑ +9.586 |
-| Turnover Margin | -3.000 | 3.000 | ↓ -6.000 |
-| Red Zone TD Rate (Off) | 18.8% | 0.0% | ↑ +18.8 pp |
-| Pressure Rate (Def) | 17.9% | 3.1% | ↑ +14.8 pp |
-| Tempo | 6.182 | 9.200 | ↓ -3.018 |
-| PowerScore | 0.173 | 0.087 | ↑ +0.086 |
+| Core EPA Offense | 0.178 | -0.209 | 0.387 |
+| Core EPA Defense | 0.081 | 0.050 | 0.032 |
+| Success Rate Offense | 0.508 | 0.375 | 0.133 |
+| Success Rate Defense | 0.486 | 0.440 | 0.046 |
+| Explosive Play Rate (Off) | 0.188 | 0.066 | 0.122 |
+| Third Down Conversion | 0.422 | 0.360 | 0.062 |
+| Points per Drive Differential | 0.429 | -1.199 | 1.628 |
+| Yards per Play Differential | 1.572 | -1.108 | 2.679 |
+| Turnover Margin | 0.000 | -2.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.191 | 0.225 | -0.033 |
+| Pressure Rate (Def) | 0.065 | 0.030 | 0.035 |
+| Tempo | 6.182 | 9.200 | -3.018 |
+| PowerScore | 0.173 | 0.087 | 0.086 |
+| PowerScore | 0.173 | 0.087 | 0.086 |
+| Tempo | 6.182 | 9.200 | -3.018 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ MIA edge: +0.086 (MIA +0.173 vs NYG +0.087)
 **7 metrics version:**
 NYG edge: +0.523 (MIA -0.169 vs NYG +0.354)
 **Verdict:** NYG holds the edge in the extended breakdown (lead 0.523), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ NYG edge: +0.523 (MIA -0.169 vs NYG +0.354)
 | Model Spread (MIA - NYG) | +1.6 pts (favours MIA) |
 | Model Win% MIA | 56.6% |
 | Model Win% NYG | 43.4% |
-| SOS Differential (MIA-NYG) | +0.094 |
+| SOS Differential (MIA-NYG) | +0.076 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.203 | 0.108 |
-| Last 5 games | 0.203 | 0.108 |
-| Last 3 games | 0.188 | 0.122 |
+| Season-to-date | 1.689 | 1.614 |
+| Last 5 games | 1.689 | 1.614 |
+| Last 3 games | 1.511 | 1.654 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -4,19 +4,21 @@
 
 | Metric | JAX | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.103 | 0.068 | ↑ +0.034 |
-| Core EPA Defense | 0.068 | 0.103 | ↓ -0.034 |
-| Success Rate Offense | 52.2% | 55.3% | ↓ -3.1 pp |
-| Success Rate Defense | 55.3% | 52.2% | ↑ +3.1 pp |
-| Explosive Play Rate (Off) | 14.4% | 10.6% | ↑ +3.8 pp |
-| Third Down Conversion | 61.5% | 52.9% | ↑ +8.6 pp |
-| Points per Drive Differential | -0.405 | 0.405 | ↓ -0.810 |
-| Yards per Play Differential | 1.365 | -1.365 | ↑ +2.731 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 18.8% | 23.5% | ↓ -4.8 pp |
-| Pressure Rate (Def) | 9.1% | 2.3% | ↑ +6.8 pp |
-| Tempo | 6.429 | 7.833 | ↓ -1.405 |
-| PowerScore | 0.209 | 0.204 | ↑ +0.005 |
+| Core EPA Offense | 0.022 | 0.033 | -0.011 |
+| Core EPA Defense | 0.010 | -0.103 | 0.114 |
+| Success Rate Offense | 0.446 | 0.438 | 0.008 |
+| Success Rate Defense | 0.433 | 0.385 | 0.047 |
+| Explosive Play Rate (Off) | 0.108 | 0.112 | -0.005 |
+| Third Down Conversion | 0.375 | 0.412 | -0.036 |
+| Points per Drive Differential | -0.152 | 0.772 | -0.924 |
+| Yards per Play Differential | -0.109 | 0.668 | -0.777 |
+| Turnover Margin | 0.385 | 0.615 | -0.231 |
+| Red Zone TD Rate (Off) | 0.130 | 0.160 | -0.029 |
+| Pressure Rate (Def) | 0.050 | 0.106 | -0.055 |
+| Tempo | 6.429 | 7.833 | -1.405 |
+| PowerScore | 1.466 | 1.749 | -0.284 |
+| PowerScore | 1.466 | 1.749 | -0.284 |
+| Tempo | 6.429 | 7.833 | -1.405 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ JAX edge: +0.005 (JAX +0.209 vs DAL +0.204)
 **7 metrics version:**
 DAL edge: +0.197 (JAX +0.060 vs DAL +0.257)
 **Verdict:** DAL holds the edge in the extended breakdown (lead 0.197), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - DAL) | +0.1 pts (favours JAX) |
-| Model Win% JAX | 50.4% |
-| Model Win% DAL | 49.6% |
-| SOS Differential (JAX-DAL) | +0.052 |
+| Model Spread (JAX - DAL) | -5.2 pts (favours DAL) |
+| Model Win% JAX | 29.4% |
+| Model Win% DAL | 70.6% |
+| SOS Differential (JAX-DAL) | +0.131 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | DAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.138 | 0.086 |
-| Last 5 games | 0.172 | 0.096 |
-| Last 3 games | 0.179 | 0.091 |
+| Season-to-date | 1.704 | 1.574 |
+| Last 5 games | 1.715 | 1.489 |
+| Last 3 games | 1.820 | 1.467 |
 
 ## Trend Summary (last 3 weeks)
 

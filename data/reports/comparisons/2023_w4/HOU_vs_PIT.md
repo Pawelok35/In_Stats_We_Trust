@@ -4,19 +4,21 @@
 
 | Metric | HOU | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.100 | -0.236 | ↑ +0.336 |
-| Core EPA Defense | -0.236 | 0.100 | ↓ -0.336 |
-| Success Rate Offense | 44.8% | 32.4% | ↑ +12.4 pp |
-| Success Rate Defense | 32.4% | 44.8% | ↓ -12.4 pp |
-| Explosive Play Rate (Off) | 14.9% | 6.8% | ↑ +8.2 pp |
-| Third Down Conversion | 50.0% | 35.3% | ↑ +14.7 pp |
-| Points per Drive Differential | 2.400 | -2.400 | ↑ +4.800 |
-| Yards per Play Differential | 2.143 | -2.143 | ↑ +4.287 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 10.0% | 0.0% | ↑ +10.0 pp |
-| Pressure Rate (Def) | 9.7% | 0.0% | ↑ +9.7 pp |
-| Tempo | 8.700 | 7.400 | ↑ +1.300 |
-| PowerScore | 0.130 | 0.032 | ↑ +0.098 |
+| Core EPA Offense | -0.022 | -0.172 | 0.150 |
+| Core EPA Defense | -0.012 | -0.063 | 0.051 |
+| Success Rate Offense | 0.392 | 0.350 | 0.043 |
+| Success Rate Defense | 0.434 | 0.406 | 0.027 |
+| Explosive Play Rate (Off) | 0.085 | 0.078 | 0.007 |
+| Third Down Conversion | 0.444 | 0.305 | 0.140 |
+| Points per Drive Differential | -0.329 | -0.709 | 0.380 |
+| Yards per Play Differential | -0.308 | -0.545 | 0.237 |
+| Turnover Margin | 0.667 | 1.333 | -0.667 |
+| Red Zone TD Rate (Off) | 0.048 | 0.135 | -0.087 |
+| Pressure Rate (Def) | 0.051 | 0.099 | -0.048 |
+| Tempo | 8.700 | 7.400 | 1.300 |
+| PowerScore | 0.130 | 0.032 | 0.098 |
+| PowerScore | 0.130 | 0.032 | 0.098 |
+| Tempo | 8.700 | 7.400 | 1.300 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ HOU edge: +0.098 (HOU +0.130 vs PIT +0.032)
 **7 metrics version:**
 HOU edge: +0.263 (HOU +0.180 vs PIT -0.084)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.263), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ HOU edge: +0.263 (HOU +0.180 vs PIT -0.084)
 | Model Spread (HOU - PIT) | +1.8 pts (favours HOU) |
 | Model Win% HOU | 57.5% |
 | Model Win% PIT | 42.5% |
-| SOS Differential (HOU-PIT) | +0.054 |
+| SOS Differential (HOU-PIT) | +0.136 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.120 | 0.065 |
-| Last 5 games | 0.120 | 0.065 |
-| Last 3 games | 0.120 | 0.065 |
+| Season-to-date | 1.643 | 1.506 |
+| Last 5 games | 1.643 | 1.506 |
+| Last 3 games | 1.643 | 1.506 |
 
 ## Trend Summary (last 3 weeks)
 

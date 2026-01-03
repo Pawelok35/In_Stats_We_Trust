@@ -4,19 +4,20 @@
 
 | Metric | DAL | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.293 | -0.053 | ↓ -0.240 |
-| Core EPA Defense | -0.053 | -0.293 | ↑ +0.240 |
-| Success Rate Offense | 33.3% | 47.4% | ↓ -14.1 pp |
-| Success Rate Defense | 47.4% | 33.3% | ↑ +14.1 pp |
-| Explosive Play Rate (Off) | 4.6% | 15.4% | ↓ -10.8 pp |
-| Third Down Conversion | 18.8% | 33.3% | ↓ -14.6 pp |
-| Points per Drive Differential | -1.455 | 1.455 | ↓ -2.909 |
-| Yards per Play Differential | -1.644 | 1.644 | ↓ -3.288 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 0.0% | 8.3% | ↓ -8.3 pp |
-| Pressure Rate (Def) | 6.5% | 8.5% | ↓ -2.1 pp |
-| Tempo | 7.909 | 7.091 | ↑ +0.818 |
-| PowerScore | -0.021 | 0.072 | ↓ -0.093 |
+| Core EPA Offense | -0.293 | -0.053 | -0.240 |
+| Core EPA Defense | -0.053 | -0.293 | 0.240 |
+| Success Rate Offense | 0.333 | 0.474 | -0.141 |
+| Success Rate Defense | 0.474 | 0.333 | 0.141 |
+| Explosive Play Rate (Off) | 0.046 | 0.154 | -0.108 |
+| Third Down Conversion | 0.188 | 0.333 | -0.146 |
+| Points per Drive Differential | -1.455 | 1.455 | -2.909 |
+| Yards per Play Differential | -1.644 | 1.644 | -3.288 |
+| Red Zone TD Rate (Off) | 0.000 | 0.083 | -0.083 |
+| Pressure Rate (Def) | 0.065 | 0.085 | -0.021 |
+| Tempo | 7.909 | 7.091 | 0.818 |
+| PowerScore | 1.552 | 1.460 | 0.092 |
+| PowerScore | 1.552 | 1.460 | 0.092 |
+| Tempo | 7.909 | 7.091 | 0.818 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ TB edge: +0.093 (DAL -0.021 vs TB +0.072)
 **7 metrics version:**
 TB edge: +0.054 (DAL -0.023 vs TB +0.031)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.054), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DAL - TB) | -1.7 pts (favours TB) |
-| Model Win% DAL | 42.9% |
-| Model Win% TB | 57.1% |
+| Model Spread (DAL - TB) | +1.7 pts (favours DAL) |
+| Model Win% DAL | 57.1% |
+| Model Win% TB | 42.9% |
 | SOS Differential (DAL-TB) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

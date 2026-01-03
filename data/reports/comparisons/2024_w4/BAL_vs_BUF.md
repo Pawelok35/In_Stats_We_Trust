@@ -4,19 +4,21 @@
 
 | Metric | BAL | BUF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.208 | -0.146 | ↑ +0.355 |
-| Core EPA Defense | -0.146 | 0.208 | ↓ -0.355 |
-| Success Rate Offense | 54.2% | 39.0% | ↑ +15.2 pp |
-| Success Rate Defense | 39.0% | 54.2% | ↓ -15.2 pp |
-| Explosive Play Rate (Off) | 15.3% | 5.2% | ↑ +10.1 pp |
-| Third Down Conversion | 55.6% | 21.4% | ↑ +34.1 pp |
-| Points per Drive Differential | 2.273 | -2.273 | ↑ +4.545 |
-| Yards per Play Differential | 2.866 | -2.866 | ↑ +5.731 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 28.6% | 20.0% | ↑ +8.6 pp |
-| Pressure Rate (Def) | 8.8% | 5.0% | ↑ +3.8 pp |
-| Tempo | 6.545 | 7.000 | ↓ -0.455 |
-| PowerScore | 0.210 | 0.098 | ↑ +0.111 |
+| Core EPA Offense | 0.037 | 0.214 | -0.177 |
+| Core EPA Defense | 0.072 | -0.086 | 0.158 |
+| Success Rate Offense | 0.488 | 0.518 | -0.029 |
+| Success Rate Defense | 0.459 | 0.449 | 0.010 |
+| Explosive Play Rate (Off) | 0.132 | 0.107 | 0.025 |
+| Third Down Conversion | 0.351 | 0.376 | -0.026 |
+| Points per Drive Differential | -0.296 | 1.858 | -2.154 |
+| Yards per Play Differential | 0.570 | 1.054 | -0.484 |
+| Turnover Margin | 0.333 | 1.667 | -1.333 |
+| Red Zone TD Rate (Off) | 0.226 | 0.191 | 0.035 |
+| Pressure Rate (Def) | 0.077 | 0.093 | -0.015 |
+| Tempo | 6.545 | 7.000 | -0.455 |
+| PowerScore | 1.488 | 1.488 | 0.000 |
+| PowerScore | 1.488 | 1.488 | 0.000 |
+| Tempo | 6.545 | 7.000 | -0.455 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.111 (BAL +0.210 vs BUF +0.098)
 **7 metrics version:**
 BAL edge: +0.063 (BAL +0.157 vs BUF +0.094)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.063), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - BUF) | +2.1 pts (favours BAL) |
-| Model Win% BAL | 58.5% |
-| Model Win% BUF | 41.5% |
-| SOS Differential (BAL-BUF) | +0.027 |
+| Model Spread (BAL - BUF) | +0.0 pts (favours BAL) |
+| Model Win% BAL | 50.0% |
+| Model Win% BUF | 50.0% |
+| SOS Differential (BAL-BUF) | -0.177 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.171 | 0.144 |
-| Last 5 games | 0.171 | 0.144 |
-| Last 3 games | 0.171 | 0.144 |
+| Season-to-date | 1.641 | 1.818 |
+| Last 5 games | 1.641 | 1.818 |
+| Last 3 games | 1.641 | 1.818 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,16 +249,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | KC (A) | 20-27 | KC | 0.736 | 0.021 | 55.2% | -0.700 |
-| 3 | NE (A) | 28-27 | BAL | 0.256 | 0.124 | 46.3% | 0.061 |
-| 2 | MIA (H) | 23-26 | MIA | 0.067 | -0.034 | 44.9% | -0.250 |
+| 3 | DAL (A) | 28-27 | BAL | 0.269 | 0.124 | 46.3% | 0.061 |
+| 2 | LV (H) | 23-26 | LV | 0.131 | -0.034 | 44.9% | -0.250 |
 
 **BUF analogs vs BAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | ARI (H) | 34-28 | BUF | 0.738 | 0.189 | 60.5% | 0.600 |
-| 2 | TEN (H) | 25-11 | BUF | 0.373 | 0.111 | 41.0% | 1.273 |
-| 3 | MIA (A) | 47-10 | BUF | 0.300 | 0.342 | 53.8% | 3.700 |
+| 3 | JAX (H) | 47-10 | BUF | 0.602 | 0.342 | 53.8% | 3.700 |
+| 2 | MIA (A) | 25-11 | BUF | 0.300 | 0.111 | 41.0% | 1.273 |
 
 ## Core EPA Offense Form (up to Week 3)
 

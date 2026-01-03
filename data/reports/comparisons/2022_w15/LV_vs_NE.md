@@ -4,19 +4,21 @@
 
 | Metric | LV | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.109 | -0.134 | ↑ +0.025 |
-| Core EPA Defense | -0.134 | -0.109 | ↓ -0.025 |
-| Success Rate Offense | 39.8% | 35.3% | ↑ +4.5 pp |
-| Success Rate Defense | 35.3% | 39.8% | ↓ -4.5 pp |
-| Explosive Play Rate (Off) | 5.4% | 9.4% | ↓ -4.0 pp |
-| Third Down Conversion | 33.3% | 14.3% | ↑ +19.0 pp |
-| Points per Drive Differential | 0.462 | -0.462 | ↑ +0.923 |
-| Yards per Play Differential | -0.453 | 0.453 | ↓ -0.906 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 11.1% | 0.0% | ↑ +11.1 pp |
-| Pressure Rate (Def) | 0.0% | 7.3% | ↓ -7.3 pp |
-| Tempo | 7.154 | 6.538 | ↑ +0.615 |
-| PowerScore | 0.045 | 0.038 | ↑ +0.007 |
+| Core EPA Offense | 0.017 | -0.072 | 0.089 |
+| Core EPA Defense | 0.012 | -0.112 | 0.124 |
+| Success Rate Offense | 0.427 | 0.410 | 0.016 |
+| Success Rate Defense | 0.446 | 0.399 | 0.047 |
+| Explosive Play Rate (Off) | 0.112 | 0.106 | 0.006 |
+| Third Down Conversion | 0.364 | 0.326 | 0.038 |
+| Points per Drive Differential | -0.026 | 0.009 | -0.035 |
+| Yards per Play Differential | 0.026 | 0.319 | -0.292 |
+| Turnover Margin | -0.231 | -0.077 | -0.154 |
+| Red Zone TD Rate (Off) | 0.107 | 0.102 | 0.006 |
+| Pressure Rate (Def) | 0.049 | 0.094 | -0.046 |
+| Tempo | 7.154 | 6.538 | 0.615 |
+| PowerScore | 1.465 | 1.327 | 0.138 |
+| PowerScore | 1.465 | 1.327 | 0.138 |
+| Tempo | 7.154 | 6.538 | 0.615 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LV edge: +0.007 (LV +0.045 vs NE +0.038)
 **7 metrics version:**
 LV edge: +0.008 (LV +0.022 vs NE +0.014)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.008), driven by Red Zone TD Rate (Off) (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - NE) | +0.1 pts (favours LV) |
-| Model Win% LV | 50.5% |
-| Model Win% NE | 49.5% |
-| SOS Differential (LV-NE) | +0.075 |
+| Model Spread (LV - NE) | +2.6 pts (favours LV) |
+| Model Win% LV | 60.5% |
+| Model Win% NE | 39.5% |
+| SOS Differential (LV-NE) | +0.227 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.140 | 0.065 |
-| Last 5 games | 0.130 | 0.010 |
-| Last 3 games | 0.120 | 0.103 |
+| Season-to-date | 1.707 | 1.481 |
+| Last 5 games | 1.541 | 1.422 |
+| Last 3 games | 1.515 | 1.721 |
 
 ## Trend Summary (last 3 weeks)
 

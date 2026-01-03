@@ -4,19 +4,21 @@
 
 | Metric | LV | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.100 | 0.132 | ↓ -0.232 |
-| Core EPA Defense | 0.132 | -0.100 | ↑ +0.232 |
-| Success Rate Offense | 31.0% | 48.1% | ↓ -17.1 pp |
-| Success Rate Defense | 48.1% | 31.0% | ↑ +17.1 pp |
-| Explosive Play Rate (Off) | 11.3% | 9.1% | ↑ +2.2 pp |
-| Third Down Conversion | 50.0% | 41.7% | ↑ +8.3 pp |
-| Points per Drive Differential | -1.400 | 1.400 | ↓ -2.800 |
-| Yards per Play Differential | 0.367 | -0.367 | ↑ +0.734 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 10.0% | 13.0% | ↓ -3.0 pp |
-| Pressure Rate (Def) | 2.7% | 2.9% | ↓ -0.2 pp |
-| Tempo | 7.100 | 7.700 | ↓ -0.600 |
-| PowerScore | 0.091 | 0.165 | ↓ -0.073 |
+| Core EPA Offense | -0.116 | 0.017 | -0.133 |
+| Core EPA Defense | -0.052 | -0.075 | 0.023 |
+| Success Rate Offense | 0.413 | 0.432 | -0.019 |
+| Success Rate Defense | 0.417 | 0.392 | 0.025 |
+| Explosive Play Rate (Off) | 0.078 | 0.102 | -0.024 |
+| Third Down Conversion | 0.294 | 0.401 | -0.107 |
+| Points per Drive Differential | -0.371 | 0.609 | -0.980 |
+| Yards per Play Differential | -0.493 | 0.763 | -1.257 |
+| Turnover Margin | -0.636 | -0.100 | -0.536 |
+| Red Zone TD Rate (Off) | 0.135 | 0.146 | -0.011 |
+| Pressure Rate (Def) | 0.067 | 0.112 | -0.045 |
+| Tempo | 7.100 | 7.700 | -0.600 |
+| PowerScore | 0.091 | 0.165 | -0.073 |
+| PowerScore | 0.091 | 0.165 | -0.073 |
+| Tempo | 7.100 | 7.700 | -0.600 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,6 +48,10 @@ KC edge: +0.073 (LV +0.091 vs KC +0.165)
 **7 metrics version:**
 KC edge: +0.038 (LV +0.072 vs KC +0.110)
 **Verdict:** KC holds the edge in the extended breakdown (lead 0.038), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
@@ -54,7 +60,7 @@ KC edge: +0.038 (LV +0.072 vs KC +0.110)
 | Model Spread (LV - KC) | -1.4 pts (favours KC) |
 | Model Win% LV | 44.4% |
 | Model Win% KC | 55.6% |
-| SOS Differential (LV-KC) | -0.009 |
+| SOS Differential (LV-KC) | +0.107 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.082 | 0.092 |
-| Last 5 games | 0.034 | 0.092 |
-| Last 3 games | 0.012 | 0.084 |
+| Season-to-date | 1.649 | 1.542 |
+| Last 5 games | 1.490 | 1.434 |
+| Last 3 games | 1.305 | 1.421 |
 
 ## Trend Summary (last 3 weeks)
 
