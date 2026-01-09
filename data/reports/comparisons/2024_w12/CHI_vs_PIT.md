@@ -4,19 +4,21 @@
 
 | Metric | CHI | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.044 | -0.053 | ↑ +0.097 |
-| Core EPA Defense | 0.141 | -0.047 | ↑ +0.188 |
-| Success Rate Offense | 47.9% | 40.0% | ↑ +7.9 pp |
-| Success Rate Defense | 50.0% | 45.9% | ↑ +4.1 pp |
-| Explosive Play Rate (Off) | 8.3% | 11.8% | ↓ -3.4 pp |
-| Third Down Conversion | 33.3% | 41.2% | ↓ -7.8 pp |
-| Points per Drive Differential | -0.214 | -0.673 | ↑ +0.458 |
-| Yards per Play Differential | -0.970 | 0.194 | ↓ -1.164 |
-| Turnover Margin | 2.000 | 2.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 18.8% | 10.0% | ↑ +8.8 pp |
-| Pressure Rate (Def) | 7.9% | 3.3% | ↑ +4.6 pp |
-| Tempo | 6.857 | 7.727 | ↓ -0.870 |
-| PowerScore | 0.180 | 0.096 | ↑ +0.085 |
+| Core EPA Offense | -0.041 | 0.027 | -0.069 |
+| Core EPA Defense | -0.034 | -0.090 | 0.057 |
+| Success Rate Offense | 0.429 | 0.451 | -0.022 |
+| Success Rate Defense | 0.450 | 0.458 | -0.008 |
+| Explosive Play Rate (Off) | 0.081 | 0.097 | -0.016 |
+| Third Down Conversion | 0.269 | 0.344 | -0.075 |
+| Points per Drive Differential | -0.036 | 0.476 | -0.513 |
+| Yards per Play Differential | -0.970 | -0.024 | -0.945 |
+| Turnover Margin | 0.900 | 0.900 | 0.000 |
+| Red Zone TD Rate (Off) | 0.101 | 0.114 | -0.013 |
+| Pressure Rate (Def) | 0.076 | 0.071 | 0.005 |
+| Tempo | 6.857 | 7.727 | -0.870 |
+| PowerScore | 1.535 | 1.617 | -0.083 |
+| PowerScore | 1.535 | 1.617 | -0.083 |
+| Tempo | 6.857 | 7.727 | -0.870 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CHI edge: +0.085 (CHI +0.180 vs PIT +0.096)
 **7 metrics version:**
 CHI edge: +0.084 (CHI +0.346 vs PIT +0.262)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.084), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - PIT) | +1.6 pts (favours CHI) |
-| Model Win% CHI | 56.5% |
-| Model Win% PIT | 43.5% |
-| SOS Differential (CHI-PIT) | +0.009 |
+| Model Spread (CHI - PIT) | -1.5 pts (favours PIT) |
+| Model Win% CHI | 43.7% |
+| Model Win% PIT | 56.3% |
+| SOS Differential (CHI-PIT) | -0.070 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.117 | 0.108 |
-| Last 5 games | 0.157 | 0.107 |
-| Last 3 games | 0.166 | 0.116 |
+| Season-to-date | 1.461 | 1.530 |
+| Last 5 games | 1.576 | 1.468 |
+| Last 3 games | 1.550 | 1.510 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,14 +249,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 11 | MIN (A) | 19-23 | MIN | 0.933 | 0.134 | 48.8% | -0.482 |
-| 7 | NO (A) | n/a | n/a | 0.781 | n/a | n/a | n/a |
+| 7 | NO (H) | n/a | n/a | 0.781 | n/a | n/a | n/a |
 | 2 | DET (A) | 13-19 | DET | 0.750 | -0.130 | 40.0% | -0.462 |
 
 **PIT analogs vs CHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | CLE (A) | 32-13 | PIT | 0.962 | 0.083 | 44.0% | 1.727 |
+| 6 | CLE (H) | 32-13 | PIT | 0.962 | 0.083 | 44.0% | 1.727 |
 | 10 | LAC (A) | 28-32 | LAC | 0.806 | 0.056 | 40.2% | -0.250 |
 | 9 | IND (H) | n/a | n/a | 0.801 | n/a | n/a | n/a |
 

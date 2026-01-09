@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.132 | 0.175 | -0.043 |
 | Pressure Rate (Def) | 0.021 | 0.068 | -0.047 |
 | Tempo | 8.182 | 7.200 | 0.982 |
-| PowerScore | 0.202 | 0.190 | 0.012 |
-| PowerScore | 0.202 | 0.190 | 0.012 |
+| PowerScore | 1.814 | 1.616 | 0.198 |
+| PowerScore | 1.814 | 1.616 | 0.198 |
 | Tempo | 8.182 | 7.200 | 0.982 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ MIA edge: +0.394 (CAR -0.043 vs MIA +0.351)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - MIA) | +0.2 pts (favours CAR) |
-| Model Win% CAR | 50.9% |
-| Model Win% MIA | 49.1% |
-| SOS Differential (CAR-MIA) | -0.111 |
+| Model Spread (CAR - MIA) | +3.7 pts (favours CAR) |
+| Model Win% CAR | 64.8% |
+| Model Win% MIA | 35.2% |
+| SOS Differential (CAR-MIA) | -0.501 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.119 | 0.230 |
-| Last 5 games | 0.119 | 0.230 |
-| Last 3 games | 0.105 | 0.230 |
+| Season-to-date | 1.520 | 2.022 |
+| Last 5 games | 1.520 | 2.022 |
+| Last 3 games | 1.434 | 1.821 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.083 | 0.273 | -0.189 |
 | Pressure Rate (Def) | 0.075 | 0.000 | 0.075 |
 | Tempo | 8.222 | 7.900 | 0.322 |
-| PowerScore | 0.133 | 0.121 | 0.012 |
-| PowerScore | 0.133 | 0.121 | 0.012 |
+| PowerScore | 1.753 | 1.691 | 0.062 |
+| PowerScore | 1.753 | 1.691 | 0.062 |
 | Tempo | 8.222 | 7.900 | 0.322 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ PHI edge: +0.206 (KC -0.004 vs PHI +0.201)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - PHI) | +0.2 pts (favours KC) |
-| Model Win% KC | 50.9% |
-| Model Win% PHI | 49.1% |
-| SOS Differential (KC-PHI) | +0.037 |
+| Model Spread (KC - PHI) | +1.1 pts (favours KC) |
+| Model Win% KC | 54.8% |
+| Model Win% PHI | 45.2% |
+| SOS Differential (KC-PHI) | +0.206 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | PHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.267 | 0.230 |
-| Last 5 games | 0.267 | 0.230 |
-| Last 3 games | 0.267 | 0.230 |
+| Season-to-date | 2.267 | 2.061 |
+| Last 5 games | 2.267 | 2.061 |
+| Last 3 games | 2.267 | 2.061 |
 
 ## Matchup Analogs
 

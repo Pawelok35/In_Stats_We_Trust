@@ -15,39 +15,39 @@
 | Turnover Margin | -0.667 | -1.000 | 0.333 |
 | Red Zone TD Rate (Off) | 0.127 | 0.227 | -0.100 |
 | Pressure Rate (Def) | 0.051 | 0.063 | -0.012 |
-| Tempo | 7.500 | 5.833 | 1.667 |
-| PowerScore | 1.596 | 1.209 | 0.387 |
-| PowerScore | 1.596 | 1.209 | 0.387 |
-| Tempo | 7.500 | 5.833 | 1.667 |
+| Tempo | 9.500 | 8.300 | 1.200 |
+| PowerScore | 2.093 | 1.880 | 0.213 |
+| PowerScore | 2.093 | 1.880 | 0.213 |
+| Tempo | 9.500 | 8.300 | 1.200 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | ATL | WAS | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.017 | -0.186 | +0.202 |
-| EPA Defense | 20% | -0.015 | 0.110 | -0.125 |
-| Success Rate Offense | 25% | 37.3% | 34.3% | +3.0 pp |
-| Tempo | 20% | 0.107 | 0.086 | +0.021 |
+| EPA Offense | 35% | 0.118 | 0.233 | -0.115 |
+| EPA Defense | 20% | 0.233 | 0.118 | +0.115 |
+| Success Rate Offense | 25% | 42.1% | 45.8% | -3.7 pp |
+| Tempo | 20% | 0.105 | 0.157 | -0.051 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | ATL | WAS | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.017 | -0.186 | +0.202 |
-| EPA Defense | 20% | -0.015 | 0.110 | -0.125 |
-| Success Rate Offense | 15% | 37.3% | 34.3% | +3.0 pp |
-| Turnover Margin | 10% | 0.000 | -3.000 | +3.000 |
-| Tempo | 10% | 0.107 | 0.086 | +0.021 |
-| Red Zone TD Rate (Off) | 10% | 16.7% | 18.2% | -1.5 pp |
-| Pressure Rate (Def) | 10% | 5.3% | 4.2% | +1.1 pp |
+| EPA Offense | 25% | 0.118 | 0.233 | -0.115 |
+| EPA Defense | 20% | 0.233 | 0.118 | +0.115 |
+| Success Rate Offense | 15% | 42.1% | 45.8% | -3.7 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.105 | 0.157 | -0.051 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 13.3% | +3.3 pp |
+| Pressure Rate (Def) | 10% | 2.8% | 2.3% | +0.5 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-ATL edge: +0.058 (ATL +0.118 vs WAS +0.060)
+WAS edge: +0.037 (ATL +0.214 vs WAS +0.251)
 **7 metrics version:**
-ATL edge: +0.332 (ATL +0.090 vs WAS -0.242)
-**Verdict:** ATL holds the edge in the extended breakdown (lead 0.332), driven by Turnover Margin (10% weight).
+WAS edge: +0.013 (ATL +0.169 vs WAS +0.182)
+**Verdict:** WAS holds the edge in the extended breakdown (lead 0.013), driven by EPA Offense (25% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ ATL edge: +0.332 (ATL +0.090 vs WAS -0.242)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - WAS) | +7.2 pts (favours ATL) |
-| Model Win% ATL | 76.7% |
-| Model Win% WAS | 23.3% |
+| Model Spread (ATL - WAS) | +3.9 pts (favours ATL) |
+| Model Win% ATL | 65.9% |
+| Model Win% WAS | 34.1% |
 | SOS Differential (ATL-WAS) | -0.317 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
@@ -67,8 +67,8 @@ ATL edge: +0.332 (ATL +0.090 vs WAS -0.242)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| ATL | 52.0% | n/a | n/a | 52.1% | 42.9% | n/a |
-| WAS | 35.7% | n/a | n/a | 47.4% | 39.1% | n/a |
+| ATL | 46.3% | 44.9% | 1.4% | 47.7% | 37.3% | Slight pass lean |
+| WAS | 43.4% | 44.9% | -1.5% | 50.0% | 42.6% | Slight run lean |
 
 ## Situational Edges
 
@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | NYG (A) | 17-13 | ATL | 0.711 | 0.017 | 37.3% | 0.427 |
+| 2 | MIN (A) | 25-39 | MIN | 0.504 | -0.253 | 45.6% | -0.984 |
 | 1 | PHI (H) | 6-35 | PHI | 0.368 | -0.232 | 33.3% | -2.409 |
-| 2 | TB (A) | 25-39 | TB | 0.352 | -0.253 | 45.6% | -0.984 |
+| 3 | CAR (A) | 17-13 | ATL | 0.124 | 0.017 | 37.3% | 0.427 |
 
 **WAS analogs vs ATL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | NYG (H) | 30-32 | NYG | 0.479 | 0.116 | 51.1% | -0.136 |
+| 2 | GB (A) | 30-32 | GB | 0.581 | 0.116 | 51.1% | -0.136 |
 | 1 | LAC (H) | 16-20 | LAC | 0.354 | -0.066 | 41.7% | -0.444 |
-| 3 | BUF (A) | 21-40 | BUF | 0.271 | -0.186 | 34.3% | -1.558 |
+| 3 | LV (H) | 21-40 | LV | 0.171 | -0.186 | 34.3% | -1.558 |
 
 ## Core EPA Offense Form (up to Week 3)
 

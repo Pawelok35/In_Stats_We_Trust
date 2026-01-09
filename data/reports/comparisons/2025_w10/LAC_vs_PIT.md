@@ -15,39 +15,39 @@
 | Turnover Margin | -0.444 | 0.875 | -1.319 |
 | Red Zone TD Rate (Off) | 0.112 | 0.182 | -0.070 |
 | Pressure Rate (Def) | 0.092 | 0.070 | 0.021 |
-| Tempo | 7.545 | 6.231 | 1.315 |
-| PowerScore | 0.127 | 0.127 | -0.001 |
-| PowerScore | 0.127 | 0.127 | -0.001 |
-| Tempo | 7.545 | 6.231 | 1.315 |
+| Tempo | 7.077 | 5.667 | 1.410 |
+| PowerScore | 1.444 | 1.123 | 0.322 |
+| PowerScore | 1.444 | 1.123 | 0.322 |
+| Tempo | 7.077 | 5.667 | 1.410 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | LAC | PIT | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.002 | 0.046 | -0.048 |
-| EPA Defense | 20% | -0.151 | -0.042 | -0.109 |
-| Success Rate Offense | 25% | 54.2% | 45.7% | +8.5 pp |
-| Tempo | 20% | 0.108 | 0.025 | +0.084 |
+| EPA Offense | 35% | -0.052 | -0.295 | +0.243 |
+| EPA Defense | 20% | -0.295 | -0.052 | -0.243 |
+| Success Rate Offense | 25% | 42.4% | 41.2% | +1.2 pp |
+| Tempo | 20% | 0.109 | 0.103 | +0.006 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | LAC | PIT | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.002 | 0.046 | -0.048 |
-| EPA Defense | 20% | -0.151 | -0.042 | -0.109 |
-| Success Rate Offense | 15% | 54.2% | 45.7% | +8.5 pp |
-| Turnover Margin | 10% | -1.000 | 3.000 | -4.000 |
-| Tempo | 10% | 0.108 | 0.025 | +0.084 |
-| Red Zone TD Rate (Off) | 10% | 20.0% | 13.0% | +7.0 pp |
-| Pressure Rate (Def) | 10% | 16.0% | 9.1% | +6.9 pp |
+| EPA Offense | 25% | -0.052 | -0.295 | +0.243 |
+| EPA Defense | 20% | -0.295 | -0.052 | -0.243 |
+| Success Rate Offense | 15% | 42.4% | 41.2% | +1.2 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.109 | 0.103 | +0.006 |
+| Red Zone TD Rate (Off) | 10% | 15.4% | 0.0% | +15.4 pp |
+| Pressure Rate (Def) | 10% | 8.8% | 12.8% | -4.0 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PIT edge: +0.001 (LAC +0.127 vs PIT +0.127)
+LAC edge: +0.041 (LAC +0.050 vs PIT +0.010)
 **7 metrics version:**
-PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
-**Verdict:** PIT holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
+LAC edge: +0.226 (LAC +0.127 vs PIT -0.099)
+**Verdict:** LAC holds the edge in the extended breakdown (lead 0.226), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ PIT edge: +0.399 (LAC -0.002 vs PIT +0.396)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - PIT) | -0.0 pts (favours PIT) |
-| Model Win% LAC | 50.0% |
-| Model Win% PIT | 50.0% |
-| SOS Differential (LAC-PIT) | -0.044 |
+| Model Spread (LAC - PIT) | +5.9 pts (favours LAC) |
+| Model Win% LAC | 72.9% |
+| Model Win% PIT | 27.1% |
+| SOS Differential (LAC-PIT) | -0.204 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| LAC | 43.4% | n/a | n/a | 47.3% | 59.5% | n/a |
-| PIT | 48.1% | n/a | n/a | 40.0% | 35.9% | n/a |
+| LAC | 42.4% | 42.4% | -0.0% | 35.9% | 47.2% | Balanced |
+| PIT | 50.0% | 42.4% | 7.6% | 35.3% | 47.1% | Pass heavy |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LAC | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.136 | 0.180 |
-| Last 5 games | 0.168 | 0.188 |
-| Last 3 games | 0.144 | 0.215 |
+| Season-to-date | 1.655 | 1.859 |
+| Last 5 games | 1.627 | 1.958 |
+| Last 3 games | 1.543 | 1.849 |
 
 ## Trend Summary (last 3 weeks)
 

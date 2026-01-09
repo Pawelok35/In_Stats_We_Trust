@@ -4,19 +4,21 @@
 
 | Metric | KC | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.103 | 0.208 | ↓ -0.311 |
-| Core EPA Defense | -0.220 | -0.146 | ↓ -0.074 |
-| Success Rate Offense | 46.1% | 54.2% | ↓ -8.1 pp |
-| Success Rate Defense | 32.0% | 39.0% | ↓ -7.0 pp |
-| Explosive Play Rate (Off) | 10.5% | 15.3% | ↓ -4.8 pp |
-| Third Down Conversion | 56.2% | 55.6% | ↑ +0.7 pp |
-| Points per Drive Differential | 0.545 | 2.273 | ↓ -1.727 |
-| Yards per Play Differential | 1.342 | 2.866 | ↓ -1.523 |
-| Turnover Margin | -2.000 | 0.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 12.5% | 28.6% | ↓ -16.1 pp |
-| Pressure Rate (Def) | 6.9% | 8.8% | ↓ -1.9 pp |
-| Tempo | 6.909 | 6.545 | ↑ +0.364 |
-| PowerScore | 0.056 | 0.210 | ↓ -0.153 |
+| Core EPA Offense | 0.068 | 0.037 | 0.031 |
+| Core EPA Defense | 0.023 | 0.072 | -0.049 |
+| Success Rate Offense | 0.524 | 0.488 | 0.035 |
+| Success Rate Defense | 0.510 | 0.459 | 0.051 |
+| Explosive Play Rate (Off) | 0.075 | 0.132 | -0.057 |
+| Third Down Conversion | 0.310 | 0.351 | -0.041 |
+| Points per Drive Differential | 0.242 | -0.296 | 0.539 |
+| Yards per Play Differential | -0.056 | 0.570 | -0.626 |
+| Turnover Margin | -0.667 | 0.333 | -1.000 |
+| Red Zone TD Rate (Off) | 0.082 | 0.226 | -0.144 |
+| Pressure Rate (Def) | 0.054 | 0.077 | -0.023 |
+| Tempo | 6.909 | 6.545 | 0.364 |
+| PowerScore | 1.417 | 1.488 | -0.071 |
+| PowerScore | 1.417 | 1.488 | -0.071 |
+| Tempo | 6.909 | 6.545 | 0.364 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.153 (KC +0.056 vs BAL +0.210)
 **7 metrics version:**
 BAL edge: +0.327 (KC -0.171 vs BAL +0.157)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.327), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - BAL) | -2.8 pts (favours BAL) |
-| Model Win% KC | 38.4% |
-| Model Win% BAL | 61.6% |
-| SOS Differential (KC-BAL) | -0.003 |
+| Model Spread (KC - BAL) | -1.3 pts (favours BAL) |
+| Model Win% KC | 44.5% |
+| Model Win% BAL | 55.5% |
+| SOS Differential (KC-BAL) | +0.146 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.168 | 0.171 |
-| Last 5 games | 0.168 | 0.171 |
-| Last 3 games | 0.168 | 0.171 |
+| Season-to-date | 1.787 | 1.641 |
+| Last 5 games | 1.787 | 1.641 |
+| Last 3 games | 1.787 | 1.641 |
 
 ## Trend Summary (last 3 weeks)
 

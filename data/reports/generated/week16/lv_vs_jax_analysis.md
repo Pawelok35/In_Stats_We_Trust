@@ -16,9 +16,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +0.1 pts
 • PowerScoreDiff (winner) = +0.030
-• Confidence = 63.5%
+• Confidence = 62.5%
 
-🏷 Model Tag: NEUTRAL — based on 63.5% confidence, +0.1 pts model edge vs line, and PowerScore Δ +0.030.
+🏷 Model Tag: NEUTRAL — based on 62.5% confidence, +0.1 pts model edge vs line, and PowerScore Δ +0.030.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:

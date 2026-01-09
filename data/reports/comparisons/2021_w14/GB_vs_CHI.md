@@ -15,46 +15,60 @@
 | Turnover Margin | 0.750 | -0.833 | 1.583 |
 | Red Zone TD Rate (Off) | 0.145 | 0.105 | 0.040 |
 | Pressure Rate (Def) | 0.059 | 0.080 | -0.021 |
+| Tempo | 6.462 | 6.462 | 0.000 |
+| PowerScore | 1.433 | 1.369 | 0.064 |
+| PowerScore | 1.433 | 1.369 | 0.064 |
+| Tempo | 6.462 | 6.462 | 0.000 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | GB | CHI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.071 | -0.084 | +0.155 |
-| EPA Defense | 20% | 0.011 | 0.029 | -0.018 |
-| Success Rate Offense | 25% | 45.1% | 40.0% | +5.1 pp |
-| Tempo | 20% | 0.099 | 0.094 | +0.005 |
+| EPA Offense | 35% | 0.086 | -0.102 | +0.188 |
+| EPA Defense | 20% | -0.102 | 0.086 | -0.188 |
+| Success Rate Offense | 25% | 52.4% | 38.1% | +14.3 pp |
+| Tempo | 20% | 0.155 | 0.095 | +0.060 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | GB | CHI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.071 | -0.084 | +0.155 |
-| EPA Defense | 20% | 0.011 | 0.029 | -0.018 |
-| Success Rate Offense | 15% | 45.1% | 40.0% | +5.1 pp |
-| Turnover Margin | 10% | 0.750 | -0.833 | +1.583 |
-| Tempo | 10% | 0.099 | 0.094 | +0.005 |
-| Red Zone TD Rate (Off) | 10% | 14.5% | 10.5% | +4.0 pp |
-| Pressure Rate (Def) | 10% | 5.9% | 8.0% | -2.1 pp |
+| EPA Offense | 25% | 0.086 | -0.102 | +0.188 |
+| EPA Defense | 20% | -0.102 | 0.086 | -0.188 |
+| Success Rate Offense | 15% | 52.4% | 38.1% | +14.3 pp |
+| Turnover Margin | 10% | 3.000 | -3.000 | +6.000 |
+| Tempo | 10% | 0.155 | 0.095 | +0.060 |
+| Red Zone TD Rate (Off) | 10% | 14.3% | 0.0% | +14.3 pp |
+| Pressure Rate (Def) | 10% | 5.7% | 7.1% | -1.4 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-GB edge: +0.064 (GB +0.160 vs CHI +0.095)
+GB edge: +0.076 (GB +0.172 vs CHI +0.096)
 **7 metrics version:**
-GB edge: +0.204 (GB +0.193 vs CHI -0.011)
-**Verdict:** GB holds the edge in the extended breakdown (lead 0.204), driven by Turnover Margin (10% weight).
+GB edge: +0.650 (GB +0.415 vs CHI -0.235)
+**Verdict:** GB holds the edge in the extended breakdown (lead 0.650), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
 
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (GB - CHI) | +1.2 pts (favours GB) |
+| Model Win% GB | 54.9% |
+| Model Win% CHI | 45.1% |
+| SOS Differential (GB-CHI) | +0.028 |
+*Neutral-field assumption. Based on schedule through Week 13.*
+
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| GB | 46.6% | 44.3% | 2.3% | 52.9% | 48.1% | Slight pass lean |
-| CHI | 48.4% | n/a | n/a | 41.9% | 43.6% | n/a |
+| GB | 50.0% | 46.3% | 3.7% | 59.5% | 45.2% | Pass heavy |
+| CHI | 41.7% | 46.3% | -4.6% | 31.4% | 42.9% | Run heavy |
 
 ## Situational Edges
 
@@ -234,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | CHI (A) | 24-14 | GB | 1.000 | 0.203 | 51.4% | 1.111 |
-| 2 | DET (H) | 35-19 | GB | 0.958 | 0.234 | 50.0% | 1.611 |
-| 10 | SEA (H) | 17-0 | GB | 0.743 | 0.031 | 47.7% | 1.700 |
+| 13 | DET (A) | n/a | n/a | 0.958 | n/a | n/a | n/a |
+| 11 | NYG (A) | 31-31 | TIE | 0.903 | 0.251 | 44.7% | 0.044 |
+| 8 | PIT (A) | 24-26 | PIT | 0.718 | 0.123 | 46.1% | -0.225 |
 
 **CHI analogs vs GB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | GB (H) | 14-24 | GB | 1.000 | 0.019 | 44.6% | -1.111 |
 | 1 | LA (A) | 14-30 | LA | 0.877 | -0.107 | 49.4% | -2.028 |
-| 7 | TB (A) | 3-41 | TB | 0.771 | -0.416 | 34.6% | -2.936 |
+| 13 | PHI (A) | 22-33 | PHI | 0.754 | -0.079 | 40.9% | -1.100 |
+| 6 | WAS (A) | 14-24 | WAS | 0.703 | 0.019 | 44.6% | -1.111 |
 
 ## Core EPA Offense Form (up to Week 13)
 

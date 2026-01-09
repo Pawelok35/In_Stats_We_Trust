@@ -4,19 +4,21 @@
 
 | Metric | LV | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.099 | -0.069 | ↓ -0.030 |
-| Core EPA Defense | 0.112 | 0.011 | ↑ +0.101 |
-| Success Rate Offense | 47.0% | 41.8% | ↑ +5.2 pp |
-| Success Rate Defense | 55.9% | 42.7% | ↑ +13.2 pp |
-| Explosive Play Rate (Off) | 7.2% | 10.4% | ↓ -3.2 pp |
-| Third Down Conversion | 35.7% | 27.3% | ↑ +8.4 pp |
-| Points per Drive Differential | -1.654 | -0.737 | ↓ -0.917 |
-| Yards per Play Differential | -1.396 | -1.388 | ↓ -0.009 |
-| Turnover Margin | -1.000 | 0.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 10.0% | 22.2% | ↓ -12.2 pp |
-| Pressure Rate (Def) | 2.4% | 9.7% | ↓ -7.3 pp |
-| Tempo | 6.917 | 5.583 | ↑ +1.333 |
-| PowerScore | 0.120 | 0.103 | ↑ +0.016 |
+| Core EPA Offense | -0.147 | 0.052 | -0.199 |
+| Core EPA Defense | -0.031 | 0.129 | -0.160 |
+| Success Rate Offense | 0.449 | 0.474 | -0.024 |
+| Success Rate Defense | 0.448 | 0.478 | -0.031 |
+| Explosive Play Rate (Off) | 0.077 | 0.109 | -0.033 |
+| Third Down Conversion | 0.299 | 0.304 | -0.005 |
+| Points per Drive Differential | -0.513 | -0.781 | 0.268 |
+| Yards per Play Differential | -0.200 | -0.105 | -0.095 |
+| Turnover Margin | -1.625 | -0.875 | -0.750 |
+| Red Zone TD Rate (Off) | 0.133 | 0.141 | -0.009 |
+| Pressure Rate (Def) | 0.059 | 0.053 | 0.006 |
+| Tempo | 6.917 | 5.583 | 1.333 |
+| PowerScore | 1.489 | 1.199 | 0.289 |
+| PowerScore | 1.489 | 1.199 | 0.289 |
+| Tempo | 6.917 | 5.583 | 1.333 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LV edge: +0.016 (LV +0.120 vs JAX +0.103)
 **7 metrics version:**
 JAX edge: +0.102 (LV -0.012 vs JAX +0.090)
 **Verdict:** JAX holds the edge in the extended breakdown (lead 0.102), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - JAX) | +0.3 pts (favours LV) |
-| Model Win% LV | 51.3% |
-| Model Win% JAX | 48.7% |
-| SOS Differential (LV-JAX) | -0.107 |
+| Model Spread (LV - JAX) | +5.4 pts (favours LV) |
+| Model Win% LV | 70.9% |
+| Model Win% JAX | 29.1% |
+| SOS Differential (LV-JAX) | -0.273 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.091 | 0.197 |
-| Last 5 games | 0.080 | 0.216 |
-| Last 3 games | 0.078 | 0.206 |
+| Season-to-date | 1.517 | 1.790 |
+| Last 5 games | 1.529 | 1.786 |
+| Last 3 games | 1.574 | 1.757 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -244,7 +250,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | WAS (A) | 22-36 | WAS | 0.675 | -0.075 | 52.5% | -1.167 |
 | 5 | IND (A) | 18-26 | IND | 0.403 | -0.174 | 40.0% | -0.654 |
-| 6 | TEN (A) | 13-32 | TEN | 0.400 | -0.269 | 46.8% | -1.727 |
+| 6 | TEN (H) | 13-32 | TEN | 0.400 | -0.269 | 46.8% | -1.727 |
 
 **JAX analogs vs LV profile**
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | MIA (A) | 17-18 | MIA | 0.901 | -0.042 | 43.1% | -0.121 |
 | 3 | HOU (H) | 10-47 | HOU | 0.580 | -0.163 | 42.7% | -3.700 |
-| 6 | SEA (A) | 16-35 | SEA | 0.503 | 0.012 | 43.6% | -1.900 |
+| 6 | SEA (H) | 16-35 | SEA | 0.503 | 0.012 | 43.6% | -1.900 |
 
 ## Core EPA Offense Form (up to Week 8)
 

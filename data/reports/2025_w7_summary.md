@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 7
 
-_Generated at 2025-11-10T14:26:14.691766+00:00 (UTC)_
+_Generated at 2026-01-08T19:14:41.223055+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\7_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2614, "cols": 18, "timestamp": "2025-11-10T14:26:14.284074+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2614, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T14:26:14.284074+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2614, "cols": 24, "timestamp": "2025-11-10T14:26:14.284074+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2614, "cols": 18, "timestamp": "2026-01-08T19:14:40.775271+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2614, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:14:40.775271+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2614, "cols": 24, "timestamp": "2026-01-08T19:14:40.775271+00:00"}
 
 ## L3 Sanity
 
@@ -33,7 +33,7 @@ Last 3 entries from `data\l2_audit\2025\7_audit.jsonl`:
 - Artifact: `data\l4_core12\2025\7.parquet`
 - Manifest: `data\l4_core12\2025\7_manifest.json`
 - Rows: 30
-- Columns: 15
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\7_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| IND | 0.3119991114518477 |
-| PIT | 0.2989506084194668 |
-| CIN | 0.29071643293060756 |
-| LAC | 0.24832345256094898 |
-| GB | 0.2063340087305258 |
-| LA | 0.2060382397789536 |
-| DEN | 0.1980837299563982 |
-| NYG | 0.1872624214822317 |
-| DAL | 0.18031481126484444 |
-| ARI | 0.17637944255058408 |
+| LAC | 2.524410409082688 |
+| KC | 2.215487679908378 |
+| CIN | 2.163348011877976 |
+| ARI | 2.116025907197049 |
+| IND | 1.929416528869265 |
+| SF | 1.8848838905966372 |
+| ATL | 1.8030181438353288 |
+| MIN | 1.8019717384788443 |
+| JAX | 1.7958508068550054 |
+| NE | 1.7860791641564222 |
 
 
 ## Visualizations

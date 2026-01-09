@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – DAL 37.4 – WAS 13.2
-2️⃣ Predicted Winner (Model) – DAL
-3️⃣ Predicted Margin (Model) – DAL by 24.2 pts
-4️⃣ Win Probability (Model) – 95% (DAL)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę DAL: DAL +0.177 vs WAS +0.028. Defensive pressure rate wspiera DAL (+12.1% vs +0.0%), więc pasy rywala będą częściej pod presją. Na 3rd down DAL utrzymuje 43.9%, podczas gdy WAS jest na 33.3%, co stabilizuje serie ofensywne. Turnover margin faworyzuje DAL (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Success Rate Offense pokazuje DAL na poziomie 45.8% vs 40.2% (+5.6 pp).
+1️⃣ Estimated Score (Model) – DAL 8.3 – WAS 24.4
+2️⃣ Predicted Winner (Model) – WAS
+3️⃣ Predicted Margin (Model) – WAS by 16.1 pts
+4️⃣ Win Probability (Model) – 95% (WAS)
+5️⃣ Why This Team Wins (Model) – Na 3rd down WAS utrzymuje 42.1%, podczas gdy DAL jest na 32.3%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje WAS na poziomie 51.1% vs 45.1% (+6.0 pp). Red Zone TD Rate sprzyja WAS (16.4% vs 12.8%). Turnover margin faworyzuje WAS (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę WAS: WAS +0.188 vs DAL +0.160.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – DAL 24.0 – WAS 16.5
-2️⃣ Predicted Winner (Market) – DAL
-3️⃣ Predicted Margin (Market) – DAL by 7.5 pts
-4️⃣ Win Probability (Market) – 76% (DAL)
-5️⃣ Forum Output (A) – PowerScore (Model) — DAL +0.177 vs WAS +0.028. Points per Drive Differential — DAL +0.766 vs WAS -0.687. Success Rate Offense — DAL 45.8% vs WAS 40.2%. Third Down Conversion — DAL 43.9% vs WAS 33.3%. Red Zone TD Rate — DAL 12.7% vs WAS 16.8%. Explosive Play Rate — DAL 10.6% vs WAS 10.2%. Model margin 24.2 pts vs market spread DAL +7.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DAL po marginesie 24.2 pkt. DAL notuje +0.766 PPD vs -0.687 u WAS. Różnica w Success Rate to 45.8% vs 40.2%. Na 3rd down DAL (43.9%) wygląda solidniej niż WAS (33.3%). Red Zone i explosiveness ( 12.7% / 10.6% ) utrzymują przewagę jakościową. Market trzyma 7.5 pkt, więc edge vs linia to +16.7.
+1️⃣ Estimated Score (Market) – DAL 18.5 – WAS 25.0
+2️⃣ Predicted Winner (Market) – WAS
+3️⃣ Predicted Margin (Market) – WAS by 6.5 pts
+4️⃣ Win Probability (Market) – 73% (WAS)
+5️⃣ Forum Output (A) – PowerScore (Model) — DAL +0.160 vs WAS +0.188. Points per Drive Differential — DAL -0.563 vs WAS +0.391. Success Rate Offense — DAL 45.1% vs WAS 51.1%. Third Down Conversion — DAL 32.3% vs WAS 42.1%. Red Zone TD Rate — DAL 12.8% vs WAS 16.4%. Explosive Play Rate — DAL 9.2% vs WAS 9.9%. Model margin -16.1 pts vs market spread DAL -6.5.
+6️⃣ Forum Output (B) – Model idzie w stronę WAS po marginesie -16.1 pkt. WAS notuje +0.391 PPD vs -0.563 u DAL. Różnica w Success Rate to 51.1% vs 45.1%. Na 3rd down WAS (42.1%) wygląda solidniej niż DAL (32.3%). Red Zone i explosiveness ( 16.4% / 9.9% ) utrzymują przewagę jakościową. Market trzyma -6.5 pkt, więc edge vs linia to +9.6.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +16.7 pts
-• PowerScoreDiff (winner) = +0.149
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +9.6 pts
+• PowerScoreDiff (winner) = +0.028
+• Confidence = 96.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +16.7 pts model edge vs line, and PowerScore Δ +0.149.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
+🏷 Model Tag: VALUE PLAY — based on 96.0% confidence, +9.6 pts model edge vs line, and PowerScore Δ +0.028.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – DAL 37.4 – WAS 13.2
-   • Win Probability – 95% (DAL)
+   • Estimated Score – DAL 8.3 – WAS 24.4
+   • Win Probability – 95% (WAS)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – DAL 24.0 – WAS 16.5
-   • Win Probability – 76% (DAL)
+   • Estimated Score – DAL 18.5 – WAS 25.0
+   • Win Probability – 73% (WAS)
 
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — DAL (HC -7.5)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — WAS (HC -6.5)

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.143 | 0.222 | -0.079 |
 | Pressure Rate (Def) | 0.036 | 0.075 | -0.039 |
 | Tempo | 7.364 | 7.500 | -0.136 |
-| PowerScore | 0.158 | 0.135 | 0.023 |
-| PowerScore | 0.158 | 0.135 | 0.023 |
+| PowerScore | 1.620 | 1.611 | 0.009 |
+| PowerScore | 1.620 | 1.611 | 0.009 |
 | Tempo | 7.364 | 7.500 | -0.136 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ CIN edge: +0.219 (CIN +0.311 vs JAX +0.093)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - JAX) | +0.4 pts (favours CIN) |
-| Model Win% CIN | 51.7% |
-| Model Win% JAX | 48.3% |
+| Model Spread (CIN - JAX) | +0.2 pts (favours CIN) |
+| Model Win% CIN | 50.7% |
+| Model Win% JAX | 49.3% |
 | SOS Differential (CIN-JAX) | +0.251 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

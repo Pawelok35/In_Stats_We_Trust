@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CHI 22.3 – DAL 22.5
+1️⃣ Estimated Score (Model) – CHI 16.0 – DAL 24.8
 2️⃣ Predicted Winner (Model) – DAL
-3️⃣ Predicted Margin (Model) – DAL by 0.2 pts
-4️⃣ Win Probability (Model) – 46% (DAL)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę DAL: DAL +0.179 vs CHI +0.044. Na 3rd down DAL utrzymuje 34.9%, podczas gdy CHI jest na 21.6%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje DAL na poziomie 43.6% vs 40.4% (+3.2 pp). Explosive Play Rate pozostaje po stronie DAL (7.0% vs 4.8%), więc big-play equity jest wyższe.
+3️⃣ Predicted Margin (Model) – DAL by 8.7 pts
+4️⃣ Win Probability (Model) – 82% (DAL)
+5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje DAL na poziomie 49.7% vs 38.8% (+10.9 pp). Na 3rd down DAL utrzymuje 44.2%, podczas gdy CHI jest na 35.4%, co stabilizuje serie ofensywne. DAL prowadzi w Points per Drive Differential (-0.330 vs -1.719), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CHI 22.5 – DAL 22.5
-2️⃣ Predicted Winner (Market) – CHI
-3️⃣ Predicted Margin (Market) – CHI by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (CHI)
-5️⃣ Forum Output (A) – PowerScore (Model) — CHI +0.044 vs DAL +0.179. Points per Drive Differential — CHI -0.609 vs DAL -0.906. Success Rate Offense — CHI 40.4% vs DAL 43.6%. Third Down Conversion — CHI 21.6% vs DAL 34.9%. Red Zone TD Rate — CHI 10.0% vs DAL 6.2%. Explosive Play Rate — CHI 4.8% vs DAL 7.0%. Model margin -0.2 pts vs market spread CHI -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę DAL po marginesie -0.2 pkt. DAL notuje -0.906 PPD vs -0.609 u CHI. Różnica w Success Rate to 43.6% vs 40.4%. Na 3rd down DAL (34.9%) wygląda solidniej niż CHI (21.6%). Red Zone i explosiveness ( 6.2% / 7.0% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +0.2.
+1️⃣ Estimated Score (Market) – CHI 24.0 – DAL 25.5
+2️⃣ Predicted Winner (Market) – DAL
+3️⃣ Predicted Margin (Market) – DAL by 1.5 pts
+4️⃣ Win Probability (Market) – 55% (DAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — CHI +0.208 vs DAL +0.173. Points per Drive Differential — CHI -1.719 vs DAL -0.330. Success Rate Offense — CHI 38.8% vs DAL 49.7%. Third Down Conversion — CHI 35.4% vs DAL 44.2%. Red Zone TD Rate — CHI 22.5% vs DAL 21.1%. Explosive Play Rate — CHI 12.4% vs DAL 9.9%. Model margin -8.7 pts vs market spread CHI -1.5.
+6️⃣ Forum Output (B) – Model idzie w stronę DAL po marginesie -8.7 pkt. DAL notuje -0.330 PPD vs -1.719 u CHI. Różnica w Success Rate to 49.7% vs 38.8%. Na 3rd down DAL (44.2%) wygląda solidniej niż CHI (35.4%). Red Zone i explosiveness ( 21.1% / 9.9% ) utrzymują przewagę jakościową. Market trzyma -1.5 pkt, więc edge vs linia to +7.2.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +0.2 pts
-• PowerScoreDiff (winner) = +0.135
-• Confidence = 49.0%
+• Edge_vs_Line (winner) = +7.2 pts
+• PowerScoreDiff (winner) = -0.035
+• Confidence = 82.0%
 
-🏷 Model Tag: NEUTRAL — based on 49.0% confidence, +0.2 pts model edge vs line, and PowerScore Δ +0.135.
+🏷 Model Tag: NEUTRAL — based on 82.0% confidence, +7.2 pts model edge vs line, and PowerScore Δ -0.035.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – CHI 22.3 – DAL 22.5
-   • Win Probability – 46% (DAL)
+   • Estimated Score – CHI 16.0 – DAL 24.8
+   • Win Probability – 82% (DAL)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CHI 22.5 – DAL 22.5
-   • Win Probability – 50% (CHI)
+   • Estimated Score – CHI 24.0 – DAL 25.5
+   • Win Probability – 55% (DAL)
 
-🏷 Model Tag: NEUTRAL — DAL (HC -0.0)
+🏷 Model Tag: NEUTRAL — DAL (HC -1.5)

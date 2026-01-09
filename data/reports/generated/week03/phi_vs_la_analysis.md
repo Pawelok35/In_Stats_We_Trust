@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – PHI 39.7 – LA 16.5
-2️⃣ Predicted Winner (Model) – PHI
-3️⃣ Predicted Margin (Model) – PHI by 23.2 pts
-4️⃣ Win Probability (Model) – 95% (PHI)
-5️⃣ Why This Team Wins (Model) – Na 3rd down PHI utrzymuje 35.4%, podczas gdy LA jest na 28.4%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie PHI (10.5% vs 7.5%), więc big-play equity jest wyższe. PHI prowadzi w Points per Drive Differential (+0.200 vs -1.861), więc bazowa efektywność napędza przewagę. Field position edge wynosi +1.9 yds na rzecz PHI (6.3 vs 4.4), co skraca ich boisko. Red Zone TD Rate sprzyja PHI (9.7% vs 8.6%).
+1️⃣ Estimated Score (Model) – PHI 15.3 – LA 22.8
+2️⃣ Predicted Winner (Model) – LA
+3️⃣ Predicted Margin (Model) – LA by 7.4 pts
+4️⃣ Win Probability (Model) – 76% (LA)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera LA (+10.5% vs +2.9%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie LA (12.9% vs 6.4%), więc big-play equity jest wyższe. PowerScore Summary potwierdza przewagę LA: LA +0.108 vs PHI +0.078. LA prowadzi w Points per Drive Differential (+0.950 vs +0.137), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – PHI 22.5 – LA 22.5
+1️⃣ Estimated Score (Market) – PHI 24.5 – LA 21.0
 2️⃣ Predicted Winner (Market) – PHI
-3️⃣ Predicted Margin (Market) – PHI by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (PHI)
-5️⃣ Forum Output (A) – PowerScore (Model) — PHI +0.056 vs LA +0.224. Points per Drive Differential — PHI +0.200 vs LA -1.861. Success Rate Offense — PHI 50.3% vs LA 50.6%. Third Down Conversion — PHI 35.4% vs LA 28.4%. Red Zone TD Rate — PHI 9.7% vs LA 8.6%. Explosive Play Rate — PHI 10.5% vs LA 7.5%. Model margin 23.2 pts vs market spread PHI -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę PHI po marginesie 23.2 pkt. PHI notuje +0.200 PPD vs -1.861 u LA. Różnica w Success Rate to 50.3% vs 50.6%. Na 3rd down PHI (35.4%) wygląda solidniej niż LA (28.4%). Red Zone i explosiveness ( 9.7% / 10.5% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +23.2.
+3️⃣ Predicted Margin (Market) – PHI by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (PHI)
+5️⃣ Forum Output (A) – PowerScore (Model) — PHI +0.078 vs LA +0.108. Points per Drive Differential — PHI +0.137 vs LA +0.950. Success Rate Offense — PHI 47.8% vs LA 45.8%. Third Down Conversion — PHI 46.3% vs LA 44.1%. Red Zone TD Rate — PHI 26.1% vs LA 14.9%. Explosive Play Rate — PHI 6.4% vs LA 12.9%. Model margin -7.4 pts vs market spread PHI +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę LA po marginesie -7.4 pkt. LA notuje +0.950 PPD vs +0.137 u PHI. Różnica w Success Rate to 45.8% vs 47.8%. Na 3rd down LA (44.1%) wygląda solidniej niż PHI (46.3%). Red Zone i explosiveness ( 14.9% / 12.9% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +10.9.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +23.2 pts
-• PowerScoreDiff (winner) = -0.168
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +10.9 pts
+• PowerScoreDiff (winner) = +0.030
+• Confidence = 76.5%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +23.2 pts model edge vs line, and PowerScore Δ -0.168.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: VALUE PLAY — based on 76.5% confidence, +10.9 pts model edge vs line, and PowerScore Δ +0.030.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – PHI 39.7 – LA 16.5
-   • Win Probability – 95% (PHI)
+   • Estimated Score – PHI 15.3 – LA 22.8
+   • Win Probability – 76% (LA)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – PHI 22.5 – LA 22.5
-   • Win Probability – 50% (PHI)
+   • Estimated Score – PHI 24.5 – LA 21.0
+   • Win Probability – 62% (PHI)
 
-🏷 Model Tag: NEUTRAL — PHI (HC +0.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — LA (HC +3.5)

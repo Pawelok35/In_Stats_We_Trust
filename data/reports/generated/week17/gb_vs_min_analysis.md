@@ -16,9 +16,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +3.7 pts
 • PowerScoreDiff (winner) = +0.127
-• Confidence = 98.0%
+• Confidence = 99.0%
 
-🏷 Model Tag: GOW — based on 98.0% confidence, +3.7 pts model edge vs line, and PowerScore Δ +0.127.
+🏷 Model Tag: GOW — based on 99.0% confidence, +3.7 pts model edge vs line, and PowerScore Δ +0.127.
 💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:

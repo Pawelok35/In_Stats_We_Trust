@@ -4,19 +4,21 @@
 
 | Metric | CLE | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.073 | -0.165 | ↑ +0.092 |
-| Core EPA Defense | 0.213 | -0.102 | ↑ +0.315 |
-| Success Rate Offense | 39.6% | 41.8% | ↓ -2.2 pp |
-| Success Rate Defense | 51.4% | 40.8% | ↑ +10.5 pp |
-| Explosive Play Rate (Off) | 9.9% | 11.4% | ↓ -1.5 pp |
-| Third Down Conversion | 21.4% | 30.8% | ↓ -9.3 pp |
-| Points per Drive Differential | -1.909 | -0.154 | ↓ -1.755 |
-| Yards per Play Differential | -1.502 | 1.073 | ↓ -2.575 |
-| Turnover Margin | 2.000 | -2.000 | ↑ +4.000 |
-| Red Zone TD Rate (Off) | 0.0% | 40.0% | ↓ -40.0 pp |
-| Pressure Rate (Def) | 3.1% | 9.5% | ↓ -6.4 pp |
-| Tempo | 8.273 | 6.077 | ↑ +2.196 |
-| PowerScore | 0.136 | 0.049 | ↑ +0.087 |
+| Core EPA Offense | -0.128 | 0.164 | -0.292 |
+| Core EPA Defense | -0.040 | 0.066 | -0.106 |
+| Success Rate Offense | 0.407 | 0.525 | -0.118 |
+| Success Rate Defense | 0.417 | 0.468 | -0.051 |
+| Explosive Play Rate (Off) | 0.070 | 0.141 | -0.071 |
+| Third Down Conversion | 0.250 | 0.423 | -0.173 |
+| Points per Drive Differential | -0.616 | 0.638 | -1.254 |
+| Yards per Play Differential | -0.894 | 1.025 | -1.919 |
+| Turnover Margin | -0.778 | 0.400 | -1.178 |
+| Red Zone TD Rate (Off) | 0.105 | 0.223 | -0.117 |
+| Pressure Rate (Def) | 0.088 | 0.075 | 0.014 |
+| Tempo | 8.273 | 6.077 | 2.196 |
+| PowerScore | 1.770 | 1.242 | 0.529 |
+| PowerScore | 1.770 | 1.242 | 0.529 |
+| Tempo | 8.273 | 6.077 | 2.196 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CLE edge: +0.087 (CLE +0.136 vs BAL +0.049)
 **7 metrics version:**
 CLE edge: +0.435 (CLE +0.297 vs BAL -0.138)
 **Verdict:** CLE holds the edge in the extended breakdown (lead 0.435), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - BAL) | +1.6 pts (favours CLE) |
-| Model Win% CLE | 56.6% |
-| Model Win% BAL | 43.4% |
-| SOS Differential (CLE-BAL) | -0.106 |
+| Model Spread (CLE - BAL) | +9.8 pts (favours CLE) |
+| Model Win% CLE | 83.6% |
+| Model Win% BAL | 16.4% |
+| SOS Differential (CLE-BAL) | -0.349 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CLE | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.087 | 0.194 |
-| Last 5 games | 0.099 | 0.214 |
-| Last 3 games | 0.089 | 0.197 |
+| Season-to-date | 1.383 | 1.732 |
+| Last 5 games | 1.400 | 1.852 |
+| Last 3 games | 1.287 | 1.808 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | CLE (H) | 23-26 | CLE | 1.000 | -0.034 | 44.9% | -0.250 |
-| 8 | CHI (A) | 24-27 | CHI | 0.959 | 0.054 | 48.9% | -0.235 |
+| 8 | CHI (H) | 24-27 | CHI | 0.959 | 0.054 | 48.9% | -0.235 |
 | 5 | HOU (H) | 41-36 | BAL | 0.837 | 0.252 | 58.9% | 0.385 |
 
 ## Core EPA Offense Form (up to Week 10)

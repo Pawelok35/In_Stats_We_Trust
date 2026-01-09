@@ -4,19 +4,20 @@
 
 | Metric | ATL | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.011 | 0.075 | ↓ -0.064 |
-| Core EPA Defense | 0.075 | 0.011 | ↑ +0.064 |
-| Success Rate Offense | 47.3% | 41.3% | ↑ +5.9 pp |
-| Success Rate Defense | 41.3% | 47.3% | ↓ -5.9 pp |
-| Explosive Play Rate (Off) | 5.5% | 8.0% | ↓ -2.5 pp |
-| Third Down Conversion | 37.5% | 50.0% | ↓ -12.5 pp |
-| Points per Drive Differential | -0.300 | 0.300 | ↓ -0.600 |
-| Yards per Play Differential | 0.467 | -0.467 | ↑ +0.935 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 6.7% | 20.0% | ↓ -13.3 pp |
-| Pressure Rate (Def) | 2.9% | 2.3% | ↑ +0.7 pp |
-| Tempo | 9.100 | 7.500 | ↑ +1.600 |
-| PowerScore | 0.148 | 0.148 | ↑ +0.000 |
+| Core EPA Offense | 0.011 | 0.075 | -0.064 |
+| Core EPA Defense | 0.075 | 0.011 | 0.064 |
+| Success Rate Offense | 0.473 | 0.413 | 0.059 |
+| Success Rate Defense | 0.413 | 0.473 | -0.059 |
+| Explosive Play Rate (Off) | 0.055 | 0.080 | -0.025 |
+| Third Down Conversion | 0.375 | 0.500 | -0.125 |
+| Points per Drive Differential | -0.300 | 0.300 | -0.600 |
+| Yards per Play Differential | 0.467 | -0.467 | 0.935 |
+| Red Zone TD Rate (Off) | 0.067 | 0.200 | -0.133 |
+| Pressure Rate (Def) | 0.029 | 0.023 | 0.007 |
+| Tempo | 9.100 | 7.500 | 1.600 |
+| PowerScore | 1.957 | 1.632 | 0.325 |
+| PowerScore | 1.957 | 1.632 | 0.325 |
+| Tempo | 9.100 | 7.500 | 1.600 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ ATL edge: +0.000 (ATL +0.148 vs TB +0.148)
 **7 metrics version:**
 TB edge: +0.010 (ATL +0.104 vs TB +0.113)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.010), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - TB) | +0.0 pts (favours ATL) |
-| Model Win% ATL | 50.0% |
-| Model Win% TB | 50.0% |
+| Model Spread (ATL - TB) | +6.0 pts (favours ATL) |
+| Model Win% ATL | 73.2% |
+| Model Win% TB | 26.8% |
 | SOS Differential (ATL-TB) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

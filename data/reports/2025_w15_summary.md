@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 15
 
-_Generated at 2025-12-28T12:10:47.862444+00:00 (UTC)_
+_Generated at 2026-01-08T19:21:55.652563+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\15_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2688, "cols": 18, "timestamp": "2025-12-28T12:10:47.458653+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2688, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T12:10:47.458653+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2688, "cols": 24, "timestamp": "2025-12-28T12:10:47.458653+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2688, "cols": 18, "timestamp": "2026-01-08T19:21:55.245405+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2688, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:21:55.245405+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2688, "cols": 24, "timestamp": "2026-01-08T19:21:55.245405+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2025\15_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\15.parquet`
 - Manifest: `data\l4_core12\2025\15_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 32
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\15_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| NE | 0.29297491885082955 |
-| LA | 0.2790260927685738 |
-| JAX | 0.2733261031063845 |
-| SF | 0.27310854786591926 |
-| TEN | 0.25982101580527217 |
-| BUF | 0.25609420998729165 |
-| TB | 0.24633507722058126 |
-| MIN | 0.24483236260912777 |
-| ATL | 0.2419224318747426 |
-| HOU | 0.22878159762691375 |
+| SF | 2.56006506960505 |
+| PHI | 2.1252273453727226 |
+| ATL | 2.051487649266047 |
+| NO | 2.0465051238633887 |
+| CIN | 2.0091951478534464 |
+| PIT | 2.0043720942907974 |
+| DAL | 1.998687859172834 |
+| BUF | 1.9979123918054738 |
+| CAR | 1.9544480231450132 |
+| LA | 1.8865008402433214 |
 
 
 ## Visualizations

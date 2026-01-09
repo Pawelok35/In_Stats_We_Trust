@@ -4,19 +4,21 @@
 
 | Metric | SF | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.021 | 0.113 | ↓ -0.134 |
-| Core EPA Defense | -0.262 | 0.098 | ↓ -0.360 |
-| Success Rate Offense | 42.9% | 45.5% | ↓ -2.6 pp |
-| Success Rate Defense | 43.2% | 48.4% | ↓ -5.1 pp |
-| Explosive Play Rate (Off) | 13.0% | 11.7% | ↑ +1.3 pp |
-| Third Down Conversion | 50.0% | 33.3% | ↑ +16.7 pp |
-| Points per Drive Differential | 0.917 | -0.733 | ↑ +1.650 |
-| Yards per Play Differential | 2.968 | -0.715 | ↑ +3.683 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 11.1% | 20.0% | ↓ -8.9 pp |
-| Pressure Rate (Def) | 15.8% | 4.8% | ↑ +11.0 pp |
-| Tempo | 6.417 | 6.417 | ± 0.000 |
-| PowerScore | 0.073 | 0.196 | ↓ -0.123 |
+| Core EPA Offense | 0.058 | -0.079 | 0.138 |
+| Core EPA Defense | 0.035 | 0.128 | -0.093 |
+| Success Rate Offense | 0.500 | 0.437 | 0.063 |
+| Success Rate Defense | 0.502 | 0.471 | 0.031 |
+| Explosive Play Rate (Off) | 0.119 | 0.104 | 0.015 |
+| Third Down Conversion | 0.352 | 0.203 | 0.149 |
+| Points per Drive Differential | 0.192 | -1.433 | 1.625 |
+| Yards per Play Differential | 0.036 | -0.767 | 0.803 |
+| Turnover Margin | 0.333 | -1.000 | 1.333 |
+| Red Zone TD Rate (Off) | 0.120 | 0.119 | 0.001 |
+| Pressure Rate (Def) | 0.087 | 0.044 | 0.043 |
+| Tempo | 6.417 | 6.417 | 0.000 |
+| PowerScore | 1.331 | 1.456 | -0.125 |
+| PowerScore | 1.331 | 1.456 | -0.125 |
+| Tempo | 6.417 | 6.417 | 0.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ JAX edge: +0.123 (SF +0.073 vs JAX +0.196)
 **7 metrics version:**
 SF edge: +0.094 (SF +0.147 vs JAX +0.052)
 **Verdict:** SF holds the edge in the extended breakdown (lead 0.094), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
 | Model Spread (SF - JAX) | -2.3 pts (favours JAX) |
-| Model Win% SF | 40.6% |
-| Model Win% JAX | 59.4% |
-| SOS Differential (SF-JAX) | +0.003 |
+| Model Win% SF | 40.5% |
+| Model Win% JAX | 59.5% |
+| SOS Differential (SF-JAX) | -0.254 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.169 | 0.167 |
-| Last 5 games | 0.169 | 0.167 |
-| Last 3 games | 0.169 | 0.167 |
+| Season-to-date | 1.542 | 1.796 |
+| Last 5 games | 1.542 | 1.796 |
+| Last 3 games | 1.542 | 1.796 |
 
 ## Trend Summary (last 3 weeks)
 

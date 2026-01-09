@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.167 | 0.111 | 0.056 |
 | Pressure Rate (Def) | 0.043 | 0.027 | 0.016 |
 | Tempo | 7.545 | 7.333 | 0.212 |
-| PowerScore | 0.188 | 0.186 | 0.002 |
-| PowerScore | 0.188 | 0.186 | 0.002 |
+| PowerScore | 1.682 | 1.634 | 0.048 |
+| PowerScore | 1.682 | 1.634 | 0.048 |
 | Tempo | 7.545 | 7.333 | 0.212 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ JAX edge: +0.200 (CIN +0.040 vs JAX +0.239)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - JAX) | +0.0 pts (favours CIN) |
-| Model Win% CIN | 50.1% |
-| Model Win% JAX | 49.9% |
-| SOS Differential (CIN-JAX) | -0.029 |
+| Model Spread (CIN - JAX) | +0.9 pts (favours CIN) |
+| Model Win% CIN | 53.7% |
+| Model Win% JAX | 46.3% |
+| SOS Differential (CIN-JAX) | +0.271 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.068 | 0.097 |
-| Last 5 games | 0.068 | 0.097 |
-| Last 3 games | 0.068 | 0.097 |
+| Season-to-date | 1.875 | 1.604 |
+| Last 5 games | 1.875 | 1.604 |
+| Last 3 games | 1.875 | 1.604 |
 
 ## Matchup Analogs
 

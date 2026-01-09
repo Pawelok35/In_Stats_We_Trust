@@ -4,50 +4,50 @@
 
 | Metric | TB | ARI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.019 | 0.003 | -0.022 |
-| Core EPA Defense | 0.006 | 0.027 | -0.022 |
-| Success Rate Offense | 0.435 | 0.460 | -0.025 |
-| Success Rate Defense | 0.481 | 0.494 | -0.013 |
-| Explosive Play Rate (Off) | 0.091 | 0.093 | -0.002 |
-| Third Down Conversion | 0.366 | 0.399 | -0.033 |
-| Points per Drive Differential | -0.112 | 0.023 | -0.135 |
-| Yards per Play Differential | -0.449 | -0.271 | -0.178 |
-| Turnover Margin | 0.400 | 0.300 | 0.100 |
-| Red Zone TD Rate (Off) | 0.116 | 0.146 | -0.029 |
-| Pressure Rate (Def) | 0.071 | 0.057 | 0.013 |
-| Tempo | 7.545 | 7.923 | -0.378 |
-| PowerScore | -0.004 | 0.083 | -0.087 |
-| PowerScore | -0.004 | 0.083 | -0.087 |
-| Tempo | 7.545 | 7.923 | -0.378 |
+| Core EPA Offense | -0.012 | -0.015 | 0.003 |
+| Core EPA Defense | 0.018 | 0.035 | -0.017 |
+| Success Rate Offense | 0.443 | 0.455 | -0.012 |
+| Success Rate Defense | 0.474 | 0.499 | -0.024 |
+| Explosive Play Rate (Off) | 0.093 | 0.094 | -0.001 |
+| Third Down Conversion | 0.368 | 0.397 | -0.029 |
+| Points per Drive Differential | -0.139 | -0.055 | -0.085 |
+| Yards per Play Differential | -0.518 | -0.356 | -0.163 |
+| Turnover Margin | 0.455 | 0.364 | 0.091 |
+| Red Zone TD Rate (Off) | 0.124 | 0.142 | -0.018 |
+| Pressure Rate (Def) | 0.067 | 0.057 | 0.010 |
+| Tempo | 8.000 | 7.200 | 0.800 |
+| PowerScore | 1.704 | 1.572 | 0.132 |
+| PowerScore | 1.704 | 1.572 | 0.132 |
+| Tempo | 8.000 | 7.200 | 0.800 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | TB | ARI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.340 | -0.097 | -0.242 |
-| EPA Defense | 20% | 0.072 | -0.056 | +0.128 |
-| Success Rate Offense | 25% | 37.3% | 46.6% | -9.3 pp |
-| Tempo | 20% | 0.036 | 0.058 | -0.022 |
+| EPA Offense | 35% | -0.001 | -0.059 | +0.058 |
+| EPA Defense | 20% | -0.059 | -0.001 | -0.058 |
+| Success Rate Offense | 25% | 46.2% | 61.1% | -14.9 pp |
+| Tempo | 20% | 0.087 | 0.139 | -0.051 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | TB | ARI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.340 | -0.097 | -0.242 |
-| EPA Defense | 20% | 0.072 | -0.056 | +0.128 |
-| Success Rate Offense | 15% | 37.3% | 46.6% | -9.3 pp |
-| Turnover Margin | 10% | -2.000 | 4.000 | -6.000 |
-| Tempo | 10% | 0.036 | 0.058 | -0.022 |
-| Red Zone TD Rate (Off) | 10% | 9.1% | 7.7% | +1.4 pp |
-| Pressure Rate (Def) | 10% | 2.8% | 8.8% | -6.0 pp |
+| EPA Offense | 25% | -0.001 | -0.059 | +0.058 |
+| EPA Defense | 20% | -0.059 | -0.001 | -0.058 |
+| Success Rate Offense | 15% | 46.2% | 61.1% | -14.9 pp |
+| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
+| Tempo | 10% | 0.087 | 0.139 | -0.051 |
+| Red Zone TD Rate (Off) | 10% | 11.1% | 33.3% | -22.2 pp |
+| Pressure Rate (Def) | 10% | 4.8% | 6.1% | -1.3 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-ARI edge: +0.087 (TB -0.004 vs ARI +0.083)
+ARI edge: +0.039 (TB +0.121 vs ARI +0.160)
 **7 metrics version:**
-ARI edge: +0.656 (TB -0.199 vs ARI +0.457)
-**Verdict:** ARI holds the edge in the extended breakdown (lead 0.656), driven by Turnover Margin (10% weight).
+TB edge: +0.352 (TB +0.282 vs ARI -0.070)
+**Verdict:** TB holds the edge in the extended breakdown (lead 0.352), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ ARI edge: +0.656 (TB -0.199 vs ARI +0.457)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TB - ARI) | -1.6 pts (favours ARI) |
-| Model Win% TB | 43.3% |
-| Model Win% ARI | 56.7% |
-| SOS Differential (TB-ARI) | -0.018 |
+| Model Spread (TB - ARI) | +2.4 pts (favours TB) |
+| Model Win% TB | 60.0% |
+| Model Win% ARI | 40.0% |
+| SOS Differential (TB-ARI) | -0.063 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| TB | 45.8% | n/a | n/a | 55.9% | 43.2% | n/a |
-| ARI | 54.4% | n/a | n/a | 55.6% | 57.6% | n/a |
+| TB | 41.2% | 43.3% | -2.0% | 39.4% | 51.1% | Slight run lean |
+| ARI | 58.3% | 43.3% | 15.1% | 66.7% | 53.3% | Pass heavy |
 
 ## Situational Edges
 
@@ -76,29 +76,29 @@ ARI edge: +0.656 (TB -0.199 vs ARI +0.457)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | +3.9 pp | -0.8 pp | +5.8 pp |
-| ARI | +2.5 pp | +5.0 pp | -5.9 pp |
+| TB | +1.5 pp | -1.8 pp | +4.3 pp |
+| ARI | +2.6 pp | +2.1 pp | -5.2 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -3.8 pp | -9.1 pp | -8.1 pp |
-| ARI | -0.2 pp | -0.5 pp | -0.4 pp |
+| TB | -2.5 pp | -6.7 pp | -5.0 pp |
+| ARI | +0.1 pp | -0.8 pp | -5.0 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -0.5 pp | -1.2 pp | -0.4 pp |
-| ARI | -1.4 pp | -1.1 pp | -4.1 pp |
+| TB | -0.3 pp | -0.8 pp | -0.1 pp |
+| ARI | -1.9 pp | -4.2 pp | -4.9 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -1.6 pp | -3.4 pp | -4.9 pp |
-| ARI | -0.2 pp | +0.4 pp | +1.0 pp |
+| TB | -1.5 pp | -4.2 pp | -3.0 pp |
+| ARI | -0.2 pp | -0.1 pp | -2.1 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -3.4 pp | -8.0 pp | -4.9 pp |
-| ARI | -1.1 pp | +1.9 pp | -4.1 pp |
+| TB | -3.1 pp | -6.4 pp | +1.8 pp |
+| ARI | -0.8 pp | +2.2 pp | -7.3 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -8.0 pp | -11.8 pp | -16.4 pp |
-| ARI | -3.1 pp | -0.3 pp | -0.4 pp |
+| TB | -7.1 pp | -12.1 pp | -15.6 pp |
+| ARI | -3.2 pp | -1.4 pp | -5.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -1.6 pp | -3.4 pp | -4.9 pp |
-| ARI | -0.2 pp | +0.4 pp | +1.0 pp |
+| TB | -1.5 pp | -4.2 pp | -3.0 pp |
+| ARI | -0.2 pp | -0.1 pp | -2.1 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -0.5 pp | -1.2 pp | -0.4 pp |
-| ARI | -1.4 pp | -1.1 pp | -4.1 pp |
+| TB | -0.3 pp | -0.8 pp | -0.1 pp |
+| ARI | -1.9 pp | -4.2 pp | -4.9 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 50.1 | 50.9 | 51.7 |
-| ARI | 49.6 | 51.0 | 50.9 |
+| TB | 49.0 | 47.4 | 49.5 |
+| ARI | 51.5 | 54.3 | 59.2 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 47.9 | 44.8 | 46.9 |
-| ARI | 47.1 | 50.1 | 49.9 |
+| TB | 47.3 | 43.4 | 44.4 |
+| ARI | 46.1 | 48.1 | 43.0 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 2.1 | 6.1 | 4.8 |
-| ARI | 2.6 | 1.0 | 0.9 |
+| TB | 1.7 | 3.9 | 5.0 |
+| ARI | 5.4 | 6.2 | 16.3 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 2.06 | 1.60 | 1.55 |
-| ARI | 2.08 | 2.39 | 2.23 |
+| TB | 2.05 | 1.44 | 1.67 |
+| ARI | 2.06 | 2.21 | 1.74 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 2.17 | 2.16 | 2.36 |
-| ARI | 2.06 | 2.45 | 2.15 |
+| TB | 2.19 | 2.25 | 3.04 |
+| ARI | 2.12 | 2.36 | 2.67 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | -0.11 | -0.56 | -0.81 |
-| ARI | 0.02 | -0.06 | 0.08 |
+| TB | -0.14 | -0.81 | -1.37 |
+| ARI | -0.05 | -0.15 | -0.93 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 7.28 | 6.74 | 7.11 |
-| ARI | 8.19 | 8.74 | 8.31 |
+| TB | 7.26 | 6.90 | 7.26 |
+| ARI | 8.15 | 8.49 | 8.16 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 43.6% | 43.9% | 39.1% |
-| ARI | 47.8% | 51.9% | 53.5% |
+| TB | 44.5% | 47.2% | 44.4% |
+| ARI | 48.5% | 52.6% | 56.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 56.4% | 56.1% | 60.9% |
-| ARI | 52.2% | 48.1% | 46.5% |
+| TB | 55.5% | 52.8% | 55.6% |
+| ARI | 51.5% | 47.4% | 43.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 3.17 | 2.95 | 2.78 |
-| ARI | 3.92 | 4.54 | 4.45 |
+| TB | 3.23 | 3.26 | 3.22 |
+| ARI | 3.95 | 4.47 | 4.60 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TB | 4.10 | 3.78 | 4.33 |
-| ARI | 4.27 | 4.21 | 3.87 |
+| TB | 4.03 | 3.64 | 4.04 |
+| ARI | 4.20 | 4.02 | 3.56 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.137 | 0.155 |
-| Last 5 games | 0.117 | 0.180 |
-| Last 3 games | 0.125 | 0.149 |
+| Season-to-date | 1.549 | 1.612 |
+| Last 5 games | 1.464 | 1.478 |
+| Last 3 games | 1.510 | 1.354 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W7 | W11 | W12 | Trend |
+| Metric | W10 | W11 | W12 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA TB | -0.292 | 0.142 | -0.340 | - declining |
-| Off EPA ARI | 0.039 | -0.067 | -0.097 | - declining |
-| Def EPA TB | -0.092 | 0.320 | 0.072 | - declining |
-| Def EPA ARI | 0.123 | 0.246 | -0.056 | + improving |
-| Off SR TB | 34.1% | 49.5% | 37.3% | + improving |
-| Off SR ARI | 48.9% | 46.4% | 46.6% | - declining |
-| Def SR TB | 38.6% | 54.2% | 56.5% | - declining |
-| Def SR ARI | 53.4% | 55.4% | 48.7% | + improving |
-| Tempo TB | 6.071 | 7.154 | 7.545 | + improving |
-| Tempo ARI | 9.778 | 8.818 | 7.923 | - declining |
+| Off EPA TB | 0.063 | 0.142 | -0.340 | - declining |
+| Off EPA ARI | -0.193 | -0.067 | -0.097 | + improving |
+| Def EPA TB | 0.144 | 0.320 | 0.072 | + improving |
+| Def EPA ARI | 0.113 | 0.246 | -0.056 | + improving |
+| Off SR TB | 51.8% | 49.5% | 37.3% | - declining |
+| Off SR ARI | 40.9% | 46.4% | 46.6% | + improving |
+| Def SR TB | 41.0% | 54.2% | 56.5% | - declining |
+| Def SR ARI | 54.5% | 55.4% | 48.7% | + improving |
+| Tempo TB | 7.083 | 7.154 | 7.545 | + improving |
+| Tempo ARI | 7.750 | 8.818 | 7.923 | + improving |
 
 ## Matchup Analogs
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | SF (H) | 30-21 | TB | 0.703 | 0.157 | 53.6% | 0.827 |
-| 3 | NYJ (H) | 29-21 | TB | 0.616 | -0.053 | 38.9% | 0.667 |
-| 8 | NO (A) | 17-3 | TB | 0.581 | -0.078 | 35.6% | 1.273 |
+| 6 | SF (H) | 30-21 | TB | 0.714 | 0.157 | 53.6% | 0.827 |
+| 8 | NO (A) | 17-3 | TB | 0.646 | -0.078 | 35.6% | 1.273 |
+| 3 | NYJ (H) | 29-21 | TB | 0.592 | -0.053 | 38.9% | 0.667 |
 
 **ARI analogs vs TB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | TEN (H) | 21-16 | ARI | 0.830 | -0.063 | 38.6% | 0.385 |
-| 1 | NO (A) | 20-11 | ARI | 0.817 | 0.016 | 44.4% | 1.040 |
-| 2 | CAR (H) | 21-22 | CAR | 0.545 | 0.041 | 45.7% | -0.100 |
+| 5 | TEN (H) | 21-16 | ARI | 0.850 | -0.063 | 38.6% | 0.385 |
+| 1 | NO (A) | 20-11 | ARI | 0.845 | 0.016 | 44.4% | 1.040 |
+| 2 | CAR (H) | 21-22 | CAR | 0.605 | 0.041 | 45.7% | -0.100 |
 
 ## Core EPA Offense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 0.003 | 0.009 | -0.037 |
-| TB | -0.019 | -0.082 | -0.092 |
+| ARI | -0.015 | -0.053 | -0.119 |
+| TB | -0.012 | -0.101 | -0.045 |
 
 ## Core EPA Defense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 0.027 | 0.071 | 0.023 |
-| TB | 0.006 | -0.016 | -0.001 |
+| ARI | 0.035 | 0.061 | 0.101 |
+| TB | 0.018 | 0.010 | 0.178 |
 
 ## Success Rate Offense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 46.0% | 48.5% | 47.5% |
-| TB | 43.5% | 41.9% | 41.4% |
+| ARI | 45.5% | 46.4% | 44.7% |
+| TB | 44.2% | 42.0% | 46.4% |
 
 ## Success Rate Defense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 49.0% | 52.0% | 50.0% |
-| TB | 47.9% | 47.0% | 48.9% |
+| ARI | 49.5% | 51.6% | 52.8% |
+| TB | 47.3% | 45.1% | 50.2% |
 
 ## Explosive Play Rate (Off) Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 9.2% | 10.2% | 10.3% |
-| TB | 9.0% | 7.9% | 6.8% |
+| ARI | 9.4% | 9.9% | 9.2% |
+| TB | 9.2% | 7.4% | 8.4% |
 
 ## Third Down Conversion Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 40.0% | 42.8% | 36.9% |
-| TB | 36.5% | 35.9% | 40.3% |
+| ARI | 39.8% | 38.3% | 34.4% |
+| TB | 36.7% | 36.8% | 44.9% |
 
 ## Points per Drive Differential Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | -0.016 | -0.112 | -0.019 |
-| TB | -0.162 | -0.626 | -0.851 |
+| ARI | -0.099 | -0.217 | -0.907 |
+| TB | -0.185 | -0.847 | -1.356 |
 
 ## Yards per Play Differential Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | -0.271 | -0.088 | -0.125 |
-| TB | -0.449 | -1.047 | -1.533 |
+| ARI | -0.356 | -0.284 | -0.522 |
+| TB | -0.518 | -1.485 | -1.839 |
 
 ## Turnover Margin Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 0.300 | 0.600 | 1.333 |
-| TB | 0.400 | 0.400 | 0.000 |
+| ARI | 0.364 | 0.800 | 0.667 |
+| TB | 0.455 | 0.200 | -0.667 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 14.6% | 13.6% | 13.4% |
-| TB | 11.6% | 9.9% | 9.1% |
+| ARI | 14.2% | 12.8% | 11.0% |
+| TB | 12.4% | 9.5% | 13.0% |
 
 ## Pressure Rate (Def) Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 5.7% | 6.6% | 8.9% |
-| TB | 7.1% | 7.4% | 3.9% |
+| ARI | 5.7% | 7.1% | 6.9% |
+| TB | 6.7% | 5.4% | 1.9% |
 
 ## Tempo Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 8.189 | 8.744 | 8.314 |
-| TB | 7.275 | 6.736 | 7.112 |
+| ARI | 8.149 | 8.494 | 8.164 |
+| TB | 7.258 | 6.898 | 7.261 |
 
 ## Pass Rate Offense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ARI | 48.3% | 52.2% | 53.9% |
-| TB | 43.6% | 44.2% | 39.0% |
+| ARI | 49.0% | 52.9% | 56.3% |
+| TB | 44.5% | 47.3% | 44.1% |

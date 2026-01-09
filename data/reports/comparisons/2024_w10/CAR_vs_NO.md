@@ -4,19 +4,21 @@
 
 | Metric | CAR | NO | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.016 | -0.016 | ↑ +0.000 |
-| Core EPA Defense | -0.064 | -0.037 | ↓ -0.027 |
-| Success Rate Offense | 42.5% | 40.8% | ↑ +1.7 pp |
-| Success Rate Defense | 55.9% | 53.2% | ↑ +2.7 pp |
-| Explosive Play Rate (Off) | 8.8% | 11.3% | ↓ -2.5 pp |
-| Third Down Conversion | 37.5% | 38.5% | ↓ -1.0 pp |
-| Points per Drive Differential | 0.121 | 0.121 | ↓ -0.000 |
-| Yards per Play Differential | 0.148 | 0.162 | ↓ -0.015 |
-| Turnover Margin | 2.000 | 1.000 | ↑ +1.000 |
-| Red Zone TD Rate (Off) | 14.3% | 6.2% | ↑ +8.0 pp |
-| Pressure Rate (Def) | 5.0% | 7.3% | ↓ -2.3 pp |
-| Tempo | 5.714 | 5.917 | ↓ -0.202 |
-| PowerScore | 0.105 | 0.112 | ↓ -0.006 |
+| Core EPA Offense | -0.137 | -0.038 | -0.099 |
+| Core EPA Defense | 0.117 | -0.017 | 0.134 |
+| Success Rate Offense | 0.437 | 0.444 | -0.007 |
+| Success Rate Defense | 0.498 | 0.455 | 0.043 |
+| Explosive Play Rate (Off) | 0.079 | 0.093 | -0.013 |
+| Third Down Conversion | 0.282 | 0.375 | -0.093 |
+| Points per Drive Differential | -1.416 | 0.040 | -1.455 |
+| Yards per Play Differential | -1.103 | -0.459 | -0.644 |
+| Turnover Margin | -1.000 | 0.778 | -1.778 |
+| Red Zone TD Rate (Off) | 0.136 | 0.172 | -0.036 |
+| Pressure Rate (Def) | 0.032 | 0.058 | -0.025 |
+| Tempo | 5.714 | 5.917 | -0.202 |
+| PowerScore | 1.231 | 1.272 | -0.042 |
+| PowerScore | 1.231 | 1.272 | -0.042 |
+| Tempo | 5.714 | 5.917 | -0.202 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NO edge: +0.006 (CAR +0.105 vs NO +0.112)
 **7 metrics version:**
 CAR edge: +0.100 (CAR +0.275 vs NO +0.175)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.100), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - NO) | -0.1 pts (favours NO) |
-| Model Win% CAR | 49.5% |
-| Model Win% NO | 50.5% |
-| SOS Differential (CAR-NO) | +0.040 |
+| Model Spread (CAR - NO) | -0.8 pts (favours NO) |
+| Model Win% CAR | 46.8% |
+| Model Win% NO | 53.2% |
+| SOS Differential (CAR-NO) | +0.083 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | NO |
 | --- | ---: | ---: |
-| Season-to-date | 0.161 | 0.121 |
-| Last 5 games | 0.168 | 0.138 |
-| Last 3 games | 0.163 | 0.124 |
+| Season-to-date | 1.662 | 1.580 |
+| Last 5 games | 1.724 | 1.557 |
+| Last 3 games | 1.769 | 1.422 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -244,14 +250,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | NO (A) | 10-56 | NO | 1.000 | -0.370 | 38.0% | -3.503 |
 | 5 | MIA (H) | 10-36 | MIA | 0.772 | -0.195 | 42.1% | -2.167 |
-| 7 | NYJ (H) | 7-34 | NYJ | 0.765 | -0.309 | 45.2% | -2.700 |
+| 7 | NYJ (A) | 7-34 | NYJ | 0.765 | -0.309 | 45.2% | -2.700 |
 
 **NO analogs vs CAR profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | CAR (H) | 47-8 | NO | 1.000 | 0.197 | 49.4% | 3.503 |
-| 6 | NE (A) | 21-51 | NE | 0.958 | -0.252 | 45.2% | -2.000 |
+| 6 | NE (H) | 21-51 | NE | 0.958 | -0.252 | 45.2% | -2.000 |
 | 5 | NYG (H) | 13-26 | NYG | 0.889 | -0.086 | 37.7% | -1.300 |
 
 ## Core EPA Offense Form (up to Week 9)

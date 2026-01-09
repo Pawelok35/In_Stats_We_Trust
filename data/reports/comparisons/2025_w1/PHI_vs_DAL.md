@@ -4,19 +4,21 @@
 
 | Metric | PHI | DAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.169 | 0.139 | ↑ +0.030 |
-| Core EPA Defense | 0.139 | 0.169 | ↓ -0.030 |
-| Success Rate Offense | 52.6% | 51.4% | ↑ +1.2 pp |
-| Success Rate Defense | 51.4% | 52.6% | ↓ -1.2 pp |
-| Explosive Play Rate (Off) | 7.7% | 9.5% | ↓ -1.8 pp |
-| Third Down Conversion | 61.5% | 58.3% | ↑ +3.2 pp |
-| Points per Drive Differential | 0.167 | -0.167 | ↑ +0.333 |
-| Yards per Play Differential | -0.277 | 0.277 | ↓ -0.554 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 27.3% | 22.2% | ↑ +5.1 pp |
-| Pressure Rate (Def) | 0.0% | 3.7% | ↓ -3.7 pp |
-| Tempo | 8.667 | 9.250 | ↓ -0.583 |
-| PowerScore | 0.234 | 0.230 | ↑ +0.004 |
+| Core EPA Offense | 0.169 | 0.139 | 0.030 |
+| Core EPA Defense | 0.139 | 0.169 | -0.030 |
+| Success Rate Offense | 0.526 | 0.514 | 0.012 |
+| Success Rate Defense | 0.514 | 0.526 | -0.012 |
+| Explosive Play Rate (Off) | 0.077 | 0.095 | -0.018 |
+| Third Down Conversion | 0.615 | 0.583 | 0.032 |
+| Points per Drive Differential | 0.167 | -0.167 | 0.333 |
+| Yards per Play Differential | -0.277 | 0.277 | -0.554 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.273 | 0.222 | 0.051 |
+| Pressure Rate (Def) | 0.000 | 0.037 | -0.037 |
+| Tempo | 8.667 | 9.250 | -0.583 |
+| PowerScore | 1.952 | 2.061 | -0.109 |
+| PowerScore | 1.952 | 2.061 | -0.109 |
+| Tempo | 8.667 | 9.250 | -0.583 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ PHI edge: +0.004 (PHI +0.234 vs DAL +0.230)
 **7 metrics version:**
 PHI edge: +0.203 (PHI +0.284 vs DAL +0.081)
 **Verdict:** PHI holds the edge in the extended breakdown (lead 0.203), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - DAL) | +0.1 pts (favours PHI) |
-| Model Win% PHI | 50.3% |
-| Model Win% DAL | 49.7% |
+| Model Spread (PHI - DAL) | -2.0 pts (favours DAL) |
+| Model Win% PHI | 41.7% |
+| Model Win% DAL | 58.3% |
 | SOS Differential (PHI-DAL) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -15,8 +15,8 @@
 | Red Zone TD Rate (Off) | 0.167 | 0.067 | 0.100 |
 | Pressure Rate (Def) | 0.054 | 0.029 | 0.025 |
 | Tempo | 5.909 | 7.545 | -1.636 |
-| PowerScore | -0.015 | 0.072 | -0.087 |
-| PowerScore | -0.015 | 0.072 | -0.087 |
+| PowerScore | 1.151 | 1.557 | -0.406 |
+| PowerScore | 1.151 | 1.557 | -0.406 |
 | Tempo | 5.909 | 7.545 | -1.636 |
 
 ## PowerScore Breakdown (Model)
@@ -56,10 +56,10 @@ ATL edge: +0.251 (MIN -0.112 vs ATL +0.138)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - ATL) | -1.6 pts (favours ATL) |
-| Model Win% MIN | 43.3% |
-| Model Win% ATL | 56.7% |
-| SOS Differential (MIN-ATL) | -0.084 |
+| Model Spread (MIN - ATL) | -7.5 pts (favours ATL) |
+| Model Win% MIN | 22.3% |
+| Model Win% ATL | 77.7% |
+| SOS Differential (MIN-ATL) | -0.290 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -222,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.064 | 0.148 |
-| Last 5 games | 0.064 | 0.148 |
-| Last 3 games | 0.064 | 0.148 |
+| Season-to-date | 1.342 | 1.632 |
+| Last 5 games | 1.342 | 1.632 |
+| Last 3 games | 1.342 | 1.632 |
 
 ## Matchup Analogs
 

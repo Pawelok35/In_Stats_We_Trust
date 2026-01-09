@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.169 | 0.177 | -0.009 |
 | Pressure Rate (Def) | 0.080 | 0.085 | -0.005 |
 | Tempo | 8.333 | 8.625 | -0.292 |
-| PowerScore | 0.262 | 0.230 | 0.032 |
-| PowerScore | 0.262 | 0.230 | 0.032 |
+| PowerScore | 1.899 | 1.935 | -0.036 |
+| PowerScore | 1.899 | 1.935 | -0.036 |
 | Tempo | 8.333 | 8.625 | -0.292 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ KC edge: +0.018 (KC +0.191 vs DET +0.173)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - DET) | +0.6 pts (favours KC) |
-| Model Win% KC | 52.4% |
-| Model Win% DET | 47.6% |
-| SOS Differential (KC-DET) | +0.031 |
+| Model Spread (KC - DET) | -0.7 pts (favours DET) |
+| Model Win% KC | 47.3% |
+| Model Win% DET | 52.7% |
+| SOS Differential (KC-DET) | +0.332 |
 *Neutral-field assumption. Based on schedule through Week 5.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | DET |
 | --- | ---: | ---: |
-| Season-to-date | 0.180 | 0.149 |
-| Last 5 games | 0.180 | 0.149 |
-| Last 3 games | 0.171 | 0.132 |
+| Season-to-date | 1.804 | 1.472 |
+| Last 5 games | 1.804 | 1.472 |
+| Last 3 games | 1.687 | 1.457 |
 
 ## Trend Summary (last 3 weeks)
 

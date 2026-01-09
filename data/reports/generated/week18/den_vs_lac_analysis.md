@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – DEN 14.7 – LAC 19.2
-2️⃣ Predicted Winner (Model) – LAC
-3️⃣ Predicted Margin (Model) – LAC by 4.5 pts
-4️⃣ Win Probability (Model) – 64% (LAC)
-5️⃣ Why This Team Wins (Model) – Na 3rd down LAC utrzymuje 39.6%, podczas gdy DEN jest na 26.9%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera LAC (+7.7% vs +2.1%), więc pasy rywala będą częściej pod presją. Success Rate Offense pokazuje LAC na poziomie 41.7% vs 37.5% (+4.2 pp). Field position edge wynosi +1.5 yds na rzecz LAC (2.5 vs 1.0), co skraca ich boisko. LAC prowadzi w Points per Drive Differential (+0.061 vs -0.294), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – DEN 22.9 – LAC 18.8
+2️⃣ Predicted Winner (Model) – DEN
+3️⃣ Predicted Margin (Model) – DEN by 4.1 pts
+4️⃣ Win Probability (Model) – 72% (DEN)
+5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje DEN (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę DEN: DEN +0.007 vs LAC -0.034. Red Zone TD Rate sprzyja DEN (13.4% vs 11.0%). Field position edge wynosi +0.9 yds na rzecz DEN (-1.6 vs -2.5), co skraca ich boisko. DEN prowadzi w Points per Drive Differential (+0.401 vs +0.370), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – DEN 22.2 – LAC 16.2
+1️⃣ Estimated Score (Market) – DEN 27.1 – LAC 14.6
 2️⃣ Predicted Winner (Market) – DEN
-3️⃣ Predicted Margin (Market) – DEN by 6.0 pts
-4️⃣ Win Probability (Market) – 71% (DEN)
-5️⃣ Forum Output (A) – PowerScore (Model) — DEN +0.218 vs LAC +0.197. Points per Drive Differential — DEN -0.294 vs LAC +0.061. Success Rate Offense — DEN 37.5% vs LAC 41.7%. Third Down Conversion — DEN 26.9% vs LAC 39.6%. Red Zone TD Rate — DEN 14.6% vs LAC 12.6%. Explosive Play Rate — DEN 9.5% vs LAC 9.4%. Model margin -4.5 pts vs market spread DEN +6.0.
-6️⃣ Forum Output (B) – Model idzie w stronę LAC po marginesie -4.5 pkt. LAC notuje +0.061 PPD vs -0.294 u DEN. Różnica w Success Rate to 41.7% vs 37.5%. Na 3rd down LAC (39.6%) wygląda solidniej niż DEN (26.9%). Red Zone i explosiveness ( 12.6% / 9.4% ) utrzymują przewagę jakościową. Market trzyma 6.0 pkt, więc edge vs linia to +10.5.
+3️⃣ Predicted Margin (Market) – DEN by 12.5 pts
+4️⃣ Win Probability (Market) – 94% (DEN)
+5️⃣ Forum Output (A) – PowerScore (Model) — DEN +0.007 vs LAC -0.034. Points per Drive Differential — DEN +0.401 vs LAC +0.370. Success Rate Offense — DEN 46.3% vs LAC 46.9%. Third Down Conversion — DEN 39.9% vs LAC 44.1%. Red Zone TD Rate — DEN 13.4% vs LAC 11.0%. Explosive Play Rate — DEN 9.4% vs LAC 9.4%. Model margin 4.1 pts vs market spread DEN +12.5.
+6️⃣ Forum Output (B) – Model idzie w stronę DEN po marginesie 4.1 pkt. DEN notuje +0.401 PPD vs +0.370 u LAC. Różnica w Success Rate to 46.3% vs 46.9%. Na 3rd down DEN (39.9%) wygląda solidniej niż LAC (44.1%). Red Zone i explosiveness ( 13.4% / 9.4% ) utrzymują przewagę jakościową. Market trzyma 12.5 pkt, więc edge vs linia to -8.4.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +10.5 pts
-• PowerScoreDiff (winner) = -0.021
-• Confidence = 64.0%
+• Edge_vs_Line (winner) = -8.4 pts
+• PowerScoreDiff (winner) = +0.041
+• Confidence = 72.5%
 
-🏷 Model Tag: NEUTRAL — based on 64.0% confidence, +10.5 pts model edge vs line, and PowerScore Δ -0.021.
+🏷 Model Tag: NEUTRAL — based on 72.5% confidence, -8.4 pts model edge vs line, and PowerScore Δ +0.041.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – DEN 14.7 – LAC 19.2
-   • Win Probability – 64% (LAC)
+   • Estimated Score – DEN 22.9 – LAC 18.8
+   • Win Probability – 72% (DEN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – DEN 22.2 – LAC 16.2
-   • Win Probability – 71% (DEN)
+   • Estimated Score – DEN 27.1 – LAC 14.6
+   • Win Probability – 94% (DEN)
 
-🏷 Model Tag: NEUTRAL — LAC (HC +6.0)
+🏷 Model Tag: NEUTRAL — DEN (HC -12.5)

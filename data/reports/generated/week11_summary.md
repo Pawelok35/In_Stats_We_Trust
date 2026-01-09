@@ -58,9 +58,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +6.2 pts
 • PowerScoreDiff (winner) = +0.074
-• Confidence = 98.0%
+• Confidence = 97.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +6.2 pts model edge vs line, and PowerScore Δ +0.074.
+🏷 Model Tag: GOY — based on 97.0% confidence, +6.2 pts model edge vs line, and PowerScore Δ +0.074.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
@@ -134,9 +134,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +10.9 pts
 • PowerScoreDiff (winner) = -0.075
-• Confidence = 95.0%
+• Confidence = 96.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +10.9 pts model edge vs line, and PowerScore Δ -0.075.
+🏷 Model Tag: NEUTRAL — based on 96.0% confidence, +10.9 pts model edge vs line, and PowerScore Δ -0.075.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -210,9 +210,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +12.2 pts
 • PowerScoreDiff (winner) = +0.198
-• Confidence = 98.0%
+• Confidence = 97.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +12.2 pts model edge vs line, and PowerScore Δ +0.198.
+🏷 Model Tag: GOY — based on 97.0% confidence, +12.2 pts model edge vs line, and PowerScore Δ +0.198.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
@@ -248,9 +248,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +4.1 pts
 • PowerScoreDiff (winner) = -0.062
-• Confidence = 85.0%
+• Confidence = 86.0%
 
-🏷 Model Tag: NEUTRAL — based on 85.0% confidence, +4.1 pts model edge vs line, and PowerScore Δ -0.062.
+🏷 Model Tag: NEUTRAL — based on 86.0% confidence, +4.1 pts model edge vs line, and PowerScore Δ -0.062.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -286,9 +286,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +9.3 pts
 • PowerScoreDiff (winner) = +0.050
-• Confidence = 96.5%
+• Confidence = 97.5%
 
-🏷 Model Tag: GOW — based on 96.5% confidence, +9.3 pts model edge vs line, and PowerScore Δ +0.050.
+🏷 Model Tag: GOW — based on 97.5% confidence, +9.3 pts model edge vs line, and PowerScore Δ +0.050.
 💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
@@ -324,9 +324,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -2.4 pts
 • PowerScoreDiff (winner) = +0.144
-• Confidence = 92.0%
+• Confidence = 91.0%
 
-🏷 Model Tag: NEUTRAL — based on 92.0% confidence, -2.4 pts model edge vs line, and PowerScore Δ +0.144.
+🏷 Model Tag: NEUTRAL — based on 91.0% confidence, -2.4 pts model edge vs line, and PowerScore Δ +0.144.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -362,9 +362,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +8.6 pts
 • PowerScoreDiff (winner) = +0.115
-• Confidence = 98.0%
+• Confidence = 99.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +8.6 pts model edge vs line, and PowerScore Δ +0.115.
+🏷 Model Tag: GOY — based on 99.0% confidence, +8.6 pts model edge vs line, and PowerScore Δ +0.115.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
@@ -497,38 +497,38 @@ SUMMARY:
 ## TEN vs HOU
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TEN 39.3 – HOU 17.6
+1️⃣ Estimated Score (Model) – TEN 35.8 – HOU 21.1
 2️⃣ Predicted Winner (Model) – TEN
-3️⃣ Predicted Margin (Model) – TEN by 21.7 pts
+3️⃣ Predicted Margin (Model) – TEN by 14.7 pts
 4️⃣ Win Probability (Model) – 95% (TEN)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje TEN na poziomie 45.0% vs 35.8% (+9.2 pp). PowerScore Summary potwierdza przewagę TEN: TEN +0.139 vs HOU +0.056. Red Zone TD Rate sprzyja TEN (17.1% vs 9.7%). Explosive Play Rate pozostaje po stronie TEN (8.7% vs 6.8%), więc big-play equity jest wyższe. TEN prowadzi w Points per Drive Differential (+0.253 vs -1.286), więc bazowa efektywność napędza przewagę.
+5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje TEN na poziomie 45.0% vs 35.8% (+9.2 pp). Red Zone TD Rate sprzyja TEN (17.1% vs 9.7%). PowerScore Summary potwierdza przewagę TEN: TEN +0.067 vs HOU +0.041. Explosive Play Rate pozostaje po stronie TEN (8.7% vs 6.8%), więc big-play equity jest wyższe. TEN prowadzi w Points per Drive Differential (+0.253 vs -1.286), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
 1️⃣ Estimated Score (Market) – TEN 33.4 – HOU 23.4
 2️⃣ Predicted Winner (Market) – TEN
 3️⃣ Predicted Margin (Market) – TEN by 10.0 pts
 4️⃣ Win Probability (Market) – 85% (TEN)
-5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.139 vs HOU +0.056. Points per Drive Differential — TEN +0.253 vs HOU -1.286. Success Rate Offense — TEN 45.0% vs HOU 35.8%. Third Down Conversion — TEN 35.4% vs HOU 35.0%. Red Zone TD Rate — TEN 17.1% vs HOU 9.7%. Explosive Play Rate — TEN 8.7% vs HOU 6.8%. Model margin 21.7 pts vs market spread TEN +10.0.
-6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 21.7 pkt. TEN notuje +0.253 PPD vs -1.286 u HOU. Różnica w Success Rate to 45.0% vs 35.8%. Na 3rd down TEN (35.4%) wygląda solidniej niż HOU (35.0%). Red Zone i explosiveness ( 17.1% / 8.7% ) utrzymują przewagę jakościową. Market trzyma 10.0 pkt, więc edge vs linia to +11.7.
+5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.067 vs HOU +0.041. Points per Drive Differential — TEN +0.253 vs HOU -1.286. Success Rate Offense — TEN 45.0% vs HOU 35.8%. Third Down Conversion — TEN 35.4% vs HOU 35.0%. Red Zone TD Rate — TEN 17.1% vs HOU 9.7%. Explosive Play Rate — TEN 8.7% vs HOU 6.8%. Model margin 14.7 pts vs market spread TEN +10.0.
+6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 14.7 pkt. TEN notuje +0.253 PPD vs -1.286 u HOU. Różnica w Success Rate to 45.0% vs 35.8%. Na 3rd down TEN (35.4%) wygląda solidniej niż HOU (35.0%). Red Zone i explosiveness ( 17.1% / 8.7% ) utrzymują przewagę jakościową. Market trzyma 10.0 pkt, więc edge vs linia to +4.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +11.7 pts
-• PowerScoreDiff (winner) = +0.083
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +4.7 pts
+• PowerScoreDiff (winner) = +0.026
+• Confidence = 94.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +11.7 pts model edge vs line, and PowerScore Δ +0.083.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
+🏷 Model Tag: VALUE PLAY — based on 94.0% confidence, +4.7 pts model edge vs line, and PowerScore Δ +0.026.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – TEN 39.3 – HOU 17.6
+   • Estimated Score – TEN 35.8 – HOU 21.1
    • Win Probability – 95% (TEN)
 
 2. MARKET PROJECTION (Balanced)
    • Estimated Score – TEN 33.4 – HOU 23.4
    • Win Probability – 85% (TEN)
 
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — TEN (HC -10.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — TEN (HC -10.0)
 
 ---
 
@@ -552,9 +552,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +20.3 pts
 • PowerScoreDiff (winner) = +0.357
-• Confidence = 98.0%
+• Confidence = 97.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +20.3 pts model edge vs line, and PowerScore Δ +0.357.
+🏷 Model Tag: GOY — based on 97.0% confidence, +20.3 pts model edge vs line, and PowerScore Δ +0.357.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:

@@ -1,0 +1,50 @@
+# NFL 2025 Week 19 (Wild Card) - Betting Lines
+# format: away @ home  =>  home team is AFTER "@"
+matchups:
+  - report: data/reports/comparisons/2025_w19/NE_vs_LAC.md
+    home: "NE"
+    away: "LAC"
+    spread: -3.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w19/JAX_vs_BUF.md
+    home: "JAX"
+    away: "BUF"
+    spread: +1.5
+    total: 52.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w19/PIT_vs_HOU.md
+    home: "PIT"
+    away: "HOU"
+    spread: +3
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w19/CHI_vs_GB.md
+    home: "CHI"
+    away: "GB"
+    spread: -1.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w19/PHI_vs_SF.md
+    home: "PHI"
+    away: "SF"
+    spread: -4.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w19/CAR_vs_LA.md
+    home: "CAR"
+    away: "LA"
+    spread: +10.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false

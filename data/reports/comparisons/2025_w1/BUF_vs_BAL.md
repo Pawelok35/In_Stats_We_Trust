@@ -4,19 +4,21 @@
 
 | Metric | BUF | BAL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.202 | 0.340 | ↓ -0.138 |
-| Core EPA Defense | 0.340 | 0.202 | ↑ +0.138 |
-| Success Rate Offense | 48.6% | 56.3% | ↓ -7.7 pp |
-| Success Rate Defense | 56.3% | 48.6% | ↑ +7.7 pp |
-| Explosive Play Rate (Off) | 12.1% | 22.5% | ↓ -10.4 pp |
-| Third Down Conversion | 38.9% | 46.2% | ↓ -7.3 pp |
-| Points per Drive Differential | -0.483 | 0.483 | ↓ -0.965 |
-| Yards per Play Differential | -1.440 | 1.440 | ↓ -2.879 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 17.2% | 10.0% | ↑ +7.2 pp |
-| Pressure Rate (Def) | 9.5% | 1.9% | ↑ +7.6 pp |
-| Tempo | 8.231 | 6.455 | ↑ +1.776 |
-| PowerScore | 0.285 | 0.345 | ↓ -0.061 |
+| Core EPA Offense | 0.202 | 0.340 | -0.138 |
+| Core EPA Defense | 0.340 | 0.202 | 0.138 |
+| Success Rate Offense | 0.486 | 0.563 | -0.077 |
+| Success Rate Defense | 0.563 | 0.486 | 0.077 |
+| Explosive Play Rate (Off) | 0.121 | 0.225 | -0.104 |
+| Third Down Conversion | 0.389 | 0.462 | -0.073 |
+| Points per Drive Differential | -0.483 | 0.483 | -0.965 |
+| Yards per Play Differential | -1.440 | 1.440 | -2.879 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.172 | 0.100 | 0.072 |
+| Pressure Rate (Def) | 0.095 | 0.019 | 0.076 |
+| Tempo | 8.231 | 6.455 | 1.776 |
+| PowerScore | 1.906 | 1.591 | 0.315 |
+| PowerScore | 1.906 | 1.591 | 0.315 |
+| Tempo | 8.231 | 6.455 | 1.776 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ BAL edge: +0.061 (BUF +0.285 vs BAL +0.345)
 **7 metrics version:**
 BUF edge: +0.186 (BUF +0.330 vs BAL +0.144)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.186), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - BAL) | -1.1 pts (favours BAL) |
-| Model Win% BUF | 45.3% |
-| Model Win% BAL | 54.7% |
+| Model Spread (BUF - BAL) | +5.8 pts (favours BUF) |
+| Model Win% BUF | 72.5% |
+| Model Win% BAL | 27.5% |
 | SOS Differential (BUF-BAL) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

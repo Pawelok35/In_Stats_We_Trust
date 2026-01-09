@@ -4,19 +4,21 @@
 
 | Metric | GB | CAR | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.056 | 0.031 | ↓ -0.087 |
-| Core EPA Defense | 0.106 | 0.064 | ↑ +0.042 |
-| Success Rate Offense | 47.5% | 43.1% | ↑ +4.4 pp |
-| Success Rate Defense | 49.3% | 43.8% | ↑ +5.6 pp |
-| Explosive Play Rate (Off) | 11.2% | 11.1% | ↑ +0.1 pp |
-| Third Down Conversion | 23.1% | 40.0% | ↓ -16.9 pp |
-| Points per Drive Differential | -0.444 | 0.091 | ↓ -0.535 |
-| Yards per Play Differential | 1.587 | -1.031 | ↑ +2.618 |
-| Turnover Margin | -1.000 | -1.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 6.2% | 27.3% | ↓ -21.0 pp |
-| Pressure Rate (Def) | 3.8% | 2.9% | ↑ +0.9 pp |
-| Tempo | 8.889 | 6.545 | ↑ +2.343 |
-| PowerScore | 0.143 | 0.154 | ↓ -0.011 |
+| Core EPA Offense | 0.051 | -0.158 | 0.208 |
+| Core EPA Defense | -0.043 | 0.124 | -0.166 |
+| Success Rate Offense | 0.457 | 0.438 | 0.020 |
+| Success Rate Defense | 0.499 | 0.505 | -0.006 |
+| Explosive Play Rate (Off) | 0.113 | 0.076 | 0.037 |
+| Third Down Conversion | 0.328 | 0.268 | 0.061 |
+| Points per Drive Differential | 0.481 | -1.604 | 2.085 |
+| Yards per Play Differential | 0.487 | -1.112 | 1.599 |
+| Turnover Margin | 0.875 | -1.000 | 1.875 |
+| Red Zone TD Rate (Off) | 0.146 | 0.119 | 0.027 |
+| Pressure Rate (Def) | 0.073 | 0.033 | 0.040 |
+| Tempo | 8.889 | 6.545 | 2.343 |
+| PowerScore | 1.898 | 1.440 | 0.458 |
+| PowerScore | 1.898 | 1.440 | 0.458 |
+| Tempo | 8.889 | 6.545 | 2.343 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CAR edge: +0.011 (GB +0.143 vs CAR +0.154)
 **7 metrics version:**
 CAR edge: +0.027 (GB -0.000 vs CAR +0.027)
 **Verdict:** CAR holds the edge in the extended breakdown (lead 0.027), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - CAR) | -0.2 pts (favours CAR) |
-| Model Win% GB | 49.2% |
-| Model Win% CAR | 50.8% |
-| SOS Differential (GB-CAR) | -0.019 |
+| Model Spread (GB - CAR) | +8.5 pts (favours GB) |
+| Model Win% GB | 80.4% |
+| Model Win% CAR | 19.6% |
+| SOS Differential (GB-CAR) | -0.092 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | GB | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.142 | 0.161 |
-| Last 5 games | 0.149 | 0.180 |
-| Last 3 games | 0.163 | 0.177 |
+| Season-to-date | 1.543 | 1.635 |
+| Last 5 games | 1.533 | 1.720 |
+| Last 3 games | 1.480 | 1.705 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | BUF (A) | 14-26 | BUF | 0.755 | -0.123 | 44.9% | -1.061 |
+| 8 | BUF (H) | 14-26 | BUF | 0.755 | -0.123 | 44.9% | -1.061 |
 | 2 | ARI (A) | 3-24 | ARI | 0.646 | -0.383 | 30.8% | -1.894 |
 | 3 | ATL (H) | 36-22 | CAR | 0.554 | 0.161 | 51.6% | 1.167 |
 

@@ -4,19 +4,21 @@
 
 | Metric | LV | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.084 | -0.047 | ↓ -0.037 |
-| Core EPA Defense | 0.085 | -0.053 | ↑ +0.138 |
-| Success Rate Offense | 49.0% | 45.9% | ↑ +3.0 pp |
-| Success Rate Defense | 46.5% | 40.0% | ↑ +6.5 pp |
-| Explosive Play Rate (Off) | 9.2% | 9.5% | ↓ -0.3 pp |
-| Third Down Conversion | 23.5% | 8.3% | ↑ +15.2 pp |
-| Points per Drive Differential | -1.053 | 0.673 | ↓ -1.726 |
-| Yards per Play Differential | -0.014 | -0.194 | ↑ +0.181 |
-| Turnover Margin | -2.000 | -2.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 4.8% | 17.6% | ↓ -12.9 pp |
-| Pressure Rate (Def) | 2.3% | 11.8% | ↓ -9.4 pp |
-| Tempo | 8.167 | 7.400 | ↑ +0.767 |
-| PowerScore | 0.128 | 0.107 | ↑ +0.022 |
+| Core EPA Offense | -0.115 | -0.123 | 0.008 |
+| Core EPA Defense | 0.018 | -0.015 | 0.033 |
+| Success Rate Offense | 0.457 | 0.406 | 0.051 |
+| Success Rate Defense | 0.471 | 0.426 | 0.045 |
+| Explosive Play Rate (Off) | 0.074 | 0.073 | 0.001 |
+| Third Down Conversion | 0.332 | 0.247 | 0.086 |
+| Points per Drive Differential | -0.790 | -0.745 | -0.045 |
+| Yards per Play Differential | -0.315 | -0.955 | 0.640 |
+| Turnover Margin | -1.500 | -0.500 | -1.000 |
+| Red Zone TD Rate (Off) | 0.122 | 0.095 | 0.027 |
+| Pressure Rate (Def) | 0.055 | 0.083 | -0.027 |
+| Tempo | 8.167 | 7.400 | 0.767 |
+| PowerScore | 1.743 | 1.568 | 0.175 |
+| PowerScore | 1.743 | 1.568 | 0.175 |
+| Tempo | 8.167 | 7.400 | 0.767 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LV edge: +0.022 (LV +0.128 vs CLE +0.107)
 **7 metrics version:**
 LV edge: +0.000 (LV -0.114 vs CLE -0.115)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.000), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - CLE) | +0.4 pts (favours LV) |
-| Model Win% LV | 51.7% |
-| Model Win% CLE | 48.3% |
-| SOS Differential (LV-CLE) | +0.019 |
+| Model Spread (LV - CLE) | +3.2 pts (favours LV) |
+| Model Win% LV | 63.2% |
+| Model Win% CLE | 36.8% |
+| SOS Differential (LV-CLE) | +0.237 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.120 | 0.101 |
-| Last 5 games | 0.141 | 0.122 |
-| Last 3 games | 0.212 | 0.149 |
+| Season-to-date | 1.635 | 1.398 |
+| Last 5 games | 1.787 | 1.418 |
+| Last 3 games | 2.090 | 1.464 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,16 +249,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | CHI (H) | 20-11 | LV | 0.962 | -0.074 | 43.4% | 0.818 |
-| 6 | TEN (A) | 13-32 | TEN | 0.947 | -0.269 | 46.8% | -1.727 |
+| 6 | TEN (H) | 13-32 | TEN | 0.947 | -0.269 | 46.8% | -1.727 |
 | 5 | IND (A) | 18-26 | IND | 0.832 | -0.174 | 40.0% | -0.654 |
 
 **CLE analogs vs LV profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | NE (H) | 29-26 | CLE | 0.977 | 0.117 | 51.2% | 0.235 |
+| 8 | NE (A) | 29-26 | CLE | 0.977 | 0.117 | 51.2% | 0.235 |
 | 1 | DAL (H) | 23-25 | DAL | 0.900 | -0.244 | 29.6% | -0.157 |
-| 7 | MIA (A) | 14-20 | MIA | 0.761 | -0.187 | 35.7% | -0.400 |
+| 7 | MIA (H) | 14-20 | MIA | 0.761 | -0.187 | 35.7% | -0.400 |
 
 ## Core EPA Offense Form (up to Week 11)
 

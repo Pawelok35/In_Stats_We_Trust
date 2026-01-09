@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.091 | 0.133 | -0.042 |
 | Pressure Rate (Def) | 0.060 | 0.053 | 0.007 |
 | Tempo | 6.273 | 5.615 | 0.657 |
-| PowerScore | 0.071 | 0.054 | 0.017 |
-| PowerScore | 0.071 | 0.054 | 0.017 |
+| PowerScore | 1.305 | 1.155 | 0.150 |
+| PowerScore | 1.305 | 1.155 | 0.150 |
 | Tempo | 6.273 | 5.615 | 0.657 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ IND edge: +0.366 (TEN -0.229 vs IND +0.138)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - IND) | +0.3 pts (favours TEN) |
-| Model Win% TEN | 51.3% |
-| Model Win% IND | 48.7% |
+| Model Spread (TEN - IND) | +2.8 pts (favours TEN) |
+| Model Win% TEN | 61.4% |
+| Model Win% IND | 38.6% |
 | SOS Differential (TEN-IND) | -0.411 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

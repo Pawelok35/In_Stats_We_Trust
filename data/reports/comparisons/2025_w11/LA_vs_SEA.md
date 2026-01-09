@@ -4,20 +4,20 @@
 
 | Metric | LA | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.053 | 0.076 | -0.023 |
-| Core EPA Defense | -0.091 | -0.069 | -0.022 |
-| Success Rate Offense | 0.510 | 0.497 | 0.013 |
-| Success Rate Defense | 0.433 | 0.442 | -0.008 |
+| Core EPA Offense | 0.084 | 0.080 | 0.004 |
+| Core EPA Defense | -0.069 | -0.083 | 0.014 |
+| Success Rate Offense | 0.524 | 0.503 | 0.021 |
+| Success Rate Defense | 0.449 | 0.438 | 0.011 |
 | Explosive Play Rate (Off) | 0.114 | 0.118 | -0.004 |
-| Third Down Conversion | 0.357 | 0.350 | 0.007 |
-| Points per Drive Differential | 1.092 | 0.734 | 0.358 |
-| Yards per Play Differential | 0.827 | 1.201 | -0.373 |
-| Turnover Margin | 0.625 | -0.250 | 0.875 |
-| Red Zone TD Rate (Off) | 0.151 | 0.168 | -0.017 |
-| Pressure Rate (Def) | 0.085 | 0.085 | 0.000 |
+| Third Down Conversion | 0.373 | 0.378 | -0.005 |
+| Points per Drive Differential | 1.116 | 0.745 | 0.371 |
+| Yards per Play Differential | 0.700 | 1.201 | -0.502 |
+| Turnover Margin | 0.778 | -0.333 | 1.111 |
+| Red Zone TD Rate (Off) | 0.163 | 0.159 | 0.004 |
+| Pressure Rate (Def) | 0.076 | 0.087 | -0.011 |
 | Tempo | 5.750 | 8.083 | -2.333 |
-| PowerScore | 0.021 | 0.047 | -0.026 |
-| PowerScore | 0.021 | 0.047 | -0.026 |
+| PowerScore | 1.153 | 1.651 | -0.498 |
+| PowerScore | 1.153 | 1.651 | -0.498 |
 | Tempo | 5.750 | 8.083 | -2.333 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ LA edge: +0.602 (LA +0.312 vs SEA -0.289)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - SEA) | -0.5 pts (favours SEA) |
-| Model Win% LA | 48.0% |
-| Model Win% SEA | 52.0% |
-| SOS Differential (LA-SEA) | -0.012 |
+| Model Spread (LA - SEA) | -9.2 pts (favours SEA) |
+| Model Win% LA | 17.7% |
+| Model Win% SEA | 82.3% |
+| SOS Differential (LA-SEA) | +0.131 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ LA edge: +0.602 (LA +0.312 vs SEA -0.289)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +0.8 pp | -1.3 pp | +7.6 pp |
-| SEA | +5.2 pp | +6.6 pp | +1.9 pp |
+| LA | +2.1 pp | +2.1 pp | +7.5 pp |
+| SEA | +7.1 pp | +10.3 pp | +17.7 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +3.8 pp | +4.6 pp | +8.0 pp |
-| SEA | +7.9 pp | +7.9 pp | +11.0 pp |
+| LA | +5.1 pp | +7.5 pp | +9.4 pp |
+| SEA | +6.0 pp | +7.6 pp | +6.1 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +4.1 pp | +6.0 pp | +7.7 pp |
-| SEA | +4.9 pp | +3.1 pp | +6.1 pp |
+| LA | +4.5 pp | +6.2 pp | +7.7 pp |
+| SEA | +3.8 pp | +3.0 pp | +1.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +4.0 pp | +2.1 pp | +2.2 pp |
-| SEA | +3.1 pp | +3.4 pp | +3.6 pp |
+| LA | +3.7 pp | +1.3 pp | +1.2 pp |
+| SEA | +3.0 pp | +3.1 pp | +3.9 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +9.7 pp | +8.9 pp | +7.0 pp |
-| SEA | +2.2 pp | -0.8 pp | -0.2 pp |
+| LA | +11.6 pp | +12.6 pp | +13.6 pp |
+| SEA | +2.5 pp | +0.8 pp | +1.1 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +2.9 pp | +6.3 pp | +9.4 pp |
-| SEA | +11.6 pp | +10.9 pp | +11.5 pp |
+| LA | +4.7 pp | +9.0 pp | +11.7 pp |
+| SEA | +8.3 pp | +6.4 pp | +4.0 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +4.0 pp | +2.1 pp | +2.2 pp |
-| SEA | +3.1 pp | +3.4 pp | +3.6 pp |
+| LA | +3.7 pp | +1.3 pp | +1.2 pp |
+| SEA | +3.0 pp | +3.1 pp | +3.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | +4.1 pp | +6.0 pp | +7.7 pp |
-| SEA | +4.9 pp | +3.1 pp | +6.1 pp |
+| LA | +4.5 pp | +6.2 pp | +7.7 pp |
+| SEA | +3.8 pp | +3.0 pp | +1.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 43.2 | 40.2 | 37.1 |
-| SEA | 45.3 | 44.0 | 40.2 |
+| LA | 43.5 | 41.4 | 38.3 |
+| SEA | 44.3 | 42.4 | 40.3 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 48.0 | 48.2 | 49.3 |
-| SEA | 48.5 | 49.0 | 46.9 |
+| LA | 49.3 | 50.1 | 52.8 |
+| SEA | 50.9 | 52.9 | 56.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | -4.8 | -8.0 | -12.2 |
-| SEA | -3.2 | -5.0 | -6.7 |
+| LA | -5.8 | -8.7 | -14.4 |
+| SEA | -6.6 | -10.4 | -16.5 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 2.48 | 2.47 | 2.67 |
-| SEA | 2.44 | 2.59 | 2.38 |
+| LA | 2.67 | 2.86 | 3.51 |
+| SEA | 2.46 | 2.66 | 2.72 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 1.39 | 1.22 | 0.69 |
-| SEA | 1.70 | 1.75 | 1.09 |
+| LA | 1.55 | 1.47 | 1.55 |
+| SEA | 1.72 | 1.78 | 1.37 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 1.09 | 1.25 | 1.98 |
-| SEA | 0.73 | 0.84 | 1.30 |
+| LA | 1.12 | 1.39 | 1.96 |
+| SEA | 0.75 | 0.88 | 1.35 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 7.67 | 7.68 | 7.78 |
-| SEA | 6.71 | 6.82 | 6.06 |
+| LA | 7.77 | 7.88 | 8.45 |
+| SEA | 6.68 | 6.46 | 6.20 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 46.2% | 47.4% | 42.8% |
-| SEA | 38.5% | 39.8% | 39.8% |
+| LA | 46.3% | 46.6% | 43.1% |
+| SEA | 36.8% | 37.4% | 33.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 53.8% | 52.6% | 57.2% |
-| SEA | 61.5% | 60.2% | 60.2% |
+| LA | 53.7% | 53.4% | 56.9% |
+| SEA | 63.2% | 62.6% | 66.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 3.54 | 3.64 | 3.33 |
-| SEA | 2.58 | 2.71 | 2.42 |
+| LA | 3.59 | 3.67 | 3.64 |
+| SEA | 2.46 | 2.42 | 2.06 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| LA | 4.13 | 4.04 | 4.46 |
-| SEA | 4.13 | 4.10 | 3.65 |
+| LA | 4.17 | 4.20 | 4.81 |
+| SEA | 4.22 | 4.04 | 4.14 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LA | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.104 | 0.116 |
-| Last 5 games | 0.109 | 0.142 |
-| Last 3 games | 0.077 | 0.080 |
+| Season-to-date | 1.716 | 1.585 |
+| Last 5 games | 1.824 | 1.620 |
+| Last 3 games | 1.680 | 1.547 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W6 | W7 | W9 | Trend |
+| Metric | W7 | W9 | W10 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA LA | -0.084 | 0.245 | 0.172 | + improving |
-| Off EPA SEA | 0.039 | -0.178 | 0.333 | + improving |
-| Def EPA LA | -0.263 | -0.114 | -0.211 | - declining |
-| Def EPA SEA | -0.087 | -0.263 | -0.098 | + improving |
-| Off SR LA | 46.2% | 51.7% | 53.1% | + improving |
-| Off SR SEA | 43.1% | 41.8% | 60.0% | + improving |
-| Def SR LA | 40.4% | 45.7% | 40.7% | = stable |
-| Def SR SEA | 37.2% | 40.0% | 48.8% | - declining |
-| Tempo LA | 6.500 | 7.250 | 9.600 | + improving |
-| Tempo SEA | 6.000 | 5.688 | 6.500 | + improving |
+| Off EPA LA | 0.245 | 0.172 | 0.331 | + improving |
+| Off EPA SEA | -0.178 | 0.333 | 0.113 | + improving |
+| Def EPA LA | -0.114 | -0.211 | 0.109 | - declining |
+| Def EPA SEA | -0.263 | -0.098 | -0.193 | - declining |
+| Off SR LA | 51.7% | 53.1% | 63.5% | + improving |
+| Off SR SEA | 41.8% | 60.0% | 54.5% | + improving |
+| Def SR LA | 45.7% | 40.7% | 57.7% | - declining |
+| Def SR SEA | 40.0% | 48.8% | 40.9% | = stable |
+| Tempo LA | 7.250 | 9.600 | 8.500 | + improving |
+| Tempo SEA | 5.688 | 6.500 | 6.417 | + improving |
 
 ## Matchup Analogs
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | IND (H) | 27-20 | LA | 0.796 | 0.001 | 52.2% | 0.583 |
-| 1 | HOU (H) | 14-9 | LA | 0.752 | -0.074 | 39.5% | 0.556 |
-| 3 | PHI (A) | 32-25 | LA | 0.500 | -0.106 | 53.1% | 0.659 |
+| 4 | IND (H) | 27-20 | LA | 0.807 | 0.001 | 52.2% | 0.583 |
+| 1 | HOU (H) | 14-9 | LA | 0.775 | -0.074 | 39.5% | 0.556 |
+| 6 | BAL (A) | 17-3 | LA | 0.544 | -0.084 | 46.2% | 1.367 |
 
 **SEA analogs vs LA profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | HOU (H) | 27-14 | SEA | 0.789 | -0.178 | 41.8% | 0.821 |
-| 5 | TB (H) | 35-38 | TB | 0.646 | 0.243 | 57.1% | -0.300 |
-| 1 | SF (H) | 13-15 | SF | 0.471 | -0.082 | 52.2% | -0.245 |
+| 7 | HOU (H) | 27-14 | SEA | 0.678 | -0.178 | 41.8% | 0.821 |
+| 5 | TB (H) | 35-38 | TB | 0.535 | 0.243 | 57.1% | -0.300 |
+| 1 | SF (H) | 13-15 | SF | 0.523 | -0.082 | 52.2% | -0.245 |
 
 ## Core EPA Offense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 0.053 | 0.081 | 0.111 |
-| SEA | 0.076 | 0.100 | 0.065 |
+| LA | 0.084 | 0.147 | 0.249 |
+| SEA | 0.080 | 0.110 | 0.090 |
 
 ## Core EPA Defense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | -0.091 | -0.107 | -0.196 |
-| SEA | -0.069 | -0.023 | -0.149 |
+| LA | -0.069 | -0.073 | -0.072 |
+| SEA | -0.083 | -0.060 | -0.184 |
 
 ## Success Rate Offense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 51.3% | 53.0% | 50.8% |
-| SEA | 49.3% | 49.1% | 47.4% |
+| LA | 52.7% | 55.3% | 56.0% |
+| SEA | 49.9% | 50.8% | 51.1% |
 
 ## Success Rate Defense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 43.8% | 45.5% | 42.6% |
-| SEA | 44.0% | 44.5% | 41.7% |
+| LA | 45.2% | 47.5% | 48.7% |
+| SEA | 43.6% | 43.6% | 43.0% |
 
 ## Explosive Play Rate (Off) Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 11.4% | 10.9% | 9.3% |
-| SEA | 11.8% | 12.1% | 12.3% |
+| LA | 11.5% | 10.6% | 10.1% |
+| SEA | 11.8% | 11.8% | 12.9% |
 
 ## Third Down Conversion Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 35.6% | 33.5% | 33.6% |
-| SEA | 34.6% | 35.5% | 24.6% |
+| LA | 37.3% | 36.9% | 38.1% |
+| SEA | 37.5% | 38.9% | 41.3% |
 
 ## Points per Drive Differential Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 1.095 | 1.235 | 1.997 |
-| SEA | 0.748 | 0.836 | 1.188 |
+| LA | 1.118 | 1.397 | 1.980 |
+| SEA | 0.758 | 0.869 | 1.240 |
 
 ## Yards per Play Differential Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 0.827 | 0.518 | 0.007 |
-| SEA | 1.201 | 1.529 | 1.865 |
+| LA | 0.700 | 0.271 | -0.228 |
+| SEA | 1.201 | 1.437 | 1.634 |
 
 ## Turnover Margin Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 0.625 | 0.800 | 1.333 |
-| SEA | -0.250 | -0.400 | -0.667 |
+| LA | 0.778 | 0.800 | 1.333 |
+| SEA | -0.333 | -1.000 | -1.000 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 15.1% | 16.7% | 15.6% |
-| SEA | 16.8% | 17.3% | 15.2% |
+| LA | 16.3% | 18.4% | 20.5% |
+| SEA | 15.9% | 16.3% | 16.3% |
 
 ## Pressure Rate (Def) Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 8.5% | 6.9% | 9.0% |
-| SEA | 8.5% | 10.1% | 11.7% |
+| LA | 7.6% | 5.8% | 5.5% |
+| SEA | 8.7% | 9.5% | 10.3% |
 
 ## Tempo Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 7.673 | 7.679 | 7.783 |
-| SEA | 6.713 | 6.817 | 6.062 |
+| LA | 7.765 | 7.879 | 8.450 |
+| SEA | 6.680 | 6.461 | 6.201 |
 
 ## Pass Rate Offense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| LA | 46.1% | 47.3% | 42.3% |
-| SEA | 38.6% | 39.8% | 39.9% |
+| LA | 46.2% | 46.4% | 42.9% |
+| SEA | 36.9% | 37.4% | 33.5% |

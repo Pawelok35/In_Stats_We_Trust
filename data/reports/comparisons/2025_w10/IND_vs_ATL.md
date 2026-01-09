@@ -15,39 +15,39 @@
 | Turnover Margin | 0.556 | 0.000 | 0.556 |
 | Red Zone TD Rate (Off) | 0.187 | 0.120 | 0.067 |
 | Pressure Rate (Def) | 0.068 | 0.094 | -0.026 |
-| Tempo | 8.364 | 7.300 | 1.064 |
-| PowerScore | 0.147 | 0.139 | 0.008 |
-| PowerScore | 0.147 | 0.139 | 0.008 |
-| Tempo | 8.364 | 7.300 | 1.064 |
+| Tempo | 7.077 | 6.154 | 0.923 |
+| PowerScore | 1.587 | 1.380 | 0.207 |
+| PowerScore | 1.587 | 1.380 | 0.207 |
+| Tempo | 7.077 | 6.154 | 0.923 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | IND | ATL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.042 | 0.016 | -0.058 |
-| EPA Defense | 20% | 0.046 | 0.022 | +0.025 |
-| Success Rate Offense | 25% | 52.2% | 43.8% | +8.3 pp |
-| Tempo | 20% | 0.109 | 0.096 | +0.013 |
+| EPA Offense | 35% | 0.103 | 0.010 | +0.093 |
+| EPA Defense | 20% | 0.010 | 0.103 | -0.093 |
+| Success Rate Offense | 25% | 53.3% | 50.0% | +3.3 pp |
+| Tempo | 20% | 0.141 | 0.138 | +0.004 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | IND | ATL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.042 | 0.016 | -0.058 |
-| EPA Defense | 20% | 0.046 | 0.022 | +0.025 |
-| Success Rate Offense | 15% | 52.2% | 43.8% | +8.3 pp |
-| Turnover Margin | 10% | -3.000 | 2.000 | -5.000 |
-| Tempo | 10% | 0.109 | 0.096 | +0.013 |
-| Red Zone TD Rate (Off) | 10% | 16.7% | 17.6% | -1.0 pp |
-| Pressure Rate (Def) | 10% | 7.7% | 15.8% | -8.1 pp |
+| EPA Offense | 25% | 0.103 | 0.010 | +0.093 |
+| EPA Defense | 20% | 0.010 | 0.103 | -0.093 |
+| Success Rate Offense | 15% | 53.3% | 50.0% | +3.3 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.141 | 0.138 | +0.004 |
+| Red Zone TD Rate (Off) | 10% | 10.5% | 30.0% | -19.5 pp |
+| Pressure Rate (Def) | 10% | 9.1% | 20.6% | -11.5 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-IND edge: +0.008 (IND +0.147 vs ATL +0.139)
+IND edge: +0.023 (IND +0.200 vs ATL +0.177)
 **7 metrics version:**
-ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
-**Verdict:** ATL holds the edge in the extended breakdown (lead 0.505), driven by Turnover Margin (10% weight).
+ATL edge: +0.221 (IND +0.041 vs ATL +0.262)
+**Verdict:** ATL holds the edge in the extended breakdown (lead 0.221), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ ATL edge: +0.505 (IND -0.188 vs ATL +0.317)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - ATL) | +0.2 pts (favours IND) |
-| Model Win% IND | 50.6% |
-| Model Win% ATL | 49.4% |
-| SOS Differential (IND-ATL) | +0.039 |
+| Model Spread (IND - ATL) | +3.8 pts (favours IND) |
+| Model Win% IND | 65.4% |
+| Model Win% ATL | 34.6% |
+| SOS Differential (IND-ATL) | +0.262 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| IND | 59.8% | n/a | n/a | 42.1% | 47.7% | n/a |
-| ATL | 52.1% | n/a | n/a | 43.6% | 47.6% | n/a |
+| IND | 37.0% | 42.4% | -5.5% | 50.0% | 55.2% | Run heavy |
+| ATL | 41.2% | 42.4% | -1.2% | 36.4% | 59.6% | Slight run lean |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.173 | 0.134 |
-| Last 5 games | 0.175 | 0.171 |
-| Last 3 games | 0.179 | 0.159 |
+| Season-to-date | 1.878 | 1.615 |
+| Last 5 games | 1.910 | 1.721 |
+| Last 3 games | 1.876 | 1.777 |
 
 ## Trend Summary (last 3 weeks)
 

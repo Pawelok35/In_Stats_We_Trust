@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 12
 
-_Generated at 2025-11-25T17:10:02.584167+00:00 (UTC)_
+_Generated at 2026-01-08T19:18:53.166552+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\12_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2445, "cols": 18, "timestamp": "2025-11-25T17:10:02.092631+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2445, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-25T17:10:02.092631+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2445, "cols": 24, "timestamp": "2025-11-25T17:10:02.092631+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2445, "cols": 18, "timestamp": "2026-01-08T19:18:52.735711+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2445, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:18:52.735711+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2445, "cols": 24, "timestamp": "2026-01-08T19:18:52.735711+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2025\12_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\12.parquet`
 - Manifest: `data\l4_core12\2025\12_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 28
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\12_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DET | 0.23400493161951333 |
-| NYG | 0.20503282962563343 |
-| SEA | 0.1743403004643908 |
-| NE | 0.16149196518522477 |
-| DAL | 0.15214143725551416 |
-| KC | 0.14336718219536634 |
-| PIT | 0.1402991492008573 |
-| CHI | 0.1381168402859544 |
-| GB | 0.13721494153153724 |
-| CIN | 0.13659833393501852 |
+| TEN | 2.110274643947321 |
+| KC | 2.0240689365813314 |
+| NYG | 1.8077539180610076 |
+| SF | 1.7155550212829151 |
+| NO | 1.7149519172919223 |
+| PIT | 1.6946331871840128 |
+| NE | 1.6857700400515352 |
+| ARI | 1.6558556441293186 |
+| CIN | 1.6448234421601269 |
+| PHI | 1.6270853253685345 |
 
 
 ## Visualizations

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.122 | 0.144 | -0.023 |
 | Pressure Rate (Def) | 0.065 | 0.036 | 0.029 |
 | Tempo | 7.700 | 7.545 | 0.155 |
-| PowerScore | 0.251 | 0.279 | -0.027 |
-| PowerScore | 0.251 | 0.279 | -0.027 |
+| PowerScore | 1.770 | 1.761 | 0.009 |
+| PowerScore | 1.770 | 1.761 | 0.009 |
 | Tempo | 7.700 | 7.545 | 0.155 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ NYG edge: +0.189 (NYG +0.301 vs SF +0.111)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - SF) | -0.5 pts (favours SF) |
-| Model Win% NYG | 47.9% |
-| Model Win% SF | 52.1% |
-| SOS Differential (NYG-SF) | +0.022 |
+| Model Spread (NYG - SF) | +0.2 pts (favours NYG) |
+| Model Win% NYG | 50.7% |
+| Model Win% SF | 49.3% |
+| SOS Differential (NYG-SF) | +0.032 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | SF |
 | --- | ---: | ---: |
-| Season-to-date | 0.173 | 0.151 |
-| Last 5 games | 0.173 | 0.173 |
-| Last 3 games | 0.226 | 0.183 |
+| Season-to-date | 1.715 | 1.683 |
+| Last 5 games | 1.658 | 1.719 |
+| Last 3 games | 1.739 | 1.775 |
 
 ## Trend Summary (last 3 weeks)
 

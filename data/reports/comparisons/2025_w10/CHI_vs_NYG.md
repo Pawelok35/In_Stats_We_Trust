@@ -15,39 +15,39 @@
 | Turnover Margin | 1.625 | -0.333 | 1.958 |
 | Red Zone TD Rate (Off) | 0.126 | 0.129 | -0.003 |
 | Pressure Rate (Def) | 0.067 | 0.066 | 0.001 |
-| Tempo | 8.500 | 7.700 | 0.800 |
-| PowerScore | 0.326 | 0.251 | 0.075 |
-| PowerScore | 0.326 | 0.251 | 0.075 |
-| Tempo | 8.500 | 7.700 | 0.800 |
+| Tempo | 6.833 | 8.091 | -1.258 |
+| PowerScore | 1.500 | 1.726 | -0.226 |
+| PowerScore | 1.500 | 1.726 | -0.226 |
+| Tempo | 6.833 | 8.091 | -1.258 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CHI | NYG | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.306 | 0.109 | +0.197 |
-| EPA Defense | 20% | 0.247 | 0.279 | -0.032 |
-| Success Rate Offense | 25% | 55.9% | 54.5% | +1.3 pp |
-| Tempo | 20% | 0.147 | 0.104 | +0.043 |
+| EPA Offense | 35% | 0.032 | -0.000 | +0.033 |
+| EPA Defense | 20% | -0.000 | 0.032 | -0.033 |
+| Success Rate Offense | 25% | 48.8% | 40.4% | +8.3 pp |
+| Tempo | 20% | 0.159 | 0.157 | +0.001 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CHI | NYG | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.306 | 0.109 | +0.197 |
-| EPA Defense | 20% | 0.247 | 0.279 | -0.032 |
-| Success Rate Offense | 15% | 55.9% | 54.5% | +1.3 pp |
-| Turnover Margin | 10% | 3.000 | 1.000 | +2.000 |
-| Tempo | 10% | 0.147 | 0.104 | +0.043 |
-| Red Zone TD Rate (Off) | 10% | 14.8% | 18.2% | -3.4 pp |
-| Pressure Rate (Def) | 10% | 7.7% | 7.1% | +0.5 pp |
+| EPA Offense | 25% | 0.032 | -0.000 | +0.033 |
+| EPA Defense | 20% | -0.000 | 0.032 | -0.033 |
+| Success Rate Offense | 15% | 48.8% | 40.4% | +8.3 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.159 | 0.157 | +0.001 |
+| Red Zone TD Rate (Off) | 10% | 27.3% | 6.7% | +20.6 pp |
+| Pressure Rate (Def) | 10% | 10.0% | 0.0% | +10.0 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-CHI edge: +0.075 (CHI +0.326 vs NYG +0.251)
+CHI edge: +0.026 (CHI +0.165 vs NYG +0.139)
 **7 metrics version:**
-CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
-**Verdict:** CHI holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
+CHI edge: +0.245 (CHI +0.234 vs NYG -0.011)
+**Verdict:** CHI holds the edge in the extended breakdown (lead 0.245), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ CHI edge: +0.246 (CHI +0.547 vs NYG +0.301)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - NYG) | +1.4 pts (favours CHI) |
-| Model Win% CHI | 55.7% |
-| Model Win% NYG | 44.3% |
-| SOS Differential (CHI-NYG) | -0.012 |
+| Model Spread (CHI - NYG) | -4.2 pts (favours NYG) |
+| Model Win% CHI | 33.3% |
+| Model Win% NYG | 66.7% |
+| SOS Differential (CHI-NYG) | -0.182 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CHI | 39.2% | n/a | n/a | 50.0% | 54.5% | n/a |
-| NYG | 45.5% | n/a | n/a | 53.8% | 58.3% | n/a |
+| CHI | 46.3% | 42.4% | 3.9% | 42.1% | 54.5% | Pass heavy |
+| NYG | 44.9% | 42.4% | 2.5% | 37.5% | 42.9% | Slight pass lean |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.173 | 0.185 |
-| Last 5 games | 0.174 | 0.207 |
-| Last 3 games | 0.201 | 0.260 |
+| Season-to-date | 1.539 | 1.720 |
+| Last 5 games | 1.539 | 1.706 |
+| Last 3 games | 1.615 | 1.803 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 11
 
-_Generated at 2025-11-20T09:32:16.437195+00:00 (UTC)_
+_Generated at 2026-01-08T19:17:56.779289+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\11_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2575, "cols": 18, "timestamp": "2025-11-20T09:32:15.734343+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2575, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-20T09:32:15.734343+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2575, "cols": 24, "timestamp": "2025-11-20T09:32:15.734343+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2575, "cols": 18, "timestamp": "2026-01-08T19:17:56.373727+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2575, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:17:56.373727+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2575, "cols": 24, "timestamp": "2026-01-08T19:17:56.373727+00:00"}
 
 ## L3 Sanity
 
@@ -32,8 +32,8 @@ Last 3 entries from `data\l2_audit\2025\11_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\11.parquet`
 - Manifest: `data\l4_core12\2025\11_manifest.json`
-- Rows: N/A
-- Columns: N/A
+- Rows: 30
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\11_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BUF | 0.30355788969691827 |
-| GB | 0.27484013419197817 |
-| TB | 0.256665829616502 |
-| NYG | 0.23440893341350166 |
-| SF | 0.23016320421093414 |
-| MIA | 0.19716749019796853 |
-| DAL | 0.18401614262759125 |
-| ATL | 0.18233856199423165 |
-| CAR | 0.18218323778157525 |
-| WAS | 0.1818644944808865 |
+| WAS | 2.179704000653726 |
+| PIT | 1.9502885463350244 |
+| GB | 1.9483695459566843 |
+| NYG | 1.9404554450414087 |
+| ARI | 1.9052692659514434 |
+| KC | 1.8870441161626625 |
+| NE | 1.800075486385416 |
+| DAL | 1.7971868743349082 |
+| CIN | 1.7581026548994674 |
+| JAX | 1.7475933525381948 |
 
 
 ## Visualizations

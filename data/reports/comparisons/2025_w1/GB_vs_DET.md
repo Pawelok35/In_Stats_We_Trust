@@ -4,19 +4,21 @@
 
 | Metric | GB | DET | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.182 | -0.054 | ↑ +0.236 |
-| Core EPA Defense | -0.054 | 0.182 | ↓ -0.236 |
-| Success Rate Offense | 49.2% | 43.4% | ↑ +5.8 pp |
-| Success Rate Defense | 43.4% | 49.2% | ↓ -5.8 pp |
-| Explosive Play Rate (Off) | 13.1% | 4.8% | ↑ +8.3 pp |
-| Third Down Conversion | 36.4% | 33.3% | ↑ +3.0 pp |
-| Points per Drive Differential | 1.700 | -1.700 | ↑ +3.400 |
-| Yards per Play Differential | 1.397 | -1.397 | ↑ +2.794 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 16.7% | 6.2% | ↑ +10.4 pp |
-| Pressure Rate (Def) | 9.1% | 0.0% | ↑ +9.1 pp |
-| Tempo | 6.778 | 8.300 | ↓ -1.522 |
-| PowerScore | 0.202 | 0.136 | ↑ +0.066 |
+| Core EPA Offense | 0.182 | -0.054 | 0.236 |
+| Core EPA Defense | -0.054 | 0.182 | -0.236 |
+| Success Rate Offense | 0.492 | 0.434 | 0.058 |
+| Success Rate Defense | 0.434 | 0.492 | -0.058 |
+| Explosive Play Rate (Off) | 0.131 | 0.048 | 0.083 |
+| Third Down Conversion | 0.364 | 0.333 | 0.030 |
+| Points per Drive Differential | 1.700 | -1.700 | 3.400 |
+| Yards per Play Differential | 1.397 | -1.397 | 2.794 |
+| Turnover Margin | 1.000 | -1.000 | 2.000 |
+| Red Zone TD Rate (Off) | 0.167 | 0.062 | 0.104 |
+| Pressure Rate (Def) | 0.091 | 0.000 | 0.091 |
+| Tempo | 6.778 | 8.300 | -1.522 |
+| PowerScore | 1.531 | 1.786 | -0.255 |
+| PowerScore | 1.531 | 1.786 | -0.255 |
+| Tempo | 6.778 | 8.300 | -1.522 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ GB edge: +0.066 (GB +0.202 vs DET +0.136)
 **7 metrics version:**
 GB edge: +0.248 (GB +0.247 vs DET -0.001)
 **Verdict:** GB holds the edge in the extended breakdown (lead 0.248), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - DET) | +1.2 pts (favours GB) |
-| Model Win% GB | 55.1% |
-| Model Win% DET | 44.9% |
+| Model Spread (GB - DET) | -4.7 pts (favours DET) |
+| Model Win% GB | 31.3% |
+| Model Win% DET | 68.7% |
 | SOS Differential (GB-DET) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

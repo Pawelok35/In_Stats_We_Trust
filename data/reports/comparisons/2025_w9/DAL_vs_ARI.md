@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.159 | 0.150 | 0.009 |
 | Pressure Rate (Def) | 0.045 | 0.044 | 0.002 |
 | Tempo | 8.000 | 8.200 | -0.200 |
-| PowerScore | 0.108 | 0.148 | -0.040 |
-| PowerScore | 0.108 | 0.148 | -0.040 |
+| PowerScore | 1.683 | 1.759 | -0.076 |
+| PowerScore | 1.683 | 1.759 | -0.076 |
 | Tempo | 8.000 | 8.200 | -0.200 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ ARI edge: +0.626 (DAL -0.218 vs ARI +0.407)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DAL - ARI) | -0.7 pts (favours ARI) |
-| Model Win% DAL | 46.9% |
-| Model Win% ARI | 53.1% |
-| SOS Differential (DAL-ARI) | +0.077 |
+| Model Spread (DAL - ARI) | -1.4 pts (favours ARI) |
+| Model Win% DAL | 44.2% |
+| Model Win% ARI | 55.8% |
+| SOS Differential (DAL-ARI) | +0.073 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DAL | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.234 | 0.158 |
-| Last 5 games | 0.239 | 0.176 |
-| Last 3 games | 0.233 | 0.189 |
+| Season-to-date | 1.785 | 1.712 |
+| Last 5 games | 1.800 | 1.613 |
+| Last 3 games | 1.671 | 1.580 |
 
 ## Trend Summary (last 3 weeks)
 

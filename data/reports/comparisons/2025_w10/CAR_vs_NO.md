@@ -15,39 +15,39 @@
 | Turnover Margin | -0.222 | -0.444 | 0.222 |
 | Red Zone TD Rate (Off) | 0.124 | 0.105 | 0.019 |
 | Pressure Rate (Def) | 0.046 | 0.064 | -0.018 |
-| Tempo | 10.143 | 6.000 | 4.143 |
-| PowerScore | 0.163 | 0.081 | 0.082 |
-| PowerScore | 0.163 | 0.081 | 0.082 |
-| Tempo | 10.143 | 6.000 | 4.143 |
+| Tempo | 5.818 | 9.000 | -3.182 |
+| PowerScore | 1.239 | 1.887 | -0.648 |
+| PowerScore | 1.239 | 1.887 | -0.648 |
+| Tempo | 5.818 | 9.000 | -3.182 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CAR | NO | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.066 | -0.211 | +0.277 |
-| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
-| Success Rate Offense | 25% | 49.3% | 40.7% | +8.6 pp |
-| Tempo | 20% | 0.085 | 0.093 | -0.008 |
+| EPA Offense | 35% | -0.149 | 0.052 | -0.200 |
+| EPA Defense | 20% | 0.052 | -0.149 | +0.200 |
+| Success Rate Offense | 25% | 46.9% | 39.5% | +7.4 pp |
+| Tempo | 20% | 0.031 | 0.111 | -0.080 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CAR | NO | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.066 | -0.211 | +0.277 |
-| EPA Defense | 20% | -0.000 | 0.172 | -0.172 |
-| Success Rate Offense | 15% | 49.3% | 40.7% | +8.6 pp |
-| Turnover Margin | 10% | 1.000 | -2.000 | +3.000 |
-| Tempo | 10% | 0.085 | 0.093 | -0.008 |
-| Red Zone TD Rate (Off) | 10% | 11.8% | 12.5% | -0.7 pp |
-| Pressure Rate (Def) | 10% | 2.6% | 5.3% | -2.6 pp |
+| EPA Offense | 25% | -0.149 | 0.052 | -0.200 |
+| EPA Defense | 20% | 0.052 | -0.149 | +0.200 |
+| Success Rate Offense | 15% | 46.9% | 39.5% | +7.4 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.031 | 0.111 | -0.080 |
+| Red Zone TD Rate (Off) | 10% | 20.0% | 0.0% | +20.0 pp |
+| Pressure Rate (Def) | 10% | 6.1% | 7.4% | -1.3 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-CAR edge: +0.082 (CAR +0.163 vs NO +0.081)
+NO edge: +0.028 (CAR +0.082 vs NO +0.109)
 **7 metrics version:**
-CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
-**Verdict:** CAR holds the edge in the extended breakdown (lead 0.344), driven by Turnover Margin (10% weight).
+NO edge: +0.588 (CAR -0.227 vs NO +0.361)
+**Verdict:** NO holds the edge in the extended breakdown (lead 0.588), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ CAR edge: +0.344 (CAR +0.213 vs NO -0.130)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - NO) | +1.5 pts (favours CAR) |
-| Model Win% CAR | 56.3% |
-| Model Win% NO | 43.7% |
-| SOS Differential (CAR-NO) | +0.023 |
+| Model Spread (CAR - NO) | -12.0 pts (favours NO) |
+| Model Win% CAR | 11.9% |
+| Model Win% NO | 88.1% |
+| SOS Differential (CAR-NO) | -0.059 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CAR | 29.6% | n/a | n/a | 55.3% | 51.7% | n/a |
-| NO | 48.1% | n/a | n/a | 44.7% | 55.3% | n/a |
+| CAR | 42.2% | 42.4% | -0.2% | 40.7% | 51.4% | Balanced |
+| NO | 40.7% | 42.4% | -1.7% | 39.4% | 39.6% | Slight run lean |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | NO |
 | --- | ---: | ---: |
-| Season-to-date | 0.141 | 0.118 |
-| Last 5 games | 0.158 | 0.097 |
-| Last 3 games | 0.128 | 0.086 |
+| Season-to-date | 1.632 | 1.691 |
+| Last 5 games | 1.721 | 1.739 |
+| Last 3 games | 1.720 | 1.641 |
 
 ## Trend Summary (last 3 weeks)
 

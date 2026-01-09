@@ -4,19 +4,20 @@
 
 | Metric | LAC | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.211 | 0.131 | ↑ +0.080 |
-| Core EPA Defense | 0.131 | 0.211 | ↓ -0.080 |
-| Success Rate Offense | 56.8% | 45.6% | ↑ +11.2 pp |
-| Success Rate Defense | 45.6% | 56.8% | ↓ -11.2 pp |
-| Explosive Play Rate (Off) | 12.3% | 11.4% | ↑ +1.0 pp |
-| Third Down Conversion | 50.0% | 31.2% | ↑ +18.8 pp |
-| Points per Drive Differential | 0.750 | -0.750 | ↑ +1.500 |
-| Yards per Play Differential | 0.472 | -0.472 | ↑ +0.944 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 14.3% | 8.3% | ↑ +6.0 pp |
-| Pressure Rate (Def) | 4.8% | 7.5% | ↓ -2.7 pp |
-| Tempo | 10.125 | 9.875 | ↑ +0.250 |
-| PowerScore | 0.267 | 0.225 | ↑ +0.042 |
+| Core EPA Offense | 0.211 | 0.131 | 0.080 |
+| Core EPA Defense | 0.131 | 0.211 | -0.080 |
+| Success Rate Offense | 0.568 | 0.456 | 0.112 |
+| Success Rate Defense | 0.456 | 0.568 | -0.112 |
+| Explosive Play Rate (Off) | 0.123 | 0.114 | 0.010 |
+| Third Down Conversion | 0.500 | 0.312 | 0.188 |
+| Points per Drive Differential | 0.750 | -0.750 | 1.500 |
+| Yards per Play Differential | 0.472 | -0.472 | 0.944 |
+| Red Zone TD Rate (Off) | 0.143 | 0.083 | 0.060 |
+| Pressure Rate (Def) | 0.048 | 0.075 | -0.027 |
+| Tempo | 10.125 | 9.875 | 0.250 |
+| PowerScore | 2.267 | 2.177 | 0.090 |
+| PowerScore | 2.267 | 2.177 | 0.090 |
+| Tempo | 10.125 | 9.875 | 0.250 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ LAC edge: +0.042 (LAC +0.267 vs KC +0.225)
 **7 metrics version:**
 LAC edge: +0.025 (LAC +0.196 vs KC +0.171)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.025), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - KC) | +0.8 pts (favours LAC) |
-| Model Win% LAC | 53.2% |
-| Model Win% KC | 46.8% |
+| Model Spread (LAC - KC) | +1.7 pts (favours LAC) |
+| Model Win% LAC | 56.9% |
+| Model Win% KC | 43.1% |
 | SOS Differential (LAC-KC) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

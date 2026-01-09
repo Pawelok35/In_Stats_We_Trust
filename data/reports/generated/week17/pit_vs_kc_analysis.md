@@ -16,9 +16,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +8.0 pts
 • PowerScoreDiff (winner) = +0.051
-• Confidence = 94.0%
+• Confidence = 93.0%
 
-🏷 Model Tag: GOM — based on 94.0% confidence, +8.0 pts model edge vs line, and PowerScore Δ +0.051.
+🏷 Model Tag: GOM — based on 93.0% confidence, +8.0 pts model edge vs line, and PowerScore Δ +0.051.
 📈 Strong monthly signal — wysokie zaufanie modelowe.
 
 SUMMARY:

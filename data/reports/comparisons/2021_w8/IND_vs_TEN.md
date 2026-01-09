@@ -15,39 +15,39 @@
 | Turnover Margin | 1.286 | -0.143 | 1.429 |
 | Red Zone TD Rate (Off) | 0.120 | 0.177 | -0.058 |
 | Pressure Rate (Def) | 0.060 | 0.059 | 0.002 |
-| Tempo | 6.769 | 9.000 | -2.231 |
-| PowerScore | 1.402 | 1.973 | -0.571 |
-| PowerScore | 1.402 | 1.973 | -0.571 |
-| Tempo | 6.769 | 9.000 | -2.231 |
+| Tempo | 7.538 | 7.154 | 0.385 |
+| PowerScore | 1.619 | 1.534 | 0.084 |
+| PowerScore | 1.619 | 1.534 | 0.084 |
+| Tempo | 7.538 | 7.154 | 0.385 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | IND | TEN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.001 | 0.182 | -0.183 |
-| EPA Defense | 20% | -0.198 | -0.134 | -0.064 |
-| Success Rate Offense | 25% | 35.2% | 54.3% | -19.1 pp |
-| Tempo | 20% | 0.068 | 0.086 | -0.018 |
+| EPA Offense | 35% | -0.052 | 0.034 | -0.085 |
+| EPA Defense | 20% | 0.034 | -0.052 | +0.085 |
+| Success Rate Offense | 25% | 49.0% | 40.9% | +8.1 pp |
+| Tempo | 20% | 0.041 | 0.032 | +0.009 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | IND | TEN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.001 | 0.182 | -0.183 |
-| EPA Defense | 20% | -0.198 | -0.134 | -0.064 |
-| Success Rate Offense | 15% | 35.2% | 54.3% | -19.1 pp |
-| Turnover Margin | 10% | 2.000 | 2.000 | +0.000 |
-| Tempo | 10% | 0.068 | 0.086 | -0.018 |
-| Red Zone TD Rate (Off) | 10% | 17.6% | 11.8% | +5.9 pp |
-| Pressure Rate (Def) | 10% | 6.5% | 7.1% | -0.7 pp |
+| EPA Offense | 25% | -0.052 | 0.034 | -0.085 |
+| EPA Defense | 20% | 0.034 | -0.052 | +0.085 |
+| Success Rate Offense | 15% | 49.0% | 40.9% | +8.1 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.041 | 0.032 | +0.009 |
+| Red Zone TD Rate (Off) | 10% | 25.0% | 20.0% | +5.0 pp |
+| Pressure Rate (Def) | 10% | 7.9% | 1.9% | +6.0 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TEN edge: +0.128 (IND +0.062 vs TEN +0.190)
+IND edge: +0.009 (IND +0.119 vs TEN +0.110)
 **7 metrics version:**
-TEN edge: +0.084 (IND +0.244 vs TEN +0.328)
-**Verdict:** TEN holds the edge in the extended breakdown (lead 0.084), driven by EPA Offense (25% weight).
+IND edge: +0.020 (IND +0.104 vs TEN +0.084)
+**Verdict:** IND holds the edge in the extended breakdown (lead 0.020), driven by EPA Defense (20% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ TEN edge: +0.084 (IND +0.244 vs TEN +0.328)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - TEN) | -10.6 pts (favours TEN) |
-| Model Win% IND | 14.7% |
-| Model Win% TEN | 85.3% |
+| Model Spread (IND - TEN) | +1.6 pts (favours IND) |
+| Model Win% IND | 56.5% |
+| Model Win% TEN | 43.5% |
 | SOS Differential (IND-TEN) | -0.065 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
@@ -67,8 +67,8 @@ TEN edge: +0.084 (IND +0.244 vs TEN +0.328)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| IND | 31.8% | n/a | n/a | 44.6% | 41.4% | n/a |
-| TEN | 37.0% | n/a | n/a | 32.3% | 36.6% | n/a |
+| IND | 53.1% | 46.4% | 6.7% | 46.2% | 52.2% | Pass heavy |
+| TEN | 40.9% | 46.4% | -5.5% | 52.6% | 32.7% | Run heavy |
 
 ## Situational Edges
 
@@ -249,15 +249,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | TEN (A) | 16-25 | TEN | 1.000 | -0.015 | 42.1% | -1.000 |
-| 2 | LA (H) | 18-30 | LA | 0.872 | -0.022 | 44.6% | -1.064 |
-| 5 | BAL (A) | 25-28 | BAL | 0.820 | 0.186 | 47.7% | -0.318 |
+| 4 | LA (A) | 27-17 | IND | 0.872 | 0.183 | 45.5% | 1.000 |
+| 6 | ARI (H) | 31-3 | IND | 0.710 | 0.205 | 46.0% | 2.545 |
 
 **TEN analogs vs IND profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | IND (H) | 25-16 | TEN | 1.000 | 0.096 | 44.3% | 1.000 |
-| 7 | KC (H) | 27-3 | TEN | 0.738 | 0.182 | 54.3% | 2.667 |
+| 2 | LA (H) | 33-30 | TEN | 0.843 | 0.097 | 51.4% | 0.231 |
 | 1 | ARI (H) | 13-38 | ARI | 0.588 | -0.314 | 38.3% | -2.083 |
 
 ## Core EPA Offense Form (up to Week 7)

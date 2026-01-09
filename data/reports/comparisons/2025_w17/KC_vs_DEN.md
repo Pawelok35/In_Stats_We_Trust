@@ -4,50 +4,50 @@
 
 | Metric | KC | DEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.062 | 0.056 | 0.005 |
-| Core EPA Defense | 0.019 | -0.002 | 0.022 |
-| Success Rate Offense | 0.477 | 0.463 | 0.014 |
-| Success Rate Defense | 0.476 | 0.430 | 0.047 |
-| Explosive Play Rate (Off) | 0.100 | 0.100 | -0.000 |
-| Third Down Conversion | 0.357 | 0.387 | -0.030 |
-| Points per Drive Differential | 0.412 | 0.408 | 0.004 |
-| Yards per Play Differential | 0.123 | 0.878 | -0.755 |
-| Turnover Margin | -0.133 | 0.071 | -0.205 |
-| Red Zone TD Rate (Off) | 0.136 | 0.140 | -0.004 |
-| Pressure Rate (Def) | 0.064 | 0.110 | -0.045 |
-| Tempo | 6.700 | 7.000 | -0.300 |
-| PowerScore | 1.375 | 1.538 | -0.163 |
-| PowerScore | 1.375 | 1.538 | -0.163 |
-| Tempo | 6.700 | 7.000 | -0.300 |
+| Core EPA Offense | 0.062 | 0.030 | 0.031 |
+| Core EPA Defense | 0.019 | -0.027 | 0.047 |
+| Success Rate Offense | 0.477 | 0.456 | 0.021 |
+| Success Rate Defense | 0.476 | 0.424 | 0.052 |
+| Explosive Play Rate (Off) | 0.100 | 0.096 | 0.004 |
+| Third Down Conversion | 0.357 | 0.382 | -0.025 |
+| Points per Drive Differential | 0.412 | 0.396 | 0.016 |
+| Yards per Play Differential | 0.123 | 0.842 | -0.720 |
+| Turnover Margin | -0.133 | 0.000 | -0.133 |
+| Red Zone TD Rate (Off) | 0.136 | 0.137 | -0.001 |
+| Pressure Rate (Def) | 0.064 | 0.115 | -0.050 |
+| Tempo | 7.250 | 10.625 | -3.375 |
+| PowerScore | 1.565 | 2.289 | -0.725 |
+| PowerScore | 1.565 | 2.289 | -0.725 |
+| Tempo | 7.250 | 10.625 | -3.375 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | KC | DEN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.209 | -0.030 | -0.178 |
-| EPA Defense | 20% | 0.035 | 0.176 | -0.141 |
-| Success Rate Offense | 25% | 40.3% | 45.2% | -4.9 pp |
-| Tempo | 20% | 0.045 | 0.143 | -0.098 |
+| EPA Offense | 35% | -0.012 | 0.098 | -0.110 |
+| EPA Defense | 20% | 0.098 | -0.012 | +0.110 |
+| Success Rate Offense | 25% | 39.7% | 52.9% | -13.3 pp |
+| Tempo | 20% | 0.034 | 0.059 | -0.024 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | KC | DEN | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.209 | -0.030 | -0.178 |
-| EPA Defense | 20% | 0.035 | 0.176 | -0.141 |
-| Success Rate Offense | 15% | 40.3% | 45.2% | -4.9 pp |
-| Turnover Margin | 10% | 0.000 | -2.000 | +2.000 |
-| Tempo | 10% | 0.045 | 0.143 | -0.098 |
-| Red Zone TD Rate (Off) | 10% | 0.0% | 12.5% | -12.5 pp |
-| Pressure Rate (Def) | 10% | 6.2% | 12.2% | -5.9 pp |
+| EPA Offense | 25% | -0.012 | 0.098 | -0.110 |
+| EPA Defense | 20% | 0.098 | -0.012 | +0.110 |
+| Success Rate Offense | 15% | 39.7% | 52.9% | -13.3 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.034 | 0.059 | -0.024 |
+| Red Zone TD Rate (Off) | 10% | 12.5% | 8.7% | +3.8 pp |
+| Pressure Rate (Def) | 10% | 2.5% | 4.3% | -1.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-DEN edge: +0.123 (KC +0.044 vs DEN +0.166)
+DEN edge: +0.055 (KC +0.121 vs DEN +0.176)
 **7 metrics version:**
-KC edge: +0.091 (KC +0.026 vs DEN -0.065)
-**Verdict:** KC holds the edge in the extended breakdown (lead 0.091), driven by Turnover Margin (10% weight).
+KC edge: +0.174 (KC +0.195 vs DEN +0.020)
+**Verdict:** KC holds the edge in the extended breakdown (lead 0.174), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ KC edge: +0.091 (KC +0.026 vs DEN -0.065)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - DEN) | -3.0 pts (favours DEN) |
-| Model Win% KC | 37.7% |
-| Model Win% DEN | 62.3% |
-| SOS Differential (KC-DEN) | +0.027 |
+| Model Spread (KC - DEN) | -13.4 pts (favours DEN) |
+| Model Win% KC | 9.7% |
+| Model Win% DEN | 90.3% |
+| SOS Differential (KC-DEN) | +0.131 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| KC | 41.8% | n/a | n/a | 41.5% | 52.1% | n/a |
-| DEN | 57.1% | n/a | n/a | 43.8% | 46.6% | n/a |
+| KC | 39.7% | 42.9% | -3.2% | 21.7% | 51.4% | Run heavy |
+| DEN | 47.1% | 42.9% | 4.2% | 47.5% | 57.8% | Pass heavy |
 
 ## Situational Edges
 
@@ -76,29 +76,29 @@ KC edge: +0.091 (KC +0.026 vs DEN -0.065)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +6.6 pp | -4.4 pp | -9.8 pp |
-| DEN | +0.1 pp | +0.7 pp | +1.7 pp |
+| KC | +6.9 pp | -4.4 pp | -9.8 pp |
+| DEN | -0.4 pp | +0.7 pp | +1.7 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +5.2 pp | -3.6 pp | -6.9 pp |
-| DEN | +0.3 pp | -0.4 pp | +0.6 pp |
+| KC | +4.1 pp | -3.6 pp | -6.9 pp |
+| DEN | +0.1 pp | -0.4 pp | +0.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +4.3 pp | -1.8 pp | -1.0 pp |
-| DEN | +3.4 pp | +2.1 pp | +5.8 pp |
+| KC | +4.8 pp | -1.8 pp | -1.0 pp |
+| DEN | +3.2 pp | +2.1 pp | +5.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +3.1 pp | -2.1 pp | -4.7 pp |
-| DEN | +1.1 pp | +1.2 pp | +1.9 pp |
+| KC | +3.2 pp | -2.1 pp | -4.7 pp |
+| DEN | +0.7 pp | +1.2 pp | +1.9 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +1.7 pp | -5.1 pp | -5.5 pp |
-| DEN | -2.5 pp | +2.8 pp | +6.0 pp |
+| KC | +2.4 pp | -5.1 pp | -5.5 pp |
+| DEN | -3.1 pp | +2.8 pp | +6.0 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +8.6 pp | -0.7 pp | -5.2 pp |
-| DEN | +1.2 pp | +8.4 pp | +10.4 pp |
+| KC | +9.0 pp | -0.7 pp | -5.2 pp |
+| DEN | +0.3 pp | +8.4 pp | +10.4 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +3.1 pp | -2.1 pp | -4.7 pp |
-| DEN | +1.1 pp | +1.2 pp | +1.9 pp |
+| KC | +3.2 pp | -2.1 pp | -4.7 pp |
+| DEN | +0.7 pp | +1.2 pp | +1.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +4.3 pp | -1.8 pp | -1.0 pp |
-| DEN | +3.4 pp | +2.1 pp | +5.8 pp |
+| KC | +4.8 pp | -1.8 pp | -1.0 pp |
+| DEN | +3.2 pp | +2.1 pp | +5.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -141,42 +141,42 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 45.8 | 46.2 | 44.5 |
-| DEN | 45.2 | 47.6 | 47.5 |
+| DEN | 44.7 | 47.6 | 47.5 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 48.0 | 44.6 | 43.6 |
-| DEN | 45.5 | 48.2 | 48.6 |
+| DEN | 45.3 | 48.2 | 48.6 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | -2.1 | 1.6 | 0.8 |
-| DEN | -0.3 | -0.6 | -1.1 |
+| DEN | -0.6 | -0.6 | -1.1 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 2.34 | 1.60 | 0.99 |
-| DEN | 2.20 | 2.29 | 2.25 |
+| DEN | 2.11 | 2.29 | 2.25 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 1.93 | 2.05 | 1.77 |
-| DEN | 1.80 | 2.32 | 2.52 |
+| DEN | 1.71 | 2.32 | 2.52 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 0.41 | -0.45 | -0.78 |
-| DEN | 0.41 | -0.03 | -0.27 |
+| DEN | 0.40 | -0.03 | -0.27 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -187,35 +187,35 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 8.43 | 7.85 | 6.81 |
-| DEN | 7.55 | 8.12 | 8.21 |
+| DEN | 7.45 | 8.12 | 8.21 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 47.3% | 44.9% | 45.2% |
-| DEN | 46.9% | 50.5% | 49.4% |
+| DEN | 46.5% | 50.5% | 49.4% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 52.7% | 55.1% | 54.8% |
-| DEN | 53.1% | 49.5% | 50.6% |
+| DEN | 53.5% | 49.5% | 50.6% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 3.99 | 3.53 | 3.08 |
-| DEN | 3.54 | 4.10 | 4.06 |
+| DEN | 3.46 | 4.10 | 4.06 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 4.44 | 4.33 | 3.73 |
-| DEN | 4.01 | 4.02 | 4.15 |
+| DEN | 3.99 | 4.02 | 4.15 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | DEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.263 | 0.236 |
-| Last 5 games | 0.452 | 0.467 |
-| Last 3 games | 0.625 | 0.666 |
+| Season-to-date | 1.685 | 1.553 |
+| Last 5 games | 1.638 | 1.728 |
+| Last 3 games | 1.609 | 1.593 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -249,104 +249,104 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 11 | DEN (A) | 19-20 | DEN | 1.000 | 0.044 | 47.1% | -0.100 |
-| 14 | HOU (H) | 10-20 | HOU | 0.796 | -0.251 | 38.3% | -0.769 |
-| 2 | PHI (H) | 17-18 | PHI | 0.795 | -0.036 | 45.9% | -0.111 |
+| 14 | HOU (H) | 10-20 | HOU | 0.908 | -0.251 | 38.3% | -0.769 |
+| 2 | PHI (H) | 17-18 | PHI | 0.886 | -0.036 | 45.9% | -0.111 |
 
 **DEN analogs vs KC profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 11 | KC (H) | 22-21 | DEN | 1.000 | 0.070 | 48.8% | 0.100 |
-| 2 | IND (A) | 28-24 | DEN | 0.926 | 0.166 | 54.7% | 0.475 |
-| 15 | GB (H) | 34-26 | DEN | 0.884 | 0.136 | 52.4% | 0.667 |
+| 2 | IND (A) | 28-24 | DEN | 0.939 | 0.166 | 54.7% | 0.475 |
+| 15 | GB (H) | 34-26 | DEN | 0.856 | 0.136 | 52.4% | 0.667 |
 
 ## Core EPA Offense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 0.056 | 0.085 | 0.076 |
+| DEN | 0.030 | 0.085 | 0.076 |
 | KC | 0.062 | -0.062 | -0.165 |
 
 ## Core EPA Defense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | -0.002 | 0.070 | 0.077 |
+| DEN | -0.027 | 0.070 | 0.077 |
 | KC | 0.019 | 0.041 | -0.006 |
 
 ## Success Rate Offense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 46.5% | 49.8% | 51.0% |
+| DEN | 45.8% | 49.8% | 51.0% |
 | KC | 47.7% | 44.2% | 42.2% |
 
 ## Success Rate Defense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 43.1% | 45.5% | 46.0% |
+| DEN | 42.6% | 45.5% | 46.0% |
 | KC | 47.8% | 44.5% | 42.9% |
 
 ## Explosive Play Rate (Off) Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 10.1% | 9.8% | 10.3% |
+| DEN | 9.7% | 9.8% | 10.3% |
 | KC | 10.0% | 7.8% | 5.8% |
 
 ## Third Down Conversion Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 38.9% | 43.9% | 43.0% |
+| DEN | 38.5% | 43.9% | 43.0% |
 | KC | 36.4% | 34.1% | 29.9% |
 
 ## Points per Drive Differential Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 0.391 | -0.038 | -0.264 |
+| DEN | 0.379 | -0.038 | -0.264 |
 | KC | 0.368 | -0.454 | -0.782 |
 
 ## Yards per Play Differential Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 0.878 | 0.769 | 0.788 |
+| DEN | 0.842 | 0.769 | 0.788 |
 | KC | 0.123 | -0.514 | -0.770 |
 
 ## Turnover Margin Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 0.071 | 0.000 | -0.333 |
+| DEN | 0.000 | 0.000 | -0.333 |
 | KC | -0.133 | -1.000 | -1.333 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 14.0% | 13.6% | 15.7% |
+| DEN | 13.7% | 13.6% | 15.7% |
 | KC | 13.6% | 8.1% | 6.1% |
 
 ## Pressure Rate (Def) Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 11.0% | 8.0% | 10.1% |
+| DEN | 11.5% | 8.0% | 10.1% |
 | KC | 6.4% | 5.4% | 8.9% |
 
 ## Tempo Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 7.550 | 8.116 | 8.208 |
+| DEN | 7.452 | 8.116 | 8.208 |
 | KC | 8.434 | 7.853 | 6.810 |
 
 ## Pass Rate Offense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DEN | 47.2% | 50.5% | 49.4% |
+| DEN | 46.8% | 50.5% | 49.4% |
 | KC | 47.3% | 44.9% | 45.3% |

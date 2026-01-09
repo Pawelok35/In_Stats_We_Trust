@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.118 | 0.159 | -0.041 |
 | Pressure Rate (Def) | 0.078 | 0.117 | -0.038 |
 | Tempo | 9.556 | 6.545 | 3.010 |
-| PowerScore | 0.228 | 0.083 | 0.145 |
-| PowerScore | 0.228 | 0.083 | 0.145 |
+| PowerScore | 2.118 | 1.378 | 0.740 |
+| PowerScore | 2.118 | 1.378 | 0.740 |
 | Tempo | 9.556 | 6.545 | 3.010 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ SF edge: +0.001 (SF +0.076 vs ARI +0.075)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SF - ARI) | +2.7 pts (favours SF) |
-| Model Win% SF | 61.0% |
-| Model Win% ARI | 39.0% |
+| Model Spread (SF - ARI) | +13.7 pts (favours SF) |
+| Model Win% SF | 90.7% |
+| Model Win% ARI | 9.3% |
 | SOS Differential (SF-ARI) | -0.288 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

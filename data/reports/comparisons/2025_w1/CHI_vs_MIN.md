@@ -4,19 +4,20 @@
 
 | Metric | CHI | MIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.109 | -0.064 | ↓ -0.045 |
-| Core EPA Defense | -0.064 | -0.109 | ↑ +0.045 |
-| Success Rate Offense | 37.4% | 44.6% | ↓ -7.2 pp |
-| Success Rate Defense | 44.6% | 37.4% | ↑ +7.2 pp |
-| Explosive Play Rate (Off) | 11.0% | 9.5% | ↑ +1.5 pp |
-| Third Down Conversion | 21.4% | 20.0% | ↑ +1.4 pp |
-| Points per Drive Differential | -0.791 | 0.791 | ↓ -1.582 |
-| Yards per Play Differential | 0.024 | -0.024 | ↑ +0.048 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 25.0% | 16.7% | ↑ +8.3 pp |
-| Pressure Rate (Def) | 12.0% | 5.4% | ↑ +6.6 pp |
-| Tempo | 6.500 | 5.692 | ↑ +0.808 |
-| PowerScore | 0.064 | 0.086 | ↓ -0.022 |
+| Core EPA Offense | -0.109 | -0.064 | -0.045 |
+| Core EPA Defense | -0.064 | -0.109 | 0.045 |
+| Success Rate Offense | 0.374 | 0.446 | -0.072 |
+| Success Rate Defense | 0.446 | 0.374 | 0.072 |
+| Explosive Play Rate (Off) | 0.110 | 0.095 | 0.015 |
+| Third Down Conversion | 0.214 | 0.200 | 0.014 |
+| Points per Drive Differential | -0.791 | 0.791 | -1.582 |
+| Yards per Play Differential | 0.024 | -0.024 | 0.048 |
+| Red Zone TD Rate (Off) | 0.250 | 0.167 | 0.083 |
+| Pressure Rate (Def) | 0.120 | 0.054 | 0.066 |
+| Tempo | 6.500 | 5.692 | 0.808 |
+| PowerScore | 1.342 | 1.206 | 0.137 |
+| PowerScore | 1.342 | 1.206 | 0.137 |
+| Tempo | 6.500 | 5.692 | 0.808 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ MIN edge: +0.022 (CHI +0.064 vs MIN +0.086)
 **7 metrics version:**
 CHI edge: +0.003 (CHI +0.064 vs MIN +0.060)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.003), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - MIN) | -0.4 pts (favours MIN) |
-| Model Win% CHI | 48.3% |
-| Model Win% MIN | 51.7% |
+| Model Spread (CHI - MIN) | +2.5 pts (favours CHI) |
+| Model Win% CHI | 60.4% |
+| Model Win% MIN | 39.6% |
 | SOS Differential (CHI-MIN) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 3
 
-_Generated at 2025-11-11T13:52:56.875902+00:00 (UTC)_
+_Generated at 2026-01-08T19:11:56.894307+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\3_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2746, "cols": 18, "timestamp": "2025-11-11T13:52:56.480104+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2746, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T13:52:56.480104+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2746, "cols": 24, "timestamp": "2025-11-11T13:52:56.480104+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2746, "cols": 18, "timestamp": "2026-01-08T19:11:56.468077+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2746, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:11:56.468077+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2746, "cols": 24, "timestamp": "2026-01-08T19:11:56.468077+00:00"}
 
 ## L3 Sanity
 
@@ -33,7 +33,7 @@ Last 3 entries from `data\l2_audit\2025\3_audit.jsonl`:
 - Artifact: `data\l4_core12\2025\3.parquet`
 - Manifest: `data\l4_core12\2025\3_manifest.json`
 - Rows: 32
-- Columns: 15
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\3_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DET | 0.2980753637991183 |
-| BAL | 0.28027837369791353 |
-| IND | 0.2585870971572479 |
-| BUF | 0.2582103651630656 |
-| WAS | 0.22935226190228944 |
-| CHI | 0.20828461307927276 |
-| MIA | 0.19785519690067535 |
-| DAL | 0.1729731316297397 |
-| LV | 0.16141532306573392 |
-| SEA | 0.15813967941794865 |
+| TEN | 2.099483297547594 |
+| NE | 1.9493679668595176 |
+| DAL | 1.899180028181464 |
+| BUF | 1.8702223771750777 |
+| MIA | 1.8683230331579854 |
+| DET | 1.8592038904448867 |
+| KC | 1.841302835045429 |
+| NYG | 1.8142231935698243 |
+| ARI | 1.7817758606970477 |
+| BAL | 1.7305486439681839 |
 
 
 ## Visualizations

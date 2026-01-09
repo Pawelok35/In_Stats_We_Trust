@@ -4,19 +4,21 @@
 
 | Metric | IND | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.165 | -0.037 | ↓ -0.128 |
-| Core EPA Defense | 0.015 | -0.016 | ↑ +0.032 |
-| Success Rate Offense | 47.5% | 53.2% | ↓ -5.7 pp |
-| Success Rate Defense | 47.8% | 40.8% | ↑ +7.0 pp |
-| Explosive Play Rate (Off) | 11.2% | 12.8% | ↓ -1.5 pp |
-| Third Down Conversion | 28.6% | 29.4% | ↓ -0.8 pp |
-| Points per Drive Differential | -0.182 | -0.121 | ↓ -0.061 |
-| Yards per Play Differential | 0.002 | -0.162 | ↑ +0.164 |
-| Turnover Margin | -2.000 | -1.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 9.5% | 6.2% | ↑ +3.3 pp |
-| Pressure Rate (Def) | 5.0% | 0.0% | ↑ +5.0 pp |
-| Tempo | 7.273 | 8.545 | ↓ -1.273 |
-| PowerScore | 0.087 | 0.142 | ↓ -0.056 |
+| Core EPA Offense | -0.041 | 0.039 | -0.081 |
+| Core EPA Defense | -0.021 | 0.052 | -0.072 |
+| Success Rate Offense | 0.434 | 0.488 | -0.054 |
+| Success Rate Defense | 0.460 | 0.487 | -0.026 |
+| Explosive Play Rate (Off) | 0.116 | 0.106 | 0.010 |
+| Third Down Conversion | 0.343 | 0.342 | 0.000 |
+| Points per Drive Differential | -0.073 | -0.089 | 0.016 |
+| Yards per Play Differential | -0.329 | 0.317 | -0.646 |
+| Turnover Margin | 0.222 | -0.333 | 0.556 |
+| Red Zone TD Rate (Off) | 0.103 | 0.138 | -0.034 |
+| Pressure Rate (Def) | 0.056 | 0.030 | 0.026 |
+| Tempo | 7.273 | 8.545 | -1.273 |
+| PowerScore | 1.519 | 1.826 | -0.307 |
+| PowerScore | 1.519 | 1.826 | -0.307 |
+| Tempo | 7.273 | 8.545 | -1.273 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.056 (IND +0.087 vs ATL +0.142)
 **7 metrics version:**
 ATL edge: +0.127 (IND -0.141 vs ATL -0.014)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.127), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - ATL) | -1.0 pts (favours ATL) |
-| Model Win% IND | 45.7% |
-| Model Win% ATL | 54.3% |
-| SOS Differential (IND-ATL) | -0.045 |
+| Model Spread (IND - ATL) | -5.7 pts (favours ATL) |
+| Model Win% IND | 27.9% |
+| Model Win% ATL | 72.1% |
+| SOS Differential (IND-ATL) | -0.201 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.121 | 0.166 |
-| Last 5 games | 0.116 | 0.177 |
-| Last 3 games | 0.069 | 0.159 |
+| Season-to-date | 1.614 | 1.816 |
+| Last 5 games | 1.506 | 1.751 |
+| Last 3 games | 1.507 | 1.779 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | ARI (A) | 20-15 | IND | 0.942 | 0.024 | 42.9% | 0.455 |
+| 6 | ARI (H) | 20-15 | IND | 0.942 | 0.024 | 42.9% | 0.455 |
 | 4 | LA (A) | 27-24 | IND | 0.790 | 0.024 | 45.2% | 0.273 |
 | 5 | LV (H) | 34-40 | LV | 0.286 | 0.172 | 49.5% | -0.468 |
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | MIA (A) | 31-22 | ATL | 0.865 | 0.159 | 57.9% | 0.918 |
+| 8 | MIA (H) | 31-22 | ATL | 0.865 | 0.159 | 57.9% | 0.918 |
 | 2 | MIN (A) | 22-21 | ATL | 0.670 | 0.138 | 50.0% | 0.111 |
 | 9 | NE (A) | 27-23 | ATL | 0.644 | 0.018 | 44.0% | 0.341 |
 

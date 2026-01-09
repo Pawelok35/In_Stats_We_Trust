@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – PHI 35.2 – NYG 18.6
+1️⃣ Estimated Score (Model) – PHI 38.6 – NYG 14.5
 2️⃣ Predicted Winner (Model) – PHI
-3️⃣ Predicted Margin (Model) – PHI by 16.6 pts
+3️⃣ Predicted Margin (Model) – PHI by 24.2 pts
 4️⃣ Win Probability (Model) – 95% (PHI)
-5️⃣ Why This Team Wins (Model) – Na 3rd down PHI utrzymuje 43.8%, podczas gdy NYG jest na 27.4%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje PHI na poziomie 44.5% vs 36.7% (+7.8 pp). PowerScore Summary potwierdza przewagę PHI: PHI +0.143 vs NYG +0.073. Explosive Play Rate pozostaje po stronie PHI (9.7% vs 7.5%), więc big-play equity jest wyższe. Red Zone TD Rate sprzyja PHI (16.0% vs 14.6%).
+5️⃣ Why This Team Wins (Model) – Na 3rd down PHI utrzymuje 44.5%, podczas gdy NYG jest na 33.3%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę PHI: PHI +0.050 vs NYG -0.034. Success Rate Offense pokazuje PHI na poziomie 46.3% vs 39.9% (+6.4 pp). Turnover margin faworyzuje PHI (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja PHI (14.7% vs 10.1%).
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – PHI 33.6 – NYG 20.1
+1️⃣ Estimated Score (Market) – PHI 32.1 – NYG 21.1
 2️⃣ Predicted Winner (Market) – PHI
-3️⃣ Predicted Margin (Market) – PHI by 13.5 pts
-4️⃣ Win Probability (Market) – 95% (PHI)
-5️⃣ Forum Output (A) – PowerScore (Model) — PHI +0.143 vs NYG +0.073. Points per Drive Differential — PHI -0.057 vs NYG -0.876. Success Rate Offense — PHI 44.5% vs NYG 36.7%. Third Down Conversion — PHI 43.8% vs NYG 27.4%. Red Zone TD Rate — PHI 16.0% vs NYG 14.6%. Explosive Play Rate — PHI 9.7% vs NYG 7.5%. Model margin 16.6 pts vs market spread PHI +13.5.
-6️⃣ Forum Output (B) – Model idzie w stronę PHI po marginesie 16.6 pkt. PHI notuje -0.057 PPD vs -0.876 u NYG. Różnica w Success Rate to 44.5% vs 36.7%. Na 3rd down PHI (43.8%) wygląda solidniej niż NYG (27.4%). Red Zone i explosiveness ( 16.0% / 9.7% ) utrzymują przewagę jakościową. Market trzyma 13.5 pkt, więc edge vs linia to +3.1.
+3️⃣ Predicted Margin (Market) – PHI by 11.0 pts
+4️⃣ Win Probability (Market) – 88% (PHI)
+5️⃣ Forum Output (A) – PowerScore (Model) — PHI +0.050 vs NYG -0.034. Points per Drive Differential — PHI +0.331 vs NYG -0.646. Success Rate Offense — PHI 46.3% vs NYG 39.9%. Third Down Conversion — PHI 44.5% vs NYG 33.3%. Red Zone TD Rate — PHI 14.7% vs NYG 10.1%. Explosive Play Rate — PHI 13.1% vs NYG 9.7%. Model margin 24.2 pts vs market spread PHI +11.0.
+6️⃣ Forum Output (B) – Model idzie w stronę PHI po marginesie 24.2 pkt. PHI notuje +0.331 PPD vs -0.646 u NYG. Różnica w Success Rate to 46.3% vs 39.9%. Na 3rd down PHI (44.5%) wygląda solidniej niż NYG (33.3%). Red Zone i explosiveness ( 14.7% / 13.1% ) utrzymują przewagę jakościową. Market trzyma 11.0 pkt, więc edge vs linia to +13.2.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +3.1 pts
-• PowerScoreDiff (winner) = +0.070
+• Edge_vs_Line (winner) = +13.2 pts
+• PowerScoreDiff (winner) = +0.084
 • Confidence = 98.0%
 
-🏷 Model Tag: GOW — based on 98.0% confidence, +3.1 pts model edge vs line, and PowerScore Δ +0.070.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: GOY — based on 98.0% confidence, +13.2 pts model edge vs line, and PowerScore Δ +0.084.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – PHI 35.2 – NYG 18.6
+   • Estimated Score – PHI 38.6 – NYG 14.5
    • Win Probability – 95% (PHI)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – PHI 33.6 – NYG 20.1
-   • Win Probability – 95% (PHI)
+   • Estimated Score – PHI 32.1 – NYG 21.1
+   • Win Probability – 88% (PHI)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — PHI (HC -13.5)
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — PHI (HC -11.0)

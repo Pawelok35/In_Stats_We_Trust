@@ -4,20 +4,20 @@
 
 | Metric | NO | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.146 | -0.038 | -0.108 |
-| Core EPA Defense | 0.032 | 0.022 | 0.011 |
-| Success Rate Offense | 0.443 | 0.460 | -0.017 |
-| Success Rate Defense | 0.465 | 0.478 | -0.013 |
-| Explosive Play Rate (Off) | 0.073 | 0.097 | -0.024 |
-| Third Down Conversion | 0.326 | 0.323 | 0.002 |
-| Points per Drive Differential | -0.967 | -0.447 | -0.519 |
-| Yards per Play Differential | -0.374 | 0.229 | -0.603 |
-| Turnover Margin | -0.444 | -0.111 | -0.333 |
-| Red Zone TD Rate (Off) | 0.105 | 0.140 | -0.035 |
-| Pressure Rate (Def) | 0.064 | 0.096 | -0.032 |
+| Core EPA Offense | -0.126 | -0.033 | -0.093 |
+| Core EPA Defense | 0.014 | 0.030 | -0.016 |
+| Success Rate Offense | 0.438 | 0.464 | -0.025 |
+| Success Rate Defense | 0.466 | 0.484 | -0.018 |
+| Explosive Play Rate (Off) | 0.077 | 0.101 | -0.025 |
+| Third Down Conversion | 0.338 | 0.291 | 0.047 |
+| Points per Drive Differential | -0.745 | -0.449 | -0.296 |
+| Yards per Play Differential | -0.131 | 0.007 | -0.138 |
+| Turnover Margin | -0.100 | 0.000 | -0.100 |
+| Red Zone TD Rate (Off) | 0.094 | 0.156 | -0.061 |
+| Pressure Rate (Def) | 0.065 | 0.107 | -0.042 |
 | Tempo | 8.545 | 6.167 | 2.379 |
-| PowerScore | 0.019 | 0.060 | -0.041 |
-| PowerScore | 0.019 | 0.060 | -0.041 |
+| PowerScore | 1.715 | 1.272 | 0.443 |
+| PowerScore | 1.715 | 1.272 | 0.443 |
 | Tempo | 8.545 | 6.167 | 2.379 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ ATL edge: +0.236 (NO -0.094 vs ATL +0.141)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NO - ATL) | -0.8 pts (favours ATL) |
-| Model Win% NO | 46.8% |
-| Model Win% ATL | 53.2% |
-| SOS Differential (NO-ATL) | -0.021 |
+| Model Spread (NO - ATL) | +8.2 pts (favours NO) |
+| Model Win% NO | 79.7% |
+| Model Win% ATL | 20.3% |
+| SOS Differential (NO-ATL) | +0.022 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ ATL edge: +0.236 (NO -0.094 vs ATL +0.141)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -5.1 pp | -12.4 pp | -17.0 pp |
-| ATL | +0.2 pp | -4.0 pp | -12.1 pp |
+| NO | -1.7 pp | -10.4 pp | -2.1 pp |
+| ATL | -2.3 pp | -10.2 pp | -19.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -4.7 pp | -10.1 pp | -2.0 pp |
-| ATL | -0.5 pp | +7.5 pp | +11.9 pp |
+| NO | -5.2 pp | -6.5 pp | -8.0 pp |
+| ATL | +0.5 pp | +12.5 pp | +11.1 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | +3.4 pp | +4.0 pp | +2.3 pp |
-| ATL | +2.4 pp | +1.3 pp | +4.7 pp |
+| NO | +4.6 pp | +4.2 pp | +9.6 pp |
+| ATL | +2.0 pp | +1.7 pp | +4.0 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -2.4 pp | -4.9 pp | -5.7 pp |
-| ATL | +0.1 pp | -0.8 pp | -2.6 pp |
+| NO | -2.5 pp | -5.2 pp | -4.3 pp |
+| ATL | +1.2 pp | +0.9 pp | +3.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -5.5 pp | -6.4 pp | -4.5 pp |
-| ATL | +0.9 pp | +2.4 pp | +3.5 pp |
+| NO | -6.5 pp | -6.8 pp | -8.5 pp |
+| ATL | +1.6 pp | +4.3 pp | +6.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -0.0 pp | -2.7 pp | -9.0 pp |
-| ATL | -3.8 pp | -1.9 pp | +0.3 pp |
+| NO | -1.1 pp | -7.2 pp | -6.7 pp |
+| ATL | -3.8 pp | -3.6 pp | -0.5 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -2.4 pp | -4.9 pp | -5.7 pp |
-| ATL | +0.1 pp | -0.8 pp | -2.6 pp |
+| NO | -2.5 pp | -5.2 pp | -4.3 pp |
+| ATL | +1.2 pp | +0.9 pp | +3.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | +3.4 pp | +4.0 pp | +2.3 pp |
-| ATL | +2.4 pp | +1.3 pp | +4.7 pp |
+| NO | +4.6 pp | +4.2 pp | +9.6 pp |
+| ATL | +2.0 pp | +1.7 pp | +4.0 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 50.8 | 49.2 | 50.3 |
-| ATL | 47.4 | 46.9 | 51.1 |
+| NO | 49.0 | 46.8 | 44.4 |
+| ATL | 47.7 | 50.2 | 51.3 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 47.2 | 47.8 | 43.6 |
-| ATL | 48.3 | 44.8 | 44.9 |
+| NO | 47.1 | 46.1 | 42.9 |
+| ATL | 47.9 | 44.3 | 44.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 3.6 | 1.3 | 6.7 |
-| ATL | -0.9 | 2.2 | 6.2 |
+| NO | 1.9 | 0.7 | 1.5 |
+| ATL | -0.2 | 5.9 | 6.6 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 1.46 | 1.32 | 0.89 |
-| ATL | 1.76 | 1.68 | 1.76 |
+| NO | 1.50 | 1.33 | 1.09 |
+| ATL | 1.77 | 1.66 | 2.10 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 2.43 | 2.26 | 2.37 |
-| ATL | 2.20 | 2.32 | 2.69 |
+| NO | 2.25 | 2.11 | 1.86 |
+| ATL | 2.22 | 2.54 | 2.36 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | -0.97 | -0.94 | -1.49 |
-| ATL | -0.45 | -0.64 | -0.93 |
+| NO | -0.74 | -0.77 | -0.77 |
+| ATL | -0.45 | -0.87 | -0.26 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 7.58 | 7.11 | 6.73 |
-| ATL | 7.60 | 7.21 | 6.72 |
+| NO | 7.72 | 7.41 | 7.61 |
+| ATL | 7.45 | 6.97 | 6.74 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 46.6% | 48.9% | 54.9% |
-| ATL | 43.9% | 45.4% | 45.1% |
+| NO | 46.0% | 49.0% | 51.3% |
+| ATL | 43.6% | 45.7% | 42.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 53.4% | 51.1% | 45.1% |
-| ATL | 56.1% | 54.6% | 54.9% |
+| NO | 54.0% | 51.0% | 48.7% |
+| ATL | 56.4% | 54.3% | 57.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 3.53 | 3.47 | 3.69 |
-| ATL | 3.33 | 3.27 | 3.03 |
+| NO | 3.55 | 3.63 | 3.90 |
+| ATL | 3.25 | 3.19 | 2.86 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NO | 4.05 | 3.63 | 3.03 |
-| ATL | 4.26 | 3.93 | 3.69 |
+| NO | 4.17 | 3.78 | 3.70 |
+| ATL | 4.20 | 3.79 | 3.88 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NO | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.118 | 0.139 |
-| Last 5 games | 0.097 | 0.157 |
-| Last 3 games | 0.086 | 0.168 |
+| Season-to-date | 1.645 | 1.623 |
+| Last 5 games | 1.623 | 1.728 |
+| Last 3 games | 1.540 | 1.642 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W7 | W8 | W9 | Trend |
+| Metric | W8 | W9 | W10 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA NO | -0.231 | -0.394 | -0.211 | + improving |
-| Off EPA ATL | -0.077 | -0.227 | 0.016 | + improving |
-| Def EPA NO | -0.010 | -0.078 | 0.172 | - declining |
-| Def EPA ATL | 0.043 | 0.176 | 0.022 | + improving |
-| Off SR NO | 42.9% | 38.4% | 40.7% | - declining |
-| Off SR ATL | 44.2% | 41.8% | 43.8% | = stable |
-| Def SR NO | 43.8% | 35.6% | 53.1% | - declining |
-| Def SR ATL | 51.9% | 53.6% | 45.1% | + improving |
-| Tempo NO | 6.364 | 7.818 | 6.000 | - declining |
-| Tempo ATL | 8.556 | 6.091 | 7.300 | - declining |
+| Off EPA NO | -0.394 | -0.211 | 0.052 | + improving |
+| Off EPA ATL | -0.227 | 0.016 | 0.010 | + improving |
+| Def EPA NO | -0.078 | 0.172 | -0.149 | + improving |
+| Def EPA ATL | 0.176 | 0.022 | 0.103 | + improving |
+| Off SR NO | 38.4% | 40.7% | 39.5% | + improving |
+| Off SR ATL | 41.8% | 43.8% | 50.0% | + improving |
+| Def SR NO | 35.6% | 53.1% | 46.9% | - declining |
+| Def SR ATL | 53.6% | 45.1% | 53.3% | = stable |
+| Tempo NO | 7.818 | 6.000 | 9.000 | + improving |
+| Tempo ATL | 6.091 | 7.300 | 6.154 | + improving |
 
 ## Matchup Analogs
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | TB (H) | 3-17 | TB | 0.637 | -0.394 | 38.4% | -1.273 |
-| 5 | NYG (H) | 20-15 | NO | 0.586 | -0.043 | 46.3% | 0.418 |
-| 10 | CAR (A) | n/a | n/a | 0.570 | n/a | n/a | n/a |
+| 5 | NYG (H) | 20-15 | NO | 0.639 | -0.043 | 46.3% | 0.418 |
+| 10 | CAR (A) | 17-6 | NO | 0.570 | 0.052 | 39.5% | 1.253 |
+| 1 | ARI (H) | 13-24 | ARI | 0.552 | -0.090 | 41.7% | -1.040 |
 
 **ATL analogs vs NO profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | MIN (A) | 22-6 | ATL | 0.817 | 0.012 | 47.0% | 1.455 |
-| 3 | CAR (A) | 0-26 | CAR | 0.758 | -0.379 | 33.8% | -2.400 |
-| 11 | CAR (H) | 27-32 | CAR | 0.758 | 0.043 | 52.3% | -0.423 |
+| 2 | MIN (A) | 22-6 | ATL | 0.846 | 0.012 | 47.0% | 1.455 |
+| 3 | CAR (A) | 0-26 | CAR | 0.774 | -0.379 | 33.8% | -2.400 |
+| 11 | CAR (H) | 27-32 | CAR | 0.774 | 0.043 | 52.3% | -0.423 |
 
 ## Core EPA Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | -0.038 | -0.039 | -0.056 |
-| NO | -0.146 | -0.174 | -0.279 |
+| ATL | -0.033 | -0.047 | 0.023 |
+| NO | -0.126 | -0.155 | -0.184 |
 
 ## Core EPA Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 0.022 | 0.051 | 0.101 |
-| NO | 0.032 | -0.007 | 0.028 |
+| ATL | 0.030 | 0.090 | 0.076 |
+| NO | 0.014 | 0.005 | -0.018 |
 
 ## Success Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 46.2% | 46.8% | 46.5% |
-| NO | 44.3% | 43.5% | 40.5% |
+| ATL | 46.6% | 46.8% | 49.0% |
+| NO | 43.8% | 42.0% | 39.4% |
 
 ## Success Rate Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 47.9% | 48.8% | 47.7% |
-| NO | 46.7% | 46.3% | 45.0% |
+| ATL | 48.5% | 49.7% | 47.8% |
+| NO | 46.7% | 45.9% | 45.9% |
 
 ## Explosive Play Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 9.7% | 9.2% | 8.3% |
-| NO | 7.1% | 7.2% | 6.2% |
+| ATL | 10.1% | 9.6% | 10.4% |
+| NO | 7.5% | 7.5% | 8.1% |
 
 ## Third Down Conversion Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 32.9% | 26.7% | 19.1% |
-| NO | 33.1% | 33.7% | 33.0% |
+| ATL | 29.7% | 19.7% | 13.5% |
+| NO | 34.2% | 35.0% | 39.0% |
 
 ## Points per Drive Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | -0.437 | -0.600 | -0.933 |
-| NO | -0.952 | -0.899 | -1.433 |
+| ATL | -0.440 | -0.852 | -0.287 |
+| NO | -0.761 | -0.799 | -0.804 |
 
 ## Yards per Play Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 0.229 | -0.309 | -0.724 |
-| NO | -0.374 | -0.105 | -0.281 |
+| ATL | 0.007 | -0.895 | -1.107 |
+| NO | -0.131 | 0.249 | 0.645 |
 
 ## Turnover Margin Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | -0.111 | 0.400 | 0.000 |
-| NO | -0.444 | -0.800 | -2.667 |
+| ATL | 0.000 | 0.200 | 0.667 |
+| NO | -0.100 | -1.200 | -0.667 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 14.0% | 18.2% | 22.5% |
-| NO | 10.5% | 8.3% | 10.8% |
+| ATL | 15.6% | 22.9% | 25.9% |
+| NO | 9.4% | 8.3% | 4.2% |
 
 ## Pressure Rate (Def) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 9.6% | 10.2% | 10.2% |
-| NO | 6.4% | 5.1% | 6.6% |
+| ATL | 10.7% | 11.6% | 15.9% |
+| NO | 6.5% | 6.1% | 7.9% |
 
 ## Tempo Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 7.596 | 7.210 | 6.720 |
-| NO | 7.581 | 7.105 | 6.727 |
+| ATL | 7.452 | 6.974 | 6.741 |
+| NO | 7.723 | 7.414 | 7.606 |
 
 ## Pass Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| ATL | 43.5% | 44.8% | 44.3% |
-| NO | 46.6% | 49.3% | 56.2% |
+| ATL | 43.3% | 45.2% | 41.9% |
+| NO | 46.0% | 49.4% | 52.0% |

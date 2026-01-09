@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 9 | NO (A) | 27-23 | ATL | 1.000 | -0.017 | 36.8% | 0.371 |
-| 8 | CAR (H) | 13-17 | CAR | 0.976 | -0.141 | 39.1% | -0.427 |
-| 14 | CAR (A) | 23-23 | TIE | 0.976 | 0.033 | 37.6% | -0.009 |
+| 12 | NO (A) | 21-14 | ATL | 1.000 | 0.065 | 44.4% | 0.700 |
+| 3 | CAR (A) | 17-13 | ATL | 0.976 | 0.017 | 37.3% | 0.427 |
+| 11 | CAR (H) | 0-17 | CAR | 0.976 | -0.511 | 34.8% | -1.583 |
 
 **NO analogs vs ATL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 9 | ATL (H) | 25-29 | ATL | 1.000 | -0.038 | 40.4% | -0.371 |
-| 14 | NYJ (A) | 30-9 | NO | 0.925 | 0.114 | 47.1% | 1.750 |
-| 4 | NYG (H) | 21-27 | NYG | 0.922 | -0.032 | 45.2% | -0.545 |
+| 12 | ATL (H) | 6-34 | ATL | 1.000 | -0.362 | 21.9% | -2.555 |
+| 16 | NYJ (H) | 3-14 | NYJ | 0.925 | -0.516 | 23.5% | -0.917 |
+| 5 | NYG (H) | 33-24 | NO | 0.922 | 0.080 | 36.8% | 0.705 |
 
 ## Core EPA Offense Form (up to Week 17)
 

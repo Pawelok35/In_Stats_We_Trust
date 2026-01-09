@@ -4,19 +4,21 @@
 
 | Metric | BAL | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.252 | -0.027 | ↑ +0.278 |
-| Core EPA Defense | 0.189 | -0.025 | ↑ +0.215 |
-| Success Rate Offense | 58.9% | 43.5% | ↑ +15.4 pp |
-| Success Rate Defense | 48.9% | 36.6% | ↑ +12.3 pp |
-| Explosive Play Rate (Off) | 13.7% | 12.9% | ↑ +0.7 pp |
-| Third Down Conversion | 66.7% | 47.1% | ↑ +19.6 pp |
-| Points per Drive Differential | 0.385 | -0.024 | ↑ +0.408 |
-| Yards per Play Differential | 0.648 | 1.634 | ↓ -0.987 |
-| Turnover Margin | 0.000 | -2.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 29.4% | 25.0% | ↑ +4.4 pp |
-| Pressure Rate (Def) | 7.1% | 3.2% | ↑ +3.9 pp |
-| Tempo | 7.308 | 6.071 | ↑ +1.236 |
-| PowerScore | 0.301 | 0.120 | ↑ +0.180 |
+| Core EPA Offense | 0.080 | -0.024 | 0.104 |
+| Core EPA Defense | 0.018 | 0.049 | -0.031 |
+| Success Rate Offense | 0.502 | 0.428 | 0.074 |
+| Success Rate Defense | 0.442 | 0.471 | -0.029 |
+| Explosive Play Rate (Off) | 0.137 | 0.121 | 0.016 |
+| Third Down Conversion | 0.402 | 0.335 | 0.067 |
+| Points per Drive Differential | 0.346 | -0.406 | 0.752 |
+| Yards per Play Differential | 1.144 | 0.338 | 0.806 |
+| Turnover Margin | 0.250 | 0.250 | 0.000 |
+| Red Zone TD Rate (Off) | 0.241 | 0.115 | 0.126 |
+| Pressure Rate (Def) | 0.080 | 0.101 | -0.021 |
+| Tempo | 7.308 | 6.071 | 1.236 |
+| PowerScore | 1.735 | 1.309 | 0.426 |
+| PowerScore | 1.735 | 1.309 | 0.426 |
+| Tempo | 7.308 | 6.071 | 1.236 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BAL edge: +0.180 (BAL +0.301 vs HOU +0.120)
 **7 metrics version:**
 BAL edge: +0.345 (BAL +0.239 vs HOU -0.105)
 **Verdict:** BAL holds the edge in the extended breakdown (lead 0.345), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - HOU) | +3.3 pts (favours BAL) |
-| Model Win% BAL | 63.6% |
-| Model Win% HOU | 36.4% |
-| SOS Differential (BAL-HOU) | +0.006 |
+| Model Spread (BAL - HOU) | +7.9 pts (favours BAL) |
+| Model Win% BAL | 78.8% |
+| Model Win% HOU | 21.2% |
+| SOS Differential (BAL-HOU) | +0.114 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.153 | 0.147 |
-| Last 5 games | 0.153 | 0.147 |
-| Last 3 games | 0.140 | 0.124 |
+| Season-to-date | 1.603 | 1.488 |
+| Last 5 games | 1.603 | 1.488 |
+| Last 3 games | 1.615 | 1.483 |
 
 ## Trend Summary (last 3 weeks)
 

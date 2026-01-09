@@ -16,9 +16,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +19.3 pts
 • PowerScoreDiff (winner) = +0.120
-• Confidence = 98.0%
+• Confidence = 100.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +19.3 pts model edge vs line, and PowerScore Δ +0.120.
+🏷 Model Tag: GOY — based on 100.0% confidence, +19.3 pts model edge vs line, and PowerScore Δ +0.120.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:

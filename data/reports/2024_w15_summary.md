@@ -1,6 +1,6 @@
 # Weekly Report - Season 2024, Week 15
 
-_Generated at 2025-12-28T14:51:04.275658+00:00 (UTC)_
+_Generated at 2026-01-08T18:31:00.570396+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2024\15_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2780, "cols": 18, "timestamp": "2025-12-28T14:51:03.802189+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2780, "cols": 24, "rows_removed": 0, "timestamp": "2025-12-28T14:51:03.802189+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2780, "cols": 24, "timestamp": "2025-12-28T14:51:03.802189+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2780, "cols": 18, "timestamp": "2026-01-08T18:31:00.136777+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2780, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T18:31:00.136777+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2780, "cols": 24, "timestamp": "2026-01-08T18:31:00.136777+00:00"}
 
 ## L3 Sanity
 

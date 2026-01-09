@@ -4,19 +4,20 @@
 
 | Metric | WAS | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.071 | -0.113 | ↑ +0.185 |
-| Core EPA Defense | -0.113 | 0.071 | ↓ -0.185 |
-| Success Rate Offense | 48.2% | 37.8% | ↑ +10.4 pp |
-| Success Rate Defense | 37.8% | 48.2% | ↓ -10.4 pp |
-| Explosive Play Rate (Off) | 16.5% | 6.1% | ↑ +10.4 pp |
-| Third Down Conversion | 33.3% | 21.1% | ↑ +12.3 pp |
-| Points per Drive Differential | 1.433 | -1.433 | ↑ +2.867 |
-| Yards per Play Differential | 2.265 | -2.265 | ↑ +4.531 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 25.0% | 0.0% | ↑ +25.0 pp |
-| Pressure Rate (Def) | 5.1% | 8.3% | ↓ -3.2 pp |
-| Tempo | 8.500 | 9.111 | ↓ -0.611 |
-| PowerScore | 0.156 | 0.081 | ↑ +0.075 |
+| Core EPA Offense | 0.071 | -0.113 | 0.185 |
+| Core EPA Defense | -0.113 | 0.071 | -0.185 |
+| Success Rate Offense | 0.482 | 0.378 | 0.104 |
+| Success Rate Defense | 0.378 | 0.482 | -0.104 |
+| Explosive Play Rate (Off) | 0.165 | 0.061 | 0.104 |
+| Third Down Conversion | 0.333 | 0.211 | 0.123 |
+| Points per Drive Differential | 1.433 | -1.433 | 2.867 |
+| Yards per Play Differential | 2.265 | -2.265 | 4.531 |
+| Red Zone TD Rate (Off) | 0.250 | 0.000 | 0.250 |
+| Pressure Rate (Def) | 0.051 | 0.083 | -0.032 |
+| Tempo | 8.500 | 9.111 | -0.611 |
+| PowerScore | 1.823 | 1.891 | -0.068 |
+| PowerScore | 1.823 | 1.891 | -0.068 |
+| Tempo | 8.500 | 9.111 | -0.611 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ WAS edge: +0.075 (WAS +0.156 vs NYG +0.081)
 **7 metrics version:**
 WAS edge: +0.057 (WAS +0.114 vs NYG +0.057)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.057), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - NYG) | +1.4 pts (favours WAS) |
-| Model Win% WAS | 55.7% |
-| Model Win% NYG | 44.3% |
+| Model Spread (WAS - NYG) | -1.3 pts (favours NYG) |
+| Model Win% WAS | 44.7% |
+| Model Win% NYG | 55.3% |
 | SOS Differential (WAS-NYG) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

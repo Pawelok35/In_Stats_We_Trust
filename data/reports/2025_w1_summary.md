@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 1
 
-_Generated at 2025-11-11T13:52:38.893626+00:00 (UTC)_
+_Generated at 2026-01-08T19:10:46.748845+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\1_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2738, "cols": 18, "timestamp": "2025-11-11T13:52:38.507392+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2738, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T13:52:38.507392+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2738, "cols": 24, "timestamp": "2025-11-11T13:52:38.507392+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2738, "cols": 18, "timestamp": "2026-01-08T19:10:46.375762+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2738, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:10:46.375762+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2738, "cols": 24, "timestamp": "2026-01-08T19:10:46.375762+00:00"}
 
 ## L3 Sanity
 
@@ -33,7 +33,7 @@ Last 3 entries from `data\l2_audit\2025\1_audit.jsonl`:
 - Artifact: `data\l4_core12\2025\1.parquet`
 - Manifest: `data\l4_core12\2025\1_manifest.json`
 - Rows: 32
-- Columns: 15
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\1_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| BAL | 0.3453892516531577 |
-| BUF | 0.2845026485680589 |
-| LAC | 0.2667936341130515 |
-| NYJ | 0.26143171866025244 |
-| PIT | 0.2510446676960239 |
-| PHI | 0.23367640427821196 |
-| DAL | 0.22966680873232953 |
-| IND | 0.2279327236313058 |
-| KC | 0.22486251747139746 |
-| GB | 0.20200948169174965 |
+| IND | 2.6235629757321464 |
+| LAC | 2.26710227608836 |
+| KC | 2.1770777073448153 |
+| DAL | 2.0607478898134106 |
+| ATL | 1.956955128917259 |
+| PHI | 1.9516251222269299 |
+| BUF | 1.906357429301344 |
+| ARI | 1.89871988245048 |
+| NYG | 1.8913859534515467 |
+| CLE | 1.8751044835157813 |
 
 
 ## Visualizations

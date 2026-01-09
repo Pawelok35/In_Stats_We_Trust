@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.142 | 0.100 | 0.042 |
 | Pressure Rate (Def) | 0.065 | 0.127 | -0.062 |
 | Tempo | 8.900 | 7.818 | 1.082 |
-| PowerScore | 0.132 | 0.037 | 0.094 |
-| PowerScore | 0.132 | 0.037 | 0.094 |
+| PowerScore | 1.898 | 1.580 | 0.318 |
+| PowerScore | 1.898 | 1.580 | 0.318 |
 | Tempo | 8.900 | 7.818 | 1.082 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ JAX edge: +0.063 (JAX -0.094 vs HOU -0.158)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - HOU) | +1.7 pts (favours JAX) |
-| Model Win% JAX | 57.2% |
-| Model Win% HOU | 42.8% |
+| Model Spread (JAX - HOU) | +5.9 pts (favours JAX) |
+| Model Win% JAX | 72.7% |
+| Model Win% HOU | 27.3% |
 | SOS Differential (JAX-HOU) | +0.337 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

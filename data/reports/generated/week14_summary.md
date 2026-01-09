@@ -3,32 +3,32 @@
 ## ARI vs LA
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – ARI 32.3 – LA 26.0
+1️⃣ Estimated Score (Model) – ARI 26.6 – LA 26.0
 2️⃣ Predicted Winner (Model) – ARI
-3️⃣ Predicted Margin (Model) – ARI by 6.3 pts
-4️⃣ Win Probability (Model) – 82% (ARI)
-5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje ARI (+4.00 vs +2.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja ARI (17.5% vs 15.1%). ARI prowadzi w Points per Drive Differential (+1.042 vs +0.695), więc bazowa efektywność napędza przewagę. Na 3rd down ARI utrzymuje 37.6%, podczas gdy LA jest na 37.4%, co stabilizuje serie ofensywne.
+3️⃣ Predicted Margin (Model) – ARI by 0.6 pts
+4️⃣ Win Probability (Model) – 57% (ARI)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja ARI (17.5% vs 15.1%). Defensive pressure rate wspiera ARI (+9.1% vs +7.5%), więc pasy rywala będą częściej pod presją. ARI prowadzi w Points per Drive Differential (+1.042 vs +0.695), więc bazowa efektywność napędza przewagę. Na 3rd down ARI utrzymuje 37.6%, podczas gdy LA jest na 37.4%, co stabilizuje serie ofensywne.
 
 🔹 MARKET PROJECTION (Balanced)
 1️⃣ Estimated Score (Market) – ARI 27.5 – LA 24.5
 2️⃣ Predicted Winner (Market) – ARI
 3️⃣ Predicted Margin (Market) – ARI by 3.0 pts
 4️⃣ Win Probability (Market) – 60% (ARI)
-5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.170 vs LA +0.187. Points per Drive Differential — ARI +1.042 vs LA +0.695. Success Rate Offense — ARI 46.3% vs LA 46.3%. Third Down Conversion — ARI 37.6% vs LA 37.4%. Red Zone TD Rate — ARI 17.5% vs LA 15.1%. Explosive Play Rate — ARI 10.5% vs LA 11.4%. Model margin 6.3 pts vs market spread ARI +3.0.
-6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie 6.3 pkt. ARI notuje +1.042 PPD vs +0.695 u LA. Różnica w Success Rate to 46.3% vs 46.3%. Na 3rd down ARI (37.6%) wygląda solidniej niż LA (37.4%). Red Zone i explosiveness ( 17.5% / 10.5% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +3.3.
+5️⃣ Forum Output (A) – PowerScore (Model) — ARI +0.152 vs LA +0.185. Points per Drive Differential — ARI +1.042 vs LA +0.695. Success Rate Offense — ARI 46.3% vs LA 46.3%. Third Down Conversion — ARI 37.6% vs LA 37.4%. Red Zone TD Rate — ARI 17.5% vs LA 15.1%. Explosive Play Rate — ARI 10.5% vs LA 11.4%. Model margin 0.6 pts vs market spread ARI +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie 0.6 pkt. ARI notuje +1.042 PPD vs +0.695 u LA. Różnica w Success Rate to 46.3% vs 46.3%. Na 3rd down ARI (37.6%) wygląda solidniej niż LA (37.4%). Red Zone i explosiveness ( 17.5% / 10.5% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to -2.4.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +3.3 pts
-• PowerScoreDiff (winner) = -0.017
-• Confidence = 82.0%
+• Edge_vs_Line (winner) = -2.4 pts
+• PowerScoreDiff (winner) = -0.033
+• Confidence = 57.0%
 
-🏷 Model Tag: NEUTRAL — based on 82.0% confidence, +3.3 pts model edge vs line, and PowerScore Δ -0.017.
+🏷 Model Tag: NEUTRAL — based on 57.0% confidence, -2.4 pts model edge vs line, and PowerScore Δ -0.033.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – ARI 32.3 – LA 26.0
-   • Win Probability – 82% (ARI)
+   • Estimated Score – ARI 26.6 – LA 26.0
+   • Win Probability – 57% (ARI)
 
 2. MARKET PROJECTION (Balanced)
    • Estimated Score – ARI 27.5 – LA 24.5
@@ -41,31 +41,31 @@ SUMMARY:
 ## GB vs CHI
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – GB 37.9 – CHI 18.4
+1️⃣ Estimated Score (Model) – GB 40.2 – CHI 16.1
 2️⃣ Predicted Winner (Model) – GB
-3️⃣ Predicted Margin (Model) – GB by 19.5 pts
+3️⃣ Predicted Margin (Model) – GB by 24.1 pts
 4️⃣ Win Probability (Model) – 95% (GB)
-5️⃣ Why This Team Wins (Model) – Na 3rd down GB utrzymuje 37.2%, podczas gdy CHI jest na 29.1%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę GB: GB +0.160 vs CHI +0.095. Success Rate Offense pokazuje GB na poziomie 45.2% vs 40.1% (+5.1 pp). Red Zone TD Rate sprzyja GB (14.5% vs 10.5%). Turnover margin faworyzuje GB (+0.75 vs -0.83), co przekłada się na dodatkowe posiadania.
+5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje GB (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Na 3rd down GB utrzymuje 37.2%, podczas gdy CHI jest na 29.1%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę GB: GB +0.172 vs CHI +0.096. Success Rate Offense pokazuje GB na poziomie 45.2% vs 40.1% (+5.1 pp). Red Zone TD Rate sprzyja GB (14.5% vs 10.5%).
 
 🔹 MARKET PROJECTION (Balanced)
 1️⃣ Estimated Score (Market) – GB 34.6 – CHI 21.6
 2️⃣ Predicted Winner (Market) – GB
 3️⃣ Predicted Margin (Market) – GB by 13.0 pts
 4️⃣ Win Probability (Market) – 95% (GB)
-5️⃣ Forum Output (A) – PowerScore (Model) — GB +0.160 vs CHI +0.095. Points per Drive Differential — GB +0.290 vs CHI -0.774. Success Rate Offense — GB 45.2% vs CHI 40.1%. Third Down Conversion — GB 37.2% vs CHI 29.1%. Red Zone TD Rate — GB 14.5% vs CHI 10.5%. Explosive Play Rate — GB 9.8% vs CHI 9.4%. Model margin 19.5 pts vs market spread GB +13.0.
-6️⃣ Forum Output (B) – Model idzie w stronę GB po marginesie 19.5 pkt. GB notuje +0.290 PPD vs -0.774 u CHI. Różnica w Success Rate to 45.2% vs 40.1%. Na 3rd down GB (37.2%) wygląda solidniej niż CHI (29.1%). Red Zone i explosiveness ( 14.5% / 9.8% ) utrzymują przewagę jakościową. Market trzyma 13.0 pkt, więc edge vs linia to +6.5.
+5️⃣ Forum Output (A) – PowerScore (Model) — GB +0.172 vs CHI +0.096. Points per Drive Differential — GB +0.290 vs CHI -0.774. Success Rate Offense — GB 45.2% vs CHI 40.1%. Third Down Conversion — GB 37.2% vs CHI 29.1%. Red Zone TD Rate — GB 14.5% vs CHI 10.5%. Explosive Play Rate — GB 9.8% vs CHI 9.4%. Model margin 24.1 pts vs market spread GB +13.0.
+6️⃣ Forum Output (B) – Model idzie w stronę GB po marginesie 24.1 pkt. GB notuje +0.290 PPD vs -0.774 u CHI. Różnica w Success Rate to 45.2% vs 40.1%. Na 3rd down GB (37.2%) wygląda solidniej niż CHI (29.1%). Red Zone i explosiveness ( 14.5% / 9.8% ) utrzymują przewagę jakościową. Market trzyma 13.0 pkt, więc edge vs linia to +11.1.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +6.5 pts
-• PowerScoreDiff (winner) = +0.065
+• Edge_vs_Line (winner) = +11.1 pts
+• PowerScoreDiff (winner) = +0.076
 • Confidence = 98.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +6.5 pts model edge vs line, and PowerScore Δ +0.065.
+🏷 Model Tag: GOY — based on 98.0% confidence, +11.1 pts model edge vs line, and PowerScore Δ +0.076.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – GB 37.9 – CHI 18.4
+   • Estimated Score – GB 40.2 – CHI 16.1
    • Win Probability – 95% (GB)
 
 2. MARKET PROJECTION (Balanced)
@@ -134,9 +134,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +1.1 pts
 • PowerScoreDiff (winner) = +0.135
-• Confidence = 77.0%
+• Confidence = 78.0%
 
-🏷 Model Tag: NEUTRAL — based on 77.0% confidence, +1.1 pts model edge vs line, and PowerScore Δ +0.135.
+🏷 Model Tag: NEUTRAL — based on 78.0% confidence, +1.1 pts model edge vs line, and PowerScore Δ +0.135.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -172,9 +172,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +3.9 pts
 • PowerScoreDiff (winner) = -0.016
-• Confidence = 95.0%
+• Confidence = 94.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +3.9 pts model edge vs line, and PowerScore Δ -0.016.
+🏷 Model Tag: NEUTRAL — based on 94.0% confidence, +3.9 pts model edge vs line, and PowerScore Δ -0.016.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -210,9 +210,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +6.4 pts
 • PowerScoreDiff (winner) = +0.034
-• Confidence = 96.5%
+• Confidence = 97.5%
 
-🏷 Model Tag: VALUE PLAY — based on 96.5% confidence, +6.4 pts model edge vs line, and PowerScore Δ +0.034.
+🏷 Model Tag: VALUE PLAY — based on 97.5% confidence, +6.4 pts model edge vs line, and PowerScore Δ +0.034.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
@@ -286,9 +286,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +4.5 pts
 • PowerScoreDiff (winner) = +0.005
-• Confidence = 60.0%
+• Confidence = 61.0%
 
-🏷 Model Tag: NEUTRAL — based on 60.0% confidence, +4.5 pts model edge vs line, and PowerScore Δ +0.005.
+🏷 Model Tag: NEUTRAL — based on 61.0% confidence, +4.5 pts model edge vs line, and PowerScore Δ +0.005.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -324,9 +324,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +8.2 pts
 • PowerScoreDiff (winner) = +0.198
-• Confidence = 98.0%
+• Confidence = 96.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +8.2 pts model edge vs line, and PowerScore Δ +0.198.
+🏷 Model Tag: GOY — based on 96.0% confidence, +8.2 pts model edge vs line, and PowerScore Δ +0.198.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
@@ -400,9 +400,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -1.8 pts
 • PowerScoreDiff (winner) = -0.191
-• Confidence = 63.0%
+• Confidence = 64.0%
 
-🏷 Model Tag: NEUTRAL — based on 63.0% confidence, -1.8 pts model edge vs line, and PowerScore Δ -0.191.
+🏷 Model Tag: NEUTRAL — based on 64.0% confidence, -1.8 pts model edge vs line, and PowerScore Δ -0.191.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -438,9 +438,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +3.3 pts
 • PowerScoreDiff (winner) = +0.022
-• Confidence = 95.0%
+• Confidence = 94.0%
 
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +3.3 pts model edge vs line, and PowerScore Δ +0.022.
+🏷 Model Tag: VALUE PLAY — based on 94.0% confidence, +3.3 pts model edge vs line, and PowerScore Δ +0.022.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
@@ -514,9 +514,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -0.4 pts
 • PowerScoreDiff (winner) = -0.036
-• Confidence = 68.0%
+• Confidence = 67.0%
 
-🏷 Model Tag: NEUTRAL — based on 68.0% confidence, -0.4 pts model edge vs line, and PowerScore Δ -0.036.
+🏷 Model Tag: NEUTRAL — based on 67.0% confidence, -0.4 pts model edge vs line, and PowerScore Δ -0.036.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:

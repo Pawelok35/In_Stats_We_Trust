@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.171 | 0.178 | -0.007 |
 | Pressure Rate (Def) | 0.107 | 0.069 | 0.038 |
 | Tempo | 7.900 | 7.400 | 0.500 |
-| PowerScore | 0.237 | 0.196 | 0.041 |
-| PowerScore | 0.237 | 0.196 | 0.041 |
+| PowerScore | 1.791 | 1.651 | 0.140 |
+| PowerScore | 1.791 | 1.651 | 0.140 |
 | Tempo | 7.900 | 7.400 | 0.500 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BUF edge: +0.232 (BUF +0.286 vs KC +0.054)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - KC) | +0.8 pts (favours BUF) |
-| Model Win% BUF | 53.2% |
-| Model Win% KC | 46.8% |
-| SOS Differential (BUF-KC) | +0.019 |
+| Model Spread (BUF - KC) | +2.6 pts (favours BUF) |
+| Model Win% BUF | 60.6% |
+| Model Win% KC | 39.4% |
+| SOS Differential (BUF-KC) | -0.081 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.179 | 0.160 |
-| Last 5 games | 0.162 | 0.158 |
-| Last 3 games | 0.150 | 0.127 |
+| Season-to-date | 1.624 | 1.705 |
+| Last 5 games | 1.683 | 1.574 |
+| Last 3 games | 1.603 | 1.541 |
 
 ## Trend Summary (last 3 weeks)
 

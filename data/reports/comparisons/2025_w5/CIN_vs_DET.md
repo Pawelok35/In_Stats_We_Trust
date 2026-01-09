@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.146 | 0.172 | -0.026 |
 | Pressure Rate (Def) | 0.044 | 0.095 | -0.051 |
 | Tempo | 6.667 | 6.667 | 0.000 |
-| PowerScore | 0.177 | 0.213 | -0.036 |
-| PowerScore | 0.177 | 0.213 | -0.036 |
+| PowerScore | 1.486 | 1.529 | -0.043 |
+| PowerScore | 1.486 | 1.529 | -0.043 |
 | Tempo | 6.667 | 6.667 | 0.000 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ DET edge: +0.400 (CIN -0.044 vs DET +0.357)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - DET) | -0.7 pts (favours DET) |
-| Model Win% CIN | 47.2% |
-| Model Win% DET | 52.8% |
-| SOS Differential (CIN-DET) | -0.018 |
+| Model Spread (CIN - DET) | -0.8 pts (favours DET) |
+| Model Win% CIN | 46.7% |
+| Model Win% DET | 53.3% |
+| SOS Differential (CIN-DET) | +0.242 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | DET |
 | --- | ---: | ---: |
-| Season-to-date | 0.124 | 0.142 |
-| Last 5 games | 0.124 | 0.142 |
-| Last 3 games | 0.142 | 0.122 |
+| Season-to-date | 1.710 | 1.468 |
+| Last 5 games | 1.710 | 1.468 |
+| Last 3 games | 1.655 | 1.447 |
 
 ## Trend Summary (last 3 weeks)
 

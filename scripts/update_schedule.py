@@ -267,7 +267,7 @@ _WEEK_MATCHUPS: dict[int, list[tuple[str, str]]] = {
     ],
     16: [
         ("SEA", "LA"),   # Rams @ Seahawks
-        ("WAS", "PHI"),  # Eagles @ Commanders
+        ("PHI", "NYG"),  # Giants @ Eagles
         ("CHI", "GB"),   # Packers @ Bears
         ("CLE", "BUF"),  # Bills @ Browns
         ("MIA", "CIN"),  # Bengals @ Dolphins
@@ -318,6 +318,14 @@ _WEEK_MATCHUPS: dict[int, list[tuple[str, str]]] = {
         ("DEN", "LAC"),  # Chargers @ Broncos
         ("PHI", "WAS"),  # Commanders @ Eagles
         ("PIT", "BAL"),  # Ravens @ Steelers
+    ],
+    19: [
+        ("CAR", "LA"),    # Rams @ Panthers
+        ("CHI", "GB"),    # Packers @ Bears
+        ("JAX", "BUF"),   # Bills @ Jaguars
+        ("PHI", "SF"),    # 49ers @ Eagles
+        ("NE",  "LAC"),   # Chargers @ Patriots
+        ("PIT", "HOU"),   # Texans @ Steelers
     ],
 
 

@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 6
 
-_Generated at 2025-11-10T14:23:31.677554+00:00 (UTC)_
+_Generated at 2026-01-08T19:13:54.704779+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\6_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2523, "cols": 18, "timestamp": "2025-11-10T14:23:31.213093+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2523, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T14:23:31.213093+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2523, "cols": 24, "timestamp": "2025-11-10T14:23:31.213093+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2523, "cols": 18, "timestamp": "2026-01-08T19:13:54.330870+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2523, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:13:54.330870+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2523, "cols": 24, "timestamp": "2026-01-08T19:13:54.330870+00:00"}
 
 ## L3 Sanity
 
@@ -33,7 +33,7 @@ Last 3 entries from `data\l2_audit\2025\6_audit.jsonl`:
 - Artifact: `data\l4_core12\2025\6.parquet`
 - Manifest: `data\l4_core12\2025\6_manifest.json`
 - Rows: 30
-- Columns: 15
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\6_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| GB | 0.27363994552917137 |
-| KC | 0.26203587265938955 |
-| CAR | 0.2581734651179161 |
-| IND | 0.2461414684553505 |
-| DET | 0.23034574119797974 |
-| ARI | 0.22618525994696503 |
-| TB | 0.22393929229209153 |
-| CIN | 0.22207129614931292 |
-| DAL | 0.2163130069076587 |
-| LAC | 0.203538439472317 |
+| CLE | 2.2584212017001937 |
+| CIN | 2.0097256171369673 |
+| ARI | 2.0017408155025205 |
+| BAL | 1.9700848505779296 |
+| NE | 1.9536955308331796 |
+| DET | 1.935055886125516 |
+| CAR | 1.9299381710002692 |
+| SF | 1.9218121808985578 |
+| NYG | 1.911013345586187 |
+| GB | 1.9083066121958383 |
 
 
 ## Visualizations

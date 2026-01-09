@@ -434,6 +434,24 @@ def build_projection(inp: MatchInput, home: str, away: str) -> ProjectionResult:
         confidence += 3
     elif winner_ps_diff >= 0.03:
         confidence += 1.5
+
+    # Context tweaks (minimal, bez ingerencji w model margines):
+    # 1) Road favorite duży chalk: jeśli spread >= 7 (home dog → wyjazdowy faworyt), obniż nieco confidence.
+    if inp.home_field and inp.spread >= 7:
+        confidence -= 2.0
+
+    # 2) Field position edge jako proxy ST: duża przewaga/strata start_field_position_edge wzmacnia/osłabia confidence.
+    if inp.diff_field_position >= 5:
+        confidence += 1.0
+    elif inp.diff_field_position <= -5:
+        confidence -= 1.0
+
+    # 3) Pressure diff (def pressure vs def pressure przeciwnika) – lekki boost/cięcie.
+    if inp.diff_pressure >= 5:
+        confidence += 1.0
+    elif inp.diff_pressure <= -5:
+        confidence -= 1.0
+
     confidence = clamp(confidence, 0, 100)
     tag = classify(confidence, edge, winner_ps_diff)
     winner_line = inp.spread if model_winner == home else -inp.spread

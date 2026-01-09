@@ -15,39 +15,39 @@
 | Turnover Margin | -1.500 | 0.000 | -1.500 |
 | Red Zone TD Rate (Off) | 0.151 | 0.095 | 0.056 |
 | Pressure Rate (Def) | 0.074 | 0.074 | -0.000 |
-| Tempo | 8.231 | 7.545 | 0.685 |
-| PowerScore | 1.826 | 1.625 | 0.201 |
-| PowerScore | 1.826 | 1.625 | 0.201 |
-| Tempo | 8.231 | 7.545 | 0.685 |
+| Tempo | 8.778 | 8.444 | 0.333 |
+| PowerScore | 1.897 | 1.808 | 0.089 |
+| PowerScore | 1.897 | 1.808 | 0.089 |
+| Tempo | 8.778 | 8.444 | 0.333 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | TEN | IND | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.097 | -0.022 | +0.120 |
-| EPA Defense | 20% | 0.085 | 0.061 | +0.025 |
-| Success Rate Offense | 25% | 51.4% | 44.6% | +6.8 pp |
-| Tempo | 20% | 0.131 | 0.108 | +0.022 |
+| EPA Offense | 35% | 0.096 | -0.015 | +0.111 |
+| EPA Defense | 20% | -0.015 | 0.096 | -0.111 |
+| Success Rate Offense | 25% | 44.3% | 42.1% | +2.2 pp |
+| Tempo | 20% | 0.127 | 0.066 | +0.061 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | TEN | IND | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.097 | -0.022 | +0.120 |
-| EPA Defense | 20% | 0.085 | 0.061 | +0.025 |
-| Success Rate Offense | 15% | 51.4% | 44.6% | +6.8 pp |
-| Turnover Margin | 10% | -1.000 | 0.000 | -1.000 |
-| Tempo | 10% | 0.131 | 0.108 | +0.022 |
-| Red Zone TD Rate (Off) | 10% | 8.0% | 4.8% | +3.2 pp |
-| Pressure Rate (Def) | 10% | 8.8% | 3.2% | +5.6 pp |
+| EPA Offense | 25% | 0.096 | -0.015 | +0.111 |
+| EPA Defense | 20% | -0.015 | 0.096 | -0.111 |
+| Success Rate Offense | 15% | 44.3% | 42.1% | +2.2 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.127 | 0.066 | +0.061 |
+| Red Zone TD Rate (Off) | 10% | 20.0% | 7.1% | +12.9 pp |
+| Pressure Rate (Def) | 10% | 5.1% | 3.3% | +1.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TEN edge: +0.068 (TEN +0.206 vs IND +0.137)
+TEN edge: +0.034 (TEN +0.167 vs IND +0.132)
 **7 metrics version:**
-IND edge: +0.044 (TEN +0.048 vs IND +0.092)
-**Verdict:** IND holds the edge in the extended breakdown (lead 0.044), driven by Turnover Margin (10% weight).
+IND edge: +0.570 (TEN -0.175 vs IND +0.396)
+**Verdict:** IND holds the edge in the extended breakdown (lead 0.570), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ IND edge: +0.044 (TEN +0.048 vs IND +0.092)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - IND) | +3.7 pts (favours TEN) |
-| Model Win% TEN | 65.0% |
-| Model Win% IND | 35.0% |
+| Model Spread (TEN - IND) | +1.6 pts (favours TEN) |
+| Model Win% TEN | 56.8% |
+| Model Win% IND | 43.2% |
 | SOS Differential (TEN-IND) | -0.127 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
@@ -67,8 +67,8 @@ IND edge: +0.044 (TEN +0.048 vs IND +0.092)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| TEN | 41.1% | n/a | n/a | 54.8% | 44.2% | n/a |
-| IND | 48.2% | n/a | n/a | 38.2% | 31.8% | n/a |
+| TEN | 38.0% | 46.5% | -8.6% | 46.7% | 42.9% | Run heavy |
+| IND | 51.3% | 46.5% | 4.8% | 30.8% | 54.1% | Pass heavy |
 
 ## Situational Edges
 
@@ -248,14 +248,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | SEA (A) | 33-30 | TEN | 0.415 | 0.097 | 51.4% | 0.231 |
+| 2 | LA (H) | 33-30 | TEN | 0.220 | 0.097 | 51.4% | 0.231 |
 | 1 | ARI (H) | 13-38 | ARI | 0.057 | -0.314 | 38.3% | -2.083 |
 
 **IND analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | LA (H) | 18-30 | LA | 0.110 | -0.022 | 44.6% | -1.064 |
+| 2 | DEN (H) | 18-30 | DEN | 0.266 | -0.022 | 44.6% | -1.064 |
 | 1 | SEA (H) | 16-31 | SEA | 0.102 | -0.072 | 45.1% | -1.345 |
 
 ## Core EPA Offense Form (up to Week 2)

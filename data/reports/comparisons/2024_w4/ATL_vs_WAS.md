@@ -4,19 +4,21 @@
 
 | Metric | ATL | WAS | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.084 | 0.374 | ↓ -0.290 |
-| Core EPA Defense | 0.047 | -0.060 | ↑ +0.107 |
-| Success Rate Offense | 42.5% | 60.7% | ↓ -18.2 pp |
-| Success Rate Defense | 51.1% | 50.7% | ↑ +0.4 pp |
-| Explosive Play Rate (Off) | 11.0% | 10.7% | ↑ +0.2 pp |
-| Third Down Conversion | 36.4% | 75.0% | ↓ -38.6 pp |
-| Points per Drive Differential | -1.000 | 3.111 | ↓ -4.111 |
-| Yards per Play Differential | 0.337 | 1.314 | ↓ -0.977 |
-| Turnover Margin | -1.000 | 0.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 0.0% | 28.6% | ↓ -28.6 pp |
-| Pressure Rate (Def) | 2.7% | 15.4% | ↓ -12.7 pp |
-| Tempo | 7.300 | 9.333 | ↓ -2.033 |
-| PowerScore | 0.167 | 0.292 | ↓ -0.125 |
+| Core EPA Offense | -0.036 | 0.201 | -0.237 |
+| Core EPA Defense | 0.044 | 0.220 | -0.176 |
+| Success Rate Offense | 0.477 | 0.520 | -0.042 |
+| Success Rate Defense | 0.491 | 0.530 | -0.039 |
+| Explosive Play Rate (Off) | 0.113 | 0.105 | 0.008 |
+| Third Down Conversion | 0.195 | 0.415 | -0.220 |
+| Points per Drive Differential | -0.330 | -0.697 | 0.367 |
+| Yards per Play Differential | 0.374 | -0.489 | 0.863 |
+| Turnover Margin | -0.667 | 0.333 | -1.000 |
+| Red Zone TD Rate (Off) | 0.115 | 0.167 | -0.051 |
+| Pressure Rate (Def) | 0.037 | 0.037 | -0.000 |
+| Tempo | 7.300 | 9.333 | -2.033 |
+| PowerScore | 1.605 | 2.137 | -0.532 |
+| PowerScore | 1.605 | 2.137 | -0.532 |
+| Tempo | 7.300 | 9.333 | -2.033 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ WAS edge: +0.125 (ATL +0.167 vs WAS +0.292)
 **7 metrics version:**
 WAS edge: +0.220 (ATL +0.008 vs WAS +0.227)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.220), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - WAS) | -2.3 pts (favours WAS) |
-| Model Win% ATL | 40.5% |
-| Model Win% WAS | 59.5% |
-| SOS Differential (ATL-WAS) | -0.133 |
+| Model Spread (ATL - WAS) | -9.8 pts (favours WAS) |
+| Model Win% ATL | 16.2% |
+| Model Win% WAS | 83.8% |
+| SOS Differential (ATL-WAS) | -0.377 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.145 | 0.278 |
-| Last 5 games | 0.145 | 0.278 |
-| Last 3 games | 0.145 | 0.278 |
+| Season-to-date | 1.861 | 2.238 |
+| Last 5 games | 1.861 | 2.238 |
+| Last 3 games | 1.861 | 2.238 |
 
 ## Trend Summary (last 3 weeks)
 

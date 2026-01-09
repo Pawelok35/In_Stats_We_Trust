@@ -4,20 +4,20 @@
 
 | Metric | BAL | NYJ | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.039 | -0.014 | 0.053 |
-| Core EPA Defense | 0.037 | 0.108 | -0.071 |
-| Success Rate Offense | 0.490 | 0.485 | 0.004 |
-| Success Rate Defense | 0.483 | 0.469 | 0.015 |
-| Explosive Play Rate (Off) | 0.122 | 0.082 | 0.039 |
-| Third Down Conversion | 0.361 | 0.351 | 0.010 |
-| Points per Drive Differential | -0.067 | -0.795 | 0.727 |
-| Yards per Play Differential | 0.155 | -0.497 | 0.653 |
-| Turnover Margin | -0.333 | -1.111 | 0.778 |
-| Red Zone TD Rate (Off) | 0.116 | 0.098 | 0.018 |
-| Pressure Rate (Def) | 0.043 | 0.039 | 0.004 |
+| Core EPA Offense | 0.032 | -0.017 | 0.050 |
+| Core EPA Defense | 0.017 | 0.087 | -0.070 |
+| Success Rate Offense | 0.491 | 0.475 | 0.016 |
+| Success Rate Defense | 0.474 | 0.458 | 0.016 |
+| Explosive Play Rate (Off) | 0.117 | 0.084 | 0.033 |
+| Third Down Conversion | 0.365 | 0.341 | 0.024 |
+| Points per Drive Differential | 0.001 | -0.757 | 0.758 |
+| Yards per Play Differential | 0.069 | -0.495 | 0.564 |
+| Turnover Margin | 0.000 | -1.100 | 1.100 |
+| Red Zone TD Rate (Off) | 0.114 | 0.088 | 0.026 |
+| Pressure Rate (Def) | 0.041 | 0.051 | -0.010 |
 | Tempo | 7.091 | 7.400 | -0.309 |
-| PowerScore | 0.126 | 0.091 | 0.035 |
-| PowerScore | 0.126 | 0.091 | 0.035 |
+| PowerScore | 1.529 | 1.558 | -0.028 |
+| PowerScore | 1.529 | 1.558 | -0.028 |
 | Tempo | 7.091 | 7.400 | -0.309 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BAL edge: +0.410 (BAL +0.286 vs NYJ -0.124)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - NYJ) | +0.7 pts (favours BAL) |
-| Model Win% BAL | 52.7% |
-| Model Win% NYJ | 47.3% |
-| SOS Differential (BAL-NYJ) | -0.011 |
+| Model Spread (BAL - NYJ) | -0.5 pts (favours NYJ) |
+| Model Win% BAL | 47.8% |
+| Model Win% NYJ | 52.2% |
+| SOS Differential (BAL-NYJ) | -0.017 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ BAL edge: +0.410 (BAL +0.286 vs NYJ -0.124)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +1.8 pp | -3.4 pp | -2.1 pp |
-| NYJ | -0.5 pp | +7.5 pp | +24.7 pp |
+| BAL | +2.4 pp | +0.0 pp | -1.2 pp |
+| NYJ | +0.3 pp | +11.5 pp | +26.7 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -4.0 pp | -4.0 pp | +0.1 pp |
-| NYJ | -3.5 pp | -0.7 pp | +5.2 pp |
+| BAL | -3.8 pp | -3.3 pp | -1.7 pp |
+| NYJ | -4.7 pp | -2.3 pp | +2.1 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -6.4 pp | -5.9 pp | -6.8 pp |
-| NYJ | -7.1 pp | -7.1 pp | -1.4 pp |
+| BAL | -4.5 pp | -3.0 pp | -1.6 pp |
+| NYJ | -8.0 pp | -9.7 pp | -2.8 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +1.9 pp | -0.6 pp | +0.3 pp |
-| NYJ | -1.9 pp | -3.5 pp | -3.1 pp |
+| BAL | +1.4 pp | -0.2 pp | -1.9 pp |
+| NYJ | -1.9 pp | -4.0 pp | +0.5 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +1.0 pp | -2.6 pp | -4.0 pp |
-| NYJ | +2.3 pp | +3.8 pp | +5.2 pp |
+| BAL | +2.2 pp | +2.6 pp | -4.1 pp |
+| NYJ | +2.5 pp | +5.8 pp | +10.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +3.1 pp | +2.2 pp | +0.6 pp |
-| NYJ | -3.5 pp | -8.5 pp | +4.5 pp |
+| BAL | +4.3 pp | +2.9 pp | -0.4 pp |
+| NYJ | -5.9 pp | -10.6 pp | -1.1 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +1.9 pp | -0.6 pp | +0.3 pp |
-| NYJ | -1.9 pp | -3.5 pp | -3.1 pp |
+| BAL | +1.4 pp | -0.2 pp | -1.9 pp |
+| NYJ | -1.9 pp | -4.0 pp | +0.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -6.4 pp | -5.9 pp | -6.8 pp |
-| NYJ | -7.1 pp | -7.1 pp | -1.4 pp |
+| BAL | -4.5 pp | -3.0 pp | -1.6 pp |
+| NYJ | -8.0 pp | -9.7 pp | -2.8 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 51.8 | 49.8 | 46.1 |
-| NYJ | 48.7 | 47.3 | 46.7 |
+| BAL | 51.5 | 47.2 | 45.6 |
+| NYJ | 48.6 | 46.8 | 50.2 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 49.6 | 47.3 | 48.8 |
-| NYJ | 46.7 | 43.8 | 46.4 |
+| BAL | 49.4 | 47.2 | 47.0 |
+| NYJ | 46.7 | 45.0 | 48.7 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 2.2 | 2.6 | -2.6 |
-| NYJ | 2.0 | 3.4 | 0.3 |
+| BAL | 2.1 | -0.1 | -1.3 |
+| NYJ | 1.8 | 1.8 | 1.5 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 2.26 | 1.80 | 2.55 |
-| NYJ | 1.77 | 1.63 | 1.88 |
+| BAL | 2.24 | 2.01 | 2.13 |
+| NYJ | 1.77 | 1.62 | 2.28 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 2.32 | 1.84 | 1.03 |
-| NYJ | 2.56 | 2.37 | 2.56 |
+| BAL | 2.24 | 1.25 | 0.93 |
+| NYJ | 2.53 | 2.19 | 2.89 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -0.07 | -0.04 | 1.52 |
-| NYJ | -0.79 | -0.74 | -0.68 |
+| BAL | 0.00 | 0.76 | 1.21 |
+| NYJ | -0.76 | -0.57 | -0.61 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 7.17 | 7.52 | 7.17 |
-| NYJ | 7.29 | 7.36 | 7.59 |
+| BAL | 7.15 | 7.66 | 6.51 |
+| NYJ | 7.13 | 6.86 | 7.24 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 39.8% | 36.9% | 36.0% |
-| NYJ | 42.0% | 44.7% | 44.6% |
+| BAL | 39.4% | 37.3% | 37.9% |
+| NYJ | 40.1% | 38.3% | 34.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 60.2% | 63.1% | 64.0% |
-| NYJ | 58.0% | 55.3% | 55.4% |
+| BAL | 60.6% | 62.7% | 62.1% |
+| NYJ | 59.9% | 61.7% | 65.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 2.86 | 2.78 | 2.58 |
-| NYJ | 3.06 | 3.29 | 3.39 |
+| BAL | 2.82 | 2.85 | 2.46 |
+| NYJ | 2.86 | 2.63 | 2.50 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 4.32 | 4.74 | 4.59 |
-| NYJ | 4.23 | 4.07 | 4.20 |
+| BAL | 4.33 | 4.81 | 4.05 |
+| NYJ | 4.27 | 4.23 | 4.74 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.162 | 0.173 |
-| Last 5 games | 0.125 | 0.169 |
-| Last 3 games | 0.114 | 0.192 |
+| Season-to-date | 1.648 | 1.665 |
+| Last 5 games | 1.457 | 1.639 |
+| Last 3 games | 1.325 | 1.744 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W6 | W8 | W11 | Trend |
+| Metric | W8 | W10 | W11 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA BAL | -0.263 | 0.227 | -0.055 | + improving |
-| Off EPA NYJ | -0.144 | 0.243 | -0.052 | + improving |
-| Def EPA BAL | -0.084 | 0.041 | -0.184 | + improving |
-| Def EPA NYJ | -0.108 | 0.249 | 0.121 | - declining |
-| Off SR BAL | 40.4% | 55.0% | 45.0% | + improving |
-| Off SR NYJ | 38.2% | 56.0% | 52.9% | + improving |
-| Def SR BAL | 46.2% | 46.9% | 41.1% | + improving |
-| Def SR NYJ | 34.2% | 65.8% | 51.2% | - declining |
-| Tempo BAL | 9.889 | 8.889 | 6.154 | - declining |
-| Tempo NYJ | 5.846 | 8.273 | 7.778 | + improving |
+| Off EPA BAL | 0.227 | -0.026 | -0.055 | - declining |
+| Off EPA NYJ | 0.243 | -0.042 | -0.052 | - declining |
+| Def EPA BAL | 0.041 | -0.162 | -0.184 | + improving |
+| Def EPA NYJ | 0.249 | -0.104 | 0.121 | + improving |
+| Off SR BAL | 55.0% | 50.0% | 45.0% | - declining |
+| Off SR NYJ | 56.0% | 38.2% | 52.9% | - declining |
+| Def SR BAL | 46.9% | 38.8% | 41.1% | + improving |
+| Def SR NYJ | 65.8% | 36.2% | 51.2% | + improving |
+| Tempo BAL | 8.889 | 6.923 | 6.154 | - declining |
+| Tempo NYJ | 8.273 | 5.667 | 7.778 | - declining |
 
 ## Matchup Analogs
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 9 | MIA (A) | 28-6 | BAL | 0.877 | 0.137 | 52.1% | 2.000 |
-| 2 | CLE (H) | 35-18 | BAL | 0.444 | 0.100 | 43.6% | 1.276 |
-| 11 | CLE (A) | 23-10 | BAL | 0.444 | -0.055 | 45.0% | 1.000 |
+| 9 | MIA (A) | 28-6 | BAL | 0.764 | 0.137 | 52.1% | 2.000 |
+| 2 | CLE (H) | 35-18 | BAL | 0.554 | 0.100 | 43.6% | 1.276 |
+| 11 | CLE (A) | 23-10 | BAL | 0.554 | -0.055 | 45.0% | 1.000 |
 
 **NYJ analogs vs BAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | BUF (H) | 10-27 | BUF | 0.806 | -0.170 | 42.2% | -1.727 |
-| 5 | DAL (H) | 22-37 | DAL | 0.762 | 0.025 | 50.0% | -1.250 |
-| 8 | CIN (A) | 39-42 | CIN | 0.695 | 0.243 | 56.0% | -0.255 |
+| 2 | BUF (H) | 10-27 | BUF | 0.811 | -0.170 | 42.2% | -1.727 |
+| 11 | NE (A) | 14-24 | NE | 0.703 | -0.052 | 52.9% | -1.144 |
+| 5 | DAL (H) | 22-37 | DAL | 0.653 | 0.025 | 50.0% | -1.250 |
 
 ## Core EPA Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.039 | -0.041 | 0.103 |
-| NYJ | -0.014 | -0.025 | -0.001 |
+| BAL | 0.032 | 0.004 | 0.019 |
+| NYJ | -0.017 | -0.038 | 0.050 |
 
 ## Core EPA Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.037 | -0.022 | -0.113 |
-| NYJ | 0.108 | 0.093 | 0.106 |
+| BAL | 0.017 | -0.117 | -0.181 |
+| NYJ | 0.087 | 0.021 | 0.089 |
 
 ## Success Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 48.8% | 47.1% | 50.6% |
-| NYJ | 49.0% | 46.9% | 48.5% |
+| BAL | 49.0% | 48.3% | 49.0% |
+| NYJ | 48.0% | 44.6% | 49.8% |
 
 ## Success Rate Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 48.5% | 47.9% | 43.5% |
-| NYJ | 46.6% | 47.5% | 51.6% |
+| BAL | 47.6% | 42.9% | 40.7% |
+| NYJ | 45.4% | 45.0% | 50.0% |
 
 ## Explosive Play Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 12.1% | 10.2% | 12.6% |
-| NYJ | 8.5% | 7.8% | 9.4% |
+| BAL | 11.6% | 10.5% | 10.8% |
+| NYJ | 8.6% | 7.7% | 11.8% |
 
 ## Third Down Conversion Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 35.9% | 35.5% | 35.7% |
-| NYJ | 35.9% | 39.8% | 48.1% |
+| BAL | 36.4% | 36.1% | 38.1% |
+| NYJ | 35.0% | 36.8% | 43.4% |
 
 ## Points per Drive Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.032 | 0.052 | 1.485 |
-| NYJ | -0.772 | -0.718 | -0.648 |
+| BAL | 0.101 | 0.813 | 1.162 |
+| NYJ | -0.734 | -0.539 | -0.566 |
 
 ## Yards per Play Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.155 | 0.045 | 0.725 |
-| NYJ | -0.497 | -0.798 | -0.219 |
+| BAL | 0.069 | 0.218 | 0.542 |
+| NYJ | -0.495 | -0.657 | -0.249 |
 
 ## Turnover Margin Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | -0.333 | -0.200 | 1.333 |
-| NYJ | -1.111 | -0.600 | -1.000 |
+| BAL | 0.000 | 1.000 | 2.000 |
+| NYJ | -1.100 | -0.600 | -0.667 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 11.6% | 11.7% | 15.4% |
-| NYJ | 9.8% | 6.7% | 7.3% |
+| BAL | 11.4% | 11.2% | 14.7% |
+| NYJ | 8.8% | 4.4% | 7.3% |
 
 ## Pressure Rate (Def) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 4.3% | 6.0% | 5.9% |
-| NYJ | 3.9% | 3.4% | 3.7% |
+| BAL | 4.1% | 5.3% | 5.8% |
+| NYJ | 5.1% | 6.0% | 7.1% |
 
 ## Tempo Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 7.171 | 7.517 | 7.166 |
-| NYJ | 7.294 | 7.358 | 7.593 |
+| BAL | 7.146 | 7.662 | 6.510 |
+| NYJ | 7.131 | 6.858 | 7.239 |
 
 ## Pass Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 39.9% | 37.2% | 35.9% |
-| NYJ | 42.3% | 45.0% | 44.3% |
+| BAL | 39.4% | 37.3% | 37.8% |
+| NYJ | 40.7% | 38.5% | 34.9% |

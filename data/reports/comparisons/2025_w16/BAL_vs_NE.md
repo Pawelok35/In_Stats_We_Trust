@@ -4,20 +4,20 @@
 
 | Metric | BAL | NE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.028 | 0.085 | -0.057 |
-| Core EPA Defense | 0.018 | -0.022 | 0.040 |
-| Success Rate Offense | 0.479 | 0.485 | -0.006 |
-| Success Rate Defense | 0.463 | 0.470 | -0.006 |
-| Explosive Play Rate (Off) | 0.123 | 0.118 | 0.006 |
-| Third Down Conversion | 0.329 | 0.383 | -0.054 |
-| Points per Drive Differential | 0.030 | 0.554 | -0.524 |
-| Yards per Play Differential | 0.327 | 0.581 | -0.254 |
-| Turnover Margin | -0.385 | 0.000 | -0.385 |
-| Red Zone TD Rate (Off) | 0.105 | 0.136 | -0.031 |
-| Pressure Rate (Def) | 0.044 | 0.059 | -0.015 |
+| Core EPA Offense | 0.024 | 0.088 | -0.064 |
+| Core EPA Defense | 0.005 | -0.029 | 0.034 |
+| Success Rate Offense | 0.480 | 0.478 | 0.002 |
+| Success Rate Defense | 0.458 | 0.471 | -0.012 |
+| Explosive Play Rate (Off) | 0.120 | 0.115 | 0.005 |
+| Third Down Conversion | 0.334 | 0.385 | -0.051 |
+| Points per Drive Differential | 0.072 | 0.530 | -0.458 |
+| Yards per Play Differential | 0.254 | 0.698 | -0.445 |
+| Turnover Margin | -0.143 | 0.000 | -0.143 |
+| Red Zone TD Rate (Off) | 0.105 | 0.125 | -0.020 |
+| Pressure Rate (Def) | 0.043 | 0.059 | -0.016 |
 | Tempo | 7.300 | 8.800 | -1.500 |
-| PowerScore | 0.197 | 0.214 | -0.017 |
-| PowerScore | 0.197 | 0.214 | -0.017 |
+| PowerScore | 1.632 | 1.944 | -0.312 |
+| PowerScore | 1.632 | 1.944 | -0.312 |
 | Tempo | 7.300 | 8.800 | -1.500 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BAL edge: +0.013 (BAL +0.161 vs NE +0.147)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - NE) | -0.3 pts (favours NE) |
-| Model Win% BAL | 48.7% |
-| Model Win% NE | 51.3% |
-| SOS Differential (BAL-NE) | -0.000 |
+| Model Spread (BAL - NE) | -5.8 pts (favours NE) |
+| Model Win% BAL | 27.6% |
+| Model Win% NE | 72.4% |
+| SOS Differential (BAL-NE) | +0.057 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ BAL edge: +0.013 (BAL +0.161 vs NE +0.147)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -0.3 pp | -2.2 pp | -11.5 pp |
-| NE | +3.5 pp | +13.4 pp | +10.4 pp |
+| BAL | -0.2 pp | -11.2 pp | -3.5 pp |
+| NE | +5.0 pp | +12.0 pp | +10.4 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -7.2 pp | -13.1 pp | -12.9 pp |
-| NE | +1.0 pp | +4.1 pp | +3.3 pp |
+| BAL | -6.1 pp | -9.1 pp | -9.2 pp |
+| NE | -0.4 pp | +0.9 pp | -1.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -4.2 pp | -6.7 pp | -6.4 pp |
-| NE | -5.3 pp | -4.9 pp | -3.5 pp |
+| BAL | -3.7 pp | -5.4 pp | -6.3 pp |
+| NE | -4.9 pp | -0.3 pp | -5.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +2.7 pp | +3.2 pp | +5.2 pp |
-| NE | +2.7 pp | +5.9 pp | +5.7 pp |
+| BAL | +2.4 pp | +2.9 pp | +5.3 pp |
+| NE | +2.3 pp | +4.2 pp | +5.7 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +2.6 pp | -0.7 pp | -3.3 pp |
-| NE | -1.1 pp | +7.0 pp | +9.5 pp |
+| BAL | +2.3 pp | -4.0 pp | +3.1 pp |
+| NE | -1.6 pp | +4.9 pp | +8.3 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -2.2 pp | -1.4 pp | -3.3 pp |
-| NE | +6.6 pp | +11.4 pp | +10.9 pp |
+| BAL | -1.7 pp | -4.3 pp | -4.2 pp |
+| NE | +6.7 pp | +11.2 pp | +8.7 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | +2.7 pp | +3.2 pp | +5.2 pp |
-| NE | +2.7 pp | +5.9 pp | +5.7 pp |
+| BAL | +2.4 pp | +2.9 pp | +5.3 pp |
+| NE | +2.3 pp | +4.2 pp | +5.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -4.2 pp | -6.7 pp | -6.4 pp |
-| NE | -5.3 pp | -4.9 pp | -3.5 pp |
+| BAL | -3.7 pp | -5.4 pp | -6.3 pp |
+| NE | -4.9 pp | -0.3 pp | -5.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -141,42 +141,42 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | BAL | 48.9 | 43.8 | 43.8 |
-| NE | 47.5 | 43.9 | 43.4 |
+| NE | 47.3 | 44.6 | 46.7 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 49.9 | 50.6 | 51.4 |
-| NE | 49.0 | 51.5 | 50.4 |
+| BAL | 49.7 | 50.6 | 51.4 |
+| NE | 48.6 | 48.9 | 52.3 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | -1.0 | -6.8 | -7.6 |
-| NE | -1.5 | -7.7 | -7.0 |
+| BAL | -0.8 | -6.8 | -7.6 |
+| NE | -1.3 | -4.3 | -5.5 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | BAL | 2.13 | 1.83 | 1.76 |
-| NE | 2.47 | 2.42 | 2.54 |
+| NE | 2.46 | 2.48 | 2.46 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 2.10 | 1.43 | 1.79 |
-| NE | 1.91 | 1.94 | 2.11 |
+| BAL | 2.05 | 1.43 | 1.79 |
+| NE | 1.93 | 2.07 | 2.29 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 0.03 | 0.40 | -0.03 |
-| NE | 0.55 | 0.48 | 0.43 |
+| BAL | 0.07 | 0.40 | -0.03 |
+| NE | 0.53 | 0.41 | 0.17 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 7.14 | 6.88 | 7.05 |
-| NE | 7.75 | 7.34 | 7.58 |
+| BAL | 7.12 | 6.88 | 7.05 |
+| NE | 7.63 | 7.30 | 7.27 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 39.6% | 39.2% | 40.9% |
-| NE | 42.1% | 42.4% | 42.3% |
+| BAL | 39.3% | 39.2% | 40.9% |
+| NE | 42.3% | 42.8% | 42.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 60.4% | 60.8% | 59.1% |
-| NE | 57.9% | 57.6% | 57.7% |
+| BAL | 60.7% | 60.8% | 59.1% |
+| NE | 57.7% | 57.2% | 57.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 2.82 | 2.70 | 2.88 |
-| NE | 3.26 | 3.11 | 3.20 |
+| BAL | 2.80 | 2.70 | 2.88 |
+| NE | 3.23 | 3.13 | 3.07 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BAL | 4.31 | 4.18 | 4.17 |
-| NE | 4.49 | 4.23 | 4.37 |
+| BAL | 4.32 | 4.18 | 4.17 |
+| NE | 4.40 | 4.17 | 4.20 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | NE |
 | --- | ---: | ---: |
-| Season-to-date | 0.146 | 0.146 |
-| Last 5 games | 0.097 | 0.136 |
-| Last 3 games | 0.116 | 0.183 |
+| Season-to-date | 1.675 | 1.618 |
+| Last 5 games | 1.623 | 1.684 |
+| Last 3 games | 1.802 | 1.710 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W11 | W12 | W15 | Trend |
+| Metric | W12 | W13 | W15 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA BAL | -0.055 | 0.085 | 0.120 | + improving |
-| Off EPA NE | 0.121 | 0.070 | 0.194 | + improving |
-| Def EPA BAL | -0.184 | -0.107 | -0.252 | + improving |
-| Def EPA NE | -0.052 | -0.053 | 0.228 | - declining |
-| Off SR BAL | 45.0% | 41.0% | 48.0% | + improving |
-| Off SR NE | 51.2% | 50.6% | 58.8% | + improving |
-| Def SR BAL | 41.1% | 39.2% | 38.2% | + improving |
-| Def SR NE | 52.9% | 48.8% | 47.7% | + improving |
-| Tempo BAL | 6.154 | 7.091 | 5.556 | - declining |
-| Tempo NE | 8.200 | 7.727 | 6.800 | - declining |
+| Off EPA BAL | 0.085 | -0.251 | 0.120 | + improving |
+| Off EPA NE | 0.070 | 0.068 | 0.194 | + improving |
+| Def EPA BAL | -0.107 | 0.059 | -0.252 | + improving |
+| Def EPA NE | -0.053 | -0.209 | 0.228 | - declining |
+| Off SR BAL | 41.0% | 42.3% | 48.0% | + improving |
+| Off SR NE | 50.6% | 46.2% | 58.8% | + improving |
+| Def SR BAL | 39.2% | 45.1% | 38.2% | = stable |
+| Def SR NE | 48.8% | 43.1% | 47.7% | + improving |
+| Tempo BAL | 7.091 | 6.000 | 5.556 | - declining |
+| Tempo NE | 7.727 | 7.273 | 6.800 | - declining |
 
 ## Matchup Analogs
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | DET (H) | 30-35 | DET | 0.915 | 0.158 | 55.4% | -0.455 |
-| 1 | BUF (A) | 40-35 | BAL | 0.902 | 0.340 | 56.3% | 0.483 |
-| 4 | KC (A) | 20-37 | KC | 0.897 | -0.043 | 49.3% | -1.700 |
+| 8 | CHI (H) | 30-16 | BAL | 0.899 | 0.227 | 55.0% | 1.556 |
+| 4 | KC (A) | 20-37 | KC | 0.878 | -0.043 | 49.3% | -1.700 |
+| 3 | DET (H) | 30-35 | DET | 0.863 | 0.158 | 55.4% | -0.455 |
 
 **NE analogs vs BAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | BUF (A) | 23-20 | NE | 0.641 | 0.069 | 51.9% | 0.300 |
-| 15 | BUF (H) | 31-35 | BUF | 0.641 | 0.194 | 58.8% | -0.400 |
-| 4 | CAR (H) | 36-19 | NE | 0.552 | 0.246 | 42.4% | 1.545 |
+| 5 | BUF (A) | 23-20 | NE | 0.635 | 0.069 | 51.9% | 0.300 |
+| 15 | BUF (H) | 31-35 | BUF | 0.635 | 0.194 | 58.8% | -0.400 |
+| 2 | MIA (A) | 39-23 | NE | 0.500 | 0.183 | 44.3% | 1.567 |
 
 ## Core EPA Offense Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.028 | -0.009 | -0.025 |
-| NE | 0.085 | 0.080 | 0.128 |
+| BAL | 0.024 | -0.009 | -0.025 |
+| NE | 0.088 | 0.119 | 0.111 |
 
 ## Core EPA Defense Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.018 | -0.056 | 0.004 |
-| NE | -0.022 | -0.033 | 0.041 |
+| BAL | 0.005 | -0.056 | 0.004 |
+| NE | -0.029 | -0.005 | -0.011 |
 
 ## Success Rate Offense Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 47.8% | 45.3% | 46.9% |
-| NE | 48.4% | 50.5% | 53.2% |
+| BAL | 47.9% | 45.3% | 46.9% |
+| NE | 47.7% | 49.4% | 51.5% |
 
 ## Success Rate Defense Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 46.5% | 41.8% | 42.7% |
-| NE | 47.1% | 45.7% | 49.6% |
+| BAL | 46.0% | 41.8% | 42.7% |
+| NE | 47.2% | 48.9% | 46.7% |
 
 ## Explosive Play Rate (Off) Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 11.9% | 11.3% | 12.5% |
-| NE | 11.7% | 12.9% | 11.9% |
+| BAL | 11.5% | 11.3% | 12.5% |
+| NE | 11.4% | 11.2% | 12.0% |
 
 ## Third Down Conversion Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 32.8% | 28.0% | 30.1% |
-| NE | 38.2% | 42.4% | 42.1% |
+| BAL | 33.4% | 28.0% | 30.1% |
+| NE | 38.4% | 41.2% | 42.0% |
 
 ## Points per Drive Differential Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.053 | 0.310 | -0.240 |
-| NE | 0.572 | 0.510 | 0.434 |
+| BAL | 0.101 | 0.310 | -0.240 |
+| NE | 0.543 | 0.414 | 0.184 |
 
 ## Yards per Play Differential Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 0.327 | 0.937 | 1.193 |
-| NE | 0.581 | 1.035 | 1.083 |
+| BAL | 0.254 | 0.937 | 1.193 |
+| NE | 0.698 | 1.211 | 1.414 |
 
 ## Turnover Margin Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | -0.385 | -0.400 | -1.333 |
-| NE | 0.000 | -0.400 | 0.000 |
+| BAL | -0.143 | -0.400 | -1.333 |
+| NE | 0.000 | 0.000 | 0.000 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
 | BAL | 10.5% | 7.6% | 8.3% |
-| NE | 13.6% | 13.1% | 12.7% |
+| NE | 12.5% | 9.9% | 7.6% |
 
 ## Pressure Rate (Def) Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 4.4% | 5.9% | 3.1% |
-| NE | 5.9% | 4.2% | 5.2% |
+| BAL | 4.3% | 5.9% | 3.1% |
+| NE | 5.9% | 5.5% | 5.3% |
 
 ## Tempo Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 7.137 | 6.880 | 7.052 |
-| NE | 7.751 | 7.344 | 7.576 |
+| BAL | 7.122 | 6.880 | 7.052 |
+| NE | 7.628 | 7.300 | 7.267 |
 
 ## Pass Rate Offense Form (up to Week 15)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BAL | 39.7% | 39.3% | 41.1% |
-| NE | 42.5% | 42.5% | 42.6% |
+| BAL | 39.3% | 39.3% | 41.1% |
+| NE | 42.6% | 43.0% | 42.5% |

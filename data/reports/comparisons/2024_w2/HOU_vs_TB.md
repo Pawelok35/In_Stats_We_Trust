@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.200 | 0.200 | 0.000 |
 | Pressure Rate (Def) | 0.095 | 0.071 | 0.024 |
 | Tempo | 6.385 | 5.818 | 0.566 |
-| PowerScore | 0.078 | 0.122 | -0.044 |
-| PowerScore | 0.078 | 0.122 | -0.044 |
+| PowerScore | 1.326 | 1.254 | 0.072 |
+| PowerScore | 1.326 | 1.254 | 0.072 |
 | Tempo | 6.385 | 5.818 | 0.566 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ TB edge: +0.030 (HOU +0.147 vs TB +0.177)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - TB) | -0.8 pts (favours TB) |
-| Model Win% HOU | 46.6% |
-| Model Win% TB | 53.4% |
+| Model Spread (HOU - TB) | +1.3 pts (favours HOU) |
+| Model Win% HOU | 55.5% |
+| Model Win% TB | 44.5% |
 | SOS Differential (HOU-TB) | -0.336 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

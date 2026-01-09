@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.200 | 0.188 | 0.012 |
 | Pressure Rate (Def) | 0.080 | 0.073 | 0.008 |
 | Tempo | 7.917 | 7.083 | 0.833 |
-| PowerScore | 0.088 | 0.104 | -0.015 |
-| PowerScore | 0.088 | 0.104 | -0.015 |
+| PowerScore | 1.648 | 1.508 | 0.140 |
+| PowerScore | 1.648 | 1.508 | 0.140 |
 | Tempo | 7.917 | 7.083 | 0.833 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ TB edge: +0.384 (TB +0.258 vs NYJ -0.126)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TB - NYJ) | -0.3 pts (favours NYJ) |
-| Model Win% TB | 48.8% |
-| Model Win% NYJ | 51.2% |
-| SOS Differential (TB-NYJ) | -0.063 |
+| Model Spread (TB - NYJ) | +2.6 pts (favours TB) |
+| Model Win% TB | 60.6% |
+| Model Win% NYJ | 39.4% |
+| SOS Differential (TB-NYJ) | -0.109 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TB | NYJ |
 | --- | ---: | ---: |
-| Season-to-date | 0.142 | 0.204 |
-| Last 5 games | 0.142 | 0.204 |
-| Last 3 games | 0.142 | 0.204 |
+| Season-to-date | 1.595 | 1.704 |
+| Last 5 games | 1.595 | 1.704 |
+| Last 3 games | 1.595 | 1.704 |
 
 ## Trend Summary (last 2 weeks)
 

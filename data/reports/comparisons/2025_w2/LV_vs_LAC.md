@@ -15,8 +15,8 @@
 | Red Zone TD Rate (Off) | 0.200 | 0.143 | 0.057 |
 | Pressure Rate (Def) | 0.080 | 0.048 | 0.032 |
 | Tempo | 8.200 | 6.455 | 1.745 |
-| PowerScore | 0.001 | 0.053 | -0.052 |
-| PowerScore | 0.001 | 0.053 | -0.052 |
+| PowerScore | 1.626 | 1.327 | 0.300 |
+| PowerScore | 1.626 | 1.327 | 0.300 |
 | Tempo | 8.200 | 6.455 | 1.745 |
 
 ## PowerScore Breakdown (Model)
@@ -56,10 +56,10 @@ LAC edge: +0.431 (LV -0.211 vs LAC +0.220)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LV - LAC) | -1.0 pts (favours LAC) |
-| Model Win% LV | 46.0% |
-| Model Win% LAC | 54.0% |
-| SOS Differential (LV-LAC) | -0.101 |
+| Model Spread (LV - LAC) | +5.5 pts (favours LV) |
+| Model Win% LV | 71.6% |
+| Model Win% LAC | 28.4% |
+| SOS Differential (LV-LAC) | -0.414 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -222,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LV | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.124 | 0.225 |
-| Last 5 games | 0.124 | 0.225 |
-| Last 3 games | 0.124 | 0.225 |
+| Season-to-date | 1.763 | 2.177 |
+| Last 5 games | 1.763 | 2.177 |
+| Last 3 games | 1.763 | 2.177 |
 
 ## Matchup Analogs
 

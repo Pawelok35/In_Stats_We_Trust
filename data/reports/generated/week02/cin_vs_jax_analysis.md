@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CIN 26.1 – JAX 22.5
-2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 3.6 pts
-4️⃣ Win Probability (Model) – 70% (CIN)
-5️⃣ Why This Team Wins (Model) – Na 3rd down CIN utrzymuje 38.5%, podczas gdy JAX jest na 16.7%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje CIN na poziomie 49.2% vs 43.1% (+6.1 pp). Turnover margin faworyzuje CIN (+2.00 vs +0.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę CIN: CIN +0.158 vs JAX +0.135. Defensive pressure rate wspiera CIN (+7.1% vs +5.6%), więc pasy rywala będą częściej pod presją.
+1️⃣ Estimated Score (Model) – CIN 10.9 – JAX 26.2
+2️⃣ Predicted Winner (Model) – JAX
+3️⃣ Predicted Margin (Model) – JAX by 15.3 pts
+4️⃣ Win Probability (Model) – 95% (JAX)
+5️⃣ Why This Team Wins (Model) – Explosive Play Rate pozostaje po stronie JAX (11.0% vs 1.5%), więc big-play equity jest wyższe. Defensive pressure rate wspiera JAX (+6.2% vs +2.3%), więc pasy rywala będą częściej pod presją. Success Rate Offense pokazuje JAX na poziomie 47.6% vs 44.1% (+3.5 pp). Turnover margin faworyzuje JAX (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. JAX prowadzi w Points per Drive Differential (+1.600 vs +0.100), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CIN 22.5 – JAX 22.5
+1️⃣ Estimated Score (Market) – CIN 26.5 – JAX 23.0
 2️⃣ Predicted Winner (Market) – CIN
-3️⃣ Predicted Margin (Market) – CIN by 0.0 pts
-4️⃣ Win Probability (Market) – 50% (CIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — CIN +0.158 vs JAX +0.135. Points per Drive Differential — CIN -0.350 vs JAX -0.121. Success Rate Offense — CIN 49.2% vs JAX 43.1%. Third Down Conversion — CIN 38.5% vs JAX 16.7%. Red Zone TD Rate — CIN 14.3% vs JAX 22.2%. Explosive Play Rate — CIN 3.3% vs JAX 12.5%. Model margin 3.6 pts vs market spread CIN -0.0.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie 3.6 pkt. CIN notuje -0.350 PPD vs -0.121 u JAX. Różnica w Success Rate to 49.2% vs 43.1%. Na 3rd down CIN (38.5%) wygląda solidniej niż JAX (16.7%). Red Zone i explosiveness ( 14.3% / 3.3% ) utrzymują przewagę jakościową. Market trzyma -0.0 pkt, więc edge vs linia to +3.6.
+3️⃣ Predicted Margin (Market) – CIN by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (CIN)
+5️⃣ Forum Output (A) – PowerScore (Model) — CIN +0.188 vs JAX +0.186. Points per Drive Differential — CIN +0.100 vs JAX +1.600. Success Rate Offense — CIN 44.1% vs JAX 47.6%. Third Down Conversion — CIN 50.0% vs JAX 41.7%. Red Zone TD Rate — CIN 16.7% vs JAX 11.1%. Explosive Play Rate — CIN 1.5% vs JAX 11.0%. Model margin -15.3 pts vs market spread CIN +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę JAX po marginesie -15.3 pkt. JAX notuje +1.600 PPD vs +0.100 u CIN. Różnica w Success Rate to 47.6% vs 44.1%. Na 3rd down JAX (41.7%) wygląda solidniej niż CIN (50.0%). Red Zone i explosiveness ( 11.1% / 11.0% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +18.8.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +3.6 pts
-• PowerScoreDiff (winner) = +0.023
-• Confidence = 70.0%
+• Edge_vs_Line (winner) = +18.8 pts
+• PowerScoreDiff (winner) = -0.002
+• Confidence = 96.0%
 
-🏷 Model Tag: VALUE PLAY — based on 70.0% confidence, +3.6 pts model edge vs line, and PowerScore Δ +0.023.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 96.0% confidence, +18.8 pts model edge vs line, and PowerScore Δ -0.002.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – CIN 26.1 – JAX 22.5
-   • Win Probability – 70% (CIN)
+   • Estimated Score – CIN 10.9 – JAX 26.2
+   • Win Probability – 95% (JAX)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CIN 22.5 – JAX 22.5
-   • Win Probability – 50% (CIN)
+   • Estimated Score – CIN 26.5 – JAX 23.0
+   • Win Probability – 62% (CIN)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — CIN (HC +0.0)
+🏷 Model Tag: NEUTRAL — JAX (HC +3.5)

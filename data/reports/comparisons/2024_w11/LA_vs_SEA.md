@@ -4,19 +4,21 @@
 
 | Metric | LA | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.208 | 0.061 | ↑ +0.147 |
-| Core EPA Defense | 0.070 | -0.005 | ↑ +0.075 |
-| Success Rate Offense | 53.6% | 50.0% | ↑ +3.6 pp |
-| Success Rate Defense | 50.5% | 46.2% | ↑ +4.4 pp |
-| Explosive Play Rate (Off) | 14.5% | 10.8% | ↑ +3.7 pp |
-| Third Down Conversion | 22.2% | 42.9% | ↓ -20.6 pp |
-| Points per Drive Differential | 0.356 | 0.611 | ↓ -0.256 |
-| Yards per Play Differential | 1.805 | 0.354 | ↑ +1.451 |
-| Turnover Margin | 2.000 | 0.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 25.0% | 40.0% | ↓ -15.0 pp |
-| Pressure Rate (Def) | 7.1% | 6.7% | ↑ +0.5 pp |
-| Tempo | 6.900 | 9.250 | ↓ -2.350 |
-| PowerScore | 0.250 | 0.167 | ↑ +0.083 |
+| Core EPA Offense | -0.042 | -0.022 | -0.019 |
+| Core EPA Defense | 0.025 | 0.012 | 0.013 |
+| Success Rate Offense | 0.489 | 0.474 | 0.015 |
+| Success Rate Defense | 0.483 | 0.465 | 0.018 |
+| Explosive Play Rate (Off) | 0.090 | 0.104 | -0.015 |
+| Third Down Conversion | 0.309 | 0.299 | 0.010 |
+| Points per Drive Differential | -0.523 | -0.036 | -0.486 |
+| Yards per Play Differential | -0.306 | -0.065 | -0.241 |
+| Turnover Margin | 0.222 | -0.222 | 0.444 |
+| Red Zone TD Rate (Off) | 0.100 | 0.138 | -0.038 |
+| Pressure Rate (Def) | 0.081 | 0.067 | 0.013 |
+| Tempo | 6.900 | 9.250 | -2.350 |
+| PowerScore | 1.601 | 1.995 | -0.395 |
+| PowerScore | 1.601 | 1.995 | -0.395 |
+| Tempo | 6.900 | 9.250 | -2.350 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ LA edge: +0.083 (LA +0.250 vs SEA +0.167)
 **7 metrics version:**
 LA edge: +0.246 (LA +0.393 vs SEA +0.147)
 **Verdict:** LA holds the edge in the extended breakdown (lead 0.246), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LA - SEA) | +1.5 pts (favours LA) |
-| Model Win% LA | 56.3% |
-| Model Win% SEA | 43.7% |
-| SOS Differential (LA-SEA) | +0.007 |
+| Model Spread (LA - SEA) | -7.3 pts (favours SEA) |
+| Model Win% LA | 22.9% |
+| Model Win% SEA | 77.1% |
+| SOS Differential (LA-SEA) | +0.088 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LA | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.141 | 0.135 |
-| Last 5 games | 0.083 | 0.151 |
-| Last 3 games | 0.115 | 0.132 |
+| Season-to-date | 1.616 | 1.528 |
+| Last 5 games | 1.436 | 1.640 |
+| Last 3 games | 1.412 | 1.722 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,14 +249,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | TEN (A) | 10-46 | TEN | 0.762 | -0.142 | 52.2% | -3.556 |
-| 7 | JAX (H) | 14-15 | JAX | 0.718 | -0.321 | 43.1% | -0.077 |
+| 7 | JAX (A) | 14-15 | JAX | 0.718 | -0.321 | 43.1% | -0.077 |
 | 4 | IND (H) | 18-24 | IND | 0.563 | 0.043 | 52.6% | -0.600 |
 
 **SEA analogs vs LA profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | JAX (H) | 24-36 | JAX | 0.667 | 0.029 | 45.4% | -1.000 |
+| 6 | JAX (A) | 24-36 | JAX | 0.667 | 0.029 | 45.4% | -1.000 |
 | 4 | ARI (A) | 27-42 | ARI | 0.617 | 0.081 | 52.3% | -1.364 |
 | 10 | ARI (H) | n/a | n/a | 0.617 | n/a | n/a | n/a |
 

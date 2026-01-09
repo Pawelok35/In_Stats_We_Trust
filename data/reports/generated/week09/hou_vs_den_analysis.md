@@ -16,10 +16,10 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +4.1 pts
 • PowerScoreDiff (winner) = +0.007
-• Confidence = 68.0%
+• Confidence = 67.0%
 
-🏷 Model Tag: VALUE PLAY — based on 68.0% confidence, +4.1 pts model edge vs line, and PowerScore Δ +0.007.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 67.0% confidence, +4.1 pts model edge vs line, and PowerScore Δ +0.007.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
@@ -30,4 +30,4 @@ SUMMARY:
    • Estimated Score – HOU 19.5 – DEN 21.0
    • Win Probability – 55% (DEN)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — DEN (HC -1.5)
+🏷 Model Tag: NEUTRAL — DEN (HC -1.5)

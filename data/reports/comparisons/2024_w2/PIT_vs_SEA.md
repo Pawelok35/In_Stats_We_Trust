@@ -15,8 +15,8 @@
 | Turnover Margin | 3.000 | 3.000 | 0.000 |
 | Pressure Rate (Def) | 0.071 | 0.045 | 0.026 |
 | Tempo | 7.455 | 7.250 | 0.205 |
-| PowerScore | 0.080 | 0.173 | -0.093 |
-| PowerScore | 0.080 | 0.173 | -0.093 |
+| PowerScore | 1.558 | 1.609 | -0.050 |
+| PowerScore | 1.558 | 1.609 | -0.050 |
 | Tempo | 7.455 | 7.250 | 0.205 |
 
 ## PowerScore Breakdown (Model)
@@ -56,9 +56,9 @@ PIT edge: +0.127 (PIT +0.253 vs SEA +0.127)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - SEA) | -1.7 pts (favours SEA) |
-| Model Win% PIT | 42.9% |
-| Model Win% SEA | 57.1% |
+| Model Spread (PIT - SEA) | -0.9 pts (favours SEA) |
+| Model Win% PIT | 46.1% |
+| Model Win% SEA | 53.9% |
 | SOS Differential (PIT-SEA) | +0.148 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

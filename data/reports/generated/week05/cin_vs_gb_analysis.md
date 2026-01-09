@@ -16,10 +16,10 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +9.4 pts
 • PowerScoreDiff (winner) = +0.120
-• Confidence = 85.0%
+• Confidence = 84.0%
 
-🏷 Model Tag: GOM — based on 85.0% confidence, +9.4 pts model edge vs line, and PowerScore Δ +0.120.
-📈 Strong monthly signal — wysokie zaufanie modelowe.
+🏷 Model Tag: GOW — based on 84.0% confidence, +9.4 pts model edge vs line, and PowerScore Δ +0.120.
+💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
@@ -30,4 +30,4 @@ SUMMARY:
    • Estimated Score – CIN 23.2 – GB 26.2
    • Win Probability – 60% (GB)
 
-🏷 Model Tag: <span style="color:#9c27b0; font-weight:600;">GOM</span> — CIN (HC +3.0)
+🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — CIN (HC +3.0)

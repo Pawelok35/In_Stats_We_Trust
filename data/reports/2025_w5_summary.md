@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 5
 
-_Generated at 2025-11-11T13:53:15.715380+00:00 (UTC)_
+_Generated at 2026-01-08T19:13:14.897604+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\5_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2454, "cols": 18, "timestamp": "2025-11-11T13:53:15.196516+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2454, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T13:53:15.196516+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2454, "cols": 24, "timestamp": "2025-11-11T13:53:15.196516+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2454, "cols": 18, "timestamp": "2026-01-08T19:13:14.487315+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2454, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:13:14.487315+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2454, "cols": 24, "timestamp": "2026-01-08T19:13:14.487315+00:00"}
 
 ## L3 Sanity
 
@@ -32,7 +32,7 @@ Last 3 entries from `data\l2_audit\2025\5_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\5.parquet`
 - Manifest: `data\l4_core12\2025\5_manifest.json`
-- Rows: 32
+- Rows: 28
 - Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\5_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| TB | 0.3311102097623575 |
-| SEA | 0.31662869172741137 |
-| KC | 0.2587410729518504 |
-| JAX | 0.24176770926201538 |
-| DAL | 0.23378492346021978 |
-| HOU | 0.2310578405996608 |
-| LA | 0.22530546610286598 |
-| WAS | 0.22277521561400332 |
-| DET | 0.21305176262569145 |
-| NYJ | 0.20590431962898964 |
+| SF | 2.1097036337804633 |
+| IND | 2.0418975657640193 |
+| WAS | 2.040342783181571 |
+| LV | 1.9176320136688993 |
+| HOU | 1.9122343111878963 |
+| KC | 1.8694727802689235 |
+| DEN | 1.8693394455977588 |
+| SEA | 1.8358494709481907 |
+| TB | 1.822162841341305 |
+| NYJ | 1.8188294896970167 |
 
 
 ## Visualizations

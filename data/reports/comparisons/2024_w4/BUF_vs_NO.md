@@ -4,19 +4,21 @@
 
 | Metric | BUF | NO | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.146 | 0.047 | ↓ -0.193 |
-| Core EPA Defense | 0.208 | 0.084 | ↑ +0.124 |
-| Success Rate Offense | 39.0% | 51.1% | ↓ -12.1 pp |
-| Success Rate Defense | 54.2% | 42.5% | ↑ +11.7 pp |
-| Explosive Play Rate (Off) | 5.2% | 8.7% | ↓ -3.5 pp |
-| Third Down Conversion | 21.4% | 53.8% | ↓ -32.4 pp |
-| Points per Drive Differential | -2.273 | 1.000 | ↓ -3.273 |
-| Yards per Play Differential | -2.866 | -0.337 | ↓ -2.529 |
-| Turnover Margin | 0.000 | 1.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 20.0% | 14.3% | ↑ +5.7 pp |
-| Pressure Rate (Def) | 5.0% | 2.8% | ↑ +2.2 pp |
-| Tempo | 7.000 | 9.200 | ↓ -2.200 |
-| PowerScore | 0.098 | 0.178 | ↓ -0.080 |
+| Core EPA Offense | 0.214 | 0.125 | 0.089 |
+| Core EPA Defense | -0.086 | -0.180 | 0.095 |
+| Success Rate Offense | 0.518 | 0.479 | 0.039 |
+| Success Rate Defense | 0.449 | 0.407 | 0.042 |
+| Explosive Play Rate (Off) | 0.107 | 0.111 | -0.003 |
+| Third Down Conversion | 0.376 | 0.506 | -0.129 |
+| Points per Drive Differential | 1.858 | 1.901 | -0.044 |
+| Yards per Play Differential | 1.054 | 0.606 | 0.448 |
+| Turnover Margin | 1.667 | 2.000 | -0.333 |
+| Red Zone TD Rate (Off) | 0.191 | 0.177 | 0.014 |
+| Pressure Rate (Def) | 0.093 | 0.090 | 0.003 |
+| Tempo | 7.000 | 9.200 | -2.200 |
+| PowerScore | 1.488 | 2.001 | -0.513 |
+| PowerScore | 1.488 | 2.001 | -0.513 |
+| Tempo | 7.000 | 9.200 | -2.200 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NO edge: +0.080 (BUF +0.098 vs NO +0.178)
 **7 metrics version:**
 NO edge: +0.137 (BUF +0.094 vs NO +0.231)
 **Verdict:** NO holds the edge in the extended breakdown (lead 0.137), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - NO) | -1.5 pts (favours NO) |
-| Model Win% BUF | 43.9% |
-| Model Win% NO | 56.1% |
-| SOS Differential (BUF-NO) | +0.065 |
+| Model Spread (BUF - NO) | -9.5 pts (favours NO) |
+| Model Win% BUF | 17.0% |
+| Model Win% NO | 83.0% |
+| SOS Differential (BUF-NO) | +0.210 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | NO |
 | --- | ---: | ---: |
-| Season-to-date | 0.144 | 0.079 |
-| Last 5 games | 0.144 | 0.079 |
-| Last 3 games | 0.144 | 0.079 |
+| Season-to-date | 1.818 | 1.609 |
+| Last 5 games | 1.818 | 1.609 |
+| Last 3 games | 1.818 | 1.609 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -20,9 +20,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -1.0 pts
 • PowerScoreDiff (winner) = +0.068
-• Confidence = 96.0%
+• Confidence = 95.0%
 
-🏷 Model Tag: NEUTRAL — based on 96.0% confidence, -1.0 pts model edge vs line, and PowerScore Δ +0.068.
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, -1.0 pts model edge vs line, and PowerScore Δ +0.068.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -96,9 +96,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +5.7 pts
 • PowerScoreDiff (winner) = +0.039
-• Confidence = 94.5%
+• Confidence = 93.5%
 
-🏷 Model Tag: VALUE PLAY — based on 94.5% confidence, +5.7 pts model edge vs line, and PowerScore Δ +0.039.
+🏷 Model Tag: VALUE PLAY — based on 93.5% confidence, +5.7 pts model edge vs line, and PowerScore Δ +0.039.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
@@ -117,38 +117,38 @@ SUMMARY:
 ## NO vs TB
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – NO 12.4 – TB 25.5
+1️⃣ Estimated Score (Model) – NO 23.2 – TB 25.2
 2️⃣ Predicted Winner (Model) – TB
-3️⃣ Predicted Margin (Model) – TB by 13.1 pts
-4️⃣ Win Probability (Model) – 95% (TB)
-5️⃣ Why This Team Wins (Model) – Na 3rd down TB utrzymuje 44.6%, podczas gdy NO jest na 35.5%, co stabilizuje serie ofensywne. Turnover margin faworyzuje TB (+4.00 vs -1.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę TB: TB +0.088 vs NO +0.044. Success Rate Offense pokazuje TB na poziomie 48.7% vs 44.4% (+4.3 pp). Explosive Play Rate pozostaje po stronie TB (11.9% vs 7.7%), więc big-play equity jest wyższe.
+3️⃣ Predicted Margin (Model) – TB by 2.0 pts
+4️⃣ Win Probability (Model) – 54% (TB)
+5️⃣ Why This Team Wins (Model) – Na 3rd down TB utrzymuje 44.6%, podczas gdy NO jest na 35.5%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje TB na poziomie 48.7% vs 44.4% (+4.3 pp). Explosive Play Rate pozostaje po stronie TB (11.9% vs 7.7%), więc big-play equity jest wyższe. TB prowadzi w Points per Drive Differential (+0.899 vs +0.452), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
 1️⃣ Estimated Score (Market) – NO 23.0 – TB 27.5
 2️⃣ Predicted Winner (Market) – TB
 3️⃣ Predicted Margin (Market) – TB by 4.5 pts
 4️⃣ Win Probability (Market) – 66% (TB)
-5️⃣ Forum Output (A) – PowerScore (Model) — NO +0.044 vs TB +0.088. Points per Drive Differential — NO +0.452 vs TB +0.899. Success Rate Offense — NO 44.4% vs TB 48.7%. Third Down Conversion — NO 35.5% vs TB 44.6%. Red Zone TD Rate — NO 17.3% vs TB 15.0%. Explosive Play Rate — NO 7.7% vs TB 11.9%. Model margin -13.1 pts vs market spread NO -4.5.
-6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie -13.1 pkt. TB notuje +0.899 PPD vs +0.452 u NO. Różnica w Success Rate to 48.7% vs 44.4%. Na 3rd down TB (44.6%) wygląda solidniej niż NO (35.5%). Red Zone i explosiveness ( 15.0% / 11.9% ) utrzymują przewagę jakościową. Market trzyma -4.5 pkt, więc edge vs linia to +8.6.
+5️⃣ Forum Output (A) – PowerScore (Model) — NO +0.129 vs TB +0.104. Points per Drive Differential — NO +0.452 vs TB +0.899. Success Rate Offense — NO 44.4% vs TB 48.7%. Third Down Conversion — NO 35.5% vs TB 44.6%. Red Zone TD Rate — NO 17.3% vs TB 15.0%. Explosive Play Rate — NO 7.7% vs TB 11.9%. Model margin -2.0 pts vs market spread NO -4.5.
+6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie -2.0 pkt. TB notuje +0.899 PPD vs +0.452 u NO. Różnica w Success Rate to 48.7% vs 44.4%. Na 3rd down TB (44.6%) wygląda solidniej niż NO (35.5%). Red Zone i explosiveness ( 15.0% / 11.9% ) utrzymują przewagę jakościową. Market trzyma -4.5 pkt, więc edge vs linia to -2.5.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +8.6 pts
-• PowerScoreDiff (winner) = +0.044
-• Confidence = 96.5%
+• Edge_vs_Line (winner) = -2.5 pts
+• PowerScoreDiff (winner) = -0.025
+• Confidence = 54.0%
 
-🏷 Model Tag: GOW — based on 96.5% confidence, +8.6 pts model edge vs line, and PowerScore Δ +0.044.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: NEUTRAL — based on 54.0% confidence, -2.5 pts model edge vs line, and PowerScore Δ -0.025.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – NO 12.4 – TB 25.5
-   • Win Probability – 95% (TB)
+   • Estimated Score – NO 23.2 – TB 25.2
+   • Win Probability – 54% (TB)
 
 2. MARKET PROJECTION (Balanced)
    • Estimated Score – NO 23.0 – TB 27.5
    • Win Probability – 66% (TB)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — TB (HC -4.5)
+🏷 Model Tag: NEUTRAL — TB (HC -4.5)
 
 ---
 
@@ -286,9 +286,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +19.0 pts
 • PowerScoreDiff (winner) = +0.008
-• Confidence = 95.0%
+• Confidence = 94.0%
 
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +19.0 pts model edge vs line, and PowerScore Δ +0.008.
+🏷 Model Tag: VALUE PLAY — based on 94.0% confidence, +19.0 pts model edge vs line, and PowerScore Δ +0.008.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
@@ -400,9 +400,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +5.6 pts
 • PowerScoreDiff (winner) = +0.013
-• Confidence = 81.0%
+• Confidence = 82.0%
 
-🏷 Model Tag: VALUE PLAY — based on 81.0% confidence, +5.6 pts model edge vs line, and PowerScore Δ +0.013.
+🏷 Model Tag: VALUE PLAY — based on 82.0% confidence, +5.6 pts model edge vs line, and PowerScore Δ +0.013.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
@@ -459,32 +459,32 @@ SUMMARY:
 ## IND vs TEN
 
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – IND 20.3 – TEN 24.8
+1️⃣ Estimated Score (Model) – IND 21.4 – TEN 24.8
 2️⃣ Predicted Winner (Model) – TEN
-3️⃣ Predicted Margin (Model) – TEN by 4.5 pts
-4️⃣ Win Probability (Model) – 64% (TEN)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę TEN: TEN +0.190 vs IND +0.062. Red Zone TD Rate sprzyja TEN (17.7% vs 12.0%). Success Rate Offense pokazuje TEN na poziomie 46.5% vs 43.7% (+2.8 pp). Na 3rd down TEN utrzymuje 37.5%, podczas gdy IND jest na 34.8%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera TEN (+7.1% vs +6.5%), więc pasy rywala będą częściej pod presją.
+3️⃣ Predicted Margin (Model) – TEN by 3.4 pts
+4️⃣ Win Probability (Model) – 59% (TEN)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja TEN (17.7% vs 12.0%). Success Rate Offense pokazuje TEN na poziomie 46.5% vs 43.7% (+2.8 pp). Na 3rd down TEN utrzymuje 37.5%, podczas gdy IND jest na 34.8%, co stabilizuje serie ofensywne. TEN prowadzi w Points per Drive Differential (+0.325 vs +0.168), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
 1️⃣ Estimated Score (Market) – IND 25.5 – TEN 24.0
 2️⃣ Predicted Winner (Market) – IND
 3️⃣ Predicted Margin (Market) – IND by 1.5 pts
 4️⃣ Win Probability (Market) – 55% (IND)
-5️⃣ Forum Output (A) – PowerScore (Model) — IND +0.062 vs TEN +0.190. Points per Drive Differential — IND +0.168 vs TEN +0.325. Success Rate Offense — IND 43.7% vs TEN 46.5%. Third Down Conversion — IND 34.8% vs TEN 37.5%. Red Zone TD Rate — IND 12.0% vs TEN 17.7%. Explosive Play Rate — IND 11.0% vs TEN 10.1%. Model margin -4.5 pts vs market spread IND +1.5.
-6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie -4.5 pkt. TEN notuje +0.325 PPD vs +0.168 u IND. Różnica w Success Rate to 46.5% vs 43.7%. Na 3rd down TEN (37.5%) wygląda solidniej niż IND (34.8%). Red Zone i explosiveness ( 17.7% / 10.1% ) utrzymują przewagę jakościową. Market trzyma 1.5 pkt, więc edge vs linia to +6.0.
+5️⃣ Forum Output (A) – PowerScore (Model) — IND +0.119 vs TEN +0.110. Points per Drive Differential — IND +0.168 vs TEN +0.325. Success Rate Offense — IND 43.7% vs TEN 46.5%. Third Down Conversion — IND 34.8% vs TEN 37.5%. Red Zone TD Rate — IND 12.0% vs TEN 17.7%. Explosive Play Rate — IND 11.0% vs TEN 10.1%. Model margin -3.4 pts vs market spread IND +1.5.
+6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie -3.4 pkt. TEN notuje +0.325 PPD vs +0.168 u IND. Różnica w Success Rate to 46.5% vs 43.7%. Na 3rd down TEN (37.5%) wygląda solidniej niż IND (34.8%). Red Zone i explosiveness ( 17.7% / 10.1% ) utrzymują przewagę jakościową. Market trzyma 1.5 pkt, więc edge vs linia to +4.9.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +6.0 pts
-• PowerScoreDiff (winner) = +0.128
-• Confidence = 67.0%
+• Edge_vs_Line (winner) = +4.9 pts
+• PowerScoreDiff (winner) = -0.009
+• Confidence = 60.0%
 
-🏷 Model Tag: NEUTRAL — based on 67.0% confidence, +6.0 pts model edge vs line, and PowerScore Δ +0.128.
+🏷 Model Tag: NEUTRAL — based on 60.0% confidence, +4.9 pts model edge vs line, and PowerScore Δ -0.009.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – IND 20.3 – TEN 24.8
-   • Win Probability – 64% (TEN)
+   • Estimated Score – IND 21.4 – TEN 24.8
+   • Win Probability – 59% (TEN)
 
 2. MARKET PROJECTION (Balanced)
    • Estimated Score – IND 25.5 – TEN 24.0
@@ -514,9 +514,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +16.8 pts
 • PowerScoreDiff (winner) = +0.045
-• Confidence = 96.5%
+• Confidence = 94.5%
 
-🏷 Model Tag: GOW — based on 96.5% confidence, +16.8 pts model edge vs line, and PowerScore Δ +0.045.
+🏷 Model Tag: GOW — based on 94.5% confidence, +16.8 pts model edge vs line, and PowerScore Δ +0.045.
 💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
@@ -552,9 +552,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +8.6 pts
 • PowerScoreDiff (winner) = -0.063
-• Confidence = 95.0%
+• Confidence = 94.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +8.6 pts model edge vs line, and PowerScore Δ -0.063.
+🏷 Model Tag: NEUTRAL — based on 94.0% confidence, +8.6 pts model edge vs line, and PowerScore Δ -0.063.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:

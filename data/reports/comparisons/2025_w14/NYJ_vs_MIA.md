@@ -4,50 +4,50 @@
 
 | Metric | NYJ | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.010 | -0.008 | -0.002 |
-| Core EPA Defense | 0.107 | 0.066 | 0.041 |
-| Success Rate Offense | 0.475 | 0.460 | 0.015 |
-| Success Rate Defense | 0.471 | 0.484 | -0.013 |
-| Explosive Play Rate (Off) | 0.078 | 0.099 | -0.021 |
-| Third Down Conversion | 0.354 | 0.356 | -0.002 |
-| Points per Drive Differential | -0.772 | -0.663 | -0.109 |
-| Yards per Play Differential | -0.481 | -0.312 | -0.169 |
-| Turnover Margin | -1.182 | -0.636 | -0.545 |
-| Red Zone TD Rate (Off) | 0.107 | 0.108 | -0.001 |
-| Pressure Rate (Def) | 0.040 | 0.064 | -0.024 |
-| Tempo | 6.429 | 5.769 | 0.659 |
-| PowerScore | 0.194 | 0.086 | 0.108 |
-| PowerScore | 0.194 | 0.086 | 0.108 |
-| Tempo | 6.429 | 5.769 | 0.659 |
+| Core EPA Offense | -0.012 | 0.015 | -0.028 |
+| Core EPA Defense | 0.089 | 0.058 | 0.031 |
+| Success Rate Offense | 0.467 | 0.459 | 0.009 |
+| Success Rate Defense | 0.461 | 0.484 | -0.022 |
+| Explosive Play Rate (Off) | 0.080 | 0.103 | -0.023 |
+| Third Down Conversion | 0.345 | 0.354 | -0.009 |
+| Points per Drive Differential | -0.743 | -0.479 | -0.264 |
+| Yards per Play Differential | -0.480 | -0.213 | -0.267 |
+| Turnover Margin | -1.167 | -0.500 | -0.667 |
+| Red Zone TD Rate (Off) | 0.098 | 0.110 | -0.011 |
+| Pressure Rate (Def) | 0.050 | 0.065 | -0.014 |
+| Tempo | 5.923 | 6.615 | -0.692 |
+| PowerScore | 1.207 | 1.448 | -0.241 |
+| PowerScore | 1.207 | 1.448 | -0.241 |
+| Tempo | 5.923 | 6.615 | -0.692 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | NYJ | MIA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.131 | -0.082 | +0.212 |
-| EPA Defense | 20% | 0.113 | -0.117 | +0.230 |
-| Success Rate Offense | 25% | 46.7% | 46.7% | +0.0 pp |
-| Tempo | 20% | 0.044 | 0.107 | -0.062 |
+| EPA Offense | 35% | -0.283 | 0.119 | -0.401 |
+| EPA Defense | 20% | 0.119 | -0.283 | +0.401 |
+| Success Rate Offense | 25% | 39.0% | 55.8% | -16.9 pp |
+| Tempo | 20% | 0.091 | 0.116 | -0.025 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | NYJ | MIA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.131 | -0.082 | +0.212 |
-| EPA Defense | 20% | 0.113 | -0.117 | +0.230 |
-| Success Rate Offense | 15% | 46.7% | 46.7% | +0.0 pp |
-| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
-| Tempo | 10% | 0.044 | 0.107 | -0.062 |
-| Red Zone TD Rate (Off) | 10% | 13.3% | 0.0% | +13.3 pp |
-| Pressure Rate (Def) | 10% | 5.7% | 9.3% | -3.6 pp |
+| EPA Offense | 25% | -0.283 | 0.119 | -0.401 |
+| EPA Defense | 20% | 0.119 | -0.283 | +0.401 |
+| Success Rate Offense | 15% | 39.0% | 55.8% | -16.9 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.091 | 0.116 | -0.025 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 30.8% | -30.8 pp |
+| Pressure Rate (Def) | 10% | 4.2% | 15.0% | -10.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-NYJ edge: +0.108 (NYJ +0.194 vs MIA +0.086)
+MIA edge: +0.107 (NYJ +0.040 vs MIA +0.148)
 **7 metrics version:**
-MIA edge: +0.097 (NYJ +0.049 vs MIA +0.146)
-**Verdict:** MIA holds the edge in the extended breakdown (lead 0.097), driven by Turnover Margin (10% weight).
+MIA edge: +0.689 (NYJ -0.275 vs MIA +0.414)
+**Verdict:** MIA holds the edge in the extended breakdown (lead 0.689), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ MIA edge: +0.097 (NYJ +0.049 vs MIA +0.146)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - MIA) | +2.0 pts (favours NYJ) |
-| Model Win% NYJ | 58.2% |
-| Model Win% MIA | 41.8% |
-| SOS Differential (NYJ-MIA) | +0.009 |
+| Model Spread (NYJ - MIA) | -4.5 pts (favours MIA) |
+| Model Win% NYJ | 32.2% |
+| Model Win% MIA | 67.8% |
+| SOS Differential (NYJ-MIA) | -0.093 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| NYJ | 40.0% | n/a | n/a | 41.9% | 48.9% | n/a |
-| MIA | 38.7% | n/a | n/a | 51.4% | 56.9% | n/a |
+| NYJ | 51.9% | 43.0% | 8.9% | 30.0% | 48.6% | Pass heavy |
+| MIA | 27.9% | 43.0% | -15.1% | 50.0% | 58.1% | Run heavy |
 
 ## Situational Edges
 
@@ -76,29 +76,29 @@ MIA edge: +0.097 (NYJ +0.049 vs MIA +0.146)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -4.2 pp | +12.2 pp | +6.1 pp |
-| MIA | +3.2 pp | -6.2 pp | -4.3 pp |
+| NYJ | -4.9 pp | +7.2 pp | +6.4 pp |
+| MIA | +3.1 pp | -1.7 pp | +1.2 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -5.2 pp | -9.9 pp | -8.7 pp |
-| MIA | -4.5 pp | -11.6 pp | -14.9 pp |
+| NYJ | -4.8 pp | -7.1 pp | +0.8 pp |
+| MIA | -4.1 pp | -9.7 pp | -10.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -4.2 pp | -0.9 pp | -0.7 pp |
-| MIA | -3.4 pp | -5.2 pp | -6.4 pp |
+| NYJ | -4.9 pp | -2.2 pp | -0.9 pp |
+| MIA | -1.8 pp | -0.9 pp | -4.9 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -3.3 pp | -1.7 pp | -3.7 pp |
-| MIA | -0.4 pp | +0.0 pp | +2.2 pp |
+| NYJ | -3.3 pp | -1.3 pp | -3.6 pp |
+| MIA | -0.0 pp | +1.1 pp | +3.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | +3.9 pp | +3.4 pp | +0.5 pp |
-| MIA | -1.4 pp | -6.1 pp | +0.9 pp |
+| NYJ | +3.8 pp | +3.0 pp | +2.6 pp |
+| MIA | -0.9 pp | -3.5 pp | +2.1 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -8.2 pp | -3.4 pp | -11.2 pp |
-| MIA | +0.1 pp | -4.5 pp | -4.7 pp |
+| NYJ | -11.2 pp | -11.9 pp | -10.6 pp |
+| MIA | +1.3 pp | +0.5 pp | -4.5 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -3.3 pp | -1.7 pp | -3.7 pp |
-| MIA | -0.4 pp | +0.0 pp | +2.2 pp |
+| NYJ | -3.3 pp | -1.3 pp | -3.6 pp |
+| MIA | -0.0 pp | +1.1 pp | +3.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -4.2 pp | -0.9 pp | -0.7 pp |
-| MIA | -3.4 pp | -5.2 pp | -6.4 pp |
+| NYJ | -4.9 pp | -2.2 pp | -0.9 pp |
+| MIA | -1.8 pp | -0.9 pp | -4.9 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 48.2 | 46.4 | 47.1 |
-| MIA | 50.8 | 44.6 | 45.5 |
+| NYJ | 48.1 | 48.5 | 47.1 |
+| MIA | 49.4 | 43.0 | 42.7 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 45.6 | 44.1 | 41.3 |
-| MIA | 45.8 | 45.7 | 41.8 |
+| NYJ | 45.7 | 45.5 | 41.3 |
+| MIA | 45.5 | 43.4 | 42.9 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 2.6 | 2.3 | 5.9 |
-| MIA | 5.0 | -1.2 | 3.7 |
+| NYJ | 2.4 | 3.0 | 5.9 |
+| MIA | 3.9 | -0.4 | -0.2 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 1.71 | 1.72 | 1.49 |
-| MIA | 1.91 | 1.50 | 1.20 |
+| NYJ | 1.72 | 1.96 | 1.49 |
+| MIA | 1.97 | 1.95 | 1.93 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 2.49 | 2.39 | 2.32 |
-| MIA | 2.57 | 1.75 | 1.92 |
+| NYJ | 2.46 | 2.59 | 2.32 |
+| MIA | 2.45 | 1.57 | 1.46 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | -0.77 | -0.68 | -0.83 |
-| MIA | -0.66 | -0.25 | -0.72 |
+| NYJ | -0.74 | -0.63 | -0.83 |
+| MIA | -0.48 | 0.38 | 0.47 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 7.23 | 7.32 | 7.20 |
-| MIA | 7.41 | 6.90 | 6.59 |
+| NYJ | 7.10 | 7.11 | 7.20 |
+| MIA | 7.30 | 6.85 | 6.25 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 41.8% | 43.2% | 41.1% |
-| MIA | 44.7% | 41.0% | 41.9% |
+| NYJ | 40.3% | 37.1% | 41.1% |
+| MIA | 43.9% | 38.7% | 35.4% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 58.2% | 56.8% | 58.9% |
-| MIA | 55.3% | 59.0% | 58.1% |
+| NYJ | 59.7% | 62.9% | 58.9% |
+| MIA | 56.1% | 61.3% | 64.6% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 3.02 | 3.16 | 2.96 |
-| MIA | 3.32 | 2.83 | 2.76 |
+| NYJ | 2.86 | 2.63 | 2.96 |
+| MIA | 3.20 | 2.65 | 2.22 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| NYJ | 4.20 | 4.16 | 4.24 |
-| MIA | 4.10 | 4.07 | 3.82 |
+| NYJ | 4.24 | 4.47 | 4.24 |
+| MIA | 4.10 | 4.20 | 4.04 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.174 | 0.165 |
-| Last 5 games | 0.186 | 0.097 |
-| Last 3 games | 0.178 | 0.138 |
+| Season-to-date | 1.662 | 1.755 |
+| Last 5 games | 1.706 | 1.617 |
+| Last 3 games | 1.698 | 1.792 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W8 | W11 | W13 | Trend |
+| Metric | W10 | W11 | W13 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA NYJ | 0.243 | -0.052 | 0.131 | - declining |
-| Off EPA MIA | 0.176 | 0.091 | -0.082 | - declining |
-| Def EPA NYJ | 0.249 | 0.121 | 0.113 | + improving |
-| Def EPA MIA | -0.227 | 0.011 | -0.117 | - declining |
-| Off SR NYJ | 56.0% | 52.9% | 46.7% | - declining |
-| Off SR MIA | 53.6% | 53.6% | 46.7% | - declining |
-| Def SR NYJ | 65.8% | 51.2% | 54.7% | + improving |
-| Def SR MIA | 41.8% | 53.1% | 45.6% | - declining |
-| Tempo NYJ | 8.273 | 7.778 | 6.429 | - declining |
-| Tempo MIA | 8.400 | 6.900 | 5.769 | - declining |
+| Off EPA NYJ | -0.042 | -0.052 | 0.131 | + improving |
+| Off EPA MIA | 0.269 | 0.091 | -0.082 | - declining |
+| Def EPA NYJ | -0.104 | 0.121 | 0.113 | - declining |
+| Def EPA MIA | -0.021 | 0.011 | -0.117 | + improving |
+| Off SR NYJ | 38.2% | 52.9% | 46.7% | + improving |
+| Off SR MIA | 44.8% | 53.6% | 46.7% | + improving |
+| Def SR NYJ | 36.2% | 51.2% | 54.7% | - declining |
+| Def SR MIA | 48.1% | 53.1% | 45.6% | + improving |
+| Tempo NYJ | 5.667 | 7.778 | 6.429 | + improving |
+| Tempo MIA | 6.091 | 6.900 | 5.769 | - declining |
 
 ## Matchup Analogs
 
@@ -249,104 +249,104 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | MIA (A) | 21-30 | MIA | 1.000 | 0.074 | 56.8% | -0.900 |
-| 8 | CIN (A) | 39-42 | CIN | 0.937 | 0.243 | 56.0% | -0.255 |
-| 7 | CAR (H) | 6-13 | CAR | 0.860 | -0.195 | 35.1% | -0.636 |
+| 8 | CIN (A) | 39-42 | CIN | 0.928 | 0.243 | 56.0% | -0.255 |
+| 5 | DAL (H) | 22-37 | DAL | 0.850 | 0.025 | 50.0% | -1.250 |
 
 **MIA analogs vs NYJ profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | NYJ (H) | 27-19 | MIA | 1.000 | 0.176 | 47.9% | 0.900 |
-| 5 | CAR (A) | 24-25 | CAR | 0.925 | 0.121 | 44.4% | -0.055 |
-| 11 | WAS (H) | 16-16 | TIE | 0.833 | 0.091 | 53.6% | -0.025 |
+| 5 | CAR (A) | 24-25 | CAR | 0.956 | 0.121 | 44.4% | -0.055 |
+| 11 | WAS (H) | 16-16 | TIE | 0.808 | 0.091 | 53.6% | -0.025 |
 
 ## Core EPA Offense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | -0.008 | -0.085 | -0.062 |
-| NYJ | -0.010 | 0.004 | -0.009 |
+| MIA | 0.015 | 0.052 | 0.093 |
+| NYJ | -0.012 | 0.035 | -0.009 |
 
 ## Core EPA Defense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 0.066 | -0.050 | 0.010 |
-| NYJ | 0.107 | 0.103 | 0.106 |
+| MIA | 0.058 | -0.044 | -0.043 |
+| NYJ | 0.089 | 0.093 | 0.106 |
 
 ## Success Rate Offense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 46.0% | 45.3% | 47.3% |
-| NYJ | 47.9% | 46.4% | 46.2% |
+| MIA | 45.9% | 48.3% | 48.3% |
+| NYJ | 47.2% | 47.1% | 46.2% |
 
 ## Success Rate Defense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 48.5% | 45.4% | 50.0% |
-| NYJ | 46.9% | 50.2% | 49.2% |
+| MIA | 48.5% | 48.2% | 48.8% |
+| NYJ | 45.8% | 49.3% | 49.2% |
 
 ## Explosive Play Rate (Off) Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 9.9% | 11.5% | 12.2% |
-| NYJ | 7.9% | 7.8% | 6.4% |
+| MIA | 10.3% | 12.9% | 13.3% |
+| NYJ | 8.1% | 9.2% | 6.4% |
 
 ## Third Down Conversion Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 35.3% | 26.3% | 26.6% |
-| NYJ | 36.1% | 43.4% | 42.8% |
+| MIA | 35.2% | 31.5% | 32.4% |
+| NYJ | 35.3% | 40.6% | 42.8% |
 
 ## Points per Drive Differential Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | -0.601 | -0.320 | -0.701 |
-| NYJ | -0.739 | -0.628 | -0.750 |
+| MIA | -0.409 | 0.329 | 0.446 |
+| NYJ | -0.710 | -0.581 | -0.750 |
 
 ## Yards per Play Differential Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | -0.312 | 0.190 | 0.003 |
-| NYJ | -0.481 | -0.294 | -0.470 |
+| MIA | -0.213 | 0.347 | 0.464 |
+| NYJ | -0.480 | -0.312 | -0.470 |
 
 ## Turnover Margin Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | -0.636 | -1.000 | -0.667 |
-| NYJ | -1.182 | -1.200 | -1.333 |
+| MIA | -0.500 | 0.000 | 0.667 |
+| NYJ | -1.167 | -1.000 | -1.333 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 10.8% | 3.4% | 1.5% |
-| NYJ | 10.7% | 10.4% | 13.7% |
+| MIA | 11.0% | 5.9% | 5.7% |
+| NYJ | 9.8% | 10.4% | 13.7% |
 
 ## Pressure Rate (Def) Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 6.4% | 6.5% | 6.6% |
-| NYJ | 4.0% | 4.1% | 4.1% |
+| MIA | 6.5% | 6.0% | 6.4% |
+| NYJ | 5.0% | 6.2% | 4.1% |
 
 ## Tempo Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 7.414 | 6.899 | 6.587 |
-| NYJ | 7.225 | 7.321 | 7.202 |
+| MIA | 7.304 | 6.850 | 6.253 |
+| NYJ | 7.095 | 7.109 | 7.202 |
 
 ## Pass Rate Offense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| MIA | 44.4% | 41.1% | 42.3% |
-| NYJ | 42.0% | 42.9% | 41.0% |
+| MIA | 43.6% | 38.9% | 35.5% |
+| NYJ | 40.7% | 37.4% | 41.0% |

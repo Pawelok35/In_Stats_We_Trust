@@ -15,39 +15,39 @@
 | Turnover Margin | -0.545 | 0.091 | -0.636 |
 | Red Zone TD Rate (Off) | 0.146 | 0.152 | -0.006 |
 | Pressure Rate (Def) | 0.055 | 0.063 | -0.008 |
-| Tempo | 7.000 | 9.500 | -2.500 |
-| PowerScore | 0.152 | 0.143 | 0.009 |
-| PowerScore | 0.152 | 0.143 | 0.009 |
-| Tempo | 7.000 | 9.500 | -2.500 |
+| Tempo | 8.700 | 9.333 | -0.633 |
+| PowerScore | 1.970 | 2.084 | -0.114 |
+| PowerScore | 1.970 | 2.084 | -0.114 |
+| Tempo | 8.700 | 9.333 | -0.633 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | DAL | KC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.019 | 0.015 | +0.004 |
-| EPA Defense | 20% | 0.017 | 0.013 | +0.004 |
-| Success Rate Offense | 25% | 47.3% | 46.5% | +0.8 pp |
-| Tempo | 20% | 0.121 | 0.096 | +0.024 |
+| EPA Offense | 35% | 0.207 | 0.172 | +0.035 |
+| EPA Defense | 20% | 0.172 | 0.207 | -0.035 |
+| Success Rate Offense | 25% | 49.4% | 46.4% | +3.0 pp |
+| Tempo | 20% | 0.103 | 0.107 | -0.004 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | DAL | KC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.019 | 0.015 | +0.004 |
-| EPA Defense | 20% | 0.017 | 0.013 | +0.004 |
-| Success Rate Offense | 15% | 47.3% | 46.5% | +0.8 pp |
-| Turnover Margin | 10% | -2.000 | -2.000 | +0.000 |
-| Tempo | 10% | 0.121 | 0.096 | +0.024 |
-| Red Zone TD Rate (Off) | 10% | 15.0% | 3.6% | +11.4 pp |
-| Pressure Rate (Def) | 10% | 2.5% | 0.0% | +2.5 pp |
+| EPA Offense | 25% | 0.207 | 0.172 | +0.035 |
+| EPA Defense | 20% | 0.172 | 0.207 | -0.035 |
+| Success Rate Offense | 15% | 49.4% | 46.4% | +3.0 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.103 | 0.107 | -0.004 |
+| Red Zone TD Rate (Off) | 10% | 10.5% | 18.8% | -8.2 pp |
+| Pressure Rate (Def) | 10% | 8.1% | 0.0% | +8.1 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-DAL edge: +0.009 (DAL +0.152 vs KC +0.143)
+DAL edge: +0.012 (DAL +0.251 vs KC +0.239)
 **7 metrics version:**
-DAL edge: +0.019 (DAL -0.092 vs KC -0.111)
-**Verdict:** DAL holds the edge in the extended breakdown (lead 0.019), driven by Red Zone TD Rate (Off) (10% weight).
+KC edge: +0.194 (DAL +0.089 vs KC +0.283)
+**Verdict:** KC holds the edge in the extended breakdown (lead 0.194), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ DAL edge: +0.019 (DAL -0.092 vs KC -0.111)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DAL - KC) | +0.2 pts (favours DAL) |
-| Model Win% DAL | 50.7% |
-| Model Win% KC | 49.3% |
-| SOS Differential (DAL-KC) | +0.040 |
+| Model Spread (DAL - KC) | -2.1 pts (favours KC) |
+| Model Win% DAL | 41.3% |
+| Model Win% KC | 58.7% |
+| SOS Differential (DAL-KC) | +0.064 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| DAL | 42.9% | n/a | n/a | 31.2% | 55.3% | n/a |
-| KC | 44.7% | n/a | n/a | 45.0% | 41.9% | n/a |
+| DAL | 48.3% | 43.3% | 5.0% | 50.0% | 48.9% | Pass heavy |
+| KC | 44.0% | 43.3% | 0.8% | 43.2% | 48.9% | Balanced |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DAL | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.206 | 0.166 |
-| Last 5 games | 0.166 | 0.138 |
-| Last 3 games | 0.131 | 0.180 |
+| Season-to-date | 1.743 | 1.679 |
+| Last 5 games | 1.595 | 1.503 |
+| Last 3 games | 1.632 | 1.609 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | GB (H) | 38-42 | GB | 0.929 | 0.228 | 52.2% | -0.364 |
-| 3 | CHI (A) | 14-31 | CHI | 0.723 | -0.005 | 48.3% | -1.700 |
-| 7 | WAS (H) | 38-20 | DAL | 0.677 | 0.190 | 46.5% | 1.385 |
+| 4 | GB (H) | 38-42 | GB | 0.874 | 0.228 | 52.2% | -0.364 |
+| 3 | CHI (A) | 14-31 | CHI | 0.753 | -0.005 | 48.3% | -1.700 |
+| 7 | WAS (H) | 38-20 | DAL | 0.665 | 0.190 | 46.5% | 1.385 |
 
 **KC analogs vs DAL profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 8 | WAS (H) | 28-8 | KC | 0.901 | 0.216 | 50.0% | 2.236 |
-| 3 | NYG (A) | 22-10 | KC | 0.896 | 0.082 | 46.5% | 1.200 |
-| 9 | BUF (A) | 21-28 | BUF | 0.821 | 0.066 | 47.3% | -0.700 |
+| 8 | WAS (H) | 28-8 | KC | 0.927 | 0.216 | 50.0% | 2.236 |
+| 3 | NYG (A) | 22-10 | KC | 0.885 | 0.082 | 46.5% | 1.200 |
+| 9 | BUF (A) | 21-28 | BUF | 0.859 | 0.066 | 47.3% | -0.700 |
 
 ## Core EPA Offense Form (up to Week 12)
 

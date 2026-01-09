@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.124 | 0.000 | 0.124 |
 | Pressure Rate (Def) | 0.045 | 0.091 | -0.046 |
 | Tempo | 6.846 | 6.077 | 0.769 |
-| PowerScore | 0.024 | -0.000 | 0.024 |
-| PowerScore | 0.024 | -0.000 | 0.024 |
+| PowerScore | 1.375 | 1.205 | 0.170 |
+| PowerScore | 1.375 | 1.205 | 0.170 |
 | Tempo | 6.846 | 6.077 | 0.769 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ JAX edge: +0.432 (JAX +0.217 vs HOU -0.215)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - HOU) | +0.4 pts (favours JAX) |
-| Model Win% JAX | 51.8% |
-| Model Win% HOU | 48.2% |
-| SOS Differential (JAX-HOU) | +0.033 |
+| Model Spread (JAX - HOU) | +3.1 pts (favours JAX) |
+| Model Win% JAX | 62.8% |
+| Model Win% HOU | 37.2% |
+| SOS Differential (JAX-HOU) | -0.261 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.142 | 0.109 |
-| Last 5 games | 0.142 | 0.109 |
-| Last 3 games | 0.142 | 0.109 |
+| Season-to-date | 1.643 | 1.904 |
+| Last 5 games | 1.643 | 1.904 |
+| Last 3 games | 1.643 | 1.904 |
 
 ## Trend Summary (last 2 weeks)
 

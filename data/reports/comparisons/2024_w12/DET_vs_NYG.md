@@ -4,19 +4,21 @@
 
 | Metric | DET | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.112 | -0.177 | ↑ +0.290 |
-| Core EPA Defense | -0.173 | 0.211 | ↓ -0.384 |
-| Success Rate Offense | 51.7% | 42.5% | ↑ +9.2 pp |
-| Success Rate Defense | 36.2% | 50.0% | ↓ -13.8 pp |
-| Explosive Play Rate (Off) | 12.4% | 6.8% | ↑ +5.5 pp |
-| Third Down Conversion | 60.0% | 45.5% | ↑ +14.5 pp |
-| Points per Drive Differential | 1.800 | -2.633 | ↑ +4.433 |
-| Yards per Play Differential | 0.498 | -2.578 | ↑ +3.076 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 18.8% | 10.0% | ↑ +8.8 pp |
-| Pressure Rate (Def) | 0.0% | 0.0% | ± 0.0 pp |
-| Tempo | 8.900 | 7.300 | ↑ +1.600 |
-| PowerScore | 0.159 | 0.100 | ↑ +0.059 |
+| Core EPA Offense | 0.132 | -0.063 | 0.195 |
+| Core EPA Defense | -0.098 | 0.031 | -0.129 |
+| Success Rate Offense | 0.524 | 0.453 | 0.071 |
+| Success Rate Defense | 0.451 | 0.479 | -0.028 |
+| Explosive Play Rate (Off) | 0.125 | 0.090 | 0.034 |
+| Third Down Conversion | 0.420 | 0.337 | 0.083 |
+| Points per Drive Differential | 1.343 | -0.440 | 1.783 |
+| Yards per Play Differential | 0.932 | -0.609 | 1.541 |
+| Turnover Margin | 0.900 | -0.600 | 1.500 |
+| Red Zone TD Rate (Off) | 0.184 | 0.105 | 0.079 |
+| Pressure Rate (Def) | 0.069 | 0.105 | -0.035 |
+| Tempo | 8.900 | 7.300 | 1.600 |
+| PowerScore | 1.914 | 1.546 | 0.368 |
+| PowerScore | 1.914 | 1.546 | 0.368 |
+| Tempo | 8.900 | 7.300 | 1.600 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DET edge: +0.059 (DET +0.159 vs NYG +0.100)
 **7 metrics version:**
 DET edge: +0.024 (DET +0.102 vs NYG +0.078)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.024), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - NYG) | +1.1 pts (favours DET) |
-| Model Win% DET | 54.5% |
-| Model Win% NYG | 45.5% |
-| SOS Differential (DET-NYG) | -0.014 |
+| Model Spread (DET - NYG) | +6.8 pts (favours DET) |
+| Model Win% DET | 75.6% |
+| Model Win% NYG | 24.4% |
+| SOS Differential (DET-NYG) | +0.062 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.126 | 0.140 |
-| Last 5 games | 0.107 | 0.155 |
-| Last 3 games | 0.114 | 0.179 |
+| Season-to-date | 1.605 | 1.543 |
+| Last 5 games | 1.522 | 1.517 |
+| Last 3 games | 1.601 | 1.635 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -250,8 +256,8 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | PHI (A) | 7-17 | PHI | 0.904 | -0.132 | 47.3% | -0.909 |
-| 8 | PHI (H) | 24-18 | NYG | 0.904 | -0.027 | 43.5% | 0.515 |
+| 6 | PHI (H) | 7-17 | PHI | 0.904 | -0.132 | 47.3% | -0.909 |
+| 8 | PHI (A) | 24-18 | NYG | 0.904 | -0.027 | 43.5% | 0.515 |
 | 3 | KC (H) | 21-16 | NYG | 0.808 | -0.144 | 42.9% | 0.329 |
 
 ## Core EPA Offense Form (up to Week 11)

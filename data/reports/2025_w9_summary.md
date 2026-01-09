@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 9
 
-_Generated at 2025-11-10T12:58:54.260334+00:00 (UTC)_
+_Generated at 2026-01-08T19:16:13.789793+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2025-11-10T12:58:53.783223+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T12:58:53.783223+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2025-11-10T12:58:53.783223+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2385, "cols": 18, "timestamp": "2026-01-08T19:16:13.406776+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2385, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:16:13.407775+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2385, "cols": 24, "timestamp": "2026-01-08T19:16:13.407775+00:00"}
 
 ## L3 Sanity
 
@@ -32,7 +32,7 @@ Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
 - Artifact: `data\l4_core12\2025\9.parquet`
 - Manifest: `data\l4_core12\2025\9_manifest.json`
-- Rows: 32
+- Rows: 28
 - Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\9_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| CHI | 0.3257853877424377 |
-| CIN | 0.31879870286746753 |
-| SEA | 0.28106168014476146 |
-| SF | 0.2786401583107389 |
-| NYG | 0.25119961742183844 |
-| JAX | 0.24892175850857776 |
-| LV | 0.2433634713289752 |
-| BUF | 0.23671547340297974 |
-| KC | 0.19568337803515992 |
-| LA | 0.1736448757789158 |
+| JAX | 2.3797350460228968 |
+| CAR | 2.174953644574574 |
+| LA | 2.070728209112249 |
+| GB | 2.0381193359495673 |
+| CHI | 1.9963736230365554 |
+| LV | 1.8081735979112539 |
+| IND | 1.797901141070315 |
+| WAS | 1.7945156145924404 |
+| BUF | 1.7913990177067773 |
+| NYG | 1.7704203966426177 |
 
 
 ## Visualizations

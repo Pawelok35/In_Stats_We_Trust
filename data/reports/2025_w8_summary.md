@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 8
 
-_Generated at 2025-11-10T14:28:54.721288+00:00 (UTC)_
+_Generated at 2026-01-08T19:15:27.476778+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\8_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2142, "cols": 18, "timestamp": "2025-11-10T14:28:54.303086+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2142, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-10T14:28:54.303086+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2142, "cols": 24, "timestamp": "2025-11-10T14:28:54.303086+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2142, "cols": 18, "timestamp": "2026-01-08T19:15:27.041214+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2142, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:15:27.041214+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2142, "cols": 24, "timestamp": "2026-01-08T19:15:27.041214+00:00"}
 
 ## L3 Sanity
 
@@ -33,7 +33,7 @@ Last 3 entries from `data\l2_audit\2025\8_audit.jsonl`:
 - Artifact: `data\l4_core12\2025\8.parquet`
 - Manifest: `data\l4_core12\2025\8_manifest.json`
 - Rows: 26
-- Columns: 15
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\8_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| CIN | 0.3371989619679479 |
-| NYJ | 0.3058290896840429 |
-| PHI | 0.302786293905961 |
-| DEN | 0.30242497454899786 |
-| BAL | 0.25001858405787913 |
-| IND | 0.24733406649455442 |
-| DAL | 0.23937913957282694 |
-| NYG | 0.23379631869347134 |
-| HOU | 0.21438542826718573 |
-| BUF | 0.2118661445479372 |
+| LAC | 2.100588976658951 |
+| HOU | 2.0752364920969733 |
+| PHI | 2.027962102626074 |
+| BAL | 2.002796361835657 |
+| CHI | 1.9769993181206305 |
+| DAL | 1.9357040912169274 |
+| NYJ | 1.9296053134602669 |
+| KC | 1.9121177533411613 |
+| MIA | 1.8300382412427474 |
+| CIN | 1.82035685670479 |
 
 
 ## Visualizations

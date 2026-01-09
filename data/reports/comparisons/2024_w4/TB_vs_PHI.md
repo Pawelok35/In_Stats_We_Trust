@@ -249,16 +249,16 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 1 | WAS (H) | 37-20 | TB | 0.722 | 0.270 | 54.9% | 1.889 |
-| 2 | DET (A) | 20-16 | TB | 0.549 | -0.018 | 45.3% | 0.364 |
-| 3 | DEN (H) | 7-29 | DEN | 0.217 | -0.264 | 47.9% | -1.964 |
+| 3 | NYJ (H) | 7-29 | NYJ | 0.550 | -0.264 | 47.9% | -1.964 |
+| 2 | HOU (A) | 20-16 | TB | 0.450 | -0.018 | 45.3% | 0.364 |
 
 **PHI analogs vs TB profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | ATL (H) | 21-22 | ATL | 0.800 | 0.089 | 47.7% | -0.111 |
+| 3 | LA (H) | 15-12 | PHI | 0.855 | -0.097 | 38.1% | 0.300 |
+| 2 | KC (A) | 21-22 | KC | 0.834 | 0.089 | 47.7% | -0.111 |
 | 1 | GB (H) | 34-29 | PHI | 0.453 | 0.104 | 52.6% | 0.455 |
-| 3 | NO (A) | 15-12 | PHI | 0.360 | -0.097 | 38.1% | 0.300 |
 
 ## Core EPA Offense Form (up to Week 3)
 

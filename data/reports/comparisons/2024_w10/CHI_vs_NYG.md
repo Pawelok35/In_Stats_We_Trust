@@ -4,19 +4,21 @@
 
 | Metric | CHI | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.297 | -0.064 | ↓ -0.233 |
-| Core EPA Defense | -0.036 | -0.016 | ↓ -0.020 |
-| Success Rate Offense | 35.0% | 55.9% | ↓ -20.9 pp |
-| Success Rate Defense | 48.1% | 42.5% | ↑ +5.6 pp |
-| Explosive Play Rate (Off) | 2.5% | 8.6% | ↓ -6.1 pp |
-| Third Down Conversion | 6.2% | 46.7% | ↓ -40.4 pp |
-| Points per Drive Differential | -1.311 | -0.121 | ↓ -1.190 |
-| Yards per Play Differential | -2.377 | -0.148 | ↓ -2.229 |
-| Turnover Margin | 1.000 | -2.000 | ↑ +3.000 |
-| Red Zone TD Rate (Off) | 0.0% | 11.1% | ↓ -11.1 pp |
-| Pressure Rate (Def) | 3.7% | 3.8% | ↓ -0.1 pp |
-| Tempo | 7.273 | 7.154 | ↑ +0.119 |
-| PowerScore | -0.019 | 0.131 | ↓ -0.150 |
+| Core EPA Offense | -0.031 | -0.063 | 0.031 |
+| Core EPA Defense | -0.070 | 0.036 | -0.107 |
+| Success Rate Offense | 0.431 | 0.441 | -0.010 |
+| Success Rate Defense | 0.435 | 0.485 | -0.050 |
+| Explosive Play Rate (Off) | 0.084 | 0.090 | -0.007 |
+| Third Down Conversion | 0.258 | 0.323 | -0.065 |
+| Points per Drive Differential | 0.179 | -0.476 | 0.654 |
+| Yards per Play Differential | -0.667 | -0.660 | -0.006 |
+| Turnover Margin | 0.875 | -0.444 | 1.319 |
+| Red Zone TD Rate (Off) | 0.114 | 0.105 | 0.009 |
+| Pressure Rate (Def) | 0.084 | 0.112 | -0.028 |
+| Tempo | 7.273 | 7.154 | 0.119 |
+| PowerScore | 1.431 | 1.545 | -0.114 |
+| PowerScore | 1.431 | 1.545 | -0.114 |
+| Tempo | 7.273 | 7.154 | 0.119 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYG edge: +0.150 (CHI -0.019 vs NYG +0.131)
 **7 metrics version:**
 CHI edge: +0.189 (CHI +0.077 vs NYG -0.112)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.189), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - NYG) | -2.8 pts (favours NYG) |
-| Model Win% CHI | 38.6% |
-| Model Win% NYG | 61.4% |
-| SOS Differential (CHI-NYG) | -0.043 |
+| Model Spread (CHI - NYG) | -2.1 pts (favours NYG) |
+| Model Win% CHI | 41.3% |
+| Model Win% NYG | 58.7% |
+| SOS Differential (CHI-NYG) | -0.154 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.101 | 0.143 |
-| Last 5 games | 0.138 | 0.152 |
-| Last 3 games | 0.141 | 0.187 |
+| Season-to-date | 1.424 | 1.578 |
+| Last 5 games | 1.534 | 1.551 |
+| Last 3 games | 1.554 | 1.686 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -250,7 +256,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | DEN (H) | 3-28 | DEN | 0.923 | -0.253 | 39.2% | -1.923 |
+| 7 | DEN (A) | 3-28 | DEN | 0.923 | -0.253 | 39.2% | -1.923 |
 | 4 | LAC (H) | 15-20 | LAC | 0.906 | 0.018 | 42.2% | -0.556 |
 | 1 | MIN (H) | 6-22 | MIN | 0.788 | -0.235 | 38.2% | -1.455 |
 

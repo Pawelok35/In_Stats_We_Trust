@@ -4,50 +4,50 @@
 
 | Metric | BUF | PHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.133 | 0.032 | 0.101 |
-| Core EPA Defense | 0.018 | -0.038 | 0.056 |
-| Success Rate Offense | 0.497 | 0.462 | 0.035 |
-| Success Rate Defense | 0.487 | 0.451 | 0.036 |
-| Explosive Play Rate (Off) | 0.121 | 0.103 | 0.018 |
-| Third Down Conversion | 0.420 | 0.325 | 0.095 |
-| Points per Drive Differential | 0.648 | 0.286 | 0.362 |
-| Yards per Play Differential | 0.576 | 0.189 | 0.387 |
-| Turnover Margin | 0.357 | 0.357 | 0.000 |
-| Red Zone TD Rate (Off) | 0.161 | 0.159 | 0.003 |
-| Pressure Rate (Def) | 0.085 | 0.077 | 0.008 |
-| Tempo | 6.600 | 8.700 | -2.100 |
-| PowerScore | 1.430 | 1.898 | -0.469 |
-| PowerScore | 1.430 | 1.898 | -0.469 |
-| Tempo | 6.600 | 8.700 | -2.100 |
+| Core EPA Offense | 0.123 | 0.024 | 0.099 |
+| Core EPA Defense | 0.035 | -0.046 | 0.081 |
+| Success Rate Offense | 0.496 | 0.454 | 0.042 |
+| Success Rate Defense | 0.484 | 0.446 | 0.039 |
+| Explosive Play Rate (Off) | 0.122 | 0.101 | 0.021 |
+| Third Down Conversion | 0.417 | 0.332 | 0.085 |
+| Points per Drive Differential | 0.502 | 0.291 | 0.211 |
+| Yards per Play Differential | 0.479 | 0.222 | 0.258 |
+| Turnover Margin | 0.267 | 0.400 | -0.133 |
+| Red Zone TD Rate (Off) | 0.151 | 0.148 | 0.003 |
+| Pressure Rate (Def) | 0.079 | 0.077 | 0.002 |
+| Tempo | 8.091 | 6.182 | 1.909 |
+| PowerScore | 1.670 | 1.295 | 0.376 |
+| PowerScore | 1.670 | 1.295 | 0.376 |
+| Tempo | 8.091 | 6.182 | 1.909 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | BUF | PHI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.002 | 0.128 | -0.130 |
-| EPA Defense | 20% | -0.075 | -0.050 | -0.024 |
-| Success Rate Offense | 25% | 50.0% | 49.4% | +0.6 pp |
-| Tempo | 20% | 0.106 | 0.138 | -0.032 |
+| EPA Offense | 35% | -0.082 | -0.060 | -0.022 |
+| EPA Defense | 20% | -0.060 | -0.082 | +0.022 |
+| Success Rate Offense | 25% | 37.1% | 38.2% | -1.2 pp |
+| Tempo | 20% | 0.090 | 0.059 | +0.031 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | BUF | PHI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.002 | 0.128 | -0.130 |
-| EPA Defense | 20% | -0.075 | -0.050 | -0.024 |
-| Success Rate Offense | 15% | 50.0% | 49.4% | +0.6 pp |
-| Turnover Margin | 10% | 2.000 | 0.000 | +2.000 |
-| Tempo | 10% | 0.106 | 0.138 | -0.032 |
-| Red Zone TD Rate (Off) | 10% | 15.4% | 17.6% | -2.3 pp |
-| Pressure Rate (Def) | 10% | 9.1% | 7.7% | +1.4 pp |
+| EPA Offense | 25% | -0.082 | -0.060 | -0.022 |
+| EPA Defense | 20% | -0.060 | -0.082 | +0.022 |
+| Success Rate Offense | 15% | 37.1% | 38.2% | -1.2 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.090 | 0.059 | +0.031 |
+| Red Zone TD Rate (Off) | 10% | 15.4% | 10.0% | +5.4 pp |
+| Pressure Rate (Def) | 10% | 3.4% | 11.9% | -8.5 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PHI edge: +0.055 (BUF +0.131 vs PHI +0.186)
+PHI edge: +0.000 (BUF +0.070 vs PHI +0.070)
 **7 metrics version:**
-BUF edge: +0.159 (BUF +0.295 vs PHI +0.135)
-**Verdict:** BUF holds the edge in the extended breakdown (lead 0.159), driven by Turnover Margin (10% weight).
+PHI edge: +0.203 (BUF -0.049 vs PHI +0.154)
+**Verdict:** PHI holds the edge in the extended breakdown (lead 0.203), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ BUF edge: +0.159 (BUF +0.295 vs PHI +0.135)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - PHI) | -8.7 pts (favours PHI) |
-| Model Win% BUF | 19.1% |
-| Model Win% PHI | 80.9% |
-| SOS Differential (BUF-PHI) | +0.070 |
+| Model Spread (BUF - PHI) | +6.9 pts (favours BUF) |
+| Model Win% BUF | 76.1% |
+| Model Win% PHI | 23.9% |
+| SOS Differential (BUF-PHI) | -0.025 |
 *Neutral-field assumption. Based on schedule through Week 16.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| BUF | 34.8% | n/a | n/a | 34.6% | 47.6% | n/a |
-| PHI | 39.1% | n/a | n/a | 36.4% | 61.7% | n/a |
+| BUF | 47.2% | 42.9% | 4.3% | 33.3% | 40.4% | Pass heavy |
+| PHI | 42.6% | 42.9% | -0.3% | 24.1% | 48.7% | Balanced |
 
 ## Situational Edges
 
@@ -76,29 +76,29 @@ BUF edge: +0.159 (BUF +0.295 vs PHI +0.135)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +6.3 pp | +8.0 pp | +14.4 pp |
-| PHI | -7.2 pp | -7.6 pp | -18.2 pp |
+| BUF | +6.0 pp | +8.0 pp | +14.4 pp |
+| PHI | -6.1 pp | -7.6 pp | -18.2 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +5.5 pp | +1.6 pp | +8.9 pp |
-| PHI | +2.2 pp | -1.1 pp | -9.6 pp |
+| BUF | +2.9 pp | +1.6 pp | +8.9 pp |
+| PHI | +1.2 pp | -1.1 pp | -9.6 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +0.6 pp | +1.7 pp | +6.5 pp |
-| PHI | +1.4 pp | +2.3 pp | +3.3 pp |
+| BUF | +0.7 pp | +1.7 pp | +6.5 pp |
+| PHI | +1.3 pp | +2.3 pp | +3.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +2.9 pp | +4.2 pp | +5.8 pp |
-| PHI | -1.3 pp | +0.2 pp | +0.3 pp |
+| BUF | +3.0 pp | +4.2 pp | +5.8 pp |
+| PHI | -1.7 pp | +0.2 pp | +0.3 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +2.0 pp | +4.2 pp | +11.1 pp |
-| PHI | -6.9 pp | -8.9 pp | -13.6 pp |
+| BUF | +2.5 pp | +4.2 pp | +11.1 pp |
+| PHI | -7.5 pp | -8.9 pp | -13.6 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +7.4 pp | +7.3 pp | +15.2 pp |
-| PHI | +3.8 pp | +9.4 pp | +9.0 pp |
+| BUF | +7.6 pp | +7.3 pp | +15.2 pp |
+| PHI | +3.5 pp | +9.4 pp | +9.0 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +2.9 pp | +4.2 pp | +5.8 pp |
-| PHI | -1.3 pp | +0.2 pp | +0.3 pp |
+| BUF | +3.0 pp | +4.2 pp | +5.8 pp |
+| PHI | -1.7 pp | +0.2 pp | +0.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | +0.6 pp | +1.7 pp | +6.5 pp |
-| PHI | +1.4 pp | +2.3 pp | +3.3 pp |
+| BUF | +0.7 pp | +1.7 pp | +6.5 pp |
+| PHI | +1.3 pp | +2.3 pp | +3.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,42 +140,42 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 46.9 | 49.2 | 55.4 |
-| PHI | 45.9 | 42.9 | 41.9 |
+| BUF | 46.6 | 49.2 | 55.4 |
+| PHI | 45.2 | 42.9 | 41.9 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 51.5 | 51.9 | 51.6 |
-| PHI | 48.5 | 48.4 | 53.1 |
+| BUF | 50.3 | 51.9 | 51.6 |
+| PHI | 47.8 | 48.4 | 53.1 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | -4.5 | -2.8 | 3.8 |
+| BUF | -3.7 | -2.8 | 3.8 |
 | PHI | -2.6 | -5.6 | -11.1 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 2.79 | 2.58 | 3.03 |
-| PHI | 2.22 | 2.28 | 2.71 |
+| BUF | 2.69 | 2.58 | 3.03 |
+| PHI | 2.13 | 2.28 | 2.71 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 2.15 | 2.30 | 2.96 |
-| PHI | 1.93 | 1.44 | 1.12 |
+| BUF | 2.18 | 2.30 | 2.96 |
+| PHI | 1.84 | 1.44 | 1.12 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 0.65 | 0.28 | 0.07 |
+| BUF | 0.50 | 0.28 | 0.07 |
 | PHI | 0.29 | 0.84 | 1.59 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 7.75 | 7.94 | 7.70 |
-| PHI | 7.49 | 7.78 | 8.29 |
+| BUF | 7.72 | 7.94 | 7.70 |
+| PHI | 7.50 | 7.78 | 8.29 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 39.4% | 39.3% | 39.3% |
-| PHI | 40.5% | 41.5% | 36.7% |
+| BUF | 40.4% | 39.3% | 39.3% |
+| PHI | 40.1% | 41.5% | 36.7% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 60.6% | 60.7% | 60.7% |
-| PHI | 59.5% | 58.5% | 63.3% |
+| BUF | 59.6% | 60.7% | 60.7% |
+| PHI | 59.9% | 58.5% | 63.3% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 3.05 | 3.12 | 3.02 |
-| PHI | 3.04 | 3.23 | 3.04 |
+| BUF | 3.12 | 3.12 | 3.02 |
+| PHI | 3.01 | 3.23 | 3.04 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| BUF | 4.69 | 4.82 | 4.68 |
-| PHI | 4.45 | 4.55 | 5.25 |
+| BUF | 4.60 | 4.82 | 4.68 |
+| PHI | 4.50 | 4.55 | 5.25 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | PHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.290 | 0.220 |
-| Last 5 games | 0.472 | 0.366 |
-| Last 3 games | 0.753 | 0.517 |
+| Season-to-date | 1.590 | 1.615 |
+| Last 5 games | 1.548 | 1.519 |
+| Last 3 games | 1.754 | 1.414 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 12 | HOU (A) | 19-23 | HOU | 0.918 | -0.067 | 35.4% | -0.333 |
-| 16 | CLE (A) | 23-20 | BUF | 0.690 | -0.002 | 50.0% | 0.300 |
-| 5 | NE (H) | 20-23 | NE | 0.655 | 0.019 | 50.6% | -0.300 |
+| 12 | HOU (A) | 19-23 | HOU | 0.962 | -0.067 | 35.4% | -0.333 |
+| 16 | CLE (A) | 23-20 | BUF | 0.764 | -0.002 | 50.0% | 0.300 |
+| 4 | NO (H) | 31-21 | BUF | 0.656 | 0.122 | 46.8% | 0.918 |
 
 **PHI analogs vs BUF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 10 | GB (A) | n/a | n/a | 0.974 | n/a | n/a | n/a |
-| 2 | KC (A) | 20-19 | PHI | 0.926 | 0.030 | 43.0% | 0.111 |
-| 11 | DET (H) | 16-9 | PHI | 0.895 | -0.147 | 41.9% | 0.538 |
+| 10 | GB (A) | 10-6 | PHI | 0.970 | -0.096 | 33.8% | 0.364 |
+| 11 | DET (H) | 16-9 | PHI | 0.948 | -0.147 | 41.9% | 0.538 |
+| 2 | KC (A) | 20-19 | PHI | 0.920 | 0.030 | 43.0% | 0.111 |
 
 ## Core EPA Offense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 0.133 | 0.091 | 0.153 |
-| PHI | 0.032 | 0.033 | 0.080 |
+| BUF | 0.123 | 0.091 | 0.153 |
+| PHI | 0.024 | 0.033 | 0.080 |
 
 ## Core EPA Defense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 0.018 | -0.015 | 0.099 |
-| PHI | -0.038 | -0.081 | -0.157 |
+| BUF | 0.035 | -0.015 | 0.099 |
+| PHI | -0.046 | -0.081 | -0.157 |
 
 ## Success Rate Offense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 49.5% | 47.1% | 51.9% |
-| PHI | 46.2% | 46.5% | 49.4% |
+| BUF | 49.4% | 47.1% | 51.9% |
+| PHI | 45.4% | 46.5% | 49.4% |
 
 ## Success Rate Defense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 49.0% | 49.4% | 55.4% |
-| PHI | 45.4% | 42.6% | 39.6% |
+| BUF | 48.8% | 49.4% | 55.4% |
+| PHI | 44.9% | 42.6% | 39.6% |
 
 ## Explosive Play Rate (Off) Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 12.0% | 11.2% | 11.3% |
-| PHI | 10.2% | 11.5% | 12.5% |
+| BUF | 12.1% | 11.2% | 11.3% |
+| PHI | 10.0% | 11.5% | 12.5% |
 
 ## Third Down Conversion Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 42.2% | 42.4% | 39.9% |
-| PHI | 32.5% | 38.5% | 41.6% |
+| BUF | 41.9% | 42.4% | 39.9% |
+| PHI | 33.1% | 38.5% | 41.6% |
 
 ## Points per Drive Differential Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 0.609 | 0.234 | 0.074 |
-| PHI | 0.181 | 0.605 | 1.219 |
+| BUF | 0.459 | 0.234 | 0.074 |
+| PHI | 0.193 | 0.605 | 1.219 |
 
 ## Yards per Play Differential Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 0.576 | 0.285 | -0.155 |
-| PHI | 0.189 | 1.028 | 1.972 |
+| BUF | 0.479 | 0.285 | -0.155 |
+| PHI | 0.222 | 1.028 | 1.972 |
 
 ## Turnover Margin Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 0.357 | 0.200 | 1.333 |
-| PHI | 0.357 | 0.000 | -0.333 |
+| BUF | 0.267 | 0.200 | 1.333 |
+| PHI | 0.400 | 0.000 | -0.333 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 16.1% | 11.5% | 15.7% |
-| PHI | 15.9% | 14.4% | 9.0% |
+| BUF | 15.1% | 11.5% | 15.7% |
+| PHI | 14.8% | 14.4% | 9.0% |
 
 ## Pressure Rate (Def) Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 8.5% | 6.0% | 8.6% |
+| BUF | 7.9% | 6.0% | 8.6% |
 | PHI | 7.7% | 10.1% | 14.2% |
 
 ## Tempo Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 7.746 | 7.942 | 7.700 |
-| PHI | 7.490 | 7.776 | 8.293 |
+| BUF | 7.721 | 7.942 | 7.700 |
+| PHI | 7.504 | 7.776 | 8.293 |
 
 ## Pass Rate Offense Form (up to Week 16)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| BUF | 39.5% | 39.2% | 39.4% |
-| PHI | 40.4% | 41.6% | 37.3% |
+| BUF | 40.5% | 39.2% | 39.4% |
+| PHI | 40.0% | 41.6% | 37.3% |

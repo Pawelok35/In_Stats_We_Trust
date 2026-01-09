@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.118 | 0.143 | -0.025 |
 | Pressure Rate (Def) | 0.077 | 0.040 | 0.037 |
 | Tempo | 8.889 | 5.909 | 2.980 |
-| PowerScore | 0.269 | -0.040 | 0.309 |
-| PowerScore | 0.269 | -0.040 | 0.309 |
+| PowerScore | 2.009 | 1.135 | 0.873 |
+| PowerScore | 2.009 | 1.135 | 0.873 |
 | Tempo | 8.889 | 5.909 | 2.980 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ ARI edge: +0.126 (ARI +0.194 vs CAR +0.068)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - CAR) | +5.7 pts (favours ARI) |
-| Model Win% ARI | 72.2% |
-| Model Win% CAR | 27.8% |
+| Model Spread (ARI - CAR) | +16.2 pts (favours ARI) |
+| Model Win% ARI | 93.7% |
+| Model Win% CAR | 6.3% |
 | SOS Differential (ARI-CAR) | +0.275 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

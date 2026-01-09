@@ -4,50 +4,50 @@
 
 | Metric | KC | HOU | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.118 | -0.017 | 0.135 |
-| Core EPA Defense | 0.026 | -0.119 | 0.145 |
-| Success Rate Offense | 0.491 | 0.433 | 0.057 |
-| Success Rate Defense | 0.488 | 0.401 | 0.087 |
-| Explosive Play Rate (Off) | 0.111 | 0.087 | 0.024 |
-| Third Down Conversion | 0.373 | 0.304 | 0.069 |
-| Points per Drive Differential | 0.711 | 0.498 | 0.213 |
-| Yards per Play Differential | 0.346 | 0.323 | 0.023 |
-| Turnover Margin | 0.167 | 0.636 | -0.470 |
-| Red Zone TD Rate (Off) | 0.155 | 0.090 | 0.065 |
-| Pressure Rate (Def) | 0.058 | 0.071 | -0.013 |
-| Tempo | 9.333 | 9.000 | 0.333 |
-| PowerScore | 0.239 | 0.133 | 0.106 |
-| PowerScore | 0.239 | 0.133 | 0.106 |
-| Tempo | 9.333 | 9.000 | 0.333 |
+| Core EPA Offense | 0.118 | -0.018 | 0.136 |
+| Core EPA Defense | 0.026 | -0.116 | 0.142 |
+| Success Rate Offense | 0.491 | 0.439 | 0.052 |
+| Success Rate Defense | 0.488 | 0.406 | 0.082 |
+| Explosive Play Rate (Off) | 0.111 | 0.090 | 0.021 |
+| Third Down Conversion | 0.373 | 0.331 | 0.042 |
+| Points per Drive Differential | 0.711 | 0.532 | 0.179 |
+| Yards per Play Differential | 0.346 | 0.452 | -0.106 |
+| Turnover Margin | 0.167 | 0.583 | -0.417 |
+| Red Zone TD Rate (Off) | 0.155 | 0.096 | 0.059 |
+| Pressure Rate (Def) | 0.058 | 0.080 | -0.021 |
+| Tempo | 6.231 | 6.769 | -0.538 |
+| PowerScore | 1.237 | 1.359 | -0.122 |
+| PowerScore | 1.237 | 1.359 | -0.122 |
+| Tempo | 6.231 | 6.769 | -0.538 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | KC | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.172 | 0.036 | +0.135 |
-| EPA Defense | 20% | 0.207 | -0.053 | +0.260 |
-| Success Rate Offense | 25% | 46.4% | 44.4% | +2.0 pp |
-| Tempo | 20% | 0.107 | 0.100 | +0.007 |
+| EPA Offense | 35% | -0.251 | -0.085 | -0.166 |
+| EPA Defense | 20% | -0.085 | -0.251 | +0.166 |
+| Success Rate Offense | 25% | 38.3% | 34.1% | +4.2 pp |
+| Tempo | 20% | 0.062 | 0.045 | +0.016 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | KC | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.172 | 0.036 | +0.135 |
-| EPA Defense | 20% | 0.207 | -0.053 | +0.260 |
-| Success Rate Offense | 15% | 46.4% | 44.4% | +2.0 pp |
-| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
-| Tempo | 10% | 0.107 | 0.100 | +0.007 |
-| Red Zone TD Rate (Off) | 10% | 18.8% | 9.1% | +9.7 pp |
-| Pressure Rate (Def) | 10% | 0.0% | 3.6% | -3.6 pp |
+| EPA Offense | 25% | -0.251 | -0.085 | -0.166 |
+| EPA Defense | 20% | -0.085 | -0.251 | +0.166 |
+| Success Rate Offense | 15% | 38.3% | 34.1% | +4.2 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.062 | 0.045 | +0.016 |
+| Red Zone TD Rate (Off) | 10% | 11.1% | 11.8% | -0.7 pp |
+| Pressure Rate (Def) | 10% | 8.8% | 5.7% | +3.1 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-KC edge: +0.106 (KC +0.239 vs HOU +0.133)
+HOU edge: +0.011 (KC +0.003 vs HOU +0.015)
 **7 metrics version:**
-KC edge: +0.296 (KC +0.283 vs HOU -0.012)
-**Verdict:** KC holds the edge in the extended breakdown (lead 0.296), driven by Turnover Margin (10% weight).
+HOU edge: +0.598 (KC -0.296 vs HOU +0.302)
+**Verdict:** HOU holds the edge in the extended breakdown (lead 0.598), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ KC edge: +0.296 (KC +0.283 vs HOU -0.012)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - HOU) | +2.0 pts (favours KC) |
-| Model Win% KC | 58.1% |
-| Model Win% HOU | 41.9% |
-| SOS Differential (KC-HOU) | +0.098 |
+| Model Spread (KC - HOU) | -2.3 pts (favours HOU) |
+| Model Win% KC | 40.7% |
+| Model Win% HOU | 59.3% |
+| SOS Differential (KC-HOU) | +0.226 |
 *Neutral-field assumption. Based on schedule through Week 13.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| KC | 44.0% | n/a | n/a | 39.3% | 38.5% | n/a |
-| HOU | 41.1% | n/a | n/a | 50.0% | 48.9% | n/a |
+| KC | 43.2% | 43.0% | 0.2% | 31.4% | 43.5% | Balanced |
+| HOU | 38.6% | 43.0% | -4.4% | 35.3% | 33.3% | Run heavy |
 
 ## Situational Edges
 
@@ -76,29 +76,29 @@ KC edge: +0.296 (KC +0.283 vs HOU -0.012)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +6.2 pp | +1.2 pp | +4.7 pp |
-| HOU | -7.5 pp | -19.0 pp | -17.8 pp |
+| KC | +6.0 pp | +0.0 pp | +4.7 pp |
+| HOU | -4.9 pp | -17.1 pp | -17.8 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | -0.6 pp | -2.7 pp | -8.7 pp |
-| HOU | -4.4 pp | -8.8 pp | -0.9 pp |
+| KC | -0.0 pp | +0.3 pp | -8.7 pp |
+| HOU | -3.7 pp | -6.7 pp | -0.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +1.5 pp | -0.0 pp | +2.5 pp |
-| HOU | -0.5 pp | -0.5 pp | -3.1 pp |
+| KC | +2.4 pp | +2.3 pp | +2.5 pp |
+| HOU | -0.3 pp | -1.3 pp | -3.1 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +1.5 pp | +0.2 pp | -2.0 pp |
-| HOU | -0.3 pp | -1.7 pp | +0.4 pp |
+| KC | +1.3 pp | +0.6 pp | -2.0 pp |
+| HOU | -0.0 pp | -1.3 pp | +0.4 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +7.1 pp | +9.7 pp | +12.9 pp |
-| HOU | -8.9 pp | -8.0 pp | -4.6 pp |
+| KC | +6.7 pp | +11.2 pp | +12.9 pp |
+| HOU | -8.1 pp | -6.1 pp | -4.6 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +11.5 pp | +8.0 pp | +5.2 pp |
-| HOU | -0.0 pp | -4.1 pp | -1.2 pp |
+| KC | +11.1 pp | +7.1 pp | +5.2 pp |
+| HOU | +0.3 pp | -5.7 pp | -1.2 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +1.5 pp | +0.2 pp | -2.0 pp |
-| HOU | -0.3 pp | -1.7 pp | +0.4 pp |
+| KC | +1.3 pp | +0.6 pp | -2.0 pp |
+| HOU | -0.0 pp | -1.3 pp | +0.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| KC | +1.5 pp | -0.0 pp | +2.5 pp |
-| HOU | -0.5 pp | -0.5 pp | -3.1 pp |
+| KC | +2.4 pp | +2.3 pp | +2.5 pp |
+| HOU | -0.3 pp | -1.3 pp | -3.1 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -141,42 +141,42 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 46.2 | 44.8 | 47.5 |
-| HOU | 43.5 | 42.6 | 46.1 |
+| HOU | 44.2 | 46.5 | 46.1 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 49.0 | 48.1 | 48.1 |
-| HOU | 44.5 | 44.6 | 42.1 |
+| HOU | 46.0 | 45.8 | 42.1 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | -2.9 | -3.3 | -0.6 |
-| HOU | -1.0 | -2.0 | 4.1 |
+| HOU | -1.8 | 0.7 | 4.1 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 2.68 | 2.43 | 2.31 |
-| HOU | 1.87 | 1.79 | 1.79 |
+| HOU | 1.97 | 1.87 | 1.79 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 1.97 | 2.12 | 2.31 |
-| HOU | 1.38 | 1.52 | 1.51 |
+| HOU | 1.44 | 1.60 | 1.51 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 0.71 | 0.31 | 0.00 |
-| HOU | 0.50 | 0.28 | 0.28 |
+| HOU | 0.53 | 0.27 | 0.28 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -187,35 +187,35 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 8.84 | 8.72 | 9.18 |
-| HOU | 7.56 | 7.80 | 7.80 |
+| HOU | 7.56 | 7.46 | 7.80 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 47.8% | 48.8% | 48.0% |
-| HOU | 45.0% | 44.5% | 44.2% |
+| HOU | 45.7% | 46.6% | 44.2% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 52.2% | 51.2% | 52.0% |
-| HOU | 55.0% | 55.5% | 55.8% |
+| HOU | 54.3% | 53.4% | 55.8% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 4.23 | 4.26 | 4.40 |
-| HOU | 3.40 | 3.47 | 3.45 |
+| HOU | 3.46 | 3.48 | 3.45 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | KC | 4.61 | 4.46 | 4.77 |
-| HOU | 4.15 | 4.33 | 4.35 |
+| HOU | 4.11 | 3.98 | 4.35 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | KC | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.173 | 0.075 |
-| Last 5 games | 0.187 | 0.099 |
-| Last 3 games | 0.184 | 0.096 |
+| Season-to-date | 1.703 | 1.478 |
+| Last 5 games | 1.704 | 1.463 |
+| Last 3 games | 1.669 | 1.505 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | JAX (A) | 28-25 | KC | 0.912 | 0.128 | 61.0% | 0.300 |
-| 11 | DEN (A) | 19-20 | DEN | 0.865 | 0.044 | 47.1% | -0.100 |
-| 6 | DET (H) | 30-19 | KC | 0.669 | 0.227 | 56.0% | 1.208 |
+| 11 | DEN (A) | 19-20 | DEN | 0.947 | 0.044 | 47.1% | -0.100 |
+| 5 | JAX (A) | 28-25 | KC | 0.896 | 0.128 | 61.0% | 0.300 |
+| 2 | PHI (H) | 17-18 | PHI | 0.800 | -0.036 | 45.9% | -0.111 |
 
 **HOU analogs vs KC profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 13 | IND (A) | 20-18 | HOU | 0.960 | 0.036 | 44.4% | 0.222 |
-| 12 | BUF (H) | 23-19 | HOU | 0.919 | -0.041 | 44.9% | 0.333 |
-| 8 | SF (H) | 26-17 | HOU | 0.796 | 0.187 | 48.9% | 0.933 |
+| 13 | IND (A) | 20-18 | HOU | 0.963 | 0.036 | 44.4% | 0.222 |
+| 12 | BUF (H) | 23-19 | HOU | 0.928 | -0.041 | 44.9% | 0.333 |
+| 8 | SF (H) | 26-17 | HOU | 0.860 | 0.187 | 48.9% | 0.933 |
 
 ## Core EPA Offense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | -0.017 | 0.008 | 0.002 |
+| HOU | -0.018 | -0.035 | 0.002 |
 | KC | 0.118 | 0.102 | 0.077 |
 
 ## Core EPA Defense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | -0.119 | -0.058 | -0.057 |
+| HOU | -0.116 | -0.082 | -0.057 |
 | KC | 0.026 | 0.066 | 0.097 |
 
 ## Success Rate Offense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 43.4% | 43.7% | 45.1% |
+| HOU | 44.0% | 43.9% | 45.1% |
 | KC | 49.0% | 47.4% | 46.7% |
 
 ## Success Rate Defense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 40.2% | 38.3% | 37.7% |
+| HOU | 40.7% | 38.7% | 37.7% |
 | KC | 49.3% | 49.7% | 47.7% |
 
 ## Explosive Play Rate (Off) Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 8.6% | 7.9% | 8.6% |
+| HOU | 8.9% | 8.4% | 8.6% |
 | KC | 10.9% | 10.5% | 8.8% |
 
 ## Third Down Conversion Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 30.8% | 31.7% | 29.0% |
+| HOU | 33.7% | 33.6% | 29.0% |
 | KC | 37.8% | 34.2% | 36.5% |
 
 ## Points per Drive Differential Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 0.364 | 0.220 | 0.279 |
+| HOU | 0.412 | 0.239 | 0.279 |
 | KC | 0.698 | 0.268 | 0.009 |
 
 ## Yards per Play Differential Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 0.323 | 0.176 | -0.019 |
+| HOU | 0.452 | 0.265 | -0.019 |
 | KC | 0.346 | -0.069 | -0.285 |
 
 ## Turnover Margin Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 0.636 | 0.600 | 1.000 |
+| HOU | 0.583 | 0.600 | 1.000 |
 | KC | 0.167 | -0.600 | -0.667 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 9.0% | 6.7% | 9.1% |
+| HOU | 9.6% | 8.8% | 9.1% |
 | KC | 15.5% | 13.5% | 9.8% |
 
 ## Pressure Rate (Def) Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 7.1% | 7.6% | 9.9% |
+| HOU | 8.0% | 9.9% | 9.9% |
 | KC | 5.8% | 4.2% | 1.6% |
 
 ## Tempo Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 7.556 | 7.802 | 7.803 |
+| HOU | 7.565 | 7.455 | 7.803 |
 | KC | 8.840 | 8.720 | 9.178 |
 
 ## Pass Rate Offense Form (up to Week 13)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 45.2% | 44.6% | 44.3% |
+| HOU | 45.9% | 46.8% | 44.3% |
 | KC | 47.7% | 48.5% | 47.7% |

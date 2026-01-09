@@ -4,19 +4,21 @@
 
 | Metric | DET | CLE | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.327 | -0.114 | ↑ +0.441 |
-| Core EPA Defense | 0.081 | -0.074 | ↑ +0.154 |
-| Success Rate Offense | 56.5% | 39.7% | ↑ +16.8 pp |
-| Success Rate Defense | 52.3% | 43.4% | ↑ +8.9 pp |
-| Explosive Play Rate (Off) | 13.0% | 4.1% | ↑ +8.9 pp |
-| Third Down Conversion | 50.0% | 27.3% | ↑ +22.7 pp |
-| Points per Drive Differential | 1.364 | -0.818 | ↑ +2.182 |
-| Yards per Play Differential | 0.815 | -0.225 | ↑ +1.040 |
-| Turnover Margin | 2.000 | 0.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 23.8% | 10.0% | ↑ +13.8 pp |
-| Pressure Rate (Def) | 5.0% | 7.1% | ↓ -2.1 pp |
-| Tempo | 6.273 | 7.300 | ↓ -1.027 |
-| PowerScore | 0.298 | 0.053 | ↑ +0.245 |
+| Core EPA Offense | 0.001 | -0.149 | 0.150 |
+| Core EPA Defense | -0.034 | -0.072 | 0.038 |
+| Success Rate Offense | 0.506 | 0.393 | 0.113 |
+| Success Rate Defense | 0.473 | 0.431 | 0.042 |
+| Explosive Play Rate (Off) | 0.112 | 0.064 | 0.048 |
+| Third Down Conversion | 0.426 | 0.172 | 0.254 |
+| Points per Drive Differential | 0.146 | -0.003 | 0.149 |
+| Yards per Play Differential | 0.726 | -0.923 | 1.649 |
+| Turnover Margin | -0.333 | -0.667 | 0.333 |
+| Red Zone TD Rate (Off) | 0.131 | 0.186 | -0.054 |
+| Pressure Rate (Def) | 0.089 | 0.084 | 0.006 |
+| Tempo | 6.273 | 7.300 | -1.027 |
+| PowerScore | 1.526 | 1.505 | 0.022 |
+| PowerScore | 1.526 | 1.505 | 0.022 |
+| Tempo | 6.273 | 7.300 | -1.027 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DET edge: +0.245 (DET +0.298 vs CLE +0.053)
 **7 metrics version:**
 DET edge: +0.387 (DET +0.424 vs CLE +0.038)
 **Verdict:** DET holds the edge in the extended breakdown (lead 0.387), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - CLE) | +4.5 pts (favours DET) |
-| Model Win% DET | 68.0% |
-| Model Win% CLE | 32.0% |
-| SOS Differential (DET-CLE) | +0.056 |
+| Model Spread (DET - CLE) | +0.4 pts (favours DET) |
+| Model Win% DET | 51.7% |
+| Model Win% CLE | 48.3% |
+| SOS Differential (DET-CLE) | +0.216 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.127 | 0.071 |
-| Last 5 games | 0.127 | 0.071 |
-| Last 3 games | 0.127 | 0.071 |
+| Season-to-date | 1.551 | 1.335 |
+| Last 5 games | 1.551 | 1.335 |
+| Last 3 games | 1.551 | 1.335 |
 
 ## Trend Summary (last 3 weeks)
 

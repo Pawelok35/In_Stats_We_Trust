@@ -4,19 +4,20 @@
 
 | Metric | SEA | SF | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.082 | 0.012 | ↓ -0.094 |
-| Core EPA Defense | 0.012 | -0.082 | ↑ +0.094 |
-| Success Rate Offense | 52.2% | 48.9% | ↑ +3.3 pp |
-| Success Rate Defense | 48.9% | 52.2% | ↓ -3.3 pp |
-| Explosive Play Rate (Off) | 7.5% | 6.7% | ↑ +0.8 pp |
-| Third Down Conversion | 27.3% | 43.8% | ↓ -16.5 pp |
-| Points per Drive Differential | -0.245 | 0.245 | ↓ -0.491 |
-| Yards per Play Differential | -0.834 | 0.834 | ↓ -1.668 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 8.3% | 7.4% | ↑ +0.9 pp |
-| Pressure Rate (Def) | 2.6% | 4.2% | ↓ -1.5 pp |
-| Tempo | 6.700 | 8.182 | ↓ -1.482 |
-| PowerScore | 0.119 | 0.123 | ↓ -0.004 |
+| Core EPA Offense | -0.082 | 0.012 | -0.094 |
+| Core EPA Defense | 0.012 | -0.082 | 0.094 |
+| Success Rate Offense | 0.522 | 0.489 | 0.033 |
+| Success Rate Defense | 0.489 | 0.522 | -0.033 |
+| Explosive Play Rate (Off) | 0.075 | 0.067 | 0.008 |
+| Third Down Conversion | 0.273 | 0.438 | -0.165 |
+| Points per Drive Differential | -0.245 | 0.245 | -0.491 |
+| Yards per Play Differential | -0.834 | 0.834 | -1.668 |
+| Red Zone TD Rate (Off) | 0.083 | 0.074 | 0.009 |
+| Pressure Rate (Def) | 0.026 | 0.042 | -0.015 |
+| Tempo | 6.700 | 8.182 | -1.482 |
+| PowerScore | 1.444 | 1.746 | -0.302 |
+| PowerScore | 1.444 | 1.746 | -0.302 |
+| Tempo | 6.700 | 8.182 | -1.482 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ SF edge: +0.004 (SEA +0.119 vs SF +0.123)
 **7 metrics version:**
 SEA edge: +0.001 (SEA +0.079 vs SF +0.078)
 **Verdict:** SEA holds the edge in the extended breakdown (lead 0.001), driven by EPA Defense (20% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - SF) | -0.1 pts (favours SF) |
-| Model Win% SEA | 49.7% |
-| Model Win% SF | 50.3% |
+| Model Spread (SEA - SF) | -5.6 pts (favours SF) |
+| Model Win% SEA | 28.3% |
+| Model Win% SF | 71.7% |
 | SOS Differential (SEA-SF) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

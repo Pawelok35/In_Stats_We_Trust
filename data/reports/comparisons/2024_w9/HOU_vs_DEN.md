@@ -4,19 +4,21 @@
 
 | Metric | HOU | DEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.012 | -0.118 | ↑ +0.130 |
-| Core EPA Defense | 0.115 | 0.333 | ↓ -0.218 |
-| Success Rate Offense | 41.1% | 36.0% | ↑ +5.0 pp |
-| Success Rate Defense | 44.6% | 58.9% | ↓ -14.3 pp |
-| Explosive Play Rate (Off) | 9.5% | 10.5% | ↓ -1.0 pp |
-| Third Down Conversion | 31.6% | 40.0% | ↓ -8.4 pp |
-| Points per Drive Differential | -0.800 | -3.100 | ↑ +2.300 |
-| Yards per Play Differential | -0.570 | -1.715 | ↑ +1.145 |
-| Turnover Margin | 0.000 | -1.000 | ↑ +1.000 |
-| Red Zone TD Rate (Off) | 4.8% | 4.3% | ↑ +0.4 pp |
-| Pressure Rate (Def) | 5.7% | 4.8% | ↑ +1.0 pp |
-| Tempo | 9.500 | 8.600 | ↑ +0.900 |
-| PowerScore | 0.149 | 0.136 | ↑ +0.012 |
+| Core EPA Offense | 0.002 | -0.036 | 0.038 |
+| Core EPA Defense | -0.006 | -0.130 | 0.124 |
+| Success Rate Offense | 0.439 | 0.464 | -0.025 |
+| Success Rate Defense | 0.441 | 0.423 | 0.017 |
+| Explosive Play Rate (Off) | 0.116 | 0.102 | 0.014 |
+| Third Down Conversion | 0.329 | 0.300 | 0.029 |
+| Points per Drive Differential | -0.019 | 0.417 | -0.436 |
+| Yards per Play Differential | 0.407 | 0.451 | -0.045 |
+| Turnover Margin | 0.500 | -0.250 | 0.750 |
+| Red Zone TD Rate (Off) | 0.150 | 0.181 | -0.031 |
+| Pressure Rate (Def) | 0.095 | 0.096 | -0.001 |
+| Tempo | 9.500 | 8.600 | 0.900 |
+| PowerScore | 2.030 | 1.835 | 0.194 |
+| PowerScore | 2.030 | 1.835 | 0.194 |
+| Tempo | 9.500 | 8.600 | 0.900 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ HOU edge: +0.012 (HOU +0.149 vs DEN +0.136)
 **7 metrics version:**
 HOU edge: +0.097 (HOU +0.108 vs DEN +0.011)
 **Verdict:** HOU holds the edge in the extended breakdown (lead 0.097), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - DEN) | +0.2 pts (favours HOU) |
-| Model Win% HOU | 51.0% |
-| Model Win% DEN | 49.0% |
-| SOS Differential (HOU-DEN) | +0.061 |
+| Model Spread (HOU - DEN) | +3.6 pts (favours HOU) |
+| Model Win% HOU | 64.6% |
+| Model Win% DEN | 35.4% |
+| SOS Differential (HOU-DEN) | -0.047 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | DEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.127 | 0.066 |
-| Last 5 games | 0.125 | 0.062 |
-| Last 3 games | 0.108 | 0.091 |
+| Season-to-date | 1.435 | 1.483 |
+| Last 5 games | 1.397 | 1.549 |
+| Last 3 games | 1.362 | 1.620 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -244,14 +250,14 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | TEN (H) | 24-17 | HOU | 0.651 | 0.098 | 48.4% | 0.733 |
 | 1 | IND (A) | 29-33 | IND | 0.617 | 0.126 | 50.5% | -0.364 |
-| 7 | SEA (H) | 22-24 | SEA | 0.342 | 0.040 | 48.1% | -0.167 |
+| 7 | SEA (A) | 22-24 | SEA | 0.342 | 0.040 | 48.1% | -0.167 |
 
 **DEN analogs vs HOU profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 2 | IND (A) | 6-14 | IND | 0.860 | -0.118 | 44.2% | -0.682 |
-| 6 | NYJ (H) | 16-21 | NYJ | 0.844 | -0.048 | 49.3% | -0.491 |
+| 6 | NYJ (A) | 16-21 | NYJ | 0.844 | -0.048 | 49.3% | -0.491 |
 | 3 | LAC (A) | 26-6 | DEN | 0.743 | 0.089 | 56.8% | 1.964 |
 
 ## Core EPA Offense Form (up to Week 8)

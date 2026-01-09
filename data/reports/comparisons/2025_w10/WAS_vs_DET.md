@@ -15,39 +15,39 @@
 | Turnover Margin | -0.667 | 0.750 | -1.417 |
 | Red Zone TD Rate (Off) | 0.192 | 0.155 | 0.037 |
 | Pressure Rate (Def) | 0.068 | 0.091 | -0.023 |
-| Tempo | 8.200 | 7.636 | 0.564 |
-| PowerScore | 0.169 | 0.115 | 0.054 |
-| PowerScore | 0.169 | 0.115 | 0.054 |
-| Tempo | 8.200 | 7.636 | 0.564 |
+| Tempo | 8.111 | 9.333 | -1.222 |
+| PowerScore | 1.881 | 2.204 | -0.323 |
+| PowerScore | 1.881 | 2.204 | -0.323 |
+| Tempo | 8.111 | 9.333 | -1.222 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | WAS | DET | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.098 | -0.062 | -0.035 |
-| EPA Defense | 20% | 0.333 | 0.017 | +0.317 |
-| Success Rate Offense | 25% | 48.8% | 44.0% | +4.7 pp |
-| Tempo | 20% | 0.073 | 0.119 | -0.046 |
+| EPA Offense | 35% | 0.154 | 0.443 | -0.290 |
+| EPA Defense | 20% | 0.443 | 0.154 | +0.290 |
+| Success Rate Offense | 25% | 46.6% | 60.7% | -14.1 pp |
+| Tempo | 20% | 0.068 | 0.155 | -0.086 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | WAS | DET | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.098 | -0.062 | -0.035 |
-| EPA Defense | 20% | 0.333 | 0.017 | +0.317 |
-| Success Rate Offense | 15% | 48.8% | 44.0% | +4.7 pp |
-| Turnover Margin | 10% | -1.000 | 0.000 | -1.000 |
-| Tempo | 10% | 0.073 | 0.119 | -0.046 |
-| Red Zone TD Rate (Off) | 10% | 16.7% | 6.7% | +10.0 pp |
-| Pressure Rate (Def) | 10% | 0.0% | 14.7% | -14.7 pp |
+| EPA Offense | 25% | 0.154 | 0.443 | -0.290 |
+| EPA Defense | 20% | 0.443 | 0.154 | +0.290 |
+| Success Rate Offense | 15% | 46.6% | 60.7% | -14.1 pp |
+| Turnover Margin | 10% | 0.000 | 0.000 | +0.000 |
+| Tempo | 10% | 0.068 | 0.155 | -0.086 |
+| Red Zone TD Rate (Off) | 10% | 18.8% | 17.4% | +1.4 pp |
+| Pressure Rate (Def) | 10% | 0.0% | 7.7% | -7.7 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-WAS edge: +0.054 (WAS +0.169 vs DET +0.115)
+DET edge: +0.096 (WAS +0.273 vs DET +0.369)
 **7 metrics version:**
-DET edge: +0.048 (WAS +0.039 vs DET +0.087)
-**Verdict:** DET holds the edge in the extended breakdown (lead 0.048), driven by Turnover Margin (10% weight).
+DET edge: +0.051 (WAS +0.223 vs DET +0.273)
+**Verdict:** DET holds the edge in the extended breakdown (lead 0.051), driven by EPA Offense (25% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ DET edge: +0.048 (WAS +0.039 vs DET +0.087)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - DET) | +1.0 pts (favours WAS) |
-| Model Win% WAS | 54.1% |
-| Model Win% DET | 45.9% |
-| SOS Differential (WAS-DET) | +0.045 |
+| Model Spread (WAS - DET) | -6.0 pts (favours DET) |
+| Model Win% WAS | 27.0% |
+| Model Win% DET | 73.0% |
+| SOS Differential (WAS-DET) | +0.223 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| WAS | 31.7% | n/a | n/a | 29.4% | 51.1% | n/a |
-| DET | 50.0% | n/a | n/a | 79.2% | 48.8% | n/a |
+| WAS | 35.6% | 42.4% | -6.8% | 50.0% | 44.7% | Run heavy |
+| DET | 42.9% | 42.4% | 0.4% | 63.9% | 58.3% | Balanced |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | WAS | DET |
 | --- | ---: | ---: |
-| Season-to-date | 0.183 | 0.138 |
-| Last 5 games | 0.197 | 0.095 |
-| Last 3 games | 0.224 | 0.119 |
+| Season-to-date | 1.709 | 1.486 |
+| Last 5 games | 1.695 | 1.433 |
+| Last 3 games | 1.648 | 1.509 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.062 | 0.056 | 0.006 |
 | Pressure Rate (Def) | 0.019 | 0.126 | -0.107 |
 | Tempo | 7.300 | 7.273 | 0.027 |
-| PowerScore | 0.083 | -0.015 | 0.098 |
-| PowerScore | 0.083 | -0.015 | 0.098 |
+| PowerScore | 1.538 | 1.420 | 0.118 |
+| PowerScore | 1.538 | 1.420 | 0.118 |
 | Tempo | 7.300 | 7.273 | 0.027 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ CAR edge: +0.850 (CAR +0.433 vs ATL -0.417)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - ATL) | +1.8 pts (favours CAR) |
-| Model Win% CAR | 57.5% |
-| Model Win% ATL | 42.5% |
-| SOS Differential (CAR-ATL) | +0.087 |
+| Model Spread (CAR - ATL) | +2.2 pts (favours CAR) |
+| Model Win% CAR | 59.0% |
+| Model Win% ATL | 41.0% |
+| SOS Differential (CAR-ATL) | +0.261 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CAR | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.154 | 0.066 |
-| Last 5 games | 0.154 | 0.066 |
-| Last 3 games | 0.154 | 0.066 |
+| Season-to-date | 1.653 | 1.392 |
+| Last 5 games | 1.653 | 1.392 |
+| Last 3 games | 1.653 | 1.392 |
 
 ## Trend Summary (last 2 weeks)
 

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.077 | 0.091 | -0.014 |
 | Pressure Rate (Def) | 0.086 | 0.176 | -0.091 |
 | Tempo | 8.000 | 8.333 | -0.333 |
-| PowerScore | 0.236 | 0.252 | -0.016 |
-| PowerScore | 0.236 | 0.252 | -0.016 |
+| PowerScore | 1.818 | 1.892 | -0.075 |
+| PowerScore | 1.818 | 1.892 | -0.075 |
 | Tempo | 8.000 | 8.333 | -0.333 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ IND edge: +0.176 (IND +0.267 vs DEN +0.090)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - DEN) | -0.3 pts (favours DEN) |
-| Model Win% IND | 48.7% |
-| Model Win% DEN | 51.3% |
-| SOS Differential (IND-DEN) | +0.140 |
+| Model Spread (IND - DEN) | -1.4 pts (favours DEN) |
+| Model Win% IND | 44.3% |
+| Model Win% DEN | 55.7% |
+| SOS Differential (IND-DEN) | +0.660 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | IND | DEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.128 | -0.012 |
-| Last 5 games | 0.128 | -0.012 |
-| Last 3 games | 0.128 | -0.012 |
+| Season-to-date | 1.743 | 1.083 |
+| Last 5 games | 1.743 | 1.083 |
+| Last 3 games | 1.743 | 1.083 |
 
 ## Matchup Analogs
 

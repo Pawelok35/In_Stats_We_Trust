@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.100 | 0.133 | -0.033 |
 | Pressure Rate (Def) | 0.019 | 0.115 | -0.097 |
 | Tempo | 6.000 | 7.667 | -1.667 |
-| PowerScore | 0.116 | 0.060 | 0.056 |
-| PowerScore | 0.116 | 0.060 | 0.056 |
+| PowerScore | 1.298 | 1.583 | -0.284 |
+| PowerScore | 1.298 | 1.583 | -0.284 |
 | Tempo | 6.000 | 7.667 | -1.667 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BAL edge: +0.394 (BAL +0.270 vs CLE -0.124)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - CLE) | +1.0 pts (favours BAL) |
-| Model Win% BAL | 54.3% |
-| Model Win% CLE | 45.7% |
-| SOS Differential (BAL-CLE) | +0.212 |
+| Model Spread (BAL - CLE) | -5.3 pts (favours CLE) |
+| Model Win% BAL | 29.4% |
+| Model Win% CLE | 70.6% |
+| SOS Differential (BAL-CLE) | +0.477 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | CLE |
 | --- | ---: | ---: |
-| Season-to-date | 0.285 | 0.073 |
-| Last 5 games | 0.285 | 0.073 |
-| Last 3 games | 0.285 | 0.073 |
+| Season-to-date | 1.906 | 1.430 |
+| Last 5 games | 1.906 | 1.430 |
+| Last 3 games | 1.906 | 1.430 |
 
 ## Matchup Analogs
 

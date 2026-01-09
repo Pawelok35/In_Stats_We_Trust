@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.097 | 0.086 | 0.011 |
 | Pressure Rate (Def) | 0.042 | 0.056 | -0.014 |
 | Tempo | 8.400 | 8.222 | 0.178 |
-| PowerScore | 0.056 | 0.224 | -0.168 |
-| PowerScore | 0.056 | 0.224 | -0.168 |
+| PowerScore | 1.710 | 1.852 | -0.142 |
+| PowerScore | 1.710 | 1.852 | -0.142 |
 | Tempo | 8.400 | 8.222 | 0.178 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ LA edge: +0.335 (PHI -0.067 vs LA +0.267)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - LA) | -3.1 pts (favours LA) |
-| Model Win% PHI | 37.4% |
-| Model Win% LA | 62.6% |
+| Model Spread (PHI - LA) | -2.6 pts (favours LA) |
+| Model Win% PHI | 39.2% |
+| Model Win% LA | 60.8% |
 | SOS Differential (PHI-LA) | +0.032 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

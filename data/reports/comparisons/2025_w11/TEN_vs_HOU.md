@@ -5,19 +5,19 @@
 | Metric | TEN | HOU | Delta |
 |---|---:|---:|---:|
 | Core EPA Offense | -0.148 | -0.024 | -0.124 |
-| Core EPA Defense | 0.083 | -0.142 | 0.225 |
-| Success Rate Offense | 0.417 | 0.427 | -0.010 |
-| Success Rate Defense | 0.473 | 0.409 | 0.063 |
-| Explosive Play Rate (Off) | 0.085 | 0.088 | -0.003 |
-| Third Down Conversion | 0.253 | 0.312 | -0.059 |
-| Points per Drive Differential | -1.422 | 0.581 | -2.003 |
-| Yards per Play Differential | -1.341 | 0.451 | -1.792 |
-| Turnover Margin | -0.667 | 0.500 | -1.167 |
-| Red Zone TD Rate (Off) | 0.077 | 0.089 | -0.013 |
-| Pressure Rate (Def) | 0.077 | 0.061 | 0.017 |
+| Core EPA Defense | 0.083 | -0.135 | 0.218 |
+| Success Rate Offense | 0.417 | 0.435 | -0.018 |
+| Success Rate Defense | 0.473 | 0.415 | 0.058 |
+| Explosive Play Rate (Off) | 0.085 | 0.091 | -0.006 |
+| Third Down Conversion | 0.253 | 0.347 | -0.094 |
+| Points per Drive Differential | -1.422 | 0.618 | -2.039 |
+| Yards per Play Differential | -1.341 | 0.609 | -1.950 |
+| Turnover Margin | -0.667 | 0.444 | -1.111 |
+| Red Zone TD Rate (Off) | 0.077 | 0.098 | -0.021 |
+| Pressure Rate (Def) | 0.077 | 0.073 | 0.004 |
 | Tempo | 7.182 | 7.909 | -0.727 |
-| PowerScore | 0.095 | 0.122 | -0.028 |
-| PowerScore | 0.095 | 0.122 | -0.028 |
+| PowerScore | 1.518 | 1.690 | -0.172 |
+| PowerScore | 1.518 | 1.690 | -0.172 |
 | Tempo | 7.182 | 7.909 | -0.727 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ HOU edge: +0.188 (TEN -0.003 vs HOU +0.185)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - HOU) | -0.5 pts (favours HOU) |
-| Model Win% TEN | 47.9% |
-| Model Win% HOU | 52.1% |
-| SOS Differential (TEN-HOU) | +0.076 |
+| Model Spread (TEN - HOU) | -3.2 pts (favours HOU) |
+| Model Win% TEN | 37.0% |
+| Model Win% HOU | 63.0% |
+| SOS Differential (TEN-HOU) | +0.112 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ HOU edge: +0.188 (TEN -0.003 vs HOU +0.185)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -5.7 pp | -1.5 pp | -2.2 pp |
-| HOU | -6.7 pp | -4.9 pp | -12.8 pp |
+| TEN | -6.0 pp | -4.6 pp | -8.9 pp |
+| HOU | -3.3 pp | -0.4 pp | +3.6 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -7.4 pp | -3.2 pp | -10.9 pp |
-| HOU | -10.3 pp | -4.5 pp | -15.8 pp |
+| TEN | -6.9 pp | -5.2 pp | -6.5 pp |
+| HOU | -9.5 pp | -9.1 pp | -12.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -5.7 pp | -6.6 pp | -8.2 pp |
-| HOU | +0.8 pp | +6.2 pp | +8.0 pp |
+| TEN | -4.5 pp | -4.6 pp | -4.3 pp |
+| HOU | +1.1 pp | +6.7 pp | +8.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -0.7 pp | +1.1 pp | -0.1 pp |
-| HOU | -3.5 pp | -3.8 pp | -7.6 pp |
+| TEN | -0.9 pp | +0.8 pp | -0.2 pp |
+| HOU | -3.2 pp | -3.4 pp | -6.4 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | +0.3 pp | -1.0 pp | -6.6 pp |
-| HOU | -5.3 pp | -2.1 pp | -8.0 pp |
+| TEN | +0.0 pp | -2.3 pp | -5.6 pp |
+| HOU | -4.1 pp | +1.2 pp | -4.5 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | +1.5 pp | +8.4 pp | +12.8 pp |
-| HOU | -3.2 pp | +1.2 pp | -8.4 pp |
+| TEN | +0.9 pp | +5.1 pp | +8.2 pp |
+| HOU | -2.8 pp | +0.9 pp | -5.4 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -0.7 pp | +1.1 pp | -0.1 pp |
-| HOU | -3.5 pp | -3.8 pp | -7.6 pp |
+| TEN | -0.9 pp | +0.8 pp | -0.2 pp |
+| HOU | -3.2 pp | -3.4 pp | -6.4 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -5.7 pp | -6.6 pp | -8.2 pp |
-| HOU | +0.8 pp | +6.2 pp | +8.0 pp |
+| TEN | -4.5 pp | -4.6 pp | -4.3 pp |
+| HOU | +1.1 pp | +6.7 pp | +8.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -141,42 +141,42 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 48.9 | 46.5 | 52.1 |
-| HOU | 42.5 | 42.4 | 41.4 |
+| HOU | 43.6 | 44.8 | 42.2 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 46.0 | 44.5 | 42.7 |
-| HOU | 45.4 | 50.1 | 47.2 |
+| HOU | 47.3 | 53.1 | 53.0 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 2.9 | 2.0 | 9.3 |
-| HOU | -2.9 | -7.7 | -5.8 |
+| HOU | -3.7 | -8.3 | -10.8 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 1.16 | 1.12 | 1.12 |
-| HOU | 1.91 | 2.35 | 1.49 |
+| HOU | 2.03 | 2.37 | 2.20 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 2.58 | 2.48 | 2.98 |
-| HOU | 1.33 | 1.15 | 1.58 |
+| HOU | 1.41 | 1.57 | 1.71 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | -1.42 | -1.36 | -1.86 |
-| HOU | 0.58 | 1.20 | -0.09 |
+| HOU | 0.62 | 0.81 | 0.49 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -187,35 +187,35 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 7.19 | 7.00 | 7.03 |
-| HOU | 7.46 | 7.91 | 7.31 |
+| HOU | 7.49 | 7.62 | 7.76 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 48.5% | 51.6% | 48.3% |
-| HOU | 45.3% | 44.9% | 48.6% |
+| HOU | 46.2% | 48.0% | 47.7% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 51.5% | 48.4% | 51.7% |
-| HOU | 54.7% | 55.1% | 51.4% |
+| HOU | 53.8% | 52.0% | 52.3% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 3.49 | 3.61 | 3.40 |
-| HOU | 3.38 | 3.55 | 3.55 |
+| HOU | 3.46 | 3.66 | 3.70 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 3.70 | 3.39 | 3.63 |
-| HOU | 4.08 | 4.36 | 3.76 |
+| HOU | 4.03 | 3.96 | 4.06 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.142 | 0.066 |
-| Last 5 games | 0.138 | 0.058 |
-| Last 3 games | 0.182 | 0.072 |
+| Season-to-date | 1.581 | 1.468 |
+| Last 5 games | 1.541 | 1.358 |
+| Last 3 games | 1.608 | 1.447 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -249,104 +249,104 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | HOU (A) | 0-29 | HOU | 1.000 | -0.398 | 34.4% | -2.889 |
-| 1 | DEN (A) | 12-20 | DEN | 0.894 | -0.219 | 32.5% | -0.571 |
-| 2 | LA (H) | 19-33 | LA | 0.789 | -0.024 | 46.6% | -1.273 |
+| 1 | DEN (A) | 12-20 | DEN | 0.955 | -0.219 | 32.5% | -0.571 |
+| 9 | LAC (H) | 8-30 | LAC | 0.790 | -0.151 | 37.5% | -2.200 |
 
 **HOU analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | TEN (H) | 26-0 | HOU | 1.000 | 0.069 | 41.5% | 2.889 |
-| 3 | JAX (A) | 10-17 | JAX | 0.670 | -0.222 | 36.7% | -0.538 |
-| 2 | TB (H) | 19-22 | TB | 0.621 | 0.000 | 41.9% | -0.273 |
+| 3 | JAX (A) | 10-17 | JAX | 0.706 | -0.222 | 36.7% | -0.538 |
+| 10 | JAX (-) | 36-25 | HOU | 0.706 | -0.027 | 50.0% | 0.909 |
 
 ## Core EPA Offense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | -0.024 | 0.030 | -0.077 |
+| HOU | -0.024 | 0.011 | 0.002 |
 | TEN | -0.148 | -0.122 | -0.124 |
 
 ## Core EPA Defense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | -0.142 | -0.189 | -0.099 |
+| HOU | -0.135 | -0.126 | -0.067 |
 | TEN | 0.083 | 0.065 | 0.152 |
 
 ## Success Rate Offense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 42.8% | 45.0% | 41.1% |
+| HOU | 43.7% | 46.6% | 44.4% |
 | TEN | 42.1% | 43.0% | 42.9% |
 
 ## Success Rate Defense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 41.2% | 39.7% | 40.2% |
+| HOU | 41.7% | 41.9% | 41.5% |
 | TEN | 47.0% | 46.0% | 49.6% |
 
 ## Explosive Play Rate (Off) Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 8.6% | 8.2% | 7.4% |
+| HOU | 9.0% | 8.7% | 8.6% |
 | TEN | 8.5% | 10.3% | 10.5% |
 
 ## Third Down Conversion Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 31.5% | 35.1% | 28.0% |
+| HOU | 35.3% | 39.7% | 44.3% |
 | TEN | 26.2% | 26.7% | 26.1% |
 
 ## Points per Drive Differential Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 0.394 | 0.869 | -0.219 |
+| HOU | 0.453 | 0.583 | 0.391 |
 | TEN | -1.363 | -1.318 | -1.871 |
 
 ## Yards per Play Differential Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 0.451 | 0.655 | 0.046 |
+| HOU | 0.609 | 0.715 | 0.935 |
 | TEN | -1.341 | -0.852 | -1.407 |
 
 ## Turnover Margin Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 0.500 | 1.400 | 1.000 |
+| HOU | 0.444 | 1.200 | 0.000 |
 | TEN | -0.667 | -0.800 | -0.667 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 8.9% | 14.3% | 4.2% |
+| HOU | 9.8% | 9.6% | 7.6% |
 | TEN | 7.7% | 8.9% | 5.1% |
 
 ## Pressure Rate (Def) Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 6.1% | 5.1% | 4.6% |
+| HOU | 7.3% | 7.2% | 8.5% |
 | TEN | 7.7% | 11.6% | 12.9% |
 
 ## Tempo Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 7.463 | 7.909 | 7.311 |
+| HOU | 7.485 | 7.620 | 7.756 |
 | TEN | 7.187 | 7.002 | 7.033 |
 
 ## Pass Rate Offense Form (up to Week 10)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| HOU | 45.5% | 45.2% | 48.6% |
+| HOU | 46.4% | 48.1% | 47.7% |
 | TEN | 48.6% | 51.7% | 48.4% |

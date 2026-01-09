@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.143 | 0.100 | 0.043 |
 | Pressure Rate (Def) | 0.064 | 0.033 | 0.030 |
 | Tempo | 7.091 | 6.455 | 0.636 |
-| PowerScore | 0.088 | 0.167 | -0.079 |
-| PowerScore | 0.088 | 0.167 | -0.079 |
+| PowerScore | 1.483 | 1.430 | 0.053 |
+| PowerScore | 1.483 | 1.430 | 0.053 |
 | Tempo | 7.091 | 6.455 | 0.636 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BAL edge: +0.660 (MIA -0.239 vs BAL +0.421)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - BAL) | -1.5 pts (favours BAL) |
-| Model Win% MIA | 43.9% |
-| Model Win% BAL | 56.1% |
-| SOS Differential (MIA-BAL) | -0.014 |
+| Model Spread (MIA - BAL) | +1.0 pts (favours MIA) |
+| Model Win% MIA | 54.1% |
+| Model Win% BAL | 45.9% |
+| SOS Differential (MIA-BAL) | -0.004 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.175 | 0.189 |
-| Last 5 games | 0.140 | 0.196 |
-| Last 3 games | 0.092 | 0.163 |
+| Season-to-date | 1.782 | 1.786 |
+| Last 5 games | 1.599 | 1.803 |
+| Last 3 games | 1.452 | 1.741 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -20,9 +20,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +7.8 pts
 • PowerScoreDiff (winner) = -0.107
-• Confidence = 95.0%
+• Confidence = 94.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +7.8 pts model edge vs line, and PowerScore Δ -0.107.
+🏷 Model Tag: NEUTRAL — based on 94.0% confidence, +7.8 pts model edge vs line, and PowerScore Δ -0.107.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -96,9 +96,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +15.1 pts
 • PowerScoreDiff (winner) = +0.142
-• Confidence = 98.0%
+• Confidence = 97.0%
 
-🏷 Model Tag: GOY — based on 98.0% confidence, +15.1 pts model edge vs line, and PowerScore Δ +0.142.
+🏷 Model Tag: GOY — based on 97.0% confidence, +15.1 pts model edge vs line, and PowerScore Δ +0.142.
 🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
@@ -134,9 +134,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +15.9 pts
 • PowerScoreDiff (winner) = +0.048
-• Confidence = 96.5%
+• Confidence = 97.5%
 
-🏷 Model Tag: GOW — based on 96.5% confidence, +15.9 pts model edge vs line, and PowerScore Δ +0.048.
+🏷 Model Tag: GOW — based on 97.5% confidence, +15.9 pts model edge vs line, and PowerScore Δ +0.048.
 💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
@@ -172,9 +172,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -0.6 pts
 • PowerScoreDiff (winner) = -0.026
-• Confidence = 47.0%
+• Confidence = 48.0%
 
-🏷 Model Tag: NEUTRAL — based on 47.0% confidence, -0.6 pts model edge vs line, and PowerScore Δ -0.026.
+🏷 Model Tag: NEUTRAL — based on 48.0% confidence, -0.6 pts model edge vs line, and PowerScore Δ -0.026.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -248,9 +248,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -2.2 pts
 • PowerScoreDiff (winner) = -0.132
-• Confidence = 65.0%
+• Confidence = 64.0%
 
-🏷 Model Tag: NEUTRAL — based on 65.0% confidence, -2.2 pts model edge vs line, and PowerScore Δ -0.132.
+🏷 Model Tag: NEUTRAL — based on 64.0% confidence, -2.2 pts model edge vs line, and PowerScore Δ -0.132.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -286,10 +286,10 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +9.4 pts
 • PowerScoreDiff (winner) = +0.120
-• Confidence = 85.0%
+• Confidence = 84.0%
 
-🏷 Model Tag: GOM — based on 85.0% confidence, +9.4 pts model edge vs line, and PowerScore Δ +0.120.
-📈 Strong monthly signal — wysokie zaufanie modelowe.
+🏷 Model Tag: GOW — based on 84.0% confidence, +9.4 pts model edge vs line, and PowerScore Δ +0.120.
+💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
@@ -300,7 +300,7 @@ SUMMARY:
    • Estimated Score – CIN 23.2 – GB 26.2
    • Win Probability – 60% (GB)
 
-🏷 Model Tag: <span style="color:#9c27b0; font-weight:600;">GOM</span> — CIN (HC +3.0)
+🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — CIN (HC +3.0)
 
 ---
 
@@ -324,9 +324,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +5.4 pts
 • PowerScoreDiff (winner) = +0.269
-• Confidence = 98.0%
+• Confidence = 97.0%
 
-🏷 Model Tag: GOM — based on 98.0% confidence, +5.4 pts model edge vs line, and PowerScore Δ +0.269.
+🏷 Model Tag: GOM — based on 97.0% confidence, +5.4 pts model edge vs line, and PowerScore Δ +0.269.
 📈 Strong monthly signal — wysokie zaufanie modelowe.
 
 SUMMARY:
@@ -362,9 +362,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +4.0 pts
 • PowerScoreDiff (winner) = -0.121
-• Confidence = 77.0%
+• Confidence = 78.0%
 
-🏷 Model Tag: NEUTRAL — based on 77.0% confidence, +4.0 pts model edge vs line, and PowerScore Δ -0.121.
+🏷 Model Tag: NEUTRAL — based on 78.0% confidence, +4.0 pts model edge vs line, and PowerScore Δ -0.121.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -400,9 +400,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -0.6 pts
 • PowerScoreDiff (winner) = -0.160
-• Confidence = 86.0%
+• Confidence = 85.0%
 
-🏷 Model Tag: NEUTRAL — based on 86.0% confidence, -0.6 pts model edge vs line, and PowerScore Δ -0.160.
+🏷 Model Tag: NEUTRAL — based on 85.0% confidence, -0.6 pts model edge vs line, and PowerScore Δ -0.160.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -476,9 +476,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +12.3 pts
 • PowerScoreDiff (winner) = -0.043
-• Confidence = 95.0%
+• Confidence = 94.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +12.3 pts model edge vs line, and PowerScore Δ -0.043.
+🏷 Model Tag: NEUTRAL — based on 94.0% confidence, +12.3 pts model edge vs line, and PowerScore Δ -0.043.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -552,9 +552,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +2.3 pts
 • PowerScoreDiff (winner) = +0.085
-• Confidence = 82.0%
+• Confidence = 81.0%
 
-🏷 Model Tag: VALUE PLAY — based on 82.0% confidence, +2.3 pts model edge vs line, and PowerScore Δ +0.085.
+🏷 Model Tag: VALUE PLAY — based on 81.0% confidence, +2.3 pts model edge vs line, and PowerScore Δ +0.085.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
@@ -590,10 +590,10 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +6.0 pts
 • PowerScoreDiff (winner) = +0.084
-• Confidence = 77.0%
+• Confidence = 78.0%
 
-🏷 Model Tag: VALUE PLAY — based on 77.0% confidence, +6.0 pts model edge vs line, and PowerScore Δ +0.084.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: GOW — based on 78.0% confidence, +6.0 pts model edge vs line, and PowerScore Δ +0.084.
+💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
@@ -604,4 +604,4 @@ SUMMARY:
    • Estimated Score – SEA 26.2 – LA 27.2
    • Win Probability – 54% (LA)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — LA (HC -1.0)
+🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — LA (HC -1.0)

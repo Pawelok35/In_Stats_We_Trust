@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.182 | 0.174 | 0.008 |
 | Pressure Rate (Def) | 0.091 | 0.111 | -0.020 |
 | Tempo | 6.818 | 5.545 | 1.273 |
-| PowerScore | 0.146 | 0.111 | 0.035 |
-| PowerScore | 0.146 | 0.111 | 0.035 |
+| PowerScore | 1.494 | 1.203 | 0.290 |
+| PowerScore | 1.494 | 1.203 | 0.290 |
 | Tempo | 6.818 | 5.545 | 1.273 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ BUF edge: +0.062 (NYJ +0.319 vs BUF +0.380)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - BUF) | +0.7 pts (favours NYJ) |
-| Model Win% NYJ | 52.7% |
-| Model Win% BUF | 47.3% |
+| Model Spread (NYJ - BUF) | +5.4 pts (favours NYJ) |
+| Model Win% NYJ | 71.0% |
+| Model Win% BUF | 29.0% |
 | SOS Differential (NYJ-BUF) | +0.244 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

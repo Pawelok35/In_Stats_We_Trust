@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.120 | 0.143 | -0.023 |
 | Pressure Rate (Def) | 0.033 | 0.086 | -0.054 |
 | Tempo | 8.364 | 7.250 | 1.114 |
-| PowerScore | 0.143 | 0.206 | -0.063 |
-| PowerScore | 0.143 | 0.206 | -0.063 |
+| PowerScore | 1.796 | 1.642 | 0.154 |
+| PowerScore | 1.796 | 1.642 | 0.154 |
 | Tempo | 8.364 | 7.250 | 1.114 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ LA edge: +0.056 (JAX +0.099 vs LA +0.155)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - LA) | -1.2 pts (favours LA) |
-| Model Win% JAX | 45.1% |
-| Model Win% LA | 54.9% |
-| SOS Differential (JAX-LA) | +0.025 |
+| Model Spread (JAX - LA) | +2.8 pts (favours JAX) |
+| Model Win% JAX | 61.6% |
+| Model Win% LA | 38.4% |
+| SOS Differential (JAX-LA) | -0.205 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | LA |
 | --- | ---: | ---: |
-| Season-to-date | 0.127 | 0.102 |
-| Last 5 games | 0.133 | 0.112 |
-| Last 3 games | 0.160 | 0.107 |
+| Season-to-date | 1.529 | 1.734 |
+| Last 5 games | 1.514 | 1.736 |
+| Last 3 games | 1.561 | 1.830 |
 
 ## Trend Summary (last 3 weeks)
 

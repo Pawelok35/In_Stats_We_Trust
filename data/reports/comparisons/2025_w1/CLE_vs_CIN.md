@@ -4,19 +4,21 @@
 
 | Metric | CLE | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.087 | -0.066 | ↓ -0.021 |
-| Core EPA Defense | -0.066 | -0.087 | ↑ +0.021 |
-| Success Rate Offense | 39.6% | 44.1% | ↓ -4.6 pp |
-| Success Rate Defense | 44.1% | 39.6% | ↑ +4.6 pp |
-| Explosive Play Rate (Off) | 6.6% | 1.5% | ↑ +5.1 pp |
-| Third Down Conversion | 47.4% | 50.0% | ↓ -2.6 pp |
-| Points per Drive Differential | -0.100 | 0.100 | ↓ -0.200 |
-| Yards per Play Differential | 1.520 | -1.520 | ↑ +3.040 |
-| Turnover Margin | -2.000 | 2.000 | ↓ -4.000 |
-| Red Zone TD Rate (Off) | 13.3% | 16.7% | ↓ -3.3 pp |
-| Pressure Rate (Def) | 11.5% | 4.3% | ↑ +7.3 pp |
-| Tempo | 9.100 | 6.800 | ↑ +2.300 |
-| PowerScore | 0.068 | 0.073 | ↓ -0.004 |
+| Core EPA Offense | -0.087 | -0.066 | -0.021 |
+| Core EPA Defense | -0.066 | -0.087 | 0.021 |
+| Success Rate Offense | 0.396 | 0.441 | -0.046 |
+| Success Rate Defense | 0.441 | 0.396 | 0.046 |
+| Explosive Play Rate (Off) | 0.066 | 0.015 | 0.051 |
+| Third Down Conversion | 0.474 | 0.500 | -0.026 |
+| Points per Drive Differential | -0.100 | 0.100 | -0.200 |
+| Yards per Play Differential | 1.520 | -1.520 | 3.040 |
+| Turnover Margin | -2.000 | 2.000 | -4.000 |
+| Red Zone TD Rate (Off) | 0.133 | 0.167 | -0.033 |
+| Pressure Rate (Def) | 0.115 | 0.043 | 0.073 |
+| Tempo | 9.100 | 6.800 | 2.300 |
+| PowerScore | 1.875 | 1.430 | 0.446 |
+| PowerScore | 1.875 | 1.430 | 0.446 |
+| Tempo | 9.100 | 6.800 | 2.300 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ CIN edge: +0.004 (CLE +0.068 vs CIN +0.073)
 **7 metrics version:**
 CIN edge: +0.399 (CLE -0.144 vs CIN +0.255)
 **Verdict:** CIN holds the edge in the extended breakdown (lead 0.399), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - CIN) | -0.1 pts (favours CIN) |
-| Model Win% CLE | 49.7% |
-| Model Win% CIN | 50.3% |
+| Model Spread (CLE - CIN) | +8.2 pts (favours CLE) |
+| Model Win% CLE | 79.8% |
+| Model Win% CIN | 20.2% |
 | SOS Differential (CLE-CIN) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

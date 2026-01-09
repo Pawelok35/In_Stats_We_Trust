@@ -4,19 +4,21 @@
 
 | Metric | BUF | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.215 | 0.140 | ↑ +0.075 |
-| Core EPA Defense | 0.210 | 0.133 | ↑ +0.076 |
-| Success Rate Offense | 58.8% | 53.5% | ↑ +5.3 pp |
-| Success Rate Defense | 57.0% | 44.4% | ↑ +12.5 pp |
-| Explosive Play Rate (Off) | 7.5% | 8.9% | ↓ -1.4 pp |
-| Third Down Conversion | 38.5% | 66.7% | ↓ -28.2 pp |
-| Points per Drive Differential | 0.750 | -0.167 | ↑ +0.917 |
-| Yards per Play Differential | -0.634 | -0.142 | ↓ -0.492 |
-| Turnover Margin | 0.000 | -1.000 | ↑ +1.000 |
-| Red Zone TD Rate (Off) | 10.5% | 22.2% | ↓ -11.7 pp |
-| Pressure Rate (Def) | 3.3% | 6.1% | ↓ -2.7 pp |
-| Tempo | 10.000 | 8.417 | ↑ +1.583 |
-| PowerScore | 0.279 | 0.227 | ↑ +0.052 |
+| Core EPA Offense | 0.119 | 0.045 | 0.074 |
+| Core EPA Defense | -0.031 | -0.056 | 0.025 |
+| Success Rate Offense | 0.479 | 0.522 | -0.044 |
+| Success Rate Defense | 0.459 | 0.460 | -0.001 |
+| Explosive Play Rate (Off) | 0.109 | 0.084 | 0.025 |
+| Third Down Conversion | 0.328 | 0.459 | -0.131 |
+| Points per Drive Differential | 0.988 | 0.609 | 0.379 |
+| Yards per Play Differential | 0.182 | 0.460 | -0.278 |
+| Turnover Margin | 1.125 | -0.429 | 1.554 |
+| Red Zone TD Rate (Off) | 0.167 | 0.115 | 0.052 |
+| Pressure Rate (Def) | 0.070 | 0.061 | 0.009 |
+| Tempo | 10.000 | 8.417 | 1.583 |
+| PowerScore | 2.264 | 1.893 | 0.371 |
+| PowerScore | 2.264 | 1.893 | 0.371 |
+| Tempo | 10.000 | 8.417 | 1.583 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ BUF edge: +0.052 (BUF +0.279 vs KC +0.227)
 **7 metrics version:**
 BUF edge: +0.126 (BUF +0.205 vs KC +0.079)
 **Verdict:** BUF holds the edge in the extended breakdown (lead 0.126), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - KC) | +1.0 pts (favours BUF) |
-| Model Win% BUF | 54.0% |
-| Model Win% KC | 46.0% |
-| SOS Differential (BUF-KC) | +0.030 |
+| Model Spread (BUF - KC) | +6.9 pts (favours BUF) |
+| Model Win% BUF | 75.9% |
+| Model Win% KC | 24.1% |
+| SOS Differential (BUF-KC) | +0.031 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BUF | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.149 | 0.119 |
-| Last 5 games | 0.153 | 0.097 |
-| Last 3 games | 0.144 | 0.112 |
+| Season-to-date | 1.678 | 1.647 |
+| Last 5 games | 1.594 | 1.564 |
+| Last 3 games | 1.725 | 1.563 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,7 +248,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | ATL (H) | 23-20 | BUF | 0.541 | 0.126 | 50.6% | 0.333 |
+| 6 | ATL (A) | 23-20 | BUF | 0.541 | 0.126 | 50.6% | 0.333 |
 | 1 | ARI (H) | 34-28 | BUF | 0.497 | 0.189 | 60.5% | 0.600 |
 | 4 | NO (H) | 10-35 | NO | 0.452 | -0.146 | 39.0% | -2.273 |
 
@@ -250,9 +256,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | DET (A) | n/a | n/a | 0.908 | n/a | n/a | n/a |
+| 6 | DET (H) | n/a | n/a | 0.908 | n/a | n/a | n/a |
 | 2 | PHI (H) | 20-23 | PHI | 0.902 | -0.006 | 53.2% | -0.273 |
-| 8 | WAS (A) | 27-20 | KC | 0.860 | 0.071 | 52.3% | 0.778 |
+| 8 | WAS (H) | 27-20 | KC | 0.860 | 0.071 | 52.3% | 0.778 |
 
 ## Core EPA Offense Form (up to Week 8)
 

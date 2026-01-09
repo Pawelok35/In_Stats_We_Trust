@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.059 | 0.182 | -0.123 |
 | Pressure Rate (Def) | 0.065 | 0.083 | -0.019 |
 | Tempo | 7.417 | 9.778 | -2.361 |
-| PowerScore | 0.129 | 0.132 | -0.003 |
-| PowerScore | 0.129 | 0.132 | -0.003 |
+| PowerScore | 1.590 | 2.076 | -0.487 |
+| PowerScore | 1.590 | 2.076 | -0.487 |
 | Tempo | 7.417 | 9.778 | -2.361 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ BAL edge: +0.015 (BAL +0.116 vs CLE +0.102)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - CLE) | -0.1 pts (favours CLE) |
-| Model Win% BAL | 49.8% |
-| Model Win% CLE | 50.2% |
+| Model Spread (BAL - CLE) | -9.0 pts (favours CLE) |
+| Model Win% BAL | 18.2% |
+| Model Win% CLE | 81.8% |
 | SOS Differential (BAL-CLE) | +0.391 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

@@ -4,19 +4,21 @@
 
 | Metric | NE | ATL | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.086 | 0.018 | ↓ -0.103 |
-| Core EPA Defense | -0.052 | -0.039 | ↓ -0.013 |
-| Success Rate Offense | 46.5% | 44.0% | ↑ +2.5 pp |
-| Success Rate Defense | 40.9% | 43.6% | ↓ -2.8 pp |
-| Explosive Play Rate (Off) | 7.0% | 9.3% | ↓ -2.4 pp |
-| Third Down Conversion | 20.0% | 28.6% | ↓ -8.6 pp |
-| Points per Drive Differential | -0.121 | 0.341 | ↓ -0.462 |
-| Yards per Play Differential | -0.871 | 0.091 | ↓ -0.962 |
-| Turnover Margin | -2.000 | -1.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 14.3% | 23.1% | ↓ -8.8 pp |
-| Pressure Rate (Def) | 2.9% | 5.6% | ↓ -2.6 pp |
-| Tempo | 7.818 | 6.250 | ↑ +1.568 |
-| PowerScore | 0.090 | 0.127 | ↓ -0.037 |
+| Core EPA Offense | -0.095 | 0.042 | -0.137 |
+| Core EPA Defense | 0.055 | 0.063 | -0.008 |
+| Success Rate Offense | 0.444 | 0.494 | -0.049 |
+| Success Rate Defense | 0.484 | 0.493 | -0.009 |
+| Explosive Play Rate (Off) | 0.080 | 0.108 | -0.028 |
+| Third Down Conversion | 0.322 | 0.349 | -0.027 |
+| Points per Drive Differential | -0.698 | -0.143 | -0.555 |
+| Yards per Play Differential | -1.250 | 0.346 | -1.596 |
+| Turnover Margin | -0.375 | -0.250 | -0.125 |
+| Red Zone TD Rate (Off) | 0.091 | 0.126 | -0.035 |
+| Pressure Rate (Def) | 0.053 | 0.026 | 0.026 |
+| Tempo | 7.818 | 6.250 | 1.568 |
+| PowerScore | 1.640 | 1.358 | 0.281 |
+| PowerScore | 1.640 | 1.358 | 0.281 |
+| Tempo | 7.818 | 6.250 | 1.568 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ ATL edge: +0.037 (NE +0.090 vs ATL +0.127)
 **7 metrics version:**
 ATL edge: +0.139 (NE -0.138 vs ATL +0.001)
 **Verdict:** ATL holds the edge in the extended breakdown (lead 0.139), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - ATL) | -0.7 pts (favours ATL) |
-| Model Win% NE | 47.1% |
-| Model Win% ATL | 52.9% |
-| SOS Differential (NE-ATL) | -0.031 |
+| Model Spread (NE - ATL) | +5.2 pts (favours NE) |
+| Model Win% NE | 70.4% |
+| Model Win% ATL | 29.6% |
+| SOS Differential (NE-ATL) | -0.137 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NE | ATL |
 | --- | ---: | ---: |
-| Season-to-date | 0.141 | 0.173 |
-| Last 5 games | 0.135 | 0.189 |
-| Last 3 games | 0.174 | 0.167 |
+| Season-to-date | 1.679 | 1.817 |
+| Last 5 games | 1.579 | 1.790 |
+| Last 3 games | 1.619 | 1.791 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -251,7 +257,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 3 | CAR (A) | 17-20 | CAR | 0.979 | -0.006 | 46.1% | -0.300 |
-| 8 | MIA (A) | 31-22 | ATL | 0.743 | 0.159 | 57.9% | 0.918 |
+| 8 | MIA (H) | 31-22 | ATL | 0.743 | 0.159 | 57.9% | 0.918 |
 | 5 | TB (-) | 36-36 | TIE | 0.328 | 0.139 | 50.0% | 0.000 |
 
 ## Core EPA Offense Form (up to Week 8)

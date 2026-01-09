@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.084 | 0.188 | -0.104 |
 | Pressure Rate (Def) | 0.102 | 0.071 | 0.030 |
 | Tempo | 8.400 | 9.250 | -0.850 |
-| PowerScore | 0.123 | 0.223 | -0.099 |
-| PowerScore | 0.123 | 0.223 | -0.099 |
+| PowerScore | 1.787 | 2.040 | -0.254 |
+| PowerScore | 1.787 | 2.040 | -0.254 |
 | Tempo | 8.400 | 9.250 | -0.850 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ WAS edge: +0.264 (LAC -0.004 vs WAS +0.260)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (LAC - WAS) | -1.8 pts (favours WAS) |
-| Model Win% LAC | 42.4% |
-| Model Win% WAS | 57.6% |
-| SOS Differential (LAC-WAS) | -0.068 |
+| Model Spread (LAC - WAS) | -4.7 pts (favours WAS) |
+| Model Win% LAC | 31.4% |
+| Model Win% WAS | 68.6% |
+| SOS Differential (LAC-WAS) | -0.037 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | LAC | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.098 | 0.165 |
-| Last 5 games | 0.098 | 0.165 |
-| Last 3 games | 0.055 | 0.193 |
+| Season-to-date | 1.689 | 1.726 |
+| Last 5 games | 1.689 | 1.726 |
+| Last 3 games | 1.527 | 1.671 |
 
 ## Trend Summary (last 3 weeks)
 

@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – HOU 12.6 – IND 19.2
-2️⃣ Predicted Winner (Model) – IND
-3️⃣ Predicted Margin (Model) – IND by 6.7 pts
-4️⃣ Win Probability (Model) – 73% (IND)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja IND (18.8% vs 9.1%). Na 3rd down IND utrzymuje 40.1%, podczas gdy HOU jest na 32.3%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje IND na poziomie 49.2% vs 43.3% (+5.9 pp). PowerScore Summary potwierdza przewagę IND: IND +0.089 vs HOU +0.065. Explosive Play Rate pozostaje po stronie IND (10.7% vs 8.6%), więc big-play equity jest wyższe.
+1️⃣ Estimated Score (Model) – HOU 20.4 – IND 19.2
+2️⃣ Predicted Winner (Model) – HOU
+3️⃣ Predicted Margin (Model) – HOU by 1.1 pts
+4️⃣ Win Probability (Model) – 60% (HOU)
+5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje HOU (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Defensive pressure rate wspiera HOU (+2.8% vs +0.0%), więc pasy rywala będą częściej pod presją. PowerScore Summary potwierdza przewagę HOU: HOU +0.174 vs IND +0.157. Field position edge wynosi +0.4 yds na rzecz HOU (-2.3 vs -2.7), co skraca ich boisko. HOU prowadzi w Points per Drive Differential (+0.436 vs +0.374), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – HOU 21.2 – IND 10.7
+1️⃣ Estimated Score (Market) – HOU 25.1 – IND 14.6
 2️⃣ Predicted Winner (Market) – HOU
 3️⃣ Predicted Margin (Market) – HOU by 10.5 pts
 4️⃣ Win Probability (Market) – 87% (HOU)
-5️⃣ Forum Output (A) – PowerScore (Model) — HOU +0.065 vs IND +0.089. Points per Drive Differential — HOU +0.404 vs IND +0.367. Success Rate Offense — HOU 43.3% vs IND 49.2%. Third Down Conversion — HOU 32.3% vs IND 40.1%. Red Zone TD Rate — HOU 9.1% vs IND 18.8%. Explosive Play Rate — HOU 8.6% vs IND 10.7%. Model margin -6.7 pts vs market spread HOU +10.5.
-6️⃣ Forum Output (B) – Model idzie w stronę IND po marginesie -6.7 pkt. IND notuje +0.367 PPD vs +0.404 u HOU. Różnica w Success Rate to 49.2% vs 43.3%. Na 3rd down IND (40.1%) wygląda solidniej niż HOU (32.3%). Red Zone i explosiveness ( 18.8% / 10.7% ) utrzymują przewagę jakościową. Market trzyma 10.5 pkt, więc edge vs linia to +17.2.
+5️⃣ Forum Output (A) – PowerScore (Model) — HOU +0.174 vs IND +0.157. Points per Drive Differential — HOU +0.436 vs IND +0.374. Success Rate Offense — HOU 43.8% vs IND 49.5%. Third Down Conversion — HOU 34.3% vs IND 38.3%. Red Zone TD Rate — HOU 9.6% vs IND 18.3%. Explosive Play Rate — HOU 8.8% vs IND 11.0%. Model margin 1.1 pts vs market spread HOU +10.5.
+6️⃣ Forum Output (B) – Model idzie w stronę HOU po marginesie 1.1 pkt. HOU notuje +0.436 PPD vs +0.374 u IND. Różnica w Success Rate to 43.8% vs 49.5%. Na 3rd down HOU (34.3%) wygląda solidniej niż IND (38.3%). Red Zone i explosiveness ( 9.6% / 8.8% ) utrzymują przewagę jakościową. Market trzyma 10.5 pkt, więc edge vs linia to -9.4.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +17.2 pts
-• PowerScoreDiff (winner) = +0.024
-• Confidence = 73.0%
+• Edge_vs_Line (winner) = -9.4 pts
+• PowerScoreDiff (winner) = +0.017
+• Confidence = 60.0%
 
-🏷 Model Tag: VALUE PLAY — based on 73.0% confidence, +17.2 pts model edge vs line, and PowerScore Δ +0.024.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 60.0% confidence, -9.4 pts model edge vs line, and PowerScore Δ +0.017.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – HOU 12.6 – IND 19.2
-   • Win Probability – 73% (IND)
+   • Estimated Score – HOU 20.4 – IND 19.2
+   • Win Probability – 60% (HOU)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – HOU 21.2 – IND 10.7
+   • Estimated Score – HOU 25.1 – IND 14.6
    • Win Probability – 87% (HOU)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — IND (HC +10.5)
+🏷 Model Tag: NEUTRAL — HOU (HC -10.5)

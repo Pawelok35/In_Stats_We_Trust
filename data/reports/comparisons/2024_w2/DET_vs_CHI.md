@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.105 | 0.000 | 0.105 |
 | Pressure Rate (Def) | 0.039 | 0.086 | -0.046 |
 | Tempo | 9.091 | 6.923 | 2.168 |
-| PowerScore | 0.104 | 0.054 | 0.051 |
-| PowerScore | 0.104 | 0.054 | 0.051 |
+| PowerScore | 1.898 | 1.427 | 0.471 |
+| PowerScore | 1.898 | 1.427 | 0.471 |
 | Tempo | 9.091 | 6.923 | 2.168 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ DET edge: +0.031 (DET -0.021 vs CHI -0.052)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - CHI) | +0.9 pts (favours DET) |
-| Model Win% DET | 53.9% |
-| Model Win% CHI | 46.1% |
+| Model Spread (DET - CHI) | +8.7 pts (favours DET) |
+| Model Win% DET | 81.1% |
+| Model Win% CHI | 18.9% |
 | SOS Differential (DET-CHI) | +0.781 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

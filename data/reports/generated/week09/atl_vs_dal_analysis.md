@@ -16,9 +16,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +3.2 pts
 • PowerScoreDiff (winner) = +0.009
-• Confidence = 81.0%
+• Confidence = 80.0%
 
-🏷 Model Tag: VALUE PLAY — based on 81.0% confidence, +3.2 pts model edge vs line, and PowerScore Δ +0.009.
+🏷 Model Tag: VALUE PLAY — based on 80.0% confidence, +3.2 pts model edge vs line, and PowerScore Δ +0.009.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:

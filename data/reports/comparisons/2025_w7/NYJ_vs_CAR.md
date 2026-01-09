@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.110 | 0.137 | -0.026 |
 | Pressure Rate (Def) | 0.040 | 0.027 | 0.013 |
 | Tempo | 6.727 | 8.182 | -1.455 |
-| PowerScore | 0.014 | 0.060 | -0.046 |
-| PowerScore | 0.014 | 0.060 | -0.046 |
+| PowerScore | 1.354 | 1.679 | -0.324 |
+| PowerScore | 1.354 | 1.679 | -0.324 |
 | Tempo | 6.727 | 8.182 | -1.455 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ CAR edge: +0.439 (NYJ -0.199 vs CAR +0.241)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - CAR) | -0.8 pts (favours CAR) |
-| Model Win% NYJ | 46.5% |
-| Model Win% CAR | 53.5% |
-| SOS Differential (NYJ-CAR) | +0.016 |
+| Model Spread (NYJ - CAR) | -6.0 pts (favours CAR) |
+| Model Win% NYJ | 26.9% |
+| Model Win% CAR | 73.1% |
+| SOS Differential (NYJ-CAR) | +0.036 |
 *Neutral-field assumption. Based on schedule through Week 6.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.163 | 0.147 |
-| Last 5 games | 0.145 | 0.145 |
-| Last 3 games | 0.160 | 0.197 |
+| Season-to-date | 1.624 | 1.588 |
+| Last 5 games | 1.622 | 1.549 |
+| Last 3 games | 1.562 | 1.600 |
 
 ## Trend Summary (last 3 weeks)
 

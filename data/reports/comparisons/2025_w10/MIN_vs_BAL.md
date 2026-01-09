@@ -15,39 +15,39 @@
 | Turnover Margin | -0.250 | -0.375 | 0.125 |
 | Red Zone TD Rate (Off) | 0.137 | 0.123 | 0.014 |
 | Pressure Rate (Def) | 0.093 | 0.035 | 0.058 |
-| Tempo | 6.750 | 6.455 | 0.295 |
-| PowerScore | 0.121 | 0.167 | -0.047 |
-| PowerScore | 0.121 | 0.167 | -0.047 |
-| Tempo | 6.750 | 6.455 | 0.295 |
+| Tempo | 6.538 | 6.923 | -0.385 |
+| PowerScore | 1.343 | 1.468 | -0.125 |
+| PowerScore | 1.343 | 1.468 | -0.125 |
+| Tempo | 6.538 | 6.923 | -0.385 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | MIN | BAL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.017 | 0.137 | -0.120 |
-| EPA Defense | 20% | -0.062 | -0.195 | +0.133 |
-| Success Rate Offense | 25% | 42.0% | 52.1% | -10.1 pp |
-| Tempo | 20% | 0.111 | 0.141 | -0.030 |
+| EPA Offense | 35% | -0.162 | -0.026 | -0.136 |
+| EPA Defense | 20% | -0.026 | -0.162 | +0.136 |
+| Success Rate Offense | 25% | 38.8% | 50.0% | -11.2 pp |
+| Tempo | 20% | 0.118 | 0.078 | +0.040 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | MIN | BAL | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.017 | 0.137 | -0.120 |
-| EPA Defense | 20% | -0.062 | -0.195 | +0.133 |
-| Success Rate Offense | 15% | 42.0% | 52.1% | -10.1 pp |
-| Turnover Margin | 10% | 0.000 | 3.000 | -3.000 |
-| Tempo | 10% | 0.111 | 0.141 | -0.030 |
-| Red Zone TD Rate (Off) | 10% | 18.8% | 28.6% | -9.8 pp |
-| Pressure Rate (Def) | 10% | 11.9% | 4.8% | +7.1 pp |
+| EPA Offense | 25% | -0.162 | -0.026 | -0.136 |
+| EPA Defense | 20% | -0.026 | -0.162 | +0.136 |
+| Success Rate Offense | 15% | 38.8% | 50.0% | -11.2 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.118 | 0.078 | +0.040 |
+| Red Zone TD Rate (Off) | 10% | 15.4% | 10.0% | +5.4 pp |
+| Pressure Rate (Def) | 10% | 3.1% | 2.3% | +0.9 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-BAL edge: +0.047 (MIN +0.121 vs BAL +0.167)
+BAL edge: +0.040 (MIN +0.059 vs BAL +0.099)
 **7 metrics version:**
-BAL edge: +0.324 (MIN +0.096 vs BAL +0.421)
-**Verdict:** BAL holds the edge in the extended breakdown (lead 0.324), driven by Turnover Margin (10% weight).
+BAL edge: +0.613 (MIN -0.257 vs BAL +0.356)
+**Verdict:** BAL holds the edge in the extended breakdown (lead 0.613), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ BAL edge: +0.324 (MIN +0.096 vs BAL +0.421)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - BAL) | -0.9 pts (favours BAL) |
-| Model Win% MIN | 46.4% |
-| Model Win% BAL | 53.6% |
-| SOS Differential (MIN-BAL) | -0.070 |
+| Model Spread (MIN - BAL) | -2.3 pts (favours BAL) |
+| Model Win% MIN | 40.5% |
+| Model Win% BAL | 59.5% |
+| SOS Differential (MIN-BAL) | -0.218 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| MIN | 42.0% | n/a | n/a | 42.9% | 41.7% | n/a |
-| BAL | 38.0% | n/a | n/a | 38.1% | 50.0% | n/a |
+| MIN | 51.8% | 42.4% | 9.3% | 34.1% | 43.9% | Pass heavy |
+| BAL | 35.6% | 42.4% | -6.9% | 43.8% | 53.4% | Run heavy |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIN | BAL |
 | --- | ---: | ---: |
-| Season-to-date | 0.106 | 0.176 |
-| Last 5 games | 0.158 | 0.153 |
-| Last 3 games | 0.146 | 0.115 |
+| Season-to-date | 1.530 | 1.748 |
+| Last 5 games | 1.655 | 1.727 |
+| Last 3 games | 1.735 | 1.598 |
 
 ## Trend Summary (last 3 weeks)
 

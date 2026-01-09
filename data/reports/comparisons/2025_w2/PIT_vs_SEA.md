@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.273 | 0.083 | 0.189 |
 | Pressure Rate (Def) | 0.042 | 0.026 | 0.015 |
 | Tempo | 5.846 | 6.833 | -0.987 |
-| PowerScore | 0.036 | 0.113 | -0.077 |
-| PowerScore | 0.036 | 0.113 | -0.077 |
+| PowerScore | 1.194 | 1.448 | -0.253 |
+| PowerScore | 1.194 | 1.448 | -0.253 |
 | Tempo | 5.846 | 6.833 | -0.987 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ SEA edge: +0.041 (PIT +0.032 vs SEA +0.074)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - SEA) | -1.4 pts (favours SEA) |
-| Model Win% PIT | 44.1% |
-| Model Win% SEA | 55.9% |
-| SOS Differential (PIT-SEA) | +0.138 |
+| Model Spread (PIT - SEA) | -4.7 pts (favours SEA) |
+| Model Win% PIT | 31.4% |
+| Model Win% SEA | 68.6% |
+| SOS Differential (PIT-SEA) | -0.058 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.261 | 0.123 |
-| Last 5 games | 0.261 | 0.123 |
-| Last 3 games | 0.261 | 0.123 |
+| Season-to-date | 1.688 | 1.746 |
+| Last 5 games | 1.688 | 1.746 |
+| Last 3 games | 1.688 | 1.746 |
 
 ## Matchup Analogs
 

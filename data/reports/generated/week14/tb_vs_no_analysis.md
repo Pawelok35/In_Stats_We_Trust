@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TB 33.2 – NO 20.6
+1️⃣ Estimated Score (Model) – TB 32.4 – NO 21.4
 2️⃣ Predicted Winner (Model) – TB
-3️⃣ Predicted Margin (Model) – TB by 12.6 pts
+3️⃣ Predicted Margin (Model) – TB by 11.0 pts
 4️⃣ Win Probability (Model) – 95% (TB)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę TB: TB +0.121 vs NO +0.063. Turnover margin faworyzuje TB (+2.00 vs -1.00), co przekłada się na dodatkowe posiadania. Na 3rd down TB utrzymuje 36.4%, podczas gdy NO jest na 32.7%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie TB (9.0% vs 6.6%), więc big-play equity jest wyższe. TB prowadzi w Points per Drive Differential (-0.125 vs -0.907), więc bazowa efektywność napędza przewagę.
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera TB (+12.0% vs +0.0%), więc pasy rywala będą częściej pod presją. Na 3rd down TB utrzymuje 36.5%, podczas gdy NO jest na 33.6%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie TB (9.2% vs 7.0%), więc big-play equity jest wyższe. Red Zone TD Rate sprzyja TB (12.3% vs 10.6%). TB prowadzi w Points per Drive Differential (-0.150 vs -0.754), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
 1️⃣ Estimated Score (Market) – TB 25.8 – NO 17.2
 2️⃣ Predicted Winner (Market) – TB
 3️⃣ Predicted Margin (Market) – TB by 8.5 pts
 4️⃣ Win Probability (Market) – 80% (TB)
-5️⃣ Forum Output (A) – PowerScore (Model) — TB +0.121 vs NO +0.063. Points per Drive Differential — TB -0.125 vs NO -0.907. Success Rate Offense — TB 43.7% vs NO 44.2%. Third Down Conversion — TB 36.4% vs NO 32.7%. Red Zone TD Rate — TB 11.6% vs NO 11.6%. Explosive Play Rate — TB 9.0% vs NO 6.6%. Model margin 12.6 pts vs market spread TB +8.5.
-6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie 12.6 pkt. TB notuje -0.125 PPD vs -0.907 u NO. Różnica w Success Rate to 43.7% vs 44.2%. Na 3rd down TB (36.4%) wygląda solidniej niż NO (32.7%). Red Zone i explosiveness ( 11.6% / 9.0% ) utrzymują przewagę jakościową. Market trzyma 8.5 pkt, więc edge vs linia to +4.1.
+5️⃣ Forum Output (A) – PowerScore (Model) — TB +0.087 vs NO +0.090. Points per Drive Differential — TB -0.150 vs NO -0.754. Success Rate Offense — TB 44.4% vs NO 43.8%. Third Down Conversion — TB 36.5% vs NO 33.6%. Red Zone TD Rate — TB 12.3% vs NO 10.6%. Explosive Play Rate — TB 9.2% vs NO 7.0%. Model margin 11.0 pts vs market spread TB +8.5.
+6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie 11.0 pkt. TB notuje -0.150 PPD vs -0.754 u NO. Różnica w Success Rate to 44.4% vs 43.8%. Na 3rd down TB (36.5%) wygląda solidniej niż NO (33.6%). Red Zone i explosiveness ( 12.3% / 9.2% ) utrzymują przewagę jakościową. Market trzyma 8.5 pkt, więc edge vs linia to +2.5.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +4.1 pts
-• PowerScoreDiff (winner) = +0.058
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +2.5 pts
+• PowerScoreDiff (winner) = -0.003
+• Confidence = 96.0%
 
-🏷 Model Tag: GOW — based on 98.0% confidence, +4.1 pts model edge vs line, and PowerScore Δ +0.058.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: NEUTRAL — based on 96.0% confidence, +2.5 pts model edge vs line, and PowerScore Δ -0.003.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – TB 33.2 – NO 20.6
+   • Estimated Score – TB 32.4 – NO 21.4
    • Win Probability – 95% (TB)
 
 2. MARKET PROJECTION (Balanced)
    • Estimated Score – TB 25.8 – NO 17.2
    • Win Probability – 80% (TB)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — TB (HC -8.5)
+🏷 Model Tag: NEUTRAL — TB (HC -8.5)

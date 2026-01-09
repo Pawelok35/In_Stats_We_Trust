@@ -15,46 +15,60 @@
 | Turnover Margin | 0.100 | -0.333 | 0.433 |
 | Red Zone TD Rate (Off) | 0.171 | 0.097 | 0.074 |
 | Pressure Rate (Def) | 0.062 | 0.064 | -0.002 |
+| Tempo | 7.917 | 6.308 | 1.609 |
+| PowerScore | 1.634 | 1.302 | 0.331 |
+| PowerScore | 1.634 | 1.302 | 0.331 |
+| Tempo | 7.917 | 6.308 | 1.609 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | TEN | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.039 | -0.168 | +0.207 |
-| EPA Defense | 20% | -0.021 | 0.067 | -0.089 |
-| Success Rate Offense | 25% | 45.0% | 35.2% | +9.8 pp |
-| Tempo | 20% | 0.086 | 0.067 | +0.019 |
+| EPA Offense | 35% | -0.181 | -0.024 | -0.157 |
+| EPA Defense | 20% | -0.024 | -0.181 | +0.157 |
+| Success Rate Offense | 25% | 47.4% | 34.1% | +13.2 pp |
+| Tempo | 20% | 0.084 | 0.000 | +0.084 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | TEN | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.039 | -0.168 | +0.207 |
-| EPA Defense | 20% | -0.021 | 0.067 | -0.089 |
-| Success Rate Offense | 15% | 45.0% | 35.2% | +9.8 pp |
-| Turnover Margin | 10% | 0.100 | -0.333 | +0.433 |
-| Tempo | 10% | 0.086 | 0.067 | +0.019 |
-| Red Zone TD Rate (Off) | 10% | 17.1% | 9.7% | +7.4 pp |
-| Pressure Rate (Def) | 10% | 6.2% | 6.4% | -0.2 pp |
+| EPA Offense | 25% | -0.181 | -0.024 | -0.157 |
+| EPA Defense | 20% | -0.024 | -0.181 | +0.157 |
+| Success Rate Offense | 15% | 47.4% | 34.1% | +13.2 pp |
+| Turnover Margin | 10% | -3.000 | 3.000 | -6.000 |
+| Tempo | 10% | 0.084 | 0.000 | +0.084 |
+| Red Zone TD Rate (Off) | 10% | 28.6% | 11.1% | +17.5 pp |
+| Pressure Rate (Def) | 10% | 0.0% | 3.7% | -3.7 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TEN edge: +0.083 (TEN +0.139 vs HOU +0.056)
+TEN edge: +0.026 (TEN +0.067 vs HOU +0.041)
 **7 metrics version:**
-TEN edge: +0.101 (TEN +0.115 vs HOU +0.014)
-**Verdict:** TEN holds the edge in the extended breakdown (lead 0.101), driven by EPA Offense (25% weight).
+HOU edge: +0.566 (TEN -0.242 vs HOU +0.324)
+**Verdict:** HOU holds the edge in the extended breakdown (lead 0.566), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
 
 
+## Model Outlook
+
+| Metric | Value |
+| --- | --- |
+| Model Spread (TEN - HOU) | +6.1 pts (favours TEN) |
+| Model Win% TEN | 73.5% |
+| Model Win% HOU | 26.5% |
+| SOS Differential (TEN-HOU) | +0.095 |
+*Neutral-field assumption. Based on schedule through Week 10.*
+
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| TEN | 37.8% | n/a | n/a | 46.8% | 35.7% | n/a |
-| HOU | 57.6% | 44.9% | 12.7% | 41.5% | 36.4% | Pass heavy |
+| TEN | 56.8% | 44.4% | 12.4% | 53.7% | 39.0% | Pass heavy |
+| HOU | 29.3% | 44.4% | -15.2% | 41.7% | 31.0% | Run heavy |
 
 ## Situational Edges
 
@@ -234,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | JAX (A) | 31-16 | TEN | 0.916 | 0.179 | 46.2% | 1.517 |
-| 4 | NYJ (A) | 24-25 | NYJ | 0.889 | 0.001 | 43.0% | -0.082 |
-| 2 | SEA (A) | 33-30 | TEN | 0.663 | 0.097 | 51.4% | 0.231 |
+| 4 | HOU (A) | 24-25 | HOU | 1.000 | 0.001 | 43.0% | -0.082 |
+| 9 | LAC (H) | 22-17 | TEN | 0.638 | -0.071 | 41.6% | 0.379 |
+| 6 | LV (A) | 34-34 | TIE | 0.625 | 0.196 | 48.6% | -0.009 |
 
 **HOU analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | ARI (A) | 3-31 | ARI | 0.805 | -0.375 | 27.4% | -2.333 |
-| 4 | BUF (A) | 0-37 | BUF | 0.784 | -0.643 | 23.0% | -3.077 |
-| 6 | IND (A) | 3-31 | IND | 0.780 | -0.206 | 37.4% | -2.545 |
+| 4 | TEN (H) | 0-37 | TEN | 1.000 | -0.643 | 23.0% | -3.077 |
+| 6 | IND (-) | 3-31 | IND | 0.780 | -0.206 | 37.4% | -2.545 |
+| 2 | TB (H) | 21-28 | TB | 0.754 | 0.042 | 38.5% | -0.767 |
 
 ## Core EPA Offense Form (up to Week 10)
 

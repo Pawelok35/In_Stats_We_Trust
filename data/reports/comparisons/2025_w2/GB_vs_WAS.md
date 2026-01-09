@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.167 | 0.250 | -0.083 |
 | Pressure Rate (Def) | 0.091 | 0.051 | 0.040 |
 | Tempo | 7.167 | 7.818 | -0.652 |
-| PowerScore | 0.150 | 0.100 | 0.050 |
-| PowerScore | 0.150 | 0.100 | 0.050 |
+| PowerScore | 1.558 | 1.659 | -0.101 |
+| PowerScore | 1.558 | 1.659 | -0.101 |
 | Tempo | 7.167 | 7.818 | -0.652 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ GB edge: +0.021 (GB +0.109 vs WAS +0.088)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - WAS) | +0.9 pts (favours GB) |
-| Model Win% GB | 53.8% |
-| Model Win% WAS | 46.2% |
-| SOS Differential (GB-WAS) | +0.054 |
+| Model Spread (GB - WAS) | -1.9 pts (favours WAS) |
+| Model Win% GB | 42.3% |
+| Model Win% WAS | 57.7% |
+| SOS Differential (GB-WAS) | -0.105 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | GB | WAS |
 | --- | ---: | ---: |
-| Season-to-date | 0.136 | 0.081 |
-| Last 5 games | 0.136 | 0.081 |
-| Last 3 games | 0.136 | 0.081 |
+| Season-to-date | 1.786 | 1.891 |
+| Last 5 games | 1.786 | 1.891 |
+| Last 3 games | 1.786 | 1.891 |
 
 ## Matchup Analogs
 

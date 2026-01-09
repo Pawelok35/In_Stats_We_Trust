@@ -15,8 +15,8 @@
 | Red Zone TD Rate (Off) | 0.113 | 0.158 | -0.045 |
 | Pressure Rate (Def) | 0.064 | 0.107 | -0.042 |
 | Tempo | 6.083 | 8.250 | -2.167 |
-| PowerScore | 0.158 | 0.061 | 0.097 |
-| PowerScore | 0.158 | 0.061 | 0.097 |
+| PowerScore | 1.356 | 1.705 | -0.349 |
+| PowerScore | 1.356 | 1.705 | -0.349 |
 | Tempo | 6.083 | 8.250 | -2.167 |
 
 ## PowerScore Breakdown (Model)
@@ -56,10 +56,10 @@ SEA edge: +0.061 (SEA +0.110 vs NO +0.049)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - NO) | +1.8 pts (favours SEA) |
-| Model Win% SEA | 57.5% |
-| Model Win% NO | 42.5% |
-| SOS Differential (SEA-NO) | -0.038 |
+| Model Spread (SEA - NO) | -6.5 pts (favours NO) |
+| Model Win% SEA | 25.4% |
+| Model Win% NO | 74.6% |
+| SOS Differential (SEA-NO) | -0.334 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -222,9 +222,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | NO |
 | --- | ---: | ---: |
-| Season-to-date | 0.079 | 0.117 |
-| Last 5 games | 0.079 | 0.117 |
-| Last 3 games | 0.079 | 0.117 |
+| Season-to-date | 1.470 | 1.804 |
+| Last 5 games | 1.470 | 1.804 |
+| Last 3 games | 1.470 | 1.804 |
 
 ## Trend Summary (last 2 weeks)
 

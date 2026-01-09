@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.109 | 0.146 | -0.037 |
 | Pressure Rate (Def) | 0.073 | 0.065 | 0.008 |
 | Tempo | 8.182 | 6.700 | 1.482 |
-| PowerScore | 0.113 | 0.044 | 0.070 |
-| PowerScore | 0.113 | 0.044 | 0.070 |
+| PowerScore | 1.721 | 1.375 | 0.346 |
+| PowerScore | 1.721 | 1.375 | 0.346 |
 | Tempo | 8.182 | 6.700 | 1.482 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ TEN edge: +0.055 (TEN +0.081 vs KC +0.026)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - KC) | +1.3 pts (favours TEN) |
-| Model Win% TEN | 55.3% |
-| Model Win% KC | 44.7% |
-| SOS Differential (TEN-KC) | -0.020 |
+| Model Spread (TEN - KC) | +6.4 pts (favours TEN) |
+| Model Win% TEN | 74.4% |
+| Model Win% KC | 25.6% |
+| SOS Differential (TEN-KC) | -0.060 |
 *Neutral-field assumption. Based on schedule through Week 15.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.139 | 0.159 |
-| Last 5 games | 0.134 | 0.142 |
-| Last 3 games | 0.124 | 0.135 |
+| Season-to-date | 1.623 | 1.682 |
+| Last 5 games | 1.698 | 1.623 |
+| Last 3 games | 1.756 | 1.692 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | IND (H) | 20-32 | IND | 0.978 | -0.080 | 47.7% | -1.278 |
-| 8 | IND (A) | 14-38 | IND | 0.978 | -0.089 | 43.2% | -2.182 |
-| 7 | NE (H) | 13-25 | NE | 0.897 | -0.131 | 47.8% | -1.200 |
+| 3 | IND (H) | 20-32 | IND | 0.977 | -0.080 | 47.7% | -1.278 |
+| 8 | IND (A) | 14-38 | IND | 0.977 | -0.089 | 43.2% | -2.182 |
+| 15 | SF (A) | 24-42 | SF | 0.882 | 0.139 | 55.7% | -1.958 |
 
 **KC analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | LV (H) | 31-0 | KC | 0.968 | 0.194 | 50.0% | 3.444 |
-| 3 | NYG (A) | 22-10 | KC | 0.694 | 0.082 | 46.5% | 1.200 |
-| 8 | WAS (H) | 28-8 | KC | 0.627 | 0.216 | 50.0% | 2.236 |
+| 7 | LV (H) | 31-0 | KC | 0.965 | 0.194 | 50.0% | 3.444 |
+| 3 | NYG (A) | 22-10 | KC | 0.747 | 0.082 | 46.5% | 1.200 |
+| 8 | WAS (H) | 28-8 | KC | 0.633 | 0.216 | 50.0% | 2.236 |
 
 ## Core EPA Offense Form (up to Week 15)
 

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.200 | 0.125 | 0.075 |
 | Pressure Rate (Def) | 0.106 | 0.080 | 0.026 |
 | Tempo | 6.273 | 8.222 | -1.949 |
-| PowerScore | 0.117 | 0.221 | -0.103 |
-| PowerScore | 0.117 | 0.221 | -0.103 |
+| PowerScore | 1.340 | 1.835 | -0.495 |
+| PowerScore | 1.340 | 1.835 | -0.495 |
 | Tempo | 6.273 | 8.222 | -1.949 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ ATL edge: +0.176 (MIN +0.075 vs ATL +0.252)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - ATL) | -1.9 pts (favours ATL) |
-| Model Win% MIN | 42.1% |
-| Model Win% ATL | 57.9% |
+| Model Spread (MIN - ATL) | -9.2 pts (favours ATL) |
+| Model Win% MIN | 17.8% |
+| Model Win% ATL | 82.2% |
 | SOS Differential (MIN-ATL) | -0.075 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

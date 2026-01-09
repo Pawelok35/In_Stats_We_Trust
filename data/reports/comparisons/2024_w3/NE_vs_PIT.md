@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.088 | 0.056 | 0.033 |
 | Pressure Rate (Def) | 0.078 | 0.063 | 0.015 |
 | Tempo | 7.111 | 8.200 | -1.089 |
-| PowerScore | 0.069 | 0.140 | -0.071 |
-| PowerScore | 0.069 | 0.140 | -0.071 |
+| PowerScore | 1.476 | 1.756 | -0.280 |
+| PowerScore | 1.476 | 1.756 | -0.280 |
 | Tempo | 7.111 | 8.200 | -1.089 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ PIT edge: +0.054 (NE -0.054 vs PIT +0.001)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - PIT) | -1.3 pts (favours PIT) |
-| Model Win% NE | 44.6% |
-| Model Win% PIT | 55.4% |
+| Model Spread (NE - PIT) | -5.2 pts (favours PIT) |
+| Model Win% NE | 29.7% |
+| Model Win% PIT | 70.3% |
 | SOS Differential (NE-PIT) | +0.241 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.077 | 0.120 | -0.043 |
 | Pressure Rate (Def) | 0.024 | 0.054 | -0.030 |
 | Tempo | 7.900 | 9.556 | -1.656 |
-| PowerScore | 0.152 | 0.201 | -0.049 |
-| PowerScore | 0.152 | 0.201 | -0.049 |
+| PowerScore | 1.722 | 2.089 | -0.367 |
+| PowerScore | 1.722 | 2.089 | -0.367 |
 | Tempo | 7.900 | 9.556 | -1.656 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ PHI edge: +0.135 (KC -0.092 vs PHI +0.043)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (KC - PHI) | -0.9 pts (favours PHI) |
-| Model Win% KC | 46.2% |
-| Model Win% PHI | 53.8% |
+| Model Spread (KC - PHI) | -6.8 pts (favours PHI) |
+| Model Win% KC | 24.4% |
+| Model Win% PHI | 75.6% |
 | SOS Differential (KC-PHI) | +0.358 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

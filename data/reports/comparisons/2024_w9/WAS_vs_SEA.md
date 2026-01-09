@@ -4,19 +4,21 @@
 
 | Metric | WAS | SEA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.217 | -0.153 | ↑ +0.370 |
-| Core EPA Defense | 0.125 | -0.040 | ↑ +0.165 |
-| Success Rate Offense | 58.7% | 43.1% | ↑ +15.5 pp |
-| Success Rate Defense | 48.7% | 41.5% | ↑ +7.2 pp |
-| Explosive Play Rate (Off) | 12.0% | 12.7% | ↓ -0.7 pp |
-| Third Down Conversion | 41.7% | 23.5% | ↑ +18.1 pp |
-| Points per Drive Differential | 0.625 | -0.083 | ↑ +0.708 |
-| Yards per Play Differential | 0.594 | 0.263 | ↑ +0.331 |
-| Turnover Margin | 1.000 | -2.000 | ↑ +3.000 |
-| Red Zone TD Rate (Off) | 12.0% | 15.4% | ↓ -3.4 pp |
-| Pressure Rate (Def) | 13.3% | 0.0% | ↑ +13.3 pp |
-| Tempo | 9.375 | 6.375 | ↑ +3.000 |
-| PowerScore | 0.272 | 0.072 | ↑ +0.200 |
+| Core EPA Offense | 0.173 | -0.006 | 0.178 |
+| Core EPA Defense | 0.026 | 0.019 | 0.007 |
+| Success Rate Offense | 0.507 | 0.479 | 0.028 |
+| Success Rate Defense | 0.485 | 0.471 | 0.014 |
+| Explosive Play Rate (Off) | 0.112 | 0.101 | 0.011 |
+| Third Down Conversion | 0.430 | 0.307 | 0.123 |
+| Points per Drive Differential | 0.608 | -0.030 | 0.639 |
+| Yards per Play Differential | 0.539 | -0.106 | 0.646 |
+| Turnover Margin | 0.500 | 0.000 | 0.500 |
+| Red Zone TD Rate (Off) | 0.145 | 0.136 | 0.008 |
+| Pressure Rate (Def) | 0.091 | 0.076 | 0.015 |
+| Tempo | 9.375 | 6.375 | 3.000 |
+| PowerScore | 2.123 | 1.321 | 0.802 |
+| PowerScore | 2.123 | 1.321 | 0.802 |
+| Tempo | 9.375 | 6.375 | 3.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ WAS edge: +0.200 (WAS +0.272 vs SEA +0.072)
 **7 metrics version:**
 WAS edge: +0.458 (WAS +0.305 vs SEA -0.153)
 **Verdict:** WAS holds the edge in the extended breakdown (lead 0.458), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (WAS - SEA) | +3.7 pts (favours WAS) |
-| Model Win% WAS | 64.9% |
-| Model Win% SEA | 35.1% |
-| SOS Differential (WAS-SEA) | +0.047 |
+| Model Spread (WAS - SEA) | +14.8 pts (favours WAS) |
+| Model Win% WAS | 92.2% |
+| Model Win% SEA | 7.8% |
+| SOS Differential (WAS-SEA) | +0.286 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | WAS | SEA |
 | --- | ---: | ---: |
-| Season-to-date | 0.189 | 0.142 |
-| Last 5 games | 0.136 | 0.195 |
-| Last 3 games | 0.141 | 0.189 |
+| Season-to-date | 1.841 | 1.555 |
+| Last 5 games | 1.603 | 1.682 |
+| Last 3 games | 1.644 | 1.820 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,7 +249,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | ATL (A) | 42-14 | WAS | 0.746 | 0.374 | 60.7% | 3.111 |
-| 7 | DAL (H) | 34-7 | WAS | 0.694 | 0.218 | 57.6% | 2.700 |
+| 7 | DAL (A) | 34-7 | WAS | 0.694 | 0.218 | 57.6% | 2.700 |
 | 1 | TB (A) | 20-37 | TB | 0.558 | 0.052 | 50.0% | -1.889 |
 
 **SEA analogs vs WAS profile**

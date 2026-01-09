@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.143 | 0.000 | 0.143 |
 | Pressure Rate (Def) | 0.021 | 0.000 | 0.021 |
 | Tempo | 7.000 | 9.900 | -2.900 |
-| PowerScore | 0.147 | 0.136 | 0.011 |
-| PowerScore | 0.147 | 0.136 | 0.011 |
+| PowerScore | 1.527 | 2.100 | -0.572 |
+| PowerScore | 1.527 | 2.100 | -0.572 |
 | Tempo | 7.000 | 9.900 | -2.900 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ ARI edge: +0.206 (ARI +0.205 vs CAR -0.001)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ARI - CAR) | +0.2 pts (favours ARI) |
-| Model Win% ARI | 50.9% |
-| Model Win% CAR | 49.1% |
-| SOS Differential (ARI-CAR) | -0.074 |
+| Model Spread (ARI - CAR) | -10.6 pts (favours CAR) |
+| Model Win% ARI | 14.6% |
+| Model Win% CAR | 85.4% |
+| SOS Differential (ARI-CAR) | +0.043 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ARI | CAR |
 | --- | ---: | ---: |
-| Season-to-date | 0.086 | 0.160 |
-| Last 5 games | 0.086 | 0.160 |
-| Last 3 games | 0.086 | 0.160 |
+| Season-to-date | 1.821 | 1.778 |
+| Last 5 games | 1.821 | 1.778 |
+| Last 3 games | 1.821 | 1.778 |
 
 ## Matchup Analogs
 

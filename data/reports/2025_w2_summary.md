@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 2
 
-_Generated at 2025-11-11T13:52:47.729161+00:00 (UTC)_
+_Generated at 2026-01-08T19:11:21.301137+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\2_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2789, "cols": 18, "timestamp": "2025-11-11T13:52:47.368676+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2789, "cols": 24, "rows_removed": 0, "timestamp": "2025-11-11T13:52:47.368676+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2789, "cols": 24, "timestamp": "2025-11-11T13:52:47.368676+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2789, "cols": 18, "timestamp": "2026-01-08T19:11:20.859489+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2789, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:11:20.859489+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2789, "cols": 24, "timestamp": "2026-01-08T19:11:20.859489+00:00"}
 
 ## L3 Sanity
 
@@ -33,7 +33,7 @@ Last 3 entries from `data\l2_audit\2025\2_audit.jsonl`:
 - Artifact: `data\l4_core12\2025\2.parquet`
 - Manifest: `data\l4_core12\2025\2_manifest.json`
 - Rows: 32
-- Columns: 15
+- Columns: 27
 
 | TEAM | core_epa_off | core_sr_off | core_sr_def |
 | --- | --- | --- | --- |
@@ -52,16 +52,16 @@ Last 3 entries from `data\l2_audit\2025\2_audit.jsonl`:
 
 | team | power_score |
 | --- | --- |
-| DET | 0.2536407610368249 |
-| DEN | 0.25220794305976507 |
-| NYG | 0.23680385297588374 |
-| IND | 0.23583787550546306 |
-| LA | 0.22732183973862757 |
-| DAL | 0.22630295857255983 |
-| NE | 0.2095992214057603 |
-| MIA | 0.19792176231527894 |
-| CIN | 0.1878538876766444 |
-| JAX | 0.18601446769125737 |
+| CAR | 2.0997021463302517 |
+| TB | 2.0709850736839885 |
+| MIA | 1.9107422751357919 |
+| DEN | 1.8922079430597654 |
+| IND | 1.8176560573236449 |
+| BUF | 1.7783384949637395 |
+| NE | 1.7693460568487984 |
+| DAL | 1.7657901380597394 |
+| KC | 1.7527049332998594 |
+| TEN | 1.747668250874036 |
 
 
 ## Visualizations

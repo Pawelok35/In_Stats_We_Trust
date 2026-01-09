@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.142 | 0.137 | 0.005 |
 | Pressure Rate (Def) | 0.041 | 0.074 | -0.033 |
 | Tempo | 7.300 | 8.200 | -0.900 |
-| PowerScore | 0.242 | 0.259 | -0.017 |
-| PowerScore | 0.242 | 0.259 | -0.017 |
+| PowerScore | 1.683 | 1.869 | -0.187 |
+| PowerScore | 1.683 | 1.869 | -0.187 |
 | Tempo | 7.300 | 8.200 | -0.900 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ KC edge: +0.236 (JAX +0.075 vs KC +0.310)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - KC) | -0.3 pts (favours KC) |
-| Model Win% JAX | 48.7% |
-| Model Win% KC | 51.3% |
-| SOS Differential (JAX-KC) | -0.069 |
+| Model Spread (JAX - KC) | -3.5 pts (favours KC) |
+| Model Win% JAX | 36.0% |
+| Model Win% KC | 64.0% |
+| SOS Differential (JAX-KC) | -0.334 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | JAX | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.096 | 0.165 |
-| Last 5 games | 0.096 | 0.165 |
-| Last 3 games | 0.095 | 0.131 |
+| Season-to-date | 1.500 | 1.834 |
+| Last 5 games | 1.500 | 1.834 |
+| Last 3 games | 1.465 | 1.690 |
 
 ## Trend Summary (last 3 weeks)
 

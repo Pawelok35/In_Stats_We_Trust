@@ -251,7 +251,7 @@ data/results/manual_results.jsonl (tylko rozegrane mecze, reszta PENDING).
 
 2) Jedna komenda na tydzień 17 (ingestuje week 16 domyślnie, bo to najnowszy zakończony tydzień), z konwergencją:
 
-python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 18 --reference-week 17 --run-convergence
+python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 19 --reference-week 18 --run-convergence
 
 ## SPRAWDZIC CZY PARQUET SIE UTWORZYL ZA POPRZEDNIA KOLEJKE !!!
 
@@ -259,7 +259,7 @@ Jeśli chcesz wymusić inny tydzień do ingerencji (np. 17, gdy już rozegrany),
 
 3) Buckety tylko dla week 17 (dopisz do istniejącego pliku):
 
-python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 18 --end-week 18 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 19 --end-week 19 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
 
 4) Podgląd w terminalu:
 

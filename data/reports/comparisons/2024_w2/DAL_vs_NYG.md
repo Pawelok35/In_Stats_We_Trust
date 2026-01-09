@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.125 | 0.000 | 0.125 |
 | Pressure Rate (Def) | 0.118 | 0.038 | 0.079 |
 | Tempo | 8.700 | 9.714 | -1.014 |
-| PowerScore | 0.167 | 0.195 | -0.028 |
-| PowerScore | 0.167 | 0.195 | -0.028 |
+| PowerScore | 1.896 | 2.115 | -0.219 |
+| PowerScore | 1.896 | 2.115 | -0.219 |
 | Tempo | 8.700 | 9.714 | -1.014 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ NYG edge: +0.040 (DAL +0.028 vs NYG +0.068)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DAL - NYG) | -0.5 pts (favours NYG) |
-| Model Win% DAL | 47.8% |
-| Model Win% NYG | 52.2% |
+| Model Spread (DAL - NYG) | -4.1 pts (favours NYG) |
+| Model Win% DAL | 33.7% |
+| Model Win% NYG | 66.3% |
 | SOS Differential (DAL-NYG) | +0.045 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

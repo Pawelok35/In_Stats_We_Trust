@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.125 | 0.070 | 0.055 |
 | Pressure Rate (Def) | 0.089 | 0.050 | 0.038 |
 | Tempo | 6.067 | 8.000 | -1.933 |
-| PowerScore | 0.020 | 0.180 | -0.160 |
-| PowerScore | 0.020 | 0.180 | -0.160 |
+| PowerScore | 1.220 | 1.770 | -0.551 |
+| PowerScore | 1.220 | 1.770 | -0.551 |
 | Tempo | 6.067 | 8.000 | -1.933 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ KC edge: +0.107 (NYG +0.019 vs KC +0.126)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - KC) | -3.0 pts (favours KC) |
-| Model Win% NYG | 37.9% |
-| Model Win% KC | 62.1% |
+| Model Spread (NYG - KC) | -10.2 pts (favours KC) |
+| Model Win% NYG | 15.5% |
+| Model Win% KC | 84.5% |
 | SOS Differential (NYG-KC) | -0.097 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

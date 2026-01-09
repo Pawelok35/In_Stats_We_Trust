@@ -4,19 +4,21 @@
 
 | Metric | SEA | TB | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.171 | 0.202 | ↓ -0.373 |
-| Core EPA Defense | -0.008 | 0.139 | ↓ -0.147 |
-| Success Rate Offense | 51.2% | 55.2% | ↓ -4.0 pp |
-| Success Rate Defense | 49.4% | 50.0% | ↓ -0.6 pp |
-| Explosive Play Rate (Off) | 10.0% | 14.9% | ↓ -4.9 pp |
-| Third Down Conversion | 25.0% | 54.5% | ↓ -29.5 pp |
-| Points per Drive Differential | -0.103 | 0.000 | ↓ -0.103 |
-| Yards per Play Differential | -0.665 | -0.030 | ↓ -0.635 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 14.3% | 14.3% | ± 0.0 pp |
-| Pressure Rate (Def) | 7.7% | 6.3% | ↑ +1.3 pp |
-| Tempo | 6.667 | 6.700 | ↓ -0.033 |
-| PowerScore | 0.087 | 0.266 | ↓ -0.180 |
+| Core EPA Offense | 0.006 | 0.043 | -0.037 |
+| Core EPA Defense | -0.036 | 0.006 | -0.043 |
+| Success Rate Offense | 0.482 | 0.497 | -0.014 |
+| Success Rate Defense | 0.438 | 0.501 | -0.063 |
+| Explosive Play Rate (Off) | 0.113 | 0.116 | -0.003 |
+| Third Down Conversion | 0.351 | 0.351 | 0.001 |
+| Points per Drive Differential | 0.331 | 0.518 | -0.187 |
+| Yards per Play Differential | 0.704 | -0.047 | 0.752 |
+| Turnover Margin | -0.250 | 0.000 | -0.250 |
+| Red Zone TD Rate (Off) | 0.150 | 0.167 | -0.017 |
+| Pressure Rate (Def) | 0.107 | 0.058 | 0.049 |
+| Tempo | 6.667 | 6.700 | -0.033 |
+| PowerScore | 1.400 | 1.577 | -0.177 |
+| PowerScore | 1.400 | 1.577 | -0.177 |
+| Tempo | 6.667 | 6.700 | -0.033 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ TB edge: +0.180 (SEA +0.087 vs TB +0.266)
 **7 metrics version:**
 TB edge: +0.132 (SEA +0.065 vs TB +0.197)
 **Verdict:** TB holds the edge in the extended breakdown (lead 0.132), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
 | Model Spread (SEA - TB) | -3.3 pts (favours TB) |
-| Model Win% SEA | 36.5% |
-| Model Win% TB | 63.5% |
-| SOS Differential (SEA-TB) | -0.039 |
+| Model Win% SEA | 36.7% |
+| Model Win% TB | 63.3% |
+| SOS Differential (SEA-TB) | -0.379 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | TB |
 | --- | ---: | ---: |
-| Season-to-date | 0.115 | 0.153 |
-| Last 5 games | 0.115 | 0.153 |
-| Last 3 games | 0.136 | 0.133 |
+| Season-to-date | 1.388 | 1.767 |
+| Last 5 games | 1.388 | 1.767 |
+| Last 3 games | 1.425 | 1.742 |
 
 ## Trend Summary (last 3 weeks)
 

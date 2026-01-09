@@ -20,9 +20,9 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -1.4 pts
 • PowerScoreDiff (winner) = -0.104
-• Confidence = 50.0%
+• Confidence = 49.0%
 
-🏷 Model Tag: NEUTRAL — based on 50.0% confidence, -1.4 pts model edge vs line, and PowerScore Δ -0.104.
+🏷 Model Tag: NEUTRAL — based on 49.0% confidence, -1.4 pts model edge vs line, and PowerScore Δ -0.104.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -134,9 +134,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = -0.3 pts
 • PowerScoreDiff (winner) = -0.051
-• Confidence = 64.0%
+• Confidence = 65.0%
 
-🏷 Model Tag: NEUTRAL — based on 64.0% confidence, -0.3 pts model edge vs line, and PowerScore Δ -0.051.
+🏷 Model Tag: NEUTRAL — based on 65.0% confidence, -0.3 pts model edge vs line, and PowerScore Δ -0.051.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -400,9 +400,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +14.1 pts
 • PowerScoreDiff (winner) = -0.027
-• Confidence = 95.0%
+• Confidence = 96.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +14.1 pts model edge vs line, and PowerScore Δ -0.027.
+🏷 Model Tag: NEUTRAL — based on 96.0% confidence, +14.1 pts model edge vs line, and PowerScore Δ -0.027.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
@@ -476,9 +476,9 @@ SUMMARY:
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +5.4 pts
 • PowerScoreDiff (winner) = +0.067
-• Confidence = 90.0%
+• Confidence = 91.0%
 
-🏷 Model Tag: GOM — based on 90.0% confidence, +5.4 pts model edge vs line, and PowerScore Δ +0.067.
+🏷 Model Tag: GOM — based on 91.0% confidence, +5.4 pts model edge vs line, and PowerScore Δ +0.067.
 📈 Strong monthly signal — wysokie zaufanie modelowe.
 
 SUMMARY:

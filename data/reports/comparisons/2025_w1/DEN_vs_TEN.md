@@ -4,19 +4,20 @@
 
 | Metric | DEN | TEN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.108 | -0.219 | ↑ +0.110 |
-| Core EPA Defense | -0.219 | -0.108 | ↓ -0.110 |
-| Success Rate Offense | 41.9% | 32.5% | ↑ +9.5 pp |
-| Success Rate Defense | 32.5% | 41.9% | ↓ -9.5 pp |
-| Explosive Play Rate (Off) | 7.5% | 2.6% | ↑ +4.9 pp |
-| Third Down Conversion | 35.3% | 14.3% | ↑ +21.0 pp |
-| Points per Drive Differential | 0.571 | -0.571 | ↑ +1.143 |
-| Yards per Play Differential | 1.681 | -1.681 | ↑ +3.363 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 9.1% | 0.0% | ↑ +9.1 pp |
-| Pressure Rate (Def) | 17.6% | 2.3% | ↑ +15.3 pp |
-| Tempo | 6.643 | 5.500 | ↑ +1.143 |
-| PowerScore | 0.038 | -0.012 | ↑ +0.050 |
+| Core EPA Offense | -0.108 | -0.219 | 0.110 |
+| Core EPA Defense | -0.219 | -0.108 | -0.110 |
+| Success Rate Offense | 0.419 | 0.325 | 0.095 |
+| Success Rate Defense | 0.325 | 0.419 | -0.095 |
+| Explosive Play Rate (Off) | 0.075 | 0.026 | 0.049 |
+| Third Down Conversion | 0.353 | 0.143 | 0.210 |
+| Points per Drive Differential | 0.571 | -0.571 | 1.143 |
+| Yards per Play Differential | 1.681 | -1.681 | 3.363 |
+| Red Zone TD Rate (Off) | 0.091 | 0.000 | 0.091 |
+| Pressure Rate (Def) | 0.176 | 0.023 | 0.153 |
+| Tempo | 6.643 | 5.500 | 1.143 |
+| PowerScore | 1.352 | 1.083 | 0.269 |
+| PowerScore | 1.352 | 1.083 | 0.269 |
+| Tempo | 6.643 | 5.500 | 1.143 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ DEN edge: +0.050 (DEN +0.038 vs TEN -0.012)
 **7 metrics version:**
 DEN edge: +0.049 (DEN +0.026 vs TEN -0.023)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.049), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - TEN) | +0.9 pts (favours DEN) |
-| Model Win% DEN | 53.9% |
-| Model Win% TEN | 46.1% |
+| Model Spread (DEN - TEN) | +5.0 pts (favours DEN) |
+| Model Win% DEN | 69.6% |
+| Model Win% TEN | 30.4% |
 | SOS Differential (DEN-TEN) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -4,50 +4,50 @@
 
 | Metric | TEN | JAX | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.129 | 0.024 | -0.153 |
-| Core EPA Defense | 0.078 | -0.020 | 0.098 |
-| Success Rate Offense | 0.414 | 0.479 | -0.064 |
-| Success Rate Defense | 0.473 | 0.474 | -0.000 |
-| Explosive Play Rate (Off) | 0.082 | 0.094 | -0.013 |
-| Third Down Conversion | 0.268 | 0.346 | -0.079 |
-| Points per Drive Differential | -1.333 | 0.141 | -1.475 |
-| Yards per Play Differential | -1.329 | 0.080 | -1.409 |
-| Turnover Margin | -0.636 | 0.400 | -1.036 |
-| Red Zone TD Rate (Off) | 0.107 | 0.123 | -0.016 |
-| Pressure Rate (Def) | 0.075 | 0.049 | 0.026 |
-| Tempo | 10.000 | 5.571 | 4.429 |
-| PowerScore | 0.124 | 0.108 | 0.015 |
-| PowerScore | 0.124 | 0.108 | 0.015 |
-| Tempo | 10.000 | 5.571 | 4.429 |
+| Core EPA Offense | -0.129 | 0.015 | -0.144 |
+| Core EPA Defense | 0.078 | -0.021 | 0.099 |
+| Success Rate Offense | 0.414 | 0.477 | -0.062 |
+| Success Rate Defense | 0.473 | 0.476 | -0.003 |
+| Explosive Play Rate (Off) | 0.082 | 0.096 | -0.014 |
+| Third Down Conversion | 0.268 | 0.345 | -0.078 |
+| Points per Drive Differential | -1.333 | 0.046 | -1.379 |
+| Yards per Play Differential | -1.329 | -0.098 | -1.231 |
+| Turnover Margin | -0.636 | 0.364 | -1.000 |
+| Red Zone TD Rate (Off) | 0.107 | 0.121 | -0.013 |
+| Pressure Rate (Def) | 0.075 | 0.048 | 0.027 |
+| Tempo | 6.455 | 7.083 | -0.629 |
+| PowerScore | 1.208 | 1.414 | -0.206 |
+| PowerScore | 1.208 | 1.414 | -0.206 |
+| Tempo | 6.455 | 7.083 | -0.629 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | TEN | JAX | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.036 | -0.056 | +0.020 |
-| EPA Defense | 20% | 0.100 | -0.097 | +0.198 |
-| Success Rate Offense | 25% | 41.1% | 48.7% | -7.6 pp |
-| Tempo | 20% | 0.067 | 0.128 | -0.062 |
+| EPA Offense | 35% | -0.408 | -0.035 | -0.372 |
+| EPA Defense | 20% | -0.035 | -0.408 | +0.372 |
+| Success Rate Offense | 25% | 26.8% | 36.5% | -9.7 pp |
+| Tempo | 20% | 0.070 | 0.059 | +0.012 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | TEN | JAX | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.036 | -0.056 | +0.020 |
-| EPA Defense | 20% | 0.100 | -0.097 | +0.198 |
-| Success Rate Offense | 15% | 41.1% | 48.7% | -7.6 pp |
-| Turnover Margin | 10% | 0.000 | -4.000 | +4.000 |
-| Tempo | 10% | 0.067 | 0.128 | -0.062 |
-| Red Zone TD Rate (Off) | 10% | 15.4% | 21.4% | -6.0 pp |
-| Pressure Rate (Def) | 10% | 3.6% | 10.7% | -7.1 pp |
+| EPA Offense | 25% | -0.408 | -0.035 | -0.372 |
+| EPA Defense | 20% | -0.035 | -0.408 | +0.372 |
+| Success Rate Offense | 15% | 26.8% | 36.5% | -9.7 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.070 | 0.059 | +0.012 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 16.7% | -16.7 pp |
+| Pressure Rate (Def) | 10% | 9.1% | 7.3% | +1.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TEN edge: +0.015 (TEN +0.124 vs JAX +0.108)
+JAX edge: +0.078 (TEN -0.069 vs JAX +0.009)
 **7 metrics version:**
-TEN edge: +0.414 (TEN +0.098 vs JAX -0.315)
-**Verdict:** TEN holds the edge in the extended breakdown (lead 0.414), driven by Turnover Margin (10% weight).
+JAX edge: +0.447 (TEN -0.253 vs JAX +0.194)
+**Verdict:** JAX holds the edge in the extended breakdown (lead 0.447), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ TEN edge: +0.414 (TEN +0.098 vs JAX -0.315)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (TEN - JAX) | +0.3 pts (favours TEN) |
-| Model Win% TEN | 51.2% |
-| Model Win% JAX | 48.8% |
-| SOS Differential (TEN-JAX) | +0.011 |
+| Model Spread (TEN - JAX) | -3.8 pts (favours JAX) |
+| Model Win% TEN | 34.6% |
+| Model Win% JAX | 65.4% |
+| SOS Differential (TEN-JAX) | +0.027 |
 *Neutral-field assumption. Based on schedule through Week 12.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| TEN | 51.1% | n/a | n/a | 41.1% | 53.2% | n/a |
-| JAX | 43.6% | n/a | n/a | 42.9% | 53.7% | n/a |
+| TEN | 57.7% | 43.3% | 14.5% | 22.0% | 33.3% | Pass heavy |
+| JAX | 38.8% | 43.3% | -4.4% | 45.5% | 30.8% | Run heavy |
 
 ## Situational Edges
 
@@ -76,29 +76,29 @@ TEN edge: +0.414 (TEN +0.098 vs JAX -0.315)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -11.6 pp | -0.4 pp | -15.1 pp |
-| JAX | -0.5 pp | +0.7 pp | +10.0 pp |
+| TEN | -13.8 pp | -11.3 pp | -12.6 pp |
+| JAX | -0.6 pp | +2.7 pp | +2.3 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | +0.5 pp | +3.0 pp | +8.1 pp |
-| JAX | -5.1 pp | -5.5 pp | +4.2 pp |
+| TEN | -0.1 pp | +0.8 pp | +8.1 pp |
+| JAX | -5.4 pp | -3.5 pp | +4.2 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -6.2 pp | -4.4 pp | -1.0 pp |
-| JAX | +1.4 pp | +1.7 pp | +4.3 pp |
+| TEN | -6.3 pp | -4.2 pp | -1.2 pp |
+| JAX | +0.4 pp | +1.0 pp | -0.5 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | +0.0 pp | +1.8 pp | +2.4 pp |
-| JAX | -2.3 pp | -2.7 pp | +1.9 pp |
+| TEN | -0.3 pp | +1.4 pp | +0.9 pp |
+| JAX | -2.2 pp | -1.5 pp | +1.5 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -4.8 pp | -9.5 pp | -12.8 pp |
-| JAX | +2.3 pp | +2.2 pp | +1.8 pp |
+| TEN | -5.1 pp | -10.9 pp | -14.4 pp |
+| JAX | +2.1 pp | +4.6 pp | -2.1 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -7.2 pp | -1.2 pp | -3.4 pp |
-| JAX | -0.9 pp | -0.8 pp | +6.9 pp |
+| TEN | -7.5 pp | -2.9 pp | +1.6 pp |
+| JAX | -1.3 pp | -0.1 pp | +5.5 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | +0.0 pp | +1.8 pp | +2.4 pp |
-| JAX | -2.3 pp | -2.7 pp | +1.9 pp |
+| TEN | -0.3 pp | +1.4 pp | +0.9 pp |
+| JAX | -2.2 pp | -1.5 pp | +1.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| TEN | -6.2 pp | -4.4 pp | -1.0 pp |
-| JAX | +1.4 pp | +1.7 pp | +4.3 pp |
+| TEN | -6.3 pp | -4.2 pp | -1.2 pp |
+| JAX | +0.4 pp | +1.0 pp | -0.5 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -141,42 +141,42 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 48.7 | 50.5 | 51.7 |
-| JAX | 46.0 | 46.4 | 48.4 |
+| JAX | 47.5 | 50.8 | 50.2 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 46.4 | 44.9 | 45.3 |
-| JAX | 46.4 | 44.8 | 52.4 |
+| JAX | 46.9 | 48.0 | 53.8 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 2.4 | 5.6 | 6.5 |
-| JAX | -0.4 | 1.6 | -4.0 |
+| JAX | 0.6 | 2.7 | -3.6 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 1.24 | 1.31 | 1.33 |
-| JAX | 2.07 | 2.08 | 2.92 |
+| JAX | 2.07 | 2.30 | 2.51 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 2.57 | 2.80 | 2.68 |
-| JAX | 1.93 | 1.89 | 1.63 |
+| JAX | 2.03 | 2.16 | 1.66 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | -1.33 | -1.49 | -1.36 |
-| JAX | 0.14 | 0.19 | 1.29 |
+| JAX | 0.05 | 0.14 | 0.84 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -187,35 +187,35 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 7.44 | 7.66 | 7.86 |
-| JAX | 7.77 | 8.13 | 8.15 |
+| JAX | 7.74 | 8.04 | 7.01 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 48.9% | 49.3% | 46.9% |
-| JAX | 43.5% | 44.0% | 35.6% |
+| JAX | 42.8% | 40.5% | 35.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 51.1% | 50.7% | 53.1% |
-| JAX | 56.5% | 56.0% | 64.4% |
+| JAX | 57.2% | 59.5% | 64.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 3.64 | 3.78 | 3.69 |
-| JAX | 3.38 | 3.57 | 2.90 |
+| JAX | 3.31 | 3.25 | 2.49 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
 | TEN | 3.80 | 3.88 | 4.17 |
-| JAX | 4.39 | 4.56 | 5.25 |
+| JAX | 4.43 | 4.78 | 4.52 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | TEN | JAX |
 | --- | ---: | ---: |
-| Season-to-date | 0.143 | 0.133 |
-| Last 5 games | 0.169 | 0.137 |
-| Last 3 games | 0.141 | 0.118 |
+| Season-to-date | 1.586 | 1.559 |
+| Last 5 games | 1.609 | 1.596 |
+| Last 3 games | 1.612 | 1.509 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 2 | LA (H) | 19-33 | LA | 0.795 | -0.024 | 46.6% | -1.273 |
-| 7 | NE (H) | 13-25 | NE | 0.787 | -0.131 | 47.8% | -1.200 |
-| 12 | SEA (H) | 18-32 | SEA | 0.759 | -0.036 | 41.1% | -1.600 |
+| 2 | LA (H) | 19-33 | LA | 0.775 | -0.024 | 46.6% | -1.273 |
+| 7 | NE (H) | 13-25 | NE | 0.732 | -0.131 | 47.8% | -1.200 |
+| 12 | SEA (H) | 18-32 | SEA | 0.710 | -0.036 | 41.1% | -1.600 |
 
 **JAX analogs vs TEN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 9 | LV (A) | 30-26 | JAX | 0.958 | 0.156 | 54.6% | 0.433 |
-| 1 | CAR (H) | 26-10 | JAX | 0.830 | 0.116 | 47.6% | 1.600 |
-| 2 | CIN (A) | 27-34 | CIN | 0.671 | 0.075 | 50.0% | -0.568 |
+| 9 | LV (A) | 30-26 | JAX | 0.915 | 0.156 | 54.6% | 0.433 |
+| 1 | CAR (H) | 26-10 | JAX | 0.842 | 0.116 | 47.6% | 1.600 |
+| 12 | ARI (A) | 27-19 | JAX | 0.677 | -0.056 | 48.7% | 0.544 |
 
 ## Core EPA Offense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 0.024 | 0.008 | 0.081 |
+| JAX | 0.015 | 0.009 | 0.001 |
 | TEN | -0.129 | -0.092 | -0.080 |
 
 ## Core EPA Defense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | -0.020 | 0.006 | -0.084 |
+| JAX | -0.021 | -0.007 | -0.148 |
 | TEN | 0.078 | 0.114 | 0.037 |
 
 ## Success Rate Offense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 47.6% | 48.4% | 53.5% |
+| JAX | 47.5% | 50.3% | 50.4% |
 | TEN | 41.7% | 41.8% | 39.5% |
 
 ## Success Rate Defense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 47.7% | 48.0% | 48.1% |
+| JAX | 47.9% | 49.3% | 46.5% |
 | TEN | 47.0% | 48.7% | 49.8% |
 
 ## Explosive Play Rate (Off) Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 9.4% | 10.0% | 11.7% |
+| JAX | 9.5% | 11.2% | 11.2% |
 | TEN | 8.1% | 8.8% | 8.2% |
 
 ## Third Down Conversion Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 34.5% | 34.4% | 44.0% |
+| JAX | 34.4% | 36.6% | 35.5% |
 | TEN | 27.6% | 29.3% | 26.8% |
 
 ## Points per Drive Differential Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 0.099 | 0.133 | 1.228 |
+| JAX | 0.009 | 0.099 | 0.760 |
 | TEN | -1.279 | -1.478 | -1.313 |
 
 ## Yards per Play Differential Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 0.080 | 0.421 | 1.077 |
+| JAX | -0.098 | 0.427 | 0.589 |
 | TEN | -1.329 | -1.354 | -1.154 |
 
 ## Turnover Margin Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 0.400 | -0.800 | -1.333 |
+| JAX | 0.364 | -0.800 | -1.333 |
 | TEN | -0.636 | -0.600 | 0.000 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 12.3% | 10.1% | 16.9% |
+| JAX | 12.1% | 12.1% | 16.9% |
 | TEN | 10.7% | 12.8% | 16.2% |
 
 ## Pressure Rate (Def) Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 4.9% | 6.5% | 9.8% |
+| JAX | 4.8% | 6.7% | 9.5% |
 | TEN | 7.5% | 10.3% | 9.7% |
 
 ## Tempo Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 7.774 | 8.129 | 8.150 |
+| JAX | 7.737 | 8.035 | 7.012 |
 | TEN | 7.442 | 7.656 | 7.861 |
 
 ## Pass Rate Offense Form (up to Week 12)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| JAX | 43.8% | 44.3% | 35.5% |
+| JAX | 43.1% | 40.8% | 35.4% |
 | TEN | 49.0% | 49.5% | 47.6% |

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.222 | 0.000 | 0.222 |
 | Pressure Rate (Def) | 0.037 | 0.083 | -0.046 |
 | Tempo | 7.800 | 7.333 | 0.467 |
-| PowerScore | 0.226 | 0.237 | -0.011 |
-| PowerScore | 0.226 | 0.237 | -0.011 |
+| PowerScore | 1.766 | 1.681 | 0.085 |
+| PowerScore | 1.766 | 1.681 | 0.085 |
 | Tempo | 7.800 | 7.333 | 0.467 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ DAL edge: +0.011 (DAL +0.181 vs NYG +0.170)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DAL - NYG) | -0.2 pts (favours NYG) |
-| Model Win% DAL | 49.2% |
-| Model Win% NYG | 50.8% |
-| SOS Differential (DAL-NYG) | +0.078 |
+| Model Spread (DAL - NYG) | +1.6 pts (favours DAL) |
+| Model Win% DAL | 56.5% |
+| Model Win% NYG | 43.5% |
+| SOS Differential (DAL-NYG) | +0.129 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DAL | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.234 | 0.156 |
-| Last 5 games | 0.234 | 0.156 |
-| Last 3 games | 0.234 | 0.156 |
+| Season-to-date | 1.952 | 1.823 |
+| Last 5 games | 1.952 | 1.823 |
+| Last 3 games | 1.952 | 1.823 |
 
 ## Matchup Analogs
 

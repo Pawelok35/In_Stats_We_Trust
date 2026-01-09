@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.037 | 0.300 | -0.263 |
 | Pressure Rate (Def) | 0.056 | 0.030 | 0.025 |
 | Tempo | 7.636 | 10.000 | -2.364 |
-| PowerScore | 0.108 | 0.212 | -0.104 |
-| PowerScore | 0.108 | 0.212 | -0.104 |
+| PowerScore | 1.606 | 2.181 | -0.574 |
+| PowerScore | 1.606 | 2.181 | -0.574 |
 | Tempo | 7.636 | 10.000 | -2.364 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ GB edge: +0.030 (GB +0.269 vs WAS +0.240)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (GB - WAS) | -1.9 pts (favours WAS) |
-| Model Win% GB | 42.0% |
-| Model Win% WAS | 58.0% |
+| Model Spread (GB - WAS) | -10.6 pts (favours WAS) |
+| Model Win% GB | 14.5% |
+| Model Win% WAS | 85.5% |
 | SOS Differential (GB-WAS) | -0.151 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 

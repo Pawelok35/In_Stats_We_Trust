@@ -4,19 +4,20 @@
 
 | Metric | NE | LV | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.049 | 0.081 | ↓ -0.130 |
-| Core EPA Defense | 0.081 | -0.049 | ↑ +0.130 |
-| Success Rate Offense | 44.0% | 44.4% | ↓ -0.5 pp |
-| Success Rate Defense | 44.4% | 44.0% | ↑ +0.5 pp |
-| Explosive Play Rate (Off) | 7.7% | 13.6% | ↓ -5.9 pp |
-| Third Down Conversion | 25.0% | 35.7% | ↓ -10.7 pp |
-| Points per Drive Differential | -0.485 | 0.485 | ↓ -0.970 |
-| Yards per Play Differential | -1.110 | 1.110 | ↓ -2.220 |
-| Turnover Margin | 0.000 | 0.000 | ± 0.000 |
-| Red Zone TD Rate (Off) | 11.1% | 20.0% | ↓ -8.9 pp |
-| Pressure Rate (Def) | 10.3% | 8.0% | ↑ +2.3 pp |
-| Tempo | 8.273 | 6.750 | ↑ +1.523 |
-| PowerScore | 0.124 | 0.157 | ↓ -0.033 |
+| Core EPA Offense | -0.049 | 0.081 | -0.130 |
+| Core EPA Defense | 0.081 | -0.049 | 0.130 |
+| Success Rate Offense | 0.440 | 0.444 | -0.005 |
+| Success Rate Defense | 0.444 | 0.440 | 0.005 |
+| Explosive Play Rate (Off) | 0.077 | 0.136 | -0.059 |
+| Third Down Conversion | 0.250 | 0.357 | -0.107 |
+| Points per Drive Differential | -0.485 | 0.485 | -0.970 |
+| Yards per Play Differential | -1.110 | 1.110 | -2.220 |
+| Red Zone TD Rate (Off) | 0.111 | 0.200 | -0.089 |
+| Pressure Rate (Def) | 0.103 | 0.080 | 0.023 |
+| Tempo | 8.273 | 6.750 | 1.523 |
+| PowerScore | 1.763 | 1.479 | 0.284 |
+| PowerScore | 1.763 | 1.479 | 0.284 |
+| Tempo | 8.273 | 6.750 | 1.523 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +47,18 @@ LV edge: +0.033 (NE +0.124 vs LV +0.157)
 **7 metrics version:**
 LV edge: +0.020 (NE +0.099 vs LV +0.119)
 **Verdict:** LV holds the edge in the extended breakdown (lead 0.020), driven by EPA Offense (25% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - LV) | -0.6 pts (favours LV) |
-| Model Win% NE | 47.5% |
-| Model Win% LV | 52.5% |
+| Model Spread (NE - LV) | +5.3 pts (favours NE) |
+| Model Win% NE | 70.6% |
+| Model Win% LV | 29.4% |
 | SOS Differential (NE-LV) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

@@ -4,19 +4,21 @@
 
 | Metric | IND | MIA | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.251 | -0.156 | ↑ +0.408 |
-| Core EPA Defense | -0.156 | 0.251 | ↓ -0.408 |
-| Success Rate Offense | 55.3% | 47.4% | ↑ +7.9 pp |
-| Success Rate Defense | 47.4% | 55.3% | ↓ -7.9 pp |
-| Explosive Play Rate (Off) | 16.5% | 7.0% | ↑ +9.5 pp |
-| Third Down Conversion | 46.7% | 50.0% | ↓ -3.3 pp |
-| Points per Drive Differential | 3.571 | -3.571 | ↑ +7.143 |
-| Yards per Play Differential | 1.181 | -1.181 | ↑ +2.362 |
-| Turnover Margin | 3.000 | -3.000 | ↑ +6.000 |
-| Red Zone TD Rate (Off) | 7.7% | 16.7% | ↓ -9.0 pp |
-| Pressure Rate (Def) | 8.6% | 3.3% | ↑ +5.2 pp |
-| Tempo | 12.143 | 8.143 | ↑ +4.000 |
-| PowerScore | 0.228 | 0.128 | ↑ +0.100 |
+| Core EPA Offense | 0.251 | -0.156 | 0.408 |
+| Core EPA Defense | -0.156 | 0.251 | -0.408 |
+| Success Rate Offense | 0.553 | 0.474 | 0.079 |
+| Success Rate Defense | 0.474 | 0.553 | -0.079 |
+| Explosive Play Rate (Off) | 0.165 | 0.070 | 0.095 |
+| Third Down Conversion | 0.467 | 0.500 | -0.033 |
+| Points per Drive Differential | 3.571 | -3.571 | 7.143 |
+| Yards per Play Differential | 1.181 | -1.181 | 2.362 |
+| Turnover Margin | 3.000 | -3.000 | 6.000 |
+| Red Zone TD Rate (Off) | 0.077 | 0.167 | -0.090 |
+| Pressure Rate (Def) | 0.086 | 0.033 | 0.052 |
+| Tempo | 12.143 | 8.143 | 4.000 |
+| PowerScore | 2.624 | 1.743 | 0.881 |
+| PowerScore | 2.624 | 1.743 | 0.881 |
+| Tempo | 12.143 | 8.143 | 4.000 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ IND edge: +0.100 (IND +0.228 vs MIA +0.128)
 **7 metrics version:**
 IND edge: +0.638 (IND +0.447 vs MIA -0.191)
 **Verdict:** IND holds the edge in the extended breakdown (lead 0.638), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (IND - MIA) | +1.8 pts (favours IND) |
-| Model Win% IND | 57.6% |
-| Model Win% MIA | 42.4% |
+| Model Spread (IND - MIA) | +16.3 pts (favours IND) |
+| Model Win% IND | 93.8% |
+| Model Win% MIA | 6.2% |
 | SOS Differential (IND-MIA) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

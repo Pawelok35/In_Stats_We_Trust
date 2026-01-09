@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.071 | 0.096 | -0.024 |
 | Pressure Rate (Def) | 0.041 | 0.056 | -0.015 |
 | Tempo | 7.750 | 7.600 | 0.150 |
-| PowerScore | 0.196 | 0.151 | 0.045 |
-| PowerScore | 0.196 | 0.151 | 0.045 |
+| PowerScore | 1.720 | 1.650 | 0.071 |
+| PowerScore | 1.720 | 1.650 | 0.071 |
 | Tempo | 7.750 | 7.600 | 0.150 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ CAR edge: +0.127 (CAR +0.237 vs ATL +0.110)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - ATL) | +0.8 pts (favours CAR) |
-| Model Win% CAR | 53.5% |
-| Model Win% ATL | 46.5% |
+| Model Spread (CAR - ATL) | +1.3 pts (favours CAR) |
+| Model Win% CAR | 55.4% |
+| Model Win% ATL | 44.6% |
 | SOS Differential (CAR-ATL) | -0.402 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

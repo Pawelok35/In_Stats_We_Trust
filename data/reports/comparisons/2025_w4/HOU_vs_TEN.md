@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.000 | 0.081 | -0.081 |
 | Pressure Rate (Def) | 0.076 | 0.017 | 0.059 |
 | Tempo | 9.111 | 6.400 | 2.711 |
-| PowerScore | 0.068 | -0.021 | 0.089 |
-| PowerScore | 0.068 | -0.021 | 0.089 |
+| PowerScore | 1.871 | 1.241 | 0.630 |
+| PowerScore | 1.871 | 1.241 | 0.630 |
 | Tempo | 9.111 | 6.400 | 2.711 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ HOU edge: +0.275 (HOU +0.157 vs TEN -0.118)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (HOU - TEN) | +1.6 pts (favours HOU) |
-| Model Win% HOU | 56.8% |
-| Model Win% TEN | 43.2% |
-| SOS Differential (HOU-TEN) | -0.094 |
+| Model Spread (HOU - TEN) | +11.7 pts (favours HOU) |
+| Model Win% HOU | 87.5% |
+| Model Win% TEN | 12.5% |
+| SOS Differential (HOU-TEN) | +0.179 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | HOU | TEN |
 | --- | ---: | ---: |
-| Season-to-date | 0.081 | 0.175 |
-| Last 5 games | 0.081 | 0.175 |
-| Last 3 games | 0.081 | 0.175 |
+| Season-to-date | 1.728 | 1.549 |
+| Last 5 games | 1.728 | 1.549 |
+| Last 3 games | 1.728 | 1.549 |
 
 ## Trend Summary (last 3 weeks)
 

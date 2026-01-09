@@ -15,39 +15,39 @@
 | Turnover Margin | -0.250 | 0.250 | -0.500 |
 | Red Zone TD Rate (Off) | 0.168 | 0.154 | 0.014 |
 | Pressure Rate (Def) | 0.085 | 0.052 | 0.033 |
-| Tempo | 6.500 | 8.200 | -1.700 |
-| PowerScore | 0.281 | 0.148 | 0.133 |
-| PowerScore | 0.281 | 0.148 | 0.133 |
-| Tempo | 6.500 | 8.200 | -1.700 |
+| Tempo | 6.417 | 7.750 | -1.333 |
+| PowerScore | 1.421 | 1.607 | -0.187 |
+| PowerScore | 1.421 | 1.607 | -0.187 |
+| Tempo | 6.417 | 7.750 | -1.333 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | SEA | ARI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.333 | 0.053 | +0.280 |
-| EPA Defense | 20% | -0.098 | -0.122 | +0.025 |
-| Success Rate Offense | 25% | 60.0% | 50.0% | +10.0 pp |
-| Tempo | 20% | 0.169 | 0.146 | +0.023 |
+| EPA Offense | 35% | 0.113 | -0.193 | +0.306 |
+| EPA Defense | 20% | -0.193 | 0.113 | -0.306 |
+| Success Rate Offense | 25% | 54.5% | 40.9% | +13.7 pp |
+| Tempo | 20% | 0.117 | 0.108 | +0.009 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | SEA | ARI | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.333 | 0.053 | +0.280 |
-| EPA Defense | 20% | -0.098 | -0.122 | +0.025 |
-| Success Rate Offense | 15% | 60.0% | 50.0% | +10.0 pp |
-| Turnover Margin | 10% | 1.000 | 3.000 | -2.000 |
-| Tempo | 10% | 0.169 | 0.146 | +0.023 |
-| Red Zone TD Rate (Off) | 10% | 16.7% | 17.6% | -1.0 pp |
-| Pressure Rate (Def) | 10% | 15.4% | 11.4% | +4.0 pp |
+| EPA Offense | 25% | 0.113 | -0.193 | +0.306 |
+| EPA Defense | 20% | -0.193 | 0.113 | -0.306 |
+| Success Rate Offense | 15% | 54.5% | 40.9% | +13.7 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.117 | 0.108 | +0.009 |
+| Red Zone TD Rate (Off) | 10% | 9.1% | 10.3% | -1.3 pp |
+| Pressure Rate (Def) | 10% | 9.8% | 5.6% | +4.2 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-SEA edge: +0.133 (SEA +0.281 vs ARI +0.148)
+SEA edge: +0.082 (SEA +0.161 vs ARI +0.079)
 **7 metrics version:**
-ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
-**Verdict:** ARI holds the edge in the extended breakdown (lead 0.105), driven by Turnover Margin (10% weight).
+ARI edge: +0.160 (SEA +0.002 vs ARI +0.162)
+**Verdict:** ARI holds the edge in the extended breakdown (lead 0.160), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ ARI edge: +0.105 (SEA +0.303 vs ARI +0.407)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SEA - ARI) | +2.5 pts (favours SEA) |
-| Model Win% SEA | 60.1% |
-| Model Win% ARI | 39.9% |
-| SOS Differential (SEA-ARI) | -0.035 |
+| Model Spread (SEA - ARI) | -3.5 pts (favours ARI) |
+| Model Win% SEA | 36.0% |
+| Model Win% ARI | 64.0% |
+| SOS Differential (SEA-ARI) | -0.126 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| SEA | 36.9% | n/a | n/a | 40.9% | 52.8% | n/a |
-| ARI | 46.3% | n/a | n/a | 50.0% | 48.2% | n/a |
+| SEA | 23.4% | 42.4% | -19.1% | 44.4% | 57.6% | Run heavy |
+| ARI | 54.8% | 42.4% | 12.4% | 41.2% | 40.5% | Pass heavy |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SEA | ARI |
 | --- | ---: | ---: |
-| Season-to-date | 0.116 | 0.151 |
-| Last 5 games | 0.142 | 0.167 |
-| Last 3 games | 0.080 | 0.187 |
+| Season-to-date | 1.583 | 1.708 |
+| Last 5 games | 1.603 | 1.640 |
+| Last 3 games | 1.557 | 1.690 |
 
 ## Trend Summary (last 3 weeks)
 

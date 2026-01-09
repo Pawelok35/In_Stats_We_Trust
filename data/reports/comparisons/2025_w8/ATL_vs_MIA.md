@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.097 | 0.146 | -0.049 |
 | Pressure Rate (Def) | 0.093 | 0.068 | 0.025 |
 | Tempo | 6.091 | 8.400 | -2.309 |
-| PowerScore | 0.075 | 0.176 | -0.101 |
-| PowerScore | 0.075 | 0.176 | -0.101 |
+| PowerScore | 1.278 | 1.830 | -0.552 |
+| PowerScore | 1.278 | 1.830 | -0.552 |
 | Tempo | 6.091 | 8.400 | -2.309 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ MIA edge: +0.235 (ATL -0.028 vs MIA +0.208)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (ATL - MIA) | -1.9 pts (favours MIA) |
-| Model Win% ATL | 42.3% |
-| Model Win% MIA | 57.7% |
-| SOS Differential (ATL-MIA) | -0.064 |
+| Model Spread (ATL - MIA) | -10.2 pts (favours MIA) |
+| Model Win% ATL | 15.4% |
+| Model Win% MIA | 84.6% |
+| SOS Differential (ATL-MIA) | -0.274 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | ATL | MIA |
 | --- | ---: | ---: |
-| Season-to-date | 0.125 | 0.189 |
-| Last 5 games | 0.120 | 0.177 |
-| Last 3 games | 0.177 | 0.135 |
+| Season-to-date | 1.580 | 1.854 |
+| Last 5 games | 1.569 | 1.717 |
+| Last 3 games | 1.720 | 1.631 |
 
 ## Trend Summary (last 3 weeks)
 

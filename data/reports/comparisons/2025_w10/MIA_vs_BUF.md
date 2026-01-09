@@ -15,39 +15,39 @@
 | Turnover Margin | -0.889 | 0.375 | -1.264 |
 | Red Zone TD Rate (Off) | 0.127 | 0.183 | -0.056 |
 | Pressure Rate (Def) | 0.065 | 0.103 | -0.038 |
-| Tempo | 7.091 | 7.900 | -0.809 |
-| PowerScore | 0.088 | 0.237 | -0.149 |
-| PowerScore | 0.088 | 0.237 | -0.149 |
-| Tempo | 7.091 | 7.900 | -0.809 |
+| Tempo | 6.091 | 7.364 | -1.273 |
+| PowerScore | 1.420 | 1.639 | -0.219 |
+| PowerScore | 1.420 | 1.639 | -0.219 |
+| Tempo | 6.091 | 7.364 | -1.273 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | MIA | BUF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.195 | 0.151 | -0.346 |
-| EPA Defense | 20% | 0.137 | 0.066 | +0.071 |
-| Success Rate Offense | 25% | 42.3% | 58.2% | -15.9 pp |
-| Tempo | 20% | 0.115 | 0.127 | -0.011 |
+| EPA Offense | 35% | 0.269 | -0.021 | +0.290 |
+| EPA Defense | 20% | -0.021 | 0.269 | -0.290 |
+| Success Rate Offense | 25% | 44.8% | 48.1% | -3.4 pp |
+| Tempo | 20% | 0.149 | 0.136 | +0.013 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | MIA | BUF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.195 | 0.151 | -0.346 |
-| EPA Defense | 20% | 0.137 | 0.066 | +0.071 |
-| Success Rate Offense | 15% | 42.3% | 58.2% | -15.9 pp |
-| Turnover Margin | 10% | -3.000 | 1.000 | -4.000 |
-| Tempo | 10% | 0.115 | 0.127 | -0.011 |
-| Red Zone TD Rate (Off) | 10% | 0.0% | 27.3% | -27.3 pp |
-| Pressure Rate (Def) | 10% | 7.4% | 7.9% | -0.5 pp |
+| EPA Offense | 25% | 0.269 | -0.021 | +0.290 |
+| EPA Defense | 20% | -0.021 | 0.269 | -0.290 |
+| Success Rate Offense | 15% | 44.8% | 48.1% | -3.4 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.149 | 0.136 | +0.013 |
+| Red Zone TD Rate (Off) | 10% | 12.5% | 0.0% | +12.5 pp |
+| Pressure Rate (Def) | 10% | 6.8% | 0.0% | +6.8 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-BUF edge: +0.149 (MIA +0.088 vs BUF +0.237)
+MIA edge: +0.038 (MIA +0.232 vs BUF +0.194)
 **7 metrics version:**
-BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
-**Verdict:** BUF holds the edge in the extended breakdown (lead 0.525), driven by Turnover Margin (10% weight).
+MIA edge: +0.230 (MIA +0.264 vs BUF +0.034)
+**Verdict:** MIA holds the edge in the extended breakdown (lead 0.230), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ BUF edge: +0.525 (MIA -0.239 vs BUF +0.286)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIA - BUF) | -2.8 pts (favours BUF) |
-| Model Win% MIA | 38.7% |
-| Model Win% BUF | 61.3% |
-| SOS Differential (MIA-BUF) | -0.007 |
+| Model Spread (MIA - BUF) | -4.1 pts (favours BUF) |
+| Model Win% MIA | 33.7% |
+| Model Win% BUF | 66.3% |
+| SOS Differential (MIA-BUF) | +0.116 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| MIA | 53.8% | n/a | n/a | 34.2% | 61.1% | n/a |
-| BUF | 38.0% | n/a | n/a | 51.9% | 52.3% | n/a |
+| MIA | 34.3% | 42.4% | -8.1% | 43.5% | 45.5% | Run heavy |
+| BUF | 54.3% | 42.4% | 11.9% | 50.0% | 45.9% | Pass heavy |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | MIA | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.174 | 0.181 |
-| Last 5 games | 0.129 | 0.161 |
-| Last 3 games | 0.080 | 0.155 |
+| Season-to-date | 1.743 | 1.627 |
+| Last 5 games | 1.520 | 1.640 |
+| Last 3 games | 1.308 | 1.588 |
 
 ## Trend Summary (last 3 weeks)
 

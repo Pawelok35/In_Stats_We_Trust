@@ -4,19 +4,21 @@
 
 | Metric | NYJ | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.158 | 0.206 | ↓ -0.048 |
-| Core EPA Defense | 0.206 | 0.158 | ↑ +0.048 |
-| Success Rate Offense | 55.0% | 50.6% | ↑ +4.4 pp |
-| Success Rate Defense | 50.6% | 55.0% | ↓ -4.4 pp |
-| Explosive Play Rate (Off) | 13.8% | 10.4% | ↑ +3.4 pp |
-| Third Down Conversion | 50.0% | 33.3% | ↑ +16.7 pp |
-| Points per Drive Differential | -0.182 | 0.182 | ↓ -0.364 |
-| Yards per Play Differential | 1.406 | -1.406 | ↑ +2.811 |
-| Turnover Margin | -1.000 | 1.000 | ↓ -2.000 |
-| Red Zone TD Rate (Off) | 17.6% | 27.3% | ↓ -9.6 pp |
-| Pressure Rate (Def) | 11.4% | 4.2% | ↑ +7.3 pp |
-| Tempo | 7.273 | 7.000 | ↑ +0.273 |
-| PowerScore | 0.261 | 0.251 | ↑ +0.010 |
+| Core EPA Offense | 0.158 | 0.206 | -0.048 |
+| Core EPA Defense | 0.206 | 0.158 | 0.048 |
+| Success Rate Offense | 0.550 | 0.506 | 0.044 |
+| Success Rate Defense | 0.506 | 0.550 | -0.044 |
+| Explosive Play Rate (Off) | 0.138 | 0.104 | 0.034 |
+| Third Down Conversion | 0.500 | 0.333 | 0.167 |
+| Points per Drive Differential | -0.182 | 0.182 | -0.364 |
+| Yards per Play Differential | 1.406 | -1.406 | 2.811 |
+| Turnover Margin | -1.000 | 1.000 | -2.000 |
+| Red Zone TD Rate (Off) | 0.176 | 0.273 | -0.096 |
+| Pressure Rate (Def) | 0.114 | 0.042 | 0.073 |
+| Tempo | 7.273 | 7.000 | 0.273 |
+| PowerScore | 1.688 | 1.630 | 0.058 |
+| PowerScore | 1.688 | 1.630 | 0.058 |
+| Tempo | 7.273 | 7.000 | 0.273 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,14 +48,18 @@ NYJ edge: +0.010 (NYJ +0.261 vs PIT +0.251)
 **7 metrics version:**
 PIT edge: +0.195 (NYJ +0.106 vs PIT +0.301)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.195), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - PIT) | +0.2 pts (favours NYJ) |
-| Model Win% NYJ | 50.8% |
-| Model Win% PIT | 49.2% |
+| Model Spread (NYJ - PIT) | +1.1 pts (favours NYJ) |
+| Model Win% NYJ | 54.5% |
+| Model Win% PIT | 45.5% |
 | SOS Differential (NYJ-PIT) | n/a |
 *Neutral-field assumption. Schedule differential unavailable.*
 

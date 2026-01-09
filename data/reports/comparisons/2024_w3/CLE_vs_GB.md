@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.153 | 0.081 | 0.072 |
 | Pressure Rate (Def) | 0.100 | 0.042 | 0.058 |
 | Tempo | 5.857 | 7.364 | -1.506 |
-| PowerScore | 0.010 | 0.102 | -0.092 |
-| PowerScore | 0.010 | 0.102 | -0.092 |
+| PowerScore | 1.164 | 1.548 | -0.383 |
+| PowerScore | 1.164 | 1.548 | -0.383 |
 | Tempo | 5.857 | 7.364 | -1.506 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ GB edge: +0.356 (CLE +0.013 vs GB +0.368)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CLE - GB) | -1.7 pts (favours GB) |
-| Model Win% CLE | 43.0% |
-| Model Win% GB | 57.0% |
+| Model Spread (CLE - GB) | -7.1 pts (favours GB) |
+| Model Win% CLE | 23.5% |
+| Model Win% GB | 76.5% |
 | SOS Differential (CLE-GB) | -0.295 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

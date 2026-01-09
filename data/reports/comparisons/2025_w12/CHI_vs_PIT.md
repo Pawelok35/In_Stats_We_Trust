@@ -4,20 +4,20 @@
 
 | Metric | CHI | PIT | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.027 | 0.085 | -0.057 |
-| Core EPA Defense | 0.018 | 0.033 | -0.016 |
-| Success Rate Offense | 0.458 | 0.481 | -0.024 |
-| Success Rate Defense | 0.497 | 0.481 | 0.016 |
-| Explosive Play Rate (Off) | 0.118 | 0.090 | 0.029 |
-| Third Down Conversion | 0.379 | 0.371 | 0.008 |
-| Points per Drive Differential | -0.097 | 0.301 | -0.398 |
-| Yards per Play Differential | -0.349 | -0.415 | 0.067 |
-| Turnover Margin | 1.667 | 1.000 | 0.667 |
-| Red Zone TD Rate (Off) | 0.121 | 0.175 | -0.054 |
-| Pressure Rate (Def) | 0.059 | 0.065 | -0.006 |
+| Core EPA Offense | 0.028 | 0.047 | -0.019 |
+| Core EPA Defense | 0.016 | 0.025 | -0.009 |
+| Success Rate Offense | 0.461 | 0.474 | -0.014 |
+| Success Rate Defense | 0.487 | 0.475 | 0.012 |
+| Explosive Play Rate (Off) | 0.122 | 0.091 | 0.031 |
+| Third Down Conversion | 0.366 | 0.352 | 0.014 |
+| Points per Drive Differential | -0.069 | 0.177 | -0.246 |
+| Yards per Play Differential | -0.321 | -0.390 | 0.069 |
+| Turnover Margin | 1.600 | 0.800 | 0.800 |
+| Red Zone TD Rate (Off) | 0.136 | 0.157 | -0.021 |
+| Pressure Rate (Def) | 0.063 | 0.072 | -0.008 |
 | Tempo | 6.917 | 7.818 | -0.902 |
-| PowerScore | 0.138 | 0.140 | -0.002 |
-| PowerScore | 0.138 | 0.140 | -0.002 |
+| PowerScore | 1.500 | 1.695 | -0.195 |
+| PowerScore | 1.500 | 1.695 | -0.195 |
 | Tempo | 6.917 | 7.818 | -0.902 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ CHI edge: +0.002 (CHI +0.108 vs PIT +0.106)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - PIT) | -0.0 pts (favours PIT) |
-| Model Win% CHI | 49.8% |
-| Model Win% PIT | 50.2% |
-| SOS Differential (CHI-PIT) | -0.013 |
+| Model Spread (CHI - PIT) | -3.6 pts (favours PIT) |
+| Model Win% CHI | 35.4% |
+| Model Win% PIT | 64.6% |
+| SOS Differential (CHI-PIT) | -0.293 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ CHI edge: +0.002 (CHI +0.108 vs PIT +0.106)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -1.8 pp | -5.4 pp | -0.6 pp |
-| PIT | +7.4 pp | +7.3 pp | -4.9 pp |
+| CHI | -2.3 pp | -6.4 pp | -2.2 pp |
+| PIT | +4.4 pp | +1.2 pp | -3.8 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +0.6 pp | +1.2 pp | -0.8 pp |
-| PIT | +0.5 pp | -1.4 pp | -3.0 pp |
+| CHI | +1.7 pp | +1.8 pp | +6.1 pp |
+| PIT | -0.2 pp | -3.8 pp | -6.7 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +1.6 pp | -0.0 pp | -0.7 pp |
-| PIT | +0.4 pp | +3.3 pp | -1.6 pp |
+| CHI | +2.7 pp | +2.2 pp | +4.5 pp |
+| PIT | +0.4 pp | +1.5 pp | -0.6 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +0.8 pp | +3.0 pp | +1.9 pp |
-| PIT | -2.0 pp | -1.0 pp | -5.7 pp |
+| CHI | +1.2 pp | +2.3 pp | +2.6 pp |
+| PIT | -2.3 pp | -3.0 pp | -5.5 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -2.4 pp | -0.5 pp | +4.8 pp |
-| PIT | +0.7 pp | -1.2 pp | -2.2 pp |
+| CHI | -1.4 pp | +1.2 pp | +4.6 pp |
+| PIT | +1.1 pp | +1.7 pp | +0.1 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -4.7 pp | -0.7 pp | -1.8 pp |
-| PIT | -4.9 pp | -1.1 pp | -5.1 pp |
+| CHI | -3.6 pp | -1.2 pp | +4.6 pp |
+| PIT | -4.6 pp | -1.3 pp | +0.5 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +0.8 pp | +3.0 pp | +1.9 pp |
-| PIT | -2.0 pp | -1.0 pp | -5.7 pp |
+| CHI | +1.2 pp | +2.3 pp | +2.6 pp |
+| PIT | -2.3 pp | -3.0 pp | -5.5 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | +1.6 pp | -0.0 pp | -0.7 pp |
-| PIT | +0.4 pp | +3.3 pp | -1.6 pp |
+| CHI | +2.7 pp | +2.2 pp | +4.5 pp |
+| PIT | +0.4 pp | +1.5 pp | -0.6 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 50.1 | 49.0 | 48.7 |
-| PIT | 49.8 | 49.5 | 51.3 |
+| CHI | 49.7 | 48.0 | 46.4 |
+| PIT | 49.4 | 50.9 | 49.1 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 49.8 | 51.2 | 51.7 |
-| PIT | 47.9 | 49.2 | 48.0 |
+| CHI | 49.4 | 50.2 | 50.1 |
+| PIT | 47.8 | 47.6 | 45.4 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 0.3 | -2.2 | -3.0 |
-| PIT | 1.8 | 0.3 | 3.3 |
+| CHI | 0.4 | -2.2 | -3.8 |
+| PIT | 1.5 | 3.3 | 3.7 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 2.25 | 2.39 | 2.43 |
-| PIT | 2.40 | 2.49 | 2.26 |
+| CHI | 2.22 | 2.29 | 2.50 |
+| PIT | 2.24 | 2.15 | 1.78 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 2.34 | 2.22 | 2.55 |
-| PIT | 2.10 | 2.05 | 1.98 |
+| CHI | 2.29 | 2.15 | 2.04 |
+| PIT | 2.07 | 2.20 | 1.60 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | -0.10 | 0.17 | -0.12 |
-| PIT | 0.30 | 0.44 | 0.29 |
+| CHI | -0.07 | 0.14 | 0.46 |
+| PIT | 0.18 | -0.06 | 0.19 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 7.68 | 8.15 | 8.47 |
-| PIT | 7.14 | 7.67 | 7.50 |
+| CHI | 7.60 | 7.93 | 7.75 |
+| PIT | 6.99 | 7.13 | 6.97 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 41.0% | 39.8% | 41.1% |
-| PIT | 44.5% | 45.6% | 46.3% |
+| CHI | 41.5% | 40.4% | 40.4% |
+| PIT | 45.1% | 46.8% | 46.3% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 59.0% | 60.2% | 58.9% |
-| PIT | 55.5% | 54.4% | 53.7% |
+| CHI | 58.5% | 59.6% | 59.6% |
+| PIT | 54.9% | 53.2% | 53.7% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 3.15 | 3.24 | 3.48 |
-| PIT | 3.18 | 3.50 | 3.47 |
+| CHI | 3.16 | 3.21 | 3.13 |
+| PIT | 3.15 | 3.34 | 3.22 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| CHI | 4.53 | 4.91 | 4.99 |
-| PIT | 3.96 | 4.17 | 4.03 |
+| CHI | 4.44 | 4.73 | 4.62 |
+| PIT | 3.84 | 3.79 | 3.74 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CHI | PIT |
 | --- | ---: | ---: |
-| Season-to-date | 0.158 | 0.171 |
-| Last 5 games | 0.163 | 0.170 |
-| Last 3 games | 0.202 | 0.150 |
+| Season-to-date | 1.515 | 1.808 |
+| Last 5 games | 1.536 | 1.750 |
+| Last 3 games | 1.460 | 1.667 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W8 | W9 | W11 | Trend |
+| Metric | W9 | W10 | W11 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA CHI | 0.041 | 0.306 | -0.084 | - declining |
-| Off EPA PIT | 0.017 | 0.046 | 0.148 | + improving |
-| Def EPA CHI | 0.227 | 0.247 | -0.181 | + improving |
-| Def EPA PIT | 0.169 | -0.042 | -0.125 | + improving |
-| Off SR CHI | 46.9% | 55.9% | 44.2% | - declining |
-| Off SR PIT | 43.8% | 45.7% | 49.4% | + improving |
-| Def SR CHI | 55.0% | 55.7% | 39.4% | + improving |
-| Def SR PIT | 48.8% | 52.2% | 36.9% | + improving |
-| Tempo CHI | 9.000 | 8.500 | 7.917 | - declining |
-| Tempo PIT | 7.273 | 6.231 | 9.000 | + improving |
+| Off EPA CHI | 0.306 | 0.032 | -0.084 | - declining |
+| Off EPA PIT | 0.046 | -0.295 | 0.148 | + improving |
+| Def EPA CHI | 0.247 | -0.000 | -0.181 | + improving |
+| Def EPA PIT | -0.042 | -0.052 | -0.125 | + improving |
+| Off SR CHI | 55.9% | 48.8% | 44.2% | - declining |
+| Off SR PIT | 45.7% | 41.2% | 49.4% | + improving |
+| Def SR CHI | 55.7% | 40.4% | 39.4% | + improving |
+| Def SR PIT | 52.2% | 42.4% | 36.9% | + improving |
+| Tempo CHI | 8.500 | 6.833 | 7.917 | - declining |
+| Tempo PIT | 6.231 | 5.667 | 9.000 | + improving |
 
 ## Matchup Analogs
 
@@ -248,105 +248,105 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | DAL (H) | 31-14 | CHI | 0.893 | 0.200 | 47.9% | 1.700 |
-| 6 | WAS (A) | 25-22 | CHI | 0.720 | 0.093 | 50.6% | 0.318 |
-| 10 | NYG (H) | n/a | n/a | 0.690 | n/a | n/a | n/a |
+| 3 | DAL (H) | 31-14 | CHI | 0.856 | 0.200 | 47.9% | 1.700 |
+| 6 | WAS (A) | 25-22 | CHI | 0.745 | 0.093 | 50.6% | 0.318 |
+| 10 | NYG (H) | 24-22 | CHI | 0.674 | 0.032 | 48.8% | 0.182 |
 
 **PIT analogs vs CHI profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | CIN (A) | 31-33 | CIN | 0.648 | 0.262 | 54.7% | -0.200 |
-| 11 | CIN (H) | 22-11 | PIT | 0.648 | 0.148 | 49.4% | 1.244 |
-| 9 | IND (H) | 27-24 | PIT | 0.638 | 0.046 | 45.7% | 0.259 |
+| 3 | NE (A) | 21-16 | PIT | 0.728 | 0.037 | 51.5% | 0.544 |
+| 9 | IND (H) | 27-24 | PIT | 0.707 | 0.046 | 45.7% | 0.259 |
+| 8 | GB (H) | 25-32 | GB | 0.638 | 0.017 | 43.8% | -0.644 |
 
 ## Core EPA Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 0.027 | 0.069 | 0.088 |
-| PIT | 0.085 | 0.117 | 0.070 |
+| CHI | 0.028 | 0.057 | 0.085 |
+| PIT | 0.047 | 0.036 | -0.034 |
 
 ## Core EPA Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 0.018 | 0.019 | 0.098 |
-| PIT | 0.033 | 0.028 | 0.001 |
+| CHI | 0.016 | 0.012 | 0.022 |
+| PIT | 0.025 | 0.034 | -0.073 |
 
 ## Success Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 45.8% | 48.4% | 49.3% |
-| PIT | 47.9% | 47.2% | 46.3% |
+| CHI | 46.1% | 48.1% | 49.8% |
+| PIT | 47.3% | 47.0% | 45.7% |
 
 ## Success Rate Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 49.9% | 49.0% | 50.6% |
-| PIT | 48.1% | 47.1% | 46.2% |
+| CHI | 48.8% | 47.0% | 45.6% |
+| PIT | 47.5% | 47.0% | 44.0% |
 
 ## Explosive Play Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 11.9% | 12.8% | 12.2% |
-| PIT | 8.9% | 9.4% | 7.0% |
+| CHI | 12.2% | 13.4% | 12.5% |
+| PIT | 9.1% | 8.8% | 8.3% |
 
 ## Third Down Conversion Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 37.7% | 34.7% | 41.5% |
-| PIT | 36.9% | 39.1% | 29.8% |
+| CHI | 36.5% | 34.2% | 37.1% |
+| PIT | 35.2% | 35.6% | 33.8% |
 
 ## Points per Drive Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | -0.138 | 0.258 | 0.009 |
-| PIT | 0.245 | 0.375 | 0.227 |
+| CHI | -0.104 | 0.232 | 0.458 |
+| PIT | 0.115 | -0.105 | 0.098 |
 
 ## Yards per Play Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | -0.349 | 0.234 | -0.070 |
-| PIT | -0.415 | -0.004 | -0.755 |
+| CHI | -0.321 | 0.088 | -0.146 |
+| PIT | -0.390 | -0.419 | -0.229 |
 
 ## Turnover Margin Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 1.667 | 2.000 | 1.333 |
-| PIT | 1.000 | 0.400 | 1.333 |
+| CHI | 1.600 | 1.600 | 2.000 |
+| PIT | 0.800 | 0.200 | 1.333 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 12.1% | 9.2% | 9.8% |
-| PIT | 17.5% | 16.6% | 13.8% |
+| CHI | 13.6% | 12.9% | 16.8% |
+| PIT | 15.7% | 11.6% | 8.3% |
 
 ## Pressure Rate (Def) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 5.9% | 7.4% | 5.3% |
-| PIT | 6.5% | 5.1% | 3.8% |
+| CHI | 6.3% | 7.4% | 5.9% |
+| PIT | 7.2% | 5.6% | 8.1% |
 
 ## Tempo Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 7.682 | 8.147 | 8.472 |
-| PIT | 7.140 | 7.667 | 7.501 |
+| CHI | 7.597 | 7.933 | 7.750 |
+| PIT | 6.992 | 7.134 | 6.966 |
 
 ## Pass Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| CHI | 40.8% | 39.5% | 40.6% |
-| PIT | 44.7% | 45.7% | 46.3% |
+| CHI | 41.3% | 40.1% | 40.1% |
+| PIT | 45.2% | 46.8% | 46.1% |

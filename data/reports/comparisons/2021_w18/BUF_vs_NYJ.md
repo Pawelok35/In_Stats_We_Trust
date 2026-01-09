@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 10 | NYJ (A) | 45-18 | BUF | 1.000 | 0.300 | 54.1% | 2.045 |
-| 3 | WAS (H) | 43-23 | BUF | 0.977 | 0.110 | 47.4% | 1.558 |
-| 9 | JAX (A) | 6-7 | JAX | 0.964 | -0.166 | 40.5% | -0.152 |
+| 2 | NYJ (A) | 35-0 | BUF | 1.000 | 0.128 | 42.5% | 2.692 |
+| 6 | ATL (A) | 31-31 | TIE | 0.925 | 0.139 | 46.8% | 0.009 |
+| 12 | HOU (A) | 31-5 | BUF | 0.817 | 0.081 | 51.3% | 2.555 |
 
 **NYJ analogs vs BUF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 10 | BUF (H) | 17-42 | BUF | 1.000 | -0.141 | 37.9% | -2.045 |
-| 2 | NE (H) | 6-27 | NE | 0.983 | -0.272 | 37.9% | -1.773 |
-| 7 | NE (A) | 13-54 | NE | 0.983 | -0.125 | 42.5% | -3.727 |
+| 2 | BUF (H) | 6-27 | BUF | 1.000 | -0.272 | 37.9% | -1.773 |
+| 11 | NE (A) | 17-22 | NE | 0.983 | -0.067 | 46.8% | -0.482 |
+| 17 | NE (H) | 24-31 | NE | 0.983 | 0.111 | 46.8% | -0.618 |
 
 ## Core EPA Offense Form (up to Week 17)
 

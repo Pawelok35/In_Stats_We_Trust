@@ -4,19 +4,21 @@
 
 | Metric | CIN | CHI | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.112 | -0.177 | ↑ +0.289 |
-| Core EPA Defense | -0.099 | 0.043 | ↓ -0.142 |
-| Success Rate Offense | 55.9% | 31.5% | ↑ +24.4 pp |
-| Success Rate Defense | 47.0% | 50.7% | ↓ -3.7 pp |
-| Explosive Play Rate (Off) | 7.5% | 7.6% | ↓ -0.1 pp |
-| Third Down Conversion | 53.3% | 18.8% | ↑ +34.6 pp |
-| Points per Drive Differential | 1.654 | -1.705 | ↑ +3.358 |
-| Yards per Play Differential | 1.396 | -2.175 | ↑ +3.571 |
-| Turnover Margin | 1.000 | 2.000 | ↓ -1.000 |
-| Red Zone TD Rate (Off) | 16.0% | 0.0% | ↑ +16.0 pp |
-| Pressure Rate (Def) | 13.2% | 13.0% | ↑ +0.1 pp |
-| Tempo | 7.154 | 7.667 | ↓ -0.513 |
-| PowerScore | 0.174 | 0.041 | ↑ +0.134 |
+| Core EPA Offense | 0.076 | -0.010 | 0.086 |
+| Core EPA Defense | 0.097 | -0.087 | 0.184 |
+| Success Rate Offense | 0.481 | 0.448 | 0.033 |
+| Success Rate Defense | 0.512 | 0.425 | 0.086 |
+| Explosive Play Rate (Off) | 0.091 | 0.085 | 0.006 |
+| Third Down Conversion | 0.437 | 0.268 | 0.168 |
+| Points per Drive Differential | -0.088 | 0.448 | -0.536 |
+| Yards per Play Differential | 0.066 | -0.451 | 0.517 |
+| Turnover Margin | 0.250 | 0.714 | -0.464 |
+| Red Zone TD Rate (Off) | 0.127 | 0.130 | -0.003 |
+| Pressure Rate (Def) | 0.040 | 0.077 | -0.037 |
+| Tempo | 7.154 | 7.667 | -0.513 |
+| PowerScore | 1.590 | 1.559 | 0.031 |
+| PowerScore | 1.590 | 1.559 | 0.031 |
+| Tempo | 7.154 | 7.667 | -0.513 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CIN edge: +0.134 (CIN +0.174 vs CHI +0.041)
 **7 metrics version:**
 CHI edge: +0.003 (CIN +0.229 vs CHI +0.232)
 **Verdict:** CHI holds the edge in the extended breakdown (lead 0.003), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CIN - CHI) | +2.5 pts (favours CIN) |
-| Model Win% CIN | 60.2% |
-| Model Win% CHI | 39.8% |
-| SOS Differential (CIN-CHI) | +0.100 |
+| Model Spread (CIN - CHI) | +0.6 pts (favours CIN) |
+| Model Win% CIN | 52.4% |
+| Model Win% CHI | 47.6% |
+| SOS Differential (CIN-CHI) | +0.397 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | CIN | CHI |
 | --- | ---: | ---: |
-| Season-to-date | 0.196 | 0.096 |
-| Last 5 games | 0.177 | 0.122 |
-| Last 3 games | 0.128 | 0.125 |
+| Season-to-date | 1.819 | 1.422 |
+| Last 5 games | 1.759 | 1.478 |
+| Last 3 games | 1.758 | 1.519 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -243,15 +249,15 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 4 | DEN (A) | 34-22 | CIN | 0.941 | 0.201 | 49.4% | 1.218 |
-| 7 | PIT (A) | 21-15 | CIN | 0.867 | -0.102 | 36.5% | 0.400 |
+| 7 | PIT (H) | 21-15 | CIN | 0.867 | -0.102 | 36.5% | 0.400 |
 | 3 | MIN (A) | 33-33 | TIE | 0.865 | 0.300 | 58.4% | -0.036 |
 
 **CHI analogs vs CIN profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | WAS (H) | 35-16 | CHI | 0.818 | 0.267 | 53.8% | 1.900 |
-| 8 | BAL (H) | 15-15 | TIE | 0.781 | -0.081 | 43.2% | -0.021 |
+| 6 | WAS (A) | 35-16 | CHI | 0.818 | 0.267 | 53.8% | 1.900 |
+| 8 | BAL (A) | 15-15 | TIE | 0.781 | -0.081 | 43.2% | -0.021 |
 | 3 | DAL (H) | 16-19 | DAL | 0.778 | -0.124 | 39.4% | -0.282 |
 
 ## Core EPA Offense Form (up to Week 8)

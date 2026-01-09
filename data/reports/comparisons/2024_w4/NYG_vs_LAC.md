@@ -4,19 +4,21 @@
 
 | Metric | NYG | LAC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.018 | -0.220 | ↑ +0.239 |
-| Core EPA Defense | 0.108 | -0.103 | ↑ +0.211 |
-| Success Rate Offense | 42.2% | 32.0% | ↑ +10.2 pp |
-| Success Rate Defense | 51.4% | 46.1% | ↑ +5.3 pp |
-| Explosive Play Rate (Off) | 7.2% | 6.7% | ↑ +0.6 pp |
-| Third Down Conversion | 27.8% | 30.8% | ↓ -3.0 pp |
-| Points per Drive Differential | -0.556 | -0.545 | ↓ -0.010 |
-| Yards per Play Differential | -0.419 | -1.342 | ↑ +0.923 |
-| Turnover Margin | -1.000 | 2.000 | ↓ -3.000 |
-| Red Zone TD Rate (Off) | 0.0% | 12.5% | ↓ -12.5 pp |
-| Pressure Rate (Def) | 3.4% | 8.6% | ↓ -5.1 pp |
-| Tempo | 9.222 | 7.500 | ↑ +1.722 |
-| PowerScore | 0.148 | -0.004 | ↑ +0.152 |
+| Core EPA Offense | -0.096 | -0.061 | -0.035 |
+| Core EPA Defense | -0.009 | -0.216 | 0.207 |
+| Success Rate Offense | 0.422 | 0.428 | -0.006 |
+| Success Rate Defense | 0.454 | 0.396 | 0.058 |
+| Explosive Play Rate (Off) | 0.080 | 0.085 | -0.006 |
+| Third Down Conversion | 0.327 | 0.354 | -0.027 |
+| Points per Drive Differential | -0.296 | 0.606 | -0.902 |
+| Yards per Play Differential | -0.359 | 0.124 | -0.483 |
+| Turnover Margin | -0.333 | 1.000 | -1.333 |
+| Red Zone TD Rate (Off) | 0.142 | 0.089 | 0.053 |
+| Pressure Rate (Def) | 0.116 | 0.078 | 0.037 |
+| Tempo | 9.222 | 7.500 | 1.722 |
+| PowerScore | 1.978 | 1.482 | 0.496 |
+| PowerScore | 1.978 | 1.482 | 0.496 |
+| Tempo | 9.222 | 7.500 | 1.722 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ NYG edge: +0.152 (NYG +0.148 vs LAC -0.004)
 **7 metrics version:**
 LAC edge: +0.200 (NYG +0.000 vs LAC +0.200)
 **Verdict:** LAC holds the edge in the extended breakdown (lead 0.200), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - LAC) | +2.8 pts (favours NYG) |
-| Model Win% NYG | 61.5% |
-| Model Win% LAC | 38.5% |
-| SOS Differential (NYG-LAC) | +0.088 |
+| Model Spread (NYG - LAC) | +9.2 pts (favours NYG) |
+| Model Win% NYG | 82.2% |
+| Model Win% LAC | 17.8% |
+| SOS Differential (NYG-LAC) | +0.229 |
 *Neutral-field assumption. Based on schedule through Week 3.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | LAC |
 | --- | ---: | ---: |
-| Season-to-date | 0.116 | 0.028 |
-| Last 5 games | 0.116 | 0.028 |
-| Last 3 games | 0.116 | 0.028 |
+| Season-to-date | 1.560 | 1.331 |
+| Last 5 games | 1.560 | 1.331 |
+| Last 3 games | 1.560 | 1.331 |
 
 ## Trend Summary (last 3 weeks)
 

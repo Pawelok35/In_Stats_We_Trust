@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – PIT 8.3 – CIN 20.9
-2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 12.6 pts
-4️⃣ Win Probability (Model) – 95% (CIN)
-5️⃣ Why This Team Wins (Model) – Na 3rd down CIN utrzymuje 44.9%, podczas gdy PIT jest na 31.4%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę CIN: CIN +0.224 vs PIT +0.170. Success Rate Offense pokazuje CIN na poziomie 45.0% vs 40.4% (+4.6 pp). Red Zone TD Rate sprzyja CIN (16.4% vs 13.4%). CIN prowadzi w Points per Drive Differential (+0.590 vs -0.640), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – PIT 33.2 – CIN 24.8
+2️⃣ Predicted Winner (Model) – PIT
+3️⃣ Predicted Margin (Model) – PIT by 8.5 pts
+4️⃣ Win Probability (Model) – 91% (PIT)
+5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę PIT: PIT +0.175 vs CIN +0.095. Turnover margin faworyzuje PIT (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Red Zone TD Rate sprzyja PIT (16.2% vs 15.2%). Field position edge wynosi +0.8 yds na rzecz PIT (2.3 vs 1.5), co skraca ich boisko. PIT prowadzi w Points per Drive Differential (+0.013 vs -0.728), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – PIT 17.8 – CIN 21.2
-2️⃣ Predicted Winner (Market) – CIN
-3️⃣ Predicted Margin (Market) – CIN by 3.5 pts
-4️⃣ Win Probability (Market) – 62% (CIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — PIT +0.170 vs CIN +0.224. Points per Drive Differential — PIT -0.640 vs CIN +0.590. Success Rate Offense — PIT 40.4% vs CIN 45.0%. Third Down Conversion — PIT 31.4% vs CIN 44.9%. Red Zone TD Rate — PIT 13.4% vs CIN 16.4%. Explosive Play Rate — PIT 8.3% vs CIN 9.0%. Model margin -12.6 pts vs market spread PIT -3.5.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -12.6 pkt. CIN notuje +0.590 PPD vs -0.640 u PIT. Różnica w Success Rate to 45.0% vs 40.4%. Na 3rd down CIN (44.9%) wygląda solidniej niż PIT (31.4%). Red Zone i explosiveness ( 16.4% / 9.0% ) utrzymują przewagę jakościową. Market trzyma -3.5 pkt, więc edge vs linia to +9.1.
+1️⃣ Estimated Score (Market) – PIT 27.5 – CIN 22.0
+2️⃣ Predicted Winner (Market) – PIT
+3️⃣ Predicted Margin (Market) – PIT by 5.5 pts
+4️⃣ Win Probability (Market) – 69% (PIT)
+5️⃣ Forum Output (A) – PowerScore (Model) — PIT +0.175 vs CIN +0.095. Points per Drive Differential — PIT +0.013 vs CIN -0.728. Success Rate Offense — PIT 47.1% vs CIN 49.9%. Third Down Conversion — PIT 33.4% vs CIN 37.0%. Red Zone TD Rate — PIT 16.2% vs CIN 15.2%. Explosive Play Rate — PIT 8.7% vs CIN 9.8%. Model margin 8.5 pts vs market spread PIT +5.5.
+6️⃣ Forum Output (B) – Model idzie w stronę PIT po marginesie 8.5 pkt. PIT notuje +0.013 PPD vs -0.728 u CIN. Różnica w Success Rate to 47.1% vs 49.9%. Na 3rd down PIT (33.4%) wygląda solidniej niż CIN (37.0%). Red Zone i explosiveness ( 16.2% / 8.7% ) utrzymują przewagę jakościową. Market trzyma 5.5 pkt, więc edge vs linia to +3.0.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +9.1 pts
-• PowerScoreDiff (winner) = +0.054
-• Confidence = 98.0%
+• Edge_vs_Line (winner) = +3.0 pts
+• PowerScoreDiff (winner) = +0.080
+• Confidence = 94.0%
 
-🏷 Model Tag: GOM — based on 98.0% confidence, +9.1 pts model edge vs line, and PowerScore Δ +0.054.
-📈 Strong monthly signal — wysokie zaufanie modelowe.
+🏷 Model Tag: VALUE PLAY — based on 94.0% confidence, +3.0 pts model edge vs line, and PowerScore Δ +0.080.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – PIT 8.3 – CIN 20.9
-   • Win Probability – 95% (CIN)
+   • Estimated Score – PIT 33.2 – CIN 24.8
+   • Win Probability – 91% (PIT)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – PIT 17.8 – CIN 21.2
-   • Win Probability – 62% (CIN)
+   • Estimated Score – PIT 27.5 – CIN 22.0
+   • Win Probability – 69% (PIT)
 
-🏷 Model Tag: <span style="color:#9c27b0; font-weight:600;">GOM</span> — CIN (HC -3.5)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — PIT (HC -5.5)

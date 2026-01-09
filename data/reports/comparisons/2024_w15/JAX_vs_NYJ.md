@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.136 | 0.136 | -0.001 |
 | Pressure Rate (Def) | 0.051 | 0.083 | -0.032 |
 | Tempo | 9.700 | 7.700 | 2.000 |
-| PowerScore | 0.267 | 0.274 | -0.007 |
-| PowerScore | 0.267 | 0.274 | -0.007 |
+| PowerScore | 2.190 | 1.783 | 0.407 |
+| PowerScore | 2.190 | 1.783 | 0.407 |
 | Tempo | 9.700 | 7.700 | 2.000 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ NYJ edge: +0.404 (JAX +0.002 vs NYJ +0.406)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - NYJ) | -0.1 pts (favours NYJ) |
-| Model Win% JAX | 49.4% |
-| Model Win% NYJ | 50.6% |
+| Model Spread (JAX - NYJ) | +7.5 pts (favours JAX) |
+| Model Win% JAX | 77.8% |
+| Model Win% NYJ | 22.2% |
 | SOS Differential (JAX-NYJ) | +0.083 |
 *Neutral-field assumption. Based on schedule through Week 14.*
 
@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | CHI (A) | 16-35 | CHI | 0.768 | 0.012 | 43.6% | -1.900 |
-| 14 | TEN (A) | 10-6 | JAX | 0.747 | -0.025 | 42.5% | 0.444 |
-| 7 | NE (H) | 26-22 | JAX | 0.734 | 0.229 | 56.2% | 0.444 |
+| 9 | LV (A) | 17-26 | LV | 0.759 | -0.069 | 41.8% | -0.737 |
+| 13 | TEN (A) | 20-21 | TEN | 0.747 | 0.007 | 41.9% | -0.091 |
+| 1 | MIA (A) | 17-18 | MIA | 0.656 | -0.042 | 43.1% | -0.121 |
 
 **NYJ analogs vs JAX profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 14 | MIA (A) | 26-29 | MIA | 0.826 | 0.202 | 56.8% | -0.309 |
-| 3 | NE (H) | 24-3 | NYJ | 0.760 | 0.120 | 52.3% | 2.667 |
-| 8 | NE (A) | 22-25 | NE | 0.760 | 0.018 | 49.4% | -0.300 |
+| 13 | ATL (H) | 21-20 | NYJ | 0.898 | -0.134 | 40.2% | 0.083 |
+| 7 | CAR (H) | 15-40 | CAR | 0.895 | -0.118 | 43.4% | -2.114 |
+| 4 | MIA (A) | 9-10 | MIA | 0.826 | -0.220 | 34.7% | -0.077 |
 
 ## Core EPA Offense Form (up to Week 14)
 

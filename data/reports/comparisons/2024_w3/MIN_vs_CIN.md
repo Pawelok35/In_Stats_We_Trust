@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.133 | 0.117 | 0.016 |
 | Pressure Rate (Def) | 0.125 | 0.054 | 0.071 |
 | Tempo | 7.273 | 11.000 | -3.727 |
-| PowerScore | 0.123 | 0.369 | -0.246 |
-| PowerScore | 0.123 | 0.369 | -0.246 |
+| PowerScore | 1.565 | 2.535 | -0.970 |
+| PowerScore | 1.565 | 2.535 | -0.970 |
 | Tempo | 7.273 | 11.000 | -3.727 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ MIN edge: +0.006 (MIN +0.287 vs CIN +0.281)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (MIN - CIN) | -4.5 pts (favours CIN) |
-| Model Win% MIN | 31.9% |
-| Model Win% CIN | 68.1% |
+| Model Spread (MIN - CIN) | -17.9 pts (favours CIN) |
+| Model Win% MIN | 4.8% |
+| Model Win% CIN | 95.2% |
 | SOS Differential (MIN-CIN) | -0.043 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

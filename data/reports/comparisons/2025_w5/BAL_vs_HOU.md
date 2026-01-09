@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.113 | 0.100 | 0.013 |
 | Pressure Rate (Def) | 0.021 | 0.075 | -0.054 |
 | Tempo | 6.200 | 8.500 | -2.300 |
-| PowerScore | 0.093 | 0.231 | -0.138 |
-| PowerScore | 0.093 | 0.231 | -0.138 |
+| PowerScore | 1.324 | 1.912 | -0.589 |
+| PowerScore | 1.324 | 1.912 | -0.589 |
 | Tempo | 6.200 | 8.500 | -2.300 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ HOU edge: +0.665 (BAL -0.212 vs HOU +0.453)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BAL - HOU) | -2.5 pts (favours HOU) |
-| Model Win% BAL | 39.5% |
-| Model Win% HOU | 60.5% |
-| SOS Differential (BAL-HOU) | +0.153 |
+| Model Spread (BAL - HOU) | -10.9 pts (favours HOU) |
+| Model Win% BAL | 14.0% |
+| Model Win% HOU | 86.0% |
+| SOS Differential (BAL-HOU) | +0.214 |
 *Neutral-field assumption. Based on schedule through Week 4.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | BAL | HOU |
 | --- | ---: | ---: |
-| Season-to-date | 0.208 | 0.055 |
-| Last 5 games | 0.208 | 0.055 |
-| Last 3 games | 0.183 | 0.051 |
+| Season-to-date | 1.820 | 1.606 |
+| Last 5 games | 1.820 | 1.606 |
+| Last 3 games | 1.791 | 1.562 |
 
 ## Trend Summary (last 3 weeks)
 

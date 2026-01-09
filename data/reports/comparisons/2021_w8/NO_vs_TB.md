@@ -15,39 +15,39 @@
 | Turnover Margin | 0.667 | 1.000 | -0.333 |
 | Red Zone TD Rate (Off) | 0.173 | 0.150 | 0.023 |
 | Pressure Rate (Def) | 0.061 | 0.057 | 0.004 |
-| Tempo | 8.091 | 7.167 | 0.924 |
-| PowerScore | 1.651 | 1.493 | 0.158 |
-| PowerScore | 1.651 | 1.493 | 0.158 |
-| Tempo | 8.091 | 7.167 | 0.924 |
+| Tempo | 7.917 | 6.500 | 1.417 |
+| PowerScore | 1.689 | 1.380 | 0.309 |
+| PowerScore | 1.689 | 1.380 | 0.309 |
+| Tempo | 7.917 | 6.500 | 1.417 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | NO | TB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.105 | 0.052 | -0.157 |
-| EPA Defense | 20% | -0.184 | -0.416 | +0.231 |
-| Success Rate Offense | 25% | 42.7% | 50.0% | -7.3 pp |
-| Tempo | 20% | 0.056 | 0.140 | -0.083 |
+| EPA Offense | 35% | 0.033 | -0.082 | +0.115 |
+| EPA Defense | 20% | -0.082 | 0.033 | -0.115 |
+| Success Rate Offense | 25% | 44.2% | 41.0% | +3.2 pp |
+| Tempo | 20% | 0.116 | 0.115 | +0.000 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | NO | TB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.105 | 0.052 | -0.157 |
-| EPA Defense | 20% | -0.184 | -0.416 | +0.231 |
-| Success Rate Offense | 15% | 42.7% | 50.0% | -7.3 pp |
-| Turnover Margin | 10% | -1.000 | 4.000 | -5.000 |
-| Tempo | 10% | 0.056 | 0.140 | -0.083 |
-| Red Zone TD Rate (Off) | 10% | 7.7% | 16.1% | -8.4 pp |
-| Pressure Rate (Def) | 10% | 17.9% | 11.1% | +6.7 pp |
+| EPA Offense | 25% | 0.033 | -0.082 | +0.115 |
+| EPA Defense | 20% | -0.082 | 0.033 | -0.115 |
+| Success Rate Offense | 15% | 44.2% | 41.0% | +3.2 pp |
+| Turnover Margin | 10% | 3.000 | -3.000 | +6.000 |
+| Tempo | 10% | 0.116 | 0.115 | +0.000 |
+| Red Zone TD Rate (Off) | 10% | 11.1% | 20.0% | -8.9 pp |
+| Pressure Rate (Def) | 10% | 6.8% | 2.4% | +4.4 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-TB edge: +0.043 (NO +0.044 vs TB +0.088)
+NO edge: +0.025 (NO +0.129 vs TB +0.104)
 **7 metrics version:**
-TB edge: +0.514 (NO -0.068 vs TB +0.446)
-**Verdict:** TB holds the edge in the extended breakdown (lead 0.514), driven by Turnover Margin (10% weight).
+NO edge: +0.606 (NO +0.388 vs TB -0.218)
+**Verdict:** NO holds the edge in the extended breakdown (lead 0.606), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ TB edge: +0.514 (NO -0.068 vs TB +0.446)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NO - TB) | +2.9 pts (favours NO) |
-| Model Win% NO | 61.9% |
-| Model Win% TB | 38.1% |
+| Model Spread (NO - TB) | +5.7 pts (favours NO) |
+| Model Win% NO | 72.1% |
+| Model Win% TB | 27.9% |
 | SOS Differential (NO-TB) | -0.035 |
 *Neutral-field assumption. Based on schedule through Week 7.*
 
@@ -67,8 +67,8 @@ TB edge: +0.514 (NO -0.068 vs TB +0.446)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| NO | 43.8% | n/a | n/a | 41.7% | 28.9% | n/a |
-| TB | 45.3% | n/a | n/a | 25.0% | 38.1% | n/a |
+| NO | 43.2% | 46.4% | -3.2% | 36.6% | 50.0% | Run heavy |
+| TB | 56.4% | 46.4% | 10.0% | 50.0% | 29.4% | Pass heavy |
 
 ## Situational Edges
 
@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 3 | NE (A) | 22-13 | NO | 0.905 | -0.035 | 50.6% | 0.692 |
+| 6 | NE (H) | n/a | n/a | 0.905 | n/a | n/a | n/a |
+| 4 | BUF (A) | 21-27 | BUF | 0.884 | -0.032 | 45.2% | -0.545 |
 | 1 | GB (H) | 38-3 | NO | 0.762 | 0.274 | 52.6% | 3.889 |
-| 2 | CAR (A) | 7-26 | CAR | 0.344 | -0.326 | 37.1% | -1.583 |
 
 **TB analogs vs NO profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 4 | NE (A) | 19-17 | TB | 0.748 | 0.026 | 40.0% | 0.182 |
-| 7 | CHI (H) | 38-3 | TB | 0.587 | 0.052 | 50.0% | 2.936 |
+| 6 | SF (H) | 28-24 | TB | 0.547 | 0.148 | 51.1% | 0.345 |
 | 1 | DAL (H) | 31-29 | TB | 0.528 | 0.060 | 51.7% | 0.154 |
+| 2 | HOU (A) | 36-23 | TB | 0.452 | 0.024 | 47.0% | 0.984 |
 
 ## Core EPA Offense Form (up to Week 7)
 

@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.176 | 0.172 | 0.004 |
 | Pressure Rate (Def) | 0.114 | 0.095 | 0.019 |
 | Tempo | 6.400 | 8.182 | -1.782 |
-| PowerScore | 0.097 | 0.158 | -0.060 |
-| PowerScore | 0.097 | 0.158 | -0.060 |
+| PowerScore | 1.361 | 1.778 | -0.417 |
+| PowerScore | 1.361 | 1.778 | -0.417 |
 | Tempo | 6.400 | 8.182 | -1.782 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ BUF edge: +0.225 (NYJ -0.013 vs BUF +0.212)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYJ - BUF) | -1.1 pts (favours BUF) |
-| Model Win% NYJ | 45.4% |
-| Model Win% BUF | 54.6% |
-| SOS Differential (NYJ-BUF) | -0.094 |
+| Model Spread (NYJ - BUF) | -7.7 pts (favours BUF) |
+| Model Win% NYJ | 21.7% |
+| Model Win% BUF | 78.3% |
+| SOS Differential (NYJ-BUF) | +0.039 |
 *Neutral-field assumption. Based on schedule through Week 1.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYJ | BUF |
 | --- | ---: | ---: |
-| Season-to-date | 0.251 | 0.345 |
-| Last 5 games | 0.251 | 0.345 |
-| Last 3 games | 0.251 | 0.345 |
+| Season-to-date | 1.630 | 1.591 |
+| Last 5 games | 1.630 | 1.591 |
+| Last 3 games | 1.630 | 1.591 |
 
 ## Matchup Analogs
 

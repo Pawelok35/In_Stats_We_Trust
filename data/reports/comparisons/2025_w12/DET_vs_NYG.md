@@ -4,20 +4,20 @@
 
 | Metric | DET | NYG | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.028 | 0.036 | -0.007 |
-| Core EPA Defense | -0.042 | 0.113 | -0.155 |
-| Success Rate Offense | 0.477 | 0.462 | 0.015 |
-| Success Rate Defense | 0.442 | 0.492 | -0.050 |
-| Explosive Play Rate (Off) | 0.101 | 0.091 | 0.010 |
-| Third Down Conversion | 0.337 | 0.336 | 0.001 |
-| Points per Drive Differential | 0.293 | -0.442 | 0.735 |
-| Yards per Play Differential | 0.684 | -0.611 | 1.295 |
-| Turnover Margin | 0.556 | -0.500 | 1.056 |
-| Red Zone TD Rate (Off) | 0.137 | 0.131 | 0.006 |
-| Pressure Rate (Def) | 0.084 | 0.066 | 0.019 |
+| Core EPA Offense | 0.070 | 0.032 | 0.037 |
+| Core EPA Defense | -0.022 | 0.106 | -0.128 |
+| Success Rate Offense | 0.490 | 0.456 | 0.034 |
+| Success Rate Defense | 0.444 | 0.491 | -0.047 |
+| Explosive Play Rate (Off) | 0.107 | 0.097 | 0.009 |
+| Third Down Conversion | 0.353 | 0.342 | 0.011 |
+| Points per Drive Differential | 0.508 | -0.418 | 0.926 |
+| Yards per Play Differential | 0.873 | -0.549 | 1.422 |
+| Turnover Margin | 0.500 | -0.545 | 1.045 |
+| Red Zone TD Rate (Off) | 0.141 | 0.126 | 0.015 |
+| Pressure Rate (Def) | 0.084 | 0.060 | 0.024 |
 | Tempo | 6.923 | 8.167 | -1.244 |
-| PowerScore | 0.234 | 0.205 | 0.029 |
-| PowerScore | 0.234 | 0.205 | 0.029 |
+| PowerScore | 1.594 | 1.808 | -0.214 |
+| PowerScore | 1.594 | 1.808 | -0.214 |
 | Tempo | 6.923 | 8.167 | -1.244 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ DET edge: +0.023 (DET +0.172 vs NYG +0.150)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DET - NYG) | +0.5 pts (favours DET) |
-| Model Win% DET | 52.2% |
-| Model Win% NYG | 47.8% |
-| SOS Differential (DET-NYG) | -0.070 |
+| Model Spread (DET - NYG) | -4.0 pts (favours NYG) |
+| Model Win% DET | 34.1% |
+| Model Win% NYG | 65.9% |
+| SOS Differential (DET-NYG) | -0.202 |
 *Neutral-field assumption. Based on schedule through Week 11.*
 
 ## PROE Tendencies
@@ -76,29 +76,29 @@ DET edge: +0.023 (DET +0.172 vs NYG +0.150)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | -2.0 pp | -7.1 pp | -22.2 pp |
-| NYG | +0.9 pp | +12.9 pp | +14.4 pp |
+| DET | +0.6 pp | -4.9 pp | -13.1 pp |
+| NYG | +3.0 pp | +11.0 pp | +17.2 pp |
 
 ### Red Zone TD Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | -3.1 pp | -9.2 pp | -13.9 pp |
-| NYG | -1.3 pp | +2.9 pp | +7.8 pp |
+| DET | -3.7 pp | -12.3 pp | -17.6 pp |
+| NYG | -2.3 pp | +1.3 pp | -2.3 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | +0.5 pp | -1.0 pp | -0.1 pp |
-| NYG | -0.7 pp | -2.2 pp | -2.3 pp |
+| DET | +0.5 pp | +0.0 pp | -1.0 pp |
+| NYG | -0.9 pp | -2.3 pp | +1.3 pp |
 
 ### Explosive Plays
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | -1.9 pp | -2.3 pp | -1.7 pp |
-| NYG | -1.8 pp | -0.3 pp | +1.2 pp |
+| DET | -1.7 pp | -1.3 pp | -0.8 pp |
+| NYG | -0.8 pp | +1.7 pp | +2.9 pp |
 
 _Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._
 
@@ -108,29 +108,29 @@ _Positive values indicate the offense exceeding the opponent's defensive rate (p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | -5.3 pp | -8.4 pp | -13.1 pp |
-| NYG | +0.6 pp | -0.8 pp | +8.3 pp |
+| DET | -4.4 pp | -7.0 pp | -2.1 pp |
+| NYG | +0.4 pp | +1.0 pp | +4.3 pp |
 
 ### Pass Success Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | +3.6 pp | +0.3 pp | -11.7 pp |
-| NYG | +2.4 pp | +5.0 pp | +12.7 pp |
+| DET | +5.4 pp | +2.0 pp | -3.9 pp |
+| NYG | +1.0 pp | +1.7 pp | +4.7 pp |
 
 ### Explosive Rate Edge
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | -1.9 pp | -2.3 pp | -1.7 pp |
-| NYG | -1.8 pp | -0.3 pp | +1.2 pp |
+| DET | -1.7 pp | -1.3 pp | -0.8 pp |
+| NYG | -0.8 pp | +1.7 pp | +2.9 pp |
 
 ### Pass Protection vs Pressure
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | +0.5 pp | -1.0 pp | -0.1 pp |
-| NYG | -0.7 pp | -2.2 pp | -2.3 pp |
+| DET | +0.5 pp | +0.0 pp | -1.0 pp |
+| NYG | -0.9 pp | -2.3 pp | +1.3 pp |
 
 _Positive values favour the listed offense; pass protection uses defense minus pressure allowed._
 
@@ -140,43 +140,43 @@ _Positive values favour the listed offense; pass protection uses defense minus p
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 47.3 | 46.8 | 42.9 |
-| NYG | 50.0 | 50.1 | 53.9 |
+| DET | 47.0 | 45.3 | 45.6 |
+| NYG | 49.5 | 49.4 | 49.1 |
 
 ### Opponent Avg Start (own yardline)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 47.1 | 44.2 | 44.3 |
-| NYG | 44.0 | 45.9 | 45.4 |
+| DET | 48.6 | 48.7 | 50.4 |
+| NYG | 44.2 | 45.7 | 45.4 |
 
 ### Field Position Edge (own - opp)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 0.2 | 2.6 | -1.4 |
-| NYG | 6.0 | 4.1 | 8.5 |
+| DET | -1.6 | -3.3 | -4.8 |
+| NYG | 5.4 | 3.7 | 3.7 |
 
 ### Points per Drive (offense)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 2.32 | 1.95 | 1.57 |
-| NYG | 2.07 | 2.54 | 2.21 |
+| DET | 2.57 | 2.35 | 2.59 |
+| NYG | 2.05 | 2.22 | 2.07 |
 
 ### Points per Drive Allowed
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 2.02 | 1.89 | 1.37 |
-| NYG | 2.52 | 2.95 | 3.56 |
+| DET | 2.07 | 1.98 | 1.98 |
+| NYG | 2.47 | 3.01 | 2.82 |
 
 ### Points per Drive Differential
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 0.29 | 0.06 | 0.20 |
-| NYG | -0.44 | -0.41 | -1.36 |
+| DET | 0.51 | 0.37 | 0.61 |
+| NYG | -0.42 | -0.79 | -0.75 |
 
 _Starting field position expressed as own-yard line (higher = shorter field)._
 
@@ -186,36 +186,36 @@ _Starting field position expressed as own-yard line (higher = shorter field)._
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 7.02 | 6.97 | 6.52 |
-| NYG | 8.32 | 8.16 | 8.03 |
+| DET | 7.25 | 7.50 | 7.50 |
+| NYG | 8.29 | 8.03 | 8.13 |
 
 ### Pass Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 42.8% | 45.3% | 48.4% |
-| NYG | 41.7% | 40.1% | 41.8% |
+| DET | 42.8% | 46.3% | 49.5% |
+| NYG | 42.0% | 42.0% | 42.5% |
 
 ### Run Rate
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 57.2% | 54.7% | 51.6% |
-| NYG | 58.3% | 59.9% | 58.2% |
+| DET | 57.2% | 53.7% | 50.5% |
+| NYG | 58.0% | 58.0% | 57.5% |
 
 ### Passes per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 3.01 | 3.15 | 3.16 |
-| NYG | 3.47 | 3.27 | 3.36 |
+| DET | 3.10 | 3.48 | 3.71 |
+| NYG | 3.49 | 3.37 | 3.46 |
 
 ### Runs per Drive
 
 | Team | Season-to-date | Last 5 | Last 3 |
 | --- | ---: | ---: | ---: |
-| DET | 4.02 | 3.82 | 3.36 |
-| NYG | 4.85 | 4.88 | 4.67 |
+| DET | 4.15 | 4.03 | 3.79 |
+| NYG | 4.81 | 4.66 | 4.67 |
 
 _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
@@ -223,24 +223,24 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DET | NYG |
 | --- | ---: | ---: |
-| Season-to-date | 0.123 | 0.194 |
-| Last 5 games | 0.108 | 0.246 |
-| Last 3 games | 0.034 | 0.285 |
+| Season-to-date | 1.519 | 1.721 |
+| Last 5 games | 1.567 | 1.771 |
+| Last 3 games | 1.585 | 1.736 |
 
 ## Trend Summary (last 3 weeks)
 
-| Metric | W7 | W9 | W11 | Trend |
+| Metric | W9 | W10 | W11 | Trend |
 | --- | --- | --- | --- | --- |
-| Off EPA DET | -0.092 | -0.062 | -0.295 | - declining |
-| Off EPA NYG | 0.140 | 0.109 | 0.122 | - declining |
-| Def EPA DET | -0.292 | 0.017 | -0.147 | - declining |
-| Def EPA NYG | 0.106 | 0.279 | 0.293 | - declining |
-| Off SR DET | 38.6% | 44.0% | 34.7% | - declining |
-| Off SR NYG | 38.5% | 54.5% | 47.7% | + improving |
-| Def SR DET | 34.1% | 42.0% | 41.9% | - declining |
-| Def SR NYG | 44.6% | 53.0% | 48.5% | - declining |
-| Tempo DET | 6.385 | 7.636 | 5.538 | - declining |
-| Tempo NYG | 8.000 | 7.700 | 8.600 | + improving |
+| Off EPA DET | -0.062 | 0.443 | -0.295 | - declining |
+| Off EPA NYG | 0.109 | -0.000 | 0.122 | + improving |
+| Def EPA DET | 0.017 | 0.154 | -0.147 | + improving |
+| Def EPA NYG | 0.279 | 0.032 | 0.293 | - declining |
+| Off SR DET | 44.0% | 60.7% | 34.7% | - declining |
+| Off SR NYG | 54.5% | 40.4% | 47.7% | - declining |
+| Def SR DET | 42.0% | 46.6% | 41.9% | = stable |
+| Def SR NYG | 53.0% | 48.8% | 48.5% | + improving |
+| Tempo DET | 7.636 | 9.333 | 5.538 | - declining |
+| Tempo NYG | 7.700 | 8.091 | 8.600 | + improving |
 
 ## Matchup Analogs
 
@@ -249,104 +249,104 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 5 | CIN (A) | 35-24 | DET | 0.954 | 0.186 | 53.8% | 0.917 |
-| 10 | WAS (A) | n/a | n/a | 0.845 | n/a | n/a | n/a |
-| 3 | BAL (A) | 38-33 | DET | 0.599 | 0.283 | 58.6% | 0.455 |
+| 10 | WAS (A) | 44-22 | DET | 0.903 | 0.443 | 60.7% | 2.444 |
+| 2 | CHI (H) | 52-19 | DET | 0.595 | 0.304 | 57.1% | 2.718 |
 
 **NYG analogs vs DET profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | DEN (A) | 32-28 | NYG | 0.907 | 0.140 | 38.5% | 0.310 |
-| 6 | PHI (H) | 34-17 | NYG | 0.740 | 0.170 | 47.1% | 1.700 |
-| 8 | PHI (A) | 20-38 | PHI | 0.740 | 0.097 | 48.6% | -2.000 |
+| 11 | GB (H) | 20-34 | GB | 0.776 | 0.122 | 47.7% | -1.375 |
+| 7 | DEN (A) | 32-28 | NYG | 0.765 | 0.140 | 38.5% | 0.310 |
+| 3 | KC (H) | 9-20 | KC | 0.729 | -0.118 | 42.3% | -1.200 |
 
 ## Core EPA Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 0.028 | -0.039 | -0.150 |
-| NYG | 0.036 | 0.128 | 0.109 |
+| DET | 0.070 | 0.012 | 0.029 |
+| NYG | 0.032 | 0.093 | 0.077 |
 
 ## Core EPA Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | -0.042 | -0.043 | -0.141 |
-| NYG | 0.113 | 0.191 | 0.293 |
+| DET | -0.022 | -0.008 | 0.008 |
+| NYG | 0.106 | 0.204 | 0.202 |
 
 ## Success Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 47.7% | 45.4% | 39.3% |
-| NYG | 46.0% | 46.9% | 50.2% |
+| DET | 49.1% | 46.9% | 47.1% |
+| NYG | 45.5% | 45.5% | 47.2% |
 
 ## Success Rate Defense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 43.6% | 44.2% | 39.4% |
-| NYG | 49.0% | 50.7% | 53.5% |
+| DET | 43.9% | 43.7% | 43.3% |
+| NYG | 49.0% | 50.4% | 50.2% |
 
 ## Explosive Play Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 10.1% | 11.1% | 12.1% |
-| NYG | 9.1% | 9.6% | 8.6% |
+| DET | 10.6% | 12.5% | 13.3% |
+| NYG | 9.7% | 10.5% | 11.1% |
 
 ## Third Down Conversion Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 33.7% | 27.5% | 23.1% |
-| NYG | 33.7% | 40.3% | 39.5% |
+| DET | 35.4% | 32.8% | 33.6% |
+| NYG | 34.3% | 36.5% | 40.0% |
 
 ## Points per Drive Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 0.402 | 0.162 | 0.213 |
-| NYG | -0.371 | -0.352 | -1.333 |
+| DET | 0.565 | 0.375 | 0.432 |
+| NYG | -0.352 | -0.710 | -0.731 |
 
 ## Yards per Play Differential Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 0.684 | 0.729 | 1.179 |
-| NYG | -0.611 | -0.741 | -1.033 |
+| DET | 0.873 | 1.137 | 1.501 |
+| NYG | -0.549 | -0.613 | -0.378 |
 
 ## Turnover Margin Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 0.556 | 0.200 | -0.333 |
-| NYG | -0.500 | 0.000 | -0.333 |
+| DET | 0.500 | -0.200 | -0.333 |
+| NYG | -0.545 | -0.600 | -0.667 |
 
 ## Red Zone TD Rate (Off) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 13.7% | 11.0% | 8.9% |
-| NYG | 13.1% | 17.5% | 17.4% |
+| DET | 14.1% | 10.5% | 8.0% |
+| NYG | 12.6% | 14.6% | 13.5% |
 
 ## Pressure Rate (Def) Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 8.4% | 7.6% | 8.4% |
-| NYG | 6.6% | 8.2% | 9.6% |
+| DET | 8.4% | 8.2% | 8.6% |
+| NYG | 6.0% | 6.5% | 4.7% |
 
 ## Tempo Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 7.021 | 6.970 | 6.520 |
-| NYG | 8.315 | 8.156 | 8.026 |
+| DET | 7.252 | 7.504 | 7.503 |
+| NYG | 8.295 | 8.034 | 8.130 |
 
 ## Pass Rate Offense Form (up to Week 11)
 
 | Team | Season-to-date | Last 5 | Last 3 |
 |------|---------------:|-------:|-------:|
-| DET | 42.7% | 45.1% | 48.1% |
-| NYG | 41.5% | 39.9% | 41.6% |
+| DET | 42.7% | 46.2% | 49.2% |
+| NYG | 41.9% | 41.9% | 42.5% |

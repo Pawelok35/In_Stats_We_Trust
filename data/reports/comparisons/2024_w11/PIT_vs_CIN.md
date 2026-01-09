@@ -4,19 +4,21 @@
 
 | Metric | PIT | CIN | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | -0.102 | 0.009 | ↓ -0.111 |
-| Core EPA Defense | -0.165 | 0.041 | ↓ -0.207 |
-| Success Rate Offense | 40.8% | 41.7% | ↓ -0.9 pp |
-| Success Rate Defense | 41.8% | 48.3% | ↓ -6.5 pp |
-| Explosive Play Rate (Off) | 8.2% | 10.7% | ↓ -2.5 pp |
-| Third Down Conversion | 22.2% | 29.4% | ↓ -7.2 pp |
-| Points per Drive Differential | 0.154 | -0.538 | ↑ +0.692 |
-| Yards per Play Differential | -1.073 | -0.612 | ↓ -0.461 |
-| Turnover Margin | 2.000 | 1.000 | ↑ +1.000 |
-| Red Zone TD Rate (Off) | 0.0% | 8.0% | ↓ -8.0 pp |
-| Pressure Rate (Def) | 5.4% | 5.3% | ↑ +0.1 pp |
-| Tempo | 7.538 | 7.923 | ↓ -0.385 |
-| PowerScore | 0.050 | 0.137 | ↓ -0.087 |
+| Core EPA Offense | 0.042 | 0.089 | -0.047 |
+| Core EPA Defense | -0.082 | 0.088 | -0.170 |
+| Success Rate Offense | 0.456 | 0.493 | -0.037 |
+| Success Rate Defense | 0.462 | 0.507 | -0.045 |
+| Explosive Play Rate (Off) | 0.098 | 0.089 | 0.009 |
+| Third Down Conversion | 0.357 | 0.450 | -0.093 |
+| Points per Drive Differential | 0.512 | 0.112 | 0.400 |
+| Yards per Play Differential | 0.092 | 0.205 | -0.113 |
+| Turnover Margin | 0.778 | 0.200 | 0.578 |
+| Red Zone TD Rate (Off) | 0.127 | 0.133 | -0.007 |
+| Pressure Rate (Def) | 0.073 | 0.045 | 0.028 |
+| Tempo | 7.538 | 7.923 | -0.385 |
+| PowerScore | 1.541 | 1.700 | -0.159 |
+| PowerScore | 1.541 | 1.700 | -0.159 |
+| Tempo | 7.538 | 7.923 | -0.385 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ CIN edge: +0.087 (PIT +0.050 vs CIN +0.137)
 **7 metrics version:**
 PIT edge: +0.019 (PIT +0.216 vs CIN +0.197)
 **Verdict:** PIT holds the edge in the extended breakdown (lead 0.019), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - CIN) | -1.6 pts (favours CIN) |
-| Model Win% PIT | 43.3% |
-| Model Win% CIN | 56.7% |
-| SOS Differential (PIT-CIN) | -0.079 |
+| Model Spread (PIT - CIN) | -2.9 pts (favours CIN) |
+| Model Win% PIT | 38.0% |
+| Model Win% CIN | 62.0% |
+| SOS Differential (PIT-CIN) | -0.201 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | CIN |
 | --- | ---: | ---: |
-| Season-to-date | 0.115 | 0.194 |
-| Last 5 games | 0.134 | 0.151 |
-| Last 3 games | 0.144 | 0.215 |
+| Season-to-date | 1.563 | 1.764 |
+| Last 5 games | 1.666 | 1.672 |
+| Last 3 games | 1.553 | 1.743 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -242,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | TB (H) | 32-13 | PIT | 0.947 | 0.083 | 44.0% | 1.727 |
+| 7 | CIN (A) | 37-14 | PIT | 1.000 | 0.176 | 45.2% | 2.114 |
 | 1 | ATL (A) | 18-10 | PIT | 0.871 | -0.041 | 42.9% | 0.800 |
-| 5 | BUF (A) | 17-24 | BUF | 0.690 | 0.031 | 50.0% | -0.677 |
+| 8 | GB (H) | 20-26 | GB | 0.613 | 0.051 | 49.4% | -0.515 |
 
 **CIN analogs vs PIT profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 6 | NO (A) | 17-7 | CIN | 0.631 | 0.017 | 45.5% | 0.909 |
-| 8 | CLE (A) | 17-42 | CLE | 0.569 | -0.017 | 45.1% | -2.736 |
-| 4 | MIA (H) | 34-22 | CIN | 0.411 | 0.201 | 49.4% | 1.218 |
+| 7 | PIT (H) | 21-15 | CIN | 1.000 | -0.102 | 36.5% | 0.400 |
+| 3 | MIN (A) | 33-33 | TIE | 0.918 | 0.300 | 58.4% | -0.036 |
+| 5 | DET (H) | 36-41 | DET | 0.838 | 0.189 | 48.9% | -0.385 |
 
 ## Core EPA Offense Form (up to Week 10)
 

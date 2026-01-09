@@ -4,19 +4,21 @@
 
 | Metric | DEN | KC | Delta |
 |---|---:|---:|---:|
-| Core EPA Offense | 0.290 | 0.042 | ↑ +0.248 |
-| Core EPA Defense | -0.168 | 0.138 | ↓ -0.305 |
-| Success Rate Offense | 55.3% | 53.6% | ↑ +1.6 pp |
-| Success Rate Defense | 42.9% | 46.6% | ↓ -3.7 pp |
-| Explosive Play Rate (Off) | 11.8% | 4.3% | ↑ +7.5 pp |
-| Third Down Conversion | 50.0% | 50.0% | ± 0.0 pp |
-| Points per Drive Differential | 3.677 | -0.667 | ↑ +4.343 |
-| Yards per Play Differential | 2.328 | -0.405 | ↑ +2.734 |
-| Turnover Margin | 1.000 | -1.000 | ↑ +2.000 |
-| Red Zone TD Rate (Off) | 22.2% | 20.0% | ↑ +2.2 pp |
-| Pressure Rate (Def) | 11.4% | 2.4% | ↑ +9.0 pp |
-| Tempo | 8.444 | 7.667 | ↑ +0.778 |
-| PowerScore | 0.230 | 0.185 | ↑ +0.045 |
+| Core EPA Offense | -0.042 | 0.053 | -0.095 |
+| Core EPA Defense | -0.069 | -0.030 | -0.039 |
+| Success Rate Offense | 0.450 | 0.512 | -0.062 |
+| Success Rate Defense | 0.439 | 0.455 | -0.015 |
+| Explosive Play Rate (Off) | 0.099 | 0.085 | 0.014 |
+| Third Down Conversion | 0.330 | 0.474 | -0.144 |
+| Points per Drive Differential | 0.001 | 0.479 | -0.478 |
+| Yards per Play Differential | 0.166 | 0.368 | -0.203 |
+| Turnover Margin | -0.300 | -0.444 | 0.144 |
+| Red Zone TD Rate (Off) | 0.160 | 0.120 | 0.040 |
+| Pressure Rate (Def) | 0.090 | 0.061 | 0.029 |
+| Tempo | 8.444 | 7.667 | 0.778 |
+| PowerScore | 1.895 | 1.710 | 0.185 |
+| PowerScore | 1.895 | 1.710 | 0.185 |
+| Tempo | 8.444 | 7.667 | 0.778 |
 
 ## PowerScore Breakdown (Model)
 
@@ -46,15 +48,19 @@ DEN edge: +0.045 (DEN +0.230 vs KC +0.185)
 **7 metrics version:**
 DEN edge: +0.222 (DEN +0.267 vs KC +0.045)
 **Verdict:** DEN holds the edge in the extended breakdown (lead 0.222), driven by Turnover Margin (10% weight).
+### Risk flags
+
+- Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
+
 
 ## Model Outlook
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (DEN - KC) | +0.8 pts (favours DEN) |
-| Model Win% DEN | 53.4% |
-| Model Win% KC | 46.6% |
-| SOS Differential (DEN-KC) | -0.036 |
+| Model Spread (DEN - KC) | +3.4 pts (favours DEN) |
+| Model Win% DEN | 63.9% |
+| Model Win% KC | 36.1% |
+| SOS Differential (DEN-KC) | -0.130 |
 *Neutral-field assumption. Based on schedule through Week 10.*
 
 ## PROE Tendencies
@@ -217,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | DEN | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.093 | 0.129 |
-| Last 5 games | 0.134 | 0.132 |
-| Last 3 games | 0.164 | 0.151 |
+| Season-to-date | 1.547 | 1.677 |
+| Last 5 games | 1.694 | 1.650 |
+| Last 3 games | 1.703 | 1.776 |
 
 ## Trend Summary (last 3 weeks)
 
@@ -252,7 +258,7 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
 | 10 | DEN (-) | 16-14 | KC | 1.000 | 0.019 | 42.0% | 0.222 |
 | 2 | PHI (H) | 20-23 | PHI | 0.806 | -0.006 | 53.2% | -0.273 |
-| 7 | LV (A) | 28-18 | KC | 0.731 | 0.052 | 54.1% | 0.909 |
+| 7 | LV (H) | 28-18 | KC | 0.731 | 0.052 | 54.1% | 0.909 |
 
 ## Core EPA Offense Form (up to Week 10)
 

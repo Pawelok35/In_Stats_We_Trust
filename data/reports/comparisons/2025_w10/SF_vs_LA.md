@@ -15,39 +15,39 @@
 | Turnover Margin | -0.667 | 0.625 | -1.292 |
 | Red Zone TD Rate (Off) | 0.152 | 0.151 | 0.001 |
 | Pressure Rate (Def) | 0.038 | 0.085 | -0.047 |
-| Tempo | 7.545 | 9.600 | -2.055 |
-| PowerScore | 0.279 | 0.174 | 0.105 |
-| PowerScore | 0.279 | 0.174 | 0.105 |
-| Tempo | 7.545 | 9.600 | -2.055 |
+| Tempo | 8.667 | 8.500 | 0.167 |
+| PowerScore | 1.982 | 1.996 | -0.015 |
+| PowerScore | 1.982 | 1.996 | -0.015 |
+| Tempo | 8.667 | 8.500 | 0.167 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | SF | LA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.279 | 0.172 | +0.108 |
-| EPA Defense | 20% | 0.109 | -0.211 | +0.320 |
-| Success Rate Offense | 25% | 53.0% | 53.1% | -0.1 pp |
-| Tempo | 20% | 0.133 | 0.115 | +0.018 |
+| EPA Offense | 35% | 0.109 | 0.331 | -0.222 |
+| EPA Defense | 20% | 0.331 | 0.109 | +0.222 |
+| Success Rate Offense | 25% | 57.7% | 63.5% | -5.8 pp |
+| Tempo | 20% | 0.090 | 0.118 | -0.028 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | SF | LA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.279 | 0.172 | +0.108 |
-| EPA Defense | 20% | 0.109 | -0.211 | +0.320 |
-| Success Rate Offense | 15% | 53.0% | 53.1% | -0.1 pp |
-| Turnover Margin | 10% | -1.000 | 2.000 | -3.000 |
-| Tempo | 10% | 0.133 | 0.115 | +0.018 |
-| Red Zone TD Rate (Off) | 10% | 21.1% | 16.0% | +5.1 pp |
-| Pressure Rate (Def) | 10% | 5.7% | 3.8% | +1.9 pp |
+| EPA Offense | 25% | 0.109 | 0.331 | -0.222 |
+| EPA Defense | 20% | 0.331 | 0.109 | +0.222 |
+| Success Rate Offense | 15% | 57.7% | 63.5% | -5.8 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.090 | 0.118 | -0.028 |
+| Red Zone TD Rate (Off) | 10% | 18.2% | 26.3% | -8.1 pp |
+| Pressure Rate (Def) | 10% | 2.5% | 0.0% | +2.5 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-SF edge: +0.105 (SF +0.279 vs LA +0.174)
+LA edge: +0.053 (SF +0.266 vs LA +0.320)
 **7 metrics version:**
-LA edge: +0.201 (SF +0.111 vs LA +0.312)
-**Verdict:** LA holds the edge in the extended breakdown (lead 0.201), driven by Turnover Margin (10% weight).
+LA edge: +0.428 (SF +0.009 vs LA +0.438)
+**Verdict:** LA holds the edge in the extended breakdown (lead 0.428), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,18 +57,18 @@ LA edge: +0.201 (SF +0.111 vs LA +0.312)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SF - LA) | +1.9 pts (favours SF) |
-| Model Win% SF | 58.0% |
-| Model Win% LA | 42.0% |
-| SOS Differential (SF-LA) | +0.058 |
+| Model Spread (SF - LA) | -0.3 pts (favours LA) |
+| Model Win% SF | 48.9% |
+| Model Win% LA | 51.1% |
+| SOS Differential (SF-LA) | +0.010 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
 ## PROE Tendencies
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| SF | 33.7% | n/a | n/a | 42.3% | 39.3% | n/a |
-| LA | 39.6% | n/a | n/a | 45.7% | 61.9% | n/a |
+| SF | 51.3% | 42.4% | 8.8% | 62.5% | 52.6% | Pass heavy |
+| LA | 47.1% | 42.4% | 4.6% | 60.0% | 66.7% | Pass heavy |
 
 ## Situational Edges
 
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | SF | LA |
 | --- | ---: | ---: |
-| Season-to-date | 0.162 | 0.104 |
-| Last 5 games | 0.205 | 0.109 |
-| Last 3 games | 0.192 | 0.077 |
+| Season-to-date | 1.693 | 1.683 |
+| Last 5 games | 1.761 | 1.710 |
+| Last 3 games | 1.883 | 1.676 |
 
 ## Trend Summary (last 3 weeks)
 

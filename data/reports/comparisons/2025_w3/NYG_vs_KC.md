@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.022 | 0.092 | -0.070 |
 | Pressure Rate (Def) | 0.078 | 0.076 | 0.002 |
 | Tempo | 8.667 | 8.600 | 0.067 |
-| PowerScore | 0.101 | 0.138 | -0.036 |
-| PowerScore | 0.101 | 0.138 | -0.036 |
+| PowerScore | 1.814 | 1.841 | -0.027 |
+| PowerScore | 1.814 | 1.841 | -0.027 |
 | Tempo | 8.667 | 8.600 | 0.067 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ KC edge: +0.428 (NYG -0.126 vs KC +0.303)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NYG - KC) | -0.7 pts (favours KC) |
-| Model Win% NYG | 47.2% |
-| Model Win% KC | 52.8% |
-| SOS Differential (NYG-KC) | -0.003 |
+| Model Spread (NYG - KC) | -0.5 pts (favours KC) |
+| Model Win% NYG | 47.9% |
+| Model Win% KC | 52.1% |
+| SOS Differential (NYG-KC) | -0.185 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | NYG | KC |
 | --- | ---: | ---: |
-| Season-to-date | 0.191 | 0.194 |
-| Last 5 games | 0.191 | 0.194 |
-| Last 3 games | 0.191 | 0.194 |
+| Season-to-date | 1.794 | 1.979 |
+| Last 5 games | 1.794 | 1.979 |
+| Last 3 games | 1.794 | 1.979 |
 
 ## Trend Summary (last 2 weeks)
 

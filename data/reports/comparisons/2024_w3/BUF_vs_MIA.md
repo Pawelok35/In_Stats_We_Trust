@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.212 | 0.072 | 0.140 |
 | Pressure Rate (Def) | 0.080 | 0.062 | 0.017 |
 | Tempo | 7.800 | 6.077 | 1.723 |
-| PowerScore | 0.252 | -0.045 | 0.297 |
-| PowerScore | 0.252 | -0.045 | 0.297 |
+| PowerScore | 1.782 | 1.156 | 0.626 |
+| PowerScore | 1.782 | 1.156 | 0.626 |
 | Tempo | 7.800 | 6.077 | 1.723 |
 
 ## PowerScore Breakdown (Model)
@@ -57,9 +57,9 @@ BUF edge: +0.216 (BUF +0.376 vs MIA +0.159)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (BUF - MIA) | +5.5 pts (favours BUF) |
-| Model Win% BUF | 71.4% |
-| Model Win% MIA | 28.6% |
+| Model Spread (BUF - MIA) | +11.6 pts (favours BUF) |
+| Model Win% BUF | 87.3% |
+| Model Win% MIA | 12.7% |
 | SOS Differential (BUF-MIA) | +0.476 |
 *Neutral-field assumption. Based on schedule through Week 2.*
 

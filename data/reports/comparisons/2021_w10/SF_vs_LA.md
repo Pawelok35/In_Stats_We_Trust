@@ -15,39 +15,39 @@
 | Turnover Margin | -1.125 | 0.556 | -1.681 |
 | Red Zone TD Rate (Off) | 0.189 | 0.162 | 0.027 |
 | Pressure Rate (Def) | 0.068 | 0.074 | -0.006 |
-| Tempo | 6.818 | 8.545 | -1.727 |
-| PowerScore | 1.498 | 1.718 | -0.220 |
-| PowerScore | 1.498 | 1.718 | -0.220 |
-| Tempo | 6.818 | 8.545 | -1.727 |
+| Tempo | 8.300 | 7.100 | 1.200 |
+| PowerScore | 1.791 | 1.482 | 0.309 |
+| PowerScore | 1.791 | 1.482 | 0.309 |
+| Tempo | 8.300 | 7.100 | 1.200 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | SF | LA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.053 | -0.215 | +0.161 |
-| EPA Defense | 20% | 0.181 | -0.071 | +0.252 |
-| Success Rate Offense | 25% | 46.7% | 39.4% | +7.3 pp |
-| Tempo | 20% | 0.147 | 0.106 | +0.040 |
+| EPA Offense | 35% | 0.141 | -0.164 | +0.305 |
+| EPA Defense | 20% | -0.164 | 0.141 | -0.305 |
+| Success Rate Offense | 25% | 45.8% | 36.6% | +9.2 pp |
+| Tempo | 20% | 0.084 | 0.099 | -0.014 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | SF | LA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.053 | -0.215 | +0.161 |
-| EPA Defense | 20% | 0.181 | -0.071 | +0.252 |
-| Success Rate Offense | 15% | 46.7% | 39.4% | +7.3 pp |
-| Turnover Margin | 10% | -3.000 | -1.000 | -2.000 |
-| Tempo | 10% | 0.147 | 0.106 | +0.040 |
-| Red Zone TD Rate (Off) | 10% | 14.3% | 5.6% | +8.7 pp |
-| Pressure Rate (Def) | 10% | 6.7% | 9.7% | -3.0 pp |
+| EPA Offense | 25% | 0.141 | -0.164 | +0.305 |
+| EPA Defense | 20% | -0.164 | 0.141 | -0.305 |
+| Success Rate Offense | 15% | 45.8% | 36.6% | +9.2 pp |
+| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
+| Tempo | 10% | 0.084 | 0.099 | -0.014 |
+| Red Zone TD Rate (Off) | 10% | 22.2% | 5.3% | +17.0 pp |
+| Pressure Rate (Def) | 10% | 4.5% | 4.8% | -0.2 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-SF edge: +0.133 (SF +0.164 vs LA +0.030)
+SF edge: +0.066 (SF +0.148 vs LA +0.082)
 **7 metrics version:**
-LA edge: +0.088 (SF -0.171 vs LA -0.083)
-**Verdict:** LA holds the edge in the extended breakdown (lead 0.088), driven by Turnover Margin (10% weight).
+SF edge: +0.444 (SF +0.306 vs LA -0.138)
+**Verdict:** SF holds the edge in the extended breakdown (lead 0.444), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ LA edge: +0.088 (SF -0.171 vs LA -0.083)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (SF - LA) | -4.1 pts (favours LA) |
-| Model Win% SF | 33.6% |
-| Model Win% LA | 66.4% |
+| Model Spread (SF - LA) | +5.7 pts (favours SF) |
+| Model Win% SF | 72.1% |
+| Model Win% LA | 27.9% |
 | SOS Differential (SF-LA) | -0.073 |
 *Neutral-field assumption. Based on schedule through Week 9.*
 
@@ -67,8 +67,8 @@ LA edge: +0.088 (SF -0.171 vs LA -0.083)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| SF | 60.0% | n/a | n/a | 41.9% | 41.3% | n/a |
-| LA | 56.4% | n/a | n/a | 56.7% | 39.3% | n/a |
+| SF | 25.3% | 45.5% | -20.2% | 47.6% | 45.2% | Run heavy |
+| LA | 62.0% | 45.5% | 16.5% | 38.6% | 33.3% | Pass heavy |
 
 ## Situational Edges
 
@@ -248,17 +248,17 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 7 | IND (H) | 18-32 | IND | 0.896 | -0.198 | 34.7% | -1.022 |
-| 5 | ARI (A) | 10-15 | ARI | 0.859 | -0.152 | 36.8% | -0.589 |
-| 9 | ARI (H) | 17-31 | ARI | 0.859 | -0.053 | 46.7% | -1.273 |
+| 5 | LA (A) | 10-15 | LA | 1.000 | -0.152 | 36.8% | -0.589 |
+| 6 | TB (A) | n/a | n/a | 0.925 | n/a | n/a | n/a |
+| 3 | ARI (H) | 28-33 | ARI | 0.859 | 0.128 | 50.0% | -0.455 |
 
 **LA analogs vs SF profile**
 
 | Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |
 | ---: | --- | --- | --- | ---: | ---: | ---: | ---: |
-| 5 | SEA (A) | 26-17 | LA | 0.653 | 0.153 | 48.8% | 0.750 |
-| 2 | IND (A) | 27-16 | LA | 0.648 | 0.061 | 48.6% | 1.064 |
-| 7 | DET (H) | 28-21 | LA | 0.630 | 0.105 | 43.8% | 0.689 |
+| 5 | SF (H) | 26-17 | LA | 1.000 | 0.153 | 48.8% | 0.750 |
+| 6 | BAL (A) | 38-12 | LA | 0.758 | 0.137 | 49.4% | 2.006 |
+| 4 | IND (H) | 20-37 | IND | 0.648 | -0.031 | 51.8% | -1.700 |
 
 ## Core EPA Offense Form (up to Week 9)
 

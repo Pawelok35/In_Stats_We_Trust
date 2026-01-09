@@ -16,8 +16,8 @@
 | Red Zone TD Rate (Off) | 0.189 | 0.190 | -0.000 |
 | Pressure Rate (Def) | 0.068 | 0.067 | 0.000 |
 | Tempo | 6.231 | 8.364 | -2.133 |
-| PowerScore | 0.127 | 0.147 | -0.020 |
-| PowerScore | 0.127 | 0.147 | -0.020 |
+| PowerScore | 1.368 | 1.798 | -0.430 |
+| PowerScore | 1.368 | 1.798 | -0.430 |
 | Tempo | 6.231 | 8.364 | -2.133 |
 
 ## PowerScore Breakdown (Model)
@@ -57,10 +57,10 @@ PIT edge: +0.584 (PIT +0.396 vs IND -0.188)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - IND) | -0.4 pts (favours IND) |
-| Model Win% PIT | 48.5% |
-| Model Win% IND | 51.5% |
-| SOS Differential (PIT-IND) | +0.007 |
+| Model Spread (PIT - IND) | -7.9 pts (favours IND) |
+| Model Win% PIT | 21.0% |
+| Model Win% IND | 79.0% |
+| SOS Differential (PIT-IND) | -0.073 |
 *Neutral-field assumption. Based on schedule through Week 8.*
 
 ## PROE Tendencies
@@ -223,9 +223,9 @@ _Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._
 
 | Window | PIT | IND |
 | --- | ---: | ---: |
-| Season-to-date | 0.185 | 0.179 |
-| Last 5 games | 0.184 | 0.178 |
-| Last 3 games | 0.203 | 0.212 |
+| Season-to-date | 1.868 | 1.942 |
+| Last 5 games | 1.988 | 1.960 |
+| Last 3 games | 2.002 | 2.087 |
 
 ## Trend Summary (last 3 weeks)
 
