@@ -14,13 +14,12 @@ from __future__ import annotations
 
 import argparse
 import glob
-import json
+import sys
 from pathlib import Path
 from typing import Iterable, List, Tuple
 
 import pandas as pd
 
-import sys
 ROOT = Path(__file__).resolve().parent.parent
 if str(ROOT) not in sys.path:
     sys.path.insert(0, str(ROOT))

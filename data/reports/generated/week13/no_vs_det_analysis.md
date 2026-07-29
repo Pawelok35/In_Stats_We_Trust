@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – NO 11.4 – DET 22.5
-2️⃣ Predicted Winner (Model) – DET
-3️⃣ Predicted Margin (Model) – DET by 11.1 pts
-4️⃣ Win Probability (Model) – 92% (DET)
-5️⃣ Why This Team Wins (Model) – Na 3rd down DET utrzymuje 41.5%, podczas gdy NO jest na 35.1%, co stabilizuje serie ofensywne. Turnover margin faworyzuje DET (+2.00 vs -2.00), co przekłada się na dodatkowe posiadania. Success Rate Offense pokazuje DET na poziomie 44.4% vs 40.2% (+4.2 pp). Defensive pressure rate wspiera DET (+6.2% vs +3.4%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie DET (10.6% vs 9.1%), więc big-play equity jest wyższe.
+1️⃣ Estimated Score (Model) – NO 37.7 – DET 26.5
+2️⃣ Predicted Winner (Model) – NO
+3️⃣ Predicted Margin (Model) – NO by 11.2 pts
+4️⃣ Win Probability (Model) – 95% (NO)
+5️⃣ Why This Team Wins (Model) – Na 3rd down NO utrzymuje 45.1%, podczas gdy DET jest na 38.3%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja NO (19.2% vs 13.9%). Success Rate Offense pokazuje NO na poziomie 46.4% vs 44.3% (+2.1 pp). Explosive Play Rate pozostaje po stronie NO (10.8% vs 9.5%), więc big-play equity jest wyższe. Defensive pressure rate wspiera NO (+3.9% vs +3.0%), więc pasy rywala będą częściej pod presją.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – NO 20.8 – DET 24.2
-2️⃣ Predicted Winner (Market) – DET
-3️⃣ Predicted Margin (Market) – DET by 3.5 pts
-4️⃣ Win Probability (Market) – 62% (DET)
-5️⃣ Forum Output (A) – PowerScore (Model) — NO +0.115 vs DET +0.120. Points per Drive Differential — NO -0.005 vs DET +0.329. Success Rate Offense — NO 40.2% vs DET 44.4%. Third Down Conversion — NO 35.1% vs DET 41.5%. Red Zone TD Rate — NO 11.7% vs DET 11.5%. Explosive Play Rate — NO 9.1% vs DET 10.6%. Model margin -11.1 pts vs market spread NO -3.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DET po marginesie -11.1 pkt. DET notuje +0.329 PPD vs -0.005 u NO. Różnica w Success Rate to 44.4% vs 40.2%. Na 3rd down DET (41.5%) wygląda solidniej niż NO (35.1%). Red Zone i explosiveness ( 11.5% / 10.6% ) utrzymują przewagę jakościową. Market trzyma -3.5 pkt, więc edge vs linia to +7.6.
+1️⃣ Estimated Score (Market) – NO 29.8 – DET 23.2
+2️⃣ Predicted Winner (Market) – NO
+3️⃣ Predicted Margin (Market) – NO by 6.5 pts
+4️⃣ Win Probability (Market) – 73% (NO)
+5️⃣ Forum Output (A) – PowerScore (Model) — NO +0.194 vs DET +0.257. Points per Drive Differential — NO +0.421 vs DET -0.113. Success Rate Offense — NO 46.4% vs DET 44.3%. Third Down Conversion — NO 45.1% vs DET 38.3%. Red Zone TD Rate — NO 19.2% vs DET 13.9%. Explosive Play Rate — NO 10.8% vs DET 9.5%. Model margin 11.2 pts vs market spread NO +6.5.
+6️⃣ Forum Output (B) – Model idzie w stronę NO po marginesie 11.2 pkt. NO notuje +0.421 PPD vs -0.113 u DET. Różnica w Success Rate to 46.4% vs 44.3%. Na 3rd down NO (45.1%) wygląda solidniej niż DET (38.3%). Red Zone i explosiveness ( 19.2% / 10.8% ) utrzymują przewagę jakościową. Market trzyma 6.5 pkt, więc edge vs linia to +4.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +7.6 pts
-• PowerScoreDiff (winner) = +0.005
-• Confidence = 92.0%
+• Edge_vs_Line (winner) = +4.7 pts
+• PowerScoreDiff (winner) = -0.063
+• Confidence = 95.0%
 
-🏷 Model Tag: VALUE PLAY — based on 92.0% confidence, +7.6 pts model edge vs line, and PowerScore Δ +0.005.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +4.7 pts model edge vs line, and PowerScore Δ -0.063.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – NO 11.4 – DET 22.5
-   • Win Probability – 92% (DET)
+   • Estimated Score – NO 37.7 – DET 26.5
+   • Win Probability – 95% (NO)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – NO 20.8 – DET 24.2
-   • Win Probability – 62% (DET)
+   • Estimated Score – NO 29.8 – DET 23.2
+   • Win Probability – 73% (NO)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — DET (HC -3.5)
+🏷 Model Tag: NEUTRAL — NO (HC -6.5)

@@ -2,7 +2,7 @@ DATA_ROOT: data
 default_season: 2025
 default_week: 8
 data_sources:
-  provider: nfl_data_py
+  provider: filesystem
   filesystem:
     l1_raw_dir: data/sources/nfl
 weights:

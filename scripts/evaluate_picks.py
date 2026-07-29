@@ -5,12 +5,13 @@ import json
 from collections import defaultdict
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
+from urllib.error import URLError
 
 import nfl_data_py as nfl
 import pandas as pd
-from urllib.error import URLError
 
 from utils.config import load_settings
+from utils.team_aliases import normalize_team_code
 
 
 def load_picks(
@@ -73,8 +74,8 @@ def load_results(
     for _, row in df.iterrows():
         week = int(row["week"])
         # Prefer standard naming; fall back to alternative column names if needed.
-        home = str(row.get("home_team") or row.get("team_a") or row.get("TEAM") or "").upper()
-        away = str(row.get("away_team") or row.get("team_b") or row.get("OPP") or "").upper()
+        home = normalize_team_code(row.get("home_team") or row.get("team_a") or row.get("TEAM"))
+        away = normalize_team_code(row.get("away_team") or row.get("team_b") or row.get("OPP"))
         if not home or not away:
             continue
         results[(week, home, away)] = {
@@ -88,7 +89,9 @@ def load_results(
     return results
 
 
-def load_manual_results(path: Path | None, season: int | None = None) -> Dict[Tuple[int, str, str], Dict]:
+def load_manual_results(
+    path: Path | None, season: int | None = None
+) -> Dict[Tuple[int, str, str], Dict]:
     if not path or not path.exists():
         return {}
     overrides: Dict[Tuple[int, str, str], Dict] = {}
@@ -102,8 +105,8 @@ def load_manual_results(path: Path | None, season: int | None = None) -> Dict[Tu
             continue
         week = int(data["week"])
         # only override current season
-        home = str(data["home_team"]).upper()
-        away = str(data["away_team"]).upper()
+        home = normalize_team_code(data["home_team"])
+        away = normalize_team_code(data["away_team"])
         overrides[(week, home, away)] = {
             "home_score": data["home_score"],
             "away_score": data["away_score"],
@@ -116,13 +119,19 @@ def evaluate_picks(
     results: Dict[Tuple[int, str, str], Dict],
     tags: set[str] | None,
 ) -> Dict[str, Dict]:
-    summary: Dict[str, Dict[str, float]] = defaultdict(lambda: {"wins": 0, "losses": 0, "pushes": 0, "pending": 0})
+    summary: Dict[str, Dict[str, float]] = defaultdict(
+        lambda: {"wins": 0, "losses": 0, "pushes": 0, "pending": 0}
+    )
 
     for pick in picks:
         tag = pick["tag"]
         if tags and tag not in tags:
             continue
-        key = (int(pick["week"]), pick["home"], pick["away"])
+        key = (
+            int(pick["week"]),
+            normalize_team_code(pick["home"]),
+            normalize_team_code(pick["away"]),
+        )
         game = results.get(key)
         if not game or pd.isna(game["home_score"]) or pd.isna(game["away_score"]):
             summary[tag]["pending"] += 1
@@ -131,7 +140,9 @@ def evaluate_picks(
         home_score = int(game["home_score"])
         away_score = int(game["away_score"])
 
-        if pick["model_winner"] == pick["home"]:
+        model_winner = normalize_team_code(pick["model_winner"])
+        home_team = normalize_team_code(pick["home"])
+        if model_winner == home_team:
             pick_margin = home_score - away_score
         else:
             pick_margin = away_score - home_score
@@ -170,7 +181,9 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument("--season", type=int, required=True, help="Sezon, np. 2025")
     parser.add_argument("--from-week", type=int, help="Tydzień początkowy (opcjonalnie)")
     parser.add_argument("--to-week", type=int, help="Tydzień końcowy (opcjonalnie)")
-    parser.add_argument("--tag", action="append", help="Filtruj tylko wskazane tagi (parametr wielokrotny)")
+    parser.add_argument(
+        "--tag", action="append", help="Filtruj tylko wskazane tagi (parametr wielokrotny)"
+    )
     parser.add_argument(
         "--picks-dir",
         type=Path,

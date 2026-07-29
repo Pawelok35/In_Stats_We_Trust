@@ -1,0 +1,786 @@
+{
+  "schema_version": "variant_b_audit_output.v1",
+  "framework_version": "variant_b_audit_v1",
+  "audit_stage": "EARLY_PREVIEW",
+  "generated_at_utc": "2026-07-28T19:32:47Z",
+  "pick_id": "2026_w01_MIA_at_LV_MIA",
+  "event": {
+    "season": 2026,
+    "week": 1,
+    "home": "LV",
+    "away": "MIA",
+    "selected_team": "MIA",
+    "neutral_site": false
+  },
+  "source_pick": {
+    "acceptable_quote_frontier_id": "empirical_residual_pmf_variant_m_2021_2025_20260728T193246Z",
+    "acceptable_quote_frontier_path": "research\\variant_b_week_flow\\2026\\week_01\\model_proof\\frontiers\\2026_w01_MIA_at_LV_MIA_acceptable_quote_frontier.json",
+    "away": "MIA",
+    "book": "SIM_PREGAME_COM",
+    "code_is_dirty": true,
+    "commit_sha": "037b7d9be877d277be1d1b70de88aa7697ff4445",
+    "confidence": 87,
+    "config_hashes": {
+      "config/lines/2026/week1_lines.yaml": "7cad074ca837470d66523a2c54e74c71c65c75489d1cc4fa2a48dcae22203e84",
+      "config/tag_rules/variant_m.yaml": "19d46db4b4103ad7048fb5e0edeab32ea94421b9497324e52133b5adc46dba6e"
+    },
+    "config_sha256": "d334d9d0759dc35b596a20e14a58ef8504f5502e85c37ec95cc448aa7e39921c",
+    "data_cutoff": "2026_w1",
+    "decision_ts_utc": "2026-09-08T18:00:00Z",
+    "edge_vs_line": 12.71,
+    "generated_at": "2026-07-28T17:14:43+00:00",
+    "handicap": 3.5,
+    "home": "LV",
+    "line": 3.5,
+    "margin_distribution_id": "empirical_residual_pmf_variant_m_2021_2025_20260728T193246Z",
+    "margin_pmf_method": "EMPIRICAL_RESIDUAL_PMF_MVP",
+    "margin_pmf_path": "research\\variant_b_week_flow\\2026\\week_01\\model_proof\\frontiers\\2026_w01_MIA_at_LV_MIA_margin_pmf.json",
+    "margin_pmf_residual_mean": -1.471643,
+    "margin_pmf_residual_std": 14.476746,
+    "margin_pmf_sample_size": 347,
+    "market": "spread",
+    "market_margin": 3.5,
+    "market_winner": "LV",
+    "model_generation_book": "SIM_PREGAME_COM",
+    "model_generation_price": 102,
+    "model_generation_quote_id": "",
+    "model_generation_quote_timestamp_utc": "2026-09-08T18:00:00Z",
+    "model_generation_spread_selected_team": 3.5,
+    "model_margin": -9.21,
+    "model_proof_status": "EMPIRICAL_MVP",
+    "model_proof_warning": "Empirical residual PMF is an automated MVP proof layer, not a final calibrated model distribution.",
+    "model_version": "variant_m",
+    "model_winner": "MIA",
+    "neutral_site": false,
+    "odds_snapshot_type": "simulation",
+    "odds_source": "week_01_screen_snapshot",
+    "p_cover": 0.81268,
+    "p_loss": 0.18732,
+    "p_push": 0.0,
+    "price": 102,
+    "prime_time": false,
+    "report": "data\\reports\\comparisons\\2026_w1\\LV_vs_MIA.md",
+    "season": 2026,
+    "source_report": "data\\reports\\comparisons\\2026_w1\\LV_vs_MIA.md",
+    "spread": -3.5,
+    "tag": "GOM",
+    "total": 40.5,
+    "week": 1,
+    "window": "season",
+    "gpt_full_19_snapshot_path": "research\\gpt_snapshots\\2026\\week_01\\2026_w01_MIA_at_LV\\full_19_points.md",
+    "gpt_full_19_points_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ],
+    "gpt_full_19_status": "STRUCTURALLY_COMPLETE",
+    "quote_timestamp_utc": "2026-09-08T18:00:00Z",
+    "quote_id": "simulation_2026_w01_MIA_at_LV",
+    "executable_status": "simulation_unverified",
+    "target_stake": 100,
+    "source_type": "SIMULATION_BOOK_SNAPSHOT",
+    "market_scope": "FULL_GAME",
+    "house_rules_checked": false,
+    "market_quote_override_applied": true,
+    "market_quote_override_source": "quotes_file"
+  },
+  "research_evidence": {
+    "gpt_full_19_status": "STRUCTURALLY_COMPLETE",
+    "gpt_full_19_snapshot_path": "research\\gpt_snapshots\\2026\\week_01\\2026_w01_MIA_at_LV\\full_19_points.md",
+    "gpt_full_19_points_present": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19
+    ]
+  },
+  "audit_points": [
+    {
+      "point_number": 1,
+      "point_name": "argument_against",
+      "status": "INCOMPLETE",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [
+        "market-grade executable quote"
+      ],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [
+        {
+          "rule_id": "AG-04",
+          "risk_level": "HIGH",
+          "blocking": true,
+          "description": "Market source, quote timestamp, and executable status are required for market-grade audit."
+        }
+      ],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "selected_team": "MIA",
+          "selected_model_margin_raw": 9.21,
+          "selected_model_margin_rounded": 9.0,
+          "selected_team_spread": 3.5,
+          "stored_edge_raw": 12.71,
+          "canonical_edge_raw": 12.71,
+          "canonical_edge_rounded": 12.5
+        }
+      },
+      "manual_review": {
+        "required": true,
+        "status": "OPEN"
+      },
+      "narrative": "MIA +3.5 has a raw edge signal; push-aware probabilities are present from the model proof layer, and the market snapshot is not market-grade."
+    },
+    {
+      "point_number": 2,
+      "point_name": "market_move_notes",
+      "status": "NOT_ASSESSABLE",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [
+        "opener",
+        "model-generation quote",
+        "market-grade current quote"
+      ],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [
+        {
+          "rule_id": "MM-01",
+          "risk_level": "MEDIUM",
+          "blocking": false,
+          "description": "Missing opener; opener-to-current movement is not assessable."
+        },
+        {
+          "rule_id": "MM-02",
+          "risk_level": "HIGH",
+          "blocking": true,
+          "description": "Current quote is not market-grade without sportsbook, timestamp, and executable status."
+        }
+      ],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "movement_from_opener": "UNKNOWN",
+          "movement_from_model_snapshot": "UNKNOWN",
+          "key_numbers_touched": [],
+          "key_numbers_crossed": "NOT_ASSESSABLE",
+          "price_movement": "UNKNOWN"
+        }
+      },
+      "manual_review": {
+        "required": false,
+        "status": "NOT_REQUIRED"
+      },
+      "narrative": "Opener/model-generation quote data is incomplete. Movement direction and no-chase cannot be assessed from a manual current quote."
+    },
+    {
+      "point_number": 6,
+      "point_name": "key_number_check",
+      "status": "COMPLETE",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "selected_team_spread": 3.5,
+          "is_key_number": false,
+          "key_number": null
+        }
+      },
+      "manual_review": {
+        "required": false,
+        "status": "NOT_REQUIRED"
+      },
+      "narrative": "Current selected-team spread is not on configured key number 3, 7, 10, or 14."
+    },
+    {
+      "point_number": 7,
+      "point_name": "no_chase_limit",
+      "status": "COMPLETE",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "no_chase_status": "NOT_TRIGGERED",
+          "current_spread": 3.5,
+          "model_generation_spread": 3.5
+        }
+      },
+      "manual_review": {
+        "required": false,
+        "status": "NOT_REQUIRED"
+      },
+      "narrative": "No-chase can be assessed from model-generation quote to current quote."
+    },
+    {
+      "point_number": 8,
+      "point_name": "price_quality",
+      "status": "NOT_ASSESSABLE",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [
+        "market-grade executable quote"
+      ],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [
+        {
+          "rule_id": "PXQ-01",
+          "risk_level": "HIGH",
+          "blocking": true,
+          "description": "Price quality requires a fresh atomic quote with named source, timestamp, market scope, spread, price, and executable status."
+        }
+      ],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "price": 102.0,
+          "price_decimal": 2.02,
+          "quote_quality_status": "UNVERIFIED",
+          "price_status": "NOT_ASSESSABLE",
+          "valuation_method": "FULL_MODEL_EV",
+          "conditional_cover_rate_given_no_push": 0.49505,
+          "unconditional_cover_probability_required": 0.49505,
+          "reason_codes": [
+            "CURRENT_QUOTE_NOT_EXECUTABLE"
+          ]
+        }
+      },
+      "manual_review": {
+        "required": false,
+        "status": "NOT_REQUIRED"
+      },
+      "narrative": "Price quality is NOT_ASSESSABLE without a market-grade atomic quote and push-aware probability or frozen frontier."
+    },
+    {
+      "point_number": 9,
+      "point_name": "market_snapshot",
+      "status": "INCOMPLETE",
+      "due_status": "DUE",
+      "confirmed_facts": [
+        "stored_quote=3.5 at 102"
+      ],
+      "missing_data": [
+        "named executable sportsbook",
+        "executable quote status"
+      ],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [
+        {
+          "rule_id": "MS-01",
+          "risk_level": "HIGH",
+          "blocking": true,
+          "description": "Market snapshot must identify event, selected side, market scope, spread, price, source, and evidence grade."
+        }
+      ],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "book": "SIM_PREGAME_COM",
+          "timestamp": "2026-09-08T18:00:00Z",
+          "price": 102.0,
+          "price_decimal": 2.02,
+          "selected_team_spread": 3.5,
+          "quote_integrity_status": "VALID",
+          "evidence_grade": "PREVIEW_ONLY",
+          "market_state": "UNKNOWN",
+          "executable_status": "UNKNOWN",
+          "stake_check_status": "NOT_TESTED",
+          "direct_book_checked": false,
+          "target_stake": 100.0,
+          "accepted_stake": null,
+          "market_grade_legacy": false,
+          "reason_codes": [
+            "DIRECT_BOOK_NOT_CHECKED"
+          ]
+        }
+      },
+      "manual_review": {
+        "required": false,
+        "status": "NOT_REQUIRED"
+      },
+      "narrative": "Market snapshot is incomplete: feed, book, betslip, and executed-ticket evidence are not interchangeable."
+    },
+    {
+      "point_number": 18,
+      "point_name": "process_quality",
+      "status": "PREKICK_NOT_READY",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [
+        {
+          "rule_id": "PROC-02",
+          "risk_level": "HIGH",
+          "blocking": true,
+          "description": "Due blocking rules override any numeric quality score."
+        }
+      ],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "due_blocking_rules": [
+            "AG-04",
+            "MM-02",
+            "MS-01",
+            "PROC-01",
+            "PXQ-01"
+          ],
+          "due_nonblocking_rules": [
+            "MM-01",
+            "PROC-03"
+          ],
+          "pending_not_due": [
+            "closing_line",
+            "closing_price",
+            "clv_points",
+            "injury_role_notes",
+            "public_bias",
+            "weather_notes"
+          ],
+          "readiness": {
+            "research_readiness": "PARTIAL",
+            "model_audit_readiness": "BLOCKED",
+            "execution_readiness": "BLOCKED",
+            "final_prekick_readiness": "PREKICK_NOT_READY",
+            "post_close_readiness": "PENDING_NOT_DUE"
+          },
+          "point_checks": [
+            {
+              "point_id": 1,
+              "point_name": "argument_against",
+              "run_status": "VALID",
+              "native_domain_status": "INCOMPLETE",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "AG-04"
+              ],
+              "warning_rules": []
+            },
+            {
+              "point_id": 2,
+              "point_name": "market_move_notes",
+              "run_status": "VALID",
+              "native_domain_status": "NOT_ASSESSABLE",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "MM-02"
+              ],
+              "warning_rules": [
+                "MM-01"
+              ]
+            },
+            {
+              "point_id": 3,
+              "point_name": "injury_role_notes",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "NOT_DUE",
+              "criticality": "HARD_WHEN_DUE",
+              "gate_effect": "NONE",
+              "effective_status": "PENDING_NOT_DUE",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 4,
+              "point_name": "schedule_spot_notes",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "PROC-01"
+              ],
+              "warning_rules": []
+            },
+            {
+              "point_id": 5,
+              "point_name": "weather_notes",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "NOT_DUE",
+              "criticality": "HARD_WHEN_DUE",
+              "gate_effect": "NONE",
+              "effective_status": "PENDING_NOT_DUE",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 6,
+              "point_name": "key_number_check",
+              "run_status": "VALID",
+              "native_domain_status": "COMPLETE",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "NONE",
+              "effective_status": "OK",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 7,
+              "point_name": "no_chase_limit",
+              "run_status": "VALID",
+              "native_domain_status": "COMPLETE",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "NONE",
+              "effective_status": "OK",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 8,
+              "point_name": "price_quality",
+              "run_status": "VALID",
+              "native_domain_status": "NOT_ASSESSABLE",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "PXQ-01"
+              ],
+              "warning_rules": []
+            },
+            {
+              "point_id": 9,
+              "point_name": "market_snapshot",
+              "run_status": "VALID",
+              "native_domain_status": "INCOMPLETE",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "MS-01"
+              ],
+              "warning_rules": []
+            },
+            {
+              "point_id": 10,
+              "point_name": "public_bias",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "NOT_DUE",
+              "criticality": "CONTEXT_ONLY",
+              "gate_effect": "NONE",
+              "effective_status": "PENDING_NOT_DUE",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 11,
+              "point_name": "power_rankings_check",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "DUE",
+              "criticality": "CONTEXT_ONLY",
+              "gate_effect": "WARNING",
+              "effective_status": "PARTIAL",
+              "blocking_rules": [],
+              "warning_rules": [
+                "PROC-03"
+              ]
+            },
+            {
+              "point_id": 12,
+              "point_name": "roster_change_check",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "PROC-01"
+              ],
+              "warning_rules": []
+            },
+            {
+              "point_id": 13,
+              "point_name": "matchup_specific_risk",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "DUE",
+              "criticality": "SOFT_REQUIRED",
+              "gate_effect": "WARNING",
+              "effective_status": "PARTIAL",
+              "blocking_rules": [],
+              "warning_rules": [
+                "PROC-03"
+              ]
+            },
+            {
+              "point_id": 14,
+              "point_name": "game_script_risk",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "DUE",
+              "criticality": "HARD_REQUIRED",
+              "gate_effect": "HARD_BLOCK",
+              "effective_status": "BLOCKED",
+              "blocking_rules": [
+                "PROC-01"
+              ],
+              "warning_rules": []
+            },
+            {
+              "point_id": 15,
+              "point_name": "closing_line",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "POST_EVENT_ONLY",
+              "criticality": "POST_EVENT",
+              "gate_effect": "NONE",
+              "effective_status": "PENDING_NOT_DUE",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 16,
+              "point_name": "closing_price",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "POST_EVENT_ONLY",
+              "criticality": "POST_EVENT",
+              "gate_effect": "NONE",
+              "effective_status": "PENDING_NOT_DUE",
+              "blocking_rules": [],
+              "warning_rules": []
+            },
+            {
+              "point_id": 17,
+              "point_name": "clv_points",
+              "run_status": "NOT_RUN",
+              "native_domain_status": "MISSING_POINT_OUTPUT",
+              "due_status": "POST_EVENT_ONLY",
+              "criticality": "POST_EVENT",
+              "gate_effect": "NONE",
+              "effective_status": "PENDING_NOT_DUE",
+              "blocking_rules": [],
+              "warning_rules": []
+            }
+          ],
+          "coverage": {
+            "due_points_total": 11,
+            "due_points_ok": 2,
+            "due_points_partial": 2,
+            "due_points_blocked": 7,
+            "hard_blockers_count": 5,
+            "pending_not_due_count": 6
+          },
+          "cross_point_checks": {
+            "event_identity_consistent": true,
+            "selected_team_consistent": true,
+            "market_scope_consistent": "PARTIALLY_VERIFIED",
+            "model_run_consistent": "NOT_ASSESSABLE",
+            "margin_pmf_consistent": "NOT_ASSESSABLE",
+            "quote_ids_consistent": false,
+            "spread_price_atomic": "NOT_ASSESSABLE",
+            "no_future_data_leakage": "NOT_ASSESSABLE",
+            "all_numeric_outputs_script_generated": true,
+            "unlogged_overrides_present": "UNKNOWN"
+          },
+          "outcome_used": false
+        }
+      },
+      "manual_review": {
+        "required": false,
+        "status": "NOT_REQUIRED"
+      },
+      "narrative": "Process quality is incomplete because due blocking rules are open."
+    },
+    {
+      "point_number": 19,
+      "point_name": "final_operator_decision",
+      "status": "INCOMPLETE",
+      "due_status": "DUE",
+      "confirmed_facts": [],
+      "missing_data": [],
+      "pending_data": [],
+      "conditional_risks": [],
+      "triggered_rules": [
+        {
+          "rule_id": "OD-04",
+          "risk_level": "HIGH",
+          "blocking": true,
+          "description": "Missing PMF, p_cover, p_push, p_loss, acceptable frontier, model-generation quote, roster baseline, or script simulation must route to RETURN_FOR_MODEL_RERUN."
+        }
+      ],
+      "calculations": {
+        "owner": "PYTHON_RULE_ENGINE",
+        "values": {
+          "gate_state": "HOLD",
+          "operator_action": "RETURN_FOR_MODEL_RERUN",
+          "legacy_single_status": "HOLD_PENDING_DATA",
+          "substatus": "MODEL_RERUN_AND_MARKET_GRADE_SNAPSHOT_REQUIRED",
+          "hold_type": "ACTIVE_REMEDIATION_REQUIRED",
+          "completion_scope": "CURRENT_PHASE",
+          "process_quality_input": {
+            "overall_status": "PREKICK_NOT_READY",
+            "hard_blockers_count": 5,
+            "warnings_count": 2,
+            "pending_not_due_count": 6,
+            "invalidators_count": 0
+          },
+          "primary_blocker": {
+            "blocker_code": "MODEL_OUTPUT_NOT_EXECUTION_GRADE",
+            "blocker_class": "MODEL_RERUN",
+            "source_point": 18,
+            "recoverability": "REQUIRES_NEW_MODEL_RUN"
+          },
+          "required_actions": [
+            {
+              "priority": 1,
+              "action_code": "RERUN_MODEL_WITH_FULL_MARGIN_DISTRIBUTION",
+              "owner": "MODEL_PIPELINE",
+              "source_points": [
+                1,
+                7,
+                8,
+                12,
+                14,
+                18
+              ],
+              "reason_codes": [
+                "PROC-01"
+              ],
+              "required_before_phase_transition": true
+            },
+            {
+              "priority": 2,
+              "action_code": "CAPTURE_ATOMIC_MARKET_GRADE_QUOTE_DURING_RERUN",
+              "owner": "MARKET_DATA",
+              "source_points": [
+                2,
+                7,
+                8,
+                9
+              ],
+              "reason_codes": [
+                "AG-04",
+                "MM-02",
+                "MS-01",
+                "PXQ-01"
+              ],
+              "required_before_phase_transition": true
+            }
+          ],
+          "nonblocking_pending_items": [
+            {
+              "item": "closing_line",
+              "expected_phase": "FUTURE_OR_POST_CLOSE",
+              "reason_code": "NOT_DUE"
+            },
+            {
+              "item": "closing_price",
+              "expected_phase": "FUTURE_OR_POST_CLOSE",
+              "reason_code": "NOT_DUE"
+            },
+            {
+              "item": "clv_points",
+              "expected_phase": "FUTURE_OR_POST_CLOSE",
+              "reason_code": "NOT_DUE"
+            },
+            {
+              "item": "injury_role_notes",
+              "expected_phase": "FUTURE_OR_POST_CLOSE",
+              "reason_code": "NOT_DUE"
+            },
+            {
+              "item": "public_bias",
+              "expected_phase": "FUTURE_OR_POST_CLOSE",
+              "reason_code": "NOT_DUE"
+            },
+            {
+              "item": "weather_notes",
+              "expected_phase": "FUTURE_OR_POST_CLOSE",
+              "reason_code": "NOT_DUE"
+            }
+          ],
+          "prohibited_transitions": [
+            "EXECUTION_AUDIT_APPROVAL",
+            "FINAL_PREKICK_APPROVAL",
+            "AUDIT_COMPLETE"
+          ],
+          "decision_provenance": {
+            "producer_type": "RULE_ENGINE",
+            "new_research_performed": false,
+            "new_model_calculations_performed": false,
+            "llm_role": "NARRATIVE_ONLY"
+          },
+          "open_blockers": [
+            "AG-04",
+            "MM-02",
+            "MS-01",
+            "PROC-01",
+            "PXQ-01"
+          ],
+          "wagering_disposition_encoded": false,
+          "point_19_reads_points_1_17_directly": false,
+          "point_checks_seen": 17
+        }
+      },
+      "manual_review": {
+        "required": true,
+        "status": "OPEN"
+      },
+      "narrative": "Operator gate is on hold: model rerun and market-grade snapshot are required."
+    }
+  ]
+}

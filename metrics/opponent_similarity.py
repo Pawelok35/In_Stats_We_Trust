@@ -174,7 +174,9 @@ def _normalize_schedule(df: pl.DataFrame) -> pl.DataFrame:
     if {"home_team", "away_team"}.issubset(columns):
         base = df.select("week", "home_team", "away_team")
     elif {"team_a", "team_b"}.issubset(columns):
-        base = df.select("week", "team_a", "team_b").rename({"team_a": "home_team", "team_b": "away_team"})
+        base = df.select("week", "team_a", "team_b").rename(
+            {"team_a": "home_team", "team_b": "away_team"}
+        )
     elif {"TEAM", "OPP"}.issubset(columns):
         base = df.select("week", "TEAM", "OPP").rename({"TEAM": "home_team", "OPP": "away_team"})
     else:

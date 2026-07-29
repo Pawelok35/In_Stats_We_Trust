@@ -1,13 +1,13 @@
-import logging
 from pathlib import Path
 from typing import Optional
+
 import polars as pl
 
 from utils.contracts import validate_df
 from utils.guards import check_no_inf, check_no_nan_in_keys
 from utils.logging import get_logger
-from utils.paths import path_for, manifest_path
 from utils.manifest import write_manifest
+from utils.paths import manifest_path, path_for
 
 logger = get_logger(__name__)
 
@@ -17,11 +17,7 @@ def _safe_div(num_expr: pl.Expr, den_expr: pl.Expr) -> pl.Expr:
     Bezpieczne dzielenie num/den, zwraca 0.0 jeśli den == 0 albo null.
     Zwracamy wyrażenie polarsowe (Expr).
     """
-    return (
-        pl.when((den_expr.is_null()) | (den_expr == 0))
-        .then(0.0)
-        .otherwise(num_expr / den_expr)
-    )
+    return pl.when((den_expr.is_null()) | (den_expr == 0)).then(0.0).otherwise(num_expr / den_expr)
 
 
 def _empty_result() -> pl.DataFrame:
@@ -160,7 +156,6 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
     desc = pl.col("play_description")
     offensive_td = (pl.col("is_offensive_td") == 1) & (pl.col("is_turnover") == 0)
-    defensive_td = (pl.col("is_offensive_td") == 1) & (pl.col("is_turnover") == 1)
     field_goal_good = (pl.col("play_type") == "field_goal") & desc.str.contains("is GOOD")
     extra_point_good = (pl.col("play_type") == "extra_point") & desc.str.contains("is GOOD")
     two_point_success = (
@@ -185,19 +180,11 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
     drive_starts = (
         base.filter(pl.col("yardline_100").is_not_null())
         .group_by(["season", "week", "TEAM", "OPP", "drive"])
-        .agg(
-            pl.col("yardline_100")
-            .first()
-            .cast(pl.Float64)
-            .alias("_start_yd100")
-        )
+        .agg(pl.col("yardline_100").first().cast(pl.Float64).alias("_start_yd100"))
     )
 
-    start_off = (
-        drive_starts.group_by(["season", "week", "TEAM"])
-        .agg(
-            pl.col("_start_yd100").mean().cast(pl.Float64).alias("avg_start_yd100_off"),
-        )
+    start_off = drive_starts.group_by(["season", "week", "TEAM"]).agg(
+        pl.col("_start_yd100").mean().cast(pl.Float64).alias("avg_start_yd100_off"),
     )
 
     start_def = (
@@ -215,19 +202,14 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             [
                 # drives ofensywne TEAMu
                 pl.col("drive").n_unique().cast(pl.Int64).alias("drives"),
-
                 # plays ofensywne TEAMu
                 pl.len().cast(pl.Int64).alias("plays"),
-
                 # średni EPA ofensywy TEAMu
                 pl.col("epa").mean().cast(pl.Float64).alias("epa_off_mean"),
-
                 # success rate ofensywy TEAMu
                 pl.col("success").mean().cast(pl.Float64).alias("success_rate_off"),
-
                 # yards/play (offense)
                 pl.col("yards_gained").mean().cast(pl.Float64).alias("ypp_off"),
-
                 # explosive play rate (offense)
                 _safe_div(
                     pl.col("is_explosive").sum().cast(pl.Float64),
@@ -235,51 +217,39 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
                 )
                 .cast(pl.Float64)
                 .alias("explosive_play_rate_off"),
-
                 _safe_div(
                     (pl.col("success") * pl.col("is_dropback")).sum().cast(pl.Float64),
                     pl.col("is_dropback").sum().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("pass_success_rate_off"),
-
                 _safe_div(
                     (
                         ((pl.lit(1) - pl.col("is_dropback")).cast(pl.Float64))
                         * pl.col("success").cast(pl.Float64)
                     ).sum(),
-                    (
-                        pl.len().cast(pl.Float64)
-                        - pl.col("is_dropback").sum().cast(pl.Float64)
-                    ),
+                    (pl.len().cast(pl.Float64) - pl.col("is_dropback").sum().cast(pl.Float64)),
                 )
                 .cast(pl.Float64)
                 .alias("rush_success_rate_off"),
-
                 _safe_div(
                     pl.col("is_dropback").sum().cast(pl.Float64),
                     pl.len().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("pass_rate_off"),
-
                 _safe_div(
-                    (
-                        pl.len().cast(pl.Float64)
-                        - pl.col("is_dropback").sum().cast(pl.Float64)
-                    ),
+                    (pl.len().cast(pl.Float64) - pl.col("is_dropback").sum().cast(pl.Float64)),
                     pl.len().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("rush_rate_off"),
-
                 _safe_div(
                     pl.col("is_pressure").sum().cast(pl.Float64),
                     pl.col("is_dropback").sum().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("pressure_rate_allowed"),
-
                 # third down conversion rate (offense)
                 _safe_div(
                     pl.col("third_down_converted").sum().cast(pl.Float64),
@@ -287,33 +257,31 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
                 )
                 .cast(pl.Float64)
                 .alias("third_down_conv_off"),
-
                 # punkty zdobyte podczas ofensywnych drive'�w
                 pl.col("points_for_play").sum().cast(pl.Float64).alias("points_scored"),
-
                 # red zone helpers
                 pl.col("in_redzone").sum().cast(pl.Float64).alias("_redzone_plays"),
-                (
-                    (pl.col("in_redzone") * pl.col("is_offensive_td"))
-                    .cast(pl.Float64)
-                    .sum()
-                ).alias("_redzone_tds"),
+                ((pl.col("in_redzone") * pl.col("is_offensive_td")).cast(pl.Float64).sum()).alias(
+                    "_redzone_tds"
+                ),
             ]
         )
-        .with_columns([
-            _safe_div(
-                pl.col("points_scored"),
-                pl.col("drives").cast(pl.Float64),
-            )
-            .cast(pl.Float64)
-            .alias("points_per_drive_off"),
-            _safe_div(
-                pl.col("_redzone_tds"),
-                pl.col("_redzone_plays"),
-            )
-            .cast(pl.Float64)
-            .alias("redzone_td_rate_off"),
-        ])
+        .with_columns(
+            [
+                _safe_div(
+                    pl.col("points_scored"),
+                    pl.col("drives").cast(pl.Float64),
+                )
+                .cast(pl.Float64)
+                .alias("points_per_drive_off"),
+                _safe_div(
+                    pl.col("_redzone_tds"),
+                    pl.col("_redzone_plays"),
+                )
+                .cast(pl.Float64)
+                .alias("redzone_td_rate_off"),
+            ]
+        )
         .drop(["_redzone_plays", "_redzone_tds"])
     )
 
@@ -325,54 +293,41 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             [
                 # jakiego EPA dopuścił TEAM (epa przeciwnika)
                 pl.col("epa").mean().cast(pl.Float64).alias("epa_def_mean"),
-
                 # success rate dopuszczony przez TEAM
                 pl.col("success").mean().cast(pl.Float64).alias("success_rate_def"),
-
                 # yards/play allowed
                 pl.col("yards_gained").mean().cast(pl.Float64).alias("ypp_def"),
-
                 _safe_div(
                     (pl.col("success") * pl.col("is_dropback")).sum().cast(pl.Float64),
                     pl.col("is_dropback").sum().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("pass_success_rate_def"),
-
                 _safe_div(
                     (
                         ((pl.lit(1) - pl.col("is_dropback")).cast(pl.Float64))
                         * pl.col("success").cast(pl.Float64)
                     ).sum(),
-                    (
-                        pl.len().cast(pl.Float64)
-                        - pl.col("is_dropback").sum().cast(pl.Float64)
-                    ),
+                    (pl.len().cast(pl.Float64) - pl.col("is_dropback").sum().cast(pl.Float64)),
                 )
                 .cast(pl.Float64)
                 .alias("rush_success_rate_def"),
-
                 _safe_div(
                     pl.col("is_explosive").sum().cast(pl.Float64),
                     pl.len().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("explosive_play_rate_def"),
-
                 _safe_div(
                     pl.col("third_down_converted").sum().cast(pl.Float64),
                     pl.col("is_third_down").sum().cast(pl.Float64),
                 )
                 .cast(pl.Float64)
                 .alias("third_down_conv_def"),
-
                 pl.col("in_redzone").sum().cast(pl.Float64).alias("_def_redzone_plays"),
-                (
-                    (pl.col("in_redzone") * pl.col("is_offensive_td"))
-                    .cast(pl.Float64)
-                    .sum()
-                ).alias("_def_redzone_tds"),
-
+                ((pl.col("in_redzone") * pl.col("is_offensive_td")).cast(pl.Float64).sum()).alias(
+                    "_def_redzone_tds"
+                ),
                 # pressure rate DEF = presja / dropbacki przeciwnika
                 _safe_div(
                     pl.col("is_pressure").sum().cast(pl.Float64),
@@ -380,7 +335,6 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
                 )
                 .cast(pl.Float64)
                 .alias("pressure_rate_def"),
-
                 # pomocnicze do points_per_drive_def
                 pl.col("drive").n_unique().cast(pl.Int64).alias("_drives_faced"),
                 pl.col("points_for_play").sum().cast(pl.Float64).alias("points_allowed"),
@@ -409,9 +363,8 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
     # TURNOVER MARGIN
     # giveaways = straty TEAMu
     # takeaways = straty przeciwnika wymuszone przez TEAM
-    giveaways_per_pair = (
-        base.group_by(["season", "week", "TEAM", "OPP"])
-        .agg(pl.col("is_turnover").sum().cast(pl.Int64).alias("_giveaways"))
+    giveaways_per_pair = base.group_by(["season", "week", "TEAM", "OPP"]).agg(
+        pl.col("is_turnover").sum().cast(pl.Int64).alias("_giveaways")
     )
     takeaways_per_pair = (
         base.group_by(["season", "week", "OPP", "TEAM"])
@@ -434,9 +387,7 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             pl.col("_takeaways_total").fill_null(0),
         )
         .with_columns(
-            (
-                pl.col("_takeaways_total") - pl.col("_giveaways_total")
-            )
+            (pl.col("_takeaways_total") - pl.col("_giveaways_total"))
             .cast(pl.Float64)
             .alias("turnover_margin")
         )
@@ -444,9 +395,8 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
     )
 
     # MERGE OFF + DEF
-    combined = (
-        offense_base.join(defense_base, on=["season", "week", "TEAM"], how="left")
-        .join(turnover_team, on=["season", "week", "TEAM"], how="left")
+    combined = offense_base.join(defense_base, on=["season", "week", "TEAM"], how="left").join(
+        turnover_team, on=["season", "week", "TEAM"], how="left"
     )
 
     combined = combined.join(start_off, on=["season", "week", "TEAM"], how="left")
@@ -464,19 +414,13 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
     # różnice / diffy
     combined = combined.with_columns(
-        (
-            pl.col("points_per_drive_off") - pl.col("points_per_drive_def")
-        )
+        (pl.col("points_per_drive_off") - pl.col("points_per_drive_def"))
         .cast(pl.Float64)
         .alias("points_per_drive_diff"),
-        (
-            pl.col("ypp_off").fill_null(0.0) - pl.col("ypp_def").fill_null(0.0)
-        )
+        (pl.col("ypp_off").fill_null(0.0) - pl.col("ypp_def").fill_null(0.0))
         .cast(pl.Float64)
         .alias("ypp_diff"),
-        (
-            pl.col("avg_start_yd100_def") - pl.col("avg_start_yd100_off")
-        )
+        (pl.col("avg_start_yd100_def") - pl.col("avg_start_yd100_off"))
         .cast(pl.Float64)
         .alias("start_field_position_edge"),
     )

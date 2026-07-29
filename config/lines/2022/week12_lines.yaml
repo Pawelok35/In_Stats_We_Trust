@@ -1,17 +1,21 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 12
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w12/DET_vs_BUF.md
   home: DET
   away: BUF
   spread: 10.0
   total: 54.0
-  prime_time: true
+  prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w12/DAL_vs_NYG.md
   home: DAL
   away: NYG
   spread: -10.5
   total: 45.5
-  prime_time: true
+  prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w12/MIN_vs_NE.md
   home: MIN
@@ -20,11 +24,11 @@ matchups:
   total: 42.5
   prime_time: true
   neutral_site: false
-- report: data/reports/comparisons/2022_w12/TEN_vs_CIN.md
-  home: TEN
-  away: CIN
+- report: data/reports/comparisons/2022_w12/CAR_vs_DEN.md
+  home: CAR
+  away: DEN
   spread: 1.0
-  total: 43.0
+  total: 36.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w12/CLE_vs_TB.md
@@ -34,6 +38,13 @@ matchups:
   total: 42.0
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w12/JAX_vs_BAL.md
+  home: JAX
+  away: BAL
+  spread: 3.5
+  total: 43.0
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w12/MIA_vs_HOU.md
   home: MIA
   away: HOU
@@ -41,10 +52,17 @@ matchups:
   total: 47.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w12/JAX_vs_BAL.md
-  home: JAX
-  away: BAL
-  spread: 3.5
+- report: data/reports/comparisons/2022_w12/NYJ_vs_CHI.md
+  home: NYJ
+  away: CHI
+  spread: -8.5
+  total: 36.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w12/TEN_vs_CIN.md
+  home: TEN
+  away: CIN
+  spread: 1.0
   total: 43.0
   prime_time: false
   neutral_site: false
@@ -55,18 +73,11 @@ matchups:
   total: 40.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w12/CAR_vs_DEN.md
-  home: CAR
-  away: DEN
-  spread: 1.0
-  total: 36.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w12/NYJ_vs_CHI.md
-  home: NYJ
-  away: CHI
-  spread: -8.5
-  total: 36.5
+- report: data/reports/comparisons/2022_w12/ARI_vs_LAC.md
+  home: ARI
+  away: LAC
+  spread: 2.5
+  total: 48.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w12/SEA_vs_LV.md
@@ -74,13 +85,6 @@ matchups:
   away: LV
   spread: -4.0
   total: 47.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w12/ARI_vs_LAC.md
-  home: ARI
-  away: LAC
-  spread: 2.5
-  total: 48.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w12/KC_vs_LA.md

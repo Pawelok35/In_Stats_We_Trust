@@ -10,24 +10,31 @@ from __future__ import annotations
 import argparse
 import csv
 import json
+import sys
 from pathlib import Path
 from typing import Dict, Iterable, List, Tuple
-
-import sys
 
 ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 from scripts import evaluate_picks  # noqa: E402
-from scripts.export_model_matrix import _handicap_for_pick, _resolve_spread_home, compute_result  # noqa: E402
+from scripts.export_model_matrix import (  # noqa: E402
+    _handicap_for_pick,
+    _resolve_spread_home,
+    compute_result,
+)
 
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="Export Weather Scale history for a pick variant.")
     parser.add_argument("--season", type=int, required=True, help="Season, e.g. 2025")
-    parser.add_argument("--start-week", type=int, default=1, help="First week to include (default: 1)")
-    parser.add_argument("--end-week", type=int, default=18, help="Last week to include (default: 18)")
+    parser.add_argument(
+        "--start-week", type=int, default=1, help="First week to include (default: 1)"
+    )
+    parser.add_argument(
+        "--end-week", type=int, default=18, help="Last week to include (default: 18)"
+    )
     parser.add_argument(
         "--variant-m-dir",
         type=Path,
@@ -106,9 +113,18 @@ def main() -> None:
     rows: List[Dict] = []
 
     # Load picks for M/D/B
-    picks_m = {(p["home"], p["away"]): p for p in load_picks(args.variant_m_dir, args.season, args.start_week, args.end_week)}
-    picks_d = {(p["home"], p["away"]): p for p in load_picks(args.variant_d_dir, args.season, args.start_week, args.end_week)}
-    picks_b = {(p["home"], p["away"]): p for p in load_picks(args.variant_b_dir, args.season, args.start_week, args.end_week)}
+    picks_m = {
+        (p["home"], p["away"]): p
+        for p in load_picks(args.variant_m_dir, args.season, args.start_week, args.end_week)
+    }
+    picks_d = {
+        (p["home"], p["away"]): p
+        for p in load_picks(args.variant_d_dir, args.season, args.start_week, args.end_week)
+    }
+    picks_b = {
+        (p["home"], p["away"]): p
+        for p in load_picks(args.variant_b_dir, args.season, args.start_week, args.end_week)
+    }
 
     priority_tags = {"GOY", "GOM", "GOW"}
 

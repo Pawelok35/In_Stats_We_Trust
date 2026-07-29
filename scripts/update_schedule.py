@@ -5,344 +5,82 @@ Utility script for appending weekly matchup schedules to data/schedules/<season>
 from __future__ import annotations
 
 import argparse
+import json
 import sys
 from pathlib import Path
 
 import polars as pl
 
-# Template matchups keyed by week. Extend this mapping as new weeks are available.
-_WEEK_MATCHUPS: dict[int, list[tuple[str, str]]] = {
-        1: [
-        ("PHI", "DAL"),
-        ("LAC", "KC"),
-        ("ATL", "TB"),
-        ("JAX", "CAR"),
-        ("CLE", "CIN"),
-        ("IND", "MIA"),
-        ("NO", "ARI"),
-        ("NE", "LV"),
-        ("WAS", "NYG"),
-        ("NYJ", "PIT"),
-        ("DEN", "TEN"),
-        ("SEA", "SF"),
-        ("GB", "DET"),
-        ("LA", "HOU"),
-        ("BUF", "BAL"),
-        ("CHI", "MIN"),
-        ],
-        2: [
-        ("GB", "WAS"),
-        ("NYJ", "BUF"),
-        ("DET", "CHI"),
-        ("CIN", "JAX"),
-        ("BAL", "CLE"),
-        ("DAL", "NYG"),
-        ("MIA", "NE"),
-        ("NO", "SF"),
-        ("TEN", "LA"),
-        ("PIT", "SEA"),
-        ("ARI", "CAR"),
-        ("IND", "DEN"),
-        ("KC", "PHI"),
-        ("MIN", "ATL"),
-        ("HOU", "TB"),
-        ("LV", "LAC"),
-    ],
-    3: [
-        ("BUF", "MIA"),
-        ("CAR", "ATL"),
-        ("MIN", "CIN"),
-        ("CLE", "GB"),
-        ("TEN", "IND"),
-        ("JAX", "HOU"),
-        ("NE", "PIT"),
-        ("TB", "NYJ"),
-        ("PHI", "LA"),
-        ("WAS", "LV"),
-        ("LAC", "DEN"),
-        ("SEA", "NO"),
-        ("CHI", "DAL"),
-        ("SF", "ARI"),
-        ("NYG", "KC"),
-        ("BAL", "DET"),
-    ],
-    4: [
-        ("ARI", "SEA"),
-        ("PIT", "MIN"),
-        ("ATL", "WAS"),
-        ("BUF", "NO"),
-        ("NE", "CAR"),
-        ("DET", "CLE"),
-        ("HOU", "TEN"),
-        ("NYG", "LAC"),
-        ("TB", "PHI"),
-        ("LA", "IND"),
-        ("SF", "JAX"),
-        ("LV", "CHI"),
-        ("KC", "BAL"),
-        ("DAL", "GB"),
-        ("MIA", "NYJ"),
-        ("DEN", "CIN"),
-    ],
-    5: [
-        ("LA", "SF"),
-        ("CLE", "MIN"),
-        ("CAR", "MIA"),
-        ("IND", "LV"),
-        ("NYJ", "DAL"),
-        ("PHI", "DEN"),
-        ("BAL", "HOU"),
-        ("NO", "NYG"),
-        ("ARI", "TEN"),
-        ("SEA", "TB"),
-        ("CIN", "DET"),
-        ("LAC", "WAS"),
-        ("BUF", "NE"),
-        ("JAX", "KC"),
-    ],
-    6: [
-        ("NYG", "PHI"),
-        ("NYJ", "DEN"),
-        ("CAR", "DAL"),
-        ("PIT", "CLE"),
-        ("IND", "ARI"),
-        ("JAX", "SEA"),
-        ("MIA", "LAC"),
-        ("NO", "NE"),
-        ("BAL", "LA"),
-        ("LV", "TEN"),
-        ("GB", "CIN"),
-        ("TB", "SF"),
-        ("KC", "DET"),
-        ("ATL", "BUF"),
-        ("WAS", "CHI"),
-    ],
-    7: [
-        ("CIN", "PIT"),
-        ("JAX", "LA"),
-        ("CHI", "NO"),
-        ("MIN", "PHI"),
-        ("NYJ", "CAR"),
-        ("CLE", "MIA"),
-        ("KC", "LV"),
-        ("TEN", "NE"),
-        ("LAC", "IND"),
-        ("DEN", "NYG"),
-        ("ARI", "GB"),
-        ("DAL", "WAS"),
-        ("SF", "ATL"),
-        ("DET", "TB"),
-        ("SEA", "HOU"),
-    ],
-    8: [
-        ("LAC", "MIN"),
-        ("ATL", "MIA"),
-        ("CAR", "BUF"),
-        ("BAL", "CHI"),
-        ("HOU", "SF"),
-        ("CIN", "NYJ"),
-        ("NE", "CLE"),
-        ("PHI", "NYG"),
-        ("NO", "TB"),
-        ("IND", "TEN"),
-        ("DEN", "DAL"),
-        ("PIT", "GB"),
-        ("KC", "WAS"),
-    ],
-    9: [
-        ("MIA", "BAL"),
-        ("NE", "ATL"),
-        ("CIN", "CHI"),
-        ("DET", "MIN"),
-        ("GB", "CAR"),
-        ("PIT", "IND"),
-        ("HOU", "DEN"),
-        ("NYG", "SF"),
-        ("TEN", "LAC"),
-        ("LV", "JAX"),
-        ("LA", "NO"),
-        ("BUF", "KC"),
-        ("WAS", "SEA"),
-        ("DAL", "ARI"),
-    ],
-    10: [
-        ("DEN", "LV"),
-        ("IND", "ATL"),
-        ("MIA", "BUF"),
-        ("CHI", "NYG"),
-        ("NYJ", "CLE"),
-        ("MIN", "BAL"),
-        ("CAR", "NO"),
-        ("TB", "NE"),
-        ("SEA", "ARI"),
-        ("WAS", "DET"),
-        ("SF", "LA"),
-        ("LAC", "PIT"),
-        ("GB", "PHI"),
-    ],
-    11: [
-        ("NE", "NYJ"),
-        ("MIA", "WAS"),
-        ("ATL", "CAR"),
-        ("BUF", "TB"),
-        ("MIN", "CHI"),
-        ("PIT", "CIN"),
-        ("NYG", "GB"),
-        ("TEN", "HOU"),
-        ("JAX", "LAC"),
-        ("ARI", "SF"),
-        ("LA", "SEA"),
-        ("CLE", "BAL"),
-        ("DEN", "KC"),
-        ("PHI", "DET"),
-        ("LV", "DAL"),
-    ],
-    12: [
-        ("HOU", "BUF"),
-        ("CHI", "PIT"),
-        ("CIN", "NE"),
-        ("KC", "IND"),
-        ("DET", "NYG"),
-        ("GB", "MIN"),
-        ("BAL", "NYJ"),
-        ("TEN", "SEA"),
-        ("LV", "CLE"),
-        ("ARI", "JAX"),
-        ("NO", "ATL"),
-        ("DAL", "PHI"),
-        ("LA", "TB"),
-        ("SF", "CAR"),
-    ],
-    13: [
-        ("DET", "GB"),
-        ("DAL", "KC"),
-        ("BAL", "CIN"),
-        ("PHI", "CHI"),
-        ("CLE", "SF"),
-        ("TEN", "JAX"),
-        ("MIA", "NO"),
-        ("TB", "ARI"),
-        ("NYJ", "ATL"),
-        ("CAR", "LA"),
-        ("IND", "HOU"),
-        ("SEA", "MIN"),
-        ("LAC", "LV"),
-        ("PIT", "BUF"),
-        ("WAS", "DEN"),
-        ("NE", "NYG"),
-    ],
-    14: [
-        ("DET", "DAL"),
-        ("TB", "NO"),
-        ("NYJ", "MIA"),
-        ("CLE", "TEN"),
-        ("MIN", "WAS"),
-        ("BUF", "CIN"),
-        ("BAL", "PIT"),
-        ("ATL", "SEA"),
-        ("JAX", "IND"),
-        ("LV", "DEN"),
-        ("GB", "CHI"),
-        ("ARI", "LA"),
-        ("KC", "HOU"),
-        ("LAC", "PHI"),
-    ],
-    15: [
-        ("TB", "ATL"),
-        ("CIN", "BAL"),
-        ("JAX", "NYJ"),
-        ("PHI", "LV"),
-        ("HOU", "ARI"),
-        ("KC", "LAC"),
-        ("CHI", "CLE"),
-        ("NYG", "WAS"),
-        ("NE", "BUF"),
-        ("SEA", "IND"),
-        ("NO", "CAR"),
-        ("SF", "TEN"),
-        ("LA", "DET"),
-        ("DEN", "GB"),
-        ("DAL", "MIN"),
-        ("PIT", "MIA"),
-    ],
-    16: [
-        ("SEA", "LA"),   # Rams @ Seahawks
-        ("PHI", "NYG"),  # Giants @ Eagles
-        ("CHI", "GB"),   # Packers @ Bears
-        ("CLE", "BUF"),  # Bills @ Browns
-        ("MIA", "CIN"),  # Bengals @ Dolphins
-        ("CAR", "TB"),   # Buccaneers @ Panthers
-        ("NO", "NYJ"),   # Jets @ Saints
-        ("NYG", "MIN"),  # Vikings @ Giants
-        ("DAL", "LAC"),  # Chargers @ Cowboys
-        ("TEN", "KC"),   # Chiefs @ Titans
-        ("ARI", "ATL"),  # Falcons @ Cardinals
-        ("DEN", "JAX"),  # Jaguars @ Broncos
-        ("HOU", "LV"),   # Raiders @ Texans
-        ("DET", "PIT"),  # Steelers @ Lions
-        ("BAL", "NE"),   # Patriots @ Ravens
-        ("IND", "SF"),   # 49ers @ Colts
-    ],
-    17: [
-        ("WAS", "DAL"),  # Cowboys @ Commanders
-        ("MIN", "DET"),  # Lions @ Vikings
-        ("KC", "DEN"),   # Broncos @ Chiefs
-        ("LAC", "HOU"),  # Texans @ Chargers
-        ("GB", "BAL"),   # Ravens @ Packers
-        ("MIA", "TB"),   # Buccaneers @ Dolphins
-        ("CAR", "SEA"),  # Seahawks @ Panthers
-        ("CIN", "ARI"),  # Cardinals @ Bengals
-        ("CLE", "PIT"),  # Steelers @ Browns
-        ("NYJ", "NE"),   # Patriots @ Jets
-        ("IND", "JAX"),  # Jaguars @ Colts
-        ("TEN", "NO"),   # Saints @ Titans
-        ("LV", "NYG"),   # Giants @ Raiders
-        ("BUF", "PHI"),  # Eagles @ Bills
-        ("SF", "CHI"),   # Bears @ 49ers
-        ("ATL", "LA"),   # Rams @ Falcons
-    ],
-    18: [
-        ("TB", "CAR"),   # Panthers @ Buccaneers
-        ("SF", "SEA"),   # Seahawks @ 49ers
-        ("CIN", "CLE"),  # Browns @ Bengals
-        ("HOU", "IND"),  # Colts @ Texans
-        ("NYG", "DAL"),  # Cowboys @ Giants
-        ("MIN", "GB"),   # Packers @ Vikings
-        ("ATL", "NO"),   # Saints @ Falcons
-        ("JAX", "TEN"),  # Titans @ Jaguars
-        ("LA", "ARI"),   # Cardinals @ Rams
-        ("CHI", "DET"),  # Lions @ Bears
-        ("LV", "KC"),    # Chiefs @ Raiders
-        ("NE", "MIA"),   # Dolphins @ Patriots
-        ("BUF", "NYJ"),  # Jets @ Bills
-        ("DEN", "LAC"),  # Chargers @ Broncos
-        ("PHI", "WAS"),  # Commanders @ Eagles
-        ("PIT", "BAL"),  # Ravens @ Steelers
-    ],
-    19: [
-        ("CAR", "LA"),    # Rams @ Panthers
-        ("CHI", "GB"),    # Packers @ Bears
-        ("JAX", "BUF"),   # Bills @ Jaguars
-        ("PHI", "SF"),    # 49ers @ Eagles
-        ("NE",  "LAC"),   # Chargers @ Patriots
-        ("PIT", "HOU"),   # Texans @ Steelers
-    ],
+# Default template matchups keyed by week (season 2025).
+# Extend or override via data/schedule_templates/<season>.json.
+_DEFAULT_WEEK_MATCHUPS: dict[int, list[tuple[str, str]]] = {}
+
+_DEFAULT_TEMPLATE_SEASON = 2025
 
 
-}
+def _normalize_templates(raw: object, *, source: Path) -> dict[int, list[tuple[str, str]]]:
+    if not isinstance(raw, dict):
+        raise ValueError(f"Invalid template format in {source}: expected JSON object.")
+
+    result: dict[int, list[tuple[str, str]]] = {}
+    for week_key, matchups in raw.items():
+        try:
+            week = int(week_key)
+        except (TypeError, ValueError) as exc:
+            raise ValueError(
+                f"Invalid week key '{week_key}' in {source}. Expected integer-like key."
+            ) from exc
+
+        if not isinstance(matchups, list):
+            raise ValueError(f"Invalid matchups for week {week} in {source}: expected list.")
+
+        pairs: list[tuple[str, str]] = []
+        for pair in matchups:
+            if not isinstance(pair, list) or len(pair) != 2:
+                raise ValueError(
+                    f"Invalid matchup entry in week {week} in {source}: expected [home, away]."
+                )
+            home, away = pair
+            if not isinstance(home, str) or not isinstance(away, str):
+                raise ValueError(
+                    f"Invalid matchup teams in week {week} in {source}: expected strings."
+                )
+            pairs.append((home, away))
+
+        result[week] = pairs
+
+    if not result:
+        raise ValueError(f"Template in {source} is empty.")
+
+    return result
 
 
+def _load_week_matchups(season: int, templates_root: Path) -> dict[int, list[tuple[str, str]]]:
+    template_path = templates_root / f"{season}.json"
+    if template_path.exists():
+        with template_path.open("r", encoding="utf-8") as fp:
+            raw = json.load(fp)
+        return _normalize_templates(raw, source=template_path)
+
+    if season == _DEFAULT_TEMPLATE_SEASON:
+        return _DEFAULT_WEEK_MATCHUPS
+
+    raise ValueError(
+        f"No schedule template found for season {season}: {template_path}. "
+        f"Add this file or use built-in season {_DEFAULT_TEMPLATE_SEASON}."
+    )
 
 
-
-
-
-def _build_week_frame(season: int, week: int) -> pl.DataFrame:
+def _build_week_frame(
+    season: int,
+    week: int,
+    week_matchups: dict[int, list[tuple[str, str]]],
+) -> pl.DataFrame:
     """
-    Create a DataFrame of matchups for the requested week based on the templates above.
+    Create a DataFrame of matchups for the requested week based on templates.
     """
     try:
-        matchups = _WEEK_MATCHUPS[week]
+        matchups = week_matchups[week]
     except KeyError as exc:
         raise ValueError(f"No schedule template defined for week {week}.") from exc
 
@@ -356,17 +94,25 @@ def _build_week_frame(season: int, week: int) -> pl.DataFrame:
     )
 
 
-def update_schedule(*, season: int, week: int, data_root: Path = Path("data")) -> Path:
+def update_schedule(
+    *,
+    season: int,
+    week: int,
+    data_root: Path = Path("data"),
+    templates_root: Path = Path("data/schedule_templates"),
+) -> Path:
     """
     Append the schedule for (season, week) into data_root/schedules/<season>.parquet.
     """
     if season <= 0 or week <= 0:
         raise ValueError("season and week must be positive integers.")
 
+    week_matchups = _load_week_matchups(season=season, templates_root=templates_root)
+
     schedule_path = data_root / "schedules" / f"{season}.parquet"
     schedule_path.parent.mkdir(parents=True, exist_ok=True)
 
-    new_games = _build_week_frame(season, week)
+    new_games = _build_week_frame(season, week, week_matchups)
 
     if schedule_path.exists():
         existing = pl.read_parquet(schedule_path)
@@ -391,13 +137,24 @@ def _parse_args(argv: list[str]) -> argparse.Namespace:
         default=Path("data"),
         help="Root directory containing the schedules/ folder (default: data)",
     )
+    parser.add_argument(
+        "--templates-root",
+        type=Path,
+        default=Path("data/schedule_templates"),
+        help="Directory with schedule templates named <season>.json",
+    )
     return parser.parse_args(argv)
 
 
 def main(argv: list[str] | None = None) -> None:
     args = _parse_args(argv or sys.argv[1:])
     try:
-        output = update_schedule(season=args.season, week=args.week, data_root=args.data_root)
+        output = update_schedule(
+            season=args.season,
+            week=args.week,
+            data_root=args.data_root,
+            templates_root=args.templates_root,
+        )
     except Exception as exc:  # pragma: no cover - CLI safety net
         print(f"[error] {exc}")
         raise SystemExit(1) from exc

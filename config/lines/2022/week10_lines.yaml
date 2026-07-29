@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 10
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w10/CAR_vs_ATL.md
   home: CAR
@@ -20,27 +24,6 @@ matchups:
   total: 47.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w10/MIA_vs_CLE.md
-  home: MIA
-  away: CLE
-  spread: -3.0
-  total: 49.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w10/TEN_vs_DEN.md
-  home: TEN
-  away: DEN
-  spread: -2.5
-  total: 40.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w10/NYG_vs_HOU.md
-  home: NYG
-  away: HOU
-  spread: -5.5
-  total: 41.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w10/CHI_vs_DET.md
   home: CHI
   away: DET
@@ -55,11 +38,32 @@ matchups:
   total: 51.5
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w10/MIA_vs_CLE.md
+  home: MIA
+  away: CLE
+  spread: -3.0
+  total: 49.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w10/NYG_vs_HOU.md
+  home: NYG
+  away: HOU
+  spread: -5.5
+  total: 41.5
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w10/PIT_vs_NO.md
   home: PIT
   away: 'NO'
   spread: -1.0
   total: 39.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w10/TEN_vs_DEN.md
+  home: TEN
+  away: DEN
+  spread: -2.5
+  total: 40.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w10/LV_vs_IND.md

@@ -15,39 +15,39 @@
 | Turnover Margin | 0.176 | 0.000 | 0.176 |
 | Red Zone TD Rate (Off) | 0.136 | 0.104 | 0.032 |
 | Pressure Rate (Def) | 0.061 | 0.087 | -0.026 |
-| Tempo | 6.333 | 7.417 | -1.083 |
-| PowerScore | 1.438 | 1.432 | 0.006 |
-| PowerScore | 1.438 | 1.432 | 0.006 |
-| Tempo | 6.333 | 7.417 | -1.083 |
+| Tempo | 7.500 | 7.600 | -0.100 |
+| PowerScore | 1.566 | 1.549 | 0.016 |
+| PowerScore | 1.566 | 1.549 | 0.016 |
+| Tempo | 7.500 | 7.600 | -0.100 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | NE | LAC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.181 | -0.323 | +0.505 |
-| EPA Defense | 20% | -0.236 | -0.129 | -0.107 |
-| Success Rate Offense | 25% | 61.8% | 34.8% | +27.0 pp |
-| Tempo | 20% | 0.145 | 0.090 | +0.055 |
+| EPA Offense | 35% | -0.018 | -0.207 | +0.189 |
+| EPA Defense | 20% | -0.207 | -0.018 | -0.189 |
+| Success Rate Offense | 25% | 45.3% | 42.1% | +3.2 pp |
+| Tempo | 20% | 0.147 | 0.053 | +0.094 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | NE | LAC | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.181 | -0.323 | +0.505 |
-| EPA Defense | 20% | -0.236 | -0.129 | -0.107 |
-| Success Rate Offense | 15% | 61.8% | 34.8% | +27.0 pp |
-| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
-| Tempo | 10% | 0.145 | 0.090 | +0.055 |
-| Red Zone TD Rate (Off) | 10% | 23.5% | 0.0% | +23.5 pp |
-| Pressure Rate (Def) | 10% | 13.8% | 13.8% | +0.0 pp |
+| EPA Offense | 25% | -0.018 | -0.207 | +0.189 |
+| EPA Defense | 20% | -0.207 | -0.018 | -0.189 |
+| Success Rate Offense | 15% | 45.3% | 42.1% | +3.2 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.147 | 0.053 | +0.094 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 0.0% | +0.0 pp |
+| Pressure Rate (Def) | 10% | 16.2% | 13.2% | +3.1 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-NE edge: +0.234 (NE +0.200 vs LAC -0.034)
+NE edge: +0.055 (NE +0.095 vs LAC +0.040)
 **7 metrics version:**
-NE edge: +0.574 (NE +0.343 vs LAC -0.232)
-**Verdict:** NE holds the edge in the extended breakdown (lead 0.574), driven by Turnover Margin (10% weight).
+LAC edge: +0.173 (NE -0.047 vs LAC +0.126)
+**Verdict:** LAC holds the edge in the extended breakdown (lead 0.173), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ NE edge: +0.574 (NE +0.343 vs LAC -0.232)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (NE - LAC) | +0.1 pts (favours NE) |
-| Model Win% NE | 50.5% |
-| Model Win% LAC | 49.5% |
+| Model Spread (NE - LAC) | +0.3 pts (favours NE) |
+| Model Win% NE | 51.3% |
+| Model Win% LAC | 48.7% |
 | SOS Differential (NE-LAC) | +0.068 |
 *Neutral-field assumption. Based on schedule through Week 18.*
 
@@ -67,8 +67,8 @@ NE edge: +0.574 (NE +0.343 vs LAC -0.232)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| NE | 31.6% | n/a | n/a | 27.6% | 46.7% | n/a |
-| LAC | 53.9% | n/a | n/a | 37.9% | 53.5% | n/a |
+| NE | 50.7% | 48.0% | 2.7% | 39.5% | 51.4% | Slight pass lean |
+| LAC | 48.7% | 48.0% | 0.7% | 45.9% | 38.5% | Balanced |
 
 ## Situational Edges
 

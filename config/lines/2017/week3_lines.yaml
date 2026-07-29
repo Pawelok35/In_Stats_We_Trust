@@ -1,0 +1,131 @@
+# NFL 2017 Week 3 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w3/SF_vs_LA.md
+    home: 'SF'
+    away: 'LA'
+    spread: 2.5
+    total: 41
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/JAX_vs_BAL.md
+    home: 'JAX'
+    away: 'BAL'
+    spread: 4
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/NYJ_vs_MIA.md
+    home: 'NYJ'
+    away: 'MIA'
+    spread: 6
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/DET_vs_ATL.md
+    home: 'DET'
+    away: 'ATL'
+    spread: 3
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/BUF_vs_DEN.md
+    home: 'BUF'
+    away: 'DEN'
+    spread: 2
+    total: 41
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/CAR_vs_NO.md
+    home: 'CAR'
+    away: 'NO'
+    spread: -6
+    total: 49
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/CHI_vs_PIT.md
+    home: 'CHI'
+    away: 'PIT'
+    spread: 7.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/IND_vs_CLE.md
+    home: 'IND'
+    away: 'CLE'
+    spread: 1
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/NE_vs_HOU.md
+    home: 'NE'
+    away: 'HOU'
+    spread: -13
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/MIN_vs_TB.md
+    home: 'MIN'
+    away: 'TB'
+    spread: 2.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/PHI_vs_NYG.md
+    home: 'PHI'
+    away: 'NYG'
+    spread: -5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/TEN_vs_SEA.md
+    home: 'TEN'
+    away: 'SEA'
+    spread: -2.5
+    total: 43
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/GB_vs_CIN.md
+    home: 'GB'
+    away: 'CIN'
+    spread: -10
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/LAC_vs_KC.md
+    home: 'LAC'
+    away: 'KC'
+    spread: 2.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/WAS_vs_LV.md
+    home: 'WAS'
+    away: 'LV'
+    spread: 3.5
+    total: 53
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w3/ARI_vs_DAL.md
+    home: 'ARI'
+    away: 'DAL'
+    spread: 3.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+

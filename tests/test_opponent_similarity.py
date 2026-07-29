@@ -15,7 +15,9 @@ def _settings(tmp_path, weights=None):
 
 def test_compute_team_analogs_prioritizes_closest_profile(tmp_path, monkeypatch):
     settings = _settings(tmp_path)
-    monkeypatch.setattr("metrics.opponent_similarity.load_settings", lambda *args, **kwargs: settings)
+    monkeypatch.setattr(
+        "metrics.opponent_similarity.load_settings", lambda *args, **kwargs: settings
+    )
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr(
         "metrics.opponent_similarity.rolling_core12_through_path",
@@ -97,7 +99,9 @@ def test_compute_team_analogs_prioritizes_closest_profile(tmp_path, monkeypatch)
 
 def test_compute_team_analogs_handles_missing_schedule(tmp_path, monkeypatch):
     settings = _settings(tmp_path)
-    monkeypatch.setattr("metrics.opponent_similarity.load_settings", lambda *args, **kwargs: settings)
+    monkeypatch.setattr(
+        "metrics.opponent_similarity.load_settings", lambda *args, **kwargs: settings
+    )
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr(
         "metrics.opponent_similarity.rolling_core12_through_path",
@@ -129,7 +133,9 @@ def test_compute_team_analogs_handles_missing_schedule(tmp_path, monkeypatch):
 
 def test_compute_team_analogs_uses_l2_fallback(tmp_path, monkeypatch):
     settings = _settings(tmp_path)
-    monkeypatch.setattr("metrics.opponent_similarity.load_settings", lambda *args, **kwargs: settings)
+    monkeypatch.setattr(
+        "metrics.opponent_similarity.load_settings", lambda *args, **kwargs: settings
+    )
     monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
     monkeypatch.setattr(
         "metrics.opponent_similarity.rolling_core12_through_path",

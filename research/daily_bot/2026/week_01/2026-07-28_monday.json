@@ -1,0 +1,31 @@
+[
+  {
+    "id": "mnf_quote",
+    "type": "manual",
+    "label": "Uzupelnij final quote dla MNF, jesli MNF jest kandydatem.",
+    "status": "SKIPPED",
+    "reason": "no_action_candidate_in_scope:mnf"
+  },
+  {
+    "id": "mnf_gpt_delta",
+    "type": "manual",
+    "label": "Zlec GPT final delta refresh dla MNF, jesli MNF jest kandydatem.",
+    "status": "SKIPPED",
+    "reason": "no_action_candidate_in_scope:mnf"
+  },
+  {
+    "id": "run_variant_b_mnf",
+    "type": "command",
+    "label": "Odpal Variant B po uzupelnieniu MNF quote/GPT.",
+    "status": "SKIPPED",
+    "reason": "no_action_candidate_in_scope:mnf"
+  },
+  {
+    "id": "check_summary",
+    "type": "check_path",
+    "label": "Sprawdz summary Variant B.",
+    "path": "research\\variant_b_week_flow\\2026\\week_01\\summary.md",
+    "exists": true,
+    "status": "PASS"
+  }
+]

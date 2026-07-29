@@ -1,99 +1,103 @@
+source: nfl_data_py.import_schedules
+season: 2023
+week: 9
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2023_w9/PIT_vs_TEN.md
   home: PIT
   away: TEN
-  spread: -2.5
-  total: 36.5
+  spread: -3.5
+  total: 37.0
   prime_time: true
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/KC_vs_MIA.md
   home: KC
   away: MIA
-  spread: -2.5
-  total: 50.5
+  spread: -1.0
+  total: 51.0
   prime_time: false
   neutral_site: true
 - report: data/reports/comparisons/2023_w9/ATL_vs_MIN.md
   home: ATL
   away: MIN
-  spread: -4.0
+  spread: -3.5
+  total: 38.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w9/BAL_vs_SEA.md
+  home: BAL
+  away: SEA
+  spread: -6.0
+  total: 44.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w9/CLE_vs_ARI.md
+  home: CLE
+  away: ARI
+  spread: -13.0
   total: 38.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/GB_vs_LA.md
   home: GB
   away: LA
-  spread: -1.5
-  total: 41.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w9/NE_vs_WAS.md
-  home: NE
-  away: WAS
-  spread: -2.0
-  total: 40.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w9/CLE_vs_ARI.md
-  home: CLE
-  away: ARI
-  spread: -7.5
-  total: 40.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w9/NO_vs_CHI.md
-  home: 'NO'
-  away: CHI
-  spread: -6.0
-  total: 41.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w9/BAL_vs_SEA.md
-  home: BAL
-  away: SEA
-  spread: -5.0
-  total: 43.0
+  spread: -3.5
+  total: 38.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/HOU_vs_TB.md
   home: HOU
   away: TB
   spread: -2.5
-  total: 38.5
+  total: 39.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w9/NE_vs_WAS.md
+  home: NE
+  away: WAS
+  spread: -2.5
+  total: 40.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w9/NO_vs_CHI.md
+  home: 'NO'
+  away: CHI
+  spread: -9.0
+  total: 42.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/CAR_vs_IND.md
   home: CAR
   away: IND
-  spread: 2.5
+  spread: 1.5
   total: 45.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/LV_vs_NYG.md
   home: LV
   away: NYG
-  spread: -3.5
+  spread: -1.0
   total: 38.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/PHI_vs_DAL.md
   home: PHI
   away: DAL
-  spread: -3.0
+  spread: -3.5
   total: 46.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/CIN_vs_BUF.md
   home: CIN
   away: BUF
-  spread: -2.0
-  total: 47.0
+  spread: -1.5
+  total: 51.0
   prime_time: true
   neutral_site: false
 - report: data/reports/comparisons/2023_w9/NYJ_vs_LAC.md
   home: NYJ
   away: LAC
-  spread: 2.0
-  total: 42.5
+  spread: 3.0
+  total: 41.0
   prime_time: true
   neutral_site: false

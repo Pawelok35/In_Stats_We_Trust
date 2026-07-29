@@ -1,0 +1,277 @@
+schema_version: variant_b_daily_bot.v1
+variant: variant_m
+timezone: Europe/Berlin
+action_tags:
+  - VALUE PLAY
+  - GOW
+  - GOM
+  - GOY
+
+paths:
+  week_lines: config/lines/{season}/week{week}_lines.yaml
+  book_snapshot: data/book_snapshots/{season}/week_{week:02d}_screen_snapshot.yaml
+  market_quotes: data/market_quotes/{season}/week_{week:02d}.jsonl
+  picks: data/picks_{variant}/{season}/week_{week:02d}.jsonl
+  variant_b_summary: research/variant_b_week_flow/{season}/week_{week:02d}/summary.md
+  learning_ledger_dir: data/learning_ledger/{season}/week_{week:02d}
+  learning_report: research/variant_b_learning_report.md
+  daily_report: research/daily_bot/{season}/week_{week:02d}/{run_date}_{day}.md
+
+manual_inputs:
+  quote_snapshot:
+    description: Screeny / linie z pregame.com albo booka. Codex normalizuje to do YAML/JSONL.
+    expected_path: data/book_snapshots/{season}/week_{week:02d}_screen_snapshot.yaml
+  market_quotes:
+    description: "Realny quote dla kandydatow VP/GOW/GOM/GOY: book, spread, price, timestamp, executable_status."
+    expected_path: data/market_quotes/{season}/week_{week:02d}.jsonl
+  gpt_full_19:
+    description: Pelne GPT 19 punktow tylko dla VP/GOW/GOM/GOY.
+    expected_dir: research/gpt_snapshots/{season}/week_{week:02d}
+    expected_glob: research/gpt_snapshots/{season}/week_{week:02d}/**/full_19_points.md
+  gpt_delta:
+    description: Delta refresh GPT dla kandydatow, gdy zmieniaja sie injury/quote/weather/roster/market.
+    expected_dir: research/gpt_snapshots/{season}/week_{week:02d}
+    expected_glob: research/gpt_snapshots/{season}/week_{week:02d}/**/delta_*.md
+  closing_snapshot:
+    description: Closing line / closing price po zamknieciu rynku lub po kickoffie jako post-event evidence.
+    expected_path: data/closing_snapshots/{season}/week_{week:02d}.jsonl
+
+days:
+  monday:
+    label: Poniedzialek - ostatni zrzut MNF
+    objective: Final check MNF.
+    gpt_prompt_type: final_delta_mnf
+    tasks:
+      - id: mnf_quote
+        type: manual
+        label: Uzupelnij final quote dla MNF, jesli MNF jest kandydatem.
+        input: market_quotes
+        when_action_scope: mnf
+      - id: mnf_gpt_delta
+        type: manual
+        label: Zlec GPT final delta refresh dla MNF, jesli MNF jest kandydatem.
+        input: gpt_delta
+        when_action_scope: mnf
+        optional: true
+      - id: run_variant_b_mnf
+        type: command
+        label: Odpal Variant B po uzupelnieniu MNF quote/GPT.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+        when_action_scope: mnf
+      - id: check_summary
+        type: check_path
+        label: Sprawdz summary Variant B.
+        path: "{variant_b_summary}"
+
+  tuesday:
+    label: Wtorek - zamkniecie poprzedniej kolejki + glowny skan nowej
+    objective: Najpierw post-event poprzedniej kolejki, potem skan nowej kolejki.
+    gpt_prompt_type: full_19_points
+    tasks:
+      - id: sync_previous_results
+        type: command
+        label: "Zamknij poprzednia kolejke: sync wynikow z nfl_data_py."
+        when_previous_week_exists: true
+        command: ".\\.venv\\Scripts\\python.exe -m app.cli sync-nfl-results --season {season}"
+      - id: previous_post_event
+        type: command
+        label: Post-event evaluation poprzedniej kolejki.
+        when_previous_week_exists: true
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_post_event_evaluation.py --season {season} --week {previous_week}"
+      - id: learning_report
+        type: command
+        label: Odswiez learning report po poprzedniej kolejce.
+        when_previous_week_exists: true
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_learning_report.py"
+      - id: sync_schedule
+        type: command
+        label: Pobierz / odswiez schedule sezonu.
+        command: ".\\.venv\\Scripts\\python.exe -m app.cli sync-nfl-schedule --season {season}"
+      - id: export_lines_from_nfl_base
+        type: command
+        label: Przygotuj bazowy config linii z nfl_data_py tylko jako fallback.
+        command: ".\\.venv\\Scripts\\python.exe -m app.cli export-lines-from-nfl --season {season} --week {week}"
+      - id: operator_quote_snapshot
+        type: manual
+        label: Wklej dzisiejsze screeny/linie z pregame.com albo booka.
+        input: quote_snapshot
+      - id: convert_book_snapshot_to_lines
+        type: command
+        label: Przerob book snapshot na config linii modelu.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\book_snapshot_to_week_lines.py --input data\\book_snapshots\\{season}\\week_{week:02d}_screen_snapshot.yaml --output config\\lines\\{season}\\week{week}_lines.yaml"
+      - id: basic_model
+        type: command
+        label: Odpal basic model i znajdz VP/GOW/GOM/GOY.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\prospective_week_flow.py --season {season} --week {week} --variant {variant} --skip-freeze --allow-not-proof-ready"
+      - id: check_picks
+        type: check_path
+        label: Sprawdz plik pickow.
+        path: "{picks}"
+      - id: gpt_full_19
+        type: manual
+        label: Dla kazdego VP/GOW/GOM/GOY zlec GPT pelne 19 punktow.
+        input: gpt_full_19
+      - id: market_quotes
+        type: manual
+        label: Uzupelnij realny quote dla kandydatow.
+        input: market_quotes
+      - id: variant_b_week_flow
+        type: command
+        label: Odpal Variant B + model proof + learning ledger.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+
+  wednesday:
+    label: Sroda - TNF delta refresh
+    objective: Sprawdzic zmiany pod TNF oraz zrobic pierwszy lekki monitoring Sunday/MNF.
+    gpt_prompt_type: delta_tnf
+    tasks:
+      - id: tnf_quote
+        type: manual
+        label: Aktualizuj quote dla TNF, jesli TNF jest kandydatem.
+        input: market_quotes
+        when_action_scope: tnf
+      - id: tnf_gpt_delta
+        type: manual
+        label: Zlec GPT delta refresh dla TNF, jesli TNF jest kandydatem.
+        input: gpt_delta
+        when_action_scope: tnf
+        optional: true
+      - id: sunday_mnf_early_quote_snapshot
+        type: manual
+        label: Pierwszy lekki zrzut quote dla Sunday/MNF kandydatow.
+        input: quote_snapshot
+        when_action_scope: sunday_mnf
+      - id: sunday_mnf_early_quote
+        type: manual
+        label: Aktualizuj quote dla Sunday/MNF kandydatow, jesli linia sie zmienila.
+        input: market_quotes
+        when_action_scope: sunday_mnf
+      - id: sunday_mnf_early_gpt_delta
+        type: manual
+        label: GPT delta dla Sunday/MNF tylko przy istotnej zmianie injury/line/weather/roster.
+        input: gpt_delta
+        when_action_scope: sunday_mnf
+        optional: true
+      - id: run_variant_b
+        type: command
+        label: Odpal Variant B po srodowych zmianach.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+        when_action_scope: any
+      - id: check_summary
+        type: check_path
+        label: Sprawdz summary Variant B.
+        path: "{variant_b_summary}"
+
+  thursday:
+    label: Czwartek - final TNF + zrzuty Sunday/MNF
+    objective: Ostatni zrzut TNF oraz swiezy zrzut dla niedzieli i poniedzialku.
+    gpt_prompt_type: final_tnf_plus_sunday_mnf_delta
+    tasks:
+      - id: tnf_final_quote
+        type: manual
+        label: Final quote dla TNF.
+        input: market_quotes
+        when_action_scope: tnf
+      - id: tnf_final_gpt_delta
+        type: manual
+        label: GPT final delta refresh dla TNF, jesli kandydat.
+        input: gpt_delta
+        when_action_scope: tnf
+        optional: true
+      - id: sunday_mnf_quote_snapshot
+        type: manual
+        label: Zrzut quote dla niedzieli i MNF.
+        input: quote_snapshot
+        when_action_scope: sunday_mnf
+      - id: sunday_mnf_gpt_delta
+        type: manual
+        label: GPT delta refresh dla Sunday/MNF, jesli cos istotnego sie zmienilo.
+        input: gpt_delta
+        when_action_scope: sunday_mnf
+        optional: true
+      - id: run_variant_b
+        type: command
+        label: Odpal Variant B dla aktywnych kandydatow.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+        when_action_scope: sunday_mnf
+
+  friday:
+    label: Piatek - glowny refresh Sunday/MNF
+    objective: Odswiezyc niedzielne i poniedzialkowe kandydaty po injury reports i ruchach rynku.
+    gpt_prompt_type: sunday_mnf_delta
+    tasks:
+      - id: sunday_mnf_quote
+        type: manual
+        label: Aktualizuj quote dla Sunday/MNF kandydatow.
+        input: market_quotes
+        when_action_scope: sunday_mnf
+      - id: sunday_mnf_gpt_delta
+        type: manual
+        label: GPT delta refresh dla kandydatow.
+        input: gpt_delta
+        when_action_scope: sunday_mnf
+        optional: true
+      - id: run_variant_b
+        type: command
+        label: Odpal Variant B po refreshu.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+        when_action_scope: sunday_mnf
+
+  saturday:
+    label: Sobota - pre-final Sunday/MNF
+    objective: Przygotowac niedziele i poniedzialek, zeby w dniu meczu zostaly tylko finalne braki.
+    gpt_prompt_type: prefinal_sunday_mnf_delta
+    tasks:
+      - id: prefinal_quote
+        type: manual
+        label: Aktualizuj quote i oznacz braki na Sunday/MNF.
+        input: market_quotes
+        when_action_scope: sunday_mnf
+      - id: prefinal_gpt_delta
+        type: manual
+        label: GPT delta refresh tylko przy istotnych zmianach.
+        input: gpt_delta
+        when_action_scope: sunday_mnf
+        optional: true
+      - id: run_variant_b
+        type: command
+        label: Odpal Variant B i sprawdz READY/WATCH/HOLD.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+        when_action_scope: sunday_mnf
+
+  sunday:
+    label: Niedziela - final Sunday + zrzut MNF + live
+    objective: Finalny check niedzielnych meczow i swiezy zrzut MNF.
+    gpt_prompt_type: final_sunday_plus_mnf_delta
+    tasks:
+      - id: sunday_final_quote
+        type: manual
+        label: Final quote dla niedzielnych kandydatow.
+        input: market_quotes
+        when_action_scope: sunday
+      - id: sunday_final_gpt_delta
+        type: manual
+        label: GPT final delta refresh dla niedzielnych kandydatow.
+        input: gpt_delta
+        when_action_scope: sunday
+        optional: true
+      - id: mnf_quote_snapshot
+        type: manual
+        label: Zrzut quote dla MNF.
+        input: market_quotes
+        when_action_scope: mnf
+      - id: mnf_gpt_delta
+        type: manual
+        label: GPT delta refresh dla MNF, jesli kandydat.
+        input: gpt_delta
+        when_action_scope: mnf
+        optional: true
+      - id: run_variant_b
+        type: command
+        label: Odpal Variant B final Sunday / refresh MNF.
+        command: ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season {season} --week {week} --variant {variant} --with-model-proof --write-learning-ledger"
+        when_action_scope: sunday_mnf
+      - id: live_scenario_note
+        type: manual
+        label: Jesli grasz live, zapisuj live decyzje oddzielnie od pregame tracking.
+        input: market_quotes

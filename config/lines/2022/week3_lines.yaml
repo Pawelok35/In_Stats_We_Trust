@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 3
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w3/CLE_vs_PIT.md
   home: CLE
@@ -5,13 +9,6 @@ matchups:
   spread: -4.5
   total: 38.0
   prime_time: true
-  neutral_site: false
-- report: data/reports/comparisons/2022_w3/MIA_vs_BUF.md
-  home: MIA
-  away: BUF
-  spread: 4.0
-  total: 54.0
-  prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w3/CAR_vs_NO.md
   home: CAR
@@ -27,18 +24,18 @@ matchups:
   total: 40.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w3/NYJ_vs_CIN.md
-  home: NYJ
-  away: CIN
-  spread: 6.5
-  total: 46.0
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w3/IND_vs_KC.md
   home: IND
   away: KC
   spread: 4.5
   total: 51.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w3/MIA_vs_BUF.md
+  home: MIA
+  away: BUF
+  spread: 4.0
+  total: 54.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w3/MIN_vs_DET.md
@@ -53,6 +50,13 @@ matchups:
   away: BAL
   spread: 2.5
   total: 45.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w3/NYJ_vs_CIN.md
+  home: NYJ
+  away: CIN
+  spread: 6.5
+  total: 46.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w3/TEN_vs_LV.md
@@ -76,18 +80,18 @@ matchups:
   total: 46.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w3/SEA_vs_ATL.md
-  home: SEA
-  away: ATL
-  spread: -1.0
-  total: 43.0
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w3/ARI_vs_LA.md
   home: ARI
   away: LA
   spread: 3.5
   total: 49.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w3/SEA_vs_ATL.md
+  home: SEA
+  away: ATL
+  spread: -1.0
+  total: 43.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w3/TB_vs_GB.md

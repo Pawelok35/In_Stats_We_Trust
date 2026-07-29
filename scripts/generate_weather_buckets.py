@@ -4,7 +4,7 @@ import argparse
 import json
 import sys
 from pathlib import Path
-from typing import Dict, List, Optional, Tuple
+from typing import Any, Dict, List, Optional, Tuple
 
 import pandas as pd
 import polars as pl
@@ -14,8 +14,8 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from scripts import evaluate_picks
 from metrics.form_windows import compute_form_windows
+from scripts import evaluate_picks
 from utils.guardrails import (
     apply_guardrails,
     apply_guardrails_v2,
@@ -116,6 +116,13 @@ def _load_lines_spreads(path: Optional[Path]) -> Dict[Tuple[str, str], float]:
     return spreads
 
 
+def _load_robust_profile(path: Optional[Path]) -> Dict[str, Any]:
+    if path is None or not path.exists():
+        return {}
+    data = yaml.safe_load(path.read_text(encoding="utf-8")) or {}
+    return data if isinstance(data, dict) else {}
+
+
 def build_weather_table(
     season: int,
     week: int,
@@ -123,6 +130,8 @@ def build_weather_table(
     mode: str = "v2",
     baseline_spreads: Optional[Dict[Tuple[str, str], float]] = None,
     line_deadband: float = 0.5,
+    robust_high_tiers: bool = False,
+    robust_profile: Optional[Dict[str, Any]] = None,
 ) -> pd.DataFrame:
     df = load_picks_for_week(season, week)
     if df.empty:
@@ -140,6 +149,17 @@ def build_weather_table(
             return None
 
     rail_guard_logs: List[Dict] = []
+    robust_cfg = robust_profile or {}
+    gale_cfg = robust_cfg.get("gale", {}) if isinstance(robust_cfg.get("gale", {}), dict) else {}
+    high_cfg = (
+        robust_cfg.get("high_tier", {}) if isinstance(robust_cfg.get("high_tier", {}), dict) else {}
+    )
+    gale_min_rating = float(gale_cfg.get("min_rating", 3.6))
+    gale_min_value_buffer = float(gale_cfg.get("min_value_buffer", 0.0))
+    high_min_rating = float(high_cfg.get("min_rating", 8.0))
+    high_min_value_buffer = float(high_cfg.get("min_value_buffer", 2.0))
+    high_guard_level_threshold = int(high_cfg.get("guardrail_level_threshold", 2))
+    high_guard_min_value_buffer = float(high_cfg.get("guardrail_min_value_buffer", 5.0))
     rows: List[Dict] = []
     for (home, away), grp in df.groupby(["home", "away"]):
         rating = 0.0
@@ -172,7 +192,11 @@ def build_weather_table(
             and rating >= 8.0
         )
         bucket = assign_bucket(rating, ultimate)
-        ref = grp[grp["variant"] == "B"].iloc[0] if not grp[grp["variant"] == "B"].empty else grp.iloc[0]
+        ref = (
+            grp[grp["variant"] == "B"].iloc[0]
+            if not grp[grp["variant"] == "B"].empty
+            else grp.iloc[0]
+        )
         pick_team = ref["model_winner"]
         # Guardrails: faworyt = pick_team, underdog = drugi
         dog_team = home if pick_team == away else away
@@ -208,7 +232,9 @@ def build_weather_table(
         if mode == "v1" and adj_bucket == bucket:
             adj_bucket = assign_bucket(adj_rating, ultimate=False)
 
-        spread_val = _safe_float(ref.get("handicap") if ref.get("handicap") is not None else ref.get("spread"))
+        spread_val = _safe_float(
+            ref.get("handicap") if ref.get("handicap") is not None else ref.get("spread")
+        )
         predicted_margin_val = _safe_float(ref.get("model_margin"))
         baseline_spread_val = None
         if baseline_spreads:
@@ -241,6 +267,34 @@ def build_weather_table(
         )
 
         adj_bucket = guard_bucket
+        robust_notes: List[str] = []
+        if robust_high_tiers:
+            # Conservative filters to reduce noisy high-tier picks across regimes.
+            vb = value_buffer if value_buffer is not None else float("-inf")
+            if adj_bucket == "Gale":
+                if adj_rating < gale_min_rating:
+                    adj_bucket = "Breeze"
+                    robust_notes.append(f"robust: Gale->Breeze (rating<{gale_min_rating})")
+                elif vb < gale_min_value_buffer:
+                    adj_bucket = "Breeze"
+                    robust_notes.append(
+                        f"robust: Gale->Breeze (value_buffer<{gale_min_value_buffer})"
+                    )
+            elif adj_bucket in {"Vortex", "Supercell", "Ultimate Supercell"}:
+                if adj_rating < high_min_rating:
+                    adj_bucket = "Cyclone"
+                    robust_notes.append(f"robust: high-tier->Cyclone (rating<{high_min_rating})")
+                elif vb < high_min_value_buffer:
+                    adj_bucket = "Cyclone"
+                    robust_notes.append(
+                        f"robust: high-tier->Cyclone (value_buffer<{high_min_value_buffer})"
+                    )
+                elif level >= high_guard_level_threshold and vb < high_guard_min_value_buffer:
+                    adj_bucket = "Cyclone"
+                    robust_notes.append(
+                        "robust: high-tier->Cyclone "
+                        f"(guardrail_level>={high_guard_level_threshold} and value_buffer<{high_guard_min_value_buffer})"
+                    )
         rows.append(
             {
                 "season": season,
@@ -253,7 +307,9 @@ def build_weather_table(
                 "stake_u": BUCKET_STAKES.get(adj_bucket, 1.0),
                 "guardrails_mode": mode,
                 "guardrail_level": level,
-                "guardrail_notes": ";".join(notes) if notes else "",
+                "guardrail_notes": (
+                    ";".join(notes + robust_notes) if (notes or robust_notes) else ""
+                ),
                 "handicap": ref.get("handicap"),
                 "value_buffer": value_buffer,
                 "rail_guard_status": rg_status,
@@ -265,10 +321,14 @@ def build_weather_table(
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Generate Weather Scale buckets from pick variants J/C/K.")
+    parser = argparse.ArgumentParser(
+        description="Generate Weather Scale buckets from pick variants J/C/K."
+    )
     parser.add_argument("--season", type=int, required=True, help="Season, e.g. 2025")
     parser.add_argument("--week", type=int, help="Single week number, e.g. 12")
-    parser.add_argument("--start-week", type=int, help="Start week (inclusive) for range generation.")
+    parser.add_argument(
+        "--start-week", type=int, help="Start week (inclusive) for range generation."
+    )
     parser.add_argument("--end-week", type=int, help="End week (inclusive) for range generation.")
     parser.add_argument(
         "--output",
@@ -311,6 +371,17 @@ def parse_args() -> argparse.Namespace:
         default=0.5,
         help="Martwa strefa dla ruchu linii (w pkt spread). |Δspread| <= deadband -> decyzja wg bufferu z baseline (domyślnie 0.5).",
     )
+    parser.add_argument(
+        "--robust-high-tiers",
+        action="store_true",
+        help="Włącza konserwatywne filtry dla bucketów Gale/Vortex/Supercell.",
+    )
+    parser.add_argument(
+        "--robust-profile",
+        type=Path,
+        default=None,
+        help="Opcjonalny YAML z progami dla --robust-high-tiers.",
+    )
     return parser.parse_args()
 
 
@@ -334,6 +405,7 @@ def main() -> None:
 
     guardrails_cfg = load_guardrails(guardrails_path)
     baseline_spreads = _load_lines_spreads(args.baseline_lines)
+    robust_profile = _load_robust_profile(args.robust_profile)
 
     tables = []
     for wk in weeks:
@@ -344,6 +416,8 @@ def main() -> None:
             mode=args.guardrails_mode,
             baseline_spreads=baseline_spreads,
             line_deadband=args.line_deadband,
+            robust_high_tiers=args.robust_high_tiers,
+            robust_profile=robust_profile,
         )
         if tbl.empty:
             print(f"[WARN] Skipping week {wk}: no GOY/GOM/GOW picks found.")
@@ -355,6 +429,7 @@ def main() -> None:
     # compute result if scores available
     manual = evaluate_picks.load_manual_results(args.manual_results, season=args.season)
     results = evaluate_picks.load_results(args.season, manual)
+
     def compute_result(row: pd.Series) -> str:
         key = (int(row["week"]), row["home_team"], row["away_team"])
         game = results.get(key)
@@ -375,6 +450,7 @@ def main() -> None:
         if ats_margin == 0:
             return "PUSH"
         return "LOSS"
+
     table["result"] = table.apply(compute_result, axis=1)
 
     out_path = args.output
@@ -395,9 +471,7 @@ def main() -> None:
                 subset=["season", "week", "home_team", "away_team"], keep="last"
             )
             combined.to_csv(out_path, index=False)
-            print(
-                f"Wrote {len(new)} new rows (preserved {len(existing)} existing) to {out_path}"
-            )
+            print(f"Wrote {len(new)} new rows (preserved {len(existing)} existing) to {out_path}")
             return
     table.to_csv(out_path, index=False)
     print(f"Wrote {len(table)} rows to {out_path}")

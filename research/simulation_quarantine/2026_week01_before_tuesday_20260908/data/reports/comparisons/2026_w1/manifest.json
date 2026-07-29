@@ -1,0 +1,27 @@
+{
+  "code_is_dirty": true,
+  "commit_sha": "037b7d9be877d277be1d1b70de88aa7697ff4445",
+  "created_at": "2026-07-26T14:50:46.237871+00:00",
+  "files": [
+    {
+      "path": "C:\\Users\\Daniel\\Desktop\\In_Stats_We_Trust\\data\\reports\\comparisons\\2026_w1\\LAC_vs_ARI.md",
+      "sha256": "0918f0910e089f25532d4c38a1e3778e9295e07ea473a1657f57b8590779d9cb",
+      "size": 3616
+    },
+    {
+      "path": "C:\\Users\\Daniel\\Desktop\\In_Stats_We_Trust\\data\\reports\\comparisons\\2026_w1\\assets\\LAC_vs_ARI\\ari_metrics.png",
+      "sha256": "57b8cb99574b875257a98e653a96e36caa7d2dce286774a680e2d89956b06ec2",
+      "size": 15333
+    },
+    {
+      "path": "C:\\Users\\Daniel\\Desktop\\In_Stats_We_Trust\\data\\reports\\comparisons\\2026_w1\\assets\\LAC_vs_ARI\\lac_metrics.png",
+      "sha256": "d0656500a31d25289171f91a1b49660d19dda8df9eac68001ae7094cd9f6a2a0",
+      "size": 15511
+    }
+  ],
+  "layer": "comparison_reports",
+  "path": "C:\\Users\\Daniel\\Desktop\\In_Stats_We_Trust\\data\\reports\\comparisons\\2026_w1\\LAC_vs_ARI.md",
+  "season": 2026,
+  "sha256": "0918f0910e089f25532d4c38a1e3778e9295e07ea473a1657f57b8590779d9cb",
+  "week": 1
+}

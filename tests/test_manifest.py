@@ -32,6 +32,8 @@ def test_write_manifest_creates_sidecar_with_defaults(tmp_path: Path):
     assert payload["rows"] == 10
     assert payload["path"] == str(artifact.resolve())
     assert "created_at" in payload
+    assert "commit_sha" in payload
+    assert "code_is_dirty" in payload
 
 
 def test_write_manifest_allows_custom_path(tmp_path: Path):

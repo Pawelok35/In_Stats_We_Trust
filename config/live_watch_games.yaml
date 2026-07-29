@@ -1,0 +1,49 @@
+# Live watch game-day notes.
+#
+# This file is intentionally lightweight. The script does not require it yet;
+# use it as a checklist for games you plan to monitor and prices you manually see.
+
+defaults:
+  snapshot: Q3
+  book: MANUAL_MULTI_BOOK
+  min_cases: 30
+  min_win_rate: 0.55
+  play_buffer: 0.03
+  strong_buffer: 0.07
+  flow_path_source: research/quarter_path_underdog_study_2015_2025_flow_q3_leads.csv
+  margin_trajectory_source: research/quarter_path_underdog_study_2015_2025_margin_q3_leads.csv
+  delta_trajectory_source: research/quarter_path_underdog_study_2015_2025_delta_q3_leads.csv
+  micro_path_source: research/quarter_path_underdog_study_2015_2025_q3_micro.csv
+  path_source: research/quarter_path_underdog_study_2015_2025_binary_q3_leads.csv
+  broad_bucket_source: research/in_game_underdog_study_2017_2025.csv
+
+workflow:
+  list_candidates:
+    command: >-
+      .\.venv\Scripts\python.exe scripts\live_watch_card.py
+      --season 2026
+      --week 1
+      --list-candidates
+  check_without_price:
+    command: >-
+      .\.venv\Scripts\python.exe scripts\live_watch_card.py
+      --season 2026
+      --week 1
+      --game-id 2026_01_DAL_PHI
+  check_with_decimal_price:
+    command: >-
+      .\.venv\Scripts\python.exe scripts\live_watch_card.py
+      --season 2026
+      --week 1
+      --game-id 2026_01_DAL_PHI
+      --live-decimal 1.90
+      --book MANUAL_MULTI_BOOK
+
+watchlist:
+  - season: 2026
+    week: 1
+    game_id: ""
+    underdog_team: ""
+    live_decimal_seen: null
+    live_ml_seen: null
+    notes: ""

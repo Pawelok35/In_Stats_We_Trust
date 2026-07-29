@@ -1,72 +1,27 @@
+source: nfl_data_py.import_schedules
+season: 2023
+week: 4
+spread_convention: home_team_spread
 matchups:
-- report: data/reports/comparisons/2023_w4/NYG_vs_SEA.md
-  home: NYG
-  away: SEA
-  spread: 1.5
-  total: 47.5
+- report: data/reports/comparisons/2023_w4/GB_vs_DET.md
+  home: GB
+  away: DET
+  spread: 2.5
+  total: 45.0
   prime_time: true
   neutral_site: false
-- report: data/reports/comparisons/2023_w4/NYJ_vs_KC.md
-  home: NYJ
-  away: KC
-  spread: 7.5
-  total: 41.5
-  prime_time: true
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/DAL_vs_NE.md
-  home: DAL
-  away: NE
-  spread: -5.5
-  total: 43.5
+- report: data/reports/comparisons/2023_w4/JAX_vs_ATL.md
+  home: JAX
+  away: ATL
+  spread: -3.5
+  total: 42.5
   prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/PHI_vs_WAS.md
-  home: PHI
-  away: WAS
-  spread: -8.5
-  total: 43.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/IND_vs_LA.md
-  home: IND
-  away: LA
-  spread: 1.5
-  total: 44.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/SF_vs_ARI.md
-  home: SF
-  away: ARI
-  spread: -14.5
-  total: 43.5
-  prime_time: false
-  neutral_site: false
+  neutral_site: true
 - report: data/reports/comparisons/2023_w4/BUF_vs_MIA.md
   home: BUF
   away: MIA
-  spread: -3.0
-  total: 52.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/LAC_vs_LV.md
-  home: LAC
-  away: LV
-  spread: -6.5
-  total: 49.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/CLE_vs_BAL.md
-  home: CLE
-  away: BAL
-  spread: 1.5
-  total: 38.5
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2023_w4/TEN_vs_CIN.md
-  home: TEN
-  away: CIN
-  spread: 2.5
-  total: 41.0
+  spread: -2.5
+  total: 53.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w4/CAR_vs_MIN.md
@@ -79,15 +34,15 @@ matchups:
 - report: data/reports/comparisons/2023_w4/CHI_vs_DEN.md
   home: CHI
   away: DEN
-  spread: 3.5
-  total: 46.5
+  spread: 3.0
+  total: 47.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w4/NO_vs_TB.md
-  home: 'NO'
-  away: TB
-  spread: -4.0
-  total: 40.5
+- report: data/reports/comparisons/2023_w4/CLE_vs_BAL.md
+  home: CLE
+  away: BAL
+  spread: 2.0
+  total: 38.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2023_w4/HOU_vs_PIT.md
@@ -97,17 +52,66 @@ matchups:
   total: 41.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2023_w4/JAX_vs_ATL.md
-  home: JAX
-  away: ATL
-  spread: -3.0
+- report: data/reports/comparisons/2023_w4/IND_vs_LA.md
+  home: IND
+  away: LA
+  spread: 1.0
+  total: 44.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/NO_vs_TB.md
+  home: 'NO'
+  away: TB
+  spread: -4.0
+  total: 41.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/PHI_vs_WAS.md
+  home: PHI
+  away: WAS
+  spread: -9.5
   total: 43.0
   prime_time: false
-  neutral_site: true
-- report: data/reports/comparisons/2023_w4/GB_vs_DET.md
-  home: GB
-  away: DET
-  spread: 1.5
-  total: 45.5
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/TEN_vs_CIN.md
+  home: TEN
+  away: CIN
+  spread: 2.5
+  total: 41.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/LAC_vs_LV.md
+  home: LAC
+  away: LV
+  spread: -7.0
+  total: 49.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/DAL_vs_NE.md
+  home: DAL
+  away: NE
+  spread: -6.5
+  total: 43.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/SF_vs_ARI.md
+  home: SF
+  away: ARI
+  spread: -15.0
+  total: 44.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/NYJ_vs_KC.md
+  home: NYJ
+  away: KC
+  spread: 9.5
+  total: 41.5
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2023_w4/NYG_vs_SEA.md
+  home: NYG
+  away: SEA
+  spread: 2.5
+  total: 46.5
   prime_time: true
   neutral_site: false

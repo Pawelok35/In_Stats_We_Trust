@@ -5,7 +5,7 @@ import polars as pl
 import pytest
 
 from etl.l3_aggregate import run as l3_run
-from utils.paths import path_for, manifest_path
+from utils.paths import manifest_path, path_for
 
 
 def _stub_settings(tmp_path):

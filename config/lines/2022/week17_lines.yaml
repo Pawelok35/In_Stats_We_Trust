@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 17
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w17/TEN_vs_DAL.md
   home: TEN
@@ -13,13 +17,6 @@ matchups:
   total: 41.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w17/TB_vs_CAR.md
-  home: TB
-  away: CAR
-  spread: -3.5
-  total: 40.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w17/DET_vs_CHI.md
   home: DET
   away: CHI
@@ -27,10 +24,24 @@ matchups:
   total: 52.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w17/WAS_vs_CLE.md
-  home: WAS
-  away: CLE
-  spread: -1.0
+- report: data/reports/comparisons/2022_w17/HOU_vs_JAX.md
+  home: HOU
+  away: JAX
+  spread: 3.5
+  total: 43.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w17/KC_vs_DEN.md
+  home: KC
+  away: DEN
+  spread: -13.5
+  total: 46.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w17/NE_vs_MIA.md
+  home: NE
+  away: MIA
+  spread: -3.0
   total: 41.5
   prime_time: false
   neutral_site: false
@@ -41,31 +52,31 @@ matchups:
   total: 38.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w17/KC_vs_DEN.md
-  home: KC
-  away: DEN
-  spread: -13.5
-  total: 46.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w17/HOU_vs_JAX.md
-  home: HOU
-  away: JAX
-  spread: 3.5
-  total: 43.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w17/NE_vs_MIA.md
-  home: NE
-  away: MIA
-  spread: -3.0
-  total: 41.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w17/PHI_vs_NO.md
   home: PHI
   away: 'NO'
   spread: -5.5
+  total: 41.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w17/TB_vs_CAR.md
+  home: TB
+  away: CAR
+  spread: -3.5
+  total: 40.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w17/WAS_vs_CLE.md
+  home: WAS
+  away: CLE
+  spread: -1.0
+  total: 41.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w17/LV_vs_SF.md
+  home: LV
+  away: SF
+  spread: 10.0
   total: 41.5
   prime_time: false
   neutral_site: false
@@ -74,13 +85,6 @@ matchups:
   away: NYJ
   spread: 1.0
   total: 43.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w17/LV_vs_SF.md
-  home: LV
-  away: SF
-  spread: 10.0
-  total: 41.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w17/GB_vs_MIN.md

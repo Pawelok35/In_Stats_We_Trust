@@ -1,0 +1,94 @@
+{
+  "schema_version": "variant_b_week_flow_summary.v1",
+  "rows": [
+    {
+      "pick": "BUF_at_HOU BUF VALUE PLAY",
+      "pick_id": "2026_w01_BUF_at_HOU_BUF",
+      "selected_team": "BUF",
+      "tag": "VALUE PLAY",
+      "edge_vs_line": 4.88,
+      "line": -1.5,
+      "price": -102,
+      "process_quality_status": "PREKICK_NOT_READY",
+      "gate_state": "HOLD",
+      "operator_action": "RETURN_FOR_MODEL_RERUN",
+      "hard_blockers_count": 5,
+      "pending_not_due_count": 6,
+      "audit_file": "research\\variant_b_week_flow\\2026\\week_01\\2026_w01_BUF_at_HOU_BUF.json"
+    },
+    {
+      "pick": "NO_at_DET DET GOW",
+      "pick_id": "2026_w01_NO_at_DET_DET",
+      "selected_team": "DET",
+      "tag": "GOW",
+      "edge_vs_line": 4.17,
+      "line": -7.0,
+      "price": -109,
+      "process_quality_status": "PREKICK_NOT_READY",
+      "gate_state": "HOLD",
+      "operator_action": "RETURN_FOR_MODEL_RERUN",
+      "hard_blockers_count": 5,
+      "pending_not_due_count": 6,
+      "audit_file": "research\\variant_b_week_flow\\2026\\week_01\\2026_w01_NO_at_DET_DET.json"
+    },
+    {
+      "pick": "CLE_at_JAX JAX GOY",
+      "pick_id": "2026_w01_CLE_at_JAX_JAX",
+      "selected_team": "JAX",
+      "tag": "GOY",
+      "edge_vs_line": 12.42,
+      "line": -7.5,
+      "price": -102,
+      "process_quality_status": "PREKICK_NOT_READY",
+      "gate_state": "HOLD",
+      "operator_action": "RETURN_FOR_MODEL_RERUN",
+      "hard_blockers_count": 5,
+      "pending_not_due_count": 6,
+      "audit_file": "research\\variant_b_week_flow\\2026\\week_01\\2026_w01_CLE_at_JAX_JAX.json"
+    },
+    {
+      "pick": "GB_at_MIN GB GOW",
+      "pick_id": "2026_w01_GB_at_MIN_GB",
+      "selected_team": "GB",
+      "tag": "GOW",
+      "edge_vs_line": 7.7,
+      "line": 1.0,
+      "price": -105,
+      "process_quality_status": "PREKICK_NOT_READY",
+      "gate_state": "HOLD",
+      "operator_action": "RETURN_FOR_MODEL_RERUN",
+      "hard_blockers_count": 5,
+      "pending_not_due_count": 6,
+      "audit_file": "research\\variant_b_week_flow\\2026\\week_01\\2026_w01_GB_at_MIN_GB.json"
+    },
+    {
+      "pick": "MIA_at_LV MIA GOM",
+      "pick_id": "2026_w01_MIA_at_LV_MIA",
+      "selected_team": "MIA",
+      "tag": "GOM",
+      "edge_vs_line": 12.71,
+      "line": 3.5,
+      "price": 102,
+      "process_quality_status": "PREKICK_NOT_READY",
+      "gate_state": "HOLD",
+      "operator_action": "RETURN_FOR_MODEL_RERUN",
+      "hard_blockers_count": 5,
+      "pending_not_due_count": 6,
+      "audit_file": "research\\variant_b_week_flow\\2026\\week_01\\2026_w01_MIA_at_LV_MIA.json"
+    }
+  ],
+  "counts": {
+    "total_audits": 5,
+    "by_operator_action": {
+      "RETURN_FOR_MODEL_RERUN": 5
+    },
+    "by_gate_state": {
+      "HOLD": 5
+    },
+    "by_process_status": {
+      "PREKICK_NOT_READY": 5
+    }
+  },
+  "model_proof_generated": true,
+  "quotes_loaded": 5
+}

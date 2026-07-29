@@ -100,33 +100,54 @@ def canonicalize_l1(df: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     alias_plan = {
         # yards gained on this play
         "yards_gained": [
-            "yards_gained", "yards_gained_play", "yds_gained", "yards_gained_raw", "gain", "yards",
+            "yards_gained",
+            "yards_gained_play",
+            "yds_gained",
+            "yards_gained_raw",
+            "gain",
+            "yards",
         ],
-
         # was the pass intercepted / did offense throw an INT
         "interception": [
-            "interception", "interception_thrown", "intercepted", "pass_intercepted", "int_thrown",
+            "interception",
+            "interception_thrown",
+            "intercepted",
+            "pass_intercepted",
+            "int_thrown",
         ],
-
         # offense lost a fumble on this play
         "fumble_lost": [
-            "fumble_lost", "lost_fumble", "fumble_lost_offense", "fumble_forced_lost", "fumble_lost_play",
+            "fumble_lost",
+            "lost_fumble",
+            "fumble_lost_offense",
+            "fumble_forced_lost",
+            "fumble_lost_play",
         ],
-
         # did offense score TD on this play
         "touchdown": [
-            "touchdown", "td", "td_offense", "offense_td", "rush_touchdown", "pass_touchdown",
-            "td_team", "touchdown_scored",
+            "touchdown",
+            "td",
+            "td_offense",
+            "offense_td",
+            "rush_touchdown",
+            "pass_touchdown",
+            "td_team",
+            "touchdown_scored",
         ],
-
         # human-readable play text / description
         "play_description": [
-            "play_description", "desc", "play_desc", "pbp_desc", "playtext",
+            "play_description",
+            "desc",
+            "play_desc",
+            "pbp_desc",
+            "playtext",
         ],
-
         # we already had "distance", so keep old behavior:
         "distance": [
-            "distance", "ydstogo", "yards_to_go", "yds_to_go",
+            "distance",
+            "ydstogo",
+            "yards_to_go",
+            "yds_to_go",
         ],
     }
 
@@ -149,33 +170,21 @@ def canonicalize_l1(df: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     # interception
     int_src = _pick_alias(working, alias_plan["interception"])
     if int_src:
-        new_cols["interception"] = (
-            pl.col(int_src)
-            .cast(pl.Int64)
-            .fill_null(0)
-        )
+        new_cols["interception"] = pl.col(int_src).cast(pl.Int64).fill_null(0)
     else:
         new_cols["interception"] = pl.lit(0).cast(pl.Int64)
 
     # fumble_lost
     fum_src = _pick_alias(working, alias_plan["fumble_lost"])
     if fum_src:
-        new_cols["fumble_lost"] = (
-            pl.col(fum_src)
-            .cast(pl.Int64)
-            .fill_null(0)
-        )
+        new_cols["fumble_lost"] = pl.col(fum_src).cast(pl.Int64).fill_null(0)
     else:
         new_cols["fumble_lost"] = pl.lit(0).cast(pl.Int64)
 
     # touchdown
     td_src = _pick_alias(working, alias_plan["touchdown"])
     if td_src:
-        new_cols["touchdown"] = (
-            pl.col(td_src)
-            .cast(pl.Int64)
-            .fill_null(0)
-        )
+        new_cols["touchdown"] = pl.col(td_src).cast(pl.Int64).fill_null(0)
     else:
         new_cols["touchdown"] = pl.lit(0).cast(pl.Int64)
 
@@ -192,9 +201,7 @@ def canonicalize_l1(df: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     new_cols["week"] = pl.lit(week).cast(pl.Int64)
 
     # Actually apply/override these columns.
-    working = working.with_columns(
-        [expr.alias(name) for name, expr in new_cols.items()]
-    )
+    working = working.with_columns([expr.alias(name) for name, expr in new_cols.items()])
 
     # Now select EXACTLY columns defined in L1_SCHEMA, in that order.
     final_cols = []
@@ -219,7 +226,6 @@ def canonicalize_l1(df: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     return working
 
 
-
 def apply_team_aliases(df: pl.DataFrame, columns: Iterable[str]) -> pl.DataFrame:
     """Normalize historical team aliases to modern abbreviations."""
 
@@ -234,8 +240,6 @@ def apply_team_aliases(df: pl.DataFrame, columns: Iterable[str]) -> pl.DataFrame
         )
     return df.with_columns(list(replacements.values()))
 
-
-import polars as pl
 
 def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     """
@@ -284,24 +288,24 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     working = df_l1.clone()
 
     # --- enforce season/week from args (safety if source had more weeks mixed)
-    working = working.filter(
-        (pl.col("season") == season) & (pl.col("week") == week)
-    )
+    working = working.filter((pl.col("season") == season) & (pl.col("week") == week))
 
     if "yardline_100" not in working.columns:
-        working = working.with_columns(
-            pl.lit(None).cast(pl.Float64).alias("yardline_100")
-        )
+        working = working.with_columns(pl.lit(None).cast(pl.Float64).alias("yardline_100"))
 
     # --- derive TEAM / OPP if not already present
     if "TEAM" not in working.columns:
-        working = working.with_columns([
-            pl.col("posteam").cast(pl.Utf8).alias("TEAM"),
-        ])
+        working = working.with_columns(
+            [
+                pl.col("posteam").cast(pl.Utf8).alias("TEAM"),
+            ]
+        )
     if "OPP" not in working.columns:
-        working = working.with_columns([
-            pl.col("defteam").cast(pl.Utf8).alias("OPP"),
-        ])
+        working = working.with_columns(
+            [
+                pl.col("defteam").cast(pl.Utf8).alias("OPP"),
+            ]
+        )
 
     # --- core derived columns we need downstream
     yards_expr = pl.col("yards_gained").cast(pl.Float64).fill_null(0.0)
@@ -341,81 +345,51 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         .cast(pl.Int64)
     )
 
-    working = working.with_columns([
-        # yards_gained (REAL from L1, fallback 0.0 if null)
-        yards_expr.alias("yards_gained"),
-        yardline_expr.alias("yardline_100"),
-
-        # normalized down / distance columns
-        down_expr.alias("down"),
-        distance_expr.alias("distance"),
-
-        # turnover if INT or fumble_lost
-        (
-            (pl.col("interception").fill_null(0) > 0)
-            | (pl.col("fumble_lost").fill_null(0) > 0)
-        )
-        .cast(pl.Int64)
-        .alias("is_turnover"),
-
-        # TD for offense directly from touchdown flag
-        (pl.col("touchdown").fill_null(0) > 0)
-        .cast(pl.Int64)
-        .alias("is_offensive_td"),
-
-        # dropback proxy (passes, sacks, scrambles, spikes, kneels)
-        dropback_expr.alias("is_dropback"),
-
-        # explosive play proxy (15+ yard pass, 10+ yard rush/scramble)
-        pl.when(
-            (
-                play_type_lower.str.contains("pass")
-                & (yards_expr >= 15.0)
+    working = working.with_columns(
+        [
+            # yards_gained (REAL from L1, fallback 0.0 if null)
+            yards_expr.alias("yards_gained"),
+            yardline_expr.alias("yardline_100"),
+            # normalized down / distance columns
+            down_expr.alias("down"),
+            distance_expr.alias("distance"),
+            # turnover if INT or fumble_lost
+            ((pl.col("interception").fill_null(0) > 0) | (pl.col("fumble_lost").fill_null(0) > 0))
+            .cast(pl.Int64)
+            .alias("is_turnover"),
+            # TD for offense directly from touchdown flag
+            (pl.col("touchdown").fill_null(0) > 0).cast(pl.Int64).alias("is_offensive_td"),
+            # dropback proxy (passes, sacks, scrambles, spikes, kneels)
+            dropback_expr.alias("is_dropback"),
+            # explosive play proxy (15+ yard pass, 10+ yard rush/scramble)
+            pl.when(
+                (play_type_lower.str.contains("pass") & (yards_expr >= 15.0))
+                | (play_type_lower.str.contains("run|rush|scramble") & (yards_expr >= 10.0))
             )
-            | (
-                play_type_lower.str.contains("run|rush|scramble")
-                & (yards_expr >= 10.0)
-            )
-        )
-        .then(1)
-        .otherwise(0)
-        .cast(pl.Int64)
-        .alias("is_explosive"),
-
-        # pressure proxy (sacks / QB hits in description on dropbacks)
-        pressure_expr.alias("is_pressure"),
-
-        # third-down attempt indicator
-        (down_expr == 3).cast(pl.Int64).alias("is_third_down"),
-
-        # third-down conversion (attained needed yards)
-        (
-            (down_expr == 3)
-            & (distance_expr > 0)
-            & (yards_expr >= distance_expr)
-        )
-        .cast(pl.Int64)
-        .alias("third_down_converted"),
-
-        # red zone indicator (yardline_100 <= 20)
-        pl.when(
-            yardline_expr.is_not_null()
-            & (yardline_expr <= 20.0)
-            & (yardline_expr >= 0.0)
-        )
-        .then(1)
-        .otherwise(0)
-        .cast(pl.Int64)
-        .alias("in_redzone"),
-    ])
+            .then(1)
+            .otherwise(0)
+            .cast(pl.Int64)
+            .alias("is_explosive"),
+            # pressure proxy (sacks / QB hits in description on dropbacks)
+            pressure_expr.alias("is_pressure"),
+            # third-down attempt indicator
+            (down_expr == 3).cast(pl.Int64).alias("is_third_down"),
+            # third-down conversion (attained needed yards)
+            ((down_expr == 3) & (distance_expr > 0) & (yards_expr >= distance_expr))
+            .cast(pl.Int64)
+            .alias("third_down_converted"),
+            # red zone indicator (yardline_100 <= 20)
+            pl.when(yardline_expr.is_not_null() & (yardline_expr <= 20.0) & (yardline_expr >= 0.0))
+            .then(1)
+            .otherwise(0)
+            .cast(pl.Int64)
+            .alias("in_redzone"),
+        ]
+    )
 
     # success_bin (1/0) based on success > 0
     if "success" in working.columns:
-        working = working.with_columns(
-            (pl.col("success") > 0)
-            .cast(pl.Int64)
-            .alias("success_bin")
-        )
+        working = working.with_columns((pl.col("success") > 0).cast(pl.Int64).alias("success_bin"))
 
     # --- now select canonical L2 columns (order matters for downstream)
     base_cols = [

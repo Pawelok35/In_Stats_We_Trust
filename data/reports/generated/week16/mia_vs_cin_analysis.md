@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – MIA 22.2 – CIN 23.8
-2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 1.5 pts
-4️⃣ Win Probability (Model) – 51% (CIN)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę CIN: CIN +0.281 vs MIA +0.182. Turnover margin faworyzuje CIN (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Na 3rd down CIN utrzymuje 37.8%, podczas gdy MIA jest na 33.0%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje CIN na poziomie 48.0% vs 46.7% (+1.3 pp). Field position edge wynosi +1.2 yds na rzecz CIN (3.5 vs 2.3), co skraca ich boisko.
+1️⃣ Estimated Score (Model) – MIA 24.2 – CIN 23.0
+2️⃣ Predicted Winner (Model) – MIA
+3️⃣ Predicted Margin (Model) – MIA by 1.2 pts
+4️⃣ Win Probability (Model) – 60% (MIA)
+5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje MIA (+2.00 vs -3.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę MIA: MIA +0.118 vs CIN +0.068. Red Zone TD Rate sprzyja MIA (14.4% vs 11.2%). Field position edge wynosi +1.3 yds na rzecz MIA (5.9 vs 4.6), co skraca ich boisko.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – MIA 21.5 – CIN 26.0
-2️⃣ Predicted Winner (Market) – CIN
-3️⃣ Predicted Margin (Market) – CIN by 4.5 pts
-4️⃣ Win Probability (Market) – 66% (CIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — MIA +0.182 vs CIN +0.281. Points per Drive Differential — MIA -0.208 vs CIN -0.567. Success Rate Offense — MIA 46.7% vs CIN 48.0%. Third Down Conversion — MIA 33.0% vs CIN 37.8%. Red Zone TD Rate — MIA 14.5% vs CIN 15.4%. Explosive Play Rate — MIA 10.6% vs CIN 9.0%. Model margin -1.5 pts vs market spread MIA -4.5.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -1.5 pkt. CIN notuje -0.567 PPD vs -0.208 u MIA. Różnica w Success Rate to 48.0% vs 46.7%. Na 3rd down CIN (37.8%) wygląda solidniej niż MIA (33.0%). Red Zone i explosiveness ( 15.4% / 9.0% ) utrzymują przewagę jakościową. Market trzyma -4.5 pkt, więc edge vs linia to -3.0.
+1️⃣ Estimated Score (Market) – MIA 23.5 – CIN 22.5
+2️⃣ Predicted Winner (Market) – MIA
+3️⃣ Predicted Margin (Market) – MIA by 1.0 pts
+4️⃣ Win Probability (Market) – 54% (MIA)
+5️⃣ Forum Output (A) – PowerScore (Model) — MIA +0.118 vs CIN +0.068. Points per Drive Differential — MIA -1.077 vs CIN -0.697. Success Rate Offense — MIA 39.7% vs CIN 40.4%. Third Down Conversion — MIA 31.3% vs CIN 32.1%. Red Zone TD Rate — MIA 14.4% vs CIN 11.2%. Explosive Play Rate — MIA 8.4% vs CIN 9.8%. Model margin 1.2 pts vs market spread MIA +1.0.
+6️⃣ Forum Output (B) – Model idzie w stronę MIA po marginesie 1.2 pkt. MIA notuje -1.077 PPD vs -0.697 u CIN. Różnica w Success Rate to 39.7% vs 40.4%. Na 3rd down MIA (31.3%) wygląda solidniej niż CIN (32.1%). Red Zone i explosiveness ( 14.4% / 8.4% ) utrzymują przewagę jakościową. Market trzyma 1.0 pkt, więc edge vs linia to +0.2.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -3.0 pts
-• PowerScoreDiff (winner) = +0.099
-• Confidence = 55.0%
+• Edge_vs_Line (winner) = +0.2 pts
+• PowerScoreDiff (winner) = +0.050
+• Confidence = 61.5%
 
-🏷 Model Tag: NEUTRAL — based on 55.0% confidence, -3.0 pts model edge vs line, and PowerScore Δ +0.099.
+🏷 Model Tag: NEUTRAL — based on 61.5% confidence, +0.2 pts model edge vs line, and PowerScore Δ +0.050.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – MIA 22.2 – CIN 23.8
-   • Win Probability – 51% (CIN)
+   • Estimated Score – MIA 24.2 – CIN 23.0
+   • Win Probability – 60% (MIA)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – MIA 21.5 – CIN 26.0
-   • Win Probability – 66% (CIN)
+   • Estimated Score – MIA 23.5 – CIN 22.5
+   • Win Probability – 54% (MIA)
 
-🏷 Model Tag: NEUTRAL — CIN (HC -4.5)
+🏷 Model Tag: NEUTRAL — MIA (HC -1.0)

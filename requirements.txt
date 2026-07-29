@@ -4,9 +4,19 @@ fastapi
 httpx
 matplotlib
 jinja2
+# nfl_data_py is retained only for legacy scripts during migration.
+nflreadpy
+# nfl_data_py 0.3.3 requires pandas <2.0. Python 3.10 is required because
+# pandas 1.5.3 has no Windows wheel for Python 3.12+.
+nfl_data_py==0.3.3
+numpy<2.0
+pandas==1.5.3
 polars
 pydantic
+pyarrow
 pyyaml
 pytest
 ruff
 typer
+streamlit
+plotly

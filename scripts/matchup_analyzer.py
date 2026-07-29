@@ -115,7 +115,9 @@ class MatchupReport:
         )
         match = block_pattern.search(self.text)
         if not match:
-            raise ValueError("Nie znaleziono sekcji **Model (4 metrics)** w podsumowaniu PowerScore.")
+            raise ValueError(
+                "Nie znaleziono sekcji **Model (4 metrics)** w podsumowaniu PowerScore."
+            )
         _, team_a, value_a, team_b, value_b = match.groups()
         return {team_a: float(value_a), team_b: float(value_b)}
 
@@ -164,9 +166,12 @@ def load_report_metrics(report: MatchupReport, home: str, away: str, window: str
     epa_def = {team: parse_numeric(ps_rows["EPA Defense"][team]) for team in (home, away)}
 
     def percent_table(header: str) -> Dict[str, float]:
-        table = _get_table_flexible(report, header)
-        rows = table.row_by("Team")
-        return {team: parse_numeric(rows[team][column]) for team in (home, away)}
+        try:
+            table = _get_table_flexible(report, header)
+            rows = table.row_by("Team")
+            return {team: parse_numeric(rows[team][column]) for team in (home, away)}
+        except ValueError:
+            return {home: 0.0, away: 0.0}
 
     success_form = percent_table("Success Rate Offense Form (up to Week 9)")
     third_down = percent_table("Third Down Conversion Form (up to Week 9)")
@@ -185,15 +190,18 @@ def load_report_metrics(report: MatchupReport, home: str, away: str, window: str
     turnover = {team: parse_numeric(turnover_row[team]) for team in (home, away)}
     pressure = {team: parse_numeric(pressure_row[team]) for team in (home, away)}
 
-    field_table = _get_table_flexible(report, "Field Position Edge (own - opp)")
-    field_rows = field_table.row_by("Team")
     field_position: Dict[str, float] = {}
-    for team in (home, away):
-        row = field_rows.get(team)
-        if row:
-            field_position[team] = parse_numeric(row[WINDOW_COLUMNS["season"]])
-        else:
-            field_position[team] = 0.0
+    try:
+        field_table = _get_table_flexible(report, "Field Position Edge (own - opp)")
+        field_rows = field_table.row_by("Team")
+        for team in (home, away):
+            row = field_rows.get(team)
+            if row:
+                field_position[team] = parse_numeric(row[WINDOW_COLUMNS["season"]])
+            else:
+                field_position[team] = 0.0
+    except ValueError:
+        field_position = {home: 0.0, away: 0.0}
 
     trend_scores: Dict[str, float] = {home: 0.0, away: 0.0}
     trend_weights = {
@@ -307,7 +315,9 @@ class MatchInput:
     diff_analog: float
 
 
-def build_match_input(metrics: ReportMetrics, home: str, away: str, args: argparse.Namespace) -> MatchInput:
+def build_match_input(
+    metrics: ReportMetrics, home: str, away: str, args: argparse.Namespace
+) -> MatchInput:
     adv_ppd = metrics.ppd_diff[home] - metrics.ppd_diff[away]
     diff_success = metrics.success_rate_offense[home] - metrics.success_rate_offense[away]
     diff_third = metrics.third_down[home] - metrics.third_down[away]
@@ -370,7 +380,9 @@ def set_tag_rules(rules: Dict[str, Dict[str, float]]) -> None:
     merged = DEFAULT_TAG_RULES.copy()
     for tag, rule in rules.items():
         merged[tag.upper()] = {
-            "confidence": float(rule.get("confidence", merged.get(tag.upper(), {}).get("confidence", 0))),
+            "confidence": float(
+                rule.get("confidence", merged.get(tag.upper(), {}).get("confidence", 0))
+            ),
             "edge": float(rule.get("edge", merged.get(tag.upper(), {}).get("edge", 0))),
             "powerscore_diff": float(
                 rule.get("powerscore_diff", merged.get(tag.upper(), {}).get("powerscore_diff", 0))
@@ -446,10 +458,16 @@ def build_projection(inp: MatchInput, home: str, away: str) -> ProjectionResult:
     elif inp.diff_field_position <= -5:
         confidence -= 1.0
 
-    # 3) Pressure diff (def pressure vs def pressure przeciwnika) – lekki boost/cięcie.
+    # 3) Pressure diff (def pressure vs def pressure przeciwnika) — lekki boost/cięcie.
     if inp.diff_pressure >= 5:
         confidence += 1.0
     elif inp.diff_pressure <= -5:
+        confidence -= 1.0
+
+    # 4) Negative game script risk (heurystyka): słaba presja + gorsza pozycja startowa
+    # po stronie wybranego zwycięzcy => minimalne cięcie confidence.
+    # Chodzi o zespoły, które w pościgu mogą się rozsypać.
+    if inp.diff_pressure <= -5 and inp.diff_field_position <= -5:
         confidence -= 1.0
 
     confidence = clamp(confidence, 0, 100)
@@ -572,7 +590,9 @@ def build_reason_sentences(metrics: ReportMetrics, home: str, away: str, adv: fl
     return top_sentences[:5]
 
 
-def build_forum_outputs(metrics: ReportMetrics, home: str, away: str, proj: ProjectionResult) -> Tuple[str, str]:
+def build_forum_outputs(
+    metrics: ReportMetrics, home: str, away: str, proj: ProjectionResult
+) -> Tuple[str, str]:
     lines_a = [
         f"PowerScore (Model) — {home} {metrics.powerscore[home]:+.3f} vs {away} {metrics.powerscore[away]:+.3f}.",
         f"Points per Drive Differential — {home} {format_ppd(metrics.ppd_diff[home])} vs {away} {format_ppd(metrics.ppd_diff[away])}.",
@@ -613,7 +633,7 @@ def render_output(home: str, away: str, metrics: ReportMetrics, proj: Projection
     tag_comment = TAG_COMMENTS[proj.tag]
     tag_color = TAG_COLORS.get(proj.tag)
     colored_tag = (
-        f"<span style=\"color:{tag_color}; font-weight:600;\">{proj.tag}</span>"
+        f'<span style="color:{tag_color}; font-weight:600;">{proj.tag}</span>'
         if tag_color
         else proj.tag
     )
@@ -667,13 +687,21 @@ def run(report_path: Path, home: str, away: str, args: argparse.Namespace) -> An
 
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="NFL Matchup Analyst v4.8 (Aggressive-Balanced).")
-    parser.add_argument("--report", type=Path, required=True, help="Ścieżka do pliku raportu Markdown.")
+    parser.add_argument(
+        "--report", type=Path, required=True, help="Ścieżka do pliku raportu Markdown."
+    )
     parser.add_argument("--home", required=True, help="Kod gospodarza (np. CHI).")
     parser.add_argument("--away", required=True, help="Kod gości (np. NYG).")
-    parser.add_argument("--spread", type=float, required=True, help="Linia na gospodarza (np. -4.5 jeśli faworyt).")
+    parser.add_argument(
+        "--spread", type=float, required=True, help="Linia na gospodarza (np. -4.5 jeśli faworyt)."
+    )
     parser.add_argument("--total", type=float, required=True, help="Linia punktowa (Total).")
-    parser.add_argument("--prime-time", action="store_true", help="Zaznacz jeśli spotkanie jest w prime time.")
-    parser.add_argument("--neutral-site", action="store_true", help="Ustaw jeśli mecz na neutralnym stadionie.")
+    parser.add_argument(
+        "--prime-time", action="store_true", help="Zaznacz jeśli spotkanie jest w prime time."
+    )
+    parser.add_argument(
+        "--neutral-site", action="store_true", help="Ustaw jeśli mecz na neutralnym stadionie."
+    )
     parser.add_argument(
         "--window",
         choices=list(WINDOW_COLUMNS.keys()),

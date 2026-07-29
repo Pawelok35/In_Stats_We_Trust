@@ -16,7 +16,8 @@ ROOT_DIR = Path(__file__).resolve().parents[1]
 if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
-from scripts import matchup_analyzer
+from scripts import matchup_analyzer  # noqa: E402
+from utils.run_metadata import build_run_metadata  # noqa: E402
 
 REPORT_PATTERN = re.compile(r"(?P<season>\d{4})_w(?P<week>\d+)", re.IGNORECASE)
 
@@ -46,6 +47,58 @@ def build_namespace(entry: Dict[str, Any], output_path: Path | None) -> SimpleNa
         window=entry.get("window", "season"),
         output=output_path,
     )
+
+
+def build_market_fields(entry: Dict[str, Any], ns: SimpleNamespace) -> Dict[str, Any]:
+    """Return proof-ledger market fields from a matchup config entry."""
+
+    return {
+        "market": str(entry.get("market", "spread")).lower(),
+        "line": float(entry.get("line", ns.spread)),
+        "price": entry.get("price"),
+        "book": entry.get("book"),
+        "decision_ts_utc": entry.get("decision_ts_utc") or entry.get("line_ts_utc"),
+        "odds_source": entry.get("odds_source") or entry.get("source"),
+        "odds_snapshot_type": entry.get("odds_snapshot_type", "decision"),
+    }
+
+
+def selected_side_price(entry: Dict[str, Any], *, selected_team: str, home: str, away: str) -> Any:
+    """Return the spread price for the model-selected team when both sides exist."""
+
+    if selected_team == home:
+        return entry.get("home_spread_price", entry.get("price"))
+    if selected_team == away:
+        return entry.get("away_spread_price", entry.get("price"))
+    return entry.get("price")
+
+
+def build_process_fields(entry: Dict[str, Any]) -> Dict[str, Any]:
+    """Return optional process-review fields from a matchup config entry."""
+
+    fields = {}
+    for key in (
+        "argument_against",
+        "market_move_notes",
+        "injury_role_notes",
+        "schedule_spot_notes",
+        "weather_notes",
+        "closing_line",
+        "closing_price",
+        "clv_points",
+    ):
+        value = entry.get(key)
+        if _is_filled_process_value(value):
+            fields[key] = value
+    return fields
+
+
+def _is_filled_process_value(value: Any) -> bool:
+    if value in (None, ""):
+        return False
+    if isinstance(value, str) and value.strip().upper().startswith("TODO"):
+        return False
+    return True
 
 
 def sanitize_filename(home: str, away: str) -> str:
@@ -88,13 +141,20 @@ def run_batch(
     entries = load_config(config_path)
 
     load_tag_rules(tag_config)
+    model_version = tag_config.stem if tag_config else "baseline"
+    metadata = build_run_metadata(
+        model_version=model_version,
+        config_paths=[config_path, *([tag_config] if tag_config else [])],
+    )
 
     if output_dir:
         output_dir = output_dir if output_dir.is_absolute() else ROOT_DIR / output_dir
         output_dir.mkdir(parents=True, exist_ok=True)
 
     if combined_output:
-        combined_output = combined_output if combined_output.is_absolute() else ROOT_DIR / combined_output
+        combined_output = (
+            combined_output if combined_output.is_absolute() else ROOT_DIR / combined_output
+        )
         combined_output.parent.mkdir(parents=True, exist_ok=True)
 
     combined_sections: List[Tuple[str, str, str]] = []
@@ -127,7 +187,9 @@ def run_batch(
             analysis = matchup_analyzer.run(report, home, away, ns)
         except Exception as exc:
             if strict:
-                raise RuntimeError(f"Błąd podczas analizowania {home} vs {away} ({report}): {exc}") from exc
+                raise RuntimeError(
+                    f"Błąd podczas analizowania {home} vs {away} ({report}): {exc}"
+                ) from exc
             print(f"[WARN] Pomijam {home} vs {away}: {exc}", file=sys.stderr)
             continue
 
@@ -143,6 +205,21 @@ def run_batch(
         season_week = infer_season_week(report)
         if season_week:
             season, week = season_week
+            record_metadata = {
+                **metadata,
+                "data_cutoff": f"{season}_w{week}",
+                "source_report": (
+                    str(report.relative_to(ROOT_DIR))
+                    if report.is_relative_to(ROOT_DIR)
+                    else str(report)
+                ),
+            }
+            selected_price = selected_side_price(
+                entry,
+                selected_team=analysis.projection.model_winner,
+                home=home,
+                away=away,
+            )
             record = {
                 "season": season,
                 "week": week,
@@ -158,12 +235,34 @@ def run_batch(
                 "handicap": round(analysis.projection.winner_line, 1),
                 "spread": ns.spread,
                 "total": ns.total,
+                **build_market_fields(entry, ns),
+                **build_process_fields(entry),
                 "window": window,
                 "prime_time": ns.prime_time,
                 "neutral_site": ns.neutral_site,
-                "report": str(report.relative_to(ROOT_DIR)) if report.is_relative_to(ROOT_DIR) else str(report),
+                "report": (
+                    str(report.relative_to(ROOT_DIR))
+                    if report.is_relative_to(ROOT_DIR)
+                    else str(report)
+                ),
                 "generated_at": datetime.now(tz=timezone.utc).isoformat(timespec="seconds"),
+                **record_metadata,
             }
+            record["price"] = selected_price
+            # Freeze the exact market input used to create this model pick.  This
+            # is deliberately separate from a later operator quote: the audit
+            # needs both values to enforce the no-chase rule.
+            record.update(
+                {
+                    "model_generation_spread_selected_team": round(analysis.projection.winner_line, 1),
+                    "model_generation_price": selected_price,
+                    "model_generation_quote_timestamp_utc": (
+                        entry.get("decision_ts_utc") or entry.get("line_ts_utc") or ""
+                    ),
+                    "model_generation_book": entry.get("book") or "",
+                    "model_generation_quote_id": entry.get("quote_id") or "",
+                }
+            )
             pick_records[(season, week)].append(record)
 
     if combined_output:

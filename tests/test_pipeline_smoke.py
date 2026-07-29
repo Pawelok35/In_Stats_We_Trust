@@ -15,6 +15,18 @@ def test_cli_help():
     assert "Usage:" in result.stdout
 
 
+def test_cli_exposes_canonical_workflow_commands():
+    runner = CliRunner()
+    result = runner.invoke(cli.app, ["--help"])
+
+    assert result.exit_code == 0
+    assert "build-week" in result.stdout
+    assert "weekly-pipeline" in result.stdout
+    assert "generate-matchups" in result.stdout
+    assert "evaluate-picks" in result.stdout
+    assert "evaluate-variants" in result.stdout
+
+
 def test_build_week_stub_pipeline(tmp_path, monkeypatch):
     raw_dir = tmp_path / "sources"
     season_dir = raw_dir / "2025"

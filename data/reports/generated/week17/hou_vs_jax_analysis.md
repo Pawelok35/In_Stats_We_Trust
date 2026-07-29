@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – HOU 14.4 – JAX 21.5
-2️⃣ Predicted Winner (Model) – JAX
-3️⃣ Predicted Margin (Model) – JAX by 7.1 pts
-4️⃣ Win Probability (Model) – 75% (JAX)
-5️⃣ Why This Team Wins (Model) – Na 3rd down JAX utrzymuje 40.1%, podczas gdy HOU jest na 25.7%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę JAX: JAX +0.058 vs HOU -0.063. Success Rate Offense pokazuje JAX na poziomie 45.0% vs 38.8% (+6.2 pp). Explosive Play Rate pozostaje po stronie JAX (10.9% vs 8.4%), więc big-play equity jest wyższe. JAX prowadzi w Points per Drive Differential (-0.005 vs -0.347), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – HOU 24.4 – JAX 22.5
+2️⃣ Predicted Winner (Model) – HOU
+3️⃣ Predicted Margin (Model) – HOU by 1.9 pts
+4️⃣ Win Probability (Model) – 63% (HOU)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera HOU (+9.5% vs +2.1%), więc pasy rywala będą częściej pod presją. Na 3rd down HOU utrzymuje 35.0%, podczas gdy JAX jest na 31.0%, co stabilizuje serie ofensywne. HOU prowadzi w Points per Drive Differential (+0.035 vs -0.149), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – HOU 19.8 – JAX 23.2
-2️⃣ Predicted Winner (Market) – JAX
-3️⃣ Predicted Margin (Market) – JAX by 3.5 pts
-4️⃣ Win Probability (Market) – 62% (JAX)
-5️⃣ Forum Output (A) – PowerScore (Model) — HOU -0.063 vs JAX +0.058. Points per Drive Differential — HOU -0.347 vs JAX -0.005. Success Rate Offense — HOU 38.8% vs JAX 45.0%. Third Down Conversion — HOU 25.7% vs JAX 40.1%. Red Zone TD Rate — HOU 14.4% vs JAX 13.2%. Explosive Play Rate — HOU 8.4% vs JAX 10.9%. Model margin -7.1 pts vs market spread HOU -3.5.
-6️⃣ Forum Output (B) – Model idzie w stronę JAX po marginesie -7.1 pkt. JAX notuje -0.005 PPD vs -0.347 u HOU. Różnica w Success Rate to 45.0% vs 38.8%. Na 3rd down JAX (40.1%) wygląda solidniej niż HOU (25.7%). Red Zone i explosiveness ( 13.2% / 10.9% ) utrzymują przewagę jakościową. Market trzyma -3.5 pkt, więc edge vs linia to +3.6.
+1️⃣ Estimated Score (Market) – HOU 25.0 – JAX 20.0
+2️⃣ Predicted Winner (Market) – HOU
+3️⃣ Predicted Margin (Market) – HOU by 5.0 pts
+4️⃣ Win Probability (Market) – 68% (HOU)
+5️⃣ Forum Output (A) – PowerScore (Model) — HOU +0.049 vs JAX +0.097. Points per Drive Differential — HOU +0.035 vs JAX -0.149. Success Rate Offense — HOU 39.6% vs JAX 41.7%. Third Down Conversion — HOU 35.0% vs JAX 31.0%. Red Zone TD Rate — HOU 12.9% vs JAX 14.1%. Explosive Play Rate — HOU 8.7% vs JAX 11.4%. Model margin 1.9 pts vs market spread HOU +5.0.
+6️⃣ Forum Output (B) – Model idzie w stronę HOU po marginesie 1.9 pkt. HOU notuje +0.035 PPD vs -0.149 u JAX. Różnica w Success Rate to 39.6% vs 41.7%. Na 3rd down HOU (35.0%) wygląda solidniej niż JAX (31.0%). Red Zone i explosiveness ( 12.9% / 8.7% ) utrzymują przewagę jakościową. Market trzyma 5.0 pkt, więc edge vs linia to -3.1.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +3.6 pts
-• PowerScoreDiff (winner) = +0.121
-• Confidence = 78.0%
+• Edge_vs_Line (winner) = -3.1 pts
+• PowerScoreDiff (winner) = -0.048
+• Confidence = 64.0%
 
-🏷 Model Tag: GOW — based on 78.0% confidence, +3.6 pts model edge vs line, and PowerScore Δ +0.121.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: NEUTRAL — based on 64.0% confidence, -3.1 pts model edge vs line, and PowerScore Δ -0.048.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – HOU 14.4 – JAX 21.5
-   • Win Probability – 75% (JAX)
+   • Estimated Score – HOU 24.4 – JAX 22.5
+   • Win Probability – 63% (HOU)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – HOU 19.8 – JAX 23.2
-   • Win Probability – 62% (JAX)
+   • Estimated Score – HOU 25.0 – JAX 20.0
+   • Win Probability – 68% (HOU)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — JAX (HC -3.5)
+🏷 Model Tag: NEUTRAL — HOU (HC -5.0)

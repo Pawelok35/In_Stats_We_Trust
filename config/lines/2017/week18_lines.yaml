@@ -1,0 +1,33 @@
+source: nfl_data_py.import_schedules
+season: 2017
+week: 18
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2017_w18/KC_vs_TEN.md
+  home: KC
+  away: TEN
+  spread: -8.5
+  total: 44.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2017_w18/LA_vs_ATL.md
+  home: LA
+  away: ATL
+  spread: -6.5
+  total: 48.0
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2017_w18/JAX_vs_BUF.md
+  home: JAX
+  away: BUF
+  spread: -8.5
+  total: 39.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2017_w18/NO_vs_CAR.md
+  home: 'NO'
+  away: CAR
+  spread: -6.5
+  total: 47.5
+  prime_time: false
+  neutral_site: false

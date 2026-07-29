@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 6
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w6/CHI_vs_WAS.md
   home: CHI
@@ -13,25 +17,11 @@ matchups:
   total: 46.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w6/NO_vs_CIN.md
-  home: 'NO'
-  away: CIN
-  spread: 3.0
-  total: 42.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w6/CLE_vs_NE.md
   home: CLE
   away: NE
   spread: -2.5
   total: 43.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w6/IND_vs_JAX.md
-  home: IND
-  away: JAX
-  spread: -1.0
-  total: 41.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w6/GB_vs_NYJ.md
@@ -41,11 +31,25 @@ matchups:
   total: 44.5
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w6/IND_vs_JAX.md
+  home: IND
+  away: JAX
+  spread: -1.0
+  total: 41.0
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w6/MIA_vs_MIN.md
   home: MIA
   away: MIN
   spread: 3.0
   total: 45.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w6/NO_vs_CIN.md
+  home: 'NO'
+  away: CIN
+  spread: 3.0
+  total: 42.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w6/NYG_vs_BAL.md

@@ -1,0 +1,129 @@
+# NFL 2020 Week 1 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2020_w1/KC_vs_HOU.md
+    home: 'KC'
+    away: 'HOU'
+    spread: -10
+    total: 55
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/ATL_vs_SEA.md
+    home: 'ATL'
+    away: 'SEA'
+    spread: 1
+    total: 49
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/BUF_vs_NYJ.md
+    home: 'BUF'
+    away: 'NYJ'
+    spread: -6
+    total: 40
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/CAR_vs_LV.md
+    home: 'CAR'
+    away: 'LV'
+    spread: 1
+    total: 47
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/DET_vs_CHI.md
+    home: 'DET'
+    away: 'CHI'
+    spread: -1.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/BAL_vs_CLE.md
+    home: 'BAL'
+    away: 'CLE'
+    spread: -8.5
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/JAX_vs_IND.md
+    home: 'JAX'
+    away: 'IND'
+    spread: 7
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/MIN_vs_GB.md
+    home: 'MIN'
+    away: 'GB'
+    spread: -3.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/NE_vs_MIA.md
+    home: 'NE'
+    away: 'MIA'
+    spread: -6.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/WAS_vs_PHI.md
+    home: 'WAS'
+    away: 'PHI'
+    spread: 6.5
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/CIN_vs_LAC.md
+    home: 'CIN'
+    away: 'LAC'
+    spread: 3
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/SF_vs_ARI.md
+    home: 'SF'
+    away: 'ARI'
+    spread: -8
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/NO_vs_TB.md
+    home: 'NO'
+    away: 'TB'
+    spread: -4
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/LA_vs_DAL.md
+    home: 'LA'
+    away: 'DAL'
+    spread: 2.5
+    total: 50
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/NYG_vs_PIT.md
+    home: 'NYG'
+    away: 'PIT'
+    spread: 4
+    total: 48
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2020_w1/DEN_vs_TEN.md
+    home: 'DEN'
+    away: 'TEN'
+    spread: -2
+    total: 42
+    prime_time: false
+    neutral_site: false

@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 5
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w5/DEN_vs_IND.md
   home: DEN
@@ -13,24 +17,10 @@ matchups:
   total: 42.0
   prime_time: false
   neutral_site: true
-- report: data/reports/comparisons/2022_w5/TB_vs_ATL.md
-  home: TB
-  away: ATL
-  spread: -10.5
-  total: 46.0
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w5/BUF_vs_PIT.md
   home: BUF
   away: PIT
   spread: -14.0
-  total: 44.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w5/MIN_vs_CHI.md
-  home: MIN
-  away: CHI
-  spread: -10.0
   total: 44.0
   prime_time: false
   neutral_site: false
@@ -41,6 +31,20 @@ matchups:
   total: 47.0
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w5/JAX_vs_HOU.md
+  home: JAX
+  away: HOU
+  spread: -7.0
+  total: 44.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w5/MIN_vs_CHI.md
+  home: MIN
+  away: CHI
+  spread: -10.0
+  total: 44.0
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w5/NE_vs_DET.md
   home: NE
   away: DET
@@ -48,11 +52,11 @@ matchups:
   total: 46.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w5/JAX_vs_HOU.md
-  home: JAX
-  away: HOU
-  spread: -7.0
-  total: 44.0
+- report: data/reports/comparisons/2022_w5/NO_vs_SEA.md
+  home: 'NO'
+  away: SEA
+  spread: -5.5
+  total: 45.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w5/NYJ_vs_MIA.md
@@ -62,11 +66,11 @@ matchups:
   total: 46.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w5/NO_vs_SEA.md
-  home: 'NO'
-  away: SEA
-  spread: -5.5
-  total: 45.5
+- report: data/reports/comparisons/2022_w5/TB_vs_ATL.md
+  home: TB
+  away: ATL
+  spread: -10.5
+  total: 46.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w5/WAS_vs_TEN.md

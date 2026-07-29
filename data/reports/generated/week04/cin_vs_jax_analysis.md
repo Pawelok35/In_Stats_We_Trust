@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – CIN 43.5 – JAX 13.4
-2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 30.1 pts
-4️⃣ Win Probability (Model) – 95% (CIN)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja CIN (25.2% vs 10.3%). Na 3rd down CIN utrzymuje 30.9%, podczas gdy JAX jest na 21.5%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera CIN (+6.5% vs +0.0%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje CIN (+1.00 vs -3.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę CIN: CIN +0.101 vs JAX +0.075.
+1️⃣ Estimated Score (Model) – CIN 19.7 – JAX 22.5
+2️⃣ Predicted Winner (Model) – JAX
+3️⃣ Predicted Margin (Model) – JAX by 2.8 pts
+4️⃣ Win Probability (Model) – 57% (JAX)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja JAX (23.6% vs 6.2%). Na 3rd down JAX utrzymuje 46.6%, podczas gdy CIN jest na 33.8%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie JAX (11.0% vs 6.1%), więc big-play equity jest wyższe. Success Rate Offense pokazuje JAX na poziomie 47.7% vs 45.4% (+2.3 pp).
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – CIN 26.5 – JAX 19.0
+1️⃣ Estimated Score (Market) – CIN 24.0 – JAX 21.0
 2️⃣ Predicted Winner (Market) – CIN
-3️⃣ Predicted Margin (Market) – CIN by 7.5 pts
-4️⃣ Win Probability (Market) – 76% (CIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — CIN +0.101 vs JAX +0.075. Points per Drive Differential — CIN +0.516 vs JAX -1.226. Success Rate Offense — CIN 40.3% vs JAX 41.2%. Third Down Conversion — CIN 30.9% vs JAX 21.5%. Red Zone TD Rate — CIN 25.2% vs JAX 10.3%. Explosive Play Rate — CIN 9.7% vs JAX 8.9%. Model margin 30.1 pts vs market spread CIN +7.5.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie 30.1 pkt. CIN notuje +0.516 PPD vs -1.226 u JAX. Różnica w Success Rate to 40.3% vs 41.2%. Na 3rd down CIN (30.9%) wygląda solidniej niż JAX (21.5%). Red Zone i explosiveness ( 25.2% / 9.7% ) utrzymują przewagę jakościową. Market trzyma 7.5 pkt, więc edge vs linia to +22.6.
+3️⃣ Predicted Margin (Market) – CIN by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (CIN)
+5️⃣ Forum Output (A) – PowerScore (Model) — CIN +0.122 vs JAX +0.107. Points per Drive Differential — CIN -0.189 vs JAX -0.446. Success Rate Offense — CIN 45.4% vs JAX 47.7%. Third Down Conversion — CIN 33.8% vs JAX 46.6%. Red Zone TD Rate — CIN 6.2% vs JAX 23.6%. Explosive Play Rate — CIN 6.1% vs JAX 11.0%. Model margin -2.8 pts vs market spread CIN +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę JAX po marginesie -2.8 pkt. JAX notuje -0.446 PPD vs -0.189 u CIN. Różnica w Success Rate to 47.7% vs 45.4%. Na 3rd down JAX (46.6%) wygląda solidniej niż CIN (33.8%). Red Zone i explosiveness ( 23.6% / 11.0% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +5.8.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +22.6 pts
-• PowerScoreDiff (winner) = +0.026
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +5.8 pts
+• PowerScoreDiff (winner) = -0.015
+• Confidence = 57.0%
 
-🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +22.6 pts model edge vs line, and PowerScore Δ +0.026.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 57.0% confidence, +5.8 pts model edge vs line, and PowerScore Δ -0.015.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – CIN 43.5 – JAX 13.4
-   • Win Probability – 95% (CIN)
+   • Estimated Score – CIN 19.7 – JAX 22.5
+   • Win Probability – 57% (JAX)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – CIN 26.5 – JAX 19.0
-   • Win Probability – 76% (CIN)
+   • Estimated Score – CIN 24.0 – JAX 21.0
+   • Win Probability – 60% (CIN)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — CIN (HC -7.5)
+🏷 Model Tag: NEUTRAL — JAX (HC +3.0)

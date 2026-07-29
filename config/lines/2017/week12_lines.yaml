@@ -1,0 +1,131 @@
+# NFL 2017 Week 12 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w12/DET_vs_MIN.md
+    home: 'DET'
+    away: 'MIN'
+    spread: -1
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/DAL_vs_LAC.md
+    home: 'DAL'
+    away: 'LAC'
+    spread: -2.5
+    total: 48
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/WAS_vs_NYG.md
+    home: 'WAS'
+    away: 'NYG'
+    spread: -7.5
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/ATL_vs_TB.md
+    home: 'ATL'
+    away: 'TB'
+    spread: -10
+    total: 49
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/KC_vs_BUF.md
+    home: 'KC'
+    away: 'BUF'
+    spread: -9.5
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/NYJ_vs_CAR.md
+    home: 'NYJ'
+    away: 'CAR'
+    spread: 4.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/PHI_vs_CHI.md
+    home: 'PHI'
+    away: 'CHI'
+    spread: -13.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/CIN_vs_CLE.md
+    home: 'CIN'
+    away: 'CLE'
+    spread: -8
+    total: 38
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/IND_vs_TEN.md
+    home: 'IND'
+    away: 'TEN'
+    spread: 4.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/NE_vs_MIA.md
+    home: 'NE'
+    away: 'MIA'
+    spread: -17
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/SF_vs_SEA.md
+    home: 'SF'
+    away: 'SEA'
+    spread: 7
+    total: 42
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/ARI_vs_JAX.md
+    home: 'ARI'
+    away: 'JAX'
+    spread: 4
+    total: 38
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/LV_vs_DEN.md
+    home: 'LV'
+    away: 'DEN'
+    spread: -5
+    total: 43
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/LA_vs_NO.md
+    home: 'LA'
+    away: 'NO'
+    spread: -2.5
+    total: 54
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/PIT_vs_GB.md
+    home: 'PIT'
+    away: 'GB'
+    spread: -13.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w12/BAL_vs_HOU.md
+    home: 'BAL'
+    away: 'HOU'
+    spread: -7.5
+    total: 38
+    prime_time: false
+    neutral_site: false
+
+

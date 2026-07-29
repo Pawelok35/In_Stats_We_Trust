@@ -1,7 +1,9 @@
-﻿import polars as pl
-from pathlib import Path
-from typing import Optional, List
+﻿from typing import List
+
+import polars as pl
+
 from metrics.form_windows import compute_form_windows
+
 
 def _df_to_markdown(df: pl.DataFrame) -> str:
     """

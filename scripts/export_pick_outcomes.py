@@ -50,7 +50,9 @@ def parse_args() -> argparse.Namespace:
     return parser.parse_args()
 
 
-def load_go_tier_picks(path: Path, season: int, start_week: int | None, end_week: int | None) -> Iterable[Dict]:
+def load_go_tier_picks(
+    path: Path, season: int, start_week: int | None, end_week: int | None
+) -> Iterable[Dict]:
     picks = evaluate_picks.load_picks(path, season, start_week, end_week)
     return [pick for pick in picks if pick.get("tag") in TAGS]
 

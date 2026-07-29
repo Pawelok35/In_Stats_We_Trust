@@ -1,0 +1,12 @@
+source: nfl_data_py.import_schedules
+season: 2017
+week: 21
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2017_w21/NE_vs_PHI.md
+  home: NE
+  away: PHI
+  spread: -4.5
+  total: 48.5
+  prime_time: false
+  neutral_site: true

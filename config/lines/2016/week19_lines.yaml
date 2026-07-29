@@ -1,0 +1,33 @@
+source: nfl_data_py.import_schedules
+season: 2016
+week: 19
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2016_w19/ATL_vs_SEA.md
+  home: ATL
+  away: SEA
+  spread: -6.5
+  total: 51.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2016_w19/NE_vs_HOU.md
+  home: NE
+  away: HOU
+  spread: -16.0
+  total: 44.0
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2016_w19/DAL_vs_GB.md
+  home: DAL
+  away: GB
+  spread: -5.5
+  total: 52.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2016_w19/KC_vs_PIT.md
+  home: KC
+  away: PIT
+  spread: -2.5
+  total: 45.5
+  prime_time: true
+  neutral_site: false

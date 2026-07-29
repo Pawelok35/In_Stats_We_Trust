@@ -18,9 +18,11 @@ def _validate_positive(name: str, value: int) -> int:
         raise ValueError(f"{name} must be a positive integer")
     return value
 
+
 def core12_path(season: int, week: int) -> Path:
     """Return the path to the Core12 parquet file for a given season/week."""
     return Path(f"data/l4_core12/{season}/{week}.parquet")
+
 
 def _season_week_path(
     layer: str,

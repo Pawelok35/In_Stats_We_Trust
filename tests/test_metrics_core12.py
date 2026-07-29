@@ -4,9 +4,9 @@ from types import SimpleNamespace
 import polars as pl
 import pytest
 
-from metrics.core12 import compute as core12_compute
 from etl.l3_aggregate import run as l3_run
-from utils.paths import manifest_path, path_for
+from metrics.core12 import compute as core12_compute
+from utils.paths import path_for
 
 
 def _settings(tmp_path):
@@ -210,20 +210,3 @@ def test_core12_handles_empty_input(tmp_path, monkeypatch):
 
     result = core12_compute(empty_l3, 2025, 8)
     assert result.is_empty()
-    expected_columns = {
-        "season",
-        "week",
-        "TEAM",
-        "core_epa_off",
-        "core_epa_def",
-        "core_sr_off",
-        "core_sr_def",
-        "core_ed_sr_off",
-        "core_third_down_conv",
-        "core_ypp_diff",
-        "core_turnover_margin",
-        "core_points_per_drive_diff",
-        "core_redzone_td_rate",
-        "core_pressure_rate_def",
-        "core_explosive_play_rate_off",
-    }

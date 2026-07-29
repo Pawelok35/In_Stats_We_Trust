@@ -1,0 +1,21 @@
+name: gom_stable_core_nfl_reference
+description: NFL champion rule preserved as a reference target for future NCAAF research.
+source_sport: nfl
+target_sport: ncaaf
+variant: variant_d_balanced
+tag: GOM
+confidence_min: 85
+edge_min: 4
+start_week: 3
+max_abs_handicap: 7
+handicap_mode: any
+benchmark:
+  seasons: 2017-2025
+  bets: 74
+  wins: 61
+  losses: 12
+  pushes: 1
+  profit_units: 128.7
+  roi: 0.58
+  worst_season_units: 2.1
+  max_drawdown_units: -6.3

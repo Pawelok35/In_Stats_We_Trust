@@ -2,7 +2,7 @@ from __future__ import annotations
 
 import math
 from pathlib import Path
-from typing import Dict, List, Mapping, Optional, Tuple
+from typing import List, Mapping, Optional, Tuple
 
 import yaml
 
@@ -17,6 +17,7 @@ def _pp(value: Optional[float]) -> Optional[float]:
     if value is None or math.isnan(value):
         return None
     return value * 100.0
+
 
 # === Guardrails v1 (obecna wersja) ==========================================
 
@@ -102,7 +103,9 @@ def apply_guardrails(
         mismatch_pp = (dog_passpro - fav_pressure) * 100.0
         if mismatch_pp > pm_cfg.get("warning_threshold", math.inf):
             penalty -= pm_cfg.get("rating_penalty", 0.0)
-            notes.append(f"Pass-pro mismatch warning (dog pass pro - fav pressure = {mismatch_pp:.1f} pp)")
+            notes.append(
+                f"Pass-pro mismatch warning (dog pass pro - fav pressure = {mismatch_pp:.1f} pp)"
+            )
 
     # 5) Red zone cap
     try:
@@ -144,6 +147,7 @@ def apply_guardrails(
 
 
 # === Guardrails v2 (supercell->vortex->cyclone downgrade) ====================
+
 
 def apply_guardrails_v2(
     *,
@@ -291,7 +295,9 @@ def apply_guardrails_v2(
         last5_def = math.nan
     if not math.isnan(last3_def) and not math.isnan(last5_def):
         worsening = last3_def - last5_def
-        if bucket == "Supercell" and worsening > def_trend_cfg.get("max_worsening_supercell", math.inf):
+        if bucket == "Supercell" and worsening > def_trend_cfg.get(
+            "max_worsening_supercell", math.inf
+        ):
             supercell_allowed = False
             notes.append(f"Def EPA trending worse (+{worsening:.3f}) blocks Supercell")
             level = max(level, 2)
@@ -366,7 +372,7 @@ def apply_guardrails_v2_1(
         MIN_PPD = 1.3
         MIN_3RD = 12.0  # pp
         MIN_EXPL = 5.0  # pp
-        MIN_RZ = 22.0   # %
+        MIN_RZ = 22.0  # %
 
         reasons = []
         if notes:
@@ -461,9 +467,15 @@ def apply_value_buffer_guard(
         except (TypeError, ValueError):
             spread_delta = None
             baseline_buffer = None
-        if spread_delta is not None and baseline_buffer is not None and abs(spread_delta) <= line_deadband:
+        if (
+            spread_delta is not None
+            and baseline_buffer is not None
+            and abs(spread_delta) <= line_deadband
+        ):
             decision_buffer = baseline_buffer
-            notes_parts.append(f"v2.2: deadband applied (Δspread={spread_delta:+.2f}<= {line_deadband})")
+            notes_parts.append(
+                f"v2.2: deadband applied (Δspread={spread_delta:+.2f}<= {line_deadband})"
+            )
 
     delta = 0
     gale_idx = VALUE_BUFFER_BUCKET_ORDER.index("Gale")

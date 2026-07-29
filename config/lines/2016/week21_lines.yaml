@@ -1,0 +1,12 @@
+source: nfl_data_py.import_schedules
+season: 2016
+week: 21
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2016_w21/ATL_vs_NE.md
+  home: ATL
+  away: NE
+  spread: 3.0
+  total: 57.0
+  prime_time: false
+  neutral_site: true

@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – ATL 12.9 – NO 20.0
-2️⃣ Predicted Winner (Model) – NO
-3️⃣ Predicted Margin (Model) – NO by 7.1 pts
-4️⃣ Win Probability (Model) – 75% (NO)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera NO (+21.2% vs +12.9%), więc pasy rywala będą częściej pod presją. NO prowadzi w Points per Drive Differential (+0.094 vs -0.769), więc bazowa efektywność napędza przewagę. NO utrzymuje modelowy margines 7.1 pkt względem ATL, łącząc przewagę efektywności i formy.
+1️⃣ Estimated Score (Model) – ATL 28.5 – NO 22.8
+2️⃣ Predicted Winner (Model) – ATL
+3️⃣ Predicted Margin (Model) – ATL by 5.7 pts
+4️⃣ Win Probability (Model) – 79% (ATL)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja ATL (16.7% vs 11.5%). Turnover margin faworyzuje ATL (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. Success Rate Offense pokazuje ATL na poziomie 46.8% vs 44.3% (+2.5 pp). Explosive Play Rate pozostaje po stronie ATL (10.3% vs 8.1%), więc big-play equity jest wyższe. PowerScore Summary potwierdza przewagę ATL: ATL +0.039 vs NO +0.035.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – ATL 18.0 – NO 22.0
-2️⃣ Predicted Winner (Market) – NO
-3️⃣ Predicted Margin (Market) – NO by 4.0 pts
-4️⃣ Win Probability (Market) – 64% (NO)
-5️⃣ Forum Output (A) – PowerScore (Model) — ATL +0.123 vs NO +0.003. Points per Drive Differential — ATL -0.769 vs NO +0.094. Success Rate Offense — ATL 40.2% vs NO 39.3%. Third Down Conversion — ATL 35.0% vs NO 32.1%. Red Zone TD Rate — ATL 15.1% vs NO 13.3%. Explosive Play Rate — ATL 9.7% vs NO 8.7%. Model margin -7.1 pts vs market spread ATL -4.0.
-6️⃣ Forum Output (B) – Model idzie w stronę NO po marginesie -7.1 pkt. NO notuje +0.094 PPD vs -0.769 u ATL. Różnica w Success Rate to 39.3% vs 40.2%. Na 3rd down NO (32.1%) wygląda solidniej niż ATL (35.0%). Red Zone i explosiveness ( 13.3% / 8.7% ) utrzymują przewagę jakościową. Market trzyma -4.0 pkt, więc edge vs linia to +3.1.
+1️⃣ Estimated Score (Market) – ATL 24.2 – NO 21.2
+2️⃣ Predicted Winner (Market) – ATL
+3️⃣ Predicted Margin (Market) – ATL by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (ATL)
+5️⃣ Forum Output (A) – PowerScore (Model) — ATL +0.039 vs NO +0.035. Points per Drive Differential — ATL -0.189 vs NO -0.387. Success Rate Offense — ATL 46.8% vs NO 44.3%. Third Down Conversion — ATL 29.4% vs NO 37.2%. Red Zone TD Rate — ATL 16.7% vs NO 11.5%. Explosive Play Rate — ATL 10.3% vs NO 8.1%. Model margin 5.7 pts vs market spread ATL +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę ATL po marginesie 5.7 pkt. ATL notuje -0.189 PPD vs -0.387 u NO. Różnica w Success Rate to 46.8% vs 44.3%. Na 3rd down ATL (29.4%) wygląda solidniej niż NO (37.2%). Red Zone i explosiveness ( 16.7% / 10.3% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +2.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +3.1 pts
-• PowerScoreDiff (winner) = -0.120
-• Confidence = 74.0%
+• Edge_vs_Line (winner) = +2.7 pts
+• PowerScoreDiff (winner) = +0.004
+• Confidence = 79.0%
 
-🏷 Model Tag: NEUTRAL — based on 74.0% confidence, +3.1 pts model edge vs line, and PowerScore Δ -0.120.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: VALUE PLAY — based on 79.0% confidence, +2.7 pts model edge vs line, and PowerScore Δ +0.004.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – ATL 12.9 – NO 20.0
-   • Win Probability – 75% (NO)
+   • Estimated Score – ATL 28.5 – NO 22.8
+   • Win Probability – 79% (ATL)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – ATL 18.0 – NO 22.0
-   • Win Probability – 64% (NO)
+   • Estimated Score – ATL 24.2 – NO 21.2
+   • Win Probability – 60% (ATL)
 
-🏷 Model Tag: NEUTRAL — NO (HC -4.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — ATL (HC -3.0)

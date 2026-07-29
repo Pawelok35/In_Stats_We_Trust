@@ -1,0 +1,21 @@
+{
+  "schema_version": "variant_b_model_registry.v1",
+  "champion_model": {
+    "model_version": "variant_m",
+    "role": "champion",
+    "status": "ACTIVE_BASELINE",
+    "promotion_status": "manually_approved_baseline",
+    "notes": "Current production baseline used for weekly VP/GOW/GOM/GOY scans."
+  },
+  "candidate_models": [],
+  "promotion_policy": {
+    "policy_version": "promotion_policy_mvp_v1",
+    "requires_walk_forward_backtest": true,
+    "requires_calibration_report": true,
+    "requires_no_data_leakage_check": true,
+    "requires_segment_stability_check": true,
+    "requires_manual_approval": true,
+    "minimum_settled_predictions": 100,
+    "roi_is_primary_metric": false
+  }
+}

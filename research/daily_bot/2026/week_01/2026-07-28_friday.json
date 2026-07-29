@@ -1,0 +1,31 @@
+[
+  {
+    "id": "sunday_mnf_quote",
+    "type": "manual",
+    "label": "Aktualizuj quote dla Sunday/MNF kandydatow.",
+    "manual_input": "market_quotes",
+    "description": "Realny quote dla kandydatow VP/GOW/GOM/GOY: book, spread, price, timestamp, executable_status.",
+    "expected_path": "data\\market_quotes\\2026\\week_01.jsonl",
+    "exists": true,
+    "status": "READY"
+  },
+  {
+    "id": "sunday_mnf_gpt_delta",
+    "type": "manual",
+    "label": "GPT delta refresh dla kandydatow.",
+    "manual_input": "gpt_delta",
+    "description": "Delta refresh GPT dla kandydatow, gdy zmieniaja sie injury/quote/weather/roster/market.",
+    "expected_glob": "research/gpt_snapshots/2026/week_01/**/delta_*.md",
+    "matches": [],
+    "match_count": 0,
+    "status": "OPTIONAL"
+  },
+  {
+    "id": "run_variant_b",
+    "type": "command",
+    "label": "Odpal Variant B po refreshu.",
+    "command": ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season 2026 --week 1 --variant variant_m --with-model-proof --write-learning-ledger",
+    "status": "PASS",
+    "returncode": 0
+  }
+]

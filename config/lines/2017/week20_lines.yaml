@@ -1,0 +1,19 @@
+source: nfl_data_py.import_schedules
+season: 2017
+week: 20
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2017_w20/NE_vs_JAX.md
+  home: NE
+  away: JAX
+  spread: -7.5
+  total: 46.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2017_w20/PHI_vs_MIN.md
+  home: PHI
+  away: MIN
+  spread: 3.0
+  total: 39.0
+  prime_time: false
+  neutral_site: false

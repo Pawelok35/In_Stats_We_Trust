@@ -1,0 +1,10 @@
+name: gom_stable_mirror_m
+description: Mirror check of GOM Stable on variant_m; expected to match variant_d_balanced on current data.
+variant: variant_m
+tags:
+  - GOM
+confidence_min: 85
+edge_min: 4
+handicap_mode: any
+start_week: 3
+max_abs_handicap: 7

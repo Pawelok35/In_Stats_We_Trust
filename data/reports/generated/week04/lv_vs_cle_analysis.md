@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – LV 21.3 – CLE 18.2
-2️⃣ Predicted Winner (Model) – LV
-3️⃣ Predicted Margin (Model) – LV by 3.1 pts
-4️⃣ Win Probability (Model) – 68% (LV)
-5️⃣ Why This Team Wins (Model) – Na 3rd down LV utrzymuje 29.6%, podczas gdy CLE jest na 16.8%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje LV na poziomie 47.2% vs 38.8% (+8.4 pp). PowerScore Summary potwierdza przewagę LV: LV +0.081 vs CLE +0.053. Explosive Play Rate pozostaje po stronie LV (8.6% vs 6.3%), więc big-play equity jest wyższe. Defensive pressure rate wspiera LV (+8.6% vs +7.1%), więc pasy rywala będą częściej pod presją.
+1️⃣ Estimated Score (Model) – LV 12.6 – CLE 22.2
+2️⃣ Predicted Winner (Model) – CLE
+3️⃣ Predicted Margin (Model) – CLE by 9.7 pts
+4️⃣ Win Probability (Model) – 86% (CLE)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja CLE (22.5% vs 12.3%). Turnover margin faworyzuje CLE (+3.00 vs -2.00), co przekłada się na dodatkowe posiadania. Field position edge wynosi +7.5 yds na rzecz CLE (5.4 vs -2.1), co skraca ich boisko. Explosive Play Rate pozostaje po stronie CLE (10.9% vs 7.8%), więc big-play equity jest wyższe. Defensive pressure rate wspiera CLE (+6.1% vs +3.8%), więc pasy rywala będą częściej pod presją.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – LV 17.0 – CLE 19.5
-2️⃣ Predicted Winner (Market) – CLE
-3️⃣ Predicted Margin (Market) – CLE by 2.5 pts
-4️⃣ Win Probability (Market) – 59% (CLE)
-5️⃣ Forum Output (A) – PowerScore (Model) — LV +0.081 vs CLE +0.053. Points per Drive Differential — LV -0.622 vs CLE -0.068. Success Rate Offense — LV 47.2% vs CLE 38.8%. Third Down Conversion — LV 29.6% vs CLE 16.8%. Red Zone TD Rate — LV 13.9% vs CLE 18.6%. Explosive Play Rate — LV 8.6% vs CLE 6.3%. Model margin 3.1 pts vs market spread LV -2.5.
-6️⃣ Forum Output (B) – Model idzie w stronę LV po marginesie 3.1 pkt. LV notuje -0.622 PPD vs -0.068 u CLE. Różnica w Success Rate to 47.2% vs 38.8%. Na 3rd down LV (29.6%) wygląda solidniej niż CLE (16.8%). Red Zone i explosiveness ( 13.9% / 8.6% ) utrzymują przewagę jakościową. Market trzyma -2.5 pkt, więc edge vs linia to +5.6.
+1️⃣ Estimated Score (Market) – LV 23.5 – CLE 21.0
+2️⃣ Predicted Winner (Market) – LV
+3️⃣ Predicted Margin (Market) – LV by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (LV)
+5️⃣ Forum Output (A) – PowerScore (Model) — LV +0.186 vs CLE +0.076. Points per Drive Differential — LV -0.701 vs CLE -0.007. Success Rate Offense — LV 46.6% vs CLE 35.8%. Third Down Conversion — LV 38.0% vs CLE 30.2%. Red Zone TD Rate — LV 12.3% vs CLE 22.5%. Explosive Play Rate — LV 7.8% vs CLE 10.9%. Model margin -9.7 pts vs market spread LV +2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę CLE po marginesie -9.7 pkt. CLE notuje -0.007 PPD vs -0.701 u LV. Różnica w Success Rate to 35.8% vs 46.6%. Na 3rd down CLE (30.2%) wygląda solidniej niż LV (38.0%). Red Zone i explosiveness ( 22.5% / 10.9% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to +12.2.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +5.6 pts
-• PowerScoreDiff (winner) = +0.028
-• Confidence = 68.0%
+• Edge_vs_Line (winner) = +12.2 pts
+• PowerScoreDiff (winner) = -0.110
+• Confidence = 85.0%
 
-🏷 Model Tag: VALUE PLAY — based on 68.0% confidence, +5.6 pts model edge vs line, and PowerScore Δ +0.028.
-⚖️ Moderate value — umiarkowany edge.
+🏷 Model Tag: NEUTRAL — based on 85.0% confidence, +12.2 pts model edge vs line, and PowerScore Δ -0.110.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – LV 21.3 – CLE 18.2
-   • Win Probability – 68% (LV)
+   • Estimated Score – LV 12.6 – CLE 22.2
+   • Win Probability – 86% (CLE)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – LV 17.0 – CLE 19.5
-   • Win Probability – 59% (CLE)
+   • Estimated Score – LV 23.5 – CLE 21.0
+   • Win Probability – 59% (LV)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — LV (HC +2.5)
+🏷 Model Tag: NEUTRAL — CLE (HC +2.5)

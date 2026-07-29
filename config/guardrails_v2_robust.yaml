@@ -1,0 +1,40 @@
+min_rating:
+  supercell: 7.6
+  vortex: 6.3
+
+ppd_last3:
+  supercell_min: 1.2
+  vortex_min: 0.9
+  cyclone_min: 0.5
+
+third_down_gap_last3:
+  supercell_min: 12.0
+  vortex_min: 8.0
+  cyclone_min: 5.0
+
+explosive_gap_last3:
+  supercell_min: 5.0
+  vortex_min: 3.5
+  cyclone_min: 2.0
+
+redzone_td_last3:
+  supercell_min: 22.0
+  vortex_min: 18.0
+  cyclone_min: 15.0
+
+pressure_mismatch:
+  warning_threshold: 5.5
+  hard_block_supercell: 9.0
+  rating_penalty: 0.35
+
+def_epa_trend:
+  max_worsening_supercell: 0.015
+  max_worsening_vortex: 0.040
+  rating_penalty: 0.25
+
+notes:
+  guardrail_levels:
+    0: no_guardrail
+    1: soft_warning
+    2: downgraded_supercell
+    3: downgraded_vortex

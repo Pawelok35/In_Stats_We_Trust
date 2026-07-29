@@ -15,39 +15,39 @@
 | Turnover Margin | 0.471 | -0.471 | 0.941 |
 | Red Zone TD Rate (Off) | 0.143 | 0.155 | -0.011 |
 | Pressure Rate (Def) | 0.075 | 0.037 | 0.038 |
-| Tempo | 7.700 | 6.375 | 1.325 |
-| PowerScore | 1.641 | 1.251 | 0.389 |
-| PowerScore | 1.641 | 1.251 | 0.389 |
-| Tempo | 7.700 | 6.375 | 1.325 |
+| Tempo | 8.900 | 6.636 | 2.264 |
+| PowerScore | 1.902 | 1.470 | 0.432 |
+| PowerScore | 1.902 | 1.470 | 0.432 |
+| Tempo | 8.900 | 6.636 | 2.264 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | PHI | SF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.070 | -0.319 | +0.249 |
-| EPA Defense | 20% | 0.042 | -0.026 | +0.067 |
-| Success Rate Offense | 25% | 46.8% | 37.3% | +9.5 pp |
-| Tempo | 20% | 0.130 | 0.078 | +0.051 |
+| EPA Offense | 35% | -0.018 | 0.066 | -0.085 |
+| EPA Defense | 20% | 0.066 | -0.018 | +0.085 |
+| Success Rate Offense | 25% | 46.1% | 49.3% | -3.2 pp |
+| Tempo | 20% | 0.045 | 0.096 | -0.051 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | PHI | SF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.070 | -0.319 | +0.249 |
-| EPA Defense | 20% | 0.042 | -0.026 | +0.067 |
-| Success Rate Offense | 15% | 46.8% | 37.3% | +9.5 pp |
-| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
-| Tempo | 10% | 0.130 | 0.078 | +0.051 |
-| Red Zone TD Rate (Off) | 10% | 11.8% | 0.0% | +11.8 pp |
-| Pressure Rate (Def) | 10% | 0.0% | 6.5% | -6.5 pp |
+| EPA Offense | 25% | -0.018 | 0.066 | -0.085 |
+| EPA Defense | 20% | 0.066 | -0.018 | +0.085 |
+| Success Rate Offense | 15% | 46.1% | 49.3% | -3.2 pp |
+| Turnover Margin | 10% | 2.000 | -2.000 | +4.000 |
+| Tempo | 10% | 0.045 | 0.096 | -0.051 |
+| Red Zone TD Rate (Off) | 10% | 14.3% | 14.3% | +0.0 pp |
+| Pressure Rate (Def) | 10% | 2.8% | 2.8% | +0.0 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PHI edge: +0.135 (PHI +0.127 vs SF -0.008)
+SF edge: +0.031 (PHI +0.131 vs SF +0.162)
 **7 metrics version:**
-PHI edge: +0.300 (PHI +0.186 vs SF -0.115)
-**Verdict:** PHI holds the edge in the extended breakdown (lead 0.300), driven by Turnover Margin (10% weight).
+PHI edge: +0.386 (PHI +0.299 vs SF -0.087)
+**Verdict:** PHI holds the edge in the extended breakdown (lead 0.386), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ PHI edge: +0.300 (PHI +0.186 vs SF -0.115)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PHI - SF) | +7.2 pts (favours PHI) |
-| Model Win% PHI | 76.9% |
-| Model Win% SF | 23.1% |
+| Model Spread (PHI - SF) | +8.0 pts (favours PHI) |
+| Model Win% PHI | 79.1% |
+| Model Win% SF | 20.9% |
 | SOS Differential (PHI-SF) | -0.115 |
 *Neutral-field assumption. Based on schedule through Week 18.*
 
@@ -67,8 +67,8 @@ PHI edge: +0.300 (PHI +0.186 vs SF -0.115)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| PHI | 55.8% | n/a | n/a | 48.4% | 45.1% | n/a |
-| SF | 58.8% | n/a | n/a | 52.2% | 50.8% | n/a |
+| PHI | 40.4% | 48.0% | -7.5% | 36.1% | 52.8% | Run heavy |
+| SF | 49.3% | 48.0% | 1.3% | 47.2% | 51.4% | Slight pass lean |
 
 ## Situational Edges
 

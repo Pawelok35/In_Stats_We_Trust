@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – DAL 46.8 – NYG 8.9
-2️⃣ Predicted Winner (Model) – DAL
-3️⃣ Predicted Margin (Model) – DAL by 37.9 pts
-4️⃣ Win Probability (Model) – 95% (DAL)
-5️⃣ Why This Team Wins (Model) – Na 3rd down DAL utrzymuje 58.3%, podczas gdy NYG jest na 21.1%, co stabilizuje serie ofensywne. Red Zone TD Rate sprzyja DAL (22.2% vs 0.0%). Success Rate Offense pokazuje DAL na poziomie 51.4% vs 37.8% (+13.6 pp). Explosive Play Rate pozostaje po stronie DAL (9.5% vs 6.1%), więc big-play equity jest wyższe. DAL prowadzi w Points per Drive Differential (-0.167 vs -1.433), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – DAL 15.4 – NYG 22.0
+2️⃣ Predicted Winner (Model) – NYG
+3️⃣ Predicted Margin (Model) – NYG by 6.6 pts
+4️⃣ Win Probability (Model) – 73% (NYG)
+5️⃣ Why This Team Wins (Model) – Na 3rd down NYG utrzymuje 25.0%, podczas gdy DAL jest na 15.4%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie NYG (9.3% vs 6.5%), więc big-play equity jest wyższe. Field position edge wynosi +2.8 yds na rzecz NYG (-6.7 vs -9.5), co skraca ich boisko. PowerScore Summary potwierdza przewagę NYG: NYG +0.021 vs DAL +0.003. Turnover margin faworyzuje NYG (+1.00 vs +0.00), co przekłada się na dodatkowe posiadania.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – DAL 24.5 – NYG 20.0
+1️⃣ Estimated Score (Market) – DAL 23.5 – NYG 20.5
 2️⃣ Predicted Winner (Market) – DAL
-3️⃣ Predicted Margin (Market) – DAL by 4.5 pts
-4️⃣ Win Probability (Market) – 66% (DAL)
-5️⃣ Forum Output (A) – PowerScore (Model) — DAL +0.226 vs NYG +0.237. Points per Drive Differential — DAL -0.167 vs NYG -1.433. Success Rate Offense — DAL 51.4% vs NYG 37.8%. Third Down Conversion — DAL 58.3% vs NYG 21.1%. Red Zone TD Rate — DAL 22.2% vs NYG 0.0%. Explosive Play Rate — DAL 9.5% vs NYG 6.1%. Model margin 37.9 pts vs market spread DAL +4.5.
-6️⃣ Forum Output (B) – Model idzie w stronę DAL po marginesie 37.9 pkt. DAL notuje -0.167 PPD vs -1.433 u NYG. Różnica w Success Rate to 51.4% vs 37.8%. Na 3rd down DAL (58.3%) wygląda solidniej niż NYG (21.1%). Red Zone i explosiveness ( 22.2% / 9.5% ) utrzymują przewagę jakościową. Market trzyma 4.5 pkt, więc edge vs linia to +33.4.
+3️⃣ Predicted Margin (Market) – DAL by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (DAL)
+5️⃣ Forum Output (A) – PowerScore (Model) — DAL +0.003 vs NYG +0.021. Points per Drive Differential — DAL -0.727 vs NYG +0.250. Success Rate Offense — DAL 32.5% vs NYG 31.4%. Third Down Conversion — DAL 15.4% vs NYG 25.0%. Red Zone TD Rate — DAL 20.0% vs NYG 0.0%. Explosive Play Rate — DAL 6.5% vs NYG 9.3%. Model margin -6.6 pts vs market spread DAL +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę NYG po marginesie -6.6 pkt. NYG notuje +0.250 PPD vs -0.727 u DAL. Różnica w Success Rate to 31.4% vs 32.5%. Na 3rd down NYG (25.0%) wygląda solidniej niż DAL (15.4%). Red Zone i explosiveness ( 0.0% / 9.3% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +9.6.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +33.4 pts
-• PowerScoreDiff (winner) = -0.011
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +9.6 pts
+• PowerScoreDiff (winner) = +0.018
+• Confidence = 74.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +33.4 pts model edge vs line, and PowerScore Δ -0.011.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: VALUE PLAY — based on 74.0% confidence, +9.6 pts model edge vs line, and PowerScore Δ +0.018.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – DAL 46.8 – NYG 8.9
-   • Win Probability – 95% (DAL)
+   • Estimated Score – DAL 15.4 – NYG 22.0
+   • Win Probability – 73% (NYG)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – DAL 24.5 – NYG 20.0
-   • Win Probability – 66% (DAL)
+   • Estimated Score – DAL 23.5 – NYG 20.5
+   • Win Probability – 60% (DAL)
 
-🏷 Model Tag: NEUTRAL — DAL (HC -4.5)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — NYG (HC +3.0)

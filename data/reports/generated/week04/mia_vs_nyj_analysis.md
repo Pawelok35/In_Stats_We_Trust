@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – MIA 26.5 – NYJ 22.8
-2️⃣ Predicted Winner (Model) – MIA
-3️⃣ Predicted Margin (Model) – MIA by 3.7 pts
-4️⃣ Win Probability (Model) – 71% (MIA)
-5️⃣ Why This Team Wins (Model) – Na 3rd down MIA utrzymuje 49.8%, podczas gdy NYJ jest na 27.6%, co stabilizuje serie ofensywne. Field position edge wynosi +14.0 yds na rzecz MIA (15.0 vs 1.0), co skraca ich boisko. Turnover margin faworyzuje MIA (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Defensive pressure rate wspiera MIA (+6.9% vs +0.0%), więc pasy rywala będą częściej pod presją.
+1️⃣ Estimated Score (Model) – MIA 2.9 – NYJ 28.6
+2️⃣ Predicted Winner (Model) – NYJ
+3️⃣ Predicted Margin (Model) – NYJ by 25.6 pts
+4️⃣ Win Probability (Model) – 95% (NYJ)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja NYJ (18.9% vs 10.4%). PowerScore Summary potwierdza przewagę NYJ: NYJ +0.124 vs MIA +0.062. Defensive pressure rate wspiera NYJ (+8.6% vs +3.0%), więc pasy rywala będą częściej pod presją. Na 3rd down NYJ utrzymuje 37.6%, podczas gdy MIA jest na 32.3%, co stabilizuje serie ofensywne. Turnover margin faworyzuje NYJ (+3.00 vs +1.00), co przekłada się na dodatkowe posiadania.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – MIA 24.0 – NYJ 21.5
-2️⃣ Predicted Winner (Market) – MIA
-3️⃣ Predicted Margin (Market) – MIA by 2.5 pts
-4️⃣ Win Probability (Market) – 59% (MIA)
-5️⃣ Forum Output (A) – PowerScore (Model) — MIA +0.215 vs NYJ +0.223. Points per Drive Differential — MIA -1.964 vs NYJ -0.826. Success Rate Offense — MIA 46.0% vs NYJ 49.8%. Third Down Conversion — MIA 49.8% vs NYJ 27.6%. Red Zone TD Rate — MIA 17.5% vs NYJ 18.1%. Explosive Play Rate — MIA 9.0% vs NYJ 9.2%. Model margin 3.7 pts vs market spread MIA +2.5.
-6️⃣ Forum Output (B) – Model idzie w stronę MIA po marginesie 3.7 pkt. MIA notuje -1.964 PPD vs -0.826 u NYJ. Różnica w Success Rate to 46.0% vs 49.8%. Na 3rd down MIA (49.8%) wygląda solidniej niż NYJ (27.6%). Red Zone i explosiveness ( 17.5% / 9.0% ) utrzymują przewagę jakościową. Market trzyma 2.5 pkt, więc edge vs linia to +1.2.
+1️⃣ Estimated Score (Market) – MIA 19.8 – NYJ 22.2
+2️⃣ Predicted Winner (Market) – NYJ
+3️⃣ Predicted Margin (Market) – NYJ by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (NYJ)
+5️⃣ Forum Output (A) – PowerScore (Model) — MIA +0.062 vs NYJ +0.124. Points per Drive Differential — MIA -0.829 vs NYJ +1.057. Success Rate Offense — MIA 43.0% vs NYJ 43.1%. Third Down Conversion — MIA 32.3% vs NYJ 37.6%. Red Zone TD Rate — MIA 10.4% vs NYJ 18.9%. Explosive Play Rate — MIA 9.6% vs NYJ 11.1%. Model margin -25.6 pts vs market spread MIA -2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę NYJ po marginesie -25.6 pkt. NYJ notuje +1.057 PPD vs -0.829 u MIA. Różnica w Success Rate to 43.1% vs 43.0%. Na 3rd down NYJ (37.6%) wygląda solidniej niż MIA (32.3%). Red Zone i explosiveness ( 18.9% / 11.1% ) utrzymują przewagę jakościową. Market trzyma -2.5 pkt, więc edge vs linia to +23.1.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +1.2 pts
-• PowerScoreDiff (winner) = -0.008
-• Confidence = 73.0%
+• Edge_vs_Line (winner) = +23.1 pts
+• PowerScoreDiff (winner) = +0.062
+• Confidence = 97.0%
 
-🏷 Model Tag: NEUTRAL — based on 73.0% confidence, +1.2 pts model edge vs line, and PowerScore Δ -0.008.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: GOY — based on 97.0% confidence, +23.1 pts model edge vs line, and PowerScore Δ +0.062.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – MIA 26.5 – NYJ 22.8
-   • Win Probability – 71% (MIA)
+   • Estimated Score – MIA 2.9 – NYJ 28.6
+   • Win Probability – 95% (NYJ)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – MIA 24.0 – NYJ 21.5
-   • Win Probability – 59% (MIA)
+   • Estimated Score – MIA 19.8 – NYJ 22.2
+   • Win Probability – 59% (NYJ)
 
-🏷 Model Tag: NEUTRAL — MIA (HC -2.5)
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — NYJ (HC -2.5)

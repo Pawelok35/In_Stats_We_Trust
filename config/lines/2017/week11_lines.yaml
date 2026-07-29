@@ -1,0 +1,115 @@
+# NFL 2017 Week 11 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w11/PIT_vs_TEN.md
+    home: 'PIT'
+    away: 'TEN'
+    spread: -7
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/CHI_vs_DET.md
+    home: 'CHI'
+    away: 'DET'
+    spread: 3
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/CLE_vs_JAX.md
+    home: 'CLE'
+    away: 'JAX'
+    spread: 7.5
+    total: 38
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/HOU_vs_ARI.md
+    home: 'HOU'
+    away: 'ARI'
+    spread: 0
+    total: 38.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/GB_vs_BAL.md
+    home: 'GB'
+    away: 'BAL'
+    spread: 2
+    total: 38.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/NYG_vs_KC.md
+    home: 'NYG'
+    away: 'KC'
+    spread: 11
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/MIA_vs_TB.md
+    home: 'MIA'
+    away: 'TB'
+    spread: 0
+    total: 40
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/MIN_vs_LA.md
+    home: 'MIN'
+    away: 'LA'
+    spread: -2.5
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/NO_vs_WAS.md
+    home: 'NO'
+    away: 'WAS'
+    spread: -7.5
+    total: 50
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/LAC_vs_BUF.md
+    home: 'LAC'
+    away: 'BUF'
+    spread: -4.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/DEN_vs_CIN.md
+    home: 'DEN'
+    away: 'CIN'
+    spread: -2.5
+    total: 40
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/LV_vs_NE.md
+    home: 'LV'
+    away: 'NE'
+    spread: 5.5
+    total: 50
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/DAL_vs_PHI.md
+    home: 'DAL'
+    away: 'PHI'
+    spread: 3.5
+    total: 47
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w11/SEA_vs_ATL.md
+    home: 'SEA'
+    away: 'ATL'
+    spread: -3
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+

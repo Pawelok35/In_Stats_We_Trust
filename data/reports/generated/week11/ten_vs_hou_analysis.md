@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TEN 35.8 – HOU 21.1
-2️⃣ Predicted Winner (Model) – TEN
-3️⃣ Predicted Margin (Model) – TEN by 14.7 pts
-4️⃣ Win Probability (Model) – 95% (TEN)
-5️⃣ Why This Team Wins (Model) – Success Rate Offense pokazuje TEN na poziomie 45.0% vs 35.8% (+9.2 pp). Red Zone TD Rate sprzyja TEN (17.1% vs 9.7%). PowerScore Summary potwierdza przewagę TEN: TEN +0.067 vs HOU +0.041. Explosive Play Rate pozostaje po stronie TEN (8.7% vs 6.8%), więc big-play equity jest wyższe. TEN prowadzi w Points per Drive Differential (+0.253 vs -1.286), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – TEN 2.9 – HOU 26.0
+2️⃣ Predicted Winner (Model) – HOU
+3️⃣ Predicted Margin (Model) – HOU by 23.1 pts
+4️⃣ Win Probability (Model) – 95% (HOU)
+5️⃣ Why This Team Wins (Model) – Na 3rd down HOU utrzymuje 35.3%, podczas gdy TEN jest na 26.2%, co stabilizuje serie ofensywne. Turnover margin faworyzuje HOU (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę HOU: HOU +0.122 vs TEN +0.095. Red Zone TD Rate sprzyja HOU (9.8% vs 7.7%). HOU prowadzi w Points per Drive Differential (+0.453 vs -1.363), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – TEN 33.4 – HOU 23.4
-2️⃣ Predicted Winner (Market) – TEN
-3️⃣ Predicted Margin (Market) – TEN by 10.0 pts
-4️⃣ Win Probability (Market) – 85% (TEN)
-5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.067 vs HOU +0.041. Points per Drive Differential — TEN +0.253 vs HOU -1.286. Success Rate Offense — TEN 45.0% vs HOU 35.8%. Third Down Conversion — TEN 35.4% vs HOU 35.0%. Red Zone TD Rate — TEN 17.1% vs HOU 9.7%. Explosive Play Rate — TEN 8.7% vs HOU 6.8%. Model margin 14.7 pts vs market spread TEN +10.0.
-6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 14.7 pkt. TEN notuje +0.253 PPD vs -1.286 u HOU. Różnica w Success Rate to 45.0% vs 35.8%. Na 3rd down TEN (35.4%) wygląda solidniej niż HOU (35.0%). Red Zone i explosiveness ( 17.1% / 8.7% ) utrzymują przewagę jakościową. Market trzyma 10.0 pkt, więc edge vs linia to +4.7.
+1️⃣ Estimated Score (Market) – TEN 15.5 – HOU 23.0
+2️⃣ Predicted Winner (Market) – HOU
+3️⃣ Predicted Margin (Market) – HOU by 7.5 pts
+4️⃣ Win Probability (Market) – 76% (HOU)
+5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.095 vs HOU +0.122. Points per Drive Differential — TEN -1.363 vs HOU +0.453. Success Rate Offense — TEN 42.1% vs HOU 43.7%. Third Down Conversion — TEN 26.2% vs HOU 35.3%. Red Zone TD Rate — TEN 7.7% vs HOU 9.8%. Explosive Play Rate — TEN 8.5% vs HOU 9.0%. Model margin -23.1 pts vs market spread TEN -7.5.
+6️⃣ Forum Output (B) – Model idzie w stronę HOU po marginesie -23.1 pkt. HOU notuje +0.453 PPD vs -1.363 u TEN. Różnica w Success Rate to 43.7% vs 42.1%. Na 3rd down HOU (35.3%) wygląda solidniej niż TEN (26.2%). Red Zone i explosiveness ( 9.8% / 9.0% ) utrzymują przewagę jakościową. Market trzyma -7.5 pkt, więc edge vs linia to +15.6.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +4.7 pts
-• PowerScoreDiff (winner) = +0.026
+• Edge_vs_Line (winner) = +15.6 pts
+• PowerScoreDiff (winner) = +0.027
 • Confidence = 94.0%
 
-🏷 Model Tag: VALUE PLAY — based on 94.0% confidence, +4.7 pts model edge vs line, and PowerScore Δ +0.026.
+🏷 Model Tag: VALUE PLAY — based on 94.0% confidence, +15.6 pts model edge vs line, and PowerScore Δ +0.027.
 ⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – TEN 35.8 – HOU 21.1
-   • Win Probability – 95% (TEN)
+   • Estimated Score – TEN 2.9 – HOU 26.0
+   • Win Probability – 95% (HOU)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – TEN 33.4 – HOU 23.4
-   • Win Probability – 85% (TEN)
+   • Estimated Score – TEN 15.5 – HOU 23.0
+   • Win Probability – 76% (HOU)
 
-🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — TEN (HC -10.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — HOU (HC -7.5)

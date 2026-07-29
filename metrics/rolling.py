@@ -14,11 +14,14 @@ through_week = 8
 
 from __future__ import annotations
 
-import polars as pl
 from pathlib import Path
 
-from utils.paths import core12_path  # we assume you already have something like data/l4_core12/<season>/<week>.parquet
-from utils.paths import rolling_core12_through_path  # we'll add this helper soon if you don't have it yet
+import polars as pl
+
+from utils.paths import (
+    core12_path,  # we assume you already have something like data/l4_core12/<season>/<week>.parquet
+    rolling_core12_through_path,  # we'll add this helper soon if you don't have it yet
+)
 
 
 def _load_core12_up_to(season: int, through_week: int) -> pl.DataFrame:
@@ -50,7 +53,6 @@ def _load_core12_up_to(season: int, through_week: int) -> pl.DataFrame:
 
     # ważne: dopasuj kolumny po nazwie i wstawiaj null dla brakujących
     return pl.concat(dfs, how="diagonal_relaxed", rechunk=True)
-
 
 
 def _aggregate_core12(df_all: pl.DataFrame, through_week: int) -> pl.DataFrame:
@@ -95,21 +97,14 @@ def _aggregate_core12(df_all: pl.DataFrame, through_week: int) -> pl.DataFrame:
 
     # fallback: średnia z core_pressure_rate_def
     if pressure_rate_col in df_all.columns:
-        agg_exprs.append(
-            pl.col(pressure_rate_col).mean().alias(pressure_rate_col)
-        )
+        agg_exprs.append(pl.col(pressure_rate_col).mean().alias(pressure_rate_col))
 
     # oznaczamy do którego tygodnia to liczone
     agg_exprs.append(pl.lit(through_week).alias("through_week"))
 
-    grouped = (
-        df_all
-        .group_by(id_cols)
-        .agg(agg_exprs)
-    )
+    grouped = df_all.group_by(id_cols).agg(agg_exprs)
 
     return grouped
-
 
 
 def build_cumulative_core12(season: int, through_week: int) -> pl.DataFrame:

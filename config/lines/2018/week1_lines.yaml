@@ -1,0 +1,131 @@
+# NFL 2018 Week 1 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2018_w1/PHI_vs_ATL.md
+    home: 'PHI'
+    away: 'ATL'
+    spread: -4
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/BAL_vs_BUF.md
+    home: 'BAL'
+    away: 'BUF'
+    spread: -6
+    total: 41
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/IND_vs_CIN.md
+    home: 'IND'
+    away: 'CIN'
+    spread: -3
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/CLE_vs_PIT.md
+    home: 'CLE'
+    away: 'PIT'
+    spread: 5.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/NE_vs_HOU.md
+    home: 'NE'
+    away: 'HOU'
+    spread: -6.5
+    total: 51
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/NYG_vs_JAX.md
+    home: 'NYG'
+    away: 'JAX'
+    spread: 3
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/MIA_vs_TEN.md
+    home: 'MIA'
+    away: 'TEN'
+    spread: 1.5
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/MIN_vs_SF.md
+    home: 'MIN'
+    away: 'SF'
+    spread: -5.5
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/NO_vs_TB.md
+    home: 'NO'
+    away: 'TB'
+    spread: -9.5
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/LAC_vs_KC.md
+    home: 'LAC'
+    away: 'KC'
+    spread: -3
+    total: 47
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/CAR_vs_DAL.md
+    home: 'CAR'
+    away: 'DAL'
+    spread: -2.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/ARI_vs_WAS.md
+    home: 'ARI'
+    away: 'WAS'
+    spread: -1
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/DEN_vs_SEA.md
+    home: 'DEN'
+    away: 'SEA'
+    spread: -2.5
+    total: 42
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/GB_vs_CHI.md
+    home: 'GB'
+    away: 'CHI'
+    spread: -8
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/DET_vs_NYJ.md
+    home: 'DET'
+    away: 'NYJ'
+    spread: -6.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2018_w1/LV_vs_LA.md
+    home: 'LV'
+    away: 'LA'
+    spread: 3
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+

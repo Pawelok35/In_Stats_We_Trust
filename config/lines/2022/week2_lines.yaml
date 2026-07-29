@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 2
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w2/KC_vs_LAC.md
   home: KC
@@ -6,10 +10,10 @@ matchups:
   total: 52.5
   prime_time: true
   neutral_site: false
-- report: data/reports/comparisons/2022_w2/NYG_vs_CAR.md
-  home: NYG
-  away: CAR
-  spread: 1.0
+- report: data/reports/comparisons/2022_w2/BAL_vs_MIA.md
+  home: BAL
+  away: MIA
+  spread: -3.0
   total: 44.0
   prime_time: false
   neutral_site: false
@@ -20,13 +24,6 @@ matchups:
   total: 38.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w2/JAX_vs_IND.md
-  home: JAX
-  away: IND
-  spread: 3.0
-  total: 43.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w2/DET_vs_WAS.md
   home: DET
   away: WAS
@@ -34,17 +31,24 @@ matchups:
   total: 48.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w2/BAL_vs_MIA.md
-  home: BAL
-  away: MIA
-  spread: -3.0
-  total: 44.0
+- report: data/reports/comparisons/2022_w2/JAX_vs_IND.md
+  home: JAX
+  away: IND
+  spread: 3.0
+  total: 43.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w2/NO_vs_TB.md
   home: 'NO'
   away: TB
   spread: 2.5
+  total: 44.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w2/NYG_vs_CAR.md
+  home: NYG
+  away: CAR
+  spread: 1.0
   total: 44.0
   prime_time: false
   neutral_site: false
@@ -76,18 +80,18 @@ matchups:
   total: 42.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w2/LV_vs_ARI.md
-  home: LV
-  away: ARI
-  spread: -5.5
-  total: 51.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w2/DEN_vs_HOU.md
   home: DEN
   away: HOU
   spread: -10.5
   total: 46.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w2/LV_vs_ARI.md
+  home: LV
+  away: ARI
+  spread: -5.5
+  total: 51.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w2/GB_vs_CHI.md

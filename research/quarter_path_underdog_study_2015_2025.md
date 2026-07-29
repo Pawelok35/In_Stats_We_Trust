@@ -1,0 +1,568 @@
+# Quarter Path Pregame Underdog Study - 2015_2025
+
+Scope: NFL regular season games, pregame underdogs only.
+
+A path describes whether the pregame underdog was leading, tied, or losing after Q1, Q2/H1, and Q3.
+
+## Overall
+
+Games analyzed: 2913
+Minimum cases flag: 30
+
+## Top Quarter Paths
+
+| Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_LOST__Q2_LOST__Q3_LOST | 1014 | 90-924 | 8.9% | +1027 | 21.5% | -14.2 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN | 501 | 404-97 | 80.6% | -416 | 92.4% | +8.7 | OK |
+| Q1_TIE__Q2_LOST__Q3_LOST | 286 | 30-256 | 10.5% | +853 | 31.1% | -11.0 | OK |
+| Q1_WIN__Q2_LOST__Q3_LOST | 190 | 21-169 | 11.1% | +805 | 26.8% | -10.8 | OK |
+| Q1_TIE__Q2_WIN__Q3_WIN | 147 | 99-48 | 67.3% | -206 | 85.0% | +6.0 | OK |
+| Q1_LOST__Q2_WIN__Q3_WIN | 139 | 95-44 | 68.3% | -216 | 84.9% | +4.9 | OK |
+| Q1_WIN__Q2_WIN__Q3_LOST | 91 | 20-71 | 22.0% | +355 | 53.8% | -4.6 | OK |
+| Q1_LOST__Q2_LOST__Q3_WIN | 66 | 38-28 | 57.6% | -136 | 84.8% | +1.4 | OK |
+| Q1_TIE__Q2_WIN__Q3_LOST | 55 | 8-47 | 14.5% | +588 | 34.5% | -7.6 | OK |
+| Q1_LOST__Q2_WIN__Q3_LOST | 42 | 11-31 | 26.2% | +282 | 42.9% | -6.2 | OK |
+| Q1_WIN__Q2_WIN__Q3_TIE | 35 | 17-18 | 48.6% | +106 | 74.3% | +0.3 | OK |
+| Q1_TIE__Q2_TIE__Q3_LOST | 32 | 9-23 | 28.1% | +256 | 56.2% | -6.8 | OK |
+| Q1_TIE__Q2_LOST__Q3_WIN | 31 | 22-9 | 71.0% | -244 | 90.3% | +3.7 | OK |
+| Q1_LOST__Q2_TIE__Q3_LOST | 31 | 6-25 | 19.4% | +417 | 41.9% | -7.6 | OK |
+| Q1_LOST__Q2_TIE__Q3_WIN | 29 | 21-8 | 72.4% | -262 | 79.3% | +3.8 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_LOST__Q3_WIN | 28 | 13-15 | 46.4% | +115 | 82.1% | +0.6 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_TIE | 27 | 9-18 | 33.3% | +200 | 74.1% | -1.7 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_LOST | 25 | 4-21 | 16.0% | +525 | 44.0% | -7.5 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_WIN | 24 | 17-7 | 70.8% | -243 | 87.5% | +4.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_WIN | 22 | 13-9 | 59.1% | -144 | 72.7% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_TIE | 19 | 6-13 | 31.6% | +217 | 47.4% | -1.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LOST__Q3_TIE | 19 | 4-15 | 21.1% | +375 | 47.4% | -4.1 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_TIE | 16 | 8-8 | 50.0% | -100 | 68.8% | -1.1 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_TIE | 12 | 4-8 | 33.3% | +200 | 50.0% | -1.2 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_TIE__Q3_TIE | 12 | 2-10 | 16.7% | +500 | 41.7% | -5.7 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_LOST__Q3_TIE | 11 | 3-8 | 27.3% | +267 | 63.6% | -2.0 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_TIE | 9 | 3-6 | 33.3% | +200 | 44.4% | -1.4 | SAMPLE_TOO_SMALL |
+
+## Binary Quarter Path Matrix
+
+`NOT_WIN` means tied or losing at that snapshot.
+
+| Binary Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_NOT_WIN__Q2_NOT_WIN__Q3_NOT_WIN | 1440 | 156-1284 | 10.8% | +823 | 26.5% | -12.6 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN | 501 | 404-97 | 80.6% | -416 | 92.4% | +8.7 | OK |
+| Q1_NOT_WIN__Q2_WIN__Q3_WIN | 286 | 194-92 | 67.8% | -211 | 85.0% | +5.5 | OK |
+| Q1_WIN__Q2_NOT_WIN__Q3_NOT_WIN | 242 | 36-206 | 14.9% | +572 | 33.1% | -9.4 | OK |
+| Q1_NOT_WIN__Q2_NOT_WIN__Q3_WIN | 150 | 98-52 | 65.3% | -188 | 85.3% | +2.7 | OK |
+| Q1_WIN__Q2_WIN__Q3_NOT_WIN | 126 | 37-89 | 29.4% | +241 | 59.5% | -3.2 | OK |
+| Q1_NOT_WIN__Q2_WIN__Q3_NOT_WIN | 118 | 26-92 | 22.0% | +354 | 39.8% | -6.0 | OK |
+| Q1_WIN__Q2_NOT_WIN__Q3_WIN | 50 | 26-24 | 52.0% | -108 | 78.0% | +1.1 | OK |
+
+## Period Quarter Path
+
+Period path means whether the pregame underdog won/lost/tied each individual quarter, not the cumulative game state.
+
+| Period Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| P1_LOST__P2_LOST__P3_LOST | 346 | 3-343 | 0.9% | +11433 | 6.4% | -21.6 | OK |
+| P1_LOST__P2_LOST__P3_WIN | 234 | 37-197 | 15.8% | +532 | 31.6% | -9.0 | OK |
+| P1_WIN__P2_LOST__P3_LOST | 218 | 32-186 | 14.7% | +581 | 34.4% | -8.8 | OK |
+| P1_LOST__P2_WIN__P3_LOST | 211 | 47-164 | 22.3% | +349 | 37.9% | -7.5 | OK |
+| P1_WIN__P2_WIN__P3_LOST | 175 | 114-61 | 65.1% | -187 | 85.7% | +3.7 | OK |
+| P1_LOST__P2_WIN__P3_WIN | 165 | 97-68 | 58.8% | -143 | 82.4% | +3.2 | OK |
+| P1_TIE__P2_LOST__P3_LOST | 154 | 11-143 | 7.1% | +1300 | 23.4% | -13.7 | OK |
+| P1_WIN__P2_LOST__P3_WIN | 146 | 82-64 | 56.2% | -128 | 77.4% | +1.4 | OK |
+| P1_LOST__P2_LOST__P3_TIE | 133 | 10-123 | 7.5% | +1230 | 22.6% | -14.3 | OK |
+| P1_TIE__P2_LOST__P3_WIN | 117 | 39-78 | 33.3% | +200 | 59.0% | -3.5 | OK |
+| P1_WIN__P2_WIN__P3_WIN | 115 | 113-2 | 98.3% | -5650 | 100.0% | +16.9 | OK |
+| P1_TIE__P2_WIN__P3_LOST | 115 | 39-76 | 33.9% | +195 | 56.5% | -2.8 | OK |
+| P1_LOST__P2_WIN__P3_TIE | 99 | 42-57 | 42.4% | +136 | 67.7% | -1.4 | OK |
+| P1_WIN__P2_LOST__P3_TIE | 85 | 38-47 | 44.7% | +124 | 57.6% | -2.4 | OK |
+| P1_LOST__P2_TIE__P3_LOST | 80 | 9-71 | 11.2% | +789 | 20.0% | -12.6 | OK |
+| P1_TIE__P2_WIN__P3_WIN | 65 | 51-14 | 78.5% | -364 | 89.2% | +10.2 | OK |
+| P1_TIE__P2_LOST__P3_TIE | 65 | 6-59 | 9.2% | +983 | 32.3% | -8.8 | OK |
+| P1_WIN__P2_WIN__P3_TIE | 56 | 49-7 | 87.5% | -700 | 98.2% | +11.4 | OK |
+| P1_LOST__P2_TIE__P3_WIN | 54 | 17-37 | 31.5% | +218 | 59.3% | -3.6 | OK |
+| P1_WIN__P2_TIE__P3_LOST | 52 | 20-32 | 38.5% | +160 | 63.5% | -2.1 | OK |
+| P1_LOST__P2_TIE__P3_TIE | 47 | 13-34 | 27.7% | +262 | 38.3% | -5.3 | OK |
+| P1_WIN__P2_TIE__P3_WIN | 46 | 37-9 | 80.4% | -411 | 95.7% | +9.0 | OK |
+| P1_TIE__P2_WIN__P3_TIE | 34 | 21-13 | 61.8% | -162 | 79.4% | +2.8 | OK |
+| P1_TIE__P2_TIE__P3_LOST | 32 | 9-23 | 28.1% | +256 | 56.2% | -6.8 | OK |
+| P1_WIN__P2_TIE__P3_TIE | 26 | 18-8 | 69.2% | -225 | 88.5% | +5.0 | SAMPLE_TOO_SMALL |
+| P1_TIE__P2_TIE__P3_WIN | 24 | 17-7 | 70.8% | -243 | 87.5% | +4.0 | SAMPLE_TOO_SMALL |
+| P1_TIE__P2_TIE__P3_TIE | 19 | 6-13 | 31.6% | +217 | 47.4% | -1.9 | SAMPLE_TOO_SMALL |
+
+## Binary Period Quarter Path
+
+`NOT_WIN` means tied or lost that individual quarter.
+
+| Period Binary Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| P1_NOT_WIN__P2_NOT_WIN__P3_NOT_WIN | 876 | 67-809 | 7.6% | +1207 | 19.4% | -15.5 | OK |
+| P1_NOT_WIN__P2_WIN__P3_NOT_WIN | 459 | 149-310 | 32.5% | +208 | 52.1% | -4.2 | OK |
+| P1_NOT_WIN__P2_NOT_WIN__P3_WIN | 429 | 110-319 | 25.6% | +290 | 45.7% | -6.1 | OK |
+| P1_WIN__P2_NOT_WIN__P3_NOT_WIN | 381 | 108-273 | 28.3% | +253 | 47.2% | -5.5 | OK |
+| P1_WIN__P2_WIN__P3_NOT_WIN | 231 | 163-68 | 70.6% | -240 | 88.7% | +5.5 | OK |
+| P1_NOT_WIN__P2_WIN__P3_WIN | 230 | 148-82 | 64.3% | -180 | 84.3% | +5.2 | OK |
+| P1_WIN__P2_NOT_WIN__P3_WIN | 192 | 119-73 | 62.0% | -163 | 81.8% | +3.2 | OK |
+| P1_WIN__P2_WIN__P3_WIN | 115 | 113-2 | 98.3% | -5650 | 100.0% | +16.9 | OK |
+
+## Combined Flow Path
+
+Flow path combines the individual quarter result with the cumulative state after that quarter.
+
+| Flow Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_NOT_WIN_AFTER_Q3_NOT_WIN | 876 | 67-809 | 7.6% | +1207 | 19.4% | -15.5 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_NOT_WIN | 347 | 56-291 | 16.1% | +520 | 35.7% | -8.2 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_NOT_WIN_AFTER_Q3_NOT_WIN | 204 | 26-178 | 12.7% | +685 | 28.4% | -10.1 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN | 188 | 146-42 | 77.7% | -348 | 93.1% | +7.1 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_NOT_WIN_AFTER_Q3_NOT_WIN | 187 | 26-161 | 13.9% | +619 | 36.4% | -9.0 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN | 154 | 97-57 | 63.0% | -170 | 80.5% | +2.9 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN | 132 | 97-35 | 73.5% | -277 | 90.2% | +8.5 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_NOT_WIN | 118 | 26-92 | 22.0% | +354 | 39.8% | -6.0 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN | 115 | 113-2 | 98.3% | -5650 | 100.0% | +16.9 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN | 104 | 83-21 | 79.8% | -395 | 92.3% | +7.6 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN | 94 | 62-32 | 66.0% | -194 | 81.9% | +3.2 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_NOT_WIN | 83 | 20-63 | 24.1% | +315 | 54.2% | -4.3 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN | 82 | 54-28 | 65.9% | -193 | 87.8% | +2.9 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN | 68 | 44-24 | 64.7% | -183 | 82.4% | +2.6 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN | 50 | 26-24 | 52.0% | -108 | 78.0% | +1.1 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_NOT_WIN | 43 | 17-26 | 39.5% | +153 | 69.8% | -1.2 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_NOT_WIN | 38 | 10-28 | 26.3% | +280 | 57.9% | -5.8 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_NOT_WIN | 30 | 7-23 | 23.3% | +329 | 63.3% | -3.6 | OK |
+
+## Margin Trajectory
+
+Margin trajectory buckets the cumulative underdog margin after Q1, Q2/H1, and Q3.
+
+| Margin Trajectory | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_TRAIL_4_7__Q2_TRAIL_14_PLUS__Q3_TRAIL_14_PLUS | 148 | 3-145 | 2.0% | +4833 | 8.8% | -22.5 | OK |
+| Q1_TRAIL_14_PLUS__Q2_TRAIL_14_PLUS__Q3_TRAIL_14_PLUS | 84 | 0-84 | 0.0% | n/a | 1.2% | -24.8 | OK |
+| Q1_TRAIL_4_7__Q2_TRAIL_8_13__Q3_TRAIL_14_PLUS | 65 | 0-65 | 0.0% | n/a | 6.2% | -19.9 | OK |
+| Q1_TRAIL_8_13__Q2_TRAIL_14_PLUS__Q3_TRAIL_14_PLUS | 62 | 1-61 | 1.6% | +6100 | 8.1% | -20.9 | OK |
+| Q1_TRAIL_4_7__Q2_TRAIL_4_7__Q3_TRAIL_4_7 | 55 | 8-47 | 14.5% | +588 | 38.2% | -6.4 | OK |
+| Q1_TRAIL_4_7__Q2_TRAIL_8_13__Q3_TRAIL_8_13 | 46 | 5-41 | 10.9% | +820 | 26.1% | -9.5 | OK |
+| Q1_TIE__Q2_TRAIL_4_7__Q3_TRAIL_4_7 | 43 | 7-36 | 16.3% | +514 | 44.2% | -6.4 | OK |
+| Q1_TIE__Q2_TRAIL_14_PLUS__Q3_TRAIL_14_PLUS | 42 | 0-42 | 0.0% | n/a | 14.3% | -20.6 | OK |
+| Q1_LEAD_4_7__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS | 41 | 38-3 | 92.7% | -1267 | 100.0% | +19.4 | OK |
+| Q1_TRAIL_4_7__Q2_TRAIL_4_7__Q3_TRAIL_8_13 | 35 | 3-32 | 8.6% | +1067 | 37.1% | -8.5 | OK |
+| Q1_LEAD_14_PLUS__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS | 33 | 32-1 | 97.0% | -3200 | 100.0% | +18.8 | OK |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_8_13 | 31 | 30-1 | 96.8% | -3000 | 100.0% | +8.0 | OK |
+| Q1_TRAIL_1_3__Q2_TRAIL_14_PLUS__Q3_TRAIL_14_PLUS | 30 | 1-29 | 3.3% | +2900 | 10.0% | -21.2 | OK |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_14_PLUS | 28 | 27-1 | 96.4% | -2700 | 100.0% | +15.8 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TRAIL_4_7__Q3_TRAIL_14_PLUS | 28 | 0-28 | 0.0% | n/a | 7.1% | -14.8 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_4_7 | 27 | 19-8 | 70.4% | -238 | 88.9% | +4.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_4_7 | 27 | 14-13 | 51.9% | -108 | 81.5% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TRAIL_8_13__Q3_TRAIL_4_7 | 27 | 4-23 | 14.8% | +575 | 29.6% | -7.0 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_TRAIL_4_7__Q3_TRAIL_8_13 | 27 | 1-26 | 3.7% | +2600 | 11.1% | -9.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_8_13__Q3_TRAIL_14_PLUS | 26 | 1-25 | 3.8% | +2500 | 7.7% | -18.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_8_13__Q3_TRAIL_8_13 | 26 | 1-25 | 3.8% | +2500 | 26.9% | -11.2 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_TRAIL_8_13__Q3_TRAIL_8_13 | 26 | 1-25 | 3.8% | +2500 | 15.4% | -10.6 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_4_7__Q3_TRAIL_14_PLUS | 25 | 2-23 | 8.0% | +1150 | 28.0% | -9.9 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_TRAIL_8_13__Q3_TRAIL_14_PLUS | 25 | 0-25 | 0.0% | n/a | 4.0% | -20.4 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TRAIL_14_PLUS__Q3_TRAIL_8_13 | 23 | 4-19 | 17.4% | +475 | 34.8% | -9.0 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_8_13__Q2_TRAIL_8_13__Q3_TRAIL_14_PLUS | 23 | 2-21 | 8.7% | +1050 | 13.0% | -17.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_4_7__Q3_TRAIL_8_13 | 23 | 0-23 | 0.0% | n/a | 26.1% | -11.2 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_1_3__Q3_TRAIL_1_3 | 21 | 4-17 | 19.0% | +425 | 42.9% | -6.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_1_3__Q3_TRAIL_8_13 | 21 | 2-19 | 9.5% | +950 | 19.0% | -10.4 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_14_PLUS | 19 | 16-3 | 84.2% | -533 | 84.2% | +9.1 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_TRAIL_1_3__Q3_TRAIL_1_3 | 19 | 8-11 | 42.1% | +138 | 63.2% | -1.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_TIE | 19 | 6-13 | 31.6% | +217 | 47.4% | -1.9 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_TRAIL_4_7__Q3_TRAIL_4_7 | 19 | 2-17 | 10.5% | +850 | 36.8% | -10.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_8_13 | 18 | 11-7 | 61.1% | -157 | 88.9% | +3.9 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_1_3 | 18 | 10-8 | 55.6% | -125 | 77.8% | +1.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_TRAIL_4_7__Q3_TRAIL_4_7 | 18 | 5-13 | 27.8% | +260 | 50.0% | -4.7 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_1_3 | 17 | 8-9 | 47.1% | +113 | 76.5% | -0.5 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TRAIL_4_7__Q3_TRAIL_1_3 | 17 | 4-13 | 23.5% | +325 | 70.6% | -2.2 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_8_13__Q2_TRAIL_8_13__Q3_TRAIL_8_13 | 17 | 1-16 | 5.9% | +1600 | 11.8% | -10.8 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_8_13__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS | 16 | 15-1 | 93.8% | -1500 | 100.0% | +20.8 | SAMPLE_TOO_SMALL |
+
+## Delta Trajectory
+
+Delta trajectory buckets how the underdog margin changed from Q1 to Q2 and from Q2 to Q3.
+
+| Delta Trajectory | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1Q2_WORSE_8_PLUS__Q2Q3_WORSE_4_7 | 130 | 5-125 | 3.8% | +2500 | 10.8% | -20.7 | OK |
+| Q1Q2_WORSE_4_7__Q2Q3_WORSE_4_7 | 120 | 4-116 | 3.3% | +2900 | 22.5% | -13.1 | OK |
+| Q1Q2_WORSE_8_PLUS__Q2Q3_FLAT | 110 | 9-101 | 8.2% | +1122 | 20.9% | -13.7 | OK |
+| Q1Q2_WORSE_4_7__Q2Q3_FLAT | 109 | 22-87 | 20.2% | +395 | 38.5% | -7.6 | OK |
+| Q1Q2_WORSE_8_PLUS__Q2Q3_IMPROVED_4_7 | 93 | 14-79 | 15.1% | +564 | 39.8% | -9.2 | OK |
+| Q1Q2_WORSE_4_7__Q2Q3_IMPROVED_4_7 | 92 | 38-54 | 41.3% | +142 | 53.3% | -2.8 | OK |
+| Q1Q2_FLAT__Q2Q3_FLAT | 92 | 37-55 | 40.2% | +149 | 54.3% | -1.7 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_4_7 | 90 | 33-57 | 36.7% | +173 | 57.8% | -2.9 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_FLAT | 87 | 51-36 | 58.6% | -142 | 77.0% | +2.7 | OK |
+| Q1Q2_WORSE_8_PLUS__Q2Q3_WORSE_8_PLUS | 84 | 1-83 | 1.2% | +8300 | 4.8% | -25.8 | OK |
+| Q1Q2_WORSE_4_7__Q2Q3_WORSE_1_3 | 81 | 7-74 | 8.6% | +1057 | 29.6% | -10.1 | OK |
+| Q1Q2_WORSE_1_3__Q2Q3_WORSE_4_7 | 77 | 8-69 | 10.4% | +862 | 27.3% | -10.9 | OK |
+| Q1Q2_FLAT__Q2Q3_WORSE_4_7 | 76 | 19-57 | 25.0% | +300 | 44.7% | -7.4 | OK |
+| Q1Q2_WORSE_8_PLUS__Q2Q3_WORSE_1_3 | 74 | 6-68 | 8.1% | +1133 | 20.3% | -15.7 | OK |
+| Q1Q2_WORSE_4_7__Q2Q3_WORSE_8_PLUS | 69 | 2-67 | 2.9% | +3350 | 7.2% | -19.7 | OK |
+| Q1Q2_IMPROVED_1_3__Q2Q3_WORSE_4_7 | 66 | 23-43 | 34.8% | +187 | 56.1% | -3.8 | OK |
+| Q1Q2_WORSE_4_7__Q2Q3_IMPROVED_1_3 | 66 | 17-49 | 25.8% | +288 | 48.5% | -4.7 | OK |
+| Q1Q2_WORSE_1_3__Q2Q3_FLAT | 64 | 23-41 | 35.9% | +178 | 54.7% | -5.2 | OK |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_WORSE_4_7 | 63 | 40-23 | 63.5% | -174 | 79.4% | +1.5 | OK |
+| Q1Q2_WORSE_8_PLUS__Q2Q3_IMPROVED_1_3 | 59 | 11-48 | 18.6% | +436 | 37.3% | -10.6 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_IMPROVED_4_7 | 58 | 42-16 | 72.4% | -262 | 84.5% | +8.1 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_8_PLUS | 58 | 9-49 | 15.5% | +544 | 37.9% | -8.6 | OK |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_FLAT | 57 | 44-13 | 77.2% | -338 | 86.0% | +7.8 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_1_3 | 56 | 30-26 | 53.6% | -115 | 80.4% | +0.9 | OK |
+| Q1Q2_FLAT__Q2Q3_IMPROVED_4_7 | 54 | 28-26 | 51.9% | -108 | 77.8% | +3.3 | OK |
+| Q1Q2_WORSE_1_3__Q2Q3_IMPROVED_1_3 | 52 | 15-37 | 28.8% | +247 | 50.0% | -3.3 | OK |
+| Q1Q2_WORSE_1_3__Q2Q3_IMPROVED_4_7 | 50 | 23-27 | 46.0% | +117 | 64.0% | +0.1 | OK |
+| Q1Q2_WORSE_1_3__Q2Q3_WORSE_8_PLUS | 48 | 3-45 | 6.2% | +1500 | 14.6% | -14.9 | OK |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_IMPROVED_4_7 | 47 | 41-6 | 87.2% | -683 | 93.6% | +13.6 | OK |
+| Q1Q2_IMPROVED_1_3__Q2Q3_IMPROVED_4_7 | 47 | 33-14 | 70.2% | -236 | 87.2% | +5.6 | OK |
+
+## Q3 Leading Paths With Lead Bucket
+
+| Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 301 | 276-25 | 91.7% | -1104 | 98.0% | +12.9 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 112 | 80-32 | 71.4% | -250 | 89.3% | +3.8 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3 | 88 | 48-40 | 54.5% | -120 | 77.3% | +0.8 | OK |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 70 | 59-11 | 84.3% | -536 | 95.7% | +9.3 | OK |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 67 | 54-13 | 80.6% | -415 | 89.6% | +11.2 | OK |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 50 | 30-20 | 60.0% | -150 | 86.0% | +2.4 | OK |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_1-3 | 36 | 23-13 | 63.9% | -177 | 77.8% | +1.8 | OK |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 33 | 13-20 | 39.4% | +154 | 69.7% | -0.8 | OK |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_1-3 | 30 | 15-15 | 50.0% | -100 | 73.3% | +0.4 | OK |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_4-7 | 28 | 18-10 | 64.3% | -180 | 89.3% | +2.8 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_1-3 | 28 | 14-14 | 50.0% | -100 | 75.0% | -0.7 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_LOST__Q3_WIN__Q3_LEAD_1-3 | 18 | 5-13 | 27.8% | +260 | 72.2% | -2.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LOST__Q3_WIN__Q3_LEAD_4-7 | 17 | 13-4 | 76.5% | -325 | 88.2% | +4.1 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_TIE__Q3_WIN__Q3_LEAD_4-7 | 14 | 11-3 | 78.6% | -367 | 85.7% | +5.8 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LOST__Q3_WIN__Q3_LEAD_1-3 | 11 | 6-5 | 54.5% | -120 | 90.9% | +1.5 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_WIN__Q3_LEAD_1-3 | 11 | 6-5 | 54.5% | -120 | 72.7% | +0.7 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_WIN__Q3_LEAD_4-7 | 10 | 7-3 | 70.0% | -233 | 70.0% | +3.4 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_8+ | 10 | 6-4 | 60.0% | -150 | 100.0% | +3.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_WIN__Q3_LEAD_8+ | 9 | 8-1 | 88.9% | -800 | 88.9% | +7.3 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_LOST__Q3_WIN__Q3_LEAD_4-7 | 9 | 7-2 | 77.8% | -350 | 100.0% | +6.0 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_WIN__Q3_LEAD_4-7 | 8 | 4-4 | 50.0% | -100 | 75.0% | +2.1 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_TIE__Q3_WIN__Q3_LEAD_1-3 | 8 | 3-5 | 37.5% | +167 | 50.0% | -2.2 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_TIE__Q3_WIN__Q3_LEAD_8+ | 7 | 7-0 | 100.0% | n/a | 100.0% | +6.7 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_WIN__Q3_LEAD_1-3 | 7 | 5-2 | 71.4% | -250 | 100.0% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LOST__Q3_WIN__Q3_LEAD_8+ | 3 | 3-0 | 100.0% | n/a | 100.0% | +9.3 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_LOST__Q3_WIN__Q3_LEAD_8+ | 1 | 1-0 | 100.0% | n/a | 100.0% | +14.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_WIN__Q3_LEAD_8+ | 1 | 0-1 | 0.0% | n/a | 100.0% | -4.0 | SAMPLE_TOO_SMALL |
+
+## Binary Q3 Leading Paths
+
+| Binary Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 301 | 276-25 | 91.7% | -1104 | 98.0% | +12.9 | OK |
+| Q1_NOT_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 137 | 113-24 | 82.5% | -471 | 92.7% | +10.2 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 112 | 80-32 | 71.4% | -250 | 89.3% | +3.8 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3 | 88 | 48-40 | 54.5% | -120 | 77.3% | +0.8 | OK |
+| Q1_NOT_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 83 | 43-40 | 51.8% | -108 | 79.5% | +1.1 | OK |
+| Q1_NOT_WIN__Q2_NOT_WIN__Q3_WIN__Q3_LEAD_4-7 | 67 | 46-21 | 68.7% | -219 | 86.6% | +3.7 | OK |
+| Q1_NOT_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3 | 66 | 38-28 | 57.6% | -136 | 75.8% | +1.2 | OK |
+| Q1_NOT_WIN__Q2_NOT_WIN__Q3_WIN__Q3_LEAD_1-3 | 54 | 28-26 | 51.9% | -108 | 77.8% | -0.2 | OK |
+| Q1_NOT_WIN__Q2_NOT_WIN__Q3_WIN__Q3_LEAD_8+ | 29 | 24-5 | 82.8% | -480 | 96.6% | +6.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_NOT_WIN__Q3_WIN__Q3_LEAD_1-3 | 29 | 11-18 | 37.9% | +164 | 72.4% | -1.5 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_NOT_WIN__Q3_WIN__Q3_LEAD_4-7 | 19 | 14-5 | 73.7% | -280 | 84.2% | +4.6 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_NOT_WIN__Q3_WIN__Q3_LEAD_8+ | 2 | 1-1 | 50.0% | -100 | 100.0% | +5.0 | SAMPLE_TOO_SMALL |
+
+## Period Binary Q3 Leading Paths
+
+| Period Binary Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| P1_NOT_WIN__P2_WIN__P3_WIN__Q3_LEAD_8+ | 114 | 91-23 | 79.8% | -396 | 94.7% | +10.0 | OK |
+| P1_WIN__P2_WIN__P3_WIN__Q3_LEAD_8+ | 110 | 108-2 | 98.2% | -5400 | 100.0% | +17.5 | OK |
+| P1_WIN__P2_WIN__P3_NOT_WIN__Q3_LEAD_8+ | 99 | 90-9 | 90.9% | -1000 | 100.0% | +11.2 | OK |
+| P1_WIN__P2_NOT_WIN__P3_WIN__Q3_LEAD_8+ | 82 | 68-14 | 82.9% | -486 | 92.7% | +8.8 | OK |
+| P1_NOT_WIN__P2_WIN__P3_NOT_WIN__Q3_LEAD_1-3 | 65 | 37-28 | 56.9% | -132 | 75.4% | +1.2 | OK |
+| P1_NOT_WIN__P2_WIN__P3_WIN__Q3_LEAD_4-7 | 60 | 37-23 | 61.7% | -161 | 83.3% | +3.0 | OK |
+| P1_WIN__P2_WIN__P3_NOT_WIN__Q3_LEAD_4-7 | 50 | 35-15 | 70.0% | -233 | 88.0% | +3.6 | OK |
+| P1_NOT_WIN__P2_WIN__P3_NOT_WIN__Q3_LEAD_4-7 | 50 | 26-24 | 52.0% | -108 | 80.0% | +0.7 | OK |
+| P1_WIN__P2_NOT_WIN__P3_NOT_WIN__Q3_LEAD_1-3 | 47 | 26-21 | 55.3% | -124 | 74.5% | +0.7 | OK |
+| P1_WIN__P2_NOT_WIN__P3_WIN__Q3_LEAD_4-7 | 41 | 29-12 | 70.7% | -242 | 90.2% | +4.0 | OK |
+| P1_NOT_WIN__P2_NOT_WIN__P3_WIN__Q3_LEAD_4-7 | 40 | 26-14 | 65.0% | -186 | 85.0% | +3.0 | OK |
+| P1_NOT_WIN__P2_WIN__P3_NOT_WIN__Q3_LEAD_8+ | 39 | 34-5 | 87.2% | -680 | 89.7% | +8.6 | OK |
+| P1_WIN__P2_WIN__P3_NOT_WIN__Q3_LEAD_1-3 | 39 | 21-18 | 53.8% | -117 | 82.1% | +1.0 | OK |
+| P1_WIN__P2_NOT_WIN__P3_NOT_WIN__Q3_LEAD_4-7 | 35 | 25-10 | 71.4% | -250 | 85.7% | +4.1 | OK |
+| P1_WIN__P2_NOT_WIN__P3_WIN__Q3_LEAD_1-3 | 31 | 12-19 | 38.7% | +158 | 71.0% | -1.5 | OK |
+| P1_NOT_WIN__P2_NOT_WIN__P3_WIN__Q3_LEAD_1-3 | 29 | 16-13 | 55.2% | -123 | 89.7% | +0.6 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN__P2_WIN__P3_WIN__Q3_LEAD_1-3 | 26 | 13-13 | 50.0% | -100 | 65.4% | -1.0 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN__P2_NOT_WIN__P3_WIN__Q3_LEAD_8+ | 13 | 12-1 | 92.3% | -1200 | 92.3% | +7.6 | SAMPLE_TOO_SMALL |
+| P1_WIN__P2_NOT_WIN__P3_NOT_WIN__Q3_LEAD_8+ | 12 | 11-1 | 91.7% | -1100 | 100.0% | +10.7 | SAMPLE_TOO_SMALL |
+| P1_WIN__P2_WIN__P3_WIN__Q3_LEAD_4-7 | 5 | 5-0 | 100.0% | n/a | 100.0% | +4.0 | SAMPLE_TOO_SMALL |
+
+## Combined Flow Q3 Leading Paths
+
+| Flow Path | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 110 | 108-2 | 98.2% | -5400 | 100.0% | +17.5 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 99 | 90-9 | 90.9% | -1000 | 100.0% | +11.2 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 98 | 79-19 | 80.6% | -416 | 93.9% | +10.8 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 80 | 67-13 | 83.8% | -515 | 92.5% | +8.9 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 65 | 37-28 | 56.9% | -132 | 75.4% | +1.2 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 50 | 35-15 | 70.0% | -233 | 88.0% | +3.6 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 50 | 26-24 | 52.0% | -108 | 80.0% | +0.7 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 47 | 26-21 | 55.3% | -124 | 74.5% | +0.7 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 40 | 26-14 | 65.0% | -186 | 85.0% | +3.0 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 39 | 34-5 | 87.2% | -680 | 89.7% | +8.6 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 39 | 21-18 | 53.8% | -117 | 82.1% | +1.0 | OK |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 35 | 25-10 | 71.4% | -250 | 85.7% | +4.1 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 33 | 17-16 | 51.5% | -106 | 78.8% | +1.7 | OK |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 29 | 16-13 | 55.2% | -123 | 89.7% | +0.6 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 29 | 11-18 | 37.9% | +164 | 72.4% | -1.5 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 27 | 20-7 | 74.1% | -286 | 88.9% | +4.7 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 25 | 12-13 | 48.0% | +108 | 64.0% | -1.1 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 22 | 15-7 | 68.2% | -214 | 95.5% | +3.5 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 19 | 14-5 | 73.7% | -280 | 84.2% | +4.6 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 16 | 12-4 | 75.0% | -300 | 100.0% | +4.8 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 13 | 12-1 | 92.3% | -1200 | 92.3% | +7.6 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 12 | 11-1 | 91.7% | -1100 | 100.0% | +10.7 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_4-7 | 5 | 5-0 | 100.0% | n/a | 100.0% | +4.0 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_8+ | 2 | 1-1 | 50.0% | -100 | 100.0% | +5.0 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 2 | 1-1 | 50.0% | -100 | 50.0% | -0.5 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q3_LEAD_1-3 | 1 | 1-0 | 100.0% | n/a | 100.0% | +2.0 | SAMPLE_TOO_SMALL |
+
+## Margin Trajectory Q3 Leading Paths
+
+| Margin Trajectory | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_LEAD_4_7__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 41 | 38-3 | 92.7% | -1267 | 100.0% | +19.4 | OK |
+| Q1_LEAD_14_PLUS__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 33 | 32-1 | 97.0% | -3200 | 100.0% | +18.8 | OK |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 31 | 30-1 | 96.8% | -3000 | 100.0% | +8.0 | OK |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 28 | 27-1 | 96.4% | -2700 | 100.0% | +15.8 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 27 | 19-8 | 70.4% | -238 | 88.9% | +4.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 27 | 14-13 | 51.9% | -108 | 81.5% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 19 | 16-3 | 84.2% | -533 | 84.2% | +9.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 18 | 11-7 | 61.1% | -157 | 88.9% | +3.9 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 18 | 10-8 | 55.6% | -125 | 77.8% | +1.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_1_3__Q3_LEAD_1-3 | 17 | 8-9 | 47.1% | +113 | 76.5% | -0.5 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_8_13__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 16 | 15-1 | 93.8% | -1500 | 100.0% | +20.8 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 15 | 13-2 | 86.7% | -650 | 86.7% | +13.5 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 15 | 9-6 | 60.0% | -150 | 73.3% | +1.9 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_4_7__Q3_LEAD_4-7 | 13 | 11-2 | 84.6% | -550 | 92.3% | +6.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 13 | 10-3 | 76.9% | -333 | 92.3% | +10.5 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 13 | 9-4 | 69.2% | -225 | 92.3% | +2.0 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 12 | 12-0 | 100.0% | n/a | 100.0% | +16.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TRAIL_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 12 | 9-3 | 75.0% | -300 | 83.3% | +4.2 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_8_13__Q3_LEAD_4_7__Q3_LEAD_4-7 | 12 | 8-4 | 66.7% | -200 | 75.0% | +1.5 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 12 | 6-6 | 50.0% | -100 | 75.0% | +0.0 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 11 | 4-7 | 36.4% | +175 | 72.7% | -1.6 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_14_PLUS__Q3_LEAD_8_13__Q3_LEAD_8+ | 10 | 10-0 | 100.0% | n/a | 100.0% | +6.4 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 10 | 9-1 | 90.0% | -900 | 100.0% | +8.3 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 10 | 9-1 | 90.0% | -900 | 90.0% | +12.5 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 10 | 8-2 | 80.0% | -400 | 90.0% | +3.6 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_8_13__Q3_LEAD_4_7__Q3_LEAD_4-7 | 10 | 7-3 | 70.0% | -233 | 90.0% | +3.0 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 10 | 7-3 | 70.0% | -233 | 90.0% | +4.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 10 | 6-4 | 60.0% | -150 | 70.0% | -0.6 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 9 | 9-0 | 100.0% | n/a | 100.0% | +17.8 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_1_3__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 9 | 8-1 | 88.9% | -800 | 88.9% | +9.2 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_1_3__Q3_LEAD_8_13__Q3_LEAD_8+ | 9 | 7-2 | 77.8% | -350 | 100.0% | +10.2 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TIE__Q3_LEAD_4_7__Q3_LEAD_4-7 | 9 | 7-2 | 77.8% | -350 | 77.8% | +5.8 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 9 | 4-5 | 44.4% | +125 | 77.8% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 9 | 4-5 | 44.4% | +125 | 77.8% | +3.9 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_LEAD_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 9 | 1-8 | 11.1% | +800 | 77.8% | -2.9 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_8_13__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 8 | 8-0 | 100.0% | n/a | 100.0% | +14.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 8 | 7-1 | 87.5% | -700 | 100.0% | +8.8 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 8 | 7-1 | 87.5% | -700 | 100.0% | +8.6 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_4_7__Q2_LEAD_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 6-2 | 75.0% | -300 | 87.5% | +2.9 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_8_13__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 6-2 | 75.0% | -300 | 87.5% | +6.6 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_LEAD_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 6-2 | 75.0% | -300 | 87.5% | +3.9 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 8 | 5-3 | 62.5% | -167 | 75.0% | +2.1 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TRAIL_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 8 | 5-3 | 62.5% | -167 | 87.5% | -0.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 4-4 | 50.0% | -100 | 75.0% | +2.1 | SAMPLE_TOO_SMALL |
+| Q1_TRAIL_4_7__Q2_TRAIL_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 8 | 4-4 | 50.0% | -100 | 62.5% | -0.5 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_1_3__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 7 | 7-0 | 100.0% | n/a | 100.0% | +13.1 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_8_13__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 6-1 | 85.7% | -600 | 85.7% | +7.9 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 6-1 | 85.7% | -600 | 85.7% | +7.6 | SAMPLE_TOO_SMALL |
+| Q1_LEAD_8_13__Q2_LEAD_14_PLUS__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 5-2 | 71.4% | -250 | 100.0% | +8.0 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_TIE__Q3_LEAD_1_3__Q3_LEAD_1-3 | 7 | 5-2 | 71.4% | -250 | 100.0% | +1.7 | SAMPLE_TOO_SMALL |
+
+## Delta Trajectory Q3 Leading Paths
+
+| Delta Trajectory | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_IMPROVED_4_7__Q3_LEAD_8+ | 41 | 40-1 | 97.6% | -4000 | 100.0% | +16.6 | OK |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_FLAT__Q3_LEAD_8+ | 40 | 34-6 | 85.0% | -567 | 90.0% | +11.0 | OK |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_IMPROVED_1_3__Q3_LEAD_8+ | 40 | 33-7 | 82.5% | -471 | 95.0% | +13.6 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_IMPROVED_4_7__Q3_LEAD_8+ | 36 | 30-6 | 83.3% | -500 | 94.4% | +12.0 | OK |
+| Q1Q2_IMPROVED_4_7__Q2Q3_FLAT__Q3_LEAD_8+ | 27 | 27-0 | 100.0% | n/a | 100.0% | +13.3 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_IMPROVED_8_PLUS__Q3_LEAD_8+ | 26 | 24-2 | 92.3% | -1200 | 100.0% | +15.5 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_WORSE_1_3__Q3_LEAD_8+ | 22 | 21-1 | 95.5% | -2100 | 100.0% | +12.4 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_IMPROVED_8_PLUS__Q3_LEAD_8+ | 21 | 20-1 | 95.2% | -2000 | 100.0% | +18.2 | SAMPLE_TOO_SMALL |
+| Q1Q2_FLAT__Q2Q3_IMPROVED_4_7__Q3_LEAD_8+ | 21 | 17-4 | 81.0% | -425 | 95.2% | +10.7 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_FLAT__Q3_LEAD_4-7 | 21 | 10-11 | 47.6% | +110 | 76.2% | -0.7 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_1_3__Q2Q3_IMPROVED_4_7__Q3_LEAD_8+ | 20 | 18-2 | 90.0% | -900 | 100.0% | +11.7 | SAMPLE_TOO_SMALL |
+| Q1Q2_FLAT__Q2Q3_IMPROVED_8_PLUS__Q3_LEAD_8+ | 18 | 16-2 | 88.9% | -800 | 88.9% | +7.4 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_IMPROVED_1_3__Q3_LEAD_8+ | 18 | 16-2 | 88.9% | -800 | 94.4% | +8.9 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_WORSE_4_7__Q3_LEAD_8+ | 18 | 15-3 | 83.3% | -500 | 100.0% | +6.2 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_1_3__Q3_LEAD_4-7 | 18 | 11-7 | 61.1% | -157 | 88.9% | +2.9 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_1_3__Q2Q3_IMPROVED_8_PLUS__Q3_LEAD_8+ | 17 | 13-4 | 76.5% | -325 | 94.1% | +10.9 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_WORSE_4_7__Q3_LEAD_4-7 | 17 | 10-7 | 58.8% | -143 | 82.4% | +1.1 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_IMPROVED_1_3__Q3_LEAD_4-7 | 17 | 9-8 | 52.9% | -113 | 94.1% | +3.1 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_1_3__Q2Q3_IMPROVED_4_7__Q3_LEAD_4-7 | 15 | 9-6 | 60.0% | -150 | 66.7% | +1.5 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_IMPROVED_4_7__Q3_LEAD_4-7 | 14 | 9-5 | 64.3% | -180 | 64.3% | +3.4 | SAMPLE_TOO_SMALL |
+| Q1Q2_FLAT__Q2Q3_FLAT__Q3_LEAD_4-7 | 13 | 10-3 | 76.9% | -333 | 92.3% | +5.4 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_1_3__Q2Q3_IMPROVED_4_7__Q3_LEAD_4-7 | 13 | 10-3 | 76.9% | -333 | 92.3% | +3.8 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_4_7__Q2Q3_IMPROVED_4_7__Q3_LEAD_4-7 | 13 | 10-3 | 76.9% | -333 | 92.3% | +4.1 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_4_7__Q3_LEAD_1-3 | 13 | 7-6 | 53.8% | -117 | 76.9% | +0.7 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_WORSE_4_7__Q3_LEAD_1-3 | 12 | 9-3 | 75.0% | -300 | 83.3% | +2.7 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_1_3__Q2Q3_FLAT__Q3_LEAD_1-3 | 12 | 7-5 | 58.3% | -140 | 75.0% | +0.8 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_4_7__Q3_LEAD_4-7 | 12 | 7-5 | 58.3% | -140 | 83.3% | +1.6 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_1_3__Q2Q3_IMPROVED_4_7__Q3_LEAD_8+ | 11 | 8-3 | 72.7% | -267 | 81.8% | +5.3 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_FLAT__Q3_LEAD_1-3 | 11 | 7-4 | 63.6% | -175 | 81.8% | +3.2 | SAMPLE_TOO_SMALL |
+| Q1Q2_FLAT__Q2Q3_IMPROVED_4_7__Q3_LEAD_4-7 | 11 | 5-6 | 45.5% | +120 | 72.7% | +1.6 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_4_7__Q2Q3_WORSE_1_3__Q3_LEAD_1-3 | 11 | 5-6 | 45.5% | +120 | 90.9% | +0.2 | SAMPLE_TOO_SMALL |
+| Q1Q2_FLAT__Q2Q3_IMPROVED_1_3__Q3_LEAD_8+ | 10 | 9-1 | 90.0% | -900 | 100.0% | +10.5 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_1_3__Q2Q3_WORSE_4_7__Q3_LEAD_1-3 | 10 | 5-5 | 50.0% | -100 | 90.0% | +0.9 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_4_7__Q2Q3_IMPROVED_8_PLUS__Q3_LEAD_8+ | 9 | 8-1 | 88.9% | -800 | 100.0% | +10.8 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_8_PLUS__Q2Q3_FLAT__Q3_LEAD_1-3 | 9 | 6-3 | 66.7% | -200 | 77.8% | +1.6 | SAMPLE_TOO_SMALL |
+| Q1Q2_FLAT__Q2Q3_FLAT__Q3_LEAD_1-3 | 9 | 4-5 | 44.4% | +125 | 77.8% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_4_7__Q2Q3_IMPROVED_4_7__Q3_LEAD_8+ | 8 | 8-0 | 100.0% | n/a | 100.0% | +9.9 | SAMPLE_TOO_SMALL |
+| Q1Q2_IMPROVED_1_3__Q2Q3_IMPROVED_1_3__Q3_LEAD_4-7 | 8 | 7-1 | 87.5% | -700 | 100.0% | +3.2 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_1_3__Q2Q3_IMPROVED_8_PLUS__Q3_LEAD_8+ | 8 | 7-1 | 87.5% | -700 | 87.5% | +7.0 | SAMPLE_TOO_SMALL |
+| Q1Q2_WORSE_4_7__Q2Q3_FLAT__Q3_LEAD_1-3 | 8 | 6-2 | 75.0% | -300 | 87.5% | +1.0 | SAMPLE_TOO_SMALL |
+
+## Combined Flow + Margin Q3 Leading Paths
+
+| Flow + Margin Trajectory | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 28 | 27-1 | 96.4% | -2700 | 100.0% | +15.8 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 24 | 23-1 | 95.8% | -2300 | 100.0% | +8.4 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 22 | 9-13 | 40.9% | +144 | 77.3% | -0.1 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 21 | 21-0 | 100.0% | n/a | 100.0% | +23.5 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 20 | 17-3 | 85.0% | -567 | 100.0% | +15.0 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 18 | 11-7 | 61.1% | -157 | 88.9% | +3.9 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 17 | 12-5 | 70.6% | -240 | 82.4% | +3.8 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_1_3__Q3_LEAD_1-3 | 17 | 8-9 | 47.1% | +113 | 76.5% | -0.5 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 15 | 12-3 | 80.0% | -400 | 80.0% | +8.2 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 14 | 8-6 | 57.1% | -133 | 71.4% | +1.9 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_14_PLUS__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 13 | 12-1 | 92.3% | -1200 | 100.0% | +17.5 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_4_7__Q3_LEAD_4-7 | 13 | 11-2 | 84.6% | -550 | 92.3% | +6.9 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 13 | 8-5 | 61.5% | -160 | 69.2% | +0.7 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_14_PLUS__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 12 | 12-0 | 100.0% | n/a | 100.0% | +21.2 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_TRAIL_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 12 | 9-3 | 75.0% | -300 | 83.3% | +4.2 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_8_13__Q3_LEAD_4_7__Q3_LEAD_4-7 | 12 | 8-4 | 66.7% | -200 | 75.0% | +1.5 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 12 | 6-6 | 50.0% | -100 | 75.0% | +0.0 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_8_13__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 11 | 11-0 | 100.0% | n/a | 100.0% | +25.1 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 11 | 4-7 | 36.4% | +175 | 72.7% | -1.6 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_14_PLUS__Q3_LEAD_8_13__Q3_LEAD_8+ | 10 | 10-0 | 100.0% | n/a | 100.0% | +6.4 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 10 | 9-1 | 90.0% | -900 | 90.0% | +12.5 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_8_13__Q3_LEAD_4_7__Q3_LEAD_4-7 | 10 | 7-3 | 70.0% | -233 | 90.0% | +3.0 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 9 | 9-0 | 100.0% | n/a | 100.0% | +17.8 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_14_PLUS__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 9 | 8-1 | 88.9% | -800 | 88.9% | +18.1 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_TIE__Q3_LEAD_4_7__Q3_LEAD_4-7 | 9 | 7-2 | 77.8% | -350 | 77.8% | +5.8 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 9 | 7-2 | 77.8% | -350 | 88.9% | +4.7 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_1_3__Q3_LEAD_8_13__Q3_LEAD_8+ | 9 | 7-2 | 77.8% | -350 | 100.0% | +10.2 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 9 | 6-3 | 66.7% | -200 | 77.8% | +0.1 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 9 | 5-4 | 55.6% | -125 | 88.9% | +0.9 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 9 | 4-5 | 44.4% | +125 | 77.8% | +3.9 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 9 | 4-5 | 44.4% | +125 | 77.8% | +1.7 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_LEAD_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 9 | 1-8 | 11.1% | +800 | 77.8% | -2.9 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 8 | 7-1 | 87.5% | -700 | 100.0% | +8.6 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 8 | 7-1 | 87.5% | -700 | 100.0% | +8.5 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 8 | 7-1 | 87.5% | -700 | 100.0% | +8.8 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 6-2 | 75.0% | -300 | 87.5% | +3.9 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_8_13__Q2_LEAD_4_7__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 6-2 | 75.0% | -300 | 87.5% | +6.6 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 6-2 | 75.0% | -300 | 87.5% | +2.9 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_TRAIL_1_3__Q3_LEAD_1_3__Q3_LEAD_1-3 | 8 | 5-3 | 62.5% | -167 | 87.5% | -0.4 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 8 | 5-3 | 62.5% | -167 | 87.5% | +8.5 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_4_7__Q3_LEAD_1_3__Q3_LEAD_1-3 | 8 | 5-3 | 62.5% | -167 | 75.0% | +2.1 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_TIE__Q3_LEAD_4_7__Q3_LEAD_4-7 | 8 | 4-4 | 50.0% | -100 | 75.0% | +2.1 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_1_3__Q2_LEAD_8_13__Q3_LEAD_14_PLUS__Q3_LEAD_8+ | 7 | 7-0 | 100.0% | n/a | 100.0% | +13.1 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_4_7__Q2_LEAD_8_13__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 7-0 | 100.0% | n/a | 100.0% | +6.7 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_TIE__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 6-1 | 85.7% | -600 | 85.7% | +7.6 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_NOT_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_LEAD_8_13__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 6-1 | 85.7% | -600 | 85.7% | +7.9 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_NOT_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TIE__Q2_TIE__Q3_LEAD_1_3__Q3_LEAD_1-3 | 7 | 5-2 | 71.4% | -250 | 100.0% | +1.7 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TRAIL_1_3__Q2_LEAD_4_7__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 5-2 | 71.4% | -250 | 100.0% | +8.4 | SAMPLE_TOO_SMALL |
+| P1_WIN_AFTER_Q1_WIN__P2_WIN_AFTER_Q2_WIN__P3_NOT_WIN_AFTER_Q3_WIN__Q1_LEAD_8_13__Q2_LEAD_14_PLUS__Q3_LEAD_8_13__Q3_LEAD_8+ | 7 | 5-2 | 71.4% | -250 | 100.0% | +8.0 | SAMPLE_TOO_SMALL |
+| P1_NOT_WIN_AFTER_Q1_NOT_WIN__P2_WIN_AFTER_Q2_NOT_WIN__P3_WIN_AFTER_Q3_WIN__Q1_TRAIL_4_7__Q2_TRAIL_1_3__Q3_LEAD_4_7__Q3_LEAD_4-7 | 7 | 4-3 | 57.1% | -133 | 100.0% | +0.7 | SAMPLE_TOO_SMALL |
+
+## Q3 Leading Paths By Spread Micro Bucket
+
+| Path + Micro Spread | Cases | SU W-L | SU Win% | Break-even ML | Pregame ATS Cover% | Avg Final Margin | Sample |
+|---|---:|---:|---:|---:|---:|---:|---|
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_2-3 | 108 | 102-6 | 94.4% | -1700 | 96.3% | +13.8 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_3.5-4.5 | 51 | 45-6 | 88.2% | -750 | 98.0% | +11.2 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_0.5-1.5 | 46 | 45-1 | 97.8% | -4500 | 97.8% | +16.5 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_5-6 | 36 | 34-2 | 94.4% | -1700 | 100.0% | +12.1 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_2-3 | 31 | 23-8 | 74.2% | -288 | 77.4% | +6.3 | OK |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_3.5-4.5 | 29 | 20-9 | 69.0% | -222 | 82.8% | +2.7 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_2-3 | 28 | 23-5 | 82.1% | -460 | 85.7% | +10.9 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_2-3 | 25 | 20-5 | 80.0% | -400 | 88.0% | +8.8 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_6.5-7 | 24 | 20-4 | 83.3% | -500 | 100.0% | +10.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_2-3 | 22 | 14-8 | 63.6% | -175 | 77.3% | +3.5 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_7.5-9.5 | 21 | 18-3 | 85.7% | -600 | 100.0% | +12.3 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_3.5-4.5 | 21 | 12-9 | 57.1% | -133 | 71.4% | -0.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_2-3 | 17 | 11-6 | 64.7% | -183 | 70.6% | +1.8 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_7.5-9.5 | 15 | 10-5 | 66.7% | -200 | 100.0% | +1.4 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_3.5-4.5 | 14 | 13-1 | 92.9% | -1300 | 100.0% | +10.5 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_2-3 | 14 | 6-8 | 42.9% | +133 | 50.0% | +0.9 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_0.5-1.5 | 13 | 13-0 | 100.0% | n/a | 100.0% | +6.2 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_0.5-1.5 | 13 | 12-1 | 92.3% | -1200 | 100.0% | +8.2 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_5-6 | 12 | 6-6 | 50.0% | -100 | 91.7% | +1.3 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_0.5-1.5 | 11 | 10-1 | 90.9% | -1000 | 90.9% | +13.7 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_3.5-4.5 | 11 | 8-3 | 72.7% | -267 | 90.9% | +5.1 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_2-3 | 11 | 7-4 | 63.6% | -175 | 63.6% | +1.4 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_3.5-4.5 | 10 | 8-2 | 80.0% | -400 | 90.0% | +10.8 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_10-13.5 | 10 | 8-2 | 80.0% | -400 | 100.0% | +7.6 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_2-3 | 10 | 6-4 | 60.0% | -150 | 70.0% | +2.0 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_3.5-4.5 | 10 | 5-5 | 50.0% | -100 | 60.0% | -0.3 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_5-6 | 9 | 6-3 | 66.7% | -200 | 100.0% | +1.8 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_10-13.5 | 9 | 5-4 | 55.6% | -125 | 88.9% | +1.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_0.5-1.5 | 9 | 4-5 | 44.4% | +125 | 44.4% | -1.1 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_1-3__SPREAD_3.5-4.5 | 9 | 3-6 | 33.3% | +200 | 55.6% | -3.2 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_4-7__SPREAD_2-3 | 8 | 6-2 | 75.0% | -300 | 75.0% | +3.8 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_7.5-9.5 | 8 | 4-4 | 50.0% | -100 | 87.5% | -1.0 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_4-7__SPREAD_0.5-1.5 | 7 | 6-1 | 85.7% | -600 | 100.0% | +3.6 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_LOST__Q3_WIN__Q3_LEAD_1-3__SPREAD_2-3 | 7 | 3-4 | 42.9% | +133 | 57.1% | -0.3 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_6.5-7 | 7 | 3-4 | 42.9% | +133 | 100.0% | +1.4 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_5-6 | 6 | 5-1 | 83.3% | -500 | 100.0% | +12.2 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_6.5-7 | 6 | 5-1 | 83.3% | -500 | 100.0% | +9.5 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_5-6 | 6 | 4-2 | 66.7% | -200 | 83.3% | +5.8 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_7.5-9.5 | 6 | 3-3 | 50.0% | -100 | 83.3% | +0.5 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_3.5-4.5 | 6 | 3-3 | 50.0% | -100 | 83.3% | -1.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_6.5-7 | 6 | 3-3 | 50.0% | -100 | 83.3% | +0.3 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_6.5-7 | 6 | 3-3 | 50.0% | -100 | 100.0% | +1.7 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_TIE__Q3_WIN__Q3_LEAD_4-7__SPREAD_3.5-4.5 | 5 | 5-0 | 100.0% | n/a | 100.0% | +8.4 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_0.5-1.5 | 5 | 4-1 | 80.0% | -400 | 80.0% | +4.6 | SAMPLE_TOO_SMALL |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_7.5-9.5 | 5 | 4-1 | 80.0% | -400 | 100.0% | +8.6 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7__SPREAD_10-13.5 | 5 | 4-1 | 80.0% | -400 | 100.0% | +5.0 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+__SPREAD_14+ | 5 | 4-1 | 80.0% | -400 | 100.0% | +9.4 | SAMPLE_TOO_SMALL |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_1-3__SPREAD_3.5-4.5 | 5 | 3-2 | 60.0% | -150 | 60.0% | +1.4 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_TIE__Q3_WIN__Q3_LEAD_1-3__SPREAD_2-3 | 5 | 3-2 | 60.0% | -150 | 60.0% | +2.2 | SAMPLE_TOO_SMALL |
+| Q1_WIN__Q2_LOST__Q3_WIN__Q3_LEAD_1-3__SPREAD_2-3 | 5 | 2-3 | 40.0% | +150 | 40.0% | -0.6 | SAMPLE_TOO_SMALL |
+
+## Candidate Paths For Live Watch
+
+| Path | Cases | SU Win% | Break-even ML | Note |
+|---|---:|---:|---:|---|
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 301 | 91.7% | -1104 | candidate for live_watch_card path filter |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 70 | 84.3% | -536 | candidate for live_watch_card path filter |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_8+ | 67 | 80.6% | -415 | candidate for live_watch_card path filter |
+| Q1_WIN__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 112 | 71.4% | -250 | candidate for live_watch_card path filter |
+| Q1_LOST__Q2_WIN__Q3_WIN__Q3_LEAD_1-3 | 36 | 63.9% | -177 | candidate for live_watch_card path filter |
+| Q1_TIE__Q2_WIN__Q3_WIN__Q3_LEAD_4-7 | 50 | 60.0% | -150 | candidate for live_watch_card path filter |
+
+## Interpretation
+
+- `Q2` is the halftime snapshot.
+- `SU Win%` is straight-up final win rate by the pregame underdog.
+- `Pregame ATS Cover%` uses the original pregame spread, not a live spread.
+- `Break-even ML` is derived from historical SU win rate, not from archived live book prices.
+- Paths below the minimum sample threshold should not be used as a standalone live signal.
+
+## Detail Export
+
+CSV detail: `research\quarter_path_underdog_study_2015_2025.csv`
+Path summary: `research\quarter_path_underdog_study_2015_2025_paths.csv`
+Binary path summary: `research\quarter_path_underdog_study_2015_2025_binary_paths.csv`
+Period path summary: `research\quarter_path_underdog_study_2015_2025_period_paths.csv`
+Binary period path summary: `research\quarter_path_underdog_study_2015_2025_period_binary_paths.csv`
+Combined flow path summary: `research\quarter_path_underdog_study_2015_2025_flow_paths.csv`
+Margin trajectory summary: `research\quarter_path_underdog_study_2015_2025_margin_trajectories.csv`
+Delta trajectory summary: `research\quarter_path_underdog_study_2015_2025_delta_trajectories.csv`
+Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_q3_leads.csv`
+Binary Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_binary_q3_leads.csv`
+Period binary Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_period_binary_q3_leads.csv`
+Combined flow Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_flow_q3_leads.csv`
+Margin trajectory Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_margin_q3_leads.csv`
+Delta trajectory Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_delta_q3_leads.csv`
+Combined flow + margin Q3 lead summary: `research\quarter_path_underdog_study_2015_2025_flow_margin_q3_leads.csv`
+Q3 micro spread summary: `research\quarter_path_underdog_study_2015_2025_q3_micro.csv`

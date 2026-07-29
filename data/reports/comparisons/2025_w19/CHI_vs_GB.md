@@ -15,39 +15,39 @@
 | Turnover Margin | 1.294 | -0.059 | 1.353 |
 | Red Zone TD Rate (Off) | 0.139 | 0.149 | -0.010 |
 | Pressure Rate (Def) | 0.060 | 0.063 | -0.003 |
-| Tempo | 7.556 | 6.700 | 0.856 |
-| PowerScore | 1.667 | 1.383 | 0.284 |
-| PowerScore | 1.667 | 1.383 | 0.284 |
-| Tempo | 7.556 | 6.700 | 0.856 |
+| Tempo | 9.100 | 8.273 | 0.827 |
+| PowerScore | 1.985 | 1.816 | 0.170 |
+| PowerScore | 1.985 | 1.816 | 0.170 |
+| Tempo | 9.100 | 8.273 | 0.827 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CHI | GB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.031 | -0.204 | +0.235 |
-| EPA Defense | 20% | 0.117 | 0.030 | +0.087 |
-| Success Rate Offense | 25% | 48.5% | 43.3% | +5.2 pp |
-| Tempo | 20% | 0.088 | 0.060 | +0.029 |
+| EPA Offense | 35% | 0.123 | 0.076 | +0.048 |
+| EPA Defense | 20% | 0.076 | 0.123 | -0.048 |
+| Success Rate Offense | 25% | 42.9% | 44.0% | -1.1 pp |
+| Tempo | 20% | 0.154 | 0.132 | +0.022 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CHI | GB | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.031 | -0.204 | +0.235 |
-| EPA Defense | 20% | 0.117 | 0.030 | +0.087 |
-| Success Rate Offense | 15% | 48.5% | 43.3% | +5.2 pp |
-| Turnover Margin | 10% | 0.000 | 1.000 | -1.000 |
-| Tempo | 10% | 0.088 | 0.060 | +0.029 |
-| Red Zone TD Rate (Off) | 10% | 16.7% | 0.0% | +16.7 pp |
-| Pressure Rate (Def) | 10% | 6.7% | 6.1% | +0.6 pp |
+| EPA Offense | 25% | 0.123 | 0.076 | +0.048 |
+| EPA Defense | 20% | 0.076 | 0.123 | -0.048 |
+| Success Rate Offense | 15% | 42.9% | 44.0% | -1.1 pp |
+| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
+| Tempo | 10% | 0.154 | 0.132 | +0.022 |
+| Red Zone TD Rate (Off) | 10% | 10.0% | 20.0% | -10.0 pp |
+| Pressure Rate (Def) | 10% | 2.1% | 2.0% | +0.1 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-CHI edge: +0.118 (CHI +0.173 vs GB +0.055)
+CHI edge: +0.009 (CHI +0.196 vs GB +0.187)
 **7 metrics version:**
-CHI edge: +0.004 (CHI +0.136 vs GB +0.132)
-**Verdict:** CHI holds the edge in the extended breakdown (lead 0.004), driven by EPA Offense (25% weight).
+GB edge: +0.407 (CHI -0.062 vs GB +0.345)
+**Verdict:** GB holds the edge in the extended breakdown (lead 0.407), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ CHI edge: +0.004 (CHI +0.136 vs GB +0.132)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CHI - GB) | +5.3 pts (favours CHI) |
-| Model Win% CHI | 70.6% |
-| Model Win% GB | 29.4% |
+| Model Spread (CHI - GB) | +3.1 pts (favours CHI) |
+| Model Win% CHI | 62.8% |
+| Model Win% GB | 37.2% |
 | SOS Differential (CHI-GB) | -0.232 |
 *Neutral-field assumption. Based on schedule through Week 18.*
 
@@ -67,8 +67,8 @@ CHI edge: +0.004 (CHI +0.136 vs GB +0.132)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CHI | 51.5% | n/a | n/a | 54.5% | 46.7% | n/a |
-| GB | 23.9% | n/a | n/a | 55.6% | 55.8% | n/a |
+| CHI | 54.9% | 48.0% | 7.0% | 44.0% | 41.5% | Pass heavy |
+| GB | 51.6% | 48.0% | 3.7% | 44.7% | 43.2% | Pass heavy |
 
 ## Situational Edges
 

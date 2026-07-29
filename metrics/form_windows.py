@@ -1,5 +1,6 @@
-import polars as pl
 from pathlib import Path
+
+import polars as pl
 
 
 def _empty_team_weeks_frame() -> pl.DataFrame:

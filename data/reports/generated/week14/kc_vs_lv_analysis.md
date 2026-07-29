@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – KC 36.5 – LV 26.0
-2️⃣ Predicted Winner (Model) – KC
-3️⃣ Predicted Margin (Model) – KC by 10.5 pts
-4️⃣ Win Probability (Model) – 95% (KC)
-5️⃣ Why This Team Wins (Model) – Na 3rd down KC utrzymuje 42.4%, podczas gdy LV jest na 28.8%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje KC na poziomie 48.8% vs 43.2% (+5.6 pp). Red Zone TD Rate sprzyja KC (13.3% vs 12.5%). KC prowadzi w Points per Drive Differential (+0.292 vs -0.243), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – KC 19.5 – LV 23.0
+2️⃣ Predicted Winner (Model) – LV
+3️⃣ Predicted Margin (Model) – LV by 3.5 pts
+4️⃣ Win Probability (Model) – 59% (LV)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja LV (16.6% vs 9.9%). Na 3rd down LV utrzymuje 34.2%, podczas gdy KC jest na 30.7%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje LV na poziomie 44.1% vs 43.0% (+1.1 pp). Explosive Play Rate pozostaje po stronie LV (9.9% vs 9.4%), więc big-play equity jest wyższe. Defensive pressure rate wspiera LV (+2.2% vs +2.0%), więc pasy rywala będą częściej pod presją.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – KC 30.5 – LV 21.5
+1️⃣ Estimated Score (Market) – KC 24.8 – LV 21.2
 2️⃣ Predicted Winner (Market) – KC
-3️⃣ Predicted Margin (Market) – KC by 9.0 pts
-4️⃣ Win Probability (Market) – 82% (KC)
-5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.122 vs LV +0.156. Points per Drive Differential — KC +0.292 vs LV -0.243. Success Rate Offense — KC 48.8% vs LV 43.2%. Third Down Conversion — KC 42.4% vs LV 28.8%. Red Zone TD Rate — KC 13.3% vs LV 12.5%. Explosive Play Rate — KC 9.7% vs LV 11.3%. Model margin 10.5 pts vs market spread KC +9.0.
-6️⃣ Forum Output (B) – Model idzie w stronę KC po marginesie 10.5 pkt. KC notuje +0.292 PPD vs -0.243 u LV. Różnica w Success Rate to 48.8% vs 43.2%. Na 3rd down KC (42.4%) wygląda solidniej niż LV (28.8%). Red Zone i explosiveness ( 13.3% / 9.7% ) utrzymują przewagę jakościową. Market trzyma 9.0 pkt, więc edge vs linia to +1.5.
+3️⃣ Predicted Margin (Market) – KC by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (KC)
+5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.211 vs LV +0.172. Points per Drive Differential — KC +0.004 vs LV +0.166. Success Rate Offense — KC 43.0% vs LV 44.1%. Third Down Conversion — KC 30.7% vs LV 34.2%. Red Zone TD Rate — KC 9.9% vs LV 16.6%. Explosive Play Rate — KC 9.4% vs LV 9.9%. Model margin -3.5 pts vs market spread KC +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę LV po marginesie -3.5 pkt. LV notuje +0.166 PPD vs +0.004 u KC. Różnica w Success Rate to 44.1% vs 43.0%. Na 3rd down LV (34.2%) wygląda solidniej niż KC (30.7%). Red Zone i explosiveness ( 16.6% / 9.9% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +7.0.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +1.5 pts
-• PowerScoreDiff (winner) = -0.034
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +7.0 pts
+• PowerScoreDiff (winner) = -0.039
+• Confidence = 59.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +1.5 pts model edge vs line, and PowerScore Δ -0.034.
+🏷 Model Tag: NEUTRAL — based on 59.0% confidence, +7.0 pts model edge vs line, and PowerScore Δ -0.039.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – KC 36.5 – LV 26.0
-   • Win Probability – 95% (KC)
+   • Estimated Score – KC 19.5 – LV 23.0
+   • Win Probability – 59% (LV)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – KC 30.5 – LV 21.5
-   • Win Probability – 82% (KC)
+   • Estimated Score – KC 24.8 – LV 21.2
+   • Win Probability – 62% (KC)
 
-🏷 Model Tag: NEUTRAL — KC (HC -9.0)
+🏷 Model Tag: NEUTRAL — LV (HC +3.5)

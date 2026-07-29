@@ -1,0 +1,19 @@
+source: nfl_data_py.import_schedules
+season: 2016
+week: 20
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2016_w20/ATL_vs_GB.md
+  home: ATL
+  away: GB
+  spread: -6.5
+  total: 59.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2016_w20/NE_vs_PIT.md
+  home: NE
+  away: PIT
+  spread: -5.5
+  total: 49.5
+  prime_time: false
+  neutral_site: false

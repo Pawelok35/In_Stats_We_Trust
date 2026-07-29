@@ -1,0 +1,53 @@
+schema_version: staking_phase.v1
+name: selected_phase_tier
+description: User-selected phase-aware staking for 2026 forward tracking.
+market: spread_ats
+price_assumption: -110
+unit_model: risk_units
+scope:
+  variant: variant_m
+  tags:
+    - VALUE PLAY
+    - GOW
+    - GOM
+    - GOY
+  excluded_tags:
+    - NEUTRAL
+phases:
+  early_w2_w5:
+    weeks:
+      from: 2
+      to: 5
+    stakes:
+      VALUE PLAY: 0.25
+      GOW: 0.5
+      GOM: 0.75
+      GOY: 1.0
+  middle_w6_w11:
+    weeks:
+      from: 6
+      to: 11
+    stakes:
+      VALUE PLAY: 0.5
+      GOW: 1.0
+      GOM: 1.25
+      GOY: 1.5
+  late_w12_w17:
+    weeks:
+      from: 12
+      to: 17
+    stakes:
+      VALUE PLAY: 1.0
+      GOW: 2.0
+      GOM: 3.0
+      GOY: 4.0
+risk_controls:
+  status: recommended_before_forward_tracking
+  neutral_stake: 0.0
+  require_proof_qualified: true
+  require_argument_against: true
+  require_manual_price_check: true
+  notes:
+    - Historical/backfilled results are not prospective proof.
+    - Treat this staking as paper/forward tracking until the ledger confirms edge.
+    - Add weekly exposure caps before using real bankroll sizing.

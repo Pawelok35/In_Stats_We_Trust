@@ -95,3 +95,37 @@ L4_CORE12:
     - core_redzone_td_rate:Float64
     - core_pressure_rate_def:Float64
     - core_explosive_play_rate_off:Float64
+L4_POWERSCORE:
+  description: >
+    PowerScore output produced from L4 Core12 metrics.
+  keys:
+    - season
+    - week
+    - team
+  required_columns:
+    - season:Int64
+    - week:Int64
+    - team:Utf8
+    - power_score:Float64
+PICK_OUTPUT:
+  description: >
+    JSONL pick output produced by matchup analysis and evaluated by backtesting.
+  keys:
+    - season
+    - week
+    - home
+    - away
+    - model_winner
+  required_columns:
+    - season:Int64
+    - week:Int64
+    - home:Utf8
+    - away:Utf8
+    - tag:Utf8
+    - model_winner:Utf8
+    - confidence:Float64
+    - handicap:Float64
+    - model_version:Utf8?
+    - commit_sha:Utf8?
+    - config_sha256:Utf8?
+    - data_cutoff:Utf8?

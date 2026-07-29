@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – SEA 37.7 – MIN 14.8
-2️⃣ Predicted Winner (Model) – SEA
-3️⃣ Predicted Margin (Model) – SEA by 22.9 pts
-4️⃣ Win Probability (Model) – 95% (SEA)
-5️⃣ Why This Team Wins (Model) – Turnover margin faworyzuje SEA (+4.00 vs -4.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę SEA: SEA +0.013 vs MIN -0.097. Na 3rd down SEA utrzymuje 36.5%, podczas gdy MIN jest na 27.5%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje SEA na poziomie 49.8% vs 44.4% (+5.4 pp). Explosive Play Rate pozostaje po stronie SEA (11.2% vs 10.2%), więc big-play equity jest wyższe.
+1️⃣ Estimated Score (Model) – SEA 17.6 – MIN 24.5
+2️⃣ Predicted Winner (Model) – MIN
+3️⃣ Predicted Margin (Model) – MIN by 6.9 pts
+4️⃣ Win Probability (Model) – 74% (MIN)
+5️⃣ Why This Team Wins (Model) – Na 3rd down MIN utrzymuje 40.8%, podczas gdy SEA jest na 35.1%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera MIN (+7.5% vs +4.6%), więc pasy rywala będą częściej pod presją. PowerScore Summary potwierdza przewagę MIN: MIN +0.146 vs SEA +0.122. Explosive Play Rate pozostaje po stronie MIN (12.3% vs 10.9%), więc big-play equity jest wyższe. MIN prowadzi w Points per Drive Differential (+0.691 vs +0.188), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – SEA 32.2 – MIN 20.2
+1️⃣ Estimated Score (Market) – SEA 26.0 – MIN 23.0
 2️⃣ Predicted Winner (Market) – SEA
-3️⃣ Predicted Margin (Market) – SEA by 12.0 pts
-4️⃣ Win Probability (Market) – 92% (SEA)
-5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.013 vs MIN -0.097. Points per Drive Differential — SEA +0.736 vs MIN -0.248. Success Rate Offense — SEA 49.8% vs MIN 44.4%. Third Down Conversion — SEA 36.5% vs MIN 27.5%. Red Zone TD Rate — SEA 14.4% vs MIN 13.6%. Explosive Play Rate — SEA 11.2% vs MIN 10.2%. Model margin 22.9 pts vs market spread SEA +12.0.
-6️⃣ Forum Output (B) – Model idzie w stronę SEA po marginesie 22.9 pkt. SEA notuje +0.736 PPD vs -0.248 u MIN. Różnica w Success Rate to 49.8% vs 44.4%. Na 3rd down SEA (36.5%) wygląda solidniej niż MIN (27.5%). Red Zone i explosiveness ( 14.4% / 11.2% ) utrzymują przewagę jakościową. Market trzyma 12.0 pkt, więc edge vs linia to +10.9.
+3️⃣ Predicted Margin (Market) – SEA by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (SEA)
+5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.122 vs MIN +0.146. Points per Drive Differential — SEA +0.188 vs MIN +0.691. Success Rate Offense — SEA 43.9% vs MIN 43.0%. Third Down Conversion — SEA 35.1% vs MIN 40.8%. Red Zone TD Rate — SEA 16.7% vs MIN 15.8%. Explosive Play Rate — SEA 10.9% vs MIN 12.3%. Model margin -6.9 pts vs market spread SEA +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę MIN po marginesie -6.9 pkt. MIN notuje +0.691 PPD vs +0.188 u SEA. Różnica w Success Rate to 43.0% vs 43.9%. Na 3rd down MIN (40.8%) wygląda solidniej niż SEA (35.1%). Red Zone i explosiveness ( 15.8% / 12.3% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +9.9.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +10.9 pts
-• PowerScoreDiff (winner) = +0.110
-• Confidence = 97.0%
+• Edge_vs_Line (winner) = +9.9 pts
+• PowerScoreDiff (winner) = +0.024
+• Confidence = 75.0%
 
-🏷 Model Tag: GOY — based on 97.0% confidence, +10.9 pts model edge vs line, and PowerScore Δ +0.110.
-🔥 Season-level conviction — pełna zgodność metryk i rynku.
+🏷 Model Tag: VALUE PLAY — based on 75.0% confidence, +9.9 pts model edge vs line, and PowerScore Δ +0.024.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – SEA 37.7 – MIN 14.8
-   • Win Probability – 95% (SEA)
+   • Estimated Score – SEA 17.6 – MIN 24.5
+   • Win Probability – 74% (MIN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – SEA 32.2 – MIN 20.2
-   • Win Probability – 92% (SEA)
+   • Estimated Score – SEA 26.0 – MIN 23.0
+   • Win Probability – 60% (SEA)
 
-🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — SEA (HC -12.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — MIN (HC +3.0)

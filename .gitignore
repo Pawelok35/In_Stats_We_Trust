@@ -9,11 +9,18 @@ __pycache__/
 .coverage
 build/
 dist/
-data/**/*.parquet
-data/**/*.json
-data/**/*.csv
-data/**/*.log
-data/**/*.tmp
+
+# Generated pipeline artifacts. Keep source code/config in git; keep generated
+# data out of git unless a small fixture is explicitly unignored below.
+data/**
+!data/
+!data/.gitkeep
+!data/fixtures/
+!data/fixtures/**
+!data/samples/
+!data/samples/**
 *.log
+tmp_*.txt
+tmp_*.log
 .DS_Store
 Thumbs.db

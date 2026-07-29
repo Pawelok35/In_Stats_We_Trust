@@ -1,0 +1,12 @@
+{
+  "schema_version": "variant_b_week_flow_summary.v1",
+  "rows": [],
+  "counts": {
+    "total_audits": 0,
+    "by_operator_action": {},
+    "by_gate_state": {},
+    "by_process_status": {}
+  },
+  "model_proof_generated": true,
+  "quotes_loaded": 0
+}

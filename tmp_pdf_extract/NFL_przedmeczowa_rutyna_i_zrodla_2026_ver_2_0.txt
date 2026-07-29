@@ -1,0 +1,375 @@
+
+
+--- PAGE 1 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+NFL 2026
+Przedmeczowa rutyna analityczna, źródła i karta 
+meczu
+Wersja 2.0
+Projekt: Rozmowy o NFL / GOM Stable CORE
+Aktualizacja: 20 lipca 2026
+Dokument roboczy do stosowania przed każdym analizowanym meczem NFL
+Cel dokumentu
+Ujednolicić proces: GOM wskazuje potencjalny edge, a rynek, kontuzje, role zawodników, matchup, scheduling, 
+pogoda i media służą do sprawdzenia, czy przewaga jest realna i nadal dostępna po aktualnej cenie.
+
+
+--- PAGE 2 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+1. Założenia systemu i rola GOM
+GOM pozostaje jedyną warstwą generującą kandydatów do gry ATS. Media, power rankings, kontuzje i 
+ruch linii nie tworzą samodzielnych typów. Ich zadaniem jest potwierdzenie, osłabienie albo odrzucenie 
+sygnału GOM oraz ocena, czy aktualna cena nadal daje wartość.
+ Główny rynek: spread / ATS. Nie budujemy w tej wersji osobnego systemu do totals, moneyline ani 
+propsów.
+ Championa nie zmieniamy ręcznie pod wpływem opinii ekspertów.
+ Nie wymuszamy zakładu na każdy mecz ani w każdej kolejce.
+ PASS jest pełnoprawną i często najlepszą decyzją.
+ Staking pozostaje zgodny z zasadami GOM: ryzyko 3u; wygrana +2,7u; przegrana -3u; push 0.
+1.1. Pola bezpośrednio związane z GOM
+ Prognozowana linia GOM (fair spread).
+ Linia rynkowa w momencie analizy.
+ Edge vs line.
+ Confidence GOM.
+ Status kwalifikacji: kwalifikuje się / watch / nie kwalifikuje się / price moved.
+ Maksymalna akceptowalna linia.
+ Przewidywany game script i opcjonalny orientacyjny wynik - wyłącznie jako opis scenariusza, nie 
+fundament zakładu.
+Najważniejsza zasada
+Nie pytamy tylko: kto wygra? Pytamy: jaka powinna być linia, jaka jest linia rynku i czy różnica nadal pokrywa vig 
+oraz margines błędu naszej oceny.
+2. Czytanie rynku i ruchu linii
+2.1. Co zapisujemy
+ Opening spread i opening total.
+ Aktualny spread, total i dokładny kurs (np. -3 przy -110).
+ Najlepszą realnie dostępną linię.
+ Kierunek oraz moment ruchu.
+ Czy ruch przeszedł przez kluczową liczbę, zwłaszcza 3 lub 7.
+ Możliwą przyczynę ruchu.
+ Czy po ruchu pozostała wartość względem fair line GOM.
+2.2. Pytanie obowiązkowe
+Dlaczego rynek ustawił właśnie taką linię? Jeżeli faworyt wygląda wyraźnie lepiej, gra u siebie i ma 
+poparcie publiczności, a linia nadal jest niska, musimy zrozumieć, czego rynek może się obawiać.
+2.3. Interpretacja ruchu
+ potwierdzona informacja kadrowa;
+
+
+--- PAGE 3 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+ status QB;
+ pogoda;
+ reakcja na inactive list;
+ korekta błędnego openeru;
+ publiczny napływ zakładów;
+ możliwy profesjonalny ruch;
+ przyczyna nieustalona.
+Ostrożność
+Nie nazywamy automatycznie każdego ruchu "sharp money". Bez danych o klientach, limitach i czasie zakładu jest 
+to tylko hipoteza.
+3. Procent zakładów i procent pieniędzy
+Rozróżniamy liczbę ticketów od wartości postawionych pieniędzy.
+Pole Znaczenie Jak używamy
+Tickets / Bets % Procent liczby zakładów po danej stronie Pomiar popularności strony.
+Money / Handle % Procent łącznej wartości pieniędzy Może wskazać większe średnie stawki, 
+ale nie dowodzi gry profesjonalistów.
+Rozbieżność Np. 75% ticketów, lecz 48% pieniędzy Sygnał do dodatkowego sprawdzenia, nie 
+gotowy typ.
+Reverse line movement Linia idzie przeciw popularnej stronie Wymaga ustalenia czasu i przyczyny 
+ruchu.
+3.1. Zasada dokumentowania
+Zapisujemy źródło, datę i godzinę odczytu, np.: „DraftKings, niedziela 12:00 ET: 70% ticketów i 54% 
+pieniędzy na Chiefs -3”. Dane z jednego bukmachera nie reprezentują całego rynku.
+4. Power rankings - stały zestaw źródeł
+Power rankings są narzędziem diagnostycznym. Nie gramy drużyny tylko dlatego, że znajduje się wyżej. 
+Najwięcej wartości daje rozbieżność między GOM, modelem zewnętrznym, mediami i spreadem.
+Priorytet Źródło Rodzaj Zastosowanie
+1 ESPN Football Power Index 
+(FPI) Model ilościowy
+Bazowa zewnętrzna ocena siły 
+i różnica punktowa między 
+drużynami.
+2 NFL.com Power Rankings Ranking ekspercki
+Główny obraz narracji 
+ligowej, zmian formy i ocen 
+kadrowych.
+3 CBS Sports - Pete Prisco Ranking ekspercki Alternatywna, często 
+odmienna opinia.
+4 ESPN Power Rankings Konsensus redakcyjny
+Pomiar narracji medialnej i 
+możliwego publicznego 
+przewartościowania.
+4.1. Sygnały, których szukamy
+ GOM i FPI zgodnie oceniają drużynę lepiej niż sugeruje spread.
+ GOM mocno różni się od FPI - konieczna kontrola przyczyny.
+
+
+--- PAGE 4 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+ Modele są umiarkowane, lecz media po efektownym zwycięstwie wynoszą drużynę bardzo wysoko.
+ Duży skok rankingu po meczu napędzonym turnovers, defensive TD lub garbage time.
+5. Kontuzje, absencje i realna rola zawodnika
+Nie oceniamy liczby nazwisk na injury report. Najpierw ustalamy realny skład i rolę zawodnika, a dopiero 
+potem wpływ jego absencji.
+5.1. Budowa bazowego składu
+1. Oficjalny depth chart jako punkt startowy.
+2. Starterzy z poprzednich meczów.
+3. Snap counts i udział w akcjach z ostatnich 3-4 tygodni.
+4. Role w konkretnych pakietach: base, nickel, dime, third down, goal line.
+5. Informacje lokalnych beat reporterów i wypowiedzi trenerów.
+6. Inactive list w dniu meczu jako ostateczne potwierdzenie.
+5.2. Klasyfikacja roli
+Kategoria Opis Przykłady
+A - kluczowy starter Zwykle bardzo wysoki snap share lub 
+wyjątkowo ważna funkcja
+QB1, LT, CB1, top edge rusher, lider 
+komunikacji obrony.
+B - regularny starter / ważny rotacyjny Istotna i powtarzalna rola WR2, slot CB, TE, DT rotowany w 
+kluczowych sytuacjach.
+C - role player / specjalista Wpływ zależny od game scriptu Third-down back, blocking TE, returner, 
+situational pass rusher.
+D - głęboka rezerwa Mało snapów, głównie special teams Wpływ zwykle minimalny, chyba że 
+brakuje głębi.
+E - bez realnej roli Brak snapów lub brak wejścia do rotacji Rookie bez gry, practice squad call-up bez 
+znaczącej roli.
+5.3. Ocena zastępcy
+ Kto dokładnie wchodzi za nieobecnego?
+ Ile ma doświadczenia i ile snapów rozegrał?
+ Czy już pełnił tę rolę w tym sezonie?
+ Czy absencja wymusza przesunięcie innych graczy?
+ Czy drużyna będzie musiała zmienić schemat lub play calling?
+ Jaka jest różnica jakości między starterem a zastępcą?
+5.4. Łańcuch absencji
+Jedna absencja może wymusić kilka zmian. Przykład: brak CB1 przesuwa CB2 na najlepszego WR rywala, 
+nickel CB na zewnątrz, a rezerwowego safety do slotu. Wpływ jest większy niż samo „CB1 out”.
+5.5. Format zapisu w karcie
+Zawodnik Poz. Status Rola Snap share Zastępca Wpływ
+Przykład LT Out A 96% Rookie, 38 snapów Duży negatywny
+Zasada
+Nie oceniamy, ilu zawodników jest kontuzjowanych, lecz ile wartościowych snapów, funkcji i jakości drużyna traci 
+względem normalnego składu.
+
+
+--- PAGE 5 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+6. Matchup i przewidywany game script
+ Najważniejszy matchup wspierający typ.
+ Największe zagrożenie dla typu.
+ Offensive line kontra pass rush.
+ Secondary kontra receiving corps.
+ Early-down efficiency.
+ Pressure i ochrona QB.
+ Run defense kontra styl ataku.
+ Coaching tendencies i prawdopodobna adaptacja.
+ Kto powinien objąć prowadzenie i kto będzie zmuszony częściej podawać.
+ Czy underdog ma realną ścieżkę utrzymania wyniku.
+6.1. Obowiązkowy argument przeciw własnemu typowi
+Każda karta musi zawierać co najmniej jeden mocny argument przeciwko typowi. Ma to ograniczać 
+confirmation bias i wymuszać analizę scenariusza, w którym GOM może się mylić.
+7. Scheduling spot: podróż, odpoczynek i kalendarz
+ Dom / wyjazd.
+ Kierunek podróży i liczba zmienianych stref czasowych.
+ Pora rozpoczęcia meczu względem czasu biologicznego drużyny.
+ Liczba dni odpoczynku.
+ Short week, Thursday Night Football lub wydłużony odpoczynek.
+ Poprzedni mecz u siebie czy na wyjeździe.
+ Kolejny daleki wyjazd.
+ Powrót po meczu międzynarodowym.
+ Możliwy look-ahead, letdown albo trudna sekwencja spotkań.
+Podróż nie jest automatycznym filtrem. Zyskuje znaczenie, gdy łączy się z małym spreadem, krótkim 
+odpoczynkiem, kontuzjami lub trudnym matchupem.
+8. Pogoda i warunki stadionowe
+ Wiatr stały oraz porywy.
+ Opady i ich intensywność.
+ Temperatura i ekstremalne warunki.
+ Stan murawy.
+ Stadion otwarty, zamknięty lub rozsuwany dach.
+ Wpływ na podania, field goale, punting, tempo i play calling.
+Priorytet
+Największą uwagę przykładamy do wiatru. Sama niska temperatura często tworzy silniejszą narrację medialną niż 
+realny edge.
+
+
+--- PAGE 6 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+9. Media, zapowiedzi i YouTube
+Nie korzystamy z twórców jako dostawców gotowych typów. Ich wartość polega na dostarczaniu kontekstu 
+taktycznego, informacji kadrowych i narracji, które porównujemy z GOM i rynkiem.
+Źródło Najlepsze zastosowanie Ograniczenie
+CBS Sports / Pete Prisco / Pick Six Szybki przegląd całej kolejki, popularne 
+narracje, typy ekspertów. Analiza szeroka i medialna.
+Ross Tucker + Greg Cosell Film, matchup linii, QB, schematy obrony 
+i ataku.
+Nie zawsze obejmuje każdy mecz równie 
+głęboko.
+Sharp Football Analysis / Warren Sharp Dane, early downs, tempo, coaching 
+tendencies, totals i rynek. Część materiałów może być płatna.
+ESPN NFL News, wywiady, dominująca narracja 
+medialna. Nie jest głównym źródłem bettingowym.
+9.1. Co zapisujemy z mediów
+ Maksymalnie trzy najważniejsze obserwacje.
+ Czy informacja wspiera GOM, osłabia GOM, jest neutralna czy już uwzględniona w linii.
+ Najważniejszą narrację tygodnia.
+ Czy narracja ma pokrycie w danych.
+ Jakość źródła: oficjalne / wiarygodny reporter / analiza ekspercka / spekulacja / social media noise.
+10. Główne źródła robocze
+Obszar Główne źródło Rola
+Kontuzje NFL Injury Report Oficjalny status treningowy i meczowy.
+Depth chart ESPN / Ourlads / oficjalne strony drużyn Punkt startowy do budowy realnego 
+składu.
+Snap counts Oficjalne gamebooks / Pro Football 
+Reference / statystyki drużyn Weryfikacja faktycznej roli.
+Opening i aktualna linia ScoresAndOdds Szybka historia i ruch.
+Konsensus kursów VegasInsider Porównanie rynku.
+Tickets i money DraftKings Betting Splits / VSiN Rozkład zakładów i pieniędzy z 
+podaniem źródła i czasu.
+Pogoda NFLWeather Prognoza według meczu i stadionu.
+Power model ESPN FPI Zewnętrzna ilościowa ocena siły.
+Power rankings NFL.com, CBS, ESPN Narracja ekspercka i medialna.
+Analiza filmowa Ross Tucker + Greg Cosell Matchupy i schematy.
+Dane i rynek Sharp Football Analysis Tendencje, efektywność i kontekst 
+rynkowy.
+11. Finalna rutyna przedmeczowa
+Etap A - pierwszy przegląd kolejki
+7. Zapisujemy opening spread i total.
+8. Sprawdzamy wczesne wskazania GOM.
+9. Oglądamy zbiorczą zapowiedź kolejki.
+10. Porównujemy GOM z FPI i głównymi power rankings.
+11. Zaznaczamy mecze z potencjalną rozbieżnością.
+12. Tworzymy listę WATCH, a nie listę zakładów.
+
+
+--- PAGE 7 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+Etap B - realny skład i analiza futbolowa
+13. Budujemy bazowy skład na podstawie starterów, snapów i ról.
+14. Klasyfikujemy absencje i jakość zastępców.
+15. Sprawdzamy kluczowe matchupy.
+16. Formułujemy przewidywany game script.
+17. Zapisujemy argument wspierający i argument przeciw typowi.
+18. Oceniamy scheduling spot i podróż.
+Etap C - analiza rynku
+19. Porównujemy opener z aktualną linią.
+20. Sprawdzamy tickets i money wraz z czasem odczytu.
+21. Ustalamy możliwą przyczynę ruchu.
+22. Sprawdzamy przejście przez kluczowe liczby.
+23. Porównujemy aktualną cenę z maksymalną akceptowalną linią.
+24. Ustalamy: BET / WATCH / PASS / PRICE MOVED.
+Etap D - kontrola w dniu meczu
+25. Oficjalne inactive list.
+26. Ostatnie informacje reporterów i ograniczenia snapów.
+27. Pogoda i status dachu.
+28. Ostatni ruch linii i aktualny kurs.
+29. Aktualny rozkład tickets / money.
+30. Czy nowa informacja zmienia game script lub fair line.
+31. Ostateczna decyzja i jednozdaniowe uzasadnienie.
+12. Karta analizy meczu - wersja 2.0
+Poniższy szablon jest docelową strukturą roboczą. Nie wszystkie pola muszą być rozbudowane dla każdego 
+meczu, ale pola obowiązkowe powinny być wypełnione przed decyzją.
+A. Dane meczu
+ Mecz / tydzień / data / godzina
+ Stadion i nawierzchnia
+ Dom / wyjazd
+ Status dachu
+B. GOM
+ Fair spread GOM
+ Confidence
+ Linia rynkowa
+ Edge vs line
+ Maksymalna akceptowalna linia
+ Status kwalifikacji
+
+
+--- PAGE 8 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+C. Rynek
+ Opening line
+ Aktualna linia i kurs
+ Najlepsza dostępna cena
+ Ruch linii
+ Kluczowa liczba
+ Tickets % / Money % / źródło / godzina
+ Interpretacja ruchu
+D. Skład i kontuzje
+ Bazowy skład
+ Zmiany względem bazowego składu
+ Rola zawodnika A-E
+ Snap share
+ Zastępca i doświadczenie
+ Łańcuch zmian
+ Wpływ na spread / matchup
+E. Matchup
+ Najważniejszy matchup wspierający
+ Największe zagrożenie
+ Przewidywany game script
+ Matchup zgodny z GOM?
+F. Scheduling i pogoda
+ Dni odpoczynku
+ Podróż i strefy czasowe
+ Short week / extended rest
+ Look-ahead / letdown
+ Wiatr / opady / temperatura
+ Wpływ warunków
+G. Media
+ Najważniejsza narracja
+ Czy ma pokrycie w danych
+ Maksymalnie 3 obserwacje ekspertów
+ Wpływ informacji na GOM
+ Jakość źródła
+H. Kontrola ryzyka
+ Argument przeciw typowi
+ Co musiałoby się zmienić, by odrzucić typ
+ Czy cena nadal ma wartość
+ Ostatnia aktualizacja
+
+
+--- PAGE 9 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+I. Decyzja
+ PASS / WATCH / LEAN / BET SMALL / BET / STRONG BET / NO BET - PRICE MOVED
+ Jednozdaniowe uzasadnienie
+ Zagrana linia i kurs
+ Stawka zgodna z GOM
+13. Zasady ochronne i najważniejsze wnioski
+ Nie gramy automatycznie przeciw publiczności.
+ Większy udział pieniędzy nie oznacza automatycznie profesjonalnych zakładów.
+ Ruch linii bez kontekstu jest niepełną informacją.
+ Power rankings nie zastępują spreadu ani GOM.
+ Kontuzja ma znaczenie dopiero po ustaleniu roli i jakości zastępcy.
+ Nie zwiększamy stawki dlatego, że eksperci zgadzają się z typem.
+ Nie obniżamy progów GOM, aby znaleźć zakład.
+ Przy standardowym kursie około -110 próg rentowności wynosi około 52,4%, a nie 70%. W stakingu 
++2,7u / -3u próg wynosi około 52,6%.
+ Największym edge jest konsekwentny proces, dobra cena i umiejętność rezygnacji.
+Formuła procesu
+GOM wykrywa potencjalny edge -> skład, matchup i media wyjaśniają sytuację -> rynek pokazuje cenę i reakcję 
+pieniędzy -> kontrola ryzyka ustala, czy typ nadal zasługuje na grę.
+14. Wersjonowanie
+Wersja Zakres Status
+1.0 Podstawowa rutyna, źródła, power 
+rankings i karta przedmeczowa. Archiwalna
+2.0
+Dodano pełną strukturę karty, realne role 
+i snap share, zastępców, łańcuch 
+absencji, scheduling spot, argument 
+przeciw typowi, powód ruchu linii oraz 
+zasady z forum.
+Aktualna
+15. Adresy źródeł
+NFL Injury Report: https://www.nfl.com/injuries/
+ESPN Depth Charts: https://www.espn.com/nfl/story/_/id/29098001/nfl-depth-charts-all-32-teams
+Ourlads NFL Depth Charts: https://www.ourlads.com/nfldepthcharts/
+ScoresAndOdds NFL: https://www.scoresandodds.com/nfl
+VegasInsider NFL Odds: https://www.vegasinsider.com/nfl/odds/las-vegas/
+DraftKings Betting Splits: https://dknetwork.draftkings.com/draftkings-sportsbook-betting-splits/
+VSiN Betting Splits: https://vsin.com/betting-splits/
+NFLWeather: https://nflweather.com/
+NFL.com Power Rankings: https://www.nfl.com/news/series/power-rankings-news
+
+
+--- PAGE 10 ---
+NFL 2026 - Przedmeczowa rutyna analityczna - ver. 2.0
+CBS Sports Power Rankings: https://www.cbssports.com/nfl/powerrankings/
+Ross Tucker Football Podcast - YouTube: 
+https://www.youtube.com/channel/UCJnAJWzQVTyR9AfAPGZLF1g
+Sharp Football Analysis - YouTube: https://www.youtube.com/@sharpfootballanalysis
+ESPN NFL - YouTube: https://www.youtube.com/@ESPNNFL

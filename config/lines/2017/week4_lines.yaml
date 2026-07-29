@@ -1,0 +1,131 @@
+# NFL 2017 Week 4 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w4/GB_vs_CHI.md
+    home: 'GB'
+    away: 'CHI'
+    spread: -7.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/MIA_vs_NO.md
+    home: 'MIA'
+    away: 'NO'
+    spread: 2.5
+    total: 50
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/ATL_vs_BUF.md
+    home: 'ATL'
+    away: 'BUF'
+    spread: -8
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/NE_vs_CAR.md
+    home: 'NE'
+    away: 'CAR'
+    spread: -8.5
+    total: 48
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/CLE_vs_CIN.md
+    home: 'CLE'
+    away: 'CIN'
+    spread: 3.5
+    total: 40
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/DAL_vs_LA.md
+    home: 'DAL'
+    away: 'LA'
+    spread: -7.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/MIN_vs_DET.md
+    home: 'MIN'
+    away: 'DET'
+    spread: -1.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/HOU_vs_TEN.md
+    home: 'HOU'
+    away: 'TEN'
+    spread: 1.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/NYJ_vs_JAX.md
+    home: 'NYJ'
+    away: 'JAX'
+    spread: 3.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/BAL_vs_PIT.md
+    home: 'BAL'
+    away: 'PIT'
+    spread: 2.5
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/ARI_vs_SF.md
+    home: 'ARI'
+    away: 'SF'
+    spread: -7
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/TB_vs_NYG.md
+    home: 'TB'
+    away: 'NYG'
+    spread: -4
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/LAC_vs_PHI.md
+    home: 'LAC'
+    away: 'PHI'
+    spread: -1
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/DEN_vs_LV.md
+    home: 'DEN'
+    away: 'LV'
+    spread: -2.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/SEA_vs_IND.md
+    home: 'SEA'
+    away: 'IND'
+    spread: -13.5
+    total: 41.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w4/KC_vs_WAS.md
+    home: 'KC'
+    away: 'WAS'
+    spread: -7
+    total: 49.5
+    prime_time: false
+    neutral_site: false
+
+

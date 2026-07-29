@@ -1,0 +1,131 @@
+# NFL 2017 Week 14 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w14/ATL_vs_NO.md
+    home: 'ATL'
+    away: 'NO'
+    spread: -1.5
+    total: 54.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/BUF_vs_IND.md
+    home: 'BUF'
+    away: 'IND'
+    spread: -3.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/CAR_vs_MIN.md
+    home: 'CAR'
+    away: 'MIN'
+    spread: 2
+    total: 42
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/CIN_vs_CHI.md
+    home: 'CIN'
+    away: 'CHI'
+    spread: -6
+    total: 37
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/CLE_vs_GB.md
+    home: 'CLE'
+    away: 'GB'
+    spread: 4
+    total: 41
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/NYG_vs_DAL.md
+    home: 'NYG'
+    away: 'DAL'
+    spread: 6
+    total: 41
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/TB_vs_DET.md
+    home: 'TB'
+    away: 'DET'
+    spread: 2
+    total: 43
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/HOU_vs_SF.md
+    home: 'HOU'
+    away: 'SF'
+    spread: -1.5
+    total: 42.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/KC_vs_LV.md
+    home: 'KC'
+    away: 'LV'
+    spread: -4
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/ARI_vs_TEN.md
+    home: 'ARI'
+    away: 'TEN'
+    spread: 3
+    total: 44.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/DEN_vs_NYJ.md
+    home: 'DEN'
+    away: 'NYJ'
+    spread: 1
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/LAC_vs_WAS.md
+    home: 'LAC'
+    away: 'WAS'
+    spread: -6.5
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/JAX_vs_SEA.md
+    home: 'JAX'
+    away: 'SEA'
+    spread: -3
+    total: 39
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/LA_vs_PHI.md
+    home: 'LA'
+    away: 'PHI'
+    spread: -1
+    total: 51
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/PIT_vs_BAL.md
+    home: 'PIT'
+    away: 'BAL'
+    spread: -6
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w14/MIA_vs_NE.md
+    home: 'MIA'
+    away: 'NE'
+    spread: 12
+    total: 48.5
+    prime_time: false
+    neutral_site: false
+
+

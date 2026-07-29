@@ -12,12 +12,11 @@ copying the latest available data from earlier weeks when necessary.
 from __future__ import annotations
 
 import argparse
+import sys
 from pathlib import Path
 from typing import Iterable
 
 import polars as pl
-
-import sys
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
@@ -58,7 +57,9 @@ def _schedule_teams(data_root: Path, season: int, week: int) -> set[str]:
         if column in schedule_df.columns:
             candidates.extend(schedule_df[column].drop_nulls().to_list())
     if not candidates:
-        raise ValueError("Schedule parquet must contain team columns (home_team/away_team or team_a/team_b).")
+        raise ValueError(
+            "Schedule parquet must contain team columns (home_team/away_team or team_a/team_b)."
+        )
     return {_normalize_team(code) for code in candidates}
 
 
@@ -92,7 +93,9 @@ def _coerce_to_schema(df: pl.DataFrame, schema: dict[str, pl.DataType]) -> pl.Da
     return df.select(list(schema.keys()))
 
 
-def _find_latest_row(layer: str, canonical_team: str, search_weeks: Iterable[int], data_root: Path, season: int) -> pl.DataFrame | None:
+def _find_latest_row(
+    layer: str, canonical_team: str, search_weeks: Iterable[int], data_root: Path, season: int
+) -> pl.DataFrame | None:
     team_column = _team_column(layer)
     aliases = _alias_candidates(canonical_team)
     for wk in search_weeks:
@@ -219,7 +222,9 @@ def backfill_metrics(season: int, target_week: int, schedule_week: int, data_roo
                 if candidate_path.exists():
                     schema_candidates.append(pl.read_parquet(candidate_path, n_rows=0).schema)
                     break
-            canonical_schemas[layer] = schema_candidates[0] if schema_candidates else current_df.schema
+            canonical_schemas[layer] = (
+                schema_candidates[0] if schema_candidates else current_df.schema
+            )
 
         missing = sorted(team for team in teams_needed if team not in existing)
         if not missing:
@@ -237,7 +242,11 @@ def backfill_metrics(season: int, target_week: int, schedule_week: int, data_roo
             row = row.with_columns(
                 [
                     pl.lit(season).alias("season") if "season" in row.columns else pl.lit(season),
-                    pl.lit(target_week).alias("week") if "week" in row.columns else pl.lit(target_week),
+                    (
+                        pl.lit(target_week).alias("week")
+                        if "week" in row.columns
+                        else pl.lit(target_week)
+                    ),
                     pl.lit(team).alias(team_column),
                 ]
             )
@@ -251,12 +260,7 @@ def backfill_metrics(season: int, target_week: int, schedule_week: int, data_roo
             rows = [_coerce_to_schema(frame, template_schema) for frame in rows]
 
         combined = pl.concat(rows, how="vertical_relaxed")
-        combined = (
-            combined
-            .group_by(team_column)
-            .agg([pl.all().last()])
-            .sort(team_column)
-        )
+        combined = combined.group_by(team_column).agg([pl.all().last()]).sort(team_column)
         for column in combined.columns:
             if isinstance(combined[column].dtype, pl.List):
                 combined = combined.with_columns(pl.col(column).list.get(-1).alias(column))
@@ -264,9 +268,13 @@ def backfill_metrics(season: int, target_week: int, schedule_week: int, data_roo
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Backfill team metrics for a target week using earlier data.")
+    parser = argparse.ArgumentParser(
+        description="Backfill team metrics for a target week using earlier data."
+    )
     parser.add_argument("--season", type=int, default=2025, help="Season to modify (default: 2025)")
-    parser.add_argument("--target-week", type=int, default=9, help="Week to ensure metrics exist for (default: 9)")
+    parser.add_argument(
+        "--target-week", type=int, default=9, help="Week to ensure metrics exist for (default: 9)"
+    )
     parser.add_argument(
         "--schedule-week",
         type=int,

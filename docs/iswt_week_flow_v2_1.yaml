@@ -1,0 +1,130 @@
+iswt_week_flow_v2_1:
+  purpose: "Weekly ISWT workflow: inputs -> pipeline -> Weather buckets -> terminal preview."
+  python:
+    windows_venv: ".venv\\Scripts\\python.exe"
+    fallback: "python"
+    note: "Use the venv interpreter in this repo. The system Python may miss dependencies such as polars."
+
+  parameters:
+    season: "<season>"
+    week: "<week>"
+    completed_week: "<week-1>"
+    reference_week: "<week-1>"
+    picks_start_week: "<week>"
+
+  preflight:
+    - command: ".venv\\Scripts\\python.exe -X utf8 scripts\\run_week_pipeline.py --help"
+    - command: ".venv\\Scripts\\python.exe -X utf8 scripts\\generate_weather_buckets.py --help"
+    - command: ".venv\\Scripts\\python.exe -X utf8 scripts\\show_weather_picks.py --help"
+
+  steps:
+    - step: 1
+      name: "Prepare weekly inputs"
+      actions:
+        - type: "edit_file"
+          title: "Update betting lines"
+          path_template: "config/lines/<season>/week<week>_lines.yaml"
+          example: "config/lines/2025/week12_lines.yaml"
+          note: "Fill every matchup with home, away, spread, total, prime_time, neutral_site and report path."
+        - type: "edit_file"
+          title: "Update completed results"
+          path: "data/results/manual_results.jsonl"
+          note: "Append only completed games. Upcoming games can remain absent; bucket settlement will show PENDING."
+
+    - step: 2
+      name: "Run main weekly pipeline"
+      command_powershell: |
+        .venv\Scripts\python.exe -X utf8 scripts\run_week_pipeline.py `
+          --season <season> `
+          --week <week> `
+          --reference-week <week-1> `
+          --picks-start-week <week> `
+          --run-convergence
+      note: >
+        The script updates the schedule, builds L1-L4 for --ingest-week
+        (default: week-1), builds cumulative Core12 through week-1, generates
+        matchup previews, runs matchup analysis, regenerates pick variants,
+        and optionally prints convergence.
+      optional_flags:
+        ingest_week: "--ingest-week <completed_week>  # use when the latest completed week is not week-1"
+        manual_results: "--manual-results data/results/manual_results.jsonl"
+      outputs:
+        comparison_reports: "data/reports/comparisons/<season>_w<week>/"
+        markdown_reports: "data/reports/generated/week<week_padded>/"
+        markdown_summary: "data/reports/generated/week<week_padded>_summary.md"
+        picks_jsonl: "data/picks_variant_*/<season>/week_<week_padded>.jsonl"
+        convergence_report: "Printed in terminal when --run-convergence is set."
+
+    - step: 3
+      name: "Generate Weather buckets with guardrails v2.1"
+      command_powershell: |
+        .venv\Scripts\python.exe -X utf8 scripts\generate_weather_buckets.py `
+          --season <season> `
+          --start-week <week> `
+          --end-week <week> `
+          --guardrails-mode v2_1 `
+          --preserve-existing `
+          --output data/results/weather_bucket_games_season<season>.csv
+      note: >
+        This step is separate from run_week_pipeline.py. It reads pick variants
+        B/F/D, applies guardrails v2.1 plus value-buffer rail guards, settles
+        games with manual_results when scores exist, and writes PENDING for
+        games without scores.
+      outputs:
+        main_output: "data/results/weather_bucket_games_season<season>.csv"
+        columns:
+          - season
+          - week
+          - home_team
+          - away_team
+          - pick_team
+          - rating
+          - bucket
+          - stake_u
+          - guardrails_mode
+          - guardrail_level
+          - guardrail_notes
+          - handicap
+          - value_buffer
+          - rail_guard_status
+          - rail_guard_action
+          - result
+
+    - step: 4
+      name: "Show Weather picks in terminal"
+      command_powershell: |
+        .venv\Scripts\python.exe -X utf8 scripts\show_weather_picks.py `
+          --season <season> `
+          --week <week> `
+          --guardrails-mode v2_1
+      input: "data/results/weather_bucket_games_season<season>.csv"
+
+    - step: 5
+      name: "Settlement model"
+      settlement:
+        win: "profit = 0.9 * stake_u"
+        loss: "profit = -1.0 * stake_u"
+        push: "profit = 0"
+        pending: "not settled"
+
+  staking_rules_v2_1:
+    buckets_stake_u:
+      Calm: 0.5
+      Breeze: 1.0
+      Gale: 2.0
+      Cyclone: 2.5
+      Vortex: 3.0
+      Supercell: 4.0
+      "Ultimate Supercell": 4.0
+    source: "scripts/generate_weather_buckets.py::BUCKET_STAKES"
+    note: "These are the current code values. They differ from the older 1/1/2/3/4u note."
+
+  validation:
+    smoke:
+      - ".venv\\Scripts\\python.exe -X utf8 scripts\\run_week_pipeline.py --help"
+      - ".venv\\Scripts\\python.exe -X utf8 scripts\\generate_weather_buckets.py --help"
+      - ".venv\\Scripts\\python.exe -X utf8 scripts\\show_weather_picks.py --help"
+    sample_existing_week:
+      - ".venv\\Scripts\\python.exe -X utf8 scripts\\show_weather_picks.py --season 2025 --week 12 --guardrails-mode v2_1"
+    qa:
+      - ".venv\\Scripts\\python.exe -m pytest -q"

@@ -150,6 +150,7 @@ def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
 
     check_no_nan_in_keys(df, ["season", "week", "team"])
     check_no_inf(df)
+    validate_df(df, "L4_POWERSCORE")
 
     out_path = path_for("l4_powerscore", season, week)
     df.write_parquet(out_path)
@@ -161,7 +162,7 @@ def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         cols=df.width,
         season=season,
         week=week,
-        files=[out_path],  
+        files=[out_path],
     )
 
     logger.info("PowerScore metrics written to %s (rows=%s cols=%s)", out_path, df.height, df.width)

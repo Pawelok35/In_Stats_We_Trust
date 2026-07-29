@@ -5,6 +5,13 @@ target-version = "py39"
 select = ["E", "F", "W", "B", "I"]
 ignore = []
 
+[lint.per-file-ignores]
+"app/form_section_patch_preview.py" = ["E501"]
+"app/match_dashboard.py" = ["E501"]
+"app/reports.py" = ["E501"]
+"scripts/*.py" = ["E402", "E501"]
+"utils/guardrails.py" = ["E501"]
+
 [format]
 quote-style = "double"
 indent-style = "space"

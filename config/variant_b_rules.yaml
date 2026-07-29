@@ -1,0 +1,651 @@
+schema_version: variant_b_rules.v1
+framework_version: variant_b_audit_v1
+calculation_owner: PYTHON_RULE_ENGINE
+narrative_owner: TEMPLATE_OR_LANGUAGE_MODEL_WITH_NO_NUMERIC_AUTHORITY
+
+audit_stages:
+  - EARLY_PREVIEW
+  - GAME_WEEK
+  - FINAL_PREKICK
+  - POST_CLOSE
+
+key_numbers:
+  integer_settlement_supported: true
+  primary: [3.0, 7.0]
+  secondary: [6.0, 10.0, 14.0]
+  watch: [1.0, 2.0, 4.0]
+
+policy:
+  rounding_increment: 0.5
+  minimum_raw_edge_points: 2.0
+  quote_ttl_seconds:
+    EARLY_PREVIEW: 86400
+    GAME_WEEK: 3600
+    FINAL_PREKICK: 300
+  market_grade_sources:
+    - DIRECT_SPORTSBOOK
+    - LICENSED_FEED
+    - DOCUMENTED_CONSENSUS
+  manual_source_types:
+    - MANUAL_CONSENSUS
+  action_tags:
+    - VALUE PLAY
+    - GOW
+    - GOM
+    - GOY
+  movement_directions:
+    - FOR_PICK
+    - AGAINST_PICK
+    - MIXED
+    - UNCHANGED
+    - UNKNOWN
+  executable_statuses:
+    - BETSLIP_CONFIRMED_AT_TARGET_STAKE
+    - CONFIRMED_AT_BOOK
+    - CONFIRMED_EXECUTABLE
+    - DISPLAYED_AT_BOOK
+    - AGGREGATOR_ONLY
+    - DISPLAYED_UNVERIFIED
+    - STALE
+    - SUSPENDED
+    - UNAVAILABLE
+    - LIMIT_TOO_LOW
+    - LIMIT_BELOW_REQUIRED_STAKE
+    - ACCOUNT_RESTRICTED
+    - ACCOUNT_OR_GEO_UNAVAILABLE
+    - MARKET_CLOSED
+    - MARKET_UNAVAILABLE
+    - UNKNOWN
+
+points:
+  1:
+    name: argument_against
+    implementation_priority: HIGH
+  2:
+    name: market_move_notes
+    implementation_priority: HIGH
+  6:
+    name: key_number_check
+    implementation_priority: HIGH
+  7:
+    name: no_chase_limit
+    implementation_priority: HIGH
+  8:
+    name: price_quality
+    implementation_priority: HIGH
+  9:
+    name: market_snapshot
+    implementation_priority: HIGH
+  18:
+    name: process_quality
+    implementation_priority: HIGH
+  19:
+    name: final_operator_decision
+    implementation_priority: HIGH
+
+rules:
+  AG-01:
+    point_number: 1
+    risk_level: HIGH
+    blocking: true
+    description: "Pick math integrity: stored raw edge must match canonical selected-team calculation."
+  AG-00:
+    point_number: 1
+    risk_level: HIGH
+    blocking: true
+    description: Complete immutable model-run artifact is required before argument_against is market-grade assessable.
+  AG-02:
+    point_number: 1
+    risk_level: HIGH
+    blocking: true
+    description: Whole-number spread requires p_cover, p_push, and p_loss before fair-line edge can be treated as full EV.
+  AG-03:
+    point_number: 1
+    risk_level: HIGH
+    blocking: true
+    description: Edge type, fair-line definition, and edge formula version must be explicit.
+  AG-04:
+    point_number: 1
+    risk_level: HIGH
+    blocking: true
+    description: Market source, quote timestamp, and executable status are required for market-grade audit.
+  AG-05:
+    point_number: 1
+    risk_level: MEDIUM
+    blocking: false
+    description: Missing model uncertainty or margin distribution.
+  AG-06:
+    point_number: 1
+    risk_level: MEDIUM
+    blocking: false
+    description: Sportsbook house rules for push/overtime/settlement are missing.
+  MM-01:
+    point_number: 2
+    risk_level: MEDIUM
+    blocking: false
+    description: Missing opener; opener-to-current movement is not assessable.
+  MM-02:
+    point_number: 2
+    risk_level: HIGH
+    blocking: true
+    description: Current quote is not market-grade without sportsbook, timestamp, and executable status.
+  MM-04:
+    point_number: 2
+    risk_level: HIGH
+    blocking: true
+    description: No-chase is not assessable without the exact model-generation quote.
+  MM-06:
+    point_number: 2
+    risk_level: MEDIUM
+    blocking: false
+    description: Reference market movement and execution quote movement must be tracked separately.
+  MM-07:
+    point_number: 2
+    risk_level: MEDIUM
+    blocking: false
+    description: Exact model line availability as alternate should be checked before treating a line as lost.
+  SS-01:
+    point_number: 4
+    risk_level: HIGH
+    blocking: true
+    description: Kickoff UTC/local conversion must be validated with official time and IANA timezone.
+  SS-02:
+    point_number: 4
+    risk_level: LOW
+    blocking: false
+    description: Week 1 regular-season rest from prior regular-season game is not applicable.
+  SS-04:
+    point_number: 4
+    risk_level: MEDIUM
+    blocking: false
+    description: Neutral-site international game creates schedule context risk without automatic team-specific advantage.
+  SS-05:
+    point_number: 4
+    risk_level: HIGH
+    blocking: true
+    description: Team-specific travel/acclimation advantage claim requires confirmed itinerary evidence.
+  SS-06:
+    point_number: 4
+    risk_level: HIGH
+    blocking: true
+    description: Model schedule assumptions must match official neutral-site/international/home-field context.
+  WX-01:
+    point_number: 5
+    risk_level: LOW
+    blocking: false
+    description: Weather forecast is pending not due when the game is outside the official forecast horizon.
+  WX-02:
+    point_number: 5
+    risk_level: HIGH
+    blocking: true
+    description: Weather source must match venue jurisdiction or be explicitly labelled secondary.
+  WX-03:
+    point_number: 5
+    risk_level: MEDIUM
+    blocking: false
+    description: Forecast provenance requires provider/product/source type/capture time/valid interval/raw hash.
+  WX-04:
+    point_number: 5
+    risk_level: MEDIUM
+    blocking: false
+    description: Weather must be evaluated over a configured game window, not only kickoff instant.
+  WX-05:
+    point_number: 5
+    risk_level: HIGH
+    blocking: true
+    description: Historical climate or generic venue weather cannot be treated as a game forecast.
+  WX-06:
+    point_number: 5
+    risk_level: MEDIUM
+    blocking: false
+    description: Forecast, observations, radar, warnings, and venue field notices must remain separate evidence layers.
+  WX-07:
+    point_number: 5
+    risk_level: HIGH
+    blocking: true
+    description: Weather risk requires model policy/rerun; provider data alone cannot declare edge impact.
+  KN-02:
+    point_number: 6
+    risk_level: MEDIUM
+    blocking: false
+    description: Spread is on a configured key number and must be handled as cover/push/loss sensitive.
+  KN-01:
+    point_number: 6
+    risk_level: LOW
+    blocking: false
+    description: Any integer spread can produce a push and must use settlement-state logic.
+  KN-03:
+    point_number: 6
+    risk_level: HIGH
+    blocking: true
+    description: Quote path is required to claim ARRIVED_AT_KEY, MOVED_OFF_KEY, or CROSSED_KEY.
+  KN-04:
+    point_number: 6
+    risk_level: MEDIUM
+    blocking: false
+    description: Key-number risk level should use model PMF before historical conditional or static fallback.
+  KN-05:
+    point_number: 6
+    risk_level: MEDIUM
+    blocking: false
+    description: Event-level key-number history and path-level crossing summary must be stored separately.
+  NC-03:
+    point_number: 7
+    risk_level: HIGH
+    blocking: true
+    description: Current quote moved off or through 3 or 7 against the selected side.
+  NC-04:
+    point_number: 7
+    risk_level: HIGH
+    blocking: true
+    description: Missing model-generation quote makes no-chase not assessable.
+  NC-01:
+    point_number: 7
+    risk_level: HIGH
+    blocking: true
+    description: No-chase policy version and hash are required.
+  NC-02:
+    point_number: 7
+    risk_level: HIGH
+    blocking: true
+    description: Acceptable quote frontier must be generated and frozen at model run.
+  NC-05:
+    point_number: 7
+    risk_level: MEDIUM
+    blocking: false
+    description: Exact model spread must be checked across main and alternate lines before declaring the line unavailable.
+  NC-06:
+    point_number: 7
+    risk_level: HIGH
+    blocking: true
+    description: TRIGGERED requires all eligible confirmed quotes to be outside the acceptable quote frontier.
+  NC-07:
+    point_number: 7
+    risk_level: HIGH
+    blocking: true
+    description: Direct book or betslip verification at target stake is required for executable quote status.
+  NC-08:
+    point_number: 7
+    risk_level: MEDIUM
+    blocking: false
+    description: Stale or suspended current market normally makes no-chase NOT_ASSESSABLE, not automatically TRIGGERED.
+  PXQ-01:
+    point_number: 8
+    risk_level: HIGH
+    blocking: true
+    description: Price quality requires a fresh atomic quote with named source, timestamp, market scope, spread, price, and executable status.
+  PXQ-02:
+    point_number: 8
+    risk_level: HIGH
+    blocking: true
+    description: Price valuation requires p_cover, p_push, p_loss or a frozen acceptable_quote_frontier generated at model run.
+  PXQ-03:
+    point_number: 8
+    risk_level: HIGH
+    blocking: true
+    description: Manual consensus or aggregator-only quote cannot be treated as executable price proof.
+  PXQ-04:
+    point_number: 8
+    risk_level: HIGH
+    blocking: true
+    description: Spread and price must come from the same quote, snapshot, market ID, selected side, and market scope.
+  PXQ-05:
+    point_number: 8
+    risk_level: MEDIUM
+    blocking: false
+    description: Standard cash bet, odds boost, bonus bet, and promotional price require separate EV handling.
+  PXQ-06:
+    point_number: 8
+    risk_level: MEDIUM
+    blocking: false
+    description: Break-even probability must be push-aware and separated into conditional and unconditional rates.
+  MS-01:
+    point_number: 9
+    risk_level: HIGH
+    blocking: true
+    description: Market snapshot must identify event, selected side, market scope, spread, price, source, and evidence grade.
+  MS-03:
+    point_number: 9
+    risk_level: MEDIUM
+    blocking: false
+    description: Manual consensus is useful for preview but not market-grade proof.
+  MS-02:
+    point_number: 9
+    risk_level: HIGH
+    blocking: true
+    description: Spread and price must be an atomic quote from the same quote ID, market ID, selection ID, payload, and source timestamp.
+  MS-04:
+    point_number: 9
+    risk_level: MEDIUM
+    blocking: false
+    description: Provider/feed quote is not the same as direct book betslip verification or accepted ticket.
+  MS-05:
+    point_number: 9
+    risk_level: HIGH
+    blocking: true
+    description: Direct-book execution proof requires target-stake check, account/geo availability, and no unresolved odds-change warning.
+  MS-06:
+    point_number: 9
+    risk_level: MEDIUM
+    blocking: false
+    description: Provider-reported limit and account-specific accepted stake must be stored separately.
+  PB-01:
+    point_number: 10
+    risk_level: MEDIUM
+    blocking: false
+    description: Betting splits require provider, timestamp, market, selected side, sample scope, and sample type.
+  PB-02:
+    point_number: 10
+    risk_level: MEDIUM
+    blocking: false
+    description: Community consensus or contest picks must not populate sportsbook tickets_pct or handle_pct fields.
+  PB-03:
+    point_number: 10
+    risk_level: MEDIUM
+    blocking: false
+    description: Provider observations must remain separate unless absolute denominators are available for weighted aggregation.
+  PB-04:
+    point_number: 10
+    risk_level: LOW
+    blocking: false
+    description: Tickets and handle do not establish sharp identity or prove why a line moved.
+  PB-05:
+    point_number: 10
+    risk_level: MEDIUM
+    blocking: false
+    description: Splits accumulation window and whether prior line versions are included must be recorded when available.
+  PR-01:
+    point_number: 11
+    risk_level: MEDIUM
+    blocking: false
+    description: Internal neutral-field power gap is required before direct point comparison with FPI/PFF/market ratings.
+  PR-02:
+    point_number: 11
+    risk_level: MEDIUM
+    blocking: false
+    description: Final game-specific model margin must not be directly compared with neutral-field power ratings.
+  PR-03:
+    point_number: 11
+    risk_level: LOW
+    blocking: false
+    description: Ordinal rankings and editorial power rankings provide narrative context only and cannot trigger MODEL_MAJOR_OUTLIER alone.
+  PR-04:
+    point_number: 11
+    risk_level: MEDIUM
+    blocking: false
+    description: External benchmark source family, independence group, rating scale, comparison mode, data season, and ranking period must be recorded.
+  PR-05:
+    point_number: 11
+    risk_level: MEDIUM
+    blocking: false
+    description: Market-informed benchmarks such as preseason FPI, nfelo, and market-implied ratings must not be counted as fully independent market-free confirmations.
+  RC-01:
+    point_number: 12
+    risk_level: HIGH
+    blocking: true
+    description: Internal roster, role, and staff baselines with cutoff timestamps are required to assess whether the model is stale.
+  RC-02:
+    point_number: 12
+    risk_level: MEDIUM
+    blocking: false
+    description: Roster membership, roster status, role changes, and staff/scheme changes must be stored as separate change categories.
+  RC-03:
+    point_number: 12
+    risk_level: HIGH
+    blocking: true
+    description: Material changes after model cutoff require model-awareness status and may require rerun before final decision.
+  RC-04:
+    point_number: 12
+    risk_level: MEDIUM
+    blocking: false
+    description: Materiality must be based on prior role, snap share, position sensitivity, projected role change, and evidence confidence.
+  RC-05:
+    point_number: 12
+    risk_level: MEDIUM
+    blocking: false
+    description: Pre-final-cutdown rosters and preseason depth charts are not final Week 1 role proof.
+  RC-06:
+    point_number: 12
+    risk_level: MEDIUM
+    blocking: false
+    description: Coordinator title change and actual playcaller change must be recorded separately.
+  MR-01:
+    point_number: 13
+    risk_level: HIGH
+    blocking: true
+    description: Matchup-specific risk requires an internal matchup dependency map or edge-driver contribution before severity can be assessed.
+  MR-02:
+    point_number: 13
+    risk_level: MEDIUM
+    blocking: false
+    description: Each risk hypothesis must include both selected-team dependency and opponent counter evidence with sample size and period.
+  MR-03:
+    point_number: 13
+    risk_level: MEDIUM
+    blocking: false
+    description: Historical matchup conflicts require current personnel, injuries, roles, and scheme continuity confirmation.
+  MR-04:
+    point_number: 13
+    risk_level: MEDIUM
+    blocking: false
+    description: Metrics must use comparable filters, definitions, game states, seasons, and opponent adjustments.
+  MR-05:
+    point_number: 13
+    risk_level: MEDIUM
+    blocking: false
+    description: LLM may summarize risk hypotheses but cannot assign matchup severity without deterministic risk score inputs.
+  MR-06:
+    point_number: 13
+    risk_level: LOW
+    blocking: false
+    description: Generic motivation, rivalry, toughness, and narrative claims are invalid matchup-specific evidence.
+  GS-01:
+    point_number: 14
+    risk_level: HIGH
+    blocking: true
+    description: Game-script risk requires baseline margin PMF and p_cover, p_push, p_loss for the exact spread and price.
+  GS-02:
+    point_number: 14
+    risk_level: HIGH
+    blocking: true
+    description: Game-script risk requires a stateful play-by-play or possession-level simulator, not only final-score mean and variance.
+  GS-03:
+    point_number: 14
+    risk_level: MEDIUM
+    blocking: false
+    description: Scenario definitions, policy ID, random seed policy, simulation count, and Monte Carlo error limits must be recorded.
+  GS-04:
+    point_number: 14
+    risk_level: MEDIUM
+    blocking: false
+    description: Each scenario must return p_cover, p_push, p_loss, EV, deltas versus baseline, and edge retention ratio.
+  GS-05:
+    point_number: 14
+    risk_level: MEDIUM
+    blocking: false
+    description: Scenario plausibility and scenario EV impact must be stored separately.
+  GS-06:
+    point_number: 14
+    risk_level: MEDIUM
+    blocking: false
+    description: Current personnel, injury, weather, market snapshot, and price-quality inputs must be loaded or explicitly variant-tested.
+  GS-07:
+    point_number: 14
+    risk_level: LOW
+    blocking: false
+    description: Scenarios are stress-test interventions, not predictions of which game script will occur.
+  CL-01:
+    point_number: 15
+    risk_level: HIGH
+    blocking: true
+    description: Closing quote must include atomic spread and price from the same quote ID or provider-declared close.
+  CL-02:
+    point_number: 15
+    risk_level: MEDIUM
+    blocking: false
+    description: Closing timestamp must be quote close or pregame boundary timestamp, not automatically scheduled kickoff.
+  CL-03:
+    point_number: 15
+    risk_level: MEDIUM
+    blocking: false
+    description: Closing main line and closing exact decision line should be stored separately.
+  CL-04:
+    point_number: 15
+    risk_level: MEDIUM
+    blocking: false
+    description: Same-book close and reference-market close are different benchmarks and must not be substituted for each other.
+  CL-05:
+    point_number: 15
+    risk_level: MEDIUM
+    blocking: false
+    description: Before final pregame close, closing_line status should be PENDING_NOT_CLOSED, not NOT_APPLICABLE.
+  CL-06:
+    point_number: 15
+    risk_level: MEDIUM
+    blocking: false
+    description: Closing line should be derived from the final active pregame quote path, not the first lock or first in-play line.
+  CP-01:
+    point_number: 16
+    risk_level: HIGH
+    blocking: true
+    description: Closing price must be read from the same atomic close_snapshot_id as closing_line.
+  CP-02:
+    point_number: 16
+    risk_level: HIGH
+    blocking: true
+    description: Closing main quote must include selected-team spread, price, quote identity, book, jurisdiction, and timestamp/evidence.
+  CP-03:
+    point_number: 16
+    risk_level: MEDIUM
+    blocking: false
+    description: Exact decision line price must be searched across alternates, not only main lines.
+  CP-04:
+    point_number: 16
+    risk_level: MEDIUM
+    blocking: false
+    description: NOT_OFFERED_AT_CLOSE and MISSING are distinct exact-line statuses.
+  CP-05:
+    point_number: 16
+    risk_level: MEDIUM
+    blocking: false
+    description: Opposite-side closing quote and closing ladder should be stored when available for no-vig and price-inclusive CLV.
+  CP-06:
+    point_number: 16
+    risk_level: MEDIUM
+    blocking: false
+    description: Closing price context must distinguish standard public prices from account-specific, promotional, boost, and bonus-bet prices.
+  CP-07:
+    point_number: 16
+    risk_level: LOW
+    blocking: false
+    description: Closing_price stores market data only; CLV, EV, and direction are calculated in point 17.
+  CV-01:
+    point_number: 17
+    risk_level: HIGH
+    blocking: true
+    description: CLV must be calculated deterministically from point 9 decision snapshot and point 15/16 close snapshot, not by fetching market data again.
+  CV-02:
+    point_number: 17
+    risk_level: MEDIUM
+    blocking: false
+    description: Spread CLV, raw same-line price CLV, and price-inclusive CLV must be stored separately and not summed across units.
+  CV-03:
+    point_number: 17
+    risk_level: MEDIUM
+    blocking: false
+    description: Spread CLV requires selected-team spread convention normalization for both decision and close.
+  CV-04:
+    point_number: 17
+    risk_level: MEDIUM
+    blocking: false
+    description: Same-line price CLV applies only when the exact decision spread is available at close.
+  CV-05:
+    point_number: 17
+    risk_level: MEDIUM
+    blocking: false
+    description: Price-inclusive CLV requires closing fair margin distribution, no-vig exact-line prices, or full closing ladder pricing policy.
+  CV-06:
+    point_number: 17
+    risk_level: MEDIUM
+    blocking: false
+    description: Same-book, reference-book, no-vig consensus, and best-available CLV benchmarks must remain separate under a frozen policy.
+  CV-07:
+    point_number: 17
+    risk_level: LOW
+    blocking: false
+    description: CLV calculations must not use final game outcome.
+  PROC-01:
+    point_number: 18
+    risk_level: HIGH
+    blocking: true
+    description: Process quality must be generated from immutable point outputs, evidence manifests, calculation manifests, and a frozen policy registry.
+  PROC-02:
+    point_number: 18
+    risk_level: HIGH
+    blocking: true
+    description: Due blocking rules override any numeric quality score.
+  PROC-03:
+    point_number: 18
+    risk_level: MEDIUM
+    blocking: false
+    description: Points that are not due in the current audit phase must be reported as pending_not_due instead of failures.
+  PROC-04:
+    point_number: 18
+    risk_level: HIGH
+    blocking: true
+    description: Future information or post-event data cannot be used in a predecision process-quality snapshot.
+  PROC-05:
+    point_number: 18
+    risk_level: HIGH
+    blocking: true
+    description: LLM-generated numeric outputs or LLM-assigned gate statuses cannot satisfy deterministic process checks.
+  PROC-06:
+    point_number: 18
+    risk_level: HIGH
+    blocking: true
+    description: Event identity, selected team, market scope, model run, PMF, and quote IDs must be consistent across dependent points.
+  PROC-07:
+    point_number: 18
+    risk_level: MEDIUM
+    blocking: false
+    description: Manual overrides must be append-only and include original status, overridden status, reason, reviewer, timestamp, and before/after hashes.
+  PROC-08:
+    point_number: 18
+    risk_level: MEDIUM
+    blocking: false
+    description: Readiness must be reported by phase instead of only as a single overall score.
+  OD-01:
+    point_number: 19
+    risk_level: HIGH
+    blocking: true
+    description: Due blocking rules force HOLD/RETURN workflow disposition.
+  OD-02:
+    point_number: 19
+    risk_level: HIGH
+    blocking: true
+    description: Integrity invalidators must route to INVALID_AUDIT before any hold or rerun action.
+  OD-03:
+    point_number: 19
+    risk_level: HIGH
+    blocking: true
+    description: Data identity, market scope, quote atomicity, or timestamp mapping errors must route to RETURN_FOR_DATA_CORRECTION.
+  OD-04:
+    point_number: 19
+    risk_level: HIGH
+    blocking: true
+    description: Missing PMF, p_cover, p_push, p_loss, acceptable frontier, model-generation quote, roster baseline, or script simulation must route to RETURN_FOR_MODEL_RERUN.
+  OD-05:
+    point_number: 19
+    risk_level: MEDIUM
+    blocking: false
+    description: Pending official windows should route to HOLD_PENDING_DATA with a passive or external-delay hold type.
+  OD-06:
+    point_number: 19
+    risk_level: HIGH
+    blocking: true
+    description: Operator decision must not perform new research, new model calculations, or betting recommendation generation.
+  OD-07:
+    point_number: 19
+    risk_level: MEDIUM
+    blocking: false
+    description: Operator decision should be append-only and tied to a specific process-quality snapshot hash.

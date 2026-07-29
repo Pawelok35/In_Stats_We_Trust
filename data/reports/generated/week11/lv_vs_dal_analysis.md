@@ -16,10 +16,10 @@
 🔹 MODEL vs MARKET
 • Edge_vs_Line (winner) = +4.0 pts
 • PowerScoreDiff (winner) = +0.073
-• Confidence = 78.0%
+• Confidence = 77.0%
 
-🏷 Model Tag: GOW — based on 78.0% confidence, +4.0 pts model edge vs line, and PowerScore Δ +0.073.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: VALUE PLAY — based on 77.0% confidence, +4.0 pts model edge vs line, and PowerScore Δ +0.073.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
@@ -30,4 +30,4 @@ SUMMARY:
    • Estimated Score – LV 23.5 – DAL 27.0
    • Win Probability – 62% (DAL)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — DAL (HC -3.5)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — DAL (HC -3.5)

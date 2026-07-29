@@ -1,0 +1,17 @@
+matchups:
+  # AFC
+  - report: data/reports/comparisons/2025_w21/DEN_vs_NE.md
+    home: "DEN"
+    away: "NE"
+    spread: +5
+    total: 41
+    prime_time: true
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w21/SEA_vs_LA.md
+    home: "SEA"
+    away: "LA"
+    spread: -2.5
+    total: 47.5
+    prime_time: true
+    neutral_site: false

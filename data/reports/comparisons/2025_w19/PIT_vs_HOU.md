@@ -15,39 +15,39 @@
 | Turnover Margin | 0.706 | 0.882 | -0.176 |
 | Red Zone TD Rate (Off) | 0.135 | 0.102 | 0.033 |
 | Pressure Rate (Def) | 0.069 | 0.079 | -0.009 |
-| Tempo | 8.364 | 7.417 | 0.947 |
-| PowerScore | 1.840 | 1.641 | 0.199 |
-| PowerScore | 1.840 | 1.641 | 0.199 |
-| Tempo | 8.364 | 7.417 | 0.947 |
+| Tempo | 6.636 | 8.400 | -1.764 |
+| PowerScore | 1.303 | 1.733 | -0.430 |
+| PowerScore | 1.303 | 1.733 | -0.430 |
+| Tempo | 6.636 | 8.400 | -1.764 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | PIT | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.081 | 0.085 | -0.004 |
-| EPA Defense | 20% | 0.099 | 0.010 | +0.090 |
-| Success Rate Offense | 25% | 47.8% | 50.6% | -2.7 pp |
-| Tempo | 20% | 0.098 | 0.079 | +0.019 |
+| EPA Offense | 35% | -0.370 | 0.031 | -0.402 |
+| EPA Defense | 20% | 0.031 | -0.370 | +0.402 |
+| Success Rate Offense | 25% | 39.7% | 46.4% | -6.7 pp |
+| Tempo | 20% | 0.096 | 0.095 | +0.001 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | PIT | HOU | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.081 | 0.085 | -0.004 |
-| EPA Defense | 20% | 0.099 | 0.010 | +0.090 |
-| Success Rate Offense | 15% | 47.8% | 50.6% | -2.7 pp |
-| Turnover Margin | 10% | 1.000 | 3.000 | -2.000 |
-| Tempo | 10% | 0.098 | 0.079 | +0.019 |
-| Red Zone TD Rate (Off) | 10% | 9.5% | 20.0% | -10.5 pp |
-| Pressure Rate (Def) | 10% | 13.6% | 2.8% | +10.9 pp |
+| EPA Offense | 25% | -0.370 | 0.031 | -0.402 |
+| EPA Defense | 20% | 0.031 | -0.370 | +0.402 |
+| Success Rate Offense | 15% | 39.7% | 46.4% | -6.7 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.096 | 0.095 | +0.001 |
+| Red Zone TD Rate (Off) | 10% | 0.0% | 16.7% | -16.7 pp |
+| Pressure Rate (Def) | 10% | 8.6% | 10.5% | -2.0 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-PIT edge: +0.013 (PIT +0.187 vs HOU +0.174)
+HOU edge: +0.077 (PIT -0.005 vs HOU +0.072)
 **7 metrics version:**
-HOU edge: +0.185 (PIT +0.245 vs HOU +0.430)
-**Verdict:** HOU holds the edge in the extended breakdown (lead 0.185), driven by Turnover Margin (10% weight).
+PIT edge: +0.151 (PIT +0.091 vs HOU -0.060)
+**Verdict:** PIT holds the edge in the extended breakdown (lead 0.151), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ HOU edge: +0.185 (PIT +0.245 vs HOU +0.430)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (PIT - HOU) | +3.7 pts (favours PIT) |
-| Model Win% PIT | 64.9% |
-| Model Win% HOU | 35.1% |
+| Model Spread (PIT - HOU) | -8.0 pts (favours HOU) |
+| Model Win% PIT | 21.0% |
+| Model Win% HOU | 79.0% |
 | SOS Differential (PIT-HOU) | +0.261 |
 *Neutral-field assumption. Based on schedule through Week 18.*
 
@@ -67,8 +67,8 @@ HOU edge: +0.185 (PIT +0.245 vs HOU +0.430)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| PIT | 53.3% | n/a | n/a | 36.1% | 55.3% | n/a |
-| HOU | 36.0% | n/a | n/a | 45.5% | 37.0% | n/a |
+| PIT | 52.1% | 48.0% | 4.1% | 21.1% | 60.0% | Pass heavy |
+| HOU | 41.7% | 48.0% | -6.3% | 45.7% | 46.9% | Run heavy |
 
 ## Situational Edges
 

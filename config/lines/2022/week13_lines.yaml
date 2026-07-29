@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 13
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w13/NE_vs_BUF.md
   home: NE
@@ -6,11 +10,11 @@ matchups:
   total: 43.5
   prime_time: true
   neutral_site: false
-- report: data/reports/comparisons/2022_w13/HOU_vs_CLE.md
-  home: HOU
-  away: CLE
-  spread: 7.5
-  total: 47.0
+- report: data/reports/comparisons/2022_w13/ATL_vs_PIT.md
+  home: ATL
+  away: PIT
+  spread: 1.0
+  total: 43.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w13/BAL_vs_DEN.md
@@ -20,11 +24,25 @@ matchups:
   total: 40.5
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w13/CHI_vs_GB.md
+  home: CHI
+  away: GB
+  spread: 4.0
+  total: 45.0
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w13/DET_vs_JAX.md
   home: DET
   away: JAX
   spread: -1.0
   total: 51.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w13/HOU_vs_CLE.md
+  home: HOU
+  away: CLE
+  spread: 7.5
+  total: 47.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w13/MIN_vs_NYJ.md
@@ -48,18 +66,11 @@ matchups:
   total: 44.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w13/ATL_vs_PIT.md
-  home: ATL
-  away: PIT
-  spread: 1.0
-  total: 43.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w13/CHI_vs_GB.md
-  home: CHI
-  away: GB
-  spread: 4.0
-  total: 45.0
+- report: data/reports/comparisons/2022_w13/LA_vs_SEA.md
+  home: LA
+  away: SEA
+  spread: 7.0
+  total: 41.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w13/SF_vs_MIA.md
@@ -67,13 +78,6 @@ matchups:
   away: MIA
   spread: -4.5
   total: 46.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w13/LA_vs_SEA.md
-  home: LA
-  away: SEA
-  spread: 7.0
-  total: 41.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w13/CIN_vs_KC.md

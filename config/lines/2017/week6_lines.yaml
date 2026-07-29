@@ -1,0 +1,115 @@
+# NFL 2017 Week 6 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w6/CAR_vs_PHI.md
+    home: 'CAR'
+    away: 'PHI'
+    spread: -3
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/ATL_vs_MIA.md
+    home: 'ATL'
+    away: 'MIA'
+    spread: -10
+    total: 48
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/BAL_vs_CHI.md
+    home: 'BAL'
+    away: 'CHI'
+    spread: -6.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/HOU_vs_CLE.md
+    home: 'HOU'
+    away: 'CLE'
+    spread: -9.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/NO_vs_DET.md
+    home: 'NO'
+    away: 'DET'
+    spread: -3.5
+    total: 50.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/MIN_vs_GB.md
+    home: 'MIN'
+    away: 'GB'
+    spread: 3
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/NYJ_vs_NE.md
+    home: 'NYJ'
+    away: 'NE'
+    spread: 9.5
+    total: 47.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/WAS_vs_SF.md
+    home: 'WAS'
+    away: 'SF'
+    spread: -10
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/ARI_vs_TB.md
+    home: 'ARI'
+    away: 'TB'
+    spread: 2
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/JAX_vs_LA.md
+    home: 'JAX'
+    away: 'LA'
+    spread: -2.5
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/KC_vs_PIT.md
+    home: 'KC'
+    away: 'PIT'
+    spread: -4
+    total: 46
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/LV_vs_LAC.md
+    home: 'LV'
+    away: 'LAC'
+    spread: -3.5
+    total: 50.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/DEN_vs_NYG.md
+    home: 'DEN'
+    away: 'NYG'
+    spread: -10
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w6/TEN_vs_IND.md
+    home: 'TEN'
+    away: 'IND'
+    spread: -8
+    total: 48
+    prime_time: false
+    neutral_site: false
+
+

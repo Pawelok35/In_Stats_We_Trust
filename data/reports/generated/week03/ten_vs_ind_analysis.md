@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – TEN 25.0 – IND 24.0
+1️⃣ Estimated Score (Model) – TEN 42.6 – IND 15.5
 2️⃣ Predicted Winner (Model) – TEN
-3️⃣ Predicted Margin (Model) – TEN by 1.0 pts
-4️⃣ Win Probability (Model) – 59% (TEN)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja TEN (15.1% vs 9.5%). PowerScore Summary potwierdza przewagę TEN: TEN +0.167 vs IND +0.132. Na 3rd down TEN utrzymuje 36.7%, podczas gdy IND jest na 34.7%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera TEN (+5.1% vs +3.3%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie TEN (9.6% vs 8.6%), więc big-play equity jest wyższe.
+3️⃣ Predicted Margin (Model) – TEN by 27.0 pts
+4️⃣ Win Probability (Model) – 95% (TEN)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja TEN (21.6% vs 7.1%). Defensive pressure rate wspiera TEN (+10.8% vs +4.5%), więc pasy rywala będą częściej pod presją. PowerScore Summary potwierdza przewagę TEN: TEN +0.183 vs IND +0.128. Turnover margin faworyzuje TEN (+1.00 vs -1.00), co przekłada się na dodatkowe posiadania. TEN prowadzi w Points per Drive Differential (+0.920 vs -1.080), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – TEN 26.5 – IND 21.5
-2️⃣ Predicted Winner (Market) – TEN
-3️⃣ Predicted Margin (Market) – TEN by 5.0 pts
-4️⃣ Win Probability (Market) – 68% (TEN)
-5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.167 vs IND +0.132. Points per Drive Differential — TEN -0.880 vs IND -1.205. Success Rate Offense — TEN 45.7% vs IND 44.8%. Third Down Conversion — TEN 36.7% vs IND 34.7%. Red Zone TD Rate — TEN 15.1% vs IND 9.5%. Explosive Play Rate — TEN 9.6% vs IND 8.6%. Model margin 1.0 pts vs market spread TEN +5.0.
-6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 1.0 pkt. TEN notuje -0.880 PPD vs -1.205 u IND. Różnica w Success Rate to 45.7% vs 44.8%. Na 3rd down TEN (36.7%) wygląda solidniej niż IND (34.7%). Red Zone i explosiveness ( 15.1% / 9.6% ) utrzymują przewagę jakościową. Market trzyma 5.0 pkt, więc edge vs linia to -4.0.
+1️⃣ Estimated Score (Market) – TEN 21.8 – IND 24.8
+2️⃣ Predicted Winner (Market) – IND
+3️⃣ Predicted Margin (Market) – IND by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (IND)
+5️⃣ Forum Output (A) – PowerScore (Model) — TEN +0.183 vs IND +0.128. Points per Drive Differential — TEN +0.920 vs IND -1.080. Success Rate Offense — TEN 43.6% vs IND 41.8%. Third Down Conversion — TEN 38.2% vs IND 46.8%. Red Zone TD Rate — TEN 21.6% vs IND 7.1%. Explosive Play Rate — TEN 11.5% vs IND 9.7%. Model margin 27.0 pts vs market spread TEN -3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę TEN po marginesie 27.0 pkt. TEN notuje +0.920 PPD vs -1.080 u IND. Różnica w Success Rate to 43.6% vs 41.8%. Na 3rd down TEN (38.2%) wygląda solidniej niż IND (46.8%). Red Zone i explosiveness ( 21.6% / 11.5% ) utrzymują przewagę jakościową. Market trzyma -3.0 pkt, więc edge vs linia to +30.0.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -4.0 pts
-• PowerScoreDiff (winner) = +0.035
-• Confidence = 59.5%
+• Edge_vs_Line (winner) = +30.0 pts
+• PowerScoreDiff (winner) = +0.055
+• Confidence = 99.0%
 
-🏷 Model Tag: NEUTRAL — based on 59.5% confidence, -4.0 pts model edge vs line, and PowerScore Δ +0.035.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: GOM — based on 99.0% confidence, +30.0 pts model edge vs line, and PowerScore Δ +0.055.
+📈 Strong monthly signal — wysokie zaufanie modelowe.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – TEN 25.0 – IND 24.0
-   • Win Probability – 59% (TEN)
+   • Estimated Score – TEN 42.6 – IND 15.5
+   • Win Probability – 95% (TEN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – TEN 26.5 – IND 21.5
-   • Win Probability – 68% (TEN)
+   • Estimated Score – TEN 21.8 – IND 24.8
+   • Win Probability – 60% (IND)
 
-🏷 Model Tag: NEUTRAL — TEN (HC -5.0)
+🏷 Model Tag: <span style="color:#9c27b0; font-weight:600;">GOM</span> — TEN (HC +3.0)

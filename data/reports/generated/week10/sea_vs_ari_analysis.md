@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – SEA 28.1 – ARI 22.0
-2️⃣ Predicted Winner (Model) – SEA
-3️⃣ Predicted Margin (Model) – SEA by 6.1 pts
-4️⃣ Win Probability (Model) – 81% (SEA)
-5️⃣ Why This Team Wins (Model) – PowerScore Summary potwierdza przewagę SEA: SEA +0.161 vs ARI +0.079. Defensive pressure rate wspiera SEA (+9.8% vs +5.6%), więc pasy rywala będą częściej pod presją. Success Rate Offense pokazuje SEA na poziomie 49.3% vs 45.9% (+3.4 pp). Explosive Play Rate pozostaje po stronie SEA (11.8% vs 9.4%), więc big-play equity jest wyższe. Red Zone TD Rate sprzyja SEA (16.8% vs 15.4%).
+1️⃣ Estimated Score (Model) – SEA 9.1 – ARI 23.6
+2️⃣ Predicted Winner (Model) – ARI
+3️⃣ Predicted Margin (Model) – ARI by 14.5 pts
+4️⃣ Win Probability (Model) – 95% (ARI)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja ARI (17.1% vs 5.7%). Na 3rd down ARI utrzymuje 43.5%, podczas gdy SEA jest na 35.9%, co stabilizuje serie ofensywne. Turnover margin faworyzuje ARI (+3.00 vs +0.00), co przekłada się na dodatkowe posiadania. Success Rate Offense pokazuje ARI na poziomie 46.5% vs 44.2% (+2.3 pp). Explosive Play Rate pozostaje po stronie ARI (12.8% vs 11.8%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – SEA 25.2 – ARI 18.8
+1️⃣ Estimated Score (Market) – SEA 23.2 – ARI 20.2
 2️⃣ Predicted Winner (Market) – SEA
-3️⃣ Predicted Margin (Market) – SEA by 6.5 pts
-4️⃣ Win Probability (Market) – 73% (SEA)
-5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.161 vs ARI +0.079. Points per Drive Differential — SEA +0.748 vs ARI +0.252. Success Rate Offense — SEA 49.3% vs ARI 45.9%. Third Down Conversion — SEA 34.6% vs ARI 42.1%. Red Zone TD Rate — SEA 16.8% vs ARI 15.4%. Explosive Play Rate — SEA 11.8% vs ARI 9.4%. Model margin 6.1 pts vs market spread SEA +6.5.
-6️⃣ Forum Output (B) – Model idzie w stronę SEA po marginesie 6.1 pkt. SEA notuje +0.748 PPD vs +0.252 u ARI. Różnica w Success Rate to 49.3% vs 45.9%. Na 3rd down SEA (34.6%) wygląda solidniej niż ARI (42.1%). Red Zone i explosiveness ( 16.8% / 11.8% ) utrzymują przewagę jakościową. Market trzyma 6.5 pkt, więc edge vs linia to -0.4.
+3️⃣ Predicted Margin (Market) – SEA by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (SEA)
+5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.142 vs ARI +0.109. Points per Drive Differential — SEA +0.278 vs ARI +0.870. Success Rate Offense — SEA 44.2% vs ARI 46.5%. Third Down Conversion — SEA 35.9% vs ARI 43.5%. Red Zone TD Rate — SEA 5.7% vs ARI 17.1%. Explosive Play Rate — SEA 11.8% vs ARI 12.8%. Model margin -14.5 pts vs market spread SEA +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę ARI po marginesie -14.5 pkt. ARI notuje +0.870 PPD vs +0.278 u SEA. Różnica w Success Rate to 46.5% vs 44.2%. Na 3rd down ARI (43.5%) wygląda solidniej niż SEA (35.9%). Red Zone i explosiveness ( 17.1% / 12.8% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +17.5.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -0.4 pts
-• PowerScoreDiff (winner) = +0.082
-• Confidence = 84.0%
+• Edge_vs_Line (winner) = +17.5 pts
+• PowerScoreDiff (winner) = -0.033
+• Confidence = 95.0%
 
-🏷 Model Tag: NEUTRAL — based on 84.0% confidence, -0.4 pts model edge vs line, and PowerScore Δ +0.082.
+🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +17.5 pts model edge vs line, and PowerScore Δ -0.033.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – SEA 28.1 – ARI 22.0
-   • Win Probability – 81% (SEA)
+   • Estimated Score – SEA 9.1 – ARI 23.6
+   • Win Probability – 95% (ARI)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – SEA 25.2 – ARI 18.8
-   • Win Probability – 73% (SEA)
+   • Estimated Score – SEA 23.2 – ARI 20.2
+   • Win Probability – 60% (SEA)
 
-🏷 Model Tag: NEUTRAL — SEA (HC -6.5)
+🏷 Model Tag: NEUTRAL — ARI (HC +3.0)

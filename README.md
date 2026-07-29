@@ -2,6 +2,22 @@
 
 In Stats We Trust (ISTW) is a modular NFL analytics pipeline that ingests raw play data, normalizes it into layered parquet artifacts, computes core metrics, and publishes weekly summaries.
 
+## Operational Guide
+
+For day-to-day usage, start with `docs/decision_guide.md`.
+
+It defines the current source of truth for:
+
+- how to generate a week,
+- how to evaluate whether results are good,
+- where code/config/artifacts live,
+- which pieces are experimental,
+- how to interpret `PowerScore`, `confidence`, `edge`, and variant status.
+
+The documentation index is `docs/README.md`.
+
+Repository organization is documented in `docs/repository_structure.md`, and script ownership is documented in `docs/script_inventory.md`.
+
 ## Repository Layout
 
 | Path | Description |
@@ -52,16 +68,20 @@ In Stats We Trust (ISTW) is a modular NFL analytics pipeline that ingests raw pl
 
 ## Quickstart
 
-1. **Install dependencies**
+1. **Create the Python 3.10 environment and install dependencies**
 
    ```powershell
-   python -m pip install -r requirements.txt
+   py -3.10 -m venv .venv
+   .\.venv\Scripts\python.exe -m pip install -r requirements.txt
    ```
+
+   Python 3.10 is required because `nfl_data_py 0.3.3` depends on
+   `pandas <2.0`; its compatible Windows wheel is not available for Python 3.12+.
 
 2. **Run the full weekly build**
 
    ```powershell
-   python -m app.cli build-week --season 2025 --week 8
+   .\.venv\Scripts\python.exe -m app.cli build-week --season 2025 --week 8
    ```
 
    This pipeline will:
@@ -113,6 +133,20 @@ Ensure the specified directory contains `{season}/{week}.parquet` files before r
 - Paths resolved through `utils.paths.path_for(layer, season, week)`.
 - CLI defaults read from config (`default_season`, `default_week`).
 
+## Canonical CLI
+
+Use `python -m app.cli` as the public operational entrypoint. Some commands still
+delegate to scripts internally, but routine usage should go through the CLI.
+
+```powershell
+python -m app.cli build-week --season 2025 --week 8
+python -m app.cli weekly-pipeline --season 2025 --week 12 --reference-week 11 --picks-start-week 12 --run-convergence
+python -m app.cli generate-matchups --season 2025 --week 12 --reference-week 11
+python -m app.cli evaluate-picks --season 2025 --from-week 2 --to-week 12 --manual-results data/results/manual_results.jsonl
+```
+
+See `docs/cli_workflow.md` for the current workflow policy.
+
 ### Season-specific matchup line files
 
 Matchup configs use `week*_lines.yaml`. To keep multiple seasons in one repo:
@@ -122,6 +156,19 @@ Matchup configs use `week*_lines.yaml`. To keep multiple seasons in one repo:
 3. Runners such as `scripts/tag_variant_runner.py --season 2022 --regenerate ...` already rely on this helper—just copy the line files into the new folder structure for every season you import.
 
 ### Weekly pipeline helper
+
+Current canonical weekly instruction: `docs/iswt_week_flow_v2_1.yaml`.
+
+On Windows, prefer the repo virtualenv:
+
+```powershell
+.venv\Scripts\python.exe -X utf8 scripts\run_week_pipeline.py --help
+```
+
+For upcoming Week N, update `config/lines/<season>/week<N>_lines.yaml` and
+`data/results/manual_results.jsonl`, then run the pipeline with
+`--reference-week N-1` and `--picks-start-week N`. Weather buckets are generated
+after the main pipeline with `scripts/generate_weather_buckets.py --guardrails-mode v2_1`.
 
 To trigger the full weekly workflow (schedule update → cumulative build → previews → matchup batch → pick regeneration) run:
 
@@ -237,7 +284,10 @@ python -X utf8 scripts/generate_weather_buckets.py --season 2024 --start-week 2 
     --run-convergence
 }
 
-## NOWA INSTRUKCJA 
+## NOWA INSTRUKCJA
+
+NOTE: Superseded by `docs/iswt_week_flow_v2_1.yaml`. This block is historical
+and contains hardcoded example weeks from previous runs.
 
 Jak używać (Twoja instrukcja 1–4, uaktualniona)
 
@@ -251,7 +301,7 @@ data/results/manual_results.jsonl (tylko rozegrane mecze, reszta PENDING).
 
 2) Jedna komenda na tydzień 17 (ingestuje week 16 domyślnie, bo to najnowszy zakończony tydzień), z konwergencją:
 
-python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 19 --reference-week 18 --run-convergence
+python -X utf8 scripts/run_week_pipeline.py --season 2025 --week 21 --reference-week 20 --run-convergence
 
 ## SPRAWDZIC CZY PARQUET SIE UTWORZYL ZA POPRZEDNIA KOLEJKE !!!
 
@@ -259,11 +309,11 @@ Jeśli chcesz wymusić inny tydzień do ingerencji (np. 17, gdy już rozegrany),
 
 3) Buckety tylko dla week 17 (dopisz do istniejącego pliku):
 
-python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 19 --end-week 19 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
+python -X utf8 scripts/generate_weather_buckets.py --season 2025 --start-week 21 --end-week 21 --guardrails-mode v2_1 --preserve-existing --output data/results/weather_bucket_games_season2025.csv
 
 4) Podgląd w terminalu:
 
-python scripts/show_weather_picks.py --season 2025 --week 18 --guardrails-mode v2_1
+python scripts/show_weather_picks.py --season 2025 --week 20 --guardrails-mode v2_1
 
 Teraz całość działa jednym wywołaniem (krok 2), dba o PBP i artefakty, a kroki 3–4 są opcjonalne wg Twojej listy.
 
@@ -369,7 +419,9 @@ Wynik drukuje tabelę per sezon (kolumny: WIN, LOSS, Total, Win%, PnL_0.9/-1).
 
 
 
-## STARA INSTRUKCJA krok po kroku 
+## STARA INSTRUKCJA krok po kroku
+
+NOTE: Superseded by `docs/iswt_week_flow_v2_1.yaml`.
 Przyklad gdy analizuje week
 
 1) Aktualizuje 

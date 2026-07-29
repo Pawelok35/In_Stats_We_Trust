@@ -1,0 +1,37 @@
+# NFL 2025 Week 19 (Divisional Round) - Betting Lines
+# format: away @ home  =>  home team is AFTER "@"
+
+matchups:
+  # AFC
+  - report: data/reports/comparisons/2025_w20/DEN_vs_BUF.md
+    home: "DEN"
+    away: "BUF"
+    spread: +1.5
+    total: 46.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w20/NE_vs_HOU.md
+    home: "NE"
+    away: "HOU"
+    spread: -3.0
+    total: 40.5
+    prime_time: false
+    neutral_site: false
+
+  # NFC
+  - report: data/reports/comparisons/2025_w20/SEA_vs_SF.md
+    home: "SEA"
+    away: "SF"
+    spread: -7.5
+    total: 45.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2025_w20/CHI_vs_LA.md
+    home: "CHI"
+    away: "LA"
+    spread: +3.5
+    total: 50.5
+    prime_time: false
+    neutral_site: false

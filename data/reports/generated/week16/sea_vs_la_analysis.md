@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – SEA 10.4 – LA 21.5
-2️⃣ Predicted Winner (Model) – LA
-3️⃣ Predicted Margin (Model) – LA by 11.2 pts
-4️⃣ Win Probability (Model) – 92% (LA)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera LA (+10.0% vs +0.0%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje LA (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. Field position edge wynosi +5.9 yds na rzecz LA (-3.8 vs -9.7), co skraca ich boisko. Success Rate Offense pokazuje LA na poziomie 54.3% vs 49.7% (+4.6 pp). Red Zone TD Rate sprzyja LA (17.2% vs 12.8%).
+1️⃣ Estimated Score (Model) – SEA 36.6 – LA 15.9
+2️⃣ Predicted Winner (Model) – SEA
+3️⃣ Predicted Margin (Model) – SEA by 20.7 pts
+4️⃣ Win Probability (Model) – 95% (SEA)
+5️⃣ Why This Team Wins (Model) – Na 3rd down SEA utrzymuje 42.0%, podczas gdy LA jest na 23.2%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę SEA: SEA +0.153 vs LA +0.049. Success Rate Offense pokazuje SEA na poziomie 46.3% vs 37.7% (+8.6 pp). Explosive Play Rate pozostaje po stronie SEA (11.8% vs 9.4%), więc big-play equity jest wyższe. SEA prowadzi w Points per Drive Differential (+0.739 vs -0.293), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – SEA 22.0 – LA 20.5
+1️⃣ Estimated Score (Market) – SEA 31.8 – LA 20.8
 2️⃣ Predicted Winner (Market) – SEA
-3️⃣ Predicted Margin (Market) – SEA by 1.5 pts
-4️⃣ Win Probability (Market) – 55% (SEA)
-5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.192 vs LA +0.169. Points per Drive Differential — SEA +0.888 vs LA +1.134. Success Rate Offense — SEA 49.7% vs LA 54.3%. Third Down Conversion — SEA 36.1% vs LA 34.1%. Red Zone TD Rate — SEA 12.8% vs LA 17.2%. Explosive Play Rate — SEA 10.8% vs LA 11.8%. Model margin -11.2 pts vs market spread SEA +1.5.
-6️⃣ Forum Output (B) – Model idzie w stronę LA po marginesie -11.2 pkt. LA notuje +1.134 PPD vs +0.888 u SEA. Różnica w Success Rate to 54.3% vs 49.7%. Na 3rd down LA (34.1%) wygląda solidniej niż SEA (36.1%). Red Zone i explosiveness ( 17.2% / 11.8% ) utrzymują przewagę jakościową. Market trzyma 1.5 pkt, więc edge vs linia to +12.7.
+3️⃣ Predicted Margin (Market) – SEA by 11.0 pts
+4️⃣ Win Probability (Market) – 88% (SEA)
+5️⃣ Forum Output (A) – PowerScore (Model) — SEA +0.153 vs LA +0.049. Points per Drive Differential — SEA +0.739 vs LA -0.293. Success Rate Offense — SEA 46.3% vs LA 37.7%. Third Down Conversion — SEA 42.0% vs LA 23.2%. Red Zone TD Rate — SEA 11.0% vs LA 13.0%. Explosive Play Rate — SEA 11.8% vs LA 9.4%. Model margin 20.7 pts vs market spread SEA +11.0.
+6️⃣ Forum Output (B) – Model idzie w stronę SEA po marginesie 20.7 pkt. SEA notuje +0.739 PPD vs -0.293 u LA. Różnica w Success Rate to 46.3% vs 37.7%. Na 3rd down SEA (42.0%) wygląda solidniej niż LA (23.2%). Red Zone i explosiveness ( 11.0% / 11.8% ) utrzymują przewagę jakościową. Market trzyma 11.0 pkt, więc edge vs linia to +9.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +12.7 pts
-• PowerScoreDiff (winner) = -0.023
-• Confidence = 90.0%
+• Edge_vs_Line (winner) = +9.7 pts
+• PowerScoreDiff (winner) = +0.104
+• Confidence = 97.0%
 
-🏷 Model Tag: NEUTRAL — based on 90.0% confidence, +12.7 pts model edge vs line, and PowerScore Δ -0.023.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: GOY — based on 97.0% confidence, +9.7 pts model edge vs line, and PowerScore Δ +0.104.
+🔥 Season-level conviction — pełna zgodność metryk i rynku.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – SEA 10.4 – LA 21.5
-   • Win Probability – 92% (LA)
+   • Estimated Score – SEA 36.6 – LA 15.9
+   • Win Probability – 95% (SEA)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – SEA 22.0 – LA 20.5
-   • Win Probability – 55% (SEA)
+   • Estimated Score – SEA 31.8 – LA 20.8
+   • Win Probability – 88% (SEA)
 
-🏷 Model Tag: NEUTRAL — LA (HC +1.5)
+🏷 Model Tag: <span style="color:#2ecc71; font-weight:600;">GOY</span> — SEA (HC -11.0)

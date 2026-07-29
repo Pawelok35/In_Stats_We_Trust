@@ -1,0 +1,1708 @@
+{
+  "LOSS": {
+    "completed_path": "LOSS",
+    "completed_quarters": 1,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 66.6667,
+      "loss_probability": 0.6667,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 33.3333,
+      "win_probability": 0.3333
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 3.0,
+      "fair_decimal_tie_is_push": 3.0,
+      "loss_pct": 66.6667,
+      "loss_probability": 0.6667,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 33.3333,
+      "win_probability": 0.3333
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 2.0,
+        "final_win_pct": 50.0,
+        "final_win_probability": 0.5,
+        "margin_bucket": "TRAIL_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 2
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 3.0,
+        "final_win_pct": 33.3333,
+        "final_win_probability": 0.3333,
+        "margin_bucket": "TRAIL_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 3
+      },
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q2",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 3.0,
+      "fair_decimal_tie_is_push": 2.5,
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 16.6667,
+      "tie_probability": 0.1667,
+      "win_pct": 33.3333,
+      "win_probability": 0.3333
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 6
+  },
+  "LOSS-LOSS": {
+    "completed_path": "LOSS-LOSS",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 2
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.5,
+      "fair_decimal_tie_is_push": 1.5,
+      "loss_pct": 33.3333,
+      "loss_probability": 0.3333,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 66.6667,
+      "win_probability": 0.6667
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 3
+  },
+  "LOSS-LOSS-LOSS": {
+    "completed_path": "LOSS-LOSS-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "LOSS-LOSS-TIE": {
+    "completed_path": "LOSS-LOSS-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "LOSS-LOSS-WIN": {
+    "completed_path": "LOSS-LOSS-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 2.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 50.0,
+      "tie_probability": 0.5,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 2
+  },
+  "LOSS-TIE": {
+    "completed_path": "LOSS-TIE",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "LOSS-TIE-LOSS": {
+    "completed_path": "LOSS-TIE-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "LOSS-TIE-TIE": {
+    "completed_path": "LOSS-TIE-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "LOSS-TIE-WIN": {
+    "completed_path": "LOSS-TIE-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "LOSS-WIN": {
+    "completed_path": "LOSS-WIN",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 50.0,
+      "tie_probability": 0.5,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 50.0,
+      "tie_probability": 0.5,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 2
+  },
+  "LOSS-WIN-LOSS": {
+    "completed_path": "LOSS-WIN-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "TIE",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "LOSS-WIN-TIE": {
+    "completed_path": "LOSS-WIN-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 100.0,
+      "tie_probability": 1.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "LOSS-WIN-WIN": {
+    "completed_path": "LOSS-WIN-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "START": {
+    "completed_path": "START",
+    "completed_quarters": 0,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 42.8571,
+      "loss_probability": 0.4286,
+      "tie_pct": 21.4286,
+      "tie_probability": 0.2143,
+      "win_pct": 35.7143,
+      "win_probability": 0.3571
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.75,
+      "fair_decimal_tie_is_push": 1.75,
+      "loss_pct": 42.8571,
+      "loss_probability": 0.4286,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 57.1429,
+      "win_probability": 0.5714
+    },
+    "next_quarter": "Q1",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 2.8,
+      "fair_decimal_tie_is_push": 2.2,
+      "loss_pct": 42.8571,
+      "loss_probability": 0.4286,
+      "tie_pct": 21.4286,
+      "tie_probability": 0.2143,
+      "win_pct": 35.7143,
+      "win_probability": 0.3571
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 14
+  },
+  "TIE": {
+    "completed_path": "TIE",
+    "completed_quarters": 1,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 33.3333,
+      "loss_probability": 0.3333,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 66.6667,
+      "win_probability": 0.6667
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.5,
+      "fair_decimal_tie_is_push": 1.5,
+      "loss_pct": 33.3333,
+      "loss_probability": 0.3333,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 66.6667,
+      "win_probability": 0.6667
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.5,
+        "final_win_pct": 66.6667,
+        "final_win_probability": 0.6667,
+        "margin_bucket": "TIE",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 3
+      }
+    ],
+    "next_quarter": "Q2",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.5,
+      "fair_decimal_tie_is_push": 1.5,
+      "loss_pct": 33.3333,
+      "loss_probability": 0.3333,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 66.6667,
+      "win_probability": 0.6667
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 3
+  },
+  "TIE-LOSS": {
+    "completed_path": "TIE-LOSS",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 100.0,
+      "tie_probability": 1.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "TIE-LOSS-LOSS": {
+    "completed_path": "TIE-LOSS-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "TIE-LOSS-TIE": {
+    "completed_path": "TIE-LOSS-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "TIE-LOSS-WIN": {
+    "completed_path": "TIE-LOSS-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TIE",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "TIE-TIE": {
+    "completed_path": "TIE-TIE",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "TIE-TIE-LOSS": {
+    "completed_path": "TIE-TIE-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "TIE-TIE-TIE": {
+    "completed_path": "TIE-TIE-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "TIE-TIE-WIN": {
+    "completed_path": "TIE-TIE-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "TIE-WIN": {
+    "completed_path": "TIE-WIN",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 50.0,
+      "tie_probability": 0.5,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 2
+  },
+  "TIE-WIN-LOSS": {
+    "completed_path": "TIE-WIN-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "TRAIL_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "TIE-WIN-TIE": {
+    "completed_path": "TIE-WIN-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 100.0,
+      "tie_probability": 1.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "TIE-WIN-WIN": {
+    "completed_path": "TIE-WIN-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN": {
+    "completed_path": "WIN",
+    "completed_quarters": 1,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 40.0,
+      "loss_probability": 0.4,
+      "tie_pct": 20.0,
+      "tie_probability": 0.2,
+      "win_pct": 40.0,
+      "win_probability": 0.4
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.25,
+      "fair_decimal_tie_is_push": 1.25,
+      "loss_pct": 20.0,
+      "loss_probability": 0.2,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 80.0,
+      "win_probability": 0.8
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "LEAD_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 4
+      }
+    ],
+    "next_quarter": "Q2",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 2.5,
+      "fair_decimal_tie_is_push": 2.5,
+      "loss_pct": 60.0,
+      "loss_probability": 0.6,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 40.0,
+      "win_probability": 0.4
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 5
+  },
+  "WIN-LOSS": {
+    "completed_path": "WIN-LOSS",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 66.6667,
+      "loss_probability": 0.6667,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 33.3333,
+      "win_probability": 0.3333
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.5,
+      "fair_decimal_tie_is_push": 1.5,
+      "loss_pct": 33.3333,
+      "loss_probability": 0.3333,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 66.6667,
+      "win_probability": 0.6667
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "TIE",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "TRAIL_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.5,
+      "fair_decimal_tie_is_push": 1.5,
+      "loss_pct": 33.3333,
+      "loss_probability": 0.3333,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 66.6667,
+      "win_probability": 0.6667
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 3
+  },
+  "WIN-LOSS-LOSS": {
+    "completed_path": "WIN-LOSS-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "TRAIL_15_PLUS",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 1
+  },
+  "WIN-LOSS-TIE": {
+    "completed_path": "WIN-LOSS-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN-LOSS-WIN": {
+    "completed_path": "WIN-LOSS-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 2.0,
+      "fair_decimal_tie_is_push": 2.0,
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": NaN,
+        "final_win_pct": 0.0,
+        "final_win_probability": 0.0,
+        "margin_bucket": "TRAIL_1_3",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 2.0,
+      "fair_decimal_tie_is_push": 2.0,
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 2
+  },
+  "WIN-TIE": {
+    "completed_path": "WIN-TIE",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN-TIE-LOSS": {
+    "completed_path": "WIN-TIE-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN-TIE-TIE": {
+    "completed_path": "WIN-TIE-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN-TIE-WIN": {
+    "completed_path": "WIN-TIE-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN-WIN": {
+    "completed_path": "WIN-WIN",
+    "completed_quarters": 2,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_15_PLUS",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q3",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": 100.0,
+      "loss_probability": 1.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 0.0,
+      "win_probability": 0.0
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 2
+  },
+  "WIN-WIN-LOSS": {
+    "completed_path": "WIN-WIN-LOSS",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": 1.0,
+      "fair_decimal_tie_is_push": 1.0,
+      "loss_pct": 0.0,
+      "loss_probability": 0.0,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 100.0,
+      "win_probability": 1.0
+    },
+    "margin_bucket_overrides": [
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_4_7",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      },
+      {
+        "final_fair_decimal_tie_is_loss": 1.0,
+        "final_win_pct": 100.0,
+        "final_win_probability": 1.0,
+        "margin_bucket": "LEAD_8_14",
+        "sample_quality": "VERY_LOW",
+        "sample_size": 1
+      }
+    ],
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": 2.0,
+      "fair_decimal_tie_is_push": 2.0,
+      "loss_pct": 50.0,
+      "loss_probability": 0.5,
+      "tie_pct": 0.0,
+      "tie_probability": 0.0,
+      "win_pct": 50.0,
+      "win_probability": 0.5
+    },
+    "sample_quality": "VERY_LOW",
+    "sample_size": 2
+  },
+  "WIN-WIN-TIE": {
+    "completed_path": "WIN-WIN-TIE",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  },
+  "WIN-WIN-WIN": {
+    "completed_path": "WIN-WIN-WIN",
+    "completed_quarters": 3,
+    "cumulative_after_next_quarter": {
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "final_including_overtime": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "next_quarter": "Q4",
+    "next_quarter_distribution": {
+      "fair_decimal_tie_is_loss": NaN,
+      "fair_decimal_tie_is_push": NaN,
+      "loss_pct": NaN,
+      "loss_probability": NaN,
+      "tie_pct": NaN,
+      "tie_probability": NaN,
+      "win_pct": NaN,
+      "win_probability": NaN
+    },
+    "sample_quality": "NO_DATA",
+    "sample_size": 0
+  }
+}

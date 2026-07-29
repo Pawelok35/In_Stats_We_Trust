@@ -48,9 +48,7 @@ def summarize(df: pd.DataFrame) -> pd.DataFrame:
         .unstack(fill_value=0)[["WIN", "LOSS"]]
         .rename_axis(None, axis=1)
     )
-    winrate = df.groupby("bucket")["result"].apply(
-        lambda s: (s == "WIN").mean() * 100
-    )
+    winrate = df.groupby("bucket")["result"].apply(lambda s: (s == "WIN").mean() * 100)
     pnl = df.groupby("bucket")["pnl"].sum()
 
     table = counts.copy()
@@ -63,9 +61,7 @@ def summarize(df: pd.DataFrame) -> pd.DataFrame:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Summarize weather bucket performance by season."
-    )
+    parser = argparse.ArgumentParser(description="Summarize weather bucket performance by season.")
     parser.add_argument(
         "--season",
         type=int,

@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – IND 22.9 – TB 25.5
+1️⃣ Estimated Score (Model) – IND 22.5 – TB 23.2
 2️⃣ Predicted Winner (Model) – TB
-3️⃣ Predicted Margin (Model) – TB by 2.6 pts
-4️⃣ Win Probability (Model) – 56% (TB)
-5️⃣ Why This Team Wins (Model) – Na 3rd down TB utrzymuje 45.6%, podczas gdy IND jest na 37.6%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje TB na poziomie 47.9% vs 45.9% (+2.0 pp). Red Zone TD Rate sprzyja TB (14.6% vs 13.6%). TB prowadzi w Points per Drive Differential (+0.670 vs +0.431), więc bazowa efektywność napędza przewagę. Explosive Play Rate pozostaje po stronie TB (11.1% vs 10.9%), więc big-play equity jest wyższe.
+3️⃣ Predicted Margin (Model) – TB by 0.7 pts
+4️⃣ Win Probability (Model) – 48% (TB)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera TB (+15.4% vs +2.4%), więc pasy rywala będą częściej pod presją. Explosive Play Rate pozostaje po stronie TB (11.4% vs 9.3%), więc big-play equity jest wyższe. Field position edge wynosi +1.3 yds na rzecz TB (-0.3 vs -1.6), co skraca ich boisko. TB prowadzi w Points per Drive Differential (-0.150 vs -0.225), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – IND 24.2 – TB 26.8
-2️⃣ Predicted Winner (Market) – TB
-3️⃣ Predicted Margin (Market) – TB by 2.5 pts
-4️⃣ Win Probability (Market) – 59% (TB)
-5️⃣ Forum Output (A) – PowerScore (Model) — IND +0.220 vs TB +0.112. Points per Drive Differential — IND +0.431 vs TB +0.670. Success Rate Offense — IND 45.9% vs TB 47.9%. Third Down Conversion — IND 37.6% vs TB 45.6%. Red Zone TD Rate — IND 13.6% vs TB 14.6%. Explosive Play Rate — IND 10.9% vs TB 11.1%. Model margin -2.6 pts vs market spread IND -2.5.
-6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie -2.6 pkt. TB notuje +0.670 PPD vs +0.431 u IND. Różnica w Success Rate to 47.9% vs 45.9%. Na 3rd down TB (45.6%) wygląda solidniej niż IND (37.6%). Red Zone i explosiveness ( 14.6% / 11.1% ) utrzymują przewagę jakościową. Market trzyma -2.5 pkt, więc edge vs linia to +0.1.
+1️⃣ Estimated Score (Market) – IND 24.8 – TB 21.8
+2️⃣ Predicted Winner (Market) – IND
+3️⃣ Predicted Margin (Market) – IND by 3.0 pts
+4️⃣ Win Probability (Market) – 60% (IND)
+5️⃣ Forum Output (A) – PowerScore (Model) — IND +0.219 vs TB +0.178. Points per Drive Differential — IND -0.225 vs TB -0.150. Success Rate Offense — IND 42.6% vs TB 41.8%. Third Down Conversion — IND 38.8% vs TB 38.0%. Red Zone TD Rate — IND 15.0% vs TB 11.3%. Explosive Play Rate — IND 9.3% vs TB 11.4%. Model margin -0.7 pts vs market spread IND +3.0.
+6️⃣ Forum Output (B) – Model idzie w stronę TB po marginesie -0.7 pkt. TB notuje -0.150 PPD vs -0.225 u IND. Różnica w Success Rate to 41.8% vs 42.6%. Na 3rd down TB (38.0%) wygląda solidniej niż IND (38.8%). Red Zone i explosiveness ( 11.3% / 11.4% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +3.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +0.1 pts
-• PowerScoreDiff (winner) = -0.108
-• Confidence = 56.0%
+• Edge_vs_Line (winner) = +3.7 pts
+• PowerScoreDiff (winner) = -0.041
+• Confidence = 47.0%
 
-🏷 Model Tag: NEUTRAL — based on 56.0% confidence, +0.1 pts model edge vs line, and PowerScore Δ -0.108.
+🏷 Model Tag: NEUTRAL — based on 47.0% confidence, +3.7 pts model edge vs line, and PowerScore Δ -0.041.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – IND 22.9 – TB 25.5
-   • Win Probability – 56% (TB)
+   • Estimated Score – IND 22.5 – TB 23.2
+   • Win Probability – 48% (TB)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – IND 24.2 – TB 26.8
-   • Win Probability – 59% (TB)
+   • Estimated Score – IND 24.8 – TB 21.8
+   • Win Probability – 60% (IND)
 
-🏷 Model Tag: NEUTRAL — TB (HC -2.5)
+🏷 Model Tag: NEUTRAL — TB (HC +3.0)

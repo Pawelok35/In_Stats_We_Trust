@@ -35,9 +35,7 @@ RESULT_PAYOUT = {"WIN": 0.9, "LOSS": -1.0, "PUSH": 0.0}
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(
-        description="Analyze convergence between three ISWT variants."
-    )
+    parser = argparse.ArgumentParser(description="Analyze convergence between three ISWT variants.")
     parser.add_argument(
         "--variant-j", type=Path, required=True, help="JSONL z pickami wariantu J (precision)."
     )
@@ -301,7 +299,9 @@ def format_examples(labels: List[str], limit: int = 3) -> str:
 
 def build_commentary(summary: Dict[str, Dict]) -> Tuple[str, float, float]:
     total = sum(summary[cat]["count"] for cat in summary)
-    high_convergence = summary["ULTRA"]["count"] + summary["DUAL"]["count"] + summary["DIAMOND"]["count"]
+    high_convergence = (
+        summary["ULTRA"]["count"] + summary["DUAL"]["count"] + summary["DIAMOND"]["count"]
+    )
     ratio = (high_convergence / total) if total else 0.0
     if ratio >= 0.6:
         stance = "Tydzień wygląda agresywnie – modele często się pokrywają."
@@ -312,7 +312,11 @@ def build_commentary(summary: Dict[str, Dict]) -> Tuple[str, float, float]:
 
     dominant_cat = max(summary.items(), key=lambda item: item[1]["count"])[0]
     dominant_msg = f"Najwięcej sygnałów daje kategoria {dominant_cat}."
-    rec_stake = summary["ULTRA"]["stake_sum"] + summary["DUAL"]["stake_sum"] + summary["DIAMOND"]["stake_sum"]
+    rec_stake = (
+        summary["ULTRA"]["stake_sum"]
+        + summary["DUAL"]["stake_sum"]
+        + summary["DIAMOND"]["stake_sum"]
+    )
     projected_gain = rec_stake * ((0.82 * 0.9) - 0.18)
     return f"{dominant_msg} {stance}", rec_stake, projected_gain
 
@@ -332,9 +336,7 @@ def print_weather_table(entries: List[Dict]) -> None:
         )
         for entry in ultimate_rows_sorted:
             spread_display = (
-                f"{entry['pick_spread']:+.1f}"
-                if entry.get("pick_spread") is not None
-                else "N/A"
+                f"{entry['pick_spread']:+.1f}" if entry.get("pick_spread") is not None else "N/A"
             )
             print(
                 f"| {entry['weather_code']} | {entry['rating']:.2f} | {entry['weather_stake']:.1f}u "
@@ -345,9 +347,7 @@ def print_weather_table(entries: List[Dict]) -> None:
     regular_rows.sort(key=lambda e: (e["weather_stake"], e["rating"]), reverse=True)
     for entry in regular_rows:
         spread_display = (
-            f"{entry['pick_spread']:+.1f}"
-            if entry.get("pick_spread") is not None
-            else "N/A"
+            f"{entry['pick_spread']:+.1f}" if entry.get("pick_spread") is not None else "N/A"
         )
         print(
             f"| {entry['weather_code']} | {entry['rating']:.2f} | {entry['weather_stake']:.1f}u "
@@ -419,7 +419,9 @@ def main() -> None:
     print("\n**Komentarz ekspercki:**")
     print(f"{commentary} Łączny aktualny PnL (jeśli dostępne wyniki): {pnl:.2f}u.")
 
-    premium_count = summary["ULTRA"]["count"] + summary["DUAL"]["count"] + summary["DIAMOND"]["count"]
+    premium_count = (
+        summary["ULTRA"]["count"] + summary["DUAL"]["count"] + summary["DIAMOND"]["count"]
+    )
     print(f"\n### 🧠 REKOMENDACJA ({week_label})")
     print(f"- liczba picków = {premium_count} (M + inne warianty)")
     print(f"- łączny stake ≈ {rec_stake:.1f}u")
@@ -428,5 +430,3 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
-
-

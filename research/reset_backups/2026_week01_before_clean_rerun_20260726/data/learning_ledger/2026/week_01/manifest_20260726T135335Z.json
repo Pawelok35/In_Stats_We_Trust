@@ -1,0 +1,19 @@
+{
+  "schema_version": "variant_b_learning_ledger.v1",
+  "ledger_recorded_at_utc": "2026-07-26T13:53:35Z",
+  "season": 2026,
+  "week": 1,
+  "audit_dir": "research\\variant_b_week_flow\\2026\\week_01",
+  "output_dir": "data\\learning_ledger\\2026\\week_01",
+  "audit_files": 0,
+  "appended_counts": {
+    "games": 0,
+    "feature_snapshots": 0,
+    "market_quotes": 0,
+    "model_runs": 0,
+    "model_predictions": 0,
+    "audit_results": 0,
+    "process_failures": 0
+  },
+  "append_only_note": "Records are appended. Previous rows are not modified or deleted."
+}

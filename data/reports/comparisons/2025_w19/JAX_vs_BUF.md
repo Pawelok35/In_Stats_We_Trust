@@ -15,39 +15,39 @@
 | Turnover Margin | 0.765 | 0.176 | 0.588 |
 | Red Zone TD Rate (Off) | 0.142 | 0.154 | -0.012 |
 | Pressure Rate (Def) | 0.048 | 0.074 | -0.026 |
-| Tempo | 6.909 | 8.300 | -1.391 |
-| PowerScore | 1.558 | 1.844 | -0.286 |
-| PowerScore | 1.558 | 1.844 | -0.286 |
-| Tempo | 6.909 | 8.300 | -1.391 |
+| Tempo | 7.300 | 8.100 | -0.800 |
+| PowerScore | 1.641 | 1.797 | -0.156 |
+| PowerScore | 1.641 | 1.797 | -0.156 |
+| Tempo | 7.300 | 8.100 | -0.800 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | JAX | BUF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | 0.267 | 0.235 | +0.032 |
-| EPA Defense | 20% | -0.244 | -0.183 | -0.061 |
-| Success Rate Offense | 25% | 52.6% | 55.4% | -2.8 pp |
-| Tempo | 20% | 0.118 | 0.157 | -0.038 |
+| EPA Offense | 35% | 0.065 | 0.124 | -0.060 |
+| EPA Defense | 20% | 0.124 | 0.065 | +0.060 |
+| Success Rate Offense | 25% | 53.4% | 48.1% | +5.3 pp |
+| Tempo | 20% | 0.137 | 0.099 | +0.038 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | JAX | BUF | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | 0.267 | 0.235 | +0.032 |
-| EPA Defense | 20% | -0.244 | -0.183 | -0.061 |
-| Success Rate Offense | 15% | 52.6% | 55.4% | -2.8 pp |
-| Turnover Margin | 10% | 1.000 | 0.000 | +1.000 |
-| Tempo | 10% | 0.118 | 0.157 | -0.038 |
-| Red Zone TD Rate (Off) | 10% | 21.4% | 20.0% | +1.4 pp |
-| Pressure Rate (Def) | 10% | 2.9% | 4.2% | -1.2 pp |
+| EPA Offense | 25% | 0.065 | 0.124 | -0.060 |
+| EPA Defense | 20% | 0.124 | 0.065 | +0.060 |
+| Success Rate Offense | 15% | 53.4% | 48.1% | +5.3 pp |
+| Turnover Margin | 10% | -1.000 | 1.000 | -2.000 |
+| Tempo | 10% | 0.137 | 0.099 | +0.038 |
+| Red Zone TD Rate (Off) | 10% | 16.7% | 23.1% | -6.4 pp |
+| Pressure Rate (Def) | 10% | 2.6% | 3.2% | -0.6 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-BUF edge: +0.016 (JAX +0.200 vs BUF +0.216)
+JAX edge: +0.012 (JAX +0.209 vs BUF +0.197)
 **7 metrics version:**
-JAX edge: +0.088 (JAX +0.233 vs BUF +0.145)
-**Verdict:** JAX holds the edge in the extended breakdown (lead 0.088), driven by Turnover Margin (10% weight).
+BUF edge: +0.198 (JAX +0.054 vs BUF +0.252)
+**Verdict:** BUF holds the edge in the extended breakdown (lead 0.198), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ JAX edge: +0.088 (JAX +0.233 vs BUF +0.145)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (JAX - BUF) | -5.3 pts (favours BUF) |
-| Model Win% JAX | 29.3% |
-| Model Win% BUF | 70.7% |
+| Model Spread (JAX - BUF) | -2.9 pts (favours BUF) |
+| Model Win% JAX | 38.2% |
+| Model Win% BUF | 61.8% |
 | SOS Differential (JAX-BUF) | -0.054 |
 *Neutral-field assumption. Based on schedule through Week 18.*
 
@@ -67,8 +67,8 @@ JAX edge: +0.088 (JAX +0.233 vs BUF +0.145)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| JAX | 48.7% | n/a | n/a | 29.2% | 45.9% | n/a |
-| BUF | 42.2% | n/a | n/a | 20.6% | 54.1% | n/a |
+| JAX | 42.5% | 48.0% | -5.5% | 48.4% | 57.1% | Run heavy |
+| BUF | 46.9% | 48.0% | -1.1% | 47.4% | 48.8% | Slight run lean |
 
 ## Situational Edges
 

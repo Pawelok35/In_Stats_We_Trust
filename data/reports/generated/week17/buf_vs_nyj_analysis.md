@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – BUF 40.9 – NYJ 17.8
-2️⃣ Predicted Winner (Model) – BUF
-3️⃣ Predicted Margin (Model) – BUF by 23.1 pts
-4️⃣ Win Probability (Model) – 95% (BUF)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera BUF (+10.5% vs +0.0%), więc pasy rywala będą częściej pod presją. Turnover margin faworyzuje BUF (+3.00 vs -3.00), co przekłada się na dodatkowe posiadania. PowerScore Summary potwierdza przewagę BUF: BUF +0.150 vs NYJ +0.105. Success Rate Offense pokazuje BUF na poziomie 50.1% vs 46.0% (+4.1 pp). Red Zone TD Rate sprzyja BUF (17.0% vs 13.6%).
+1️⃣ Estimated Score (Model) – BUF 18.7 – NYJ 20.5
+2️⃣ Predicted Winner (Model) – NYJ
+3️⃣ Predicted Margin (Model) – NYJ by 1.8 pts
+4️⃣ Win Probability (Model) – 53% (NYJ)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera NYJ (+12.5% vs +2.9%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja NYJ (17.7% vs 10.0%). Na 3rd down NYJ utrzymuje 38.6%, podczas gdy BUF jest na 34.5%, co stabilizuje serie ofensywne. Success Rate Offense pokazuje NYJ na poziomie 42.3% vs 40.9% (+1.4 pp). NYJ prowadzi w Points per Drive Differential (+0.617 vs +0.117), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – BUF 27.8 – NYJ 19.2
-2️⃣ Predicted Winner (Market) – BUF
-3️⃣ Predicted Margin (Market) – BUF by 8.5 pts
-4️⃣ Win Probability (Market) – 80% (BUF)
-5️⃣ Forum Output (A) – PowerScore (Model) — BUF +0.150 vs NYJ +0.105. Points per Drive Differential — BUF +0.857 vs NYJ -0.210. Success Rate Offense — BUF 50.1% vs NYJ 46.0%. Third Down Conversion — BUF 37.4% vs NYJ 35.0%. Red Zone TD Rate — BUF 17.0% vs NYJ 13.6%. Explosive Play Rate — BUF 11.3% vs NYJ 9.5%. Model margin 23.1 pts vs market spread BUF +8.5.
-6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie 23.1 pkt. BUF notuje +0.857 PPD vs -0.210 u NYJ. Różnica w Success Rate to 50.1% vs 46.0%. Na 3rd down BUF (37.4%) wygląda solidniej niż NYJ (35.0%). Red Zone i explosiveness ( 17.0% / 11.3% ) utrzymują przewagę jakościową. Market trzyma 8.5 pkt, więc edge vs linia to +14.6.
+1️⃣ Estimated Score (Market) – BUF 19.2 – NYJ 21.8
+2️⃣ Predicted Winner (Market) – NYJ
+3️⃣ Predicted Margin (Market) – NYJ by 2.5 pts
+4️⃣ Win Probability (Market) – 59% (NYJ)
+5️⃣ Forum Output (A) – PowerScore (Model) — BUF +0.011 vs NYJ -0.013. Points per Drive Differential — BUF +0.117 vs NYJ +0.617. Success Rate Offense — BUF 40.9% vs NYJ 42.3%. Third Down Conversion — BUF 34.5% vs NYJ 38.6%. Red Zone TD Rate — BUF 10.0% vs NYJ 17.7%. Explosive Play Rate — BUF 11.1% vs NYJ 11.5%. Model margin -1.8 pts vs market spread BUF -2.5.
+6️⃣ Forum Output (B) – Model idzie w stronę NYJ po marginesie -1.8 pkt. NYJ notuje +0.617 PPD vs +0.117 u BUF. Różnica w Success Rate to 42.3% vs 40.9%. Na 3rd down NYJ (38.6%) wygląda solidniej niż BUF (34.5%). Red Zone i explosiveness ( 17.7% / 11.5% ) utrzymują przewagę jakościową. Market trzyma -2.5 pkt, więc edge vs linia to -0.7.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +14.6 pts
-• PowerScoreDiff (winner) = +0.045
-• Confidence = 97.5%
+• Edge_vs_Line (winner) = -0.7 pts
+• PowerScoreDiff (winner) = -0.024
+• Confidence = 52.0%
 
-🏷 Model Tag: GOW — based on 97.5% confidence, +14.6 pts model edge vs line, and PowerScore Δ +0.045.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: NEUTRAL — based on 52.0% confidence, -0.7 pts model edge vs line, and PowerScore Δ -0.024.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – BUF 40.9 – NYJ 17.8
-   • Win Probability – 95% (BUF)
+   • Estimated Score – BUF 18.7 – NYJ 20.5
+   • Win Probability – 53% (NYJ)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – BUF 27.8 – NYJ 19.2
-   • Win Probability – 80% (BUF)
+   • Estimated Score – BUF 19.2 – NYJ 21.8
+   • Win Probability – 59% (NYJ)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — BUF (HC -8.5)
+🏷 Model Tag: NEUTRAL — NYJ (HC -2.5)

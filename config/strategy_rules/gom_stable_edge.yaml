@@ -1,0 +1,10 @@
+name: gom_stable_edge
+description: Stable GOM strategy with explicit edge floor; same selected set as gom_stable in 2017-2025.
+variant: variant_d_balanced
+tags:
+  - GOM
+confidence_min: 85
+edge_min: 4
+handicap_mode: any
+start_week: 3
+max_abs_handicap: 7

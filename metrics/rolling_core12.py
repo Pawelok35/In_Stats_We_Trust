@@ -1,8 +1,8 @@
-import polars as pl
 from pathlib import Path
 
-from etl.mappers import _TEAM_ALIAS_MAP
+import polars as pl
 
+from etl.mappers import _TEAM_ALIAS_MAP
 
 CORE12_COLS = [
     "season",
@@ -59,29 +59,25 @@ def build_core12_rolling_through(season: int, through_week: int) -> pl.DataFrame
 
     all_weeks = pl.concat(weekly_frames, how="vertical")
 
-    rolled = (
-        all_weeks.group_by("TEAM").agg(
-            [
-                pl.col("season").max().alias("season"),
-                pl.lit(through_week).alias("through_week"),
-
-                # Średnie wartości metryk
-                pl.col("core_epa_off").mean().alias("core_epa_off"),
-                pl.col("core_epa_def").mean().alias("core_epa_def"),
-                pl.col("core_sr_off").mean().alias("core_sr_off"),
-                pl.col("core_sr_def").mean().alias("core_sr_def"),
-                pl.col("core_explosive_play_rate_off").mean().alias("core_explosive_play_rate_off"),
-                pl.col("core_third_down_conv").mean().alias("core_third_down_conv"),
-                pl.col("core_points_per_drive_diff").mean().alias("core_points_per_drive_diff"),
-                pl.col("core_ypp_diff").mean().alias("core_ypp_diff"),
-                pl.col("core_turnover_margin").mean().alias("core_turnover_margin"),
-                pl.col("core_redzone_td_rate").mean().alias("core_redzone_td_rate"),
-                pl.col("core_pressure_rate_def").mean().alias("core_pressure_rate_def"),
-                pl.col("tempo").mean().alias("tempo"),
-
-                pl.col("week").n_unique().alias("games_played_window"),
-            ]
-        )
+    rolled = all_weeks.group_by("TEAM").agg(
+        [
+            pl.col("season").max().alias("season"),
+            pl.lit(through_week).alias("through_week"),
+            # Średnie wartości metryk
+            pl.col("core_epa_off").mean().alias("core_epa_off"),
+            pl.col("core_epa_def").mean().alias("core_epa_def"),
+            pl.col("core_sr_off").mean().alias("core_sr_off"),
+            pl.col("core_sr_def").mean().alias("core_sr_def"),
+            pl.col("core_explosive_play_rate_off").mean().alias("core_explosive_play_rate_off"),
+            pl.col("core_third_down_conv").mean().alias("core_third_down_conv"),
+            pl.col("core_points_per_drive_diff").mean().alias("core_points_per_drive_diff"),
+            pl.col("core_ypp_diff").mean().alias("core_ypp_diff"),
+            pl.col("core_turnover_margin").mean().alias("core_turnover_margin"),
+            pl.col("core_redzone_td_rate").mean().alias("core_redzone_td_rate"),
+            pl.col("core_pressure_rate_def").mean().alias("core_pressure_rate_def"),
+            pl.col("tempo").mean().alias("tempo"),
+            pl.col("week").n_unique().alias("games_played_window"),
+        ]
     )
 
     def _normalize(team: str) -> str:
@@ -133,5 +129,7 @@ def write_rolling_core12(season: int, through_week: int) -> Path:
     out_path.parent.mkdir(parents=True, exist_ok=True)
     rolled.write_parquet(out_path)
 
-    print(f"✅ Rolling Core12 zapisany: {out_path} (rows={rolled.height}, cols={len(rolled.columns)})")
+    print(
+        f"✅ Rolling Core12 zapisany: {out_path} (rows={rolled.height}, cols={len(rolled.columns)})"
+    )
     return out_path

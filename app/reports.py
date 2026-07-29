@@ -1,7 +1,7 @@
 """Markdown report generation utilities for weekly build outputs."""
+
 from __future__ import annotations
 
-from utils.paths import rolling_core12_through_path
 import json
 import math
 import os
@@ -10,20 +10,23 @@ from datetime import datetime, timezone
 from pathlib import Path
 from types import SimpleNamespace
 from typing import Any, Callable, Iterable, Mapping, MutableMapping, Optional
+
+import matplotlib
+
 from metrics.form_windows import compute_form_windows
 from metrics.opponent_similarity import compute_team_analogs
-import matplotlib
+from utils.paths import rolling_core12_through_path
 
 matplotlib.use("Agg")
 import matplotlib.pyplot as plt  # noqa: E402
 import polars as pl
 from jinja2 import Environment, FileSystemLoader, TemplateNotFound
 
+from metrics.power_score import _weight_mapping
 from utils.config import load_settings
 from utils.dataframes import preview_dataframe, read_parquet_or_raise
 from utils.logging import get_logger
 from utils.manifest import write_manifest
-from metrics.power_score import _weight_mapping
 from utils.paths import (
     comparison_report_assets_dir,
     comparison_report_path,
@@ -39,6 +42,9 @@ from utils.paths import (
     team_reports_manifest_path,
     weekly_summary_path,
 )
+from utils.team_aliases import normalize_team_code
+
+
 def _load_core12_for_teams(season: int, week: int, team_a: str, team_b: str):
     """
     Wczytaj Core12 z L4 dla dwóch drużyn.
@@ -57,74 +63,75 @@ def _load_core12_for_teams(season: int, week: int, team_a: str, team_b: str):
 
     return df_a, df_b
 
+
 # === Metric Comparison helpers ==============================================
 
 METRIC_COMPARISON_FIELDS: list[tuple[str, str, str]] = [
-    ('Core EPA Offense', 'core_epa_offense', 'decimal'),
-    ('Core EPA Defense', 'core_epa_defense', 'decimal'),
-    ('Success Rate Offense', 'success_rate_offense', 'percent'),
-    ('Success Rate Defense', 'success_rate_defense', 'percent'),
-    ('Explosive Play Rate (Off)', 'explosive_play_rate_offense', 'percent'),
-    ('Third Down Conversion', 'third_down_conversion_offense', 'percent'),
-    ('Points per Drive Differential', 'points_per_drive_diff', 'decimal'),
-    ('Yards per Play Differential', 'yards_per_play_diff', 'decimal'),
-    ('Turnover Margin', 'turnover_margin', 'decimal'),
-    ('Red Zone TD Rate (Off)', 'redzone_td_rate_offense', 'percent'),
-    ('Pressure Rate (Def)', 'pressure_rate_defense', 'percent'),
-    ('Tempo', 'tempo', 'decimal'),
-    ('PowerScore', 'power_score', 'decimal'),
+    ("Core EPA Offense", "core_epa_offense", "decimal"),
+    ("Core EPA Defense", "core_epa_defense", "decimal"),
+    ("Success Rate Offense", "success_rate_offense", "percent"),
+    ("Success Rate Defense", "success_rate_defense", "percent"),
+    ("Explosive Play Rate (Off)", "explosive_play_rate_offense", "percent"),
+    ("Third Down Conversion", "third_down_conversion_offense", "percent"),
+    ("Points per Drive Differential", "points_per_drive_diff", "decimal"),
+    ("Yards per Play Differential", "yards_per_play_diff", "decimal"),
+    ("Turnover Margin", "turnover_margin", "decimal"),
+    ("Red Zone TD Rate (Off)", "redzone_td_rate_offense", "percent"),
+    ("Pressure Rate (Def)", "pressure_rate_defense", "percent"),
+    ("Tempo", "tempo", "decimal"),
+    ("PowerScore", "power_score", "decimal"),
 ]
 
 
 def load_team_snapshot(season: int, week: int, team_a: str, team_b: str) -> pl.DataFrame:
-    core12_path = path_for('l4_core12', season, week)
+    core12_path = path_for("l4_core12", season, week)
     df_core12 = pl.read_parquet(core12_path)
-    df_core12 = df_core12.with_columns(pl.col('TEAM').cast(pl.Utf8).str.to_uppercase())
+    df_core12 = df_core12.with_columns(pl.col("TEAM").cast(pl.Utf8).str.to_uppercase())
 
     team_a = team_a.upper()
     team_b = team_b.upper()
 
-    ps_path = path_for('l4_powerscore', season, week)
+    ps_path = path_for("l4_powerscore", season, week)
     try:
         df_ps = pl.read_parquet(ps_path)
     except FileNotFoundError:
-        df_ps = df_core12.select(['season', 'week', 'TEAM']).with_columns(
-            pl.lit(None).alias('power_score')
+        df_ps = df_core12.select(["season", "week", "TEAM"]).with_columns(
+            pl.lit(None).alias("power_score")
         )
     else:
-        if 'team' in df_ps.columns and 'TEAM' not in df_ps.columns:
-            df_ps = df_ps.rename({'team': 'TEAM'})
-        if 'TEAM' in df_ps.columns:
-            df_ps = df_ps.with_columns(pl.col('TEAM').cast(pl.Utf8).str.to_uppercase())
+        if "team" in df_ps.columns and "TEAM" not in df_ps.columns:
+            df_ps = df_ps.rename({"team": "TEAM"})
+        if "TEAM" in df_ps.columns:
+            df_ps = df_ps.with_columns(pl.col("TEAM").cast(pl.Utf8).str.to_uppercase())
         else:
-            df_ps = df_ps.with_columns(pl.lit(None).alias('TEAM'))
+            df_ps = df_ps.with_columns(pl.lit(None).alias("TEAM"))
 
-        for cand in ['power_score', 'powerscore', 'PowerScore', 'powerScore']:
+        for cand in ["power_score", "powerscore", "PowerScore", "powerScore"]:
             if cand in df_ps.columns:
-                df_ps = df_ps.rename({cand: 'power_score'})
+                df_ps = df_ps.rename({cand: "power_score"})
                 break
-        if 'power_score' not in df_ps.columns:
-            df_ps = df_ps.with_columns(pl.lit(None).alias('power_score'))
+        if "power_score" not in df_ps.columns:
+            df_ps = df_ps.with_columns(pl.lit(None).alias("power_score"))
 
-    if 'season' not in df_ps.columns:
-        df_ps = df_ps.with_columns(pl.lit(season).alias('season'))
-    if 'week' not in df_ps.columns:
-        df_ps = df_ps.with_columns(pl.lit(week).alias('week'))
+    if "season" not in df_ps.columns:
+        df_ps = df_ps.with_columns(pl.lit(season).alias("season"))
+    if "week" not in df_ps.columns:
+        df_ps = df_ps.with_columns(pl.lit(week).alias("week"))
 
     merged = df_core12.join(
-        df_ps.select(['season', 'week', 'TEAM', 'power_score']),
-        on=['season', 'week', 'TEAM'],
-        how='left',
+        df_ps.select(["season", "week", "TEAM", "power_score"]),
+        on=["season", "week", "TEAM"],
+        how="left",
     )
-    merged = merged.filter(pl.col('TEAM').is_in([team_a, team_b]))
+    merged = merged.filter(pl.col("TEAM").is_in([team_a, team_b]))
 
-    required = {field for _, field, _ in METRIC_COMPARISON_FIELDS} | {'TEAM'}
+    required = {field for _, field, _ in METRIC_COMPARISON_FIELDS} | {"TEAM"}
     missing = [col for col in required if col not in merged.columns]
     if missing:
-        raise KeyError(f'Missing required columns in L4 snapshot: {missing}')
+        raise KeyError(f"Missing required columns in L4 snapshot: {missing}")
 
-    if 'power_score' not in merged.columns:
-        merged = merged.with_columns(pl.lit(None).alias('power_score'))
+    if "power_score" not in merged.columns:
+        merged = merged.with_columns(pl.lit(None).alias("power_score"))
 
     return merged
 
@@ -181,32 +188,32 @@ def _to_float(value: Any) -> float | None:
 
 def _format_decimal(value: float | None) -> str:
     if value is None:
-        return 'n/a'
-    return f'{value:.3f}'
+        return "n/a"
+    return f"{value:.3f}"
 
 
 def _format_percentage(value: float | None) -> str:
     if value is None:
-        return 'n/a'
-    return f'{value * 100:.1f}%'
+        return "n/a"
+    return f"{value * 100:.1f}%"
 
 
 def _format_delta(delta: float | None) -> str:
     if delta is None:
-        return 'n/a'
+        return "n/a"
     if abs(delta) < 1e-12:
-        return '\u00b1 0.000'
-    arrow = '\u2191' if delta > 0 else '\u2193'
-    return f'{arrow} {delta:+.3f}'
+        return "\u00b1 0.000"
+    arrow = "\u2191" if delta > 0 else "\u2193"
+    return f"{arrow} {delta:+.3f}"
 
 
 def _format_delta_percentage(delta: float | None) -> str:
     if delta is None:
-        return 'n/a'
+        return "n/a"
     if abs(delta) < 1e-12:
-        return '\u00b1 0.0 pp'
-    arrow = '\u2191' if delta > 0 else '\u2193'
-    return f'{arrow} {delta * 100:+.1f} pp'
+        return "\u00b1 0.0 pp"
+    arrow = "\u2191" if delta > 0 else "\u2193"
+    return f"{arrow} {delta * 100:+.1f} pp"
 
 
 def _render_metric_comparison_table(
@@ -215,17 +222,17 @@ def _render_metric_comparison_table(
     team_a: str,
     team_b: str,
 ) -> str:
-    lines: list[str] = [f'| Metric | {team_a} | {team_b} | Δ |', '|---|---:|---:|---:|']
+    lines: list[str] = [f"| Metric | {team_a} | {team_b} | Δ |", "|---|---:|---:|---:|"]
 
     for label, field, fmt in METRIC_COMPARISON_FIELDS:
         val_a = _to_float(row_a.get(field))
         val_b = _to_float(row_b.get(field))
 
         if val_a is None or val_b is None:
-            lines.append(f'| {label} | n/a | n/a | n/a |')
+            lines.append(f"| {label} | n/a | n/a | n/a |")
             continue
 
-        if fmt == 'percent':
+        if fmt == "percent":
             formatted_a = _format_percentage(val_a)
             formatted_b = _format_percentage(val_b)
             delta_display = _format_delta_percentage(val_a - val_b)
@@ -234,9 +241,10 @@ def _render_metric_comparison_table(
             formatted_b = _format_decimal(val_b)
             delta_display = _format_delta(val_a - val_b)
 
-        lines.append(f'| {label} | {formatted_a} | {formatted_b} | {delta_display} |')
+        lines.append(f"| {label} | {formatted_a} | {formatted_b} | {delta_display} |")
 
-    return '\n'.join(lines)
+    return "\n".join(lines)
+
 
 # === END Metric Comparison helpers ==========================================
 
@@ -244,6 +252,7 @@ def _render_metric_comparison_table(
 # === chart helpers (minimalne, bez seaborn) ===
 def _ensure_parent(p: Path) -> None:
     p.parent.mkdir(parents=True, exist_ok=True)
+
 
 def _df_to_markdown(df: pl.DataFrame) -> str:
     """
@@ -271,6 +280,7 @@ def _df_to_markdown(df: pl.DataFrame) -> str:
         body_rows.append("| " + " | ".join(cells) + " |")
 
     return "\n".join([header, sep, *body_rows])
+
 
 def _pretty_form_table(df: pl.DataFrame, team_a: str, team_b: str) -> str:
     """
@@ -370,10 +380,6 @@ def _fmt_delta_arrow(delta: float) -> str:
     return "± 0.000"
 
 
-
-
-
-
 # === pomocnicze czytanie pliku manifestu (do weekly summary) ===
 def _read_manifest_files(manifest_path: Path) -> list[str]:
     if not manifest_path.exists():
@@ -413,10 +419,6 @@ _RATE_PERCENT_LABELS = {
     "Explosive Play Rate (Off)",
     "Red Zone TD Rate (Off)",
 }
-
-
-
-
 
 
 @dataclass
@@ -795,13 +797,13 @@ def generate_report(season: int, week: int, *, l3_result: Optional[Path] = None)
     logger.info("Generated weekly report at %s", markdown_target)
     return markdown_target
 
+
 def _fmt_delta_arrow(delta: float) -> str:
     if delta > 0:
         return f"↑ {delta:+.3f}"
     if delta < 0:
         return f"↓ {delta:+.3f}"
     return "± 0.000"
-
 
 
 def _slugify(value: str) -> str:
@@ -866,16 +868,12 @@ def available_teams(
         try:
             df_roll = pl.read_parquet(rolling_path)
         except Exception:
-            logger.debug("Failed to load rolling Core12 snapshot from %s", rolling_path, exc_info=True)
+            logger.debug(
+                "Failed to load rolling Core12 snapshot from %s", rolling_path, exc_info=True
+            )
             return []
         if "TEAM" in df_roll.columns:
-            teams = (
-                df_roll.select("TEAM")
-                .drop_nulls()
-                .unique()
-                .to_series()
-                .to_list()
-            )
+            teams = df_roll.select("TEAM").drop_nulls().unique().to_series().to_list()
             teams = sorted({str(value).upper() for value in teams if value})
             if teams:
                 return teams
@@ -899,6 +897,7 @@ def _team_row(df: Optional[pl.DataFrame], team: str) -> Optional[dict[str, Any]]
 
 logger = get_logger(__name__)
 
+
 def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
     """
     Wczytaj metryki Core12 dla danej drużyny.
@@ -918,12 +917,16 @@ def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
         else:
             logger.warning(
                 "Rolling Core12 snapshot %s is empty; will try fallback L4 for season=%s week=%s",
-                rolling_path, season, week
+                rolling_path,
+                season,
+                week,
             )
     else:
         logger.warning(
             "Rolling Core12 snapshot %s not found; will try fallback L4 for season=%s week=%s",
-            rolling_path, season, week
+            rolling_path,
+            season,
+            week,
         )
 
     if df is None:
@@ -933,33 +936,25 @@ def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
         else:
             logger.error(
                 "No Core12 data available for season=%s week=%s (no rolling, no fallback).",
-                season, week
+                season,
+                week,
             )
             return {}
 
     # 2. znajdź wiersz tej drużyny
     if "week" in df.columns:
         row_df = df.filter(
-            (pl.col("TEAM") == team)
-            & (pl.col("season") == season)
-            & (pl.col("week") == week)
+            (pl.col("TEAM") == team) & (pl.col("season") == season) & (pl.col("week") == week)
         )
         if row_df.is_empty():
             # rolling case: może nie mieć week == current
-            row_df = df.filter(
-                (pl.col("TEAM") == team)
-                & (pl.col("season") == season)
-            )
+            row_df = df.filter((pl.col("TEAM") == team) & (pl.col("season") == season))
     else:
-        row_df = df.filter(
-            (pl.col("TEAM") == team)
-            & (pl.col("season") == season)
-        )
+        row_df = df.filter((pl.col("TEAM") == team) & (pl.col("season") == season))
 
     if row_df.is_empty():
         logger.warning(
-            "Team %s not found in Core12 data for season=%s week=%s.",
-            team, season, week
+            "Team %s not found in Core12 data for season=%s week=%s.", team, season, week
         )
         return {}
 
@@ -973,7 +968,10 @@ def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
         "core_epa_def": ["core_epa_defense", "core_epa_def"],
         "core_sr_off": ["success_rate_offense", "core_sr_off"],
         "core_sr_def": ["success_rate_defense", "core_sr_def"],
-        "core_explosive_play_rate_off": ["explosive_play_rate_offense", "core_explosive_play_rate_off"],
+        "core_explosive_play_rate_off": [
+            "explosive_play_rate_offense",
+            "core_explosive_play_rate_off",
+        ],
         "core_third_down_conv": ["third_down_conversion_offense", "core_third_down_conv"],
         "core_points_per_drive_diff": ["points_per_drive_diff", "core_points_per_drive_diff"],
         "core_ypp_diff": ["yards_per_play_diff", "core_ypp_diff"],
@@ -1000,6 +998,7 @@ def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
                         break
 
     return out
+
 
 def _team_summary(
     season: int,
@@ -1031,13 +1030,18 @@ def _team_summary(
     ps_row_now = _team_row(frames.get("powerscore"), team)
 
     # 3. FALLBACK tempo / powerscore do poprzedniego tygodnia jeśli brak
-    if (l3_row_now is None or "tempo" not in l3_row_now or l3_row_now["tempo"] is None) and week > 1:
+    if (
+        l3_row_now is None or "tempo" not in l3_row_now or l3_row_now["tempo"] is None
+    ) and week > 1:
         prev_frames = _load_metric_frames(season, week - 1)
         l3_row_prev = _team_row(prev_frames.get("l3"), team)
         if l3_row_prev is not None and "tempo" in l3_row_prev and l3_row_prev["tempo"] is not None:
             l3_row_now = l3_row_prev
 
-    if (ps_row_now is None or (ps_row_now.get("power_score") is None and ps_row_now.get("PowerScore") is None)) and week > 1:
+    if (
+        ps_row_now is None
+        or (ps_row_now.get("power_score") is None and ps_row_now.get("PowerScore") is None)
+    ) and week > 1:
         prev_frames = _load_metric_frames(season, week - 1)
         ps_row_prev = _team_row(prev_frames.get("powerscore"), team)
         if ps_row_prev is not None:
@@ -1059,7 +1063,12 @@ def _team_summary(
             tempo = float(l3_row_now["tempo"])
         except (TypeError, ValueError):
             tempo = None
-    if tempo is None and rolling_row is not None and "tempo" in rolling_row and rolling_row["tempo"] is not None:
+    if (
+        tempo is None
+        and rolling_row is not None
+        and "tempo" in rolling_row
+        and rolling_row["tempo"] is not None
+    ):
         try:
             tempo = float(rolling_row["tempo"])
         except (TypeError, ValueError):
@@ -1117,7 +1126,6 @@ def _team_summary(
     )
 
     return summary, frames
-
 
 
 def _team_chart(
@@ -1837,7 +1845,12 @@ def _build_powerscore_breakdown(
         a_val = _get_value(teams_df, team_a, component["column"])
         b_val = _get_value(teams_df, team_b, component["column"])
         delta = None
-        if a_val is not None and b_val is not None and math.isfinite(a_val) and math.isfinite(b_val):
+        if (
+            a_val is not None
+            and b_val is not None
+            and math.isfinite(a_val)
+            and math.isfinite(b_val)
+        ):
             delta = a_val - b_val
 
         if a_val is not None and math.isfinite(a_val):
@@ -1891,8 +1904,7 @@ def _build_trend_summary(
 
     week_values: list[int] = []
     metric_data: dict[str, dict[str, dict[int, Optional[float]]]] = {
-        team: {metric["column"]: {} for metric in _TREND_METRICS}
-        for team in (team_a, team_b)
+        team: {metric["column"]: {} for metric in _TREND_METRICS} for team in (team_a, team_b)
     }
 
     for week in range(current_week - 1, 0, -1):
@@ -1956,9 +1968,7 @@ def _build_trend_summary(
     for metric in _TREND_METRICS:
         column = metric["column"]
         for team in (team_a, team_b):
-            raw_values = [
-                metric_data[team][column].get(week) for week in week_values
-            ]
+            raw_values = [metric_data[team][column].get(week) for week in week_values]
             formatted_values = [
                 _format_value(val, is_percent=metric["is_percent"]) for val in raw_values
             ]
@@ -2015,7 +2025,9 @@ def _build_matchup_analogs_section(
 
         lines.append(f"**{team} analogs vs {opponent} profile**")
         lines.append("")
-        lines.append("| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |")
+        lines.append(
+            "| Week | Opponent | Score | Winner | Similarity | EPA Off | Success Rate | PPD Diff |"
+        )
         lines.append("| ---: | --- | --- | --- | ---: | ---: | ---: | ---: |")
 
         def _fmt_score(entry) -> str:
@@ -2184,9 +2196,7 @@ def _build_strength_of_schedule(
         "| --- | ---: | ---: |",
     ]
     for key, _, label in _SOS_WINDOWS:
-        lines.append(
-            f"| {label} | {_fmt(sos_a.get(key))} | {_fmt(sos_b.get(key))} |"
-        )
+        lines.append(f"| {label} | {_fmt(sos_a.get(key))} | {_fmt(sos_b.get(key))} |")
 
     return "\n".join(lines), eval_week
 
@@ -2198,7 +2208,11 @@ def _league_pass_rate(season: int, week: int, frames: dict[str, Any]) -> Optiona
     if cache_key in frames:
         return frames[cache_key]
     df = frames.get("l3")
-    if df is None or df.is_empty() or (len(df.columns) > 0 and "week" in df.columns and df["week"].max() != week):
+    if (
+        df is None
+        or df.is_empty()
+        or (len(df.columns) > 0 and "week" in df.columns and df["week"].max() != week)
+    ):
         df = frames.get(f"_fallback_l3_week_{week}")
     if df is None:
         df = _optional_layer_df("l3_team_week", season, week)
@@ -2292,10 +2306,20 @@ def _build_proe_section(
         return None
     baseline_a = _league_pass_rate(season, week_a, frames)
     baseline_b = _league_pass_rate(season, week_b, frames)
-    proe_a = pass_rate_a - baseline_a if pass_rate_a is not None and baseline_a is not None else None
-    proe_b = pass_rate_b - baseline_b if pass_rate_b is not None and baseline_b is not None else None
+    proe_a = (
+        pass_rate_a - baseline_a if pass_rate_a is not None and baseline_a is not None else None
+    )
+    proe_b = (
+        pass_rate_b - baseline_b if pass_rate_b is not None and baseline_b is not None else None
+    )
 
-    def _row(team: str, pass_rate: Optional[float], baseline: Optional[float], proe: Optional[float], opponent_row: dict[str, Any]) -> list[str]:
+    def _row(
+        team: str,
+        pass_rate: Optional[float],
+        baseline: Optional[float],
+        proe: Optional[float],
+        opponent_row: dict[str, Any],
+    ) -> list[str]:
         opp_pass_def = _coerce_float(opponent_row.get("pass_success_rate_def"))
         opp_rush_def = _coerce_float(opponent_row.get("rush_success_rate_def"))
         return [
@@ -2417,12 +2441,14 @@ def _build_window_table_for_metric(
         if all(cell == "n/a" for cell in row):
             # skip team rows with no data whatsoever
             continue
-        lines.append("| {team} | {season} | {last5} | {last3} |".format(
-            team=team,
-            season=row[0],
-            last5=row[1],
-            last3=row[2],
-        ))
+        lines.append(
+            "| {team} | {season} | {last5} | {last3} |".format(
+                team=team,
+                season=row[0],
+                last5=row[1],
+                last3=row[2],
+            )
+        )
 
     if len(lines) <= 2:
         return None
@@ -2478,12 +2504,19 @@ def _build_edge_window_table(
     if not off_a and not off_b:
         return None
 
-    def _edge_series(off_series: dict[str, Optional[float]], opp_def_series: dict[str, Optional[float]]) -> dict[str, Optional[float]]:
+    def _edge_series(
+        off_series: dict[str, Optional[float]], opp_def_series: dict[str, Optional[float]]
+    ) -> dict[str, Optional[float]]:
         result: dict[str, Optional[float]] = {}
         for label in _WINDOW_ORDER:
             off_val = off_series.get(label)
             def_val = opp_def_series.get(label)
-            if off_val is None or def_val is None or not math.isfinite(off_val) or not math.isfinite(def_val):
+            if (
+                off_val is None
+                or def_val is None
+                or not math.isfinite(off_val)
+                or not math.isfinite(def_val)
+            ):
                 result[label] = None
             else:
                 result[label] = (def_val - off_val) if invert else (off_val - def_val)
@@ -2495,7 +2528,9 @@ def _build_edge_window_table(
     lines = ["| Team | Season-to-date | Last 5 | Last 3 |", "| --- | ---: | ---: | ---: |"]
     has_data = False
     for team, series in ((team_a, edges_a), (team_b, edges_b)):
-        row = [_format_edge_value(series.get(label), as_percent=as_percent) for label in _WINDOW_ORDER]
+        row = [
+            _format_edge_value(series.get(label), as_percent=as_percent) for label in _WINDOW_ORDER
+        ]
         if all(cell == "n/a" for cell in row):
             continue
         has_data = True
@@ -2524,10 +2559,34 @@ def _build_matchup_edges_table(
 ) -> Optional[str]:
     sections: list[str] = []
     matchups = [
-        ("Rush Success Edge", "rush_success_rate_off_avg", "rush_success_rate_def_avg", True, False),
-        ("Pass Success Edge", "pass_success_rate_off_avg", "pass_success_rate_def_avg", True, False),
-        ("Explosive Rate Edge", "explosive_play_rate_off_avg", "explosive_play_rate_def_avg", True, False),
-        ("Pass Protection vs Pressure", "pressure_rate_allowed_avg", "pressure_rate_def_avg", True, True),
+        (
+            "Rush Success Edge",
+            "rush_success_rate_off_avg",
+            "rush_success_rate_def_avg",
+            True,
+            False,
+        ),
+        (
+            "Pass Success Edge",
+            "pass_success_rate_off_avg",
+            "pass_success_rate_def_avg",
+            True,
+            False,
+        ),
+        (
+            "Explosive Rate Edge",
+            "explosive_play_rate_off_avg",
+            "explosive_play_rate_def_avg",
+            True,
+            False,
+        ),
+        (
+            "Pass Protection vs Pressure",
+            "pressure_rate_allowed_avg",
+            "pressure_rate_def_avg",
+            True,
+            True,
+        ),
     ]
     for label, off_metric, def_metric, as_percent, invert in matchups:
         table = _build_edge_window_table(
@@ -2542,7 +2601,9 @@ def _build_matchup_edges_table(
         if table:
             sections.append(f"### {label}\n\n{table}\n")
     if sections:
-        sections.append("_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._\n")
+        sections.append(
+            "_Positive values favour the listed offense; pass protection uses defense minus pressure allowed._\n"
+        )
         return "\n".join(sections).strip()
     return _build_matchup_edges_snapshot(
         season=season,
@@ -2566,8 +2627,20 @@ def _build_situational_edges_section(
     situational_metrics = [
         ("3rd Down Conversion", "third_down_conv_off_avg", "third_down_conv_def_avg", True, False),
         ("Red Zone TD Rate", "redzone_td_rate_off_avg", "redzone_td_rate_def_avg", True, False),
-        ("Pass Protection vs Pressure", "pressure_rate_allowed_avg", "pressure_rate_def_avg", True, True),
-        ("Explosive Plays", "explosive_play_rate_off_avg", "explosive_play_rate_def_avg", True, False),
+        (
+            "Pass Protection vs Pressure",
+            "pressure_rate_allowed_avg",
+            "pressure_rate_def_avg",
+            True,
+            True,
+        ),
+        (
+            "Explosive Plays",
+            "explosive_play_rate_off_avg",
+            "explosive_play_rate_def_avg",
+            True,
+            False,
+        ),
     ]
     for label, off_metric, def_metric, as_percent, invert in situational_metrics:
         table = _build_edge_window_table(
@@ -2582,7 +2655,9 @@ def _build_situational_edges_section(
         if table:
             sections.append(f"### {label}\n\n{table}\n")
     if sections:
-        sections.append("_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._")
+        sections.append(
+            "_Positive values indicate the offense exceeding the opponent's defensive rate (pass protection uses defense minus pressure allowed)._"
+        )
         return "\n".join(sections).strip()
     return _build_situational_edges_snapshot(
         season=season,
@@ -2603,10 +2678,19 @@ def _build_drive_context_table(
     frames: dict[str, Any],
 ) -> Optional[str]:
     sections: list[str] = []
-    yardline_transform = lambda v: None if v is None else 100.0 - v
+
+    def yardline_transform(v: Any) -> float | None:
+        return None if v is None else 100.0 - v
+
     drive_metrics = [
         ("Avg Start (own yardline)", "avg_start_yd100_off_avg", False, 1, yardline_transform),
-        ("Opponent Avg Start (own yardline)", "avg_start_yd100_def_avg", False, 1, yardline_transform),
+        (
+            "Opponent Avg Start (own yardline)",
+            "avg_start_yd100_def_avg",
+            False,
+            1,
+            yardline_transform,
+        ),
         ("Field Position Edge (own - opp)", "start_field_position_edge_avg", False, 1, None),
         ("Points per Drive (offense)", "points_per_drive_off_avg", False, 2, None),
         ("Points per Drive Allowed", "points_per_drive_def_avg", False, 2, None),
@@ -2625,7 +2709,9 @@ def _build_drive_context_table(
         if table:
             sections.append(f"### {label}\n\n{table}\n")
     if sections:
-        sections.append("_Starting field position expressed as own-yard line (higher = shorter field)._")
+        sections.append(
+            "_Starting field position expressed as own-yard line (higher = shorter field)._"
+        )
         return "\n".join(sections).strip()
     return _build_drive_context_snapshot(
         season=season,
@@ -2658,7 +2744,11 @@ def _build_game_script_projection(
             frames=frames,
         )
 
-    def _derive(primary: dict[str, Optional[float]], secondary: Optional[dict[str, Optional[float]]], fn: Callable[[float, Optional[float]], Optional[float]]) -> dict[str, Optional[float]]:
+    def _derive(
+        primary: dict[str, Optional[float]],
+        secondary: Optional[dict[str, Optional[float]]],
+        fn: Callable[[float, Optional[float]], Optional[float]],
+    ) -> dict[str, Optional[float]]:
         result: dict[str, Optional[float]] = {}
         for label in _WINDOW_ORDER:
             p_val = primary.get(label)
@@ -2674,30 +2764,50 @@ def _build_game_script_projection(
 
     run_a = {label: (1.0 - value) if value is not None else None for label, value in pass_a.items()}
     run_b = {label: (1.0 - value) if value is not None else None for label, value in pass_b.items()}
-    passes_per_drive_a = _derive(tempo_a, pass_a, lambda tempo, pr: tempo * pr if pr is not None else None)
-    passes_per_drive_b = _derive(tempo_b, pass_b, lambda tempo, pr: tempo * pr if pr is not None else None)
-    runs_per_drive_a = _derive(tempo_a, run_a, lambda tempo, rr: tempo * rr if rr is not None else None)
-    runs_per_drive_b = _derive(tempo_b, run_b, lambda tempo, rr: tempo * rr if rr is not None else None)
+    passes_per_drive_a = _derive(
+        tempo_a, pass_a, lambda tempo, pr: tempo * pr if pr is not None else None
+    )
+    passes_per_drive_b = _derive(
+        tempo_b, pass_b, lambda tempo, pr: tempo * pr if pr is not None else None
+    )
+    runs_per_drive_a = _derive(
+        tempo_a, run_a, lambda tempo, rr: tempo * rr if rr is not None else None
+    )
+    runs_per_drive_b = _derive(
+        tempo_b, run_b, lambda tempo, rr: tempo * rr if rr is not None else None
+    )
 
     sections: list[str] = []
-    tempo_table = _build_window_table_from_series(team_a, team_b, tempo_a, tempo_b, as_percent=False, digits=2)
+    tempo_table = _build_window_table_from_series(
+        team_a, team_b, tempo_a, tempo_b, as_percent=False, digits=2
+    )
     if tempo_table:
         sections.append("### Tempo\n\n" + tempo_table + "\n")
-    pass_table = _build_window_table_from_series(team_a, team_b, pass_a, pass_b, as_percent=True, digits=1)
+    pass_table = _build_window_table_from_series(
+        team_a, team_b, pass_a, pass_b, as_percent=True, digits=1
+    )
     if pass_table:
         sections.append("### Pass Rate\n\n" + pass_table + "\n")
-    run_table = _build_window_table_from_series(team_a, team_b, run_a, run_b, as_percent=True, digits=1)
+    run_table = _build_window_table_from_series(
+        team_a, team_b, run_a, run_b, as_percent=True, digits=1
+    )
     if run_table:
         sections.append("### Run Rate\n\n" + run_table + "\n")
-    passes_drive_table = _build_window_table_from_series(team_a, team_b, passes_per_drive_a, passes_per_drive_b, as_percent=False, digits=2)
+    passes_drive_table = _build_window_table_from_series(
+        team_a, team_b, passes_per_drive_a, passes_per_drive_b, as_percent=False, digits=2
+    )
     if passes_drive_table:
         sections.append("### Passes per Drive\n\n" + passes_drive_table + "\n")
-    runs_drive_table = _build_window_table_from_series(team_a, team_b, runs_per_drive_a, runs_per_drive_b, as_percent=False, digits=2)
+    runs_drive_table = _build_window_table_from_series(
+        team_a, team_b, runs_per_drive_a, runs_per_drive_b, as_percent=False, digits=2
+    )
     if runs_drive_table:
         sections.append("### Runs per Drive\n\n" + runs_drive_table + "\n")
 
     if sections:
-        sections.append("_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._")
+        sections.append(
+            "_Derived using aggregated tempo and pass rate (Run Rate = 1 - Pass Rate)._"
+        )
         return "\n".join(sections).strip()
     return _build_game_script_snapshot(
         season=season,
@@ -2736,9 +2846,7 @@ def _situational_edge_text(
         advantage = f"{offense_team} edge"
     elif defense_better:
         advantage = f"{defense_team} edge"
-    return (
-        f"{_fmt_percent(off_val)} vs {_fmt_percent(def_val)} allowed -> {advantage}"
-    )
+    return f"{_fmt_percent(off_val)} vs {_fmt_percent(def_val)} allowed -> {advantage}"
 
 
 def _build_situational_edges_snapshot(
@@ -2920,7 +3028,10 @@ def build_metric_comparison_table(
             delta = None
             if isinstance(a_val, (int, float)) and isinstance(b_val, (int, float)):
                 delta = a_val - b_val
-            fmt = lambda v: f"{v:.3f}" if isinstance(v, (int, float)) else "n/a"
+
+            def fmt(v: Any) -> str:
+                return f"{v:.3f}" if isinstance(v, (int, float)) else "n/a"
+
             lines.append(f"| {row.get('label')} | {fmt(a_val)} | {fmt(b_val)} | {fmt(delta)} |")
         return "\n".join(lines)
 
@@ -3001,8 +3112,16 @@ def _load_schedule_pairs(
         pairs.drop_nulls()
         .with_columns(
             [
-                pl.col("team_a").cast(pl.Utf8).str.to_uppercase().str.strip_chars(),
-                pl.col("team_b").cast(pl.Utf8).str.to_uppercase().str.strip_chars(),
+                pl.col("team_a")
+                .cast(pl.Utf8)
+                .str.to_uppercase()
+                .str.strip_chars()
+                .map_elements(normalize_team_code, return_dtype=pl.Utf8),
+                pl.col("team_b")
+                .cast(pl.Utf8)
+                .str.to_uppercase()
+                .str.strip_chars()
+                .map_elements(normalize_team_code, return_dtype=pl.Utf8),
             ]
         )
         .filter(pl.col("team_a") != pl.col("team_b"))
@@ -3088,59 +3207,51 @@ def validate_schedule_for_week(
             source_path,
         )
 
+
 # mapujemy "logiczna_nazwa" -> lista możliwych nazw w plikach L4
 _METRIC_ALIASES = {
     # EPA
-    "core_epa_off":        ["core_epa_off", "core_epa_offense"],
-    "core_epa_def":        ["core_epa_def", "core_epa_defense"],
-
+    "core_epa_off": ["core_epa_off", "core_epa_offense"],
+    "core_epa_def": ["core_epa_def", "core_epa_defense"],
     # Success Rate
-    "core_sr_off":         ["core_sr_off", "success_rate_offense"],
-    "core_sr_def":         ["core_sr_def", "success_rate_defense"],
-
+    "core_sr_off": ["core_sr_off", "success_rate_offense"],
+    "core_sr_def": ["core_sr_def", "success_rate_defense"],
     # Explosive Play Rate (Off)
     "core_explosive_play_rate_off": [
         "core_explosive_play_rate_off",
         "explosive_play_rate_offense",
         "core_ed_sr_off",  # widzieliśmy to w starym schemacie: core_ed_sr_off
     ],
-
     # Third Down Conversion
     "core_third_down_conv": [
         "core_third_down_conv",
         "third_down_conversion_offense",
     ],
-
     # Points per Drive Differential
     "core_points_per_drive_diff": [
         "core_points_per_drive_diff",
         "points_per_drive_diff",
     ],
-
     # Yards per Play Differential
     "core_ypp_diff": [
         "core_ypp_diff",
         "yards_per_play_diff",
     ],
-
     # Turnover Margin
     "core_turnover_margin": [
         "core_turnover_margin",
         "turnover_margin",
     ],
-
     # Red Zone TD Rate Offense
     "core_redzone_td_rate": [
         "core_redzone_td_rate",
         "redzone_td_rate_offense",
     ],
-
     # Pressure Rate Defense
     "core_pressure_rate_def": [
         "core_pressure_rate_def",
         "pressure_rate_defense",
     ],
-
     # Tempo (tylko w nowych tygodniach)
     "tempo": [
         "tempo",
@@ -3184,14 +3295,13 @@ _WEIGHTED_METRIC_CONFIG: dict[str, dict[str, str]] = {
 }
 
 
-
 def _metric_form_table(
     season: int,
     current_week: int,
     team_a: str,
     team_b: str,
     *,
-    column_name: str,   # <- to jest nasza "logiczna nazwa", np. "core_epa_off"
+    column_name: str,  # <- to jest nasza "logiczna nazwa", np. "core_epa_off"
     as_percent: bool,
 ) -> str:
     """
@@ -3204,10 +3314,11 @@ def _metric_form_table(
     column_name to jedna z logicznych nazw z METRIC_FORM_CONFIG.
     """
 
-    import polars as pl
-    from pathlib import Path
-    import math
     import logging
+    import math
+    from pathlib import Path
+
+    import polars as pl
 
     logger = logging.getLogger(__name__)
     logger.info(
@@ -3246,7 +3357,10 @@ def _metric_form_table(
         if physical_col is None:
             logger.info(
                 "Week %s skipped for %s: none of %s present in %s",
-                w, column_name, candidates, df_w_full.columns
+                w,
+                column_name,
+                candidates,
+                df_w_full.columns,
             )
             continue
 
@@ -3259,6 +3373,25 @@ def _metric_form_table(
             ]
         )
         dfs.append(df_w)
+
+    # Week 1 has no completed current-season week. Use the explicitly seeded
+    # prior-season rolling snapshot instead of silently producing empty form
+    # tables and collapsing the model margin.
+    if not dfs and current_week == 1 and layer_dir == "l4_core12":
+        rolling_path = Path(rolling_core12_through_path(season, 1))
+        if rolling_path.exists():
+            rolling_df = pl.read_parquet(rolling_path)
+            physical_col = next((cand for cand in candidates if cand in rolling_df.columns), None)
+            if physical_col is not None and "TEAM" in rolling_df.columns:
+                dfs.append(
+                    rolling_df.select(
+                        [
+                            pl.col("TEAM"),
+                            pl.lit(0).alias("week"),
+                            pl.col(physical_col).alias(column_name),
+                        ]
+                    )
+                )
 
     # fallback: if we still have no rows, walk backwards for the most recent available week
     if not dfs and current_week > 1:
@@ -3292,20 +3425,15 @@ def _metric_form_table(
     if not dfs:
         logger.warning(
             "No usable data for %s up to week %s. Returning no-data message.",
-            column_name, current_week
+            column_name,
+            current_week,
         )
         return "_No data available yet._"
 
-    hist = pl.concat(dfs).with_columns(
-        pl.col("TEAM").cast(pl.Utf8).str.to_uppercase()
-    )
+    hist = pl.concat(dfs).with_columns(pl.col("TEAM").cast(pl.Utf8).str.to_uppercase())
 
     teams = [team_a.upper(), team_b.upper()]
-    hist = (
-        hist
-        .filter(pl.col("TEAM").is_in(teams))
-        .sort(["TEAM", "week"])
-    )
+    hist = hist.filter(pl.col("TEAM").is_in(teams)).sort(["TEAM", "week"])
 
     weight_col: str | None = None
     weight_cfg = _WEIGHTED_METRIC_CONFIG.get(column_name)
@@ -3376,15 +3504,19 @@ def _metric_form_table(
             values = team_df[column_name].to_list()
             weights = team_df[weight_col].to_list()
 
-            def _weighted_mean_for(count: int | None) -> float | None:
-                if not values:
+            def _weighted_mean_for(
+                count: int | None,
+                metric_values: list[float] = values,
+                metric_weights: list[float] = weights,
+            ) -> float | None:
+                if not metric_values:
                     return None
                 if count is not None:
-                    subset_vals = values[-count:]
-                    subset_weights = weights[-count:]
+                    subset_vals = metric_values[-count:]
+                    subset_weights = metric_weights[-count:]
                 else:
-                    subset_vals = values
-                    subset_weights = weights
+                    subset_vals = metric_values
+                    subset_weights = metric_weights
                 total_weight = sum(subset_weights)
                 if total_weight <= 0:
                     return None
@@ -3399,28 +3531,11 @@ def _metric_form_table(
         last5 = pl.DataFrame(last5_records)
         last3 = pl.DataFrame(last3_records)
     else:
-        season_avg = (
-            hist
-            .group_by("TEAM")
-            .agg(pl.col(column_name).mean().alias("season_to_date"))
-        )
-        last5 = (
-            hist
-            .group_by("TEAM")
-            .agg(pl.col(column_name).tail(5).mean().alias("last5"))
-        )
-        last3 = (
-            hist
-            .group_by("TEAM")
-            .agg(pl.col(column_name).tail(3).mean().alias("last3"))
-        )
+        season_avg = hist.group_by("TEAM").agg(pl.col(column_name).mean().alias("season_to_date"))
+        last5 = hist.group_by("TEAM").agg(pl.col(column_name).tail(5).mean().alias("last5"))
+        last3 = hist.group_by("TEAM").agg(pl.col(column_name).tail(3).mean().alias("last3"))
 
-    out = (
-        season_avg
-        .join(last5, on="TEAM")
-        .join(last3, on="TEAM")
-        .sort("TEAM")
-    )
+    out = season_avg.join(last5, on="TEAM").join(last3, on="TEAM").sort("TEAM")
 
     def _fmt_value(v):
         if v is None or (isinstance(v, float) and not math.isfinite(v)):
@@ -3447,32 +3562,21 @@ def _metric_form_table(
     return "\n".join(lines)
 
 
-
 METRIC_FORM_CONFIG = [
     ("Core EPA Offense", "core_epa_off", False),
     ("Core EPA Defense", "core_epa_def", False),
-
     ("Success Rate Offense", "core_sr_off", True),
     ("Success Rate Defense", "core_sr_def", True),
-
     ("Explosive Play Rate (Off)", "core_explosive_play_rate_off", True),
     ("Third Down Conversion", "core_third_down_conv", True),
-
     ("Points per Drive Differential", "core_points_per_drive_diff", False),
-
     ("Yards per Play Differential", "core_ypp_diff", False),
     ("Turnover Margin", "core_turnover_margin", False),
-
     ("Red Zone TD Rate (Off)", "core_redzone_td_rate", True),
     ("Pressure Rate (Def)", "core_pressure_rate_def", True),
-
     ("Tempo", "tempo", False),
     ("Pass Rate Offense", "pass_rate_off", True),
 ]
-
-
-
-
 
 
 def generate_comparison_report(
@@ -3495,7 +3599,7 @@ def generate_comparison_report(
 
     # 1. Zbierz metryki drużyn (tempo, PowerScore, Core12 itd.)
     summary_a, frames = _team_summary(season, week, team_a, frames=frames)
-    summary_b, _      = _team_summary(season, week, team_b, frames=frames)
+    summary_b, _ = _team_summary(season, week, team_b, frames=frames)
 
     # 2. Porównanie metryk (Core12 + tempo + PowerScore) - dalej tego używamy np. do Quick Edge
     comparison_rows = _build_comparison_metrics(summary_a, summary_b)
@@ -3511,16 +3615,12 @@ def generate_comparison_report(
     tempo_a_recent = None
     tempo_b_recent = None
     try:
-        tempo_a_recent = (
-            form_df
-            .filter(pl.col("window") == "last 3 games")[f"tempo_avg_{team_a}"]
-            .to_list()[0]
-        )
-        tempo_b_recent = (
-            form_df
-            .filter(pl.col("window") == "last 3 games")[f"tempo_avg_{team_b}"]
-            .to_list()[0]
-        )
+        tempo_a_recent = form_df.filter(pl.col("window") == "last 3 games")[
+            f"tempo_avg_{team_a}"
+        ].to_list()[0]
+        tempo_b_recent = form_df.filter(pl.col("window") == "last 3 games")[
+            f"tempo_avg_{team_b}"
+        ].to_list()[0]
     except Exception:
         pass
 
@@ -3635,7 +3735,8 @@ def generate_comparison_report(
         if entries and abs(delta_ext) > 1e-6:
             leader = team_a if delta_ext > 0 else team_b
             relevant = [
-                entry for entry in entries
+                entry
+                for entry in entries
                 if entry.get("delta") is not None and math.isfinite(entry.get("delta", math.nan))
             ]
             if delta_ext > 0:
@@ -3649,7 +3750,7 @@ def generate_comparison_report(
             if relevant:
                 top_entry = max(
                     relevant,
-                    key=lambda entry: abs(entry.get("delta", 0.0) * entry.get("weight", 0.0))
+                    key=lambda entry: abs(entry.get("delta", 0.0) * entry.get("weight", 0.0)),
                 )
                 delta_text = f"{abs(delta_ext):.3f}"
                 summary_lines.append(
@@ -3663,13 +3764,15 @@ def generate_comparison_report(
         md_lines.append("")
         md_lines.extend(summary_lines)
         risk_flags: list[str] = []
+
         # Heurystyka: jeżeli przewaga opiera się głównie na niestabilnych metrykach
         # (Turnover Margin / Red Zone TD Rate), pokaż ostrzeżenie.
         def _risk_flags_from_entries(entries: list[dict[str, Any]]) -> list[str]:
             if not entries:
                 return []
             vols = [
-                e for e in entries
+                e
+                for e in entries
                 if isinstance(e.get("label"), str)
                 and any(tok in e["label"].lower() for tok in ("turnover", "red zone"))
             ]
@@ -3832,7 +3935,7 @@ def generate_comparison_report(
             )
         md_lines.append("")
 
-    for (metric_label, column_name, is_percent) in METRIC_FORM_CONFIG:
+    for metric_label, column_name, is_percent in METRIC_FORM_CONFIG:
         md_lines.append(f"## {metric_label} Form (up to Week {week - 1})")
         md_lines.append("")
         md_lines.append(
@@ -3846,8 +3949,6 @@ def generate_comparison_report(
             )
         )
         md_lines.append("")
-
-
 
     # 6. Ścieżki zapisu (gdzie .md i gdzie PNG)
     markdown_target = comparison_report_path(season, week, team_a, team_b)
@@ -3887,7 +3988,6 @@ def generate_comparison_report(
     )
 
     return [Path(markdown_target), chart_a["path"], chart_b["path"]]
-
 
 
 def generate_comparison_reports_from_schedule(
@@ -3952,6 +4052,8 @@ def generate_comparison_reports_from_schedule(
         source_path,
     )
     return generated
+
+
 def _load_team_state_before_week(season: int, week: int) -> pl.DataFrame:
     """
     Zwraca snapshot stanu drużyn PRZED danym tygodniem.
@@ -3984,9 +4086,7 @@ def _load_team_state_before_week(season: int, week: int) -> pl.DataFrame:
 
     # sanity: normalizujemy nazwę kolumny drużyny na 'TEAM' i zostawiamy info,
     # który snapshot został użyty
-    df = df.with_columns(
-        pl.lit(through_week).alias("rolling_through_week")
-    )
+    df = df.with_columns(pl.lit(through_week).alias("rolling_through_week"))
 
     return df
 
@@ -4061,7 +4161,6 @@ __all__ = [
     "save_report",
     "validate_schedule_for_week",
 ]
-from metrics.power_score import _weight_mapping
 _POWERSCORE_COMPONENTS = [
     {
         "label": "EPA Offense",

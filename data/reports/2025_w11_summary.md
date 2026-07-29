@@ -1,6 +1,6 @@
 # Weekly Report - Season 2025, Week 11
 
-_Generated at 2026-01-08T19:17:56.779289+00:00 (UTC)_
+_Generated at 2026-01-11T20:19:50.056303+00:00 (UTC)_
 
 Data root: `data`
 
@@ -16,9 +16,9 @@ Data root: `data`
 
 Last 3 entries from `data\l2_audit\2025\11_audit.jsonl`:
 
-- {"step": "load", "details": "Loaded L1 parquet", "rows": 2575, "cols": 18, "timestamp": "2026-01-08T19:17:56.373727+00:00"}
-- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2575, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-08T19:17:56.373727+00:00"}
-- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2575, "cols": 24, "timestamp": "2026-01-08T19:17:56.373727+00:00"}
+- {"step": "load", "details": "Loaded L1 parquet", "rows": 2575, "cols": 18, "timestamp": "2026-01-11T20:19:49.647623+00:00"}
+- {"step": "prepare", "details": "Normalized team aliases, filtered season/week, deduplicated keys", "rows": 2575, "cols": 24, "rows_removed": 0, "timestamp": "2026-01-11T20:19:49.647623+00:00"}
+- {"step": "validate", "details": "Validated against L2 contract and guardrails", "rows": 2575, "cols": 24, "timestamp": "2026-01-11T20:19:49.647623+00:00"}
 
 ## L3 Sanity
 

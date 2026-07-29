@@ -1,0 +1,107 @@
+# NFL 2017 Week 9 - Betting Lines
+matchups:
+  - report: data/reports/comparisons/2017_w9/NYJ_vs_BUF.md
+    home: 'NYJ'
+    away: 'BUF'
+    spread: 3.5
+    total: 42
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/CAR_vs_ATL.md
+    home: 'CAR'
+    away: 'ATL'
+    spread: -2
+    total: 44
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/JAX_vs_CIN.md
+    home: 'JAX'
+    away: 'CIN'
+    spread: -3.5
+    total: 39.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/PHI_vs_DEN.md
+    home: 'PHI'
+    away: 'DEN'
+    spread: -7.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/NO_vs_TB.md
+    home: 'NO'
+    away: 'TB'
+    spread: -7
+    total: 50
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/NYG_vs_LA.md
+    home: 'NYG'
+    away: 'LA'
+    spread: 3.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/TEN_vs_BAL.md
+    home: 'TEN'
+    away: 'BAL'
+    spread: -3.5
+    total: 43
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/HOU_vs_IND.md
+    home: 'HOU'
+    away: 'IND'
+    spread: -13
+    total: 48
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/SF_vs_ARI.md
+    home: 'SF'
+    away: 'ARI'
+    spread: 2.5
+    total: 39
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/SEA_vs_WAS.md
+    home: 'SEA'
+    away: 'WAS'
+    spread: -7
+    total: 45
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/DAL_vs_KC.md
+    home: 'DAL'
+    away: 'KC'
+    spread: 0
+    total: 51
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/MIA_vs_LV.md
+    home: 'MIA'
+    away: 'LV'
+    spread: 2.5
+    total: 43.5
+    prime_time: false
+    neutral_site: false
+
+  - report: data/reports/comparisons/2017_w9/GB_vs_DET.md
+    home: 'GB'
+    away: 'DET'
+    spread: 2.5
+    total: 43
+    prime_time: false
+    neutral_site: false
+
+

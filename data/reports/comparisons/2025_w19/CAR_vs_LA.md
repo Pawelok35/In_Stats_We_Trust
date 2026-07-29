@@ -15,39 +15,39 @@
 | Turnover Margin | -0.118 | 0.647 | -0.765 |
 | Red Zone TD Rate (Off) | 0.123 | 0.160 | -0.037 |
 | Pressure Rate (Def) | 0.054 | 0.073 | -0.019 |
-| Tempo | 6.500 | 9.300 | -2.800 |
-| PowerScore | 1.392 | 2.067 | -0.675 |
-| PowerScore | 1.392 | 2.067 | -0.675 |
-| Tempo | 6.500 | 9.300 | -2.800 |
+| Tempo | 6.462 | 6.857 | -0.396 |
+| PowerScore | 1.461 | 1.557 | -0.096 |
+| PowerScore | 1.461 | 1.557 | -0.096 |
+| Tempo | 6.462 | 6.857 | -0.396 |
 
 ## PowerScore Breakdown (Model)
 
 | Component | Weight | CAR | LA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 35% | -0.054 | 0.190 | -0.243 |
-| EPA Defense | 20% | -0.022 | 0.018 | -0.039 |
-| Success Rate Offense | 25% | 46.2% | 54.8% | -8.7 pp |
-| Tempo | 20% | 0.108 | 0.140 | -0.032 |
+| EPA Offense | 35% | 0.058 | 0.117 | -0.059 |
+| EPA Defense | 20% | 0.117 | 0.058 | +0.059 |
+| Success Rate Offense | 25% | 50.0% | 53.1% | -3.1 pp |
+| Tempo | 20% | 0.083 | 0.083 | +0.000 |
 
 ## PowerScore Breakdown (7 Metrics)
 
 | Component | Weight | CAR | LA | Delta |
 | --- | ---: | ---: | ---: | ---: |
-| EPA Offense | 25% | -0.054 | 0.190 | -0.243 |
-| EPA Defense | 20% | -0.022 | 0.018 | -0.039 |
-| Success Rate Offense | 15% | 46.2% | 54.8% | -8.7 pp |
-| Turnover Margin | 10% | -2.000 | 2.000 | -4.000 |
-| Tempo | 10% | 0.108 | 0.140 | -0.032 |
-| Red Zone TD Rate (Off) | 10% | 25.0% | 10.5% | +14.5 pp |
-| Pressure Rate (Def) | 10% | 8.3% | 15.8% | -7.5 pp |
+| EPA Offense | 25% | 0.058 | 0.117 | -0.059 |
+| EPA Defense | 20% | 0.117 | 0.058 | +0.059 |
+| Success Rate Offense | 15% | 50.0% | 53.1% | -3.1 pp |
+| Turnover Margin | 10% | 1.000 | -1.000 | +2.000 |
+| Tempo | 10% | 0.083 | 0.083 | +0.000 |
+| Red Zone TD Rate (Off) | 10% | 25.0% | 28.6% | -3.6 pp |
+| Pressure Rate (Def) | 10% | 2.3% | 4.7% | -2.4 pp |
 
 ## PowerScore Summary
 
 **Model (4 metrics):**
-LA edge: +0.121 (CAR +0.114 vs LA +0.235)
+LA edge: +0.017 (CAR +0.185 vs LA +0.202)
 **7 metrics version:**
-LA edge: +0.478 (CAR -0.104 vs LA +0.374)
-**Verdict:** LA holds the edge in the extended breakdown (lead 0.478), driven by Turnover Margin (10% weight).
+CAR edge: +0.186 (CAR +0.248 vs LA +0.062)
+**Verdict:** CAR holds the edge in the extended breakdown (lead 0.186), driven by Turnover Margin (10% weight).
 ### Risk flags
 
 - Score relies ~20% on volatile stats (TO/Red Zone) – treat edge with caution.
@@ -57,9 +57,9 @@ LA edge: +0.478 (CAR -0.104 vs LA +0.374)
 
 | Metric | Value |
 | --- | --- |
-| Model Spread (CAR - LA) | -12.5 pts (favours LA) |
-| Model Win% CAR | 11.1% |
-| Model Win% LA | 88.9% |
+| Model Spread (CAR - LA) | -1.8 pts (favours LA) |
+| Model Win% CAR | 42.7% |
+| Model Win% LA | 57.3% |
 | SOS Differential (CAR-LA) | +0.015 |
 *Neutral-field assumption. Based on schedule through Week 18.*
 
@@ -67,8 +67,8 @@ LA edge: +0.478 (CAR -0.104 vs LA +0.374)
 
 | Team | Pass Rate | Expected | PROE | Opp Pass SR Allowed | Opp Rush SR Allowed | Lean |
 | --- | ---: | ---: | ---: | ---: | ---: | --- |
-| CAR | 55.4% | n/a | n/a | 44.7% | 45.7% | n/a |
-| LA | 47.3% | n/a | n/a | 62.5% | 39.0% | n/a |
+| CAR | 51.2% | 48.0% | 3.2% | 39.5% | 61.0% | Pass heavy |
+| LA | 45.8% | 48.0% | -2.2% | 45.5% | 59.6% | Slight run lean |
 
 ## Situational Edges
 

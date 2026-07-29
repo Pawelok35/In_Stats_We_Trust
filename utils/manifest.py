@@ -9,6 +9,7 @@ from pathlib import Path
 from typing import Any, Iterable, Mapping, MutableMapping
 
 from utils.logging import get_logger
+from utils.run_metadata import build_run_metadata
 
 logger = get_logger(__name__)
 
@@ -107,6 +108,8 @@ def write_manifest(
     manifest_payload.setdefault("path", str(resolved_artifact))
     manifest_payload.setdefault("sha256", _hash_for(resolved_artifact))
     manifest_payload.setdefault("created_at", datetime.now(timezone.utc).isoformat())
+    for key, value in build_run_metadata().items():
+        manifest_payload.setdefault(key, value)
 
     file_entries: list[dict[str, Any]] = []
     if files:

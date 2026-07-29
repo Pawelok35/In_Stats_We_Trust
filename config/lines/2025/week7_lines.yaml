@@ -1,121 +1,110 @@
-# NFL 2025 Week 7 – Betting Lines (home team listed first)
+source: nfl_data_py.import_schedules
+season: 2025
+week: 7
+spread_convention: home_team_spread
 matchups:
-  - report: data/reports/comparisons/2025_w7/GB_vs_ARI.md
-    home: "GB"
-    away: "ARI"
-    spread: -6.5
-    total: 44.5
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/NO_vs_CHI.md
-    home: "NO"
-    away: "CHI"
-    spread: 5.5
-    total: 47.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/PIT_vs_CIN.md
-    home: "PIT"
-    away: "CIN"
-    spread: -5.5
-    total: 43.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/MIA_vs_CLE.md
-    home: "MIA"
-    away: "CLE"
-    spread: 4.0
-    total: 44.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/WAS_vs_DAL.md
-    home: "WAS"
-    away: "DAL"
-    spread: -1.5
-    total: 55.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/NYG_vs_DEN.md
-    home: "NYG"
-    away: "DEN"
-    spread: 6.5
-    total: 40.5
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/TB_vs_DET.md
-    home: "TB"
-    away: "DET"
-    spread: 5.0
-    total: 46.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/LA_vs_JAX.md
-    home: "LA"
-    away: "JAX"
-    spread: -3.0
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/LV_vs_KC.md
-    home: "LV"
-    away: "KC"
-    spread: 12.5
-    total: 45.5
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/IND_vs_LAC.md
-    home: "IND"
-    away: "LAC"
-    spread: 2.0
-    total: 48.5
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/PHI_vs_MIN.md
-    home: "PHI"
-    away: "MIN"
-    spread: -2.0
-    total: 43.5
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/CAR_vs_NYJ.md
-    home: "CAR"
-    away: "NYJ"
-    spread: -1.5
-    total: 42.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/HOU_vs_SEA.md
-    home: "HOU"
-    away: "SEA"
-    spread: 3.5
-    total: 45.0
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/ATL_vs_SF.md
-    home: "ATL"
-    away: "SF"
-    spread: 2.0
-    total: 47.5
-    prime_time: false
-    neutral_site: false
-
-  - report: data/reports/comparisons/2025_w7/NE_vs_TEN.md
-    home: "NE"
-    away: "TEN"
-    spread: -7.0
-    total: 43.0
-    prime_time: false
-    neutral_site: false
+- report: data/reports/comparisons/2025_w7/CIN_vs_PIT.md
+  home: CIN
+  away: PIT
+  spread: 5.5
+  total: 45.5
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/JAX_vs_LA.md
+  home: JAX
+  away: LA
+  spread: 3.0
+  total: 44.5
+  prime_time: false
+  neutral_site: true
+- report: data/reports/comparisons/2025_w7/CHI_vs_NO.md
+  home: CHI
+  away: 'NO'
+  spread: -4.5
+  total: 43.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/CLE_vs_MIA.md
+  home: CLE
+  away: MIA
+  spread: -2.5
+  total: 34.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/KC_vs_LV.md
+  home: KC
+  away: LV
+  spread: -13.5
+  total: 44.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/MIN_vs_PHI.md
+  home: MIN
+  away: PHI
+  spread: 2.5
+  total: 43.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/NYJ_vs_CAR.md
+  home: NYJ
+  away: CAR
+  spread: -1.5
+  total: 39.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/TEN_vs_NE.md
+  home: TEN
+  away: NE
+  spread: 6.5
+  total: 40.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/DEN_vs_NYG.md
+  home: DEN
+  away: NYG
+  spread: -7.5
+  total: 39.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/LAC_vs_IND.md
+  home: LAC
+  away: IND
+  spread: -2.5
+  total: 48.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/ARI_vs_GB.md
+  home: ARI
+  away: GB
+  spread: 7.0
+  total: 44.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/DAL_vs_WAS.md
+  home: DAL
+  away: WAS
+  spread: -1.5
+  total: 54.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/SF_vs_ATL.md
+  home: SF
+  away: ATL
+  spread: -1.5
+  total: 46.5
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/DET_vs_TB.md
+  home: DET
+  away: TB
+  spread: -6.0
+  total: 54.5
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2025_w7/SEA_vs_HOU.md
+  home: SEA
+  away: HOU
+  spread: -3.0
+  total: 41.5
+  prime_time: true
+  neutral_site: false

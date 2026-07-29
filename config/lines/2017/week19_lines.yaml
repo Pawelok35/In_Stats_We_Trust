@@ -1,0 +1,33 @@
+source: nfl_data_py.import_schedules
+season: 2017
+week: 19
+spread_convention: home_team_spread
+matchups:
+- report: data/reports/comparisons/2017_w19/PHI_vs_ATL.md
+  home: PHI
+  away: ATL
+  spread: 2.5
+  total: 40.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2017_w19/NE_vs_TEN.md
+  home: NE
+  away: TEN
+  spread: -13.5
+  total: 48.0
+  prime_time: true
+  neutral_site: false
+- report: data/reports/comparisons/2017_w19/PIT_vs_JAX.md
+  home: PIT
+  away: JAX
+  spread: -7.0
+  total: 40.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2017_w19/MIN_vs_NO.md
+  home: MIN
+  away: 'NO'
+  spread: -5.5
+  total: 47.0
+  prime_time: false
+  neutral_site: false

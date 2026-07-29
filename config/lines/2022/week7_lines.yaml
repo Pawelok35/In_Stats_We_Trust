@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 7
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w7/ARI_vs_NO.md
   home: ARI
@@ -6,11 +10,11 @@ matchups:
   total: 44.0
   prime_time: true
   neutral_site: false
-- report: data/reports/comparisons/2022_w7/CIN_vs_ATL.md
-  home: CIN
-  away: ATL
+- report: data/reports/comparisons/2022_w7/BAL_vs_CLE.md
+  home: BAL
+  away: CLE
   spread: -6.5
-  total: 47.5
+  total: 46.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w7/CAR_vs_TB.md
@@ -20,18 +24,11 @@ matchups:
   total: 39.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w7/BAL_vs_CLE.md
-  home: BAL
-  away: CLE
+- report: data/reports/comparisons/2022_w7/CIN_vs_ATL.md
+  home: CIN
+  away: ATL
   spread: -6.5
-  total: 46.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w7/TEN_vs_IND.md
-  home: TEN
-  away: IND
-  spread: -2.5
-  total: 43.0
+  total: 47.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w7/DAL_vs_DET.md
@@ -41,6 +38,20 @@ matchups:
   total: 49.5
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w7/JAX_vs_NYG.md
+  home: JAX
+  away: NYG
+  spread: -3.0
+  total: 44.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w7/TEN_vs_IND.md
+  home: TEN
+  away: IND
+  spread: -2.5
+  total: 43.0
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w7/WAS_vs_GB.md
   home: WAS
   away: GB
@@ -48,11 +59,11 @@ matchups:
   total: 41.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w7/JAX_vs_NYG.md
-  home: JAX
-  away: NYG
-  spread: -3.0
-  total: 44.0
+- report: data/reports/comparisons/2022_w7/DEN_vs_NYJ.md
+  home: DEN
+  away: NYJ
+  spread: 2.0
+  total: 37.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w7/LV_vs_HOU.md
@@ -62,11 +73,11 @@ matchups:
   total: 46.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w7/NYJ_vs_DEN.md
-  home: NYJ
-  away: DEN
-  spread: -2.0
-  total: 37.0
+- report: data/reports/comparisons/2022_w7/LAC_vs_SEA.md
+  home: LAC
+  away: SEA
+  spread: -5.5
+  total: 51.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w7/SF_vs_KC.md
@@ -74,13 +85,6 @@ matchups:
   away: KC
   spread: 1.0
   total: 49.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w7/LAC_vs_SEA.md
-  home: LAC
-  away: SEA
-  spread: -5.5
-  total: 51.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w7/MIA_vs_PIT.md

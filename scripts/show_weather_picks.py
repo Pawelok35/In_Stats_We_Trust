@@ -118,7 +118,9 @@ def build_table(season: int, week: int, mode: str) -> str:
 
 
 def parse_args() -> argparse.Namespace:
-    parser = argparse.ArgumentParser(description="Show Weather Scale Picks from generated bucket CSV.")
+    parser = argparse.ArgumentParser(
+        description="Show Weather Scale Picks from generated bucket CSV."
+    )
     parser.add_argument("--season", type=int, required=True, help="Season, e.g. 2025")
     parser.add_argument("--week", type=int, required=True, help="Week number, e.g. 12")
     parser.add_argument(

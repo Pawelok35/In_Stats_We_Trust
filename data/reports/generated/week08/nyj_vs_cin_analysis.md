@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – NYJ 3.8 – CIN 29.2
+1️⃣ Estimated Score (Model) – NYJ 19.6 – CIN 22.2
 2️⃣ Predicted Winner (Model) – CIN
-3️⃣ Predicted Margin (Model) – CIN by 25.3 pts
-4️⃣ Win Probability (Model) – 95% (CIN)
-5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera CIN (+10.6% vs +2.2%), więc pasy rywala będą częściej pod presją. Red Zone TD Rate sprzyja CIN (18.2% vs 12.2%). Success Rate Offense pokazuje CIN na poziomie 44.0% vs 39.1% (+4.9 pp). PowerScore Summary potwierdza przewagę CIN: CIN +0.205 vs NYJ +0.160. Turnover margin faworyzuje CIN (-1.00 vs -3.00), co przekłada się na dodatkowe posiadania.
+3️⃣ Predicted Margin (Model) – CIN by 2.7 pts
+4️⃣ Win Probability (Model) – 56% (CIN)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja CIN (15.3% vs 9.4%). Na 3rd down CIN utrzymuje 35.3%, podczas gdy NYJ jest na 31.5%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę CIN: CIN +0.337 vs NYJ +0.306. Explosive Play Rate pozostaje po stronie CIN (7.6% vs 7.3%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – NYJ 17.8 – CIN 26.2
+1️⃣ Estimated Score (Market) – NYJ 19.0 – CIN 25.5
 2️⃣ Predicted Winner (Market) – CIN
-3️⃣ Predicted Margin (Market) – CIN by 8.5 pts
-4️⃣ Win Probability (Market) – 80% (CIN)
-5️⃣ Forum Output (A) – PowerScore (Model) — NYJ +0.160 vs CIN +0.205. Points per Drive Differential — NYJ -1.365 vs CIN +0.726. Success Rate Offense — NYJ 39.1% vs CIN 44.0%. Third Down Conversion — NYJ 38.8% vs CIN 35.4%. Red Zone TD Rate — NYJ 12.2% vs CIN 18.2%. Explosive Play Rate — NYJ 8.6% vs CIN 10.7%. Model margin -25.3 pts vs market spread NYJ -8.5.
-6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -25.3 pkt. CIN notuje +0.726 PPD vs -1.365 u NYJ. Różnica w Success Rate to 44.0% vs 39.1%. Na 3rd down CIN (35.4%) wygląda solidniej niż NYJ (38.8%). Red Zone i explosiveness ( 18.2% / 10.7% ) utrzymują przewagę jakościową. Market trzyma -8.5 pkt, więc edge vs linia to +16.8.
+3️⃣ Predicted Margin (Market) – CIN by 6.5 pts
+4️⃣ Win Probability (Market) – 73% (CIN)
+5️⃣ Forum Output (A) – PowerScore (Model) — NYJ +0.306 vs CIN +0.337. Points per Drive Differential — NYJ -0.802 vs CIN -0.823. Success Rate Offense — NYJ 47.3% vs CIN 46.7%. Third Down Conversion — NYJ 31.5% vs CIN 35.3%. Red Zone TD Rate — NYJ 9.4% vs CIN 15.3%. Explosive Play Rate — NYJ 7.3% vs CIN 7.6%. Model margin -2.7 pts vs market spread NYJ -6.5.
+6️⃣ Forum Output (B) – Model idzie w stronę CIN po marginesie -2.7 pkt. CIN notuje -0.823 PPD vs -0.802 u NYJ. Różnica w Success Rate to 46.7% vs 47.3%. Na 3rd down CIN (35.3%) wygląda solidniej niż NYJ (31.5%). Red Zone i explosiveness ( 15.3% / 7.6% ) utrzymują przewagę jakościową. Market trzyma -6.5 pkt, więc edge vs linia to -3.8.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +16.8 pts
-• PowerScoreDiff (winner) = +0.045
-• Confidence = 94.5%
+• Edge_vs_Line (winner) = -3.8 pts
+• PowerScoreDiff (winner) = +0.031
+• Confidence = 57.5%
 
-🏷 Model Tag: GOW — based on 94.5% confidence, +16.8 pts model edge vs line, and PowerScore Δ +0.045.
-💪 Weekly value pick — wyraźny edge vs rynek.
+🏷 Model Tag: NEUTRAL — based on 57.5% confidence, -3.8 pts model edge vs line, and PowerScore Δ +0.031.
+😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – NYJ 3.8 – CIN 29.2
-   • Win Probability – 95% (CIN)
+   • Estimated Score – NYJ 19.6 – CIN 22.2
+   • Win Probability – 56% (CIN)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – NYJ 17.8 – CIN 26.2
-   • Win Probability – 80% (CIN)
+   • Estimated Score – NYJ 19.0 – CIN 25.5
+   • Win Probability – 73% (CIN)
 
-🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — CIN (HC -8.5)
+🏷 Model Tag: NEUTRAL — CIN (HC -6.5)

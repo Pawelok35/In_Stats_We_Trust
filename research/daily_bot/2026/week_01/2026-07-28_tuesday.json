@@ -1,0 +1,108 @@
+[
+  {
+    "id": "sync_previous_results",
+    "type": "command",
+    "label": "Zamknij poprzednia kolejke: sync wynikow z nfl_data_py.",
+    "status": "SKIPPED",
+    "reason": "previous_week_not_available"
+  },
+  {
+    "id": "previous_post_event",
+    "type": "command",
+    "label": "Post-event evaluation poprzedniej kolejki.",
+    "status": "SKIPPED",
+    "reason": "previous_week_not_available"
+  },
+  {
+    "id": "learning_report",
+    "type": "command",
+    "label": "Odswiez learning report po poprzedniej kolejce.",
+    "status": "SKIPPED",
+    "reason": "previous_week_not_available"
+  },
+  {
+    "id": "sync_schedule",
+    "type": "command",
+    "label": "Pobierz / odswiez schedule sezonu.",
+    "command": ".\\.venv\\Scripts\\python.exe -m app.cli sync-nfl-schedule --season 2026",
+    "status": "PASS",
+    "returncode": 0
+  },
+  {
+    "id": "export_lines_from_nfl_base",
+    "type": "command",
+    "label": "Przygotuj bazowy config linii z nfl_data_py tylko jako fallback.",
+    "command": ".\\.venv\\Scripts\\python.exe -m app.cli export-lines-from-nfl --season 2026 --week 1",
+    "status": "PASS",
+    "returncode": 0
+  },
+  {
+    "id": "operator_quote_snapshot",
+    "type": "manual",
+    "label": "Wklej dzisiejsze screeny/linie z pregame.com albo booka.",
+    "manual_input": "quote_snapshot",
+    "description": "Screeny / linie z pregame.com albo booka. Codex normalizuje to do YAML/JSONL.",
+    "expected_path": "data\\book_snapshots\\2026\\week_01_screen_snapshot.yaml",
+    "exists": true,
+    "status": "READY"
+  },
+  {
+    "id": "convert_book_snapshot_to_lines",
+    "type": "command",
+    "label": "Przerob book snapshot na config linii modelu.",
+    "command": ".\\.venv\\Scripts\\python.exe scripts\\book_snapshot_to_week_lines.py --input data\\book_snapshots\\2026\\week_01_screen_snapshot.yaml --output config\\lines\\2026\\week1_lines.yaml",
+    "status": "PASS",
+    "returncode": 0
+  },
+  {
+    "id": "basic_model",
+    "type": "command",
+    "label": "Odpal basic model i znajdz VP/GOW/GOM/GOY.",
+    "command": ".\\.venv\\Scripts\\python.exe scripts\\prospective_week_flow.py --season 2026 --week 1 --variant variant_m --skip-freeze --allow-not-proof-ready",
+    "status": "PASS",
+    "returncode": 0
+  },
+  {
+    "id": "check_picks",
+    "type": "check_path",
+    "label": "Sprawdz plik pickow.",
+    "path": "data\\picks_variant_m\\2026\\week_01.jsonl",
+    "exists": true,
+    "status": "PASS"
+  },
+  {
+    "id": "gpt_full_19",
+    "type": "manual",
+    "label": "Dla kazdego VP/GOW/GOM/GOY zlec GPT pelne 19 punktow.",
+    "manual_input": "gpt_full_19",
+    "description": "Pelne GPT 19 punktow tylko dla VP/GOW/GOM/GOY.",
+    "expected_glob": "research/gpt_snapshots/2026/week_01/**/full_19_points.md",
+    "matches": [
+      "research\\gpt_snapshots\\2026\\week_01\\2026_w01_BUF_at_HOU\\full_19_points.md",
+      "research\\gpt_snapshots\\2026\\week_01\\2026_w01_CLE_at_JAX\\full_19_points.md",
+      "research\\gpt_snapshots\\2026\\week_01\\2026_w01_GB_at_MIN\\full_19_points.md",
+      "research\\gpt_snapshots\\2026\\week_01\\2026_w01_MIA_at_LV\\full_19_points.md",
+      "research\\gpt_snapshots\\2026\\week_01\\2026_w01_NO_at_DET\\full_19_points.md"
+    ],
+    "match_count": 5,
+    "status": "READY"
+  },
+  {
+    "id": "market_quotes",
+    "type": "manual",
+    "label": "Uzupelnij realny quote dla kandydatow.",
+    "manual_input": "market_quotes",
+    "description": "Realny quote dla kandydatow VP/GOW/GOM/GOY: book, spread, price, timestamp, executable_status.",
+    "expected_path": "data\\market_quotes\\2026\\week_01.jsonl",
+    "exists": true,
+    "status": "READY"
+  },
+  {
+    "id": "variant_b_week_flow",
+    "type": "command",
+    "label": "Odpal Variant B + model proof + learning ledger.",
+    "command": ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season 2026 --week 1 --variant variant_m --with-model-proof --write-learning-ledger",
+    "status": "PASS",
+    "returncode": 0
+  }
+]

@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – KC 21.4 – LAC 21.0
+1️⃣ Estimated Score (Model) – KC 30.2 – LAC 28.2
 2️⃣ Predicted Winner (Model) – KC
-3️⃣ Predicted Margin (Model) – KC by 0.4 pts
-4️⃣ Win Probability (Model) – 56% (KC)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja KC (15.2% vs 10.6%). Success Rate Offense pokazuje KC na poziomie 48.2% vs 46.8% (+1.4 pp). Explosive Play Rate pozostaje po stronie KC (10.6% vs 9.3%), więc big-play equity jest wyższe. KC prowadzi w Points per Drive Differential (+0.549 vs +0.310), więc bazowa efektywność napędza przewagę.
+3️⃣ Predicted Margin (Model) – KC by 2.0 pts
+4️⃣ Win Probability (Model) – 63% (KC)
+5️⃣ Why This Team Wins (Model) – Na 3rd down KC utrzymuje 40.4%, podczas gdy LAC jest na 34.6%, co stabilizuje serie ofensywne. Field position edge wynosi +3.7 yds na rzecz KC (-1.8 vs -5.5), co skraca ich boisko. Success Rate Offense pokazuje KC na poziomie 49.2% vs 46.3% (+2.9 pp). Red Zone TD Rate sprzyja KC (18.4% vs 17.1%).
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – KC 24.0 – LAC 18.0
+1️⃣ Estimated Score (Market) – KC 30.0 – LAC 26.5
 2️⃣ Predicted Winner (Market) – KC
-3️⃣ Predicted Margin (Market) – KC by 6.0 pts
-4️⃣ Win Probability (Market) – 71% (KC)
-5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.127 vs LAC +0.140. Points per Drive Differential — KC +0.549 vs LAC +0.310. Success Rate Offense — KC 48.2% vs LAC 46.8%. Third Down Conversion — KC 37.1% vs LAC 44.2%. Red Zone TD Rate — KC 15.2% vs LAC 10.6%. Explosive Play Rate — KC 10.6% vs LAC 9.3%. Model margin 0.4 pts vs market spread KC +6.0.
-6️⃣ Forum Output (B) – Model idzie w stronę KC po marginesie 0.4 pkt. KC notuje +0.549 PPD vs +0.310 u LAC. Różnica w Success Rate to 48.2% vs 46.8%. Na 3rd down KC (37.1%) wygląda solidniej niż LAC (44.2%). Red Zone i explosiveness ( 15.2% / 10.6% ) utrzymują przewagę jakościową. Market trzyma 6.0 pkt, więc edge vs linia to -5.6.
+3️⃣ Predicted Margin (Market) – KC by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (KC)
+5️⃣ Forum Output (A) – PowerScore (Model) — KC +0.152 vs LAC +0.181. Points per Drive Differential — KC +0.683 vs LAC +0.780. Success Rate Offense — KC 49.2% vs LAC 46.3%. Third Down Conversion — KC 40.4% vs LAC 34.6%. Red Zone TD Rate — KC 18.4% vs LAC 17.1%. Explosive Play Rate — KC 14.1% vs LAC 14.8%. Model margin 2.0 pts vs market spread KC +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę KC po marginesie 2.0 pkt. KC notuje +0.683 PPD vs +0.780 u LAC. Różnica w Success Rate to 49.2% vs 46.3%. Na 3rd down KC (40.4%) wygląda solidniej niż LAC (34.6%). Red Zone i explosiveness ( 18.4% / 14.1% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to -1.5.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = -5.6 pts
-• PowerScoreDiff (winner) = -0.013
-• Confidence = 56.0%
+• Edge_vs_Line (winner) = -1.5 pts
+• PowerScoreDiff (winner) = -0.029
+• Confidence = 62.0%
 
-🏷 Model Tag: NEUTRAL — based on 56.0% confidence, -5.6 pts model edge vs line, and PowerScore Δ -0.013.
+🏷 Model Tag: NEUTRAL — based on 62.0% confidence, -1.5 pts model edge vs line, and PowerScore Δ -0.029.
 😴 Brak value — model i rynek w równowadze.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – KC 21.4 – LAC 21.0
-   • Win Probability – 56% (KC)
+   • Estimated Score – KC 30.2 – LAC 28.2
+   • Win Probability – 63% (KC)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – KC 24.0 – LAC 18.0
-   • Win Probability – 71% (KC)
+   • Estimated Score – KC 30.0 – LAC 26.5
+   • Win Probability – 62% (KC)
 
-🏷 Model Tag: NEUTRAL — KC (HC -6.0)
+🏷 Model Tag: NEUTRAL — KC (HC -3.5)

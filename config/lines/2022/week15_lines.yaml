@@ -1,8 +1,12 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 15
+spread_convention: home_team_spread
 matchups:
-- report: data/reports/comparisons/2022_w15/SF_vs_SEA.md
-  home: SF
-  away: SEA
-  spread: -3.0
+- report: data/reports/comparisons/2022_w15/SEA_vs_SF.md
+  home: SEA
+  away: SF
+  spread: 3.0
   total: 43.0
   prime_time: true
   neutral_site: false
@@ -27,13 +31,6 @@ matchups:
   total: 44.0
   prime_time: true
   neutral_site: false
-- report: data/reports/comparisons/2022_w15/NO_vs_ATL.md
-  home: 'NO'
-  away: ATL
-  spread: -5.0
-  total: 43.5
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w15/CAR_vs_PIT.md
   home: CAR
   away: PIT
@@ -48,6 +45,13 @@ matchups:
   total: 48.0
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w15/HOU_vs_KC.md
+  home: HOU
+  away: KC
+  spread: 14.5
+  total: 48.5
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w15/JAX_vs_DAL.md
   home: JAX
   away: DAL
@@ -55,18 +59,18 @@ matchups:
   total: 48.5
   prime_time: false
   neutral_site: false
+- report: data/reports/comparisons/2022_w15/NO_vs_ATL.md
+  home: 'NO'
+  away: ATL
+  spread: -5.0
+  total: 43.5
+  prime_time: false
+  neutral_site: false
 - report: data/reports/comparisons/2022_w15/NYJ_vs_DET.md
   home: NYJ
   away: DET
   spread: -2.0
   total: 44.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w15/HOU_vs_KC.md
-  home: HOU
-  away: KC
-  spread: 14.5
-  total: 48.5
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w15/DEN_vs_ARI.md
@@ -83,18 +87,18 @@ matchups:
   total: 45.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w15/TB_vs_CIN.md
-  home: TB
-  away: CIN
-  spread: 3.5
-  total: 47.0
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w15/LAC_vs_TEN.md
   home: LAC
   away: TEN
   spread: -3.0
   total: 46.5
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w15/TB_vs_CIN.md
+  home: TB
+  away: CIN
+  spread: 3.5
+  total: 47.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w15/WAS_vs_NYG.md

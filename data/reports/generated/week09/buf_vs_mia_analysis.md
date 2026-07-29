@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – BUF 40.9 – MIA 20.4
+1️⃣ Estimated Score (Model) – BUF 28.2 – MIA 22.0
 2️⃣ Predicted Winner (Model) – BUF
-3️⃣ Predicted Margin (Model) – BUF by 20.5 pts
-4️⃣ Win Probability (Model) – 95% (BUF)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja BUF (16.7% vs 9.8%). Success Rate Offense pokazuje BUF na poziomie 48.2% vs 42.6% (+5.6 pp). BUF prowadzi w Points per Drive Differential (+0.952 vs -0.615), więc bazowa efektywność napędza przewagę. Defensive pressure rate wspiera BUF (+3.3% vs +2.4%), więc pasy rywala będą częściej pod presją.
+3️⃣ Predicted Margin (Model) – BUF by 6.2 pts
+4️⃣ Win Probability (Model) – 81% (BUF)
+5️⃣ Why This Team Wins (Model) – Defensive pressure rate wspiera BUF (+7.8% vs +0.0%), więc pasy rywala będą częściej pod presją. Na 3rd down BUF utrzymuje 30.9%, podczas gdy MIA jest na 25.5%, co stabilizuje serie ofensywne. BUF prowadzi w Points per Drive Differential (+0.119 vs -0.424), więc bazowa efektywność napędza przewagę.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – BUF 27.5 – MIA 21.5
+1️⃣ Estimated Score (Market) – BUF 24.0 – MIA 20.0
 2️⃣ Predicted Winner (Market) – BUF
-3️⃣ Predicted Margin (Market) – BUF by 6.0 pts
-4️⃣ Win Probability (Market) – 71% (BUF)
-5️⃣ Forum Output (A) – PowerScore (Model) — BUF +0.279 vs MIA +0.287. Points per Drive Differential — BUF +0.952 vs MIA -0.615. Success Rate Offense — BUF 48.2% vs MIA 42.6%. Third Down Conversion — BUF 33.1% vs MIA 33.9%. Red Zone TD Rate — BUF 16.7% vs MIA 9.8%. Explosive Play Rate — BUF 10.9% vs MIA 10.9%. Model margin 20.5 pts vs market spread BUF +6.0.
-6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie 20.5 pkt. BUF notuje +0.952 PPD vs -0.615 u MIA. Różnica w Success Rate to 48.2% vs 42.6%. Na 3rd down BUF (33.1%) wygląda solidniej niż MIA (33.9%). Red Zone i explosiveness ( 16.7% / 10.9% ) utrzymują przewagę jakościową. Market trzyma 6.0 pkt, więc edge vs linia to +14.5.
+3️⃣ Predicted Margin (Market) – BUF by 4.0 pts
+4️⃣ Win Probability (Market) – 64% (BUF)
+5️⃣ Forum Output (A) – PowerScore (Model) — BUF +0.128 vs MIA +0.128. Points per Drive Differential — BUF +0.119 vs MIA -0.424. Success Rate Offense — BUF 41.1% vs MIA 43.8%. Third Down Conversion — BUF 30.9% vs MIA 25.5%. Red Zone TD Rate — BUF 12.7% vs MIA 13.2%. Explosive Play Rate — BUF 9.6% vs MIA 11.2%. Model margin 6.2 pts vs market spread BUF +4.0.
+6️⃣ Forum Output (B) – Model idzie w stronę BUF po marginesie 6.2 pkt. BUF notuje +0.119 PPD vs -0.424 u MIA. Różnica w Success Rate to 41.1% vs 43.8%. Na 3rd down BUF (30.9%) wygląda solidniej niż MIA (25.5%). Red Zone i explosiveness ( 12.7% / 9.6% ) utrzymują przewagę jakościową. Market trzyma 4.0 pkt, więc edge vs linia to +2.2.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +14.5 pts
-• PowerScoreDiff (winner) = -0.008
-• Confidence = 95.0%
+• Edge_vs_Line (winner) = +2.2 pts
+• PowerScoreDiff (winner) = +0.000
+• Confidence = 82.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +14.5 pts model edge vs line, and PowerScore Δ -0.008.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: VALUE PLAY — based on 82.0% confidence, +2.2 pts model edge vs line, and PowerScore Δ +0.000.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – BUF 40.9 – MIA 20.4
-   • Win Probability – 95% (BUF)
+   • Estimated Score – BUF 28.2 – MIA 22.0
+   • Win Probability – 81% (BUF)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – BUF 27.5 – MIA 21.5
-   • Win Probability – 71% (BUF)
+   • Estimated Score – BUF 24.0 – MIA 20.0
+   • Win Probability – 64% (BUF)
 
-🏷 Model Tag: NEUTRAL — BUF (HC -6.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — BUF (HC -4.0)

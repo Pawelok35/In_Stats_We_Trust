@@ -1,0 +1,9 @@
+gale:
+  min_rating: 3.4
+  min_value_buffer: -1.0
+
+high_tier:
+  min_rating: 7.8
+  min_value_buffer: 0.0
+  guardrail_level_threshold: 3
+  guardrail_min_value_buffer: 2.0

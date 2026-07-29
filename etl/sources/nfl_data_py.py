@@ -11,7 +11,6 @@ Ten provider robi dwie rzeczy:
 from __future__ import annotations
 
 from pathlib import Path
-from typing import Optional
 
 import polars as pl
 

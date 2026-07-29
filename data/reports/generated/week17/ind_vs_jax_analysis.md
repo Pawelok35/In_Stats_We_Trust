@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – IND 29.1 – JAX 24.2
+1️⃣ Estimated Score (Model) – IND 33.7 – JAX 24.2
 2️⃣ Predicted Winner (Model) – IND
-3️⃣ Predicted Margin (Model) – IND by 4.8 pts
-4️⃣ Win Probability (Model) – 75% (IND)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja IND (18.5% vs 13.5%). Success Rate Offense pokazuje IND na poziomie 50.1% vs 47.2% (+2.9 pp). Na 3rd down IND utrzymuje 38.6%, podczas gdy JAX jest na 35.7%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie IND (11.3% vs 9.7%), więc big-play equity jest wyższe. IND prowadzi w Points per Drive Differential (+0.472 vs +0.464), więc bazowa efektywność napędza przewagę.
+3️⃣ Predicted Margin (Model) – IND by 9.5 pts
+4️⃣ Win Probability (Model) – 95% (IND)
+5️⃣ Why This Team Wins (Model) – Na 3rd down IND utrzymuje 39.7%, podczas gdy JAX jest na 32.0%, co stabilizuje serie ofensywne. PowerScore Summary potwierdza przewagę IND: IND +0.156 vs JAX +0.102. Success Rate Offense pokazuje IND na poziomie 44.8% vs 40.4% (+4.4 pp). Field position edge wynosi +1.7 yds na rzecz IND (0.2 vs -1.5), co skraca ich boisko. Explosive Play Rate pozostaje po stronie IND (10.3% vs 9.3%), więc big-play equity jest wyższe.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – IND 21.0 – JAX 27.5
-2️⃣ Predicted Winner (Market) – JAX
-3️⃣ Predicted Margin (Market) – JAX by 6.5 pts
-4️⃣ Win Probability (Market) – 73% (JAX)
-5️⃣ Forum Output (A) – PowerScore (Model) — IND +0.089 vs JAX +0.154. Points per Drive Differential — IND +0.472 vs JAX +0.464. Success Rate Offense — IND 50.1% vs JAX 47.2%. Third Down Conversion — IND 38.6% vs JAX 35.7%. Red Zone TD Rate — IND 18.5% vs JAX 13.5%. Explosive Play Rate — IND 11.3% vs JAX 9.7%. Model margin 4.8 pts vs market spread IND -6.5.
-6️⃣ Forum Output (B) – Model idzie w stronę IND po marginesie 4.8 pkt. IND notuje +0.472 PPD vs +0.464 u JAX. Różnica w Success Rate to 50.1% vs 47.2%. Na 3rd down IND (38.6%) wygląda solidniej niż JAX (35.7%). Red Zone i explosiveness ( 18.5% / 11.3% ) utrzymują przewagę jakościową. Market trzyma -6.5 pkt, więc edge vs linia to +11.3.
+1️⃣ Estimated Score (Market) – IND 27.0 – JAX 21.5
+2️⃣ Predicted Winner (Market) – IND
+3️⃣ Predicted Margin (Market) – IND by 5.5 pts
+4️⃣ Win Probability (Market) – 69% (IND)
+5️⃣ Forum Output (A) – PowerScore (Model) — IND +0.156 vs JAX +0.102. Points per Drive Differential — IND +0.135 vs JAX -0.186. Success Rate Offense — IND 44.8% vs JAX 40.4%. Third Down Conversion — IND 39.7% vs JAX 32.0%. Red Zone TD Rate — IND 15.1% vs JAX 16.1%. Explosive Play Rate — IND 10.3% vs JAX 9.3%. Model margin 9.5 pts vs market spread IND +5.5.
+6️⃣ Forum Output (B) – Model idzie w stronę IND po marginesie 9.5 pkt. IND notuje +0.135 PPD vs -0.186 u JAX. Różnica w Success Rate to 44.8% vs 40.4%. Na 3rd down IND (39.7%) wygląda solidniej niż JAX (32.0%). Red Zone i explosiveness ( 15.1% / 10.3% ) utrzymują przewagę jakościową. Market trzyma 5.5 pkt, więc edge vs linia to +4.0.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +11.3 pts
-• PowerScoreDiff (winner) = -0.065
-• Confidence = 75.0%
+• Edge_vs_Line (winner) = +4.0 pts
+• PowerScoreDiff (winner) = +0.054
+• Confidence = 98.0%
 
-🏷 Model Tag: NEUTRAL — based on 75.0% confidence, +11.3 pts model edge vs line, and PowerScore Δ -0.065.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: GOW — based on 98.0% confidence, +4.0 pts model edge vs line, and PowerScore Δ +0.054.
+💪 Weekly value pick — wyraźny edge vs rynek.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – IND 29.1 – JAX 24.2
-   • Win Probability – 75% (IND)
+   • Estimated Score – IND 33.7 – JAX 24.2
+   • Win Probability – 95% (IND)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – IND 21.0 – JAX 27.5
-   • Win Probability – 73% (JAX)
+   • Estimated Score – IND 27.0 – JAX 21.5
+   • Win Probability – 69% (IND)
 
-🏷 Model Tag: NEUTRAL — IND (HC +6.5)
+🏷 Model Tag: <span style="color:#ff8c00; font-weight:600;">GOW</span> — IND (HC -5.5)

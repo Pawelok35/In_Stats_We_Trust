@@ -1,0 +1,10 @@
+name: gom_stable
+description: Stable GOM strategy selected from 2017-2023 research with 2024-2025 holdout.
+variant: variant_d_balanced
+tags:
+  - GOM
+confidence_min: 85
+edge_min: 0
+handicap_mode: any
+start_week: 3
+max_abs_handicap: 7

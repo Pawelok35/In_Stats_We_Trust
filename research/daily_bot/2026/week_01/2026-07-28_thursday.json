@@ -1,0 +1,45 @@
+[
+  {
+    "id": "tnf_final_quote",
+    "type": "manual",
+    "label": "Final quote dla TNF.",
+    "status": "SKIPPED",
+    "reason": "no_action_candidate_in_scope:tnf"
+  },
+  {
+    "id": "tnf_final_gpt_delta",
+    "type": "manual",
+    "label": "GPT final delta refresh dla TNF, jesli kandydat.",
+    "status": "SKIPPED",
+    "reason": "no_action_candidate_in_scope:tnf"
+  },
+  {
+    "id": "sunday_mnf_quote_snapshot",
+    "type": "manual",
+    "label": "Zrzut quote dla niedzieli i MNF.",
+    "manual_input": "quote_snapshot",
+    "description": "Screeny / linie z pregame.com albo booka. Codex normalizuje to do YAML/JSONL.",
+    "expected_path": "data\\book_snapshots\\2026\\week_01_screen_snapshot.yaml",
+    "exists": true,
+    "status": "READY"
+  },
+  {
+    "id": "sunday_mnf_gpt_delta",
+    "type": "manual",
+    "label": "GPT delta refresh dla Sunday/MNF, jesli cos istotnego sie zmienilo.",
+    "manual_input": "gpt_delta",
+    "description": "Delta refresh GPT dla kandydatow, gdy zmieniaja sie injury/quote/weather/roster/market.",
+    "expected_glob": "research/gpt_snapshots/2026/week_01/**/delta_*.md",
+    "matches": [],
+    "match_count": 0,
+    "status": "OPTIONAL"
+  },
+  {
+    "id": "run_variant_b",
+    "type": "command",
+    "label": "Odpal Variant B dla aktywnych kandydatow.",
+    "command": ".\\.venv\\Scripts\\python.exe scripts\\variant_b_week_flow.py --season 2026 --week 1 --variant variant_m --with-model-proof --write-learning-ledger",
+    "status": "PASS",
+    "returncode": 0
+  }
+]

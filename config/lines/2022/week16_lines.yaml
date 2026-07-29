@@ -1,3 +1,7 @@
+source: nfl_data_py.import_schedules
+season: 2022
+week: 16
+spread_convention: home_team_spread
 matchups:
 - report: data/reports/comparisons/2022_w16/NYJ_vs_JAX.md
   home: NYJ
@@ -13,13 +17,6 @@ matchups:
   total: 35.0
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w16/CHI_vs_BUF.md
-  home: CHI
-  away: BUF
-  spread: 8.0
-  total: 40.0
-  prime_time: false
-  neutral_site: false
 - report: data/reports/comparisons/2022_w16/CAR_vs_DET.md
   home: CAR
   away: DET
@@ -27,11 +24,11 @@ matchups:
   total: 43.5
   prime_time: false
   neutral_site: false
-- report: data/reports/comparisons/2022_w16/NE_vs_CIN.md
-  home: NE
-  away: CIN
-  spread: 3.0
-  total: 42.0
+- report: data/reports/comparisons/2022_w16/CHI_vs_BUF.md
+  home: CHI
+  away: BUF
+  spread: 8.0
+  total: 40.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w16/CLE_vs_NO.md
@@ -39,13 +36,6 @@ matchups:
   away: 'NO'
   spread: -3.0
   total: 32.0
-  prime_time: false
-  neutral_site: false
-- report: data/reports/comparisons/2022_w16/TEN_vs_HOU.md
-  home: TEN
-  away: HOU
-  spread: -3.0
-  total: 34.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w16/KC_vs_SEA.md
@@ -60,6 +50,20 @@ matchups:
   away: NYG
   spread: -4.5
   total: 48.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w16/NE_vs_CIN.md
+  home: NE
+  away: CIN
+  spread: 3.0
+  total: 42.0
+  prime_time: false
+  neutral_site: false
+- report: data/reports/comparisons/2022_w16/TEN_vs_HOU.md
+  home: TEN
+  away: HOU
+  spread: -3.0
+  total: 34.0
   prime_time: false
   neutral_site: false
 - report: data/reports/comparisons/2022_w16/SF_vs_WAS.md

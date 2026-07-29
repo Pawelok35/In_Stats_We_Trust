@@ -5,6 +5,7 @@ import { useEffect, useMemo, useState } from "react";
 import type { WeatherPick } from "@/data/weather-picks";
 import type { MatchupSummary, WeekIdentifier } from "@/lib/reports";
 import type { ParsedReport } from "@/lib/markdown-parser";
+import type { OperationalPick } from "@/lib/pick-types";
 import { cn } from "@/lib/utils";
 import { weatherPicks as defaultPicks } from "@/data/weather-picks";
 
@@ -16,6 +17,7 @@ import { MatchupCharts } from "./MatchupCharts";
 import { InsightsCard } from "./InsightsCard";
 import { DetailedStatsGrid } from "./DetailedStatsGrid";
 import { SectionsChartGrid } from "./SectionsChartGrid";
+import { OperationalPicksTable } from "./OperationalPicksTable";
 
 type Props = {
   initialWeeks: WeekIdentifier[];
@@ -42,6 +44,8 @@ export function DashboardShell({
   const [report, setReport] = useState<ParsedReport | null>(initialReport);
   const [loadingReport, setLoadingReport] = useState(false);
   const [loadingMatchups, setLoadingMatchups] = useState(false);
+  const [loadingPicks, setLoadingPicks] = useState(false);
+  const [operationalPicks, setOperationalPicks] = useState<OperationalPick[]>([]);
   const [selectedPickId, setSelectedPickId] = useState<string | undefined>(undefined);
 
   const seasons = Array.from(new Set(initialWeeks.map((w) => w.season))).sort((a, b) => b - a);
@@ -75,7 +79,27 @@ export function DashboardShell({
     return () => {
       ignore = true;
     };
-    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, [season, week]);
+
+  useEffect(() => {
+    let ignore = false;
+    async function loadPicks() {
+      setLoadingPicks(true);
+      try {
+        const res = await fetch(`/api/picks?season=${season}&week=${week}`);
+        const data = await res.json();
+        if (!ignore) setOperationalPicks(data.picks ?? []);
+      } catch (error) {
+        console.error(error);
+        if (!ignore) setOperationalPicks([]);
+      } finally {
+        if (!ignore) setLoadingPicks(false);
+      }
+    }
+    loadPicks();
+    return () => {
+      ignore = true;
+    };
   }, [season, week]);
 
   async function loadReport(seasonValue: number, weekValue: number, slugValue: string) {
@@ -110,15 +134,25 @@ export function DashboardShell({
     }
   }
 
+  function handleOperationalPickClick(pick: OperationalPick) {
+    const matchingSlug =
+      matchups.find((matchup) => matchup.slug.toLowerCase() === pick.slug.toLowerCase())?.slug ??
+      "";
+    if (matchingSlug) {
+      setSelectedSlug(matchingSlug);
+      loadReport(season, week, matchingSlug);
+    }
+  }
+
   const picksForWeek = useMemo(
     () => weatherPicks.filter((pick) => pick.season === season && pick.week === week),
     [season, week, weatherPicks],
   );
 
   const totalStake = picksForWeek.reduce((sum, pick) => sum + (pick.stake ?? 0), 0);
-  const totalPicks = picksForWeek.filter((pick) => pick.stake !== null).length;
+  const totalPicks = operationalPicks.length || picksForWeek.filter((pick) => pick.stake !== null).length;
 
-  const record = "73-31 (70%)"; // placeholder copy
+  const record = `${operationalPicks.filter((pick) => pick.decision === "bet").length} bet signals`;
 
   return (
     <div className="min-h-screen bg-transparent">
@@ -172,6 +206,13 @@ export function DashboardShell({
           />
           <GameSummaryCard report={report} pick={picksForWeek.find((p) => p.slug === selectedSlug)} />
         </div>
+
+        <OperationalPicksTable
+          picks={operationalPicks}
+          loading={loadingPicks}
+          selectedSlug={selectedSlug}
+          onSelect={handleOperationalPickClick}
+        />
 
         <section className={cn("space-y-6", loadingReport && "opacity-60")}>
           <MatchupCharts report={report} />

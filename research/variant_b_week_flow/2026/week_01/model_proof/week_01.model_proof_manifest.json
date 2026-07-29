@@ -1,0 +1,25 @@
+{
+  "schema_version": "variant_b_model_proof_manifest.v1",
+  "proof_id": "empirical_residual_pmf_variant_m_2021_2025_20260728T193246Z",
+  "method": "EMPIRICAL_RESIDUAL_PMF_MVP",
+  "input": "data\\picks_variant_m\\2026\\week_01.jsonl",
+  "output": "research\\variant_b_week_flow\\2026\\week_01\\model_proof\\week_01.jsonl",
+  "variant": "variant_m",
+  "train_seasons": [
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "training_tags": [
+    "GOM",
+    "GOW",
+    "GOY",
+    "VALUE PLAY"
+  ],
+  "residual_sample_size": 347,
+  "residual_mean": -1.471643,
+  "residual_std": 14.476746,
+  "created_at_utc": "2026-07-28T19:32:47Z"
+}

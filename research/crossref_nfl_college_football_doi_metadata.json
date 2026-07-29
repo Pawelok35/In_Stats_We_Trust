@@ -1,0 +1,403 @@
+[
+  {
+    "doi": "10.1080/01621459.1980.10477504",
+    "status": "ok",
+    "title": "Predictions for National Football League Games via Linear-Model Methodology",
+    "journal": "Journal of the American Statistical Association",
+    "year": 1980,
+    "authors": "David Harville",
+    "url": "https://doi.org/10.1080/01621459.1980.10477504"
+  },
+  {
+    "doi": "10.1080/00031305.1991.10475798",
+    "status": "ok",
+    "title": "On the Probability of Winning a Football Game",
+    "journal": "The American Statistician",
+    "year": 1991,
+    "authors": "Hal Stern",
+    "url": "https://doi.org/10.1080/00031305.1991.10475798"
+  },
+  {
+    "doi": "10.1080/01621459.1998.10474084",
+    "status": "ok",
+    "title": "A State-Space Model for National Football League Scores",
+    "journal": "Journal of the American Statistical Association",
+    "year": 1998,
+    "authors": "Mark E. Glickman, Hal S. Stern",
+    "url": "https://doi.org/10.1080/01621459.1998.10474084"
+  },
+  {
+    "doi": "10.1016/S0169-2070(01)00144-3",
+    "status": "ok",
+    "title": "Predicting the outcomes of National Football League games",
+    "journal": "International Journal of Forecasting",
+    "year": 2003,
+    "authors": "Bryan L. Boulier, H.O. Stekler",
+    "url": "https://doi.org/10.1016/s0169-2070(01)00144-3"
+  },
+  {
+    "doi": "10.1016/j.ijforecast.2007.05.003",
+    "status": "ok",
+    "title": "The comparative accuracy of judgmental and model forecasts of American football games",
+    "journal": "International Journal of Forecasting",
+    "year": 2007,
+    "authors": "ChiUng Song, Bryan L. Boulier, Herman O. Stekler",
+    "url": "https://doi.org/10.1016/j.ijforecast.2007.05.003"
+  },
+  {
+    "doi": "10.1016/j.ijforecast.2012.07.002",
+    "status": "ok",
+    "title": "Forecasting exact scores in National Football League games",
+    "journal": "International Journal of Forecasting",
+    "year": 2013,
+    "authors": "Rose D. Baker, Ian G. McHale",
+    "url": "https://doi.org/10.1016/j.ijforecast.2012.07.002"
+  },
+  {
+    "doi": "10.1080/02664763.2022.2120973",
+    "status": "ok",
+    "title": "A stochastic model for NFL games and point spread assessment",
+    "journal": "Journal of Applied Statistics",
+    "year": 2024,
+    "authors": "Muhammad Mohsin, Albrecht Gebhardt",
+    "url": "https://doi.org/10.1080/02664763.2022.2120973"
+  },
+  {
+    "doi": "10.3233/JSA-190314",
+    "status": "ok",
+    "title": "Forecasting college football game outcomes using modern modeling techniques",
+    "journal": "Journal of Sports Analytics",
+    "year": 2020,
+    "authors": "Charles South, Edward Egros",
+    "url": "https://doi.org/10.3233/jsa-190314"
+  },
+  {
+    "doi": "10.1016/j.ijforecast.2011.05.002",
+    "status": "ok",
+    "title": "A comparative analysis of data mining methods in predicting NCAA bowl outcomes",
+    "journal": "International Journal of Forecasting",
+    "year": 2012,
+    "authors": "Dursun Delen, Douglas Cogdell, Nihat Kasap",
+    "url": "https://doi.org/10.1016/j.ijforecast.2011.05.002"
+  },
+  {
+    "doi": "10.1371/journal.pone.0168716",
+    "status": "ok",
+    "title": "The Anatomy of American Football: Evidence from 7 Years of NFL Game Data",
+    "journal": "PLOS ONE",
+    "year": 2016,
+    "authors": "Konstantinos Pelechrinis, Evangelos Papalexakis",
+    "url": "https://doi.org/10.1371/journal.pone.0168716"
+  },
+  {
+    "doi": "10.1515/jqas-2018-0010",
+    "status": "ok",
+    "title": "nflWAR: a reproducible method for offensive player evaluation in football",
+    "journal": "Journal of Quantitative Analysis in Sports",
+    "year": 2019,
+    "authors": "Ronald Yurko, Samuel Ventura, Maksim Horowitz",
+    "url": "https://doi.org/10.1515/jqas-2018-0010"
+  },
+  {
+    "doi": "10.1515/jqas-2019-0056",
+    "status": "ok",
+    "title": "Going deep: models for continuous-time within-play valuation of game outcomes in American football with tracking data",
+    "journal": "Journal of Quantitative Analysis in Sports",
+    "year": 2020,
+    "authors": "Ronald Yurko, Francesca Matano, Lee F. Richardson, Nicholas Granered, Taylor Pospisil, Konstantinos Pelechrinis, Samuel L. Ventura",
+    "url": "https://doi.org/10.1515/jqas-2019-0056"
+  },
+  {
+    "doi": "10.1371/journal.pone.0287601",
+    "status": "ok",
+    "title": "A statistical theory of optimal decision-making in sports betting",
+    "journal": "PLOS ONE",
+    "year": 2023,
+    "authors": "Jacek P. Dmochowski",
+    "url": "https://doi.org/10.1371/journal.pone.0287601"
+  },
+  {
+    "doi": "10.1177/15270025211071042",
+    "status": "ok",
+    "title": "Efficient Spread Betting Markets: A Literature Review",
+    "journal": "Journal of Sports Economics",
+    "year": 2022,
+    "authors": "Jonas Vandenbruaene, Marc De Ceuster, Jan Annaert",
+    "url": "https://doi.org/10.1177/15270025211071042"
+  },
+  {
+    "doi": "10.1016/0304-405X(91)90034-H",
+    "status": "ok",
+    "title": "The degree of inefficiency in the football betting market Statistical tests",
+    "journal": "Journal of Financial Economics",
+    "year": 1991,
+    "authors": "J Golec",
+    "url": "https://doi.org/10.1016/0304-405x(91)90034-h"
+  },
+  {
+    "doi": "10.1111/j.1540-6261.1997.tb01129.x",
+    "status": "ok",
+    "title": "Testing Market Efficiency: Evidence From The NFL Sports Betting Market",
+    "journal": "The Journal of Finance",
+    "year": 1997,
+    "authors": "PHILIP K. GRAY, STEPHEN F. GRAY",
+    "url": "https://doi.org/10.1111/j.1540-6261.1997.tb01129.x"
+  },
+  {
+    "doi": "10.1086/261332",
+    "status": "ok",
+    "title": "Beating the Spread: Testing the Efficiency of the Gambling Market for National Football League Games",
+    "journal": "Journal of Political Economy",
+    "year": 1985,
+    "authors": "Richard A. Zuber, John M. Gandar, Benny D. Bowers",
+    "url": "https://doi.org/10.1086/261332"
+  },
+  {
+    "doi": "10.1086/261532",
+    "status": "ok",
+    "title": "Hold Your Bets: Another Look at the Efficiency of the Gambling Market for National Football League Games",
+    "journal": "Journal of Political Economy",
+    "year": 1988,
+    "authors": "Raymond D. Sauer, Vic Brajer, Stephen P. Ferris, M. Wayne Marr",
+    "url": "https://doi.org/10.1086/261532"
+  },
+  {
+    "doi": "10.1016/j.jempfin.2013.07.002",
+    "status": "ok",
+    "title": "An intra-week efficiency analysis of bookie-quoted NFL betting lines in NYC",
+    "journal": "Journal of Empirical Finance",
+    "year": 2013,
+    "authors": "Thomas W. Miller, David E. Rapach",
+    "url": "https://doi.org/10.1016/j.jempfin.2013.07.002"
+  },
+  {
+    "doi": "10.1177/1527002512466557",
+    "status": "ok",
+    "title": "The National Football League Wagering Market",
+    "journal": "Journal of Sports Economics",
+    "year": 2014,
+    "authors": "Yoon Tae Sung, Scott Tainsky",
+    "url": "https://doi.org/10.1177/1527002512466557"
+  },
+  {
+    "doi": "10.1177/1527002520975837",
+    "status": "ok",
+    "title": "The Predictive Power of College Football Spreads: Regular Season Versus Bowl Games",
+    "journal": "Journal of Sports Economics",
+    "year": 2021,
+    "authors": "Justin Cox, Adam L. Schwartz, Bonnie F. Van Ness, Robert A. Van Ness",
+    "url": "https://doi.org/10.1177/1527002520975837"
+  },
+  {
+    "doi": "10.1016/j.jbef.2021.100522",
+    "status": "ok",
+    "title": "Behavioral biases in the NFL gambling market: Overreaction to news and the recency bias",
+    "journal": "Journal of Behavioral and Experimental Finance",
+    "year": 2021,
+    "authors": "Robert B. Durand, Fernando M. Patterson, Corey A. Shank",
+    "url": "https://doi.org/10.1016/j.jbef.2021.100522"
+  },
+  {
+    "doi": "10.1016/j.econlet.2025.112288",
+    "status": "ok",
+    "title": "Anchoring bias in the NFL gambling market",
+    "journal": "Economics Letters",
+    "year": 2025,
+    "authors": "Andy Fodor, Fernando M. Patterson, Corey A. Shank",
+    "url": "https://doi.org/10.1016/j.econlet.2025.112288"
+  },
+  {
+    "doi": "10.1016/j.frl.2023.104006",
+    "status": "ok",
+    "title": "Momentum trading in the NFL gambling market",
+    "journal": "Finance Research Letters",
+    "year": 2023,
+    "authors": "John R. Nofsinger, Corey A. Shank",
+    "url": "https://doi.org/10.1016/j.frl.2023.104006"
+  },
+  {
+    "doi": "10.3389/frbhe.2024.1479832",
+    "status": "ok",
+    "title": "Bye-bye, bye advantage: estimating the competitive impact of rest differential in the National Football League",
+    "journal": "Frontiers in Behavioral Economics",
+    "year": 2024,
+    "authors": "Michael J. Lopez, Thompson Bliss",
+    "url": "https://doi.org/10.3389/frbhe.2024.1479832"
+  },
+  {
+    "doi": "10.1515/jqas-2024-0016",
+    "status": "ok",
+    "title": "A comprehensive survey of the home advantage in American football",
+    "journal": "Journal of Quantitative Analysis in Sports",
+    "year": 2024,
+    "authors": "Luke Benz, Thompson Bliss, Michael Lopez",
+    "url": "https://doi.org/10.1515/jqas-2024-0016"
+  },
+  {
+    "doi": "10.1177/22150218241304941",
+    "status": "ok",
+    "title": "Weighted Approaches to Assessing Injury Burden in Team Sports",
+    "journal": "Journal of Sports Analytics",
+    "year": 2025,
+    "authors": "Amanda Glazer, Zach Binney, Tej Seth",
+    "url": "https://doi.org/10.1177/22150218241304941"
+  },
+  {
+    "doi": "10.1177/1527002512440580",
+    "status": "ok",
+    "title": "The Impact of Visiting Team Travel on Game Outcome and Biases in NFL Betting Markets",
+    "journal": "Journal of Sports Economics",
+    "year": 2014,
+    "authors": "Mark W. Nichols",
+    "url": "https://doi.org/10.1177/1527002512440580"
+  },
+  {
+    "doi": "10.1177/1527002515574514",
+    "status": "ok",
+    "title": "Team Travel Effects and the College Football Betting Market",
+    "journal": "Journal of Sports Economics",
+    "year": 2017,
+    "authors": "B. Jay Coleman",
+    "url": "https://doi.org/10.1177/1527002515574514"
+  },
+  {
+    "doi": "10.1016/j.jeconbus.2006.09.001",
+    "status": "ok",
+    "title": "The home team weather advantage and biases in the NFL betting market",
+    "journal": "Journal of Economics and Business",
+    "year": 2007,
+    "authors": "Richard Borghesi",
+    "url": "https://doi.org/10.1016/j.jeconbus.2006.09.001"
+  },
+  {
+    "doi": "10.1080/09603100701335432",
+    "status": "ok",
+    "title": "Weather biases in the NFL totals market",
+    "journal": "Applied Financial Economics",
+    "year": 2008,
+    "authors": "Richard Borghesi",
+    "url": "https://doi.org/10.1080/09603100701335432"
+  },
+  {
+    "doi": "10.1177/155862351701200102",
+    "status": "ok",
+    "title": "The Impact of Atmospheric Conditions on Actual and Expected Scoring in the NFL",
+    "journal": "International Journal of Sport Finance",
+    "year": 2017,
+    "authors": "Rodney J. Paul",
+    "url": "https://doi.org/10.1177/155862351701200102"
+  },
+  {
+    "doi": "10.1177/1527002512454544",
+    "status": "ok",
+    "title": "Early Season NFL Over/Under Bias",
+    "journal": "Journal of Sports Economics",
+    "year": 2014,
+    "authors": "Michael DiFilippo, Kevin Krieger, Justin Davis, Andy Fodor",
+    "url": "https://doi.org/10.1177/1527002512454544"
+  },
+  {
+    "doi": "10.1175/1520-0493(1950)078%3C0001:VOFEIT%3E2.0.CO;2",
+    "status": "error",
+    "error": "<HTTPError 404: 'Not Found'>"
+  },
+  {
+    "doi": "10.1080/01621459.1982.10477856",
+    "status": "ok",
+    "title": "The Well-Calibrated Bayesian",
+    "journal": "Journal of the American Statistical Association",
+    "year": 1982,
+    "authors": "A. P. Dawid",
+    "url": "https://doi.org/10.1080/01621459.1982.10477856"
+  },
+  {
+    "doi": "10.1198/016214506000001437",
+    "status": "ok",
+    "title": "Strictly Proper Scoring Rules, Prediction, and Estimation",
+    "journal": "Journal of the American Statistical Association",
+    "year": 2007,
+    "authors": "Tilmann Gneiting, Adrian E Raftery",
+    "url": "https://doi.org/10.1198/016214506000001437"
+  },
+  {
+    "doi": "10.1016/S0893-6080(05)80023-1",
+    "status": "ok",
+    "title": "Stacked generalization",
+    "journal": "Neural Networks",
+    "year": 1992,
+    "authors": "David H. Wolpert",
+    "url": "https://doi.org/10.1016/s0893-6080(05)80023-1"
+  },
+  {
+    "doi": "10.2202/1544-6115.1309",
+    "status": "ok",
+    "title": "Super Learner",
+    "journal": "Statistical Applications in Genetics and Molecular Biology",
+    "year": 2007,
+    "authors": "Mark J. van der Laan, Eric C Polley, Alan E. Hubbard",
+    "url": "https://doi.org/10.2202/1544-6115.1309"
+  },
+  {
+    "doi": "10.1002/j.1538-7305.1956.tb03809.x",
+    "status": "ok",
+    "title": "A New Interpretation of Information Rate",
+    "journal": "Bell System Technical Journal",
+    "year": 1956,
+    "authors": "J. L. Kelly",
+    "url": "https://doi.org/10.1002/j.1538-7305.1956.tb03809.x"
+  },
+  {
+    "doi": "10.1111/1468-0262.00152",
+    "status": "ok",
+    "title": "A Reality Check for Data Snooping",
+    "journal": "Econometrica",
+    "year": 2000,
+    "authors": "Halbert White",
+    "url": "https://doi.org/10.1111/1468-0262.00152"
+  },
+  {
+    "doi": "10.1198/073500105000000063",
+    "status": "ok",
+    "title": "A Test for Superior Predictive Ability",
+    "journal": "Journal of Business &amp; Economic Statistics",
+    "year": 2005,
+    "authors": "Peter Reinhard Hansen",
+    "url": "https://doi.org/10.1198/073500105000000063"
+  },
+  {
+    "doi": "10.1111/j.2517-6161.1995.tb02031.x",
+    "status": "ok",
+    "title": "Controlling the False Discovery Rate: A Practical and Powerful Approach to Multiple Testing",
+    "journal": "Journal of the Royal Statistical Society Series B: Statistical Methodology",
+    "year": 1995,
+    "authors": "Yoav Benjamini, Yosef Hochberg",
+    "url": "https://doi.org/10.1111/j.2517-6161.1995.tb02031.x"
+  },
+  {
+    "doi": "10.21314/JCF.2016.322",
+    "status": "ok",
+    "title": "The probability of backtest overfitting",
+    "journal": "The Journal of Computational Finance",
+    "year": 2016,
+    "authors": "David Bailey, Jonathan Borwein, Marcos López de Prado, Qiji Jim Zhu",
+    "url": "https://doi.org/10.21314/jcf.2016.322"
+  },
+  {
+    "doi": "10.1145/2523813",
+    "status": "ok",
+    "title": "A survey on concept drift adaptation",
+    "journal": "ACM Computing Surveys",
+    "year": 2014,
+    "authors": "João Gama, Indrė Žliobaitė, Albert Bifet, Mykola Pechenizkiy, Abdelhamid Bouchachia",
+    "url": "https://doi.org/10.1145/2523813"
+  },
+  {
+    "doi": "10.1007/s11222-016-9696-4",
+    "status": "ok",
+    "title": "Practical Bayesian model evaluation using leave-one-out cross-validation and WAIC",
+    "journal": "Statistics and Computing",
+    "year": 2017,
+    "authors": "Aki Vehtari, Andrew Gelman, Jonah Gabry",
+    "url": "https://doi.org/10.1007/s11222-016-9696-4"
+  }
+]

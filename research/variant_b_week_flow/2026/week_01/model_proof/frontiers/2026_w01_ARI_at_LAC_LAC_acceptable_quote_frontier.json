@@ -1,0 +1,499 @@
+{
+  "schema_version": "variant_b_acceptable_quote_frontier.v1",
+  "proof_id": "empirical_residual_pmf_variant_m_2021_2025_20260728T193246Z",
+  "method": "EMPIRICAL_RESIDUAL_PMF_MVP",
+  "pick_id": "2026_w01_ARI_at_LAC_LAC",
+  "selected_team": "LAC",
+  "model_margin_selected_team": 10.26,
+  "min_ev_per_unit": 0.0,
+  "frontier": [
+    {
+      "selected_team_spread": -15.0,
+      "p_cover": 0.357349,
+      "p_push": 0.028818,
+      "p_loss": 0.613833,
+      "minimum_decimal_odds": 2.717742,
+      "minimum_american_odds": 172
+    },
+    {
+      "selected_team_spread": -14.5,
+      "p_cover": 0.386167,
+      "p_push": 0.0,
+      "p_loss": 0.613833,
+      "minimum_decimal_odds": 2.589552,
+      "minimum_american_odds": 159
+    },
+    {
+      "selected_team_spread": -14.0,
+      "p_cover": 0.386167,
+      "p_push": 0.0317,
+      "p_loss": 0.582133,
+      "minimum_decimal_odds": 2.507463,
+      "minimum_american_odds": 151
+    },
+    {
+      "selected_team_spread": -13.5,
+      "p_cover": 0.417867,
+      "p_push": 0.0,
+      "p_loss": 0.582133,
+      "minimum_decimal_odds": 2.393103,
+      "minimum_american_odds": 139
+    },
+    {
+      "selected_team_spread": -13.0,
+      "p_cover": 0.417867,
+      "p_push": 0.034582,
+      "p_loss": 0.54755,
+      "minimum_decimal_odds": 2.310345,
+      "minimum_american_odds": 131
+    },
+    {
+      "selected_team_spread": -12.5,
+      "p_cover": 0.45245,
+      "p_push": 0.0,
+      "p_loss": 0.54755,
+      "minimum_decimal_odds": 2.210191,
+      "minimum_american_odds": 121
+    },
+    {
+      "selected_team_spread": -12.0,
+      "p_cover": 0.45245,
+      "p_push": 0.0317,
+      "p_loss": 0.51585,
+      "minimum_decimal_odds": 2.140127,
+      "minimum_american_odds": 114
+    },
+    {
+      "selected_team_spread": -11.5,
+      "p_cover": 0.48415,
+      "p_push": 0.0,
+      "p_loss": 0.51585,
+      "minimum_decimal_odds": 2.065476,
+      "minimum_american_odds": 107
+    },
+    {
+      "selected_team_spread": -11.0,
+      "p_cover": 0.48415,
+      "p_push": 0.014409,
+      "p_loss": 0.501441,
+      "minimum_decimal_odds": 2.035714,
+      "minimum_american_odds": 104
+    },
+    {
+      "selected_team_spread": -10.5,
+      "p_cover": 0.498559,
+      "p_push": 0.0,
+      "p_loss": 0.501441,
+      "minimum_decimal_odds": 2.00578,
+      "minimum_american_odds": 101
+    },
+    {
+      "selected_team_spread": -10.0,
+      "p_cover": 0.498559,
+      "p_push": 0.028818,
+      "p_loss": 0.472622,
+      "minimum_decimal_odds": 1.947977,
+      "minimum_american_odds": -105
+    },
+    {
+      "selected_team_spread": -9.5,
+      "p_cover": 0.527378,
+      "p_push": 0.0,
+      "p_loss": 0.472622,
+      "minimum_decimal_odds": 1.896175,
+      "minimum_american_odds": -112
+    },
+    {
+      "selected_team_spread": -9.0,
+      "p_cover": 0.527378,
+      "p_push": 0.051873,
+      "p_loss": 0.420749,
+      "minimum_decimal_odds": 1.797814,
+      "minimum_american_odds": -125
+    },
+    {
+      "selected_team_spread": -8.5,
+      "p_cover": 0.579251,
+      "p_push": 0.0,
+      "p_loss": 0.420749,
+      "minimum_decimal_odds": 1.726368,
+      "minimum_american_odds": -138
+    },
+    {
+      "selected_team_spread": -8.0,
+      "p_cover": 0.579251,
+      "p_push": 0.025937,
+      "p_loss": 0.394813,
+      "minimum_decimal_odds": 1.681592,
+      "minimum_american_odds": -147
+    },
+    {
+      "selected_team_spread": -7.5,
+      "p_cover": 0.605187,
+      "p_push": 0.0,
+      "p_loss": 0.394813,
+      "minimum_decimal_odds": 1.652381,
+      "minimum_american_odds": -153
+    },
+    {
+      "selected_team_spread": -7.0,
+      "p_cover": 0.605187,
+      "p_push": 0.028818,
+      "p_loss": 0.365994,
+      "minimum_decimal_odds": 1.604762,
+      "minimum_american_odds": -165
+    },
+    {
+      "selected_team_spread": -6.5,
+      "p_cover": 0.634006,
+      "p_push": 0.0,
+      "p_loss": 0.365994,
+      "minimum_decimal_odds": 1.577273,
+      "minimum_american_odds": -173
+    },
+    {
+      "selected_team_spread": -6.0,
+      "p_cover": 0.634006,
+      "p_push": 0.028818,
+      "p_loss": 0.337176,
+      "minimum_decimal_odds": 1.531818,
+      "minimum_american_odds": -188
+    },
+    {
+      "selected_team_spread": -5.5,
+      "p_cover": 0.662824,
+      "p_push": 0.0,
+      "p_loss": 0.337176,
+      "minimum_decimal_odds": 1.508696,
+      "minimum_american_odds": -197
+    },
+    {
+      "selected_team_spread": -5.0,
+      "p_cover": 0.662824,
+      "p_push": 0.014409,
+      "p_loss": 0.322767,
+      "minimum_decimal_odds": 1.486957,
+      "minimum_american_odds": -205
+    },
+    {
+      "selected_team_spread": -4.5,
+      "p_cover": 0.677233,
+      "p_push": 0.0,
+      "p_loss": 0.322767,
+      "minimum_decimal_odds": 1.476596,
+      "minimum_american_odds": -210
+    },
+    {
+      "selected_team_spread": -4.0,
+      "p_cover": 0.677233,
+      "p_push": 0.011527,
+      "p_loss": 0.311239,
+      "minimum_decimal_odds": 1.459574,
+      "minimum_american_odds": -218
+    },
+    {
+      "selected_team_spread": -3.5,
+      "p_cover": 0.688761,
+      "p_push": 0.0,
+      "p_loss": 0.311239,
+      "minimum_decimal_odds": 1.451883,
+      "minimum_american_odds": -221
+    },
+    {
+      "selected_team_spread": -3.0,
+      "p_cover": 0.688761,
+      "p_push": 0.020173,
+      "p_loss": 0.291066,
+      "minimum_decimal_odds": 1.422594,
+      "minimum_american_odds": -237
+    },
+    {
+      "selected_team_spread": -2.5,
+      "p_cover": 0.708934,
+      "p_push": 0.0,
+      "p_loss": 0.291066,
+      "minimum_decimal_odds": 1.410569,
+      "minimum_american_odds": -244
+    },
+    {
+      "selected_team_spread": -2.0,
+      "p_cover": 0.708934,
+      "p_push": 0.014409,
+      "p_loss": 0.276657,
+      "minimum_decimal_odds": 1.390244,
+      "minimum_american_odds": -256
+    },
+    {
+      "selected_team_spread": -1.5,
+      "p_cover": 0.723343,
+      "p_push": 0.0,
+      "p_loss": 0.276657,
+      "minimum_decimal_odds": 1.38247,
+      "minimum_american_odds": -261
+    },
+    {
+      "selected_team_spread": -1.0,
+      "p_cover": 0.723343,
+      "p_push": 0.028818,
+      "p_loss": 0.247839,
+      "minimum_decimal_odds": 1.342629,
+      "minimum_american_odds": -292
+    },
+    {
+      "selected_team_spread": -0.5,
+      "p_cover": 0.752161,
+      "p_push": 0.0,
+      "p_loss": 0.247839,
+      "minimum_decimal_odds": 1.329502,
+      "minimum_american_odds": -303
+    },
+    {
+      "selected_team_spread": 0.0,
+      "p_cover": 0.752161,
+      "p_push": 0.023055,
+      "p_loss": 0.224784,
+      "minimum_decimal_odds": 1.298851,
+      "minimum_american_odds": -335
+    },
+    {
+      "selected_team_spread": 0.5,
+      "p_cover": 0.775216,
+      "p_push": 0.0,
+      "p_loss": 0.224784,
+      "minimum_decimal_odds": 1.289963,
+      "minimum_american_odds": -345
+    },
+    {
+      "selected_team_spread": 1.0,
+      "p_cover": 0.775216,
+      "p_push": 0.008646,
+      "p_loss": 0.216138,
+      "minimum_decimal_odds": 1.27881,
+      "minimum_american_odds": -359
+    },
+    {
+      "selected_team_spread": 1.5,
+      "p_cover": 0.783862,
+      "p_push": 0.0,
+      "p_loss": 0.216138,
+      "minimum_decimal_odds": 1.275735,
+      "minimum_american_odds": -363
+    },
+    {
+      "selected_team_spread": 2.0,
+      "p_cover": 0.783862,
+      "p_push": 0.028818,
+      "p_loss": 0.18732,
+      "minimum_decimal_odds": 1.238971,
+      "minimum_american_odds": -418
+    },
+    {
+      "selected_team_spread": 2.5,
+      "p_cover": 0.81268,
+      "p_push": 0.0,
+      "p_loss": 0.18732,
+      "minimum_decimal_odds": 1.230496,
+      "minimum_american_odds": -434
+    },
+    {
+      "selected_team_spread": 3.0,
+      "p_cover": 0.81268,
+      "p_push": 0.025937,
+      "p_loss": 0.161383,
+      "minimum_decimal_odds": 1.198582,
+      "minimum_american_odds": -504
+    },
+    {
+      "selected_team_spread": 3.5,
+      "p_cover": 0.838617,
+      "p_push": 0.0,
+      "p_loss": 0.161383,
+      "minimum_decimal_odds": 1.19244,
+      "minimum_american_odds": -520
+    },
+    {
+      "selected_team_spread": 4.0,
+      "p_cover": 0.838617,
+      "p_push": 0.008646,
+      "p_loss": 0.152738,
+      "minimum_decimal_odds": 1.182131,
+      "minimum_american_odds": -549
+    },
+    {
+      "selected_team_spread": 4.5,
+      "p_cover": 0.847262,
+      "p_push": 0.0,
+      "p_loss": 0.152738,
+      "minimum_decimal_odds": 1.180272,
+      "minimum_american_odds": -555
+    },
+    {
+      "selected_team_spread": 5.0,
+      "p_cover": 0.847262,
+      "p_push": 0.014409,
+      "p_loss": 0.138329,
+      "minimum_decimal_odds": 1.163265,
+      "minimum_american_odds": -613
+    },
+    {
+      "selected_team_spread": 5.5,
+      "p_cover": 0.861671,
+      "p_push": 0.0,
+      "p_loss": 0.138329,
+      "minimum_decimal_odds": 1.160535,
+      "minimum_american_odds": -623
+    },
+    {
+      "selected_team_spread": 6.0,
+      "p_cover": 0.861671,
+      "p_push": 0.017291,
+      "p_loss": 0.121037,
+      "minimum_decimal_odds": 1.140468,
+      "minimum_american_odds": -712
+    },
+    {
+      "selected_team_spread": 6.5,
+      "p_cover": 0.878963,
+      "p_push": 0.0,
+      "p_loss": 0.121037,
+      "minimum_decimal_odds": 1.137705,
+      "minimum_american_odds": -726
+    },
+    {
+      "selected_team_spread": 7.0,
+      "p_cover": 0.878963,
+      "p_push": 0.011527,
+      "p_loss": 0.10951,
+      "minimum_decimal_odds": 1.12459,
+      "minimum_american_odds": -803
+    },
+    {
+      "selected_team_spread": 7.5,
+      "p_cover": 0.89049,
+      "p_push": 0.0,
+      "p_loss": 0.10951,
+      "minimum_decimal_odds": 1.122977,
+      "minimum_american_odds": -813
+    },
+    {
+      "selected_team_spread": 8.0,
+      "p_cover": 0.89049,
+      "p_push": 0.011527,
+      "p_loss": 0.097983,
+      "minimum_decimal_odds": 1.110032,
+      "minimum_american_odds": -909
+    },
+    {
+      "selected_team_spread": 8.5,
+      "p_cover": 0.902017,
+      "p_push": 0.0,
+      "p_loss": 0.097983,
+      "minimum_decimal_odds": 1.108626,
+      "minimum_american_odds": -921
+    },
+    {
+      "selected_team_spread": 9.0,
+      "p_cover": 0.902017,
+      "p_push": 0.002882,
+      "p_loss": 0.095101,
+      "minimum_decimal_odds": 1.105431,
+      "minimum_american_odds": -948
+    },
+    {
+      "selected_team_spread": 9.5,
+      "p_cover": 0.904899,
+      "p_push": 0.0,
+      "p_loss": 0.095101,
+      "minimum_decimal_odds": 1.105096,
+      "minimum_american_odds": -952
+    },
+    {
+      "selected_team_spread": 10.0,
+      "p_cover": 0.904899,
+      "p_push": 0.005764,
+      "p_loss": 0.089337,
+      "minimum_decimal_odds": 1.098726,
+      "minimum_american_odds": -1013
+    },
+    {
+      "selected_team_spread": 10.5,
+      "p_cover": 0.910663,
+      "p_push": 0.0,
+      "p_loss": 0.089337,
+      "minimum_decimal_odds": 1.098101,
+      "minimum_american_odds": -1019
+    },
+    {
+      "selected_team_spread": 11.0,
+      "p_cover": 0.910663,
+      "p_push": 0.002882,
+      "p_loss": 0.086455,
+      "minimum_decimal_odds": 1.094937,
+      "minimum_american_odds": -1053
+    },
+    {
+      "selected_team_spread": 11.5,
+      "p_cover": 0.913545,
+      "p_push": 0.0,
+      "p_loss": 0.086455,
+      "minimum_decimal_odds": 1.094637,
+      "minimum_american_odds": -1057
+    },
+    {
+      "selected_team_spread": 12.0,
+      "p_cover": 0.913545,
+      "p_push": 0.011527,
+      "p_loss": 0.074928,
+      "minimum_decimal_odds": 1.082019,
+      "minimum_american_odds": -1219
+    },
+    {
+      "selected_team_spread": 12.5,
+      "p_cover": 0.925072,
+      "p_push": 0.0,
+      "p_loss": 0.074928,
+      "minimum_decimal_odds": 1.080997,
+      "minimum_american_odds": -1235
+    },
+    {
+      "selected_team_spread": 13.0,
+      "p_cover": 0.925072,
+      "p_push": 0.011527,
+      "p_loss": 0.063401,
+      "minimum_decimal_odds": 1.068536,
+      "minimum_american_odds": -1459
+    },
+    {
+      "selected_team_spread": 13.5,
+      "p_cover": 0.936599,
+      "p_push": 0.0,
+      "p_loss": 0.063401,
+      "minimum_decimal_odds": 1.067692,
+      "minimum_american_odds": -1477
+    },
+    {
+      "selected_team_spread": 14.0,
+      "p_cover": 0.936599,
+      "p_push": 0.0,
+      "p_loss": 0.063401,
+      "minimum_decimal_odds": 1.067692,
+      "minimum_american_odds": -1477
+    },
+    {
+      "selected_team_spread": 14.5,
+      "p_cover": 0.936599,
+      "p_push": 0.0,
+      "p_loss": 0.063401,
+      "minimum_decimal_odds": 1.067692,
+      "minimum_american_odds": -1477
+    },
+    {
+      "selected_team_spread": 15.0,
+      "p_cover": 0.936599,
+      "p_push": 0.008646,
+      "p_loss": 0.054755,
+      "minimum_decimal_odds": 1.058462,
+      "minimum_american_odds": -1711
+    }
+  ]
+}

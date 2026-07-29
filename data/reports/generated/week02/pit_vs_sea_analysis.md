@@ -1,33 +1,33 @@
 🔹 MODEL PROJECTION (Pure)
-1️⃣ Estimated Score (Model) – PIT 31.7 – SEA 19.0
-2️⃣ Predicted Winner (Model) – PIT
-3️⃣ Predicted Margin (Model) – PIT by 12.7 pts
-4️⃣ Win Probability (Model) – 95% (PIT)
-5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja PIT (27.3% vs 8.3%). Na 3rd down PIT utrzymuje 33.3%, podczas gdy SEA jest na 27.3%, co stabilizuje serie ofensywne. Explosive Play Rate pozostaje po stronie PIT (10.4% vs 7.5%), więc big-play equity jest wyższe. Field position edge wynosi +1.7 yds na rzecz PIT (8.0 vs 6.3), co skraca ich boisko. PIT prowadzi w Points per Drive Differential (+0.182 vs -0.245), więc bazowa efektywność napędza przewagę.
+1️⃣ Estimated Score (Model) – PIT -1.2 – SEA 36.1
+2️⃣ Predicted Winner (Model) – SEA
+3️⃣ Predicted Margin (Model) – SEA by 37.3 pts
+4️⃣ Win Probability (Model) – 95% (SEA)
+5️⃣ Why This Team Wins (Model) – Red Zone TD Rate sprzyja SEA (20.0% vs 0.0%). Na 3rd down SEA utrzymuje 28.6%, podczas gdy PIT jest na 20.0%, co stabilizuje serie ofensywne. Defensive pressure rate wspiera SEA (+8.9% vs +2.6%), więc pasy rywala będą częściej pod presją. SEA prowadzi w Points per Drive Differential (-0.167 vs -3.027), więc bazowa efektywność napędza przewagę. Turnover margin faworyzuje SEA (+0.00 vs -1.00), co przekłada się na dodatkowe posiadania.
 
 🔹 MARKET PROJECTION (Balanced)
-1️⃣ Estimated Score (Market) – PIT 21.8 – SEA 18.8
+1️⃣ Estimated Score (Market) – PIT 25.0 – SEA 21.5
 2️⃣ Predicted Winner (Market) – PIT
-3️⃣ Predicted Margin (Market) – PIT by 3.0 pts
-4️⃣ Win Probability (Market) – 60% (PIT)
-5️⃣ Forum Output (A) – PowerScore (Model) — PIT +0.036 vs SEA +0.113. Points per Drive Differential — PIT +0.182 vs SEA -0.245. Success Rate Offense — PIT 50.6% vs SEA 52.2%. Third Down Conversion — PIT 33.3% vs SEA 27.3%. Red Zone TD Rate — PIT 27.3% vs SEA 8.3%. Explosive Play Rate — PIT 10.4% vs SEA 7.5%. Model margin 12.7 pts vs market spread PIT +3.0.
-6️⃣ Forum Output (B) – Model idzie w stronę PIT po marginesie 12.7 pkt. PIT notuje +0.182 PPD vs -0.245 u SEA. Różnica w Success Rate to 50.6% vs 52.2%. Na 3rd down PIT (33.3%) wygląda solidniej niż SEA (27.3%). Red Zone i explosiveness ( 27.3% / 10.4% ) utrzymują przewagę jakościową. Market trzyma 3.0 pkt, więc edge vs linia to +9.7.
+3️⃣ Predicted Margin (Market) – PIT by 3.5 pts
+4️⃣ Win Probability (Market) – 62% (PIT)
+5️⃣ Forum Output (A) – PowerScore (Model) — PIT +0.074 vs SEA +0.083. Points per Drive Differential — PIT -3.027 vs SEA -0.167. Success Rate Offense — PIT 32.6% vs SEA 32.9%. Third Down Conversion — PIT 20.0% vs SEA 28.6%. Red Zone TD Rate — PIT 0.0% vs SEA 20.0%. Explosive Play Rate — PIT 7.0% vs SEA 8.2%. Model margin -37.3 pts vs market spread PIT +3.5.
+6️⃣ Forum Output (B) – Model idzie w stronę SEA po marginesie -37.3 pkt. SEA notuje -0.167 PPD vs -3.027 u PIT. Różnica w Success Rate to 32.9% vs 32.6%. Na 3rd down SEA (28.6%) wygląda solidniej niż PIT (20.0%). Red Zone i explosiveness ( 20.0% / 8.2% ) utrzymują przewagę jakościową. Market trzyma 3.5 pkt, więc edge vs linia to +40.8.
 
 🔹 MODEL vs MARKET
-• Edge_vs_Line (winner) = +9.7 pts
-• PowerScoreDiff (winner) = -0.077
+• Edge_vs_Line (winner) = +40.8 pts
+• PowerScoreDiff (winner) = +0.009
 • Confidence = 95.0%
 
-🏷 Model Tag: NEUTRAL — based on 95.0% confidence, +9.7 pts model edge vs line, and PowerScore Δ -0.077.
-😴 Brak value — model i rynek w równowadze.
+🏷 Model Tag: VALUE PLAY — based on 95.0% confidence, +40.8 pts model edge vs line, and PowerScore Δ +0.009.
+⚖️ Moderate value — umiarkowany edge.
 
 SUMMARY:
 1. MODEL PROJECTION (Pure)
-   • Estimated Score – PIT 31.7 – SEA 19.0
-   • Win Probability – 95% (PIT)
+   • Estimated Score – PIT -1.2 – SEA 36.1
+   • Win Probability – 95% (SEA)
 
 2. MARKET PROJECTION (Balanced)
-   • Estimated Score – PIT 21.8 – SEA 18.8
-   • Win Probability – 60% (PIT)
+   • Estimated Score – PIT 25.0 – SEA 21.5
+   • Win Probability – 62% (PIT)
 
-🏷 Model Tag: NEUTRAL — PIT (HC -3.0)
+🏷 Model Tag: <span style="color:#1f75fe; font-weight:600;">VALUE PLAY</span> — SEA (HC +3.5)
