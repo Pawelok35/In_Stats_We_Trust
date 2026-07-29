@@ -1,0 +1,667 @@
+{
+  "broad_baseline_without_spread": {
+    "filters_applied": [
+      "cumulative_state_path",
+      "margin_bucket"
+    ],
+    "filters_relaxed": [
+      "exact_spread",
+      "spread_bucket",
+      "team_a_role"
+    ],
+    "losses": 133,
+    "name": "no_spread_baseline",
+    "raw_probability": 0.612994,
+    "sample_quality": "STRONG",
+    "sample_size": 354,
+    "ties": 4,
+    "wins": 217
+  },
+  "broad_league_game_state_baseline": {
+    "adjusted_delta_vs_league_pp": null,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": null,
+    "adjusted_probability_interval": [
+      null,
+      null
+    ],
+    "adjustment_method": null,
+    "delta_vs_league_pp": null,
+    "filters_applied": [
+      "cumulative_state_path",
+      "margin_bucket"
+    ],
+    "filters_relaxed": [
+      "quarter_result_path",
+      "spread_bucket"
+    ],
+    "league_reference_probability": null,
+    "losses": 133,
+    "mirrored_filters_applied": [],
+    "name": "broad_league_game_state_baseline",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": null,
+    "raw_delta_vs_league_pp": null,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.612994,
+    "raw_probability_interval": [
+      0.561301,
+      0.662262
+    ],
+    "sample_quality": "STRONG",
+    "sample_size": 354,
+    "ties": 4,
+    "wins": 217
+  },
+  "current_state": {
+    "completed_quarters": 2,
+    "margin": 7,
+    "margin_bucket": "LEADING_1_TO_7",
+    "opponent": "SEA",
+    "opponent_cumulative_state_path": "TIE-TRAIL",
+    "opponent_path": "TIE-LOSS",
+    "opponent_quarter_result_path": "TIE-LOSS",
+    "opponent_score": 7,
+    "team_a": "NE",
+    "team_a_cumulative_state_path": "TIE-LEAD",
+    "team_a_path": "TIE-WIN",
+    "team_a_quarter_result_path": "TIE-WIN",
+    "team_a_score": 14
+  },
+  "data_cutoff_utc": "2026-07-29T17:02:13Z",
+  "data_quality_warnings": [],
+  "exact_combined_match": {
+    "adjusted_delta_vs_league_pp": 0.0,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": 0.612994,
+    "adjusted_probability_interval": [
+      0.563697,
+      0.662292
+    ],
+    "adjustment_method": "beta_binomial_shrinkage_to_league_baseline",
+    "delta_vs_league_pp": 0.0,
+    "filters_applied": [
+      "quarter_result_path",
+      "cumulative_state_path",
+      "margin_bucket"
+    ],
+    "filters_relaxed": [
+      "spread_bucket"
+    ],
+    "league_reference_probability": 0.612994,
+    "losses": 133,
+    "mirrored_filters_applied": [],
+    "name": "exact_combined_match",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": 20,
+    "raw_delta_vs_league_pp": 0.0,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.612994,
+    "raw_probability_interval": [
+      0.561301,
+      0.662262
+    ],
+    "sample_quality": "STRONG",
+    "sample_size": 354,
+    "ties": 4,
+    "wins": 217
+  },
+  "excluded_games_count": 0,
+  "forum_content_summary": {
+    "broad_final_win_probability": 0.612994,
+    "broad_sample_size": 354,
+    "cumulative_state_path": "TIE-LEAD",
+    "current_score": {
+      "opponent": 7,
+      "team_a": 14
+    },
+    "difference_vs_broad_pp": -14.4244,
+    "margin": 7,
+    "margin_bucket": "LEADING_1_TO_7",
+    "matchup": "NE vs SEA",
+    "opponent_adjusted_probability": 0.485709,
+    "opponent_cumulative_state_path": "TIE-TRAIL",
+    "opponent_quarter_result_path": "TIE-LOSS",
+    "opponent_specific_note": {
+      "opponent_adjusted_probability": 0.485709,
+      "opponent_specific_record": "9-4-1",
+      "opponent_specific_sample_quality": "LOW"
+    },
+    "opponent_specific_record": "9-4-1",
+    "pregame_spread": 3.5,
+    "quarter_result_path": "TIE-WIN",
+    "quarter_scores": [
+      {
+        "opponent_points": 0,
+        "quarter": 1,
+        "team_a_points": 0
+      },
+      {
+        "opponent_points": 7,
+        "quarter": 2,
+        "team_a_points": 14
+      }
+    ],
+    "quarter_scores_q1_q2_q3": {
+      "q1": {
+        "opponent_points": 0,
+        "team_a_points": 0
+      },
+      "q2": {
+        "opponent_points": 7,
+        "team_a_points": 14
+      },
+      "q3": null
+    },
+    "spread_bucket": "DOG_3.5-4.5",
+    "spread_conditioned_final_win_probability": 0.46875,
+    "spread_conditioned_level": null,
+    "spread_conditioned_sample_size": 32,
+    "team_specific_note": {
+      "adjusted_delta_vs_league_pp": 2.9002,
+      "adjusted_final_win_probability": 0.641996,
+      "raw_delta_vs_league_pp": 8.7006,
+      "raw_final_win_probability": 0.7,
+      "sample_size": 10
+    },
+    "team_specific_record": "7-3-0",
+    "team_specific_sample_quality": "LOW",
+    "warning": "Historical context only."
+  },
+  "games_included": 2895,
+  "generated_at_utc": "2026-07-29T17:02:13Z",
+  "historical_window_stability": {
+    "max_difference_pp": 2.2932,
+    "probabilities": {
+      "EXTENDED_WINDOW": 0.612994,
+      "PRIMARY_WINDOW": 0.612994,
+      "RECENT_WINDOW": 0.590062
+    },
+    "status": "STABLE",
+    "threshold_pp": 15.0
+  },
+  "historical_windows": {
+    "EXTENDED_WINDOW": {
+      "filters_applied": [
+        "cumulative_state_path",
+        "margin_bucket",
+        "historical_window"
+      ],
+      "filters_relaxed": [],
+      "historical_window": {
+        "end": 2025,
+        "start": 2012
+      },
+      "losses": 133,
+      "name": "extended_window",
+      "raw_probability": 0.612994,
+      "sample_quality": "STRONG",
+      "sample_size": 354,
+      "ties": 4,
+      "wins": 217
+    },
+    "PRIMARY_WINDOW": {
+      "filters_applied": [
+        "cumulative_state_path",
+        "margin_bucket",
+        "historical_window"
+      ],
+      "filters_relaxed": [],
+      "historical_window": {
+        "end": 2025,
+        "start": 2015
+      },
+      "losses": 133,
+      "name": "primary_window",
+      "raw_probability": 0.612994,
+      "sample_quality": "STRONG",
+      "sample_size": 354,
+      "ties": 4,
+      "wins": 217
+    },
+    "RECENT_WINDOW": {
+      "filters_applied": [
+        "cumulative_state_path",
+        "margin_bucket",
+        "historical_window"
+      ],
+      "filters_relaxed": [],
+      "historical_window": {
+        "end": 2025,
+        "start": 2021
+      },
+      "losses": 66,
+      "name": "recent_window",
+      "raw_probability": 0.590062,
+      "sample_quality": "STRONG",
+      "sample_size": 161,
+      "ties": 0,
+      "wins": 95
+    }
+  },
+  "league_baseline": {
+    "adjusted_delta_vs_league_pp": null,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": null,
+    "adjusted_probability_interval": [
+      null,
+      null
+    ],
+    "adjustment_method": null,
+    "delta_vs_league_pp": null,
+    "filters_applied": [
+      "cumulative_state_path",
+      "margin_bucket"
+    ],
+    "filters_relaxed": [],
+    "league_reference_probability": null,
+    "losses": 133,
+    "mirrored_filters_applied": [],
+    "name": "league_baseline",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": null,
+    "raw_delta_vs_league_pp": null,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.612994,
+    "raw_probability_interval": [
+      0.561301,
+      0.662262
+    ],
+    "sample_quality": "STRONG",
+    "sample_size": 354,
+    "ties": 4,
+    "wins": 217
+  },
+  "market_comparison": {
+    "adjusted_historical_probability": 0.612994,
+    "edge_vs_market_pp": null,
+    "estimated_ev": null,
+    "historical_break_even_price": 1.6313373377227183,
+    "historical_loss_probability": 0.375706,
+    "historical_tie_probability": 0.011299,
+    "historical_win_probability": 0.612994,
+    "market_available": false,
+    "opponent_implied_probability": null,
+    "opponent_live_decimal": null,
+    "opponent_no_vig_probability": null,
+    "primary_probability_source": "league_baseline",
+    "team_a_implied_probability": null,
+    "team_a_live_decimal": null,
+    "team_a_no_vig_probability": null,
+    "tie_policy": "TIE_AS_LOSS"
+  },
+  "methodology_version": "live_scenario_methodology.v1",
+  "opponent_league_reference": {
+    "adjusted_delta_vs_league_pp": null,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": null,
+    "adjusted_probability_interval": [
+      null,
+      null
+    ],
+    "adjustment_method": null,
+    "delta_vs_league_pp": null,
+    "filters_applied": [
+      "cumulative_state_path",
+      "margin_bucket"
+    ],
+    "filters_relaxed": [
+      "team",
+      "quarter_result_path",
+      "spread_bucket"
+    ],
+    "league_reference_probability": null,
+    "losses": 217,
+    "mirrored_filters_applied": [
+      "opponent_cumulative_state_path",
+      "opponent_margin_bucket"
+    ],
+    "name": "opponent_league_reference",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": null,
+    "raw_delta_vs_league_pp": null,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.375706,
+    "raw_probability_interval": [
+      0.326843,
+      0.427238
+    ],
+    "sample_quality": "STRONG",
+    "sample_size": 354,
+    "ties": 4,
+    "wins": 133
+  },
+  "opponent_recovery_history": {
+    "adjusted_delta_vs_league_pp": null,
+    "adjusted_delta_vs_opponent_league_pp": 11.0003,
+    "adjusted_probability": 0.485709,
+    "adjusted_probability_interval": [
+      0.320127,
+      0.651292
+    ],
+    "adjustment_method": "beta_binomial_shrinkage_to_opponent_league_reference",
+    "delta_vs_league_pp": null,
+    "filters_applied": [
+      "team",
+      "opponent_cumulative_state_path",
+      "opponent_margin_bucket"
+    ],
+    "filters_relaxed": [],
+    "league_reference_probability": null,
+    "losses": 4,
+    "mirrored_filters_applied": [
+      "opponent_cumulative_state_path",
+      "opponent_margin_bucket"
+    ],
+    "name": "opponent_recovery_history",
+    "opponent_league_reference_probability": 0.375706,
+    "prior_strength_k": 20,
+    "raw_delta_vs_league_pp": null,
+    "raw_delta_vs_opponent_league_pp": 26.7151,
+    "raw_probability": 0.642857,
+    "raw_probability_interval": [
+      0.38764,
+      0.836555
+    ],
+    "sample_quality": "LOW",
+    "sample_size": 14,
+    "ties": 1,
+    "wins": 9
+  },
+  "play_level_events": {
+    "eligible_sample": 351,
+    "eligible_unique_games": 351,
+    "excluded_sample": 3,
+    "excluded_unique_games": 3,
+    "filters_applied": [
+      "play_level_events_eligible == true"
+    ],
+    "reason_for_exclusions": {
+      "MISMATCH_NON_OT": 3
+    }
+  },
+  "pregame_spread_context": {
+    "exact_spread": 3.5,
+    "opponent_closing_spread": -3.5,
+    "spread_bucket": "DOG_3.5-4.5",
+    "spread_captured_at_utc": "2026-07-28T17:14:33+00:00",
+    "spread_quality": "AVAILABLE",
+    "spread_source": "local_schedule.spread_line",
+    "team_a_closing_spread": 3.5,
+    "team_a_role": "UNDERDOG"
+  },
+  "quarter_path_context": {
+    "adjusted_delta_vs_league_pp": 8.8693,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": 0.701687,
+    "adjusted_probability_interval": [
+      0.664127,
+      0.739247
+    ],
+    "adjustment_method": "beta_binomial_shrinkage_to_league_baseline",
+    "delta_vs_league_pp": 9.1924,
+    "filters_applied": [
+      "quarter_result_path"
+    ],
+    "filters_relaxed": [
+      "cumulative_state_path",
+      "margin_bucket",
+      "spread_bucket"
+    ],
+    "league_reference_probability": 0.612994,
+    "losses": 156,
+    "mirrored_filters_applied": [],
+    "name": "quarter_path_context",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": 20,
+    "raw_delta_vs_league_pp": 9.1924,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.704918,
+    "raw_probability_interval": [
+      0.665449,
+      0.741539
+    ],
+    "sample_quality": "STRONG",
+    "sample_size": 549,
+    "ties": 6,
+    "wins": 387
+  },
+  "sample_and_reliability": {
+    "broad_league_baseline": {
+      "filters_applied": [
+        "cumulative_state_path"
+      ],
+      "filters_relaxed": [
+        "team",
+        "margin_bucket"
+      ],
+      "losses": 156,
+      "name": "broad_league_baseline",
+      "raw_probability": 0.704918,
+      "sample_quality": "STRONG",
+      "sample_size": 549,
+      "ties": 6,
+      "wins": 387
+    },
+    "contextual_league_match": {
+      "filters_applied": [
+        "cumulative_state_path",
+        "margin_bucket"
+      ],
+      "filters_relaxed": [
+        "team"
+      ],
+      "losses": 133,
+      "name": "contextual_league_match",
+      "raw_probability": 0.612994,
+      "sample_quality": "STRONG",
+      "sample_size": 354,
+      "ties": 4,
+      "wins": 217
+    },
+    "exact_filtered_match": {
+      "filters_applied": [
+        "team",
+        "cumulative_state_path",
+        "margin_bucket"
+      ],
+      "filters_relaxed": [],
+      "losses": 3,
+      "name": "exact_filtered_match",
+      "raw_probability": 0.7,
+      "sample_quality": "LOW",
+      "sample_size": 10,
+      "ties": 0,
+      "wins": 7
+    },
+    "expanded_team_match": {
+      "filters_applied": [
+        "team",
+        "cumulative_state_path"
+      ],
+      "filters_relaxed": [
+        "margin_bucket"
+      ],
+      "losses": 3,
+      "name": "expanded_team_match",
+      "raw_probability": 0.823529,
+      "sample_quality": "LOW",
+      "sample_size": 17,
+      "ties": 0,
+      "wins": 14
+    },
+    "spread_filter_levels": {
+      "exact_spread_match": {
+        "filters_applied": [
+          "cumulative_state_path",
+          "margin_bucket",
+          "exact_spread"
+        ],
+        "filters_relaxed": [],
+        "losses": 10,
+        "name": "exact_spread_match",
+        "raw_probability": 0.375,
+        "sample_quality": "LOW",
+        "sample_size": 16,
+        "ties": 0,
+        "wins": 6
+      },
+      "no_spread_baseline": {
+        "filters_applied": [
+          "cumulative_state_path",
+          "margin_bucket"
+        ],
+        "filters_relaxed": [
+          "exact_spread",
+          "spread_bucket",
+          "team_a_role"
+        ],
+        "losses": 133,
+        "name": "no_spread_baseline",
+        "raw_probability": 0.612994,
+        "sample_quality": "STRONG",
+        "sample_size": 354,
+        "ties": 4,
+        "wins": 217
+      },
+      "role_only_match": {
+        "filters_applied": [
+          "cumulative_state_path",
+          "margin_bucket",
+          "team_a_role"
+        ],
+        "filters_relaxed": [
+          "exact_spread",
+          "spread_bucket"
+        ],
+        "losses": 87,
+        "name": "role_only_match",
+        "raw_probability": 0.39726,
+        "sample_quality": "STRONG",
+        "sample_size": 146,
+        "ties": 1,
+        "wins": 58
+      },
+      "spread_bucket_match": {
+        "filters_applied": [
+          "cumulative_state_path",
+          "margin_bucket",
+          "spread_bucket"
+        ],
+        "filters_relaxed": [
+          "exact_spread"
+        ],
+        "losses": 17,
+        "name": "spread_bucket_match",
+        "raw_probability": 0.46875,
+        "sample_quality": "MODERATE",
+        "sample_size": 32,
+        "ties": 0,
+        "wins": 15
+      }
+    }
+  },
+  "sample_unit": "team-game observations",
+  "schema_version": "live_scenario.v2",
+  "seasons_included": [
+    2015,
+    2016,
+    2017,
+    2018,
+    2019,
+    2020,
+    2021,
+    2022,
+    2023,
+    2024,
+    2025
+  ],
+  "spread_conditioned_baseline": {
+    "filters_applied": [
+      "cumulative_state_path",
+      "margin_bucket",
+      "exact_spread"
+    ],
+    "filters_relaxed": [],
+    "losses": 10,
+    "name": "exact_spread_match",
+    "raw_probability": 0.375,
+    "sample_quality": "LOW",
+    "sample_size": 16,
+    "selected_level": "exact_spread_match",
+    "ties": 0,
+    "wins": 6
+  },
+  "spread_conditioned_game_state_baseline": {
+    "adjusted_delta_vs_league_pp": -8.8766,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": 0.524228,
+    "adjusted_probability_interval": [
+      0.389773,
+      0.658684
+    ],
+    "adjustment_method": "beta_binomial_shrinkage_to_league_baseline",
+    "delta_vs_league_pp": -14.4244,
+    "filters_applied": [
+      "cumulative_state_path",
+      "margin_bucket",
+      "spread_bucket"
+    ],
+    "filters_relaxed": [],
+    "league_reference_probability": 0.612994,
+    "losses": 17,
+    "mirrored_filters_applied": [],
+    "name": "spread_conditioned_game_state_baseline",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": 20,
+    "raw_delta_vs_league_pp": -14.4244,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.46875,
+    "raw_probability_interval": [
+      0.308691,
+      0.635508
+    ],
+    "sample_quality": "MODERATE",
+    "sample_size": 32,
+    "ties": 0,
+    "wins": 15
+  },
+  "team_a_history": {
+    "adjusted_delta_vs_league_pp": 2.9002,
+    "adjusted_delta_vs_opponent_league_pp": null,
+    "adjusted_probability": 0.641996,
+    "adjusted_probability_interval": [
+      0.47323,
+      0.810762
+    ],
+    "adjustment_method": "beta_binomial_shrinkage_to_league_baseline",
+    "delta_vs_league_pp": 8.7006,
+    "filters_applied": [
+      "team",
+      "cumulative_state_path",
+      "margin_bucket"
+    ],
+    "filters_relaxed": [],
+    "league_reference_probability": 0.612994,
+    "losses": 3,
+    "mirrored_filters_applied": [],
+    "name": "team_a_history",
+    "opponent_league_reference_probability": null,
+    "prior_strength_k": 20,
+    "raw_delta_vs_league_pp": 8.7006,
+    "raw_delta_vs_opponent_league_pp": null,
+    "raw_probability": 0.7,
+    "raw_probability_interval": [
+      0.396773,
+      0.892211
+    ],
+    "sample_quality": "LOW",
+    "sample_size": 10,
+    "ties": 0,
+    "wins": 7
+  },
+  "warnings": [
+    "Historical context only. No automatic betting recommendation.",
+    "Historical live profitability cannot be validated without archived live market prices."
+  ]
+}

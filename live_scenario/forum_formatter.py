@@ -392,9 +392,6 @@ def _spread_block(team: str, pregame: dict, levels: dict, selected: dict) -> lis
         return []
     role = _clean_text(pregame.get("team_a_role"))
     lines = [f"Pregame spread: {team} {_signed_spread(spread)}."]
-    role_sentence = _role_sentence(team, role)
-    if role_sentence:
-        lines.append(role_sentence)
 
     selected_context = _select_forum_spread_context(levels, selected)
     if selected_context is None:
@@ -407,9 +404,16 @@ def _spread_block(team: str, pregame: dict, levels: dict, selected: dict) -> lis
     label, node = selected_context
     probability = _pct(node.get("raw_probability"))
     if probability:
-        lines.append(_spread_context_sentence(label, role, probability))
+        quality = _quality_text(node.get("sample_quality"))
+        if _clean_text(node.get("sample_quality")) == "VERY_LOW":
+            sample = _int_or_none(node.get("sample_size")) or 0
+            lines.append(
+                f"Znaleziono tylko {sample} podobnych przypadków, dlatego ten fragment "
+                "należy traktować wyłącznie jako ciekawostkę."
+            )
+        lines.append(_spread_context_sentence(label, role, probability, pregame, node))
         lines.append(f"Bilans: {_record(node)}")
-        lines.append(f"Próba: {_sample_text(node)}")
+        lines.append(f"Próba: {_sample_text(node)} {EM_DASH} jakość: {quality}")
     return lines
 
 
@@ -420,14 +424,6 @@ def _signed_spread(spread: float) -> str:
     if spread < 0:
         return f"−{value}"
     return "0"
-
-
-def _role_sentence(team: str, role: str) -> str | None:
-    if role == "FAVORITE":
-        return f"{team} było przed meczem faworytem."
-    if role == "UNDERDOG":
-        return f"{team} nie było przed meczem faworytem."
-    return None
 
 
 def _select_forum_spread_context(levels: dict, selected: dict) -> tuple[str, dict] | None:
@@ -464,20 +460,37 @@ def _best_low_sample_spread_context(
     return max(candidates, key=lambda item: _int_or_none(item[1].get("sample_size")) or 0)
 
 
-def _spread_context_sentence(label: str, role: str, probability: str) -> str:
+def _spread_context_sentence(
+    label: str,
+    role: str,
+    probability: str,
+    pregame: dict,
+    node: dict,
+) -> str:
     if label == "exact_spread_match":
         return (
             "Drużyny z dokładnie takim spreadem, które znalazły się w tej sytuacji, "
             f"wygrywały {probability} spotkań."
         )
     if label == "spread_bucket_match":
+        bucket_label = _spread_bucket_display_label(pregame, node)
+        if bucket_label:
+            return (
+                f"Drużyny ze spreadem {bucket_label}, które znalazły się w tej sytuacji, "
+                f"wygrywały {probability} spotkań."
+            )
         return (
             "Drużyny z podobnego przedziału spreadu, które znalazły się w tej sytuacji, "
             f"wygrywały {probability} spotkań."
         )
     if role == "UNDERDOG":
         return (
-            "Przedmeczowe drużyny nienotowane jako faworyt w tej sytuacji "
+            "Przedmeczowi underdogowie znajdujący się w tej sytuacji wygrywali "
+            f"{probability} spotkań."
+        )
+    if role == "PICKEM":
+        return (
+            "Drużyny z przedmeczową linią pick'em znajdujące się w tej sytuacji "
             f"wygrywały {probability} spotkań."
         )
     return f"Przedmeczowi faworyci w tej sytuacji wygrywali {probability} spotkań."
@@ -495,3 +508,86 @@ def _low_sample_spread_sentence(label: str, spread: float, node: dict) -> str:
         f"Dla {line_label} znaleziono tylko {sample} podobnych przypadków, "
         "dlatego ten fragment należy traktować ostrożnie."
     )
+
+
+def _spread_bucket_display_label(pregame: dict, node: dict) -> str | None:
+    direct_label = _clean_text(
+        node.get("spread_bucket_display_label")
+        or pregame.get("spread_bucket_display_label")
+        or node.get("display_label")
+    )
+    if direct_label:
+        return direct_label
+
+    role = _clean_text(pregame.get("team_a_role"))
+    min_value = _float_or_none(node.get("spread_bucket_min") or pregame.get("spread_bucket_min"))
+    max_value = _float_or_none(node.get("spread_bucket_max") or pregame.get("spread_bucket_max"))
+    if min_value is not None or max_value is not None:
+        return _spread_range_label(
+            role=role,
+            min_abs=min_value,
+            max_abs=max_value,
+        )
+
+    bucket = _clean_text(
+        node.get("spread_bucket_name")
+        or pregame.get("spread_bucket_name")
+        or pregame.get("spread_bucket")
+    )
+    if not bucket:
+        return None
+    role_from_bucket, bucket_body = _split_spread_bucket(bucket)
+    role = role_from_bucket or role
+    if bucket_body in {"PK", "PICKEM", "0"}:
+        return "pick'em"
+    if bucket_body.endswith("+"):
+        min_abs = _float_or_none(bucket_body[:-1])
+        return _spread_range_label(role=role, min_abs=min_abs, max_abs=None)
+    if "-" in bucket_body:
+        left, right = bucket_body.split("-", 1)
+        return _spread_range_label(
+            role=role,
+            min_abs=_float_or_none(left),
+            max_abs=_float_or_none(right),
+        )
+    exact = _float_or_none(bucket_body)
+    if exact is not None:
+        return f"dokładnie {_signed_spread(_signed_abs_for_role(exact, role))}"
+    return None
+
+
+def _split_spread_bucket(bucket: str) -> tuple[str | None, str]:
+    text = bucket.upper()
+    for prefix, role in (("FAV_", "FAVORITE"), ("DOG_", "UNDERDOG"), ("PK_", "PICKEM")):
+        if text.startswith(prefix):
+            return role, bucket[len(prefix) :]
+    return None, bucket
+
+
+def _spread_range_label(
+    *,
+    role: str,
+    min_abs: float | None,
+    max_abs: float | None,
+) -> str | None:
+    if min_abs is None and max_abs is None:
+        return None
+    if min_abs is None:
+        boundary = _signed_spread(_signed_abs_for_role(max_abs or 0.0, role))
+        return f"{boundary} lub niższym" if role == "FAVORITE" else f"{boundary} lub mniejszym"
+    if max_abs is None:
+        boundary = _signed_spread(_signed_abs_for_role(min_abs, role))
+        return f"{boundary} lub niżej" if role == "FAVORITE" else f"{boundary} lub większym"
+    start = _signed_spread(_signed_abs_for_role(min_abs, role))
+    end = _signed_spread(_signed_abs_for_role(max_abs, role))
+    if role == "FAVORITE":
+        start, end = end, start
+    return f"od {start} do {end}"
+
+
+def _signed_abs_for_role(value: float, role: str) -> float:
+    if role == "FAVORITE":
+        return -abs(value)
+    if role == "UNDERDOG":
+        return abs(value)
+    return 0.0

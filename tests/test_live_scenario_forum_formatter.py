@@ -55,20 +55,30 @@ def _report(
     opponent_adjusted: float = 0.179,
     opponent_league: float = 0.131,
     spread: float | None = None,
+    spread_role: str | None = None,
+    spread_bucket: str | None = None,
+    spread_bucket_display_label: str | None = None,
     spread_selected_level: str = "spread_bucket_match",
     exact_sample: int = 0,
     exact_wins: int = 0,
     exact_losses: int = 0,
     exact_probability: float | None = None,
+    exact_quality: str = "LOW",
     bucket_sample: int = 80,
     bucket_wins: int = 58,
     bucket_losses: int = 22,
+    bucket_ties: int = 0,
     bucket_probability: float = 0.721,
+    bucket_quality: str = "STRONG",
     role_sample: int = 120,
     role_wins: int = 73,
     role_losses: int = 47,
     role_probability: float = 0.611,
+    role_quality: str = "STRONG",
 ) -> dict:
+    inferred_role = spread_role or (
+        "FAVORITE" if spread is not None and spread < 0 else "UNDERDOG"
+    )
     return {
         "seasons_included": list(range(2015, 2026)),
         "season_type": "REG",
@@ -124,7 +134,9 @@ def _report(
         },
         "pregame_spread_context": {
             "team_a_closing_spread": spread,
-            "team_a_role": "FAVORITE" if spread is not None and spread < 0 else "UNDERDOG",
+            "team_a_role": inferred_role,
+            "spread_bucket": spread_bucket,
+            "spread_bucket_display_label": spread_bucket_display_label,
         },
         "sample_and_reliability": {
             "spread_filter_levels": {
@@ -134,15 +146,16 @@ def _report(
                     "ties": 0,
                     "sample_size": exact_sample,
                     "raw_probability": exact_probability,
-                    "sample_quality": "STRONG" if exact_sample >= 30 else "LOW",
+                    "sample_quality": exact_quality,
                 },
                 "spread_bucket_match": {
                     "wins": bucket_wins,
                     "losses": bucket_losses,
-                    "ties": 0,
+                    "ties": bucket_ties,
                     "sample_size": bucket_sample,
                     "raw_probability": bucket_probability,
-                    "sample_quality": "STRONG",
+                    "sample_quality": bucket_quality,
+                    "spread_bucket_display_label": spread_bucket_display_label,
                 },
                 "role_only_match": {
                     "wins": role_wins,
@@ -150,7 +163,7 @@ def _report(
                     "ties": 0,
                     "sample_size": role_sample,
                     "raw_probability": role_probability,
-                    "sample_quality": "STRONG",
+                    "sample_quality": role_quality,
                 },
             },
         },
@@ -158,7 +171,7 @@ def _report(
             "selected_level": spread_selected_level,
             "wins": bucket_wins,
             "losses": bucket_losses,
-            "ties": 0,
+            "ties": bucket_ties,
             "sample_size": bucket_sample,
             "raw_probability": bucket_probability,
             "sample_quality": "STRONG",
@@ -334,35 +347,64 @@ def test_forum_formatter_uses_exact_spread_when_sample_is_large_enough():
         )
     )
     assert "Pregame spread: BUF −1,5." in post
-    assert "BUF było przed meczem faworytem." in post
+    assert "BUF było przed meczem faworytem." not in post
     assert "Drużyny z dokładnie takim spreadem" in post
     assert "wygrywały 77,1% spotkań." in post
     assert "Bilans: 27–8" in post
-    assert "Próba: 35" in post
+    assert "Próba: 35 — jakość: mała" in post
     _assert_clean(post)
 
 
-def test_forum_formatter_falls_back_from_small_exact_to_spread_bucket():
+def test_forum_formatter_uses_spread_bucket_with_two_boundaries():
     post = build_forum_post(
         _report(
-            spread=-1.5,
+            team="ATL",
+            opponent="PIT",
+            spread=3.0,
+            spread_bucket="DOG_3.5-4.5",
+            spread_bucket_display_label="od +2,5 do +4,5",
             exact_sample=13,
             exact_wins=1,
             exact_losses=12,
             exact_probability=0.077,
-            bucket_sample=40,
-            bucket_wins=28,
-            bucket_losses=12,
-            bucket_probability=0.7,
+            bucket_sample=56,
+            bucket_wins=14,
+            bucket_losses=41,
+            bucket_ties=1,
+            bucket_probability=0.25,
+            bucket_quality="MODERATE",
         )
     )
-    assert "Drużyny z podobnego przedziału spreadu" in post
-    assert "wygrywały 70,0% spotkań." in post
+    assert "Pregame spread: ATL +3." in post
+    assert "ATL nie było przed meczem faworytem." not in post
+    assert "Drużyny ze spreadem od +2,5 do +4,5" in post
+    assert "wygrywały 25,0% spotkań." in post
+    assert "Bilans: 14–41–1" in post
+    assert "Próba: 56 — jakość: umiarkowana" in post
     assert "7,7%" not in post
     _assert_clean(post)
 
 
-def test_forum_formatter_falls_back_from_small_bucket_to_role_only():
+def test_forum_formatter_uses_one_sided_spread_bucket():
+    post = build_forum_post(
+        _report(
+            spread=14.5,
+            spread_bucket="DOG_14+",
+            bucket_sample=34,
+            bucket_wins=6,
+            bucket_losses=28,
+            bucket_probability=0.176,
+            bucket_quality="MODERATE",
+        )
+    )
+    assert "Pregame spread: BUF +14,5." in post
+    assert "Drużyny ze spreadem +14 lub większym" in post
+    assert "wygrywały 17,6% spotkań." in post
+    assert "Próba: 34 — jakość: umiarkowana" in post
+    _assert_clean(post)
+
+
+def test_forum_formatter_falls_back_from_small_bucket_to_role_only_underdog():
     post = build_forum_post(
         _report(
             spread=3.5,
@@ -377,10 +419,48 @@ def test_forum_formatter_falls_back_from_small_bucket_to_role_only():
         )
     )
     assert "Pregame spread: BUF +3,5." in post
-    assert "BUF nie było przed meczem faworytem." in post
-    assert "Przedmeczowe drużyny nienotowane jako faworyt" in post
-    assert "wygrywały 40,0% spotkań." in post
+    assert "BUF nie było przed meczem faworytem." not in post
+    assert "Przedmeczowi underdogowie znajdujący się w tej sytuacji" in post
+    assert "wygrywali 40,0% spotkań." in post
     assert "45,0%" not in post
+    assert "Próba: 45 — jakość: duża" in post
+    _assert_clean(post)
+
+
+def test_forum_formatter_role_only_favorite():
+    post = build_forum_post(
+        _report(
+            spread=-7.0,
+            exact_sample=0,
+            bucket_sample=0,
+            role_sample=40,
+            role_wins=30,
+            role_losses=10,
+            role_probability=0.75,
+        )
+    )
+    assert "Pregame spread: BUF −7." in post
+    assert "Przedmeczowi faworyci w tej sytuacji wygrywali 75,0% spotkań." in post
+    assert "Próba: 40 — jakość: duża" in post
+    _assert_clean(post)
+
+
+def test_forum_formatter_role_only_pickem():
+    post = build_forum_post(
+        _report(
+            spread=0.0,
+            spread_role="PICKEM",
+            exact_sample=0,
+            bucket_sample=0,
+            role_sample=32,
+            role_wins=16,
+            role_losses=16,
+            role_probability=0.5,
+        )
+    )
+    assert "Pregame spread: BUF 0." in post
+    assert "Drużyny z przedmeczową linią pick'em" in post
+    assert "wygrywały 50,0% spotkań." in post
     _assert_clean(post)
 
 
@@ -401,6 +481,39 @@ def test_forum_formatter_warns_when_all_spread_samples_are_small():
     assert "wygrywały 55,0% spotkań." not in post
     assert "znaleziono tylko 22 podobnych przypadków" in post
     assert "należy traktować ostrożnie" in post
+    _assert_clean(post)
+
+
+def test_forum_formatter_marks_very_low_spread_sample_as_context_only():
+    post = build_forum_post(
+        _report(
+            spread=-3.0,
+            exact_sample=31,
+            exact_wins=31,
+            exact_losses=0,
+            exact_probability=1.0,
+            exact_quality="VERY_LOW",
+        )
+    )
+    assert "Znaleziono tylko 31 podobnych przypadków" in post
+    assert "wyłącznie jako ciekawostkę" in post
+    assert "Drużyny z dokładnie takim spreadem" in post
+    assert "Próba: 31 — jakość: bardzo mała" in post
+    _assert_clean(post)
+
+
+def test_forum_formatter_omits_percent_when_no_spread_context_is_publishable():
+    post = build_forum_post(
+        _report(
+            spread=3.0,
+            exact_sample=0,
+            bucket_sample=0,
+            role_sample=0,
+        )
+    )
+    assert "Pregame spread: BUF +3." in post
+    assert "Drużyny ze spreadem" not in post
+    assert "Przedmeczowi" not in post
     _assert_clean(post)
 
 
