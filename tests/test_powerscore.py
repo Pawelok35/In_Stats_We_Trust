@@ -45,6 +45,7 @@ def test_powerscore_monotonic(tmp_path, monkeypatch):
             "core_turnover_margin": [0.0, 1.0],
             "core_points_per_drive_diff": [0.5, 1.2],
             "core_redzone_td_rate": [0.2, 0.3],
+            "tempo": [6.0, 6.2],
         }
     )
 

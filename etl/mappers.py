@@ -165,7 +165,7 @@ def canonicalize_l1(df: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     if yg_src:
         new_cols["yards_gained"] = pl.col(yg_src).cast(pl.Float64)
     else:
-        new_cols["yards_gained"] = pl.lit(0.0).cast(pl.Float64)
+        new_cols["yards_gained"] = pl.lit(None).cast(pl.Float64)
 
     # interception
     int_src = _pick_alias(working, alias_plan["interception"])
@@ -212,7 +212,7 @@ def canonicalize_l1(df: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
             if col_def.dtype == pl.Int64:
                 final_cols.append(pl.lit(0).cast(pl.Int64).alias(col_name))
             elif col_def.dtype == pl.Float64:
-                final_cols.append(pl.lit(0.0).cast(pl.Float64).alias(col_name))
+                final_cols.append(pl.lit(None).cast(pl.Float64).alias(col_name))
             elif col_def.dtype == pl.Utf8:
                 final_cols.append(pl.lit("").cast(pl.Utf8).alias(col_name))
             else:
@@ -308,11 +308,12 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         )
 
     # --- core derived columns we need downstream
-    yards_expr = pl.col("yards_gained").cast(pl.Float64).fill_null(0.0)
+    yards_expr = pl.col("yards_gained").cast(pl.Float64)
     play_type_lower = pl.col("play_type").cast(pl.Utf8).fill_null("").str.to_lowercase()
     desc_lower = pl.col("play_description").cast(pl.Utf8).fill_null("").str.to_lowercase()
     down_expr = pl.col("down").cast(pl.Int64).fill_null(0)
-    distance_expr = pl.col("distance").cast(pl.Float64).fill_null(0.0)
+    distance_expr = pl.col("distance").cast(pl.Float64)
+    third_down_eligible_expr = (down_expr == 3) & distance_expr.is_not_null() & (distance_expr > 0)
     yardline_expr = pl.col("yardline_100").cast(pl.Float64)
 
     dropback_expr = (
@@ -372,11 +373,12 @@ def prepare_l2(df_l1: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
             .alias("is_explosive"),
             # pressure proxy (sacks / QB hits in description on dropbacks)
             pressure_expr.alias("is_pressure"),
-            # third-down attempt indicator
-            (down_expr == 3).cast(pl.Int64).alias("is_third_down"),
-            # third-down conversion (attained needed yards)
-            ((down_expr == 3) & (distance_expr > 0) & (yards_expr >= distance_expr))
-            .cast(pl.Int64)
+            # third-down attempt indicator: only valid attempts with known distance
+            third_down_eligible_expr.cast(pl.Int64).alias("is_third_down"),
+            # third-down conversion: null when distance is unavailable
+            pl.when(third_down_eligible_expr)
+            .then((yards_expr >= distance_expr).cast(pl.Int64))
+            .otherwise(pl.lit(None).cast(pl.Int64))
             .alias("third_down_converted"),
             # red zone indicator (yardline_100 <= 20)
             pl.when(yardline_expr.is_not_null() & (yardline_expr <= 20.0) & (yardline_expr >= 0.0))

@@ -1,4 +1,4 @@
-from __future__ import annotations
+﻿from __future__ import annotations
 
 import argparse
 import re
@@ -16,16 +16,16 @@ WINDOW_COLUMNS = {
 }
 
 TAG_COMMENTS = {
-    "GOY": "🔥 Season-level conviction — pełna zgodność metryk i rynku.",
-    "GOM": "📈 Strong monthly signal — wysokie zaufanie modelowe.",
-    "GOW": "💪 Weekly value pick — wyraźny edge vs rynek.",
-    "VALUE PLAY": "⚖️ Moderate value — umiarkowany edge.",
-    "NEUTRAL": "😴 Brak value — model i rynek w równowadze.",
+    "GOY": "ðŸ”¥ Season-level conviction â€” peÅ‚na zgodnoÅ›Ä‡ metryk i rynku.",
+    "GOM": "ðŸ“ˆ Strong monthly signal â€” wysokie zaufanie modelowe.",
+    "GOW": "ðŸ’ª Weekly value pick â€” wyraÅºny edge vs rynek.",
+    "VALUE PLAY": "âš–ï¸ Moderate value â€” umiarkowany edge.",
+    "NEUTRAL": "ðŸ˜´ Brak value â€” model i rynek w rÃ³wnowadze.",
 }
 
 TAG_COLORS: Dict[Tag, str] = {
     "VALUE PLAY": "#1f75fe",  # niebieski
-    "GOW": "#ff8c00",  # pomarańczowy
+    "GOW": "#ff8c00",  # pomaraÅ„czowy
     "GOM": "#9c27b0",  # fiolet
     "GOY": "#2ecc71",  # zielony
 }
@@ -47,10 +47,10 @@ def clamp(value: float, low: float, high: float) -> float:
 def parse_numeric(cell: str) -> float:
     cleaned = cell.strip()
     if cleaned.lower() in {"n/a", "na", "nan", ""}:
-        raise ValueError(f"Brak wartości liczbowej w komórce: {cell!r}")
+        raise ValueError(f"Brak wartoÅ›ci liczbowej w komÃ³rce: {cell!r}")
     match = re.search(r"[-+]?\d+(?:\.\d+)?", cleaned)
     if not match:
-        raise ValueError(f"Nie udało się sparsować wartości z: {cell!r}")
+        raise ValueError(f"Nie udaÅ‚o siÄ™ sparsowaÄ‡ wartoÅ›ci z: {cell!r}")
     return float(match.group())
 
 
@@ -127,16 +127,18 @@ class ReportMetrics:
     epa_offense: Dict[str, float]
     epa_defense: Dict[str, float]
     success_rate_offense: Dict[str, float]
-    third_down: Dict[str, float]
-    red_zone: Dict[str, float]
-    explosive: Dict[str, float]
-    ppd_diff: Dict[str, float]
+    third_down: Dict[str, float | None]
+    red_zone: Dict[str, float | None]
+    explosive: Dict[str, float | None]
+    ppd_diff: Dict[str, float | None]
     powerscore: Dict[str, float]
     turnover_margin: Dict[str, float]
     pressure_rate_def: Dict[str, float]
-    field_position_edge: Dict[str, float]
-    trend_scores: Dict[str, float]
-    analog_ppd: Dict[str, float]
+    field_position_edge: Dict[str, float | None]
+    trend_scores: Dict[str, float | None]
+    analog_ppd: Dict[str, float | None]
+    missing_optional_metrics: List[str]
+    warnings: List[str]
 
 
 def _get_table_flexible(report: MatchupReport, header: str) -> MarkdownTable:
@@ -156,6 +158,8 @@ def _get_table_flexible(report: MatchupReport, header: str) -> MarkdownTable:
 
 def load_report_metrics(report: MatchupReport, home: str, away: str, window: str) -> ReportMetrics:
     column = WINDOW_COLUMNS[window]
+    missing_optional: List[str] = []
+    warnings: List[str] = []
     ps_table = _get_table_flexible(report, "PowerScore Breakdown (Model)")
     ps_rows = ps_table.row_by("Component")
     required_components = ["EPA Offense", "EPA Defense", "Success Rate Offense"]
@@ -165,19 +169,23 @@ def load_report_metrics(report: MatchupReport, home: str, away: str, window: str
     epa_off = {team: parse_numeric(ps_rows["EPA Offense"][team]) for team in (home, away)}
     epa_def = {team: parse_numeric(ps_rows["EPA Defense"][team]) for team in (home, away)}
 
-    def percent_table(header: str) -> Dict[str, float]:
+    def percent_table(header: str, *, required: bool) -> Dict[str, float | None]:
         try:
             table = _get_table_flexible(report, header)
             rows = table.row_by("Team")
             return {team: parse_numeric(rows[team][column]) for team in (home, away)}
-        except ValueError:
-            return {home: 0.0, away: 0.0}
+        except (KeyError, ValueError) as exc:
+            if required:
+                raise ValueError(f"Brak wymaganej tabeli/wartosci: {header}") from exc
+            missing_optional.append(header)
+            warnings.append(f"optional table omitted: {header}")
+            return {home: None, away: None}
 
-    success_form = percent_table("Success Rate Offense Form (up to Week 9)")
-    third_down = percent_table("Third Down Conversion Form (up to Week 9)")
-    red_zone = percent_table("Red Zone TD Rate (Off) Form (up to Week 9)")
-    explosive = percent_table("Explosive Play Rate (Off) Form (up to Week 9)")
-    ppd = percent_table("Points per Drive Differential Form (up to Week 9)")
+    success_form = percent_table("Success Rate Offense Form (up to Week 9)", required=True)
+    third_down = percent_table("Third Down Conversion Form (up to Week 9)", required=False)
+    red_zone = percent_table("Red Zone TD Rate (Off) Form (up to Week 9)", required=False)
+    explosive = percent_table("Explosive Play Rate (Off) Form (up to Week 9)", required=False)
+    ppd = percent_table("Points per Drive Differential Form (up to Week 9)", required=False)
     powerscore = report.parse_powerscore_values()
 
     table_seven = _get_table_flexible(report, "PowerScore Breakdown (7 Metrics)")
@@ -199,11 +207,14 @@ def load_report_metrics(report: MatchupReport, home: str, away: str, window: str
             if row:
                 field_position[team] = parse_numeric(row[WINDOW_COLUMNS["season"]])
             else:
-                field_position[team] = 0.0
+                field_position[team] = None
+                missing_optional.append("Field Position Edge")
     except ValueError:
-        field_position = {home: 0.0, away: 0.0}
+        field_position = {home: None, away: None}
+        missing_optional.append("Field Position Edge")
+        warnings.append("optional table omitted: Field Position Edge")
 
-    trend_scores: Dict[str, float] = {home: 0.0, away: 0.0}
+    trend_scores: Dict[str, float | None] = {home: 0.0, away: 0.0}
     trend_weights = {
         "Off EPA": 0.5,
         "Off SR": 0.4,
@@ -235,9 +246,11 @@ def load_report_metrics(report: MatchupReport, home: str, away: str, window: str
                 elif "- declining" in trend:
                     trend_scores[team] -= weight
     except ValueError:
-        trend_scores = {home: 0.0, away: 0.0}
+        trend_scores = {home: None, away: None}
+        missing_optional.append("Trend Summary")
+        warnings.append("optional table omitted: Trend Summary")
 
-    analog_ppd = {home: 0.0, away: 0.0}
+    analog_ppd: Dict[str, float | None] = {home: None, away: None}
     analog_markers = {
         home: f"**{home} analogs vs {away} profile**",
         away: f"**{away} analogs vs {home} profile**",
@@ -272,27 +285,32 @@ def load_report_metrics(report: MatchupReport, home: str, away: str, window: str
                 values.append(ppd_value * similarity)
         if values:
             analog_ppd[team] = sum(values) / len(values)
+    if analog_ppd[home] is None or analog_ppd[away] is None:
+        missing_optional.append("Analog PPD")
+        warnings.append("optional analog context omitted")
 
-    def ensure_team(mapping: Dict[str, float], allow_missing: bool = False) -> Dict[str, float]:
+    def ensure_team(mapping: Dict[str, float | None], allow_missing: bool = False) -> Dict[str, float | None]:
         missing = [team for team in (home, away) if team not in mapping]
         if missing and not allow_missing:
             raise ValueError(f"Brak danych dla: {', '.join(missing)}.")
-        return {home: mapping.get(home, 0.0), away: mapping.get(away, 0.0)}
+        return {home: mapping.get(home), away: mapping.get(away)}
 
     return ReportMetrics(
         epa_offense=ensure_team(epa_off),
         epa_defense=ensure_team(epa_def),
-        success_rate_offense=ensure_team(success_form),
+        success_rate_offense=ensure_team(success_form),  # type: ignore[arg-type]
         third_down=ensure_team(third_down),
         red_zone=ensure_team(red_zone),
         explosive=ensure_team(explosive),
         ppd_diff=ensure_team(ppd),
-        powerscore=ensure_team(powerscore),
-        turnover_margin=ensure_team(turnover),
-        pressure_rate_def=ensure_team(pressure),
+        powerscore=ensure_team(powerscore),  # type: ignore[arg-type]
+        turnover_margin=ensure_team(turnover),  # type: ignore[arg-type]
+        pressure_rate_def=ensure_team(pressure),  # type: ignore[arg-type]
         field_position_edge=ensure_team(field_position),
         trend_scores=ensure_team(trend_scores, allow_missing=True),
         analog_ppd=ensure_team(analog_ppd, allow_missing=True),
+        missing_optional_metrics=sorted(set(missing_optional)),
+        warnings=warnings,
     )
 
 
@@ -318,12 +336,26 @@ class MatchInput:
 def build_match_input(
     metrics: ReportMetrics, home: str, away: str, args: argparse.Namespace
 ) -> MatchInput:
-    adv_ppd = metrics.ppd_diff[home] - metrics.ppd_diff[away]
+    def required_diff(mapping: Dict[str, float], label: str) -> float:
+        left = mapping.get(home)
+        right = mapping.get(away)
+        if left is None or right is None:
+            raise ValueError(f"MISSING_REQUIRED_METRIC: {label}")
+        return left - right
+
+    def optional_diff(mapping: Dict[str, float | None]) -> float:
+        left = mapping.get(home)
+        right = mapping.get(away)
+        if left is None or right is None:
+            return 0.0
+        return left - right
+
+    adv_ppd = optional_diff(metrics.ppd_diff)
     diff_success = metrics.success_rate_offense[home] - metrics.success_rate_offense[away]
-    diff_third = metrics.third_down[home] - metrics.third_down[away]
-    diff_rz = metrics.red_zone[home] - metrics.red_zone[away]
-    diff_explosive = metrics.explosive[home] - metrics.explosive[away]
-    powerscore_diff = metrics.powerscore[home] - metrics.powerscore[away]
+    diff_third = optional_diff(metrics.third_down)
+    diff_rz = optional_diff(metrics.red_zone)
+    diff_explosive = optional_diff(metrics.explosive)
+    powerscore_diff = required_diff(metrics.powerscore, "PowerScore")
     return MatchInput(
         spread=args.spread,
         total=args.total,
@@ -335,11 +367,11 @@ def build_match_input(
         diff_red_zone=diff_rz,
         diff_explosive=diff_explosive,
         powerscore_diff=powerscore_diff,
-        diff_turnover=metrics.turnover_margin[home] - metrics.turnover_margin[away],
-        diff_pressure=metrics.pressure_rate_def[home] - metrics.pressure_rate_def[away],
-        diff_field_position=metrics.field_position_edge[home] - metrics.field_position_edge[away],
-        diff_trend=metrics.trend_scores[home] - metrics.trend_scores[away],
-        diff_analog=metrics.analog_ppd[home] - metrics.analog_ppd[away],
+        diff_turnover=required_diff(metrics.turnover_margin, "Turnover Margin"),
+        diff_pressure=required_diff(metrics.pressure_rate_def, "Pressure Rate"),
+        diff_field_position=optional_diff(metrics.field_position_edge),
+        diff_trend=optional_diff(metrics.trend_scores),
+        diff_analog=optional_diff(metrics.analog_ppd),
     )
 
 
@@ -448,25 +480,25 @@ def build_projection(inp: MatchInput, home: str, away: str) -> ProjectionResult:
         confidence += 1.5
 
     # Context tweaks (minimal, bez ingerencji w model margines):
-    # 1) Road favorite duży chalk: jeśli spread >= 7 (home dog → wyjazdowy faworyt), obniż nieco confidence.
+    # 1) Road favorite duÅ¼y chalk: jeÅ›li spread >= 7 (home dog â†’ wyjazdowy faworyt), obniÅ¼ nieco confidence.
     if inp.home_field and inp.spread >= 7:
         confidence -= 2.0
 
-    # 2) Field position edge jako proxy ST: duża przewaga/strata start_field_position_edge wzmacnia/osłabia confidence.
+    # 2) Field position edge jako proxy ST: duÅ¼a przewaga/strata start_field_position_edge wzmacnia/osÅ‚abia confidence.
     if inp.diff_field_position >= 5:
         confidence += 1.0
     elif inp.diff_field_position <= -5:
         confidence -= 1.0
 
-    # 3) Pressure diff (def pressure vs def pressure przeciwnika) — lekki boost/cięcie.
+    # 3) Pressure diff (def pressure vs def pressure przeciwnika) â€” lekki boost/ciÄ™cie.
     if inp.diff_pressure >= 5:
         confidence += 1.0
     elif inp.diff_pressure <= -5:
         confidence -= 1.0
 
-    # 4) Negative game script risk (heurystyka): słaba presja + gorsza pozycja startowa
-    # po stronie wybranego zwycięzcy => minimalne cięcie confidence.
-    # Chodzi o zespoły, które w pościgu mogą się rozsypać.
+    # 4) Negative game script risk (heurystyka): sÅ‚aba presja + gorsza pozycja startowa
+    # po stronie wybranego zwyciÄ™zcy => minimalne ciÄ™cie confidence.
+    # Chodzi o zespoÅ‚y, ktÃ³re w poÅ›cigu mogÄ… siÄ™ rozsypaÄ‡.
     if inp.diff_pressure <= -5 and inp.diff_field_position <= -5:
         confidence -= 1.0
 
@@ -501,16 +533,34 @@ def format_ppd(value: float) -> str:
     return f"{sign}{value:.3f}"
 
 
+def format_optional_percent(value: float | None) -> str:
+    return "N/A" if value is None else format_percent(value)
+
+
+def format_optional_ppd(value: float | None) -> str:
+    return "N/A" if value is None else format_ppd(value)
+
+
+def _optional_diff_for_reason(
+    mapping: Dict[str, float | None], winner: str, loser: str
+) -> float | None:
+    left = mapping.get(winner)
+    right = mapping.get(loser)
+    if left is None or right is None:
+        return None
+    return left - right
+
+
 def build_reason_sentences(metrics: ReportMetrics, home: str, away: str, adv: float) -> List[str]:
     winner = home if adv >= 0 else away
     loser = away if winner == home else home
     sentences: List[Tuple[float, str]] = []
 
-    ppd_diff = metrics.ppd_diff[winner] - metrics.ppd_diff[loser]
-    if ppd_diff > 0:
+    ppd_diff = _optional_diff_for_reason(metrics.ppd_diff, winner, loser)
+    if ppd_diff is not None and ppd_diff > 0:
         text = (
             f"{winner} prowadzi w Points per Drive Differential ({format_ppd(metrics.ppd_diff[winner])} vs "
-            f"{format_ppd(metrics.ppd_diff[loser])}), więc bazowa efektywność napędza przewagę."
+            f"{format_ppd(metrics.ppd_diff[loser])}), wiÄ™c bazowa efektywnoÅ›Ä‡ napÄ™dza przewagÄ™."
         )
         sentences.append((abs(ppd_diff), text))
 
@@ -522,34 +572,34 @@ def build_reason_sentences(metrics: ReportMetrics, home: str, away: str, adv: fl
         )
         sentences.append((abs(sr_diff), text))
 
-    td_diff = metrics.third_down[winner] - metrics.third_down[loser]
-    if td_diff > 0:
+    td_diff = _optional_diff_for_reason(metrics.third_down, winner, loser)
+    if td_diff is not None and td_diff > 0:
         text = (
             f"Na 3rd down {winner} utrzymuje {format_percent(metrics.third_down[winner])}, podczas gdy {loser} jest na "
             f"{format_percent(metrics.third_down[loser])}, co stabilizuje serie ofensywne."
         )
         sentences.append((abs(td_diff), text))
 
-    rz_diff = metrics.red_zone[winner] - metrics.red_zone[loser]
-    if rz_diff > 0:
+    rz_diff = _optional_diff_for_reason(metrics.red_zone, winner, loser)
+    if rz_diff is not None and rz_diff > 0:
         text = (
             f"Red Zone TD Rate sprzyja {winner} ({format_percent(metrics.red_zone[winner])} vs "
             f"{format_percent(metrics.red_zone[loser])})."
         )
         sentences.append((abs(rz_diff), text))
 
-    expl_diff = metrics.explosive[winner] - metrics.explosive[loser]
-    if expl_diff > 0:
+    expl_diff = _optional_diff_for_reason(metrics.explosive, winner, loser)
+    if expl_diff is not None and expl_diff > 0:
         text = (
             f"Explosive Play Rate pozostaje po stronie {winner} ({format_percent(metrics.explosive[winner])} vs "
-            f"{format_percent(metrics.explosive[loser])}), więc big-play equity jest wyższe."
+            f"{format_percent(metrics.explosive[loser])}), wiÄ™c big-play equity jest wyÅ¼sze."
         )
         sentences.append((abs(expl_diff), text))
 
     ps_diff = metrics.powerscore[winner] - metrics.powerscore[loser]
     if ps_diff > 0:
         text = (
-            f"PowerScore Summary potwierdza przewagę {winner}: {winner} {metrics.powerscore[winner]:+.3f} "
+            f"PowerScore Summary potwierdza przewagÄ™ {winner}: {winner} {metrics.powerscore[winner]:+.3f} "
             f"vs {loser} {metrics.powerscore[loser]:+.3f}."
         )
         sentences.append((abs(ps_diff) * 100, text))
@@ -558,7 +608,7 @@ def build_reason_sentences(metrics: ReportMetrics, home: str, away: str, adv: fl
     if turnover_diff > 0:
         text = (
             f"Turnover margin faworyzuje {winner} ({metrics.turnover_margin[winner]:+.2f} vs "
-            f"{metrics.turnover_margin[loser]:+.2f}), co przekłada się na dodatkowe posiadania."
+            f"{metrics.turnover_margin[loser]:+.2f}), co przekÅ‚ada siÄ™ na dodatkowe posiadania."
         )
         sentences.append((abs(turnover_diff) * 1.5, text))
 
@@ -566,12 +616,12 @@ def build_reason_sentences(metrics: ReportMetrics, home: str, away: str, adv: fl
     if pressure_diff > 0:
         text = (
             f"Defensive pressure rate wspiera {winner} ({metrics.pressure_rate_def[winner]:+.1f}% vs "
-            f"{metrics.pressure_rate_def[loser]:+.1f}%), więc pasy rywala będą częściej pod presją."
+            f"{metrics.pressure_rate_def[loser]:+.1f}%), wiÄ™c pasy rywala bÄ™dÄ… czÄ™Å›ciej pod presjÄ…."
         )
         sentences.append((abs(pressure_diff), text))
 
-    field_diff = metrics.field_position_edge[winner] - metrics.field_position_edge[loser]
-    if field_diff > 0:
+    field_diff = _optional_diff_for_reason(metrics.field_position_edge, winner, loser)
+    if field_diff is not None and field_diff > 0:
         text = (
             f"Field position edge wynosi {field_diff:+.1f} yds na rzecz {winner} "
             f"({metrics.field_position_edge[winner]:.1f} vs {metrics.field_position_edge[loser]:.1f}), "
@@ -583,8 +633,8 @@ def build_reason_sentences(metrics: ReportMetrics, home: str, away: str, adv: fl
     top_sentences = [text for _, text in sentences[:5]]
     if len(top_sentences) < 3:
         fallback = (
-            f"{winner} utrzymuje modelowy margines {abs(adv):.1f} pkt względem {loser}, "
-            "łącząc przewagę efektywności i formy."
+            f"{winner} utrzymuje modelowy margines {abs(adv):.1f} pkt wzglÄ™dem {loser}, "
+            "Å‚Ä…czÄ…c przewagÄ™ efektywnoÅ›ci i formy."
         )
         top_sentences.append(fallback)
     return top_sentences[:5]
@@ -594,16 +644,16 @@ def build_forum_outputs(
     metrics: ReportMetrics, home: str, away: str, proj: ProjectionResult
 ) -> Tuple[str, str]:
     lines_a = [
-        f"PowerScore (Model) — {home} {metrics.powerscore[home]:+.3f} vs {away} {metrics.powerscore[away]:+.3f}.",
-        f"Points per Drive Differential — {home} {format_ppd(metrics.ppd_diff[home])} vs {away} {format_ppd(metrics.ppd_diff[away])}.",
-        f"Success Rate Offense — {home} {format_percent(metrics.success_rate_offense[home])} vs "
+        f"PowerScore (Model) â€” {home} {metrics.powerscore[home]:+.3f} vs {away} {metrics.powerscore[away]:+.3f}.",
+        f"Points per Drive Differential â€” {home} {format_optional_ppd(metrics.ppd_diff[home])} vs {away} {format_optional_ppd(metrics.ppd_diff[away])}.",
+        f"Success Rate Offense â€” {home} {format_percent(metrics.success_rate_offense[home])} vs "
         f"{away} {format_percent(metrics.success_rate_offense[away])}.",
-        f"Third Down Conversion — {home} {format_percent(metrics.third_down[home])} vs "
-        f"{away} {format_percent(metrics.third_down[away])}.",
-        f"Red Zone TD Rate — {home} {format_percent(metrics.red_zone[home])} vs "
-        f"{away} {format_percent(metrics.red_zone[away])}.",
-        f"Explosive Play Rate — {home} {format_percent(metrics.explosive[home])} vs "
-        f"{away} {format_percent(metrics.explosive[away])}.",
+        f"Third Down Conversion â€” {home} {format_optional_percent(metrics.third_down[home])} vs "
+        f"{away} {format_optional_percent(metrics.third_down[away])}.",
+        f"Red Zone TD Rate â€” {home} {format_optional_percent(metrics.red_zone[home])} vs "
+        f"{away} {format_optional_percent(metrics.red_zone[away])}.",
+        f"Explosive Play Rate â€” {home} {format_optional_percent(metrics.explosive[home])} vs "
+        f"{away} {format_optional_percent(metrics.explosive[away])}.",
         f"Model margin {proj.adv_model:.1f} pts vs market spread {home} {proj.adv_market:+.1f}.",
     ]
     forum_a = " ".join(lines_a[:7])
@@ -611,15 +661,15 @@ def build_forum_outputs(
     winner = home if proj.adv_model >= 0 else away
     loser = away if winner == home else home
     lines_b = [
-        f"Model idzie w stronę {winner} po marginesie {proj.adv_model:.1f} pkt.",
-        f"{winner} notuje {format_ppd(metrics.ppd_diff[winner])} PPD vs {format_ppd(metrics.ppd_diff[loser])} u {loser}.",
-        f"Różnica w Success Rate to {format_percent(metrics.success_rate_offense[winner])} vs "
+        f"Model idzie w stronÄ™ {winner} po marginesie {proj.adv_model:.1f} pkt.",
+        f"{winner} notuje {format_optional_ppd(metrics.ppd_diff[winner])} PPD vs {format_optional_ppd(metrics.ppd_diff[loser])} u {loser}.",
+        f"RÃ³Å¼nica w Success Rate to {format_percent(metrics.success_rate_offense[winner])} vs "
         f"{format_percent(metrics.success_rate_offense[loser])}.",
-        f"Na 3rd down {winner} ({format_percent(metrics.third_down[winner])}) wygląda solidniej niż {loser} "
-        f"({format_percent(metrics.third_down[loser])}).",
-        f"Red Zone i explosiveness ( {format_percent(metrics.red_zone[winner])} / {format_percent(metrics.explosive[winner])} ) "
-        f"utrzymują przewagę jakościową.",
-        f"Market trzyma {proj.adv_market:.1f} pkt, więc edge vs linia to {proj.edge_vs_line:+.1f}.",
+        f"Na 3rd down {winner} ({format_optional_percent(metrics.third_down[winner])}) wyglÄ…da solidniej niÅ¼ {loser} "
+        f"({format_optional_percent(metrics.third_down[loser])}).",
+        f"Red Zone i explosiveness ( {format_optional_percent(metrics.red_zone[winner])} / {format_optional_percent(metrics.explosive[winner])} ) "
+        f"utrzymujÄ… przewagÄ™ jakoÅ›ciowÄ….",
+        f"Market trzyma {proj.adv_market:.1f} pkt, wiÄ™c edge vs linia to {proj.edge_vs_line:+.1f}.",
     ]
     forum_b = " ".join(lines_b)
     return forum_a, forum_b
@@ -638,41 +688,49 @@ def render_output(home: str, away: str, metrics: ReportMetrics, proj: Projection
         else proj.tag
     )
     lines = [
-        "🔹 MODEL PROJECTION (Pure)",
-        f"1️⃣ Estimated Score (Model) – {home} {proj.model_score[0]} – {away} {proj.model_score[1]}",
-        f"2️⃣ Predicted Winner (Model) – {model_winner}",
-        f"3️⃣ Predicted Margin (Model) – {model_winner} by {proj.winner_margin:.1f} pts",
-        f"4️⃣ Win Probability (Model) – {proj.prob_model}% ({model_winner})",
-        "5️⃣ Why This Team Wins (Model) – " + " ".join(reason_sentences),
+        "ðŸ”¹ MODEL PROJECTION (Pure)",
+        f"1ï¸âƒ£ Estimated Score (Model) â€“ {home} {proj.model_score[0]} â€“ {away} {proj.model_score[1]}",
+        f"2ï¸âƒ£ Predicted Winner (Model) â€“ {model_winner}",
+        f"3ï¸âƒ£ Predicted Margin (Model) â€“ {model_winner} by {proj.winner_margin:.1f} pts",
+        f"4ï¸âƒ£ Win Probability (Model) â€“ {proj.prob_model}% ({model_winner})",
+        "5ï¸âƒ£ Why This Team Wins (Model) â€“ " + " ".join(reason_sentences),
         "",
-        "🔹 MARKET PROJECTION (Balanced)",
-        f"1️⃣ Estimated Score (Market) – {home} {proj.market_score[0]} – {away} {proj.market_score[1]}",
-        f"2️⃣ Predicted Winner (Market) – {market_winner}",
-        f"3️⃣ Predicted Margin (Market) – {market_winner} by {abs(proj.adv_market):.1f} pts",
-        f"4️⃣ Win Probability (Market) – {proj.prob_market}% ({market_winner})",
-        f"5️⃣ Forum Output (A) – {forum_a}",
-        f"6️⃣ Forum Output (B) – {forum_b}",
+        "ðŸ”¹ MARKET PROJECTION (Balanced)",
+        f"1ï¸âƒ£ Estimated Score (Market) â€“ {home} {proj.market_score[0]} â€“ {away} {proj.market_score[1]}",
+        f"2ï¸âƒ£ Predicted Winner (Market) â€“ {market_winner}",
+        f"3ï¸âƒ£ Predicted Margin (Market) â€“ {market_winner} by {abs(proj.adv_market):.1f} pts",
+        f"4ï¸âƒ£ Win Probability (Market) â€“ {proj.prob_market}% ({market_winner})",
+        f"5ï¸âƒ£ Forum Output (A) â€“ {forum_a}",
+        f"6ï¸âƒ£ Forum Output (B) â€“ {forum_b}",
         "",
-        "🔹 MODEL vs MARKET",
-        f"• Edge_vs_Line (winner) = {proj.edge_vs_line:+.1f} pts",
-        f"• PowerScoreDiff (winner) = {proj.winner_powerscore_diff:+.3f}",
-        f"• Confidence = {proj.confidence:.1f}%",
+        "ðŸ”¹ MODEL vs MARKET",
+        f"â€¢ Edge_vs_Line (winner) = {proj.edge_vs_line:+.1f} pts",
+        f"â€¢ PowerScoreDiff (winner) = {proj.winner_powerscore_diff:+.3f}",
+        f"â€¢ Confidence = {proj.confidence:.1f}%",
         "",
-        f"🏷 Model Tag: {proj.tag} — based on {proj.confidence:.1f}% confidence, "
-        f"{proj.edge_vs_line:+.1f} pts model edge vs line, and PowerScore Δ {proj.winner_powerscore_diff:+.3f}.",
+        f"ðŸ· Model Tag: {proj.tag} â€” based on {proj.confidence:.1f}% confidence, "
+        f"{proj.edge_vs_line:+.1f} pts model edge vs line, and PowerScore Î” {proj.winner_powerscore_diff:+.3f}.",
         tag_comment,
         "",
         "SUMMARY:",
         "1. MODEL PROJECTION (Pure)",
-        f"   • Estimated Score – {home} {proj.model_score[0]} – {away} {proj.model_score[1]}",
-        f"   • Win Probability – {proj.prob_model}% ({model_winner})",
+        f"   â€¢ Estimated Score â€“ {home} {proj.model_score[0]} â€“ {away} {proj.model_score[1]}",
+        f"   â€¢ Win Probability â€“ {proj.prob_model}% ({model_winner})",
         "",
         "2. MARKET PROJECTION (Balanced)",
-        f"   • Estimated Score – {home} {proj.market_score[0]} – {away} {proj.market_score[1]}",
-        f"   • Win Probability – {proj.prob_market}% ({market_winner})",
+        f"   â€¢ Estimated Score â€“ {home} {proj.market_score[0]} â€“ {away} {proj.market_score[1]}",
+        f"   â€¢ Win Probability â€“ {proj.prob_market}% ({market_winner})",
         "",
-        f"🏷 Model Tag: {colored_tag} — {model_winner} (HC {proj.winner_line:+.1f})",
+        f"ðŸ· Model Tag: {colored_tag} â€” {model_winner} (HC {proj.winner_line:+.1f})",
     ]
+    if metrics.warnings:
+        lines.extend(
+            [
+                "",
+                "DATA QUALITY WARNINGS:",
+                *[f"   - {warning}" for warning in metrics.warnings],
+            ]
+        )
     return "\n".join(lines)
 
 
@@ -688,27 +746,27 @@ def run(report_path: Path, home: str, away: str, args: argparse.Namespace) -> An
 def parse_args() -> argparse.Namespace:
     parser = argparse.ArgumentParser(description="NFL Matchup Analyst v4.8 (Aggressive-Balanced).")
     parser.add_argument(
-        "--report", type=Path, required=True, help="Ścieżka do pliku raportu Markdown."
+        "--report", type=Path, required=True, help="ÅšcieÅ¼ka do pliku raportu Markdown."
     )
     parser.add_argument("--home", required=True, help="Kod gospodarza (np. CHI).")
-    parser.add_argument("--away", required=True, help="Kod gości (np. NYG).")
+    parser.add_argument("--away", required=True, help="Kod goÅ›ci (np. NYG).")
     parser.add_argument(
-        "--spread", type=float, required=True, help="Linia na gospodarza (np. -4.5 jeśli faworyt)."
+        "--spread", type=float, required=True, help="Linia na gospodarza (np. -4.5 jeÅ›li faworyt)."
     )
     parser.add_argument("--total", type=float, required=True, help="Linia punktowa (Total).")
     parser.add_argument(
-        "--prime-time", action="store_true", help="Zaznacz jeśli spotkanie jest w prime time."
+        "--prime-time", action="store_true", help="Zaznacz jeÅ›li spotkanie jest w prime time."
     )
     parser.add_argument(
-        "--neutral-site", action="store_true", help="Ustaw jeśli mecz na neutralnym stadionie."
+        "--neutral-site", action="store_true", help="Ustaw jeÅ›li mecz na neutralnym stadionie."
     )
     parser.add_argument(
         "--window",
         choices=list(WINDOW_COLUMNS.keys()),
         default="season",
-        help="Który horyzont formy wykorzystać do różnic (domyślnie season).",
+        help="KtÃ³ry horyzont formy wykorzystaÄ‡ do rÃ³Å¼nic (domyÅ›lnie season).",
     )
-    parser.add_argument("--output", type=Path, help="Opcjonalna ścieżka zapisu wyniku (Markdown).")
+    parser.add_argument("--output", type=Path, help="Opcjonalna Å›cieÅ¼ka zapisu wyniku (Markdown).")
     return parser.parse_args()
 
 
@@ -728,3 +786,4 @@ def main() -> None:
 
 if __name__ == "__main__":
     main()
+

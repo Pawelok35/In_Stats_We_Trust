@@ -100,9 +100,9 @@ def compute(df_core12: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         )
     else:
         tempo_expr = (
-            pl.col("tempo").cast(pl.Float64).fill_null(0.0)
+            pl.col("tempo").cast(pl.Float64)
             if "tempo" in df_core12.columns
-            else pl.lit(0.0).cast(pl.Float64)
+            else pl.lit(None).cast(pl.Float64)
         )
 
         working = df_core12.with_columns(

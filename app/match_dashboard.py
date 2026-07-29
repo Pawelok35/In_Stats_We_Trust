@@ -23,6 +23,14 @@ def _to_float(v: Any) -> Optional[float]:
         return None
 
 
+def _diff_or_none(left: Any, right: Any) -> Optional[float]:
+    left_value = _to_float(left)
+    right_value = _to_float(right)
+    if left_value is None or right_value is None:
+        return None
+    return left_value - right_value
+
+
 def _round_to_half(v: float) -> float:
     return round(v * 2.0) / 2.0
 
@@ -198,7 +206,9 @@ def build_payload(season: int, week: int, away: str, home: str, profile: str) ->
     fair_total = float(v_b["total"])
     market_spread_raw = _to_float(line.get("spread"))
     if market_spread_raw is None:
-        market_spread_raw = _to_float(v_b.get("spread")) or 0.0
+        market_spread_raw = _to_float(v_b.get("spread"))
+    if market_spread_raw is None:
+        raise ValueError(f"Missing market spread for {away} @ {home}.")
     market_spread = _round_to_half(market_spread_raw)
     market_total = _to_float(line.get("total")) or fair_total
 
@@ -248,18 +258,21 @@ def build_payload(season: int, week: int, away: str, home: str, profile: str) ->
         "guardrail_level": gl,
         "guardrail_notes": str(weather.get("guardrail_notes", "")),
         "scenario": scenario,
-        "power_diff": (_to_float(home_ps.get("power_score")) or 0.0)
-        - (_to_float(away_ps.get("power_score")) or 0.0),
-        "epa_off_delta": (_to_float(home_roll.get("core_epa_off")) or 0.0)
-        - (_to_float(away_roll.get("core_epa_off")) or 0.0),
-        "sr_off_delta": (_to_float(home_roll.get("core_sr_off")) or 0.0)
-        - (_to_float(away_roll.get("core_sr_off")) or 0.0),
-        "pressure_delta": (_to_float(home_roll.get("core_pressure_rate_def")) or 0.0)
-        - (_to_float(away_roll.get("core_pressure_rate_def")) or 0.0),
-        "third_down_delta": (_to_float(home_roll.get("core_third_down_conv")) or 0.0)
-        - (_to_float(away_roll.get("core_third_down_conv")) or 0.0),
-        "to_delta": (_to_float(home_roll.get("core_turnover_margin")) or 0.0)
-        - (_to_float(away_roll.get("core_turnover_margin")) or 0.0),
+        "power_diff": _diff_or_none(home_ps.get("power_score"), away_ps.get("power_score")),
+        "epa_off_delta": _diff_or_none(home_roll.get("core_epa_off"), away_roll.get("core_epa_off")),
+        "sr_off_delta": _diff_or_none(home_roll.get("core_sr_off"), away_roll.get("core_sr_off")),
+        "pressure_delta": _diff_or_none(
+            home_roll.get("core_pressure_rate_def"),
+            away_roll.get("core_pressure_rate_def"),
+        ),
+        "third_down_delta": _diff_or_none(
+            home_roll.get("core_third_down_conv"),
+            away_roll.get("core_third_down_conv"),
+        ),
+        "to_delta": _diff_or_none(
+            home_roll.get("core_turnover_margin"),
+            away_roll.get("core_turnover_margin"),
+        ),
         "form_epa_home": _delta(f3, f5, "epa_off_mean_avg", home),
         "form_epa_away": _delta(f3, f5, "epa_off_mean_avg", away),
         "form_sr_home": _delta(f3, f5, "success_rate_off_avg", home),

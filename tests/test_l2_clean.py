@@ -93,3 +93,40 @@ def test_l2_clean_missing_l1_raises(tmp_path, monkeypatch):
 
     with pytest.raises(FileNotFoundError):
         l2_run(2025, 2)
+
+
+def test_l2_third_down_requires_valid_distance(tmp_path, monkeypatch):
+    settings = _stub_settings(tmp_path)
+    monkeypatch.setattr("utils.paths.load_settings", lambda *args, **kwargs: settings)
+
+    l1_path = path_for("l1", 2025, 3)
+    l1_path.parent.mkdir(parents=True, exist_ok=True)
+    pl.DataFrame(
+        {
+            "season": [2025, 2025, 2025],
+            "week": [3, 3, 3],
+            "game_id": ["G1", "G1", "G1"],
+            "play_id": [1, 2, 3],
+            "posteam": ["BUF", "BUF", "BUF"],
+            "defteam": ["MIA", "MIA", "MIA"],
+            "drive": [1, 1, 1],
+            "play_type": ["pass", "pass", "pass"],
+            "epa": [0.1, 0.1, 0.1],
+            "success": [1.0, 0.0, 1.0],
+            "yardline_100": [50.0, 50.0, 50.0],
+            "down": [3, 3, 3],
+            "distance": [None, 8.0, 8.0],
+            "yards_gained": [8.0, 5.0, 8.0],
+            "touchdown": [0, 0, 0],
+            "interception": [0, 0, 0],
+            "fumble_lost": [0, 0, 0],
+            "play_description": ["missing distance", "failed attempt", "converted"],
+        }
+    ).write_parquet(l1_path)
+
+    result = pl.read_parquet(l2_run(2025, 3)).sort("play_id")
+    rows = result.select(["play_id", "is_third_down", "third_down_converted"]).to_dicts()
+
+    assert rows[0] == {"play_id": 1, "is_third_down": 0, "third_down_converted": None}
+    assert rows[1] == {"play_id": 2, "is_third_down": 1, "third_down_converted": 0}
+    assert rows[2] == {"play_id": 3, "is_third_down": 1, "third_down_converted": 1}

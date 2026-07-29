@@ -107,6 +107,14 @@ def _to_float(v: Any) -> Optional[float]:
         return None
 
 
+def _diff_or_none(left: Any, right: Any) -> Optional[float]:
+    left_value = _to_float(left)
+    right_value = _to_float(right)
+    if left_value is None or right_value is None:
+        return None
+    return left_value - right_value
+
+
 def _round_to_half(v: float) -> float:
     return round(v * 2.0) / 2.0
 
@@ -372,8 +380,8 @@ def _build_one_card(
         f"Model margin: {model_winner} by {model_margin:.1f} (vs market {_fmt_spread(market_spread_home)})",
         f"Weather bucket: {weather_row.get('bucket', 'n/a')} (rating {_fmt_num(_to_float(weather_row.get('rating')), 2)})",
         f"Value buffer: {_fmt_num(_to_float(weather_row.get('value_buffer')), 1)}",
-        f"Third-down edge ({home}-{away}): {(_to_float(home_roll.get('core_third_down_conv')) or 0)-(_to_float(away_roll.get('core_third_down_conv')) or 0):+.3f}",
-        f"Turnover margin edge ({home}-{away}): {(_to_float(home_roll.get('core_turnover_margin')) or 0)-(_to_float(away_roll.get('core_turnover_margin')) or 0):+.3f}",
+        f"Third-down edge ({home}-{away}): {_fmt_num(_diff_or_none(home_roll.get('core_third_down_conv'), away_roll.get('core_third_down_conv')), 3)}",
+        f"Turnover margin edge ({home}-{away}): {_fmt_num(_diff_or_none(home_roll.get('core_turnover_margin'), away_roll.get('core_turnover_margin')), 3)}",
     ]
     top_drivers = driver_candidates[:5]
 
@@ -412,23 +420,22 @@ def _build_one_card(
     ]
 
     powerscore = {
-        "diff": (_to_float(home_ps.get("power_score")) or 0.0)
-        - (_to_float(away_ps.get("power_score")) or 0.0),
-        "qb_eff": (_to_float(home_roll.get("core_epa_off")) or 0.0)
-        - (_to_float(away_roll.get("core_epa_off")) or 0.0),
-        "pass_rush": (_to_float(home_roll.get("core_pressure_rate_def")) or 0.0)
-        - (_to_float(away_roll.get("core_pressure_rate_def")) or 0.0),
-        "sr_off": (_to_float(home_roll.get("core_sr_off")) or 0.0)
-        - (_to_float(away_roll.get("core_sr_off")) or 0.0),
+        "diff": _diff_or_none(home_ps.get("power_score"), away_ps.get("power_score")),
+        "qb_eff": _diff_or_none(home_roll.get("core_epa_off"), away_roll.get("core_epa_off")),
+        "pass_rush": _diff_or_none(
+            home_roll.get("core_pressure_rate_def"),
+            away_roll.get("core_pressure_rate_def"),
+        ),
+        "sr_off": _diff_or_none(home_roll.get("core_sr_off"), away_roll.get("core_sr_off")),
     }
 
     form = {
-        "home_epa_off_delta": _delta(form3, form5, "epa_off_mean_avg", home) or 0.0,
-        "away_epa_off_delta": _delta(form3, form5, "epa_off_mean_avg", away) or 0.0,
-        "home_sr_off_delta": _delta(form3, form5, "success_rate_off_avg", home) or 0.0,
-        "away_sr_off_delta": _delta(form3, form5, "success_rate_off_avg", away) or 0.0,
-        "home_tempo_delta": _delta(form3, form5, "tempo_avg", home) or 0.0,
-        "away_tempo_delta": _delta(form3, form5, "tempo_avg", away) or 0.0,
+        "home_epa_off_delta": _delta(form3, form5, "epa_off_mean_avg", home),
+        "away_epa_off_delta": _delta(form3, form5, "epa_off_mean_avg", away),
+        "home_sr_off_delta": _delta(form3, form5, "success_rate_off_avg", home),
+        "away_sr_off_delta": _delta(form3, form5, "success_rate_off_avg", away),
+        "home_tempo_delta": _delta(form3, form5, "tempo_avg", home),
+        "away_tempo_delta": _delta(form3, form5, "tempo_avg", away),
     }
 
     summary = (

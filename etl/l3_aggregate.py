@@ -1,3 +1,4 @@
+import json
 from pathlib import Path
 from typing import Optional
 
@@ -7,6 +8,11 @@ from utils.contracts import validate_df
 from utils.guards import check_no_inf, check_no_nan_in_keys
 from utils.logging import get_logger
 from utils.manifest import write_manifest
+from utils.model_metrics import (
+    OPTIONAL_L3_MODEL_METRICS,
+    REQUIRED_L3_MODEL_METRICS,
+    safe_div,
+)
 from utils.paths import manifest_path, path_for
 
 logger = get_logger(__name__)
@@ -17,7 +23,7 @@ def _safe_div(num_expr: pl.Expr, den_expr: pl.Expr) -> pl.Expr:
     Bezpieczne dzielenie num/den, zwraca 0.0 jeśli den == 0 albo null.
     Zwracamy wyrażenie polarsowe (Expr).
     """
-    return pl.when((den_expr.is_null()) | (den_expr == 0)).then(0.0).otherwise(num_expr / den_expr)
+    return safe_div(num_expr, den_expr)
 
 
 def _empty_result() -> pl.DataFrame:
@@ -101,7 +107,7 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
     # yards_gained też normalizujemy do Float64
     if "yards_gained" not in df.columns:
-        safety_exprs.append(pl.lit(0.0).cast(pl.Float64).alias("yards_gained"))
+        safety_exprs.append(pl.lit(None).cast(pl.Float64).alias("yards_gained"))
     else:
         safety_exprs.append(pl.col("yards_gained").cast(pl.Float64).alias("yards_gained"))
 
@@ -113,9 +119,14 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
 
     # epa w Float64 na pewno
     if "epa" not in df.columns:
-        safety_exprs.append(pl.lit(0.0).cast(pl.Float64).alias("epa"))
+        safety_exprs.append(pl.lit(None).cast(pl.Float64).alias("epa"))
     else:
         safety_exprs.append(pl.col("epa").cast(pl.Float64).alias("epa"))
+
+    if "success" not in df.columns:
+        safety_exprs.append(pl.lit(None).cast(pl.Float64).alias("success"))
+    else:
+        safety_exprs.append(pl.col("success").cast(pl.Float64).alias("success"))
 
     if "play_type" not in df.columns:
         safety_exprs.append(pl.lit("").cast(pl.Utf8).alias("play_type"))
@@ -138,8 +149,8 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
             pl.col("TEAM").cast(pl.Utf8),
             pl.col("OPP").cast(pl.Utf8),
             pl.col("drive").cast(pl.Int64),
-            pl.col("epa").cast(pl.Float64).fill_null(0.0),
-            pl.col("success").cast(pl.Float64).fill_null(0.0),
+            pl.col("epa").cast(pl.Float64),
+            pl.col("success").cast(pl.Float64),
             pl.col("yards_gained").cast(pl.Float64),
             pl.col("yardline_100").cast(pl.Float64),
             pl.col("play_type").cast(pl.Utf8).alias("play_type"),
@@ -417,52 +428,12 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
         (pl.col("points_per_drive_off") - pl.col("points_per_drive_def"))
         .cast(pl.Float64)
         .alias("points_per_drive_diff"),
-        (pl.col("ypp_off").fill_null(0.0) - pl.col("ypp_def").fill_null(0.0))
+        (pl.col("ypp_off") - pl.col("ypp_def"))
         .cast(pl.Float64)
         .alias("ypp_diff"),
         (pl.col("avg_start_yd100_def") - pl.col("avg_start_yd100_off"))
         .cast(pl.Float64)
         .alias("start_field_position_edge"),
-    )
-
-    # fill_null liczbówek
-    numeric_fill_cols = [
-        "epa_off_mean",
-        "success_rate_off",
-        "pass_success_rate_off",
-        "rush_success_rate_off",
-        "epa_def_mean",
-        "success_rate_def",
-        "pass_success_rate_def",
-        "rush_success_rate_def",
-        "tempo",
-        "pressure_rate_def",
-        "pressure_rate_allowed",
-        "explosive_play_rate_off",
-        "explosive_play_rate_def",
-        "third_down_conv_off",
-        "third_down_conv_def",
-        "redzone_td_rate_off",
-        "redzone_td_rate_def",
-        "turnover_margin",
-        "points_per_drive_off",
-        "points_per_drive_def",
-        "points_per_drive_diff",
-        "ypp_off",
-        "ypp_def",
-        "ypp_diff",
-        "pass_rate_off",
-        "rush_rate_off",
-        "avg_start_yd100_off",
-        "avg_start_yd100_def",
-        "start_field_position_edge",
-    ]
-    combined = combined.with_columns(
-        [
-            pl.col(c).fill_null(0.0).cast(pl.Float64).alias(c)
-            for c in numeric_fill_cols
-            if c in combined.columns
-        ]
     )
 
     return combined.select(
@@ -503,6 +474,41 @@ def _aggregate(df: pl.DataFrame) -> pl.DataFrame:
     )
 
 
+def _quality_report(df: pl.DataFrame) -> dict:
+    metric_cols = list(REQUIRED_L3_MODEL_METRICS + OPTIONAL_L3_MODEL_METRICS)
+    data_quality: dict[str, int] = {
+        "rows_total": df.height,
+        "nulls_replaced_with_zero": 0,
+    }
+    missing_required: list[str] = []
+    missing_optional: list[str] = []
+    for col in metric_cols:
+        if col not in df.columns:
+            data_quality[f"missing_{col}"] = df.height
+            data_quality[f"zero_{col}"] = 0
+            if col in REQUIRED_L3_MODEL_METRICS:
+                missing_required.append(col)
+            else:
+                missing_optional.append(col)
+            continue
+        data_quality[f"missing_{col}"] = df.filter(pl.col(col).is_null()).height
+        data_quality[f"zero_{col}"] = df.filter(pl.col(col) == 0.0).height
+        if data_quality[f"missing_{col}"] > 0:
+            if col in REQUIRED_L3_MODEL_METRICS:
+                missing_required.append(col)
+            else:
+                missing_optional.append(col)
+    return {
+        "data_quality": {
+            **data_quality,
+            "required_metrics_complete": not missing_required,
+            "missing_required_metrics": sorted(set(missing_required)),
+            "missing_optional_metrics": sorted(set(missing_optional)),
+            "model_input_complete": not missing_required,
+        }
+    }
+
+
 def run(season: int, week: int, l2_result: Optional[Path] = None) -> Path:
     """
     Ładuje L2 (play-level z flagami), robi agregację do L3 (team-week),
@@ -532,6 +538,11 @@ def run(season: int, week: int, l2_result: Optional[Path] = None) -> Path:
     out_path = path_for("l3_team_week", season, week)
     out_path.parent.mkdir(parents=True, exist_ok=True)
     result.write_parquet(out_path)
+    quality_path = out_path.with_name(f"{out_path.stem}_data_quality.json")
+    quality_path.write_text(
+        json.dumps(_quality_report(result), indent=2, sort_keys=True),
+        encoding="utf-8",
+    )
 
     write_manifest(
         path=out_path,
@@ -541,7 +552,7 @@ def run(season: int, week: int, l2_result: Optional[Path] = None) -> Path:
         week=week,
         rows=result.height,
         cols=len(result.columns),
-        files=[out_path],
+        files=[out_path, quality_path],
     )
 
     logger.info(

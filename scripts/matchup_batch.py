@@ -17,6 +17,7 @@ if str(ROOT_DIR) not in sys.path:
     sys.path.insert(0, str(ROOT_DIR))
 
 from scripts import matchup_analyzer  # noqa: E402
+from utils.preflight import require_model_preflight  # noqa: E402
 from utils.run_metadata import build_run_metadata  # noqa: E402
 
 REPORT_PATTERN = re.compile(r"(?P<season>\d{4})_w(?P<week>\d+)", re.IGNORECASE)
@@ -136,9 +137,50 @@ def run_batch(
     combined_output: Path | None,
     picks_dir: Path,
     tag_config: Path | None,
+    enforce_preflight: bool = True,
+    unsafe_test_only_bypass: bool = False,
 ) -> None:
     config_path = config_path if config_path.is_absolute() else ROOT_DIR / config_path
     entries = load_config(config_path)
+    preflight_payload: dict[str, Any] = {
+        "status": "NOT_RUN",
+        "production_eligible": False,
+        "reason": "no season/week inferred before model run",
+    }
+    if enforce_preflight and entries:
+        inferred = None
+        for entry in entries:
+            inferred = infer_season_week(Path(entry["report"]))
+            if inferred:
+                break
+        if inferred:
+            season, week = inferred
+            data_root = (
+                ROOT_DIR / "data"
+                if config_path.is_relative_to(ROOT_DIR)
+                else config_path.parent / "data"
+            )
+            preflight = require_model_preflight(
+                season=season,
+                analysis_week=week,
+                data_root=data_root,
+                lines_path=config_path,
+                strict_mode=True,
+            )
+            preflight_payload = {
+                **preflight.to_dict(),
+                "production_eligible": preflight.status == "PASS",
+                "bypass_used": False,
+            }
+            print(f"[OK] preflight validation: {preflight_payload}")
+    elif unsafe_test_only_bypass:
+        preflight_payload = {
+            "status": "BYPASSED_UNSAFE",
+            "production_eligible": False,
+            "bypass_used": True,
+            "reason": "unsafe test-only bypass requested",
+        }
+        print(f"[WARN] UNSAFE TEST-ONLY PREFLIGHT BYPASS: {preflight_payload}", file=sys.stderr)
 
     load_tag_rules(tag_config)
     model_version = tag_config.stem if tag_config else "baseline"
@@ -247,6 +289,7 @@ def run_batch(
                 ),
                 "generated_at": datetime.now(tz=timezone.utc).isoformat(timespec="seconds"),
                 **record_metadata,
+                "preflight": preflight_payload,
             }
             record["price"] = selected_price
             # Freeze the exact market input used to create this model pick.  This
@@ -330,6 +373,11 @@ def parse_args() -> argparse.Namespace:
         type=Path,
         help="Plik YAML z niestandardowymi progami klasyfikacji tagów.",
     )
+    parser.add_argument(
+        "--unsafe-test-only-bypass",
+        action="store_true",
+        help="Unsafe test-only preflight bypass. Output is not production eligible.",
+    )
     return parser.parse_args()
 
 
@@ -344,6 +392,8 @@ def main() -> None:
         args.combined_output,
         picks_dir,
         args.tag_config if args.tag_config else None,
+        enforce_preflight=not args.unsafe_test_only_bypass,
+        unsafe_test_only_bypass=args.unsafe_test_only_bypass,
     )
 
 

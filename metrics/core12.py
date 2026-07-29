@@ -5,6 +5,7 @@ import polars as pl
 from utils.contracts import validate_df
 from utils.guards import check_no_inf, check_no_nan_in_keys
 from utils.manifest import write_manifest
+from utils.model_metrics import OPTIONAL_CORE12_MODEL_METRICS, REQUIRED_CORE12_MODEL_METRICS
 from utils.paths import manifest_path, path_for
 
 logger = logging.getLogger(__name__)
@@ -48,7 +49,9 @@ def compute(df_l3: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         ]
     )
 
-    # bezpieczeństwo: żadnych nulli w metrykach numerycznych
+    # Missing metrics must stay null. Zero is a valid sport value only when the
+    # source metric was actually zero; we do not turn missing EPA/SR into neutral
+    # values before the model sees them.
     numeric_cols = [
         "core_epa_offense",
         "core_epa_defense",
@@ -64,11 +67,22 @@ def compute(df_l3: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
         "tempo",
     ]
 
+    missing_exprs = [pl.col(c).is_null().cast(pl.Int64) for c in numeric_cols if c in work.columns]
+    missing_count_expr = sum(missing_exprs) if missing_exprs else pl.lit(0)
     work = work.with_columns(
         [
-            pl.col(c).cast(pl.Float64).fill_null(0.0).alias(c)
+            pl.col(c).cast(pl.Float64).alias(c)
             for c in numeric_cols
             if c in work.columns
+        ]
+    ).with_columns(
+        [
+            missing_count_expr.alias("missing_core_metric_count"),
+            pl.when(missing_count_expr > 0)
+            .then(pl.lit("MISSING_METRICS"))
+            .otherwise(pl.lit("OK"))
+            .alias("data_quality_status"),
+            pl.lit(0).cast(pl.Int64).alias("nulls_replaced_with_zero"),
         ]
     )
 
@@ -96,6 +110,37 @@ def compute(df_l3: pl.DataFrame, season: int, week: int) -> pl.DataFrame:
     work = work.with_columns(
         [
             pl.col("explosive_play_rate_offense").alias("core_ed_sr_off"),
+        ]
+    )
+
+    required_available = [c for c in REQUIRED_CORE12_MODEL_METRICS if c in work.columns]
+    optional_available = [c for c in OPTIONAL_CORE12_MODEL_METRICS if c in work.columns]
+    required_missing_exprs = [
+        pl.when(pl.col(c).is_null()).then(pl.lit(c)).otherwise(None) for c in required_available
+    ]
+    optional_missing_exprs = [
+        pl.when(pl.col(c).is_null()).then(pl.lit(c)).otherwise(None) for c in optional_available
+    ]
+    work = work.with_columns(
+        [
+            pl.concat_list(required_missing_exprs)
+            .list.drop_nulls()
+            .list.join(",")
+            .alias("missing_required_metrics"),
+            pl.concat_list(optional_missing_exprs)
+            .list.drop_nulls()
+            .list.join(",")
+            .alias("missing_optional_metrics"),
+        ]
+    ).with_columns(
+        [
+            (pl.col("missing_required_metrics") == "").alias("model_input_complete"),
+            pl.when(pl.col("missing_required_metrics") != "")
+            .then(pl.lit("MISSING_REQUIRED_METRICS"))
+            .when(pl.col("missing_optional_metrics") != "")
+            .then(pl.lit("PASS_WITH_WARNINGS"))
+            .otherwise(pl.lit("OK"))
+            .alias("data_quality_status"),
         ]
     )
 

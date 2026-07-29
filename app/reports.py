@@ -15,6 +15,7 @@ import matplotlib
 
 from metrics.form_windows import compute_form_windows
 from metrics.opponent_similarity import compute_team_analogs
+from utils.data_cutoff import MISSING_SAFE_SNAPSHOT, resolve_safe_snapshot
 from utils.paths import rolling_core12_through_path
 
 matplotlib.use("Agg")
@@ -390,6 +391,15 @@ def _read_manifest_files(manifest_path: Path) -> list[str]:
 
 
 logger = get_logger(__name__)
+
+
+def _resolve_safe_rolling_core12_snapshot(season: int, analysis_week: int, requested_through_week: int):
+    return resolve_safe_snapshot(
+        season=season,
+        analysis_week=analysis_week,
+        requested_through_week=requested_through_week,
+        path_factory=rolling_core12_through_path,
+    )
 PROJECT_ROOT = Path(__file__).resolve().parents[1]
 DATA_ROOT = PROJECT_ROOT / "data"
 
@@ -842,9 +852,9 @@ def available_teams(
     # If partial list (e.g., bye teams missing), enrich with rolling snapshot through week-1.
     if teams_accum and len(teams_accum) < 32:
         try:
-            rolling_path = Path(rolling_core12_through_path(season, max(1, week - 1)))
-            if rolling_path.exists():
-                df_roll = pl.read_parquet(rolling_path)
+            snapshot = _resolve_safe_rolling_core12_snapshot(season, week, week - 1)
+            if snapshot.path and snapshot.cutoff_safe:
+                df_roll = pl.read_parquet(snapshot.path)
                 if "TEAM" in df_roll.columns:
                     teams_accum |= {
                         str(value).upper()
@@ -861,15 +871,15 @@ def available_teams(
 
     # Fallback: use rolling Core12 snapshot (through week-1) so bye teams are not dropped.
     try:
-        rolling_path = Path(rolling_core12_through_path(season, max(1, week - 1)))
+        snapshot = _resolve_safe_rolling_core12_snapshot(season, week, week - 1)
     except Exception:
         return []
-    if rolling_path.exists():
+    if snapshot.path and snapshot.cutoff_safe:
         try:
-            df_roll = pl.read_parquet(rolling_path)
+            df_roll = pl.read_parquet(snapshot.path)
         except Exception:
             logger.debug(
-                "Failed to load rolling Core12 snapshot from %s", rolling_path, exc_info=True
+                "Failed to load rolling Core12 snapshot from %s", snapshot.path, exc_info=True
             )
             return []
         if "TEAM" in df_roll.columns:
@@ -905,39 +915,39 @@ def _core12_metrics_for(season: int, week: int, team: str) -> dict[str, float]:
     Dodatkowo mapujemy nazwy kolumn z pliku na nasze klucze używane w raporcie.
     """
 
-    rolling_path_str = rolling_core12_through_path(season, week - 1)
-    rolling_path = Path(rolling_path_str)
-
     df = None
+    snapshot = _resolve_safe_rolling_core12_snapshot(season, week, week - 1)
 
-    if rolling_path.exists():
-        df_try = pl.read_parquet(rolling_path)
+    if snapshot.path and snapshot.cutoff_safe:
+        df_try = pl.read_parquet(snapshot.path)
         if not df_try.is_empty():
             df = df_try
         else:
             logger.warning(
                 "Rolling Core12 snapshot %s is empty; will try fallback L4 for season=%s week=%s",
-                rolling_path,
+                snapshot.path,
                 season,
                 week,
             )
     else:
         logger.warning(
-            "Rolling Core12 snapshot %s not found; will try fallback L4 for season=%s week=%s",
-            rolling_path,
+            "Safe rolling Core12 snapshot missing for season=%s week=%s (status=%s).",
             season,
             week,
+            snapshot.status,
         )
 
     if df is None:
-        fallback_path = Path(f"data/l4_core12/{season}/{week}.parquet")
+        fallback_week = week - 1
+        fallback_path = Path(f"data/l4_core12/{season}/{fallback_week}.parquet")
         if fallback_path.exists():
             df = pl.read_parquet(fallback_path)
         else:
             logger.error(
-                "No Core12 data available for season=%s week=%s (no rolling, no fallback).",
+                "No safe Core12 data available for season=%s week=%s (status=%s).",
                 season,
                 week,
+                MISSING_SAFE_SNAPSHOT,
             )
             return {}
 
@@ -1133,7 +1143,9 @@ def _team_chart(
 ) -> dict[str, Any]:
     metrics = [metric for metric in summary.core_metrics if metric["value"] is not None]
     if not metrics:
-        metrics = [{"label": "Tempo", "value": summary.tempo or 0.0}]
+        if summary.tempo is None:
+            raise ValueError(f"No plottable metrics available for team {team}.")
+        metrics = [{"label": "Tempo", "value": summary.tempo}]
     labels = [metric["label"] for metric in metrics]
     values = [metric["value"] for metric in metrics]
     fig, ax = plt.subplots(figsize=(8, 4.0))
@@ -1780,9 +1792,9 @@ def _build_powerscore_breakdown(
     # Fallback: if any team missing (bye/missing game), try rolling snapshot through week-1.
     if teams_df is None or teams_df.height < 2:
         try:
-            rolling_path = Path(rolling_core12_through_path(season, max(1, week - 1)))
-            if rolling_path.exists():
-                rolling_df = pl.read_parquet(rolling_path)
+            snapshot = _resolve_safe_rolling_core12_snapshot(season, week, week - 1)
+            if snapshot.path and snapshot.cutoff_safe:
+                rolling_df = pl.read_parquet(snapshot.path)
                 teams_df = rolling_df.filter(pl.col("TEAM").is_in([team_a, team_b]))
         except Exception:
             teams_df = None
@@ -3374,24 +3386,8 @@ def _metric_form_table(
         )
         dfs.append(df_w)
 
-    # Week 1 has no completed current-season week. Use the explicitly seeded
-    # prior-season rolling snapshot instead of silently producing empty form
-    # tables and collapsing the model margin.
-    if not dfs and current_week == 1 and layer_dir == "l4_core12":
-        rolling_path = Path(rolling_core12_through_path(season, 1))
-        if rolling_path.exists():
-            rolling_df = pl.read_parquet(rolling_path)
-            physical_col = next((cand for cand in candidates if cand in rolling_df.columns), None)
-            if physical_col is not None and "TEAM" in rolling_df.columns:
-                dfs.append(
-                    rolling_df.select(
-                        [
-                            pl.col("TEAM"),
-                            pl.lit(0).alias("week"),
-                            pl.col(physical_col).alias(column_name),
-                        ]
-                    )
-                )
+    # Week 1 has no current-season completed games. Do not silently use a
+    # prior-season snapshot unless a future explicit prior config is added.
 
     # fallback: if we still have no rows, walk backwards for the most recent available week
     if not dfs and current_week > 1:
@@ -4065,28 +4061,26 @@ def _load_team_state_before_week(season: int, week: int) -> pl.DataFrame:
     Zwraca DataFrame z kolumnami Core12 rolling:
     ['season','TEAM', core_epa_off,..., core_pressure_rate_def, ... 'through_week']
     """
-    # safety: żeby nie mieć week 0
-    through_week = max(1, week - 1)
+    through_week = week - 1
+    snapshot = _resolve_safe_rolling_core12_snapshot(season, week, through_week)
+    if not snapshot.path or not snapshot.cutoff_safe:
+        raise FileNotFoundError(
+            f"Safe Rolling Core12 snapshot not found for season={season} analysis_week={week}; "
+            f"status={snapshot.status}, requested_through_week={snapshot.requested_through_week}"
+        )
 
-    path = rolling_core12_through_path(season, through_week)
-    p = Path(path)
-    if not p.exists():
-        # fallback: jeżeli np. jesteśmy bardzo wcześnie w sezonie i nie ma through_(week-1),
-        # to użyj aktualnego through_week
-        if Path(rolling_core12_through_path(season, week)).exists():
-            through_week = week
-            p = Path(rolling_core12_through_path(season, week))
-        else:
-            raise FileNotFoundError(
-                f"Rolling Core12 snapshot not found for season={season} week<={week} "
-                f"(tried {path})"
-            )
-
-    df = pl.read_parquet(p)
+    df = pl.read_parquet(snapshot.path)
 
     # sanity: normalizujemy nazwę kolumny drużyny na 'TEAM' i zostawiamy info,
     # który snapshot został użyty
-    df = df.with_columns(pl.lit(through_week).alias("rolling_through_week"))
+    df = df.with_columns(
+        [
+            pl.lit(snapshot.resolved_through_week).alias("rolling_through_week"),
+            pl.lit(snapshot.fallback_used).alias("rolling_fallback_used"),
+            pl.lit(snapshot.fallback_reason or "").alias("rolling_fallback_reason"),
+            pl.lit(snapshot.cutoff_safe).alias("rolling_cutoff_safe"),
+        ]
+    )
 
     return df
 

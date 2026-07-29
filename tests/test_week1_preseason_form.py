@@ -5,7 +5,10 @@ import polars as pl
 from app import reports
 
 
-def test_week1_form_uses_preseason_rolling_seed(tmp_path: Path, monkeypatch):
+def test_week1_form_does_not_use_preseason_seed_without_prior(
+    tmp_path: Path,
+    monkeypatch,
+):
     seed = tmp_path / "through_1.parquet"
     pl.DataFrame(
         {
@@ -24,6 +27,4 @@ def test_week1_form_uses_preseason_rolling_seed(tmp_path: Path, monkeypatch):
         as_percent=False,
     )
 
-    assert "_No data available yet._" not in table
-    assert "| LA | 1.010 | 1.010 | 1.010 |" in table
-    assert "| SF | 0.440 | 0.440 | 0.440 |" in table
+    assert table == "_No data available yet._"

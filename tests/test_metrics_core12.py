@@ -89,13 +89,25 @@ def test_core12_compute_generates_expected_columns(tmp_path, monkeypatch):
     assert expected_columns.issubset(set(result.columns))
     assert expected_columns.issubset(set(result.columns))
     assert result.height == 2
+    metadata_columns = {
+        "missing_core_metric_count",
+        "data_quality_status",
+        "nulls_replaced_with_zero",
+        "missing_required_metrics",
+        "missing_optional_metrics",
+        "model_input_complete",
+    }
     for column, dtype in result.schema.items():
+        if column in metadata_columns:
+            continue
         if column in {"season", "week"}:
             assert dtype == pl.Int64
         elif column == "TEAM":
             assert dtype == pl.Utf8
         else:
             assert dtype == pl.Float64
+    assert "data_quality_status" in result.columns
+    assert "missing_core_metric_count" in result.columns
 
     bal = result.filter(pl.col("TEAM") == "BAL").row(0, named=True)
     mia = result.filter(pl.col("TEAM") == "MIA").row(0, named=True)

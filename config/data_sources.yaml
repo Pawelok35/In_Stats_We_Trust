@@ -1,0 +1,147 @@
+data_sources:
+  schedule:
+    provider: nfl_data_py
+    upstream_source: nflverse_schedules
+    local_source: data/schedules/{season}.parquet
+    load_method: nfl_data_py.import_schedules
+    consumer:
+      - daily_bot
+      - results_sync
+      - line_fallback
+    market_grade: false
+    automation_status: AUTOMATED_WITH_LOCAL_CACHE
+
+  main_model_pbp:
+    provider: filesystem
+    upstream_source: nflverse_play_by_play
+    local_source: data/sources/nfl/{season}/{season}_{week}.parquet
+    load_method: parquet_or_csv_read
+    pipeline:
+      - l1
+      - l2
+      - l3_team_week
+      - l4_core12
+      - matchup_reports
+      - variant_model
+    consumer:
+      - matchup_reports
+      - matchup_batch
+      - variant_m
+    market_grade: not_applicable
+    automation_status: LOCAL_INPUT_REQUIRED
+
+  nfl_data_py_pbp_adapter:
+    provider: nfl_data_py
+    upstream_source: nflverse_play_by_play
+    local_source: data/sources/nfl/{season}/{season}_{week}.parquet
+    load_method: nfl_data_py.import_pbp_data
+    consumer:
+      - l1_ingest_when_provider_is_nfl_data_py
+      - legacy_research_scripts
+    market_grade: not_applicable
+    automation_status: CONFIGURED_OPTIONAL
+
+  market_lines:
+    provider: manual_book_snapshot
+    upstream_source: operator_book_screen_or_gpt_extraction
+    local_source:
+      - data/book_snapshots/{season}/week_XX_screen_snapshot.yaml
+      - config/lines/{season}/weekX_lines.yaml
+      - data/market_quotes/{season}/week_XX.jsonl
+    load_method: yaml_jsonl
+    consumer:
+      - prospective_week_flow
+      - matchup_batch
+      - variant_b_week_flow
+    market_grade: depends_on_snapshot
+    automation_status: MANUAL
+
+  live_scenario:
+    provider: nflreadpy
+    upstream_source: nflverse_play_by_play_and_schedules
+    local_source:
+      - data/nflverse/raw/pbp/play_by_play_{season}.parquet
+      - data/nflverse/raw/schedules/schedules.parquet
+      - data/live_scenario/processed/team_game_scenario_rows.parquet
+    load_method: nflreadpy_load_then_local_parquet
+    consumer:
+      - live_scenario_gui
+      - live_scenario_cli
+    market_grade: not_applicable
+    automation_status: AUTOMATED_WITH_LOCAL_CACHE
+
+  injuries:
+    provider: manual_gpt_research
+    upstream_source: official_injury_reports_and_team_sources
+    local_source: research/gpt_snapshots/{season}/week_XX/**/full_19_points.md
+    consumer:
+      - variant_b_audit
+    market_grade: not_applicable
+    automation_status: MANUAL
+
+  roster_depth_chart:
+    provider: manual_gpt_research
+    upstream_source: official_transactions_depth_charts_and_team_sources
+    local_source: research/gpt_snapshots/{season}/week_XX/**/full_19_points.md
+    consumer:
+      - variant_b_audit
+    market_grade: not_applicable
+    automation_status: MANUAL
+
+  weather:
+    provider: manual_gpt_research_or_weather_bucket_csv
+    upstream_source: official_or_public_weather_sources
+    local_source:
+      - research/gpt_snapshots/{season}/week_XX/**/full_19_points.md
+      - data/results/weather_bucket_games*.csv
+    consumer:
+      - variant_b_audit
+      - match_dashboard
+    market_grade: not_applicable
+    automation_status: PARTIAL_MANUAL
+
+  public_betting:
+    provider: manual_gpt_research
+    upstream_source: tickets_handle_provider_if_available
+    local_source: research/gpt_snapshots/{season}/week_XX/**/full_19_points.md
+    consumer:
+      - variant_b_audit
+    market_grade: false
+    automation_status: MANUAL
+
+  power_rankings:
+    provider: manual_gpt_research
+    upstream_source: external_power_rankings_context
+    local_source: research/gpt_snapshots/{season}/week_XX/**/full_19_points.md
+    consumer:
+      - variant_b_audit
+    market_grade: false
+    automation_status: MANUAL
+
+  backtests:
+    provider: local_pick_and_result_files
+    upstream_source:
+      - data/picks*
+      - data/schedules/{season}.parquet
+      - data/results/manual_results.jsonl
+    local_source:
+      - data/picks*/{season}/week_XX.jsonl
+      - data/schedules/{season}.parquet
+    consumer:
+      - metrics.backtest
+      - scripts.evaluate_picks
+    market_grade: not_applicable
+    automation_status: LOCAL
+
+  learning_ledger:
+    provider: local_variant_b_audits
+    upstream_source:
+      - research/variant_b_week_flow
+      - data/market_quotes
+      - data/schedules
+    local_source: data/learning_ledger/*.jsonl
+    consumer:
+      - variant_b_learning_ledger
+      - variant_b_post_event_evaluation
+    market_grade: depends_on_market_quote
+    automation_status: LOCAL_PLUS_MANUAL_QUOTE
