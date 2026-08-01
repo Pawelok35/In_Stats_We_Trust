@@ -92,3 +92,15 @@ def test_wrapper_rejects_candidate_team_conflict():
         assert exc.reason == "STRUCTURED_EVIDENCE_CONFLICT"
     else:
         raise AssertionError("conflicting evidence must be rejected")
+
+
+def test_wrapper_accepts_deterministic_explicit_audit_timestamp():
+    timestamp = "2026-08-02T12:00:00Z"
+    first = build_audit_with_structured_evidence(
+        record(), DEFAULT_RULES_CONFIG, "PREKICK", evidence(), generated_at_utc=timestamp
+    )
+    second = build_audit_with_structured_evidence(
+        record(), DEFAULT_RULES_CONFIG, "PREKICK", evidence(), generated_at_utc=timestamp
+    )
+    assert first == second
+    assert first["generated_at_utc"] == timestamp

@@ -1213,6 +1213,8 @@ def build_audit_with_structured_evidence(
     rules_config: Mapping[str, Any],
     audit_stage: str,
     structured_evidence: Mapping[str, Any],
+    *,
+    generated_at_utc: str | None = None,
 ) -> dict[str, Any]:
     """Materialize evidence points while retaining existing deterministic builders.
 
@@ -1223,9 +1225,12 @@ def build_audit_with_structured_evidence(
 
     source = dict(record)
     evidence = dict(structured_evidence)
+    logical_timestamp = _validate_structured_audit_timestamp(generated_at_utc)
     _validate_structured_evidence_input(source, evidence)
     source.update(_research_input_from_evidence(evidence))
     audit = build_audit(source, dict(rules_config), audit_stage)
+    if logical_timestamp is not None:
+        audit["generated_at_utc"] = logical_timestamp
     rules = dict(rules_config).get("rules", {})
     deterministic = {point["point_number"]: point for point in audit["audit_points"][:6]}
     evidence_by_id = {item["point_id"]: item for item in evidence["point_results"]}
@@ -1254,6 +1259,20 @@ def build_audit_with_structured_evidence(
         "integration_api_version": "variant_b_structured_evidence_api.v1",
     }
     return audit
+
+
+def _validate_structured_audit_timestamp(value: str | None) -> str | None:
+    if value is None:
+        return None
+    if not isinstance(value, str) or not value.strip():
+        raise StructuredVariantBEvidenceError("INVALID_GENERATED_AT_UTC")
+    try:
+        parsed = datetime.fromisoformat(value.replace("Z", "+00:00"))
+    except ValueError as exc:
+        raise StructuredVariantBEvidenceError("INVALID_GENERATED_AT_UTC") from exc
+    if parsed.tzinfo is None or parsed.utcoffset() != timezone.utc.utcoffset(parsed):
+        raise StructuredVariantBEvidenceError("INVALID_GENERATED_AT_UTC")
+    return value
 
 
 def _validate_structured_evidence_input(
