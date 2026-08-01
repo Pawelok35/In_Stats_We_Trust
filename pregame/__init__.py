@@ -18,6 +18,11 @@ from pregame.events import (
     SnapshotKind,
 )
 from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStore
+from pregame.market_history import (
+    MarketSnapshotHistoryError,
+    MarketSnapshotHistoryService,
+    market_snapshot_event_id,
+)
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
 
@@ -33,6 +38,8 @@ __all__ = [
     "JsonlPregameEventStore",
     "MarketQualityStatus",
     "MarketSnapshot",
+    "MarketSnapshotHistoryError",
+    "MarketSnapshotHistoryService",
     "MarketType",
     "OperatorDecision",
     "OperatorVerdict",
@@ -45,4 +52,5 @@ __all__ = [
     "ProjectionError",
     "project_events",
     "project_game",
+    "market_snapshot_event_id",
 ]
