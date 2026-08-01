@@ -1,6 +1,12 @@
 """Operator-layer contracts for the NFL 2026 pregame decision system."""
 
-from pregame.contracts import CandidateRecord, MarketSnapshot, OperatorDecision, PregameEvent
+from pregame.contracts import (
+    CandidateRecord,
+    MarketSnapshot,
+    OperatorDecision,
+    PregameEvent,
+    PregameGameRecord,
+)
 from pregame.events import (
     CandidateStatus,
     DecisionLevel,
@@ -11,6 +17,7 @@ from pregame.events import (
     PregameEventType,
     SnapshotKind,
 )
+from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
 
 __all__ = [
@@ -27,7 +34,12 @@ __all__ = [
     "OperatorDecision",
     "OperatorVerdict",
     "PregameEvent",
+    "PregameGameProjector",
+    "PregameGameRecord",
     "PregameEventStore",
     "PregameEventType",
     "SnapshotKind",
+    "ProjectionError",
+    "project_events",
+    "project_game",
 ]

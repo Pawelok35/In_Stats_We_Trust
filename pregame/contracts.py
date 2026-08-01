@@ -14,6 +14,7 @@ from pydantic import BaseModel, ConfigDict, Field, field_validator
 
 from pregame.events import (
     CandidateStatus,
+    DecisionLevel,
     ExecutableStatus,
     MarketQualityStatus,
     MarketType,
@@ -26,6 +27,7 @@ DEFAULT_EVENT_SCHEMA_VERSION = "pregame_event.v1"
 DEFAULT_MARKET_SNAPSHOT_SCHEMA_VERSION = "market_snapshot.v1"
 DEFAULT_CANDIDATE_SCHEMA_VERSION = "candidate_record.v1"
 DEFAULT_OPERATOR_DECISION_SCHEMA_VERSION = "operator_decision.v1"
+DEFAULT_GAME_RECORD_SCHEMA_VERSION = "pregame_game_record.v1"
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -261,3 +263,63 @@ class OperatorDecision(PregameContract):
         for item in value:
             _require_non_empty(item, "reason_codes")
         return value
+
+
+class PregameGameRecord(PregameContract):
+    """Immutable current-state view projected from one game's event history."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    game_id: str
+    schema_version: str = DEFAULT_GAME_RECORD_SCHEMA_VERSION
+    last_projected_at_utc: datetime
+    event_count: int
+    current_decision_level: DecisionLevel | None = None
+
+    season: int | None = None
+    week: int | None = None
+    away_team: str | None = None
+    home_team: str | None = None
+    kickoff_utc: datetime | None = None
+    venue: str | None = None
+    neutral_site: bool | None = None
+
+    candidate: CandidateRecord | None = None
+    candidate_status: CandidateStatus | None = None
+    selected_team: str | None = None
+    model_tag: str | None = None
+    production_eligible: bool | None = None
+
+    initial_market_snapshot: MarketSnapshot | None = None
+    current_market_snapshot: MarketSnapshot | None = None
+    final_market_snapshot: MarketSnapshot | None = None
+    closing_market_snapshot: MarketSnapshot | None = None
+    market_snapshot_count: int = 0
+
+    research_started: bool = False
+    research_completed: bool = False
+    research_approved: bool = False
+    latest_research_event_id: str | None = None
+
+    operator_decision: OperatorDecision | None = None
+    current_verdict: OperatorVerdict | None = None
+
+    settled: bool = False
+    latest_settlement_event_id: str | None = None
+
+    last_event_id: str | None = None
+    last_effective_at_utc: datetime | None = None
+    warnings: tuple[str, ...] = ()
+    projection_errors: tuple[str, ...] = ()
+
+    @field_validator("game_id", "schema_version")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("last_projected_at_utc", "kickoff_utc", "last_effective_at_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime | None, info: Any) -> datetime | None:
+        if value is None:
+            return None
+        return _ensure_utc(value, info.field_name)
