@@ -168,6 +168,11 @@ class CandidateRecord(PregameContract):
     warnings: list[str] = Field(default_factory=list)
     reason_codes: list[str] = Field(default_factory=list)
     model_generated_at_utc: datetime | None = None
+    scan_id: str | None = None
+    source_ref: str | None = None
+    source_sha256: str | None = None
+    source_record_number: int | None = None
+    source_metadata: dict[str, Any] = Field(default_factory=dict)
     schema_version: str = DEFAULT_CANDIDATE_SCHEMA_VERSION
 
     @field_validator(
@@ -176,10 +181,15 @@ class CandidateRecord(PregameContract):
         "model_variant",
         "selected_team",
         "model_tag",
+        "scan_id",
+        "source_ref",
+        "source_sha256",
         "schema_version",
     )
     @classmethod
-    def _non_empty_text(cls, value: str, info: Any) -> str:
+    def _non_empty_text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
         return _require_non_empty(value, info.field_name)
 
     @field_validator("preflight_status")
@@ -189,9 +199,11 @@ class CandidateRecord(PregameContract):
             return None
         return _require_non_empty(value, info.field_name)
 
-    @field_validator("season", "week")
+    @field_validator("season", "week", "source_record_number")
     @classmethod
-    def _positive_int(cls, value: int, info: Any) -> int:
+    def _positive_int(cls, value: int | None, info: Any) -> int | None:
+        if value is None:
+            return None
         if value <= 0:
             raise ValueError(f"{info.field_name} must be positive")
         return value
@@ -209,6 +221,16 @@ class CandidateRecord(PregameContract):
         for item in value:
             _require_non_empty(item, info.field_name)
         return value
+
+    @field_validator("source_metadata", mode="before")
+    @classmethod
+    def _source_metadata_mapping(cls, value: Any) -> dict[str, Any]:
+        if not isinstance(value, Mapping):
+            raise ValueError("source_metadata must be a mapping")
+        metadata = dict(value)
+        if not _json_compatible(metadata):
+            raise ValueError("source_metadata must be JSON-compatible")
+        return metadata
 
 
 class OperatorDecision(PregameContract):

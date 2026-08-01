@@ -241,7 +241,14 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         state.production_eligible = candidate.production_eligible
         _advance_level(state, DecisionLevel.MODEL_CANDIDATE)
     elif event_type == PregameEventType.MODEL_CANDIDATE_BLOCKED:
-        if state.candidate is None:
+        if event.payload:
+            candidate = _parse_payload(event, CandidateRecord, "candidate")
+            _ensure_record_game_id(event, candidate.game_id, "CandidateRecord")
+            state.candidate = candidate.model_copy(
+                update={"status": CandidateStatus.BLOCKED}, deep=True
+            )
+            state.candidate_status = CandidateStatus.BLOCKED
+        elif state.candidate is None:
             state.warnings.append(f"candidate_blocked_without_candidate:{event.event_id}")
         else:
             state.candidate = state.candidate.model_copy(

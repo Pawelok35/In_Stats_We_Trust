@@ -83,10 +83,14 @@ class JsonlPregameEventStore:
     def list_events(self, game_id: str) -> list[PregameEvent]:
         """Return one game's events in deterministic logical rather than file order."""
 
+        return [event for event in self.list_all_events() if event.game_id == game_id]
+
+    def list_all_events(self) -> list[PregameEvent]:
+        """Return all events in deterministic logical rather than file order."""
+
         with self._lock:
-            events = [event for event in self._events_by_id.values() if event.game_id == game_id]
             ordered = sorted(
-                events,
+                self._events_by_id.values(),
                 key=lambda event: (
                     event.effective_at_utc,
                     event.created_at_utc,

@@ -1,5 +1,10 @@
 """Operator-layer contracts for the NFL 2026 pregame decision system."""
 
+from pregame.candidate_registry import (
+    CandidateRegistryError,
+    CandidateRegistryService,
+    candidate_record_event_id,
+)
 from pregame.contracts import (
     CandidateRecord,
     MarketSnapshot,
@@ -23,6 +28,13 @@ from pregame.market_history import (
     MarketSnapshotHistoryService,
     market_snapshot_event_id,
 )
+from pregame.model_output_adapter import (
+    CandidateImportResult,
+    MatchupBatchPickOutputAdapter,
+    ModelOutputImportError,
+    candidate_id_for_scan,
+    model_scan_id,
+)
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
 
@@ -30,11 +42,15 @@ __all__ = [
     "AppendResult",
     "AppendStatus",
     "CandidateRecord",
+    "CandidateImportResult",
+    "CandidateRegistryError",
+    "CandidateRegistryService",
     "CandidateStatus",
     "DecisionLevel",
     "ExecutableStatus",
     "EventStoreCorruptionError",
     "InMemoryPregameEventStore",
+    "MatchupBatchPickOutputAdapter",
     "JsonlPregameEventStore",
     "MarketQualityStatus",
     "MarketSnapshot",
@@ -50,6 +66,10 @@ __all__ = [
     "PregameEventType",
     "SnapshotKind",
     "ProjectionError",
+    "ModelOutputImportError",
+    "candidate_id_for_scan",
+    "candidate_record_event_id",
+    "model_scan_id",
     "project_events",
     "project_game",
     "market_snapshot_event_id",

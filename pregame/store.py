@@ -42,6 +42,9 @@ class PregameEventStore(Protocol):
     def list_events(self, game_id: str) -> list[PregameEvent]:
         """Return deterministic event history for one game."""
 
+    def list_all_events(self) -> list[PregameEvent]:
+        """Return all events in deterministic logical order."""
+
     def contains(self, event_id: str) -> bool:
         """Return whether event_id exists."""
 
@@ -77,9 +80,11 @@ class InMemoryPregameEventStore:
         return self._clone_event(event)
 
     def list_events(self, game_id: str) -> list[PregameEvent]:
-        events = [event for event in self._events_by_id.values() if event.game_id == game_id]
+        return [event for event in self.list_all_events() if event.game_id == game_id]
+
+    def list_all_events(self) -> list[PregameEvent]:
         ordered = sorted(
-            events,
+            self._events_by_id.values(),
             key=lambda event: (event.effective_at_utc, event.created_at_utc, event.event_id),
         )
         return [self._clone_event(event) for event in ordered]
