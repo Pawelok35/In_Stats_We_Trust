@@ -7,6 +7,8 @@ from pregame.candidate_registry import (
 )
 from pregame.contracts import (
     CandidateRecord,
+    FinalQuoteGateResult,
+    FinalQuotePolicy,
     MarketSnapshot,
     OperatorDecision,
     PregameEvent,
@@ -16,11 +18,20 @@ from pregame.events import (
     CandidateStatus,
     DecisionLevel,
     ExecutableStatus,
+    FinalQuoteGateReason,
+    FinalQuoteGateStatus,
     MarketQualityStatus,
     MarketType,
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+)
+from pregame.final_quote_gate import (
+    FinalQuoteGateError,
+    FinalQuoteGateService,
+    evaluate_final_quote,
+    final_quote_evaluation_id,
+    final_quote_gate_event_id,
 )
 from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStore
 from pregame.market_history import (
@@ -48,6 +59,12 @@ __all__ = [
     "CandidateStatus",
     "DecisionLevel",
     "ExecutableStatus",
+    "FinalQuoteGateError",
+    "FinalQuoteGateReason",
+    "FinalQuoteGateResult",
+    "FinalQuoteGateService",
+    "FinalQuoteGateStatus",
+    "FinalQuotePolicy",
     "EventStoreCorruptionError",
     "InMemoryPregameEventStore",
     "MatchupBatchPickOutputAdapter",
@@ -73,4 +90,7 @@ __all__ = [
     "project_events",
     "project_game",
     "market_snapshot_event_id",
+    "evaluate_final_quote",
+    "final_quote_evaluation_id",
+    "final_quote_gate_event_id",
 ]

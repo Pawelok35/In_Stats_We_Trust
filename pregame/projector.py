@@ -11,6 +11,7 @@ from pydantic import ValidationError
 
 from pregame.contracts import (
     CandidateRecord,
+    FinalQuoteGateResult,
     MarketSnapshot,
     OperatorDecision,
     PregameEvent,
@@ -86,6 +87,10 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         final_market_snapshot=state.final_market_snapshot,
         closing_market_snapshot=state.closing_market_snapshot,
         market_snapshot_count=state.market_snapshot_count,
+        final_quote_gate_result=state.final_quote_gate_result,
+        final_quote_gate_passed=state.final_quote_gate_passed,
+        final_quote_gate_status=state.final_quote_gate_status,
+        latest_final_quote_gate_event_id=state.latest_final_quote_gate_event_id,
         research_started=state.research_started,
         research_completed=state.research_completed,
         research_approved=state.research_approved,
@@ -141,6 +146,10 @@ class _ProjectionState:
     final_market_snapshot: MarketSnapshot | None = None
     closing_market_snapshot: MarketSnapshot | None = None
     market_snapshot_count: int = 0
+    final_quote_gate_result: FinalQuoteGateResult | None = None
+    final_quote_gate_passed: bool | None = None
+    final_quote_gate_status: Any = None
+    latest_final_quote_gate_event_id: str | None = None
     research_started: bool = False
     research_completed: bool = False
     research_approved: bool = False
@@ -266,6 +275,18 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         state.research_approved = True
         state.latest_research_event_id = event.event_id
         _advance_level(state, DecisionLevel.RESEARCH_APPROVED)
+    elif event_type == PregameEventType.FINAL_QUOTE_GATE_EVALUATED:
+        result = _parse_payload(event, FinalQuoteGateResult, "final quote gate result")
+        _ensure_record_game_id(event, result.game_id, "FinalQuoteGateResult")
+        if result.evaluated_at_utc != event.effective_at_utc:
+            raise ProjectionError(
+                "FinalQuoteGateResult.evaluated_at_utc does not match event "
+                f"effective_at_utc for {event.event_id}."
+            )
+        state.final_quote_gate_result = result.model_copy(deep=True)
+        state.final_quote_gate_passed = result.passed
+        state.final_quote_gate_status = result.primary_status
+        state.latest_final_quote_gate_event_id = event.event_id
     elif event_type in {
         PregameEventType.OPERATOR_PICK_APPROVED,
         PregameEventType.OPERATOR_PICK_REJECTED,

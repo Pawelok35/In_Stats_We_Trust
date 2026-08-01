@@ -16,6 +16,8 @@ from pregame.events import (
     CandidateStatus,
     DecisionLevel,
     ExecutableStatus,
+    FinalQuoteGateReason,
+    FinalQuoteGateStatus,
     MarketQualityStatus,
     MarketType,
     OperatorVerdict,
@@ -28,6 +30,8 @@ DEFAULT_MARKET_SNAPSHOT_SCHEMA_VERSION = "market_snapshot.v1"
 DEFAULT_CANDIDATE_SCHEMA_VERSION = "candidate_record.v1"
 DEFAULT_OPERATOR_DECISION_SCHEMA_VERSION = "operator_decision.v1"
 DEFAULT_GAME_RECORD_SCHEMA_VERSION = "pregame_game_record.v1"
+DEFAULT_FINAL_QUOTE_POLICY_SCHEMA_VERSION = "final_quote_policy.v1"
+DEFAULT_FINAL_QUOTE_GATE_RESULT_SCHEMA_VERSION = "final_quote_gate_result.v1"
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -233,6 +237,154 @@ class CandidateRecord(PregameContract):
         return metadata
 
 
+class FinalQuotePolicy(PregameContract):
+    """Explicit operator-supplied limits for one final quote evaluation."""
+
+    policy_id: str
+    source: str
+    selected_team: str
+    market_type: MarketType
+    minimum_acceptable_spread: float | None
+    minimum_acceptable_price: int | None
+    max_quote_age_seconds: int
+    allowed_quality_statuses: tuple[MarketQualityStatus, ...]
+    allowed_executable_statuses: tuple[ExecutableStatus, ...]
+    allowed_books: tuple[str, ...] | None = None
+    key_numbers: tuple[float, ...] = ()
+    reject_key_number_loss: bool = False
+    no_chase_minimum_spread: float | None = None
+    no_chase_minimum_price: int | None = None
+    created_at_utc: datetime
+    notes: str | None = None
+    schema_version: str = DEFAULT_FINAL_QUOTE_POLICY_SCHEMA_VERSION
+
+    @field_validator("policy_id", "source", "selected_team", "schema_version")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("notes")
+    @classmethod
+    def _optional_non_empty_text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("created_at_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime) -> datetime:
+        return _ensure_utc(value, "created_at_utc")
+
+    @field_validator("max_quote_age_seconds")
+    @classmethod
+    def _positive_quote_age(cls, value: int) -> int:
+        if value <= 0:
+            raise ValueError("max_quote_age_seconds must be positive")
+        return value
+
+    @field_validator("allowed_quality_statuses", "allowed_executable_statuses")
+    @classmethod
+    def _non_empty_statuses(cls, value: tuple[Any, ...], info: Any) -> tuple[Any, ...]:
+        if not value:
+            raise ValueError(f"{info.field_name} must not be empty")
+        return value
+
+    @field_validator("allowed_books")
+    @classmethod
+    def _valid_allowed_books(cls, value: tuple[str, ...] | None) -> tuple[str, ...] | None:
+        if value is None:
+            return None
+        if not value:
+            raise ValueError("allowed_books must be null or non-empty")
+        return tuple(_require_non_empty(book, "allowed_books") for book in value)
+
+    @field_validator("key_numbers")
+    @classmethod
+    def _positive_key_numbers(cls, value: tuple[float, ...]) -> tuple[float, ...]:
+        if any(number <= 0 for number in value):
+            raise ValueError("key_numbers must be positive")
+        return tuple(sorted(set(value)))
+
+    @field_validator("minimum_acceptable_price", "no_chase_minimum_price")
+    @classmethod
+    def _valid_american_price(cls, value: int | None, info: Any) -> int | None:
+        if value == 0:
+            raise ValueError(f"{info.field_name} must not be zero")
+        return value
+
+
+class FinalQuoteGateResult(PregameContract):
+    """Auditable result of evaluating one candidate against one final snapshot."""
+
+    evaluation_id: str
+    game_id: str
+    candidate_id: str
+    final_snapshot_id: str
+    policy_id: str
+    evaluated_at_utc: datetime
+    passed: bool
+    primary_status: FinalQuoteGateStatus
+    primary_reason: FinalQuoteGateReason | None = None
+    reason_codes: tuple[FinalQuoteGateReason, ...] = ()
+    warnings: tuple[str, ...] = ()
+    selected_team: str
+    model_variant: str
+    candidate_spread: float | None = None
+    final_spread: float | None = None
+    candidate_price: int | None = None
+    final_price: int | None = None
+    quote_age_seconds: int | None = None
+    book: str | None = None
+    quality_status: MarketQualityStatus | None = None
+    executable_status: ExecutableStatus | None = None
+    crossed_or_lost_key_numbers: tuple[float, ...] = ()
+    policy_snapshot: dict[str, Any]
+    policy_digest: str
+    schema_version: str = DEFAULT_FINAL_QUOTE_GATE_RESULT_SCHEMA_VERSION
+
+    @field_validator(
+        "evaluation_id",
+        "game_id",
+        "candidate_id",
+        "final_snapshot_id",
+        "policy_id",
+        "selected_team",
+        "model_variant",
+        "policy_digest",
+        "schema_version",
+    )
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("book")
+    @classmethod
+    def _optional_non_empty_text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, "book")
+
+    @field_validator("evaluated_at_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime) -> datetime:
+        return _ensure_utc(value, "evaluated_at_utc")
+
+    @field_validator("warnings")
+    @classmethod
+    def _warning_text(cls, value: tuple[str, ...]) -> tuple[str, ...]:
+        return tuple(_require_non_empty(item, "warnings") for item in value)
+
+    @field_validator("policy_snapshot", mode="before")
+    @classmethod
+    def _policy_snapshot_mapping(cls, value: Any) -> dict[str, Any]:
+        if not isinstance(value, Mapping):
+            raise ValueError("policy_snapshot must be a mapping")
+        payload = dict(value)
+        if not _json_compatible(payload):
+            raise ValueError("policy_snapshot must be JSON-compatible")
+        return payload
+
+
 class OperatorDecision(PregameContract):
     """Final operator verdict contract. Approval rules are implemented later."""
 
@@ -317,6 +469,11 @@ class PregameGameRecord(PregameContract):
     final_market_snapshot: MarketSnapshot | None = None
     closing_market_snapshot: MarketSnapshot | None = None
     market_snapshot_count: int = 0
+
+    final_quote_gate_result: FinalQuoteGateResult | None = None
+    final_quote_gate_passed: bool | None = None
+    final_quote_gate_status: FinalQuoteGateStatus | None = None
+    latest_final_quote_gate_event_id: str | None = None
 
     research_started: bool = False
     research_completed: bool = False
