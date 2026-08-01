@@ -23,6 +23,8 @@ from pregame.events import (
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+    VariantBResearchKind,
+    VariantBResearchStatus,
 )
 
 DEFAULT_EVENT_SCHEMA_VERSION = "pregame_event.v1"
@@ -32,6 +34,8 @@ DEFAULT_OPERATOR_DECISION_SCHEMA_VERSION = "operator_decision.v1"
 DEFAULT_GAME_RECORD_SCHEMA_VERSION = "pregame_game_record.v1"
 DEFAULT_FINAL_QUOTE_POLICY_SCHEMA_VERSION = "final_quote_policy.v1"
 DEFAULT_FINAL_QUOTE_GATE_RESULT_SCHEMA_VERSION = "final_quote_gate_result.v1"
+DEFAULT_VARIANT_B_POINT_RESULT_SCHEMA_VERSION = "variant_b_point_result.v1"
+DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1"
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -235,6 +239,127 @@ class CandidateRecord(PregameContract):
         if not _json_compatible(metadata):
             raise ValueError("source_metadata must be JSON-compatible")
         return metadata
+
+
+class VariantBPointResult(PregameContract):
+    """Compact structured representation of one Variant B audit point."""
+
+    point_id: int
+    point_name: str
+    status: str
+    blocking: bool
+    risk_codes: tuple[str, ...] = ()
+    warning_codes: tuple[str, ...] = ()
+    evidence_present: bool
+    evidence_source_refs: tuple[str, ...] = ()
+    summary: str | None = None
+    schema_version: str = DEFAULT_VARIANT_B_POINT_RESULT_SCHEMA_VERSION
+
+    @field_validator("point_id")
+    @classmethod
+    def _positive_point_id(cls, value: int) -> int:
+        if value <= 0:
+            raise ValueError("point_id must be positive")
+        return value
+
+    @field_validator("point_name", "status", "schema_version")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("summary")
+    @classmethod
+    def _optional_non_empty_text(cls, value: str | None) -> str | None:
+        return None if value is None else _require_non_empty(value, "summary")
+
+    @field_validator("risk_codes", "warning_codes", "evidence_source_refs")
+    @classmethod
+    def _non_empty_items(cls, value: tuple[str, ...], info: Any) -> tuple[str, ...]:
+        return tuple(_require_non_empty(item, info.field_name) for item in value)
+
+
+class VariantBResearchRecord(PregameContract):
+    """Auditable import of one official materialized Variant B JSON audit."""
+
+    research_id: str
+    candidate_id: str
+    game_id: str
+    model_variant: str
+    selected_team: str
+    research_kind: VariantBResearchKind
+    research_status: VariantBResearchStatus
+    framework_version: str
+    audit_schema_version: str
+    source_ref: str
+    source_sha256: str
+    generated_at_utc: datetime
+    recorded_at_utc: datetime
+    expected_point_count: int
+    present_point_count: int
+    sections_complete: bool
+    point_results: tuple[VariantBPointResult, ...]
+    blocking_risk_codes: tuple[str, ...] = ()
+    warnings: tuple[str, ...] = ()
+    p_cover: float | None = None
+    p_push: float | None = None
+    p_loss: float | None = None
+    research_approved: bool = False
+    legacy_audit_recommendation: dict[str, Any] | None = None
+    acceptable_quote_frontier_raw: dict[str, Any] | None = None
+    no_chase_raw: dict[str, Any] | None = None
+    key_number_check_raw: dict[str, Any] | None = None
+    schema_version: str = DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION
+
+    @field_validator(
+        "research_id",
+        "candidate_id",
+        "game_id",
+        "model_variant",
+        "selected_team",
+        "framework_version",
+        "audit_schema_version",
+        "source_ref",
+        "source_sha256",
+        "schema_version",
+    )
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("generated_at_utc", "recorded_at_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime, info: Any) -> datetime:
+        return _ensure_utc(value, info.field_name)
+
+    @field_validator("expected_point_count", "present_point_count")
+    @classmethod
+    def _non_negative_count(cls, value: int, info: Any) -> int:
+        if value < 0:
+            raise ValueError(f"{info.field_name} must be non-negative")
+        return value
+
+    @field_validator("warnings", "blocking_risk_codes")
+    @classmethod
+    def _non_empty_items(cls, value: tuple[str, ...], info: Any) -> tuple[str, ...]:
+        return tuple(_require_non_empty(item, info.field_name) for item in value)
+
+    @field_validator(
+        "legacy_audit_recommendation",
+        "acceptable_quote_frontier_raw",
+        "no_chase_raw",
+        "key_number_check_raw",
+        mode="before",
+    )
+    @classmethod
+    def _optional_json_mapping(cls, value: Any) -> dict[str, Any] | None:
+        if value is None:
+            return None
+        if not isinstance(value, Mapping):
+            raise ValueError("raw research fragment must be a mapping")
+        payload = dict(value)
+        if not _json_compatible(payload):
+            raise ValueError("raw research fragment must be JSON-compatible")
+        return payload
 
 
 class FinalQuotePolicy(PregameContract):
@@ -475,6 +600,14 @@ class PregameGameRecord(PregameContract):
     final_quote_gate_status: FinalQuoteGateStatus | None = None
     latest_final_quote_gate_event_id: str | None = None
 
+    latest_variant_b_research: VariantBResearchRecord | None = None
+    latest_variant_b_research_id: str | None = None
+    variant_b_research_status: VariantBResearchStatus | None = None
+    variant_b_research_approved: bool | None = None
+    variant_b_blocking_risk_codes: tuple[str, ...] = ()
+    variant_b_framework_version: str | None = None
+    variant_b_generated_at_utc: datetime | None = None
+
     research_started: bool = False
     research_completed: bool = False
     research_approved: bool = False
@@ -496,7 +629,12 @@ class PregameGameRecord(PregameContract):
     def _non_empty_text(cls, value: str, info: Any) -> str:
         return _require_non_empty(value, info.field_name)
 
-    @field_validator("last_projected_at_utc", "kickoff_utc", "last_effective_at_utc")
+    @field_validator(
+        "last_projected_at_utc",
+        "kickoff_utc",
+        "last_effective_at_utc",
+        "variant_b_generated_at_utc",
+    )
     @classmethod
     def _aware_utc_datetime(cls, value: datetime | None, info: Any) -> datetime | None:
         if value is None:

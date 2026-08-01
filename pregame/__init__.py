@@ -13,6 +13,8 @@ from pregame.contracts import (
     OperatorDecision,
     PregameEvent,
     PregameGameRecord,
+    VariantBPointResult,
+    VariantBResearchRecord,
 )
 from pregame.events import (
     CandidateStatus,
@@ -25,6 +27,8 @@ from pregame.events import (
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+    VariantBResearchKind,
+    VariantBResearchStatus,
 )
 from pregame.final_quote_gate import (
     FinalQuoteGateError,
@@ -48,6 +52,14 @@ from pregame.model_output_adapter import (
 )
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
+from pregame.variant_b_research import (
+    VariantBResearchError,
+    VariantBResearchImportResult,
+    VariantBResearchRegistryService,
+    adapt_variant_b_output,
+    variant_b_research_event_id,
+    variant_b_research_id,
+)
 
 __all__ = [
     "AppendResult",
@@ -82,6 +94,13 @@ __all__ = [
     "PregameEventStore",
     "PregameEventType",
     "SnapshotKind",
+    "VariantBPointResult",
+    "VariantBResearchError",
+    "VariantBResearchImportResult",
+    "VariantBResearchKind",
+    "VariantBResearchRecord",
+    "VariantBResearchRegistryService",
+    "VariantBResearchStatus",
     "ProjectionError",
     "ModelOutputImportError",
     "candidate_id_for_scan",
@@ -90,7 +109,10 @@ __all__ = [
     "project_events",
     "project_game",
     "market_snapshot_event_id",
+    "adapt_variant_b_output",
     "evaluate_final_quote",
     "final_quote_evaluation_id",
     "final_quote_gate_event_id",
+    "variant_b_research_event_id",
+    "variant_b_research_id",
 ]

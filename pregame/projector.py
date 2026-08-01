@@ -16,6 +16,7 @@ from pregame.contracts import (
     OperatorDecision,
     PregameEvent,
     PregameGameRecord,
+    VariantBResearchRecord,
 )
 from pregame.events import CandidateStatus, DecisionLevel, PregameEventType
 from pregame.store import PregameEventStore
@@ -91,6 +92,13 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         final_quote_gate_passed=state.final_quote_gate_passed,
         final_quote_gate_status=state.final_quote_gate_status,
         latest_final_quote_gate_event_id=state.latest_final_quote_gate_event_id,
+        latest_variant_b_research=state.latest_variant_b_research,
+        latest_variant_b_research_id=state.latest_variant_b_research_id,
+        variant_b_research_status=state.variant_b_research_status,
+        variant_b_research_approved=state.variant_b_research_approved,
+        variant_b_blocking_risk_codes=tuple(state.variant_b_blocking_risk_codes),
+        variant_b_framework_version=state.variant_b_framework_version,
+        variant_b_generated_at_utc=state.variant_b_generated_at_utc,
         research_started=state.research_started,
         research_completed=state.research_completed,
         research_approved=state.research_approved,
@@ -150,6 +158,13 @@ class _ProjectionState:
     final_quote_gate_passed: bool | None = None
     final_quote_gate_status: Any = None
     latest_final_quote_gate_event_id: str | None = None
+    latest_variant_b_research: VariantBResearchRecord | None = None
+    latest_variant_b_research_id: str | None = None
+    variant_b_research_status: Any = None
+    variant_b_research_approved: bool | None = None
+    variant_b_blocking_risk_codes: list[str] = None  # type: ignore[assignment]
+    variant_b_framework_version: str | None = None
+    variant_b_generated_at_utc: datetime | None = None
     research_started: bool = False
     research_completed: bool = False
     research_approved: bool = False
@@ -164,6 +179,7 @@ class _ProjectionState:
     def __post_init__(self) -> None:
         self.warnings = []
         self.projection_errors = []
+        self.variant_b_blocking_risk_codes = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -287,6 +303,20 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         state.final_quote_gate_passed = result.passed
         state.final_quote_gate_status = result.primary_status
         state.latest_final_quote_gate_event_id = event.event_id
+    elif event_type == PregameEventType.VARIANT_B_RESEARCH_RECORDED:
+        result = _parse_payload(event, VariantBResearchRecord, "Variant B research")
+        _ensure_record_game_id(event, result.game_id, "VariantBResearchRecord")
+        if result.generated_at_utc != event.effective_at_utc:
+            raise ProjectionError(
+                f"VariantBResearchRecord.generated_at_utc does not match {event.event_id}."
+            )
+        state.latest_variant_b_research = result.model_copy(deep=True)
+        state.latest_variant_b_research_id = result.research_id
+        state.variant_b_research_status = result.research_status
+        state.variant_b_research_approved = result.research_approved
+        state.variant_b_blocking_risk_codes = list(result.blocking_risk_codes)
+        state.variant_b_framework_version = result.framework_version
+        state.variant_b_generated_at_utc = result.generated_at_utc
     elif event_type in {
         PregameEventType.OPERATOR_PICK_APPROVED,
         PregameEventType.OPERATOR_PICK_REJECTED,
