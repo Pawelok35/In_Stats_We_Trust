@@ -71,11 +71,21 @@ class PregameEvent(PregameContract):
     effective_at_utc: datetime
     source: str
     schema_version: str = DEFAULT_EVENT_SCHEMA_VERSION
+    idempotency_key: str | None = None
+    supersedes_event_id: str | None = None
+    correction_reason: str | None = None
     payload: dict[str, Any] = Field(default_factory=dict)
 
     @field_validator("event_id", "game_id", "source", "schema_version")
     @classmethod
     def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("idempotency_key", "supersedes_event_id", "correction_reason")
+    @classmethod
+    def _optional_non_empty_text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
         return _require_non_empty(value, info.field_name)
 
     @field_validator("created_at_utc", "effective_at_utc")
