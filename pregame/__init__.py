@@ -56,6 +56,18 @@ from pregame.model_output_adapter import (
 )
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
+from pregame.variant_b_evidence import (
+    EVIDENCE_PROMPT_VERSION,
+    EVIDENCE_SCHEMA_VERSION,
+    VARIANT_B_POINT_DEFINITIONS,
+    SidecarWriteResult,
+    SidecarWriteStatus,
+    VariantBGptEvidenceSidecar,
+    evidence_id_for_payload,
+    load_variant_b_evidence,
+    validate_variant_b_evidence,
+    write_variant_b_evidence_sidecar,
+)
 from pregame.variant_b_policy_adapter import (
     VariantBFinalQuotePolicyAdapter,
     VariantBPolicyAdapterError,
@@ -131,4 +143,14 @@ __all__ = [
     "variant_b_research_event_id",
     "variant_b_research_id",
     "build_final_quote_policy",
+    "EVIDENCE_PROMPT_VERSION",
+    "EVIDENCE_SCHEMA_VERSION",
+    "VARIANT_B_POINT_DEFINITIONS",
+    "SidecarWriteResult",
+    "SidecarWriteStatus",
+    "VariantBGptEvidenceSidecar",
+    "evidence_id_for_payload",
+    "load_variant_b_evidence",
+    "validate_variant_b_evidence",
+    "write_variant_b_evidence_sidecar",
 ]
