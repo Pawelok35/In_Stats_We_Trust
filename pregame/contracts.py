@@ -23,6 +23,8 @@ from pregame.events import (
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+    VariantBPolicyBuildReason,
+    VariantBPolicyBuildStatus,
     VariantBResearchKind,
     VariantBResearchStatus,
 )
@@ -36,6 +38,8 @@ DEFAULT_FINAL_QUOTE_POLICY_SCHEMA_VERSION = "final_quote_policy.v1"
 DEFAULT_FINAL_QUOTE_GATE_RESULT_SCHEMA_VERSION = "final_quote_gate_result.v1"
 DEFAULT_VARIANT_B_POINT_RESULT_SCHEMA_VERSION = "variant_b_point_result.v1"
 DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1"
+DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION = "final_quote_runtime_policy.v1"
+DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION = "variant_b_policy_build_result.v1"
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -436,6 +440,106 @@ class FinalQuotePolicy(PregameContract):
         if value == 0:
             raise ValueError(f"{info.field_name} must not be zero")
         return value
+
+
+class FinalQuoteRuntimePolicy(PregameContract):
+    """Explicit execution constraints, separate from Variant B frontier evidence."""
+
+    runtime_policy_id: str
+    source: str
+    created_at_utc: datetime
+    max_quote_age_seconds: int
+    allowed_quality_statuses: tuple[MarketQualityStatus, ...]
+    allowed_executable_statuses: tuple[ExecutableStatus, ...]
+    allowed_books: tuple[str, ...] | None = None
+    key_numbers: tuple[float, ...] | None = None
+    reject_key_number_loss: bool | None = None
+    require_latest_candidate: bool = True
+    require_latest_final_snapshot_for_book: bool = True
+    notes: str | None = None
+    schema_version: str = DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION
+
+    @field_validator("runtime_policy_id", "source", "schema_version")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("created_at_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime) -> datetime:
+        return _ensure_utc(value, "created_at_utc")
+
+    @field_validator("max_quote_age_seconds")
+    @classmethod
+    def _positive_quote_age(cls, value: int) -> int:
+        if value <= 0:
+            raise ValueError("max_quote_age_seconds must be positive")
+        return value
+
+    @field_validator("allowed_quality_statuses", "allowed_executable_statuses")
+    @classmethod
+    def _non_empty_statuses(cls, value: tuple[Any, ...], info: Any) -> tuple[Any, ...]:
+        if not value:
+            raise ValueError(f"{info.field_name} must not be empty")
+        return value
+
+    @field_validator("allowed_books")
+    @classmethod
+    def _valid_allowed_books(cls, value: tuple[str, ...] | None) -> tuple[str, ...] | None:
+        if value is None:
+            return None
+        if not value:
+            raise ValueError("allowed_books must be null or non-empty")
+        return tuple(_require_non_empty(book, "allowed_books") for book in value)
+
+    @field_validator("key_numbers")
+    @classmethod
+    def _positive_key_numbers(cls, value: tuple[float, ...] | None) -> tuple[float, ...] | None:
+        if value is None:
+            return None
+        if any(number <= 0 for number in value):
+            raise ValueError("key_numbers must be positive")
+        return tuple(sorted(set(value)))
+
+
+class VariantBFinalQuotePolicyBuildResult(PregameContract):
+    """Pure adapter result; failed construction is structured, not exceptional."""
+
+    build_id: str
+    candidate_id: str
+    research_id: str | None
+    runtime_policy_id: str
+    built_at_utc: datetime
+    status: VariantBPolicyBuildStatus
+    policy: FinalQuotePolicy | None
+    reason_codes: tuple[VariantBPolicyBuildReason, ...] = ()
+    warnings: tuple[str, ...] = ()
+    source_frontier_digest: str | None = None
+    source_no_chase_digest: str | None = None
+    source_key_number_digest: str | None = None
+    research_status: VariantBResearchStatus | None = None
+    research_approved: bool | None = None
+    schema_version: str = DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION
+
+    @field_validator("build_id", "candidate_id", "runtime_policy_id", "schema_version")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("research_id")
+    @classmethod
+    def _optional_non_empty_text(cls, value: str | None) -> str | None:
+        return None if value is None else _require_non_empty(value, "research_id")
+
+    @field_validator("built_at_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime) -> datetime:
+        return _ensure_utc(value, "built_at_utc")
+
+    @field_validator("warnings")
+    @classmethod
+    def _warning_text(cls, value: tuple[str, ...]) -> tuple[str, ...]:
+        return tuple(_require_non_empty(item, "warnings") for item in value)
 
 
 class FinalQuoteGateResult(PregameContract):

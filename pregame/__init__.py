@@ -9,10 +9,12 @@ from pregame.contracts import (
     CandidateRecord,
     FinalQuoteGateResult,
     FinalQuotePolicy,
+    FinalQuoteRuntimePolicy,
     MarketSnapshot,
     OperatorDecision,
     PregameEvent,
     PregameGameRecord,
+    VariantBFinalQuotePolicyBuildResult,
     VariantBPointResult,
     VariantBResearchRecord,
 )
@@ -27,6 +29,8 @@ from pregame.events import (
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+    VariantBPolicyBuildReason,
+    VariantBPolicyBuildStatus,
     VariantBResearchKind,
     VariantBResearchStatus,
 )
@@ -52,6 +56,11 @@ from pregame.model_output_adapter import (
 )
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
+from pregame.variant_b_policy_adapter import (
+    VariantBFinalQuotePolicyAdapter,
+    VariantBPolicyAdapterError,
+    build_final_quote_policy,
+)
 from pregame.variant_b_research import (
     VariantBResearchError,
     VariantBResearchImportResult,
@@ -77,6 +86,7 @@ __all__ = [
     "FinalQuoteGateService",
     "FinalQuoteGateStatus",
     "FinalQuotePolicy",
+    "FinalQuoteRuntimePolicy",
     "EventStoreCorruptionError",
     "InMemoryPregameEventStore",
     "MatchupBatchPickOutputAdapter",
@@ -95,6 +105,11 @@ __all__ = [
     "PregameEventType",
     "SnapshotKind",
     "VariantBPointResult",
+    "VariantBFinalQuotePolicyBuildResult",
+    "VariantBFinalQuotePolicyAdapter",
+    "VariantBPolicyAdapterError",
+    "VariantBPolicyBuildReason",
+    "VariantBPolicyBuildStatus",
     "VariantBResearchError",
     "VariantBResearchImportResult",
     "VariantBResearchKind",
@@ -115,4 +130,5 @@ __all__ = [
     "final_quote_gate_event_id",
     "variant_b_research_event_id",
     "variant_b_research_id",
+    "build_final_quote_policy",
 ]
