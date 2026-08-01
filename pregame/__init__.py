@@ -17,6 +17,7 @@ from pregame.events import (
     PregameEventType,
     SnapshotKind,
 )
+from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStore
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
 
@@ -27,7 +28,9 @@ __all__ = [
     "CandidateStatus",
     "DecisionLevel",
     "ExecutableStatus",
+    "EventStoreCorruptionError",
     "InMemoryPregameEventStore",
+    "JsonlPregameEventStore",
     "MarketQualityStatus",
     "MarketSnapshot",
     "MarketType",
