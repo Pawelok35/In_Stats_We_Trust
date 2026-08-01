@@ -5,7 +5,7 @@ import json
 import sys
 from datetime import datetime, timezone
 from pathlib import Path
-from typing import Any
+from typing import Any, Mapping
 
 try:
     import yaml
@@ -25,43 +25,187 @@ PRIMARY_KEY_NUMBERS = {3.0, 7.0}
 DEFAULT_RULES_CONFIG: dict[str, Any] = {
     "framework_version": "variant_b_audit_v1",
     "rules": {
-        "AG-01": {"risk_level": "HIGH", "blocking": True, "description": "Pick math integrity mismatch."},
-        "AG-02": {"risk_level": "HIGH", "blocking": True, "description": "Whole-number spread requires p_cover, p_push, p_loss."},
-        "AG-04": {"risk_level": "HIGH", "blocking": True, "description": "Market source, quote timestamp, and executable status are required."},
-        "AG-05": {"risk_level": "MEDIUM", "blocking": False, "description": "Missing model uncertainty or margin distribution."},
+        "AG-01": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Pick math integrity mismatch.",
+        },
+        "AG-02": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Whole-number spread requires p_cover, p_push, p_loss.",
+        },
+        "AG-04": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Market source, quote timestamp, and executable status are required.",
+        },
+        "AG-05": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Missing model uncertainty or margin distribution.",
+        },
         "MM-01": {"risk_level": "MEDIUM", "blocking": False, "description": "Missing opener."},
-        "MM-02": {"risk_level": "HIGH", "blocking": True, "description": "Current quote is not market-grade."},
-        "MM-04": {"risk_level": "HIGH", "blocking": True, "description": "Missing model-generation quote."},
-        "KN-02": {"risk_level": "MEDIUM", "blocking": False, "description": "Spread is on a configured key number."},
-        "NC-03": {"risk_level": "HIGH", "blocking": True, "description": "Unfavorable move off or through 3 or 7."},
-        "NC-04": {"risk_level": "HIGH", "blocking": True, "description": "No-chase not assessable without model-generation quote."},
-        "PXQ-01": {"risk_level": "HIGH", "blocking": True, "description": "Price quality requires a fresh atomic executable quote."},
-        "PXQ-02": {"risk_level": "HIGH", "blocking": True, "description": "Price valuation requires p_cover/p_push/p_loss or frozen acceptable_quote_frontier."},
-        "PXQ-03": {"risk_level": "HIGH", "blocking": True, "description": "Manual consensus or aggregator-only quote cannot be treated as executable price proof."},
-        "PXQ-04": {"risk_level": "HIGH", "blocking": True, "description": "Spread and price must come from the same quote/snapshot."},
-        "PXQ-05": {"risk_level": "MEDIUM", "blocking": False, "description": "Promotional wager types require separate EV handling."},
-        "PXQ-06": {"risk_level": "MEDIUM", "blocking": False, "description": "Break-even probability must be push-aware."},
-        "MS-01": {"risk_level": "HIGH", "blocking": True, "description": "Market snapshot must identify event, selected side, market scope, spread, price, source, and evidence grade."},
-        "MS-02": {"risk_level": "HIGH", "blocking": True, "description": "Spread and price must be an atomic quote from the same quote ID/market/selection/payload."},
-        "MS-03": {"risk_level": "MEDIUM", "blocking": False, "description": "Manual consensus is not market-grade proof."},
-        "MS-04": {"risk_level": "MEDIUM", "blocking": False, "description": "Provider quote is not direct book betslip verification or accepted ticket."},
-        "MS-05": {"risk_level": "HIGH", "blocking": True, "description": "Direct-book proof requires target-stake check and no unresolved odds-change warning."},
-        "MS-06": {"risk_level": "MEDIUM", "blocking": False, "description": "Provider limit and account-specific accepted stake must be separate."},
-        "PROC-01": {"risk_level": "HIGH", "blocking": True, "description": "Process quality requires immutable point outputs and frozen policy."},
-        "PROC-02": {"risk_level": "HIGH", "blocking": True, "description": "Due blocking rules override numeric quality score."},
-        "PROC-03": {"risk_level": "MEDIUM", "blocking": False, "description": "Not-due points are pending_not_due rather than failures."},
-        "PROC-04": {"risk_level": "HIGH", "blocking": True, "description": "Future information cannot be used in predecision process quality."},
-        "PROC-05": {"risk_level": "HIGH", "blocking": True, "description": "LLM numeric outputs or gate statuses cannot satisfy deterministic process checks."},
-        "PROC-06": {"risk_level": "HIGH", "blocking": True, "description": "Cross-point identity, model, PMF, market scope, and quote IDs must be consistent."},
-        "PROC-07": {"risk_level": "MEDIUM", "blocking": False, "description": "Manual overrides must be append-only and hashed."},
-        "PROC-08": {"risk_level": "MEDIUM", "blocking": False, "description": "Readiness must be reported by phase."},
-        "OD-01": {"risk_level": "HIGH", "blocking": True, "description": "Due blocking rules force hold/return workflow."},
-        "OD-02": {"risk_level": "HIGH", "blocking": True, "description": "Integrity invalidators route to invalid audit."},
-        "OD-03": {"risk_level": "HIGH", "blocking": True, "description": "Data identity or quote mapping errors route to data correction."},
-        "OD-04": {"risk_level": "HIGH", "blocking": True, "description": "Missing model artifacts route to model rerun."},
-        "OD-05": {"risk_level": "MEDIUM", "blocking": False, "description": "Pending official windows route to hold pending data."},
-        "OD-06": {"risk_level": "HIGH", "blocking": True, "description": "Operator decision cannot perform new research or model calculations."},
-        "OD-07": {"risk_level": "MEDIUM", "blocking": False, "description": "Operator decision should be append-only and snapshot-bound."},
+        "MM-02": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Current quote is not market-grade.",
+        },
+        "MM-04": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Missing model-generation quote.",
+        },
+        "KN-02": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Spread is on a configured key number.",
+        },
+        "NC-03": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Unfavorable move off or through 3 or 7.",
+        },
+        "NC-04": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "No-chase not assessable without model-generation quote.",
+        },
+        "PXQ-01": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Price quality requires a fresh atomic executable quote.",
+        },
+        "PXQ-02": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Price valuation requires p_cover/p_push/p_loss or frozen acceptable_quote_frontier.",
+        },
+        "PXQ-03": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Manual consensus or aggregator-only quote cannot be treated as executable price proof.",
+        },
+        "PXQ-04": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Spread and price must come from the same quote/snapshot.",
+        },
+        "PXQ-05": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Promotional wager types require separate EV handling.",
+        },
+        "PXQ-06": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Break-even probability must be push-aware.",
+        },
+        "MS-01": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Market snapshot must identify event, selected side, market scope, spread, price, source, and evidence grade.",
+        },
+        "MS-02": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Spread and price must be an atomic quote from the same quote ID/market/selection/payload.",
+        },
+        "MS-03": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Manual consensus is not market-grade proof.",
+        },
+        "MS-04": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Provider quote is not direct book betslip verification or accepted ticket.",
+        },
+        "MS-05": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Direct-book proof requires target-stake check and no unresolved odds-change warning.",
+        },
+        "MS-06": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Provider limit and account-specific accepted stake must be separate.",
+        },
+        "PROC-01": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Process quality requires immutable point outputs and frozen policy.",
+        },
+        "PROC-02": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Due blocking rules override numeric quality score.",
+        },
+        "PROC-03": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Not-due points are pending_not_due rather than failures.",
+        },
+        "PROC-04": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Future information cannot be used in predecision process quality.",
+        },
+        "PROC-05": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "LLM numeric outputs or gate statuses cannot satisfy deterministic process checks.",
+        },
+        "PROC-06": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Cross-point identity, model, PMF, market scope, and quote IDs must be consistent.",
+        },
+        "PROC-07": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Manual overrides must be append-only and hashed.",
+        },
+        "PROC-08": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Readiness must be reported by phase.",
+        },
+        "OD-01": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Due blocking rules force hold/return workflow.",
+        },
+        "OD-02": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Integrity invalidators route to invalid audit.",
+        },
+        "OD-03": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Data identity or quote mapping errors route to data correction.",
+        },
+        "OD-04": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Missing model artifacts route to model rerun.",
+        },
+        "OD-05": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Pending official windows route to hold pending data.",
+        },
+        "OD-06": {
+            "risk_level": "HIGH",
+            "blocking": True,
+            "description": "Operator decision cannot perform new research or model calculations.",
+        },
+        "OD-07": {
+            "risk_level": "MEDIUM",
+            "blocking": False,
+            "description": "Operator decision should be append-only and snapshot-bound.",
+        },
     },
 }
 
@@ -116,13 +260,22 @@ def has_frozen_frontier(record: dict[str, Any]) -> bool:
 
 def is_known_value(value: Any) -> bool:
     """Return False for placeholders that must never satisfy an audit gate."""
-    return value not in (None, "") and str(value).strip().upper() not in {"UNKNOWN", "MISSING", "PENDING"}
+    return value not in (None, "") and str(value).strip().upper() not in {
+        "UNKNOWN",
+        "MISSING",
+        "PENDING",
+    }
 
 
 def is_manual_or_consensus_quote(record: dict[str, Any]) -> bool:
     book = str(record.get("book") or "").upper()
     source_type = str(record.get("source_type") or record.get("book") or "").upper()
-    return "MANUAL" in book or "CONSENSUS" in book or "MANUAL" in source_type or "CONSENSUS" in source_type
+    return (
+        "MANUAL" in book
+        or "CONSENSUS" in book
+        or "MANUAL" in source_type
+        or "CONSENSUS" in source_type
+    )
 
 
 def has_atomic_quote(record: dict[str, Any]) -> bool:
@@ -184,9 +337,21 @@ def is_market_grade(record: dict[str, Any]) -> bool:
     executable = str(record.get("executable_status") or "").upper()
     source_type = str(record.get("source_type") or record.get("book") or "").upper()
     has_source = bool(book) and not book.upper().startswith("MANUAL")
-    has_timestamp = is_known_value(record.get("quote_timestamp_utc") or record.get("decision_ts_utc"))
-    executable_ok = executable in {"CONFIRMED_EXECUTABLE", "BETSLIP_CONFIRMED_AT_TARGET_STAKE", "CONFIRMED_AT_BOOK"}
-    return has_source and has_timestamp and executable_ok and "MANUAL" not in source_type and "CONSENSUS" not in source_type
+    has_timestamp = is_known_value(
+        record.get("quote_timestamp_utc") or record.get("decision_ts_utc")
+    )
+    executable_ok = executable in {
+        "CONFIRMED_EXECUTABLE",
+        "BETSLIP_CONFIRMED_AT_TARGET_STAKE",
+        "CONFIRMED_AT_BOOK",
+    }
+    return (
+        has_source
+        and has_timestamp
+        and executable_ok
+        and "MANUAL" not in source_type
+        and "CONSENSUS" not in source_type
+    )
 
 
 def has_model_generation_quote(record: dict[str, Any]) -> bool:
@@ -269,7 +434,10 @@ def build_market_snapshot(record: dict[str, Any], rules: dict[str, Any]) -> dict
     if manual_or_consensus:
         triggered.append(trigger("MS-03", rules))
         reason_codes.append("MANUAL_CONSENSUS_ONLY")
-    if str(record.get("executable_status") or "").upper() in {"AGGREGATOR_ONLY", "DISPLAYED_UNVERIFIED"}:
+    if str(record.get("executable_status") or "").upper() in {
+        "AGGREGATOR_ONLY",
+        "DISPLAYED_UNVERIFIED",
+    }:
         triggered.append(trigger("MS-04", rules))
         reason_codes.append("AGGREGATOR_ONLY")
 
@@ -296,7 +464,9 @@ def build_market_snapshot(record: dict[str, Any], rules: dict[str, Any]) -> dict
         executable_status = "BETSLIP_VERIFIED_AT_TARGET_STAKE"
     elif market_grade:
         evidence_grade = "PROVIDER_GRADE"
-        executable_status = str(record.get("executable_status") or "AGGREGATOR_DISPLAYED_UNVERIFIED").upper()
+        executable_status = str(
+            record.get("executable_status") or "AGGREGATOR_DISPLAYED_UNVERIFIED"
+        ).upper()
     elif manual_or_consensus:
         evidence_grade = "PREVIEW_ONLY"
         executable_status = "UNKNOWN"
@@ -306,8 +476,16 @@ def build_market_snapshot(record: dict[str, Any], rules: dict[str, Any]) -> dict
 
     quote_integrity_status = "VALID" if atomic_quote else "INCOMPLETE"
     market_state = str(record.get("market_state") or "UNKNOWN").upper()
-    stake_check_status = str(record.get("stake_check_status") or ("ACCEPTED_IN_FULL" if accepted_stake is not None else "NOT_TESTED")).upper()
-    status = "COMPLETE" if evidence_grade in {"EXECUTED_GRADE", "DIRECT_BOOK_GRADE", "PROVIDER_GRADE"} and not any(item.get("blocking") for item in triggered) else "INCOMPLETE"
+    stake_check_status = str(
+        record.get("stake_check_status")
+        or ("ACCEPTED_IN_FULL" if accepted_stake is not None else "NOT_TESTED")
+    ).upper()
+    status = (
+        "COMPLETE"
+        if evidence_grade in {"EXECUTED_GRADE", "DIRECT_BOOK_GRADE", "PROVIDER_GRADE"}
+        and not any(item.get("blocking") for item in triggered)
+        else "INCOMPLETE"
+    )
     narrative = (
         f"Market snapshot evidence grade is {evidence_grade}."
         if status == "COMPLETE"
@@ -321,7 +499,9 @@ def build_market_snapshot(record: dict[str, Any], rules: dict[str, Any]) -> dict
         triggered_rules=triggered,
         narrative=narrative,
         confirmed_facts=[f"stored_quote={record.get('handicap')} at {record.get('price')}"],
-        missing_data=[] if market_grade else ["named executable sportsbook", "executable quote status"],
+        missing_data=(
+            [] if market_grade else ["named executable sportsbook", "executable quote status"]
+        ),
         calculations={
             "book": book,
             "timestamp": timestamp,
@@ -353,7 +533,10 @@ def build_argument_against(record: dict[str, Any], rules: dict[str, Any]) -> dic
         triggered.append(trigger("AG-02", rules))
     if not is_market_grade(record):
         triggered.append(trigger("AG-04", rules))
-    if record.get("margin_distribution_id") in (None, "") and record.get("uncertainty_id") in (None, ""):
+    if record.get("margin_distribution_id") in (None, "") and record.get("uncertainty_id") in (
+        None,
+        "",
+    ):
         triggered.append(trigger("AG-05", rules))
 
     selected = selected_team(record)
@@ -368,7 +551,9 @@ def build_argument_against(record: dict[str, Any], rules: dict[str, Any]) -> dic
         if is_market_grade(record)
         else "the market snapshot is not market-grade"
     )
-    narrative = f"{selected} {handicap:+g} has a raw edge signal; {probability_note}, and {market_note}."
+    narrative = (
+        f"{selected} {handicap:+g} has a raw edge signal; {probability_note}, and {market_note}."
+    )
     if bool(record.get("neutral_site")):
         narrative += " Neutral-site handling should be reviewed for home-field leakage."
 
@@ -385,12 +570,18 @@ def build_argument_against(record: dict[str, Any], rules: dict[str, Any]) -> dic
                 ("p_cover", record.get("p_cover") in (None, "")),
                 ("p_push", record.get("p_push") in (None, "")),
                 ("p_loss", record.get("p_loss") in (None, "")),
-                ("margin distribution / uncertainty id", record.get("margin_distribution_id") in (None, "") and record.get("uncertainty_id") in (None, "")),
+                (
+                    "margin distribution / uncertainty id",
+                    record.get("margin_distribution_id") in (None, "")
+                    and record.get("uncertainty_id") in (None, ""),
+                ),
                 ("market-grade executable quote", not is_market_grade(record)),
             )
             if missing
         ],
-        conditional_risks=["neutral-site home-field leakage"] if bool(record.get("neutral_site")) else [],
+        conditional_risks=(
+            ["neutral-site home-field leakage"] if bool(record.get("neutral_site")) else []
+        ),
         calculations={
             "selected_team": selected,
             "selected_model_margin_raw": selected_model_margin(record, selected),
@@ -412,7 +603,9 @@ def build_market_move(record: dict[str, Any], rules: dict[str, Any]) -> dict[str
         triggered.append(trigger("MM-02", rules))
     if not has_model_generation_quote(record):
         triggered.append(trigger("MM-04", rules))
-    key_numbers_touched = [abs(safe_float(record.get("handicap")) or 0.0)] if is_on_key_number(record) else []
+    key_numbers_touched = (
+        [abs(safe_float(record.get("handicap")) or 0.0)] if is_on_key_number(record) else []
+    )
     return point_output(
         number=2,
         name="market_move_notes",
@@ -477,11 +670,21 @@ def build_no_chase(record: dict[str, Any], rules: dict[str, Any]) -> dict[str, A
             if triggered
             else "No-chase can be assessed from model-generation quote to current quote."
         ),
-        missing_data=[] if not triggered else ["model-generation spread", "model-generation price", "model-generation quote timestamp"],
+        missing_data=(
+            []
+            if not triggered
+            else [
+                "model-generation spread",
+                "model-generation price",
+                "model-generation quote timestamp",
+            ]
+        ),
         calculations={
             "no_chase_status": "NOT_ASSESSABLE" if triggered else "NOT_TRIGGERED",
             "current_spread": safe_float(record.get("handicap")),
-            "model_generation_spread": safe_float(record.get("model_generation_spread_selected_team")),
+            "model_generation_spread": safe_float(
+                record.get("model_generation_spread_selected_team")
+            ),
         },
     )
 
@@ -504,19 +707,31 @@ def build_price_quality(record: dict[str, Any], rules: dict[str, Any]) -> dict[s
             reason_codes.append("QUOTE_TIMESTAMP_MISSING")
         if record.get("handicap") in (None, "") or record.get("price") in (None, ""):
             reason_codes.append("SPREAD_PRICE_SNAPSHOT_MISMATCH")
-    if not has_push_probabilities(record) and not has_frozen_frontier(record) and record.get("max_acceptable_price") in (None, ""):
+    if (
+        not has_push_probabilities(record)
+        and not has_frozen_frontier(record)
+        and record.get("max_acceptable_price") in (None, "")
+    ):
         triggered.append(trigger("PXQ-02", rules))
-        for field, code in (("p_cover", "P_COVER_MISSING"), ("p_push", "P_PUSH_MISSING"), ("p_loss", "P_LOSS_MISSING")):
+        for field, code in (
+            ("p_cover", "P_COVER_MISSING"),
+            ("p_push", "P_PUSH_MISSING"),
+            ("p_loss", "P_LOSS_MISSING"),
+        ):
             if record.get(field) in (None, ""):
                 reason_codes.append(code)
         reason_codes.append("ACCEPTABLE_QUOTE_FRONTIER_MISSING")
 
     conditional_break_even = 1.0 / decimal_odds if decimal_odds else None
-    unconditional_break_even = (1.0 - p_push) / decimal_odds if decimal_odds and p_push is not None else None
+    unconditional_break_even = (
+        (1.0 - p_push) / decimal_odds if decimal_odds and p_push is not None else None
+    )
     valuation_method = (
         "FULL_MODEL_EV"
         if has_push_probabilities(record)
-        else ("FROZEN_ACCEPTABLE_QUOTE_FRONTIER" if has_frozen_frontier(record) else "NOT_AVAILABLE")
+        else (
+            "FROZEN_ACCEPTABLE_QUOTE_FRONTIER" if has_frozen_frontier(record) else "NOT_AVAILABLE"
+        )
     )
     quote_quality_status = "FRESH_EXECUTABLE" if is_market_grade(record) else "UNVERIFIED"
     price_status = "NOT_ASSESSABLE" if triggered else "ACCEPTABLE"
@@ -536,7 +751,10 @@ def build_price_quality(record: dict[str, Any], rules: dict[str, Any]) -> dict[s
             item
             for item, missing in (
                 ("market-grade executable quote", not is_market_grade(record)),
-                ("atomic spread+price quote ID or timestamped snapshot", not has_atomic_quote(record)),
+                (
+                    "atomic spread+price quote ID or timestamped snapshot",
+                    not has_atomic_quote(record),
+                ),
                 (
                     "p_cover/p_push/p_loss or frozen acceptable quote frontier",
                     not has_push_probabilities(record)
@@ -552,8 +770,12 @@ def build_price_quality(record: dict[str, Any], rules: dict[str, Any]) -> dict[s
             "quote_quality_status": quote_quality_status,
             "price_status": price_status,
             "valuation_method": valuation_method,
-            "conditional_cover_rate_given_no_push": round(conditional_break_even, 6) if conditional_break_even else None,
-            "unconditional_cover_probability_required": round(unconditional_break_even, 6) if unconditional_break_even else None,
+            "conditional_cover_rate_given_no_push": (
+                round(conditional_break_even, 6) if conditional_break_even else None
+            ),
+            "unconditional_cover_probability_required": (
+                round(unconditional_break_even, 6) if unconditional_break_even else None
+            ),
             "reason_codes": sorted(set(reason_codes)),
         },
     )
@@ -588,8 +810,12 @@ def build_process_quality(points: list[dict[str, Any]], rules: dict[str, Any]) -
         seen_points.add(point["point_number"])
         due_status = point["due_status"]
         name = point["point_name"]
-        blocking_rules = [item["rule_id"] for item in point["triggered_rules"] if item.get("blocking")]
-        warning_rules = [item["rule_id"] for item in point["triggered_rules"] if not item.get("blocking")]
+        blocking_rules = [
+            item["rule_id"] for item in point["triggered_rules"] if item.get("blocking")
+        ]
+        warning_rules = [
+            item["rule_id"] for item in point["triggered_rules"] if not item.get("blocking")
+        ]
         if due_status != "DUE":
             gate_effect = "NONE"
             effective_status = "PENDING_NOT_DUE"
@@ -613,7 +839,9 @@ def build_process_quality(points: list[dict[str, Any]], rules: dict[str, Any]) -
                 "run_status": "VALID",
                 "native_domain_status": point["status"],
                 "due_status": due_status,
-                "criticality": expected_points.get(point["point_number"], (name, due_status, "SOFT_REQUIRED"))[2],
+                "criticality": expected_points.get(
+                    point["point_number"], (name, due_status, "SOFT_REQUIRED")
+                )[2],
                 "gate_effect": gate_effect,
                 "effective_status": effective_status,
                 "blocking_rules": blocking_rules,
@@ -661,7 +889,11 @@ def build_process_quality(points: list[dict[str, Any]], rules: dict[str, Any]) -
         )
     point_checks.sort(key=lambda item: item["point_id"])
     due_points = [item for item in point_checks if item["due_status"] == "DUE"]
-    status = "PREKICK_NOT_READY" if due_blocking else ("PREKICK_READY_WITH_WARNINGS" if due_nonblocking else "PREKICK_READY")
+    status = (
+        "PREKICK_NOT_READY"
+        if due_blocking
+        else ("PREKICK_READY_WITH_WARNINGS" if due_nonblocking else "PREKICK_READY")
+    )
     triggered = [trigger("PROC-02", rules)] if due_blocking else []
     return point_output(
         number=18,
@@ -689,8 +921,12 @@ def build_process_quality(points: list[dict[str, Any]], rules: dict[str, Any]) -
             "coverage": {
                 "due_points_total": len(due_points),
                 "due_points_ok": sum(1 for item in due_points if item["effective_status"] == "OK"),
-                "due_points_partial": sum(1 for item in due_points if item["effective_status"] == "PARTIAL"),
-                "due_points_blocked": sum(1 for item in due_points if item["effective_status"] == "BLOCKED"),
+                "due_points_partial": sum(
+                    1 for item in due_points if item["effective_status"] == "PARTIAL"
+                ),
+                "due_points_blocked": sum(
+                    1 for item in due_points if item["effective_status"] == "BLOCKED"
+                ),
                 "hard_blockers_count": len(set(due_blocking)),
                 "pending_not_due_count": len(set(pending_not_due)),
             },
@@ -711,7 +947,9 @@ def build_process_quality(points: list[dict[str, Any]], rules: dict[str, Any]) -
     )
 
 
-def build_operator_decision(process_quality: dict[str, Any], rules: dict[str, Any]) -> dict[str, Any]:
+def build_operator_decision(
+    process_quality: dict[str, Any], rules: dict[str, Any]
+) -> dict[str, Any]:
     values = process_quality["calculations"]["values"]
     due_blocking = values.get("due_blocking_rules", [])
     pending_not_due = values.get("pending_not_due", [])
@@ -745,14 +983,22 @@ def build_operator_decision(process_quality: dict[str, Any], rules: dict[str, An
     elif has_model_rerun:
         gate_state = "HOLD"
         operator_action = "RETURN_FOR_MODEL_RERUN"
-        substatus = "MODEL_RERUN_AND_MARKET_GRADE_SNAPSHOT_REQUIRED" if has_market_capture else "MODEL_RERUN_REQUIRED"
+        substatus = (
+            "MODEL_RERUN_AND_MARKET_GRADE_SNAPSHOT_REQUIRED"
+            if has_market_capture
+            else "MODEL_RERUN_REQUIRED"
+        )
         hold_type = "ACTIVE_REMEDIATION_REQUIRED"
         triggered = [trigger("OD-04", rules)]
     elif due_blocking:
         gate_state = "HOLD"
         operator_action = "HOLD_PENDING_DATA"
         substatus = "MULTIPLE_REQUIRED_INPUTS_PENDING"
-        hold_type = "MANUAL_DATA_CAPTURE_REQUIRED" if has_market_capture else "PASSIVE_WAIT_FOR_OFFICIAL_WINDOW"
+        hold_type = (
+            "MANUAL_DATA_CAPTURE_REQUIRED"
+            if has_market_capture
+            else "PASSIVE_WAIT_FOR_OFFICIAL_WINDOW"
+        )
         triggered = [trigger("OD-01", rules)]
     elif pending_not_due:
         gate_state = "OPEN"
@@ -819,62 +1065,80 @@ def build_operator_decision(process_quality: dict[str, Any], rules: dict[str, An
         narrative=(
             "Operator gate is on hold: model rerun and market-grade snapshot are required."
             if operator_action == "RETURN_FOR_MODEL_RERUN"
-            else "Operator gate is on hold: data correction is required."
-            if operator_action == "RETURN_FOR_DATA_CORRECTION"
-            else "Operator gate is invalidated by an integrity failure."
-            if operator_action == "INVALID_AUDIT"
-            else "Hold pending data: blocking process rules remain open."
-            if due_blocking
-            else "Ready for next audit stage."
+            else (
+                "Operator gate is on hold: data correction is required."
+                if operator_action == "RETURN_FOR_DATA_CORRECTION"
+                else (
+                    "Operator gate is invalidated by an integrity failure."
+                    if operator_action == "INVALID_AUDIT"
+                    else (
+                        "Hold pending data: blocking process rules remain open."
+                        if due_blocking
+                        else "Ready for next audit stage."
+                    )
+                )
+            )
         ),
         calculations={
             "gate_state": gate_state,
             "operator_action": operator_action,
-            "legacy_single_status": "HOLD_PENDING_DATA" if gate_state == "HOLD" else operator_action,
+            "legacy_single_status": (
+                "HOLD_PENDING_DATA" if gate_state == "HOLD" else operator_action
+            ),
             "substatus": substatus,
             "hold_type": hold_type,
-            "completion_scope": "CURRENT_PHASE" if operator_action != "AUDIT_COMPLETE" else "FULL_LIFECYCLE",
+            "completion_scope": (
+                "CURRENT_PHASE" if operator_action != "AUDIT_COMPLETE" else "FULL_LIFECYCLE"
+            ),
             "process_quality_input": {
                 "overall_status": process_quality["status"],
                 "hard_blockers_count": coverage.get("hard_blockers_count", len(set(due_blocking))),
                 "warnings_count": len(values.get("due_nonblocking_rules", [])),
-                "pending_not_due_count": coverage.get("pending_not_due_count", len(pending_not_due)),
+                "pending_not_due_count": coverage.get(
+                    "pending_not_due_count", len(pending_not_due)
+                ),
                 "invalidators_count": len(invalidator_rules.intersection(due_blocking)),
             },
             "primary_blocker": {
                 "blocker_code": (
                     "AUDIT_INTEGRITY_INVALIDATOR"
                     if has_invalidator
-                    else "DATA_MAPPING_OR_ATOMIC_QUOTE_ERROR"
-                    if has_data_correction
-                    else "MODEL_OUTPUT_NOT_EXECUTION_GRADE"
-                    if has_model_rerun
-                    else "PENDING_REQUIRED_INPUT"
-                    if due_blocking
-                    else None
+                    else (
+                        "DATA_MAPPING_OR_ATOMIC_QUOTE_ERROR"
+                        if has_data_correction
+                        else (
+                            "MODEL_OUTPUT_NOT_EXECUTION_GRADE"
+                            if has_model_rerun
+                            else "PENDING_REQUIRED_INPUT" if due_blocking else None
+                        )
+                    )
                 ),
                 "blocker_class": (
                     "INTEGRITY"
                     if has_invalidator
-                    else "DATA_CORRECTION"
-                    if has_data_correction
-                    else "MODEL_RERUN"
-                    if has_model_rerun
-                    else "PENDING_EXTERNAL"
-                    if due_blocking
-                    else None
+                    else (
+                        "DATA_CORRECTION"
+                        if has_data_correction
+                        else (
+                            "MODEL_RERUN"
+                            if has_model_rerun
+                            else "PENDING_EXTERNAL" if due_blocking else None
+                        )
+                    )
                 ),
                 "source_point": 18 if due_blocking else None,
                 "recoverability": (
                     "INVALIDATES_AUDIT"
                     if has_invalidator
-                    else "RECOVERABLE_SAME_AUDIT"
-                    if has_data_correction
-                    else "REQUIRES_NEW_MODEL_RUN"
-                    if has_model_rerun
-                    else "WAIT_UNTIL_DUE"
-                    if due_blocking
-                    else None
+                    else (
+                        "RECOVERABLE_SAME_AUDIT"
+                        if has_data_correction
+                        else (
+                            "REQUIRES_NEW_MODEL_RUN"
+                            if has_model_rerun
+                            else "WAIT_UNTIL_DUE" if due_blocking else None
+                        )
+                    )
                 ),
             },
             "required_actions": required_actions,
@@ -895,7 +1159,9 @@ def build_operator_decision(process_quality: dict[str, Any], rules: dict[str, An
     )
 
 
-def build_audit(record: dict[str, Any], rules_config: dict[str, Any], audit_stage: str) -> dict[str, Any]:
+def build_audit(
+    record: dict[str, Any], rules_config: dict[str, Any], audit_stage: str
+) -> dict[str, Any]:
     rules = rules_config.get("rules", {})
     points = [
         build_argument_against(record, rules),
@@ -932,6 +1198,173 @@ def build_audit(record: dict[str, Any], rules_config: dict[str, Any], audit_stag
     }
 
 
+class StructuredVariantBEvidenceError(ValueError):
+    """Raised when structured evidence cannot safely enter the audit API."""
+
+    def __init__(self, reason: str, *, point_id: int | None = None, field: str | None = None):
+        self.reason = reason
+        self.point_id = point_id
+        self.field = field
+        super().__init__(reason)
+
+
+def build_audit_with_structured_evidence(
+    record: Mapping[str, Any],
+    rules_config: Mapping[str, Any],
+    audit_stage: str,
+    structured_evidence: Mapping[str, Any],
+) -> dict[str, Any]:
+    """Materialize evidence points while retaining existing deterministic builders.
+
+    This wrapper is deliberately side-effect free.  It does not alter legacy
+    ``build_audit`` behavior and delegates points 18 and 19 to their existing
+    implementations.
+    """
+
+    source = dict(record)
+    evidence = dict(structured_evidence)
+    _validate_structured_evidence_input(source, evidence)
+    source.update(_research_input_from_evidence(evidence))
+    audit = build_audit(source, dict(rules_config), audit_stage)
+    rules = dict(rules_config).get("rules", {})
+    deterministic = {point["point_number"]: point for point in audit["audit_points"][:6]}
+    evidence_by_id = {item["point_id"]: item for item in evidence["point_results"]}
+    evidence_points = []
+    for point_id in range(1, 18):
+        if point_id in deterministic:
+            evidence_points.append(deterministic[point_id])
+        else:
+            evidence_points.append(_structured_point_output(evidence_by_id[point_id]))
+    process_quality = build_process_quality(evidence_points, rules)
+    operator_decision = build_operator_decision(process_quality, rules)
+    audit["audit_points"] = evidence_points + [process_quality, operator_decision]
+    audit["research_evidence"] = {
+        "gpt_full_19_status": "STRUCTURED_SIDECAR_COMPLETE",
+        "gpt_full_19_snapshot_path": None,
+        "gpt_full_19_points_present": list(range(1, 20)),
+    }
+    audit["structured_evidence_metadata"] = {
+        "evidence_id": evidence["evidence_id"],
+        "evidence_schema_version": evidence["schema_version"],
+        "prompt_version": evidence["prompt_version"],
+        "candidate_id": evidence["candidate_id"],
+        "research_kind": evidence["research_kind"],
+        "generated_at_utc": evidence["generated_at_utc"],
+        "source_count": evidence.get("source_count", 0),
+        "integration_api_version": "variant_b_structured_evidence_api.v1",
+    }
+    return audit
+
+
+def _validate_structured_evidence_input(
+    record: Mapping[str, Any], evidence: Mapping[str, Any]
+) -> None:
+    required = {
+        "schema_version",
+        "prompt_version",
+        "evidence_id",
+        "candidate_id",
+        "game_id",
+        "selected_team",
+        "model_variant",
+        "research_kind",
+        "expected_point_count",
+        "point_results",
+        "probability_assessment",
+        "acceptable_quote_frontier",
+        "no_chase",
+        "key_number_policy",
+    }
+    missing = sorted(required - evidence.keys())
+    if missing:
+        raise StructuredVariantBEvidenceError("STRUCTURED_EVIDENCE_MISSING:" + ",".join(missing))
+    if (
+        evidence["expected_point_count"] != 19
+        or not isinstance(evidence["point_results"], list)
+        or len(evidence["point_results"]) != 19
+    ):
+        raise StructuredVariantBEvidenceError("POINT_MAPPING_INCOMPLETE")
+    ids = [item.get("point_id") for item in evidence["point_results"] if isinstance(item, Mapping)]
+    if ids != list(range(1, 20)):
+        raise StructuredVariantBEvidenceError("POINT_MAPPING_INCOMPLETE")
+    expected_game = f"{record.get('season')}_w{int(record.get('week', 0)):02d}_{record.get('away')}_at_{record.get('home')}"
+    checks = {
+        "game_id": expected_game,
+        "selected_team": selected_team(dict(record)),
+        "model_variant": record.get("model_version"),
+    }
+    for field, expected in checks.items():
+        if evidence.get(field) != expected:
+            raise StructuredVariantBEvidenceError("STRUCTURED_EVIDENCE_CONFLICT", field=field)
+    frontier = evidence["acceptable_quote_frontier"]
+    if (
+        not isinstance(frontier, Mapping)
+        or frontier.get("selected_team") != checks["selected_team"]
+    ):
+        raise StructuredVariantBEvidenceError(
+            "STRUCTURED_EVIDENCE_CONFLICT", field="frontier.selected_team"
+        )
+    probability = evidence["probability_assessment"]
+    if not isinstance(probability, Mapping) or any(
+        field not in probability for field in ("p_cover", "p_push", "p_loss")
+    ):
+        raise StructuredVariantBEvidenceError("AUDIT_INPUT_INVALID", field="probability_assessment")
+
+
+def _structured_point_output(item: Mapping[str, Any]) -> dict[str, Any]:
+    status_map = {
+        "PASS": "COMPLETE",
+        "WARNING": "PARTIAL",
+        "BLOCKING_RISK": "PARTIAL",
+        "PENDING": "PENDING",
+        "UNKNOWN": "UNKNOWN",
+        "NO_DATA": "MISSING",
+        "NOT_DUE": "PENDING",
+    }
+    status = status_map.get(item.get("status"), "MISSING")
+    return point_output(
+        number=int(item["point_id"]),
+        name=str(item["point_name"]),
+        status=status,
+        due_status="NOT_DUE" if item.get("status") == "NOT_DUE" else "DUE",
+        triggered_rules=[],
+        narrative=str(item.get("summary", "")),
+        confirmed_facts=list(item.get("evidence_items", [])),
+        missing_data=[str(item.get("no_data_reason"))] if item.get("no_data_reason") else [],
+        conditional_risks=list(item.get("risk_codes", [])),
+        calculations={
+            "owner": "STRUCTURED_EVIDENCE",
+            "values": {
+                "evidence_present": bool(item.get("evidence_items")),
+                "data_complete": bool(item.get("data_complete")),
+                "blocking_assessment": item.get("blocking_assessment"),
+                "structured_data": item.get("structured_data", {}),
+                "source_refs": item.get("evidence_items", []),
+            },
+        },
+        manual_review_required=item.get("status")
+        in {"WARNING", "BLOCKING_RISK", "PENDING", "UNKNOWN", "NO_DATA"},
+    )
+
+
+def _research_input_from_evidence(evidence: Mapping[str, Any]) -> dict[str, Any]:
+    probability = evidence["probability_assessment"]
+    frontier = evidence["acceptable_quote_frontier"]
+    no_chase = evidence["no_chase"]
+    keys = evidence["key_number_policy"]
+    values = {
+        "p_cover": probability["p_cover"],
+        "p_push": probability["p_push"],
+        "p_loss": probability["p_loss"],
+        "acceptable_quote_frontier_id": evidence["evidence_id"],
+        "acceptable_quote_frontier_path": f"structured_evidence:{evidence['evidence_id']}",
+        "max_acceptable_price": frontier["minimum_acceptable_price"],
+        "structured_no_chase": dict(no_chase),
+        "structured_key_number_policy": dict(keys),
+    }
+    return values
+
+
 def load_rules_config(path: Path) -> dict[str, Any]:
     if yaml is None:
         return DEFAULT_RULES_CONFIG
@@ -941,7 +1374,9 @@ def load_rules_config(path: Path) -> dict[str, Any]:
     return loaded
 
 
-def find_record(records: list[dict[str, Any]], home: str | None, away: str | None) -> dict[str, Any]:
+def find_record(
+    records: list[dict[str, Any]], home: str | None, away: str | None
+) -> dict[str, Any]:
     if home is None and away is None:
         for record in records:
             if str(record.get("tag", "")).upper() in ACTION_TAGS:
@@ -950,7 +1385,10 @@ def find_record(records: list[dict[str, Any]], home: str | None, away: str | Non
     home_norm = clean_team(home)
     away_norm = clean_team(away)
     for record in records:
-        if clean_team(record.get("home")) == home_norm and clean_team(record.get("away")) == away_norm:
+        if (
+            clean_team(record.get("home")) == home_norm
+            and clean_team(record.get("away")) == away_norm
+        ):
             return record
     raise ValueError(f"No pick found for {away_norm} at {home_norm}")
 
@@ -965,7 +1403,9 @@ def main() -> None:
     parser.add_argument("--output", type=Path)
     args = parser.parse_args()
 
-    records = load_jsonl(args.picks_file if args.picks_file.is_absolute() else ROOT_DIR / args.picks_file)
+    records = load_jsonl(
+        args.picks_file if args.picks_file.is_absolute() else ROOT_DIR / args.picks_file
+    )
     record = find_record(records, args.home, args.away)
     rules_path = args.rules if args.rules.is_absolute() else ROOT_DIR / args.rules
     rules_config = load_rules_config(rules_path)
