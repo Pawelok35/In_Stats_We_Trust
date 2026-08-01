@@ -1,64 +1,53 @@
-# NFL 2026 Pregame Decision System - Plan Prac
+﻿# NFL 2026 Pregame Decision System - Architecture And Implementation Plan
 
-Status dokumentu: plan architektury i kolejnosc prac.  
-Data: 2026-08-01.  
-Zakres: pregame decision system na sezon NFL 2026.  
-Poza zakresem: Live Scenario, halftime prediction, live betting model, forum formatter.
+Status: planning document only.
+Date: 2026-08-01.
+Scope: pregame decision system around the frozen NFL production model.
+Out of scope: Live Scenario, halftime analysis, live betting model, forum formatter.
 
-## 1. Cel
+This document is based on the current repository state, especially:
 
-Zbudowac kompletny system pregame NFL, ktory prowadzi operatora od pierwszego snapshotu rynku do decyzji przed kickoffem, a po meczu zapisuje closing line, CLV, wynik i ocene procesu.
+- `docs/current_system_audit_2026-08-01.md`
+- `docs/production_baseline.md`
+- `docs/variant_b_final_gpt_research_prompt.md`
+- `docs/variant_b_19_point_master_prompt.md`
+- `docs/variant_b_sources_by_point.md`
+- `config/variant_b_daily_bot.yaml`
+- `scripts/prospective_week_flow.py`
+- `scripts/matchup_batch.py`
+- `scripts/matchup_analyzer.py`
+- `scripts/variant_b_audit.py`
+- `scripts/variant_b_week_flow.py`
+- `scripts/variant_b_daily_bot.py`
+- `scripts/variant_b_daily_bot_gui.py`
+- `scripts/book_snapshot_to_week_lines.py`
+- `utils/preflight.py`
+- `utils/data_cutoff.py`
+- `metrics/ats_features.py`
 
-Docelowy przeplyw:
+No production code, contracts, tests, GUI files, data files, model rules, tag thresholds, or Champion CORE logic are changed by this document.
+
+## 1. Scope And System Definition
+
+The target system guides the operator through the full NFL pregame decision process:
 
 ```text
 schedule
--> initial market snapshot
+-> first market snapshot
 -> frozen statistical model
--> weekly candidate registry
--> research updates
--> injuries / roster / weather / schedule spot
--> public betting context
--> line movement
+-> weekly candidate list
+-> weekly monitoring
+-> injury / roster / weather / public betting / line movement
 -> GPT Variant B
--> final quote gate
+-> final quote
+-> final preflight
 -> operator verdict
--> closing quote
+-> closing line
 -> CLV
 -> settlement
--> learning ledger
 ```
 
-System nie ma automatycznie zatwierdzac zakladow. Model znajduje kandydatow, research sprawdza ryzyka, a finalna decyzja nalezy do operatora.
-
-## 2. Zasady Architektury
-
-### 2.1. Zamrozony model pozostaje bez zmian
-
-Produkcyjny baseline:
-
-```text
-commit: 5216a330d8c23d11fd7acc67ee11cfb2ab390c88
-tag: production-pipeline-baseline-2026-07-29
-```
-
-Zakres zamrozonego baseline:
-
-```text
-L2
--> L3
--> rolling/Core12
--> report/analyzer
--> preflight
--> matchup_batch
--> pick output
-```
-
-Nowy system jest warstwa operatorska dookola modelu. Nie przebudowuje Champion CORE, progow tagow ani logiki backtestu bez osobnej decyzji.
-
-### 2.2. Trzy poziomy decyzji
-
-System musi rozrozniac:
+The system must distinguish three decision levels:
 
 ```text
 MODEL_CANDIDATE
@@ -66,27 +55,507 @@ RESEARCH_APPROVED
 FINAL_OPERATOR_PICK
 ```
 
-Znaczenie:
+Definitions:
 
-- `MODEL_CANDIDATE`: model znalazl potencjalna przewage.
-- `RESEARCH_APPROVED`: research i Variant B nie wykryly blokujacego ryzyka.
-- `FINAL_OPERATOR_PICK`: operator zatwierdzil decyzje przy aktualnym final quote.
+- `MODEL_CANDIDATE`: model found a potential edge. This is not a bet.
+- `RESEARCH_APPROVED`: structured research and deterministic Variant B checks found no active blocker.
+- `FINAL_OPERATOR_PICK`: operator approved a final decision against a current valid quote.
 
-Model candidate nie oznacza automatycznie finalnego picku.
-
-### 2.3. Historia jako append-only event log
-
-Nie nadpisujemy historii. Kazda nowa informacja jest osobnym zdarzeniem.
-
-Docelowy model:
+The frozen production model baseline remains:
 
 ```text
-append-only PregameEvent log
-+
-aktualny widok PregameGameRecord
+commit: 5216a330d8c23d11fd7acc67ee11cfb2ab390c88
+tag: production-pipeline-baseline-2026-07-29
+scope: L2 -> L3 -> rolling/Core12 -> report/analyzer -> preflight -> matchup_batch -> pick output
 ```
 
-Przyklady zdarzen:
+The new system is an operator and audit layer around that pipeline. It must call the existing model path without modifying it.
+
+Out of scope for this pregame system:
+
+- `live_scenario/*`
+- halftime prediction
+- live betting model
+- forum formatter
+- automatic pick approval without operator
+
+## 2. Current Repository Elements To Reuse
+
+| Area | File / function | Current input | Current output | Status | New architecture use | Adapter needed |
+| --- | --- | --- | --- | --- | --- | --- |
+| Weekly model flow | `scripts/prospective_week_flow.py:main` | season, week, lines config, variant | generated reports, `data/picks_{variant}/{season}/week_XX.jsonl`, prospective ledger | working | frozen model adapter entry point | yes: wrap output into `MODEL_SCAN_COMPLETED` and `MODEL_CANDIDATE_CREATED` events |
+| Matchup batch | `scripts/matchup_batch.py:run_batch` | YAML line config entries | report files, combined report, pick JSONL | working | candidate generation and preflight carrier | yes: normalize pick rows into `CandidateRecord` |
+| Market fields | `scripts/matchup_batch.py:build_market_fields` | matchup config entry and namespace | market fields on pick record | working | model-generation market context | yes: map to `MarketSnapshot` and preserve snapshot identity |
+| Process fields | `scripts/matchup_batch.py:build_process_fields` | config entry | process metadata fields | working | initial process evidence | yes: map to candidate/event payload |
+| Analyzer | `scripts/matchup_analyzer.py:run` | report path, home, away, spread, total | rendered analysis and projection | working | model projection source | yes: extract projection fields into central record |
+| Classification | `scripts/matchup_analyzer.py:classify` | confidence, edge, PowerScore diff | model tag | frozen behavior | source of model tag | no logic change allowed |
+| Numeric parser | `scripts/matchup_analyzer.py:parse_numeric` | report table cell | float or error | working | required report value guard | no |
+| Preflight | `utils/preflight.py:require_model_preflight` | season, analysis week, paths | PASS or RuntimeError | working | production eligibility gate | no |
+| Cutoff policy | `utils/data_cutoff.py:validate_pre_game_cutoff` | DataFrame and cutoff | `SAFE`/`UNSAFE` payload | working | future timestamp/weekly cutoff reference | no |
+| Safe snapshot | `utils/data_cutoff.py:resolve_safe_snapshot` | available rolling weeks, requested week | safe snapshot resolution | working | no-leak rolling selection | no |
+| Champion CORE | `metrics/ats_features.py:load_core_gom_picks` | seasons and picks dir | filtered CORE GOM picks | frozen research baseline | regression test source | no logic change allowed |
+| Book snapshot conversion | `scripts/book_snapshot_to_week_lines.py:load_snapshot` | YAML `book_snapshot + games` | Python mapping | working | snapshot ingestion | yes: emit append-only snapshot events before converting to lines |
+| Week lines build | `scripts/book_snapshot_to_week_lines.py:build_lines` | parsed snapshot | `config/lines/...yaml` payload | working | model line adapter | yes: do not use line YAML as only history |
+| Variant B audit | `scripts/variant_b_audit.py:build_audit` | pick record, rules, audit stage | structured audit JSON | working operator layer | deterministic research/audit evidence | yes: store audit as `RESEARCH_COMPLETED/UPDATED` events |
+| Variant B market snapshot | `scripts/variant_b_audit.py:build_market_snapshot` | pick record | point 9 output | working | quote integrity evidence | yes: map fields into market gate |
+| Variant B no-chase | `scripts/variant_b_audit.py:build_no_chase` | pick record | point 7 output | working | final quote/no-chase gate input | yes |
+| Variant B price quality | `scripts/variant_b_audit.py:build_price_quality` | pick record | point 8 output | working | final quote gate input | yes |
+| Variant B operator decision | `scripts/variant_b_audit.py:build_operator_decision` | process quality | gate state/operator action | working | research gate, not final operator pick | yes: keep separate from `FINAL_OPERATOR_PICK` |
+| Variant B week flow | `scripts/variant_b_week_flow.py:main` | picks file, quotes file, stage | audit JSON, summary MD/JSON, optional ledger | working | current daily research batch | yes: consume events and write events later |
+| GPT structure check | `scripts/variant_b_week_flow.py:attach_gpt_snapshot_status` | pick record and snapshots root | status plus present points | working | GPT research completeness | yes |
+| Quote override | `scripts/variant_b_week_flow.py:apply_quote_override` | pick record, JSONL quote | enriched pick record | working | current manual quote merge | yes: replace/augment with event log source |
+| Daily bot CLI | `scripts/variant_b_daily_bot.py:evaluate_tasks` | day config, filesystem state | rows with READY/NEEDS_OPERATOR/BLOCKED | working | operator schedule/checklist | yes: point it to central record status |
+| Daily bot GUI | `scripts/variant_b_daily_bot_gui.py` handlers | user selections/pastes | files, commands, display | working operator UI | later frontend | yes after backend stabilizes |
+| Daily bot config | `config/variant_b_daily_bot.yaml` | day definitions | manual/command task list | working | operational schedule | yes: add pregame event tasks later |
+
+Files that must be treated as frozen for early implementation:
+
+- `scripts/matchup_analyzer.py` model scoring/classification logic
+- `scripts/matchup_batch.py` production pick generation behavior
+- `metrics/ats_features.py` Champion CORE filters and payout assumptions
+- `utils/preflight.py` production preflight behavior
+- `utils/data_cutoff.py` cutoff behavior unless a separate production change is approved
+
+## 3. Current Model + GPT Workflow
+
+Current actual flow:
+
+```text
+book snapshot YAML
+-> scripts/book_snapshot_to_week_lines.py
+-> config/lines/{season}/week{week}_lines.yaml
+-> scripts/prospective_week_flow.py
+-> scripts/matchup_batch.py
+-> data/picks_{variant}/{season}/week_XX.jsonl
+-> GUI copies GPT prompt
+-> operator sends GPT 19-point research
+-> GUI saves research/gpt_snapshots/{season}/week_XX/{game_id}/full_19_points.md
+-> operator fills data/market_quotes/{season}/week_XX.jsonl
+-> scripts/variant_b_week_flow.py
+-> research/variant_b_week_flow/{season}/week_XX/*.json and summary.md
+```
+
+Automatic today:
+
+- schedule sync in daily bot command config: `python -m app.cli sync-nfl-schedule --season {season}`
+- fallback line export: `python -m app.cli export-lines-from-nfl --season {season} --week {week}`
+- book snapshot to lines conversion via `scripts/book_snapshot_to_week_lines.py`
+- model scan via `scripts/prospective_week_flow.py`
+- batch candidate output via `scripts/matchup_batch.py`
+- Variant B deterministic audit via `scripts/variant_b_week_flow.py` and `scripts/variant_b_audit.py`
+- daily task gating in `scripts/variant_b_daily_bot.py:evaluate_tasks`
+
+Manual today:
+
+- screenshot extraction from Pregame/book into YAML
+- real quote confirmation: book, spread, price, timestamp, executable status
+- GPT full 19-point research
+- GPT delta refresh
+- final operator judgment
+- closing line/closing price capture, unless added later
+
+Partially automated today:
+
+- quote override is read from `data/market_quotes/{season}/week_XX.jsonl` by `scripts/variant_b_week_flow.py:load_quote_overrides`
+- GPT structure is checked by `scripts/variant_b_week_flow.py:attach_gpt_snapshot_status`, but the content/evidence is still operator/GPT supplied
+- model proof can be generated by `scripts/variant_b_week_flow.py --with-model-proof`
+
+Files created today:
+
+- `data/book_snapshots/{season}/week_XX_screen_snapshot.yaml`
+- `config/lines/{season}/week{week}_lines.yaml`
+- `data/picks_{variant}/{season}/week_XX.jsonl`
+- `research/gpt_snapshots/{season}/week_XX/**/full_19_points.md`
+- `research/gpt_snapshots/{season}/week_XX/**/delta_*.md`
+- `data/market_quotes/{season}/week_XX.jsonl`
+- `research/variant_b_week_flow/{season}/week_XX/summary.md`
+- `research/variant_b_week_flow/{season}/week_XX/*.json`
+- `data/learning_ledger/{season}/week_XX/*` when enabled
+
+Current history risks:
+
+- `config/lines/{season}/week{week}_lines.yaml` is a current model input file and may be overwritten by later snapshots.
+- `data/market_quotes/{season}/week_XX.jsonl` is closer to append-only, but it is not yet the single authoritative event log.
+- `research/gpt_snapshots` preserves files, but there is no unified event sequence across market, model, GPT, injury, final quote and settlement.
+- GUI displays current state, but current state is inferred from multiple files, not projected from one event stream.
+
+## 4. Target Architecture
+
+Target layers:
+
+```text
+FrozenProductionModelAdapter
+EventContracts
+AppendOnlyEventStore
+CurrentStateProjector
+MarketSnapshotHistory
+WeeklyCandidateRegistry
+VariantBIntegration
+StructuredInjuryRosterInput
+WeatherSchedulePublicContext
+LineMovementEngine
+FinalQuoteGate
+OperatorDecisionService
+ClosingQuoteClvSettlement
+```
+
+Data flow:
+
+```text
+schedule source
+  -> GAME_CREATED event
+
+book/manual/odds snapshot
+  -> INITIAL_MARKET_SNAPSHOT / MARKET_QUOTE_UPDATED events
+  -> week lines adapter
+  -> frozen model input
+
+frozen model pipeline
+  -> MODEL_SCAN_COMPLETED event
+  -> MODEL_CANDIDATE_CREATED / MODEL_CANDIDATE_BLOCKED events
+  -> WeeklyCandidateRegistry
+
+GPT + Variant B
+  -> RESEARCH_STARTED / RESEARCH_COMPLETED / RESEARCH_UPDATED events
+  -> deterministic audit payload
+  -> research status on PregameGameRecord
+
+manual structured context
+  -> INJURY_UPDATED / ROSTER_UPDATED / WEATHER_UPDATED / PUBLIC_BETTING_UPDATED events
+
+final quote
+  -> FINAL_QUOTE_CAPTURED event
+  -> FinalQuoteGate
+
+operator
+  -> OPERATOR_PICK_APPROVED / OPERATOR_PICK_REJECTED events
+
+post-game
+  -> CLOSING_QUOTE_CAPTURED
+  -> GAME_SETTLED
+  -> CLV and learning ledger
+```
+
+The current `PregameGameRecord` is not a hand-edited master file. It is rebuilt from events.
+
+## 5. Data Contracts
+
+These contracts are design-level only in this phase. They should later be implemented as typed Python models plus tests.
+
+### PregameEvent
+
+Purpose: immutable append-only event envelope.
+
+Required:
+
+- `event_id`
+- `game_id`
+- `season`
+- `week`
+- `event_type`
+- `created_at_utc`
+- `effective_at_utc`
+- `source`
+- `schema_version`
+- `payload`
+
+Optional:
+
+- `idempotency_key`
+- `supersedes_event_id`
+- `correction_reason`
+- `operator`
+- `source_file`
+- `source_hash`
+
+Keys: `event_id`; idempotency via `idempotency_key`.
+Timestamps: created and effective UTC.
+Source metadata: source, source file/hash, operator when manual.
+Quality status: lives in payload where applicable.
+Schema version: event envelope and payload version.
+
+### PregameGameRecord
+
+Purpose: current view of one game.
+
+Required:
+
+- `season`
+- `week`
+- `game_id`
+- `away_team`
+- `home_team`
+- `kickoff_utc`
+- `current_decision_level`
+- `record_schema_version`
+
+Optional:
+
+- venue, neutral site, model fields, research status, injury status, weather status, public betting status, final quote status, operator verdict, settlement.
+
+Keys: `season`, `week`, `game_id`.
+Timestamps: last event time, model generated time, final quote time, verdict time.
+Source metadata: current-state fields should preserve source event IDs.
+Quality status: aggregate status derived from component statuses.
+Schema version: `pregame_game_record.v1`.
+
+### MarketSnapshot
+
+Purpose: one market observation without overwriting previous observations.
+
+Required:
+
+- `snapshot_id`
+- `game_id`
+- `snapshot_type`
+- `captured_at_utc`
+- `book`
+- `source`
+- `market_type`
+- `quality_status`
+- `executable_status`
+
+Optional:
+
+- `team_or_side`, `spread`, `spread_price`, `total`, `total_price`, `moneyline`, `quote_id`, `source_url`, `operator_note`.
+
+Keys: `snapshot_id`; also natural key `game_id + captured_at_utc + book + market_type + team_or_side`.
+Quality statuses: `MARKET_GRADE`, `EXECUTABLE_CONFIRMED`, `DISPLAYED_UNVERIFIED`, `STALE`, `INCONSISTENT_DISPLAY`, `MISSING_TIMESTAMP`, `MISSING_PRICE`.
+Schema version: `market_snapshot.v1`.
+
+### CandidateRecord
+
+Purpose: model output normalized into a weekly registry, not a final pick.
+
+Required:
+
+- `game_id`
+- `season`
+- `week`
+- `model_variant`
+- `candidate_status`
+- `production_eligible`
+- `preflight_status`
+
+Optional:
+
+- `selected_team`, `model_tag`, `model_margin`, `market_margin_at_scan`, `edge_vs_line`, `confidence`, `warnings`, `reason_codes`, `pick_record_path`.
+
+Keys: `game_id + model_variant + model_run_id`.
+Timestamps: `model_generated_at_utc`.
+Source metadata: pick JSONL path, commit/config hashes if present.
+Quality status: model input completeness/preflight.
+Schema version: `candidate_record.v1`.
+
+### ResearchRecord
+
+Purpose: store GPT/Variant B research and deterministic audit state.
+
+Required:
+
+- `game_id`
+- `research_type`
+- `captured_at_utc`
+- `source`
+- `variant_b_framework_version`
+- `status`
+
+Optional:
+
+- `gpt_snapshot_path`, `points_present`, `hard_blockers`, `warnings`, `evidence`, `confidence`, `impact`, `blocking`.
+
+Keys: `game_id + research_type + captured_at_utc`.
+Timestamps: research cutoff and captured/accessed times.
+Quality status: `STRUCTURALLY_COMPLETE`, `INCOMPLETE`, `MISSING`, `PENDING`, `NOT_ASSESSABLE`.
+Schema version: `research_record.v1`.
+
+### InjuryRecord
+
+Purpose: structured manual injury/practice input.
+
+Required:
+
+- `game_id`
+- `team`
+- `player`
+- `reported_at_utc`
+- `source`
+- `practice_status`
+- `game_status`
+- `impact`
+
+Optional:
+
+- position, role, starter status, injury type, blocking, operator note, source URL.
+
+Keys: `game_id + team + player + reported_at_utc`.
+Quality status: source/timestamp completeness and impact confidence.
+Schema version: `injury_record.v1`.
+
+### RosterRecord
+
+Purpose: structured roster/depth chart change.
+
+Required:
+
+- `game_id`
+- `team`
+- `change_type`
+- `reported_at_utc`
+- `source`
+- `impact`
+
+Optional:
+
+- player, position, role, old status, new status, depth chart effect, blocking.
+
+Keys: `game_id + team + change_type + reported_at_utc + player`.
+Schema version: `roster_record.v1`.
+
+### WeatherRecord
+
+Purpose: game-window weather and venue operation context.
+
+Required:
+
+- `game_id`
+- `captured_at_utc`
+- `source`
+- `forecast_horizon`
+- `risk_status`
+
+Optional:
+
+- temperature, wind, gusts, precipitation, snow, surface, roof status, source URL.
+
+Keys: `game_id + captured_at_utc + source`.
+Quality status: forecast availability, official/source reliability, horizon.
+Schema version: `weather_record.v1`.
+
+### PublicBettingRecord
+
+Purpose: optional public betting context.
+
+Required:
+
+- `game_id`
+- `market_type`
+- `side`
+- `source`
+- `captured_at_utc`
+- `reliability_status`
+
+Optional:
+
+- bet percentage, money percentage, source scope, book count, interpretation status.
+
+Keys: `game_id + market_type + side + source + captured_at_utc`.
+Quality status: reliability and scope.
+Schema version: `public_betting_record.v1`.
+
+### FinalQuote
+
+Purpose: quote used by final gate.
+
+Required:
+
+- `game_id`
+- `captured_at_utc`
+- `book`
+- `source`
+- `spread`
+- `price`
+- `quality_status`
+- `executable_status`
+
+Optional:
+
+- total, moneyline, quote ID, betslip confirmation, target stake, house rules checked.
+
+Keys: final quote event ID and quote ID if available.
+Quality status: final quote gate status.
+Schema version: `final_quote.v1`.
+
+### OperatorDecision
+
+Purpose: final auditable operator verdict.
+
+Required:
+
+- `game_id`
+- `operator`
+- `decision_timestamp_utc`
+- `verdict`
+- `reason_codes`
+- `model_version`
+- `variant_b_framework_version`
+
+Optional:
+
+- stake, comment, final quote ID, reduced stake reason.
+
+Keys: `game_id + decision_timestamp_utc + operator`.
+Quality status: valid only if final quote gate and required research gates pass.
+Schema version: `operator_decision.v1`.
+
+### ClosingQuote
+
+Purpose: post-market close reference.
+
+Required:
+
+- `game_id`
+- `captured_at_utc`
+- `book_or_source`
+- `market_type`
+- `quality_status`
+
+Optional:
+
+- closing spread, closing price, exact decision-line closing price, source URL.
+
+Keys: `game_id + market_type + book_or_source + captured_at_utc`.
+Schema version: `closing_quote.v1`.
+
+### SettlementRecord
+
+Purpose: result, units and process review.
+
+Required:
+
+- `game_id`
+- `settled_at_utc`
+- `result`
+- `units`
+- `operator_verdict`
+
+Optional:
+
+- final score, spread result, price CLV, spread CLV, closing quote ID, notes.
+
+Keys: `game_id + settled_at_utc`.
+Schema version: `settlement_record.v1`.
+
+## 6. Append-Only Event Model
+
+Base event structure:
+
+```yaml
+event_id:
+game_id:
+season:
+week:
+event_type:
+created_at_utc:
+effective_at_utc:
+source:
+schema_version:
+idempotency_key:
+supersedes_event_id:
+payload:
+```
+
+Event types:
 
 ```text
 GAME_CREATED
@@ -94,7 +563,10 @@ INITIAL_MARKET_SNAPSHOT
 MARKET_QUOTE_UPDATED
 MODEL_SCAN_COMPLETED
 MODEL_CANDIDATE_CREATED
-GPT_RESEARCH_COMPLETED
+MODEL_CANDIDATE_BLOCKED
+RESEARCH_STARTED
+RESEARCH_COMPLETED
+RESEARCH_UPDATED
 INJURY_UPDATED
 ROSTER_UPDATED
 WEATHER_UPDATED
@@ -105,140 +577,68 @@ OPERATOR_PICK_APPROVED
 OPERATOR_PICK_REJECTED
 CLOSING_QUOTE_CAPTURED
 GAME_SETTLED
+CORRECTION_EVENT
 ```
 
-Srodowy snapshot nie moze nadpisac wtorkowego.
+Idempotency:
 
-### 2.4. Kazda informacja zewnetrzna ma zrodlo
+- For automated events, generate `idempotency_key` from event type, game ID, source file/hash, model run ID or snapshot ID.
+- Re-processing the same file should not create duplicate logical events.
+- If an event is intentionally re-sent with the same idempotency key, the writer should return the existing event ID.
 
-Kazdy rekord dotyczacy linii, ceny, injury, rosteru, pogody, public betting albo statusu treningowego musi miec:
+Ordering:
 
-- source,
-- captured_at_utc albo reported_at_utc,
-- quality_status,
-- zakres informacji.
+- Sort projection by `effective_at_utc`, then `created_at_utc`, then `event_id`.
+- Late-arriving events are allowed. The projector must rebuild state deterministically.
 
-Brak zrodla lub timestampu musi obnizac jakosc danych albo blokowac finalna decyzje.
+Corrections:
 
-## 3. Mapa Do Istniejacego Repo
+- Never delete a wrong event.
+- Add `CORRECTION_EVENT` with `supersedes_event_id` and reason.
+- Projector applies the latest valid correction while preserving history.
 
-| Obszar | Obecny kod / dane | Status |
-| --- | --- | --- |
-| L1/L2/L3 ETL | `etl/l1_ingest.py`, `etl/l2_clean.py`, `etl/l3_aggregate.py`, `etl/mappers.py` | wykorzystac, nie przebudowywac |
-| Core12 / PowerScore | `metrics/core12.py`, `metrics/power_score.py` | wykorzystac |
-| Data cutoff / preflight | `utils/data_cutoff.py`, `utils/preflight.py` | wykorzystac jako gate produkcyjny |
-| Model metrics policy | `utils/model_metrics.py` | wykorzystac |
-| Matchup analyzer | `scripts/matchup_analyzer.py` | wykorzystac |
-| Batch pick output | `scripts/matchup_batch.py` | wykorzystac |
-| Weekly scan | `scripts/prospective_week_flow.py` | wykorzystac |
-| Market snapshot conversion | `scripts/book_snapshot_to_week_lines.py` | rozszerzyc adapterem append-only |
-| Daily bot | `scripts/variant_b_daily_bot.py`, `config/variant_b_daily_bot.yaml` | pozniej podlaczyc do nowych rekordow |
-| GUI | `scripts/variant_b_daily_bot_gui.py` | pozniej, po kontraktach |
-| Variant B audit | `scripts/variant_b_audit.py`, `scripts/variant_b_week_flow.py` | wykorzystac, nie tworzyc od zera |
-| GPT prompts | `docs/variant_b_final_gpt_research_prompt.md`, `docs/variant_b_sources_by_point.md` | wykorzystac |
-| Learning ledger | `scripts/variant_b_learning_ledger.py`, `scripts/variant_b_post_event_evaluation.py` | rozszerzyc po event logu |
-| Data sources registry | `config/data_sources.yaml` | aktualizowac przy nowych warstwach |
-| Contracts | `config/contracts.yaml`, `utils/contracts.py` | rozszerzyc albo dodac osobny kontrakt pregame |
-| Live Scenario | `live_scenario/*` | poza zakresem tego planu |
+Duplicate avoidance:
 
-## 4. Nowe Kontrakty Danych
+- `event_id` unique.
+- `idempotency_key` unique where present.
+- Natural uniqueness rules per payload type, for example `snapshot_id` for `MarketSnapshot`.
 
-Docelowe kontrakty:
+Current state rebuild:
+
+- Read all events for `game_id`.
+- Validate envelope and payload schemas.
+- Apply events in deterministic order.
+- Derive `PregameGameRecord`.
+- Preserve source event IDs for current fields.
+
+Out-of-order behavior:
+
+- Accept event if schema-valid.
+- Rebuild projection.
+- If event conflicts with a later final decision, record warning and require operator review.
+
+## 7. Market Snapshot History
+
+Market snapshot history must be append-only.
+
+Snapshot categories:
 
 ```text
-PregameEvent
-PregameGameRecord
-MarketSnapshot
-CandidateRecord
-ResearchRecord
-InjuryRecord
-RosterRecord
-WeatherRecord
-ScheduleSpotRecord
-PublicBettingRecord
-FinalQuote
-OperatorDecision
-ClosingQuote
-SettlementRecord
+INITIAL
+CURRENT
+FINAL
+CLOSING
 ```
 
-### 4.1. PregameEvent
-
-Podstawowy append-only rekord:
-
-```text
-event_id
-game_id
-season
-week
-event_type
-created_at_utc
-source
-schema_version
-payload
-```
-
-Wymagania:
-
-- `event_id` musi byc stabilny i unikalny.
-- `game_id` musi laczyc wszystkie zdarzenia jednego meczu.
-- `payload` ma byc walidowany wedlug typu zdarzenia.
-- Event log nie moze usuwac ani nadpisywac starych zdarzen.
-
-### 4.2. PregameGameRecord
-
-Aktualny widok meczu zbudowany z event logu.
-
-Minimalne pola:
-
-```text
-season
-week
-game_id
-away_team
-home_team
-kickoff_utc
-venue
-neutral_site
-
-model_variant
-model_tag
-selected_team
-model_margin
-market_margin_at_scan
-edge_vs_line
-confidence
-production_eligible
-preflight_status
-model_generated_at_utc
-
-research_status
-variant_b_status
-injury_status
-roster_status
-weather_status
-market_status
-final_quote_status
-
-decision_level
-operator_verdict
-stake
-reason_codes
-```
-
-### 4.3. MarketSnapshot
-
-Snapshot rynku:
+Every snapshot must support:
 
 ```text
 snapshot_id
 game_id
-snapshot_type
 captured_at_utc
 book
 source
 market_type
-team_or_side
 spread
 spread_price
 total
@@ -246,15 +646,6 @@ total_price
 moneyline
 quality_status
 executable_status
-```
-
-Snapshot types:
-
-```text
-INITIAL
-CURRENT
-FINAL
-CLOSING
 ```
 
 Quality statuses:
@@ -269,152 +660,23 @@ MISSING_TIMESTAMP
 MISSING_PRICE
 ```
 
-## 5. Etapy Prac
+Current implementation to reuse:
 
-### Etap 0 - Dokument architektury
+- `scripts/book_snapshot_to_week_lines.py:load_snapshot` validates top-level `book_snapshot` and `games`.
+- `scripts/book_snapshot_to_week_lines.py:american_price_or_none` normalizes American/decimal odds.
+- `scripts/book_snapshot_to_week_lines.py:build_lines` writes model-facing line YAML.
 
-Cel: zapisac ten plan jako repozytoryjny dokument i zmapowac go na istniejacy kod.
+Required adapter:
 
-Plik:
+- Convert every pasted book snapshot into `INITIAL_MARKET_SNAPSHOT` or `MARKET_QUOTE_UPDATED` events.
+- Continue producing `config/lines/{season}/week{week}_lines.yaml` for existing model compatibility.
+- Treat `config/lines` as model input, not historical truth.
 
-```text
-docs/season_2026_pregame_system_plan.md
-```
+## 8. Weekly Candidate Registry
 
-Kryterium zakonczenia:
+The candidate registry is a normalized view of all games after model scan. It is not a final pick file.
 
-- wiadomo, ktore moduly wykorzystujemy,
-- wiadomo, czego nie ruszamy,
-- wiadomo, jakie kontrakty dodajemy,
-- brak zmian w logice modelu.
-
-Status: wykonane przez utworzenie tego dokumentu.
-
-### Etap 1 - Champion CORE regression test
-
-Cel: automatycznie chronic zamrozony baseline.
-
-Test ma potwierdzac:
-
-```text
-74 bets
-61-12-1
-+128.70u
-ROI 58.0%
-Max Drawdown -6.30u
-```
-
-Zakres testu:
-
-- filtry Champion CORE,
-- liczba zakladow,
-- W-L-P,
-- profit,
-- risk,
-- ROI,
-- max drawdown.
-
-Kryterium zakonczenia:
-
-- test przechodzi na obecnych danych,
-- przyszla zmiana pokazuje regresje, jesli naruszy CORE.
-
-### Etap 2 - Kontrakty danych
-
-Cel: zdefiniowac wspolny format dla calego pregame systemu.
-
-Do dodania:
-
-- `PregameEvent`,
-- `PregameGameRecord`,
-- `MarketSnapshot`,
-- `CandidateRecord`,
-- `OperatorDecision`,
-- testy kontraktow.
-
-Preferowane miejsce:
-
-```text
-pregame/
-tests/test_pregame_contracts.py
-```
-
-Alternatywa, jesli chcemy trzymac wszystko w obecnym stylu:
-
-```text
-utils/pregame_contracts.py
-tests/test_pregame_contracts.py
-```
-
-Kryterium zakonczenia:
-
-- kontrakty mozna walidowac bez GUI,
-- brak zmian w Champion CORE.
-
-### Etap 3 - Append-only event log
-
-Cel: zapisywac pelna historie procesu decyzyjnego.
-
-Do dodania:
-
-- writer eventow,
-- reader eventow,
-- rebuild aktualnego `PregameGameRecord`,
-- test kolejnosci i braku nadpisywania.
-
-Proponowane pliki:
-
-```text
-pregame/event_store.py
-pregame/record_builder.py
-tests/test_pregame_event_store.py
-```
-
-Kryterium zakonczenia:
-
-- pelna historie jednego meczu mozna odtworzic od pierwszego snapshotu do settlementu.
-
-### Etap 4 - MarketSnapshot history
-
-Cel: ujednolicic linie i ceny przez caly tydzien.
-
-Wykorzystac:
-
-```text
-scripts/book_snapshot_to_week_lines.py
-data/book_snapshots/
-config/lines/
-data/market_quotes/
-```
-
-Dodac:
-
-- snapshot history,
-- validator,
-- statusy jakosci,
-- konwersje do eventow,
-- brak nadpisywania starych snapshotow.
-
-Kryterium zakonczenia:
-
-- dla kazdego meczu istnieje historia linii,
-- mozna policzyc ruch spreadu/ceny,
-- mozna wykryc brak timestampu albo brak ceny.
-
-### Etap 5 - Weekly Candidate Registry
-
-Cel: zbudowac jeden rejestr statusow modelu dla calego tygodnia.
-
-Wykorzystac:
-
-```text
-scripts/prospective_week_flow.py
-scripts/matchup_batch.py
-utils/preflight.py
-data/picks_variant_*/
-```
-
-Statusy:
+Statuses:
 
 ```text
 MODEL_CANDIDATE
@@ -424,28 +686,44 @@ NO_PLAY
 MISSING_DATA
 ```
 
-Kryterium zakonczenia:
+Current source:
 
-- jedna komenda tworzy strukturalna liste wszystkich meczow i ich statusow modelowych,
-- registry nie jest finalnym pick file.
+- `scripts/prospective_week_flow.py` validates lines, generates previews, runs `scripts/matchup_batch.py`, then writes picks.
+- `scripts/matchup_batch.py:run_batch` writes `data/picks_{variant}/{season}/week_XX.jsonl`.
+- `scripts/matchup_batch.py` currently filters/records production eligibility through `require_model_preflight`.
 
-### Etap 6 - Final Quote Gate
+Difference between registry and pick output:
 
-Cel: zablokowac zatwierdzenie decyzji na starej albo zlej linii.
+- Current pick output contains model-generated candidates and fields used by backtest/Variant B.
+- Candidate registry should include all games and their current model status, including `NO_PLAY`, `BLOCKED`, and `MISSING_DATA`.
+- Final operator decisions must not be written back into the model pick output as if they were model picks.
 
-Kontrole:
+Adapter:
 
-- timestamp quote,
-- source/book,
-- price present,
-- executable status,
-- acceptable quote frontier,
-- no-chase,
-- key number,
-- model production eligibility,
-- research status.
+- Read current pick JSONL.
+- Join with schedule/week games.
+- Emit `MODEL_SCAN_COMPLETED`.
+- Emit one candidate event per game.
 
-Statusy:
+## 9. Final Quote Gate
+
+The final quote gate prevents a final operator pick on stale, incomplete, or unacceptable market data.
+
+Required checks:
+
+- quote freshness
+- book/source present
+- price present
+- executable status
+- atomic spread + price identity when available
+- acceptable quote frontier
+- no-chase limit
+- key numbers
+- injury blockers
+- Variant B status
+- model production eligibility
+
+Statuses:
 
 ```text
 FINAL_QUOTE_VALID
@@ -458,15 +736,23 @@ WAIT_FOR_MARKET
 WAIT_FOR_INJURY_NEWS
 ```
 
-Kryterium zakonczenia:
+Current code to reuse:
 
-- bez poprawnego final quote nie mozna stworzyc `FINAL_OPERATOR_PICK`.
+- `scripts/variant_b_audit.py:build_market_snapshot`
+- `scripts/variant_b_audit.py:build_no_chase`
+- `scripts/variant_b_audit.py:build_price_quality`
+- `scripts/variant_b_audit.py:has_atomic_quote`
+- `scripts/variant_b_audit.py:has_model_generation_quote`
+- `scripts/variant_b_audit.py:has_frozen_frontier`
 
-### Etap 7 - Operator Verdict
+Important distinction:
 
-Cel: zapisac finalna, audytowalna decyzje operatora.
+- Variant B point 19 currently returns audit/operator action like `HOLD_PENDING_DATA` or `READY_FOR_NEXT_AUDIT_STAGE`.
+- That is not the same thing as final operator approval.
 
-Dozwolone decyzje:
+## 10. Operator Verdict
+
+Allowed final verdicts:
 
 ```text
 APPROVED
@@ -482,61 +768,93 @@ REJECTED_RESEARCH_RISK
 REJECTED_OPERATOR
 ```
 
-Kazda decyzja musi miec:
+Minimum conditions for `APPROVED`:
 
-- operator,
-- timestamp,
-- final quote,
-- stake,
-- reason code,
-- komentarz,
-- model version,
-- Variant B framework version.
+- model candidate exists and is production eligible,
+- final quote gate is `FINAL_QUOTE_VALID`,
+- quote is fresh and has book/source/price/timestamp,
+- Variant B deterministic audit has no active hard blockers,
+- required injury/roster/weather fields are either complete or explicitly not due/not material,
+- no no-chase/key-number blocker is active,
+- operator supplies stake and reason code,
+- decision timestamp is before kickoff.
 
-Kryterium zakonczenia:
+The service should emit:
 
-- kazdy candidate konczy proces jako approved, waiting, passed albo rejected.
+- `OPERATOR_PICK_APPROVED`
+- `OPERATOR_PICK_REJECTED`
+- or leave current state as `WAIT`
 
-### Etap 8 - Integracja Variant B i GPT
+It must never rewrite the model pick output.
 
-Cel: podlaczyc istniejacy workflow GPT/Variant B do event logu.
+## 11. Variant B And GPT Integration
 
-Wykorzystac:
+Existing Variant B stays the framework.
+
+Relevant existing components:
+
+- `docs/variant_b_final_gpt_research_prompt.md`: current final GPT prompt and output structure.
+- `docs/variant_b_19_point_master_prompt.md`: older master prompt and implementation grouping.
+- `docs/variant_b_sources_by_point.md`: source map for all 19 points.
+- `scripts/variant_b_audit.py`: deterministic rule/audit builder.
+- `scripts/variant_b_week_flow.py`: weekly audit runner.
+
+Existing 19 points:
 
 ```text
-docs/variant_b_final_gpt_research_prompt.md
-docs/variant_b_19_point_master_prompt.md
-docs/variant_b_sources_by_point.md
-scripts/variant_b_audit.py
-scripts/variant_b_week_flow.py
-research/gpt_snapshots/
-research/variant_b_week_flow/
+1 argument_against
+2 market_move_notes
+3 injury_role_notes
+4 schedule_spot_notes
+5 weather_notes
+6 key_number_check
+7 no_chase_limit
+8 price_quality
+9 market_snapshot
+10 public_bias / tickets_handle
+11 power_rankings_check
+12 roster_change_check
+13 matchup_specific_risk
+14 game_script_risk
+15 closing_line
+16 closing_price
+17 clv_points
+18 process_quality
+19 final_operator_decision
 ```
 
-Typy aktualizacji:
+Event mapping:
+
+- full GPT 19-point output -> `RESEARCH_COMPLETED`
+- GPT delta -> `RESEARCH_UPDATED`
+- final prekick refresh -> `RESEARCH_UPDATED` with `research_type=FINAL_REFRESH`
+- deterministic audit JSON -> payload evidence on same research event or a linked `VARIANT_B_AUDIT_COMPLETED` subtype if later added
+
+Every research point should map to:
 
 ```text
-FULL_RESEARCH
-DELTA_UPDATE
-FINAL_REFRESH
+point_id
+status
+evidence
+source
+captured_at_utc
+confidence
+impact
+blocking
 ```
 
-Zasady:
+Rules:
 
-- GPT dostarcza research,
-- deterministic audit sprawdza gate'y,
-- GPT nie moze ustawic `FINAL_OPERATOR_PICK`,
-- brak informacji oznacza `UNKNOWN` albo `PENDING`.
+- GPT may summarize and gather evidence.
+- Python/rule engine calculates and gates.
+- GPT cannot set `FINAL_OPERATOR_PICK`.
+- Missing data remains `UNKNOWN`, `PENDING`, `MISSING`, or `NOT_ASSESSABLE`.
 
-Kryterium zakonczenia:
+## 12. Injury, Roster, Weather And Public Betting
 
-- kazdy GPT research jest osobnym eventem i mozna porownac kolejne wersje.
+First version should use manual structured input. Do not begin with scraping.
 
-### Etap 9 - Injury i roster structured input
-
-Cel: dodac strukturalny input kadrowy bez zaczynania od automatycznego scrapingu.
-
-Minimalne pola:
+Injury input:
 
 ```text
 player
@@ -554,46 +872,21 @@ blocking
 operator_note
 ```
 
-Practice statuses:
+Roster input:
 
 ```text
-FULL
-LIMITED
-DNP
-UNKNOWN
+team
+player
+change_type
+old_status
+new_status
+source
+reported_at_utc
+impact
+blocking
 ```
 
-Game statuses:
-
-```text
-QUESTIONABLE
-DOUBTFUL
-OUT
-IR
-PUP
-ACTIVE
-INACTIVE
-UNKNOWN
-```
-
-Impact:
-
-```text
-LOW
-MEDIUM
-HIGH
-BLOCKING
-```
-
-Kryterium zakonczenia:
-
-- kazdy kandydat ma injury/roster status z timestampem i zrodlem.
-
-### Etap 10 - Weather i schedule spot
-
-Cel: zapisac warunki meczu i kontekst terminarza.
-
-Weather:
+Weather input:
 
 ```text
 temperature
@@ -606,43 +899,10 @@ roof_status
 forecast_horizon
 source
 captured_at_utc
+risk_status
 ```
 
-Schedule spot:
-
-```text
-short_week
-bye_week
-rest_days
-rest_difference
-international_travel
-time_zone_change
-consecutive_road_games
-Monday_to_Sunday
-Thursday_game
-```
-
-Risk status:
-
-```text
-NO_MATERIAL_RISK
-LOW_RISK
-MEDIUM_RISK
-HIGH_RISK
-BLOCKING_RISK
-```
-
-Kryterium zakonczenia:
-
-- weather i schedule spot sa widoczne w Variant B i operator record.
-
-### Etap 11 - Public betting
-
-Cel: dodac bet percentage i money percentage jako kontekst, nie jako samodzielny sygnal.
-
-Priorytet: nizszy niz model, quote, injury, Variant B i final verdict.
-
-Pola:
+Public betting input:
 
 ```text
 market_type
@@ -656,76 +916,19 @@ book_count
 reliability_status
 ```
 
-Statusy:
+Public betting is optional context in v1. Missing bet percentage or money percentage must not block the first version.
 
-```text
-PUBLIC_HEAVY
-MONEY_DIVERGENCE
-POSSIBLE_REVERSE_LINE_MOVE
-BALANCED_MARKET
-LOW_RELIABILITY
-```
-
-Zakaz:
+Forbidden automatic label:
 
 ```text
 SHARP_MONEY_CONFIRMED
 ```
 
-bez twardych podstaw.
+unless a future trusted source contract supports it.
 
-Kryterium zakonczenia:
+## 13. Decision Log, Closing Quote And CLV
 
-- public betting jest informacja pomocnicza i nie steruje samodzielnie decyzja.
-
-### Etap 12 - Line Movement Engine
-
-Cel: automatycznie oceniac ruch rynku.
-
-Funkcje:
-
-- initial vs current,
-- current vs final,
-- final vs closing,
-- ruch spreadu,
-- ruch ceny,
-- przejscie przez key numbers,
-- ruch zgodny lub przeciwny do public betting,
-- poprawa albo utrata wartosci,
-- no-chase enforcement.
-
-Key numbers:
-
-```text
-3
-6
-7
-10
-14
-```
-
-Statusy:
-
-```text
-VALUE_IMPROVED
-VALUE_STABLE
-VALUE_REDUCED
-KEY_NUMBER_LOST
-PRICE_TOO_HIGH
-REVERSE_MOVE_POSSIBLE
-NO_CHASE_BLOCK
-QUOTE_REQUIRED
-```
-
-Kryterium zakonczenia:
-
-- system pokazuje, czy aktualny quote nadal spelnia warunki wejscia.
-
-### Etap 13 - Decision log, closing line i CLV
-
-Cel: ocenic po sezonie nie tylko wynik, ale tez jakosc decyzji.
-
-Dane:
+Decision log should support:
 
 ```text
 model_line
@@ -743,173 +946,452 @@ operator_verdict
 reason_codes
 ```
 
-Raporty:
-
-- wynik wedlug model tag,
-- wynik wedlug quote quality,
-- wynik wedlug dnia zagrania,
-- wynik wedlug injury risk,
-- wynik wedlug public split,
-- wynik wedlug line movement,
-- CLV wedlug typu picku,
-- approved vs rejected candidates.
-
-Kryterium zakonczenia:
-
-- po meczu mozliwe jest settlement i ocena procesu decyzyjnego.
-
-### Etap 14 - Pelna symulacja Week 1
-
-Cel: przejsc kompletny tydzien przed sezonem.
-
-Symulowany przeplyw:
+Post-game event sequence:
 
 ```text
-schedule
--> initial snapshot
--> model scan
--> candidate registry
--> GPT full research
--> injury update
--> weather update
--> public betting update
--> market update
--> GPT delta update
--> final quote
--> final refresh
--> operator decision
--> closing quote
--> settlement
--> CLV
+CLOSING_QUOTE_CAPTURED
+GAME_SETTLED
 ```
 
-Testy:
+CLV should be computed only when a valid bet line and closing reference are present. If closing price is missing or not source-qualified, CLV price is `NOT_ASSESSABLE`.
 
-- wspolny game_id,
-- poprawne timestampy,
-- brak nadpisywania,
-- poprawna kolejnosc zdarzen,
-- blokada stale quote,
-- blokada missing required,
-- poprawne reason codes,
-- odtworzenie decyzji,
-- brak wplywu na Champion CORE.
+Existing scripts to inspect later:
 
-Kryterium zakonczenia:
+- `scripts/variant_b_post_event_evaluation.py`
+- `scripts/variant_b_learning_ledger.py`
+- `scripts/settle_prospective_ledger.py`
 
-- pelny tydzien mozna przeprowadzic bez niekontrolowanych recznych obejsc.
+No CLV implementation is part of this stage.
 
-### Etap 15 - GUI Operator Center
+## 14. Production Baseline Protection
 
-Cel: podlaczyc stabilny backend do jednego centrum pracy.
+Frozen production scope:
 
-Zasada:
+- L2/L3 ETL behavior.
+- rolling/Core12 and PowerScore behavior.
+- `scripts/matchup_analyzer.py` scoring/classification behavior.
+- `scripts/matchup_batch.py` production pick output behavior.
+- `utils/preflight.py` production gate behavior.
+- Champion CORE filters in `metrics/ats_features.py`.
 
-GUI nie powstaje przed kontraktami danych. GUI jest nakladka na system, nie zrodlem logiki.
+Champion CORE expected regression:
 
-Docelowy uklad:
+```text
+74 bets
+61-12-1
++128.70u
+ROI 58.0%
+Max DD -6.30u
+```
 
-- lista meczow i statusow,
-- panel modelu,
-- panel researchu,
-- panel final quote / decision,
-- panel closing / CLV / settlement,
-- Live Scenario pozostaje osobnym modulem.
+Recommended first regression test location:
 
-Kryterium zakonczenia:
+```text
+tests/test_champion_core_regression.py
+```
 
-- operator moze przeprowadzic caly tydzien bez recznego szukania wielu niezaleznych plikow.
+Recommended source:
 
-### Etap 16 - Gotowosc produkcyjna
+- call `metrics.ats_features.load_core_gom_picks`
+- summarize W-L-P/profit/risk/ROI/max drawdown using existing logic or a narrow local helper in the test
+- assert exact frozen values with small float tolerances
 
-System jest gotowy, kiedy:
+New pregame layer must call frozen scripts as adapters. It must not edit their output semantics.
 
-- Champion CORE regression test przechodzi,
-- wszystkie mecze maja wspolny game_id,
-- event log jest append-only,
-- snapshoty nie sa nadpisywane,
-- candidate registry dziala,
-- Variant B jest zapisany strukturalnie,
-- injury/roster workflow dziala,
-- final quote gate dziala,
-- operator verdict jest wymagany,
-- closing line i CLV sa zapisywane,
-- Week 1 simulation przechodzi end-to-end,
-- GUI korzysta ze stabilnych kontraktow,
-- istnieje manualny workflow awaryjny.
+## 15. Proposed Files And Directory Structure
 
-## 6. Priorytety
+Files to create after this plan is approved:
 
-### Krytyczne przed sezonem
+```text
+pregame/__init__.py
+pregame/contracts.py
+pregame/events.py
+pregame/event_store.py
+pregame/projector.py
+pregame/market_snapshots.py
+pregame/candidate_registry.py
+pregame/final_quote_gate.py
+pregame/operator_decision.py
+pregame/clv.py
+tests/test_champion_core_regression.py
+tests/test_pregame_contracts.py
+tests/test_pregame_event_model.py
+tests/test_pregame_market_snapshots.py
+tests/test_pregame_candidate_registry.py
+tests/test_pregame_final_quote_gate.py
+```
 
-1. Dokument architektury.
-2. Champion CORE regression test.
-3. Kontrakty danych.
-4. Append-only event log.
-5. MarketSnapshot history.
-6. Weekly Candidate Registry.
-7. Final Quote Gate.
-8. Operator Verdict.
-9. Variant B integration.
-10. Injury/roster structured input.
-11. Decision Log i CLV.
-12. Week 1 simulation.
+Files likely to change later:
 
-### Wazne, ale nieblokujace pierwszej wersji
+```text
+config/data_sources.yaml
+config/contracts.yaml or new pregame schema config
+scripts/book_snapshot_to_week_lines.py
+scripts/prospective_week_flow.py
+scripts/variant_b_week_flow.py
+scripts/variant_b_daily_bot.py
+scripts/variant_b_daily_bot_gui.py
+```
 
-1. Pogoda w pelni automatyczna.
-2. Public betting.
-3. Automatyczny injury ingestion.
-4. Automatyczny odds feed.
-5. Alerty o zmianach rynku.
-6. Rozbudowany dashboard CLV.
+Files not to change in early stages:
 
-### Poza zakresem
+```text
+metrics/ats_features.py
+scripts/matchup_analyzer.py
+scripts/matchup_batch.py
+utils/preflight.py
+utils/data_cutoff.py
+live_scenario/*
+```
 
-1. Live Scenario.
-2. Halftime prediction.
-3. Live betting model.
-4. Forum formatter.
-5. Automatyczne zatwierdzanie pickow bez operatora.
+If an early test reveals a baseline issue, stop and review rather than patching model logic.
 
-## 7. Rekomendowana Kolejnosc Commitow
+## 16. Implementation Plan
 
-1. `docs/season_2026_pregame_system_plan.md`.
-2. Champion CORE regression test.
-3. Kontrakty: `PregameEvent`, `PregameGameRecord`, `MarketSnapshot`, `CandidateRecord`, `OperatorDecision`.
-4. Append-only event store i aktualny widok meczu.
-5. Market snapshot history i validator.
-6. Weekly Candidate Registry.
-7. Final Quote Gate.
-8. Operator Verdict.
-9. Variant B integration.
-10. Injury/roster structured input.
-11. Weather i schedule spot.
-12. Public Betting Record.
-13. Line Movement Engine.
-14. Decision Log, closing line i CLV.
-15. Week 1 end-to-end simulation.
-16. GUI Operator Center.
-17. Production readiness report i finalny tag.
+### Commit 1 - Champion CORE regression test
 
-## 8. Pierwszy Etap Implementacyjny Po Zatwierdzeniu
+Goal: protect baseline.
 
-Po zatwierdzeniu tego dokumentu pierwszy maly etap implementacyjny powinien obejmowac tylko:
+Files:
+
+- `tests/test_champion_core_regression.py`
+
+Tests:
+
+- assert 74 bets
+- assert 61-12-1
+- assert +128.70u
+- assert ROI 58.0%
+- assert max drawdown -6.30u
+- assert filters: variant D balanced, GOM, confidence >= 85, edge >= 4, week >= 3, abs(handicap) <= 7
+
+Acceptance:
+
+- test passes without changing production code.
+
+Dependencies: current data in `data/picks_variant_d_balanced`.
+Baseline risk: low if test-only.
+
+### Commit 2 - Data contracts
+
+Goal: define typed contract models/enums.
+
+Files:
+
+- `pregame/contracts.py`
+- `pregame/events.py`
+- `tests/test_pregame_contracts.py`
+
+Acceptance:
+
+- schemas validate required fields,
+- invalid timestamps/statuses fail,
+- no model code touched.
+
+Dependencies: Commit 1.
+Baseline risk: low.
+
+### Commit 3 - Append-only event model
+
+Goal: event envelope, event IDs, idempotency and correction rules.
+
+Files:
+
+- `pregame/event_store.py`
+- `tests/test_pregame_event_model.py`
+
+Acceptance:
+
+- duplicate idempotency key does not create duplicate logical event,
+- correction event supersedes without deletion,
+- event order is deterministic.
+
+Dependencies: Commit 2.
+Baseline risk: low.
+
+### Commit 4 - Current-state projector
+
+Goal: rebuild `PregameGameRecord` from events.
+
+Files:
+
+- `pregame/projector.py`
+- `tests/test_pregame_projector.py`
+
+Acceptance:
+
+- late-arriving events rebuild current state,
+- source event IDs are preserved,
+- final decision remains distinct from model candidate.
+
+Dependencies: Commit 3.
+Baseline risk: low.
+
+### Commit 5 - Market snapshot history
+
+Goal: append-only market snapshot adapter.
+
+Files:
+
+- `pregame/market_snapshots.py`
+- tests for snapshot quality/statuses
+- later adapter touch to `scripts/book_snapshot_to_week_lines.py` only if needed
+
+Acceptance:
+
+- initial/current/final/closing snapshots are preserved,
+- missing timestamp/price/source becomes quality status,
+- line YAML remains compatibility output only.
+
+Dependencies: Commit 4.
+Baseline risk: medium if touching conversion script; keep adapter separate first.
+
+### Commit 6 - Weekly Candidate Registry
+
+Goal: normalize model output and all-games weekly state.
+
+Files:
+
+- `pregame/candidate_registry.py`
+- tests
+
+Acceptance:
+
+- pick JSONL maps to candidate records,
+- non-candidate games can be represented as `NO_PLAY` or `MISSING_DATA`,
+- final operator status is not written to pick output.
+
+Dependencies: Commit 4.
+Baseline risk: low if read-only adapter.
+
+### Commit 7 - Final Quote Gate
+
+Goal: deterministic gate for final quote validity.
+
+Files:
+
+- `pregame/final_quote_gate.py`
+- tests
+
+Acceptance:
+
+- stale/missing price/missing timestamp blocks,
+- acceptable frontier and no-chase fields are respected when present,
+- missing optional public betting does not block.
+
+Dependencies: Commits 5 and 6.
+Baseline risk: low.
+
+### Commit 8 - Operator Verdict
+
+Goal: final operator decision service.
+
+Files:
+
+- `pregame/operator_decision.py`
+- tests
+
+Acceptance:
+
+- `APPROVED` requires valid final quote gate and research/model status,
+- rejected/pass/wait decisions require reason codes,
+- output is event, not mutation of pick file.
+
+Dependencies: Commit 7.
+Baseline risk: low.
+
+### Commit 9 - Variant B integration
+
+Goal: map existing Variant B outputs to events.
+
+Files:
+
+- `pregame/variant_b_adapter.py`
+- tests
+
+Acceptance:
+
+- full 19, delta, final refresh map to research events,
+- deterministic audit status is preserved,
+- GPT cannot set final operator pick.
+
+Dependencies: Commit 4.
+Baseline risk: medium; avoid changing `scripts/variant_b_audit.py` logic.
+
+### Commit 10 - Injury/roster structured input
+
+Goal: manual structured evidence.
+
+Files:
+
+- `pregame/manual_inputs.py`
+- tests
+
+Acceptance:
+
+- injury/roster records require source and timestamp,
+- impact/blocking status validated.
+
+Dependencies: contracts.
+Baseline risk: low.
+
+### Commit 11 - Decision log and CLV
+
+Goal: post-decision records.
+
+Files:
+
+- `pregame/clv.py`
+- tests
+
+Acceptance:
+
+- CLV computed only with valid bet and closing quote,
+- missing closing price returns not assessable.
+
+Dependencies: final quote and operator decision.
+Baseline risk: low.
+
+### Commit 12 - Week 1 end-to-end simulation
+
+Goal: prove the full event process.
+
+Files:
+
+- `tests/test_pregame_week1_simulation.py`
+- simulated fixtures under tests only
+
+Acceptance:
+
+- schedule -> initial snapshot -> model candidate -> GPT research -> injury update -> market update -> final quote -> operator decision -> closing quote -> settlement -> CLV.
+
+Dependencies: previous commits.
+Baseline risk: low if fixtures are isolated.
+
+### Commit 13 - GUI after backend stability
+
+Goal: connect operator center to central backend.
+
+Files:
+
+- `scripts/variant_b_daily_bot.py`
+- `scripts/variant_b_daily_bot_gui.py`
+- config updates
+
+Acceptance:
+
+- GUI reads current `PregameGameRecord`,
+- no business logic lives only in GUI,
+- old manual workflow remains available.
+
+Dependencies: stable backend.
+Baseline risk: medium.
+
+## 17. Week 1 End-To-End Simulation
+
+Scenario:
+
+```text
+GAME_CREATED
+INITIAL_MARKET_SNAPSHOT
+MODEL_SCAN_COMPLETED
+MODEL_CANDIDATE_CREATED
+RESEARCH_STARTED
+RESEARCH_COMPLETED
+INJURY_UPDATED
+MARKET_QUOTE_UPDATED
+FINAL_QUOTE_CAPTURED
+RESEARCH_UPDATED
+RESEARCH_APPROVED
+OPERATOR_PICK_APPROVED or OPERATOR_PICK_REJECTED
+CLOSING_QUOTE_CAPTURED
+GAME_SETTLED
+```
+
+Simulation checks:
+
+- all records share one `game_id`,
+- every external input has source and timestamp,
+- no event overwrites an older event,
+- out-of-order events project deterministically,
+- stale quote blocks approval,
+- missing required research blocks approval,
+- public betting missing does not block v1,
+- Champion CORE regression still passes,
+- no Live Scenario files are used.
+
+## 18. Risks And Open Decisions
+
+Critical:
+
+- Manual market quote can be stale or non-executable.
+- Current branch is after frozen baseline; production claims must reference the tag, not generic `main`.
+- `FINAL_OPERATOR_PICK` must not be confused with Variant B point 19 operator action.
+
+High:
+
+- Current `config/lines` can be overwritten; event log must become source of market history.
+- GPT evidence is structural but not deterministic; Python gates must remain authority.
+- Timestamp-level cutoff exists but is not universal across all current production artifacts.
+
+Medium:
+
+- Public betting source reliability is unknown.
+- Injury/roster automation source choice is unresolved.
+- Closing line source and exact close definition are unresolved.
+- GUI may hide state complexity if backend contracts are not stable first.
+
+Low:
+
+- Existing Ruff import-order issues remain outside the production baseline.
+- Some generated/research artifacts may look authoritative unless clearly labeled.
+
+UNKNOWN_REQUIRES_REVIEW:
+
+- exact odds provider for market-grade quote history,
+- final closing-line source,
+- official injury feed automation source,
+- whether public betting will be paid-feed, manual, or omitted in v1,
+- final storage format: JSONL only vs SQLite/DuckDB plus JSONL export.
+
+## 19. First Small Implementation Commit
+
+Recommended first implementation commit after this document is approved:
 
 ```text
 Champion CORE regression test
 +
-kontrakty danych
+basic pregame contract enums/models
 +
-append-only event model
+event enums
 +
-testy
+contract tests
 ```
 
-Zakazy dla pierwszego etapu:
+Exact proposed files:
 
-- nie zmieniac logiki modelu,
-- nie zmieniac progow Champion CORE,
-- nie zmieniac backtestu,
-- nie przebudowywac GUI,
-- nie mieszac Live Scenario z pregame systemem.
+```text
+tests/test_champion_core_regression.py
+pregame/__init__.py
+pregame/contracts.py
+pregame/events.py
+tests/test_pregame_contracts.py
+```
+
+Do not include yet:
+
+- event store,
+- projector,
+- GUI changes,
+- automated injury scraping,
+- public betting automation,
+- market provider integration,
+- Live Scenario changes.
+
+Acceptance:
+
+- Champion CORE regression passes.
+- Contract tests pass.
+- No production model file changes.
+- No Champion CORE threshold changes.
+- No Variant B logic changes.

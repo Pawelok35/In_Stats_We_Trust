@@ -1,0 +1,106 @@
+"""Enums for the NFL 2026 pregame operator layer."""
+
+from __future__ import annotations
+
+from enum import Enum
+
+
+class _StrEnum(str, Enum):
+    """Python 3.10 compatible string enum base."""
+
+
+class PregameEventType(_StrEnum):
+    """Append-only event types for the pregame decision log."""
+
+    GAME_CREATED = "GAME_CREATED"
+    INITIAL_MARKET_SNAPSHOT = "INITIAL_MARKET_SNAPSHOT"
+    MARKET_QUOTE_UPDATED = "MARKET_QUOTE_UPDATED"
+    MODEL_SCAN_COMPLETED = "MODEL_SCAN_COMPLETED"
+    MODEL_CANDIDATE_CREATED = "MODEL_CANDIDATE_CREATED"
+    MODEL_CANDIDATE_BLOCKED = "MODEL_CANDIDATE_BLOCKED"
+    RESEARCH_STARTED = "RESEARCH_STARTED"
+    RESEARCH_COMPLETED = "RESEARCH_COMPLETED"
+    RESEARCH_UPDATED = "RESEARCH_UPDATED"
+    INJURY_UPDATED = "INJURY_UPDATED"
+    ROSTER_UPDATED = "ROSTER_UPDATED"
+    WEATHER_UPDATED = "WEATHER_UPDATED"
+    PUBLIC_BETTING_UPDATED = "PUBLIC_BETTING_UPDATED"
+    FINAL_QUOTE_CAPTURED = "FINAL_QUOTE_CAPTURED"
+    RESEARCH_APPROVED = "RESEARCH_APPROVED"
+    OPERATOR_PICK_APPROVED = "OPERATOR_PICK_APPROVED"
+    OPERATOR_PICK_REJECTED = "OPERATOR_PICK_REJECTED"
+    CLOSING_QUOTE_CAPTURED = "CLOSING_QUOTE_CAPTURED"
+    GAME_SETTLED = "GAME_SETTLED"
+
+
+class CandidateStatus(_StrEnum):
+    """Model-side candidate registry statuses."""
+
+    MODEL_CANDIDATE = "MODEL_CANDIDATE"
+    WATCHLIST = "WATCHLIST"
+    BLOCKED = "BLOCKED"
+    NO_PLAY = "NO_PLAY"
+    MISSING_DATA = "MISSING_DATA"
+
+
+class DecisionLevel(_StrEnum):
+    """Separate decision levels; these are not operator verdicts."""
+
+    MODEL_CANDIDATE = "MODEL_CANDIDATE"
+    RESEARCH_APPROVED = "RESEARCH_APPROVED"
+    FINAL_OPERATOR_PICK = "FINAL_OPERATOR_PICK"
+
+
+class OperatorVerdict(_StrEnum):
+    """Allowed final operator verdict values."""
+
+    APPROVED = "APPROVED"
+    APPROVED_REDUCED_STAKE = "APPROVED_REDUCED_STAKE"
+    WAIT = "WAIT"
+    PASS = "PASS"
+    REJECTED_MODEL_DATA = "REJECTED_MODEL_DATA"
+    REJECTED_INJURY = "REJECTED_INJURY"
+    REJECTED_PRICE = "REJECTED_PRICE"
+    REJECTED_LINE_MOVE = "REJECTED_LINE_MOVE"
+    REJECTED_MARKET_QUALITY = "REJECTED_MARKET_QUALITY"
+    REJECTED_RESEARCH_RISK = "REJECTED_RESEARCH_RISK"
+    REJECTED_OPERATOR = "REJECTED_OPERATOR"
+
+
+class SnapshotKind(_StrEnum):
+    """Market snapshot lifecycle labels."""
+
+    INITIAL = "INITIAL"
+    CURRENT = "CURRENT"
+    FINAL = "FINAL"
+    CLOSING = "CLOSING"
+
+
+class MarketQualityStatus(_StrEnum):
+    """Evidence quality status for market data."""
+
+    MARKET_GRADE = "MARKET_GRADE"
+    EXECUTABLE_CONFIRMED = "EXECUTABLE_CONFIRMED"
+    DISPLAYED_UNVERIFIED = "DISPLAYED_UNVERIFIED"
+    STALE = "STALE"
+    INCONSISTENT_DISPLAY = "INCONSISTENT_DISPLAY"
+    MISSING_TIMESTAMP = "MISSING_TIMESTAMP"
+    MISSING_PRICE = "MISSING_PRICE"
+
+
+class ExecutableStatus(_StrEnum):
+    """Execution status is distinct from market evidence quality."""
+
+    CONFIRMED = "CONFIRMED"
+    DISPLAYED_ONLY = "DISPLAYED_ONLY"
+    UNVERIFIED = "UNVERIFIED"
+    NOT_EXECUTABLE = "NOT_EXECUTABLE"
+    UNKNOWN = "UNKNOWN"
+
+
+class MarketType(_StrEnum):
+    """Supported market types for basic pregame contracts."""
+
+    SPREAD = "SPREAD"
+    TOTAL = "TOTAL"
+    MONEYLINE = "MONEYLINE"
