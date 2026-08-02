@@ -1,0 +1,161 @@
+# Single-stage PREKICK rules profile for explicit Variant B Stage 11.2 builds.
+# This file does not replace the multi-stage config/variant_b_rules.yaml.
+
+audit_stages:
+- PREKICK
+framework_version: variant_b_audit_v1
+rules:
+  AG-01:
+    blocking: false
+    description: Pick math integrity mismatch.
+    risk_level: HIGH
+  AG-02:
+    blocking: false
+    description: Whole-number spread requires p_cover, p_push, p_loss.
+    risk_level: HIGH
+  AG-04:
+    blocking: false
+    description: Market source, quote timestamp, and executable status are required.
+    risk_level: HIGH
+  AG-05:
+    blocking: false
+    description: Missing model uncertainty or margin distribution.
+    risk_level: MEDIUM
+  KN-02:
+    blocking: false
+    description: Spread is on a configured key number.
+    risk_level: MEDIUM
+  MM-01:
+    blocking: false
+    description: Missing opener.
+    risk_level: MEDIUM
+  MM-02:
+    blocking: false
+    description: Current quote is not market-grade.
+    risk_level: HIGH
+  MM-04:
+    blocking: false
+    description: Missing model-generation quote.
+    risk_level: HIGH
+  MS-01:
+    blocking: false
+    description: Market snapshot must identify event, selected side, market scope,
+      spread, price, source, and evidence grade.
+    risk_level: HIGH
+  MS-02:
+    blocking: false
+    description: Spread and price must be an atomic quote from the same quote ID/market/selection/payload.
+    risk_level: HIGH
+  MS-03:
+    blocking: false
+    description: Manual consensus is not market-grade proof.
+    risk_level: MEDIUM
+  MS-04:
+    blocking: false
+    description: Provider quote is not direct book betslip verification or accepted
+      ticket.
+    risk_level: MEDIUM
+  MS-05:
+    blocking: false
+    description: Direct-book proof requires target-stake check and no unresolved odds-change
+      warning.
+    risk_level: HIGH
+  MS-06:
+    blocking: false
+    description: Provider limit and account-specific accepted stake must be separate.
+    risk_level: MEDIUM
+  NC-03:
+    blocking: false
+    description: Unfavorable move off or through 3 or 7.
+    risk_level: HIGH
+  NC-04:
+    blocking: false
+    description: No-chase not assessable without model-generation quote.
+    risk_level: HIGH
+  OD-01:
+    blocking: false
+    description: Due blocking rules force hold/return workflow.
+    risk_level: HIGH
+  OD-02:
+    blocking: false
+    description: Integrity invalidators route to invalid audit.
+    risk_level: HIGH
+  OD-03:
+    blocking: false
+    description: Data identity or quote mapping errors route to data correction.
+    risk_level: HIGH
+  OD-04:
+    blocking: false
+    description: Missing model artifacts route to model rerun.
+    risk_level: HIGH
+  OD-05:
+    blocking: false
+    description: Pending official windows route to hold pending data.
+    risk_level: MEDIUM
+  OD-06:
+    blocking: false
+    description: Operator decision cannot perform new research or model calculations.
+    risk_level: HIGH
+  OD-07:
+    blocking: false
+    description: Operator decision should be append-only and snapshot-bound.
+    risk_level: MEDIUM
+  PROC-01:
+    blocking: false
+    description: Process quality requires immutable point outputs and frozen policy.
+    risk_level: HIGH
+  PROC-02:
+    blocking: false
+    description: Due blocking rules override numeric quality score.
+    risk_level: HIGH
+  PROC-03:
+    blocking: false
+    description: Not-due points are pending_not_due rather than failures.
+    risk_level: MEDIUM
+  PROC-04:
+    blocking: false
+    description: Future information cannot be used in predecision process quality.
+    risk_level: HIGH
+  PROC-05:
+    blocking: false
+    description: LLM numeric outputs or gate statuses cannot satisfy deterministic
+      process checks.
+    risk_level: HIGH
+  PROC-06:
+    blocking: false
+    description: Cross-point identity, model, PMF, market scope, and quote IDs must
+      be consistent.
+    risk_level: HIGH
+  PROC-07:
+    blocking: false
+    description: Manual overrides must be append-only and hashed.
+    risk_level: MEDIUM
+  PROC-08:
+    blocking: false
+    description: Readiness must be reported by phase.
+    risk_level: MEDIUM
+  PXQ-01:
+    blocking: false
+    description: Price quality requires a fresh atomic executable quote.
+    risk_level: HIGH
+  PXQ-02:
+    blocking: false
+    description: Price valuation requires p_cover/p_push/p_loss or frozen acceptable_quote_frontier.
+    risk_level: HIGH
+  PXQ-03:
+    blocking: false
+    description: Manual consensus or aggregator-only quote cannot be treated as executable
+      price proof.
+    risk_level: HIGH
+  PXQ-04:
+    blocking: false
+    description: Spread and price must come from the same quote/snapshot.
+    risk_level: HIGH
+  PXQ-05:
+    blocking: false
+    description: Promotional wager types require separate EV handling.
+    risk_level: MEDIUM
+  PXQ-06:
+    blocking: false
+    description: Break-even probability must be push-aware.
+    risk_level: MEDIUM

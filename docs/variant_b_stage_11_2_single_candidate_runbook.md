@@ -26,7 +26,7 @@ Single candidate only. Single evidence sidecar only. Manual invocation only. Exp
 
 `--evidence` is one JSON file containing a valid `VariantBGptEvidenceSidecar`.
 
-`--rules` is one explicit YAML rules mapping. It must contain exactly one explicit audit stage for this run.
+`--rules` is one explicit YAML rules mapping. It must contain exactly one explicit audit stage for this run. Use `config/variant_b_rules_prekick.yaml` for this single-candidate PREKICK workflow. `config/variant_b_rules.yaml` is the existing multi-stage configuration and is not accepted by this entry point.
 
 `--build-timestamp` is an explicit UTC ISO-8601 timestamp, for example `2026-09-08T18:30:00Z`.
 
@@ -51,7 +51,7 @@ Use a candidate produced by the model adapter with authoritative `away`, `home`,
 python scripts/build_structured_variant_b_audit.py `
   --candidate path/to/candidate.json `
   --evidence path/to/variant_b_evidence.json `
-  --rules path/to/integration_rules.yaml `
+  --rules config/variant_b_rules_prekick.yaml `
   --build-timestamp 2026-09-08T18:30:00Z `
   --output path/to/canonical_variant_b_audit.json
 ```
