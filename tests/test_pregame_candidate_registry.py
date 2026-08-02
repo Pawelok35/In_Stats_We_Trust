@@ -86,6 +86,8 @@ def test_real_pick_output_mapping_and_tag_preservation(tmp_path):
     candidate = registry.get_candidate(result.candidate_ids[0])
 
     assert candidate.game_id == "2026_w01_BUF_at_HOU"
+    assert candidate.away == "BUF"
+    assert candidate.home == "HOU"
     assert candidate.selected_team == "BUF"
     assert candidate.model_tag == "GOY"
     assert candidate.confidence == 72.5
@@ -96,6 +98,66 @@ def test_real_pick_output_mapping_and_tag_preservation(tmp_path):
     assert candidate.status == CandidateStatus.MODEL_CANDIDATE
     assert candidate.source_ref == "data/picks_variant_m/2026/week_01.jsonl"
     assert candidate.source_record_number == 1
+    assert candidate.source_metadata["away"] == candidate.away
+    assert candidate.source_metadata["home"] == candidate.home
+
+
+def test_adapter_preserves_home_team_when_selected_team_is_home(tmp_path):
+    registry, adapter = adapter_for(InMemoryPregameEventStore())
+    result = adapter.import_jsonl(
+        write_rows(
+            tmp_path,
+            [output_row(home="JAX", away="CLE", selected_team="JAX")],
+        ),
+        season=2026,
+        week=1,
+        model_variant="variant_m",
+        recorded_at_utc=utc_at(19),
+    )
+
+    candidate = registry.get_candidate(result.candidate_ids[0])
+
+    assert candidate.away == "CLE"
+    assert candidate.home == "JAX"
+    assert candidate.selected_team == "JAX"
+
+
+@pytest.mark.parametrize(
+    ("field", "value"),
+    [("home", None), ("away", None), ("home", ""), ("away", "   ")],
+)
+def test_adapter_rejects_missing_or_empty_authoritative_matchup_team(field, value, tmp_path):
+    _, adapter = adapter_for(InMemoryPregameEventStore())
+    row = output_row()
+    if value is None:
+        del row[field]
+    else:
+        row[field] = value
+
+    with pytest.raises(ModelOutputImportError):
+        adapter.import_jsonl(
+            write_rows(tmp_path, [row]),
+            season=2026,
+            week=1,
+            model_variant="variant_m",
+            recorded_at_utc=utc_at(19),
+        )
+
+
+def test_adapter_does_not_recover_missing_team_from_game_id(tmp_path):
+    _, adapter = adapter_for(InMemoryPregameEventStore())
+    row = output_row()
+    row["game_id"] = "2026_w01_BUF_at_HOU"
+    del row["home"]
+
+    with pytest.raises(ModelOutputImportError, match="missing required source fields: home"):
+        adapter.import_jsonl(
+            write_rows(tmp_path, [row]),
+            season=2026,
+            week=1,
+            model_variant="variant_m",
+            recorded_at_utc=utc_at(19),
+        )
 
 
 @pytest.mark.parametrize("tag", ["GOY", "GOM", "GOW", "VALUE PLAY"])
@@ -309,6 +371,8 @@ def test_invalid_direct_candidate_event_and_defensive_query_copies():
         game_id="2026_w01_BUF_at_HOU",
         season=2026,
         week=1,
+        away="BUF",
+        home="HOU",
         status=CandidateStatus.MODEL_CANDIDATE,
         created_at_utc=utc_at(19),
         model_variant="variant_m",

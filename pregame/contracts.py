@@ -10,7 +10,7 @@ from collections.abc import Mapping
 from datetime import datetime, timezone
 from typing import Any
 
-from pydantic import BaseModel, ConfigDict, Field, field_validator
+from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
 from pregame.events import (
     CandidateStatus,
@@ -164,6 +164,8 @@ class CandidateRecord(PregameContract):
     game_id: str
     season: int
     week: int
+    away: str
+    home: str
     status: CandidateStatus
     created_at_utc: datetime
     model_variant: str
@@ -190,6 +192,8 @@ class CandidateRecord(PregameContract):
     @field_validator(
         "candidate_id",
         "game_id",
+        "away",
+        "home",
         "model_variant",
         "selected_team",
         "model_tag",
@@ -243,6 +247,12 @@ class CandidateRecord(PregameContract):
         if not _json_compatible(metadata):
             raise ValueError("source_metadata must be JSON-compatible")
         return metadata
+
+    @model_validator(mode="after")
+    def _distinct_matchup_teams(self) -> "CandidateRecord":
+        if self.home == self.away:
+            raise ValueError("home and away must be different")
+        return self
 
 
 class VariantBPointResult(PregameContract):

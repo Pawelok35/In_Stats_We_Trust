@@ -173,6 +173,8 @@ def test_candidate_record_accepts_model_candidate_with_optional_missing_metrics(
         game_id="2026_w01_BUF_at_HOU",
         season=2026,
         week=1,
+        away="BUF",
+        home="HOU",
         status=CandidateStatus.MODEL_CANDIDATE,
         created_at_utc=utc_now(),
         model_variant="variant_m",
@@ -192,13 +194,15 @@ def test_candidate_record_accepts_model_candidate_with_optional_missing_metrics(
     assert payload["reason_codes"] == ["MODEL_EDGE"]
 
 
-@pytest.mark.parametrize("field", ["game_id", "selected_team"])
+@pytest.mark.parametrize("field", ["game_id", "selected_team", "away", "home"])
 def test_candidate_record_rejects_missing_required_text(field: str):
     kwargs = {
         "candidate_id": "cand_001",
         "game_id": "2026_w01_BUF_at_HOU",
         "season": 2026,
         "week": 1,
+        "away": "BUF",
+        "home": "HOU",
         "status": CandidateStatus.MODEL_CANDIDATE,
         "created_at_utc": utc_now(),
         "model_variant": "variant_m",
@@ -219,6 +223,8 @@ def test_candidate_record_rejects_naive_model_generated_timestamp():
             game_id="2026_w01_BUF_at_HOU",
             season=2026,
             week=1,
+            away="BUF",
+            home="HOU",
             status=CandidateStatus.MODEL_CANDIDATE,
             created_at_utc=utc_now(),
             model_variant="variant_m",
@@ -226,6 +232,24 @@ def test_candidate_record_rejects_naive_model_generated_timestamp():
             model_tag="VALUE PLAY",
             production_eligible=True,
             model_generated_at_utc=naive_now(),
+        )
+
+
+def test_candidate_record_rejects_identical_home_and_away_teams():
+    with pytest.raises(ValidationError, match="home and away must be different"):
+        CandidateRecord(
+            candidate_id="cand_001",
+            game_id="2026_w01_BUF_at_BUF",
+            season=2026,
+            week=1,
+            away="BUF",
+            home="BUF",
+            status=CandidateStatus.MODEL_CANDIDATE,
+            created_at_utc=utc_now(),
+            model_variant="variant_m",
+            selected_team="BUF",
+            model_tag="VALUE PLAY",
+            production_eligible=True,
         )
 
 

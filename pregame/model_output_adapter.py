@@ -329,6 +329,8 @@ def _candidate_from_record(
             game_id=game_id,
             season=season,
             week=week,
+            away=record["away"],
+            home=record["home"],
             status=status,
             created_at_utc=recorded_at_utc,
             model_variant=model_variant,
@@ -349,7 +351,12 @@ def _candidate_from_record(
             source_ref=source_ref,
             source_sha256=source_sha256,
             source_record_number=line_number,
-            source_metadata={"preflight": preflight, "market": record.get("market")},
+            source_metadata={
+                "preflight": preflight,
+                "market": record.get("market"),
+                "away": record["away"],
+                "home": record["home"],
+            },
         )
     except (TypeError, ValueError) as exc:
         raise ModelOutputImportError(

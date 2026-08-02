@@ -79,6 +79,8 @@ def candidate_payload() -> dict:
         game_id=GAME_ID,
         season=2026,
         week=1,
+        away="BUF",
+        home="HOU",
         status=CandidateStatus.MODEL_CANDIDATE,
         created_at_utc=utc_at(18),
         model_variant="variant_m",
