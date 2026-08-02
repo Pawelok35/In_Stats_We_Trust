@@ -56,6 +56,14 @@ from pregame.model_output_adapter import (
 )
 from pregame.projector import PregameGameProjector, ProjectionError, project_events, project_game
 from pregame.store import AppendResult, AppendStatus, InMemoryPregameEventStore, PregameEventStore
+from pregame.variant_b_audit_integration import (
+    StructuredVariantBAuditBuildReason,
+    StructuredVariantBAuditBuildResult,
+    StructuredVariantBAuditBuildStatus,
+    StructuredVariantBAuditIntegrationError,
+    build_authoritative_source_pick,
+    build_structured_variant_b_audit,
+)
 from pregame.variant_b_evidence import (
     EVIDENCE_PROMPT_VERSION,
     EVIDENCE_SCHEMA_VERSION,
@@ -153,4 +161,10 @@ __all__ = [
     "load_variant_b_evidence",
     "validate_variant_b_evidence",
     "write_variant_b_evidence_sidecar",
+    "StructuredVariantBAuditBuildReason",
+    "StructuredVariantBAuditBuildResult",
+    "StructuredVariantBAuditBuildStatus",
+    "StructuredVariantBAuditIntegrationError",
+    "build_authoritative_source_pick",
+    "build_structured_variant_b_audit",
 ]

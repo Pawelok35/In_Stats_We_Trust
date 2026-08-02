@@ -352,6 +352,7 @@ def _candidate_from_record(
             source_sha256=source_sha256,
             source_record_number=line_number,
             source_metadata={
+                "model_pick": dict(record),
                 "preflight": preflight,
                 "market": record.get("market"),
                 "away": record["away"],

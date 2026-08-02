@@ -100,6 +100,8 @@ def test_real_pick_output_mapping_and_tag_preservation(tmp_path):
     assert candidate.source_record_number == 1
     assert candidate.source_metadata["away"] == candidate.away
     assert candidate.source_metadata["home"] == candidate.home
+    assert candidate.source_metadata["model_pick"]["home"] == candidate.home
+    assert candidate.source_metadata["model_pick"]["away"] == candidate.away
 
 
 def test_adapter_preserves_home_team_when_selected_team_is_home(tmp_path):
