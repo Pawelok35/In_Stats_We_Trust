@@ -1,5 +1,7 @@
 # Variant B Stage 11.2 Single-Candidate Operator Runbook
 
+Accepted baseline: [variant_b_stage_11_2_accepted_baseline.md](variant_b_stage_11_2_accepted_baseline.md).
+
 ## 1. Purpose
 
 Build one canonical structured Variant B audit artifact from one authoritative `CandidateRecord`, one `VariantBGptEvidenceSidecar`, one explicit rules file, one explicit UTC build timestamp, and one explicit output path. The tool does not select a candidate, generate evidence, run GPT, fetch data, find files, repair fields, or make a final operator decision.
