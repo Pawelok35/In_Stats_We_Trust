@@ -1,164 +1,34 @@
 from __future__ import annotations
 
-import copy
-from datetime import datetime, timezone
-
-from pregame.contracts import CandidateRecord
 from pregame.events import CandidateStatus
 from pregame.variant_b_audit_integration import (
     StructuredVariantBAuditBuildReason,
     StructuredVariantBAuditBuildStatus,
     build_structured_variant_b_audit,
 )
-from pregame.variant_b_evidence import (
-    EVIDENCE_PROMPT_VERSION,
-    EVIDENCE_SCHEMA_VERSION,
-    VARIANT_B_POINT_DEFINITIONS,
-    evidence_id_for_payload,
-    validate_variant_b_evidence,
+from pregame.variant_b_evidence import evidence_id_for_payload, validate_variant_b_evidence
+from tests.helpers.stage_11_2_acceptance_factory import FIXED_UTC_TIMESTAMP as NOW
+from tests.helpers.stage_11_2_acceptance_factory import (
+    build_stage_11_2_test_case,
+    build_structured_evidence,
 )
-from scripts.variant_b_audit import DEFAULT_RULES_CONFIG
-
-NOW = datetime(2026, 9, 10, 18, tzinfo=timezone.utc)
 
 
 def candidate(*, away="BUF", home="HOU", selected_team="BUF", **changes):
-    model_pick = {
-        "season": 2026,
-        "week": 1,
-        "away": away,
-        "home": home,
-        "model_winner": selected_team,
-        "model_version": "variant_m",
-        "tag": "VALUE PLAY",
-        "market": "SPREAD",
-        "market_scope": "FULL_GAME",
-        "model_generation_book": "BOOK",
-        "model_generation_quote_timestamp_utc": "2026-09-10T18:00:00Z",
-        "model_generation_quote_id": "quote-1",
-        "model_generation_spread_selected_team": -2.0,
-        "model_generation_price": -110,
-        "odds_source": "DIRECT_SPORTSBOOK",
-        "executable_status": "CONFIRMED_EXECUTABLE",
-        "neutral_site": False,
-        "preflight": {"status": "PASS", "production_eligible": True},
-    }
-    payload = {
-        "candidate_id": "candidate-1",
-        "game_id": f"2026_w01_{away}_at_{home}",
-        "season": 2026,
-        "week": 1,
-        "away": away,
-        "home": home,
-        "status": CandidateStatus.MODEL_CANDIDATE,
-        "created_at_utc": NOW,
-        "model_variant": "variant_m",
-        "selected_team": selected_team,
-        "model_tag": "VALUE PLAY",
-        "production_eligible": True,
-        "confidence": 75.0,
-        "edge_vs_line": 2.0,
-        "model_margin": -4.0,
-        "market_margin_at_scan": -2.0,
-        "spread_at_scan": -2.0,
-        "price_at_scan": -110,
-        "preflight_status": "PASS",
-        "model_generated_at_utc": NOW,
-        "source_metadata": {"model_pick": model_pick},
-    }
-    payload.update(changes)
-    return CandidateRecord(**payload)
+    value = build_stage_11_2_test_case(
+        away=away,
+        home=home,
+        selected_team=selected_team,
+    ).candidate
+    return value.model_copy(update=changes) if changes else value
 
 
 def evidence(*, candidate_value=None, **changes):
-    candidate_value = candidate_value or candidate()
-    timestamp = "2026-09-10T18:00:00Z"
-    points = [
-        {
-            "point_id": point_id,
-            "point_name": name,
-            "status": "PASS",
-            "gpt_assessment": "evidence",
-            "blocking_assessment": "NONE",
-            "summary": "fact",
-            "evidence_items": ["source-1"],
-            "data_complete": True,
-        }
-        for point_id, name, _ in VARIANT_B_POINT_DEFINITIONS
-    ]
-    payload = {
-        "evidence_id": "placeholder",
-        "schema_version": EVIDENCE_SCHEMA_VERSION,
-        "prompt_version": EVIDENCE_PROMPT_VERSION,
-        "candidate_id": candidate_value.candidate_id,
-        "game_id": candidate_value.game_id,
-        "season": candidate_value.season,
-        "week": candidate_value.week,
-        "away_team": candidate_value.away,
-        "home_team": candidate_value.home,
-        "selected_team": candidate_value.selected_team,
-        "model_variant": candidate_value.model_variant,
-        "research_kind": "FULL_RESEARCH",
-        "generated_at_utc": timestamp,
-        "recorded_at_utc": timestamp,
-        "source_ref": "gpt",
-        "expected_point_count": 19,
-        "point_results": points,
-        "evidence_sources": [
-            {
-                "evidence_source_id": "source-1",
-                "source_type": "TEST",
-                "source_name": "Test",
-                "source_ref": "test://source",
-                "captured_at_utc": timestamp,
-                "reliability": "HIGH",
-                "fact_summary": "fact",
-                "supports_assessment": "TEST",
-            }
-        ],
-        "probability_assessment": {
-            "p_cover": 0.6,
-            "p_push": 0.0,
-            "p_loss": 0.4,
-            "method": "model",
-            "source_refs": ["source-1"],
-            "generated_at_utc": timestamp,
-        },
-        "acceptable_quote_frontier": {
-            "selected_team": candidate_value.selected_team,
-            "market_type": "SPREAD",
-            "minimum_acceptable_spread": -3.0,
-            "minimum_acceptable_price": -110,
-            "frontier_basis": "model",
-            "source_refs": ["source-1"],
-            "effective_at_utc": timestamp,
-        },
-        "no_chase": {
-            "represented_by_frontier": True,
-            "source_refs": ["source-1"],
-            "rationale": "frontier",
-            "effective_at_utc": timestamp,
-        },
-        "key_number_policy": {
-            "key_numbers": [3.0, 7.0],
-            "reject_key_number_loss": True,
-            "source_refs": ["source-1"],
-            "methodology_note": "explicit",
-        },
-        "overall_summary": "complete",
-        "source_count": 1,
-    }
-    payload.update(changes)
-    payload["evidence_id"] = evidence_id_for_payload(payload)
-    return validate_variant_b_evidence(payload)
+    return build_structured_evidence(candidate_value or candidate(), **changes)
 
 
 def rules():
-    value = copy.deepcopy(DEFAULT_RULES_CONFIG)
-    value["audit_stages"] = ["PREKICK"]
-    for rule in value["rules"].values():
-        rule["blocking"] = False
-    return value
+    return build_stage_11_2_test_case().rules
 
 
 def build(candidate_value=None, evidence_value=None):
