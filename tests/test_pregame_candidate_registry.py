@@ -48,6 +48,7 @@ def output_row(
         "edge_vs_line": edge,
         "handicap": handicap,
         "price": -110,
+        "model_generation_quote_id": "TEST_QUOTE_001",
         "model_version": model_version,
         "preflight": {
             "status": preflight_status,

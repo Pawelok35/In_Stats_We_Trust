@@ -297,13 +297,15 @@ def run_batch(
             # needs both values to enforce the no-chase rule.
             record.update(
                 {
-                    "model_generation_spread_selected_team": round(analysis.projection.winner_line, 1),
+                    "model_generation_spread_selected_team": round(
+                        analysis.projection.winner_line, 1
+                    ),
                     "model_generation_price": selected_price,
                     "model_generation_quote_timestamp_utc": (
                         entry.get("decision_ts_utc") or entry.get("line_ts_utc") or ""
                     ),
                     "model_generation_book": entry.get("book") or "",
-                    "model_generation_quote_id": entry.get("quote_id") or "",
+                    "model_generation_quote_id": entry.get("quote_id"),
                 }
             )
             pick_records[(season, week)].append(record)

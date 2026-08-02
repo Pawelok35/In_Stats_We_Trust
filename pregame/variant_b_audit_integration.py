@@ -179,8 +179,15 @@ def build_authoritative_source_pick(
         "book": model_pick.get("model_generation_book"),
         "quote_timestamp_utc": model_pick.get("model_generation_quote_timestamp_utc"),
         "market_scope": model_pick.get("market_scope"),
+        "model_generation_quote_id": model_pick.get("model_generation_quote_id"),
     }
-    missing = tuple(name for name, value in required.items() if value in (None, ""))
+    missing = tuple(
+        name
+        for name, value in required.items()
+        if value in (None, "")
+        or (name == "model_generation_quote_id" and not isinstance(value, str))
+        or (name == "model_generation_quote_id" and isinstance(value, str) and not value.strip())
+    )
     if missing:
         return {}, missing
     identity = {
@@ -208,7 +215,8 @@ def build_authoritative_source_pick(
         "book": model_pick["model_generation_book"],
         "source_type": model_pick.get("odds_source"),
         "quote_timestamp_utc": model_pick["model_generation_quote_timestamp_utc"],
-        "quote_id": model_pick.get("model_generation_quote_id"),
+        "quote_id": model_pick["model_generation_quote_id"],
+        "model_generation_quote_id": model_pick["model_generation_quote_id"],
         "executable_status": model_pick.get("executable_status"),
         "neutral_site": model_pick.get("neutral_site", False),
         "model_generation_spread_selected_team": model_pick.get(

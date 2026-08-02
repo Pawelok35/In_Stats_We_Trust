@@ -30,6 +30,7 @@ _REQUIRED_FIELDS = frozenset(
         "price",
         "model_version",
         "preflight",
+        "model_generation_quote_id",
     }
 )
 
@@ -291,6 +292,13 @@ def _candidate_from_record(
     ):
         raise ModelOutputImportError(
             source_ref, "invalid team or tag field", line_number=line_number
+        )
+    quote_id = record["model_generation_quote_id"]
+    if not isinstance(quote_id, str) or not quote_id.strip():
+        raise ModelOutputImportError(
+            source_ref,
+            "model_generation_quote_id must be a non-empty string",
+            line_number=line_number,
         )
     preflight = record["preflight"]
     if not isinstance(preflight, dict) or not isinstance(

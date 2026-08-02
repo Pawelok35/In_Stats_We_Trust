@@ -252,6 +252,16 @@ class CandidateRecord(PregameContract):
     def _distinct_matchup_teams(self) -> "CandidateRecord":
         if self.home == self.away:
             raise ValueError("home and away must be different")
+        if "model_pick" in self.source_metadata:
+            model_pick = self.source_metadata["model_pick"]
+            if not isinstance(model_pick, Mapping):
+                raise ValueError("source_metadata.model_pick must be a mapping")
+            quote_id = model_pick.get("model_generation_quote_id")
+            if not isinstance(quote_id, str) or not quote_id.strip():
+                raise ValueError(
+                    "source_metadata.model_pick.model_generation_quote_id "
+                    "must be a non-empty string"
+                )
         return self
 
 

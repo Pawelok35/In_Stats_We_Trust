@@ -103,7 +103,7 @@ For `IO_ERROR`, verify read permissions, output-parent existence, write permissi
 
 ## 16. Historical Candidate Limitations
 
-Older candidate records may lack `market_scope` or `model_generation_quote_id`. These records are intentionally blocked. The command does not infer a market scope, synthesize a quote ID, or repair provenance.
+`model_generation_quote_id` is required in `source_metadata.model_pick` as a non-empty authoritative string. Historical candidate records without it are intentionally incompatible with Stage 11.2 until an authoritative migration exists. The command does not infer a market scope, synthesize a quote ID, or repair provenance.
 
 ## 17. Do Not Do
 

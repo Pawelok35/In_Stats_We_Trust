@@ -46,6 +46,7 @@ matchups:
     spread: -3.5
     total: 44.5
     price: -110
+    quote_id: TEST_QUOTE_001
     book: TEST_BOOK
     decision_ts_utc: "2025-09-10T18:00:00Z"
     report: {report}
