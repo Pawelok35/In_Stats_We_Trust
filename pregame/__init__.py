@@ -64,6 +64,11 @@ from pregame.variant_b_audit_integration import (
     build_authoritative_source_pick,
     build_structured_variant_b_audit,
 )
+from pregame.variant_b_audit_orchestrator import (
+    StructuredVariantBAuditOrchestrationResult,
+    StructuredVariantBAuditOrchestrationStatus,
+    StructuredVariantBAuditOrchestrator,
+)
 from pregame.variant_b_evidence import (
     EVIDENCE_PROMPT_VERSION,
     EVIDENCE_SCHEMA_VERSION,
@@ -167,4 +172,7 @@ __all__ = [
     "StructuredVariantBAuditIntegrationError",
     "build_authoritative_source_pick",
     "build_structured_variant_b_audit",
+    "StructuredVariantBAuditOrchestrationResult",
+    "StructuredVariantBAuditOrchestrationStatus",
+    "StructuredVariantBAuditOrchestrator",
 ]
