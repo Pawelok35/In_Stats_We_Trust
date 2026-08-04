@@ -48,6 +48,9 @@ DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION = "structured_manual_evidence.
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_SCHEMA_VERSION = (
     "structured_manual_evidence_assessment.v1"
 )
+DEFAULT_VARIANT_B_EVIDENCE_LINEAGE_MANIFEST_SCHEMA_VERSION = (
+    "variant_b_evidence_lineage_manifest.v1"
+)
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -579,6 +582,82 @@ class StructuredManualEvidenceAssessmentLatestIndex(PregameContract):
     assessment_id: str
 
     @field_validator("latest_key", "assessment_id")
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+
+class VariantBEvidenceLineageManifestRecord(PregameContract):
+    """Immutable external references used to prepare one Variant B sidecar."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    manifest_id: str
+    evidence_id: str
+    candidate_id: str
+    game_id: str
+    audit_stage: str
+    observation_ids: tuple[str, ...]
+    assessment_ids: tuple[str, ...]
+    evidence_sidecar_digest: str
+    evidence_sidecar_reference: str
+    prepared_at_utc: datetime
+    recorded_at_utc: datetime
+    schema_version: str = DEFAULT_VARIANT_B_EVIDENCE_LINEAGE_MANIFEST_SCHEMA_VERSION
+    preparer_id: str | None = None
+    notes: str | None = None
+
+    @field_validator(
+        "manifest_id",
+        "evidence_id",
+        "candidate_id",
+        "game_id",
+        "audit_stage",
+        "evidence_sidecar_digest",
+        "evidence_sidecar_reference",
+        "schema_version",
+        "preparer_id",
+        "notes",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("observation_ids", "assessment_ids")
+    @classmethod
+    def _identifiers(cls, value: tuple[str, ...], info: Any) -> tuple[str, ...]:
+        cleaned = tuple(_require_non_empty(item, info.field_name) for item in value)
+        if len(cleaned) != len(set(cleaned)):
+            raise ValueError(f"{info.field_name} must not contain duplicates")
+        if cleaned != tuple(sorted(cleaned)):
+            raise ValueError(f"{info.field_name} must be canonical ordered")
+        return cleaned
+
+    @field_validator("prepared_at_utc", "recorded_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime, info: Any) -> datetime:
+        return _require_literal_utc(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _semantics(self) -> "VariantBEvidenceLineageManifestRecord":
+        if self.audit_stage != "PREKICK":
+            raise ValueError("only PREKICK evidence lineage is supported")
+        if not self.assessment_ids:
+            raise ValueError("assessment_ids must not be empty")
+        if self.prepared_at_utc > self.recorded_at_utc:
+            raise ValueError("prepared_at_utc must not be after recorded_at_utc")
+        return self
+
+
+class VariantBEvidenceLineageManifestIndex(PregameContract):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    evidence_id: str
+    manifest_id: str
+
+    @field_validator("evidence_id", "manifest_id")
     @classmethod
     def _text(cls, value: str, info: Any) -> str:
         return _require_non_empty(value, info.field_name)
@@ -1333,6 +1412,8 @@ class PregameGameRecord(PregameContract):
     latest_structured_manual_evidence_assessment_by_scope_assessor: tuple[
         StructuredManualEvidenceAssessmentLatestIndex, ...
     ] = ()
+    variant_b_evidence_lineage_manifests: tuple[VariantBEvidenceLineageManifestRecord, ...] = ()
+    variant_b_evidence_lineage_by_evidence_id: tuple[VariantBEvidenceLineageManifestIndex, ...] = ()
 
     research_started: bool = False
     research_completed: bool = False

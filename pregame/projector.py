@@ -21,6 +21,8 @@ from pregame.contracts import (
     StructuredManualEvidenceLatestIndex,
     StructuredManualEvidenceRecord,
     StructuredVariantBAuditResultRecord,
+    VariantBEvidenceLineageManifestIndex,
+    VariantBEvidenceLineageManifestRecord,
     VariantBResearchRecord,
 )
 from pregame.events import CandidateStatus, DecisionLevel, PregameEventType
@@ -124,6 +126,10 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         latest_structured_manual_evidence_assessment_by_scope_assessor=(
             _latest_manual_evidence_assessment_indexes(state.structured_manual_evidence_assessments)
         ),
+        variant_b_evidence_lineage_manifests=tuple(state.variant_b_evidence_lineage_manifests),
+        variant_b_evidence_lineage_by_evidence_id=_lineage_manifest_indexes(
+            state.variant_b_evidence_lineage_manifests
+        ),
         research_started=state.research_started,
         research_completed=state.research_completed,
         research_approved=state.research_approved,
@@ -194,6 +200,7 @@ class _ProjectionState:
     latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
     structured_manual_evidence: list[StructuredManualEvidenceRecord] = None  # type: ignore[assignment]
     structured_manual_evidence_assessments: list[StructuredManualEvidenceAssessmentRecord] = None  # type: ignore[assignment]
+    variant_b_evidence_lineage_manifests: list[VariantBEvidenceLineageManifestRecord] = None  # type: ignore[assignment]
     research_started: bool = False
     research_completed: bool = False
     research_approved: bool = False
@@ -211,6 +218,7 @@ class _ProjectionState:
         self.variant_b_blocking_risk_codes = []
         self.structured_manual_evidence = []
         self.structured_manual_evidence_assessments = []
+        self.variant_b_evidence_lineage_manifests = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -372,6 +380,10 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
             event, assessment.game_id, "StructuredManualEvidenceAssessmentRecord"
         )
         state.structured_manual_evidence_assessments.append(assessment.model_copy(deep=True))
+    elif event_type == PregameEventType.VARIANT_B_EVIDENCE_LINEAGE_RECORDED:
+        manifest = _parse_payload(event, VariantBEvidenceLineageManifestRecord, "evidence lineage")
+        _ensure_record_game_id(event, manifest.game_id, "VariantBEvidenceLineageManifestRecord")
+        state.variant_b_evidence_lineage_manifests.append(manifest.model_copy(deep=True))
     elif event_type in {
         PregameEventType.OPERATOR_PICK_APPROVED,
         PregameEventType.OPERATOR_PICK_REJECTED,
@@ -604,4 +616,21 @@ def _latest_manual_evidence_assessment_indexes(
             latest_key=key, assessment_id=item.assessment_id
         )
         for key, item in sorted(latest.items())
+    )
+
+
+def _lineage_manifest_indexes(
+    manifests: list[VariantBEvidenceLineageManifestRecord],
+) -> tuple[VariantBEvidenceLineageManifestIndex, ...]:
+    by_evidence: dict[str, VariantBEvidenceLineageManifestRecord] = {}
+    for manifest in manifests:
+        existing = by_evidence.get(manifest.evidence_id)
+        if existing is not None and existing.manifest_id != manifest.manifest_id:
+            raise ProjectionError("multiple lineage manifests for one evidence_id")
+        by_evidence[manifest.evidence_id] = manifest
+    return tuple(
+        VariantBEvidenceLineageManifestIndex(
+            evidence_id=evidence_id, manifest_id=manifest.manifest_id
+        )
+        for evidence_id, manifest in sorted(by_evidence.items())
     )
