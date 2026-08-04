@@ -9,7 +9,7 @@ from __future__ import annotations
 import math
 from collections.abc import Mapping
 from datetime import datetime, timezone
-from typing import Any
+from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
 
@@ -24,6 +24,8 @@ from pregame.events import (
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+    StructuredManualEvidenceAssessmentStatus,
+    StructuredManualEvidenceAssessorType,
     StructuredManualEvidenceCategory,
     VariantBPolicyBuildReason,
     VariantBPolicyBuildStatus,
@@ -43,6 +45,9 @@ DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1
 DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION = "final_quote_runtime_policy.v1"
 DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION = "variant_b_policy_build_result.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION = "structured_manual_evidence.v1"
+DEFAULT_STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_SCHEMA_VERSION = (
+    "structured_manual_evidence_assessment.v1"
+)
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -360,6 +365,220 @@ class StructuredManualEvidenceLatestIndex(PregameContract):
     observation_id: str
 
     @field_validator("subject_key", "source_name", "observation_id")
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+
+class OperatorAssessorMetadata(PregameContract):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    assessor_type: Literal[StructuredManualEvidenceAssessorType.OPERATOR]
+    assessor_id: str
+    display_name: str | None = None
+
+    @field_validator("assessor_id", "display_name")
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+
+class GptLlmAssessorMetadata(PregameContract):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    assessor_type: Literal[StructuredManualEvidenceAssessorType.GPT_LLM]
+    assessor_id: str
+    provider: str
+    model_name: str
+    model_version: str | None = None
+    model_revision: str | None = None
+    prompt_template_version: str | None = None
+    prompt_digest: str | None = None
+    run_artifact_reference: str | None = None
+
+    @field_validator(
+        "assessor_id",
+        "provider",
+        "model_name",
+        "model_version",
+        "model_revision",
+        "prompt_template_version",
+        "prompt_digest",
+        "run_artifact_reference",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _metadata_present(self) -> "GptLlmAssessorMetadata":
+        if not (self.model_version or self.model_revision):
+            raise ValueError("GPT_LLM requires model_version or model_revision")
+        if not (self.prompt_template_version or self.prompt_digest or self.run_artifact_reference):
+            raise ValueError("GPT_LLM requires prompt or run identity")
+        return self
+
+
+class DeterministicRuleAssessorMetadata(PregameContract):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    assessor_type: Literal[StructuredManualEvidenceAssessorType.DETERMINISTIC_RULE]
+    assessor_id: str
+    rule_profile_id: str
+    rule_version: str | None = None
+    rule_digest: str | None = None
+
+    @field_validator("assessor_id", "rule_profile_id", "rule_version", "rule_digest")
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _version_present(self) -> "DeterministicRuleAssessorMetadata":
+        if not (self.rule_version or self.rule_digest):
+            raise ValueError("DETERMINISTIC_RULE requires rule_version or rule_digest")
+        return self
+
+
+class ResearchProcessAssessorMetadata(PregameContract):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    assessor_type: Literal[StructuredManualEvidenceAssessorType.RESEARCH_PROCESS]
+    assessor_id: str
+    process_id: str
+    process_version: str | None = None
+    process_digest: str | None = None
+    researcher_id: str | None = None
+
+    @field_validator(
+        "assessor_id", "process_id", "process_version", "process_digest", "researcher_id"
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _version_present(self) -> "ResearchProcessAssessorMetadata":
+        if not (self.process_version or self.process_digest):
+            raise ValueError("RESEARCH_PROCESS requires process_version or process_digest")
+        return self
+
+
+ManualEvidenceAssessorMetadata = (
+    OperatorAssessorMetadata
+    | GptLlmAssessorMetadata
+    | DeterministicRuleAssessorMetadata
+    | ResearchProcessAssessorMetadata
+)
+
+
+class StructuredManualEvidenceAssessmentRecord(PregameContract):
+    """Immutable interpretation of explicitly referenced source observations."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    assessment_id: str
+    game_id: str
+    category: StructuredManualEvidenceCategory
+    assessment_scope: str
+    observation_ids: tuple[str, ...]
+    assessor: ManualEvidenceAssessorMetadata
+    as_of_utc: datetime
+    assessed_at_utc: datetime
+    recorded_at_utc: datetime
+    status: StructuredManualEvidenceAssessmentStatus
+    reason_codes: tuple[str, ...]
+    schema_version: str = DEFAULT_STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_SCHEMA_VERSION
+    candidate_id: str | None = None
+    notes: str | None = None
+    supersedes_assessment_id: str | None = None
+
+    @field_validator(
+        "assessment_id",
+        "game_id",
+        "assessment_scope",
+        "schema_version",
+        "candidate_id",
+        "notes",
+        "supersedes_assessment_id",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("observation_ids", "reason_codes")
+    @classmethod
+    def _text_values(cls, value: tuple[str, ...], info: Any) -> tuple[str, ...]:
+        cleaned = tuple(_require_non_empty(item, info.field_name) for item in value)
+        if len(cleaned) != len(set(cleaned)):
+            raise ValueError(f"{info.field_name} must not contain duplicates")
+        return cleaned
+
+    @field_validator("as_of_utc", "assessed_at_utc", "recorded_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime, info: Any) -> datetime:
+        return _require_literal_utc(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _semantics(self) -> "StructuredManualEvidenceAssessmentRecord":
+        if self.as_of_utc > self.assessed_at_utc or self.assessed_at_utc > self.recorded_at_utc:
+            raise ValueError("assessment timestamps must satisfy as_of <= assessed <= recorded")
+        with_observations = {
+            StructuredManualEvidenceAssessmentStatus.PASS,
+            StructuredManualEvidenceAssessmentStatus.WARNING,
+            StructuredManualEvidenceAssessmentStatus.BLOCKING,
+            StructuredManualEvidenceAssessmentStatus.PENDING,
+        }
+        with_reasons = {
+            StructuredManualEvidenceAssessmentStatus.WARNING,
+            StructuredManualEvidenceAssessmentStatus.BLOCKING,
+            StructuredManualEvidenceAssessmentStatus.PENDING,
+            StructuredManualEvidenceAssessmentStatus.NO_DATA,
+            StructuredManualEvidenceAssessmentStatus.NOT_DUE,
+        }
+        if self.status in with_observations and not self.observation_ids:
+            raise ValueError(f"{self.status.value} assessment requires observation_ids")
+        if self.status in with_reasons and not self.reason_codes:
+            raise ValueError(f"{self.status.value} assessment requires reason_codes")
+        if self.supersedes_assessment_id == self.assessment_id:
+            raise ValueError("assessment cannot supersede itself")
+        return self
+
+    @property
+    def assessor_type(self) -> StructuredManualEvidenceAssessorType:
+        return self.assessor.assessor_type
+
+    @property
+    def latest_key(self) -> str:
+        candidate = self.candidate_id or "__GAME_LEVEL__"
+        return "|".join(
+            (
+                candidate,
+                self.category.value,
+                self.assessment_scope,
+                self.assessor_type.value,
+                self.assessor.assessor_id,
+            )
+        )
+
+
+class StructuredManualEvidenceAssessmentLatestIndex(PregameContract):
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    latest_key: str
+    assessment_id: str
+
+    @field_validator("latest_key", "assessment_id")
     @classmethod
     def _text(cls, value: str, info: Any) -> str:
         return _require_non_empty(value, info.field_name)
@@ -1103,6 +1322,16 @@ class PregameGameRecord(PregameContract):
     superseded_structured_manual_evidence_ids: tuple[str, ...] = ()
     latest_structured_manual_evidence_by_source_subject: tuple[
         StructuredManualEvidenceLatestIndex, ...
+    ] = ()
+    structured_manual_evidence_assessments: tuple[
+        StructuredManualEvidenceAssessmentRecord, ...
+    ] = ()
+    active_structured_manual_evidence_assessments: tuple[
+        StructuredManualEvidenceAssessmentRecord, ...
+    ] = ()
+    superseded_structured_manual_evidence_assessment_ids: tuple[str, ...] = ()
+    latest_structured_manual_evidence_assessment_by_scope_assessor: tuple[
+        StructuredManualEvidenceAssessmentLatestIndex, ...
     ] = ()
 
     research_started: bool = False

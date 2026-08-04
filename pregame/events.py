@@ -26,6 +26,9 @@ class PregameEventType(_StrEnum):
     WEATHER_UPDATED = "WEATHER_UPDATED"
     PUBLIC_BETTING_UPDATED = "PUBLIC_BETTING_UPDATED"
     STRUCTURED_MANUAL_EVIDENCE_RECORDED = "STRUCTURED_MANUAL_EVIDENCE_RECORDED"
+    STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_RECORDED = (
+        "STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_RECORDED"
+    )
     FINAL_QUOTE_CAPTURED = "FINAL_QUOTE_CAPTURED"
     FINAL_QUOTE_GATE_EVALUATED = "FINAL_QUOTE_GATE_EVALUATED"
     VARIANT_B_RESEARCH_RECORDED = "VARIANT_B_RESEARCH_RECORDED"
@@ -118,6 +121,26 @@ class StructuredManualEvidenceCategory(_StrEnum):
     ROSTER = "ROSTER"
     WEATHER = "WEATHER"
     PUBLIC_BETTING = "PUBLIC_BETTING"
+
+
+class StructuredManualEvidenceAssessmentStatus(_StrEnum):
+    """Research status for an assessment, distinct from Variant B sidecar status."""
+
+    PASS = "PASS"
+    WARNING = "WARNING"
+    BLOCKING = "BLOCKING"
+    PENDING = "PENDING"
+    NO_DATA = "NO_DATA"
+    NOT_DUE = "NOT_DUE"
+
+
+class StructuredManualEvidenceAssessorType(_StrEnum):
+    """Supported assessors of factual manual evidence."""
+
+    OPERATOR = "OPERATOR"
+    GPT_LLM = "GPT_LLM"
+    DETERMINISTIC_RULE = "DETERMINISTIC_RULE"
+    RESEARCH_PROCESS = "RESEARCH_PROCESS"
 
 
 class FinalQuoteGateStatus(_StrEnum):

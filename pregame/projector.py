@@ -16,6 +16,8 @@ from pregame.contracts import (
     OperatorDecision,
     PregameEvent,
     PregameGameRecord,
+    StructuredManualEvidenceAssessmentLatestIndex,
+    StructuredManualEvidenceAssessmentRecord,
     StructuredManualEvidenceLatestIndex,
     StructuredManualEvidenceRecord,
     StructuredVariantBAuditResultRecord,
@@ -112,6 +114,16 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         latest_structured_manual_evidence_by_source_subject=_latest_manual_evidence_indexes(
             state.structured_manual_evidence
         ),
+        structured_manual_evidence_assessments=tuple(state.structured_manual_evidence_assessments),
+        active_structured_manual_evidence_assessments=_active_manual_evidence_assessments(
+            state.structured_manual_evidence_assessments
+        ),
+        superseded_structured_manual_evidence_assessment_ids=_superseded_manual_evidence_assessment_ids(
+            state.structured_manual_evidence_assessments
+        ),
+        latest_structured_manual_evidence_assessment_by_scope_assessor=(
+            _latest_manual_evidence_assessment_indexes(state.structured_manual_evidence_assessments)
+        ),
         research_started=state.research_started,
         research_completed=state.research_completed,
         research_approved=state.research_approved,
@@ -181,6 +193,7 @@ class _ProjectionState:
     latest_structured_variant_b_audit_attempt: StructuredVariantBAuditResultRecord | None = None
     latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
     structured_manual_evidence: list[StructuredManualEvidenceRecord] = None  # type: ignore[assignment]
+    structured_manual_evidence_assessments: list[StructuredManualEvidenceAssessmentRecord] = None  # type: ignore[assignment]
     research_started: bool = False
     research_completed: bool = False
     research_approved: bool = False
@@ -197,6 +210,7 @@ class _ProjectionState:
         self.projection_errors = []
         self.variant_b_blocking_risk_codes = []
         self.structured_manual_evidence = []
+        self.structured_manual_evidence_assessments = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -350,6 +364,14 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         observation = _parse_payload(event, StructuredManualEvidenceRecord, "manual evidence")
         _ensure_record_game_id(event, observation.game_id, "StructuredManualEvidenceRecord")
         state.structured_manual_evidence.append(observation.model_copy(deep=True))
+    elif event_type == PregameEventType.STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_RECORDED:
+        assessment = _parse_payload(
+            event, StructuredManualEvidenceAssessmentRecord, "manual evidence assessment"
+        )
+        _ensure_record_game_id(
+            event, assessment.game_id, "StructuredManualEvidenceAssessmentRecord"
+        )
+        state.structured_manual_evidence_assessments.append(assessment.model_copy(deep=True))
     elif event_type in {
         PregameEventType.OPERATOR_PICK_APPROVED,
         PregameEventType.OPERATOR_PICK_REJECTED,
@@ -537,4 +559,49 @@ def _latest_manual_evidence_indexes(
             observation_id=item.observation_id,
         )
         for _, item in sorted(latest.items())
+    )
+
+
+def _manual_evidence_assessment_sort_key(
+    assessment: StructuredManualEvidenceAssessmentRecord,
+) -> tuple[datetime, datetime, str]:
+    return assessment.as_of_utc, assessment.recorded_at_utc, assessment.assessment_id
+
+
+def _superseded_manual_evidence_assessment_ids(
+    assessments: list[StructuredManualEvidenceAssessmentRecord],
+) -> tuple[str, ...]:
+    return tuple(
+        sorted(
+            {item.supersedes_assessment_id for item in assessments if item.supersedes_assessment_id}
+        )
+    )
+
+
+def _active_manual_evidence_assessments(
+    assessments: list[StructuredManualEvidenceAssessmentRecord],
+) -> tuple[StructuredManualEvidenceAssessmentRecord, ...]:
+    superseded = set(_superseded_manual_evidence_assessment_ids(assessments))
+    return tuple(
+        item.model_copy(deep=True)
+        for item in sorted(assessments, key=_manual_evidence_assessment_sort_key)
+        if item.assessment_id not in superseded
+    )
+
+
+def _latest_manual_evidence_assessment_indexes(
+    assessments: list[StructuredManualEvidenceAssessmentRecord],
+) -> tuple[StructuredManualEvidenceAssessmentLatestIndex, ...]:
+    latest: dict[str, StructuredManualEvidenceAssessmentRecord] = {}
+    for item in _active_manual_evidence_assessments(assessments):
+        previous = latest.get(item.latest_key)
+        if previous is None or _manual_evidence_assessment_sort_key(
+            previous
+        ) < _manual_evidence_assessment_sort_key(item):
+            latest[item.latest_key] = item
+    return tuple(
+        StructuredManualEvidenceAssessmentLatestIndex(
+            latest_key=key, assessment_id=item.assessment_id
+        )
+        for key, item in sorted(latest.items())
     )
