@@ -6,6 +6,7 @@ or GUI logic. They define the shape and validation rules for later layers.
 
 from __future__ import annotations
 
+import math
 from collections.abc import Mapping
 from datetime import datetime, timezone
 from typing import Any
@@ -23,6 +24,7 @@ from pregame.events import (
     OperatorVerdict,
     PregameEventType,
     SnapshotKind,
+    StructuredManualEvidenceCategory,
     VariantBPolicyBuildReason,
     VariantBPolicyBuildStatus,
     VariantBResearchKind,
@@ -40,6 +42,7 @@ DEFAULT_VARIANT_B_POINT_RESULT_SCHEMA_VERSION = "variant_b_point_result.v1"
 DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1"
 DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION = "final_quote_runtime_policy.v1"
 DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION = "variant_b_policy_build_result.v1"
+DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION = "structured_manual_evidence.v1"
 
 
 def _require_non_empty(value: str, field_name: str) -> str:
@@ -73,6 +76,293 @@ class PregameContract(BaseModel):
         """Return a stable JSON-compatible dict for event-log payloads."""
 
         return self.model_dump(mode="json", exclude_none=False)
+
+
+def _require_literal_utc(value: datetime, field_name: str) -> datetime:
+    if value.tzinfo is None or value.utcoffset() is None:
+        raise ValueError(f"{field_name} must be timezone-aware")
+    if value.utcoffset() != timezone.utc.utcoffset(value):
+        raise ValueError(f"{field_name} must be in UTC")
+    return value.astimezone(timezone.utc)
+
+
+def _require_finite(value: float | None, field_name: str) -> float | None:
+    if value is not None and not math.isfinite(value):
+        raise ValueError(f"{field_name} must be finite")
+    return value
+
+
+class InjuryObservationPayload(PregameContract):
+    """Source facts from one injury/practice report."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    team: str
+    player_name: str
+    report_status: str | None = None
+    practice_participation: str | None = None
+    game_designation: str | None = None
+    position: str | None = None
+    injury_description: str | None = None
+
+    @field_validator(
+        "team",
+        "player_name",
+        "report_status",
+        "practice_participation",
+        "game_designation",
+        "position",
+        "injury_description",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _status_present(self) -> "InjuryObservationPayload":
+        if not any((self.report_status, self.practice_participation, self.game_designation)):
+            raise ValueError("injury payload requires a report, practice, or game status")
+        return self
+
+
+class RosterObservationPayload(PregameContract):
+    """Source facts from one roster transaction."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    team: str
+    player_name: str
+    transaction_type: str
+    previous_status: str | None = None
+    new_status: str | None = None
+    previous_team: str | None = None
+    new_team: str | None = None
+
+    @field_validator(
+        "team",
+        "player_name",
+        "transaction_type",
+        "previous_status",
+        "new_status",
+        "previous_team",
+        "new_team",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+
+class WeatherObservationPayload(PregameContract):
+    """Source facts for one venue forecast valid at an explicit time."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    venue: str
+    forecast_valid_for_utc: datetime
+    indoor: bool | None = None
+    roof_status: str | None = None
+    temperature: float | None = None
+    wind_speed: float | None = None
+    wind_direction: str | None = None
+    wind_gusts: float | None = None
+    precipitation: str | None = None
+    field_conditions: str | None = None
+
+    @field_validator("venue", "roof_status", "wind_direction", "precipitation", "field_conditions")
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("forecast_valid_for_utc")
+    @classmethod
+    def _utc(cls, value: datetime, info: Any) -> datetime:
+        return _require_literal_utc(value, info.field_name)
+
+    @field_validator("temperature", "wind_speed", "wind_gusts")
+    @classmethod
+    def _finite(cls, value: float | None, info: Any) -> float | None:
+        return _require_finite(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _condition_present(self) -> "WeatherObservationPayload":
+        values = (
+            self.indoor,
+            self.roof_status,
+            self.temperature,
+            self.wind_speed,
+            self.wind_direction,
+            self.wind_gusts,
+            self.precipitation,
+            self.field_conditions,
+        )
+        if not any(value is not None for value in values):
+            raise ValueError("weather payload requires at least one factual condition")
+        return self
+
+
+class PublicBettingObservationPayload(PregameContract):
+    """Source facts for one public-betting market observation."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    provider_scope: str
+    market_type: MarketType
+    market_scope: str
+    selected_side: str
+    tickets_percentage: float | None = None
+    money_percentage: float | None = None
+    market_snapshot_id: str | None = None
+    provider_market_id: str | None = None
+
+    @field_validator(
+        "provider_scope",
+        "market_scope",
+        "selected_side",
+        "market_snapshot_id",
+        "provider_market_id",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("tickets_percentage", "money_percentage")
+    @classmethod
+    def _percentage(cls, value: float | None, info: Any) -> float | None:
+        value = _require_finite(value, info.field_name)
+        if value is not None and not 0 <= value <= 100:
+            raise ValueError(f"{info.field_name} must be in 0..100")
+        return value
+
+    @model_validator(mode="after")
+    def _percentage_present(self) -> "PublicBettingObservationPayload":
+        if self.tickets_percentage is None and self.money_percentage is None:
+            raise ValueError("public betting payload requires tickets or money percentage")
+        return self
+
+
+ManualEvidencePayload = (
+    InjuryObservationPayload
+    | RosterObservationPayload
+    | WeatherObservationPayload
+    | PublicBettingObservationPayload
+)
+
+
+class StructuredManualEvidenceRecord(PregameContract):
+    """Immutable, source-factual observation for exactly one pregame game."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    observation_id: str
+    game_id: str
+    category: StructuredManualEvidenceCategory
+    source_name: str
+    source_type: str
+    source_reference: str
+    observed_at_utc: datetime
+    recorded_at_utc: datetime
+    payload: ManualEvidencePayload
+    schema_version: str = DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION
+    candidate_id: str | None = None
+    provider_record_id: str | None = None
+    effective_at_utc: datetime | None = None
+    supersedes_observation_id: str | None = None
+
+    @field_validator(
+        "observation_id",
+        "game_id",
+        "source_name",
+        "source_type",
+        "source_reference",
+        "schema_version",
+        "candidate_id",
+        "provider_record_id",
+        "supersedes_observation_id",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        if value is None:
+            return None
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("observed_at_utc", "recorded_at_utc", "effective_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime | None, info: Any) -> datetime | None:
+        if value is None:
+            return None
+        return _require_literal_utc(value, info.field_name)
+
+    @field_validator("payload", mode="before")
+    @classmethod
+    def _payload_mapping(cls, value: Any) -> Any:
+        if isinstance(
+            value,
+            (
+                InjuryObservationPayload,
+                RosterObservationPayload,
+                WeatherObservationPayload,
+                PublicBettingObservationPayload,
+            ),
+        ):
+            return value
+        if not isinstance(value, Mapping):
+            raise ValueError("payload must be a mapping")
+        return dict(value)
+
+    @model_validator(mode="after")
+    def _category_payload_alignment(self) -> "StructuredManualEvidenceRecord":
+        expected = {
+            StructuredManualEvidenceCategory.INJURY: InjuryObservationPayload,
+            StructuredManualEvidenceCategory.ROSTER: RosterObservationPayload,
+            StructuredManualEvidenceCategory.WEATHER: WeatherObservationPayload,
+            StructuredManualEvidenceCategory.PUBLIC_BETTING: PublicBettingObservationPayload,
+        }[self.category]
+        if not isinstance(self.payload, expected):
+            raise ValueError("category does not match payload type")
+        if (
+            self.category == StructuredManualEvidenceCategory.ROSTER
+            and self.effective_at_utc is None
+        ):
+            raise ValueError("roster observation requires effective_at_utc")
+        if self.supersedes_observation_id == self.observation_id:
+            raise ValueError("observation cannot supersede itself")
+        return self
+
+    @property
+    def subject_key(self) -> str:
+        payload = self.payload
+        if isinstance(payload, (InjuryObservationPayload, RosterObservationPayload)):
+            return f"{self.category.value}|{payload.team}|{payload.player_name}"
+        if isinstance(payload, WeatherObservationPayload):
+            return f"WEATHER|{payload.venue}|{payload.forecast_valid_for_utc.isoformat()}"
+        return (
+            "PUBLIC_BETTING|"
+            f"{payload.market_type.value}|{payload.market_scope}|{payload.selected_side}|{payload.provider_scope}"
+        )
+
+
+class StructuredManualEvidenceLatestIndex(PregameContract):
+    """Immutable lookup entry for the newest active observation per source/subject."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    category: StructuredManualEvidenceCategory
+    subject_key: str
+    source_name: str
+    observation_id: str
+
+    @field_validator("subject_key", "source_name", "observation_id")
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
 
 
 class PregameEvent(PregameContract):
@@ -807,6 +1097,13 @@ class PregameGameRecord(PregameContract):
 
     latest_structured_variant_b_audit_attempt: StructuredVariantBAuditResultRecord | None = None
     latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
+
+    structured_manual_evidence: tuple[StructuredManualEvidenceRecord, ...] = ()
+    active_structured_manual_evidence: tuple[StructuredManualEvidenceRecord, ...] = ()
+    superseded_structured_manual_evidence_ids: tuple[str, ...] = ()
+    latest_structured_manual_evidence_by_source_subject: tuple[
+        StructuredManualEvidenceLatestIndex, ...
+    ] = ()
 
     research_started: bool = False
     research_completed: bool = False
