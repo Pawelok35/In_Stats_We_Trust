@@ -1415,6 +1415,61 @@ class ManifestBackedOperatorDecisionRecord(PregameContract):
         return self
 
 
+class WagerExecution(PregameContract):
+    """Immutable record of one successful placement, not a sportsbook API response."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    execution_id: str
+    decision_id: str
+    candidate_id: str
+    game_id: str
+    gate_evaluation_id: str
+    market_type: MarketType
+    selected_side: str
+    spread: float
+    price: int
+    book: str
+    stake_units: float
+    executed_at_utc: datetime
+    recorded_at_utc: datetime
+    external_ticket_id: str | None = None
+
+    @field_validator(
+        "execution_id",
+        "decision_id",
+        "candidate_id",
+        "game_id",
+        "gate_evaluation_id",
+        "selected_side",
+        "book",
+        "external_ticket_id",
+    )
+    @classmethod
+    def _text(cls, value: str | None, info: Any) -> str | None:
+        return None if value is None else _require_non_empty(value, info.field_name)
+
+    @field_validator("executed_at_utc", "recorded_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime, info: Any) -> datetime:
+        return _ensure_utc(value, info.field_name)
+
+    @field_validator("spread")
+    @classmethod
+    def _finite_spread(cls, value: float) -> float:
+        if not math.isfinite(value):
+            raise ValueError("spread must be finite")
+        return value
+
+    @model_validator(mode="after")
+    def _valid(self) -> "WagerExecution":
+        if not math.isfinite(self.stake_units) or self.stake_units <= 0:
+            raise ValueError("stake_units must be positive and finite")
+        if self.executed_at_utc > self.recorded_at_utc:
+            raise ValueError("executed_at_utc must not be after recorded_at_utc")
+        return self
+
+
 class StructuredVariantBAuditResultRecord(PregameContract):
     """Compact central record of one Stage 11.2 audit attempt."""
 
@@ -1572,6 +1627,11 @@ class PregameGameRecord(PregameContract):
     active_structured_operator_decision: ManifestBackedOperatorDecisionRecord | None = None
     superseded_structured_operator_decision_ids: tuple[str, ...] = ()
     latest_structured_operator_decision: ManifestBackedOperatorDecisionRecord | None = None
+
+    wager_execution_history: tuple[WagerExecution, ...] = ()
+    wager_executions_by_id: tuple[tuple[str, str], ...] = ()
+    successful_execution_by_decision_id: tuple[tuple[str, str], ...] = ()
+    latest_wager_execution: WagerExecution | None = None
 
     settled: bool = False
     latest_settlement_event_id: str | None = None

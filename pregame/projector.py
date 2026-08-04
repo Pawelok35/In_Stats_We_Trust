@@ -29,6 +29,7 @@ from pregame.contracts import (
     VariantBEvidenceLineageManifestIndex,
     VariantBEvidenceLineageManifestRecord,
     VariantBResearchRecord,
+    WagerExecution,
 )
 from pregame.events import CandidateStatus, DecisionLevel, PregameEventType
 from pregame.final_quote_gate import final_quote_gate_event_id
@@ -161,6 +162,16 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         latest_structured_operator_decision=(
             state.structured_operator_decisions[-1] if state.structured_operator_decisions else None
         ),
+        wager_execution_history=tuple(state.wager_execution_history),
+        wager_executions_by_id=tuple(
+            (item.execution_id, item.execution_id) for item in state.wager_execution_history
+        ),
+        successful_execution_by_decision_id=tuple(
+            (item.decision_id, item.execution_id) for item in state.wager_execution_history
+        ),
+        latest_wager_execution=(
+            state.wager_execution_history[-1] if state.wager_execution_history else None
+        ),
         settled=state.settled,
         latest_settlement_event_id=state.latest_settlement_event_id,
         last_event_id=last_event.event_id,
@@ -234,6 +245,7 @@ class _ProjectionState:
     latest_research_event_id: str | None = None
     operator_decision: OperatorDecision | None = None
     structured_operator_decisions: list[ManifestBackedOperatorDecisionRecord] = None  # type: ignore[assignment]
+    wager_execution_history: list[WagerExecution] = None  # type: ignore[assignment]
     current_verdict: Any = None
     settled: bool = False
     latest_settlement_event_id: str | None = None
@@ -250,6 +262,7 @@ class _ProjectionState:
         self.structured_manual_evidence_assessments = []
         self.variant_b_evidence_lineage_manifests = []
         self.structured_operator_decisions = []
+        self.wager_execution_history = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -428,6 +441,16 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         )
         _ensure_record_game_id(event, decision.game_id, "ManifestBackedOperatorDecisionRecord")
         state.structured_operator_decisions.append(decision.model_copy(deep=True))
+    elif event_type == PregameEventType.WAGER_EXECUTION_RECORDED:
+        execution = _parse_payload(event, WagerExecution, "wager execution")
+        _ensure_record_game_id(event, execution.game_id, "WagerExecution")
+        if any(
+            item.execution_id == execution.execution_id for item in state.wager_execution_history
+        ):
+            raise ProjectionError("multiple wager executions share execution_id")
+        if any(item.decision_id == execution.decision_id for item in state.wager_execution_history):
+            raise ProjectionError("multiple wager executions share decision_id")
+        state.wager_execution_history.append(execution.model_copy(deep=True))
     elif event_type == PregameEventType.GAME_SETTLED:
         state.settled = True
         state.latest_settlement_event_id = event.event_id
