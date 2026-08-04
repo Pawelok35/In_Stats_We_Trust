@@ -73,6 +73,10 @@ from pregame.final_quote_gate import (
     final_quote_gate_event_id,
 )
 from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStore
+from pregame.manifest_backed_variant_b_refresh import (
+    ManifestBackedVariantBAuditRefreshResult,
+    ManifestBackedVariantBAuditRefreshService,
+)
 from pregame.manual_evidence import (
     StructuredManualEvidenceError,
     StructuredManualEvidenceRegistrationResult,
@@ -166,6 +170,8 @@ __all__ = [
     "MarketSnapshot",
     "MarketSnapshotHistoryError",
     "MarketSnapshotHistoryService",
+    "ManifestBackedVariantBAuditRefreshResult",
+    "ManifestBackedVariantBAuditRefreshService",
     "MarketType",
     "OperatorDecision",
     "OperatorVerdict",
