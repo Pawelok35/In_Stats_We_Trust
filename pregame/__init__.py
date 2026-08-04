@@ -5,6 +5,12 @@ from pregame.candidate_registry import (
     CandidateRegistryService,
     candidate_record_event_id,
 )
+from pregame.central_variant_b_audit import (
+    CentralSingleGameVariantBAuditService,
+    CentralVariantBAuditError,
+    CentralVariantBAuditRunResult,
+    central_variant_b_audit_event_id,
+)
 from pregame.contracts import (
     CandidateRecord,
     FinalQuoteGateResult,
@@ -14,6 +20,7 @@ from pregame.contracts import (
     OperatorDecision,
     PregameEvent,
     PregameGameRecord,
+    StructuredVariantBAuditResultRecord,
     VariantBFinalQuotePolicyBuildResult,
     VariantBPointResult,
     VariantBResearchRecord,
@@ -103,6 +110,9 @@ __all__ = [
     "CandidateRegistryError",
     "CandidateRegistryService",
     "CandidateStatus",
+    "CentralSingleGameVariantBAuditService",
+    "CentralVariantBAuditError",
+    "CentralVariantBAuditRunResult",
     "DecisionLevel",
     "ExecutableStatus",
     "FinalQuoteGateError",
@@ -126,6 +136,7 @@ __all__ = [
     "PregameEvent",
     "PregameGameProjector",
     "PregameGameRecord",
+    "StructuredVariantBAuditResultRecord",
     "PregameEventStore",
     "PregameEventType",
     "SnapshotKind",
@@ -144,6 +155,7 @@ __all__ = [
     "ProjectionError",
     "ModelOutputImportError",
     "candidate_id_for_scan",
+    "central_variant_b_audit_event_id",
     "candidate_record_event_id",
     "model_scan_id",
     "project_events",

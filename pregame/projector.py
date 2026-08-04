@@ -16,6 +16,7 @@ from pregame.contracts import (
     OperatorDecision,
     PregameEvent,
     PregameGameRecord,
+    StructuredVariantBAuditResultRecord,
     VariantBResearchRecord,
 )
 from pregame.events import CandidateStatus, DecisionLevel, PregameEventType
@@ -99,6 +100,8 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         variant_b_blocking_risk_codes=tuple(state.variant_b_blocking_risk_codes),
         variant_b_framework_version=state.variant_b_framework_version,
         variant_b_generated_at_utc=state.variant_b_generated_at_utc,
+        latest_structured_variant_b_audit_attempt=state.latest_structured_variant_b_audit_attempt,
+        latest_successful_structured_variant_b_audit=state.latest_successful_structured_variant_b_audit,
         research_started=state.research_started,
         research_completed=state.research_completed,
         research_approved=state.research_approved,
@@ -165,6 +168,8 @@ class _ProjectionState:
     variant_b_blocking_risk_codes: list[str] = None  # type: ignore[assignment]
     variant_b_framework_version: str | None = None
     variant_b_generated_at_utc: datetime | None = None
+    latest_structured_variant_b_audit_attempt: StructuredVariantBAuditResultRecord | None = None
+    latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
     research_started: bool = False
     research_completed: bool = False
     research_approved: bool = False
@@ -317,6 +322,18 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         state.variant_b_blocking_risk_codes = list(result.blocking_risk_codes)
         state.variant_b_framework_version = result.framework_version
         state.variant_b_generated_at_utc = result.generated_at_utc
+    elif event_type == PregameEventType.STRUCTURED_VARIANT_B_AUDIT_RESULT_RECORDED:
+        result = _parse_payload(
+            event, StructuredVariantBAuditResultRecord, "structured audit result"
+        )
+        _ensure_record_game_id(event, result.game_id, "StructuredVariantBAuditResultRecord")
+        if result.event_id != event.event_id:
+            raise ProjectionError("structured audit result event_id does not match event")
+        if result.build_timestamp_utc != event.effective_at_utc:
+            raise ProjectionError("structured audit result build timestamp does not match event")
+        state.latest_structured_variant_b_audit_attempt = result.model_copy(deep=True)
+        if result.pure_core_status == "BUILT":
+            state.latest_successful_structured_variant_b_audit = result.model_copy(deep=True)
     elif event_type in {
         PregameEventType.OPERATOR_PICK_APPROVED,
         PregameEventType.OPERATOR_PICK_REJECTED,

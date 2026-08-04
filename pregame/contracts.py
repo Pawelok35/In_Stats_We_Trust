@@ -688,6 +688,79 @@ class OperatorDecision(PregameContract):
         return value
 
 
+class StructuredVariantBAuditResultRecord(PregameContract):
+    """Compact central record of one Stage 11.2 audit attempt."""
+
+    event_id: str
+    candidate_id: str
+    game_id: str
+    evidence_id: str
+    model_generation_snapshot_id: str
+    model_generation_quote_id: str
+    audit_stage: str
+    build_timestamp_utc: datetime
+    pure_core_status: str
+    orchestration_status: str
+    persistence_written: bool
+    blocking_reasons: tuple[str, ...] = ()
+    build_id: str | None = None
+    canonical_digest: str | None = None
+    artifact_ref: str | None = None
+    schema_version: str = "structured_variant_b_audit_result_record.v1"
+
+    @field_validator(
+        "event_id",
+        "candidate_id",
+        "game_id",
+        "evidence_id",
+        "model_generation_snapshot_id",
+        "model_generation_quote_id",
+        "audit_stage",
+        "pure_core_status",
+        "orchestration_status",
+        "schema_version",
+    )
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("build_id", "canonical_digest", "artifact_ref")
+    @classmethod
+    def _optional_non_empty_text(cls, value: str | None, info: Any) -> str | None:
+        return None if value is None else _require_non_empty(value, info.field_name)
+
+    @field_validator("build_timestamp_utc")
+    @classmethod
+    def _aware_utc_datetime(cls, value: datetime, info: Any) -> datetime:
+        return _ensure_utc(value, info.field_name)
+
+    @field_validator("blocking_reasons")
+    @classmethod
+    def _non_empty_reasons(cls, value: tuple[str, ...]) -> tuple[str, ...]:
+        return tuple(_require_non_empty(item, "blocking_reasons") for item in value)
+
+    @model_validator(mode="after")
+    def _result_semantics(self) -> "StructuredVariantBAuditResultRecord":
+        successful = self.pure_core_status == "BUILT"
+        if successful:
+            if self.orchestration_status not in {"WRITTEN", "ALREADY_EXISTS_IDENTICAL"}:
+                raise ValueError("successful audit requires a successful orchestration status")
+            if not self.build_id or not self.canonical_digest or not self.artifact_ref:
+                raise ValueError("successful audit requires build_id, digest, and artifact_ref")
+            if self.blocking_reasons:
+                raise ValueError("successful audit must not contain blocking reasons")
+        elif self.pure_core_status == "BLOCKED_PRECONDITION":
+            if self.orchestration_status != "BLOCKED" or self.persistence_written:
+                raise ValueError("blocked audit must be an unwritten BLOCKED orchestration result")
+            if not self.blocking_reasons:
+                raise ValueError("blocked audit requires blocking reasons")
+            if self.artifact_ref is not None:
+                raise ValueError("blocked audit must not expose an artifact_ref")
+        else:
+            raise ValueError("unsupported pure_core_status for central audit result")
+        return self
+
+
 class PregameGameRecord(PregameContract):
     """Immutable current-state view projected from one game's event history."""
 
@@ -731,6 +804,9 @@ class PregameGameRecord(PregameContract):
     variant_b_blocking_risk_codes: tuple[str, ...] = ()
     variant_b_framework_version: str | None = None
     variant_b_generated_at_utc: datetime | None = None
+
+    latest_structured_variant_b_audit_attempt: StructuredVariantBAuditResultRecord | None = None
+    latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
 
     research_started: bool = False
     research_completed: bool = False
