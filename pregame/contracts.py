@@ -1177,6 +1177,7 @@ class FinalQuoteGateResult(PregameContract):
     crossed_or_lost_key_numbers: tuple[float, ...] = ()
     policy_snapshot: dict[str, Any]
     policy_digest: str
+    research_lineage: "FinalQuoteGateResearchLineage | None" = None
     schema_version: str = DEFAULT_FINAL_QUOTE_GATE_RESULT_SCHEMA_VERSION
 
     @field_validator(
@@ -1220,6 +1221,55 @@ class FinalQuoteGateResult(PregameContract):
         if not _json_compatible(payload):
             raise ValueError("policy_snapshot must be JSON-compatible")
         return payload
+
+
+class FinalQuoteGateResearchLineage(PregameContract):
+    """Strict audit references for a manifest-backed final quote evaluation."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    audit_build_id: str
+    audit_evidence_id: str
+    manifest_id: str
+    model_generation_snapshot_id: str
+
+    @field_validator(
+        "audit_build_id",
+        "audit_evidence_id",
+        "manifest_id",
+        "model_generation_snapshot_id",
+    )
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+
+class StructuredVariantBSuccessfulAuditBuildIndex(PregameContract):
+    """Read-only link from a successful audit build ID to its central event."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    build_id: str
+    event_id: str
+
+    @field_validator("build_id", "event_id")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+
+class FinalQuoteGateEvaluationIndex(PregameContract):
+    """Read-only link from a gate evaluation ID to its immutable event."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    evaluation_id: str
+    event_id: str
+
+    @field_validator("evaluation_id", "event_id")
+    @classmethod
+    def _non_empty_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
 
 
 class OperatorDecision(PregameContract):
@@ -1384,6 +1434,8 @@ class PregameGameRecord(PregameContract):
     final_quote_gate_passed: bool | None = None
     final_quote_gate_status: FinalQuoteGateStatus | None = None
     latest_final_quote_gate_event_id: str | None = None
+    final_quote_gate_results: tuple[FinalQuoteGateResult, ...] = ()
+    final_quote_gate_by_evaluation_id: tuple[FinalQuoteGateEvaluationIndex, ...] = ()
 
     latest_variant_b_research: VariantBResearchRecord | None = None
     latest_variant_b_research_id: str | None = None
@@ -1395,6 +1447,10 @@ class PregameGameRecord(PregameContract):
 
     latest_structured_variant_b_audit_attempt: StructuredVariantBAuditResultRecord | None = None
     latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
+    structured_variant_b_successful_audits: tuple[StructuredVariantBAuditResultRecord, ...] = ()
+    structured_variant_b_successful_audit_by_build_id: tuple[
+        StructuredVariantBSuccessfulAuditBuildIndex, ...
+    ] = ()
 
     structured_manual_evidence: tuple[StructuredManualEvidenceRecord, ...] = ()
     active_structured_manual_evidence: tuple[StructuredManualEvidenceRecord, ...] = ()

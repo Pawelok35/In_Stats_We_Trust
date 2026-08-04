@@ -9,6 +9,7 @@ from datetime import datetime, timedelta
 from pregame.candidate_registry import CandidateRegistryService
 from pregame.contracts import (
     CandidateRecord,
+    FinalQuoteGateResearchLineage,
     FinalQuoteGateResult,
     FinalQuotePolicy,
     MarketSnapshot,
@@ -58,7 +59,11 @@ _REASON_PRIORITY = (
 
 
 def final_quote_evaluation_id(
-    candidate_id: str, final_snapshot_id: str, policy: FinalQuotePolicy, evaluated_at_utc: datetime
+    candidate_id: str,
+    final_snapshot_id: str,
+    policy: FinalQuotePolicy,
+    evaluated_at_utc: datetime,
+    research_lineage: FinalQuoteGateResearchLineage | None = None,
 ) -> str:
     """Return a content-addressed ID for one deterministic evaluation."""
 
@@ -69,6 +74,8 @@ def final_quote_evaluation_id(
         "policy": policy.to_json_dict(),
         "evaluated_at_utc": evaluated_at_utc.isoformat(),
     }
+    if research_lineage is not None:
+        payload["research_lineage"] = research_lineage.to_json_dict()
     digest = hashlib.sha256(_canonical_json(payload).encode("utf-8")).hexdigest()
     return f"final-quote-gate:{digest}"
 
@@ -87,6 +94,7 @@ def evaluate_final_quote(
     evaluated_at_utc: datetime,
     latest_candidate_id: str | None = None,
     latest_final_snapshot_id_for_book: str | None = None,
+    research_lineage: FinalQuoteGateResearchLineage | None = None,
 ) -> FinalQuoteGateResult:
     """Evaluate supplied records only; no quote selection or mutation occurs."""
 
@@ -168,7 +176,11 @@ def evaluate_final_quote(
     ordered_reasons = tuple(reason for reason in _REASON_PRIORITY if reason in reasons)
     passed = not ordered_reasons
     evaluation_id = final_quote_evaluation_id(
-        candidate.candidate_id, snapshot.snapshot_id, policy, evaluated_at_utc
+        candidate.candidate_id,
+        snapshot.snapshot_id,
+        policy,
+        evaluated_at_utc,
+        research_lineage,
     )
     policy_snapshot = policy.to_json_dict()
     return FinalQuoteGateResult(
@@ -200,6 +212,7 @@ def evaluate_final_quote(
         crossed_or_lost_key_numbers=lost_keys,
         policy_snapshot=policy_snapshot,
         policy_digest=hashlib.sha256(_canonical_json(policy_snapshot).encode("utf-8")).hexdigest(),
+        research_lineage=research_lineage,
     )
 
 
@@ -223,6 +236,7 @@ class FinalQuoteGateService:
         final_snapshot_id: str,
         policy: FinalQuotePolicy,
         evaluated_at_utc: datetime,
+        research_lineage: FinalQuoteGateResearchLineage | None = None,
     ) -> FinalQuoteGateResult:
         candidate = self._candidate_registry.get_candidate(candidate_id)
         snapshot = self._market_history.get_snapshot(final_snapshot_id)
@@ -243,6 +257,7 @@ class FinalQuoteGateService:
             latest_final_snapshot_id_for_book=(
                 latest_snapshot.snapshot_id if latest_snapshot else None
             ),
+            research_lineage=research_lineage,
         )
 
     def evaluate_and_record(
@@ -253,6 +268,7 @@ class FinalQuoteGateService:
         policy: FinalQuotePolicy,
         evaluated_at_utc: datetime,
         recorded_at_utc: datetime,
+        research_lineage: FinalQuoteGateResearchLineage | None = None,
     ) -> tuple[FinalQuoteGateResult, AppendResult]:
         _require_utc(recorded_at_utc, "recorded_at_utc")
         result = self.evaluate(
@@ -260,6 +276,7 @@ class FinalQuoteGateService:
             final_snapshot_id=final_snapshot_id,
             policy=policy,
             evaluated_at_utc=evaluated_at_utc,
+            research_lineage=research_lineage,
         )
         event_id = final_quote_gate_event_id(result.evaluation_id)
         event = PregameEvent(

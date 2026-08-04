@@ -11,6 +11,7 @@ from pydantic import ValidationError
 
 from pregame.contracts import (
     CandidateRecord,
+    FinalQuoteGateEvaluationIndex,
     FinalQuoteGateResult,
     MarketSnapshot,
     OperatorDecision,
@@ -21,11 +22,13 @@ from pregame.contracts import (
     StructuredManualEvidenceLatestIndex,
     StructuredManualEvidenceRecord,
     StructuredVariantBAuditResultRecord,
+    StructuredVariantBSuccessfulAuditBuildIndex,
     VariantBEvidenceLineageManifestIndex,
     VariantBEvidenceLineageManifestRecord,
     VariantBResearchRecord,
 )
 from pregame.events import CandidateStatus, DecisionLevel, PregameEventType
+from pregame.final_quote_gate import final_quote_gate_event_id
 from pregame.store import PregameEventStore
 
 
@@ -99,6 +102,8 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         final_quote_gate_passed=state.final_quote_gate_passed,
         final_quote_gate_status=state.final_quote_gate_status,
         latest_final_quote_gate_event_id=state.latest_final_quote_gate_event_id,
+        final_quote_gate_results=tuple(state.final_quote_gate_results),
+        final_quote_gate_by_evaluation_id=_final_quote_gate_indexes(state.final_quote_gate_results),
         latest_variant_b_research=state.latest_variant_b_research,
         latest_variant_b_research_id=state.latest_variant_b_research_id,
         variant_b_research_status=state.variant_b_research_status,
@@ -108,6 +113,10 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         variant_b_generated_at_utc=state.variant_b_generated_at_utc,
         latest_structured_variant_b_audit_attempt=state.latest_structured_variant_b_audit_attempt,
         latest_successful_structured_variant_b_audit=state.latest_successful_structured_variant_b_audit,
+        structured_variant_b_successful_audits=tuple(state.structured_variant_b_successful_audits),
+        structured_variant_b_successful_audit_by_build_id=_successful_audit_build_indexes(
+            state.structured_variant_b_successful_audits
+        ),
         structured_manual_evidence=tuple(state.structured_manual_evidence),
         active_structured_manual_evidence=_active_manual_evidence(state.structured_manual_evidence),
         superseded_structured_manual_evidence_ids=_superseded_manual_evidence_ids(
@@ -189,6 +198,7 @@ class _ProjectionState:
     final_quote_gate_passed: bool | None = None
     final_quote_gate_status: Any = None
     latest_final_quote_gate_event_id: str | None = None
+    final_quote_gate_results: list[FinalQuoteGateResult] = None  # type: ignore[assignment]
     latest_variant_b_research: VariantBResearchRecord | None = None
     latest_variant_b_research_id: str | None = None
     variant_b_research_status: Any = None
@@ -198,6 +208,7 @@ class _ProjectionState:
     variant_b_generated_at_utc: datetime | None = None
     latest_structured_variant_b_audit_attempt: StructuredVariantBAuditResultRecord | None = None
     latest_successful_structured_variant_b_audit: StructuredVariantBAuditResultRecord | None = None
+    structured_variant_b_successful_audits: list[StructuredVariantBAuditResultRecord] = None  # type: ignore[assignment]
     structured_manual_evidence: list[StructuredManualEvidenceRecord] = None  # type: ignore[assignment]
     structured_manual_evidence_assessments: list[StructuredManualEvidenceAssessmentRecord] = None  # type: ignore[assignment]
     variant_b_evidence_lineage_manifests: list[VariantBEvidenceLineageManifestRecord] = None  # type: ignore[assignment]
@@ -216,6 +227,8 @@ class _ProjectionState:
         self.warnings = []
         self.projection_errors = []
         self.variant_b_blocking_risk_codes = []
+        self.final_quote_gate_results = []
+        self.structured_variant_b_successful_audits = []
         self.structured_manual_evidence = []
         self.structured_manual_evidence_assessments = []
         self.variant_b_evidence_lineage_manifests = []
@@ -342,6 +355,7 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         state.final_quote_gate_passed = result.passed
         state.final_quote_gate_status = result.primary_status
         state.latest_final_quote_gate_event_id = event.event_id
+        state.final_quote_gate_results.append(result.model_copy(deep=True))
     elif event_type == PregameEventType.VARIANT_B_RESEARCH_RECORDED:
         result = _parse_payload(event, VariantBResearchRecord, "Variant B research")
         _ensure_record_game_id(event, result.game_id, "VariantBResearchRecord")
@@ -368,6 +382,7 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         state.latest_structured_variant_b_audit_attempt = result.model_copy(deep=True)
         if result.pure_core_status == "BUILT":
             state.latest_successful_structured_variant_b_audit = result.model_copy(deep=True)
+            state.structured_variant_b_successful_audits.append(result.model_copy(deep=True))
     elif event_type == PregameEventType.STRUCTURED_MANUAL_EVIDENCE_RECORDED:
         observation = _parse_payload(event, StructuredManualEvidenceRecord, "manual evidence")
         _ensure_record_game_id(event, observation.game_id, "StructuredManualEvidenceRecord")
@@ -633,4 +648,39 @@ def _lineage_manifest_indexes(
             evidence_id=evidence_id, manifest_id=manifest.manifest_id
         )
         for evidence_id, manifest in sorted(by_evidence.items())
+    )
+
+
+def _successful_audit_build_indexes(
+    audits: list[StructuredVariantBAuditResultRecord],
+) -> tuple[StructuredVariantBSuccessfulAuditBuildIndex, ...]:
+    by_build: dict[str, StructuredVariantBAuditResultRecord] = {}
+    for audit in audits:
+        if audit.build_id is None:
+            raise ProjectionError("successful audit is missing build_id")
+        existing = by_build.get(audit.build_id)
+        if existing is not None and existing.event_id != audit.event_id:
+            raise ProjectionError("multiple successful audits share build_id")
+        by_build[audit.build_id] = audit
+    return tuple(
+        StructuredVariantBSuccessfulAuditBuildIndex(build_id=build_id, event_id=audit.event_id)
+        for build_id, audit in sorted(by_build.items())
+    )
+
+
+def _final_quote_gate_indexes(
+    results: list[FinalQuoteGateResult],
+) -> tuple[FinalQuoteGateEvaluationIndex, ...]:
+    by_evaluation: dict[str, FinalQuoteGateResult] = {}
+    for result in results:
+        existing = by_evaluation.get(result.evaluation_id)
+        if existing is not None and existing.to_json_dict() != result.to_json_dict():
+            raise ProjectionError("multiple gate results share evaluation_id")
+        by_evaluation[result.evaluation_id] = result
+    return tuple(
+        FinalQuoteGateEvaluationIndex(
+            evaluation_id=evaluation_id,
+            event_id=final_quote_gate_event_id(evaluation_id),
+        )
+        for evaluation_id in sorted(by_evaluation)
     )

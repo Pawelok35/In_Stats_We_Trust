@@ -14,6 +14,8 @@ from pregame.central_variant_b_audit import (
 from pregame.contracts import (
     CandidateRecord,
     DeterministicRuleAssessorMetadata,
+    FinalQuoteGateEvaluationIndex,
+    FinalQuoteGateResearchLineage,
     FinalQuoteGateResult,
     FinalQuotePolicy,
     FinalQuoteRuntimePolicy,
@@ -32,6 +34,7 @@ from pregame.contracts import (
     StructuredManualEvidenceLatestIndex,
     StructuredManualEvidenceRecord,
     StructuredVariantBAuditResultRecord,
+    StructuredVariantBSuccessfulAuditBuildIndex,
     VariantBEvidenceLineageManifestIndex,
     VariantBEvidenceLineageManifestRecord,
     VariantBFinalQuotePolicyBuildResult,
@@ -73,6 +76,10 @@ from pregame.final_quote_gate import (
     final_quote_gate_event_id,
 )
 from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStore
+from pregame.manifest_backed_final_quote_gate import (
+    ManifestBackedFinalQuoteGateRunResult,
+    ManifestBackedFinalQuoteGateService,
+)
 from pregame.manifest_backed_variant_b_refresh import (
     ManifestBackedVariantBAuditRefreshResult,
     ManifestBackedVariantBAuditRefreshService,
@@ -158,6 +165,8 @@ __all__ = [
     "FinalQuoteGateError",
     "FinalQuoteGateReason",
     "FinalQuoteGateResult",
+    "FinalQuoteGateResearchLineage",
+    "FinalQuoteGateEvaluationIndex",
     "FinalQuoteGateService",
     "FinalQuoteGateStatus",
     "FinalQuotePolicy",
@@ -172,6 +181,8 @@ __all__ = [
     "MarketSnapshotHistoryService",
     "ManifestBackedVariantBAuditRefreshResult",
     "ManifestBackedVariantBAuditRefreshService",
+    "ManifestBackedFinalQuoteGateRunResult",
+    "ManifestBackedFinalQuoteGateService",
     "MarketType",
     "OperatorDecision",
     "OperatorVerdict",
@@ -205,6 +216,7 @@ __all__ = [
     "VariantBEvidenceLineageRegistrationResult",
     "VariantBEvidenceLineageRegistryService",
     "StructuredVariantBAuditResultRecord",
+    "StructuredVariantBSuccessfulAuditBuildIndex",
     "PregameEventStore",
     "PregameEventType",
     "SnapshotKind",
