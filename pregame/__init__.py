@@ -21,6 +21,7 @@ from pregame.contracts import (
     FinalQuoteRuntimePolicy,
     GptLlmAssessorMetadata,
     InjuryObservationPayload,
+    ManifestBackedOperatorDecisionRecord,
     MarketSnapshot,
     OperatorAssessorMetadata,
     OperatorDecision,
@@ -79,6 +80,10 @@ from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStor
 from pregame.manifest_backed_final_quote_gate import (
     ManifestBackedFinalQuoteGateRunResult,
     ManifestBackedFinalQuoteGateService,
+)
+from pregame.manifest_backed_operator_decision import (
+    ManifestBackedOperatorDecisionService,
+    OperatorDecisionRegistrationResult,
 )
 from pregame.manifest_backed_variant_b_refresh import (
     ManifestBackedVariantBAuditRefreshResult,
@@ -177,12 +182,15 @@ __all__ = [
     "JsonlPregameEventStore",
     "MarketQualityStatus",
     "MarketSnapshot",
+    "ManifestBackedOperatorDecisionRecord",
     "MarketSnapshotHistoryError",
     "MarketSnapshotHistoryService",
     "ManifestBackedVariantBAuditRefreshResult",
     "ManifestBackedVariantBAuditRefreshService",
     "ManifestBackedFinalQuoteGateRunResult",
     "ManifestBackedFinalQuoteGateService",
+    "ManifestBackedOperatorDecisionService",
+    "OperatorDecisionRegistrationResult",
     "MarketType",
     "OperatorDecision",
     "OperatorVerdict",

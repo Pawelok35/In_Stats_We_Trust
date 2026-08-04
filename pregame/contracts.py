@@ -4,6 +4,8 @@ These models intentionally contain no persistence, projection, model-adapter,
 or GUI logic. They define the shape and validation rules for later layers.
 """
 
+# ruff: noqa: E501
+
 from __future__ import annotations
 
 import math
@@ -1326,6 +1328,93 @@ class OperatorDecision(PregameContract):
         return value
 
 
+class ManifestBackedOperatorDecisionRecord(PregameContract):
+    """Immutable human authorization linked to one manifest-backed gate evaluation."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    decision_id: str
+    candidate_id: str
+    game_id: str
+    gate_evaluation_id: str
+    verdict: OperatorVerdict
+    operator_id: str
+    reason_codes: tuple[str, ...]
+    decision_at_utc: datetime
+    recorded_at_utc: datetime
+    final_snapshot_id: str
+    spread: float | None
+    price: int | None
+    book: str | None
+    audit_build_id: str
+    audit_evidence_id: str
+    manifest_id: str
+    model_generation_snapshot_id: str
+    policy_id: str
+    policy_digest: str
+    gate_status: FinalQuoteGateStatus
+    stake_units: float | None = None
+    supersedes_decision_id: str | None = None
+    operator_display_name: str | None = None
+    notes: str | None = None
+
+    @field_validator(
+        "decision_id",
+        "candidate_id",
+        "game_id",
+        "gate_evaluation_id",
+        "operator_id",
+        "final_snapshot_id",
+        "audit_build_id",
+        "audit_evidence_id",
+        "manifest_id",
+        "model_generation_snapshot_id",
+        "policy_id",
+        "policy_digest",
+    )
+    @classmethod
+    def _required_text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("supersedes_decision_id", "operator_display_name", "notes", "book")
+    @classmethod
+    def _optional_text(cls, value: str | None, info: Any) -> str | None:
+        return None if value is None else _require_non_empty(value, info.field_name)
+
+    @field_validator("decision_at_utc", "recorded_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime, info: Any) -> datetime:
+        return _ensure_utc(value, info.field_name)
+
+    @field_validator("reason_codes")
+    @classmethod
+    def _reason_codes(cls, value: tuple[str, ...]) -> tuple[str, ...]:
+        if not value or len(value) != len(set(value)):
+            raise ValueError("reason_codes must be non-empty and unique")
+        return tuple(_require_non_empty(item, "reason_codes") for item in value)
+
+    @model_validator(mode="after")
+    def _semantics(self) -> "ManifestBackedOperatorDecisionRecord":
+        approval = self.verdict in {
+            OperatorVerdict.APPROVED,
+            OperatorVerdict.APPROVED_REDUCED_STAKE,
+        }
+        if approval:
+            if (
+                self.stake_units is None
+                or not math.isfinite(self.stake_units)
+                or self.stake_units <= 0
+            ):
+                raise ValueError("approval verdict requires a positive finite stake_units")
+        elif self.stake_units is not None:
+            raise ValueError("non-approval verdict requires stake_units=None")
+        if self.decision_at_utc > self.recorded_at_utc:
+            raise ValueError("decision_at_utc must not be after recorded_at_utc")
+        if self.supersedes_decision_id == self.decision_id:
+            raise ValueError("decision cannot supersede itself")
+        return self
+
+
 class StructuredVariantBAuditResultRecord(PregameContract):
     """Compact central record of one Stage 11.2 audit attempt."""
 
@@ -1478,6 +1567,11 @@ class PregameGameRecord(PregameContract):
 
     operator_decision: OperatorDecision | None = None
     current_verdict: OperatorVerdict | None = None
+    structured_operator_decisions: tuple[ManifestBackedOperatorDecisionRecord, ...] = ()
+    structured_operator_decision_by_id: tuple[tuple[str, str], ...] = ()
+    active_structured_operator_decision: ManifestBackedOperatorDecisionRecord | None = None
+    superseded_structured_operator_decision_ids: tuple[str, ...] = ()
+    latest_structured_operator_decision: ManifestBackedOperatorDecisionRecord | None = None
 
     settled: bool = False
     latest_settlement_event_id: str | None = None

@@ -1,5 +1,7 @@
 """Read-only projection of one pregame game's append-only event history."""
 
+# ruff: noqa: E501
+
 from __future__ import annotations
 
 from collections.abc import Sequence
@@ -13,6 +15,7 @@ from pregame.contracts import (
     CandidateRecord,
     FinalQuoteGateEvaluationIndex,
     FinalQuoteGateResult,
+    ManifestBackedOperatorDecisionRecord,
     MarketSnapshot,
     OperatorDecision,
     PregameEvent,
@@ -145,6 +148,19 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         latest_research_event_id=state.latest_research_event_id,
         operator_decision=state.operator_decision,
         current_verdict=state.current_verdict,
+        structured_operator_decisions=tuple(state.structured_operator_decisions),
+        structured_operator_decision_by_id=tuple(
+            (item.decision_id, item.decision_id) for item in state.structured_operator_decisions
+        ),
+        active_structured_operator_decision=_active_structured_decision(
+            state.structured_operator_decisions
+        ),
+        superseded_structured_operator_decision_ids=_superseded_structured_decision_ids(
+            state.structured_operator_decisions
+        ),
+        latest_structured_operator_decision=(
+            state.structured_operator_decisions[-1] if state.structured_operator_decisions else None
+        ),
         settled=state.settled,
         latest_settlement_event_id=state.latest_settlement_event_id,
         last_event_id=last_event.event_id,
@@ -217,6 +233,7 @@ class _ProjectionState:
     research_approved: bool = False
     latest_research_event_id: str | None = None
     operator_decision: OperatorDecision | None = None
+    structured_operator_decisions: list[ManifestBackedOperatorDecisionRecord] = None  # type: ignore[assignment]
     current_verdict: Any = None
     settled: bool = False
     latest_settlement_event_id: str | None = None
@@ -232,6 +249,7 @@ class _ProjectionState:
         self.structured_manual_evidence = []
         self.structured_manual_evidence_assessments = []
         self.variant_b_evidence_lineage_manifests = []
+        self.structured_operator_decisions = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -404,6 +422,12 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         PregameEventType.OPERATOR_PICK_REJECTED,
     }:
         _apply_operator_event(state, event, event_type)
+    elif event_type == PregameEventType.OPERATOR_DECISION_RECORDED:
+        decision = _parse_payload(
+            event, ManifestBackedOperatorDecisionRecord, "structured decision"
+        )
+        _ensure_record_game_id(event, decision.game_id, "ManifestBackedOperatorDecisionRecord")
+        state.structured_operator_decisions.append(decision.model_copy(deep=True))
     elif event_type == PregameEventType.GAME_SETTLED:
         state.settled = True
         state.latest_settlement_event_id = event.event_id
@@ -684,3 +708,21 @@ def _final_quote_gate_indexes(
         )
         for evaluation_id in sorted(by_evaluation)
     )
+
+
+def _superseded_structured_decision_ids(
+    decisions: list[ManifestBackedOperatorDecisionRecord],
+) -> tuple[str, ...]:
+    return tuple(
+        sorted(item.supersedes_decision_id for item in decisions if item.supersedes_decision_id)
+    )
+
+
+def _active_structured_decision(
+    decisions: list[ManifestBackedOperatorDecisionRecord],
+) -> ManifestBackedOperatorDecisionRecord | None:
+    superseded = set(_superseded_structured_decision_ids(decisions))
+    active = [item for item in decisions if item.decision_id not in superseded]
+    if len(active) > 1:
+        raise ProjectionError("multiple active structured operator decisions")
+    return active[0].model_copy(deep=True) if active else None
