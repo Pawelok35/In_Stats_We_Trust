@@ -40,6 +40,7 @@ LIVE_SCENARIO_PROCESSED = (
 LIVE_WEEK_GAMES_DIAGNOSTIC_LOG = REPO_ROOT / "research" / "live_scenario_week_games_diagnostics.log"
 VENV_PYTHON = REPO_ROOT / ".venv" / "Scripts" / "python.exe"
 PYTHON_EXE = VENV_PYTHON if VENV_PYTHON.exists() else Path(sys.executable)
+PREGAME_DATA_ROOT = REPO_ROOT / "data" / "pregame"
 
 DAY_OPTIONS = [
     ("auto", "Auto - dzisiejszy dzien"),
@@ -317,6 +318,29 @@ class DailyBotGui(tk.Tk):
             padx=6,
             pady=6,
         )
+
+        ledger_frame = ttk.LabelFrame(root, text="Centralny ledger pregame")
+        ledger_frame.pack(fill=tk.X, expand=False, pady=(0, 10))
+        ledger_actions = ttk.Frame(ledger_frame)
+        ledger_actions.pack(fill=tk.X, padx=6, pady=(6, 3))
+        ttk.Button(
+            ledger_actions,
+            text="Odswiez status ledgeru",
+            command=self._refresh_central_ledger,
+        ).pack(side=tk.LEFT, padx=(0, 6))
+        ttk.Button(
+            ledger_actions,
+            text="Otworz raport ledgeru",
+            command=self._open_central_ledger_report,
+        ).pack(side=tk.LEFT)
+        self.ledger_status_text = tk.Text(ledger_frame, height=5, wrap=tk.WORD)
+        self.ledger_status_text.pack(fill=tk.X, padx=6, pady=(3, 6))
+        self.ledger_status_text.insert(
+            tk.END,
+            "Centralny ledger nie zostal jeszcze odczytany.\n"
+            "Uzyj odswiezenia po zapisaniu danych tygodnia.",
+        )
+        self.ledger_status_text.configure(state=tk.DISABLED)
 
         workflow_frame = ttk.LabelFrame(root, text="Szybka kolejnosc pracy")
         workflow_frame.pack(fill=tk.X, expand=False, pady=(0, 10))
@@ -3040,6 +3064,63 @@ class DailyBotGui(tk.Tk):
         folder = REPO_ROOT / "research" / "daily_bot" / str(season) / f"week_{week:02d}"
         folder.mkdir(parents=True, exist_ok=True)
         os.startfile(folder)
+
+    def _central_ledger_command(self, command: str) -> subprocess.CompletedProcess[str]:
+        values = self._validate()
+        if values is None:
+            raise ValueError("season/week are invalid")
+        season, week = values
+        return subprocess.run(
+            [
+                str(PYTHON_EXE),
+                "-m",
+                "pregame.weekly_cli",
+                "--root",
+                str(PREGAME_DATA_ROOT),
+                "--season",
+                str(season),
+                "--week",
+                str(week),
+                command,
+            ],
+            cwd=REPO_ROOT,
+            capture_output=True,
+            text=True,
+            encoding="utf-8",
+            check=False,
+        )
+
+    def _refresh_central_ledger(self) -> None:
+        try:
+            result = self._central_ledger_command("status")
+        except Exception as exc:
+            messagebox.showerror("Ledger", f"Nie udalo sie odczytac ledgeru:\n{exc}")
+            return
+        self.ledger_status_text.configure(state=tk.NORMAL)
+        self.ledger_status_text.delete("1.0", tk.END)
+        self.ledger_status_text.insert(tk.END, result.stdout or result.stderr)
+        self.ledger_status_text.configure(state=tk.DISABLED)
+
+    def _open_central_ledger_report(self) -> None:
+        try:
+            result = self._central_ledger_command("report")
+        except Exception as exc:
+            messagebox.showerror("Ledger", f"Nie udalo sie wygenerowac raportu:\n{exc}")
+            return
+        if result.returncode != 0:
+            messagebox.showerror("Ledger", result.stderr or result.stdout)
+            return
+        try:
+            payload = json.loads(result.stdout)
+            report = Path(payload["report_markdown"])
+            if not report.is_absolute():
+                report = REPO_ROOT / report
+            if report.exists():
+                subprocess.Popen(["notepad.exe", str(report)])
+                return
+        except (KeyError, TypeError, json.JSONDecodeError):
+            pass
+        messagebox.showerror("Ledger", result.stderr or "Raport ledgeru nie zostal utworzony.")
 
     def _live_output_folder(self) -> Path | None:
         try:
