@@ -1,6 +1,7 @@
 from __future__ import annotations
 
 from datetime import timedelta
+from decimal import Decimal
 
 import pytest
 from pydantic import ValidationError
@@ -168,6 +169,25 @@ def test_v1_execution_contract_rejects_invalid_financial_inputs(tmp_path, field,
             gate_evaluation_id=gate.evaluation_id,
             **values,
         )
+
+
+def test_v1_accepts_decimal_convertible_stake_and_decimal_spread(tmp_path):
+    _store, candidate, gate = _approved(tmp_path)
+    values = _execution_values(
+        candidate,
+        gate,
+        stake_units="1.25",
+        spread=Decimal("-2.0"),
+        financial_terms_version="AMERICAN_ODDS_RISK_BASED_V1",
+    )
+    execution = WagerExecution(
+        candidate_id=candidate.candidate_id,
+        game_id=candidate.game_id,
+        gate_evaluation_id=gate.evaluation_id,
+        **values,
+    )
+    assert execution.stake_units == 1.25
+    assert execution.spread == -2.0
 
 
 def test_unversioned_execution_is_replayable_but_cannot_be_centrally_settled(tmp_path):

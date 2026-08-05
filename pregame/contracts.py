@@ -1452,19 +1452,24 @@ class WagerExecution(PregameContract):
             != FINANCIAL_TERMS_VERSION_AMERICAN_ODDS_RISK_BASED_V1
         ):
             return value
-        for field in ("stake_units", "spread"):
-            numeric = value.get(field)
-            if isinstance(numeric, bool) or not isinstance(numeric, (int, float)):
-                raise ValueError(f"{field} must be numeric and non-bool for V1")
-            if not math.isfinite(float(numeric)):
-                raise ValueError(f"{field} must be finite for V1")
-            try:
-                Decimal(str(numeric))
-            except (InvalidOperation, ValueError) as exc:
-                raise ValueError(f"{field} must be Decimal-convertible for V1") from exc
         stake = value.get("stake_units")
-        if float(stake) <= 0:
+        if isinstance(stake, bool):
+            raise ValueError("stake_units must be non-bool for V1")
+        try:
+            stake_decimal = Decimal(str(stake))
+        except (InvalidOperation, ValueError) as exc:
+            raise ValueError("stake_units must be Decimal-convertible for V1") from exc
+        if not stake_decimal.is_finite() or stake_decimal <= 0:
             raise ValueError("stake_units must be positive for V1")
+        spread = value.get("spread")
+        if isinstance(spread, bool) or not isinstance(spread, (int, float, Decimal)):
+            raise ValueError("spread must be numeric and non-bool for V1")
+        try:
+            spread_decimal = Decimal(str(spread))
+        except (InvalidOperation, ValueError) as exc:
+            raise ValueError("spread must be Decimal-convertible for V1") from exc
+        if not spread_decimal.is_finite():
+            raise ValueError("spread must be finite for V1")
         price = value.get("price")
         if isinstance(price, bool) or not isinstance(price, int):
             raise ValueError("price must be a strict integer for V1")
