@@ -17,6 +17,7 @@ from pregame.closing_quote_link import (
     closing_quote_link_event_id,
 )
 from pregame.contracts import (
+    AuthoritativeGameResult,
     CandidateRecord,
     ClosingQuoteLink,
     DeterministicRuleAssessorMetadata,
@@ -82,6 +83,11 @@ from pregame.final_quote_gate import (
     evaluate_final_quote,
     final_quote_evaluation_id,
     final_quote_gate_event_id,
+)
+from pregame.game_result import (
+    AuthoritativeGameResultRegistrationResult,
+    AuthoritativeGameResultService,
+    game_result_event_id,
 )
 from pregame.jsonl_store import EventStoreCorruptionError, JsonlPregameEventStore
 from pregame.manifest_backed_final_quote_gate import (
@@ -169,6 +175,9 @@ from pregame.wager_execution import (
 __all__ = [
     "AppendResult",
     "AppendStatus",
+    "AuthoritativeGameResult",
+    "AuthoritativeGameResultRegistrationResult",
+    "AuthoritativeGameResultService",
     "CandidateRecord",
     "CandidateImportResult",
     "CandidateRegistryError",
@@ -277,6 +286,7 @@ __all__ = [
     "evaluate_final_quote",
     "final_quote_evaluation_id",
     "final_quote_gate_event_id",
+    "game_result_event_id",
     "variant_b_research_event_id",
     "variant_b_research_id",
     "build_final_quote_policy",

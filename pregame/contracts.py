@@ -45,6 +45,7 @@ DEFAULT_FINAL_QUOTE_GATE_RESULT_SCHEMA_VERSION = "final_quote_gate_result.v1"
 DEFAULT_VARIANT_B_POINT_RESULT_SCHEMA_VERSION = "variant_b_point_result.v1"
 DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1"
 DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION = "final_quote_runtime_policy.v1"
+DEFAULT_AUTHORITATIVE_GAME_RESULT_SCHEMA_VERSION = "authoritative_game_result.v1"
 DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION = "variant_b_policy_build_result.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION = "structured_manual_evidence.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_SCHEMA_VERSION = (
@@ -1509,6 +1510,82 @@ class ClosingQuoteLink(PregameContract):
         return _ensure_utc(value, "linked_at_utc")
 
 
+class AuthoritativeGameResult(PregameContract):
+    """Immutable final home/away result derived from exactly one GAME_CREATED event."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    result_event_id: str
+    game_id: str
+    game_created_event_id: str
+    home_team: str
+    away_team: str
+    season: int
+    week: int
+    kickoff_utc: datetime
+    neutral_site: bool | None = None
+    status: Literal["FINAL"] = "FINAL"
+    home_score: int
+    away_score: int
+    overtime: bool | None = None
+    source: str
+    source_reference: str
+    source_finalized_at_utc: datetime
+    observed_at_utc: datetime
+    schema_version: str = DEFAULT_AUTHORITATIVE_GAME_RESULT_SCHEMA_VERSION
+
+    @field_validator(
+        "result_event_id",
+        "game_id",
+        "game_created_event_id",
+        "home_team",
+        "away_team",
+        "source",
+        "source_reference",
+        "schema_version",
+    )
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("home_score", "away_score", mode="before")
+    @classmethod
+    def _strict_score(cls, value: Any, info: Any) -> int:
+        if isinstance(value, bool) or not isinstance(value, int):
+            raise ValueError(f"{info.field_name} must be an integer")
+        if value < 0:
+            raise ValueError(f"{info.field_name} must be non-negative")
+        return value
+
+    @field_validator("overtime", mode="before")
+    @classmethod
+    def _strict_overtime(cls, value: Any) -> bool | None:
+        if value is not None and not isinstance(value, bool):
+            raise ValueError("overtime must be bool or None")
+        return value
+
+    @field_validator(
+        "kickoff_utc",
+        "source_finalized_at_utc",
+        "observed_at_utc",
+    )
+    @classmethod
+    def _utc(cls, value: datetime, info: Any) -> datetime:
+        return _require_literal_utc(value, info.field_name)
+
+    @model_validator(mode="after")
+    def _semantics(self) -> "AuthoritativeGameResult":
+        if isinstance(self.season, bool) or not isinstance(self.season, int):
+            raise ValueError("season must be an integer")
+        if isinstance(self.week, bool) or not isinstance(self.week, int):
+            raise ValueError("week must be an integer")
+        if self.home_team == self.away_team:
+            raise ValueError("home_team and away_team must differ")
+        if self.source_finalized_at_utc <= self.kickoff_utc:
+            raise ValueError("source_finalized_at_utc must be after kickoff_utc")
+        return self
+
+
 class StructuredVariantBAuditResultRecord(PregameContract):
     """Compact central record of one Stage 11.2 audit attempt."""
 
@@ -1676,6 +1753,12 @@ class PregameGameRecord(PregameContract):
     closing_quote_link_by_execution_id: tuple[tuple[str, str], ...] = ()
     latest_closing_quote_link: ClosingQuoteLink | None = None
 
+    game_created_event_ids: tuple[str, ...] = ()
+    authoritative_game_result_history: tuple[AuthoritativeGameResult, ...] = ()
+    authoritative_game_result_by_game_id: tuple[tuple[str, str], ...] = ()
+    authoritative_game_result: AuthoritativeGameResult | None = None
+    authoritative_game_result_event_id: str | None = None
+
     def has_closing_quote_link(self, execution_id: str) -> bool:
         """Return whether an immutable closing benchmark link exists for execution_id."""
 
@@ -1688,6 +1771,18 @@ class PregameGameRecord(PregameContract):
             if item.execution_id == execution_id:
                 return item.closing_snapshot_id
         return None
+
+    def has_authoritative_game_result(self, game_id: str) -> bool:
+        """Return whether this projected game has one authoritative final result."""
+
+        return self.game_id == game_id and self.authoritative_game_result is not None
+
+    def authoritative_result_event_id_for_game(self, game_id: str) -> str | None:
+        """Return the deterministic result event ID for this game, if recorded."""
+
+        if self.game_id != game_id:
+            return None
+        return self.authoritative_game_result_event_id
 
     settled: bool = False
     latest_settlement_event_id: str | None = None

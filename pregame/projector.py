@@ -12,6 +12,7 @@ from typing import Any
 from pydantic import ValidationError
 
 from pregame.contracts import (
+    AuthoritativeGameResult,
     CandidateRecord,
     ClosingQuoteLink,
     FinalQuoteGateEvaluationIndex,
@@ -93,6 +94,7 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         kickoff_utc=state.kickoff_utc,
         venue=state.venue,
         neutral_site=state.neutral_site,
+        game_created_event_ids=tuple(state.game_created_event_ids),
         candidate=state.candidate,
         candidate_status=state.candidate_status,
         selected_team=state.selected_team,
@@ -181,6 +183,20 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         latest_closing_quote_link=(
             state.closing_quote_link_history[-1] if state.closing_quote_link_history else None
         ),
+        authoritative_game_result_history=tuple(state.authoritative_game_result_history),
+        authoritative_game_result_by_game_id=_authoritative_result_indexes(
+            state.authoritative_game_result_history
+        ),
+        authoritative_game_result=(
+            state.authoritative_game_result_history[-1]
+            if state.authoritative_game_result_history
+            else None
+        ),
+        authoritative_game_result_event_id=(
+            state.authoritative_game_result_history[-1].result_event_id
+            if state.authoritative_game_result_history
+            else None
+        ),
         settled=state.settled,
         latest_settlement_event_id=state.latest_settlement_event_id,
         last_event_id=last_event.event_id,
@@ -220,6 +236,7 @@ class _ProjectionState:
     kickoff_utc: datetime | None = None
     venue: str | None = None
     neutral_site: bool | None = None
+    game_created_event_ids: list[str] = None  # type: ignore[assignment]
     candidate: CandidateRecord | None = None
     candidate_status: CandidateStatus | None = None
     selected_team: str | None = None
@@ -256,6 +273,7 @@ class _ProjectionState:
     structured_operator_decisions: list[ManifestBackedOperatorDecisionRecord] = None  # type: ignore[assignment]
     wager_execution_history: list[WagerExecution] = None  # type: ignore[assignment]
     closing_quote_link_history: list[ClosingQuoteLink] = None  # type: ignore[assignment]
+    authoritative_game_result_history: list[AuthoritativeGameResult] = None  # type: ignore[assignment]
     current_verdict: Any = None
     settled: bool = False
     latest_settlement_event_id: str | None = None
@@ -274,6 +292,8 @@ class _ProjectionState:
         self.structured_operator_decisions = []
         self.wager_execution_history = []
         self.closing_quote_link_history = []
+        self.game_created_event_ids = []
+        self.authoritative_game_result_history = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -468,6 +488,10 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         if any(item.execution_id == link.execution_id for item in state.closing_quote_link_history):
             raise ProjectionError("multiple closing quote links share execution_id")
         state.closing_quote_link_history.append(link.model_copy(deep=True))
+    elif event_type == PregameEventType.AUTHORITATIVE_GAME_RESULT_RECORDED:
+        result = _parse_payload(event, AuthoritativeGameResult, "authoritative game result")
+        _ensure_record_game_id(event, result.game_id, "AuthoritativeGameResult")
+        _apply_authoritative_game_result(state, event, result)
     elif event_type == PregameEventType.GAME_SETTLED:
         state.settled = True
         state.latest_settlement_event_id = event.event_id
@@ -500,6 +524,44 @@ def _apply_game_created(state: _ProjectionState, event: PregameEvent) -> None:
     state.kickoff_utc = _parse_optional_datetime(payload.get("kickoff_utc"), event.event_id)
     state.venue = _optional_text(payload.get("venue"), "venue", event.event_id)
     state.neutral_site = _optional_bool(payload.get("neutral_site"), "neutral_site", event.event_id)
+    state.game_created_event_ids.append(event.event_id)
+
+
+def _apply_authoritative_game_result(
+    state: _ProjectionState, event: PregameEvent, result: AuthoritativeGameResult
+) -> None:
+    if len(state.game_created_event_ids) != 1:
+        raise ProjectionError("authoritative result requires exactly one GAME_CREATED event")
+    if result.game_created_event_id != state.game_created_event_ids[0]:
+        raise ProjectionError("authoritative result GAME_CREATED lineage does not match projection")
+    if result.result_event_id != event.event_id:
+        raise ProjectionError("authoritative result event ID does not match event")
+    if result.source_finalized_at_utc != event.effective_at_utc:
+        raise ProjectionError("authoritative result finalized timestamp does not match event")
+    if result.observed_at_utc != event.created_at_utc:
+        raise ProjectionError("authoritative result observed timestamp does not match event")
+    if (
+        result.home_team != state.home_team
+        or result.away_team != state.away_team
+        or result.season != state.season
+        or result.week != state.week
+        or result.kickoff_utc != state.kickoff_utc
+        or result.neutral_site != state.neutral_site
+    ):
+        raise ProjectionError(
+            "authoritative result derived game identity does not match GAME_CREATED"
+        )
+    if any(item.game_id == result.game_id for item in state.authoritative_game_result_history):
+        raise ProjectionError("multiple authoritative game results share game_id")
+    state.authoritative_game_result_history.append(result.model_copy(deep=True))
+
+
+def _authoritative_result_indexes(
+    results: Sequence[AuthoritativeGameResult],
+) -> tuple[tuple[str, str], ...]:
+    """Return the explicit game-to-result-event index without selecting revisions."""
+
+    return tuple((item.game_id, item.result_event_id) for item in results)
 
 
 def _apply_market_event(
