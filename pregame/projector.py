@@ -32,6 +32,7 @@ from pregame.contracts import (
     VariantBEvidenceLineageManifestRecord,
     VariantBResearchRecord,
     WagerExecution,
+    WagerExecutionClv,
     WagerExecutionSettlement,
 )
 from pregame.events import CandidateStatus, DecisionLevel, PregameEventType
@@ -207,6 +208,11 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
             if state.wager_execution_settlement_history
             else None
         ),
+        wager_execution_clv_history=tuple(state.wager_execution_clv_history),
+        wager_execution_clv_by_execution_id=_clv_indexes(state.wager_execution_clv_history),
+        latest_wager_execution_clv=(
+            state.wager_execution_clv_history[-1] if state.wager_execution_clv_history else None
+        ),
         settled=state.settled,
         latest_settlement_event_id=state.latest_settlement_event_id,
         last_event_id=last_event.event_id,
@@ -285,6 +291,7 @@ class _ProjectionState:
     closing_quote_link_history: list[ClosingQuoteLink] = None  # type: ignore[assignment]
     authoritative_game_result_history: list[AuthoritativeGameResult] = None  # type: ignore[assignment]
     wager_execution_settlement_history: list[WagerExecutionSettlement] = None  # type: ignore[assignment]
+    wager_execution_clv_history: list[WagerExecutionClv] = None  # type: ignore[assignment]
     current_verdict: Any = None
     settled: bool = False
     latest_settlement_event_id: str | None = None
@@ -306,6 +313,7 @@ class _ProjectionState:
         self.game_created_event_ids = []
         self.authoritative_game_result_history = []
         self.wager_execution_settlement_history = []
+        self.wager_execution_clv_history = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -520,6 +528,19 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         ):
             raise ProjectionError("multiple wager execution settlements share execution_id")
         state.wager_execution_settlement_history.append(settlement.model_copy(deep=True))
+    elif event_type == PregameEventType.WAGER_EXECUTION_CLV_CALCULATED:
+        clv = _parse_payload(event, WagerExecutionClv, "wager execution CLV")
+        _ensure_record_game_id(event, clv.game_id, "WagerExecutionClv")
+        if clv.clv_event_id != event.event_id:
+            raise ProjectionError("wager execution CLV event ID does not match event")
+        if (
+            clv.calculated_at_utc != event.effective_at_utc
+            or event.created_at_utc != event.effective_at_utc
+        ):
+            raise ProjectionError("wager execution CLV timestamps do not match event")
+        if any(item.execution_id == clv.execution_id for item in state.wager_execution_clv_history):
+            raise ProjectionError("multiple wager execution CLV records share execution_id")
+        state.wager_execution_clv_history.append(clv.model_copy(deep=True))
     elif event_type == PregameEventType.GAME_SETTLED:
         state.settled = True
         state.latest_settlement_event_id = event.event_id
@@ -596,6 +617,10 @@ def _settlement_indexes(
     settlements: Sequence[WagerExecutionSettlement],
 ) -> tuple[tuple[str, str], ...]:
     return tuple((item.execution_id, item.settlement_event_id) for item in settlements)
+
+
+def _clv_indexes(values: list[WagerExecutionClv]) -> tuple[tuple[str, str], ...]:
+    return tuple((item.execution_id, item.clv_event_id) for item in values)
 
 
 def _apply_market_event(

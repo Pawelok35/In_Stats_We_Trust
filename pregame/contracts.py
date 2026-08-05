@@ -48,7 +48,9 @@ DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1
 DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION = "final_quote_runtime_policy.v1"
 DEFAULT_AUTHORITATIVE_GAME_RESULT_SCHEMA_VERSION = "authoritative_game_result.v1"
 DEFAULT_WAGER_EXECUTION_SETTLEMENT_SCHEMA_VERSION = "wager_execution_settlement.v1"
+DEFAULT_WAGER_EXECUTION_CLV_SCHEMA_VERSION = "wager_execution_clv.v1"
 FINANCIAL_TERMS_VERSION_AMERICAN_ODDS_RISK_BASED_V1 = "AMERICAN_ODDS_RISK_BASED_V1"
+OPERATOR_DESIGNATED_SAME_BOOK_SPREAD_CLV_V1 = "OPERATOR_DESIGNATED_SAME_BOOK_SPREAD_CLV_V1"
 DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION = "variant_b_policy_build_result.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION = "structured_manual_evidence.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_SCHEMA_VERSION = (
@@ -1577,6 +1579,91 @@ class WagerExecutionSettlement(PregameContract):
         return _require_literal_utc(value, "settled_at_utc")
 
 
+class WagerExecutionClv(PregameContract):
+    """Immutable same-book spread closing-value result for one execution."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    clv_event_id: str
+    execution_id: str
+    game_id: str
+    closing_link_event_id: str
+    closing_snapshot_id: str
+    candidate_id: str
+    decision_id: str
+    gate_evaluation_id: str
+    audit_build_id: str
+    audit_evidence_id: str
+    manifest_id: str
+    model_generation_snapshot_id: str
+    methodology_version: Literal["OPERATOR_DESIGNATED_SAME_BOOK_SPREAD_CLV_V1"]
+    selected_side: str
+    execution_spread: str
+    closing_spread: str
+    line_clv_points: str
+    execution_price: int
+    closing_price: int
+    execution_implied_probability: str
+    closing_implied_probability: str
+    price_clv_probability: str | None = None
+    price_clv_status: Literal["COMPARABLE", "NOT_COMPARABLE_LINE_CHANGED"]
+    close_classification: Literal[
+        "BEAT_CLOSE",
+        "LOST_TO_CLOSE",
+        "BEAT_CLOSE_ON_PRICE",
+        "LOST_TO_CLOSE_ON_PRICE",
+        "MATCHED_CLOSE",
+    ]
+    decimal_precision: int = 28
+    rounding_scale: str = "0.000001"
+    rounding_mode: Literal["ROUND_HALF_UP"] = "ROUND_HALF_UP"
+    calculated_at_utc: datetime
+    schema_version: str = DEFAULT_WAGER_EXECUTION_CLV_SCHEMA_VERSION
+
+    @field_validator(
+        "clv_event_id",
+        "execution_id",
+        "game_id",
+        "closing_link_event_id",
+        "closing_snapshot_id",
+        "candidate_id",
+        "decision_id",
+        "gate_evaluation_id",
+        "audit_build_id",
+        "audit_evidence_id",
+        "manifest_id",
+        "model_generation_snapshot_id",
+        "selected_side",
+        "execution_spread",
+        "closing_spread",
+        "line_clv_points",
+        "execution_implied_probability",
+        "closing_implied_probability",
+        "rounding_scale",
+        "schema_version",
+    )
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("price_clv_probability")
+    @classmethod
+    def _optional_text(cls, value: str | None) -> str | None:
+        return None if value is None else _require_non_empty(value, "price_clv_probability")
+
+    @field_validator("execution_price", "closing_price", "decimal_precision")
+    @classmethod
+    def _strict_int(cls, value: int, info: Any) -> int:
+        if isinstance(value, bool) or not isinstance(value, int):
+            raise ValueError(f"{info.field_name} must be an integer")
+        return value
+
+    @field_validator("calculated_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime) -> datetime:
+        return _require_literal_utc(value, "calculated_at_utc")
+
+
 class ClosingQuoteLink(PregameContract):
     """Immutable association of one execution with one closing market snapshot."""
 
@@ -1868,6 +1955,9 @@ class PregameGameRecord(PregameContract):
     wager_execution_settlement_history: tuple[WagerExecutionSettlement, ...] = ()
     wager_execution_settlement_by_execution_id: tuple[tuple[str, str], ...] = ()
     latest_wager_execution_settlement: WagerExecutionSettlement | None = None
+    wager_execution_clv_history: tuple[WagerExecutionClv, ...] = ()
+    wager_execution_clv_by_execution_id: tuple[tuple[str, str], ...] = ()
+    latest_wager_execution_clv: WagerExecutionClv | None = None
 
     def has_closing_quote_link(self, execution_id: str) -> bool:
         """Return whether an immutable closing benchmark link exists for execution_id."""
@@ -1904,6 +1994,33 @@ class PregameGameRecord(PregameContract):
             (
                 item
                 for item in self.wager_execution_settlement_history
+                if item.execution_id == execution_id
+            ),
+            None,
+        )
+
+    def settlement_outcome_for_execution(self, execution_id: str) -> str | None:
+        settlement = self.settlement_for_execution(execution_id)
+        return None if settlement is None else settlement.outcome
+
+    def settlement_net_profit_for_execution(self, execution_id: str) -> str | None:
+        settlement = self.settlement_for_execution(execution_id)
+        return None if settlement is None else settlement.net_profit_units
+
+    def settlement_authoritative_result_event_id_for_execution(
+        self, execution_id: str
+    ) -> str | None:
+        settlement = self.settlement_for_execution(execution_id)
+        return None if settlement is None else settlement.authoritative_result_event_id
+
+    def has_execution_clv(self, execution_id: str) -> bool:
+        return any(item.execution_id == execution_id for item in self.wager_execution_clv_history)
+
+    def clv_for_execution(self, execution_id: str) -> WagerExecutionClv | None:
+        return next(
+            (
+                item
+                for item in self.wager_execution_clv_history
                 if item.execution_id == execution_id
             ),
             None,
