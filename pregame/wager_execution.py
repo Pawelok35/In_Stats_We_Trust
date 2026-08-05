@@ -8,6 +8,7 @@ from datetime import datetime
 from pydantic import ValidationError
 
 from pregame.contracts import (
+    FINANCIAL_TERMS_VERSION_AMERICAN_ODDS_RISK_BASED_V1,
     ManifestBackedOperatorDecisionRecord,
     PregameEvent,
     WagerExecution,
@@ -102,6 +103,7 @@ class ManifestBackedWagerExecutionService:
                 executed_at_utc=executed_at_utc,
                 recorded_at_utc=recorded_at_utc,
                 external_ticket_id=external_ticket_id,
+                financial_terms_version=FINANCIAL_TERMS_VERSION_AMERICAN_ODDS_RISK_BASED_V1,
             )
         except ValidationError:
             return self._failed(execution_id, decision_id, "INVALID_EXECUTION")

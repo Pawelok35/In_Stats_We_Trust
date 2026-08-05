@@ -11,6 +11,7 @@ from __future__ import annotations
 import math
 from collections.abc import Mapping
 from datetime import datetime, timezone
+from decimal import Decimal, InvalidOperation
 from typing import Any, Literal
 
 from pydantic import BaseModel, ConfigDict, Field, field_validator, model_validator
@@ -46,6 +47,8 @@ DEFAULT_VARIANT_B_POINT_RESULT_SCHEMA_VERSION = "variant_b_point_result.v1"
 DEFAULT_VARIANT_B_RESEARCH_RECORD_SCHEMA_VERSION = "variant_b_research_record.v1"
 DEFAULT_FINAL_QUOTE_RUNTIME_POLICY_SCHEMA_VERSION = "final_quote_runtime_policy.v1"
 DEFAULT_AUTHORITATIVE_GAME_RESULT_SCHEMA_VERSION = "authoritative_game_result.v1"
+DEFAULT_WAGER_EXECUTION_SETTLEMENT_SCHEMA_VERSION = "wager_execution_settlement.v1"
+FINANCIAL_TERMS_VERSION_AMERICAN_ODDS_RISK_BASED_V1 = "AMERICAN_ODDS_RISK_BASED_V1"
 DEFAULT_VARIANT_B_POLICY_BUILD_RESULT_SCHEMA_VERSION = "variant_b_policy_build_result.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_SCHEMA_VERSION = "structured_manual_evidence.v1"
 DEFAULT_STRUCTURED_MANUAL_EVIDENCE_ASSESSMENT_SCHEMA_VERSION = (
@@ -1435,6 +1438,37 @@ class WagerExecution(PregameContract):
     executed_at_utc: datetime
     recorded_at_utc: datetime
     external_ticket_id: str | None = None
+    financial_terms_version: Literal["AMERICAN_ODDS_RISK_BASED_V1"] | None = None
+
+    @model_validator(mode="before")
+    @classmethod
+    def _v1_raw_financial_terms(cls, value: Any) -> Any:
+        if not isinstance(value, Mapping):
+            return value
+        if (
+            value.get("financial_terms_version")
+            != FINANCIAL_TERMS_VERSION_AMERICAN_ODDS_RISK_BASED_V1
+        ):
+            return value
+        for field in ("stake_units", "spread"):
+            numeric = value.get(field)
+            if isinstance(numeric, bool) or not isinstance(numeric, (int, float)):
+                raise ValueError(f"{field} must be numeric and non-bool for V1")
+            if not math.isfinite(float(numeric)):
+                raise ValueError(f"{field} must be finite for V1")
+            try:
+                Decimal(str(numeric))
+            except (InvalidOperation, ValueError) as exc:
+                raise ValueError(f"{field} must be Decimal-convertible for V1") from exc
+        stake = value.get("stake_units")
+        if float(stake) <= 0:
+            raise ValueError("stake_units must be positive for V1")
+        price = value.get("price")
+        if isinstance(price, bool) or not isinstance(price, int):
+            raise ValueError("price must be a strict integer for V1")
+        if -99 <= price <= 99:
+            raise ValueError("price must be valid American odds for V1")
+        return value
 
     @field_validator(
         "execution_id",
@@ -1469,6 +1503,78 @@ class WagerExecution(PregameContract):
         if self.executed_at_utc > self.recorded_at_utc:
             raise ValueError("executed_at_utc must not be after recorded_at_utc")
         return self
+
+
+class WagerExecutionSettlement(PregameContract):
+    """Immutable V1 spread settlement derived from execution and final result authorities."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    settlement_event_id: str
+    execution_id: str
+    game_id: str
+    authoritative_result_event_id: str
+    candidate_id: str
+    decision_id: str
+    gate_evaluation_id: str
+    audit_build_id: str
+    audit_evidence_id: str
+    manifest_id: str
+    model_generation_snapshot_id: str
+    selected_side: str
+    selected_score: int
+    opponent_score: int
+    execution_spread: str
+    adjusted_margin: str
+    outcome: Literal["WIN", "LOSS", "PUSH"]
+    execution_price: int
+    risk_units: str
+    net_profit_units: str
+    financial_terms_version: Literal["AMERICAN_ODDS_RISK_BASED_V1"]
+    payout_methodology: Literal["AMERICAN_ODDS_RISK_BASED_V1"]
+    decimal_precision: int = 28
+    rounding_scale: str = "0.000001"
+    rounding_mode: Literal["ROUND_HALF_UP"] = "ROUND_HALF_UP"
+    settled_at_utc: datetime
+    schema_version: str = DEFAULT_WAGER_EXECUTION_SETTLEMENT_SCHEMA_VERSION
+
+    @field_validator(
+        "settlement_event_id",
+        "execution_id",
+        "game_id",
+        "authoritative_result_event_id",
+        "candidate_id",
+        "decision_id",
+        "gate_evaluation_id",
+        "audit_build_id",
+        "audit_evidence_id",
+        "manifest_id",
+        "model_generation_snapshot_id",
+        "selected_side",
+        "execution_spread",
+        "adjusted_margin",
+        "risk_units",
+        "net_profit_units",
+        "rounding_scale",
+        "schema_version",
+    )
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("selected_score", "opponent_score", "execution_price", "decimal_precision")
+    @classmethod
+    def _strict_int(cls, value: int, info: Any) -> int:
+        if isinstance(value, bool) or not isinstance(value, int):
+            raise ValueError(f"{info.field_name} must be an integer")
+        if info.field_name in {"selected_score", "opponent_score"} and value < 0:
+            raise ValueError(f"{info.field_name} must be non-negative")
+        return value
+
+    @field_validator("settled_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime) -> datetime:
+        return _require_literal_utc(value, "settled_at_utc")
 
 
 class ClosingQuoteLink(PregameContract):
@@ -1759,6 +1865,10 @@ class PregameGameRecord(PregameContract):
     authoritative_game_result: AuthoritativeGameResult | None = None
     authoritative_game_result_event_id: str | None = None
 
+    wager_execution_settlement_history: tuple[WagerExecutionSettlement, ...] = ()
+    wager_execution_settlement_by_execution_id: tuple[tuple[str, str], ...] = ()
+    latest_wager_execution_settlement: WagerExecutionSettlement | None = None
+
     def has_closing_quote_link(self, execution_id: str) -> bool:
         """Return whether an immutable closing benchmark link exists for execution_id."""
 
@@ -1783,6 +1893,21 @@ class PregameGameRecord(PregameContract):
         if self.game_id != game_id:
             return None
         return self.authoritative_game_result_event_id
+
+    def has_execution_settlement(self, execution_id: str) -> bool:
+        return any(
+            item.execution_id == execution_id for item in self.wager_execution_settlement_history
+        )
+
+    def settlement_for_execution(self, execution_id: str) -> WagerExecutionSettlement | None:
+        return next(
+            (
+                item
+                for item in self.wager_execution_settlement_history
+                if item.execution_id == execution_id
+            ),
+            None,
+        )
 
     settled: bool = False
     latest_settlement_event_id: str | None = None

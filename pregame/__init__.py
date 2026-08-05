@@ -49,6 +49,7 @@ from pregame.contracts import (
     VariantBPointResult,
     VariantBResearchRecord,
     WagerExecution,
+    WagerExecutionSettlement,
     WeatherObservationPayload,
 )
 from pregame.events import (
@@ -171,6 +172,11 @@ from pregame.wager_execution import (
     WagerExecutionRegistrationResult,
     wager_execution_event_id,
 )
+from pregame.wager_execution_settlement import (
+    WagerExecutionSettlementResult,
+    WagerExecutionSettlementService,
+    wager_execution_settlement_event_id,
+)
 
 __all__ = [
     "AppendResult",
@@ -235,9 +241,13 @@ __all__ = [
     "RosterObservationPayload",
     "WeatherObservationPayload",
     "WagerExecution",
+    "WagerExecutionSettlement",
+    "WagerExecutionSettlementResult",
+    "WagerExecutionSettlementService",
     "WagerExecutionRegistrationResult",
     "ManifestBackedWagerExecutionService",
     "wager_execution_event_id",
+    "wager_execution_settlement_event_id",
     "PublicBettingObservationPayload",
     "StructuredManualEvidenceCategory",
     "StructuredManualEvidenceAssessmentStatus",
