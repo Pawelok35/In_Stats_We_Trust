@@ -11,8 +11,14 @@ from pregame.central_variant_b_audit import (
     CentralVariantBAuditRunResult,
     central_variant_b_audit_event_id,
 )
+from pregame.closing_quote_link import (
+    ClosingQuoteLinkRegistrationResult,
+    ClosingQuoteLinkService,
+    closing_quote_link_event_id,
+)
 from pregame.contracts import (
     CandidateRecord,
+    ClosingQuoteLink,
     DeterministicRuleAssessorMetadata,
     FinalQuoteGateEvaluationIndex,
     FinalQuoteGateResearchLineage,
@@ -168,6 +174,9 @@ __all__ = [
     "CandidateRegistryError",
     "CandidateRegistryService",
     "CandidateStatus",
+    "ClosingQuoteLink",
+    "ClosingQuoteLinkRegistrationResult",
+    "ClosingQuoteLinkService",
     "CentralSingleGameVariantBAuditService",
     "CentralVariantBAuditError",
     "CentralVariantBAuditRunResult",
@@ -255,6 +264,7 @@ __all__ = [
     "candidate_id_for_scan",
     "central_variant_b_audit_event_id",
     "candidate_record_event_id",
+    "closing_quote_link_event_id",
     "model_scan_id",
     "project_events",
     "project_game",

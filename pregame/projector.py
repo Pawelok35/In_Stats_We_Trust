@@ -13,6 +13,7 @@ from pydantic import ValidationError
 
 from pregame.contracts import (
     CandidateRecord,
+    ClosingQuoteLink,
     FinalQuoteGateEvaluationIndex,
     FinalQuoteGateResult,
     ManifestBackedOperatorDecisionRecord,
@@ -172,6 +173,14 @@ def project_events(events: Sequence[PregameEvent]) -> PregameGameRecord:
         latest_wager_execution=(
             state.wager_execution_history[-1] if state.wager_execution_history else None
         ),
+        closing_quote_link_history=tuple(state.closing_quote_link_history),
+        closing_quote_link_by_execution_id=tuple(
+            (item.execution_id, item.closing_snapshot_id)
+            for item in state.closing_quote_link_history
+        ),
+        latest_closing_quote_link=(
+            state.closing_quote_link_history[-1] if state.closing_quote_link_history else None
+        ),
         settled=state.settled,
         latest_settlement_event_id=state.latest_settlement_event_id,
         last_event_id=last_event.event_id,
@@ -246,6 +255,7 @@ class _ProjectionState:
     operator_decision: OperatorDecision | None = None
     structured_operator_decisions: list[ManifestBackedOperatorDecisionRecord] = None  # type: ignore[assignment]
     wager_execution_history: list[WagerExecution] = None  # type: ignore[assignment]
+    closing_quote_link_history: list[ClosingQuoteLink] = None  # type: ignore[assignment]
     current_verdict: Any = None
     settled: bool = False
     latest_settlement_event_id: str | None = None
@@ -263,6 +273,7 @@ class _ProjectionState:
         self.variant_b_evidence_lineage_manifests = []
         self.structured_operator_decisions = []
         self.wager_execution_history = []
+        self.closing_quote_link_history = []
 
 
 def _event_sort_key(event: PregameEvent) -> tuple[datetime, datetime, str]:
@@ -451,6 +462,12 @@ def _apply_event(state: _ProjectionState, effective_event: _EffectiveEvent) -> N
         if any(item.decision_id == execution.decision_id for item in state.wager_execution_history):
             raise ProjectionError("multiple wager executions share decision_id")
         state.wager_execution_history.append(execution.model_copy(deep=True))
+    elif event_type == PregameEventType.CLOSING_QUOTE_LINKED:
+        link = _parse_payload(event, ClosingQuoteLink, "closing quote link")
+        _ensure_record_game_id(event, link.game_id, "ClosingQuoteLink")
+        if any(item.execution_id == link.execution_id for item in state.closing_quote_link_history):
+            raise ProjectionError("multiple closing quote links share execution_id")
+        state.closing_quote_link_history.append(link.model_copy(deep=True))
     elif event_type == PregameEventType.GAME_SETTLED:
         state.settled = True
         state.latest_settlement_event_id = event.event_id

@@ -1470,6 +1470,45 @@ class WagerExecution(PregameContract):
         return self
 
 
+class ClosingQuoteLink(PregameContract):
+    """Immutable association of one execution with one closing market snapshot."""
+
+    model_config = ConfigDict(extra="forbid", frozen=True)
+
+    execution_id: str
+    closing_snapshot_id: str
+    linked_at_utc: datetime
+    game_id: str
+    candidate_id: str
+    decision_id: str
+    gate_evaluation_id: str
+    audit_build_id: str
+    audit_evidence_id: str
+    manifest_id: str
+    model_generation_snapshot_id: str
+
+    @field_validator(
+        "execution_id",
+        "closing_snapshot_id",
+        "game_id",
+        "candidate_id",
+        "decision_id",
+        "gate_evaluation_id",
+        "audit_build_id",
+        "audit_evidence_id",
+        "manifest_id",
+        "model_generation_snapshot_id",
+    )
+    @classmethod
+    def _text(cls, value: str, info: Any) -> str:
+        return _require_non_empty(value, info.field_name)
+
+    @field_validator("linked_at_utc")
+    @classmethod
+    def _utc(cls, value: datetime) -> datetime:
+        return _ensure_utc(value, "linked_at_utc")
+
+
 class StructuredVariantBAuditResultRecord(PregameContract):
     """Compact central record of one Stage 11.2 audit attempt."""
 
@@ -1632,6 +1671,23 @@ class PregameGameRecord(PregameContract):
     wager_executions_by_id: tuple[tuple[str, str], ...] = ()
     successful_execution_by_decision_id: tuple[tuple[str, str], ...] = ()
     latest_wager_execution: WagerExecution | None = None
+
+    closing_quote_link_history: tuple[ClosingQuoteLink, ...] = ()
+    closing_quote_link_by_execution_id: tuple[tuple[str, str], ...] = ()
+    latest_closing_quote_link: ClosingQuoteLink | None = None
+
+    def has_closing_quote_link(self, execution_id: str) -> bool:
+        """Return whether an immutable closing benchmark link exists for execution_id."""
+
+        return any(item.execution_id == execution_id for item in self.closing_quote_link_history)
+
+    def closing_snapshot_id_for_execution(self, execution_id: str) -> str | None:
+        """Return the explicit closing snapshot ID linked to execution_id, if any."""
+
+        for item in self.closing_quote_link_history:
+            if item.execution_id == execution_id:
+                return item.closing_snapshot_id
+        return None
 
     settled: bool = False
     latest_settlement_event_id: str | None = None
