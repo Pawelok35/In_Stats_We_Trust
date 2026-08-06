@@ -1766,8 +1766,15 @@ class DailyBotGui(tk.Tk):
         if not hasattr(self, "live_settings_notebook"):
             return
         current = self.live_settings_notebook.index("current")
-        self.live_mode_var.set("BASIC_AFTER_Q2" if current == 0 else "MANUAL_LOOKUP")
-        self.live_settings_notebook.configure(height=420 if current == 0 else 445)
+        if current == 0:
+            self.live_mode_var.set("BASIC_AFTER_Q2")
+            self.live_settings_notebook.configure(height=420)
+        elif current == 1:
+            self.live_mode_var.set("MANUAL_LOOKUP")
+            self.live_settings_notebook.configure(height=445)
+        else:
+            self.live_mode_var.set("BATCH_AFTER_Q2")
+            self.live_settings_notebook.configure(height=760)
         self._sync_live_run_buttons()
         self._update_live_active_summary()
         if hasattr(self, "live_canvas"):
@@ -1780,6 +1787,8 @@ class DailyBotGui(tk.Tk):
         self.live_compare_button.pack_forget()
         if self.live_mode_var.get() == "MANUAL_LOOKUP":
             self.live_run_button.pack(fill=tk.X, ipady=8, pady=(0, 8), before=self.live_summary_frame)
+            return
+        if self.live_mode_var.get() == "BATCH_AFTER_Q2":
             return
         self.live_compare_button.pack(fill=tk.X, ipady=7, pady=(0, 8), before=self.live_summary_frame)
 
