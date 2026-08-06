@@ -1016,8 +1016,11 @@ class DailyBotGui(tk.Tk):
         table_shell.grid(row=2, column=0, sticky="nsew")
         table_shell.columnconfigure(0, weight=1)
         table_shell.rowconfigure(0, weight=1)
-        self.live_batch_canvas = tk.Canvas(table_shell, height=160, highlightthickness=0)
+        self.live_batch_canvas = tk.Canvas(table_shell, height=620, highlightthickness=0)
         self.live_batch_canvas.grid(row=0, column=0, sticky="nsew")
+        batch_scroll = ttk.Scrollbar(table_shell, orient=tk.VERTICAL, command=self.live_batch_canvas.yview)
+        batch_scroll.grid(row=0, column=1, sticky="ns")
+        self.live_batch_canvas.configure(yscrollcommand=batch_scroll.set)
         self.live_batch_rows_frame = ttk.Frame(self.live_batch_canvas)
         batch_window = self.live_batch_canvas.create_window(
             (0, 0), window=self.live_batch_rows_frame, anchor=tk.NW
@@ -1103,11 +1106,6 @@ class DailyBotGui(tk.Tk):
             child.destroy()
         self.live_batch_row_widgets = {}
         entries = self._batch_current_entries()
-        # The outer Live Scenario scrollbar handles the whole panel. The batch
-        # table itself expands so every game in the selected block is visible.
-        canvas_height = max(150, 52 * len(entries) + 34)
-        self.live_batch_canvas.configure(height=canvas_height)
-        self.live_settings_notebook.configure(height=max(420, canvas_height + 150))
         headers = ["Game", "Q1 A-H", "Q2 A-H", "Spread A (away)", "Status"]
         for column, header in enumerate(headers):
             ttk.Label(
