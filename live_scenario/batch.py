@@ -231,6 +231,8 @@ def _report_for_entry(
     data_cutoff_utc: str,
     generated_at_utc: str,
     tie_policy: str,
+    locale: str = "pl-PL",
+    include_disclaimer: bool = True,
 ) -> str:
     if validation.q1 is None or validation.q2 is None:
         raise ValueError("READY entry has no complete Q1/Q2")
@@ -253,7 +255,7 @@ def _report_for_entry(
             spread_quality=entry.game.spread_status,
         ),
     )
-    return build_forum_post(report.to_dict(), language="pl")
+    return build_forum_post(report.to_dict(), locale=locale, include_disclaimer=include_disclaimer)
 
 
 def generate_batch_post(
@@ -267,6 +269,7 @@ def generate_batch_post(
     generated_at_utc: str | None = None,
     tie_policy: str = "TIE_AS_LOSS",
     allow_partial: bool = False,
+    locale: str = "pl-PL",
 ) -> BatchGenerationResult:
     generated_at = generated_at_utc or (
         datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
@@ -286,7 +289,14 @@ def generate_batch_post(
     if issues and not allow_partial:
         raise BatchValidationError(issues)
 
-    sections: list[str] = [f"🏈 NFL HALFTIME SCENARIOS — WEEK {week}", f"Block: {block}"]
+    if locale == "pl-PL":
+        sections: list[str] = [f"🏈 NFL HALFTIME SCENARIOS — TYDZIEŃ {week}", f"Blok: {block}"]
+        disclaimer = "Historyczne dane — nie są automatycznymi typami live."
+    elif locale == "en-US":
+        sections = [f"🏈 NFL HALFTIME SCENARIOS — WEEK {week}", f"Block: {block}"]
+        disclaimer = "Historical context only — not an automatic live decision."
+    else:
+        raise ValueError(f"Unsupported locale {locale!r}; use pl-PL or en-US.")
     included: list[str] = []
     omitted: list[str] = []
     entry_by_id = {entry.game_id: entry for entry in entries}
@@ -311,6 +321,8 @@ def generate_batch_post(
                 data_cutoff_utc=data_cutoff_utc,
                 generated_at_utc=generated_at,
                 tie_policy=tie_policy,
+                locale=locale,
+                include_disclaimer=False,
             )
         except Exception as exc:
             entry.status = "ERROR"
@@ -321,6 +333,8 @@ def generate_batch_post(
             continue
         sections.extend(["", "━" * 60, "", entry.game.label, "", post])
         included.append(entry.game_id)
+    if included:
+        sections.extend(["", disclaimer])
     return BatchGenerationResult(
         text="\n".join(sections),
         included_game_ids=tuple(included),

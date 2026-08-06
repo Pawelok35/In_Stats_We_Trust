@@ -210,3 +210,25 @@ def test_parse_score_accepts_operator_formats_and_rejects_invalid_values():
     assert parse_score("7:3") == (7, 3)
     with pytest.raises(ValueError):
         parse_score("7")
+
+
+def test_batch_uses_one_selected_locale_and_one_final_disclaimer(monkeypatch):
+    entry = _ten_entries()[0]
+    entry.status = "READY"
+    entry.q1_away, entry.q1_home = "10", "3"
+    entry.q2_away, entry.q2_home = "7", "7"
+    monkeypatch.setattr(batch, "_report_for_entry", lambda *args, **kwargs: "GAME SECTION")
+
+    result = generate_batch_post(
+        [entry],
+        pd.DataFrame(),
+        season=2026,
+        week=1,
+        block="2026-09-13 13:00",
+        data_cutoff_utc="2026-09-13T18:00:00Z",
+        locale="en-US",
+    )
+
+    assert "NFL HALFTIME SCENARIOS — WEEK 1" in result.text
+    assert "Historical context only — not an automatic live decision." in result.text
+    assert result.text.count("Historical context only") == 1

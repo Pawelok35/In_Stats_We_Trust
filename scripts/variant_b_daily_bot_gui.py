@@ -149,6 +149,7 @@ class DailyBotGui(tk.Tk):
         self.live_buttons: list[ttk.Button] = []
         self.live_settings_visible = True
         self.live_mode_var = tk.StringVar(value="BASIC_AFTER_Q2")
+        self.live_locale_var = tk.StringVar(value="pl-PL")
         self.live_basic_payload: dict | None = None
         self.live_week_games: dict[str, WeekGame] = {}
         self.live_active_game: WeekGame | None = None
@@ -289,10 +290,14 @@ class DailyBotGui(tk.Tk):
         buttons = ttk.Frame(root)
         buttons.pack(fill=tk.X, pady=(14, 10))
 
-        self.dry_button = ttk.Button(buttons, text="1. Sprawdz plan", command=lambda: self._run_bot(False))
+        self.dry_button = ttk.Button(
+            buttons, text="1. Sprawdz plan", command=lambda: self._run_bot(False)
+        )
         self.dry_button.grid(row=0, column=0, sticky=tk.W, padx=(0, 8), pady=(0, 6))
 
-        self.execute_button = ttk.Button(buttons, text="2. Wykonaj dzien", command=lambda: self._confirm_execute())
+        self.execute_button = ttk.Button(
+            buttons, text="2. Wykonaj dzien", command=lambda: self._confirm_execute()
+        )
         self.execute_button.grid(row=0, column=1, sticky=tk.W, padx=(0, 8), pady=(0, 6))
 
         self.week_dry_button = ttk.Button(
@@ -447,7 +452,9 @@ class DailyBotGui(tk.Tk):
             width=18,
         )
         self.snapshot_type_box.grid(row=0, column=3, sticky=tk.W, padx=(0, 12))
-        self.snapshot_type_box.bind("<<ComboboxSelected>>", lambda _event: self._generate_gpt_prompt())
+        self.snapshot_type_box.bind(
+            "<<ComboboxSelected>>", lambda _event: self._generate_gpt_prompt()
+        )
 
         ttk.Label(paste_top, text="Source").grid(row=0, column=4, sticky=tk.W, padx=(0, 4))
         self.gpt_source_var = tk.StringVar(value="GPT")
@@ -458,7 +465,9 @@ class DailyBotGui(tk.Tk):
         paste_buttons = ttk.Frame(paste_frame)
         paste_buttons.pack(fill=tk.X, padx=6, pady=(0, 6))
 
-        ttk.Label(paste_buttons, text="GPT research").grid(row=0, column=0, sticky=tk.W, padx=(0, 10), pady=(0, 6))
+        ttk.Label(paste_buttons, text="GPT research").grid(
+            row=0, column=0, sticky=tk.W, padx=(0, 10), pady=(0, 6)
+        )
         ttk.Button(paste_buttons, text="Kopiuj prompt GPT", command=self._copy_gpt_prompt).grid(
             row=0, column=1, sticky=tk.W, padx=(0, 8), pady=(0, 6)
         )
@@ -471,7 +480,9 @@ class DailyBotGui(tk.Tk):
         ttk.Button(paste_buttons, text="Folder GPT", command=self._open_gpt_folder).grid(
             row=0, column=4, sticky=tk.W, padx=(0, 8), pady=(0, 6)
         )
-        ttk.Label(paste_buttons, text="Book snapshot").grid(row=1, column=0, sticky=tk.W, padx=(0, 10), pady=(0, 6))
+        ttk.Label(paste_buttons, text="Book snapshot").grid(
+            row=1, column=0, sticky=tk.W, padx=(0, 10), pady=(0, 6)
+        )
         ttk.Button(
             paste_buttons,
             text="Kopiuj prompt do screena",
@@ -487,7 +498,9 @@ class DailyBotGui(tk.Tk):
             text="Konwertuj na linie",
             command=self._convert_book_snapshot_to_lines,
         ).grid(row=1, column=3, sticky=tk.W, padx=(0, 8), pady=(0, 6))
-        ttk.Label(paste_buttons, text="Pomoc").grid(row=2, column=0, sticky=tk.W, padx=(0, 10), pady=(0, 6))
+        ttk.Label(paste_buttons, text="Pomoc").grid(
+            row=2, column=0, sticky=tk.W, padx=(0, 10), pady=(0, 6)
+        )
         ttk.Button(
             paste_buttons,
             text="Kopiuj instrukcje dla Codex",
@@ -518,12 +531,20 @@ class DailyBotGui(tk.Tk):
         ttk.Combobox(
             quote_top,
             textvariable=self.quote_status_var,
-            values=["DISPLAYED_UNVERIFIED", "CONFIRMED_AT_BOOK", "BETSLIP_CONFIRMED_AT_TARGET_STAKE"],
+            values=[
+                "DISPLAYED_UNVERIFIED",
+                "CONFIRMED_AT_BOOK",
+                "BETSLIP_CONFIRMED_AT_TARGET_STAKE",
+            ],
             state="readonly",
             width=29,
         ).pack(side=tk.LEFT, padx=(0, 8))
-        ttk.Button(quote_top, text="Use current UTC", command=self._set_quote_timestamp_now).pack(side=tk.LEFT)
-        ttk.Button(quote_top, text="Save quote", command=self._save_market_quote).pack(side=tk.LEFT, padx=(8, 0))
+        ttk.Button(quote_top, text="Use current UTC", command=self._set_quote_timestamp_now).pack(
+            side=tk.LEFT
+        )
+        ttk.Button(quote_top, text="Save quote", command=self._save_market_quote).pack(
+            side=tk.LEFT, padx=(8, 0)
+        )
         ttk.Label(
             quote_frame,
             text="Zapisuje quote dla wybranego picka. Status CONFIRMED oznacza, że sprawdziłeś go bezpośrednio u booka.",
@@ -563,9 +584,27 @@ class DailyBotGui(tk.Tk):
         header.pack(fill=tk.X, pady=(0, 8))
         ttk.Label(header, text="LIVE SCENARIO", font=("Segoe UI", 14, "bold")).pack(anchor=tk.W)
         self.live_status_var = tk.StringVar(value="READY")
-        ttk.Label(header, textvariable=self.live_status_var, style="Active.TLabel").pack(anchor=tk.W)
+        ttk.Label(header, textvariable=self.live_status_var, style="Active.TLabel").pack(
+            anchor=tk.W
+        )
         self.live_dataset_status_var = tk.StringVar(value=self._live_dataset_status_text())
-        ttk.Label(header, textvariable=self.live_dataset_status_var, justify=tk.LEFT).pack(anchor=tk.W)
+        ttk.Label(header, textvariable=self.live_dataset_status_var, justify=tk.LEFT).pack(
+            anchor=tk.W
+        )
+        locale_controls = ttk.Frame(header)
+        locale_controls.pack(anchor=tk.E, pady=(0, 4))
+        ttk.Label(locale_controls, text="Język raportu").pack(side=tk.LEFT, padx=(0, 6))
+        locale_box = ttk.Combobox(
+            locale_controls,
+            textvariable=self.live_locale_var,
+            values=["pl-PL", "en-US"],
+            state="readonly",
+            width=8,
+        )
+        locale_box.pack(side=tk.LEFT)
+        self.live_locale_var.trace_add(
+            "write", lambda *_args: self._invalidate_live_forum_outputs()
+        )
 
         active_frame = ttk.LabelFrame(container, text="Active Scenario")
         active_frame.pack(fill=tk.X, pady=(0, 8))
@@ -660,9 +699,13 @@ class DailyBotGui(tk.Tk):
             widget.grid(row=row, column=1, sticky=tk.EW, padx=(0, 6), pady=3)
 
         basic_season_row = ttk.Frame(self.live_basic_frame)
-        ttk.Entry(basic_season_row, textvariable=self.live_start_season_var, width=7).pack(side=tk.LEFT)
+        ttk.Entry(basic_season_row, textvariable=self.live_start_season_var, width=7).pack(
+            side=tk.LEFT
+        )
         ttk.Label(basic_season_row, text=" to ").pack(side=tk.LEFT)
-        ttk.Entry(basic_season_row, textvariable=self.live_end_season_var, width=7).pack(side=tk.LEFT)
+        ttk.Entry(basic_season_row, textvariable=self.live_end_season_var, width=7).pack(
+            side=tk.LEFT
+        )
         add_basic_row(0, "Seasons", basic_season_row)
 
         game_row = ttk.Frame(self.live_basic_frame)
@@ -692,7 +735,9 @@ class DailyBotGui(tk.Tk):
             state="readonly",
             width=24,
         )
-        self.live_game_box.bind("<<ComboboxSelected>>", lambda _event: self._select_live_week_game())
+        self.live_game_box.bind(
+            "<<ComboboxSelected>>", lambda _event: self._select_live_week_game()
+        )
         add_basic_row(2, "Game", self.live_game_box)
 
         self.live_perspective_box = ttk.Combobox(
@@ -714,7 +759,9 @@ class DailyBotGui(tk.Tk):
             justify=tk.LEFT,
         ).grid(row=4, column=0, columnspan=2, sticky=tk.W, padx=6, pady=(0, 4))
 
-        add_basic_row(5, "Team A", ttk.Entry(self.live_basic_frame, textvariable=self.live_team_var, width=24))
+        add_basic_row(
+            5, "Team A", ttk.Entry(self.live_basic_frame, textvariable=self.live_team_var, width=24)
+        )
         add_basic_row(
             6,
             "Opponent",
@@ -744,7 +791,9 @@ class DailyBotGui(tk.Tk):
             padx=(4, 8),
         )
         ttk.Label(basic_odds_row, text="ML").pack(side=tk.LEFT)
-        ttk.Entry(basic_odds_row, textvariable=self.live_ml_var, width=8).pack(side=tk.LEFT, padx=(4, 0))
+        ttk.Entry(basic_odds_row, textvariable=self.live_ml_var, width=8).pack(
+            side=tk.LEFT, padx=(4, 0)
+        )
         add_basic_row(8, "Live odds", basic_odds_row)
         basic_settlement_box = ttk.Combobox(
             self.live_basic_frame,
@@ -814,7 +863,9 @@ class DailyBotGui(tk.Tk):
             padx=(4, 8),
         )
         ttk.Label(quarter_row, text="Q3").pack(side=tk.LEFT)
-        ttk.Entry(quarter_row, textvariable=self.live_q3_var, width=7).pack(side=tk.LEFT, padx=(4, 0))
+        ttk.Entry(quarter_row, textvariable=self.live_q3_var, width=7).pack(
+            side=tk.LEFT, padx=(4, 0)
+        )
         add_row(5, "Quarter scores", quarter_row)
 
         sample_box = ttk.Combobox(
@@ -826,7 +877,11 @@ class DailyBotGui(tk.Tk):
         )
         add_row(6, "Sample", sample_box)
 
-        add_row(7, "Team A", ttk.Entry(self.live_settings_frame, textvariable=self.live_team_var, width=24))
+        add_row(
+            7,
+            "Team A",
+            ttk.Entry(self.live_settings_frame, textvariable=self.live_team_var, width=24),
+        )
         add_row(
             8,
             "Opponent",
@@ -1018,7 +1073,9 @@ class DailyBotGui(tk.Tk):
         table_shell.rowconfigure(0, weight=1)
         self.live_batch_canvas = tk.Canvas(table_shell, height=620, highlightthickness=0)
         self.live_batch_canvas.grid(row=0, column=0, sticky="nsew")
-        batch_scroll = ttk.Scrollbar(table_shell, orient=tk.VERTICAL, command=self.live_batch_canvas.yview)
+        batch_scroll = ttk.Scrollbar(
+            table_shell, orient=tk.VERTICAL, command=self.live_batch_canvas.yview
+        )
         batch_scroll.grid(row=0, column=1, sticky="ns")
         self.live_batch_canvas.configure(yscrollcommand=batch_scroll.set)
         self.live_batch_rows_frame = ttk.Frame(self.live_batch_canvas)
@@ -1077,8 +1134,7 @@ class DailyBotGui(tk.Tk):
         self.live_batch_all_games = games
         self.live_batch_metadata = metadata
         self.live_batch_entries = {
-            entry.game_id: entry
-            for entry in build_entries(games, previous=previous)
+            entry.game_id: entry for entry in build_entries(games, previous=previous)
         }
         blocks = block_options(games)
         self.live_batch_block_box.configure(values=blocks)
@@ -1108,9 +1164,9 @@ class DailyBotGui(tk.Tk):
         entries = self._batch_current_entries()
         headers = ["Game", "Q1 A-H", "Q2 A-H", "Spread A (away)", "Status"]
         for column, header in enumerate(headers):
-            ttk.Label(
-                self.live_batch_rows_frame, text=header, font=("Segoe UI", 9, "bold")
-            ).grid(row=0, column=column, sticky=tk.W, padx=2, pady=2)
+            ttk.Label(self.live_batch_rows_frame, text=header, font=("Segoe UI", 9, "bold")).grid(
+                row=0, column=column, sticky=tk.W, padx=2, pady=2
+            )
         for row, entry in enumerate(entries, start=1):
             ttk.Label(
                 self.live_batch_rows_frame,
@@ -1251,7 +1307,9 @@ class DailyBotGui(tk.Tk):
             return
         try:
             historical_rows = pd.read_parquet(LIVE_SCENARIO_PROCESSED)
-            now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            now = (
+                datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            )
             result = generate_batch_post(
                 entries,
                 historical_rows,
@@ -1260,8 +1318,13 @@ class DailyBotGui(tk.Tk):
                 block=self.live_batch_block_var.get(),
                 data_cutoff_utc=now,
                 generated_at_utc=now,
-                tie_policy="TIE_AS_PUSH" if self.live_settlement_var.get() == "TIE_IS_PUSH" else "TIE_AS_LOSS",
+                tie_policy=(
+                    "TIE_AS_PUSH"
+                    if self.live_settlement_var.get() == "TIE_IS_PUSH"
+                    else "TIE_AS_LOSS"
+                ),
                 allow_partial=allow_partial,
+                locale=self.live_locale_var.get(),
             )
         except BatchValidationError as exc:
             messagebox.showerror("Batch error", str(exc))
@@ -1291,7 +1354,9 @@ class DailyBotGui(tk.Tk):
 
     def _copy_live_batch_post(self) -> None:
         if self.live_batch_output_dirty:
-            messagebox.showerror("Output nieaktualny", "Zmieniono dane. Wygeneruj zbiorczy post ponownie.")
+            messagebox.showerror(
+                "Output nieaktualny", "Zmieniono dane. Wygeneruj zbiorczy post ponownie."
+            )
             return
         text = self.live_batch_output.get("1.0", tk.END).strip()
         if not text:
@@ -1500,7 +1565,9 @@ class DailyBotGui(tk.Tk):
             self.live_perspective_box.configure(values=[])
             self.live_perspective_var.set("")
             diagnostics = metadata.get("diagnostics", {})
-            sources = diagnostics.get("sources_checked", []) if isinstance(diagnostics, dict) else []
+            sources = (
+                diagnostics.get("sources_checked", []) if isinstance(diagnostics, dict) else []
+            )
             season_seen = any(season in set(source.get("seasons") or []) for source in sources)
             status = (
                 f"Schedule source does not contain season {season}."
@@ -1549,7 +1616,10 @@ class DailyBotGui(tk.Tk):
         if game is None:
             return
         new_team = self.live_perspective_var.get().strip().upper()
-        swap_scores = self.live_current_perspective in {game.away, game.home} and new_team != self.live_current_perspective
+        swap_scores = (
+            self.live_current_perspective in {game.away, game.home}
+            and new_team != self.live_current_perspective
+        )
         self._apply_live_game_perspective(game, new_team, swap_scores=swap_scores)
 
     def _apply_live_game_perspective(self, game: WeekGame, team: str, *, swap_scores: bool) -> None:
@@ -1595,13 +1665,17 @@ class DailyBotGui(tk.Tk):
     def _use_active_pick_for_live(self) -> None:
         record = self.selected_pick_record
         if not record:
-            messagebox.showerror("No active pick", "Najpierw wybierz aktywny pick po lewej stronie.")
+            messagebox.showerror(
+                "No active pick", "Najpierw wybierz aktywny pick po lewej stronie."
+            )
             return
         try:
             season = int(record.get("season") or self.season_var.get())
             week = int(record.get("week") or self.week_var.get())
         except (TypeError, ValueError):
-            messagebox.showerror("Invalid active pick", "Aktywny pick nie ma poprawnego season/week.")
+            messagebox.showerror(
+                "Invalid active pick", "Aktywny pick nie ma poprawnego season/week."
+            )
             return
         self.live_game_season_var.set(str(season))
         self.live_game_week_var.set(str(week))
@@ -1613,7 +1687,9 @@ class DailyBotGui(tk.Tk):
         if label not in self.live_week_games:
             self._load_live_week_games()
         if label not in self.live_week_games:
-            messagebox.showerror("Game not found", f"Nie znaleziono meczu w lokalnym schedule: {label}")
+            messagebox.showerror(
+                "Game not found", f"Nie znaleziono meczu w lokalnym schedule: {label}"
+            )
             return
         self.live_game_var.set(label)
         self._select_live_week_game()
@@ -1677,7 +1753,9 @@ class DailyBotGui(tk.Tk):
         self.quote_status_var.set("DISPLAYED_UNVERIFIED")
 
     def _set_quote_timestamp_now(self) -> None:
-        self.quote_timestamp_var.set(datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z"))
+        self.quote_timestamp_var.set(
+            datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        )
 
     def _save_market_quote(self) -> None:
         values = self._validate()
@@ -1689,12 +1767,16 @@ class DailyBotGui(tk.Tk):
             spread = float(self.quote_spread_var.get().strip())
             price = int(self.quote_price_var.get().strip())
         except ValueError:
-            messagebox.showerror("Invalid quote", "Spread musi byc liczba, a Price liczba calkowita, np. -110.")
+            messagebox.showerror(
+                "Invalid quote", "Spread musi byc liczba, a Price liczba calkowita, np. -110."
+            )
             return
         book = self.quote_book_var.get().strip()
         timestamp = self.quote_timestamp_var.get().strip()
         if not book or not timestamp:
-            messagebox.showerror("Missing quote data", "Podaj book i UTC timestamp (mozna kliknac Use current UTC).")
+            messagebox.showerror(
+                "Missing quote data", "Podaj book i UTC timestamp (mozna kliknac Use current UTC)."
+            )
             return
         season, week = values
         away = str(record.get("away") or "").upper()
@@ -1704,20 +1786,50 @@ class DailyBotGui(tk.Tk):
         path.parent.mkdir(parents=True, exist_ok=True)
         rows = []
         if path.exists():
-            rows = [json.loads(line) for line in path.read_text(encoding="utf-8").splitlines() if line.strip()]
+            rows = [
+                json.loads(line)
+                for line in path.read_text(encoding="utf-8").splitlines()
+                if line.strip()
+            ]
         quote = {
-            "season": season, "week": week, "away": away, "home": home, "selected_team": selected,
-            "market": "full-game spread", "spread": spread, "line": spread, "price": price,
-            "book": book, "quote_timestamp_utc": timestamp,
+            "season": season,
+            "week": week,
+            "away": away,
+            "home": home,
+            "selected_team": selected,
+            "market": "full-game spread",
+            "spread": spread,
+            "line": spread,
+            "price": price,
+            "book": book,
+            "quote_timestamp_utc": timestamp,
             "quote_id": f"{season}_w{week:02d}_{away}_at_{home}_{selected}_{timestamp.replace(':', '').replace('-', '')}",
-            "executable_status": self.quote_status_var.get(), "target_stake": 100,
-            "source_type": "DIRECT_BOOK", "market_scope": "FULL_GAME", "house_rules_checked": False,
-            "betslip_verified_at_utc": timestamp if self.quote_status_var.get() == "BETSLIP_CONFIRMED_AT_TARGET_STAKE" else "",
-            "odds_source": "gui_market_quote", "odds_snapshot_type": "decision",
+            "executable_status": self.quote_status_var.get(),
+            "target_stake": 100,
+            "source_type": "DIRECT_BOOK",
+            "market_scope": "FULL_GAME",
+            "house_rules_checked": False,
+            "betslip_verified_at_utc": (
+                timestamp
+                if self.quote_status_var.get() == "BETSLIP_CONFIRMED_AT_TARGET_STAKE"
+                else ""
+            ),
+            "odds_source": "gui_market_quote",
+            "odds_snapshot_type": "decision",
         }
-        rows = [row for row in rows if not (row.get("away") == away and row.get("home") == home and row.get("selected_team") == selected)]
+        rows = [
+            row
+            for row in rows
+            if not (
+                row.get("away") == away
+                and row.get("home") == home
+                and row.get("selected_team") == selected
+            )
+        ]
         rows.append(quote)
-        path.write_text("".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8")
+        path.write_text(
+            "".join(json.dumps(row, ensure_ascii=False) + "\n" for row in rows), encoding="utf-8"
+        )
         self._write_line(f"Saved market quote: {path} ({selected} {spread} {price}, {book})")
         self.active_match_var.set(
             f"{season}_w{week:02d}_{away}_at_{home} | pick: {selected} {spread} | "
@@ -1778,7 +1890,9 @@ class DailyBotGui(tk.Tk):
         self._sync_live_run_buttons()
         self._update_live_active_summary()
         if hasattr(self, "live_canvas"):
-            self.after_idle(lambda: self.live_canvas.configure(scrollregion=self.live_canvas.bbox("all")))
+            self.after_idle(
+                lambda: self.live_canvas.configure(scrollregion=self.live_canvas.bbox("all"))
+            )
 
     def _sync_live_run_buttons(self) -> None:
         if not hasattr(self, "live_run_button") or not hasattr(self, "live_compare_button"):
@@ -1786,11 +1900,15 @@ class DailyBotGui(tk.Tk):
         self.live_run_button.pack_forget()
         self.live_compare_button.pack_forget()
         if self.live_mode_var.get() == "MANUAL_LOOKUP":
-            self.live_run_button.pack(fill=tk.X, ipady=8, pady=(0, 8), before=self.live_summary_frame)
+            self.live_run_button.pack(
+                fill=tk.X, ipady=8, pady=(0, 8), before=self.live_summary_frame
+            )
             return
         if self.live_mode_var.get() == "BATCH_AFTER_Q2":
             return
-        self.live_compare_button.pack(fill=tk.X, ipady=7, pady=(0, 8), before=self.live_summary_frame)
+        self.live_compare_button.pack(
+            fill=tk.X, ipady=7, pady=(0, 8), before=self.live_summary_frame
+        )
 
     def _toggle_live_settings(self) -> None:
         if self.live_settings_visible:
@@ -1798,7 +1916,9 @@ class DailyBotGui(tk.Tk):
             self.live_settings_button.configure(text="Pokaz Scenario Settings")
             self.live_settings_visible = False
             return
-        self.live_settings_notebook.pack(fill=tk.X, pady=(0, 8), after=self.live_settings_button.master)
+        self.live_settings_notebook.pack(
+            fill=tk.X, pady=(0, 8), after=self.live_settings_button.master
+        )
         self.live_settings_button.configure(text="Ukryj Scenario Settings")
         self.live_settings_visible = True
 
@@ -1901,7 +2021,9 @@ class DailyBotGui(tk.Tk):
         state = payload.get("current_state", {}) if payload else {}
         pregame = payload.get("pregame_spread_context", {}) if payload else {}
         team_a = str(state.get("team_a") or self.live_team_var.get().strip().upper() or "TEAM_A")
-        opponent = str(state.get("opponent") or self.live_opponent_var.get().strip().upper() or "TEAM_B")
+        opponent = str(
+            state.get("opponent") or self.live_opponent_var.get().strip().upper() or "TEAM_B"
+        )
         q1_text = self.live_q1_var.get().strip() or "MISSING"
         q2_text = self.live_q2_var.get().strip() or "MISSING"
         q3_text = self.live_q3_var.get().strip()
@@ -1928,7 +2050,9 @@ class DailyBotGui(tk.Tk):
                     team_total += team_points
                     opponent_total += opp_points
                     quarter_parts.append(self._live_quarter_result(team_points, opp_points))
-                    cumulative_parts.append(self._live_cumulative_state(team_total - opponent_total))
+                    cumulative_parts.append(
+                        self._live_cumulative_state(team_total - opponent_total)
+                    )
                 quarter_path = "-".join(quarter_parts)
                 cumulative_path = "-".join(cumulative_parts)
                 team_score = team_total
@@ -1946,10 +2070,16 @@ class DailyBotGui(tk.Tk):
 
         spread = pregame.get("team_a_closing_spread")
         active_game = self.live_active_game
-        if spread is None and active_game is not None and team_a in {active_game.away, active_game.home}:
+        if (
+            spread is None
+            and active_game is not None
+            and team_a in {active_game.away, active_game.home}
+        ):
             spread = active_game.perspective(team_a).spread
         if spread is None and active_game is None and self.selected_pick_record:
-            spread = self.selected_pick_record.get("handicap", self.selected_pick_record.get("line"))
+            spread = self.selected_pick_record.get(
+                "handicap", self.selected_pick_record.get("line")
+            )
         try:
             numeric_spread = float(spread)
         except (TypeError, ValueError):
@@ -2007,6 +2137,17 @@ class DailyBotGui(tk.Tk):
             return
         self.live_forum_text.delete("1.0", tk.END)
         self.live_forum_text.insert(tk.END, text)
+
+    def _invalidate_live_forum_outputs(self) -> None:
+        """Mark rendered forum text stale when only its locale changes."""
+        if not hasattr(self, "live_forum_text"):
+            return
+        self.live_batch_output_dirty = True
+        self.live_status_var.set(f"READY - locale {self.live_locale_var.get()}; regenerate report")
+        if hasattr(self, "live_batch_status_var"):
+            self.live_batch_status_var.set(
+                f"Język zmieniony na {self.live_locale_var.get()}. Wygeneruj post ponownie."
+            )
 
     def _copy_forum_post(self) -> None:
         if not hasattr(self, "live_forum_text"):
@@ -2140,9 +2281,17 @@ class DailyBotGui(tk.Tk):
                 f"YAML ma season/week {meta.get('season')}/{meta.get('week')}, a bot ma {season}/{week}.",
             )
             return
-        path = REPO_ROOT / "data" / "book_snapshots" / str(season) / f"week_{week:02d}_screen_snapshot.yaml"
+        path = (
+            REPO_ROOT
+            / "data"
+            / "book_snapshots"
+            / str(season)
+            / f"week_{week:02d}_screen_snapshot.yaml"
+        )
         path.parent.mkdir(parents=True, exist_ok=True)
-        path.write_text(yaml.safe_dump(payload, sort_keys=False, allow_unicode=False), encoding="utf-8")
+        path.write_text(
+            yaml.safe_dump(payload, sort_keys=False, allow_unicode=False), encoding="utf-8"
+        )
         self._write_line(f"Saved book snapshot: {path} ({len(payload['games'])} games)")
         self.status_var.set("STATUS: SAVED - book snapshot")
 
@@ -2151,10 +2300,18 @@ class DailyBotGui(tk.Tk):
         if values is None:
             return
         season, week = values
-        input_path = REPO_ROOT / "data" / "book_snapshots" / str(season) / f"week_{week:02d}_screen_snapshot.yaml"
+        input_path = (
+            REPO_ROOT
+            / "data"
+            / "book_snapshots"
+            / str(season)
+            / f"week_{week:02d}_screen_snapshot.yaml"
+        )
         output_path = REPO_ROOT / "config" / "lines" / str(season) / f"week{week}_lines.yaml"
         if not input_path.exists():
-            messagebox.showerror("Missing snapshot", f"Najpierw zapisz book snapshot:\n{input_path}")
+            messagebox.showerror(
+                "Missing snapshot", f"Najpierw zapisz book snapshot:\n{input_path}"
+            )
             return
         cmd = [
             str(PYTHON_EXE),
@@ -2237,7 +2394,10 @@ class DailyBotGui(tk.Tk):
         for matchup in payload.get("matchups", []):
             if not isinstance(matchup, dict):
                 continue
-            if str(matchup.get("away") or "").upper() == away and str(matchup.get("home") or "").upper() == home:
+            if (
+                str(matchup.get("away") or "").upper() == away
+                and str(matchup.get("home") or "").upper() == home
+            ):
                 return matchup
         return {}
 
@@ -2379,8 +2539,14 @@ class DailyBotGui(tk.Tk):
         market_margin = pick.get("market_margin", "[MARKET_MARGIN]")
         total = pick.get("total", "[TOTAL]")
         neutral_site = pick.get("neutral_site", "[NEUTRAL_SITE]")
-        current_spread = f"{selected_team} {spread}" if spread != "[CURRENT_SPREAD]" else str(spread)
-        if str(prompt_type).startswith("delta_tnf") and pick_record and not self._is_tnf_scope_pick(pick_record):
+        current_spread = (
+            f"{selected_team} {spread}" if spread != "[CURRENT_SPREAD]" else str(spread)
+        )
+        if (
+            str(prompt_type).startswith("delta_tnf")
+            and pick_record
+            and not self._is_tnf_scope_pick(pick_record)
+        ):
             return "\n".join(
                 [
                     "Sroda - TNF delta refresh.",
@@ -2564,10 +2730,7 @@ class DailyBotGui(tk.Tk):
         thread.start()
 
     def _run_week_dry_run(self) -> None:
-        commands = [
-            self._build_command_for_day(execute=False, day=day)
-            for day in WEEK_TEST_DAYS
-        ]
+        commands = [self._build_command_for_day(execute=False, day=day) for day in WEEK_TEST_DAYS]
         if any(command is None for command in commands):
             return
         self._set_running(True, "WEEK DRY RUN")
@@ -2753,8 +2916,7 @@ class DailyBotGui(tk.Tk):
             cmd = ".\\.venv\\Scripts\\python.exe scripts\\sync_live_scenario_data.py --bootstrap"
             messagebox.showerror(
                 "DATASET NOT READY",
-                "Live Scenario processed dataset nie jest gotowy.\n\n"
-                f"Uruchom:\n{cmd}",
+                "Live Scenario processed dataset nie jest gotowy.\n\n" f"Uruchom:\n{cmd}",
             )
             self.live_status_var.set("DATASET NOT READY")
             self._set_live_summary(f"DATASET NOT READY\nRun: {cmd}")
@@ -2775,7 +2937,9 @@ class DailyBotGui(tk.Tk):
         q2 = self.live_q2_var.get().strip()
         q3 = self.live_q3_var.get().strip()
         if not q1 or not q2:
-            messagebox.showerror("Missing quarter scores", "RUN BASIC AFTER Q2 wymaga Q1 i Q2, np. 7-3.")
+            messagebox.showerror(
+                "Missing quarter scores", "RUN BASIC AFTER Q2 wymaga Q1 i Q2, np. 7-3."
+            )
             return
 
         output_path = (
@@ -2785,7 +2949,9 @@ class DailyBotGui(tk.Tk):
             / "gui"
             / f"{start_season}_{end_season}_{team_a}_vs_{team_b}_after_q{3 if q3 else 2}.json"
         )
-        generated_at = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        generated_at = (
+            datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+        )
         cmd = [
             str(PYTHON_EXE),
             str(LIVE_SCENARIO_V2_SCRIPT),
@@ -2918,13 +3084,19 @@ class DailyBotGui(tk.Tk):
         self.live_basic_payload = payload if isinstance(payload, dict) else None
         self._update_live_active_summary()
         summary = self._format_live_scenario_v2_report(payload)
-        forum_post = build_forum_post(payload, language="pl") if isinstance(payload, dict) else ""
+        forum_post = (
+            build_forum_post(payload, locale=self.live_locale_var.get())
+            if isinstance(payload, dict)
+            else ""
+        )
         self._set_forum_post(forum_post)
         self._set_live_summary(summary)
         self.live_calculations_text.delete("1.0", tk.END)
         self.live_calculations_text.insert(tk.END, summary)
         self.live_calculations_text.insert(tk.END, "\n\nJSON payload:\n")
-        self.live_calculations_text.insert(tk.END, json.dumps(payload or {}, indent=2, ensure_ascii=False))
+        self.live_calculations_text.insert(
+            tk.END, json.dumps(payload or {}, indent=2, ensure_ascii=False)
+        )
 
         if returncode == 0:
             self.live_status_var.set("DONE - BASIC AFTER Q2")
@@ -3150,7 +3322,9 @@ class DailyBotGui(tk.Tk):
         }
         if qualities & {"NO_DATA", "VERY_LOW", "LOW"}:
             lines.append("")
-            lines.append("WARNING: one or both samples are small; use as context, not standalone signal.")
+            lines.append(
+                "WARNING: one or both samples are small; use as context, not standalone signal."
+            )
         return "\n".join(lines)
 
     def _load_live_lookup_node_from_output(self, team: str, path: str) -> dict | None:
@@ -3348,7 +3522,9 @@ class DailyBotGui(tk.Tk):
         self.live_calculations_text.delete("1.0", tk.END)
         self.live_calculations_text.insert(tk.END, summary)
         self.live_calculations_text.insert(tk.END, "\n\nJSON payload:\n")
-        self.live_calculations_text.insert(tk.END, json.dumps(payload, indent=2, ensure_ascii=False))
+        self.live_calculations_text.insert(
+            tk.END, json.dumps(payload, indent=2, ensure_ascii=False)
+        )
 
     def _load_live_lookup_node(self, path: str) -> dict | None:
         folder = self._live_output_folder()

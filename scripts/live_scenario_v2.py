@@ -14,6 +14,7 @@ if str(REPO_ROOT) not in sys.path:
 
 from live_scenario.data_provider import processed_dataset_path
 from live_scenario.dataset import dataset_status
+from live_scenario.forum_formatter import build_forum_post
 from live_scenario.service import build_basic_after_q_report
 from live_scenario.spread import build_pregame_spread_context
 from live_scenario.state import (
@@ -133,6 +134,12 @@ def parse_args() -> argparse.Namespace:
         help="Add legacy path-only comparison block without changing V2 results.",
     )
     parser.add_argument("--output", type=Path, help="Optional JSON output path.")
+    parser.add_argument(
+        "--locale",
+        choices=["pl-PL", "en-US"],
+        default="pl-PL",
+        help="Forum report locale (default: pl-PL).",
+    )
     return parser.parse_args()
 
 
@@ -192,6 +199,7 @@ def build_report_from_args(args: argparse.Namespace) -> dict:
         stability_threshold_pp=args.stability_threshold_pp,
     )
     payload = report.to_dict()
+    payload["forum_post"] = build_forum_post(payload, locale=args.locale)
     if args.legacy_compatibility_mode:
         legacy = _legacy_path_only_summary(historical_rows, current_state.team_a_path)
         v2 = payload["league_baseline"]
