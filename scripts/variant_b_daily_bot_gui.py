@@ -587,7 +587,9 @@ class DailyBotGui(tk.Tk):
         self.live_settings_button.pack(anchor=tk.W)
 
         self.live_settings_notebook = ttk.Notebook(container)
-        self.live_settings_notebook.configure(height=420)
+        # Keep a full halftime block visible; the outer right-panel scrollbar
+        # remains available for the rest of Live Scenario.
+        self.live_settings_notebook.configure(height=760)
         self.live_settings_notebook.pack(fill=tk.X, pady=(0, 8))
         self.live_basic_tab = ttk.Frame(self.live_settings_notebook)
         self.live_manual_tab = ttk.Frame(self.live_settings_notebook)
@@ -1014,7 +1016,7 @@ class DailyBotGui(tk.Tk):
         table_shell.grid(row=2, column=0, sticky="nsew")
         table_shell.columnconfigure(0, weight=1)
         table_shell.rowconfigure(0, weight=1)
-        self.live_batch_canvas = tk.Canvas(table_shell, height=260, highlightthickness=0)
+        self.live_batch_canvas = tk.Canvas(table_shell, height=620, highlightthickness=0)
         self.live_batch_canvas.grid(row=0, column=0, sticky="nsew")
         batch_scroll = ttk.Scrollbar(table_shell, orient=tk.VERTICAL, command=self.live_batch_canvas.yview)
         batch_scroll.grid(row=0, column=1, sticky="ns")
