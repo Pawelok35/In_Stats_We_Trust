@@ -14,12 +14,23 @@ from datetime import datetime, timezone
 from pathlib import Path
 from tkinter import messagebox, ttk
 
+import pandas as pd
 import yaml
 
 REPO_ROOT = Path(__file__).resolve().parents[1]
 if str(REPO_ROOT) not in sys.path:
     sys.path.insert(0, str(REPO_ROOT))
 
+from live_scenario.batch import (
+    BatchGameInput,
+    BatchValidationError,
+    block_options,
+    build_entries,
+    completeness,
+    games_for_block,
+    generate_batch_post,
+    validate_entry,
+)
 from live_scenario.forum_formatter import build_forum_post
 from live_scenario.week_games import (
     ScheduleLoadError,
@@ -143,6 +154,11 @@ class DailyBotGui(tk.Tk):
         self.live_active_game: WeekGame | None = None
         self.live_current_perspective: str | None = None
         self.live_week_games_metadata: dict | None = None
+        self.live_batch_all_games: list[WeekGame] = []
+        self.live_batch_entries: dict[str, BatchGameInput] = {}
+        self.live_batch_row_widgets: dict[str, dict[str, tk.Widget]] = {}
+        self.live_batch_metadata: dict | None = None
+        self.live_batch_output_dirty = True
         self.run_started_at: datetime | None = None
         self.run_label = "IDLE"
         self._build_ui()
@@ -575,8 +591,10 @@ class DailyBotGui(tk.Tk):
         self.live_settings_notebook.pack(fill=tk.X, pady=(0, 8))
         self.live_basic_tab = ttk.Frame(self.live_settings_notebook)
         self.live_manual_tab = ttk.Frame(self.live_settings_notebook)
+        self.live_batch_tab = ttk.Frame(self.live_settings_notebook)
         self.live_settings_notebook.add(self.live_basic_tab, text="BASIC AFTER Q2")
         self.live_settings_notebook.add(self.live_manual_tab, text="MANUAL LOOKUP")
+        self.live_settings_notebook.add(self.live_batch_tab, text="BATCH AFTER Q2")
         self.live_settings_notebook.bind(
             "<<NotebookTabChanged>>",
             lambda _event: self._on_live_mode_changed(),
@@ -848,6 +866,8 @@ class DailyBotGui(tk.Tk):
         )
         add_row(12, "Phase", phase_box)
 
+        self._build_live_batch_tab()
+
         for var in [
             self.live_start_season_var,
             self.live_end_season_var,
@@ -945,6 +965,340 @@ class DailyBotGui(tk.Tk):
 
         self._sync_live_run_buttons()
         self._update_live_active_summary()
+
+    def _build_live_batch_tab(self) -> None:
+        """Build the operator-facing multi-game halftime form."""
+        tab = self.live_batch_tab
+        tab.columnconfigure(0, weight=1)
+        tab.rowconfigure(2, weight=1)
+
+        controls = ttk.Frame(tab)
+        controls.grid(row=0, column=0, sticky="ew", pady=(0, 6))
+        self.live_batch_season_var = tk.StringVar(value="2026")
+        self.live_batch_week_var = tk.StringVar(value="1")
+        self.live_batch_block_var = tk.StringVar(value="")
+        ttk.Label(controls, text="Season").pack(side=tk.LEFT)
+        ttk.Entry(controls, textvariable=self.live_batch_season_var, width=7).pack(
+            side=tk.LEFT, padx=(4, 8)
+        )
+        ttk.Label(controls, text="Week").pack(side=tk.LEFT)
+        ttk.Entry(controls, textvariable=self.live_batch_week_var, width=5).pack(
+            side=tk.LEFT, padx=(4, 8)
+        )
+        ttk.Button(controls, text="REFRESH BLOCKS", command=self._refresh_live_batch_games).pack(
+            side=tk.LEFT
+        )
+
+        block_row = ttk.Frame(tab)
+        block_row.grid(row=1, column=0, sticky="ew", pady=(0, 6))
+        ttk.Label(block_row, text="Kickoff block").pack(side=tk.LEFT)
+        self.live_batch_block_box = ttk.Combobox(
+            block_row,
+            textvariable=self.live_batch_block_var,
+            values=[],
+            state="readonly",
+            width=28,
+        )
+        self.live_batch_block_box.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(6, 0))
+        self.live_batch_block_box.bind(
+            "<<ComboboxSelected>>",
+            lambda _event: self._render_live_batch_rows(),
+        )
+
+        self.live_batch_status_var = tk.StringVar(value="Brak wybranego bloku.")
+        ttk.Label(tab, textvariable=self.live_batch_status_var, justify=tk.LEFT).grid(
+            row=3, column=0, sticky="ew", pady=(6, 4)
+        )
+
+        table_shell = ttk.Frame(tab)
+        table_shell.grid(row=2, column=0, sticky="nsew")
+        table_shell.columnconfigure(0, weight=1)
+        table_shell.rowconfigure(0, weight=1)
+        self.live_batch_canvas = tk.Canvas(table_shell, height=260, highlightthickness=0)
+        self.live_batch_canvas.grid(row=0, column=0, sticky="nsew")
+        batch_scroll = ttk.Scrollbar(table_shell, orient=tk.VERTICAL, command=self.live_batch_canvas.yview)
+        batch_scroll.grid(row=0, column=1, sticky="ns")
+        self.live_batch_canvas.configure(yscrollcommand=batch_scroll.set)
+        self.live_batch_rows_frame = ttk.Frame(self.live_batch_canvas)
+        batch_window = self.live_batch_canvas.create_window(
+            (0, 0), window=self.live_batch_rows_frame, anchor=tk.NW
+        )
+        self.live_batch_rows_frame.bind(
+            "<Configure>",
+            lambda _event: self.live_batch_canvas.configure(
+                scrollregion=self.live_batch_canvas.bbox("all")
+            ),
+        )
+        self.live_batch_canvas.bind(
+            "<Configure>",
+            lambda event: self.live_batch_canvas.itemconfigure(batch_window, width=event.width),
+        )
+
+        actions = ttk.Frame(tab)
+        actions.grid(row=4, column=0, sticky="ew", pady=(6, 4))
+        self.live_batch_generate_button = ttk.Button(
+            actions, text="GENERUJ ZBIORCZY POST", command=self._generate_live_batch_post
+        )
+        self.live_batch_generate_button.pack(side=tk.LEFT, fill=tk.X, expand=True, padx=(0, 4))
+        self.live_batch_partial_button = ttk.Button(
+            actions, text="GENERUJ TYLKO GOTOWE", command=self._generate_live_batch_partial
+        )
+        self.live_batch_partial_button.pack(side=tk.LEFT, fill=tk.X, expand=True)
+
+        self.live_batch_copy_button = ttk.Button(
+            tab, text="KOPIUJ ZBIORCZY POST", command=self._copy_live_batch_post
+        )
+        self.live_batch_copy_button.grid(row=5, column=0, sticky="ew", pady=(0, 4))
+        self.live_batch_output = tk.Text(tab, wrap=tk.WORD, height=10)
+        self.live_batch_output.grid(row=6, column=0, sticky="nsew")
+        self.live_batch_output.configure(state=tk.DISABLED)
+
+    def _refresh_live_batch_games(self) -> None:
+        try:
+            season = int(self.live_batch_season_var.get().strip())
+            week = int(self.live_batch_week_var.get().strip())
+        except ValueError:
+            self.live_batch_status_var.set("Season i Week musza byc liczbami.")
+            return
+        try:
+            games, metadata = load_week_games(
+                data_root=REPO_ROOT / "data",
+                season=season,
+                week=week,
+                picks_path=self._live_picks_path_for_week(season, week),
+            )
+        except Exception as exc:
+            self._log_live_week_games_exception(season, week, exc)
+            self.live_batch_status_var.set(f"Schedule refresh failed: {exc}")
+            return
+        previous = dict(self.live_batch_entries)
+        self.live_batch_all_games = games
+        self.live_batch_metadata = metadata
+        self.live_batch_entries = {
+            entry.game_id: entry
+            for entry in build_entries(games, previous=previous)
+        }
+        blocks = block_options(games)
+        self.live_batch_block_box.configure(values=blocks)
+        if not blocks:
+            self.live_batch_block_var.set("")
+            self._render_live_batch_rows()
+            self.live_batch_status_var.set(
+                f"Brak meczow dla {season} Week {week}. Zrodlo: {metadata.get('schedule_source', 'MISSING')}"
+            )
+            return
+        if self.live_batch_block_var.get() not in blocks:
+            self.live_batch_block_var.set(blocks[0])
+        self.live_batch_output_dirty = True
+        self._render_live_batch_rows()
+
+    def _batch_current_entries(self) -> list[BatchGameInput]:
+        games = games_for_block(self.live_batch_all_games, self.live_batch_block_var.get())
+        return [self.live_batch_entries[game.game_id] for game in games]
+
+    def _render_live_batch_rows(self) -> None:
+        if not hasattr(self, "live_batch_rows_frame"):
+            return
+        self.live_batch_output_dirty = True
+        for child in self.live_batch_rows_frame.winfo_children():
+            child.destroy()
+        self.live_batch_row_widgets = {}
+        entries = self._batch_current_entries()
+        headers = ["Game", "Q1 A-H", "Q2 A-H", "Spread A (away)", "Status"]
+        for column, header in enumerate(headers):
+            ttk.Label(
+                self.live_batch_rows_frame, text=header, font=("Segoe UI", 9, "bold")
+            ).grid(row=0, column=column, sticky=tk.W, padx=2, pady=2)
+        for row, entry in enumerate(entries, start=1):
+            ttk.Label(
+                self.live_batch_rows_frame,
+                text=f"{entry.label}\n{entry.game_id}",
+                justify=tk.LEFT,
+                width=22,
+            ).grid(row=row, column=0, sticky=tk.W, padx=2, pady=2)
+            q1_away = tk.StringVar(value=entry.q1_away)
+            q1_home = tk.StringVar(value=entry.q1_home)
+            q2_away = tk.StringVar(value=entry.q2_away)
+            q2_home = tk.StringVar(value=entry.q2_home)
+            spread = tk.StringVar(value=entry.spread_away)
+            status = tk.StringVar(value=entry.status)
+            fields = {
+                "q1_away": q1_away,
+                "q1_home": q1_home,
+                "q2_away": q2_away,
+                "q2_home": q2_home,
+                "spread_away": spread,
+                "status": status,
+            }
+            for variable in fields.values():
+                variable.trace_add(
+                    "write",
+                    lambda *_args, current=entry, values=fields: self._batch_field_changed(
+                        current, values
+                    ),
+                )
+            q1_frame = ttk.Frame(self.live_batch_rows_frame)
+            ttk.Entry(q1_frame, textvariable=q1_away, width=3).pack(side=tk.LEFT)
+            ttk.Label(q1_frame, text="-").pack(side=tk.LEFT)
+            ttk.Entry(q1_frame, textvariable=q1_home, width=3).pack(side=tk.LEFT)
+            q1_frame.grid(row=row, column=1, padx=2, pady=2)
+            q2_frame = ttk.Frame(self.live_batch_rows_frame)
+            ttk.Entry(q2_frame, textvariable=q2_away, width=3).pack(side=tk.LEFT)
+            ttk.Label(q2_frame, text="-").pack(side=tk.LEFT)
+            ttk.Entry(q2_frame, textvariable=q2_home, width=3).pack(side=tk.LEFT)
+            q2_frame.grid(row=row, column=2, padx=2, pady=2)
+            ttk.Entry(self.live_batch_rows_frame, textvariable=spread, width=7).grid(
+                row=row, column=3, padx=2, pady=2
+            )
+            ttk.Combobox(
+                self.live_batch_rows_frame,
+                textvariable=status,
+                values=["NOT_AT_HALFTIME", "READY", "INCLUDED", "EXCLUDED", "ERROR"],
+                state="readonly",
+                width=17,
+            ).grid(row=row, column=4, padx=2, pady=2)
+            self.live_batch_row_widgets[entry.game_id] = fields
+        self._update_live_batch_completeness()
+
+    def _batch_field_changed(self, entry: BatchGameInput, values: dict[str, tk.StringVar]) -> None:
+        entry.q1_away = values["q1_away"].get().strip()
+        entry.q1_home = values["q1_home"].get().strip()
+        entry.q2_away = values["q2_away"].get().strip()
+        entry.q2_home = values["q2_home"].get().strip()
+        entry.spread_away = values["spread_away"].get().strip()
+        current_status = values["status"].get().strip().upper()
+        if current_status == "INCLUDED":
+            current_status = "READY"
+            values["status"].set(current_status)
+        if current_status in {"NOT_AT_HALFTIME", "ERROR"} and all(
+            [entry.q1_away, entry.q1_home, entry.q2_away, entry.q2_home]
+        ):
+            current_status = "READY"
+            values["status"].set(current_status)
+        entry.status = current_status
+        entry.updated_at_utc = datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+        entry.error = ""
+        self.live_batch_output_dirty = True
+        self._update_live_batch_completeness()
+
+    def _update_live_batch_completeness(self) -> None:
+        if not hasattr(self, "live_batch_status_var"):
+            return
+        entries = self._batch_current_entries()
+        if not entries:
+            self.live_batch_status_var.set("Wybierz kickoff block.")
+            return
+        summary = completeness(entries)
+        self.live_batch_status_var.set(
+            "\n".join(
+                [
+                    f"Wybrany blok: {summary.total} meczow",
+                    f"Gotowe: {summary.ready} | Wlaczone: {summary.included} | "
+                    f"Nie w przerwie: {summary.not_at_halftime} | Wykluczone: {summary.excluded}",
+                    f"Bledy: {summary.errors} | Nieuzupelnione/niesklasyfikowane: {summary.unclassified}",
+                    (
+                        f"Zrodlo: {(self.live_batch_metadata or {}).get('schedule_source', 'MISSING')} | "
+                        f"timestamp: {(self.live_batch_metadata or {}).get('schedule_timestamp_utc') or 'MISSING'}"
+                    ),
+                ]
+            )
+        )
+
+    def _generate_live_batch_post(self) -> None:
+        self._generate_live_batch(allow_partial=False)
+
+    def _generate_live_batch_partial(self) -> None:
+        self._generate_live_batch(allow_partial=True)
+
+    def _generate_live_batch(self, *, allow_partial: bool) -> None:
+        entries = self._batch_current_entries()
+        if not entries:
+            messagebox.showerror("Empty batch", "Najpierw odswiez liste i wybierz blok kickoff.")
+            return
+        try:
+            season = int(self.live_batch_season_var.get())
+            week = int(self.live_batch_week_var.get())
+        except ValueError:
+            messagebox.showerror("Invalid batch", "Season i Week musza byc liczbami.")
+            return
+        validations = [validate_entry(entry) for entry in entries]
+        for validation in validations:
+            entry = self.live_batch_entries[validation.game_id]
+            entry.error = validation.error
+            if validation.status == "ERROR":
+                entry.status = "ERROR"
+                row_fields = self.live_batch_row_widgets.get(validation.game_id, {})
+                status_var = row_fields.get("status")
+                if isinstance(status_var, tk.StringVar):
+                    status_var.set("ERROR")
+        issues = {
+            validation.game_id: validation.error or validation.status
+            for validation in validations
+            if validation.status not in {"READY", "INCLUDED", "NOT_AT_HALFTIME", "EXCLUDED"}
+        }
+        if issues and not allow_partial:
+            self._update_live_batch_completeness()
+            messagebox.showerror(
+                "Batch niekompletny",
+                "Nie mozna wygenerowac kompletnego posta.\n\n"
+                + "\n".join(f"{game_id}: {reason}" for game_id, reason in issues.items()),
+            )
+            return
+        if not LIVE_SCENARIO_PROCESSED.exists():
+            messagebox.showerror("Missing dataset", f"Brak pliku: {LIVE_SCENARIO_PROCESSED}")
+            return
+        try:
+            historical_rows = pd.read_parquet(LIVE_SCENARIO_PROCESSED)
+            now = datetime.now(timezone.utc).replace(microsecond=0).isoformat().replace("+00:00", "Z")
+            result = generate_batch_post(
+                entries,
+                historical_rows,
+                season=season,
+                week=week,
+                block=self.live_batch_block_var.get(),
+                data_cutoff_utc=now,
+                generated_at_utc=now,
+                tie_policy="TIE_AS_PUSH" if self.live_settlement_var.get() == "TIE_IS_PUSH" else "TIE_AS_LOSS",
+                allow_partial=allow_partial,
+            )
+        except BatchValidationError as exc:
+            messagebox.showerror("Batch error", str(exc))
+            return
+        except Exception as exc:
+            messagebox.showerror("Batch calculation error", str(exc))
+            return
+        for game_id in result.included_game_ids:
+            self.live_batch_entries[game_id].status = "INCLUDED"
+            row_fields = self.live_batch_row_widgets.get(game_id, {})
+            status_var = row_fields.get("status")
+            if isinstance(status_var, tk.StringVar):
+                status_var.set("INCLUDED")
+        self._set_live_batch_output(result.text)
+        self.live_batch_output_dirty = False
+        self._update_live_batch_completeness()
+        mode = "czesciowy" if result.partial else "kompletny"
+        self.live_batch_status_var.set(
+            f"Wygenerowano {mode} post: {len(result.included_game_ids)} z {len(entries)} meczow."
+        )
+
+    def _set_live_batch_output(self, text: str) -> None:
+        self.live_batch_output.configure(state=tk.NORMAL)
+        self.live_batch_output.delete("1.0", tk.END)
+        self.live_batch_output.insert(tk.END, text)
+        self.live_batch_output.configure(state=tk.DISABLED)
+
+    def _copy_live_batch_post(self) -> None:
+        if self.live_batch_output_dirty:
+            messagebox.showerror("Output nieaktualny", "Zmieniono dane. Wygeneruj zbiorczy post ponownie.")
+            return
+        text = self.live_batch_output.get("1.0", tk.END).strip()
+        if not text:
+            messagebox.showerror("Pusty post", "Najpierw wygeneruj zbiorczy post.")
+            return
+        self.clipboard_clear()
+        self.clipboard_append(text)
+        included = sum(entry.status == "INCLUDED" for entry in self._batch_current_entries())
+        self.live_batch_status_var.set(f"Skopiowano zbiorczy post: {included} meczow.")
 
     def _day_label(self, day: str) -> str:
         return dict(DAY_OPTIONS).get(day, "")
