@@ -320,3 +320,35 @@ def test_current_week_list_does_not_use_historical_processed_dataset(tmp_path):
 
     assert games == []
     assert metadata["schedule_source"] == "MISSING"
+
+
+def test_preseason_schedule_is_loaded_separately_from_regular_schedule(tmp_path):
+    path = tmp_path / "schedules" / "2026_pre.csv"
+    path.parent.mkdir(parents=True)
+    pd.DataFrame(
+        [
+            {
+                "game_id": "2026_PRE1_DET_at_CIN",
+                "season": 2026,
+                "game_type": "PRE",
+                "week": 1,
+                "gameday": "2026-08-13",
+                "gametime": "19:00",
+                "away_team": "DET",
+                "home_team": "CIN",
+                "location": "Home",
+            }
+        ]
+    ).to_csv(path, index=False)
+
+    games, metadata = load_week_games(
+        data_root=tmp_path,
+        season=2026,
+        week=1,
+        season_type="PRE",
+        refresh_if_missing=False,
+    )
+
+    assert [game.label for game in games] == ["DET @ CIN"]
+    assert metadata["season_type"] == "PRE"
+    assert metadata["schedule_source"].endswith("2026_pre.csv")

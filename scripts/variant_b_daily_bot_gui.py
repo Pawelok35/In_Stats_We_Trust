@@ -659,6 +659,7 @@ class DailyBotGui(tk.Tk):
         self.live_end_season_var = tk.StringVar(value="2025")
         self.live_game_season_var = tk.StringVar(value="2026")
         self.live_game_week_var = tk.StringVar(value="1")
+        self.live_game_season_type_var = tk.StringVar(value="REG")
         self.live_game_var = tk.StringVar(value="")
         self.live_perspective_var = tk.StringVar(value="")
         self.live_game_status_var = tk.StringVar(value="Week games not loaded.")
@@ -719,6 +720,14 @@ class DailyBotGui(tk.Tk):
             side=tk.LEFT,
             padx=(4, 8),
         )
+        ttk.Label(game_row, text="Type").pack(side=tk.LEFT)
+        ttk.Combobox(
+            game_row,
+            textvariable=self.live_game_season_type_var,
+            values=["REG", "PRE"],
+            state="readonly",
+            width=7,
+        ).pack(side=tk.LEFT, padx=(4, 8))
         ttk.Button(game_row, text="LOAD WEEK GAMES", command=self._load_live_week_games).pack(
             side=tk.LEFT,
             padx=(0, 8),
@@ -1033,6 +1042,7 @@ class DailyBotGui(tk.Tk):
         controls.grid(row=0, column=0, sticky="ew", pady=(0, 6))
         self.live_batch_season_var = tk.StringVar(value="2026")
         self.live_batch_week_var = tk.StringVar(value="1")
+        self.live_batch_season_type_var = tk.StringVar(value="REG")
         self.live_batch_block_var = tk.StringVar(value="")
         ttk.Label(controls, text="Season").pack(side=tk.LEFT)
         ttk.Entry(controls, textvariable=self.live_batch_season_var, width=7).pack(
@@ -1042,6 +1052,14 @@ class DailyBotGui(tk.Tk):
         ttk.Entry(controls, textvariable=self.live_batch_week_var, width=5).pack(
             side=tk.LEFT, padx=(4, 8)
         )
+        ttk.Label(controls, text="Type").pack(side=tk.LEFT)
+        ttk.Combobox(
+            controls,
+            textvariable=self.live_batch_season_type_var,
+            values=["REG", "PRE"],
+            state="readonly",
+            width=7,
+        ).pack(side=tk.LEFT, padx=(4, 8))
         ttk.Button(controls, text="REFRESH BLOCKS", command=self._refresh_live_batch_games).pack(
             side=tk.LEFT
         )
@@ -1124,7 +1142,12 @@ class DailyBotGui(tk.Tk):
                 data_root=REPO_ROOT / "data",
                 season=season,
                 week=week,
-                picks_path=self._live_picks_path_for_week(season, week),
+                season_type=self.live_batch_season_type_var.get(),
+                picks_path=(
+                    None
+                    if self.live_batch_season_type_var.get() == "PRE"
+                    else self._live_picks_path_for_week(season, week)
+                ),
             )
         except Exception as exc:
             self._log_live_week_games_exception(season, week, exc)
@@ -1537,7 +1560,12 @@ class DailyBotGui(tk.Tk):
                 data_root=REPO_ROOT / "data",
                 season=season,
                 week=week,
-                picks_path=self._live_picks_path_for_week(season, week),
+                season_type=self.live_game_season_type_var.get(),
+                picks_path=(
+                    None
+                    if self.live_game_season_type_var.get() == "PRE"
+                    else self._live_picks_path_for_week(season, week)
+                ),
             )
         except ScheduleLoadError as exc:
             self._log_live_week_games_exception(season, week, exc)

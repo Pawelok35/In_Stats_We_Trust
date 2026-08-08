@@ -65,7 +65,17 @@ class WeekGame:
         )
 
 
-def local_schedule_candidates(data_root: Path, season: int) -> list[Path]:
+def local_schedule_candidates(
+    data_root: Path, season: int, season_type: str = "REG"
+) -> list[Path]:
+    schedule_type = _normalize_season_type(season_type)
+    if schedule_type == "PRE":
+        return [
+            data_root / "nflverse" / "raw" / "schedules" / f"schedules_{season}_pre.parquet",
+            data_root / "schedules" / f"{season}_pre.parquet",
+            data_root / "schedules" / f"{season}_pre.csv",
+            data_root / "nflverse" / "raw" / "schedules" / "schedules.parquet",
+        ]
     return [
         season_schedule_snapshot_path(data_root, season),
         data_root / "schedules" / f"{season}.parquet",
@@ -73,7 +83,11 @@ def local_schedule_candidates(data_root: Path, season: int) -> list[Path]:
     ]
 
 
-def season_schedule_snapshot_path(data_root: Path, season: int) -> Path:
+def season_schedule_snapshot_path(
+    data_root: Path, season: int, season_type: str = "REG"
+) -> Path:
+    if _normalize_season_type(season_type) == "PRE":
+        return data_root / "nflverse" / "raw" / "schedules" / f"schedules_{season}_pre.parquet"
     return data_root / "nflverse" / "raw" / "schedules" / f"schedules_{season}.parquet"
 
 
@@ -84,20 +98,27 @@ def load_week_games(
     picks_path: Path | None = None,
     refresh_if_missing: bool = True,
     refresh_provider: Any | None = None,
+    season_type: str = "REG",
 ) -> tuple[list[WeekGame], dict[str, Any]]:
     data_root = Path(data_root)
+    schedule_type = _normalize_season_type(season_type)
     refresh_error = None
-    if refresh_if_missing and not _local_current_schedule_contains_season(data_root, season):
+    if refresh_if_missing and not _local_current_schedule_contains_season(
+        data_root, season, schedule_type
+    ):
         try:
             _refresh_schedule_from_nflreadpy(
                 data_root=data_root,
                 season=season,
                 provider=refresh_provider,
+                season_type=schedule_type,
             )
         except Exception as exc:
             refresh_error = exc
 
-    schedule, source_path, diagnostics = _load_local_schedule(data_root, season, week)
+    schedule, source_path, diagnostics = _load_local_schedule(
+        data_root, season, week, schedule_type
+    )
     if schedule.empty and refresh_error is not None:
         raise ScheduleLoadError(f"Schedule refresh failed: {refresh_error}") from refresh_error
 
@@ -109,6 +130,7 @@ def load_week_games(
     metadata = {
         "season": season,
         "week": week,
+        "season_type": schedule_type,
         "games_found": len(games),
         "schedule_source": str(source_path) if source_path else "MISSING",
         "schedule_timestamp_utc": _path_timestamp_utc(source_path) if source_path else None,
@@ -161,14 +183,16 @@ def _load_local_schedule(
     data_root: Path,
     season: int,
     week: int,
+    season_type: str = "REG",
 ) -> tuple[pd.DataFrame, Path | None, dict[str, Any]]:
     diagnostics = {"sources_checked": []}
-    for path in local_schedule_candidates(data_root, season):
+    schedule_type = _normalize_season_type(season_type)
+    for path in local_schedule_candidates(data_root, season, schedule_type):
         source_diag: dict[str, Any] = {"path": str(path), "exists": path.exists()}
         if not path.exists():
             diagnostics["sources_checked"].append(source_diag)
             continue
-        frame = pd.read_parquet(path)
+        frame = _read_schedule_frame(path)
         source_diag["rows_loaded"] = len(frame)
         source_diag["seasons"] = _seasons_present(frame)
         if frame.empty:
@@ -182,39 +206,48 @@ def _load_local_schedule(
         if "week" in week_rows.columns:
             week_rows = week_rows[week_rows["week"].astype("Int64") == week]
         source_diag["after_week"] = len(week_rows)
-        reg_rows = week_rows
-        if "game_type" in reg_rows.columns:
-            is_regular = reg_rows["game_type"].fillna("REG").astype(str).str.upper() == "REG"
-            reg_rows = reg_rows[is_regular]
-        source_diag["after_reg"] = len(reg_rows)
+        typed_rows = week_rows
+        if "game_type" in typed_rows.columns:
+            matches_type = (
+                typed_rows["game_type"].fillna("REG").astype(str).str.upper()
+                == schedule_type
+            )
+            typed_rows = typed_rows[matches_type]
+        source_diag[f"after_{schedule_type.lower()}"] = len(typed_rows)
         diagnostics["sources_checked"].append(source_diag)
-        if reg_rows.empty:
+        if typed_rows.empty:
             continue
-        sorted_rows = reg_rows.sort_values(["gameday", "gametime", "away_team", "home_team"])
+        sorted_rows = typed_rows.sort_values(["gameday", "gametime", "away_team", "home_team"])
         return sorted_rows, path, diagnostics
     return pd.DataFrame(), None, diagnostics
 
 
-def _local_current_schedule_contains_season(data_root: Path, season: int) -> bool:
-    for path in [
-        season_schedule_snapshot_path(data_root, season),
-        data_root / "schedules" / f"{season}.parquet",
-    ]:
-        if _source_contains_season(path, season):
+def _local_current_schedule_contains_season(
+    data_root: Path, season: int, season_type: str = "REG"
+) -> bool:
+    schedule_type = _normalize_season_type(season_type)
+    for path in local_schedule_candidates(data_root, season, schedule_type):
+        if _source_contains_season(path, season, schedule_type):
             return True
     return False
 
 
-def _source_contains_season(path: Path, season: int) -> bool:
+def _source_contains_season(path: Path, season: int, season_type: str = "REG") -> bool:
     if not path.exists():
         return False
     try:
-        frame = pd.read_parquet(path, columns=["season"])
+        frame = _read_schedule_frame(path, columns=["season", "game_type"])
     except Exception:
         return False
     if frame.empty or "season" not in frame.columns:
         return False
-    return season in set(frame["season"].dropna().astype(int).tolist())
+    if season not in set(frame["season"].dropna().astype(int).tolist()):
+        return False
+    if "game_type" not in frame.columns:
+        return _normalize_season_type(season_type) == "REG"
+    return _normalize_season_type(season_type) in set(
+        frame["game_type"].fillna("REG").astype(str).str.upper()
+    )
 
 
 def _refresh_schedule_from_nflreadpy(
@@ -222,6 +255,7 @@ def _refresh_schedule_from_nflreadpy(
     data_root: Path,
     season: int,
     provider: Any | None = None,
+    season_type: str = "REG",
 ) -> Path:
     nfl = provider
     if nfl is None:
@@ -234,10 +268,34 @@ def _refresh_schedule_from_nflreadpy(
         frame = pd.DataFrame(frame)
     if frame.empty:
         raise ScheduleLoadError(f"nflreadpy returned no schedule rows for season {season}.")
-    path = season_schedule_snapshot_path(data_root, season)
+    schedule_type = _normalize_season_type(season_type)
+    if "game_type" in frame.columns:
+        frame = frame[frame["game_type"].fillna("REG").astype(str).str.upper() == schedule_type]
+    if frame.empty:
+        raise ScheduleLoadError(
+            f"nflreadpy returned no {schedule_type} schedule rows for season {season}."
+        )
+    path = season_schedule_snapshot_path(data_root, season, schedule_type)
     path.parent.mkdir(parents=True, exist_ok=True)
     frame.to_parquet(path, index=False)
     return path
+
+
+def _normalize_season_type(value: str) -> str:
+    normalized = str(value or "REG").strip().upper()
+    aliases = {"REGULAR": "REG", "REGULAR_SEASON": "REG", "PRESEASON": "PRE"}
+    normalized = aliases.get(normalized, normalized)
+    if normalized not in {"REG", "PRE"}:
+        raise ValueError("season_type must be REG or PRE")
+    return normalized
+
+
+def _read_schedule_frame(path: Path, columns: list[str] | None = None) -> pd.DataFrame:
+    if path.suffix.lower() == ".csv":
+        frame = pd.read_csv(path, usecols=columns)
+    else:
+        frame = pd.read_parquet(path, columns=columns)
+    return frame
 
 
 def _seasons_present(frame: pd.DataFrame) -> list[int]:
