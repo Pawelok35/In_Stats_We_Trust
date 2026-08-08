@@ -1048,6 +1048,12 @@ If an early test reveals a baseline issue, stop and review rather than patching 
 
 ## 16. Implementation Plan
 
+### Accepted Starting Point
+
+Stage 11.2 is complete and frozen as the accepted single-candidate operator workflow. See `docs/variant_b_stage_11_2_accepted_baseline.md`.
+
+The approved next implementation sequence is Stage 11.3A, 11.3B, 11.4, 11.5, 11.6, 11.7, then 11.8. Weekly batch and GUI work must not begin before the preceding stages are accepted.
+
 ### Commit 1 - Champion CORE regression test
 
 Goal: protect baseline.
@@ -1182,109 +1188,89 @@ Acceptance:
 Dependencies: Commits 5 and 6.
 Baseline risk: low.
 
-### Commit 8 - Operator Verdict
+### Stage 11.3A - Audit: One Candidate To Central Event Flow
 
-Goal: final operator decision service.
-
-Files:
-
-- `pregame/operator_decision.py`
-- tests
+Goal: audit the accepted Stage 11.2 single-candidate artifact against central event-flow contracts before wiring it into a central game state.
 
 Acceptance:
 
-- `APPROVED` requires valid final quote gate and research/model status,
+- document exact input/output event mapping for one candidate,
+- prove CandidateRecord and Variant B evidence authority boundaries remain intact,
+- identify missing event payload or projector fields,
+- do not add batch, GUI, discovery, or automatic GPT behavior.
+
+Dependencies: accepted Stage 11.2 single-candidate baseline.
+
+### Stage 11.3B - Central Workflow For One Game
+
+Goal: implement the central event workflow for exactly one game, using the accepted single-candidate Variant B path as an explicit input.
+
+Acceptance:
+
+- one game progresses through authoritative candidate, market, research, quote, and current-state events,
+- current state is rebuilt from the append-only event flow,
+- no automatic weekly batch, file discovery, or GUI wiring is added.
+
+Dependencies: Stage 11.3A.
+
+### Stage 11.4 - Structured Manual Inputs
+
+Goal: add structured manual inputs for injuries, roster, weather, and public betting.
+
+Acceptance:
+
+- every manual item has source and timestamp,
+- impact and blocking status are validated,
+- public betting remains optional context.
+
+Dependencies: Stage 11.3B.
+
+### Stage 11.5 - Operator Verdict, Quotes, Settlement And CLV
+
+Goal: implement the final operator decision together with final quote, closing quote, settlement, and CLV lifecycle.
+
+Acceptance:
+
+- `APPROVED` requires valid final quote, research/model status, and required manual evidence,
 - rejected/pass/wait decisions require reason codes,
-- output is event, not mutation of pick file.
+- closing quote, settlement, and CLV remain event records and never mutate model pick output.
 
-Dependencies: Commit 7.
-Baseline risk: low.
+Dependencies: Stages 11.3B and 11.4.
 
-### Commit 9 - Variant B integration
+### Stage 11.6 - Full Week 1 End-To-End Simulation
 
-Goal: map existing Variant B outputs to events.
-
-Files:
-
-- `pregame/variant_b_adapter.py`
-- tests
+Goal: prove the complete central workflow using isolated Week 1 simulation fixtures.
 
 Acceptance:
 
-- full 19, delta, final refresh map to research events,
-- deterministic audit status is preserved,
-- GPT cannot set final operator pick.
+- schedule -> initial snapshot -> model candidate -> GPT research -> injury update -> market update -> final quote -> operator decision -> closing quote -> settlement -> CLV,
+- no production data or production artifacts are created.
 
-Dependencies: Commit 4.
-Baseline risk: medium; avoid changing `scripts/variant_b_audit.py` logic.
+Dependencies: Stages 11.3B, 11.4, and 11.5.
 
-### Commit 10 - Injury/roster structured input
+### Stage 11.7 - Weekly Batch
 
-Goal: manual structured evidence.
-
-Files:
-
-- `pregame/manual_inputs.py`
-- tests
+Goal: extend the proven one-game workflow to an explicit weekly batch process.
 
 Acceptance:
 
-- injury/roster records require source and timestamp,
-- impact/blocking status validated.
+- batch reuses Stage 11.3B logic rather than duplicating it,
+- candidate and evidence inputs remain explicit and auditable,
+- no GUI business logic is introduced.
 
-Dependencies: contracts.
-Baseline risk: low.
+Dependencies: Stage 11.6.
 
-### Commit 11 - Decision log and CLV
+### Stage 11.8 - GUI Reads Central State
 
-Goal: post-decision records.
-
-Files:
-
-- `pregame/clv.py`
-- tests
+Goal: connect the existing operator GUI to central current state only after backend and weekly batch are proven.
 
 Acceptance:
 
-- CLV computed only with valid bet and closing quote,
-- missing closing price returns not assessable.
-
-Dependencies: final quote and operator decision.
-Baseline risk: low.
-
-### Commit 12 - Week 1 end-to-end simulation
-
-Goal: prove the full event process.
-
-Files:
-
-- `tests/test_pregame_week1_simulation.py`
-- simulated fixtures under tests only
-
-Acceptance:
-
-- schedule -> initial snapshot -> model candidate -> GPT research -> injury update -> market update -> final quote -> operator decision -> closing quote -> settlement -> CLV.
-
-Dependencies: previous commits.
-Baseline risk: low if fixtures are isolated.
-
-### Commit 13 - GUI after backend stability
-
-Goal: connect operator center to central backend.
-
-Files:
-
-- `scripts/variant_b_daily_bot.py`
-- `scripts/variant_b_daily_bot_gui.py`
-- config updates
-
-Acceptance:
-
-- GUI reads current `PregameGameRecord`,
+- GUI reads central `PregameGameRecord`,
 - no business logic lives only in GUI,
 - old manual workflow remains available.
 
-Dependencies: stable backend.
+Dependencies: Stage 11.7.
 Baseline risk: medium.
 
 ## 17. Week 1 End-To-End Simulation
